@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KeyChinGu — Seoul Travel Curation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+  <a href="../en/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <div class="lang-switch">
+    <a href="../index.html">KR</a>
+    <a href="../en/index.html" class="active">EN</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <img src="../assets/logo/logo_2-4_expression.png" alt="KeyChinGu" class="hero-logo">
+  <h1>Seoul <em>for</em> You</h1>
+  <p>Curated guides for MZ FIT travelers visiting Korea — 20 essential topics</p>
+</section>
+
+<!-- CATEGORY FILTER -->
+<div class="filter-bar">
+  <button class="filter-btn" data-category="A">Neighborhood</button>
+  <button class="filter-btn" data-category="B">Nature & Walk</button>
+  <button class="filter-btn" data-category="C">Food & Drink</button>
+  <button class="filter-btn" data-category="D">Culture</button>
+  <button class="filter-btn" data-category="E">Beauty & Wellness</button>
+  <button class="filter-btn" data-category="F">Shopping</button>
+  <button class="filter-btn" data-category="G">K-Content</button>
+  <button class="filter-btn" data-category="H">Practical</button>
+</div>
+
+<!-- TAG FILTER -->
+<div class="tag-bar">
+  <button class="tag-btn" data-tag="foodie">foodie</button>
+  <button class="tag-btn" data-tag="free">free</button>
+  <button class="tag-btn" data-tag="nightlife">nightlife</button>
+  <button class="tag-btn" data-tag="culture">culture</button>
+  <button class="tag-btn" data-tag="shopping">shopping</button>
+  <button class="tag-btn" data-tag="photo">photo</button>
+  <button class="tag-btn" data-tag="beauty">beauty</button>
+  <button class="tag-btn" data-tag="outdoor">outdoor</button>
+  <button class="tag-btn" data-tag="practical">practical</button>
+  <button class="tag-btn" data-tag="mz">mz</button>
+  <button class="tag-btn" data-tag="must-try">must-try</button>
+  <button class="tag-btn" data-tag="cafe">cafe</button>
+  <button class="tag-btn" data-tag="market">market</button>
+  <button class="tag-btn" data-tag="beer">beer</button>
+  <button class="tag-btn" data-tag="latenight">latenight</button>
+  <button class="tag-btn" data-tag="retro">retro</button>
+  <button class="tag-btn" data-tag="hanbok">hanbok</button>
+  <button class="tag-btn" data-tag="kdrama">kdrama</button>
+  <button class="tag-btn" data-tag="kpop">kpop</button>
+  <button class="tag-btn" data-tag="wellness">wellness</button>
+  <button class="tag-btn" data-tag="fun">fun</button>
+  <button class="tag-btn" data-tag="budget">budget</button>
+  <button class="tag-btn" data-tag="transport">transport</button>
+  <button class="tag-btn" data-tag="popup">popup</button>
+</div>
+
+<!-- CARD GRID -->
+<div class="card-grid" id="card-grid">
+  <!-- JS renders cards here -->
+</div>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <p><a href="https://instagram.com/keychingu.korea" target="_blank">@keychingu.korea</a> &mdash; Seoul for MZ FIT Travelers</p>
+</footer>
+
+<script>
+// EN version: adjust data path since we're in /en/
+(function () {
+  'use strict';
+  let activeCategory = null;
+  let activeTag = null;
+  const CAT_COLORS = {A:'#218CCC',B:'#2E8B57',C:'#D94C53',D:'#FAAD19',E:'#E79397',F:'#6AB2DC',G:'#9B59B6',H:'#34495E'};
+  const CAT_LABELS = {A:'Neighborhood',B:'Nature',C:'Food',D:'Culture',E:'Beauty',F:'Shopping',G:'K-Content',H:'Practical'};
+
+  fetch('../data/contents.json').then(r=>r.json()).then(data=>{
+    window.__contents=data;
+    renderCards(data);
+    document.querySelectorAll('.filter-btn').forEach(btn=>{
+      btn.addEventListener('click',function(){
+        var cat=this.dataset.category;
+        if(activeCategory===cat){activeCategory=null;this.classList.remove('active');}
+        else{activeCategory=cat;document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));this.classList.add('active');}
+        applyFilters(data);
+      });
+    });
+    document.querySelectorAll('.tag-btn').forEach(btn=>{
+      btn.addEventListener('click',function(){
+        var tag=this.dataset.tag;
+        if(activeTag===tag){activeTag=null;this.classList.remove('active');}
+        else{activeTag=tag;document.querySelectorAll('.tag-btn').forEach(b=>b.classList.remove('active'));this.classList.add('active');}
+        applyFilters(data);
+      });
+    });
+  });
+
+  function renderCards(items){
+    const grid=document.getElementById('card-grid');
+    if(!items.length){grid.innerHTML='<div class="no-results">No content matches your filters.</div>';return;}
+    grid.innerHTML=items.map(item=>{
+      const color=CAT_COLORS[item.category]||'#D94C53';
+      const catLabel=CAT_LABELS[item.category]||item.category;
+      return '<a href="../content/'+item.slug+'.en.html" class="card" data-category="'+item.category+'" data-tags="'+item.tags.join(',')+'">' +
+        '<div class="card-cover" style="background:linear-gradient(135deg,'+color+' 0%,'+color+'cc 100%);">' +
+        '<span class="cat-badge" style="background:rgba(0,0,0,0.25);">'+catLabel+'</span>' +
+        '<span class="card-num">#'+item.id+'</span></div>' +
+        '<div class="card-body"><h3>'+item.title_en+'</h3><p>'+item.summary_en+'</p>' +
+        '<div class="card-tags">'+item.tags.map(t=>'<span>'+t+'</span>').join('')+'</div></div></a>';
+    }).join('');
+  }
+
+  function applyFilters(data){
+    let f=data;
+    if(activeCategory) f=f.filter(i=>i.category===activeCategory);
+    if(activeTag) f=f.filter(i=>i.tags.indexOf(activeTag)!==-1);
+    renderCards(f);
+  }
+})();
+</script>
+</body>
+</html>
