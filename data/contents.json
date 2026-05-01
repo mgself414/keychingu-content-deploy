@@ -341,5 +341,22 @@
     ],
     "summary_kr": "외국인이 진짜 가는 8개 명소 + 카테고리별 매핑 + 세금환급 가이드",
     "summary_en": "8 destinations foreigners actually go + category-to-shop matrix + tax-refund tips"
+  },
+  {
+    "id": "057",
+    "slug": "stationery-destinations",
+    "title_kr": "서울 문구·팬시 구매 명소",
+    "title_en": "Seoul Stationery Destinations",
+    "category": "F",
+    "tags": [
+      "shopping",
+      "foreigner",
+      "stationery",
+      "diary",
+      "design",
+      "bookstore"
+    ],
+    "summary_kr": "외국인 MZ + 유학생을 위한 8개 명소 — 5축 매핑 (서점·편집·전문필기·도매·캐릭터)",
+    "summary_en": "8 destinations across 5 axes (bookstores · design select · pens · wholesale · characters) for MZ tourists & students"
   }
 ]
