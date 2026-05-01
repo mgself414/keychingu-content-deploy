@@ -323,5 +323,23 @@
     ],
     "summary_kr": "15분 등산, 0원, 동호대교·N서울타워 한 프레임",
     "summary_en": "15-min climb, ₩0, Dongho Bridge + N Seoul Tower in one frame"
+  },
+  {
+    "id": "052",
+    "slug": "souvenir-destinations",
+    "title_kr": "한국 관광기념품 어디서 살까",
+    "title_en": "Where to Buy Korean Souvenirs",
+    "category": "F",
+    "tags": [
+      "shopping",
+      "foreigner",
+      "tax-refund",
+      "souvenir",
+      "beauty",
+      "foodie",
+      "market"
+    ],
+    "summary_kr": "외국인이 진짜 가는 8개 명소 + 카테고리별 매핑 + 세금환급 가이드",
+    "summary_en": "8 destinations foreigners actually go + category-to-shop matrix + tax-refund tips"
   }
 ]
