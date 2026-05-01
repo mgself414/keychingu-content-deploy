@@ -1,0 +1,62 @@
+# KeyChinGu
+
+> Curated Korea travel guides for foreign MZ FIT travelers (20-35) — 20 essential Seoul topics covering neighborhoods, food, culture, K-content, and practical info, in Korean and English.
+
+## Neighborhoods
+
+- [Bukchon Hanok & Samcheong-dong](https://mgself414.github.io/keychingu-content-deploy/content/bukchon.en.html): Hanbok-rental walking tour through 600-year-old Joseon-dynasty hanok village, Samcheong-dong cafés, and Bukchon photo spots. Korean: /content/bukchon.html
+- [Euljiro Retro Hipster Tour](https://mgself414.github.io/keychingu-content-deploy/content/euljiro.en.html): Hipster industrial neighborhood guide — back-alley craft-beer bars, vintage tin-roof restaurants, "Hipjiro" rooftop hangouts. Korean: /content/euljiro.html
+- [Seongsu Pop-Up Deep Dive](https://mgself414.github.io/keychingu-content-deploy/content/seongsu.en.html): Why Seongsu became Seoul's pop-up capital — brand stores, design cafés, monthly rotating exhibitions. Korean: /content/seongsu.html
+
+## Nature & Views
+
+- [Namsan Trail & Night Views](https://mgself414.github.io/keychingu-content-deploy/content/namsan.en.html): Free Namsan walking trails, N Seoul Tower access routes, and the best free night-view spots near downtown. Korean: /content/namsan.html
+- [Free Night-View Spots TOP 10](https://mgself414.github.io/keychingu-content-deploy/content/night-views.en.html): Ten zero-cost panoramic Seoul viewpoints with subway access — Bukak Skyway, Maebongsan, Naksan Park, Haneul Park, more. Korean: /content/night-views.html
+
+## Food & Drink
+
+- [Korean Food Essentials TOP 10](https://mgself414.github.io/keychingu-content-deploy/content/korean-food.en.html): Ten must-try Korean dishes for first-timers with origin stories, where to find them, and ordering tips. Korean: /content/korean-food.html
+- [Street Food Mecca](https://mgself414.github.io/keychingu-content-deploy/content/street-food.en.html): Gwangjang, Tongin, Namdaemun, Myeong-dong street-food guide — what to order, prices, vendor etiquette. Korean: /content/street-food.html
+- [Hangang Chimaek Picnic](https://mgself414.github.io/keychingu-content-deploy/content/chimaek.en.html): Korea's signature fried-chicken-and-beer ritual at Hangang Park — delivery codes, best parks, BYOB rules. Korean: /content/chimaek.html
+- [Gamaekjip Complete Guide](https://mgself414.github.io/keychingu-content-deploy/content/gamaekjip.en.html): Old-school Korean drinking spots — what gamaekjip is, key Jongno/Euljiro venues, anju ordering tips. Korean: /content/gamaekjip.html
+- [Traditional Market Experience](https://mgself414.github.io/keychingu-content-deploy/content/market.en.html): Comparing Gwangjang, Tongin, Mangwon, Namdaemun markets — what each is famous for, opening hours, signature dishes. Korean: /content/market.html
+- [24-Hour Food Guide](https://mgself414.github.io/keychingu-content-deploy/content/24hr-food.en.html): Late-night and 24-hour Seoul restaurants — gukbap, jokbal, sundae-haejangguk, late-night ramyeon spots. Korean: /content/24hr-food.html
+
+## Culture & Experience
+
+- [Hanbok Experience (Modern)](https://mgself414.github.io/keychingu-content-deploy/content/hanbok.en.html): Modern hanbok rental — where to rent in Bukchon and Insadong, palace free-entry tip, photo etiquette. Korean: /content/hanbok.html
+- [Jjimjilbang Complete Guide](https://mgself414.github.io/keychingu-content-deploy/content/jjimjilbang.en.html): Korean public bathhouse first-timer manual — what to expect, dress code, signature jjimjilbang menu. Korean: /content/jjimjilbang.html
+- [Noraebang Guide](https://mgself414.github.io/keychingu-content-deploy/content/noraebang.en.html): How to use Korean karaoke rooms — coin-noraebang vs party-noraebang, English-song selection, pricing. Korean: /content/noraebang.html
+
+## Beauty & Wellness
+
+- [Personal Color & Beauty Consulting](https://mgself414.github.io/keychingu-content-deploy/content/personal-color.en.html): Korean personal-color diagnosis services for foreign visitors — booking, languages, price ranges, popular salons. Korean: /content/personal-color.html
+- [Korean Spa & Massage](https://mgself414.github.io/keychingu-content-deploy/content/spa-massage.en.html): Spa, scrub (ttaemiri), and massage options — premium hotel spas vs neighborhood foot-massage shops. Korean: /content/spa-massage.html
+
+## Shopping
+
+- [Seoul Shopping Day Plan](https://mgself414.github.io/keychingu-content-deploy/content/shopping-day.en.html): One-day shopping route — Myeong-dong, Hongdae, Seongsu, Gangnam district comparison and route plan. Korean: /content/shopping-day.html
+
+## K-Content
+
+- [K-Drama Filming Spots Tour](https://mgself414.github.io/keychingu-content-deploy/content/kdrama.en.html): Locations from popular K-dramas (Goblin, Itaewon Class, Crash Landing, more) with subway access and tips. Korean: /content/kdrama.html
+- [K-POP Fan Ultimate Guide](https://mgself414.github.io/keychingu-content-deploy/content/kpop-fan.en.html): K-pop fan-tour essentials — HYBE/SM/JYP/YG areas, official goods stores, fan-event etiquette. Korean: /content/kpop-fan.html
+
+## Practical
+
+- [Transport & Navigation Guide](https://mgself414.github.io/keychingu-content-deploy/content/transport.en.html): T-money card, Naver Map vs Kakao Map, AREX airport rail, taxi apps, foreign-friendly options. Korean: /content/transport.html
+
+## Key Facts
+
+- KeyChinGu (키친구) is a Seoul travel curation brand for foreign MZ FIT travelers (20–35) primarily from Japan, SEA, and Greater China.
+- All 20 topic guides are published in both Korean and English; long-form (~3,000 words/article) with FAQ sections and Last-Updated dates.
+- Content covers eight categories: Neighborhoods, Nature & Views, Food & Drink, Culture, Beauty & Wellness, Shopping, K-Content, Practical Info.
+- Editorial focus: place-name preservation (Korean and Romanization shown together), seasonal updates, FIT (free independent traveler) practical tips.
+- Companion channel: Instagram @keychingu.korea (carousels and reels).
+
+## Contact
+
+- Website: https://mgself414.github.io/keychingu-content-deploy/
+- Korean entry: https://mgself414.github.io/keychingu-content-deploy/index.html
+- English entry: https://mgself414.github.io/keychingu-content-deploy/en/index.html
+- Instagram: https://instagram.com/keychingu.korea
