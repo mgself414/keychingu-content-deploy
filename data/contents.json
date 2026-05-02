@@ -358,5 +358,23 @@
     ],
     "summary_kr": "외국인 MZ + 유학생을 위한 8개 명소 — 5축 매핑 (서점·편집·전문필기·도매·캐릭터)",
     "summary_en": "8 destinations across 5 axes (bookstores · design select · pens · wholesale · characters) for MZ tourists & students"
+  },
+  {
+    "id": "129",
+    "slug": "naengmyeon",
+    "title_kr": "서울 냉면 맛집 가이드",
+    "title_en": "Seoul Naengmyeon Guide",
+    "category": "C",
+    "tags": [
+      "food",
+      "foreigner",
+      "noodles",
+      "pyeongyang",
+      "hamheung",
+      "nopo",
+      "all-season"
+    ],
+    "summary_kr": "평양식 vs 함흥식 — 메인 8 노포 + 추가 17곳 빠른 비교, 4축 균형 + 사계절 가이드",
+    "summary_en": "Pyeongyang vs Hamheung — 8 main shops + 17 quick picks, 4-axis balance + four-season guide"
   }
 ]
