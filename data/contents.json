@@ -394,5 +394,23 @@
     ],
     "summary_kr": "한우·흑돼지·삼겹살·갈비탕 8선 — 4축 균형(노포·MZ·프리미엄·체인) + 사계절 추천",
     "summary_en": "Hanwoo, Heuk-doeji, samgyeopsal, galbi-tang 8-pick — 4-axis balance (nopo/MZ/premium/chain)"
+  },
+  {
+    "id": "131",
+    "slug": "dakgalbi",
+    "title_kr": "서울 닭갈비 가이드",
+    "title_en": "Seoul Dakgalbi Guide",
+    "category": "C",
+    "tags": [
+      "food",
+      "foreigner",
+      "dakgalbi",
+      "chuncheon",
+      "kdrama",
+      "mz",
+      "kfood"
+    ],
+    "summary_kr": "춘천식 본가 + 서울 MZ 트렌디 8선 — K-드라마·K-아이돌 코드와 연결되는 닭갈비 가이드",
+    "summary_en": "Chuncheon-style origin + Seoul MZ trendy 8-pick — connects to K-drama/K-pop culture"
   }
 ]
