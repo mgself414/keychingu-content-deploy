@@ -430,5 +430,24 @@
     ],
     "summary_kr": "떡볶이·김밥·순대·라볶이 8선 — 광장시장 노포 + 신당동 즉석 + MZ 체인",
     "summary_en": "Tteokbokki, gimbap, sundae, rabokki 8-pick — Gwangjang market + Sindangdong + MZ chains"
+  },
+  {
+    "id": "133",
+    "slug": "gukbap",
+    "title_kr": "서울 국밥 가이드",
+    "title_en": "Seoul Gukbap Guide",
+    "category": "C",
+    "tags": [
+      "food",
+      "foreigner",
+      "gukbap",
+      "seolleongtang",
+      "gomtang",
+      "naejangtang",
+      "nopo",
+      "kfood"
+    ],
+    "summary_kr": "설렁탕·곰탕·내장탕·도가니탕 100년 노포 8선 — 한식 국물 풀세트 + #129·#130 연결",
+    "summary_en": "Seolleongtang, gomtang, naejangtang, doganitang — 100-year nopo 8-pick + cross-link #129/#130"
   }
 ]
