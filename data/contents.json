@@ -412,5 +412,23 @@
     ],
     "summary_kr": "춘천식 본가 + 서울 MZ 트렌디 8선 — K-드라마·K-아이돌 코드와 연결되는 닭갈비 가이드",
     "summary_en": "Chuncheon-style origin + Seoul MZ trendy 8-pick — connects to K-drama/K-pop culture"
+  },
+  {
+    "id": "132",
+    "slug": "bunsik",
+    "title_kr": "서울 분식 가이드",
+    "title_en": "Seoul Bunsik Guide",
+    "category": "C",
+    "tags": [
+      "food",
+      "foreigner",
+      "bunsik",
+      "tteokbokki",
+      "gimbap",
+      "gwangjang",
+      "kfood"
+    ],
+    "summary_kr": "떡볶이·김밥·순대·라볶이 8선 — 광장시장 노포 + 신당동 즉석 + MZ 체인",
+    "summary_en": "Tteokbokki, gimbap, sundae, rabokki 8-pick — Gwangjang market + Sindangdong + MZ chains"
   }
 ]
