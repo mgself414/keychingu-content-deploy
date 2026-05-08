@@ -449,5 +449,23 @@
     ],
     "summary_kr": "설렁탕·곰탕·내장탕·도가니탕 100년 노포 8선 — 한식 국물 풀세트 + #129·#130 연결",
     "summary_en": "Seolleongtang, gomtang, naejangtang, doganitang — 100-year nopo 8-pick + cross-link #129/#130"
+  },
+  {
+    "id": "134",
+    "slug": "mandu",
+    "title_kr": "서울 만두 가이드",
+    "title_en": "Seoul Mandu Guide",
+    "category": "C",
+    "tags": [
+      "food",
+      "foreigner",
+      "mandu",
+      "pyeongyang",
+      "gaeseong",
+      "kfood",
+      "winter"
+    ],
+    "summary_kr": "평양만두·개성만두·갈비만두 8선 — 평양식 본가(자하손만두) + 종로 노포 + MZ 트렌디",
+    "summary_en": "Pyeongyang, Gaeseong, galbi mandu 8-pick — Pyongyang origin + Jongno nopo + MZ trendy"
   }
 ]
