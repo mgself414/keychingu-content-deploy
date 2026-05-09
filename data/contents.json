@@ -467,5 +467,23 @@
     ],
     "summary_kr": "평양만두·개성만두·갈비만두 8선 — 평양식 본가(자하손만두) + 종로 노포 + MZ 트렌디",
     "summary_en": "Pyeongyang, Gaeseong, galbi mandu 8-pick — Pyongyang origin + Jongno nopo + MZ trendy"
+  },
+  {
+    "id": "135",
+    "slug": "bookstore",
+    "title_kr": "서울 서점 가이드",
+    "title_en": "Seoul Bookstore Guide",
+    "category": "C",
+    "tags": [
+      "culture",
+      "foreigner",
+      "bookstore",
+      "kyobo",
+      "itaewonbooks",
+      "starfield",
+      "english"
+    ],
+    "summary_kr": "대형 체인 + 영어 전문 + 노포 + 인스타 랜드마크 13선 — 비음식 첫 진입 (서점·문화)",
+    "summary_en": "Big chains + English specialists + heritage + Instagram landmarks 13-pick — first non-food category"
   }
 ]
