@@ -485,5 +485,23 @@
     ],
     "summary_kr": "대형 체인 + 영어 전문 + 노포 + 인스타 랜드마크 13선 — 비음식 첫 진입 (서점·문화)",
     "summary_en": "Big chains + English specialists + heritage + Instagram landmarks 13-pick — first non-food category"
+  },
+  {
+    "id": "138",
+    "slug": "hongdae",
+    "title_kr": "서울 홍대 가이드",
+    "title_en": "Seoul Hongdae Guide",
+    "category": "C",
+    "tags": [
+      "area",
+      "foreigner",
+      "hongdae",
+      "music",
+      "indie",
+      "design",
+      "market"
+    ],
+    "summary_kr": "음악·라이브 + 디자인·아트 + 먹거리·시장 4축 8선 — Reddit demand signal 1순위 활용",
+    "summary_en": "Music & live + design & art + food & market 4-axis 8-pick — built on Reddit demand signal #1"
   }
 ]
