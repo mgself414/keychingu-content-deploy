@@ -539,5 +539,23 @@
     ],
     "summary_kr": "루프탑·뷰 + 한국 전통주 + 외국인 펍 + 혼술·트렌디 4축 8선 — T6.5 Phase 4 gap_score 2위 (247.84) 100% 미커버",
     "summary_en": "Rooftop & view + Korean traditional + foreigner-friendly pubs + solo-drink scene 4-axis 8-pick — gap_score #2, 100% uncovered"
+  },
+  {
+    "id": "141",
+    "slug": "jongno",
+    "title_kr": "종로 가이드",
+    "title_en": "Jongno Guide",
+    "category": "C",
+    "tags": [
+      "area",
+      "foreigner",
+      "jongno",
+      "gwanghwamun",
+      "insadong",
+      "ikseondong",
+      "bukchon"
+    ],
+    "summary_kr": "광화문+인사동+익선동+북촌·종각 4 sub-area 8선 — T6.5 Phase 5 jongno mining + Reddit demand 1위 동률 활용",
+    "summary_en": "Gwanghwamun + Insadong + Ikseondong + Bukchon/Jonggak 4 sub-areas 8-pick — T6.5 Phase 5 jongno mining + Reddit tied #1 area demand"
   }
 ]
