@@ -521,5 +521,23 @@
     ],
     "summary_kr": "스페셜티 로스터리 + 베이커리 + 브런치 + 인스타·테마 4축 8선 — T6.5 Phase 4 gap_score 1위 (409.87)",
     "summary_en": "Specialty roastery + bakery + brunch + Insta-theme 4-axis 8-pick — built on T6.5 Phase 4 demand-driven signal (gap_score #1)"
+  },
+  {
+    "id": "140",
+    "slug": "hongdae-bar",
+    "title_kr": "홍대 술집·바 가이드",
+    "title_en": "Hongdae Bar & Drink Guide",
+    "category": "C",
+    "tags": [
+      "area",
+      "foreigner",
+      "hongdae",
+      "bar",
+      "rooftop",
+      "makgeolli",
+      "craft-beer"
+    ],
+    "summary_kr": "루프탑·뷰 + 한국 전통주 + 외국인 펍 + 혼술·트렌디 4축 8선 — T6.5 Phase 4 gap_score 2위 (247.84) 100% 미커버",
+    "summary_en": "Rooftop & view + Korean traditional + foreigner-friendly pubs + solo-drink scene 4-axis 8-pick — gap_score #2, 100% uncovered"
   }
 ]
