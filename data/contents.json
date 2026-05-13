@@ -597,5 +597,15 @@
     "tags": ["area","foreigner","seongsu","cafe","industrial","brunch","bakery"],
     "summary_kr": "인더스트리얼+베이커리+브런치+시그니처 4축 8선 — T6.5 Phase 6 gap_score 2위 (254.41) 활용",
     "summary_en": "Industrial + bakery + brunch + signature concept 4-axis 8-pick — built on T6.5 Phase 6 demand-driven signal (gap_score #2 after Seongsu mining)"
+  },
+  {
+    "id": "146",
+    "slug": "running-course",
+    "title_kr": "서울 러닝코스 가이드",
+    "title_en": "Seoul Running Course Guide",
+    "category": "H",
+    "tags": ["activity","running","foreigner","hanriver","namsan","olympicpark","seoulforest"],
+    "summary_kr": "한강+도심+공원+특색 4축 8선 — Activity 카테고리 첫 진입 (시리즈 #1 일반, #147 야간 예고)",
+    "summary_en": "Han River + downtown + park + niche 4-axis 8-pick — Activity category debut (series #1 general, #147 night running coming)"
   }
 ]
