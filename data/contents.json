@@ -627,5 +627,15 @@
     "tags": ["activity","hiking","foreigner","namsan","inwangsan","bukhansan","seoulcitywall"],
     "summary_kr": "도심+한양도성+본격명산+외곽 4축 8선 — Activity 시리즈 #3 등산 (남산·인왕산·북악산·북한산·도봉산·관악산·청계산·낙산)",
     "summary_en": "Downtown + Seoul City Wall + Mountain + Outskirts 4-axis 8-pick — Activity series #3 hiking (Namsan, Inwangsan, Bukhansan, Dobongsan, Gwanaksan & more)"
+  },
+  {
+    "id": "151",
+    "slug": "camping-bbq",
+    "title_kr": "한강 캠핑·바베큐 가이드",
+    "title_en": "Han River Camping & BBQ Guide",
+    "category": "H",
+    "tags": ["activity","camping","bbq","foreigner","hanriver","nanji","glamping","picnic"],
+    "summary_kr": "공식캠핑장+글램핑+바베큐존+한강피크닉 4축 8선 — Activity 시리즈 #4 (난지 캠핑장·노을·우이동 + 반포·뚝섬·여의도 피크닉)",
+    "summary_en": "Official campgrounds + glamping + BBQ zone + picnic 4-axis 8-pick — Activity series #4 (Nanji, Noeul, Uidong + Banpo, Ddukseom, Yeouido)"
   }
 ]
