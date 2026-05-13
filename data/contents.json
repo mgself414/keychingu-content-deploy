@@ -786,5 +786,26 @@
     ],
     "summary_kr": "한옥·전통+화덕·정통+모던 파티세리+노포·시그니처 4축 12선 — T6.5 demand-driven (베이커리·jongno cluster gap 559.5 / cov 38%)",
     "summary_en": "Hanok bakery + sourdough + modern patisserie + signature noho 4-axis 12-pick — T6.5 demand-driven Jongno·Bukchon·Seochon·Ikseondong bakery guide"
+  },
+  {
+    "id": "154",
+    "slug": "gangnam-western",
+    "title_kr": "강남 양식 가이드",
+    "title_en": "Seoul Gangnam Western Food Guide",
+    "category": "A",
+    "tags": [
+      "area",
+      "foreigner",
+      "gangnam",
+      "dosan",
+      "sinsa",
+      "nonhyeon",
+      "western",
+      "wine",
+      "steak",
+      "modern-dining"
+    ],
+    "summary_kr": "와인 페어링+모던 다이닝+스테이크·그릴+캐주얼·브런치 4축 12선 — T6.5 demand gangnam 양식 cluster (gap 328.9 / cov 21%)",
+    "summary_en": "Wine pairing + modern dining + steak/grill + casual brunch 4-axis 12-pick — T6.5 demand-driven Gangnam·Dosan·Sinsa·Nonhyeon western guide"
   }
 ]
