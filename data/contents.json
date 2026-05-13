@@ -765,5 +765,26 @@
     ],
     "summary_kr": "이탈리안·파스타+모던 양식+노포·시그니처+브런치 4축 8선 — ISSUE 03 종로 시리즈 후 홍대 양식 deep dive (양식·hongdae cluster gap 0% 커버)",
     "summary_en": "Italian·pasta + modern western + signature + brunch 4-axis 8-pick — ISSUE 03 Hongdae western food deep dive (western cluster 0% covered)"
+  },
+  {
+    "id": "150",
+    "slug": "jongno-bakery",
+    "title_kr": "종로 베이커리 가이드",
+    "title_en": "Seoul Jongno Bakery Guide",
+    "category": "F",
+    "tags": [
+      "bakery",
+      "foreigner",
+      "jongno",
+      "bukchon",
+      "ikseondong",
+      "seochon",
+      "anguk",
+      "hanok",
+      "sourdough",
+      "patisserie"
+    ],
+    "summary_kr": "한옥·전통+화덕·정통+모던 파티세리+노포·시그니처 4축 12선 — T6.5 demand-driven (베이커리·jongno cluster gap 559.5 / cov 38%)",
+    "summary_en": "Hanok bakery + sourdough + modern patisserie + signature noho 4-axis 12-pick — T6.5 demand-driven Jongno·Bukchon·Seochon·Ikseondong bakery guide"
   }
 ]
