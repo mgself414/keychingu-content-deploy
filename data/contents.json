@@ -607,5 +607,15 @@
     "tags": ["activity","running","foreigner","hanriver","namsan","olympicpark","seoulforest"],
     "summary_kr": "한강+도심+공원+특색 4축 8선 — Activity 카테고리 첫 진입 (시리즈 #1 일반, #147 야간 예고)",
     "summary_en": "Han River + downtown + park + niche 4-axis 8-pick — Activity category debut (series #1 general, #147 night running coming)"
+  },
+  {
+    "id": "147",
+    "slug": "night-running",
+    "title_kr": "서울 야간 러닝코스 가이드",
+    "title_en": "Seoul Night Running Course Guide",
+    "category": "H",
+    "tags": ["activity","running","foreigner","night","sunrise","banpo","ddp","jamsil"],
+    "summary_kr": "야경+도심야경+안전조명+새벽일출 4축 8선 — Activity 시리즈 #2 야간 (#146 페어)",
+    "summary_en": "Night view + downtown night + safety + sunrise 4-axis 8-pick — Activity series #2 night deep dive (paired with #146)"
   }
 ]
