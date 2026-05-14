@@ -1499,5 +1499,69 @@
     ],
     "summary_kr": "맛집 60+카페·디저트 89+문화·체험 60+쇼핑·사진 60 = 269곳 종합 큐레이션 — 사용자 큐레이션 원본 가이드북 (16곳 상세 픽)",
     "summary_en": "Restaurant 60 + cafe·dessert 89 + culture·experience 60 + shopping·photo 60 = 269 spots complete guide — user-curated comprehensive Hongdae guidebook"
+  },
+  {
+    "id": "159",
+    "slug": "hongdae-restaurants",
+    "title_kr": "홍대 맛집·술집 60곳 가이드",
+    "title_en": "Hongdae Restaurants Bars 60",
+    "category": "A",
+    "tags": [
+      "area",
+      "hongdae",
+      "foreigner",
+      "user-curated",
+      "restaurants"
+    ],
+    "summary_kr": "홍대 맛집·술집 60곳 가이드 — #158 분할 시리즈 (사용자 큐레이션 270곳 분할)",
+    "summary_en": "Hongdae Restaurants Bars 60 — split from #158 user-curated 270 spots"
+  },
+  {
+    "id": "160",
+    "slug": "hongdae-cafe-dessert",
+    "title_kr": "홍대 카페·디저트 89곳 가이드",
+    "title_en": "Hongdae Cafe Dessert 89",
+    "category": "A",
+    "tags": [
+      "area",
+      "hongdae",
+      "foreigner",
+      "user-curated",
+      "dessert"
+    ],
+    "summary_kr": "홍대 카페·디저트 89곳 가이드 — #158 분할 시리즈 (사용자 큐레이션 270곳 분할)",
+    "summary_en": "Hongdae Cafe Dessert 89 — split from #158 user-curated 270 spots"
+  },
+  {
+    "id": "161",
+    "slug": "hongdae-culture",
+    "title_kr": "홍대 문화·체험 60곳 가이드",
+    "title_en": "Hongdae Culture Experience 60",
+    "category": "A",
+    "tags": [
+      "area",
+      "hongdae",
+      "foreigner",
+      "user-curated",
+      "culture"
+    ],
+    "summary_kr": "홍대 문화·체험 60곳 가이드 — #158 분할 시리즈 (사용자 큐레이션 270곳 분할)",
+    "summary_en": "Hongdae Culture Experience 60 — split from #158 user-curated 270 spots"
+  },
+  {
+    "id": "162",
+    "slug": "hongdae-shopping",
+    "title_kr": "홍대 쇼핑·사진 60곳 가이드",
+    "title_en": "Hongdae Shopping Photo 60",
+    "category": "A",
+    "tags": [
+      "area",
+      "hongdae",
+      "foreigner",
+      "user-curated",
+      "shopping"
+    ],
+    "summary_kr": "홍대 쇼핑·사진 60곳 가이드 — #158 분할 시리즈 (사용자 큐레이션 270곳 분할)",
+    "summary_en": "Hongdae Shopping Photo 60 — split from #158 user-curated 270 spots"
   }
 ]
