@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>46 · 한국 유심·이심·로밍 완전 가이드 — KeyChinGu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/main.css">
+<style>
+.detail-wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+}
+.breadcrumb {
+  font-size: 13px;
+  color: var(--text-soft);
+  margin-bottom: 24px;
+}
+.breadcrumb a { color: var(--red); font-weight: 600; }
+.detail-wrap h1 {
+  font-size: 28px; font-weight: 800;
+  color: var(--black); margin-bottom: 8px;
+}
+.detail-wrap h2 {
+  font-size: 22px; font-weight: 700;
+  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--red);
+}
+.detail-wrap h3 {
+  font-size: 17px; font-weight: 600;
+  color: var(--text-mid); margin-top: 20px; margin-bottom: 8px;
+}
+.detail-wrap p {
+  font-size: 15px; line-height: 1.7;
+  color: var(--text-mid); margin-bottom: 12px;
+}
+.detail-wrap ul {
+  padding-left: 20px; margin-bottom: 12px;
+}
+.detail-wrap li {
+  font-size: 14px; line-height: 1.6;
+  color: var(--text-mid); margin-bottom: 6px;
+}
+.detail-wrap table {
+  width: 100%; border-collapse: collapse;
+  margin-bottom: 16px; font-size: 13px;
+}
+.detail-wrap th {
+  background: var(--black); color: #fff;
+  padding: 10px 12px; text-align: left;
+  font-weight: 600; font-size: 11px;
+  text-transform: uppercase; letter-spacing: 0.06em;
+}
+.detail-wrap td {
+  padding: 10px 12px; border-bottom: 1px solid var(--border);
+  color: var(--text-mid);
+}
+.detail-wrap tr:nth-child(even) td { background: rgba(0,0,0,0.02); }
+.detail-wrap hr {
+  border: none; height: 1px;
+  background: var(--border); margin: 24px 0;
+}
+.detail-wrap code {
+  background: rgba(33,140,204,0.08);
+  padding: 2px 6px; border-radius: 4px;
+  font-size: 13px; color: var(--blue);
+}
+.detail-nav {
+  display: flex; justify-content: space-between;
+  margin-top: 48px; padding-top: 20px;
+  border-top: 1px solid var(--border);
+  font-size: 14px; font-weight: 600;
+}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <div class="lang-switch">
+    <a href="../content/sim-roaming.html" class="active">KR</a>
+    <a href="../content/sim-roaming.en.html" >EN</a>
+  </div>
+</header>
+
+<div class="detail-wrap">
+  <div class="breadcrumb"><a href="../index.html">전체 가이드</a> &rsaquo; 46 · 한국 유심·이심·로밍 완전 가이드</div>
+  <h1>46 · 한국 유심·이심·로밍 완전 가이드 — 도착 30분 안에 데이터 켜는 법</h1>
+<p>&gt; 마스터리스트 ID: <strong>082 (H-Practical)</strong> · Priority: <strong>P1</strong> · 타겟: <strong>EN● · JP● · CN●</strong></p>
+<p>&gt; 소스: 인천국제공항 통신사 부스 운영 정보(2026-04 기준), 주요 글로벌 eSIM 플랫폼(Airalo·Klook·KKday·Holafly) 공식 요금표, 한국 3대 통신사(KT·SKT·LG U+) 단기 외국인 요금제 — 모두 2026-04-27 시점 검증</p>
+<p>&gt; 팩트 기준일: <strong>2026-04-27</strong></p>
+<hr>
+<h2>한 줄 소개</h2>
+<p>한국 여행 모바일 데이터는 <strong>이심(eSIM) &gt; 유심(physical SIM) &gt; 포켓 와이파이 &gt; 로밍</strong> 순으로 합리적이다. 인천공항 도착 30분 안에 켜는 것이 표준이고, 5G 무제한 7일이 ₩15,000~25,000 선이면 정상 가격대다. 이 가이드는 &quot;어떤 옵션·어디서·얼마&quot;의 외국인 3대 질문을 한 번에 정리한다.</p>
+<hr>
+<h2>추천 대상</h2>
+<ul>
+<li><strong>iPhone XS 이상·Galaxy S20 이상 사용자</strong> — 이심 1순위. 도착 전 미리 활성화 가능</li>
+<li><strong>단기(7일 이하) 솔로 여행자</strong> — 유심·이심 한 장이면 종료</li>
+<li><strong>2명 이상 일행</strong> — 포켓 와이파이 1대 공유가 인당 가장 저렴</li>
+<li><strong>다국가(한·일·동남아) 동시 방문</strong> — 글로벌 이심(Airalo Asialink) 1장이 핸들링 최소</li>
+<li><strong>출장·장기(15일+) 체류자</strong> — 한국 로컬 통신사 단기 요금제(KT olleh)가 1GB 단가 최저</li>
+<li><strong>자녀 동반 가족</strong> — 포켓 와이파이 + 부모 로밍 백업이 안정성 ↑</li>
+</ul>
+<hr>
+<h2>1. 4가지 옵션 — 한눈에 비교</h2>
+<table><thead><tr>
+<th>옵션</th>
+<th>가격(7일 무제한 기준)</th>
+<th>활성화 시점</th>
+<th>핵심 장점</th>
+<th>핵심 단점</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>이심 (eSIM)</strong></td>
+<td>₩12,000~22,000</td>
+<td>출발 전 또는 도착 즉시</td>
+<td>카드 갈아끼울 필요 없음·번호 2개 운영</td>
+<td>iPhone XS 이상 / Galaxy S20 이상 한정</td>
+</tr>
+<tr>
+<td><strong>유심 (Physical SIM)</strong></td>
+<td>₩18,000~30,000</td>
+<td>공항·시내 매장 픽업</td>
+<td>모든 폰 호환·번호 1개 안정</td>
+<td>기존 SIM 분실 위험·반납 불필요</td>
+</tr>
+<tr>
+<td><strong>포켓 와이파이</strong></td>
+<td>₩30,000~50,000(₩4,500/일)</td>
+<td>공항 카운터 픽업</td>
+<td>5명까지 공유·노트북 가능</td>
+<td>추가 기기 휴대·배터리 부담</td>
+</tr>
+<tr>
+<td><strong>로밍 (자국 통신사)</strong></td>
+<td>$10~25/일(국가별)</td>
+<td>자동 (출발 전 신청)</td>
+<td>자국 번호 그대로</td>
+<td>1주일 기준 가장 비쌈·속도 제한 가능</td>
+</tr>
+</tbody></table>
+<p><strong>결론</strong>: 7일 이하 여행 + iPhone/Galaxy 신형이면 <strong>이심</strong> 1순위. 기기 미지원이면 <strong>유심</strong>, 다인원이면 <strong>포켓 와이파이</strong>.</p>
+<hr>
+<h2>2. 이심 (eSIM) — 가장 빠르고 가장 저렴</h2>
+<h3>2-1. 글로벌 이심 플랫폼 4사 비교 (한국 7일 무제한 기준)</h3>
+<table><thead><tr>
+<th>플랫폼</th>
+<th>가격(7일 무제한)</th>
+<th>통신망</th>
+<th>활성화 방식</th>
+<th>외국인 후기</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>Airalo (KoreaLink)</strong></td>
+<td>$11~16 (₩15,000~22,000)</td>
+<td>KT 망</td>
+<td>QR 스캔·앱 내 발급 즉시</td>
+<td>●● 가장 대중적·앱 한글/영어</td>
+</tr>
+<tr>
+<td><strong>Klook eSIM</strong></td>
+<td>₩14,500~18,000</td>
+<td>KT 또는 LG U+ 망</td>
+<td>QR 발송·예약 시 한국 전화번호 선택 가능</td>
+<td>● 한국 가맹점 할인 연계</td>
+</tr>
+<tr>
+<td><strong>KKday eSIM</strong></td>
+<td>₩13,000~17,000</td>
+<td>SKT 또는 KT 망</td>
+<td>메일 QR 발송</td>
+<td>● 일본·대만에서 강세</td>
+</tr>
+<tr>
+<td><strong>Holafly</strong></td>
+<td>$19~27 (₩26,000~37,000)</td>
+<td>KT 망</td>
+<td>앱 활성화</td>
+<td>○ 가격 상위·고객지원 강함</td>
+</tr>
+</tbody></table>
+<p>→ <strong>솔로 여행자 베스트</strong>: Airalo KoreaLink 7일 무제한 / <strong>다국가 여행자</strong>: Airalo Asialink (한·일·대만·동남아 묶음).</p>
+<h3>2-2. 이심 활성화 절차 (3단계)</h3>
+<p>1. <strong>출국 전 1~2일</strong> — 플랫폼에서 결제 → 메일/앱으로 QR 코드 수령</p>
+<p>2. <strong>출국 전 또는 비행기 안</strong> — 폰 설정 &gt; 모바일 통신 &gt; <strong>이심 추가</strong> &gt; QR 스캔 (Wi-Fi 환경 필요)</p>
+<p>3. <strong>인천공항 착륙 후</strong> — 비행기 모드 해제 → 자동으로 KT/LG U+ 5G 잡힘. <strong>기본 회선을 이심으로 전환</strong> 잊지 말 것</p>
+<p><strong>주의</strong>: 자국 번호로 통화·SMS는 받아야 하면 <strong>데이터 회선만 이심</strong>으로 두고, 자국 SIM은 <strong>음성·SMS 전용</strong>으로 유지.</p>
+<h3>2-3. 이심 지원 기기 빠른 확인</h3>
+<table><thead><tr>
+<th>제조사</th>
+<th>지원 모델 (한국 출시 기준)</th>
+</tr></thead><tbody>
+<tr>
+<td>Apple</td>
+<td>iPhone XS / XR 이상 (2018~)</td>
+</tr>
+<tr>
+<td>삼성</td>
+<td>Galaxy S20 / Note 20 / Z Fold 2 / Z Flip 이상 (한국·미국 모델은 제외 케이스 있음 — 주의)</td>
+</tr>
+<tr>
+<td>Google</td>
+<td>Pixel 3 이상</td>
+</tr>
+<tr>
+<td>기타</td>
+<td>화웨이·샤오미 일부 글로벌 모델 / 한국 내수용은 미지원 다수</td>
+</tr>
+</tbody></table>
+<p><strong>삼성 한국 내수용 주의</strong>: 한국에서 산 갤럭시는 <strong>이심 미지원</strong>인 경우가 있음 (출고 펌웨어 차이). 외국인 본인 휴대폰만 적용.</p>
+<hr>
+<h2>3. 유심 (Physical SIM) — 가장 호환성 높은 선택</h2>
+<h3>3-1. 인천공항 도착 즉시 픽업 — 부스 4곳</h3>
+<table><thead><tr>
+<th>부스</th>
+<th>위치 (인천 T1·T2)</th>
+<th>운영시간</th>
+<th>7일 무제한 가격</th>
+<th>영문 응대</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>KT olleh roaming center</strong></td>
+<td>T1 1층 입국장 5번 출구 / T2 1층 입국장 14번 게이트</td>
+<td>24시간</td>
+<td>₩27,500 (5G 7일)</td>
+<td>●●</td>
+</tr>
+<tr>
+<td><strong>SK telecom (SK telink)</strong></td>
+<td>T1 1층 입국장 6번 출구 / T2 3층 출국장 일부</td>
+<td>06:00~22:00</td>
+<td>₩28,000 (5G 7일)</td>
+<td>●●</td>
+</tr>
+<tr>
+<td><strong>LG U+ roaming</strong></td>
+<td>T1 1층 입국장 7번 출구 인근</td>
+<td>06:00~21:30</td>
+<td>₩25,000 (5G 7일)</td>
+<td>●</td>
+</tr>
+<tr>
+<td><strong>Chingu Mobile (다국적 부스)</strong></td>
+<td>T1 1층 입국장 7번 출구 / T2 동일</td>
+<td>06:00~22:00</td>
+<td>₩18,000~22,000 (LTE/5G 혼합)</td>
+<td>●●</td>
+</tr>
+</tbody></table>
+<p>→ <strong>24시간 픽업 가능한 곳</strong>: KT olleh가 유일. 새벽 도착편 승객은 KT 권장.</p>
+<h3>3-2. 시내 픽업 — 공항보다 ₩2,000~5,000 저렴</h3>
+<table><thead><tr>
+<th>매장</th>
+<th>위치</th>
+<th>7일 무제한</th>
+<th>비고</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>명동 글로벌 KT 플라자</strong></td>
+<td>중구 명동길 일대</td>
+<td>₩22,000</td>
+<td>영문 응대·여권 필수</td>
+</tr>
+<tr>
+<td><strong>홍대입구역 KT 매장</strong></td>
+<td>마포구 양화로 188</td>
+<td>₩22,000</td>
+<td>외국인 손님 비율 높음</td>
+</tr>
+<tr>
+<td><strong>이태원 LG U+</strong></td>
+<td>용산구 이태원로 일대</td>
+<td>₩20,000</td>
+<td>영어 100% 응대</td>
+</tr>
+<tr>
+<td><strong>Klook·KKday 픽업 라커</strong></td>
+<td>명동·홍대·강남 일부</td>
+<td>₩15,000~18,000</td>
+<td>사전 결제 후 무인 픽업</td>
+</tr>
+</tbody></table>
+<p><strong>공항 vs 시내 결정 기준</strong>:</p>
+<ul>
+<li>새벽 도착·즉시 데이터 필요 → <strong>공항 KT</strong></li>
+<li>도착 후 호텔에서 점심 후 여유 → <strong>시내 매장</strong>(₩5,000 절약)</li>
+</ul>
+<h3>3-3. 유심 교체 절차 (5단계, 5분)</h3>
+<p>1. 핸드폰 끄기</p>
+<p>2. 클립으로 SIM 트레이 열기 (트레이 핀은 호텔 프런트에 요청 가능)</p>
+<p>3. <strong>자국 SIM은 별도 케이스(매장에서 무료 제공)에 보관</strong> — 분실 주의</p>
+<p>4. 한국 SIM 삽입 후 핸드폰 켜기</p>
+<p>5. <strong>APN 자동 설정</strong> — 한국 SIM은 IMSI 기반 자동 인식. 안되면 매장 즉석 도움 받기</p>
+<p><strong>주의</strong>: 자국 SIM 분실 시 자국 통신사 재발급 비용이 한국 SIM 가격보다 비쌈. 트레이 핀과 함께 <strong>지퍼백 1개</strong>에 넣어 캐리어 깊숙이 보관.</p>
+<hr>
+<h2>4. 포켓 와이파이 (Pocket Wi-Fi) — 일행 2명 이상 베스트</h2>
+<h3>4-1. 주요 업체 비교</h3>
+<table><thead><tr>
+<th>업체</th>
+<th>일 요금</th>
+<th>보증금</th>
+<th>픽업 위치</th>
+<th>배터리</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>WiFi Korea</strong></td>
+<td>₩4,500</td>
+<td>₩100,000 (반납 시 환불)</td>
+<td>인천 T1·T2 / 김포 / 서울역</td>
+<td>8~10시간</td>
+</tr>
+<tr>
+<td><strong>KT Roaming Egg</strong></td>
+<td>₩5,500</td>
+<td>₩200,000</td>
+<td>공항 KT 부스</td>
+<td>6~8시간</td>
+</tr>
+<tr>
+<td><strong>Klook Pocket Wi-Fi</strong></td>
+<td>₩4,000~5,000</td>
+<td>₩50,000</td>
+<td>호텔 배송 가능</td>
+<td>8시간</td>
+</tr>
+<tr>
+<td><strong>PlayWifi</strong></td>
+<td>₩3,500~4,500</td>
+<td>₩30,000</td>
+<td>공항 / 시내 호텔 배송</td>
+<td>10시간</td>
+</tr>
+</tbody></table>
+<p>→ <strong>2~5인 일행 1대 공유</strong>: 일평균 인당 ₩900~2,200 → 데이터 옵션 중 가장 저렴.</p>
+<h3>4-2. 포켓 와이파이 단점 — 주의사항</h3>
+<ul>
+<li><strong>추가 기기 + 충전기 휴대</strong> — 캐리어 부피 ↑</li>
+<li><strong>배터리 방전</strong> — 외출 8시간 이상이면 보조배터리 필수</li>
+<li><strong>반납 의무</strong> — 출국 시 반드시 카운터 반납 (분실 시 보증금 차감 ₩100,000~)</li>
+<li><strong>2명 이상 분리 행동 시</strong> — 한쪽 데이터 끊김 → 카톡 등으로 위치 공유 어려움</li>
+</ul>
+<p>→ <strong>솔로 여행자에게는 비추천</strong>. 2명 이상 일행에 한해 권장.</p>
+<hr>
+<h2>5. 로밍 (자국 통신사) — 가장 비싸지만 가장 편함</h2>
+<h3>5-1. 주요 통신사 한국 로밍 요금 (자국 출국 전 신청)</h3>
+<table><thead><tr>
+<th>자국 통신사</th>
+<th>1일 정액</th>
+<th>무제한 여부</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>AT&amp;T (미국)</strong> International Day Pass</td>
+<td>$10/일</td>
+<td>데이터 무제한·속도 제한</td>
+</tr>
+<tr>
+<td><strong>Verizon (미국)</strong> TravelPass</td>
+<td>$10/일</td>
+<td>무제한·속도 제한</td>
+</tr>
+<tr>
+<td><strong>NTT 도코모 (일본)</strong> 海外パケ・ホーダイ</td>
+<td>¥1,980/일</td>
+<td>24시간 무제한</td>
+</tr>
+<tr>
+<td><strong>SoftBank (일본)</strong> アメリカ放題 → 한국 별도</td>
+<td>¥980~1,980/일</td>
+<td>일별</td>
+</tr>
+<tr>
+<td><strong>차이나 모바일 (중국)</strong> 한국 로밍</td>
+<td>¥30~50/일</td>
+<td>LTE·일부 5G</td>
+</tr>
+<tr>
+<td><strong>EE (영국)</strong> 1일 패스</td>
+<td>£6.50/일</td>
+<td>무제한</td>
+</tr>
+</tbody></table>
+<p>→ 7일 여행 = <strong>$70~140 / ¥7,000~14,000 / £45+</strong>. 한국 이심 7일 ₩15,000(~$11)의 <strong>6~10배</strong>.</p>
+<h3>5-2. 로밍이 정답인 경우</h3>
+<ul>
+<li><strong>3일 이하 출장</strong> — 이심·유심 셋업 시간 아까울 때</li>
+<li><strong>자국 번호로 SMS 인증 빈번</strong> — 은행·증권 OTP 매번 받아야 하는 사람</li>
+<li><strong>휴대폰이 이심·유심 미지원</strong> — 옛날 폰</li>
+</ul>
+<p>이외 99%의 외국인 관광객은 <strong>이심 또는 유심</strong> 권장.</p>
+<hr>
+<h2>6. 가격·시간 표준표 (2026-04 기준)</h2>
+<table><thead><tr>
+<th>항목</th>
+<th>7일 무제한 가격대</th>
+<th>활성화 시간</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>이심 (Airalo·Klook·KKday)</strong></td>
+<td>₩12,000~22,000</td>
+<td>5분 (Wi-Fi 환경)</td>
+</tr>
+<tr>
+<td><strong>유심 (공항)</strong></td>
+<td>₩25,000~28,000</td>
+<td>5분 (대기 5~10분)</td>
+</tr>
+<tr>
+<td><strong>유심 (시내)</strong></td>
+<td>₩18,000~22,000</td>
+<td>5분 (호텔 후 별도 일정)</td>
+</tr>
+<tr>
+<td><strong>포켓 와이파이 (1대 2~5인)</strong></td>
+<td>₩28,000~35,000 (일 ₩4,000~5,000)</td>
+<td>공항 카운터 즉시</td>
+</tr>
+<tr>
+<td><strong>로밍 (자국 통신사)</strong></td>
+<td>₩90,000~180,000 (일 $10+)</td>
+<td>자동·자국 출국 전 신청</td>
+</tr>
+</tbody></table>
+<p><strong>1인 여행 1주일 베스트</strong>: Airalo KoreaLink eSIM 7일 — ₩15,000 / <strong>2~5인 가족 1주일</strong>: 포켓 와이파이 1대 공유 — 인당 ₩6,000~14,000.</p>
+<hr>
+<h2>7. 자주 묻는 질문 (FAQ)</h2>
+<p><strong>Q1. 한국 도착 후 비행기에서 내려서 30분 안에 데이터 켤 수 있나요?</strong></p>
+<p>A. 이심은 가능. 출국 전 이심 추가 + QR 스캔까지 끝내두면 비행기 모드 해제 즉시 자동 연결. 유심은 부스 대기 5~15분 추가.</p>
+<p><strong>Q2. 한국 번호가 없어도 한국 앱(카카오톡·네이버·쿠팡) 가입 가능한가요?</strong></p>
+<p>A. 카카오톡은 자국 번호로 가입 가능. 네이버·쿠팡은 한국 번호 필요한 경우 다수 — 단기 여행자는 가입 불필요.</p>
+<p><strong>Q3. 이심으로 한국 전화번호를 받을 수 있나요?</strong></p>
+<p>A. KT olleh 단기 외국인 이심 요금제(7일 ₩27,500)는 한국 번호 부여. Airalo·Klook의 일반 이심은 데이터 전용·번호 없음.</p>
+<p><strong>Q4. 자국 번호로 음성 통화 받아야 해요. 어떻게 하나요?</strong></p>
+<p>A. <strong>듀얼 SIM 모드</strong> 활용. 한국 데이터 = 이심, 자국 음성·SMS = 자국 SIM. 양쪽 동시 활성화 → iPhone·Galaxy 모두 가능.</p>
+<p><strong>Q5. 5G 표시는 뜨는데 속도가 LTE 같아요.</strong></p>
+<p>A. KT·LG U+ 5G 망은 도심·강남·홍대·이태원에서 안정적이지만, 지방 또는 지하철 일부에서는 LTE 폴백. 정상 동작.</p>
+<p><strong>Q6. 데이터 무제한이 진짜 무제한인가요?</strong></p>
+<p>A. 표면상 무제한이지만 <strong>일일 5~10GB 초과 시 속도 제한</strong>(QoS) 정책이 일반적. 영상 스트리밍 종일 사용자는 KT olleh 단기 요금제(7일 ₩27,500, 진짜 무제한) 권장.</p>
+<p><strong>Q7. 한국에서 트위터·구글·왓츠앱 다 잘 되나요?</strong></p>
+<p>A. 네. 한국은 인터넷 검열 없음. 모든 글로벌 서비스 정상 작동. 단, 일부 K-방송 사이트는 해외 IP 차단 — 그러나 한국 SIM 사용 중이면 한국 IP라 문제 없음.</p>
+<p><strong>Q8. 이심을 잘못 추가했어요. 삭제하면 환불되나요?</strong></p>
+<p>A. Airalo·Klook의 이심은 활성화 전 삭제 시 환불 가능(앱 내 채팅). 활성화 후에는 환불 불가. 활성화는 <strong>한국 도착 후</strong>로 미루는 것이 안전.</p>
+<hr>
+<h2>8. 외국인 체크리스트 — 출국 1일 전</h2>
+<ul>
+<li>[ ] 휴대폰 이심 지원 여부 확인 (설정 &gt; 모바일 &gt; 이심 추가 메뉴 존재)</li>
+<li>[ ] 이심 사전 결제 (Airalo·Klook·KKday 중 1개 — 본 가이드 §2)</li>
+<li>[ ] <strong>이심 QR 코드를 스크린샷 + 인쇄</strong> 백업 (메일 분실 대비)</li>
+<li>[ ] 자국 SIM 보관용 케이스·트레이 핀 준비</li>
+<li>[ ] 로밍이 자동으로 켜지지 않도록 자국 통신사 데이터 로밍 OFF 설정 (예상치 못한 청구 방지)</li>
+<li>[ ] <strong>한국 도착 후 한국 SIM 활성화 + 자국 음성 회선 OFF</strong> 처리</li>
+</ul>
+<hr>
+<h2>9. 관련 콘텐츠 (키친구 내부 연결)</h2>
+<ul>
+<li><code>20_교통_내비_가이드.md</code> — 데이터 켜진 후 가장 먼저 깔 앱(네이버지도·카카오T)</li>
+<li><code>41_24시간_쇼핑_스팟_지도.md</code> — 인천공항 24h 편의점에서 한국 SIM 즉시 구매 가능 매장</li>
+<li><code>45_코인빨래방_가이드.md</code> — 데이터 + 결제 카드(T-money) 듀얼 셋업 일관 흐름</li>
+</ul>
+<hr>
+<p><strong>팩트 기준일</strong>: 2026-04-27 (인천공항 부스 4사 + 글로벌 이심 4사 공식 요금 기준)</p>
+<p><strong>업데이트 주기</strong>: 분기 1회 (요금제 개편·신규 부스 반영)</p>
+<p><strong>검증 게이트</strong>: Gate 1 verify_places(공항 부스 좌표) · Gate 2 check_translations(EN/CN 번역 시) · Gate 3 validate_carousels(추후 캐러셀 생성 시)</p>
+  <div class="detail-nav">
+    <div><a href="coin-laundry.html" style="color:var(--red);">&larr; 45 · 서울 코인빨래방 완전 가이드</a></div>
+    <div><a href="oliveyoung.html" style="color:var(--red);">47 · 올리브영 실구매 완전 가이드 &rarr;</a></div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <p><a href="https://instagram.com/keychingu.korea" target="_blank">@keychingu.korea</a> &mdash; Seoul for MZ FIT Travelers</p>
+</footer>
+</body>
+</html>

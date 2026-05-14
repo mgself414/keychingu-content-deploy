@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>41 · Seoul's 24-Hour Shopping Map — KeyChinGu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/main.css">
+<style>
+.detail-wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+}
+.breadcrumb {
+  font-size: 13px;
+  color: var(--text-soft);
+  margin-bottom: 24px;
+}
+.breadcrumb a { color: var(--red); font-weight: 600; }
+.detail-wrap h1 {
+  font-size: 28px; font-weight: 800;
+  color: var(--black); margin-bottom: 8px;
+}
+.detail-wrap h2 {
+  font-size: 22px; font-weight: 700;
+  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--red);
+}
+.detail-wrap h3 {
+  font-size: 17px; font-weight: 600;
+  color: var(--text-mid); margin-top: 20px; margin-bottom: 8px;
+}
+.detail-wrap p {
+  font-size: 15px; line-height: 1.7;
+  color: var(--text-mid); margin-bottom: 12px;
+}
+.detail-wrap ul {
+  padding-left: 20px; margin-bottom: 12px;
+}
+.detail-wrap li {
+  font-size: 14px; line-height: 1.6;
+  color: var(--text-mid); margin-bottom: 6px;
+}
+.detail-wrap table {
+  width: 100%; border-collapse: collapse;
+  margin-bottom: 16px; font-size: 13px;
+}
+.detail-wrap th {
+  background: var(--black); color: #fff;
+  padding: 10px 12px; text-align: left;
+  font-weight: 600; font-size: 11px;
+  text-transform: uppercase; letter-spacing: 0.06em;
+}
+.detail-wrap td {
+  padding: 10px 12px; border-bottom: 1px solid var(--border);
+  color: var(--text-mid);
+}
+.detail-wrap tr:nth-child(even) td { background: rgba(0,0,0,0.02); }
+.detail-wrap hr {
+  border: none; height: 1px;
+  background: var(--border); margin: 24px 0;
+}
+.detail-wrap code {
+  background: rgba(33,140,204,0.08);
+  padding: 2px 6px; border-radius: 4px;
+  font-size: 13px; color: var(--blue);
+}
+.detail-nav {
+  display: flex; justify-content: space-between;
+  margin-top: 48px; padding-top: 20px;
+  border-top: 1px solid var(--border);
+  font-size: 14px; font-weight: 600;
+}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <a href="../en/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <div class="lang-switch">
+    <a href="../content/24h-shopping.html" >KR</a>
+    <a href="../content/24h-shopping.en.html" class="active">EN</a>
+  </div>
+</header>
+
+<div class="detail-wrap">
+  <div class="breadcrumb"><a href="../en/index.html">All Guides</a> &rsaquo; 41 · Seoul's 24-Hour Shopping Map</div>
+  <h1>41 · Seoul&#x27;s 24-Hour Shopping Map — Why the Lights Never Go Out</h1>
+<p>&gt; Master List ID: <strong>054 (F-Shopping)</strong> · Priority: <strong>P1</strong> · Targets: <strong>CN● · JP○ · EN○</strong></p>
+<p>&gt; Sources: souvenir_research / Dongdaemun late-night shopping notes / KTO statistics</p>
+<p>&gt; (souvenir_research/50_seoul_cluster_map.json)</p>
+<hr>
+<h2>In One Line</h2>
+<p>Seoul is effectively a 24-hour shopping city thanks to <strong>three pillars: Dongdaemun (동대문), 24-hour convenience stores, and Incheon Airport (인천공항).</strong> Even past the standard 22:00 closing time, you can complete an entire shopping run — including tax refund — by 5 AM. This guide maps that route on a single page.</p>
+<hr>
+<h2>Who This Is For</h2>
+<ul>
+<li><strong>FIT travelers on long layovers</strong> of 6 to 12 hours in Seoul</li>
+<li><strong>Chinese and Japanese tourists</strong> whose only free time falls after 22:00 once a group itinerary wraps</li>
+<li><strong>Wholesale fashion buyers</strong> chasing Dongdaemun&#x27;s pre-dawn market</li>
+<li><strong>Last-minute shoppers</strong> with red-eye flights leaving Seoul that same night</li>
+</ul>
+<hr>
+<h2>1. The Three Pillars of 24-Hour Shopping in Seoul</h2>
+<table><thead><tr>
+<th>Pillar</th>
+<th>Main Area</th>
+<th>Core Hours</th>
+<th>Main Items</th>
+<th>Section</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>Wholesale &amp; retail fashion</strong></td>
+<td>Dongdaemun (동대문, East Gate)</td>
+<td>22:00 ~ 05:00</td>
+<td>K-fashion, fabric, accessories</td>
+<td>§2</td>
+</tr>
+<tr>
+<td><strong>24-hour convenience stores</strong></td>
+<td>Myeongdong (명동), Hongdae (홍대), Gangnam (강남), citywide</td>
+<td><strong>24 hours</strong></td>
+<td>K-food, snacks, daily goods</td>
+<td>§3</td>
+</tr>
+<tr>
+<td><strong>Airport duty-free</strong></td>
+<td>Incheon (인천) T1·T2, both arrival and departure halls</td>
+<td>05:30 ~ 23:00 + select 24h zones</td>
+<td>Duty-free K-Beauty, liquor, cigarettes</td>
+<td>§4</td>
+</tr>
+</tbody></table>
+<p>Standard retail hours in Korea are <strong>10:00 to 22:00</strong>. Anything outside those three pillars closes at 22:00, no exceptions. So when someone says &quot;let&#x27;s go shopping after 10 PM&quot; in Seoul, it always means one of these three.</p>
+<hr>
+<h2>2. Dongdaemun (동대문) — Seoul&#x27;s Late-Night Fashion Heart</h2>
+<p><strong>For the deep dive</strong>: see the Dongdaemun late-night shopping guide (31_동대문_심야_쇼핑.md). This guide treats Dongdaemun as a connector inside the bigger 24-hour map.</p>
+<h3>2-1. Key Stores at a Glance</h3>
+<table><thead><tr>
+<th>Store</th>
+<th>Address</th>
+<th>Hours</th>
+<th>Notes</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>Doota! Mall (두타몰)</strong></td>
+<td>Seoul Jung-gu Euljiro 275 (서울특별시 중구 을지로 275)</td>
+<td>11:00–05:00</td>
+<td>Retail + duty-free, foreigner-friendly (tax refund booth on 1F)</td>
+</tr>
+<tr>
+<td><strong>Migliore (밀리오레)</strong></td>
+<td>Seoul Jung-gu Euljiro 238 (서울특별시 중구 을지로 238)</td>
+<td>10:30–05:00</td>
+<td>Trendy, low-price retail fashion</td>
+</tr>
+<tr>
+<td><strong>APM Luxe</strong></td>
+<td>Seoul Jung-gu Euljiro 272 (서울특별시 중구 을지로 272)</td>
+<td>20:00–05:00</td>
+<td>Late-night specialist retail mall</td>
+</tr>
+<tr>
+<td><strong>Kwanghee Shopping Arcade (광희상가)</strong></td>
+<td>Seoul Jung-gu Gwanghui-dong (서울특별시 중구 광희동 일대)</td>
+<td>21:00–06:00</td>
+<td>Wholesale-driven, small-quantity individual purchase possible with negotiation</td>
+</tr>
+<tr>
+<td><strong>Dongdaemun Design Plaza / DDP (동대문디자인플라자)</strong></td>
+<td>Seoul Jung-gu Euljiro 281 (서울특별시 중구 을지로 281)</td>
+<td>Exterior open 24h</td>
+<td>Zaha Hadid-designed landmark, prime night photo spot</td>
+</tr>
+</tbody></table>
+<h3>2-2. The Pre-Dawn Dongdaemun Route (23:00 → 04:00)</h3>
+<p>1. <strong>23:00</strong> — Dongdaemun History &amp; Culture Park Station (동대문역사문화공원역) on Line 2, Exit 14. Walk to Doota (3 min).</p>
+<p>2. <strong>23:30</strong> — Start at Doota&#x27;s 8F and work down (5F women&#x27;s, 4F men&#x27;s, 3F accessories).</p>
+<p>3. <strong>01:00</strong> — Move to APM Luxe (5 min on foot). Buyer-focused floors are most active now.</p>
+<p>4. <strong>02:30</strong> — Migliore B1 late-night food court. Gukbap (국밥, rice soup) and ramen run ₩5,000~8,000.</p>
+<p>5. <strong>03:30</strong> — Round the wholesale floors at Kwanghee. For individual buyers, ask for single-piece purchase (낱개 가능?) and expect a 10–20% premium.</p>
+<p>6. <strong>04:30</strong> — Walk to DDP (8 min). Take night photos, then catch the <strong>first train at Dongdaemun Station (동대문역) on Line 4 at 05:30.</strong></p>
+<h3>2-3. Watch Out For</h3>
+<ul>
+<li>Wholesale arcades default to <strong>bundles of 5–10 pieces</strong> (5~10장 묶음). Buying singles means a 10–20% markup.</li>
+<li>Some stalls take <strong>cash only.</strong> Doota and APM Luxe accept cards including foreign-issued ones.</li>
+<li>Tax refund happens at the <strong>Doota 1F booth</strong> or the booth next to Dongdaemun History &amp; Culture Park (passport required).</li>
+</ul>
+<hr>
+<h2>3. Convenience Stores — Seoul&#x27;s Citywide 24-Hour Mini Mart</h2>
+<p>Seoul&#x27;s three big convenience-store chains — <strong>CU, GS25, and Emart24</strong> — run roughly 99% of their locations 24 hours a day. They are the most realistic late-night shopping channel for any visitor.</p>
+<h3>3-1. Top Souvenirs to Buy at a Convenience Store (Practical Gifts)</h3>
+<table><thead><tr>
+<th>Item</th>
+<th>Price</th>
+<th>Why It Sells</th>
+<th>Best Locations</th>
+</tr></thead><tbody>
+<tr>
+<td>HBAF Honey Butter Almond (허니버터아몬드)</td>
+<td>₩5,000~9,000</td>
+<td>#1 repeat-purchase item among Chinese tourists</td>
+<td>Any branch</td>
+</tr>
+<tr>
+<td>Market O Real Brownie (마켓오 리얼 브라우니)</td>
+<td>₩7,000~12,000 (box)</td>
+<td>Strong preference among Japanese tourists</td>
+<td>Myeongdong, Hongdae</td>
+</tr>
+<tr>
+<td>Choco Pie Jeong Gift Set (초코파이 정 선물세트)</td>
+<td>₩10,000~18,000</td>
+<td>English-speaking travelers&#x27; go-to airport gift</td>
+<td>Incheon Airport, Myeongdong</td>
+</tr>
+<tr>
+<td>K-ramyeon 3-pack — Shin Ramyun / Buldak / Chapagetti (신라면·불닭·짜파게티)</td>
+<td>₩8,000~15,000</td>
+<td>Universal across all targets</td>
+<td>Any branch</td>
+</tr>
+<tr>
+<td>Banana Milk character keychains &amp; goods (바나나맛 우유 굿즈)</td>
+<td>₩5,000~15,000</td>
+<td>Popular among Japanese and Chinese MZ</td>
+<td>Myeongdong, Hongdae</td>
+</tr>
+</tbody></table>
+<h3>3-2. Notable Late-Night Branches</h3>
+<table><thead><tr>
+<th>Branch</th>
+<th>Address</th>
+<th>Notes</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>CU Myeongdong Central Branch (명동중앙점)</strong></td>
+<td>Seoul Jung-gu Myeongdong-gil 14 (서울특별시 중구 명동길 14)</td>
+<td>Tourist-focused aisle; English, Chinese, and Japanese-speaking staff</td>
+</tr>
+<tr>
+<td><strong>GS25 Hongdae Walking Street Branch (홍대 걷고싶은거리점)</strong></td>
+<td>Seoul Mapo-gu Hongik-ro 6-gil (서울특별시 마포구 홍익로 6길)</td>
+<td>24h K-food tasting corner</td>
+</tr>
+<tr>
+<td><strong>Emart24 Gangnam Station Exit 10 Branch (강남역 10번 출구점)</strong></td>
+<td>Seoul Gangnam-gu Gangnam-daero 396 (서울특별시 강남구 강남대로 396)</td>
+<td>Carries select duty-free liquor and cigarettes</td>
+</tr>
+<tr>
+<td><strong>CU Incheon Airport T1 3F Branch (인천공항 T1 3층)</strong></td>
+<td>Incheon Jung-gu Gonghang-ro 272 (인천광역시 중구 공항로 272)</td>
+<td>Last-minute snack run before departure</td>
+</tr>
+</tbody></table>
+<h3>3-3. Convenience Store Tips</h3>
+<ul>
+<li><strong>7-Eleven only runs 24h at select branches</strong> — plan your route around CU and GS25 instead.</li>
+<li><strong>Cards, Samsung Pay, and Apple Pay all work 100%</strong> — convenience stores have the widest foreign-card acceptance in Korea.</li>
+<li><strong>No tax refund at regular convenience stores.</strong> For duty-free, see §4 (airport).</li>
+<li>Refrigerated items (such as banana milk character goods, which can be transported unbagged) — be careful on long transfers.</li>
+</ul>
+<hr>
+<h2>4. Incheon Airport — Korea&#x27;s Only Genuinely 24-Hour Duty-Free</h2>
+<h3>4-1. Departure vs. Arrival Hall: Two Separate Worlds</h3>
+<p>Korea&#x27;s airport duty-free is structurally split between departure and arrival halls.</p>
+<table><thead><tr>
+<th>Zone</th>
+<th>Location</th>
+<th>Hours</th>
+<th>When You Use It</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>Departure duty-free</strong></td>
+<td>T1 3F, T2 3F</td>
+<td>05:30~22:30 (adjusted by flight schedule)</td>
+<td>1–3 hours before boarding</td>
+</tr>
+<tr>
+<td><strong>Arrival duty-free</strong></td>
+<td>T1 1F, T2 1F</td>
+<td><strong>24 hours at select stores</strong></td>
+<td>Right after arrival (start of trip)</td>
+</tr>
+<tr>
+<td><strong>Airport convenience stores</strong></td>
+<td>T1·T2 throughout</td>
+<td><strong>24 hours</strong></td>
+<td>Anytime</td>
+</tr>
+</tbody></table>
+<h3>4-2. Stores Open 24 Hours</h3>
+<table><thead><tr>
+<th>Store</th>
+<th>Terminal</th>
+<th>Notes</th>
+</tr></thead><tbody>
+<tr>
+<td>City Duty Free Arrival Hall Souvenir Zone (시티면세점 입국장 기념품존)</td>
+<td>T1</td>
+<td><strong>24 hours, 365 days at select sections</strong></td>
+</tr>
+<tr>
+<td>CU / GS25 Airport Branches</td>
+<td>T1·T2</td>
+<td>24h · snacks, drinks, daily essentials</td>
+</tr>
+<tr>
+<td>SM Duty Free T1 Specialty Counter (SM면세점 T1 특화 매대)</td>
+<td>T1</td>
+<td>Late-night low-cost gifts · limited operation 00:00–05:00</td>
+</tr>
+</tbody></table>
+<ul>
+<li><strong>Lotte, Shilla, and Shinsegae duty-free run 05:30 to 22:30.</strong> Late-night layover passengers only have arrival duty-free + convenience stores as options.</li>
+<li>Cigarettes and liquor at airport duty-free require <strong>passport scan at departure.</strong> Even at arrival duty-free, the bring-in cap is 1L liquor / 200 cigarettes.</li>
+</ul>
+<h3>4-3. Three-Hour Pre-Boarding Routine (Incheon T1)</h3>
+<p>1. <strong>T-180 min</strong> — Complete check-in and security (about 40 min total).</p>
+<p>2. <strong>T-140 min</strong> — Enter the 3F duty-free zone. Hit the K-Beauty floors at Lotte, Shilla, and Shinsegae in sequence.</p>
+<p>3. <strong>T-80 min</strong> — CU on 4F for honey butter almond and ramyeon sets.</p>
+<p>4. <strong>T-30 min</strong> — Move to gate. Quick last-minute check at the gate-side gift shop.</p>
+<hr>
+<h2>5. Time-of-Night Master Map</h2>
+<h3>🌙 22:00 ~ 24:00 — When Regular Stores Are Closing</h3>
+<ul>
+<li><strong>Open</strong>: Major Dongdaemun malls (Doota, Migliore), all convenience stores, select Olive Young Myeongdong (closes 23:00).</li>
+<li><strong>Best move</strong>: Head to Doota in Dongdaemun. Layover passengers should aim for the airport duty-free last-call window at 22:30.</li>
+<li><strong>Caution</strong>: Most road shops in Myeongdong and Hongdae are already shut by 22:00. Reconfirm your destination after 10 PM.</li>
+</ul>
+<h3>🌌 00:00 ~ 03:00 — Seoul&#x27;s Late-Night Prime Time</h3>
+<ul>
+<li><strong>Open</strong>: All Dongdaemun stores, all convenience stores, select arrival-hall duty-free at Incheon.</li>
+<li><strong>Best move</strong>: APM Luxe + Migliore B1 food court → wholesale rounds at Kwanghee.</li>
+<li><strong>Transport</strong>: Subway last train runs around midnight. If you miss it, taxi from Dongdaemun to most Seoul hotels runs ₩10,000~15,000.</li>
+</ul>
+<h3>🌅 03:00 ~ 06:00 — Last Round Before First Train</h3>
+<ul>
+<li><strong>Open</strong>: Most Dongdaemun arcades (Kwanghee until 06:00, Doota until 05:00).</li>
+<li><strong>Best move</strong>: Final wholesale buy at Kwanghee → DDP night photos → Dongdaemun Station first train at 05:30.</li>
+<li><strong>Taxi note</strong>: 20% surcharge between 00:00 and 04:00. Use the KakaoTaxi app.</li>
+</ul>
+<h3>☀️ 06:00 ~ 10:00 — Before Regular Retail Reopens</h3>
+<ul>
+<li><strong>Open</strong>: Convenience stores, some big-box marts (Emart from 7:00), hotel shops.</li>
+<li><strong>Best move</strong>: Have breakfast and wait for Myeongdong / Hongdae road shops to open at 10.</li>
+</ul>
+<hr>
+<h2>6. Payment, Currency Exchange, and Tax Refund</h2>
+<h3>6-1. Payment</h3>
+<ul>
+<li><strong>Cards</strong>: VISA, Mastercard, JCB, UnionPay (银联 / 은련) — accepted at all major Dongdaemun malls, convenience stores, and the airport.</li>
+<li><strong>Mobile pay</strong>: Samsung Pay (Korean-issued cards), Apple Pay (rolling out at select stores in 2026), WeChat Pay and Alipay (select Myeongdong and Dongdaemun stores).</li>
+<li><strong>Cash</strong>: Mandatory at Dongdaemun wholesale arcades and some traditional markets.</li>
+</ul>
+<h3>6-2. Currency Exchange</h3>
+<ul>
+<li><strong>24-hour exchange</strong>: Woori Bank Myeongdong booth (우리은행 명동 환전소, 08:00~22:00) and Incheon Airport exchange counters (T1 3F, 24 hours).</li>
+<li><strong>Late-night emergency</strong>: Convenience-store ATMs accept foreign cards (₩3,000~5,000 fee).</li>
+<li><strong>Tip</strong>: Keep ₩50,000~100,000 cash on hand. For larger purchases, card + tax refund is the better play.</li>
+</ul>
+<h3>6-3. Tax Refund (VAT Refund for Foreigners)</h3>
+<ul>
+<li><strong>Immediate refund</strong>: For purchases over ₩30,000, refunded at the store (monthly cap ₩5,000,000).</li>
+<li><strong>Airport refund</strong>: T1 3F kiosk or refund booth — passport, receipts, and unused goods required.</li>
+<li><strong>Refund cap</strong>: ₩1,000,000 per person per day, ₩5,000,000 per month.</li>
+</ul>
+<hr>
+<h2>7. Pre-Departure Checklist (Late-Night Shopping)</h2>
+<ul>
+<li>[ ] Passport (required for tax refund and duty-free)</li>
+<li>[ ] Two international cards (in case one fails or is lost)</li>
+<li>[ ] ₩50,000~100,000 cash for wholesale arcades</li>
+<li>[ ] KakaoTaxi app installed (supports EN / CN / JP)</li>
+<li>[ ] Hotel name card photo saved on phone (show to drivers)</li>
+<li>[ ] Outbound flight time confirmed (so you know your duty-free allowance)</li>
+</ul>
+<hr>
+<h2>8. Related Guides (KeyChinGu Internal)</h2>
+<ul>
+<li>31_Dongdaemun_late_night (31_동대문_심야_쇼핑.md) — Dongdaemun-specific deep dive</li>
+<li>18_Seoul_shopping_one_day (18_서울_쇼핑_1일_공략.md) — Daytime shopping district master plan</li>
+<li>05_24hr_food_guide (05_24시간_맛집.md) — Late-night food and gukbap routes between shopping stops</li>
+<li>20_transport_navigation (20_교통_내비_가이드.md) — Late-night taxi and first-train tactics</li>
+</ul>
+<hr>
+<p><strong>Fact base date</strong>: 2026-04-24</p>
+<p><strong>Update cadence</strong>: Quarterly (to reflect store-hour changes)</p>
+  <div class="detail-nav">
+    <div><a href="seoul-yajang.en.html" style="color:var(--red);">&larr; Seoul Yajang (야장) Culture Top 10</a></div>
+    <div><a href="coin-laundry.en.html" style="color:var(--red);">45 · Seoul Coin Laundry Complete Guide &rarr;</a></div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <p><a href="https://instagram.com/keychingu.korea" target="_blank">@keychingu.korea</a> &mdash; Seoul for MZ FIT Travelers</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>41 · 24시간 쇼핑 스팟 지도 — KeyChinGu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/main.css">
+<style>
+.detail-wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+}
+.breadcrumb {
+  font-size: 13px;
+  color: var(--text-soft);
+  margin-bottom: 24px;
+}
+.breadcrumb a { color: var(--red); font-weight: 600; }
+.detail-wrap h1 {
+  font-size: 28px; font-weight: 800;
+  color: var(--black); margin-bottom: 8px;
+}
+.detail-wrap h2 {
+  font-size: 22px; font-weight: 700;
+  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--red);
+}
+.detail-wrap h3 {
+  font-size: 17px; font-weight: 600;
+  color: var(--text-mid); margin-top: 20px; margin-bottom: 8px;
+}
+.detail-wrap p {
+  font-size: 15px; line-height: 1.7;
+  color: var(--text-mid); margin-bottom: 12px;
+}
+.detail-wrap ul {
+  padding-left: 20px; margin-bottom: 12px;
+}
+.detail-wrap li {
+  font-size: 14px; line-height: 1.6;
+  color: var(--text-mid); margin-bottom: 6px;
+}
+.detail-wrap table {
+  width: 100%; border-collapse: collapse;
+  margin-bottom: 16px; font-size: 13px;
+}
+.detail-wrap th {
+  background: var(--black); color: #fff;
+  padding: 10px 12px; text-align: left;
+  font-weight: 600; font-size: 11px;
+  text-transform: uppercase; letter-spacing: 0.06em;
+}
+.detail-wrap td {
+  padding: 10px 12px; border-bottom: 1px solid var(--border);
+  color: var(--text-mid);
+}
+.detail-wrap tr:nth-child(even) td { background: rgba(0,0,0,0.02); }
+.detail-wrap hr {
+  border: none; height: 1px;
+  background: var(--border); margin: 24px 0;
+}
+.detail-wrap code {
+  background: rgba(33,140,204,0.08);
+  padding: 2px 6px; border-radius: 4px;
+  font-size: 13px; color: var(--blue);
+}
+.detail-nav {
+  display: flex; justify-content: space-between;
+  margin-top: 48px; padding-top: 20px;
+  border-top: 1px solid var(--border);
+  font-size: 14px; font-weight: 600;
+}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <div class="lang-switch">
+    <a href="../content/24h-shopping.html" class="active">KR</a>
+    <a href="../content/24h-shopping.en.html" >EN</a>
+  </div>
+</header>
+
+<div class="detail-wrap">
+  <div class="breadcrumb"><a href="../index.html">전체 가이드</a> &rsaquo; 41 · 24시간 쇼핑 스팟 지도</div>
+  <h1>41 · 24시간 쇼핑 스팟 지도 — 서울에서 밤에도 쇼핑이 끊기지 않는 이유</h1>
+<p>&gt; 마스터리스트 ID: <strong>054 (F-Shopping)</strong> · Priority: <strong>P1</strong> · 타겟: <strong>CN● · JP○ · EN○</strong></p>
+<p>&gt; 소스: souvenir_research / 31_동대문_심야_쇼핑 / 관광공사 통계 (<code>키친구 자료/데이터/souvenir_research/50_seoul_cluster_map.json</code>)</p>
+<hr>
+<h2>한 줄 소개</h2>
+<p>서울은 <strong>동대문 + 편의점 + 공항</strong>이라는 3축으로 사실상 24시간 쇼핑이 가능한 도시다. 일반 매장 폐점 시간(22:00)을 지나 새벽 5시에도 현금 없이 환급까지 끝낼 수 있는 루트를 지도 한 장에 정리했다.</p>
+<hr>
+<h2>추천 대상</h2>
+<ul>
+<li><strong>심야 환승 대기</strong>로 서울에 6~12시간 체류하는 FIT 여행자</li>
+<li><strong>단체 관광 일정 소화 후</strong> 자유 시간이 22시 이후에만 나는 중국·일본 관광객</li>
+<li><strong>도매 패션</strong> 대량 구매를 위해 동대문 새벽 장터를 노리는 바이어</li>
+<li><strong>공항 도착 당일 밤 비행</strong> 전 라스트미닛 쇼핑이 필요한 방문자</li>
+</ul>
+<hr>
+<h2>1. 서울 24시간 쇼핑 3대 축</h2>
+<table><thead><tr>
+<th>축</th>
+<th>대표 권역</th>
+<th>핵심 시간대</th>
+<th>주 품목</th>
+<th>이 가이드에서 다루는 섹션</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>도매·소매 패션</strong></td>
+<td>동대문 (東大門, Dongdaemun)</td>
+<td>22:00 ~ 05:00</td>
+<td>K-패션, 원단, 액세서리</td>
+<td>§2</td>
+</tr>
+<tr>
+<td><strong>편의점 24시간</strong></td>
+<td>명동·홍대·강남 + 시내 전역</td>
+<td><strong>24시간</strong></td>
+<td>K-food, 과자, 생활용품</td>
+<td>§3</td>
+</tr>
+<tr>
+<td><strong>공항 면세점</strong></td>
+<td>인천공항 T1·T2 입국장/출국장</td>
+<td>05:30 ~ 23:00 + 24h 일부</td>
+<td>면세 K-Beauty, 주류, 담배</td>
+<td>§4</td>
+</tr>
+</tbody></table>
+<p>한국 일반 소매 매장의 표준 영업시간은 <strong>10:00~22:00</strong>이다. 이 3축 이외는 예외 없이 22시에 문을 닫는다고 보면 된다. 즉, 22시 이후 &quot;쇼핑하러 가자&quot;는 건 이 3축 중 하나로 가는 것을 의미한다.</p>
+<hr>
+<h2>2. 동대문 — 서울의 심야 패션 심장</h2>
+<p><strong>심층 가이드</strong>: <code>31_동대문_심야_쇼핑.md</code> 참조 (이 지도는 요약·연결 역할)</p>
+<h3>2-1. 핵심 매장 요약</h3>
+<table><thead><tr>
+<th>매장</th>
+<th>주소</th>
+<th>영업시간</th>
+<th>특징</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>두타면세점 (Doota! Mall)</strong></td>
+<td>서울특별시 중구 을지로 275 (Seoul Jung-gu Euljiro 275)</td>
+<td>11:00~05:00</td>
+<td>소매 쇼핑 + 면세, 외국인 환영 (택스리펀드 부스 1층)</td>
+</tr>
+<tr>
+<td><strong>밀리오레 (Migliore)</strong></td>
+<td>서울특별시 중구 을지로 238 (Seoul Jung-gu Euljiro 238)</td>
+<td>10:30~05:00</td>
+<td>트렌디한 저가 소매 패션</td>
+</tr>
+<tr>
+<td><strong>APM Luxe</strong></td>
+<td>서울특별시 중구 을지로 272 (Seoul Jung-gu Euljiro 272)</td>
+<td>20:00~05:00</td>
+<td>심야 전문 소매 패션몰</td>
+</tr>
+<tr>
+<td><strong>광희상가 (Kwanghee)</strong></td>
+<td>서울특별시 중구 광희동 일대 (Seoul Jung-gu Gwanghui-dong)</td>
+<td>21:00~06:00</td>
+<td>도매 위주, 개인 소량 구매 가능</td>
+</tr>
+<tr>
+<td><strong>동대문디자인플라자 (DDP)</strong></td>
+<td>서울특별시 중구 을지로 281 (Seoul Jung-gu Euljiro 281)</td>
+<td>외관 상시 개방</td>
+<td>자하 하디드 설계, 야경 포토존</td>
+</tr>
+</tbody></table>
+<h3>2-2. 동대문 새벽 루트 (23:00 → 04:00)</h3>
+<p>1. <strong>23:00</strong> — 지하철 2호선 동대문역사문화공원역 14번 출구. 두타로 이동 (도보 3분)</p>
+<p>2. <strong>23:30</strong> — 두타 8층부터 하향 둘러보기 (5층 여성 의류·4층 남성 의류·3층 잡화)</p>
+<p>3. <strong>01:00</strong> — APM Luxe로 이동 (도보 5분). 심야 전용 바이어 타깃 매장 다수</p>
+<p>4. <strong>02:30</strong> — 밀리오레 지하 1층 야식 코너 (국밥·라면 5,000~8,000원)</p>
+<p>5. <strong>03:30</strong> — 광희상가 도매 라운드. 개인 구매는 &quot;낱개 가능 묻고 흥정&quot; 필수</p>
+<p>6. <strong>04:30</strong> — DDP로 이동 (도보 8분). 야경 촬영 후 <strong>동대문역 4호선 첫차 05:30</strong> 탑승</p>
+<h3>2-3. 주의사항</h3>
+<ul>
+<li>동대문 도매상가는 <strong>5~10장 이상 묶음 판매</strong>가 기본. 낱개 구매 시 가격 10~20% 할증</li>
+<li>일부 상가는 <strong>현금만</strong> 받음 (두타·APM Luxe는 카드·외국인 카드 가능)</li>
+<li>택스리펀드는 <strong>두타 1층</strong> 또는 동대문역사박물관 옆 부스에서 가능 (여권 지참)</li>
+</ul>
+<hr>
+<h2>3. 편의점 — 서울 전역의 24시간 미니 마트</h2>
+<p>서울 편의점 3대 브랜드(<strong>CU · GS25 · Emart24</strong>)는 99% 매장이 24시간 운영이다. 관광객이 심야에 접근 가능한 가장 현실적인 쇼핑 수단.</p>
+<h3>3-1. 편의점에서 사는 대표 기념품 (실사용 선물 기준)</h3>
+<table><thead><tr>
+<th>품목</th>
+<th>가격</th>
+<th>인기 이유</th>
+<th>추천 지점</th>
+</tr></thead><tbody>
+<tr>
+<td>허니버터아몬드 (HBAF 시리즈)</td>
+<td>5,000~9,000원</td>
+<td>CN 관광객 재구매율 Top 1</td>
+<td>모든 지점</td>
+</tr>
+<tr>
+<td>마켓오 리얼 브라우니</td>
+<td>7,000~12,000원 (박스)</td>
+<td>JP 관광객 선호</td>
+<td>명동·홍대 매장</td>
+</tr>
+<tr>
+<td>초코파이 정情 선물세트</td>
+<td>10,000~18,000원</td>
+<td>EN 관광객 귀국 선물</td>
+<td>인천공항·명동</td>
+</tr>
+<tr>
+<td>K-라면 3종 세트 (신라면/불닭/짜파게티)</td>
+<td>8,000~15,000원</td>
+<td>전 타겟 공통</td>
+<td>모든 지점</td>
+</tr>
+<tr>
+<td>바나나맛 우유 키링·굿즈</td>
+<td>5,000~15,000원</td>
+<td>JP·CN MZ 구매</td>
+<td>명동·홍대</td>
+</tr>
+</tbody></table>
+<h3>3-2. 심야 편의점 명소</h3>
+<table><thead><tr>
+<th>지점</th>
+<th>주소</th>
+<th>특징</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>CU 명동중앙점</strong></td>
+<td>서울특별시 중구 명동길 14 (Seoul Jung-gu Myeongdong-gil 14)</td>
+<td>관광객 특화 매대 · 영어·중국어·일본어 응대</td>
+</tr>
+<tr>
+<td><strong>GS25 홍대 걷고싶은거리점</strong></td>
+<td>서울특별시 마포구 홍익로 6길 (Seoul Mapo-gu Hongik-ro 6-gil)</td>
+<td>24시간 시식 가능 K-food 코너</td>
+</tr>
+<tr>
+<td><strong>Emart24 강남역 10번 출구점</strong></td>
+<td>서울특별시 강남구 강남대로 396 (Seoul Gangnam-gu Gangnam-daero 396)</td>
+<td>면세 가능 일부 주류·담배 취급</td>
+</tr>
+<tr>
+<td><strong>CU 인천공항 T1 3층</strong></td>
+<td>인천광역시 중구 공항로 272 (Incheon Jung-gu Gonghang-ro 272)</td>
+<td>출국 전 라스트미닛 스낵 구매</td>
+</tr>
+</tbody></table>
+<h3>3-3. 편의점 쇼핑 팁</h3>
+<ul>
+<li><strong>세븐일레븐(7-Eleven)은 일부 지점만 24시간</strong>이므로 CU/GS25 위주로 동선 설계</li>
+<li><strong>카드 결제·삼성페이·애플페이 100%</strong> 가능 (편의점은 해외 카드도 수용 폭이 넓음)</li>
+<li><strong>환급(택스리펀드)은 일반 편의점 불가</strong> — 면세 쇼핑은 §4 공항에서</li>
+<li>냉장 제품(바나나맛 우유 굿즈는 미봉지 보관 가능) 구매 시 장거리 이동 주의</li>
+</ul>
+<hr>
+<h2>4. 인천공항 — 한국 유일 진짜 24시간 면세</h2>
+<h3>4-1. 출국 전 vs 입국 후 분리</h3>
+<p>한국 공항 면세점은 출국장과 입국장이 구조적으로 분리돼 있다.</p>
+<table><thead><tr>
+<th>구분</th>
+<th>위치</th>
+<th>영업시간</th>
+<th>사용 가능 시점</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>출국장 면세</strong></td>
+<td>T1 3층·T2 3층</td>
+<td>05:30~22:30 (항공편 기준 조정)</td>
+<td>탑승 전 1~3시간</td>
+</tr>
+<tr>
+<td><strong>입국장 면세</strong></td>
+<td>T1 1층·T2 1층</td>
+<td><strong>24시간 일부 매장</strong></td>
+<td>입국 직후 (여행 시작 전)</td>
+</tr>
+<tr>
+<td><strong>공항 편의점</strong></td>
+<td>T1·T2 전 구역</td>
+<td><strong>24시간</strong></td>
+<td>제한 없음</td>
+</tr>
+</tbody></table>
+<h3>4-2. 24시간 운영 주요 매장</h3>
+<table><thead><tr>
+<th>매장</th>
+<th>터미널</th>
+<th>비고</th>
+</tr></thead><tbody>
+<tr>
+<td>시티면세점 입국장 기념품존</td>
+<td>T1</td>
+<td><strong>연중무휴 24시간 일부 구역</strong></td>
+</tr>
+<tr>
+<td>CU / GS25 공항 편의점</td>
+<td>T1·T2</td>
+<td>24시간 · 스낵·음료·기본 생활용품</td>
+</tr>
+<tr>
+<td>SM면세점 T1 특화 매대</td>
+<td>T1</td>
+<td>야간 저가 기념품 · 00:00~05:00 제한 운영</td>
+</tr>
+</tbody></table>
+<ul>
+<li><strong>롯데·신라·신세계 면세점은 05:30~22:30</strong> 운영. 심야 환승객은 입국장 + 편의점이 유일한 선택</li>
+<li>공항 면세점 담배·주류는 <strong>출국 여권 스캔</strong> 필요 (입국장에서도 반입 허용 한도 1L/200개비)</li>
+</ul>
+<h3>4-3. 탑승 전 3시간 루틴 (인천공항 T1 기준)</h3>
+<p>1. <strong>T-180분</strong> — 탑승 수속 + 보안검색 완료 (약 40분 소요)</p>
+<p>2. <strong>T-140분</strong> — 3층 면세점 권역 진입. 롯데·신라·신세계 K-Beauty 3개 브랜드 순회</p>
+<p>3. <strong>T-80분</strong> — CU 편의점 4층 스낵 코너에서 허니버터아몬드·라면 세트 구매</p>
+<p>4. <strong>T-30분</strong> — 게이트 이동. 게이트 근처 기프트샵에서 라스트미닛 체크</p>
+<hr>
+<h2>5. 시간대별 통합 지도</h2>
+<h3>🌙 22:00 ~ 24:00 — 일반 매장이 닫히는 시간</h3>
+<ul>
+<li><strong>가능</strong>: 동대문 주요 쇼핑몰(두타·밀리오레) · 편의점 전역 · 명동 일부 올리브영(23:00 폐점)</li>
+<li><strong>최적 선택</strong>: 동대문 두타로 이동. 환승객이면 공항 면세점 막차(22:30) 노리기</li>
+<li><strong>주의</strong>: 명동·홍대 로드샵 대부분 22:00 이전 폐점. 22시 이후 목적지 재확인 필수</li>
+</ul>
+<h3>🌌 00:00 ~ 03:00 — 서울 심야의 주력 시간</h3>
+<ul>
+<li><strong>가능</strong>: 동대문 전 매장 · 편의점 · 인천공항 입국장 면세 일부</li>
+<li><strong>최적 선택</strong>: 동대문 APM Luxe + 밀리오레 지하 야식 → 광희상가 도매 라운드</li>
+<li><strong>동선</strong>: 지하철 막차(00:00 전후) 놓친 경우 택시(동대문→숙소 10,000~15,000원 내외)</li>
+</ul>
+<h3>🌅 03:00 ~ 06:00 — 첫차 전 마지막 라운드</h3>
+<ul>
+<li><strong>가능</strong>: 동대문 상가 대부분 운영 (광희상가 06:00 · 두타 05:00)</li>
+<li><strong>최적 선택</strong>: 광희상가에서 도매 마감 구매 → DDP 야경 촬영 → 동대문역 첫차(05:30)</li>
+<li><strong>택시</strong>: 새벽 할증 20% 적용 (00:00~04:00). 카카오택시 앱 사용 권장</li>
+</ul>
+<h3>☀️ 06:00 ~ 10:00 — 일반 매장 재개방 전</h3>
+<ul>
+<li><strong>가능</strong>: 편의점 · 일부 대형마트(이마트 7:00 개점) · 호텔 숍</li>
+<li><strong>최적 선택</strong>: 조식 먹고 10시 명동·홍대 로드샵 오픈 대기</li>
+</ul>
+<hr>
+<h2>6. 결제·환전·환급 실용 팁</h2>
+<h3>6-1. 결제</h3>
+<ul>
+<li><strong>카드</strong>: VISA / Mastercard / JCB / 银联(UnionPay) — 동대문 주요 몰·편의점·공항 전 가능</li>
+<li><strong>모바일 페이</strong>: 삼성페이(국내 발급 카드) · 애플페이(2026년 일부 지점) · 위챗페이·알리페이(명동·동대문 일부)</li>
+<li><strong>현금</strong>: 동대문 도매상가·일부 재래시장 필수</li>
+</ul>
+<h3>6-2. 환전</h3>
+<ul>
+<li><strong>24시간 환전소</strong>: 명동 우리은행 환전소 (08:00~22:00) · 인천공항 환전소 (24시간 T1 3층)</li>
+<li><strong>심야 응급</strong>: 편의점 ATM (외국 카드 인출 가능, 수수료 3~5,000원)</li>
+<li><strong>팁</strong>: 현금은 5~10만 원 소액 유지. 대형 구매는 카드 환급이 유리</li>
+</ul>
+<h3>6-3. 택스리펀드 (외국인 부가세 환급)</h3>
+<ul>
+<li><strong>즉시 환급(Immediate Refund)</strong>: 3만원 이상 구매 시 매장 현장에서 환급 (월 누적 500만원 한도)</li>
+<li><strong>공항 환급</strong>: T1 3층 KIOSK 또는 환급 부스 — 여권 + 영수증 + 미사용 물품 지참</li>
+<li><strong>환급 한도</strong>: 1인당 1일 누적 100만원 / 월 500만원</li>
+</ul>
+<hr>
+<h2>7. 체크리스트 — 심야 쇼핑 전 준비</h2>
+<ul>
+<li>[ ] 여권 지참 (환급·면세 필수)</li>
+<li>[ ] 국제 카드 2장 (분실 대비)</li>
+<li>[ ] 현금 5~10만원 (도매상가용)</li>
+<li>[ ] 카카오택시 앱 설치 (언어 설정 EN/CN/JP 지원)</li>
+<li>[ ] 호텔 명함 사진 저장 (기사에게 보여주기)</li>
+<li>[ ] 귀국 항공편 시각 확인 (면세 구매 반입 한도 계산)</li>
+</ul>
+<hr>
+<h2>8. 관련 콘텐츠 (키친구 내부 연결)</h2>
+<ul>
+<li><code>31_동대문_심야_쇼핑.md</code> — 동대문 특화 심층 가이드</li>
+<li><code>18_서울_쇼핑_1일_공략.md</code> — 낮 쇼핑 권역 통합 코스</li>
+<li><code>05_24시간_맛집.md</code> — 쇼핑 중간 야식·국밥 루트</li>
+<li><code>20_교통_내비_가이드.md</code> — 심야 택시·첫차 전략</li>
+</ul>
+<hr>
+<p><strong>팩트 기준일</strong>: 2026-04-24</p>
+<p><strong>업데이트 주기</strong>: 분기 1회 (영업시간 변경 반영)</p>
+  <div class="detail-nav">
+    <div><a href="seoul-yajang.html" style="color:var(--red);">&larr; 서울 야장 culture 10선</a></div>
+    <div><a href="coin-laundry.html" style="color:var(--red);">45 · 서울 코인빨래방 완전 가이드 &rarr;</a></div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <p><a href="https://instagram.com/keychingu.korea" target="_blank">@keychingu.korea</a> &mdash; Seoul for MZ FIT Travelers</p>
+</footer>
+</body>
+</html>
