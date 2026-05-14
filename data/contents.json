@@ -849,5 +849,278 @@
     ],
     "summary_kr": "책방·소품·카페·맛집 4축 12선 + 안산자락길·사러가쇼핑센터·연희문학창작촌 볼거리 5곳 — 외국인 로컬 deep dive 동네 (사용자 큐레이션 7곳 + 크롤 18곳)",
     "summary_en": "Bookshop + lifestyle + cafe + restaurant 4-axis 12-pick + 5 experiences (Ansan trail, Sarogga market, Literary village) — foreign local deep-dive guide"
+  },
+  {
+    "id": "42",
+    "slug": "tteok-guide",
+    "title_kr": "42 · 서울 떡 맛집",
+    "title_en": "Seoul Tteok Shops (떡집)",
+    "category": "F",
+    "tags": [
+      "foreigner",
+      "seoul"
+    ],
+    "summary_kr": "42 · 서울 떡 맛집 — ISSUE 02 시리즈",
+    "summary_en": "Seoul Tteok Shops (떡집) — ISSUE 02 series"
+  },
+  {
+    "id": "43",
+    "slug": "yangjaecheon-guide",
+    "title_kr": "43 · 양재천 산책과 맛집",
+    "title_en": "Yangjaecheon (양재천) Walk & Eats",
+    "category": "F",
+    "tags": [
+      "foreigner",
+      "seoul"
+    ],
+    "summary_kr": "43 · 양재천 산책과 맛집 — ISSUE 02 시리즈",
+    "summary_en": "Yangjaecheon (양재천) Walk & Eats — ISSUE 02 series"
+  },
+  {
+    "id": "44",
+    "slug": "hangang-summer",
+    "title_kr": "44 · 한강 여름 가이드",
+    "title_en": "Han River (한강) Summer Guide",
+    "category": "F",
+    "tags": [
+      "foreigner",
+      "seoul"
+    ],
+    "summary_kr": "44 · 한강 여름 가이드 — ISSUE 02 시리즈",
+    "summary_en": "Han River (한강) Summer Guide — ISSUE 02 series"
+  },
+  {
+    "id": "58",
+    "slug": "gwangjang-food",
+    "title_kr": "광장시장 맛집·체험·주의사항 풀가이드",
+    "title_en": "Gwangjang Market (광장시장) Full Guide for Foreigners",
+    "category": "F",
+    "tags": [
+      "foreigner",
+      "seoul"
+    ],
+    "summary_kr": "광장시장 맛집·체험·주의사항 풀가이드 — ISSUE 02 시리즈",
+    "summary_en": "Gwangjang Market (광장시장) Full Guide for Foreigners — ISSUE 02 series"
+  },
+  {
+    "id": "59",
+    "slug": "seoul-gimbap",
+    "title_kr": "서울 김밥 맛집 가이드",
+    "title_en": "Seoul Gimbap Guide for Foreigners",
+    "category": "F",
+    "tags": [
+      "foreigner",
+      "seoul"
+    ],
+    "summary_kr": "서울 김밥 맛집 가이드 — ISSUE 02 시리즈",
+    "summary_en": "Seoul Gimbap Guide for Foreigners — ISSUE 02 series"
+  },
+  {
+    "id": "60",
+    "slug": "seoul-jazz",
+    "title_kr": "서울 재즈바·재즈카페 가이드",
+    "title_en": "Seoul Jazz Bars & Lounges Guide for Foreigners",
+    "category": "F",
+    "tags": [
+      "foreigner",
+      "seoul"
+    ],
+    "summary_kr": "서울 재즈바·재즈카페 가이드 — ISSUE 02 시리즈",
+    "summary_en": "Seoul Jazz Bars & Lounges Guide for Foreigners — ISSUE 02 series"
+  },
+  {
+    "id": "61",
+    "slug": "korea-cafe",
+    "title_kr": "한국 카페 체인 풀가이드",
+    "title_en": "The Complete Guide to Korean Café Chains",
+    "category": "F",
+    "tags": [
+      "foreigner",
+      "seoul"
+    ],
+    "summary_kr": "한국 카페 체인 풀가이드 — ISSUE 02 시리즈",
+    "summary_en": "The Complete Guide to Korean Café Chains — ISSUE 02 series"
+  },
+  {
+    "id": "62",
+    "slug": "korea-chicken-dish",
+    "title_kr": "한국 닭 요리 풀가이드",
+    "title_en": "Korean Chicken Dishes Full Guide",
+    "category": "F",
+    "tags": [
+      "foreigner",
+      "seoul"
+    ],
+    "summary_kr": "한국 닭 요리 풀가이드 — ISSUE 02 시리즈",
+    "summary_en": "Korean Chicken Dishes Full Guide — ISSUE 02 series"
+  },
+  {
+    "id": "63",
+    "slug": "myeongdong",
+    "title_kr": "명동 1일 풀공략",
+    "title_en": "Myeongdong (명동) Full-Day Guide",
+    "category": "F",
+    "tags": [
+      "foreigner",
+      "seoul"
+    ],
+    "summary_kr": "명동 1일 풀공략 — ISSUE 02 시리즈",
+    "summary_en": "Myeongdong (명동) Full-Day Guide — ISSUE 02 series"
+  },
+  {
+    "id": "65",
+    "slug": "korea-chicken-chains",
+    "title_kr": "한국 치킨 체인 풀가이드",
+    "title_en": "Complete Guide to Korean Fried Chicken Chains",
+    "category": "F",
+    "tags": [
+      "foreigner",
+      "seoul"
+    ],
+    "summary_kr": "한국 치킨 체인 풀가이드 — ISSUE 02 시리즈",
+    "summary_en": "Complete Guide to Korean Fried Chicken Chains — ISSUE 02 series"
+  },
+  {
+    "id": "66",
+    "slug": "korea-tteokbokki",
+    "title_kr": "한국 떡볶이 체인 풀가이드",
+    "title_en": "Korea Tteokbokki (떡볶이) Chain Complete Guide",
+    "category": "F",
+    "tags": [
+      "foreigner",
+      "seoul"
+    ],
+    "summary_kr": "한국 떡볶이 체인 풀가이드 — ISSUE 02 시리즈",
+    "summary_en": "Korea Tteokbokki (떡볶이) Chain Complete Guide — ISSUE 02 series"
+  },
+  {
+    "id": "69",
+    "slug": "vegan-halal",
+    "title_kr": "한국 비건·할랄·종교 식이 가이드",
+    "title_en": "Korea's Vegan, Halal & Religious Diet Guide for Foreigners",
+    "category": "F",
+    "tags": [
+      "foreigner",
+      "seoul"
+    ],
+    "summary_kr": "한국 비건·할랄·종교 식이 가이드 — ISSUE 02 시리즈",
+    "summary_en": "Korea's Vegan, Halal & Religious Diet Guide for Foreigners — ISSUE 02 series"
+  },
+  {
+    "id": "71",
+    "slug": "korea-bakery",
+    "title_kr": "한국 베이커리 체인 풀가이드",
+    "title_en": "Korea Bakery Chain Full Guide",
+    "category": "F",
+    "tags": [
+      "foreigner",
+      "seoul"
+    ],
+    "summary_kr": "한국 베이커리 체인 풀가이드 — ISSUE 02 시리즈",
+    "summary_en": "Korea Bakery Chain Full Guide — ISSUE 02 series"
+  },
+  {
+    "id": "73",
+    "slug": "myeongdong-cosmetics",
+    "title_kr": "명동 코스메틱 풀가이드",
+    "title_en": "Myeongdong (명동) Cosmetics Full Guide",
+    "category": "F",
+    "tags": [
+      "foreigner",
+      "seoul"
+    ],
+    "summary_kr": "명동 코스메틱 풀가이드 — ISSUE 02 시리즈",
+    "summary_en": "Myeongdong (명동) Cosmetics Full Guide — ISSUE 02 series"
+  },
+  {
+    "id": "79",
+    "slug": "itaewon-hannam-haebangchon",
+    "title_kr": "이태원·한남·해방촌 1일 풀공략",
+    "title_en": "Itaewon (이태원) · Hannam (한남) · Haebangchon (해방촌) Full 1-Day Guide",
+    "category": "F",
+    "tags": [
+      "foreigner",
+      "seoul"
+    ],
+    "summary_kr": "이태원·한남·해방촌 1일 풀공략 — ISSUE 02 시리즈",
+    "summary_en": "Itaewon (이태원) · Hannam (한남) · Haebangchon (해방촌) Full 1-Day Guide — ISSUE 02 series"
+  },
+  {
+    "id": "82",
+    "slug": "jamsil",
+    "title_kr": "잠실 1일 풀공략",
+    "title_en": "Jamsil 1-Day Full Guide",
+    "category": "A",
+    "tags": [
+      "foreigner",
+      "seoul"
+    ],
+    "summary_kr": "잠실 1일 풀공략 — ISSUE 02 시리즈",
+    "summary_en": "Jamsil 1-Day Full Guide — ISSUE 02 series"
+  },
+  {
+    "id": "87",
+    "slug": "incheon-airport",
+    "title_kr": "인천공항 입국·도심 이동 풀가이드",
+    "title_en": "Incheon Airport Arrival & City Transfer Complete Guide",
+    "category": "A",
+    "tags": [
+      "foreigner",
+      "seoul"
+    ],
+    "summary_kr": "인천공항 입국·도심 이동 풀가이드 — ISSUE 02 시리즈",
+    "summary_en": "Incheon Airport Arrival & City Transfer Complete Guide — ISSUE 02 series"
+  },
+  {
+    "id": "89",
+    "slug": "autumn-foliage",
+    "title_kr": "가을 단풍 명소 TOP 8 + 시기별 단풍 캘린더",
+    "title_en": "Fall Foliage TOP 8 Spots + Season-by-Season Foliage Calendar",
+    "category": "A",
+    "tags": [
+      "foreigner",
+      "seoul"
+    ],
+    "summary_kr": "가을 단풍 명소 TOP 8 + 시기별 단풍 캘린더 — ISSUE 02 시리즈",
+    "summary_en": "Fall Foliage TOP 8 Spots + Season-by-Season Foliage Calendar — ISSUE 02 series"
+  },
+  {
+    "id": "90",
+    "slug": "winter-illumination",
+    "title_kr": "겨울 일루미네이션·트리·연말 카운트다운 풀가이드",
+    "title_en": "Seoul Winter Illuminations, Christmas Trees & New Year's Eve Countdown",
+    "category": "A",
+    "tags": [
+      "foreigner",
+      "seoul"
+    ],
+    "summary_kr": "겨울 일루미네이션·트리·연말 카운트다운 풀가이드 — ISSUE 02 시리즈",
+    "summary_en": "Seoul Winter Illuminations, Christmas Trees & New Year's Eve Countdown — ISSUE 02 series"
+  },
+  {
+    "id": "136",
+    "slug": "seoul-makgeolli",
+    "title_kr": "서울 막걸리·전통주 입문",
+    "title_en": "Seoul Makgeolli (막걸리) & Traditional Liquor Intro",
+    "category": "A",
+    "tags": [
+      "foreigner",
+      "seoul"
+    ],
+    "summary_kr": "서울 막걸리·전통주 입문 — ISSUE 02 시리즈",
+    "summary_en": "Seoul Makgeolli (막걸리) & Traditional Liquor Intro — ISSUE 02 series"
+  },
+  {
+    "id": "137",
+    "slug": "seoul-yajang",
+    "title_kr": "서울 야장 culture 10선",
+    "title_en": "Seoul Yajang (야장) Culture Top 10",
+    "category": "A",
+    "tags": [
+      "foreigner",
+      "seoul"
+    ],
+    "summary_kr": "서울 야장 culture 10선 — ISSUE 02 시리즈",
+    "summary_en": "Seoul Yajang (야장) Culture Top 10 — ISSUE 02 series"
   }
 ]

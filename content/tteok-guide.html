@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>42 · 서울 떡 맛집 — KeyChinGu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/main.css">
+<style>
+.detail-wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+}
+.breadcrumb {
+  font-size: 13px;
+  color: var(--text-soft);
+  margin-bottom: 24px;
+}
+.breadcrumb a { color: var(--red); font-weight: 600; }
+.detail-wrap h1 {
+  font-size: 28px; font-weight: 800;
+  color: var(--black); margin-bottom: 8px;
+}
+.detail-wrap h2 {
+  font-size: 22px; font-weight: 700;
+  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--red);
+}
+.detail-wrap h3 {
+  font-size: 17px; font-weight: 600;
+  color: var(--text-mid); margin-top: 20px; margin-bottom: 8px;
+}
+.detail-wrap p {
+  font-size: 15px; line-height: 1.7;
+  color: var(--text-mid); margin-bottom: 12px;
+}
+.detail-wrap ul {
+  padding-left: 20px; margin-bottom: 12px;
+}
+.detail-wrap li {
+  font-size: 14px; line-height: 1.6;
+  color: var(--text-mid); margin-bottom: 6px;
+}
+.detail-wrap table {
+  width: 100%; border-collapse: collapse;
+  margin-bottom: 16px; font-size: 13px;
+}
+.detail-wrap th {
+  background: var(--black); color: #fff;
+  padding: 10px 12px; text-align: left;
+  font-weight: 600; font-size: 11px;
+  text-transform: uppercase; letter-spacing: 0.06em;
+}
+.detail-wrap td {
+  padding: 10px 12px; border-bottom: 1px solid var(--border);
+  color: var(--text-mid);
+}
+.detail-wrap tr:nth-child(even) td { background: rgba(0,0,0,0.02); }
+.detail-wrap hr {
+  border: none; height: 1px;
+  background: var(--border); margin: 24px 0;
+}
+.detail-wrap code {
+  background: rgba(33,140,204,0.08);
+  padding: 2px 6px; border-radius: 4px;
+  font-size: 13px; color: var(--blue);
+}
+.detail-nav {
+  display: flex; justify-content: space-between;
+  margin-top: 48px; padding-top: 20px;
+  border-top: 1px solid var(--border);
+  font-size: 14px; font-weight: 600;
+}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <div class="lang-switch">
+    <a href="../content/tteok-guide.html" class="active">KR</a>
+    <a href="../content/tteok-guide.en.html" >EN</a>
+  </div>
+</header>
+
+<div class="detail-wrap">
+  <div class="breadcrumb"><a href="../index.html">전체 가이드</a> &rsaquo; 42 · 서울 떡 맛집</div>
+  <h1>42 · 서울 떡 맛집 — 한국인도 줄 서는 찹쌀의 미학</h1>
+<p>&gt; 마스터리스트 ID: <strong>F-Food-042</strong> · Priority: <strong>P2</strong> · 타겟: <strong>CN● · JP○ · EN○</strong></p>
+<p>&gt; 소스: tteok_final_20.json (사용자 승인 2026-04-20)</p>
+<hr>
+<h2>한 줄 소개</h2>
+<p>서울에는 수백 년 전통을 이어온 동네 떡집부터 인스타그램 감성의 떡카페까지, 한국 고유의 쌀 디저트를 다양한 방식으로 즐길 수 있는 곳이 가득하다. 현지인이 매일 찾는 20곳을 지역별로 정리했다.</p>
+<hr>
+<h2>추천 대상</h2>
+<ul>
+<li><strong>한국 첫 방문자</strong> — 현지 식문화를 한 입에 체험하고 싶은 여행자</li>
+<li><strong>디저트 애호가</strong> — 세계 어디서도 없는 쌀 기반 달콤·쫄깃한 식감을 원하는 사람</li>
+<li><strong>선물을 찾는 여행자</strong> — 백화점·인사동 동선에서 고급 포장 선물을 구하려는 방문객</li>
+<li><strong>문화 체험형 여행자</strong> — 명절 음식·전통 재료·제작 과정에 관심 있는 취향 여행자</li>
+</ul>
+<hr>
+<h2>1. 떡이 뭔가요? — 외국인용 간단 소개</h2>
+<h3>1-1. 떡의 기본</h3>
+<p>떡(Tteok)은 찹쌀이나 멥쌀을 쪄서 반죽하거나 빚어 만드는 한국의 전통 식품이다. 빵과 달리 밀가루를 쓰지 않고, 기본적으로 글루텐 프리다. 쫄깃하고 부드러운 식감이 특징이며, 달콤한 것부터 고소하고 담백한 것까지 종류가 다양하다.</p>
+<p>명절(설·추석)이나 생일·이사 같은 특별한 날에 나누어 먹는 문화가 있어, 선물 포장 세트 형태로도 폭넓게 판매된다. 최근에는 카페형 떡집이 늘면서 커피와 함께 즐기는 현대적인 소비 방식도 자리잡았다.</p>
+<h3>1-2. 꼭 알아야 할 주요 종류</h3>
+<table><thead><tr>
+<th>이름</th>
+<th>특징</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>인절미</strong></td>
+<td>찹쌀떡에 콩가루를 묻힌 것. 고소하고 쫄깃함의 정수</td>
+</tr>
+<tr>
+<td><strong>경단</strong></td>
+<td>찹쌀 반죽을 동글게 빚어 고물을 묻힌 떡. 팥·콩·깨 고물이 일반적</td>
+</tr>
+<tr>
+<td><strong>송편</strong></td>
+<td>반달 모양의 작은 떡. 추석 명절 대표 음식, 깨나 팥소가 들어있음</td>
+</tr>
+<tr>
+<td><strong>절편</strong></td>
+<td>납작하게 눌러 무늬를 낸 떡. 담백하고 부드러움</td>
+</tr>
+<tr>
+<td><strong>백설기</strong></td>
+<td>아무것도 섞지 않은 하얀 쌀 찐 떡. 담백하고 입에서 녹는 식감</td>
+</tr>
+<tr>
+<td><strong>찹쌀떡</strong></td>
+<td>안에 팥소나 크림이 들어간 동글동글한 떡. 일본 모찌와 유사해 외국인에게 인기</td>
+</tr>
+<tr>
+<td><strong>약식</strong></td>
+<td>찹쌀에 대추·밤·잣·간장·설탕을 넣어 찐 것. 달콤하고 짭조름한 특유의 맛</td>
+</tr>
+<tr>
+<td><strong>쑥떡</strong></td>
+<td>쑥을 넣어 초록빛을 띠는 떡. 향긋한 쑥 향이 특징</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>2. 지역별 맛집 20곳</h2>
+<h3>2-1. 도심권(종로·중구) — 관광 동선 직결 (7곳)</h3>
+<p>관광지 밀집 지역인 종로·인사동·을지로 동선에서 자연스럽게 들를 수 있는 곳들이다. 전통 노포부터 떡카페까지 분위기가 다양하다.</p>
+<table><thead><tr>
+<th>가게명</th>
+<th>위치</th>
+<th>카테고리</th>
+</tr></thead><tbody>
+<tr>
+<td>종로떡집</td>
+<td>종로구 삼일대로 437</td>
+<td>전통 떡·한과</td>
+</tr>
+<tr>
+<td>낙원떡집</td>
+<td>종로구 삼일대로 438</td>
+<td>전통 떡·한과</td>
+</tr>
+<tr>
+<td>동병상련</td>
+<td>종로구 율곡로 154</td>
+<td>떡카페 (1층 카페·지하 제작실)</td>
+</tr>
+<tr>
+<td>아진당 떡상점</td>
+<td>종로구 돈화문로11길 34-6</td>
+<td>떡카페</td>
+</tr>
+<tr>
+<td>한과미의식 안녕인사동점</td>
+<td>종로구 인사동길 49 1층</td>
+<td>떡·한과 선물</td>
+</tr>
+<tr>
+<td>경기떡집 롯데백화점본점</td>
+<td>중구 을지로 30</td>
+<td>백화점 입점</td>
+</tr>
+<tr>
+<td>약현떡방</td>
+<td>중구 중림로 45 1층</td>
+<td>떡카페</td>
+</tr>
+</tbody></table>
+<p><strong>종로떡집·낙원떡집</strong> — 낙원상가 바로 앞, 길 하나를 사이에 두고 마주보는 두 가게는 이 일대에서 수십 년을 지켜온 노포다. 격식 없이 현지인들이 일상적으로 들르는 동네 떡집 분위기로, 종로를 걷다 들르기에 좋다.</p>
+<p><strong>동병상련</strong> — 1층은 카페, 지하 1층은 떡 제작실로 구성된 이색 공간이다. 떡을 즐기면서 만드는 과정을 간접적으로 볼 수 있어 체험 지향 여행자에게 어울린다. 익선동·창덕궁 동선과 연결된다.</p>
+<p><strong>아진당 떡상점</strong> — 익선동 골목에 자리한 인스타그램 감성의 떡카페다. 정갈한 공간 연출과 계절 메뉴로 젊은 층에게도 친숙하게 다가간다.</p>
+<p><strong>한과미의식 안녕인사동점</strong> — 인사동 메인 골목 안에 있어 쇼핑·관광 동선에서 자연스럽게 들를 수 있다. 떡과 함께 전통 한과(강정·정과류)도 취급하며, 선물 포장이 깔끔해 기념품용으로 적합하다.</p>
+<p><strong>경기떡집 롯데백화점본점</strong> — 을지로 롯데백화점 식품관 입점 매장이다. 백화점 품질 관리와 포장 수준을 원하는 방문자에게 적합하며, 명동 쇼핑 동선과 연계된다.</p>
+<p><strong>약현떡방</strong> — 중림로 골목의 떡카페 카테고리 매장이다. 서소문·약현성당 방문 동선과 가깝다.</p>
+<hr>
+<h3>2-2. 강남·송파·강동 — 프리미엄·백화점 권역 (6곳)</h3>
+<p>강남 고급 주거지와 잠실 대형 상권에 위치한 곳들로, 선물 세트·프리미엄 포장에 강점이 있는 매장이 많다.</p>
+<table><thead><tr>
+<th>가게명</th>
+<th>위치</th>
+<th>카테고리</th>
+</tr></thead><tbody>
+<tr>
+<td>압구정공주떡</td>
+<td>강남구 논현로161길 10</td>
+<td>전통 떡·한과</td>
+</tr>
+<tr>
+<td>도수향</td>
+<td>강남구 선릉로161길 21-4</td>
+<td>전통 떡·한과</td>
+</tr>
+<tr>
+<td>청담이북인절미</td>
+<td>강남구 도산대로85길 30</td>
+<td>인절미 특화</td>
+</tr>
+<tr>
+<td>명가떡집</td>
+<td>송파구 석촌호수로12길 7 (잠실 새마을 시장 내)</td>
+<td>전통 떡·한과</td>
+</tr>
+<tr>
+<td>떡함지 잠실본점</td>
+<td>송파구 올림픽로 212 갤러리아팰리스 B1</td>
+<td>백화점 입점</td>
+</tr>
+<tr>
+<td>백년화편</td>
+<td>강동구 양재대로81길 32</td>
+<td>프리미엄 선물세트</td>
+</tr>
+</tbody></table>
+<p><strong>압구정공주떡</strong> — 압구정 로데오 인근에 위치한 전통 떡집이다. 강남 고급 주거지에서 꾸준히 영업 중인 지역 밀착형 가게다.</p>
+<p><strong>도수향</strong> — 선릉·삼성 역세권 인근의 전통 떡·한과 매장이다. 강남 직장인 밀집 지역에 자리해 단체 선물 수요가 있는 곳이다.</p>
+<p><strong>청담이북인절미</strong> — 이름에서 알 수 있듯 인절미를 주력으로 다루는 곳이다. 청담동 골목에 위치해 명품 거리 쇼핑과 함께 들르기 좋다.</p>
+<p><strong>명가떡집</strong> — 잠실 새마을 시장 내부에 자리한 재래시장 떡집이다. 석촌호수 산책 동선과 이어지며, 시장 특유의 활기 있는 분위기에서 떡을 구매할 수 있다.</p>
+<p><strong>떡함지 잠실본점</strong> — 갤러리아팰리스 지하 식품관 입점 매장이다. 잠실·올림픽공원 관광 동선에서 편리하게 접근할 수 있다.</p>
+<p><strong>백년화편</strong> — 전통 떡과 선물 세트로 알려진 브랜드다. 프리미엄 포장이 강점으로, 고급 기념품을 찾는 방문자에게 추천한다. 강동구에 위치해 있어 천호·암사 동선과 연계된다.</p>
+<hr>
+<h3>2-3. 한강 북부(성동·성북·용산·마포) — 로컬과 지역 동선 (5곳)</h3>
+<p>성수·홍대·공덕 등 젊은 감성의 지역과 성북의 조용한 동네 떡집이 함께 포함된 권역이다.</p>
+<table><thead><tr>
+<th>가게명</th>
+<th>위치</th>
+<th>카테고리</th>
+</tr></thead><tbody>
+<tr>
+<td>오복떡집</td>
+<td>성동구 성덕정길 32</td>
+<td>전통 떡·한과</td>
+</tr>
+<tr>
+<td>대흥떡집</td>
+<td>성북구 중앙로 132</td>
+<td>전통 떡·한과</td>
+</tr>
+<tr>
+<td>행복한떡집</td>
+<td>용산구 청파로49길 56</td>
+<td>전통 떡·제조</td>
+</tr>
+<tr>
+<td>떡보의하루 마포공덕점</td>
+<td>마포구 백범로 112</td>
+<td>전국 체인</td>
+</tr>
+<tr>
+<td>숭례문떡명가</td>
+<td>마포구 만리재옛길 14</td>
+<td>전통 브랜드</td>
+</tr>
+</tbody></table>
+<p><strong>오복떡집</strong> — 성수동 성덕정길에 자리한 로컬 떡집이다. 성수 카페·편집숍 투어 동선과 함께 들르기 좋은 동네 가게로, 꾸준한 현지 단골을 보유한 곳이다.</p>
+<p><strong>대흥떡집</strong> — 성북구 중앙로의 전통 떡집이다. 온라인 예약 시스템 없이 운영되는 동네 가게 스타일로, 성북구 일대 산책 동선에서 들를 수 있다.</p>
+<p><strong>행복한떡집</strong> — 용산구 청파동 주택가에 위치한 떡 제조 전문 가게다. 이태원·한강 용산 동선과 연계 가능하다.</p>
+<p><strong>떡보의하루 마포공덕점</strong> — 전국 체인 브랜드로 접근성이 좋고 메뉴 구성이 표준화돼 있어 처음 떡을 접하는 외국인에게도 무난하다. 공덕역 인근이라 마포·홍대 동선과 이어진다.</p>
+<p><strong>숭례문떡명가</strong> — 만리재 골목의 전통 브랜드 떡집이다. 가성비 있는 전통 떡 구매처로, 서울역·공덕 동선에서 접근하기 좋다.</p>
+<hr>
+<h3>2-4. 동작·남부 — 동네 이색 스팟 (2곳)</h3>
+<p>관광 동선에서는 약간 벗어나 있지만, 노량진·동작 인근을 방문하는 일정이 있다면 함께 들러볼 만하다.</p>
+<p><strong>몰랑이수</strong> (동작구 동작대로29길 9 1층) — 동작구 로컬 떡·한과 매장이다. 네이버 스마트스토어도 운영하고 있어 온라인 구매도 가능하다.</p>
+<p><strong>정애맛담</strong> (동작구 동작대로29나길 10) — 몰랑이수와 가까운 동작구 일대의 전통 떡집이다. 동네 단골 위주의 소박한 가게로, 정식 상호는 &#x27;정애맛담&#x27;이다.</p>
+<hr>
+<h2>3. 시간·시즌별 추천</h2>
+<h3>3-1. 아침 간식으로</h3>
+<p>한국에서 떡은 전통적으로 아침 간식이나 가벼운 식사 대용으로도 먹는다. 백설기·절편·인절미처럼 당도가 낮고 부드러운 종류는 아침에 부담 없이 먹기 좋다. 동네 떡집은 이른 시간에 갓 쪄낸 떡을 구매할 수 있는 경우가 많으므로, 영업 시작 시간은 방문 전 확인이 필요하다.</p>
+<h3>3-2. 주말 오후 디저트</h3>
+<p>떡카페(동병상련·아진당 떡상점·약현떡방)는 커피나 전통 차와 함께 떡을 즐기는 공간으로, 주말 오후 카페 투어에 자연스럽게 포함할 수 있다. 앉아서 먹는 공간이 있어 관광 중 휴식을 겸하기에도 좋다.</p>
+<h3>3-3. 명절·특별한 날 (설·추석)</h3>
+<p>명절 전후에는 선물용 떡 세트 수요가 크게 늘어 품절이 빠르다. 설(1~2월)·추석(9~10월) 시즌에 방문한다면 백년화편·경기떡집·한과미의식처럼 선물 포장이 잘 돼 있는 곳을 미리 방문하거나 온라인 주문을 병행하는 것이 좋다.</p>
+<hr>
+<h2>4. 주문·포장·선물 팁 (외국인 관광객 관점)</h2>
+<p><strong>가격대 일반론</strong>: 동네 떡집은 저렴한 편이며, 백화점 입점 매장이나 브랜드 선물 세트는 프리미엄 가격대다. 정확한 가격은 가게마다 다르므로 방문 시 확인이 필요하다.</p>
+<p><strong>포장 요청</strong>: 선물 목적이라면 구매 시 &quot;선물 포장 해주세요&quot;라고 요청하면 대부분의 가게에서 포장해준다. 백화점 입점 매장(경기떡집·떡함지)은 기본적으로 포장 수준이 높다.</p>
+<p><strong>주의할 점</strong>:</p>
+<ul>
+<li>떡은 방부제를 거의 사용하지 않아 <strong>당일 소비를 권장</strong>한다. 특히 찹쌀떡·인절미는 냉장 보관이 필요하고, 빠르게 굳는 편이다.</li>
+<li>냉동 보관이 가능한 제품도 있으나, 이는 가게마다 다르므로 구매 시 확인이 필요하다.</li>
+<li>외국으로 가져가는 경우, 기내 온도와 이동 시간을 고려해 상온 보관 가능 여부를 반드시 확인한다.</li>
+</ul>
+<p><strong>언어 소통</strong>: 대부분의 동네 떡집은 영어 메뉴가 없다. 사진을 찍어 보여주거나 번역 앱을 활용하면 주문이 수월하다.</p>
+<hr>
+<h2>5. 추천 코스</h2>
+<h3>5-1. 반나절 종로 떡 투어 (3곳)</h3>
+<p>종로·인사동 관광 동선과 자연스럽게 연결되는 반나절 코스다.</p>
+<p>1. <strong>종로떡집 / 낙원떡집</strong> (삼일대로) — 오전 중 들러 동네 노포 떡집 분위기 체험, 간식용으로 구매</p>
+<p>2. <strong>아진당 떡상점</strong> (돈화문로11길 / 익선동 인근) — 점심 후 떡카페 방문, 전통 차와 함께</p>
+<p>3. <strong>한과미의식 안녕인사동점</strong> (인사동길) — 인사동 쇼핑 마지막에 들러 선물용 포장 떡·한과 구매</p>
+<p>이동: 모두 도보 15분 이내 권역. 지하철 3호선 안국역 기준.</p>
+<h3>5-2. 1일 남북 떡 비교 코스 (4곳)</h3>
+<p>오전 강북, 오후 강남으로 이동하면서 두 권역의 떡집 분위기를 비교하는 코스다.</p>
+<p>1. <strong>오복떡집</strong> (성수) — 성수 카페 투어 시작 전 로컬 떡집 방문</p>
+<p>2. <strong>동병상련</strong> (종로) — 점심 이후 떡카페 체험, 지하 제작실 구경</p>
+<p>3. <strong>압구정공주떡</strong> (강남) — 강남 이동 후 오후 간식</p>
+<p>4. <strong>백년화편</strong> (강동) — 하루 마지막에 프리미엄 선물 세트 구매</p>
+<p>이동: 지하철 2호선 성수역 → 3호선 안국역 → 3호선 압구정역 → 5호선 명일역(강동) 순.</p>
+<hr>
+<h2>6. 주의사항·에티켓</h2>
+<p><strong>신선도와 당일 소비</strong>: 대부분의 떡은 당일 제조·당일 소비가 원칙이다. 오래 둘수록 굳거나 맛이 변한다. 여행 첫날보다는 귀국 전날이나 숙소 근처에서 구매하는 것이 현실적이다.</p>
+<p><strong>냉동 보관</strong>: 일부 찹쌀떡·인절미는 냉동 후 해동해도 먹을 수 있다. 그러나 냉동 가능 여부와 해동 방법은 가게마다 다르므로 반드시 구매 시 확인한다.</p>
+<p><strong>실온 한계</strong>: 여름철(6~8월)은 기온이 높아 실온에서 반나절도 버티기 어렵다. 이 시기에는 구매 후 바로 냉장 보관하는 것을 권장한다.</p>
+<p><strong>재래시장 내 떡집</strong>: 명가떡집처럼 시장 내부에 있는 가게는 시장 영업일·영업시간과 연동된다. 방문 전 확인이 필요하다.</p>
+<p><strong>사진 촬영</strong>: 좁은 동네 떡집에서 무리하게 촬영하는 것은 다른 손님에게 불편을 줄 수 있다. 떡카페나 넓은 공간에서는 자유롭게 촬영 가능하다.</p>
+<hr>
+<p><strong>팩트 기준일</strong>: 2026-04-20</p>
+<p><strong>업데이트 주기</strong>: 분기 1회 (영업 정보 변동 반영)</p>
+<p><strong>데이터 출처</strong>: tteok_final_20.json (네이버 API + 수동 수집, 사용자 승인 완료)</p>
+  <div class="detail-nav">
+    <div><a href="yeonhui.html" style="color:var(--red);">&larr; 연희동 가이드</a></div>
+    <div><a href="yangjaecheon-guide.html" style="color:var(--red);">43 · 양재천 산책과 맛집 &rarr;</a></div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <p><a href="https://instagram.com/keychingu.korea" target="_blank">@keychingu.korea</a> &mdash; Seoul for MZ FIT Travelers</p>
+</footer>
+</body>
+</html>
