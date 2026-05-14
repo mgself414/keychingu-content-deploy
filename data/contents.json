@@ -828,5 +828,26 @@
     ],
     "summary_kr": "글로벌·인터내셔널+모던 다이닝+그릴·스테이크+뷰·시그니처 4축 12선 — T6.5 demand-driven (음식점·itaewon cluster gap 328.5 / cov 33%)",
     "summary_en": "Global·international + modern dining + grill·steak + view·signature 4-axis 12-pick — T6.5 demand-driven Itaewon·Hannam·Sinyongsan·Namsan restaurant guide"
+  },
+  {
+    "id": "156",
+    "slug": "yeonhui",
+    "title_kr": "연희동 가이드",
+    "title_en": "Seoul Yeonhui-dong Guide",
+    "category": "A",
+    "tags": [
+      "area",
+      "foreigner",
+      "yeonhui",
+      "seodaemun",
+      "bookshop",
+      "lifestyle",
+      "cafe",
+      "restaurant",
+      "shopping",
+      "local-deepdive"
+    ],
+    "summary_kr": "책방·소품·카페·맛집 4축 12선 + 안산자락길·사러가쇼핑센터·연희문학창작촌 볼거리 5곳 — 외국인 로컬 deep dive 동네 (사용자 큐레이션 7곳 + 크롤 18곳)",
+    "summary_en": "Bookshop + lifestyle + cafe + restaurant 4-axis 12-pick + 5 experiences (Ansan trail, Sarogga market, Literary village) — foreign local deep-dive guide"
   }
 ]
