@@ -807,5 +807,26 @@
     ],
     "summary_kr": "와인 페어링+모던 다이닝+스테이크·그릴+캐주얼·브런치 4축 12선 — T6.5 demand gangnam 양식 cluster (gap 328.9 / cov 21%)",
     "summary_en": "Wine pairing + modern dining + steak/grill + casual brunch 4-axis 12-pick — T6.5 demand-driven Gangnam·Dosan·Sinsa·Nonhyeon western guide"
+  },
+  {
+    "id": "155",
+    "slug": "itaewon-restaurant",
+    "title_kr": "이태원 음식점 가이드",
+    "title_en": "Seoul Itaewon Restaurant Guide",
+    "category": "A",
+    "tags": [
+      "area",
+      "foreigner",
+      "itaewon",
+      "hannam",
+      "sinyongsan",
+      "namsan",
+      "restaurant",
+      "global-dining",
+      "modern-dining",
+      "view-dining"
+    ],
+    "summary_kr": "글로벌·인터내셔널+모던 다이닝+그릴·스테이크+뷰·시그니처 4축 12선 — T6.5 demand-driven (음식점·itaewon cluster gap 328.5 / cov 33%)",
+    "summary_en": "Global·international + modern dining + grill·steak + view·signature 4-axis 12-pick — T6.5 demand-driven Itaewon·Hannam·Sinyongsan·Namsan restaurant guide"
   }
 ]
