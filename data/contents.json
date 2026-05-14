@@ -1458,5 +1458,24 @@
     ],
     "summary_kr": "40_남산 + 명동 야경 투어 — ISSUE 02 quick guide (~2K chars)",
     "summary_en": "40_Namsan + Myeongdong Night Tour — ISSUE 02 quick guide (~2K chars)"
+  },
+  {
+    "id": "157",
+    "slug": "jongno-cafe",
+    "title_kr": "종로 카페 가이드",
+    "title_en": "Seoul Jongno Cafe Guide",
+    "category": "A",
+    "tags": [
+      "area",
+      "foreigner",
+      "jongno",
+      "anguk",
+      "bukchon",
+      "ikseondong",
+      "cafe",
+      "hanok-cafe"
+    ],
+    "summary_kr": "한옥+갤러리+모던+베이커리 4축 12선 — T6.5 demand 1순위 cluster (카페·jongno gap 1040 — 전체 최상위)",
+    "summary_en": "Hanok + gallery + modern + bakery 4-axis 12-pick — T6.5 demand No.1 cluster Jongno cafe guide"
   }
 ]
