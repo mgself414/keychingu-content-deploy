@@ -1624,5 +1624,27 @@
     ],
     "summary_kr": "#153 ★평점 검증 12선 이후 — 외국인 리뷰 8건+ 신호 강한 hidden gems 8선. 양식·hongdae cluster covered 25%→50% 도달.",
     "summary_en": "Hidden gems 8-pick after #153 ★rating-verified 12 — foreign reviews 8+ signal threshold. Cluster cov 25%→50%."
+  },
+  {
+    "id": "166",
+    "slug": "gangnam-bar",
+    "title_kr": "강남 술집 가이드",
+    "title_en": "Gangnam Bar Guide",
+    "category": "C",
+    "tags": [
+      "area",
+      "foreigner",
+      "gangnam",
+      "seocho",
+      "songpa",
+      "bar",
+      "speakeasy",
+      "pocha",
+      "winebar",
+      "brewery",
+      "traditional-liquor"
+    ],
+    "summary_kr": "전통주·양조장+와인바+포차·요리주점+Speakeasy 4축 8선 — 술집·gangnam cluster gap 387, 0% 커버 (ISSUE 03 강남 시리즈 3편)",
+    "summary_en": "Brewery + winebar + pocha + speakeasy 4-axis 8-pick — Gangnam bar cluster gap 387, 0% covered (ISSUE 03 Gangnam series #3)"
   }
 ]
