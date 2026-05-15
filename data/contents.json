@@ -1583,5 +1583,25 @@
     ],
     "summary_kr": "한식주점+익선동 와인바+포차·맥주+이자카야 4축 12선 — T6.5 cycle 8 (술집·jongno gap 393, 매장 풀 38개 보강)",
     "summary_en": "Korean liquor + Ikseondong wine bar + pocha + izakaya 4-axis 12-pick — T6.5 demand-driven Jongno bar guide"
+  },
+  {
+    "id": "164",
+    "slug": "hongdae-italian",
+    "title_kr": "홍대 이탈리안 가이드",
+    "title_en": "Seoul Hongdae Italian Guide",
+    "category": "A",
+    "tags": [
+      "area",
+      "foreigner",
+      "hongdae",
+      "yeonnam",
+      "hapjeong",
+      "italian",
+      "pasta",
+      "pizza",
+      "wine-pairing"
+    ],
+    "summary_kr": "파스타 시그니처+코스·와인+피자·캐주얼+캐주얼 모임 4축 11선 — T6.5 cycle 9 (이탈리아음식·hongdae gap 388, 매장 풀 11개)",
+    "summary_en": "Pasta signature + course/wine + pizza + casual gathering 4-axis 11-pick — T6.5 demand-driven Hongdae Italian guide"
   }
 ]
