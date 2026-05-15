@@ -1,5 +1,5 @@
 /**
- * KeyChinGu Content Catalog — Filter Logic
+ * KeyChinGu Content Catalog — Filter Logic (v2 — search + area)
  * Vanilla JS, no dependencies.
  */
 (function () {
@@ -7,6 +7,8 @@
 
   let activeCategory = null;
   let activeTag = null;
+  let activeArea = null;
+  let searchQuery = '';
 
   const CAT_COLORS = {
     A: '#218CCC', B: '#2E8B57', C: '#D94C53', D: '#FAAD19',
@@ -19,12 +21,27 @@
       .then(data => {
         window.__contents = data;
         renderCards(data);
+        updateCount(data.length, data.length);
         bindFilters(data);
+        bindSearch(data);
       });
   }
 
   function getLang() {
     return document.documentElement.lang === 'en' ? 'en' : 'kr';
+  }
+
+  function updateCount(filtered, total) {
+    const el = document.getElementById('result-count');
+    if (!el) return;
+    const lang = getLang();
+    if (filtered === total) {
+      el.textContent = lang === 'en' ? total + ' guides' : total + '개 가이드';
+    } else {
+      el.textContent = lang === 'en'
+        ? filtered + ' / ' + total + ' guides'
+        : filtered + ' / ' + total + '개 일치';
+    }
   }
 
   function renderCards(items) {
@@ -73,7 +90,26 @@
     if (activeTag) {
       filtered = filtered.filter(function(item) { return item.tags.indexOf(activeTag) !== -1; });
     }
+    if (activeArea) {
+      filtered = filtered.filter(function(item) { return item.tags.indexOf(activeArea) !== -1; });
+    }
+    if (searchQuery) {
+      const q = searchQuery.toLowerCase();
+      filtered = filtered.filter(function(item) {
+        const haystack = [
+          item.title_kr || '',
+          item.title_en || '',
+          item.summary_kr || '',
+          item.summary_en || '',
+          (item.tags || []).join(' '),
+          item.slug || '',
+          '#' + item.id
+        ].join(' ').toLowerCase();
+        return haystack.indexOf(q) !== -1;
+      });
+    }
     renderCards(filtered);
+    updateCount(filtered.length, data.length);
   }
 
   function bindFilters(data) {
@@ -106,6 +142,34 @@
         }
         applyFilters(data);
       });
+    });
+    // Area buttons
+    document.querySelectorAll('.area-btn').forEach(function(btn) {
+      btn.addEventListener('click', function () {
+        var area = this.dataset.area;
+        if (activeArea === area) {
+          activeArea = null;
+          this.classList.remove('active');
+        } else {
+          activeArea = area;
+          document.querySelectorAll('.area-btn').forEach(function(b) { b.classList.remove('active'); });
+          this.classList.add('active');
+        }
+        applyFilters(data);
+      });
+    });
+  }
+
+  function bindSearch(data) {
+    const input = document.getElementById('search-input');
+    if (!input) return;
+    let debounce;
+    input.addEventListener('input', function () {
+      clearTimeout(debounce);
+      debounce = setTimeout(function () {
+        searchQuery = input.value.trim();
+        applyFilters(data);
+      }, 150);
     });
   }
 
