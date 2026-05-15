@@ -30,6 +30,7 @@
 <!-- SEARCH BAR -->
 <div class="search-bar">
   <input type="text" id="search-input" placeholder="🔍 검색 — 제목·요약·태그 (홍대, 카페, 강남, 한복...)" autocomplete="off">
+  <button id="fav-toggle" class="fav-toggle" title="즐겨찾기만 보기">★ 즐겨찾기 <span id="fav-count"></span></button>
   <span id="result-count"></span>
 </div>
 
@@ -89,6 +90,9 @@
 <div class="card-grid" id="card-grid">
   <!-- JS renders cards here -->
 </div>
+
+<!-- PAGINATION -->
+<div class="pagination" id="pagination"></div>
 
 <!-- FOOTER -->
 <footer class="site-footer">

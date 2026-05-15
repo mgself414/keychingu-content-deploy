@@ -75,6 +75,29 @@
   border-top: 1px solid var(--border);
   font-size: 14px; font-weight: 600;
 }
+.share-bar {
+  display: flex; align-items: center; gap: 10px;
+  margin-top: 40px; padding: 16px 20px;
+  background: #f9f9f9; border-radius: 12px;
+  border: 1px solid var(--border);
+}
+.share-label {
+  font-size: 14px; font-weight: 600; color: var(--text-soft);
+  margin-right: 8px;
+}
+.share-btn {
+  width: 40px; height: 40px;
+  border: none; border-radius: 50%;
+  background: #fff; cursor: pointer;
+  font-size: 1.1rem; transition: all 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  display: inline-flex; align-items: center; justify-content: center;
+}
+.share-btn:hover { transform: translateY(-2px); box-shadow: 0 3px 8px rgba(0,0,0,0.15); }
+.share-twitter:hover { background: #000; color: #fff; }
+.share-facebook:hover { background: #1877f2; color: #fff; }
+.share-kakao:hover { background: #fee500; }
+.share-copy:hover { background: #218CCC; color: #fff; }
 </style>
 </head>
 <body>
@@ -417,6 +440,15 @@
 <p>#이태원음식점 #한남다이닝 #신용산글로벌 #N서울타워뷰 #몬드리안호텔 #리움미술관카페 #그릴 #모던다이닝 #멕시칸 #인터내셔널펍 #외국인친화 #글로벌다이닝 #럭셔리 #키친구</p>
 <hr>
 <p><em>외국인 demand-supply gap 분석에서 음식점·itaewon cluster는 콘텐츠 33% 커버 + gap_score 328.5 — ISSUE 03 신규 콘텐츠 13순위 가치. 매장 12개 풀 12선 가이드. v4 postprocess 회귀 검증 cycle.</em></p>
+
+  <div class="share-bar">
+    <span class="share-label">공유</span>
+    <button class="share-btn share-twitter" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent('이태원 음식점 가이드') + '&url=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Twitter">𝕏</button>
+    <button class="share-btn share-facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Facebook">f</button>
+    <button class="share-btn share-kakao" onclick="navigator.share ? navigator.share({title: '이태원 음식점 가이드', url: window.location.href}) : navigator.clipboard.writeText(window.location.href).then(function() { alert('링크 복사됨!'); })" aria-label="Kakao/Share">📤</button>
+    <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href).then(function() { this.textContent = '✓'; setTimeout(function() { document.querySelector('.share-copy').textContent = '🔗'; }, 1500); }.bind(this))" aria-label="Copy link">🔗</button>
+  </div>
+
   <div class="detail-nav">
     <div><a href="gangnam-western.html" style="color:var(--red);">&larr; 강남 양식 가이드</a></div>
     <div><a href="yeonhui.html" style="color:var(--red);">연희동 가이드 &rarr;</a></div>

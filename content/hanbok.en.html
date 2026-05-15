@@ -75,6 +75,29 @@
   border-top: 1px solid var(--border);
   font-size: 14px; font-weight: 600;
 }
+.share-bar {
+  display: flex; align-items: center; gap: 10px;
+  margin-top: 40px; padding: 16px 20px;
+  background: #f9f9f9; border-radius: 12px;
+  border: 1px solid var(--border);
+}
+.share-label {
+  font-size: 14px; font-weight: 600; color: var(--text-soft);
+  margin-right: 8px;
+}
+.share-btn {
+  width: 40px; height: 40px;
+  border: none; border-radius: 50%;
+  background: #fff; cursor: pointer;
+  font-size: 1.1rem; transition: all 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  display: inline-flex; align-items: center; justify-content: center;
+}
+.share-btn:hover { transform: translateY(-2px); box-shadow: 0 3px 8px rgba(0,0,0,0.15); }
+.share-twitter:hover { background: #000; color: #fff; }
+.share-facebook:hover { background: #1877f2; color: #fff; }
+.share-kakao:hover { background: #fee500; }
+.share-copy:hover { background: #218CCC; color: #fff; }
 </style>
 </head>
 <body>
@@ -707,6 +730,15 @@
 <p><strong>Last Updated</strong>: April 2026</p>
 <hr>
 <p><em>This guide is translated from the original Korean. For Japanese (JP) and Chinese Simplified (CN) versions, see future releases.</em></p>
+
+  <div class="share-bar">
+    <span class="share-label">Share</span>
+    <button class="share-btn share-twitter" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent('Hanbok Experience (Modern)') + '&url=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Twitter">𝕏</button>
+    <button class="share-btn share-facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Facebook">f</button>
+    <button class="share-btn share-kakao" onclick="navigator.share ? navigator.share({title: 'Hanbok Experience (Modern)', url: window.location.href}) : navigator.clipboard.writeText(window.location.href).then(function() { alert('Link copied!'); })" aria-label="Kakao/Share">📤</button>
+    <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href).then(function() { this.textContent = '✓'; setTimeout(function() { document.querySelector('.share-copy').textContent = '🔗'; }, 1500); }.bind(this))" aria-label="Copy link">🔗</button>
+  </div>
+
   <div class="detail-nav">
     <div><a href="street-food.en.html" style="color:var(--red);">&larr; Street Food Mecca</a></div>
     <div><a href="spa-massage.en.html" style="color:var(--red);">Korean Spa & Massage &rarr;</a></div>

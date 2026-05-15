@@ -1,5 +1,5 @@
 /**
- * KeyChinGu Content Catalog — Filter Logic (v2 — search + area)
+ * KeyChinGu Content Catalog — Filter Logic (v3 — search + area + pagination + favorites)
  * Vanilla JS, no dependencies.
  */
 (function () {
@@ -9,21 +9,53 @@
   let activeTag = null;
   let activeArea = null;
   let searchQuery = '';
+  let showFavoritesOnly = false;
+  let currentPage = 1;
+  const PAGE_SIZE = 24;
 
   const CAT_COLORS = {
     A: '#218CCC', B: '#2E8B57', C: '#D94C53', D: '#FAAD19',
     E: '#E79397', F: '#6AB2DC', G: '#9B59B6', H: '#34495E'
   };
 
+  // Favorites — localStorage backed
+  function getFavorites() {
+    try {
+      return JSON.parse(localStorage.getItem('kc_favorites') || '[]');
+    } catch (e) { return []; }
+  }
+  function setFavorites(arr) {
+    localStorage.setItem('kc_favorites', JSON.stringify(arr));
+  }
+  function isFavorite(id) {
+    return getFavorites().indexOf(String(id)) !== -1;
+  }
+  function toggleFavorite(id) {
+    const favs = getFavorites();
+    const idx = favs.indexOf(String(id));
+    if (idx === -1) favs.push(String(id));
+    else favs.splice(idx, 1);
+    setFavorites(favs);
+    updateFavCount();
+  }
+  function updateFavCount() {
+    const el = document.getElementById('fav-count');
+    if (el) {
+      const count = getFavorites().length;
+      el.textContent = count > 0 ? '(' + count + ')' : '';
+    }
+  }
+
   function init() {
     fetch('data/contents.json')
       .then(r => r.json())
       .then(data => {
         window.__contents = data;
-        renderCards(data);
-        updateCount(data.length, data.length);
+        applyFilters(data);
         bindFilters(data);
         bindSearch(data);
+        bindFavToggle(data);
+        updateFavCount();
       });
   }
 
@@ -47,13 +79,22 @@
   function renderCards(items) {
     const grid = document.getElementById('card-grid');
     const lang = getLang();
-    if (!items.length) {
+    const totalItems = items.length;
+    const totalPages = Math.max(1, Math.ceil(totalItems / PAGE_SIZE));
+    if (currentPage > totalPages) currentPage = 1;
+
+    if (!totalItems) {
       grid.innerHTML = '<div class="no-results">' +
         (lang === 'en' ? 'No content matches your filters.' : '필터 조건에 맞는 콘텐츠가 없습니다.') +
         '</div>';
+      renderPagination(0, 1);
       return;
     }
-    grid.innerHTML = items.map(item => {
+
+    const startIdx = (currentPage - 1) * PAGE_SIZE;
+    const pageItems = items.slice(startIdx, startIdx + PAGE_SIZE);
+
+    grid.innerHTML = pageItems.map(item => {
       const title = lang === 'en' ? item.title_en : item.title_kr;
       const summary = lang === 'en' ? item.summary_en : item.summary_kr;
       const color = CAT_COLORS[item.category] || '#D94C53';
@@ -69,7 +110,10 @@
       };
       const catLabel = catLabels[item.category] || item.category;
       const detailHref = 'content/' + item.slug + (lang === 'en' ? '.en' : '') + '.html';
-      return '<a href="' + detailHref + '" class="card" data-category="' + item.category + '" data-tags="' + item.tags.join(',') + '">' +
+      const favClass = isFavorite(item.id) ? 'fav-btn active' : 'fav-btn';
+      return '<div class="card-wrap">' +
+        '<button class="' + favClass + '" data-id="' + item.id + '" aria-label="favorite" title="' + (lang === 'en' ? 'Toggle favorite' : '즐겨찾기') + '">★</button>' +
+        '<a href="' + detailHref + '" class="card" data-category="' + item.category + '" data-tags="' + item.tags.join(',') + '">' +
         '<div class="card-cover" style="background:linear-gradient(135deg,' + color + ' 0%,' + color + 'cc 100%);">' +
         '<span class="cat-badge" style="background:rgba(0,0,0,0.25);">' + catLabel + '</span>' +
         '<span class="card-num">#' + item.id + '</span>' +
@@ -78,8 +122,60 @@
         '<h3>' + title + '</h3>' +
         '<p>' + summary + '</p>' +
         '<div class="card-tags">' + item.tags.map(function(t) { return '<span>' + t + '</span>'; }).join('') + '</div>' +
-        '</div></a>';
+        '</div></a></div>';
     }).join('');
+
+    // Bind fav buttons
+    grid.querySelectorAll('.fav-btn').forEach(function(btn) {
+      btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        const id = this.dataset.id;
+        toggleFavorite(id);
+        this.classList.toggle('active');
+      });
+    });
+
+    renderPagination(totalItems, totalPages);
+  }
+
+  function renderPagination(totalItems, totalPages) {
+    const el = document.getElementById('pagination');
+    if (!el) return;
+    if (totalPages <= 1) {
+      el.innerHTML = '';
+      return;
+    }
+    const lang = getLang();
+    let html = '<button class="page-btn" data-page="prev"' + (currentPage === 1 ? ' disabled' : '') + '>←</button>';
+    // Show all pages if ≤7, else first·current±1·last with ellipsis
+    const pages = [];
+    if (totalPages <= 7) {
+      for (let i = 1; i <= totalPages; i++) pages.push(i);
+    } else {
+      pages.push(1);
+      if (currentPage > 3) pages.push('...');
+      for (let i = Math.max(2, currentPage - 1); i <= Math.min(totalPages - 1, currentPage + 1); i++) pages.push(i);
+      if (currentPage < totalPages - 2) pages.push('...');
+      pages.push(totalPages);
+    }
+    pages.forEach(function(p) {
+      if (p === '...') html += '<span class="page-ellipsis">…</span>';
+      else html += '<button class="page-btn' + (p === currentPage ? ' active' : '') + '" data-page="' + p + '">' + p + '</button>';
+    });
+    html += '<button class="page-btn" data-page="next"' + (currentPage === totalPages ? ' disabled' : '') + '>→</button>';
+    el.innerHTML = html;
+
+    el.querySelectorAll('.page-btn').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        const p = this.dataset.page;
+        if (p === 'prev' && currentPage > 1) currentPage--;
+        else if (p === 'next' && currentPage < totalPages) currentPage++;
+        else if (!isNaN(parseInt(p))) currentPage = parseInt(p);
+        applyFilters(window.__contents);
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    });
   }
 
   function applyFilters(data) {
@@ -92,6 +188,10 @@
     }
     if (activeArea) {
       filtered = filtered.filter(function(item) { return item.tags.indexOf(activeArea) !== -1; });
+    }
+    if (showFavoritesOnly) {
+      const favs = getFavorites();
+      filtered = filtered.filter(function(item) { return favs.indexOf(String(item.id)) !== -1; });
     }
     if (searchQuery) {
       const q = searchQuery.toLowerCase();
@@ -113,7 +213,6 @@
   }
 
   function bindFilters(data) {
-    // Category buttons
     document.querySelectorAll('.filter-btn').forEach(function(btn) {
       btn.addEventListener('click', function () {
         var cat = this.dataset.category;
@@ -125,10 +224,10 @@
           document.querySelectorAll('.filter-btn').forEach(function(b) { b.classList.remove('active'); });
           this.classList.add('active');
         }
+        currentPage = 1;
         applyFilters(data);
       });
     });
-    // Tag buttons
     document.querySelectorAll('.tag-btn').forEach(function(btn) {
       btn.addEventListener('click', function () {
         var tag = this.dataset.tag;
@@ -140,10 +239,10 @@
           document.querySelectorAll('.tag-btn').forEach(function(b) { b.classList.remove('active'); });
           this.classList.add('active');
         }
+        currentPage = 1;
         applyFilters(data);
       });
     });
-    // Area buttons
     document.querySelectorAll('.area-btn').forEach(function(btn) {
       btn.addEventListener('click', function () {
         var area = this.dataset.area;
@@ -155,6 +254,7 @@
           document.querySelectorAll('.area-btn').forEach(function(b) { b.classList.remove('active'); });
           this.classList.add('active');
         }
+        currentPage = 1;
         applyFilters(data);
       });
     });
@@ -168,8 +268,20 @@
       clearTimeout(debounce);
       debounce = setTimeout(function () {
         searchQuery = input.value.trim();
+        currentPage = 1;
         applyFilters(data);
       }, 150);
+    });
+  }
+
+  function bindFavToggle(data) {
+    const btn = document.getElementById('fav-toggle');
+    if (!btn) return;
+    btn.addEventListener('click', function() {
+      showFavoritesOnly = !showFavoritesOnly;
+      this.classList.toggle('active');
+      currentPage = 1;
+      applyFilters(data);
     });
   }
 

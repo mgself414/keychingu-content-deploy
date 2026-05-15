@@ -75,6 +75,29 @@
   border-top: 1px solid var(--border);
   font-size: 14px; font-weight: 600;
 }
+.share-bar {
+  display: flex; align-items: center; gap: 10px;
+  margin-top: 40px; padding: 16px 20px;
+  background: #f9f9f9; border-radius: 12px;
+  border: 1px solid var(--border);
+}
+.share-label {
+  font-size: 14px; font-weight: 600; color: var(--text-soft);
+  margin-right: 8px;
+}
+.share-btn {
+  width: 40px; height: 40px;
+  border: none; border-radius: 50%;
+  background: #fff; cursor: pointer;
+  font-size: 1.1rem; transition: all 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  display: inline-flex; align-items: center; justify-content: center;
+}
+.share-btn:hover { transform: translateY(-2px); box-shadow: 0 3px 8px rgba(0,0,0,0.15); }
+.share-twitter:hover { background: #000; color: #fff; }
+.share-facebook:hover { background: #1877f2; color: #fff; }
+.share-kakao:hover { background: #fee500; }
+.share-copy:hover { background: #218CCC; color: #fff; }
 </style>
 </head>
 <body>
@@ -413,6 +436,15 @@
 <p>#홍대양식 #연남양식 #합정양식 #망원양식 #이탈리안 #파스타 #모던양식 #브런치 #화덕피자 #스테이크 #와인다이닝 #외국인친화 #홍대다이닝 #양식코스 #키친구</p>
 <hr>
 <p><em>외국인 demand-supply gap 분석에서 양식·hongdae cluster는 콘텐츠 0% 커버 + gap_score 456 — ISSUE 03 신규 콘텐츠 5순위 가치. 매장 풀 34개 보강 후 12선 풀 가이드로 확장 (v2 2026-05-13).</em></p>
+
+  <div class="share-bar">
+    <span class="share-label">공유</span>
+    <button class="share-btn share-twitter" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent('홍대 양식 가이드') + '&url=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Twitter">𝕏</button>
+    <button class="share-btn share-facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Facebook">f</button>
+    <button class="share-btn share-kakao" onclick="navigator.share ? navigator.share({title: '홍대 양식 가이드', url: window.location.href}) : navigator.clipboard.writeText(window.location.href).then(function() { alert('링크 복사됨!'); })" aria-label="Kakao/Share">📤</button>
+    <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href).then(function() { this.textContent = '✓'; setTimeout(function() { document.querySelector('.share-copy').textContent = '🔗'; }, 1500); }.bind(this))" aria-label="Copy link">🔗</button>
+  </div>
+
   <div class="detail-nav">
     <div><a href="jongno-dessert.html" style="color:var(--red);">&larr; 종로·북촌 디저트 가이드</a></div>
     <div><a href="jongno-bakery.html" style="color:var(--red);">종로 베이커리 가이드 &rarr;</a></div>
