@@ -1603,5 +1603,26 @@
     ],
     "summary_kr": "파스타 시그니처+코스·와인+피자·캐주얼+캐주얼 모임 4축 11선 — T6.5 cycle 9 (이탈리아음식·hongdae gap 388, 매장 풀 11개)",
     "summary_en": "Pasta signature + course/wine + pizza + casual gathering 4-axis 11-pick — T6.5 demand-driven Hongdae Italian guide"
+  },
+  {
+    "id": "165",
+    "slug": "hongdae-western-phase2",
+    "title_kr": "홍대 양식 Phase 2 가이드",
+    "title_en": "Hongdae Western Food Phase 2 Guide",
+    "category": "C",
+    "tags": [
+      "area",
+      "foreigner",
+      "hongdae",
+      "yeonnam",
+      "hapjeong",
+      "mangwon",
+      "western",
+      "italian",
+      "hidden-gems",
+      "phase2"
+    ],
+    "summary_kr": "#153 ★평점 검증 12선 이후 — 외국인 리뷰 8건+ 신호 강한 hidden gems 8선. 양식·hongdae cluster covered 25%→50% 도달.",
+    "summary_en": "Hidden gems 8-pick after #153 ★rating-verified 12 — foreign reviews 8+ signal threshold. Cluster cov 25%→50%."
   }
 ]
