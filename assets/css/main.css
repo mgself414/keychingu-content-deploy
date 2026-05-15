@@ -359,3 +359,120 @@ a { color: inherit; text-decoration: none; }
   color: #FAAD19;
   background: #fff;
 }
+
+/* === v4 DARK MODE + MOBILE RESPONSIVE (2026-05-15) === */
+:root {
+  color-scheme: light dark;
+}
+
+[data-theme="dark"] {
+  --bg: #0f1419;
+  --card-bg: #1a1f26;
+  --text: #e6e8ed;
+  --text-mid: #b8bcc4;
+  --text-soft: #8a8f99;
+  --border: rgba(255,255,255,0.1);
+  --shadow: 0 2px 12px rgba(0,0,0,0.4);
+}
+
+[data-theme="dark"] .search-bar input {
+  background: #1a1f26;
+  color: #e6e8ed;
+  border-color: #2a3038;
+}
+[data-theme="dark"] .search-bar input:focus {
+  border-color: #4ba3d8;
+}
+[data-theme="dark"] .area-btn,
+[data-theme="dark"] .filter-btn,
+[data-theme="dark"] .tag-btn,
+[data-theme="dark"] .page-btn {
+  background: #1a1f26;
+  border-color: #2a3038;
+  color: #b8bcc4;
+}
+[data-theme="dark"] .area-btn:hover,
+[data-theme="dark"] .page-btn:hover:not(:disabled) {
+  background: #2a3038;
+}
+[data-theme="dark"] .fav-toggle {
+  background: #2a1f1f;
+  border-color: #4a2828;
+}
+
+/* Theme toggle button */
+.theme-toggle {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--card-bg);
+  border: 2px solid var(--border);
+  color: var(--text);
+  cursor: pointer;
+  font-size: 1.4rem;
+  box-shadow: var(--shadow);
+  z-index: 1000;
+  transition: all 0.2s;
+}
+.theme-toggle:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .search-bar {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .search-bar input {
+    width: 100%;
+    font-size: 0.95rem;
+  }
+  .fav-toggle {
+    flex: 1;
+    text-align: center;
+  }
+  #result-count {
+    width: 100%;
+    text-align: center;
+  }
+  .area-bar, .filter-bar, .tag-bar {
+    gap: 0.4rem;
+    padding: 0 0.6rem;
+  }
+  .area-btn, .filter-btn, .tag-btn {
+    font-size: 0.78rem;
+    padding: 0.35rem 0.7rem;
+  }
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+  .card-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 0 0.6rem;
+  }
+  .pagination {
+    gap: 0.25rem;
+  }
+  .page-btn {
+    min-width: 32px;
+    height: 32px;
+    font-size: 0.85rem;
+  }
+  .theme-toggle {
+    bottom: 1rem;
+    right: 1rem;
+    width: 42px;
+    height: 42px;
+  }
+}
+
+/* Image lazy load (for future use) */
+img {
+  loading: lazy;
+}
