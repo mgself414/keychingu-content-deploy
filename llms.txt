@@ -1,62 +1,146 @@
-# KeyChinGu
+# KeyChinGu — Korea Travel Guides for Foreign MZ Travelers
 
-> Curated Korea travel guides for foreign MZ FIT travelers (20-35) — 20 essential Seoul topics covering neighborhoods, food, culture, K-content, and practical info, in Korean and English.
+> Curated Korea travel guides covering 106+ topics — neighborhoods, food, culture, K-content, shopping, and practical info, in Korean and English. Updated 2026-05-15.
+
+> Total guides: 107 | Languages: Korean + English (Chinese · Japanese PDF coming soon)
+
 
 ## Neighborhoods
 
-- [Bukchon Hanok & Samcheong-dong](https://mgself414.github.io/keychingu-content-deploy/content/bukchon.en.html): Hanbok-rental walking tour through 600-year-old Joseon-dynasty hanok village, Samcheong-dong cafés, and Bukchon photo spots. Korean: /content/bukchon.html
-- [Euljiro Retro Hipster Tour](https://mgself414.github.io/keychingu-content-deploy/content/euljiro.en.html): Hipster industrial neighborhood guide — back-alley craft-beer bars, vintage tin-roof restaurants, "Hipjiro" rooftop hangouts. Korean: /content/euljiro.html
-- [Seongsu Pop-Up Deep Dive](https://mgself414.github.io/keychingu-content-deploy/content/seongsu.en.html): Why Seongsu became Seoul's pop-up capital — brand stores, design cafés, monthly rotating exhibitions. Korean: /content/seongsu.html
+- [Seongsu Pop-Up Deep Dive](https://mgself414.github.io/keychingu-content-deploy/content/seongsu.en.html): MZ hotspot Seongsu — cafes, pop-ups & select shops Korean: /content/seongsu.html
+- [Euljiro Retro Hipster Tour](https://mgself414.github.io/keychingu-content-deploy/content/euljiro.en.html): Hidden bars & cafes among old ironworks Korean: /content/euljiro.html
+- [Bukchon Hanok & Samcheong-dong](https://mgself414.github.io/keychingu-content-deploy/content/bukchon.en.html): Traditional meets modern with hanbok experience Korean: /content/bukchon.html
+- [Dongmyo Vintage + Yajang](https://mgself414.github.io/keychingu-content-deploy/content/dongmyo.en.html): Time-frozen alley with frozen prices — vintage digging + ₩1,000 toast + Jongno 3-ga yajang combo Korean: /content/dongmyo.html
+- [Gwangjang Vintage Arcade](https://mgself414.github.io/keychingu-content-deploy/content/gwangjang-vintage.en.html): 2F above the food market — patterned dresses & retro coats hidden vintage arcade Korean: /content/gwangjang-vintage.html
+- [Jamsil 1-Day Full Guide](https://mgself414.github.io/keychingu-content-deploy/content/jamsil.en.html): Jamsil 1-Day Full Guide — ISSUE 02 series Korean: /content/jamsil.html
+- [Incheon Airport Arrival & City Transfer Complete Guide](https://mgself414.github.io/keychingu-content-deploy/content/incheon-airport.en.html): Incheon Airport Arrival & City Transfer Complete Guide — ISSUE 02 series Korean: /content/incheon-airport.html
+- [Fall Foliage TOP 8 Spots + Season-by-Season Foliage Calendar](https://mgself414.github.io/keychingu-content-deploy/content/autumn-foliage.en.html): Fall Foliage TOP 8 Spots + Season-by-Season Foliage Calendar — ISSUE 02 series Korean: /content/autumn-foliage.html
+- [Seoul Winter Illuminations, Christmas Trees & New Year's Eve Countdown](https://mgself414.github.io/keychingu-content-deploy/content/winter-illumination.en.html): Seoul Winter Illuminations, Christmas Trees & New Year's Eve Countdown — ISSUE 02 series Korean: /content/winter-illumination.html
+- [Seoul Makgeolli (막걸리) & Traditional Liquor Intro](https://mgself414.github.io/keychingu-content-deploy/content/seoul-makgeolli.en.html): Seoul Makgeolli (막걸리) & Traditional Liquor Intro — ISSUE 02 series Korean: /content/seoul-makgeolli.html
+- [Seoul Yajang (야장) Culture Top 10](https://mgself414.github.io/keychingu-content-deploy/content/seoul-yajang.en.html): Seoul Yajang (야장) Culture Top 10 — ISSUE 02 series Korean: /content/seoul-yajang.html
+- [Seoul Gangnam Western Food Guide](https://mgself414.github.io/keychingu-content-deploy/content/gangnam-western.en.html): Wine pairing + modern dining + steak/grill + casual brunch 4-axis 12-pick — T6.5 demand-driven Gangnam·Dosan·Sinsa·Nonhyeon western guide Korean: /content/gangnam-western.html
+- [Seoul Itaewon Restaurant Guide](https://mgself414.github.io/keychingu-content-deploy/content/itaewon-restaurant.en.html): Global·international + modern dining + grill·steak + view·signature 4-axis 12-pick — T6.5 demand-driven Itaewon·Hannam·Sinyongsan·Namsan restaurant guide Korean: /content/itaewon-restaurant.html
+- [Seoul Yeonhui-dong Guide](https://mgself414.github.io/keychingu-content-deploy/content/yeonhui.en.html): Bookshop + lifestyle + cafe + restaurant 4-axis 12-pick + 5 experiences (Ansan trail, Sarogga market, Literary village) — foreign local deep-dive guide Korean: /content/yeonhui.html
+- [Seoul Jongno Cafe Guide](https://mgself414.github.io/keychingu-content-deploy/content/jongno-cafe.en.html): Hanok + gallery + modern + bakery 4-axis 12-pick — T6.5 demand No.1 cluster Jongno cafe guide Korean: /content/jongno-cafe.html
+- [Hongdae 269 Complete Guide](https://mgself414.github.io/keychingu-content-deploy/content/hongdae-269.en.html): Restaurant 60 + cafe·dessert 89 + culture·experience 60 + shopping·photo 60 = 269 spots complete guide — user-curated comprehensive Hongdae guidebook Korean: /content/hongdae-269.html
+- [Hongdae Restaurants Bars 60](https://mgself414.github.io/keychingu-content-deploy/content/hongdae-restaurants.en.html): Hongdae Restaurants Bars 60 — split from #158 user-curated 270 spots Korean: /content/hongdae-restaurants.html
+- [Hongdae Cafe Dessert 89](https://mgself414.github.io/keychingu-content-deploy/content/hongdae-cafe-dessert.en.html): Hongdae Cafe Dessert 89 — split from #158 user-curated 270 spots Korean: /content/hongdae-cafe-dessert.html
+- [Hongdae Culture Experience 60](https://mgself414.github.io/keychingu-content-deploy/content/hongdae-culture.en.html): Hongdae Culture Experience 60 — split from #158 user-curated 270 spots Korean: /content/hongdae-culture.html
+- [Hongdae Shopping Photo 60](https://mgself414.github.io/keychingu-content-deploy/content/hongdae-shopping.en.html): Hongdae Shopping Photo 60 — split from #158 user-curated 270 spots Korean: /content/hongdae-shopping.html
+- [Seoul Jongno Bar Guide](https://mgself414.github.io/keychingu-content-deploy/content/jongno-bar.en.html): Korean liquor + Ikseondong wine bar + pocha + izakaya 4-axis 12-pick — T6.5 demand-driven Jongno bar guide Korean: /content/jongno-bar.html
+- [Seoul Hongdae Italian Guide](https://mgself414.github.io/keychingu-content-deploy/content/hongdae-italian.en.html): Pasta signature + course/wine + pizza + casual gathering 4-axis 11-pick — T6.5 demand-driven Hongdae Italian guide Korean: /content/hongdae-italian.html
 
 ## Nature & Views
 
-- [Namsan Trail & Night Views](https://mgself414.github.io/keychingu-content-deploy/content/namsan.en.html): Free Namsan walking trails, N Seoul Tower access routes, and the best free night-view spots near downtown. Korean: /content/namsan.html
-- [Free Night-View Spots TOP 10](https://mgself414.github.io/keychingu-content-deploy/content/night-views.en.html): Ten zero-cost panoramic Seoul viewpoints with subway access — Bukak Skyway, Maebongsan, Naksan Park, Haneul Park, more. Korean: /content/night-views.html
+- [Free Night View Spots TOP 10](https://mgself414.github.io/keychingu-content-deploy/content/night-views.en.html): Best Seoul night views without spending a won Korean: /content/night-views.html
+- [Namsan Trail & Night Views](https://mgself414.github.io/keychingu-content-deploy/content/namsan.en.html): Walk the trails around N Seoul Tower at sunset Korean: /content/namsan.html
+- [Eungbongsan Pavilion Night View](https://mgself414.github.io/keychingu-content-deploy/content/eungbongsan.en.html): 15-min climb, ₩0, Dongho Bridge + N Seoul Tower in one frame Korean: /content/eungbongsan.html
 
 ## Food & Drink
 
-- [Korean Food Essentials TOP 10](https://mgself414.github.io/keychingu-content-deploy/content/korean-food.en.html): Ten must-try Korean dishes for first-timers with origin stories, where to find them, and ordering tips. Korean: /content/korean-food.html
-- [Street Food Mecca](https://mgself414.github.io/keychingu-content-deploy/content/street-food.en.html): Gwangjang, Tongin, Namdaemun, Myeong-dong street-food guide — what to order, prices, vendor etiquette. Korean: /content/street-food.html
-- [Hangang Chimaek Picnic](https://mgself414.github.io/keychingu-content-deploy/content/chimaek.en.html): Korea's signature fried-chicken-and-beer ritual at Hangang Park — delivery codes, best parks, BYOB rules. Korean: /content/chimaek.html
-- [Gamaekjip Complete Guide](https://mgself414.github.io/keychingu-content-deploy/content/gamaekjip.en.html): Old-school Korean drinking spots — what gamaekjip is, key Jongno/Euljiro venues, anju ordering tips. Korean: /content/gamaekjip.html
-- [Traditional Market Experience](https://mgself414.github.io/keychingu-content-deploy/content/market.en.html): Comparing Gwangjang, Tongin, Mangwon, Namdaemun markets — what each is famous for, opening hours, signature dishes. Korean: /content/market.html
-- [24-Hour Food Guide](https://mgself414.github.io/keychingu-content-deploy/content/24hr-food.en.html): Late-night and 24-hour Seoul restaurants — gukbap, jokbal, sundae-haejangguk, late-night ramyeon spots. Korean: /content/24hr-food.html
+- [Traditional Market Experience](https://mgself414.github.io/keychingu-content-deploy/content/market.en.html): Gwangjang vs Mangwon vs Tongin — which market fits you? Korean: /content/market.html
+- [Gamaekjip Complete Guide](https://mgself414.github.io/keychingu-content-deploy/content/gamaekjip.en.html): Corner-store beer culture — drink like a local Korean: /content/gamaekjip.html
+- [24-Hour Food Guide](https://mgself414.github.io/keychingu-content-deploy/content/24hr-food.en.html): Where to eat when everything else is closed Korean: /content/24hr-food.html
+- [Hangang Chimaek Picnic](https://mgself414.github.io/keychingu-content-deploy/content/chimaek.en.html): Fried chicken & beer by the river Korean: /content/chimaek.html
+- [Korean Food Essentials TOP 10](https://mgself414.github.io/keychingu-content-deploy/content/korean-food.en.html): 10 dishes you must try on your first trip Korean: /content/korean-food.html
+- [Street Food Mecca](https://mgself414.github.io/keychingu-content-deploy/content/street-food.en.html): Mangwon, Gwangjang & Jongno street food Korean: /content/street-food.html
+- [Seoul Naengmyeon Guide](https://mgself414.github.io/keychingu-content-deploy/content/naengmyeon.en.html): Pyeongyang vs Hamheung — 8 main shops + 17 quick picks, 4-axis balance + four-season guide Korean: /content/naengmyeon.html
+- [Seoul Korean BBQ Guide](https://mgself414.github.io/keychingu-content-deploy/content/korean-bbq.en.html): Hanwoo, Heuk-doeji, samgyeopsal, galbi-tang 8-pick — 4-axis balance (nopo/MZ/premium/chain) Korean: /content/korean-bbq.html
+- [Seoul Dakgalbi Guide](https://mgself414.github.io/keychingu-content-deploy/content/dakgalbi.en.html): Chuncheon-style origin + Seoul MZ trendy 8-pick — connects to K-drama/K-pop culture Korean: /content/dakgalbi.html
+- [Seoul Bunsik Guide](https://mgself414.github.io/keychingu-content-deploy/content/bunsik.en.html): Tteokbokki, gimbap, sundae, rabokki 8-pick — Gwangjang market + Sindangdong + MZ chains Korean: /content/bunsik.html
+- [Seoul Gukbap Guide](https://mgself414.github.io/keychingu-content-deploy/content/gukbap.en.html): Seolleongtang, gomtang, naejangtang, doganitang — 100-year nopo 8-pick + cross-link #129/#130 Korean: /content/gukbap.html
+- [Seoul Mandu Guide](https://mgself414.github.io/keychingu-content-deploy/content/mandu.en.html): Pyeongyang, Gaeseong, galbi mandu 8-pick — Pyongyang origin + Jongno nopo + MZ trendy Korean: /content/mandu.html
+- [Seoul Bookstore Guide](https://mgself414.github.io/keychingu-content-deploy/content/bookstore.en.html): Big chains + English specialists + heritage + Instagram landmarks 13-pick — first non-food category Korean: /content/bookstore.html
+- [Seoul Hongdae Guide](https://mgself414.github.io/keychingu-content-deploy/content/hongdae.en.html): Music & live + design & art + food & market 4-axis 8-pick — built on Reddit demand signal #1 Korean: /content/hongdae.html
+- [Hongdae Cafe Guide](https://mgself414.github.io/keychingu-content-deploy/content/hongdae-cafe.en.html): Specialty roastery + bakery + brunch + Insta-theme 4-axis 8-pick — built on T6.5 Phase 4 demand-driven signal (gap_score #1) Korean: /content/hongdae-cafe.html
+- [Hongdae Bar & Drink Guide](https://mgself414.github.io/keychingu-content-deploy/content/hongdae-bar.en.html): Rooftop & view + Korean traditional + foreigner-friendly pubs + solo-drink scene 4-axis 8-pick — gap_score #2, 100% uncovered Korean: /content/hongdae-bar.html
+- [Jongno Guide](https://mgself414.github.io/keychingu-content-deploy/content/jongno.en.html): Gwanghwamun + Insadong + Ikseondong + Bukchon/Jonggak 4 sub-areas 8-pick — T6.5 Phase 5 jongno mining + Reddit tied #1 area demand Korean: /content/jongno.html
+- [Gangnam Cafe Guide](https://mgself414.github.io/keychingu-content-deploy/content/gangnam-cafe.en.html): Bakery + specialty coffee + brunch + trendy 4-axis 8-pick — built on T6.5 Phase 5 demand-driven signal (gap_score #2) Korean: /content/gangnam-cafe.html
+- [Gangnam Korean Food Guide](https://mgself414.github.io/keychingu-content-deploy/content/gangnam-korean.en.html): Michelin + hotel + heritage + modern Korean 4-axis 8-pick — built on gap_score #3 Korean: /content/gangnam-korean.html
+- [Itaewon & Hannam Guide](https://mgself414.github.io/keychingu-content-deploy/content/itaewon.en.html): Cafe + foreigner pubs + Michelin + trendy bars 4-axis 8-pick — built on gap_score #5 + #1 foreigner area Korean: /content/itaewon.html
+- [Seongsu Cafe Guide](https://mgself414.github.io/keychingu-content-deploy/content/seongsu-cafe.en.html): Industrial + bakery + brunch + signature concept 4-axis 8-pick — built on T6.5 Phase 6 demand-driven signal (gap_score #2 after Seongsu mining) Korean: /content/seongsu-cafe.html
+- [Jongno & Bukchon Dessert Guide](https://mgself414.github.io/keychingu-content-deploy/content/jongno-dessert.en.html): Museum cafes + hanok alley bakeries + Seochon·Samcheong old-school + Jongak modern patisserie 4-axis 8-pick — ISSUE 03 Jongno series Korean: /content/jongno-dessert.html
+- [Hongdae Western Food Guide](https://mgself414.github.io/keychingu-content-deploy/content/hongdae-western.en.html): Italian·pasta + modern western + signature + brunch 4-axis 8-pick — ISSUE 03 Hongdae western food deep dive (western cluster 0% covered) Korean: /content/hongdae-western.html
+- [Hongdae Western Food Phase 2 Guide](https://mgself414.github.io/keychingu-content-deploy/content/hongdae-western-phase2.en.html): Hidden gems 8-pick after #153 ★rating-verified 12 — foreign reviews 8+ signal threshold. Cluster cov 25%→50%. Korean: /content/hongdae-western-phase2.html
+- [Gangnam Bar Guide](https://mgself414.github.io/keychingu-content-deploy/content/gangnam-bar.en.html): Brewery + winebar + pocha + speakeasy 4-axis 8-pick — Gangnam bar cluster gap 387, 0% covered (ISSUE 03 Gangnam series #3) Korean: /content/gangnam-bar.html
+- [Seoul Jongno Brunch Guide](https://mgself414.github.io/keychingu-content-deploy/content/jongno-brunch.en.html): Hanok brunch + modern + bagel + instagram 4-axis 8-pick — T6.5 demand No.1 Jongno brunch guide Korean: /content/jongno-brunch.html
 
 ## Culture & Experience
 
-- [Hanbok Experience (Modern)](https://mgself414.github.io/keychingu-content-deploy/content/hanbok.en.html): Modern hanbok rental — where to rent in Bukchon and Insadong, palace free-entry tip, photo etiquette. Korean: /content/hanbok.html
-- [Jjimjilbang Complete Guide](https://mgself414.github.io/keychingu-content-deploy/content/jjimjilbang.en.html): Korean public bathhouse first-timer manual — what to expect, dress code, signature jjimjilbang menu. Korean: /content/jjimjilbang.html
-- [Noraebang Guide](https://mgself414.github.io/keychingu-content-deploy/content/noraebang.en.html): How to use Korean karaoke rooms — coin-noraebang vs party-noraebang, English-song selection, pricing. Korean: /content/noraebang.html
+- [Jjimjilbang Complete Guide](https://mgself414.github.io/keychingu-content-deploy/content/jjimjilbang.en.html): Towel hats, sikhye & sleep rooms Korean: /content/jjimjilbang.html
+- [Noraebang Guide](https://mgself414.github.io/keychingu-content-deploy/content/noraebang.en.html): Coin, standard & luxury karaoke styles Korean: /content/noraebang.html
+- [Hanbok Experience (Modern)](https://mgself414.github.io/keychingu-content-deploy/content/hanbok.en.html): Fusion hanbok rentals & free palace entry Korean: /content/hanbok.html
 
 ## Beauty & Wellness
 
-- [Personal Color & Beauty Consulting](https://mgself414.github.io/keychingu-content-deploy/content/personal-color.en.html): Korean personal-color diagnosis services for foreign visitors — booking, languages, price ranges, popular salons. Korean: /content/personal-color.html
-- [Korean Spa & Massage](https://mgself414.github.io/keychingu-content-deploy/content/spa-massage.en.html): Spa, scrub (ttaemiri), and massage options — premium hotel spas vs neighborhood foot-massage shops. Korean: /content/spa-massage.html
+- [Personal Color & Beauty Consulting](https://mgself414.github.io/keychingu-content-deploy/content/personal-color.en.html): Color analysis shops, pricing & booking Korean: /content/personal-color.html
+- [Korean Spa & Massage](https://mgself414.github.io/keychingu-content-deploy/content/spa-massage.en.html): Full-body, sports & aroma — the complete guide Korean: /content/spa-massage.html
 
 ## Shopping
 
-- [Seoul Shopping Day Plan](https://mgself414.github.io/keychingu-content-deploy/content/shopping-day.en.html): One-day shopping route — Myeong-dong, Hongdae, Seongsu, Gangnam district comparison and route plan. Korean: /content/shopping-day.html
+- [22 – Gangnam (강남) Fine Dining: Top 5 Picks](https://mgself414.github.io/keychingu-content-deploy/content/gangnam-finedine.en.html): 22 – Gangnam (강남) Fine Dining: Top 5 Picks — ISSUE 02 quick guide (~2K chars) Korean: /content/gangnam-finedine.html
+- [23_Itaewon World Food Tour](https://mgself414.github.io/keychingu-content-deploy/content/itaewon-world-food.en.html): 23_Itaewon World Food Tour — ISSUE 02 quick guide (~2K chars) Korean: /content/itaewon-world-food.html
+- [24_Gwangjang Market (광장시장) Complete Guide](https://mgself414.github.io/keychingu-content-deploy/content/gwangjang-market.en.html): 24_Gwangjang Market (광장시장) Complete Guide — ISSUE 02 quick guide (~2K chars) Korean: /content/gwangjang-market.html
+- [25_Mangwon Market Food Guide (망원시장 먹거리)](https://mgself414.github.io/keychingu-content-deploy/content/mangwon-market-food.en.html): 25_Mangwon Market Food Guide (망원시장 먹거리) — ISSUE 02 quick guide (~2K chars) Korean: /content/mangwon-market-food.html
+- [26_Convenience Store Snack Guide (For Tourists)](https://mgself414.github.io/keychingu-content-deploy/content/convenience-snack.en.html): 26_Convenience Store Snack Guide (For Tourists) — ISSUE 02 quick guide (~2K chars) Korean: /content/convenience-snack.html
+- [27_Street Food Top 20](https://mgself414.github.io/keychingu-content-deploy/content/street-food-top20.en.html): 27_Street Food Top 20 — ISSUE 02 quick guide (~2K chars) Korean: /content/street-food-top20.html
+- [28_Korean Fried Chicken Restaurant Guide](https://mgself414.github.io/keychingu-content-deploy/content/chicken-guide.en.html): 28_Korean Fried Chicken Restaurant Guide — ISSUE 02 quick guide (~2K chars) Korean: /content/chicken-guide.html
+- [29_Seongsu-dong Select Shop Complete Guide](https://mgself414.github.io/keychingu-content-deploy/content/seongsu-select.en.html): 29_Seongsu-dong Select Shop Complete Guide — ISSUE 02 quick guide (~2K chars) Korean: /content/seongsu-select.html
+- [30](https://mgself414.github.io/keychingu-content-deploy/content/garosu-shopping.en.html): 30 — ISSUE 02 quick guide (~2K chars) Korean: /content/garosu-shopping.html
+- [31_Dongdaemun Late-Night Shopping](https://mgself414.github.io/keychingu-content-deploy/content/dongdaemun-night-shopping.en.html): 31_Dongdaemun Late-Night Shopping — ISSUE 02 quick guide (~2K chars) Korean: /content/dongdaemun-night-shopping.html
+- [32 Hongdae (홍대) Vintage Shop Tour](https://mgself414.github.io/keychingu-content-deploy/content/hongdae-vintage.en.html): 32 Hongdae (홍대) Vintage Shop Tour — ISSUE 02 quick guide (~2K chars) Korean: /content/hongdae-vintage.html
+- [33_Hanbok Experience – Complete Guide to Gyeongbokgung (경복궁)](https://mgself414.github.io/keychingu-content-deploy/content/hanbok-guide.en.html): 33_Hanbok Experience – Complete Guide to Gyeongbokgung (경복궁) — ISSUE 02 quick guide (~2K chars) Korean: /content/hanbok-guide.html
+- [34_Jjimjilbang Etiquette (For Foreign Visitors)](https://mgself414.github.io/keychingu-content-deploy/content/jjimjilbang-etiquette.en.html): 34_Jjimjilbang Etiquette (For Foreign Visitors) — ISSUE 02 quick guide (~2K chars) Korean: /content/jjimjilbang-etiquette.html
+- [35_K-pop Dance Class](https://mgself414.github.io/keychingu-content-deploy/content/kpop-dance.en.html): 35_K-pop Dance Class — ISSUE 02 quick guide (~2K chars) Korean: /content/kpop-dance.html
+- [36_Templestay Beginner's Guide](https://mgself414.github.io/keychingu-content-deploy/content/templestay.en.html): 36_Templestay Beginner's Guide — ISSUE 02 quick guide (~2K chars) Korean: /content/templestay.html
+- [37_Gyeongbokgung 3-Hour Complete Route](https://mgself414.github.io/keychingu-content-deploy/content/gyeongbokgung.en.html): 37_Gyeongbokgung 3-Hour Complete Route — ISSUE 02 quick guide (~2K chars) Korean: /content/gyeongbokgung.html
+- [38_Bukchon Hanok Village + Samcheong-dong 1-Day Guide](https://mgself414.github.io/keychingu-content-deploy/content/bukchon-samcheong-1day.en.html): 38_Bukchon Hanok Village + Samcheong-dong 1-Day Guide — ISSUE 02 quick guide (~2K chars) Korean: /content/bukchon-samcheong-1day.html
+- [39_Hongdae + Yeonnam-dong + Mangwon: One Full Day](https://mgself414.github.io/keychingu-content-deploy/content/hongdae-yeonnam-mangwon.en.html): 39_Hongdae + Yeonnam-dong + Mangwon: One Full Day — ISSUE 02 quick guide (~2K chars) Korean: /content/hongdae-yeonnam-mangwon.html
+- [40_Namsan + Myeongdong Night Tour](https://mgself414.github.io/keychingu-content-deploy/content/namsan-myeongdong.en.html): 40_Namsan + Myeongdong Night Tour — ISSUE 02 quick guide (~2K chars) Korean: /content/namsan-myeongdong.html
+- [41 · Seoul's 24-Hour Shopping Map](https://mgself414.github.io/keychingu-content-deploy/content/24h-shopping.en.html): 41 · Seoul's 24-Hour Shopping Map — ISSUE 02 series Korean: /content/24h-shopping.html
+- [Seoul Tteok Shops (떡집)](https://mgself414.github.io/keychingu-content-deploy/content/tteok-guide.en.html): Seoul Tteok Shops (떡집) — ISSUE 02 series Korean: /content/tteok-guide.html
+- [Yangjaecheon (양재천) Walk & Eats](https://mgself414.github.io/keychingu-content-deploy/content/yangjaecheon-guide.en.html): Yangjaecheon (양재천) Walk & Eats — ISSUE 02 series Korean: /content/yangjaecheon-guide.html
+- [Han River (한강) Summer Guide](https://mgself414.github.io/keychingu-content-deploy/content/hangang-summer.en.html): Han River (한강) Summer Guide — ISSUE 02 series Korean: /content/hangang-summer.html
+- [45 · Seoul Coin Laundry Complete Guide](https://mgself414.github.io/keychingu-content-deploy/content/coin-laundry.en.html): 45 · Seoul Coin Laundry Complete Guide — ISSUE 02 series Korean: /content/coin-laundry.html
+- [46 · Korea SIM · eSIM · Roaming Complete Guide](https://mgself414.github.io/keychingu-content-deploy/content/sim-roaming.en.html): 46 · Korea SIM · eSIM · Roaming Complete Guide — ISSUE 02 series Korean: /content/sim-roaming.html
+- [47 · Olive Young Real Buying Guide](https://mgself414.github.io/keychingu-content-deploy/content/oliveyoung.en.html): 47 · Olive Young Real Buying Guide — ISSUE 02 series Korean: /content/oliveyoung.html
+- [48 · Korea Essential Buys TOP 20](https://mgself414.github.io/keychingu-content-deploy/content/essentials-top20.en.html): 48 · Korea Essential Buys TOP 20 — ISSUE 02 series Korean: /content/essentials-top20.html
+- [Where to Buy Korean Souvenirs](https://mgself414.github.io/keychingu-content-deploy/content/souvenir-destinations.en.html): 8 destinations foreigners actually go + category-to-shop matrix + tax-refund tips Korean: /content/souvenir-destinations.html
+- [Seoul Stationery Destinations](https://mgself414.github.io/keychingu-content-deploy/content/stationery-destinations.en.html): 8 destinations across 5 axes (bookstores · design select · pens · wholesale · characters) for MZ tourists & students Korean: /content/stationery-destinations.html
+- [Gwangjang Market (광장시장) Full Guide for Foreigners](https://mgself414.github.io/keychingu-content-deploy/content/gwangjang-food.en.html): Gwangjang Market (광장시장) Full Guide for Foreigners — ISSUE 02 series Korean: /content/gwangjang-food.html
+- [Seoul Gimbap Guide for Foreigners](https://mgself414.github.io/keychingu-content-deploy/content/seoul-gimbap.en.html): Seoul Gimbap Guide for Foreigners — ISSUE 02 series Korean: /content/seoul-gimbap.html
+- [Seoul Jazz Bars & Lounges Guide for Foreigners](https://mgself414.github.io/keychingu-content-deploy/content/seoul-jazz.en.html): Seoul Jazz Bars & Lounges Guide for Foreigners — ISSUE 02 series Korean: /content/seoul-jazz.html
+- [Seoul Shopping Day Plan](https://mgself414.github.io/keychingu-content-deploy/content/shopping-day.en.html): Myeongdong, Hongdae, Gangnam & Seongsu in one day Korean: /content/shopping-day.html
+- [The Complete Guide to Korean Café Chains](https://mgself414.github.io/keychingu-content-deploy/content/korea-cafe.en.html): The Complete Guide to Korean Café Chains — ISSUE 02 series Korean: /content/korea-cafe.html
+- [Korean Chicken Dishes Full Guide](https://mgself414.github.io/keychingu-content-deploy/content/korea-chicken-dish.en.html): Korean Chicken Dishes Full Guide — ISSUE 02 series Korean: /content/korea-chicken-dish.html
+- [Myeongdong (명동) Full-Day Guide](https://mgself414.github.io/keychingu-content-deploy/content/myeongdong.en.html): Myeongdong (명동) Full-Day Guide — ISSUE 02 series Korean: /content/myeongdong.html
+- [Complete Guide to Korean Fried Chicken Chains](https://mgself414.github.io/keychingu-content-deploy/content/korea-chicken-chains.en.html): Complete Guide to Korean Fried Chicken Chains — ISSUE 02 series Korean: /content/korea-chicken-chains.html
+- [Korea Tteokbokki (떡볶이) Chain Complete Guide](https://mgself414.github.io/keychingu-content-deploy/content/korea-tteokbokki.en.html): Korea Tteokbokki (떡볶이) Chain Complete Guide — ISSUE 02 series Korean: /content/korea-tteokbokki.html
+- [Korea's Vegan, Halal & Religious Diet Guide for Foreigners](https://mgself414.github.io/keychingu-content-deploy/content/vegan-halal.en.html): Korea's Vegan, Halal & Religious Diet Guide for Foreigners — ISSUE 02 series Korean: /content/vegan-halal.html
+- [Korea Bakery Chain Full Guide](https://mgself414.github.io/keychingu-content-deploy/content/korea-bakery.en.html): Korea Bakery Chain Full Guide — ISSUE 02 series Korean: /content/korea-bakery.html
+- [Myeongdong (명동) Cosmetics Full Guide](https://mgself414.github.io/keychingu-content-deploy/content/myeongdong-cosmetics.en.html): Myeongdong (명동) Cosmetics Full Guide — ISSUE 02 series Korean: /content/myeongdong-cosmetics.html
+- [Itaewon (이태원) · Hannam (한남) · Haebangchon (해방촌) Full 1-Day Guide](https://mgself414.github.io/keychingu-content-deploy/content/itaewon-hannam-haebangchon.en.html): Itaewon (이태원) · Hannam (한남) · Haebangchon (해방촌) Full 1-Day Guide — ISSUE 02 series Korean: /content/itaewon-hannam-haebangchon.html
+- [Seoul Jongno Bakery Guide](https://mgself414.github.io/keychingu-content-deploy/content/jongno-bakery.en.html): Hanok bakery + sourdough + modern patisserie + signature noho 4-axis 12-pick — T6.5 demand-driven Jongno·Bukchon·Seochon·Ikseondong bakery guide Korean: /content/jongno-bakery.html
 
 ## K-Content
 
-- [K-Drama Filming Spots Tour](https://mgself414.github.io/keychingu-content-deploy/content/kdrama.en.html): Locations from popular K-dramas (Goblin, Itaewon Class, Crash Landing, more) with subway access and tips. Korean: /content/kdrama.html
-- [K-POP Fan Ultimate Guide](https://mgself414.github.io/keychingu-content-deploy/content/kpop-fan.en.html): K-pop fan-tour essentials — HYBE/SM/JYP/YG areas, official goods stores, fan-event etiquette. Korean: /content/kpop-fan.html
+- [K-Drama Filming Spots Tour](https://mgself414.github.io/keychingu-content-deploy/content/kdrama.en.html): Visit where your favorite K-dramas were filmed Korean: /content/kdrama.html
+- [K-POP Fan Ultimate Guide](https://mgself414.github.io/keychingu-content-deploy/content/kpop-fan.en.html): Agency HQs, merch shops, fan cafes & music shows Korean: /content/kpop-fan.html
 
 ## Practical
 
-- [Transport & Navigation Guide](https://mgself414.github.io/keychingu-content-deploy/content/transport.en.html): T-money card, Naver Map vs Kakao Map, AREX airport rail, taxi apps, foreign-friendly options. Korean: /content/transport.html
+- [Transport & Navigation Guide](https://mgself414.github.io/keychingu-content-deploy/content/transport.en.html): Subway, bus, taxi & apps — all you need Korean: /content/transport.html
+- [Seoul Running Course Guide](https://mgself414.github.io/keychingu-content-deploy/content/running-course.en.html): Han River + downtown + park + niche 4-axis 8-pick — Activity category debut (series #1 general, #147 night running coming) Korean: /content/running-course.html
+- [Seoul Night Running Course Guide](https://mgself414.github.io/keychingu-content-deploy/content/night-running.en.html): Night view + downtown night + safety + sunrise 4-axis 8-pick — Activity series #2 night deep dive (paired with #146) Korean: /content/night-running.html
+- [Seoul Hiking Guide](https://mgself414.github.io/keychingu-content-deploy/content/hiking.en.html): Downtown + Seoul City Wall + Mountain + Outskirts 4-axis 8-pick — Activity series #3 hiking (Namsan, Inwangsan, Bukhansan, Dobongsan, Gwanaksan & more) Korean: /content/hiking.html
+- [Seoul Cycling Guide](https://mgself414.github.io/keychingu-content-deploy/content/cycling.en.html): Beginner + night + loop + outskirts 4-axis 8-pick — Activity series #5 (Han River 130km · Ttareungi 3.3M users) Korean: /content/cycling.html
+- [Han River Camping & BBQ Guide](https://mgself414.github.io/keychingu-content-deploy/content/camping-bbq.en.html): Official campgrounds + glamping + BBQ zone + picnic 4-axis 8-pick — Activity series #4 (Nanji, Noeul, Uidong + Banpo, Ddukseom, Yeouido) Korean: /content/camping-bbq.html
 
 ## Key Facts
 
-- KeyChinGu (키친구) is a Seoul travel curation brand for foreign MZ FIT travelers (20–35) primarily from Japan, SEA, and Greater China.
-- All 20 topic guides are published in both Korean and English; long-form (~3,000 words/article) with FAQ sections and Last-Updated dates.
-- Content covers eight categories: Neighborhoods, Nature & Views, Food & Drink, Culture, Beauty & Wellness, Shopping, K-Content, Practical Info.
-- Editorial focus: place-name preservation (Korean and Romanization shown together), seasonal updates, FIT (free independent traveler) practical tips.
-- Companion channel: Instagram @keychingu.korea (carousels and reels).
-
-## Contact
-
-- Website: https://mgself414.github.io/keychingu-content-deploy/
-- Korean entry: https://mgself414.github.io/keychingu-content-deploy/index.html
-- English entry: https://mgself414.github.io/keychingu-content-deploy/en/index.html
-- Instagram: https://instagram.com/keychingu.korea
+- **Target audience**: Foreign MZ FIT travelers (20-35) visiting Seoul/Korea
+- **Coverage**: 106+ curated guides as of 2026-05-15
+- **Languages**: Korean + English (web pages); Chinese + Japanese (PDF only)
+- **Update frequency**: Weekly
+- **Data sources**: Naver Maps + Reddit r/koreatravel + Google reviews + user curation
+- **Contact**: @keychingu.korea (Instagram)

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mgself414.github.io/keychingu-content-deploy/sitemap.xml
