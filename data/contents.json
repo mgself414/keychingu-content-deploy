@@ -12,7 +12,8 @@
       "mz"
     ],
     "summary_kr": "MZ 핫플 성수 1번지, 카페/팝업/편집숍 완벽 투어",
-    "summary_en": "MZ hotspot Seongsu — cafes, pop-ups & select shops"
+    "summary_en": "MZ hotspot Seongsu — cafes, pop-ups & select shops",
+    "en_available": true
   },
   {
     "id": "002",
@@ -26,7 +27,8 @@
       "photo"
     ],
     "summary_kr": "돈 안 들이고 즐기는 서울 야경 베스트",
-    "summary_en": "Best Seoul night views without spending a won"
+    "summary_en": "Best Seoul night views without spending a won",
+    "en_available": true
   },
   {
     "id": "003",
@@ -40,7 +42,8 @@
       "culture"
     ],
     "summary_kr": "시장별 먹거리·분위기·접근성 비교",
-    "summary_en": "Gwangjang vs Mangwon vs Tongin — which market fits you?"
+    "summary_en": "Gwangjang vs Mangwon vs Tongin — which market fits you?",
+    "en_available": true
   },
   {
     "id": "004",
@@ -54,7 +57,8 @@
       "beer"
     ],
     "summary_kr": "가게 맥주 한국식 로컬 음주 문화",
-    "summary_en": "Corner-store beer culture — drink like a local"
+    "summary_en": "Corner-store beer culture — drink like a local",
+    "en_available": true
   },
   {
     "id": "005",
@@ -68,7 +72,8 @@
       "latenight"
     ],
     "summary_kr": "새벽에도 열려있는 진짜 맛집",
-    "summary_en": "Where to eat when everything else is closed"
+    "summary_en": "Where to eat when everything else is closed",
+    "en_available": true
   },
   {
     "id": "006",
@@ -82,7 +87,8 @@
       "outdoor"
     ],
     "summary_kr": "배달앱·돗자리·추천 공원",
-    "summary_en": "Fried chicken & beer by the river"
+    "summary_en": "Fried chicken & beer by the river",
+    "en_available": true
   },
   {
     "id": "007",
@@ -96,7 +102,8 @@
       "budget"
     ],
     "summary_kr": "양머리 수건·식혜·수면실 이용법",
-    "summary_en": "Towel hats, sikhye & sleep rooms"
+    "summary_en": "Towel hats, sikhye & sleep rooms",
+    "en_available": true
   },
   {
     "id": "008",
@@ -110,7 +117,8 @@
       "fun"
     ],
     "summary_kr": "코인/일반/럭셔리 타입별 가이드",
-    "summary_en": "Coin, standard & luxury karaoke styles"
+    "summary_en": "Coin, standard & luxury karaoke styles",
+    "en_available": true
   },
   {
     "id": "009",
@@ -123,7 +131,8 @@
       "shopping"
     ],
     "summary_kr": "컨설팅숍 비교·가격·예약법",
-    "summary_en": "Color analysis shops, pricing & booking"
+    "summary_en": "Color analysis shops, pricing & booking",
+    "en_available": true
   },
   {
     "id": "010",
@@ -137,7 +146,8 @@
       "kdrama"
     ],
     "summary_kr": "대표 드라마 10선 로케이션",
-    "summary_en": "Visit where your favorite K-dramas were filmed"
+    "summary_en": "Visit where your favorite K-dramas were filmed",
+    "en_available": true
   },
   {
     "id": "012",
@@ -151,7 +161,8 @@
       "retro"
     ],
     "summary_kr": "낡은 철공소 사이의 감성 바·카페 레이어",
-    "summary_en": "Hidden bars & cafes among old ironworks"
+    "summary_en": "Hidden bars & cafes among old ironworks",
+    "en_available": true
   },
   {
     "id": "018",
@@ -165,7 +176,8 @@
       "hanbok"
     ],
     "summary_kr": "한복 체험과 함께하는 전통+현대 믹스",
-    "summary_en": "Traditional meets modern with hanbok experience"
+    "summary_en": "Traditional meets modern with hanbok experience",
+    "en_available": true
   },
   {
     "id": "025",
@@ -179,7 +191,8 @@
       "photo"
     ],
     "summary_kr": "N서울타워 배경의 도보 코스",
-    "summary_en": "Walk the trails around N Seoul Tower at sunset"
+    "summary_en": "Walk the trails around N Seoul Tower at sunset",
+    "en_available": true
   },
   {
     "id": "033",
@@ -193,7 +206,8 @@
       "must-try"
     ],
     "summary_kr": "처음 한국인을 위한 필수 10선",
-    "summary_en": "10 dishes you must try on your first trip"
+    "summary_en": "10 dishes you must try on your first trip",
+    "en_available": true
   },
   {
     "id": "036",
@@ -207,7 +221,8 @@
       "budget"
     ],
     "summary_kr": "망원/광장/종로 스트리트 푸드",
-    "summary_en": "Mangwon, Gwangjang & Jongno street food"
+    "summary_en": "Mangwon, Gwangjang & Jongno street food",
+    "en_available": true
   },
   {
     "id": "041",
@@ -221,7 +236,8 @@
       "hanbok"
     ],
     "summary_kr": "퓨전 한복·경복궁 무료입장",
-    "summary_en": "Fusion hanbok rentals & free palace entry"
+    "summary_en": "Fusion hanbok rentals & free palace entry",
+    "en_available": true
   },
   {
     "id": "050",
@@ -234,7 +250,8 @@
       "wellness"
     ],
     "summary_kr": "전신·스포츠·아로마 완벽 가이드",
-    "summary_en": "Full-body, sports & aroma — the complete guide"
+    "summary_en": "Full-body, sports & aroma — the complete guide",
+    "en_available": true
   },
   {
     "id": "061",
@@ -247,7 +264,8 @@
       "mz"
     ],
     "summary_kr": "명동/홍대/강남/성수 루트",
-    "summary_en": "Myeongdong, Hongdae, Gangnam & Seongsu in one day"
+    "summary_en": "Myeongdong, Hongdae, Gangnam & Seongsu in one day",
+    "en_available": true
   },
   {
     "id": "068",
@@ -261,7 +279,8 @@
       "kpop"
     ],
     "summary_kr": "사옥·굿즈샵·팬카페부터 음악방송까지",
-    "summary_en": "Agency HQs, merch shops, fan cafes & music shows"
+    "summary_en": "Agency HQs, merch shops, fan cafes & music shows",
+    "en_available": true
   },
   {
     "id": "080",
@@ -274,7 +293,8 @@
       "transport"
     ],
     "summary_kr": "지하철·버스·택시·앱 모두 해결",
-    "summary_en": "Subway, bus, taxi & apps — all you need"
+    "summary_en": "Subway, bus, taxi & apps — all you need",
+    "en_available": true
   },
   {
     "id": "049",
@@ -291,7 +311,8 @@
       "nightlife"
     ],
     "summary_kr": "시간이 멈춘 골목, 가격도 멈춘 동네 — 옷 무덤 디깅 + 1,000원 토스트 + 종로3가 야장 콤보",
-    "summary_en": "Time-frozen alley with frozen prices — vintage digging + ₩1,000 toast + Jongno 3-ga yajang combo"
+    "summary_en": "Time-frozen alley with frozen prices — vintage digging + ₩1,000 toast + Jongno 3-ga yajang combo",
+    "en_available": true
   },
   {
     "id": "050",
@@ -306,7 +327,8 @@
       "foodie"
     ],
     "summary_kr": "음식 시장 위 2층, 패턴 원피스·복고풍 코트의 보세 디깅",
-    "summary_en": "2F above the food market — patterned dresses & retro coats hidden vintage arcade"
+    "summary_en": "2F above the food market — patterned dresses & retro coats hidden vintage arcade",
+    "en_available": true
   },
   {
     "id": "051",
@@ -322,7 +344,8 @@
       "spring"
     ],
     "summary_kr": "15분 등산, 0원, 동호대교·N서울타워 한 프레임",
-    "summary_en": "15-min climb, ₩0, Dongho Bridge + N Seoul Tower in one frame"
+    "summary_en": "15-min climb, ₩0, Dongho Bridge + N Seoul Tower in one frame",
+    "en_available": true
   },
   {
     "id": "052",
@@ -340,7 +363,8 @@
       "market"
     ],
     "summary_kr": "외국인이 진짜 가는 8개 명소 + 카테고리별 매핑 + 세금환급 가이드",
-    "summary_en": "8 destinations foreigners actually go + category-to-shop matrix + tax-refund tips"
+    "summary_en": "8 destinations foreigners actually go + category-to-shop matrix + tax-refund tips",
+    "en_available": true
   },
   {
     "id": "057",
@@ -357,7 +381,8 @@
       "bookstore"
     ],
     "summary_kr": "외국인 MZ + 유학생을 위한 8개 명소 — 5축 매핑 (서점·편집·전문필기·도매·캐릭터)",
-    "summary_en": "8 destinations across 5 axes (bookstores · design select · pens · wholesale · characters) for MZ tourists & students"
+    "summary_en": "8 destinations across 5 axes (bookstores · design select · pens · wholesale · characters) for MZ tourists & students",
+    "en_available": true
   },
   {
     "id": "129",
@@ -375,7 +400,8 @@
       "all-season"
     ],
     "summary_kr": "평양식 vs 함흥식 — 메인 8 노포 + 추가 17곳 빠른 비교, 4축 균형 + 사계절 가이드",
-    "summary_en": "Pyeongyang vs Hamheung — 8 main shops + 17 quick picks, 4-axis balance + four-season guide"
+    "summary_en": "Pyeongyang vs Hamheung — 8 main shops + 17 quick picks, 4-axis balance + four-season guide",
+    "en_available": true
   },
   {
     "id": "130",
@@ -393,7 +419,8 @@
       "kfood"
     ],
     "summary_kr": "한우·흑돼지·삼겹살·갈비탕 8선 — 4축 균형(노포·MZ·프리미엄·체인) + 사계절 추천",
-    "summary_en": "Hanwoo, Heuk-doeji, samgyeopsal, galbi-tang 8-pick — 4-axis balance (nopo/MZ/premium/chain)"
+    "summary_en": "Hanwoo, Heuk-doeji, samgyeopsal, galbi-tang 8-pick — 4-axis balance (nopo/MZ/premium/chain)",
+    "en_available": true
   },
   {
     "id": "131",
@@ -411,7 +438,8 @@
       "kfood"
     ],
     "summary_kr": "춘천식 본가 + 서울 MZ 트렌디 8선 — K-드라마·K-아이돌 코드와 연결되는 닭갈비 가이드",
-    "summary_en": "Chuncheon-style origin + Seoul MZ trendy 8-pick — connects to K-drama/K-pop culture"
+    "summary_en": "Chuncheon-style origin + Seoul MZ trendy 8-pick — connects to K-drama/K-pop culture",
+    "en_available": true
   },
   {
     "id": "132",
@@ -429,7 +457,8 @@
       "kfood"
     ],
     "summary_kr": "떡볶이·김밥·순대·라볶이 8선 — 광장시장 노포 + 신당동 즉석 + MZ 체인",
-    "summary_en": "Tteokbokki, gimbap, sundae, rabokki 8-pick — Gwangjang market + Sindangdong + MZ chains"
+    "summary_en": "Tteokbokki, gimbap, sundae, rabokki 8-pick — Gwangjang market + Sindangdong + MZ chains",
+    "en_available": true
   },
   {
     "id": "133",
@@ -448,7 +477,8 @@
       "kfood"
     ],
     "summary_kr": "설렁탕·곰탕·내장탕·도가니탕 100년 노포 8선 — 한식 국물 풀세트 + #129·#130 연결",
-    "summary_en": "Seolleongtang, gomtang, naejangtang, doganitang — 100-year nopo 8-pick + cross-link #129/#130"
+    "summary_en": "Seolleongtang, gomtang, naejangtang, doganitang — 100-year nopo 8-pick + cross-link #129/#130",
+    "en_available": true
   },
   {
     "id": "134",
@@ -466,7 +496,8 @@
       "winter"
     ],
     "summary_kr": "평양만두·개성만두·갈비만두 8선 — 평양식 본가(자하손만두) + 종로 노포 + MZ 트렌디",
-    "summary_en": "Pyeongyang, Gaeseong, galbi mandu 8-pick — Pyongyang origin + Jongno nopo + MZ trendy"
+    "summary_en": "Pyeongyang, Gaeseong, galbi mandu 8-pick — Pyongyang origin + Jongno nopo + MZ trendy",
+    "en_available": true
   },
   {
     "id": "135",
@@ -484,7 +515,8 @@
       "english"
     ],
     "summary_kr": "대형 체인 + 영어 전문 + 노포 + 인스타 랜드마크 13선 — 비음식 첫 진입 (서점·문화)",
-    "summary_en": "Big chains + English specialists + heritage + Instagram landmarks 13-pick — first non-food category"
+    "summary_en": "Big chains + English specialists + heritage + Instagram landmarks 13-pick — first non-food category",
+    "en_available": true
   },
   {
     "id": "138",
@@ -502,7 +534,8 @@
       "market"
     ],
     "summary_kr": "음악·라이브 + 디자인·아트 + 먹거리·시장 4축 8선 — Reddit demand signal 1순위 활용",
-    "summary_en": "Music & live + design & art + food & market 4-axis 8-pick — built on Reddit demand signal #1"
+    "summary_en": "Music & live + design & art + food & market 4-axis 8-pick — built on Reddit demand signal #1",
+    "en_available": true
   },
   {
     "id": "139",
@@ -520,7 +553,8 @@
       "bakery"
     ],
     "summary_kr": "스페셜티 로스터리 + 베이커리 + 브런치 + 인스타·테마 4축 8선 — T6.5 Phase 4 gap_score 1위 (409.87)",
-    "summary_en": "Specialty roastery + bakery + brunch + Insta-theme 4-axis 8-pick — built on T6.5 Phase 4 demand-driven signal (gap_score #1)"
+    "summary_en": "Specialty roastery + bakery + brunch + Insta-theme 4-axis 8-pick — built on T6.5 Phase 4 demand-driven signal (gap_score #1)",
+    "en_available": true
   },
   {
     "id": "140",
@@ -538,7 +572,8 @@
       "craft-beer"
     ],
     "summary_kr": "루프탑·뷰 + 한국 전통주 + 외국인 펍 + 혼술·트렌디 4축 8선 — T6.5 Phase 4 gap_score 2위 (247.84) 100% 미커버",
-    "summary_en": "Rooftop & view + Korean traditional + foreigner-friendly pubs + solo-drink scene 4-axis 8-pick — gap_score #2, 100% uncovered"
+    "summary_en": "Rooftop & view + Korean traditional + foreigner-friendly pubs + solo-drink scene 4-axis 8-pick — gap_score #2, 100% uncovered",
+    "en_available": true
   },
   {
     "id": "141",
@@ -556,7 +591,8 @@
       "bukchon"
     ],
     "summary_kr": "광화문+인사동+익선동+북촌·종각 4 sub-area 8선 — T6.5 Phase 5 jongno mining + Reddit demand 1위 동률 활용",
-    "summary_en": "Gwanghwamun + Insadong + Ikseondong + Bukchon/Jonggak 4 sub-areas 8-pick — T6.5 Phase 5 jongno mining + Reddit tied #1 area demand"
+    "summary_en": "Gwanghwamun + Insadong + Ikseondong + Bukchon/Jonggak 4 sub-areas 8-pick — T6.5 Phase 5 jongno mining + Reddit tied #1 area demand",
+    "en_available": true
   },
   {
     "id": "142",
@@ -574,7 +610,8 @@
       "brunch"
     ],
     "summary_kr": "베이커리+스페셜티+브런치+트렌디 4축 8선 — T6.5 Phase 5 gap_score 2위 (197) 활용",
-    "summary_en": "Bakery + specialty coffee + brunch + trendy 4-axis 8-pick — built on T6.5 Phase 5 demand-driven signal (gap_score #2)"
+    "summary_en": "Bakery + specialty coffee + brunch + trendy 4-axis 8-pick — built on T6.5 Phase 5 demand-driven signal (gap_score #2)",
+    "en_available": true
   },
   {
     "id": "143",
@@ -592,7 +629,8 @@
       "modern"
     ],
     "summary_kr": "미슐랭+호텔+노포+모던한식 4축 8선 — T6.5 Phase 5 gap_score 3위 (193) 활용",
-    "summary_en": "Michelin + hotel + heritage + modern Korean 4-axis 8-pick — built on gap_score #3"
+    "summary_en": "Michelin + hotel + heritage + modern Korean 4-axis 8-pick — built on gap_score #3",
+    "en_available": true
   },
   {
     "id": "144",
@@ -610,7 +648,8 @@
       "bar"
     ],
     "summary_kr": "카페+외국인펍+미슐랭+트렌디바 4축 8선 — T6.5 Phase 5 gap_score 5위 (147) + 외국인 area 1위 활용",
-    "summary_en": "Cafe + foreigner pubs + Michelin + trendy bars 4-axis 8-pick — built on gap_score #5 + #1 foreigner area"
+    "summary_en": "Cafe + foreigner pubs + Michelin + trendy bars 4-axis 8-pick — built on gap_score #5 + #1 foreigner area",
+    "en_available": true
   },
   {
     "id": "145",
@@ -628,7 +667,8 @@
       "bakery"
     ],
     "summary_kr": "인더스트리얼+베이커리+브런치+시그니처 4축 8선 — T6.5 Phase 6 gap_score 2위 (254.41) 활용",
-    "summary_en": "Industrial + bakery + brunch + signature concept 4-axis 8-pick — built on T6.5 Phase 6 demand-driven signal (gap_score #2 after Seongsu mining)"
+    "summary_en": "Industrial + bakery + brunch + signature concept 4-axis 8-pick — built on T6.5 Phase 6 demand-driven signal (gap_score #2 after Seongsu mining)",
+    "en_available": true
   },
   {
     "id": "146",
@@ -646,7 +686,8 @@
       "seoulforest"
     ],
     "summary_kr": "한강+도심+공원+특색 4축 8선 — Activity 카테고리 첫 진입 (시리즈 #1 일반, #147 야간 예고)",
-    "summary_en": "Han River + downtown + park + niche 4-axis 8-pick — Activity category debut (series #1 general, #147 night running coming)"
+    "summary_en": "Han River + downtown + park + niche 4-axis 8-pick — Activity category debut (series #1 general, #147 night running coming)",
+    "en_available": true
   },
   {
     "id": "147",
@@ -665,7 +706,8 @@
       "jamsil"
     ],
     "summary_kr": "야경+도심야경+안전조명+새벽일출 4축 8선 — Activity 시리즈 #2 야간 (#146 페어)",
-    "summary_en": "Night view + downtown night + safety + sunrise 4-axis 8-pick — Activity series #2 night deep dive (paired with #146)"
+    "summary_en": "Night view + downtown night + safety + sunrise 4-axis 8-pick — Activity series #2 night deep dive (paired with #146)",
+    "en_available": true
   },
   {
     "id": "148",
@@ -683,7 +725,8 @@
       "seoulcitywall"
     ],
     "summary_kr": "도심+한양도성+본격명산+외곽 4축 8선 — Activity 시리즈 #3 등산 (남산·인왕산·북악산·북한산·도봉산·관악산·청계산·낙산)",
-    "summary_en": "Downtown + Seoul City Wall + Mountain + Outskirts 4-axis 8-pick — Activity series #3 hiking (Namsan, Inwangsan, Bukhansan, Dobongsan, Gwanaksan & more)"
+    "summary_en": "Downtown + Seoul City Wall + Mountain + Outskirts 4-axis 8-pick — Activity series #3 hiking (Namsan, Inwangsan, Bukhansan, Dobongsan, Gwanaksan & more)",
+    "en_available": true
   },
   {
     "id": "151",
@@ -702,7 +745,8 @@
       "picnic"
     ],
     "summary_kr": "공식캠핑장+글램핑+바베큐존+한강피크닉 4축 8선 — Activity 시리즈 #4 (난지 캠핑장·노을·우이동 + 반포·뚝섬·여의도 피크닉)",
-    "summary_en": "Official campgrounds + glamping + BBQ zone + picnic 4-axis 8-pick — Activity series #4 (Nanji, Noeul, Uidong + Banpo, Ddukseom, Yeouido)"
+    "summary_en": "Official campgrounds + glamping + BBQ zone + picnic 4-axis 8-pick — Activity series #4 (Nanji, Noeul, Uidong + Banpo, Ddukseom, Yeouido)",
+    "en_available": true
   },
   {
     "id": "149",
@@ -721,7 +765,8 @@
       "biking"
     ],
     "summary_kr": "입문+야경+일주+외곽 4축 8선 — Activity 시리즈 #5 (한강 130km · 따릉이 330만)",
-    "summary_en": "Beginner + night + loop + outskirts 4-axis 8-pick — Activity series #5 (Han River 130km · Ttareungi 3.3M users)"
+    "summary_en": "Beginner + night + loop + outskirts 4-axis 8-pick — Activity series #5 (Han River 130km · Ttareungi 3.3M users)",
+    "en_available": true
   },
   {
     "id": "152",
@@ -743,7 +788,8 @@
       "seochon"
     ],
     "summary_kr": "미술관 카페+한옥 골목 베이커리+서촌·삼청 노포+종각 모던 파티세리 4축 8선 — ISSUE 03 종로 시리즈, 갤러리카페·베이커리 cluster gap 1·3위 (디저트 0% 커버)",
-    "summary_en": "Museum cafes + hanok alley bakeries + Seochon·Samcheong old-school + Jongak modern patisserie 4-axis 8-pick — ISSUE 03 Jongno series"
+    "summary_en": "Museum cafes + hanok alley bakeries + Seochon·Samcheong old-school + Jongak modern patisserie 4-axis 8-pick — ISSUE 03 Jongno series",
+    "en_available": true
   },
   {
     "id": "153",
@@ -764,7 +810,8 @@
       "brunch"
     ],
     "summary_kr": "이탈리안·파스타+모던 양식+노포·시그니처+브런치 4축 8선 — ISSUE 03 종로 시리즈 후 홍대 양식 deep dive (양식·hongdae cluster gap 0% 커버)",
-    "summary_en": "Italian·pasta + modern western + signature + brunch 4-axis 8-pick — ISSUE 03 Hongdae western food deep dive (western cluster 0% covered)"
+    "summary_en": "Italian·pasta + modern western + signature + brunch 4-axis 8-pick — ISSUE 03 Hongdae western food deep dive (western cluster 0% covered)",
+    "en_available": true
   },
   {
     "id": "150",
@@ -785,7 +832,8 @@
       "patisserie"
     ],
     "summary_kr": "한옥·전통+화덕·정통+모던 파티세리+노포·시그니처 4축 12선 — T6.5 demand-driven (베이커리·jongno cluster gap 559.5 / cov 38%)",
-    "summary_en": "Hanok bakery + sourdough + modern patisserie + signature noho 4-axis 12-pick — T6.5 demand-driven Jongno·Bukchon·Seochon·Ikseondong bakery guide"
+    "summary_en": "Hanok bakery + sourdough + modern patisserie + signature noho 4-axis 12-pick — T6.5 demand-driven Jongno·Bukchon·Seochon·Ikseondong bakery guide",
+    "en_available": true
   },
   {
     "id": "154",
@@ -806,7 +854,8 @@
       "modern-dining"
     ],
     "summary_kr": "와인 페어링+모던 다이닝+스테이크·그릴+캐주얼·브런치 4축 12선 — T6.5 demand gangnam 양식 cluster (gap 328.9 / cov 21%)",
-    "summary_en": "Wine pairing + modern dining + steak/grill + casual brunch 4-axis 12-pick — T6.5 demand-driven Gangnam·Dosan·Sinsa·Nonhyeon western guide"
+    "summary_en": "Wine pairing + modern dining + steak/grill + casual brunch 4-axis 12-pick — T6.5 demand-driven Gangnam·Dosan·Sinsa·Nonhyeon western guide",
+    "en_available": true
   },
   {
     "id": "155",
@@ -827,7 +876,8 @@
       "view-dining"
     ],
     "summary_kr": "글로벌·인터내셔널+모던 다이닝+그릴·스테이크+뷰·시그니처 4축 12선 — T6.5 demand-driven (음식점·itaewon cluster gap 328.5 / cov 33%)",
-    "summary_en": "Global·international + modern dining + grill·steak + view·signature 4-axis 12-pick — T6.5 demand-driven Itaewon·Hannam·Sinyongsan·Namsan restaurant guide"
+    "summary_en": "Global·international + modern dining + grill·steak + view·signature 4-axis 12-pick — T6.5 demand-driven Itaewon·Hannam·Sinyongsan·Namsan restaurant guide",
+    "en_available": true
   },
   {
     "id": "156",
@@ -848,7 +898,8 @@
       "local-deepdive"
     ],
     "summary_kr": "책방·소품·카페·맛집 4축 12선 + 안산자락길·사러가쇼핑센터·연희문학창작촌 볼거리 5곳 — 외국인 로컬 deep dive 동네 (사용자 큐레이션 7곳 + 크롤 18곳)",
-    "summary_en": "Bookshop + lifestyle + cafe + restaurant 4-axis 12-pick + 5 experiences (Ansan trail, Sarogga market, Literary village) — foreign local deep-dive guide"
+    "summary_en": "Bookshop + lifestyle + cafe + restaurant 4-axis 12-pick + 5 experiences (Ansan trail, Sarogga market, Literary village) — foreign local deep-dive guide",
+    "en_available": true
   },
   {
     "id": "42",
@@ -861,7 +912,8 @@
       "seoul"
     ],
     "summary_kr": "42 · 서울 떡 맛집 — ISSUE 02 시리즈",
-    "summary_en": "Seoul Tteok Shops (떡집) — ISSUE 02 series"
+    "summary_en": "Seoul Tteok Shops (떡집) — ISSUE 02 series",
+    "en_available": true
   },
   {
     "id": "43",
@@ -874,7 +926,8 @@
       "seoul"
     ],
     "summary_kr": "43 · 양재천 산책과 맛집 — ISSUE 02 시리즈",
-    "summary_en": "Yangjaecheon (양재천) Walk & Eats — ISSUE 02 series"
+    "summary_en": "Yangjaecheon (양재천) Walk & Eats — ISSUE 02 series",
+    "en_available": true
   },
   {
     "id": "44",
@@ -887,7 +940,8 @@
       "seoul"
     ],
     "summary_kr": "44 · 한강 여름 가이드 — ISSUE 02 시리즈",
-    "summary_en": "Han River (한강) Summer Guide — ISSUE 02 series"
+    "summary_en": "Han River (한강) Summer Guide — ISSUE 02 series",
+    "en_available": true
   },
   {
     "id": "58",
@@ -900,7 +954,8 @@
       "seoul"
     ],
     "summary_kr": "광장시장 맛집·체험·주의사항 풀가이드 — ISSUE 02 시리즈",
-    "summary_en": "Gwangjang Market (광장시장) Full Guide for Foreigners — ISSUE 02 series"
+    "summary_en": "Gwangjang Market (광장시장) Full Guide for Foreigners — ISSUE 02 series",
+    "en_available": true
   },
   {
     "id": "59",
@@ -913,7 +968,8 @@
       "seoul"
     ],
     "summary_kr": "서울 김밥 맛집 가이드 — ISSUE 02 시리즈",
-    "summary_en": "Seoul Gimbap Guide for Foreigners — ISSUE 02 series"
+    "summary_en": "Seoul Gimbap Guide for Foreigners — ISSUE 02 series",
+    "en_available": true
   },
   {
     "id": "60",
@@ -926,7 +982,8 @@
       "seoul"
     ],
     "summary_kr": "서울 재즈바·재즈카페 가이드 — ISSUE 02 시리즈",
-    "summary_en": "Seoul Jazz Bars & Lounges Guide for Foreigners — ISSUE 02 series"
+    "summary_en": "Seoul Jazz Bars & Lounges Guide for Foreigners — ISSUE 02 series",
+    "en_available": true
   },
   {
     "id": "61",
@@ -939,7 +996,8 @@
       "seoul"
     ],
     "summary_kr": "한국 카페 체인 풀가이드 — ISSUE 02 시리즈",
-    "summary_en": "The Complete Guide to Korean Café Chains — ISSUE 02 series"
+    "summary_en": "The Complete Guide to Korean Café Chains — ISSUE 02 series",
+    "en_available": true
   },
   {
     "id": "62",
@@ -952,7 +1010,8 @@
       "seoul"
     ],
     "summary_kr": "한국 닭 요리 풀가이드 — ISSUE 02 시리즈",
-    "summary_en": "Korean Chicken Dishes Full Guide — ISSUE 02 series"
+    "summary_en": "Korean Chicken Dishes Full Guide — ISSUE 02 series",
+    "en_available": true
   },
   {
     "id": "63",
@@ -965,7 +1024,8 @@
       "seoul"
     ],
     "summary_kr": "명동 1일 풀공략 — ISSUE 02 시리즈",
-    "summary_en": "Myeongdong (명동) Full-Day Guide — ISSUE 02 series"
+    "summary_en": "Myeongdong (명동) Full-Day Guide — ISSUE 02 series",
+    "en_available": true
   },
   {
     "id": "65",
@@ -978,7 +1038,8 @@
       "seoul"
     ],
     "summary_kr": "한국 치킨 체인 풀가이드 — ISSUE 02 시리즈",
-    "summary_en": "Complete Guide to Korean Fried Chicken Chains — ISSUE 02 series"
+    "summary_en": "Complete Guide to Korean Fried Chicken Chains — ISSUE 02 series",
+    "en_available": true
   },
   {
     "id": "66",
@@ -991,7 +1052,8 @@
       "seoul"
     ],
     "summary_kr": "한국 떡볶이 체인 풀가이드 — ISSUE 02 시리즈",
-    "summary_en": "Korea Tteokbokki (떡볶이) Chain Complete Guide — ISSUE 02 series"
+    "summary_en": "Korea Tteokbokki (떡볶이) Chain Complete Guide — ISSUE 02 series",
+    "en_available": true
   },
   {
     "id": "69",
@@ -1004,7 +1066,8 @@
       "seoul"
     ],
     "summary_kr": "한국 비건·할랄·종교 식이 가이드 — ISSUE 02 시리즈",
-    "summary_en": "Korea's Vegan, Halal & Religious Diet Guide for Foreigners — ISSUE 02 series"
+    "summary_en": "Korea's Vegan, Halal & Religious Diet Guide for Foreigners — ISSUE 02 series",
+    "en_available": true
   },
   {
     "id": "71",
@@ -1017,7 +1080,8 @@
       "seoul"
     ],
     "summary_kr": "한국 베이커리 체인 풀가이드 — ISSUE 02 시리즈",
-    "summary_en": "Korea Bakery Chain Full Guide — ISSUE 02 series"
+    "summary_en": "Korea Bakery Chain Full Guide — ISSUE 02 series",
+    "en_available": true
   },
   {
     "id": "73",
@@ -1030,7 +1094,8 @@
       "seoul"
     ],
     "summary_kr": "명동 코스메틱 풀가이드 — ISSUE 02 시리즈",
-    "summary_en": "Myeongdong (명동) Cosmetics Full Guide — ISSUE 02 series"
+    "summary_en": "Myeongdong (명동) Cosmetics Full Guide — ISSUE 02 series",
+    "en_available": true
   },
   {
     "id": "79",
@@ -1043,7 +1108,8 @@
       "seoul"
     ],
     "summary_kr": "이태원·한남·해방촌 1일 풀공략 — ISSUE 02 시리즈",
-    "summary_en": "Itaewon (이태원) · Hannam (한남) · Haebangchon (해방촌) Full 1-Day Guide — ISSUE 02 series"
+    "summary_en": "Itaewon (이태원) · Hannam (한남) · Haebangchon (해방촌) Full 1-Day Guide — ISSUE 02 series",
+    "en_available": true
   },
   {
     "id": "82",
@@ -1056,7 +1122,8 @@
       "seoul"
     ],
     "summary_kr": "잠실 1일 풀공략 — ISSUE 02 시리즈",
-    "summary_en": "Jamsil 1-Day Full Guide — ISSUE 02 series"
+    "summary_en": "Jamsil 1-Day Full Guide — ISSUE 02 series",
+    "en_available": true
   },
   {
     "id": "87",
@@ -1069,7 +1136,8 @@
       "seoul"
     ],
     "summary_kr": "인천공항 입국·도심 이동 풀가이드 — ISSUE 02 시리즈",
-    "summary_en": "Incheon Airport Arrival & City Transfer Complete Guide — ISSUE 02 series"
+    "summary_en": "Incheon Airport Arrival & City Transfer Complete Guide — ISSUE 02 series",
+    "en_available": true
   },
   {
     "id": "89",
@@ -1082,7 +1150,8 @@
       "seoul"
     ],
     "summary_kr": "가을 단풍 명소 TOP 8 + 시기별 단풍 캘린더 — ISSUE 02 시리즈",
-    "summary_en": "Fall Foliage TOP 8 Spots + Season-by-Season Foliage Calendar — ISSUE 02 series"
+    "summary_en": "Fall Foliage TOP 8 Spots + Season-by-Season Foliage Calendar — ISSUE 02 series",
+    "en_available": true
   },
   {
     "id": "90",
@@ -1095,7 +1164,8 @@
       "seoul"
     ],
     "summary_kr": "겨울 일루미네이션·트리·연말 카운트다운 풀가이드 — ISSUE 02 시리즈",
-    "summary_en": "Seoul Winter Illuminations, Christmas Trees & New Year's Eve Countdown — ISSUE 02 series"
+    "summary_en": "Seoul Winter Illuminations, Christmas Trees & New Year's Eve Countdown — ISSUE 02 series",
+    "en_available": true
   },
   {
     "id": "136",
@@ -1108,7 +1178,8 @@
       "seoul"
     ],
     "summary_kr": "서울 막걸리·전통주 입문 — ISSUE 02 시리즈",
-    "summary_en": "Seoul Makgeolli (막걸리) & Traditional Liquor Intro — ISSUE 02 series"
+    "summary_en": "Seoul Makgeolli (막걸리) & Traditional Liquor Intro — ISSUE 02 series",
+    "en_available": true
   },
   {
     "id": "137",
@@ -1121,7 +1192,8 @@
       "seoul"
     ],
     "summary_kr": "서울 야장 culture 10선 — ISSUE 02 시리즈",
-    "summary_en": "Seoul Yajang (야장) Culture Top 10 — ISSUE 02 series"
+    "summary_en": "Seoul Yajang (야장) Culture Top 10 — ISSUE 02 series",
+    "en_available": true
   },
   {
     "id": "41",
@@ -1135,7 +1207,8 @@
       "guide"
     ],
     "summary_kr": "41 · 24시간 쇼핑 스팟 지도 — ISSUE 02 시리즈",
-    "summary_en": "41 · Seoul's 24-Hour Shopping Map — ISSUE 02 series"
+    "summary_en": "41 · Seoul's 24-Hour Shopping Map — ISSUE 02 series",
+    "en_available": true
   },
   {
     "id": "45",
@@ -1149,7 +1222,8 @@
       "guide"
     ],
     "summary_kr": "45 · 서울 코인빨래방 완전 가이드 — ISSUE 02 시리즈",
-    "summary_en": "45 · Seoul Coin Laundry Complete Guide — ISSUE 02 series"
+    "summary_en": "45 · Seoul Coin Laundry Complete Guide — ISSUE 02 series",
+    "en_available": true
   },
   {
     "id": "46",
@@ -1163,7 +1237,8 @@
       "guide"
     ],
     "summary_kr": "46 · 한국 유심·이심·로밍 완전 가이드 — ISSUE 02 시리즈",
-    "summary_en": "46 · Korea SIM · eSIM · Roaming Complete Guide — ISSUE 02 series"
+    "summary_en": "46 · Korea SIM · eSIM · Roaming Complete Guide — ISSUE 02 series",
+    "en_available": true
   },
   {
     "id": "47",
@@ -1177,7 +1252,8 @@
       "guide"
     ],
     "summary_kr": "47 · 올리브영 실구매 완전 가이드 — ISSUE 02 시리즈",
-    "summary_en": "47 · Olive Young Real Buying Guide — ISSUE 02 series"
+    "summary_en": "47 · Olive Young Real Buying Guide — ISSUE 02 series",
+    "en_available": true
   },
   {
     "id": "48",
@@ -1191,7 +1267,8 @@
       "guide"
     ],
     "summary_kr": "48 · 한국 필수구매 TOP 20 — ISSUE 02 시리즈",
-    "summary_en": "48 · Korea Essential Buys TOP 20 — ISSUE 02 series"
+    "summary_en": "48 · Korea Essential Buys TOP 20 — ISSUE 02 series",
+    "en_available": true
   },
   {
     "id": "22",
@@ -1205,7 +1282,8 @@
       "quick-guide"
     ],
     "summary_kr": "22_강남 파인다이닝 5선 — ISSUE 02 quick guide (~2K chars)",
-    "summary_en": "22 – Gangnam (강남) Fine Dining: Top 5 Picks — ISSUE 02 quick guide (~2K chars)"
+    "summary_en": "22 – Gangnam (강남) Fine Dining: Top 5 Picks — ISSUE 02 quick guide (~2K chars)",
+    "en_available": true
   },
   {
     "id": "23",
@@ -1219,7 +1297,8 @@
       "quick-guide"
     ],
     "summary_kr": "23_이태원 세계음식 투어 — ISSUE 02 quick guide (~2K chars)",
-    "summary_en": "23_Itaewon World Food Tour — ISSUE 02 quick guide (~2K chars)"
+    "summary_en": "23_Itaewon World Food Tour — ISSUE 02 quick guide (~2K chars)",
+    "en_available": true
   },
   {
     "id": "24",
@@ -1233,7 +1312,8 @@
       "quick-guide"
     ],
     "summary_kr": "24_광장시장 완전 공략 — ISSUE 02 quick guide (~2K chars)",
-    "summary_en": "24_Gwangjang Market (광장시장) Complete Guide — ISSUE 02 quick guide (~2K chars)"
+    "summary_en": "24_Gwangjang Market (광장시장) Complete Guide — ISSUE 02 quick guide (~2K chars)",
+    "en_available": true
   },
   {
     "id": "25",
@@ -1247,7 +1327,8 @@
       "quick-guide"
     ],
     "summary_kr": "25_망원시장 먹거리 — ISSUE 02 quick guide (~2K chars)",
-    "summary_en": "25_Mangwon Market Food Guide (망원시장 먹거리) — ISSUE 02 quick guide (~2K chars)"
+    "summary_en": "25_Mangwon Market Food Guide (망원시장 먹거리) — ISSUE 02 quick guide (~2K chars)",
+    "en_available": true
   },
   {
     "id": "26",
@@ -1261,7 +1342,8 @@
       "quick-guide"
     ],
     "summary_kr": "26_편의점 간식 추천 (외국인용) — ISSUE 02 quick guide (~2K chars)",
-    "summary_en": "26_Convenience Store Snack Guide (For Tourists) — ISSUE 02 quick guide (~2K chars)"
+    "summary_en": "26_Convenience Store Snack Guide (For Tourists) — ISSUE 02 quick guide (~2K chars)",
+    "en_available": true
   },
   {
     "id": "27",
@@ -1275,7 +1357,8 @@
       "quick-guide"
     ],
     "summary_kr": "27_스트릿푸드 Top 20 — ISSUE 02 quick guide (~2K chars)",
-    "summary_en": "27_Street Food Top 20 — ISSUE 02 quick guide (~2K chars)"
+    "summary_en": "27_Street Food Top 20 — ISSUE 02 quick guide (~2K chars)",
+    "en_available": true
   },
   {
     "id": "28",
@@ -1289,7 +1372,8 @@
       "quick-guide"
     ],
     "summary_kr": "28_한국식 치킨집 가이드 — ISSUE 02 quick guide (~2K chars)",
-    "summary_en": "28_Korean Fried Chicken Restaurant Guide — ISSUE 02 quick guide (~2K chars)"
+    "summary_en": "28_Korean Fried Chicken Restaurant Guide — ISSUE 02 quick guide (~2K chars)",
+    "en_available": true
   },
   {
     "id": "29",
@@ -1303,7 +1387,8 @@
       "quick-guide"
     ],
     "summary_kr": "29_성수동 편집샵 완전 정복 — ISSUE 02 quick guide (~2K chars)",
-    "summary_en": "29_Seongsu-dong Select Shop Complete Guide — ISSUE 02 quick guide (~2K chars)"
+    "summary_en": "29_Seongsu-dong Select Shop Complete Guide — ISSUE 02 quick guide (~2K chars)",
+    "en_available": true
   },
   {
     "id": "30",
@@ -1317,7 +1402,8 @@
       "quick-guide"
     ],
     "summary_kr": "30_가로수길 쇼핑 1일 코스 — ISSUE 02 quick guide (~2K chars)",
-    "summary_en": "30 — ISSUE 02 quick guide (~2K chars)"
+    "summary_en": "30 — ISSUE 02 quick guide (~2K chars)",
+    "en_available": true
   },
   {
     "id": "31",
@@ -1331,7 +1417,8 @@
       "quick-guide"
     ],
     "summary_kr": "31_동대문 심야 쇼핑 — ISSUE 02 quick guide (~2K chars)",
-    "summary_en": "31_Dongdaemun Late-Night Shopping — ISSUE 02 quick guide (~2K chars)"
+    "summary_en": "31_Dongdaemun Late-Night Shopping — ISSUE 02 quick guide (~2K chars)",
+    "en_available": true
   },
   {
     "id": "32",
@@ -1345,7 +1432,8 @@
       "quick-guide"
     ],
     "summary_kr": "32_홍대 빈티지 샵 투어 — ISSUE 02 quick guide (~2K chars)",
-    "summary_en": "32 Hongdae (홍대) Vintage Shop Tour — ISSUE 02 quick guide (~2K chars)"
+    "summary_en": "32 Hongdae (홍대) Vintage Shop Tour — ISSUE 02 quick guide (~2K chars)",
+    "en_available": true
   },
   {
     "id": "33",
@@ -1359,7 +1447,8 @@
       "quick-guide"
     ],
     "summary_kr": "33_한복 체험 - 경복궁 완전 가이드 — ISSUE 02 quick guide (~2K chars)",
-    "summary_en": "33_Hanbok Experience – Complete Guide to Gyeongbokgung (경복궁) — ISSUE 02 quick guide (~2K chars)"
+    "summary_en": "33_Hanbok Experience – Complete Guide to Gyeongbokgung (경복궁) — ISSUE 02 quick guide (~2K chars)",
+    "en_available": true
   },
   {
     "id": "34",
@@ -1373,7 +1462,8 @@
       "quick-guide"
     ],
     "summary_kr": "34_찜질방 에티켓 (외국인 전용) — ISSUE 02 quick guide (~2K chars)",
-    "summary_en": "34_Jjimjilbang Etiquette (For Foreign Visitors) — ISSUE 02 quick guide (~2K chars)"
+    "summary_en": "34_Jjimjilbang Etiquette (For Foreign Visitors) — ISSUE 02 quick guide (~2K chars)",
+    "en_available": true
   },
   {
     "id": "35",
@@ -1387,7 +1477,8 @@
       "quick-guide"
     ],
     "summary_kr": "35_K팝 댄스 클래스 — ISSUE 02 quick guide (~2K chars)",
-    "summary_en": "35_K-pop Dance Class — ISSUE 02 quick guide (~2K chars)"
+    "summary_en": "35_K-pop Dance Class — ISSUE 02 quick guide (~2K chars)",
+    "en_available": true
   },
   {
     "id": "36",
@@ -1401,7 +1492,8 @@
       "quick-guide"
     ],
     "summary_kr": "36_템플스테이 초보 가이드 — ISSUE 02 quick guide (~2K chars)",
-    "summary_en": "36_Templestay Beginner's Guide — ISSUE 02 quick guide (~2K chars)"
+    "summary_en": "36_Templestay Beginner's Guide — ISSUE 02 quick guide (~2K chars)",
+    "en_available": true
   },
   {
     "id": "37",
@@ -1415,7 +1507,8 @@
       "quick-guide"
     ],
     "summary_kr": "37_경복궁 3시간 완주 — ISSUE 02 quick guide (~2K chars)",
-    "summary_en": "37_Gyeongbokgung 3-Hour Complete Route — ISSUE 02 quick guide (~2K chars)"
+    "summary_en": "37_Gyeongbokgung 3-Hour Complete Route — ISSUE 02 quick guide (~2K chars)",
+    "en_available": true
   },
   {
     "id": "38",
@@ -1429,7 +1522,8 @@
       "quick-guide"
     ],
     "summary_kr": "38_북촌한옥마을 + 삼청동 1일 — ISSUE 02 quick guide (~2K chars)",
-    "summary_en": "38_Bukchon Hanok Village + Samcheong-dong 1-Day Guide — ISSUE 02 quick guide (~2K chars)"
+    "summary_en": "38_Bukchon Hanok Village + Samcheong-dong 1-Day Guide — ISSUE 02 quick guide (~2K chars)",
+    "en_available": true
   },
   {
     "id": "39",
@@ -1443,7 +1537,8 @@
       "quick-guide"
     ],
     "summary_kr": "39_홍대 + 연남동 + 망원 하루 — ISSUE 02 quick guide (~2K chars)",
-    "summary_en": "39_Hongdae + Yeonnam-dong + Mangwon: One Full Day — ISSUE 02 quick guide (~2K chars)"
+    "summary_en": "39_Hongdae + Yeonnam-dong + Mangwon: One Full Day — ISSUE 02 quick guide (~2K chars)",
+    "en_available": true
   },
   {
     "id": "40",
@@ -1457,7 +1552,8 @@
       "quick-guide"
     ],
     "summary_kr": "40_남산 + 명동 야경 투어 — ISSUE 02 quick guide (~2K chars)",
-    "summary_en": "40_Namsan + Myeongdong Night Tour — ISSUE 02 quick guide (~2K chars)"
+    "summary_en": "40_Namsan + Myeongdong Night Tour — ISSUE 02 quick guide (~2K chars)",
+    "en_available": true
   },
   {
     "id": "157",
@@ -1476,7 +1572,8 @@
       "hanok-cafe"
     ],
     "summary_kr": "한옥+갤러리+모던+베이커리 4축 12선 — T6.5 demand 1순위 cluster (카페·jongno gap 1040 — 전체 최상위)",
-    "summary_en": "Hanok + gallery + modern + bakery 4-axis 12-pick — T6.5 demand No.1 cluster Jongno cafe guide"
+    "summary_en": "Hanok + gallery + modern + bakery 4-axis 12-pick — T6.5 demand No.1 cluster Jongno cafe guide",
+    "en_available": true
   },
   {
     "id": "158",
@@ -1498,7 +1595,8 @@
       "complete-guide"
     ],
     "summary_kr": "맛집 60+카페·디저트 89+문화·체험 60+쇼핑·사진 60 = 269곳 종합 큐레이션 — 사용자 큐레이션 원본 가이드북 (16곳 상세 픽)",
-    "summary_en": "Restaurant 60 + cafe·dessert 89 + culture·experience 60 + shopping·photo 60 = 269 spots complete guide — user-curated comprehensive Hongdae guidebook"
+    "summary_en": "Restaurant 60 + cafe·dessert 89 + culture·experience 60 + shopping·photo 60 = 269 spots complete guide — user-curated comprehensive Hongdae guidebook",
+    "en_available": true
   },
   {
     "id": "159",
@@ -1514,7 +1612,8 @@
       "restaurants"
     ],
     "summary_kr": "홍대 맛집·술집 60곳 가이드 — #158 분할 시리즈 (사용자 큐레이션 270곳 분할)",
-    "summary_en": "Hongdae Restaurants Bars 60 — split from #158 user-curated 270 spots"
+    "summary_en": "Hongdae Restaurants Bars 60 — split from #158 user-curated 270 spots",
+    "en_available": true
   },
   {
     "id": "160",
@@ -1530,7 +1629,8 @@
       "dessert"
     ],
     "summary_kr": "홍대 카페·디저트 89곳 가이드 — #158 분할 시리즈 (사용자 큐레이션 270곳 분할)",
-    "summary_en": "Hongdae Cafe Dessert 89 — split from #158 user-curated 270 spots"
+    "summary_en": "Hongdae Cafe Dessert 89 — split from #158 user-curated 270 spots",
+    "en_available": true
   },
   {
     "id": "161",
@@ -1546,7 +1646,8 @@
       "culture"
     ],
     "summary_kr": "홍대 문화·체험 60곳 가이드 — #158 분할 시리즈 (사용자 큐레이션 270곳 분할)",
-    "summary_en": "Hongdae Culture Experience 60 — split from #158 user-curated 270 spots"
+    "summary_en": "Hongdae Culture Experience 60 — split from #158 user-curated 270 spots",
+    "en_available": true
   },
   {
     "id": "162",
@@ -1562,7 +1663,8 @@
       "shopping"
     ],
     "summary_kr": "홍대 쇼핑·사진 60곳 가이드 — #158 분할 시리즈 (사용자 큐레이션 270곳 분할)",
-    "summary_en": "Hongdae Shopping Photo 60 — split from #158 user-curated 270 spots"
+    "summary_en": "Hongdae Shopping Photo 60 — split from #158 user-curated 270 spots",
+    "en_available": true
   },
   {
     "id": "163",
@@ -1582,7 +1684,8 @@
       "traditional-liquor"
     ],
     "summary_kr": "한식주점+익선동 와인바+포차·맥주+이자카야 4축 12선 — T6.5 cycle 8 (술집·jongno gap 393, 매장 풀 38개 보강)",
-    "summary_en": "Korean liquor + Ikseondong wine bar + pocha + izakaya 4-axis 12-pick — T6.5 demand-driven Jongno bar guide"
+    "summary_en": "Korean liquor + Ikseondong wine bar + pocha + izakaya 4-axis 12-pick — T6.5 demand-driven Jongno bar guide",
+    "en_available": true
   },
   {
     "id": "164",
@@ -1602,7 +1705,8 @@
       "wine-pairing"
     ],
     "summary_kr": "파스타 시그니처+코스·와인+피자·캐주얼+캐주얼 모임 4축 11선 — T6.5 cycle 9 (이탈리아음식·hongdae gap 388, 매장 풀 11개)",
-    "summary_en": "Pasta signature + course/wine + pizza + casual gathering 4-axis 11-pick — T6.5 demand-driven Hongdae Italian guide"
+    "summary_en": "Pasta signature + course/wine + pizza + casual gathering 4-axis 11-pick — T6.5 demand-driven Hongdae Italian guide",
+    "en_available": false
   },
   {
     "id": "165",
@@ -1623,7 +1727,8 @@
       "phase2"
     ],
     "summary_kr": "#153 ★평점 검증 12선 이후 — 외국인 리뷰 8건+ 신호 강한 hidden gems 8선. 양식·hongdae cluster covered 25%→50% 도달.",
-    "summary_en": "Hidden gems 8-pick after #153 ★rating-verified 12 — foreign reviews 8+ signal threshold. Cluster cov 25%→50%."
+    "summary_en": "Hidden gems 8-pick after #153 ★rating-verified 12 — foreign reviews 8+ signal threshold. Cluster cov 25%→50%.",
+    "en_available": true
   },
   {
     "id": "166",
@@ -1645,7 +1750,8 @@
       "traditional-liquor"
     ],
     "summary_kr": "전통주·양조장+와인바+포차·요리주점+Speakeasy 4축 8선 — 술집·gangnam cluster gap 387, 0% 커버 (ISSUE 03 강남 시리즈 3편)",
-    "summary_en": "Brewery + winebar + pocha + speakeasy 4-axis 8-pick — Gangnam bar cluster gap 387, 0% covered (ISSUE 03 Gangnam series #3)"
+    "summary_en": "Brewery + winebar + pocha + speakeasy 4-axis 8-pick — Gangnam bar cluster gap 387, 0% covered (ISSUE 03 Gangnam series #3)",
+    "en_available": true
   },
   {
     "id": "167",
@@ -1664,7 +1770,8 @@
       "bagel"
     ],
     "summary_kr": "한옥 브런치+모던+베이글+인스타 4축 8선 — T6.5 cycle 10 (gap 626.5 — 외국인 demand 1순위)",
-    "summary_en": "Hanok brunch + modern + bagel + instagram 4-axis 8-pick — T6.5 demand No.1 Jongno brunch guide"
+    "summary_en": "Hanok brunch + modern + bagel + instagram 4-axis 8-pick — T6.5 demand No.1 Jongno brunch guide",
+    "en_available": false
   },
   {
     "id": "168",
@@ -1683,7 +1790,8 @@
       "bagel"
     ],
     "summary_kr": "연남 시그니처+합정 모던+팬케이크·베이글+망원 동네 4축 12선 — T6.5 cycle 11 (브런치·hongdae gap 333, 50% 커버 17 매장 풀)",
-    "summary_en": "Yeonnam signature + Hapjeong modern + pancake/bagel + Mangwon local 4-axis 12-pick — T6.5 cycle 11 Hongdae brunch guide"
+    "summary_en": "Yeonnam signature + Hapjeong modern + pancake/bagel + Mangwon local 4-axis 12-pick — T6.5 cycle 11 Hongdae brunch guide",
+    "en_available": false
   },
   {
     "id": "169",
@@ -1703,6 +1811,7 @@
       "cruise"
     ],
     "summary_kr": "한식 점심+베이커리·카페+글로벌 다이닝+한강·풍경 4축 12선 + 봄 윤중로 벚꽃·이크루즈·더현대 서울·63 빌딩 — 키친구 최초 영등포구 진입 (cluster 41건 활용)",
-    "summary_en": "Korean lunch + bakery cafe + global dining + Han River park 4-axis 12-pick + Yunjung-ro cherry blossom + E-Cruise + The Hyundai Seoul + 63 Building — KeyChinGu first Yeongdeungpo entry (41 cluster places)"
+    "summary_en": "Korean lunch + bakery cafe + global dining + Han River park 4-axis 12-pick + Yunjung-ro cherry blossom + E-Cruise + The Hyundai Seoul + 63 Building — KeyChinGu first Yeongdeungpo entry (41 cluster places)",
+    "en_available": false
   }
 ]

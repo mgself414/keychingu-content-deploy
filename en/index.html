@@ -87,6 +87,8 @@
   const CAT_LABELS = {A:'Neighborhood',B:'Nature',C:'Food',D:'Culture',E:'Beauty',F:'Shopping',G:'K-Content',H:'Practical'};
 
   fetch('../data/contents.json').then(r=>r.json()).then(data=>{
+    // KR-only 콘텐츠는 EN index에서 hide (broken link 방지, 2026-05-16 patch)
+    data = data.filter(item => item.en_available !== false);
     window.__contents=data;
     renderCards(data);
     document.querySelectorAll('.filter-btn').forEach(btn=>{
