@@ -1813,5 +1813,27 @@
     "summary_kr": "한식 점심+베이커리·카페+글로벌 다이닝+한강·풍경 4축 12선 + 봄 윤중로 벚꽃·이크루즈·더현대 서울·63 빌딩 — 키친구 최초 영등포구 진입 (cluster 41건 활용)",
     "summary_en": "Korean lunch + bakery cafe + global dining + Han River park 4-axis 12-pick + Yunjung-ro cherry blossom + E-Cruise + The Hyundai Seoul + 63 Building — KeyChinGu first Yeongdeungpo entry (41 cluster places)",
     "en_available": false
+  },
+  {
+    "id": "170",
+    "slug": "daehakro-hyehwa",
+    "title_kr": "대학로 혜화 가이드",
+    "title_en": "Daehakro Hyehwa Guide",
+    "category": "A",
+    "tags": [
+      "foreigner",
+      "daehakro",
+      "hyehwa",
+      "seongbuk",
+      "hakrim-cafe",
+      "ihwa-mural",
+      "naksan-park",
+      "sungkyunkwan",
+      "korean-culture",
+      "indie-theater"
+    ],
+    "summary_kr": "돈가스·중식+학림(1956 한국최초카페)·카페디저트+요리주점·호프+이화벽화·낙산공원 4축 12선 + 성균관·아르코극장 체험 — 키친구 최초 종로 동부·성북구 진입 (hyehwa cluster 36건)",
+    "summary_en": "Katsu + cafe (Hakrim 1956 Korea's first cafe) + drinking + culture 4-axis 12-pick + Ihwa Mural Village + Naksan Park + Sungkyunkwan — KeyChinGu first eastern Jongno/Seongbuk entry (36 hyehwa cluster places)",
+    "en_available": false
   }
 ]
