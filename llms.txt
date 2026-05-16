@@ -136,6 +136,8 @@
 - [Seoul Cycling Guide](https://mgself414.github.io/keychingu-content-deploy/content/cycling.en.html): Beginner + night + loop + outskirts 4-axis 8-pick — Activity series #5 (Han River 130km · Ttareungi 3.3M users) Korean: /content/cycling.html
 - [Han River Camping & BBQ Guide](https://mgself414.github.io/keychingu-content-deploy/content/camping-bbq.en.html): Official campgrounds + glamping + BBQ zone + picnic 4-axis 8-pick — Activity series #4 (Nanji, Noeul, Uidong + Banpo, Ddukseom, Yeouido) Korean: /content/camping-bbq.html
 
+- [Seoul Yeouido Area Guide](https://mgself414.github.io/keychingu-content-deploy/content/yeouido.html): Korean lunch + bakery cafe + global dining + Han River park 4-axis 12-pick + Yunjung-ro cherry blossom + E-Cruise + The Hyundai Seoul + 63 Building — KeyChinGu first Yeongdeungpo entry (41 cluster places, KR only — EN/CN/JP Phase 2)
+
 ## Site Pages
 
 - [About — KeyChinGu Introduction](https://mgself414.github.io/keychingu-content-deploy/about.html): KeyChinGu mission, content categories (food/cafe/culture/activity/shopping/practical), target audience, contact info.
