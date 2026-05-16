@@ -138,6 +138,7 @@
 
 - [Seoul Yeouido Area Guide](https://mgself414.github.io/keychingu-content-deploy/content/yeouido.html): Korean lunch + bakery cafe + global dining + Han River park 4-axis 12-pick + Yunjung-ro cherry blossom + E-Cruise + The Hyundai Seoul + 63 Building — KeyChinGu first Yeongdeungpo entry (41 cluster places, KR only — EN/CN/JP Phase 2)
 - [Seoul Daehakro Hyehwa Guide](https://mgself414.github.io/keychingu-content-deploy/content/daehakro-hyehwa.html): Katsu·Chinese lunch + Hakrim (1956 Korea's first cafe)·specialty coffee·desserts + drinking houses + culture·Ihwa Mural·Naksan Park 4-axis 12-pick + Sungkyunkwan·ARKO Theater — KeyChinGu first eastern Jongno/Seongbuk entry (36 hyehwa cluster places, KR only — EN/CN/JP Phase 2)
+- [Seoul Sinchon Ewha Guide](https://mgself414.github.io/keychingu-content-deploy/content/sinchon-ewha.html): Korean BBQ·gopchang·shabu + cafe·bakery·Sulbing (Korea's flagship shaved ice)·Motherlinger bagel·La Bonne Tarte + Jama Burger·Mentsuru ramen + pocha·Yeonin Noraebang 4-axis 12-pick + Ewha Womans University (Korea's #1 women's college, 1886) + Yonsei University campus tour — KeyChinGu first Seodaemun entry (29 sinchon cluster places, KR only — EN/CN/JP Phase 2)
 
 ## Site Pages
 
