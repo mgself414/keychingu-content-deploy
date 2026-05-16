@@ -98,6 +98,16 @@
 .share-facebook:hover { background: #1877f2; color: #fff; }
 .share-kakao:hover { background: #fee500; }
 .share-copy:hover { background: #218CCC; color: #fff; }
+/* EN toggle disabled — 영문판 미생성 콘텐츠 (2026-05-16 patch) */
+.lang-switch .lang-disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  text-decoration: line-through;
+  padding: 4px 10px;
+  color: var(--text-soft, #888);
+  font-size: 13px;
+  user-select: none;
+}
 </style>
 </head>
 <body>
@@ -105,7 +115,7 @@
   <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
   <div class="lang-switch">
     <a href="../content/yeouido.html" class="active">KR</a>
-    <a href="../content/yeouido.en.html" >EN</a>
+    <span class="lang-disabled" title="영문판 준비 중">EN</span>
   </div>
 </header>
 
