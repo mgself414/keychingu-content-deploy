@@ -136,10 +136,15 @@
 - [Seoul Cycling Guide](https://mgself414.github.io/keychingu-content-deploy/content/cycling.en.html): Beginner + night + loop + outskirts 4-axis 8-pick — Activity series #5 (Han River 130km · Ttareungi 3.3M users) Korean: /content/cycling.html
 - [Han River Camping & BBQ Guide](https://mgself414.github.io/keychingu-content-deploy/content/camping-bbq.en.html): Official campgrounds + glamping + BBQ zone + picnic 4-axis 8-pick — Activity series #4 (Nanji, Noeul, Uidong + Banpo, Ddukseom, Yeouido) Korean: /content/camping-bbq.html
 
+## Site Pages
+
+- [About — KeyChinGu Introduction](https://mgself414.github.io/keychingu-content-deploy/about.html): KeyChinGu mission, content categories (food/cafe/culture/activity/shopping/practical), target audience, contact info.
+- [FAQ — Frequently Asked Questions](https://mgself414.github.io/keychingu-content-deploy/faq.html): 20 FAQs covering visa/K-ETA, transportation, payment, SIM, language, food, shopping, emergency for foreign tourists in Seoul.
+
 ## Key Facts
 
 - **Target audience**: Foreign MZ FIT travelers (20-35) visiting Seoul/Korea
-- **Coverage**: 106+ curated guides as of 2026-05-15
+- **Coverage**: 106+ curated guides as of 2026-05-16
 - **Languages**: Korean + English (web pages); Chinese + Japanese (PDF only)
 - **Update frequency**: Weekly
 - **Data sources**: Naver Maps + Reddit r/koreatravel + Google reviews + user curation
