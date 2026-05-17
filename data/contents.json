@@ -1879,5 +1879,27 @@
     "summary_kr": "DDP(자하 하디드)·디자인+두산타워·밀리오레·평화시장 야간쇼핑+경동한우·마루샤브·곱창·찜닭 야식+고망고·맹그로브 4축 12선 + 청계천 야간 산책 — 키친구 최초 동대문 야간 deep dive (ddp cluster 19건)",
     "summary_en": "DDP (Zaha Hadid) + night shopping (Doota·Migliore·Pyeonghwa) + Korean night food (hanwoo·shabu·gopchang·jjimdak) + cafe 4-axis 12-pick + Cheonggyecheon night walk — KeyChinGu first DDP/Dongdaemun night deep dive (19 ddp cluster)",
     "en_available": false
+  },
+  {
+    "id": "173",
+    "slug": "seocho-seorae",
+    "title_kr": "서초 서래마을 가이드",
+    "title_en": "Seocho Seorae Maeul Guide",
+    "category": "A",
+    "tags": [
+      "foreigner",
+      "seocho",
+      "seorae",
+      "french-community",
+      "maillet",
+      "banpo-hangang",
+      "moonlight-rainbow-fountain",
+      "jamsugyo",
+      "gangnam-terminal",
+      "lfs"
+    ],
+    "summary_kr": "서래마을(한국 최대 프랑스인 커뮤니티) + MAILLET(한국 프렌치 베이커리 1번지)+한식·교대 평냉·BBQ+베이커리·카페+반포 한강·잠수교·달빛무지개분수 4축 12선 + LFS·예술의전당 deep dive — 키친구 최초 서초구 진입 (seocho cluster 84건)",
+    "summary_en": "Seorae Maeul (Korea's largest French community) + MAILLET (#1 French bakery in Korea) + Pyongyang naengmyeon·Korean BBQ (Gyodae·Beopjo) + bakery·cafe + Banpo Hangang (Jamsugyo·Moonlight Rainbow Fountain) 4-axis 12-pick + LFS·Seoul Arts Center — KeyChinGu first Seocho entry (84 seocho cluster places)",
+    "en_available": false
   }
 ]
