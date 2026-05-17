@@ -1857,5 +1857,27 @@
     "summary_kr": "한식 BBQ·곱창·샤브+카페·베이커리·설빙(한국 빙수 본점)+자마버거·일본 라면+포차·노래방 4축 12선 + 이화여대·연세대 캠퍼스 체험 — 키친구 최초 서대문구 진입 (sinchon cluster 29건)",
     "summary_en": "Korean BBQ + cafe·bakery·Sulbing (Korea's flagship shaved ice) + global burger·ramen + pocha·noraebang 4-axis 12-pick + Ewha/Yonsei campus tour — KeyChinGu first Seodaemun entry (29 sinchon cluster places)",
     "en_available": false
+  },
+  {
+    "id": "172",
+    "slug": "ddp-dongdaemun",
+    "title_kr": "DDP 동대문 야간 가이드",
+    "title_en": "DDP Dongdaemun Night Guide",
+    "category": "A",
+    "tags": [
+      "foreigner",
+      "ddp",
+      "dongdaemun",
+      "zaha-hadid",
+      "night-shopping",
+      "doota-mall",
+      "migliore",
+      "pyeonghwa-market",
+      "cheonggyecheon",
+      "korean-design"
+    ],
+    "summary_kr": "DDP(자하 하디드)·디자인+두산타워·밀리오레·평화시장 야간쇼핑+경동한우·마루샤브·곱창·찜닭 야식+고망고·맹그로브 4축 12선 + 청계천 야간 산책 — 키친구 최초 동대문 야간 deep dive (ddp cluster 19건)",
+    "summary_en": "DDP (Zaha Hadid) + night shopping (Doota·Migliore·Pyeonghwa) + Korean night food (hanwoo·shabu·gopchang·jjimdak) + cafe 4-axis 12-pick + Cheonggyecheon night walk — KeyChinGu first DDP/Dongdaemun night deep dive (19 ddp cluster)",
+    "en_available": false
   }
 ]
