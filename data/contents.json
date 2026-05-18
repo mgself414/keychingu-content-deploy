@@ -2011,5 +2011,27 @@
     "summary_kr": "건국대(외국인 학생 6,000명+) + 뚝섬 한강공원(자전거·요트·바베큐) + 어린이대공원(한국 1번지 무료 동물원) + 마초쉐프·사토규카츠·민지슈퍼·요비 4축 12선 + 아차산·동서울터미널 deep dive — 키친구 최초 광진구 진입 (gwangjin cluster 74건)",
     "summary_en": "Konkuk University (6,000+ international students) + Ttukseom Han River Park (cycling·yacht·BBQ) + Children's Grand Park (Korea's #1 free urban zoo) + Macho Chef·Sato Gyukatsu·Minji Super·Yobi 4-axis 12-pick + Achasan hiking·Dong Seoul Bus Terminal — KeyChinGu first Gwangjin entry (74 gwangjin cluster)",
     "en_available": false
+  },
+  {
+    "id": "179",
+    "slug": "nowon-cafe-life",
+    "title_kr": "노원 카페·라이프스타일 가이드",
+    "title_en": "Nowon Cafe & Lifestyle Guide",
+    "category": "A",
+    "tags": [
+      "foreigner",
+      "nowon",
+      "cafe",
+      "dining",
+      "bakery",
+      "kubang-plus",
+      "korean-food",
+      "mexican",
+      "sushi",
+      "lifestyle"
+    ],
+    "summary_kr": "#177 등산 follow-up — 노원·중계·공릉 라이프스타일 deep dive. 쿠방플러스(노원 카페 #1, 8324rv 4.89★)+갓잇 멕시코(4897rv)+파스타한끼(4936rv)+신의주찹쌀순대(4027rv)+애슐리퀸즈 K-뷔페 등 4축 12선(베이커리·디저트/카페·로스터스/한식·면·뷔페/다국적 다이닝). 외국인이 K-drama·먹방에서 본 한국 베드타운 진짜 모습.",
+    "summary_en": "#177 hiking follow-up — Nowon·Junggye·Gongneung lifestyle deep dive. Kubang Plus (Nowon's #1 cafe, 8324rv 4.89★) + Gat-It Mexican (4897rv) + Pasta Hankki (4936rv) + Shinuiju Sundae (4027rv) + Ashley Queens Korean buffet — 4-axis 12-pick (bakery/cafe-roasters/Korean food/multinational dining). The real face of Korean bedroom suburbs that foreigners see in K-dramas and food vlogs.",
+    "en_available": false
   }
 ]
