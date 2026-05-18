@@ -1989,5 +1989,27 @@
     "summary_kr": "수락산(638m)+도봉산(740m, 한국 5대 명산)+불암산(508m) 3대 명산 + 서울둘레길 1구간(8.5km 4h) + 등산 후 8매장(수락이오냉면 9227rv·중계고기파티·구법원고로케 9965rv·카페포레스트) 4축 12선 — 키친구 첫 노원구 진입 (nowon cluster 71건) + #176 Walkable Seoul 연계 확장",
     "summary_en": "Suraksan (638m) + Dobongsan (740m, Korea's Top 5 mountain) + Buramsan (508m) 3 mountains + Seoul Trail Section 1 (8.5km 4h) + 8 post-hike places (Surakio Naengmyeon 9227rv · Junggye Gogi Party · Gubeopwon Croquette 9965rv · Cafe Forest) 4-axis 12-pick — KeyChinGu first Nowon entry (71 nowon cluster) + #176 Walkable Seoul extension",
     "en_available": false
+  },
+  {
+    "id": "178",
+    "slug": "gwangjin-konkuk",
+    "title_kr": "광진 건대 뚝섬 가이드",
+    "title_en": "Gwangjin Konkuk Ttukseom Guide",
+    "category": "A",
+    "tags": [
+      "foreigner",
+      "gwangjin",
+      "konkuk-university",
+      "ttukseom-hangang",
+      "children-grand-park",
+      "international-students",
+      "han-river-cycling",
+      "achasan",
+      "dong-seoul-terminal",
+      "italian-cafe"
+    ],
+    "summary_kr": "건국대(외국인 학생 6,000명+) + 뚝섬 한강공원(자전거·요트·바베큐) + 어린이대공원(한국 1번지 무료 동물원) + 마초쉐프·사토규카츠·민지슈퍼·요비 4축 12선 + 아차산·동서울터미널 deep dive — 키친구 최초 광진구 진입 (gwangjin cluster 74건)",
+    "summary_en": "Konkuk University (6,000+ international students) + Ttukseom Han River Park (cycling·yacht·BBQ) + Children's Grand Park (Korea's #1 free urban zoo) + Macho Chef·Sato Gyukatsu·Minji Super·Yobi 4-axis 12-pick + Achasan hiking·Dong Seoul Bus Terminal — KeyChinGu first Gwangjin entry (74 gwangjin cluster)",
+    "en_available": false
   }
 ]
