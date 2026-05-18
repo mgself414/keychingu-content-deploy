@@ -79,7 +79,8 @@
 
 <!-- SEARCH BAR -->
 <div class="search-bar">
-  <input type="text" id="search-input" placeholder="🔍 검색 — 제목·요약·태그 (홍대, 카페, 강남, 한복...)" autocomplete="off">
+  <input type="text" id="search-input" list="search-suggestions" placeholder="🔍 검색 — 제목·요약·태그 (홍대, 카페, 강남, 한복...)" autocomplete="off">
+  <datalist id="search-suggestions"></datalist>
   <button id="fav-toggle" class="fav-toggle" title="즐겨찾기만 보기">★ 즐겨찾기 <span id="fav-count"></span></button>
   <span id="result-count"></span>
 </div>
@@ -94,6 +95,14 @@
   <button class="area-btn" data-area="yeonhui">연희동</button>
   <button class="area-btn" data-area="namsan">남산·명동</button>
   <button class="area-btn" data-area="euljiro">을지로·종각</button>
+  <button class="area-btn" data-area="yeouido">여의도·영등포</button>
+  <button class="area-btn" data-area="hyehwa">혜화·대학로·동숭</button>
+  <button class="area-btn" data-area="sinchon">신촌·이대·서대문</button>
+  <button class="area-btn" data-area="ddp">DDP·동대문</button>
+  <button class="area-btn" data-area="seocho">서초·서래·반포</button>
+  <button class="area-btn" data-area="gwanak">관악·서울대·샤로수길</button>
+  <button class="area-btn" data-area="gangseo">강서·마곡·김포공항</button>
+  <button class="area-btn" data-area="nowon">노원·도봉·등산</button>
 </div>
 
 <!-- CATEGORY FILTER -->

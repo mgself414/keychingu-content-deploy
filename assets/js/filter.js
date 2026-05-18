@@ -55,8 +55,25 @@
         bindFilters(data);
         bindSearch(data);
         bindFavToggle(data);
+        populateSearchSuggestions(data);
         updateFavCount();
       });
+  }
+
+  function populateSearchSuggestions(data) {
+    const dl = document.getElementById('search-suggestions');
+    if (!dl) return;
+    const set = new Set();
+    data.forEach(function(item) {
+      if (item.title_kr) set.add(item.title_kr);
+      if (item.title_en) set.add(item.title_en);
+      (item.tags || []).forEach(function(t) { if (t) set.add(t); });
+    });
+    const opts = Array.from(set).sort().map(function(v) {
+      var safe = v.replace(/"/g, '&quot;');
+      return '<option value="' + safe + '">';
+    }).join('');
+    dl.innerHTML = opts;
   }
 
   function getLang() {
