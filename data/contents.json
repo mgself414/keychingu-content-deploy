@@ -1901,5 +1901,49 @@
     "summary_kr": "서래마을(한국 최대 프랑스인 커뮤니티) + MAILLET(한국 프렌치 베이커리 1번지)+한식·교대 평냉·BBQ+베이커리·카페+반포 한강·잠수교·달빛무지개분수 4축 12선 + LFS·예술의전당 deep dive — 키친구 최초 서초구 진입 (seocho cluster 84건)",
     "summary_en": "Seorae Maeul (Korea's largest French community) + MAILLET (#1 French bakery in Korea) + Pyongyang naengmyeon·Korean BBQ (Gyodae·Beopjo) + bakery·cafe + Banpo Hangang (Jamsugyo·Moonlight Rainbow Fountain) 4-axis 12-pick + LFS·Seoul Arts Center — KeyChinGu first Seocho entry (84 seocho cluster places)",
     "en_available": false
+  },
+  {
+    "id": "174",
+    "slug": "snu-sharosu",
+    "title_kr": "서울대 샤로수길 가이드",
+    "title_en": "SNU Sharosu-gil Guide",
+    "category": "A",
+    "tags": [
+      "foreigner",
+      "gwanak",
+      "seoul-national-university",
+      "sharosu-gil",
+      "snu-campus",
+      "nakseongdae",
+      "gwanaksan",
+      "namseoul-museum",
+      "mz-instagram",
+      "university-tour"
+    ],
+    "summary_kr": "서울대(한국 #1 국립대, 1946) + 샤로수길(MZ 인스타 핫스팟 1.5km) + 한식 BBQ·고기 + 카페·디저트 + 요리주점·야장집·이자카야 4축 12선 + 관악산 등산·남서울미술관 — 키친구 최초 관악구 진입 (gwanak cluster 33건)",
+    "summary_en": "SNU (Korea's #1 national university, 1946) + Sharosu-gil (1.5km MZ instagram hotspot) + Korean BBQ·meat + cafe·dessert + yajang·izakaya 4-axis 12-pick + Gwanaksan hiking + Nam-Seoul Museum — KeyChinGu first Gwanak entry (33 gwanak cluster)",
+    "en_available": false
+  },
+  {
+    "id": "175",
+    "slug": "magok-gimpo",
+    "title_kr": "마곡 김포공항 가이드",
+    "title_en": "Magok Gimpo Airport Guide",
+    "category": "A",
+    "tags": [
+      "foreigner",
+      "gangseo",
+      "magok",
+      "gimpo-airport",
+      "seoul-botanic-park",
+      "lg-science-park",
+      "lg-arts-center",
+      "transit",
+      "new-town",
+      "duty-free"
+    ],
+    "summary_kr": "김포공항(한국 1번지 1958)+롯데몰 면세+서울식물원(한국 최대, 2019)+LG 사이언스파크·LG 아트센터+마곡 카페·다이닝 4축 12선 + 환승·신도시 deep dive — 키친구 최초 강서구 진입 (gangseo cluster 31건)",
+    "summary_en": "Gimpo Airport (Korea's #1 airport, 1958) + Lotte Mall duty-free + Seoul Botanic Park (Korea's largest botanical garden, 2019) + LG Science Park + LG Arts Center + Magok cafe·dining 4-axis 12-pick — KeyChinGu first Gangseo entry (31 gangseo cluster)",
+    "en_available": false
   }
 ]
