@@ -1945,5 +1945,27 @@
     "summary_kr": "김포공항(한국 1번지 1958)+롯데몰 면세+서울식물원(한국 최대, 2019)+LG 사이언스파크·LG 아트센터+마곡 카페·다이닝 4축 12선 + 환승·신도시 deep dive — 키친구 최초 강서구 진입 (gangseo cluster 31건)",
     "summary_en": "Gimpo Airport (Korea's #1 airport, 1958) + Lotte Mall duty-free + Seoul Botanic Park (Korea's largest botanical garden, 2019) + LG Science Park + LG Arts Center + Magok cafe·dining 4-axis 12-pick — KeyChinGu first Gangseo entry (31 gangseo cluster)",
     "en_available": false
+  },
+  {
+    "id": "176",
+    "slug": "walkable-seoul",
+    "title_kr": "Walkable Seoul — 외국인 워킹 가이드",
+    "title_en": "Walkable Seoul — Foreigner Walking Guide",
+    "category": "A",
+    "tags": [
+      "foreigner",
+      "walkable",
+      "public-transit",
+      "safety-24h",
+      "urban-nature",
+      "yajang",
+      "dulegil",
+      "walking-courses",
+      "climate-card",
+      "meta-guide"
+    ],
+    "summary_kr": "서울이 왜 걷기 좋은 도시인가 — 대중교통(Climate Card)+24시간 안전+도심 속 자연(북한산·인왕산)+야장 문화+서울둘레길 156km — 5 reasons + 4 테마 코스(History·Nature·Nightlife·Trendy) 16개 랜드마크 워킹 가이드. 키친구 첫 city-wide 메타 가이드.",
+    "summary_en": "Why Seoul is a world-class walkable city — Public Transit (Climate Card) + 24/7 Safety + Urban Nature (Bukhansan·Inwangsan) + Yajang nightlife + Seoul Trail (Dulegil 156km) — 5 reasons + 4 themed courses (History·Nature·Nightlife·Trendy) covering 16 landmarks. KeyChinGu's first city-wide meta-guide.",
+    "en_available": false
   }
 ]
