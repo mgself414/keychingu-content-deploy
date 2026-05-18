@@ -2121,5 +2121,71 @@
     "summary_kr": "암사 선사유적지(한국 신석기 1번지 1925, 6000년 빗살무늬토기)+풍납토성(백제 한성 도성 BC18-AD475)+천호 한강·광나루+다람·봉래면옥·하남돼지집·너구리베이글·스시도쿠·119닭발 4축 12선 + 몽촌토성·둔촌 올림픽파크·강동아이파크더리버몰 deep dive — 키친구 최초 강동구 진입 (gangdong cluster 87건)",
     "summary_en": "Amsa Prehistoric Site (Korea's #1 neolithic site 1925, 6,000-year bitsalmunui pottery) + Pungnaptoseong Earthen Fortress (Baekje Hanseong capital BC18-AD475) + Cheonho Hangang Park·Gwangnaru + Daram·Bongnae·Hanam Pork·Neoguri Bagel·Sushi Doku·119 Dakbal 4-axis 12-pick + Mongchontoseong·Olympic Park Dunchon·Gangdong I-Park River Mall — KeyChinGu first Gangdong entry (87 gangdong cluster)",
     "en_available": false
+  },
+  {
+    "id": "184",
+    "slug": "jungnang-meokgol",
+    "title_kr": "중랑 먹골 가이드",
+    "title_en": "Jungnang Meokgol Guide",
+    "category": "A",
+    "tags": [
+      "foreigner",
+      "jungnang",
+      "meokgol",
+      "umnam-urim-market",
+      "mangu-historical-park",
+      "jungnangcheon",
+      "korean-literature",
+      "traditional-neighborhood",
+      "dakgalbi",
+      "hidden-gem"
+    ],
+    "summary_kr": "중랑·먹골·면목·망우 한식·카페·도전·동네 12선 + 면목 우림시장(hidden gem)·망우역사문화공원(박인환·박완서·이중섭 묘)·중랑천 자전거 deep dive — 키친구 최초 중랑구 진입 (jungnang cluster 64건)",
+    "summary_en": "Jungnang·Meokgol·Myeonmok 12-pick Korean BBQ·cafe·dakgalbi·neighborhood + Umnam Urim traditional market (hidden gem) + Mangu Historical Park (Korean modern literature graves of Park In-hwan·Park Wan-suh·Lee Jung-seob) + Jungnangcheon cycling — KeyChinGu first Jungnang entry (64 jungnang cluster)",
+    "en_available": false
+  },
+  {
+    "id": "185",
+    "slug": "yangcheon-mokdong",
+    "title_kr": "양천 목동 가이드",
+    "title_en": "Yangcheon Mokdong Guide",
+    "category": "A",
+    "tags": [
+      "foreigner",
+      "yangcheon",
+      "mokdong",
+      "sbs-broadcasting",
+      "seoseoul-lake-park",
+      "mokdong-apartment",
+      "k-drama-variety",
+      "korean-middle-class",
+      "education-district",
+      "ice-rink"
+    ],
+    "summary_kr": "양천·목동·신정·신월 한식·카페·요리주점 12선 + SBS 방송국(K-drama·예능 단골 무대 런닝맨·미운우리새끼)·서서울호수공원·목동 아파트단지(한국 1985 신시가지·중산층 1번지) deep dive — 키친구 최초 양천구 진입 (yangcheon cluster 55건)",
+    "summary_en": "Yangcheon·Mokdong 12-pick Korean BBQ·cafe·pocha + SBS Broadcasting (K-drama·variety show hotspot: Running Man·My Ugly Duckling) + Seoseoul Lake Park + Mokdong Apartment Complex (Korea's #1 middle-class district 1985) + Mokdong Ice Rink — KeyChinGu first Yangcheon entry (55 yangcheon cluster)",
+    "en_available": false
+  },
+  {
+    "id": "186",
+    "slug": "gangbuk-suyu",
+    "title_kr": "강북 수유 가이드",
+    "title_en": "Gangbuk Suyu Guide",
+    "category": "A",
+    "tags": [
+      "foreigner",
+      "gangbuk",
+      "suyu",
+      "419-cemetery",
+      "korean-democracy",
+      "bukhansan-ui-gate",
+      "insubong",
+      "baekundae",
+      "traditional-dduk",
+      "mia-junction"
+    ],
+    "summary_kr": "강북·수유·미아·우이 한식·카페·전통·자연 12선 + 4·19 국립묘지(한국 민주화 1번지 1960)·북한산 우이 게이트(인수봉·백운대)·미아사거리 종로떡집(정통 한과)·소귀골백운산장 deep dive — 키친구 최초 강북구 진입 (gangbuk cluster 66건)",
+    "summary_en": "Gangbuk·Suyu·Mia·Ui 12-pick Korean BBQ·cafe·traditional dduk·sanjang + 4·19 National Cemetery (Korea's democracy #1, 1960 April Revolution) + Bukhansan Ui Gate (Insubong·Baekundae approach) + Mia traditional dduk·hanggwa + Sogwigol Baekun Sanjang — KeyChinGu first Gangbuk entry (66 gangbuk cluster)",
+    "en_available": false
   }
 ]
