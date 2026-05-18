@@ -2187,5 +2187,38 @@
     "summary_kr": "강북·수유·미아·우이 한식·카페·전통·자연 12선 + 4·19 국립묘지(한국 민주화 1번지 1960)·북한산 우이 게이트(인수봉·백운대)·미아사거리 종로떡집(정통 한과)·소귀골백운산장 deep dive — 키친구 최초 강북구 진입 (gangbuk cluster 66건)",
     "summary_en": "Gangbuk·Suyu·Mia·Ui 12-pick Korean BBQ·cafe·traditional dduk·sanjang + 4·19 National Cemetery (Korea's democracy #1, 1960 April Revolution) + Bukhansan Ui Gate (Insubong·Baekundae approach) + Mia traditional dduk·hanggwa + Sogwigol Baekun Sanjang — KeyChinGu first Gangbuk entry (66 gangbuk cluster)",
     "en_available": false
+  },
+  {
+    "id": "187",
+    "slug": "yongsan",
+    "title_kr": "용산 가이드",
+    "title_en": "Yongsan Guide",
+    "category": "A",
+    "tags": ["foreigner","yongsan","yongsan-station","amorepacific","yongsan-park","national-museum","ktx-honam","samgakji","new-yongsan","han-river"],
+    "summary_kr": "용산역(한국 1번지 철도 1900 KTX 호남)+아모레퍼시픽 본사(David Chipperfield)+용산공원·국립중앙박물관·신용산 아이파크몰·드래곤시티 4축 12선 — 키친구 최초 용산구 본 area 진입 (yongsan cluster 141건)",
+    "summary_en": "Yongsan Station (Korea's #1 railway since 1900, KTX Honam line) + Amorepacific HQ (David Chipperfield architecture) + Yongsan Park (US military base transitioning to public park) + National Museum + New Yongsan I-Park Mall + Dragon City 4-axis 12-pick — KeyChinGu first Yongsan main entry (141 cluster)",
+    "en_available": false
+  },
+  {
+    "id": "188",
+    "slug": "mapo-gongdeok",
+    "title_kr": "마포 공덕 가이드",
+    "title_en": "Mapo Gongdeok Guide",
+    "category": "A",
+    "tags": ["foreigner","mapo","gongdeok","ahyeon","sangam-dmc","mbc-hq","world-cup-park","quad-transit","mz-cafe","82-kim-min-kyung"],
+    "summary_kr": "공덕역(4중 환승)+상암 DMC·MBC 본사+82년생 김민경 콜라보 카페+마포 한강·월드컵공원·아현시장 4축 12선 — 키친구 최초 마포구 본 area 진입 (mapo cluster 177건)",
+    "summary_en": "Gongdeok Station (Korea's #1 quadruple transit: lines 5/6/AREX/Gyeongui-Jungang) + Sangam DMC & MBC HQ (K-drama/variety) + 82-Born Kim Min-kyung cafe (bestseller collab) + Mapo Hangang/World Cup Park + Ahyeon Market 4-axis 12-pick — KeyChinGu first Mapo main entry (177 cluster)",
+    "en_available": false
+  },
+  {
+    "id": "189",
+    "slug": "seongdong-wangsimni",
+    "title_kr": "성동 왕십리 가이드",
+    "title_en": "Seongdong Wangsimni Guide",
+    "category": "A",
+    "tags": ["foreigner","seongdong","wangsimni","majang-meat-market","quintuple-transit","eungbongsan","hanyang-university","oksu-han-river","geumho","majang"],
+    "summary_kr": "왕십리역(한국 1번지 5중 환승 2·5·KTX·경의중앙선·수인분당선)+마장축산물시장(한국 1번지 정육 도매 1961)+응봉산 야경+옥수·금호 한강·한양대 4축 12선 — 키친구 최초 성동구 본 area 진입 (seongdong cluster 168건)",
+    "summary_en": "Wangsimni Station (Korea's #1 quintuple transit: lines 2/5/KTX/Gyeongui/Suin-Bundang, KTX Gangneung origin) + Majang Livestock Market (Korea's #1 meat wholesale since 1961) + Eungbongsan night view + Oksu·Geumho Han River + Hanyang University 4-axis 12-pick — KeyChinGu first Seongdong main entry (168 cluster)",
+    "en_available": false
   }
 ]
