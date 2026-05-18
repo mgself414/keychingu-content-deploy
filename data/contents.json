@@ -2055,5 +2055,27 @@
     "summary_kr": "구로디지털(1965 한국 최초 수출산업공단)+가산디지털(1990s)+마리오 아울렛(한국 1번지 패션 아울렛 1995)+88갈비·노티드·카츠올로지·신도림 이도식당 4축 12선 + 가리봉동(한국 화교·외국인 거주 1번지)·롯데팩토리아울렛 deep dive — 키친구 최초 구로구·금천구 진입 (guro 31 + geumcheon 47 = 78건 cluster)",
     "summary_en": "Guro Digital (Korea's 1st industrial export complex 1965) + Gasan Digital (1990s) + Mario Outlet (Korea's #1 fashion outlet 1995) + Korean BBQ·Knotted·katsu·dakgalbi 4-axis 12-pick + Garibong-dong (Korea's largest Chinese/SE Asian foreign worker community) + Sindorim D-Cube·Technomart — KeyChinGu first Guro/Geumcheon entry (78 cluster places)",
     "en_available": false
+  },
+  {
+    "id": "181",
+    "slug": "dongjak-noryangjin",
+    "title_kr": "동작 노량진 가이드",
+    "title_en": "Dongjak Noryangjin Guide",
+    "category": "A",
+    "tags": [
+      "foreigner",
+      "dongjak",
+      "noryangjin-fish-market",
+      "goshichon",
+      "k-drama-spots",
+      "cup-bap-street",
+      "national-cemetery",
+      "sadang",
+      "isu",
+      "chung-ang-university"
+    ],
+    "summary_kr": "노량진수산시장(한국 1번지 수산시장 1971·외국인 vlog #1)+노량진 고시촌(K-drama 단골 무대)+신남도수산·계단집·봉평면옥·AUTHENTICA·사당역포차·백소정 이수 4축 12선 + 국립서울현충원·중앙대·한강대교 deep dive — 키친구 최초 동작구 진입 (dongjak cluster 82건)",
+    "summary_en": "Noryangjin Fish Market (Korea's #1 fish market since 1971, foreign vlog #1 hotspot) + Noryangjin Goshichon (K-drama hotspot for 'SKY Castle'·'Misaeng'·'Itaewon Class') + Cup-bap street + Sinnamdo Susan·Gyedanjip·Bongpyeong Myeonok·AUTHENTICA·Sadang Pocha·Baeksojeong Isu 4-axis 12-pick + Seoul National Cemetery·Chung-Ang University·Hangang Bridge — KeyChinGu first Dongjak entry (82 dongjak cluster)",
+    "en_available": false
   }
 ]
