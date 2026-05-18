@@ -1967,5 +1967,27 @@
     "summary_kr": "서울이 왜 걷기 좋은 도시인가 — 대중교통(Climate Card)+24시간 안전+도심 속 자연(북한산·인왕산)+야장 문화+서울둘레길 156km — 5 reasons + 4 테마 코스(History·Nature·Nightlife·Trendy) 16개 랜드마크 워킹 가이드. 키친구 첫 city-wide 메타 가이드.",
     "summary_en": "Why Seoul is a world-class walkable city — Public Transit (Climate Card) + 24/7 Safety + Urban Nature (Bukhansan·Inwangsan) + Yajang nightlife + Seoul Trail (Dulegil 156km) — 5 reasons + 4 themed courses (History·Nature·Nightlife·Trendy) covering 16 landmarks. KeyChinGu's first city-wide meta-guide.",
     "en_available": false
+  },
+  {
+    "id": "177",
+    "slug": "nowon-dobong-hiking",
+    "title_kr": "노원·도봉 등산·둘레길 가이드",
+    "title_en": "Nowon-Dobong Hiking & Trail Guide",
+    "category": "A",
+    "tags": [
+      "foreigner",
+      "nowon",
+      "hiking",
+      "dobongsan",
+      "suraksan",
+      "buramsan",
+      "seoul-trail",
+      "dulegil",
+      "mountain",
+      "walkable-extension"
+    ],
+    "summary_kr": "수락산(638m)+도봉산(740m, 한국 5대 명산)+불암산(508m) 3대 명산 + 서울둘레길 1구간(8.5km 4h) + 등산 후 8매장(수락이오냉면 9227rv·중계고기파티·구법원고로케 9965rv·카페포레스트) 4축 12선 — 키친구 첫 노원구 진입 (nowon cluster 71건) + #176 Walkable Seoul 연계 확장",
+    "summary_en": "Suraksan (638m) + Dobongsan (740m, Korea's Top 5 mountain) + Buramsan (508m) 3 mountains + Seoul Trail Section 1 (8.5km 4h) + 8 post-hike places (Surakio Naengmyeon 9227rv · Junggye Gogi Party · Gubeopwon Croquette 9965rv · Cafe Forest) 4-axis 12-pick — KeyChinGu first Nowon entry (71 nowon cluster) + #176 Walkable Seoul extension",
+    "en_available": false
   }
 ]
