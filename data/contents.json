@@ -2033,5 +2033,27 @@
     "summary_kr": "#177 등산 follow-up — 노원·중계·공릉 라이프스타일 deep dive. 쿠방플러스(노원 카페 #1, 8324rv 4.89★)+갓잇 멕시코(4897rv)+파스타한끼(4936rv)+신의주찹쌀순대(4027rv)+애슐리퀸즈 K-뷔페 등 4축 12선(베이커리·디저트/카페·로스터스/한식·면·뷔페/다국적 다이닝). 외국인이 K-drama·먹방에서 본 한국 베드타운 진짜 모습.",
     "summary_en": "#177 hiking follow-up — Nowon·Junggye·Gongneung lifestyle deep dive. Kubang Plus (Nowon's #1 cafe, 8324rv 4.89★) + Gat-It Mexican (4897rv) + Pasta Hankki (4936rv) + Shinuiju Sundae (4027rv) + Ashley Queens Korean buffet — 4-axis 12-pick (bakery/cafe-roasters/Korean food/multinational dining). The real face of Korean bedroom suburbs that foreigners see in K-dramas and food vlogs.",
     "en_available": false
+  },
+  {
+    "id": "180",
+    "slug": "guro-gasan",
+    "title_kr": "구로 가산디지털 가이드",
+    "title_en": "Guro Gasan Digital Guide",
+    "category": "A",
+    "tags": [
+      "foreigner",
+      "guro",
+      "geumcheon",
+      "gasan-digital",
+      "mario-outlet",
+      "korean-industrialization",
+      "garibong-dong",
+      "sindorim-d-cube",
+      "korean-chinese",
+      "factory-outlet"
+    ],
+    "summary_kr": "구로디지털(1965 한국 최초 수출산업공단)+가산디지털(1990s)+마리오 아울렛(한국 1번지 패션 아울렛 1995)+88갈비·노티드·카츠올로지·신도림 이도식당 4축 12선 + 가리봉동(한국 화교·외국인 거주 1번지)·롯데팩토리아울렛 deep dive — 키친구 최초 구로구·금천구 진입 (guro 31 + geumcheon 47 = 78건 cluster)",
+    "summary_en": "Guro Digital (Korea's 1st industrial export complex 1965) + Gasan Digital (1990s) + Mario Outlet (Korea's #1 fashion outlet 1995) + Korean BBQ·Knotted·katsu·dakgalbi 4-axis 12-pick + Garibong-dong (Korea's largest Chinese/SE Asian foreign worker community) + Sindorim D-Cube·Technomart — KeyChinGu first Guro/Geumcheon entry (78 cluster places)",
+    "en_available": false
   }
 ]
