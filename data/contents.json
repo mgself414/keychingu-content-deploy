@@ -2429,5 +2429,49 @@
     "summary_kr": "K-beauty 통합 12선 + 명동 코스메틱·올리브영·아모레퍼시픽 본사·이니스프리/라네즈 플래그십·드래곤힐스파·스파랜드·한솔찜질방·퍼스널컬러·박승철/차홍·웨딩 스튜디오·한복 사진관 + 면세 4선 (#09·#17·#73 후속)",
     "summary_en": "K-beauty·spa·beauty 12-pick — Myeongdong cosmetics street (Korea's #1) + Olive Young flagship + Amorepacific HQ (David Chipperfield) + Innisfree/Laneige flagships + Dragon Hill Spa (Korea's #1 24h jjimjilbang Yongsan) + Spaland Jamsil + Hansol Hongdae + Personal Color Consulting (청담) + Park Seung-cheol/Cha Hong hair salons + K-wedding studios (Cheongdam) + hanbok photo studios (#09·#17·#73 follow-up)",
     "en_available": false
+  },
+  {
+    "id": "233",
+    "slug": "korean-desserts",
+    "title_kr": "한국 디저트 풀가이드",
+    "title_en": "Korea Desserts Full Guide",
+    "category": "C",
+    "tags": ["foreigner","desserts","bungeoppang","hotteok","yakgwa","injeolmi","bingsu","knotted","lbm","maillet","shilla","traditional-modern"],
+    "summary_kr": "한국 정통·길거리·모던·럭셔리 디저트 12선 + 붕어빵·호떡·약과·인절미·빙수(설빙 본점)·노티드·LBM·MAILLET·신라호텔·금옥당 + 약식·꿀떡·매작과·강정",
+    "summary_en": "Korea desserts 12-pick — bungeoppang (winter street #1) + hotteok + gyeran-ppang + yakgwa (gift #1) + injeolmi·songpyeon + Sulbing bingsu (Korea's flagship shaved ice, Ewha) + Knotted donuts + London Bagel Museum + MAILLET French pastry + Shilla Hotel + Geumokdang Yeonhui traditional",
+    "en_available": false
+  },
+  {
+    "id": "234",
+    "slug": "hanjeongsik",
+    "title_kr": "한국 한정식 풀가이드",
+    "title_en": "Korea Hanjeongsik Full Guide",
+    "category": "C",
+    "tags": ["foreigner","hanjeongsik","royal-cuisine","yongsusan","samcheonggak","shilla-rayoun","palace-cuisine","insadong","bukchon-hanok","temple-food","baekban"],
+    "summary_kr": "한국 정통 코스 한식 12선 + 궁중 한정식(용수산·삼청각·신라호텔 라연)·전통 노포(유담들밥·청기와타운·미포집)·모던(정원·고궁 인사동·궁 북촌)·가성비(백반·정식·한끼·사찰음식 진관사) 통합",
+    "summary_en": "Korea Hanjeongsik (Korean course meal) 12-pick — royal cuisine (Yongsusan 1980·Samcheonggak·Shilla Hotel Rayoun Michelin) + traditional (Yudamdeulbap·Cheonggiwa Town·Mipojip) + modern foreigner-friendly (Jeongwon·Gogung Insadong·Goong Bukchon) + budget (baekban·jeongsik·hankki·temple food Jinkwansa) — 6,000~200,000원 range",
+    "en_available": false
+  },
+  {
+    "id": "235",
+    "slug": "bookstores-full",
+    "title_kr": "한국 책방 독립서점 풀가이드",
+    "title_en": "Korea Bookstores Full Guide",
+    "category": "D",
+    "tags": ["foreigner","bookstore","kyobo","yes24","aladin","your-mind","goyo-seosa","starfield-library","ark-and-book","82-kim-min-kyung","independent"],
+    "summary_kr": "대형 서점(교보문고 광화문·영풍·예스24 홍대·알라딘 중고)·독립서점(유어마인드 연희·고요서사 성수·소설리스트 이태원·이상의집 북촌)·MZ 테마(별마당 도서관 코엑스·아크앤북 을지로·82년생 김민경·더현대 도서) 12선",
+    "summary_en": "Korea bookstores 12-pick — major (Kyobo Gwanghwamun 1981·Yeongpoong·YES24 Hongdae·Aladin used books) + independent (Your Mind Yeonhui Korea's #1 indie since 2009·Goyo Seosa Seongsu·Mystery Bookshop Itaewon·Yi Sang's House Bukchon) + MZ theme (Starfield Library COEX 13m wall #1 instagram·Ark&Book Euljiro·82-Born Kim Min-kyung Mapo·Hyundai Library Gangnam)",
+    "en_available": false
+  },
+  {
+    "id": "236",
+    "slug": "vintage-thrift",
+    "title_kr": "한국 빈티지 중고샵 풀가이드",
+    "title_en": "Korea Vintage & Thrift Full Guide",
+    "category": "F",
+    "tags": ["foreigner","vintage","thrift","dongmyo","gwangjang-vintage","yeonhui-vintage","hongdae-vintage","seongsu-vintage","itaewon-lct","ikseondong-vintage","gasan-outlet","aladin-used"],
+    "summary_kr": "한국 빈티지·중고 12선 + 동묘 구제(한국 1번지·#49)·광장 vintage 2층(#50)·연희동(티티에이·5GU·니바하우스·#156)·홍대·성수·이태원 LCT·익선동 한옥 + 알라딘 중고서점·번개장터·강남터미널 GOTO몰·가산 아울렛 (마리오 1995·롯데팩토리·W몰)",
+    "summary_en": "Korea vintage & thrift 12-pick — Dongmyo flea market (Korea's #1 vintage since #49) + Gwangjang vintage 2F arcade (#50) + Yeonhui-dong vintage cluster (TTA/5GU/Niva House/#156) + Hongdae/Yeonnam + Seongsu + Itaewon LCT (Lost & Found) + Hannam + Ikseondong hanok vintage + Aladin used books + Bunjang/Junggonara apps + Gangnam Terminal GOTO Mall + Gasan outlets (Mario 1995·Lotte Factory·W-Mall)",
+    "en_available": false
   }
 ]

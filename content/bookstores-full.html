@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>한국 책방 독립서점 풀가이드 — KeyChinGu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/main.css">
+<style>
+.detail-wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+}
+.breadcrumb {
+  font-size: 13px;
+  color: var(--text-soft);
+  margin-bottom: 24px;
+}
+.breadcrumb a { color: var(--red); font-weight: 600; }
+.detail-wrap h1 {
+  font-size: 28px; font-weight: 800;
+  color: var(--black); margin-bottom: 8px;
+}
+.detail-wrap h2 {
+  font-size: 22px; font-weight: 700;
+  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--red);
+}
+.detail-wrap h3 {
+  font-size: 17px; font-weight: 600;
+  color: var(--text-mid); margin-top: 20px; margin-bottom: 8px;
+}
+.detail-wrap p {
+  font-size: 15px; line-height: 1.7;
+  color: var(--text-mid); margin-bottom: 12px;
+}
+.detail-wrap ul {
+  padding-left: 20px; margin-bottom: 12px;
+}
+.detail-wrap li {
+  font-size: 14px; line-height: 1.6;
+  color: var(--text-mid); margin-bottom: 6px;
+}
+.detail-wrap table {
+  width: 100%; border-collapse: collapse;
+  margin-bottom: 16px; font-size: 13px;
+}
+.detail-wrap th {
+  background: var(--black); color: #fff;
+  padding: 10px 12px; text-align: left;
+  font-weight: 600; font-size: 11px;
+  text-transform: uppercase; letter-spacing: 0.06em;
+}
+.detail-wrap td {
+  padding: 10px 12px; border-bottom: 1px solid var(--border);
+  color: var(--text-mid);
+}
+.detail-wrap tr:nth-child(even) td { background: rgba(0,0,0,0.02); }
+.detail-wrap hr {
+  border: none; height: 1px;
+  background: var(--border); margin: 24px 0;
+}
+.detail-wrap code {
+  background: rgba(33,140,204,0.08);
+  padding: 2px 6px; border-radius: 4px;
+  font-size: 13px; color: var(--blue);
+}
+.detail-nav {
+  display: flex; justify-content: space-between;
+  margin-top: 48px; padding-top: 20px;
+  border-top: 1px solid var(--border);
+  font-size: 14px; font-weight: 600;
+}
+.share-bar {
+  display: flex; align-items: center; gap: 10px;
+  margin-top: 40px; padding: 16px 20px;
+  background: #f9f9f9; border-radius: 12px;
+  border: 1px solid var(--border);
+}
+.share-label {
+  font-size: 14px; font-weight: 600; color: var(--text-soft);
+  margin-right: 8px;
+}
+.share-btn {
+  width: 40px; height: 40px;
+  border: none; border-radius: 50%;
+  background: #fff; cursor: pointer;
+  font-size: 1.1rem; transition: all 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  display: inline-flex; align-items: center; justify-content: center;
+}
+.share-btn:hover { transform: translateY(-2px); box-shadow: 0 3px 8px rgba(0,0,0,0.15); }
+.share-twitter:hover { background: #000; color: #fff; }
+.share-facebook:hover { background: #1877f2; color: #fff; }
+.share-kakao:hover { background: #fee500; }
+.share-copy:hover { background: #218CCC; color: #fff; }
+/* EN toggle disabled — 영문판 미생성 콘텐츠 (2026-05-16 patch) */
+.lang-switch .lang-disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  text-decoration: line-through;
+  padding: 4px 10px;
+  color: var(--text-soft, #888);
+  font-size: 13px;
+  user-select: none;
+}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <div class="lang-switch">
+    <a href="../content/bookstores-full.html" class="active">KR</a>
+    <span class="lang-disabled" title="영문판 준비 중">EN</span>
+  </div>
+</header>
+
+<div class="detail-wrap">
+  <div class="breadcrumb"><a href="../index.html">전체 가이드</a> &rsaquo; 한국 책방 독립서점 풀가이드</div>
+  <h1>한국 책방·독립서점 풀가이드 — 외국인 책 매니아 deep dive 12선</h1>
+<p>&gt; <strong>부제</strong>: 유어마인드·교보문고 광화문·예스24·미스터리 책방·문학동네·아크앤북·82년생 김민경 카페 통합</p>
+<p>ISSUE 03 · #235 · 2026-05-19</p>
+<hr>
+<h2>🎯 왜 한국 책방·독립서점 풀가이드인가</h2>
+<p>한국 책방·독립서점 = 외국인 책 매니아 + MZ 라이프스타일 1순위. #135 서점·#156 연희 (유어마인드)·#188 마포 (82년생 김민경) area 분산 → 통합 풀가이드.</p>
+<hr>
+<h2>★ 한눈에 12선</h2>
+<table><thead><tr>
+<th>#</th>
+<th>책방</th>
+<th>4축</th>
+<th>시그니처</th>
+</tr></thead><tbody>
+<tr>
+<td>1</td>
+<td><strong>교보문고 광화문</strong> ★ 한국 1번지</td>
+<td>대형 서점</td>
+<td>1981 설립·한국 1번지 (#207 인접)</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>영풍문고 종로점</strong></td>
+<td>대형 서점</td>
+<td>1992·종로 1번지</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>예스24 라이브홀</strong> (홍대)</td>
+<td>대형 서점</td>
+<td>예스24 한국 1번지 + 콘서트홀 (#138)</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>알라딘 중고서점</strong> (강남·종로)</td>
+<td>대형 서점</td>
+<td>한국 1번지 중고서점</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>유어마인드</strong> (Your Mind, 연희) ★ 독립서점 1번지</td>
+<td>독립·라이프스타일</td>
+<td>2009·연희 (#156)</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>고요서사</strong> (성수)</td>
+<td>독립·라이프스타일</td>
+<td>성수 독립서점 + 디자인 (#01)</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>소설리스트</strong> (이태원)</td>
+<td>독립·라이프스타일</td>
+<td>이태원 미스터리·추리 1번지</td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>이상의집</strong> (북촌)</td>
+<td>독립·라이프스타일</td>
+<td>북촌 한옥 + 시인 이상 기념</td>
+</tr>
+<tr>
+<td>9</td>
+<td><strong>별마당 도서관</strong> (코엑스) ★ MZ 인스타 1번지</td>
+<td>MZ·테마</td>
+<td>13m 벽면 책꽂이 (#142·#221)</td>
+</tr>
+<tr>
+<td>10</td>
+<td><strong>아크앤북</strong> (을지로)</td>
+<td>MZ·테마</td>
+<td>을지로 라이프스타일 책방</td>
+</tr>
+<tr>
+<td>11</td>
+<td><strong>82년생 김민경 카페</strong> (마포 공덕)</td>
+<td>MZ·테마</td>
+<td>한국 베스트셀러 콜라보 (#188)</td>
+</tr>
+<tr>
+<td>12</td>
+<td><strong>현대백화점 무역센터점 더현대 도서</strong> (강남)</td>
+<td>MZ·테마</td>
+<td>백화점 + 큐레이션 책방</td>
+</tr>
+</tbody></table>
+<p><strong>+ 추가 4 독립·테마 책방</strong>: 미스터리 책방 (이태원)·소설·소설집 (홍대)·한복문고 (인사동)·시인의 마을 (대학로)</p>
+<hr>
+<h2>⚠ 외국인 자주 실수 3가지</h2>
+<p>1. <strong>&quot;책방 = 교보문고만&quot;</strong>: 한국 책방 4축 — <strong>대형 (교보·영풍·예스24·알라딘)</strong> + <strong>독립서점 (유어마인드·고요서사·소설리스트)</strong> + <strong>MZ·테마 (별마당·아크앤북·82년생)</strong> + <strong>외곽·관광 (북촌·인사동)</strong>. 4 결 다.</p>
+<p>2. <strong>&quot;별마당 도서관 = 그냥 도서관&quot;</strong>: 별마당은 <strong>2017 코엑스 내·13m 벽면 책꽂이</strong> = 한국 MZ 인스타·외국인 photo spot 1순위. 무료 입장 + 책 자유 열람.</p>
+<p>3. <strong>&quot;독립서점 = 작아서 못 찾음&quot;</strong>: 유어마인드(연희)·고요서사(성수)·소설리스트(이태원) = <strong>각 area 시그니처 매장</strong> + area별 가이드 cross-reference.</p>
+<hr>
+<h2>① 대형 서점 (4)</h2>
+<h3>1. 교보문고 광화문 ★ 한국 1번지 (1981)</h3>
+<ul>
+<li>주소: 종로구 종로 1</li>
+<li>외국인 ★: ◎◎ — 한국 1번지 대형 서점</li>
+<li>시그니처: 1981 설립·외국어 도서 코너·문구·MD</li>
+<li>시간: 09:30~22:00</li>
+</ul>
+<h3>2. 영풍문고 종로점 (1992)</h3>
+<ul>
+<li>주소: 종로구 청계천로 41</li>
+<li>외국인 ★: ◎ — 종로 1번지 + 청계천 인접</li>
+</ul>
+<h3>3. 예스24 라이브홀 (홍대)</h3>
+<ul>
+<li>주소: 마포구 양화로 (#138 홍대)</li>
+<li>외국인 ★: ◎ — 예스24 콘서트홀 + 책방 결합</li>
+</ul>
+<h3>4. 알라딘 중고서점 (강남·종로)</h3>
+<ul>
+<li>외국인 ★: ◎ — 한국 1번지 중고서점 + 영문 도서 매니아</li>
+</ul>
+<hr>
+<h2>② 독립·라이프스타일 (4)</h2>
+<h3>5. 유어마인드 (Your Mind) ★ 한국 독립서점 1번지</h3>
+<ul>
+<li>주소: 서대문구 연희로 122 (#156 연희)</li>
+<li>외국인 ★: ◎◎ — 2009 한국 독립서점 부흥 1번지</li>
+<li>시그니처: 연희동·#156 연희 가이드 자매</li>
+</ul>
+<h3>6. 고요서사 (성수)</h3>
+<ul>
+<li>주소: 성동구 성수동 (#01·#145)</li>
+<li>외국인 ★: ◎ — 성수 독립서점 + 디자인 결합</li>
+</ul>
+<h3>7. 소설리스트 (이태원)</h3>
+<ul>
+<li>주소: 용산구 이태원 (#144)</li>
+<li>외국인 ★: ◎ — 미스터리·추리 1번지 (이태원 외국인 친화)</li>
+</ul>
+<h3>8. 이상의집 (북촌)</h3>
+<ul>
+<li>주소: 종로구 북촌 일대 (#12)</li>
+<li>외국인 ★: ◎ — 한국 1번지 시인 이상 기념 + 한옥 결합</li>
+</ul>
+<hr>
+<h2>③ MZ·테마 (4)</h2>
+<h3>9. 별마당 도서관 (코엑스) ★ MZ 인스타 1번지</h3>
+<ul>
+<li>주소: 강남구 영동대로 513 코엑스몰 (#142)</li>
+<li>외국인 ★: ◎◎ — <strong>13m 벽면 책꽂이</strong> + 한국 MZ 인스타 1순위</li>
+<li>시그니처: 2017 개관·무료 입장·24시간 일부·외국인 photo spot</li>
+</ul>
+<h3>10. 아크앤북 (을지로)</h3>
+<ul>
+<li>주소: 중구 을지로 일대 (#11 을지로 자매)</li>
+<li>외국인 ★: ◎ — 을지로 라이프스타일 책방·디자인 매장 결합</li>
+</ul>
+<h3>11. 82년생 김민경 카페 (마포 공덕)</h3>
+<ul>
+<li>주소: 마포구 공덕 (#188)</li>
+<li>외국인 ★: ◎ — 한국 베스트셀러 &quot;82년생 김지영&quot; 작가 콜라보 카페</li>
+</ul>
+<h3>12. 더현대 도서·서점 (강남)</h3>
+<ul>
+<li>주소: 영등포 더현대 서울 (#169) 또는 강남 현대백화점</li>
+<li>외국인 ★: ◎ — 백화점 + 큐레이션 책방</li>
+</ul>
+<hr>
+<h2>④ 추가 4</h2>
+<ul>
+<li><strong>미스터리 책방</strong> (이태원) — 추리·미스터리 + 외국인 매니아</li>
+<li><strong>소설집</strong> (홍대) — 한국 1번지 소설 매장</li>
+<li><strong>한복문고</strong> (인사동) — 한국 전통·역사 책방</li>
+<li><strong>시인의 마을</strong> (대학로) — 한국 시 매니아</li>
+</ul>
+<hr>
+<h2>⚙ FAQ 6개</h2>
+<p>1. <strong>외국인 영문 도서 1순위</strong>: 교보문고 광화문·알라딘 중고서점.</p>
+<p>2. <strong>MZ 인스타 1순위</strong>: 별마당 도서관 (코엑스) + 아크앤북 (을지로).</p>
+<p>3. <strong>K-drama 책방 무대</strong>: 별마당·교보문고·82년생 김민경.</p>
+<p>4. <strong>독립서점 1번지</strong>: 유어마인드 (연희·#156)·고요서사 (성수·#01).</p>
+<p>5. <strong>외국인 한복+책방 결합</strong>: 북촌 이상의집·인사동 한복문고.</p>
+<p>6. <strong>별마당 도서관 입장</strong>: 무료 + 24시간 일부 + 외국인 자유 입장.</p>
+<hr>
+<h2>🗺 1일 코스</h2>
+<p><strong>A. 한국 책방 풀데이</strong>: 10:00 교보문고 광화문 → 12:00 별마당 도서관 (코엑스) → 14:30 아크앤북 (을지로) → 16:30 유어마인드 (연희동) → 19:00 82년생 김민경 카페 (마포 공덕)</p>
+<h2>🌸 시즌 5</h2>
+<p>연중 책방 매니아 / 5월·10월 책의 달 / 11월 서울 국제 도서전 (COEX) / 봄·가을 독립서점 페어</p>
+<h2>🔗 관련</h2>
+<ul>
+<li>#135 서점·#156 연희동·#225 카페·#188 마포·#142 강남·#01 성수·#144 이태원·#12 북촌·#207 사찰</li>
+<li>area 짝: #142 별마당·#156 유어마인드·#01 고요서사·#144 소설리스트·#188 82년생</li>
+</ul>
+<h2>🏷 태그</h2>
+<p><code>#한국책방독립서점</code> <code>#KoreaBookstores</code> <code>#교보문고광화문</code> <code>#영풍문고</code> <code>#예스24홍대</code> <code>#유어마인드연희</code> <code>#별마당도서관코엑스</code> <code>#아크앤북을지로</code> <code>#82년생김민경카페</code> <code>#한국독립서점1번지</code> <code>#키친구</code></p>
+
+  <div class="share-bar">
+    <span class="share-label">공유</span>
+    <button class="share-btn share-twitter" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent('한국 책방 독립서점 풀가이드') + '&url=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Twitter">𝕏</button>
+    <button class="share-btn share-facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Facebook">f</button>
+    <button class="share-btn share-kakao" onclick="navigator.share ? navigator.share({title: '한국 책방 독립서점 풀가이드', url: window.location.href}) : navigator.clipboard.writeText(window.location.href).then(function() { alert('링크 복사됨!'); })" aria-label="Kakao/Share">📤</button>
+    <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href).then(function() { this.textContent = '✓'; setTimeout(function() { document.querySelector('.share-copy').textContent = '🔗'; }, 1500); }.bind(this))" aria-label="Copy link">🔗</button>
+  </div>
+
+  <div class="detail-nav">
+    <div><a href="hanjeongsik.html" style="color:var(--red);">&larr; 한국 한정식 풀가이드</a></div>
+    <div><a href="vintage-thrift.html" style="color:var(--red);">한국 빈티지 중고샵 풀가이드 &rarr;</a></div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <p><a href="https://instagram.com/keychingu.korea" target="_blank">@keychingu.korea</a> &mdash; Seoul for MZ FIT Travelers</p>
+</footer>
+</body>
+</html>
