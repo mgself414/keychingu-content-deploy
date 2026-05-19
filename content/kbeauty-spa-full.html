@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>한국 미용 스파 뷰티 통합 — KeyChinGu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/main.css">
+<style>
+.detail-wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+}
+.breadcrumb {
+  font-size: 13px;
+  color: var(--text-soft);
+  margin-bottom: 24px;
+}
+.breadcrumb a { color: var(--red); font-weight: 600; }
+.detail-wrap h1 {
+  font-size: 28px; font-weight: 800;
+  color: var(--black); margin-bottom: 8px;
+}
+.detail-wrap h2 {
+  font-size: 22px; font-weight: 700;
+  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--red);
+}
+.detail-wrap h3 {
+  font-size: 17px; font-weight: 600;
+  color: var(--text-mid); margin-top: 20px; margin-bottom: 8px;
+}
+.detail-wrap p {
+  font-size: 15px; line-height: 1.7;
+  color: var(--text-mid); margin-bottom: 12px;
+}
+.detail-wrap ul {
+  padding-left: 20px; margin-bottom: 12px;
+}
+.detail-wrap li {
+  font-size: 14px; line-height: 1.6;
+  color: var(--text-mid); margin-bottom: 6px;
+}
+.detail-wrap table {
+  width: 100%; border-collapse: collapse;
+  margin-bottom: 16px; font-size: 13px;
+}
+.detail-wrap th {
+  background: var(--black); color: #fff;
+  padding: 10px 12px; text-align: left;
+  font-weight: 600; font-size: 11px;
+  text-transform: uppercase; letter-spacing: 0.06em;
+}
+.detail-wrap td {
+  padding: 10px 12px; border-bottom: 1px solid var(--border);
+  color: var(--text-mid);
+}
+.detail-wrap tr:nth-child(even) td { background: rgba(0,0,0,0.02); }
+.detail-wrap hr {
+  border: none; height: 1px;
+  background: var(--border); margin: 24px 0;
+}
+.detail-wrap code {
+  background: rgba(33,140,204,0.08);
+  padding: 2px 6px; border-radius: 4px;
+  font-size: 13px; color: var(--blue);
+}
+.detail-nav {
+  display: flex; justify-content: space-between;
+  margin-top: 48px; padding-top: 20px;
+  border-top: 1px solid var(--border);
+  font-size: 14px; font-weight: 600;
+}
+.share-bar {
+  display: flex; align-items: center; gap: 10px;
+  margin-top: 40px; padding: 16px 20px;
+  background: #f9f9f9; border-radius: 12px;
+  border: 1px solid var(--border);
+}
+.share-label {
+  font-size: 14px; font-weight: 600; color: var(--text-soft);
+  margin-right: 8px;
+}
+.share-btn {
+  width: 40px; height: 40px;
+  border: none; border-radius: 50%;
+  background: #fff; cursor: pointer;
+  font-size: 1.1rem; transition: all 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  display: inline-flex; align-items: center; justify-content: center;
+}
+.share-btn:hover { transform: translateY(-2px); box-shadow: 0 3px 8px rgba(0,0,0,0.15); }
+.share-twitter:hover { background: #000; color: #fff; }
+.share-facebook:hover { background: #1877f2; color: #fff; }
+.share-kakao:hover { background: #fee500; }
+.share-copy:hover { background: #218CCC; color: #fff; }
+/* EN toggle disabled — 영문판 미생성 콘텐츠 (2026-05-16 patch) */
+.lang-switch .lang-disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  text-decoration: line-through;
+  padding: 4px 10px;
+  color: var(--text-soft, #888);
+  font-size: 13px;
+  user-select: none;
+}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <div class="lang-switch">
+    <a href="../content/kbeauty-spa-full.html" class="active">KR</a>
+    <span class="lang-disabled" title="영문판 준비 중">EN</span>
+  </div>
+</header>
+
+<div class="detail-wrap">
+  <div class="breadcrumb"><a href="../index.html">전체 가이드</a> &rsaquo; 한국 미용 스파 뷰티 통합</div>
+  <h1>한국 미용·스파·뷰티 통합 deep dive 12선</h1>
+<p>&gt; <strong>부제</strong>: 명동 코스메틱 + 강남 K-beauty + 한국 스파·찜질방·마사지 + 퍼스널컬러·웨딩 + 올리브영·아모레퍼시픽</p>
+<p>ISSUE 03 · #227 · 2026-05-19</p>
+<hr>
+<h2>🎯 왜 한국 미용·스파·뷰티 통합인가</h2>
+<p>한국 K-beauty = 외국인 inbound 1순위 (#09 퍼스널컬러·#17 스파·마사지·#73 명동 코스메틱 area·테마 분산) → 통합 풀가이드.</p>
+<hr>
+<h2>★ 한눈에 12선</h2>
+<table><thead><tr>
+<th>#</th>
+<th>미용·스파·뷰티</th>
+<th>4축</th>
+<th>시그니처</th>
+</tr></thead><tbody>
+<tr>
+<td>1</td>
+<td><strong>명동 코스메틱 거리</strong> ★ K-beauty 1번지</td>
+<td>코스메틱·쇼핑</td>
+<td>명동·#73 한국 화장품 풀세트</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>올리브영 명동·동대문역사문화공원</strong> ★</td>
+<td>코스메틱·쇼핑</td>
+<td>한국 1번지 H&amp;B 스토어 (#172)</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>아모레퍼시픽 본사·아모레 스토어</strong></td>
+<td>코스메틱·쇼핑</td>
+<td>David Chipperfield (#187)</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>이니스프리·이미스·라네즈 플래그십</strong></td>
+<td>코스메틱·쇼핑</td>
+<td>강남·홍대·명동 K-beauty 1번지</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>드래곤힐스파</strong> (용산) ★ 24시간 찜질방</td>
+<td>스파·찜질방</td>
+<td>한국 1번지 종합 스파</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>스파랜드 잠실</strong> (롯데월드몰)</td>
+<td>스파·찜질방</td>
+<td>잠실 통합 스파 (#82)</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>한솔찜질방 홍대</strong></td>
+<td>스파·찜질방</td>
+<td>홍대 한국 정통 찜질방</td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>유노이아 강남·뷰티숍 거리</strong></td>
+<td>마사지·뷰티</td>
+<td>강남 K-beauty 마사지·관리</td>
+</tr>
+<tr>
+<td>9</td>
+<td><strong>퍼스널 컬러 컨설팅</strong> (#09)</td>
+<td>마사지·뷰티</td>
+<td>청담·강남 1번지 퍼스널컬러</td>
+</tr>
+<tr>
+<td>10</td>
+<td><strong>헤어 살롱 박승철·차홍</strong></td>
+<td>마사지·뷰티</td>
+<td>한국 1번지 헤어 살롱 (강남)</td>
+</tr>
+<tr>
+<td>11</td>
+<td><strong>웨딩 스튜디오</strong> (청담·신사)</td>
+<td>웨딩·체험</td>
+<td>한국 1번지 웨딩 스튜디오</td>
+</tr>
+<tr>
+<td>12</td>
+<td><strong>한복·전통 사진관</strong> (북촌·인사동)</td>
+<td>웨딩·체험</td>
+<td>한복 + 전통 사진 (#16·#226)</td>
+</tr>
+</tbody></table>
+<p><strong>+ 추가 4 K-beauty 매장</strong>: 신세계 강남 면세·롯데 명동 면세·더현대 서울 (#169)·강남터미널 면세 (#173)</p>
+<hr>
+<h2>⚠ 외국인 자주 실수 3가지</h2>
+<p>1. <strong>&quot;K-beauty = 명동만&quot;</strong>: 명동 외 <strong>강남 (이니스프리·라네즈 플래그십)·홍대 (MZ)·올리브영 (전국 매장)·아모레퍼시픽 본사 (용산)</strong>·<strong>면세점 (강남·명동·더현대)</strong> 풀세트.</p>
+<p>2. <strong>&quot;한국 찜질방 = 무서움&quot;</strong>: 한국 찜질방 = <strong>외국인 친화 24시간 + 6,000~25,000원 + 한국 정통 휴식 1번지</strong>. <strong>드래곤힐스파 (용산)·스파랜드 (잠실)·한솔찜질방 (홍대)</strong> 외국인 가이드 OK.</p>
+<p>3. <strong>&quot;퍼스널컬러 = 한국 정통&quot;</strong>: 퍼스널컬러는 <strong>2010s 한국 K-beauty 트렌드 1순위</strong> + 외국인 매니아 inbound 1순위. 청담·강남 1번지 컨설팅 매장 사전 예약 필수.</p>
+<hr>
+<h2>① 코스메틱·쇼핑 (4)</h2>
+<h3>1. 명동 코스메틱 거리 ★ K-beauty 1번지</h3>
+<ul>
+<li>주소: 중구 명동 (#73)</li>
+<li>외국인 ★: ◎◎ — 한국 1번지 K-beauty 쇼핑 1번지</li>
+<li>시그니처: 1km 한국 화장품 매장 50+ + 외국인 즉시 면세 + 다국어 점원</li>
+<li>자세히: #73 명동 코스메틱 풀가이드</li>
+</ul>
+<h3>2. 올리브영 명동·동대문역사문화공원 ★</h3>
+<ul>
+<li>주소: 중구 명동·동대문역사문화공원역 (#172)</li>
+<li>외국인 ★: ◎◎ — 한국 1번지 H&amp;B 스토어</li>
+<li>시그니처: 한국 모든 K-beauty 브랜드 통합 + 외국인 즉시 면세</li>
+</ul>
+<h3>3. 아모레퍼시픽 본사·아모레 스토어 (용산)</h3>
+<ul>
+<li>주소: 용산구 한강대로 100 (#187)</li>
+<li>외국인 ★: ◎ — David Chipperfield 건축 + 한국 1번지 화장품 본사</li>
+<li>시그니처: 본사 외관·1층 갤러리·아모레 스토어</li>
+</ul>
+<h3>4. 이니스프리·이미스·라네즈 플래그십 (강남·홍대·명동)</h3>
+<ul>
+<li>외국인 ★: ◎ — K-beauty 글로벌 1번지 매장</li>
+<li>시그니처: 강남 도산공원·홍대·명동 플래그십</li>
+</ul>
+<hr>
+<h2>② 스파·찜질방 (3)</h2>
+<h3>5. 드래곤힐스파 (용산) ★ 24시간 종합 스파</h3>
+<ul>
+<li>주소: 용산구 한강대로21나길 40 (1·4호선 용산역) (#187)</li>
+<li>외국인 ★: ◎◎ — 한국 1번지 종합 스파 (외국인 friendly)</li>
+<li>시그니처: 24시간·12,000원~·찜질방·바데풀·수면실·외국인 영문 가이드</li>
+</ul>
+<h3>6. 스파랜드 잠실 (롯데월드몰) (#82)</h3>
+<ul>
+<li>주소: 송파구 올림픽로 300 롯데월드몰</li>
+<li>외국인 ★: ◎ — 잠실 통합 스파·롯데월드 인접</li>
+<li>시그니처: 24시간·15,000원~</li>
+</ul>
+<h3>7. 한솔찜질방 홍대 (#138)</h3>
+<ul>
+<li>주소: 마포구 홍대 일대</li>
+<li>외국인 ★: ◎ — 홍대 정통 한국 찜질방</li>
+<li>시그니처: 한국 정통 찜질방 (양머리 수건·식혜·찜질방·수면실)</li>
+</ul>
+<hr>
+<h2>③ 마사지·뷰티 (3)</h2>
+<h3>8. 유노이아 강남·뷰티숍 거리</h3>
+<ul>
+<li>주소: 강남구 청담·도산공원 일대 (#142)</li>
+<li>외국인 ★: ◎ — 강남 K-beauty 마사지·관리 1번지</li>
+<li>시그니처: 피부 관리·발 마사지·아로마 + 외국인 영문 OK</li>
+</ul>
+<h3>9. 퍼스널 컬러 컨설팅 (청담·강남)</h3>
+<ul>
+<li>외국인 ★: ◎◎ — 한국 K-beauty 트렌드 1번지</li>
+<li>시그니처: 1~3시간 컨설팅·30,000~150,000원 + 외국인 매니아 inbound</li>
+<li>자세히: #09 퍼스널컬러·뷰티 컨설팅</li>
+</ul>
+<h3>10. 헤어 살롱 박승철·차홍 (강남)</h3>
+<ul>
+<li>외국인 ★: ◎ — 한국 1번지 헤어 살롱</li>
+<li>시그니처: 박승철 (#142 강남)·차홍 (한국 1번지 헤어 스타일리스트)</li>
+</ul>
+<hr>
+<h2>④ 웨딩·체험 (2 + 추가 4)</h2>
+<h3>11. 웨딩 스튜디오 (청담·신사)</h3>
+<ul>
+<li>주소: 강남구 청담·신사 일대 (#142)</li>
+<li>외국인 ★: ◎ — 한국 1번지 웨딩 스튜디오 cluster</li>
+<li>시그니처: 한국 K-wedding 1번지·외국인 한복+드레스 패키지</li>
+</ul>
+<h3>12. 한복·전통 사진관 (북촌·인사동)</h3>
+<ul>
+<li>주소: 종로구 북촌·인사동 (#12·#226)</li>
+<li>외국인 ★: ◎◎ — 한복 + 전통 사진 결합</li>
+<li>시그니처: 북촌·인사동 한복 + 사진관 패키지</li>
+</ul>
+<h3>+ 추가 4 K-beauty 매장</h3>
+<ul>
+<li><strong>신세계 강남 면세</strong> (#173 강남터미널·#142)</li>
+<li><strong>롯데 명동 면세</strong></li>
+<li><strong>더현대 서울</strong> (#169 여의도)</li>
+<li><strong>현대백화점 압구정 본점</strong> (#142)</li>
+</ul>
+<hr>
+<h2>⚙ FAQ 6개</h2>
+<p>1. <strong>외국인 K-beauty 추천 매장</strong>: 명동·올리브영·아모레퍼시픽 본사·강남 플래그십.</p>
+<p>2. <strong>외국인 즉시 면세</strong>: 명동·강남·더현대·롯데·신세계 면세 30,000원 이상 + 여권.</p>
+<p>3. <strong>찜질방 외국인 가이드</strong>: 드래곤힐스파·스파랜드·한솔찜질방 영문 OK.</p>
+<p>4. <strong>퍼스널컬러 컨설팅 예약</strong>: 사전 예약 (인스타·홈페이지·트립닷컴).</p>
+<p>5. <strong>K-wedding 외국인 패키지</strong>: 청담·신사 웨딩 스튜디오 외국인 한복+드레스 패키지.</p>
+<p>6. <strong>한국 1번지 헤어 살롱</strong>: 박승철·차홍 (강남) — 사전 예약·영문 OK.</p>
+<hr>
+<h2>🗺 1일 코스</h2>
+<p><strong>A. K-beauty 풀데이</strong>: 10:00 명동 코스메틱 거리 + 올리브영 → 13:00 아모레퍼시픽 본사 (용산) → 16:00 강남 플래그십·청담 뷰티숍 → 19:00 드래곤힐스파 (용산) 24시간 마무리</p>
+<h2>🌸 시즌 5</h2>
+<p>봄 4월: 봄 코스메틱 + 웨딩 시즌 / 여름 6~8월: 자외선 차단·시원한 스파 / 가을 10~11월: 가을 메이크업 + 웨딩 시즌 / 겨울 12~2월: 보습 + 따뜻한 찜질방 / 연중: 명동 면세·올리브영·강남 K-beauty</p>
+<h2>🔗 관련</h2>
+<ul>
+<li>#09 퍼스널컬러·#17 한국 스파 마사지·#73 명동 코스메틱·#52 관광기념품·#48 한국 필수구매</li>
+<li>area 짝: #144 이태원·#142 강남·#187 용산 아모레·#82 잠실 스파랜드·#138 홍대 한솔</li>
+</ul>
+<h2>🏷 태그</h2>
+<p><code>#한국미용스파뷰티</code> <code>#KoreaKBeauty</code> <code>#명동코스메틱</code> <code>#올리브영</code> <code>#아모레퍼시픽본사</code> <code>#이니스프리</code> <code>#라네즈</code> <code>#드래곤힐스파</code> <code>#스파랜드</code> <code>#한솔찜질방</code> <code>#퍼스널컬러컨설팅</code> <code>#박승철헤어</code> <code>#K웨딩</code> <code>#한복전통사진관</code> <code>#키친구</code></p>
+
+  <div class="share-bar">
+    <span class="share-label">공유</span>
+    <button class="share-btn share-twitter" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent('한국 미용 스파 뷰티 통합') + '&url=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Twitter">𝕏</button>
+    <button class="share-btn share-facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Facebook">f</button>
+    <button class="share-btn share-kakao" onclick="navigator.share ? navigator.share({title: '한국 미용 스파 뷰티 통합', url: window.location.href}) : navigator.clipboard.writeText(window.location.href).then(function() { alert('링크 복사됨!'); })" aria-label="Kakao/Share">📤</button>
+    <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href).then(function() { this.textContent = '✓'; setTimeout(function() { document.querySelector('.share-copy').textContent = '🔗'; }, 1500); }.bind(this))" aria-label="Copy link">🔗</button>
+  </div>
+
+  <div class="detail-nav">
+    <div><a href="hanok-deep-dive.html" style="color:var(--red);">&larr; 한국 한옥 deep dive</a></div>
+    <div></div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <p><a href="https://instagram.com/keychingu.korea" target="_blank">@keychingu.korea</a> &mdash; Seoul for MZ FIT Travelers</p>
+</footer>
+</body>
+</html>
