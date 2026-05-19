@@ -1,8 +1,8 @@
 # KeyChinGu — Korea Travel Guides for Foreign MZ Travelers
 
-> Curated Korea travel guides covering 154+ topics — neighborhoods, food, culture, K-content, shopping, seasonal, and practical info, in Korean and English. Updated 2026-05-19.
+> Curated Korea travel guides covering 165+ topics — neighborhoods, food, culture, K-content, shopping, seasonal, transport, sports, medical, and Busan series, in Korean and English. Updated 2026-05-19.
 
-> Total guides: 154 | Languages: Korean + English (Chinese · Japanese PDF coming soon)
+> Total guides: 165 | Languages: Korean + English (Chinese · Japanese PDF coming soon)
 
 
 ## Neighborhoods
@@ -202,6 +202,29 @@
 
 - [Korea First Visit 7-Day Itinerary](https://mgself414.github.io/keychingu-content-deploy/content/first-visit-7day.html): Korea 7-day itinerary for first-time visitors — Day1 Arrival/Myeongdong/N Seoul Tower → Day2 Palaces/Hanbok/Bukchon → Day3 Hongdae/Yeonnam/Yeonhui → Day4 Gangnam/K-pop/HYBE Insight → Day5 Jamsil/Lotte World → Day6 Hangang/Noryangjin Fish Market/challenge food → Day7 Duty-free/Departure + 4 variants (K-pop/family/food/nature)
 - [Seoul with Kids Full Guide](https://mgself414.github.io/keychingu-content-deploy/content/family-kids-full.html): Seoul with kids 12-pick — theme parks (Lotte World + Tower·Children's Grand Park 1973 FREE) + urban parks (Seoul Forest deer/insect park·Seoul Botanic Park·Yangjae) + landmarks (N Seoul Tower + cable car·63 Building Aqua Planet·Lotte/COEX Aquarium + Starfield Library) + learning (NMK Children's Museum + Hangul Museum FREE) + Hangang family bike 4-person — stroller rental + family hotel recommendations
+
+## Transport & Payment (foreigner inbound #1 pain points)
+
+- [Seoul Subway Full Guide](https://mgself414.github.io/keychingu-content-deploy/content/seoul-subway.html): Seoul Subway 24 lines 750+ stations 12-pick — Line 1 (since 1974 Korea's #1) + Line 2 ring (50.2km foreigner #1) + Line 3·4·5·6 + Airport Railroad (ICN Express 43min / local 58min) + Line 9 Express (Gimpo-Gangnam 25min) + Shinbundang (Pangyo) + Gyeongui-Jungang + T-money 30min free transfer (max 4) + 4lang English/Chinese/Japanese signage
+- [Korea T-money & Payment Full Guide](https://mgself414.github.io/keychingu-content-deploy/content/tmoney-payment.html): Korea payment 12-pick — T-money (Korea's #1 transit card 4,000won) + Cashbee + RailPlus + WOWPASS (foreigner-exclusive FX + T-money + payment since 2022) + Korea Tour Card + Mobile T-money (Android NFC + Naver Pay/Toss/KakaoPay 2024) + Samsung Pay + Apple Pay + Direct credit card subway payment + KakaoT Taxi + Uber + Tax Refund (over 30K won) + Myeongdong exchange #1 rate
+- [Korea KTX & Intercity Transport Full Guide](https://mgself414.github.io/keychingu-content-deploy/content/ktx-intercity.html): Korea intercity transport 12-pick — KTX Gyeongbu Line (Seoul-Busan 2.5h since 2004) + KTX Honam (Yongsan-Gwangju 2h) + KTX Gangneung (Seoul-Gangneung 1h40m for ski) + SRT (Suseo since 2016) + ITX-Saemaul heritage rail + Express Bus (Gyeongbu/Dongseoul/Nambu 3 terminals) + Domestic LCC (Jeju Air/T'way, Gimpo-Jeju 30-80K won) + Airport Limousine + Car rental with IDP + Ferry to Jeju/Wando/Ulleung + KORAIL Pass foreigner-exclusive
+
+## Sports & Esports
+
+- [Korea Baseball KBO Full Guide](https://mgself414.github.io/keychingu-content-deploy/content/korea-baseball.html): KBO 12-pick — Jamsil (Korea's #1 25,553 seats, LG+Doosan shared) + Gocheok Sky Dome (Korea's only dome 2015, Kiwoom 17K seats, BTS concerts) + Incheon SSG Landers Field (2002) + Suwon KT Wiz Park (2013) + Daejeon Hanwha Eagles Park (1964) + Gwangju KIA Champions Field (2014, 11 titles) + Daegu Samsung Lions Park (2016) + Changwon NC Park (2019 newest) + Sajik (Busan Lotte 1985) — chimaek + outfield cheering culture
+- [Korea Esports & LCK Full Guide](https://mgself414.github.io/keychingu-content-deploy/content/korea-esports.html): Korea Esports LCK 12-pick — LoL Park (Gwanghwamun Jongno Grand Seoul, LCK home 400 seats since 2018) + T1 (Faker, world's #1 LoL player, 5x Worlds champion 2013/2015/2016/2023/2024) + Gen.G (Worlds 2017) + DRX (Worlds 2022 underdog) + KT Rolster + Dplus KIA + Hanwha Life + Korean PC bang culture (1-2K won/hour 24h, foreigner vlog #1) + Worlds Korea hosting (2014/2018/2023)
+
+## Medical Tourism
+
+- [Korea Medical Tourism Full Guide](https://mgself414.github.io/keychingu-content-deploy/content/medical-tourism.html): K-Medical 12-pick — Gangnam plastic surgery street (Apgujeong/Sinsa/Cheongdam #1) + JK Plastic Surgery + BK Plastic Surgery + Ewha & Gangnam dental street (implant 30-70% cheaper than US) + SNU Hospital comprehensive checkup (Hyehwa) + Samsung Medical Center + Asan Medical Center (Songpa) + Severance (Sinchon) + K-Beauty dermatology (Dream/Coltu/Cha&Park) + foreigner-friendly hotels (Seorae Maeul) + multilingual translation + K-Medical government certification
+
+## Busan Series (Korea's #2 city, foreigner outskirts #1)
+
+- [Busan Haeundae & Gwangalli Guide](https://mgself414.github.io/keychingu-content-deploy/content/busan-haeundae.html): Busan Series ① Haeundae & Gwangalli 12-pick — Haeundae Beach (Korea's #1 beach 1.5km, 10M+ annual visitors) + Gwangalli Beach + Gwangan Bridge (7.4km night view #1) + Dongbaek Island + The Bay 101 + Dalmaji-gil + Marine City (Korea's #1 skyscraper district 80+ floors) + Busan SEA LIFE Aquarium + X the SKY LCT (411m, Korea's 2nd tallest after Lotte Tower) + Igidae natural park + Dongbaek APEC Nurimaru + Haeundae sashimi market
+- [Busan Jagalchi & Gukje Market Guide](https://mgself414.github.io/keychingu-content-deploy/content/busan-jagalchi.html): Busan Series ② Jagalchi & Gukje Market 12-pick — Jagalchi Market (Korea's #1 seafood market, dawn auction 5-7am) + Gukje Market (1948, 'Ode to My Father' movie set) + BIFF Street (Nampo-dong) + Yongdusan Park + Busan Tower (120m 360°) + Yeongdo Huinnyeoul Culture Village (Busan instagram #1) + Taejongdae (cliff + moonrise) + Songdo cable car + Bupyeong Kkangtong Night Market + Jagalchi sashimi + milmyeon (Busan's 1st-gen wheat noodle) + Nampo-dong dwaeji-gukbap
+- [Busan Gamcheon Culture Village Guide](https://mgself414.github.io/keychingu-content-deploy/content/busan-gamcheon.html): Busan Series ③ Gamcheon Culture Village 12-pick — Gamcheon Culture Village ('Busan's Machu Picchu', foreign vlog #1, colorful stepped hillside village) + Sanbokdoro Ibagu-gil (6km road) + 168 Stairs + free monorail + Ami-dong Tombstone Village (Japanese colonial relics) + Choryang Ibagu-gil + Busan Station + Choryang Chinatown (Korea's #1 since 1884) + Gwangbok-dong + Busan Museum + UN Memorial Cemetery (Korean War UN soldiers, especially loved by Canadian/Australian/NZ visitors) + Busan Citizens Park
+- [Busan Seomyeon & Jeonpo Cafe Street Guide](https://mgself414.github.io/keychingu-content-deploy/content/busan-seomyeon.html): Busan Series ④ Seomyeon & Jeonpo 12-pick — Seomyeon (Busan's #1 commercial district) + Jeonpo Cafe Street (Busan's #1 MZ cafe street with 200+ cafes since 2010s) + NC Seomyeon + Lotte Department Store Busan Main + Seomyeon underground arcade + Pusan National University (PNU) street + Kyungsung University (adjacent to Gwangalli) + Oncheonjang Dongnae (Korea's #1 hot spring with 2000-year history) + Dongnae traditional market + Beomil + Seomyeon traditional food (Hapcheon dwaeji-gukbap, Naeho milmyeon)
+- [Busan BIFF & Film Culture Guide](https://mgself414.github.io/keychingu-content-deploy/content/busan-biff.html): Busan Series ⑤ BIFF & Film Culture 12-pick — Busan International Film Festival BIFF (Asia's #1 film festival since 1996, every October) + Busan Cinema Center Centum City (BIFF HQ + 4,000 m² outdoor LED) + BIFF Street Nampo-dong + Haedong Yonggungsa (Busan's #1 temple, sea-side temple foreigner instagram #1) + Gijang Jukseong Cathedral + Dalmaji-gogae + Cheongsapo + outskirts beaches (Songjeong/Ilgwang/Imrang) + Centum City Shinsegae (Guinness World Record largest department store 293,905 m²)
 
 ## Area Landing Pages (25 districts deep-dive)
 

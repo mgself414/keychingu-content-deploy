@@ -2528,5 +2528,126 @@
     "summary_kr": "외국인 가족·자녀 풀세트 — 테마파크(롯데월드·어린이대공원 1973 무료)·도심 공원(서울숲 사슴원·서울식물원·양재)·랜드마크(N서울타워·63빌딩 아쿠아플라넷·롯데·COEX 아쿠아리움)·학습(NMK 어린이박물관·한글박물관)·액티비티(한강 가족 자전거 4인용) 12선",
     "summary_en": "Seoul with kids 12-pick — theme parks (Lotte World + Tower #1·Children's Grand Park 1973 Korea's #1 FREE urban zoo) + urban parks (Seoul Forest deer/insect park·Seoul Botanic Park·Yangjae Citizens') + landmarks (N Seoul Tower + cable car·63 Building Aqua Planet·Lotte World Aquarium·COEX Aquarium + Starfield Library) + learning (NMK Children's Museum + Hangul Museum FREE) + Hangang family bike 4-person — stroller rental + family hotel recommendations",
     "en_available": false
+  },
+  {
+    "id": "237",
+    "slug": "seoul-subway",
+    "title_kr": "서울 지하철 풀가이드",
+    "title_en": "Seoul Subway Full Guide",
+    "category": "H",
+    "tags": ["foreigner","transport","subway","seoul-metro","line2","line6","airport-railroad","line9-express","sinbundang","gyeongui-jungang","tmoney","transfer"],
+    "summary_kr": "서울 지하철 24개 노선 750+ 역 외국인 친화 풀세트 — 1~9호선·공항철도·신분당·경의중앙·우이신설·신림선 + T-money 환승 무료·9호선 급행·공항철도 직통 vs 일반·외국인 4lang 안내",
+    "summary_en": "Seoul Subway 12-pick — Line 1 (since 1974 Korea's #1) + Line 2 ring (Korea's #1 50.2km foreigner #1) + Line 3 (Apgujeong-Gyeongbokgung-Jongno) + Line 4 (Myeongdong-NMK) + Line 5 (Gimpo Airport-Yeouido) + Line 6 (Itaewon-Hongdae foreigner #2) + Airport Railroad (ICN Express 43min·local 58min) + Line 9 Express (Gimpo-Gangnam) + Shinbundang (Pangyo) + Gyeongui-Jungang + T-money transfer free within 30min",
+    "en_available": false
+  },
+  {
+    "id": "238",
+    "slug": "tmoney-payment",
+    "title_kr": "한국 T-money 결제 환승 풀가이드",
+    "title_en": "Korea T-money & Payment Full Guide",
+    "category": "H",
+    "tags": ["foreigner","tmoney","cashbee","wowpass","korea-tour-card","samsung-pay","apple-pay","kakao-t","uber","tax-refund","exchange","myeongdong-exchange"],
+    "summary_kr": "외국인 inbound 1순위 페인포인트 결제·교통 풀세트 — T-money·캐시비·레일플러스·WOWPASS(외국인 전용)·Korea Tour Card·모바일 T-money·삼성페이/Apple Pay·신용카드 직결·KakaoT 택시·Uber·면세 환급·외화 환전",
+    "summary_en": "Korea payment & transport card 12-pick — T-money (Korea's #1 transit card, 4,000won) + Cashbee + RailPlus + WOWPASS (foreigner-exclusive with FX exchange + T-money + payment combined since 2022) + Korea Tour Card + Mobile T-money (Android NFC + Naver Pay/Toss/KakaoPay 2024 expansion) + Samsung Pay + Apple Pay + Direct credit card payment on subway/bus + KakaoT Taxi + Uber + Tax Refund (over 30,000won) + Myeongdong exchange #1 rate",
+    "en_available": false
+  },
+  {
+    "id": "239",
+    "slug": "ktx-intercity",
+    "title_kr": "한국 KTX 고속버스 외곽 교통 풀가이드",
+    "title_en": "Korea KTX & Intercity Transport Full Guide",
+    "category": "H",
+    "tags": ["foreigner","ktx","srt","express-bus","domestic-flight","airport-limousine","car-rental","korail-pass","ferry","gangneung","busan","jeju"],
+    "summary_kr": "외국인 외곽 1순위 풀세트 — KTX 경부선(서울→부산 2.5h)·호남선·강릉선(평창)·SRT(수서)·ITX-새마을·고속버스 3터미널·국내선 LCC·공항리무진·렌터카·외곽 ferry(제주·울릉) + KORAIL Pass 외국인 전용",
+    "summary_en": "Korea intercity transport 12-pick — KTX Gyeongbu Line (Seoul-Busan 2.5h, since 2004) + KTX Honam Line (Yongsan-Gwangju 2h) + KTX Gangneung Line (Seoul-Gangneung 1h40m for ski) + SRT (Suseo since 2016) + ITX-Saemaul (heritage rail) + Express Bus (3 terminals Gyeongbu/Dongseoul/Nambu) + Domestic LCC (Jeju Air/T'way/Eastar/Jin Air, Gimpo-Jeju 30-80K won) + Airport Limousine 18,000won + Car rental with IDP + Ferry (Jeju/Wando/Ulleung)",
+    "en_available": false
+  },
+  {
+    "id": "240",
+    "slug": "korea-baseball",
+    "title_kr": "한국 야구 풀가이드",
+    "title_en": "Korea Baseball KBO Full Guide",
+    "category": "G",
+    "tags": ["foreigner","baseball","kbo","jamsil","gocheok-dome","lg","doosan","ssg","kt","lotte","samsung","kia","nc","kiwoom","hanwha"],
+    "summary_kr": "한국 1번지 스포츠 KBO 야구 12선 + 외국인 응원·치맥·외야 culture — 잠실(LG·두산 공유)·고척 스카이돔(키움 한국 유일 돔구장)·인천 SSG·수원 KT·대전 한화·광주 KIA·대구 삼성·창원 NC(2019 신축)·사직 롯데 + 외국인 KBO 매니아 패스",
+    "summary_en": "Korea Baseball (KBO) 12-pick — Jamsil (Korea's #1, LG+Doosan shared 25,553 seats) + Gocheok Sky Dome (Korea's only dome 2015, Kiwoom 17K seats, BTS concerts) + Incheon SSG Landers Field (2002) + Suwon KT Wiz Park (2013) + Daejeon Hanwha Eagles Park (1964) + Gwangju KIA Champions Field (2014, 11 titles) + Daegu Samsung Lions Park (2016) + Changwon NC Park (2019 newest) + Sajik (Busan Lotte 1985) — chimaek + outfield cheering + KBO mania",
+    "en_available": false
+  },
+  {
+    "id": "241",
+    "slug": "korea-esports",
+    "title_kr": "한국 e스포츠 풀가이드",
+    "title_en": "Korea Esports & LCK Full Guide",
+    "category": "G",
+    "tags": ["foreigner","esports","lck","lol-park","t1","faker","gen-g","drx","kt-rolster","dplus-kia","pc-bang","worlds"],
+    "summary_kr": "세계 1번지 e스포츠 한국 풀세트 — LoL Park(종로 그랑서울 LCK 본거지)·T1(페이커·Worlds 5회)·Gen.G·DRX(2022 우승)·KT Rolster·Dplus KIA·한화생명·PC방 culture(외국인 vlog 1순위)·Worlds 한국 개최",
+    "summary_en": "Korea Esports & LCK 12-pick — LoL Park (Gwanghwamun Jongno Grand Seoul, LCK home 400 seats since 2018) + T1 (Faker, world's #1 LoL player, 5x Worlds 2013/2015/2016/2023/2024) + Gen.G (Worlds 2017) + DRX (Worlds 2022 underdog) + KT Rolster + Dplus KIA + Hanwha Life + Korean PC bang culture (1-2K won/hour 24h, foreigner vlog #1) + Worlds Korea hosting (2014/2018/2023)",
+    "en_available": false
+  },
+  {
+    "id": "242",
+    "slug": "medical-tourism",
+    "title_kr": "한국 의료 관광 풀가이드",
+    "title_en": "Korea Medical Tourism Full Guide",
+    "category": "E",
+    "tags": ["foreigner","medical-tourism","plastic-surgery","gangnam","jk-clinic","bk-clinic","dental","snu-hospital","samsung-medical","asan-medical","severance","dermatology","k-medical"],
+    "summary_kr": "K-Medical 세계 1번지 외국인 inbound 12선 — 강남 성형 거리(JK·BK)·이대 치과·강남 치과·서울대 종합검진(혜화)·삼성서울·아산·세브란스(신촌) + K-Beauty 피부과(드림·콜투·차앤박) + 외국인 친화 호텔·통역·정부 인증 K-Medical",
+    "summary_en": "Korea Medical Tourism 12-pick — Gangnam plastic surgery street (Apgujeong/Sinsa/Cheongdam #1) + JK Plastic Surgery + BK Plastic Surgery + Ewha & Gangnam dental street (implant 30-70% cheaper than US) + SNU Hospital comprehensive checkup (Hyehwa) + Samsung Medical Center + Asan Medical Center (Songpa) + Severance (Sinchon) + K-Beauty dermatology (Dream/Coltu/Cha&Park) + foreigner-friendly hotels (Seorae Maeul) + multilingual translation + K-Medical government certification",
+    "en_available": false
+  },
+  {
+    "id": "243",
+    "slug": "busan-haeundae",
+    "title_kr": "부산 해운대 광안리 가이드",
+    "title_en": "Busan Haeundae & Gwangalli Guide",
+    "category": "A",
+    "tags": ["foreigner","busan","haeundae","gwangalli","gwangan-bridge","marine-city","dongbaek-island","the-bay-101","dalmaji","x-the-sky","lct","sea-life","busan-series"],
+    "summary_kr": "부산 시리즈 ① 해변 도시 1번지 12선 — 해운대 해수욕장(연 1000만+)·광안리(7.4km 광안대교 야경 1번지)·동백섬+The Bay 101·달맞이길·마린시티(80층+ 마천루)·SEA LIFE 아쿠아리움·X the SKY(411m·100층 LCT)·이기대·동백공원 APEC·해운대 회·횟집",
+    "summary_en": "Busan Series ① Haeundae & Gwangalli 12-pick — Haeundae Beach (Korea's #1 beach, 1.5km, 10M+ annual visitors) + Gwangalli Beach + Gwangan Bridge (7.4km night view #1) + Dongbaek Island + The Bay 101 + Dalmaji-gil + Marine City (Korea's #1 skyscraper district, 80+ floors) + Busan SEA LIFE Aquarium + X the SKY LCT (411m, Korea's 2nd tallest after Lotte Tower) + Igidae natural park + Dongbaek APEC Nurimaru + Haeundae sashimi market",
+    "en_available": false
+  },
+  {
+    "id": "244",
+    "slug": "busan-jagalchi",
+    "title_kr": "부산 자갈치 국제시장 가이드",
+    "title_en": "Busan Jagalchi & Gukje Market Guide",
+    "category": "A",
+    "tags": ["foreigner","busan","jagalchi","gukje-market","biff-street","yongdusan","busan-tower","yeongdo","taejongdae","songdo","milmyeon","dwaeji-gukbap","busan-series"],
+    "summary_kr": "부산 시리즈 ② 시장·정통 12선 — 자갈치시장(한국 1번지 수산·새벽 경매 05~07시)·국제시장(1948 영화 무대)·BIFF 거리(남포동)·남포동·광복로·용두산공원+부산타워(120m 360°)·영도 흰여울 문화마을·태종대(절벽·달뜨는 자리)·송도 케이블카·부평 깡통야시장·자갈치 정통 회·밀면·돼지국밥",
+    "summary_en": "Busan Series ② Jagalchi & Gukje Market 12-pick — Jagalchi Market (Korea's #1 seafood market, dawn auction 5-7am) + Gukje Market (1948, 'Ode to My Father' movie set) + BIFF Street (Nampo-dong) + Nampo-dong + Gwangbok-ro shopping + Yongdusan Park + Busan Tower (120m 360° view) + Yeongdo Huinnyeoul Culture Village (Busan instagram #1) + Taejongdae (cliff + moonrise) + Songdo cable car + Bupyeong Kkangtong Night Market + Jagalchi sashimi + milmyeon (Busan's 1st-gen wheat noodle) + Nampo-dong dwaeji-gukbap",
+    "en_available": false
+  },
+  {
+    "id": "245",
+    "slug": "busan-gamcheon",
+    "title_kr": "부산 감천문화마을 산복도로 가이드",
+    "title_en": "Busan Gamcheon Culture Village Guide",
+    "category": "A",
+    "tags": ["foreigner","busan","gamcheon","sanbokdoro","ibagu-gil","168-stairs","ami-dong","choryang","chinatown","un-cemetery","busan-museum","busan-series"],
+    "summary_kr": "부산 시리즈 ③ 인스타 마을 12선 — 감천문화마을('부산 마추픽추' 외국인 vlog #1 컬러 계단식)·산복도로 이바구길(6km)·168 계단+무료 모노레일·아미동 비석마을·초량 이바구길·부산역+초량 차이나타운(1884 한국 1번지)·광복동·부산 박물관·유엔기념공원(UN 한국전쟁 묘지)·부산 시민공원",
+    "summary_en": "Busan Series ③ Gamcheon Culture Village 12-pick — Gamcheon Culture Village ('Busan's Machu Picchu', foreign vlog #1, colorful stepped hillside village) + Sanbokdoro Ibagu-gil (6km road) + 168 Stairs + free monorail + Ami-dong Tombstone Village (Japanese colonial relics) + Choryang Ibagu-gil + Busan Station + Choryang Chinatown (Korea's #1 since 1884) + Gwangbok-dong + Busan Museum + UN Memorial Cemetery (Korean War UN soldiers, especially loved by Canadian/Australian/NZ visitors) + Busan Citizens Park",
+    "en_available": false
+  },
+  {
+    "id": "246",
+    "slug": "busan-seomyeon",
+    "title_kr": "부산 서면 전포카페거리 가이드",
+    "title_en": "Busan Seomyeon & Jeonpo Cafe Street Guide",
+    "category": "A",
+    "tags": ["foreigner","busan","seomyeon","jeonpo-cafe","pnu","kyungsung","oncheonjang","dongnae","beomil","milmyeon","dwaeji-gukbap","mz","busan-series"],
+    "summary_kr": "부산 시리즈 ④ MZ 핫스팟 12선 — 서면(부산 도심 1번지)·전포카페거리(200+ MZ 카페·외국인 인스타)·NC 서면점+롯데백화점 부산본점·서면 지하상가·부산대 거리·경성대(광안리 인접)·온천장 동래(한국 1번지 2000년 온천)·동래 미정관·범일·서면 한식(돼지국밥·밀면)·서면 야간 매니아",
+    "summary_en": "Busan Series ④ Seomyeon & Jeonpo Cafe Street 12-pick — Seomyeon (Busan's #1 commercial district) + Jeonpo Cafe Street (Busan's #1 MZ cafe street with 200+ cafes since 2010s, foreigner instagram) + NC Seomyeon + Lotte Department Store Busan Main + Seomyeon underground arcade + Pusan National University (PNU) street + Kyungsung University (adjacent to Gwangalli) + Oncheonjang Dongnae (Korea's #1 hot spring with 2000-year history) + Dongnae traditional market + Beomil + Seomyeon traditional food (Hapcheon dwaeji-gukbap, Naeho milmyeon)",
+    "en_available": false
+  },
+  {
+    "id": "247",
+    "slug": "busan-biff",
+    "title_kr": "부산 BIFF 영화 문화 가이드",
+    "title_en": "Busan BIFF & Film Culture Guide",
+    "category": "G",
+    "tags": ["foreigner","busan","biff","film-festival","cinema-center","centum-city","haedong-yonggungsa","gijang","jukseong-cathedral","cheongsapo","dalmaji","shinsegae-centum","busan-series"],
+    "summary_kr": "부산 시리즈 ⑤ 영화 문화 12선 — 부산국제영화제 BIFF(아시아 1번지 1996·매년 10월)·영화의전당 Centum City(BIFF 본부+외부 LED 4000 m²)·BIFF 거리 남포동·부산 시네마 센터·해동용궁사(부산 1번지 바다 위 사찰)·기장 죽성성당·달맞이고개+청사포·송정·일광·임랑 외곽 해변·Centum City Shinsegae(기네스 세계 1번지 백화점 293,905 m²)",
+    "summary_en": "Busan Series ⑤ BIFF & Film Culture 12-pick — Busan International Film Festival BIFF (Asia's #1 film festival since 1996, every October) + Busan Cinema Center Centum City (BIFF HQ + 4,000 m² outdoor LED) + BIFF Street Nampo-dong + Busan Cinema Center + Haedong Yonggungsa (Busan's #1 temple, sea-side temple foreigner instagram #1) + Gijang Jukseong Cathedral + Dalmaji-gogae + Cheongsapo + outskirts beaches (Songjeong/Ilgwang/Imrang) + Centum City Shinsegae (Guinness World Record largest department store 293,905 m²)",
+    "en_available": false
   }
 ]

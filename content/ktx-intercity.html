@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>한국 KTX 고속버스 외곽 교통 풀가이드 — KeyChinGu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/main.css">
+<style>
+.detail-wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+}
+.breadcrumb {
+  font-size: 13px;
+  color: var(--text-soft);
+  margin-bottom: 24px;
+}
+.breadcrumb a { color: var(--red); font-weight: 600; }
+.detail-wrap h1 {
+  font-size: 28px; font-weight: 800;
+  color: var(--black); margin-bottom: 8px;
+}
+.detail-wrap h2 {
+  font-size: 22px; font-weight: 700;
+  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--red);
+}
+.detail-wrap h3 {
+  font-size: 17px; font-weight: 600;
+  color: var(--text-mid); margin-top: 20px; margin-bottom: 8px;
+}
+.detail-wrap p {
+  font-size: 15px; line-height: 1.7;
+  color: var(--text-mid); margin-bottom: 12px;
+}
+.detail-wrap ul {
+  padding-left: 20px; margin-bottom: 12px;
+}
+.detail-wrap li {
+  font-size: 14px; line-height: 1.6;
+  color: var(--text-mid); margin-bottom: 6px;
+}
+.detail-wrap table {
+  width: 100%; border-collapse: collapse;
+  margin-bottom: 16px; font-size: 13px;
+}
+.detail-wrap th {
+  background: var(--black); color: #fff;
+  padding: 10px 12px; text-align: left;
+  font-weight: 600; font-size: 11px;
+  text-transform: uppercase; letter-spacing: 0.06em;
+}
+.detail-wrap td {
+  padding: 10px 12px; border-bottom: 1px solid var(--border);
+  color: var(--text-mid);
+}
+.detail-wrap tr:nth-child(even) td { background: rgba(0,0,0,0.02); }
+.detail-wrap hr {
+  border: none; height: 1px;
+  background: var(--border); margin: 24px 0;
+}
+.detail-wrap code {
+  background: rgba(33,140,204,0.08);
+  padding: 2px 6px; border-radius: 4px;
+  font-size: 13px; color: var(--blue);
+}
+.detail-nav {
+  display: flex; justify-content: space-between;
+  margin-top: 48px; padding-top: 20px;
+  border-top: 1px solid var(--border);
+  font-size: 14px; font-weight: 600;
+}
+.share-bar {
+  display: flex; align-items: center; gap: 10px;
+  margin-top: 40px; padding: 16px 20px;
+  background: #f9f9f9; border-radius: 12px;
+  border: 1px solid var(--border);
+}
+.share-label {
+  font-size: 14px; font-weight: 600; color: var(--text-soft);
+  margin-right: 8px;
+}
+.share-btn {
+  width: 40px; height: 40px;
+  border: none; border-radius: 50%;
+  background: #fff; cursor: pointer;
+  font-size: 1.1rem; transition: all 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  display: inline-flex; align-items: center; justify-content: center;
+}
+.share-btn:hover { transform: translateY(-2px); box-shadow: 0 3px 8px rgba(0,0,0,0.15); }
+.share-twitter:hover { background: #000; color: #fff; }
+.share-facebook:hover { background: #1877f2; color: #fff; }
+.share-kakao:hover { background: #fee500; }
+.share-copy:hover { background: #218CCC; color: #fff; }
+/* EN toggle disabled — 영문판 미생성 콘텐츠 (2026-05-16 patch) */
+.lang-switch .lang-disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  text-decoration: line-through;
+  padding: 4px 10px;
+  color: var(--text-soft, #888);
+  font-size: 13px;
+  user-select: none;
+}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <div class="lang-switch">
+    <a href="../content/ktx-intercity.html" class="active">KR</a>
+    <span class="lang-disabled" title="영문판 준비 중">EN</span>
+  </div>
+</header>
+
+<div class="detail-wrap">
+  <div class="breadcrumb"><a href="../index.html">전체 가이드</a> &rsaquo; 한국 KTX 고속버스 외곽 교통 풀가이드</div>
+  <h1>한국 KTX·고속버스·외곽 교통 풀가이드 — 외국인 inbound 외곽 1순위</h1>
+<p>&gt; <strong>부제</strong>: KTX·SRT·고속버스·국내선·렌터카·외곽 ferry 풀세트 (전국 1박2일~7일 외국인 매니아)</p>
+<p>ISSUE 03 · #239 · 2026-05-19</p>
+<hr>
+<h2>🎯 왜 KTX·외곽 교통 풀가이드인가</h2>
+<p>외국인 한국 inbound 외곽 1순위 페인포인트 = <strong>장거리 교통</strong>. KTX (2004) + SRT (2016) + 고속버스 + 국내선 + 렌터카 + ferry 풀세트. <strong>서울 → 부산 KTX 2시간 30분</strong> = 외국인 1박2일·1주일 풀세트 동반 필수.</p>
+<hr>
+<h2>★ 한눈에 12선</h2>
+<table><thead><tr>
+<th>#</th>
+<th>교통 수단</th>
+<th>4축</th>
+<th>시그니처</th>
+</tr></thead><tbody>
+<tr>
+<td>1</td>
+<td><strong>KTX 경부선 (서울→부산)</strong> ★ 한국 1번지</td>
+<td>고속철도</td>
+<td>2시간 30분·서울역·부산역·외국인 1순위</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>KTX 호남선 (용산→광주·여수)</strong></td>
+<td>고속철도</td>
+<td>2시간·광주송정·여수EXPO</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>KTX 강릉선 (서울→강릉)</strong></td>
+<td>고속철도</td>
+<td>1시간 40분·평창·강릉 (#231 스키)</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>SRT (수서→부산·광주·여수)</strong></td>
+<td>고속철도</td>
+<td>2016·수서·강남 출발·KTX 대안</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>ITX-새마을·무궁화호</strong></td>
+<td>일반 철도</td>
+<td>KTX 미도착 외곽·외국인 매니아 1번지</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>고속버스 (서울고속·동서울·서울남부)</strong></td>
+<td>버스</td>
+<td>전국 1번지 + 외곽 (속초·강원·전북) + 외국인 친화</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>국내선 (제주항공·티웨이·이스타·진에어 등)</strong></td>
+<td>국내선</td>
+<td>김포·제주·부산 김해·여수·울산·청주·대구</td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>공항 리무진 버스</strong></td>
+<td>공항 환승</td>
+<td>인천공항·김포공항·서울 도심 호텔 직행</td>
+</tr>
+<tr>
+<td>9</td>
+<td><strong>렌터카 + 자율 주행</strong></td>
+<td>외곽 차량</td>
+<td>외국인 1년 면허 (국제운전면허증) + 외곽 1박2일</td>
+</tr>
+<tr>
+<td>10</td>
+<td><strong>외곽 ferry (제주·완도·홍도·울릉)</strong></td>
+<td>외곽 ferry</td>
+<td>인천·목포·여수·포항·완도·후포 ferry 터미널</td>
+</tr>
+<tr>
+<td>11</td>
+<td><strong>외곽 시외버스 (속초·강원·전북·강릉)</strong></td>
+<td>버스</td>
+<td>외곽 deep dive + KTX 미도착 외곽</td>
+</tr>
+<tr>
+<td>12</td>
+<td><strong>외곽 택시·차량 (외국인 친화)</strong></td>
+<td>외곽 차량</td>
+<td>외곽 거점 카카오T·외국인 친화 + 1박2일 가이드 차량</td>
+</tr>
+</tbody></table>
+<p><strong>+ 추가 4</strong>: GTX (광역급행철도)·외곽 자전거 (제주·청주·강릉)·외곽 한식 도시락 + 외곽 외국인 한옥스테이</p>
+<hr>
+<h2>⚠ 외국인 자주 실수 5가지</h2>
+<p>1. <strong>&quot;KTX = 일반 좌석만&quot;</strong>: KTX <strong>3종</strong> — (1) 일반석 (Economy) (2) 특실 (Premium) (3) 우등실 (Plus). 외국인 일반석 = 외국인 1순위 가성비. 특실 = 외국인 매니아 + 30%+ 비쌈.</p>
+<p>2. <strong>&quot;KTX 예약 = 당일 OK&quot;</strong>: KTX 외국인 매니아 1순위 = <strong>사전 예약 필수</strong> (한국 1번지 명절·주말 매진). 한국철도 (KORAIL Talk·KORAIL English) + Klook·Trip.com 영문 OK.</p>
+<p>3. <strong>&quot;고속버스 = 저가만&quot;</strong>: 고속버스 우등 + 프리미엄 + 일반 3종. 우등 (KTX 70% 가격) + 외국인 매니아 1순위. 동서울·서울고속·서울남부 3 터미널 분산.</p>
+<p>4. <strong>&quot;국내선 = 비쌈&quot;</strong>: 한국 국내선 (제주항공·티웨이·이스타·진에어·에어로케이 LCC) = <strong>김포→제주 30,000~80,000원</strong> (외국인 KTX 부산 70,000원 대비 저렴 가능). 제주·여수 1순위 LCC.</p>
+<p>5. <strong>&quot;외곽 ferry = 외국인 미친화&quot;</strong>: 한국 ferry (제주·완도·홍도·울릉) 외국인 친화 OK + 인천·목포·여수·포항 ferry 터미널 영문 안내 + 한국 1번지 외곽 매니아.</p>
+<hr>
+<h2>① 고속철도 (4)</h2>
+<h3>1. KTX 경부선 (서울→부산) ★ 한국 1번지</h3>
+<ul>
+<li>외국인 ★: ◎◎ — 한국 1번지 고속철도 (2004)</li>
+<li>거리: 2시간 30분·서울역·부산역</li>
+<li>요금: 일반석 59,800원·특실 84,000원</li>
+</ul>
+<h3>2. KTX 호남선 (용산→광주·여수)</h3>
+<ul>
+<li>외국인 ★: ◎ — 광주송정 2시간·여수EXPO 3시간</li>
+<li>외곽 deep dive 1순위</li>
+</ul>
+<h3>3. KTX 강릉선 (서울→강릉)</h3>
+<ul>
+<li>외국인 ★: ◎◎ — 1시간 40분·평창·강릉 (#231 스키)</li>
+<li>외곽 스키·온천 1번지</li>
+</ul>
+<h3>4. SRT (수서→부산·광주·여수)</h3>
+<ul>
+<li>외국인 ★: ◎ — 2016·수서·강남 출발·KTX 대안</li>
+<li>요금: KTX 90% 정도</li>
+</ul>
+<hr>
+<h2>② 일반 철도·버스 (3)</h2>
+<h3>5. ITX-새마을·무궁화호</h3>
+<ul>
+<li>외국인 ★: ◎ — KTX 미도착 외곽 (안동·정선·동해·태백)</li>
+<li>외국인 매니아 1번지 + 외곽 deep dive</li>
+</ul>
+<h3>6. 고속버스 (서울고속·동서울·서울남부)</h3>
+<ul>
+<li>외국인 ★: ◎◎ — 한국 전국 1번지 버스</li>
+<li>3 터미널: <strong>서울고속</strong> (경부·호남·경원 1순위)·<strong>동서울</strong> (강원·충청 1순위)·<strong>서울남부</strong> (전라·경상·외곽 1순위)</li>
+</ul>
+<h3>7. 국내선</h3>
+<ul>
+<li>외국인 ★: ◎ — 김포·제주·부산 김해·여수·울산·청주·대구</li>
+<li>LCC: 제주항공·티웨이·이스타·진에어·에어로케이 + 김포→제주 30,000~80,000원</li>
+</ul>
+<hr>
+<h2>③ 환승·차량 (3)</h2>
+<h3>8. 공항 리무진 버스</h3>
+<ul>
+<li>외국인 ★: ◎◎ — 인천공항·김포공항·서울 도심 호텔 직행</li>
+<li>가격: 18,000원·강남 1시간·홍대 1시간 30분</li>
+</ul>
+<h3>9. 렌터카 + 자율 주행</h3>
+<ul>
+<li>외국인 ★: ◎ — 외국인 1년 면허 (국제운전면허증·International Driving Permit)</li>
+<li>외국인 매니아 외곽 1박2일·1주일 1번지</li>
+</ul>
+<h3>10. 외곽 ferry (제주·완도·홍도·울릉)</h3>
+<ul>
+<li>외국인 ★: ◎ — 인천·목포·여수·포항·완도·후포 ferry 터미널</li>
+<li>외곽 매니아 1번지 + 외국인 deep dive</li>
+</ul>
+<hr>
+<h2>④ 외곽 deep dive (2 + 추가 4)</h2>
+<h3>11. 외곽 시외버스 (속초·강원·전북·강릉)</h3>
+<ul>
+<li>외곽 deep dive + KTX 미도착 외곽</li>
+</ul>
+<h3>12. 외곽 택시·차량 (외국인 친화)</h3>
+<ul>
+<li>외곽 거점 카카오T + 외국인 친화 1박2일 가이드 차량</li>
+</ul>
+<h3>+ 추가 4</h3>
+<ul>
+<li><strong>GTX-A</strong> (2027 개통) — 강남↔파주 광역 급행</li>
+<li><strong>외곽 자전거</strong> — 제주·청주·강릉 자전거 렌탈 (외국인 매니아)</li>
+<li><strong>외곽 한식 도시락</strong> — KTX·고속버스 한식 도시락 외국인 매니아</li>
+<li><strong>외곽 외국인 한옥스테이</strong> (#226) — 전주·안동·경주·정선</li>
+</ul>
+<hr>
+<h2>⚙ FAQ 8개</h2>
+<p>1. <strong>KTX 외국인 예약</strong>: KORAIL English·KORAIL Talk + Klook·Trip.com 영문 OK + 명절·주말 사전 예약 필수.</p>
+<p>2. <strong>KTX 외국인 패스 (Korail Pass)</strong>: 외국인 전용 3일·5일·7일·10일 패스. 외국인 KTX 매니아 1순위 + 외국인 여권 필수.</p>
+<p>3. <strong>고속버스 vs KTX</strong>: KTX 빠름 (서울→부산 2.5시간 60,000원) / 우등 고속버스 (4.5시간 35,000원) + 외국인 매니아 1순위.</p>
+<p>4. <strong>국내선 LCC</strong>: 김포→제주 30,000~80,000원 + 제주·여수·울산·부산 LCC 매니아 OK.</p>
+<p>5. <strong>렌터카 외국인</strong>: 국제운전면허증 (IDP) + 외국인 여권 + 본국 면허증 필수. 만 21세 이상 + 1년 미만 면허는 불가.</p>
+<p>6. <strong>외곽 ferry</strong>: 인천·목포·여수·포항 ferry 터미널 영문 안내 + 외국인 매니아 매주 OK + 일부 외곽 ferry 외국인 환영.</p>
+<p>7. <strong>공항 리무진</strong>: 인천공항·서울 도심 호텔 18,000원·1시간 30분 + 외국인 매니아 1순위.</p>
+<p>8. <strong>외국인 외곽 1박2일 추천</strong>: KTX 부산 (#243~#247 series)·KTX 강릉 (#231 스키)·KTX 광주·여수.</p>
+<hr>
+<h2>🗺 외국인 풀데이 코스 4개</h2>
+<h3>A. 외국인 KTX 부산 1박2일</h3>
+<ul>
+<li>Day 1: 09:00 KTX 서울→부산 (2.5시간) → 해운대 + 광안리 → 부산 1박</li>
+<li>Day 2: 자갈치·국제시장 + 감천 → 18:00 KTX 부산→서울</li>
+</ul>
+<h3>B. 외국인 KTX 강릉 1박2일 (#231 스키)</h3>
+<ul>
+<li>Day 1: 08:00 KTX 서울→강릉 (1시간 40분) → 용평·평창 스키 → 강릉 1박</li>
+<li>Day 2: 강릉·정동진·정선 → 16:00 KTX 강릉→서울</li>
+</ul>
+<h3>C. 외국인 LCC 제주 2박3일</h3>
+<ul>
+<li>Day 1: 09:00 김포→제주 LCC → 제주공항 → 성산 일출봉 → 제주 1박</li>
+<li>Day 2: 한라산 + 천지연 + 제주 야경</li>
+<li>Day 3: 우도 ferry + 제주공항 → 김포</li>
+</ul>
+<h3>D. 외국인 외곽 1주일 풀세트</h3>
+<ul>
+<li>Day 1~2 부산 (KTX) → Day 3~4 강원 (KTX 강릉) → Day 5~6 제주 (LCC) → Day 7 서울</li>
+</ul>
+<hr>
+<h2>🌸 시즌·시간대 5</h2>
+<ul>
+<li><strong>명절 (설날·추석)</strong>: KTX·고속버스 매진 + 사전 예약 1순위 필수</li>
+<li><strong>봄 벚꽃 (4월)</strong>: KTX 진해·여수·제주 외곽 벚꽃 매니아 1번지</li>
+<li><strong>가을 단풍 (10~11월)</strong>: KTX 강릉·여수·광주·부산 단풍 1순위</li>
+<li><strong>겨울 스키 (12~2월)</strong>: KTX 강릉 = 용평·하이원·곤지암 (#231 스키) 1번지</li>
+<li><strong>여름 ferry</strong>: 제주·울릉 ferry 외곽 매니아 7~8월</li>
+</ul>
+<hr>
+<h2>🔗 관련</h2>
+<ul>
+<li>#87 인천공항·#175 마곡 김포공항·#237 지하철·#238 T-money·#228 외국인 1주일·#231 겨울 스키·#243~#247 부산 series</li>
+</ul>
+<h2>🏷 태그</h2>
+<p><code>#한국KTX풀가이드</code> <code>#KoreaKTX</code> <code>#KoreaTravel</code> <code>#KTX경부선부산</code> <code>#KTX강릉선스키</code> <code>#SRT수서</code> <code>#고속버스우등</code> <code>#KoreaLCC</code> <code>#렌터카외국인</code> <code>#KorailPass외국인</code> <code>#외곽ferry제주울릉</code> <code>#키친구</code></p>
+
+  <div class="share-bar">
+    <span class="share-label">공유</span>
+    <button class="share-btn share-twitter" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent('한국 KTX 고속버스 외곽 교통 풀가이드') + '&url=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Twitter">𝕏</button>
+    <button class="share-btn share-facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Facebook">f</button>
+    <button class="share-btn share-kakao" onclick="navigator.share ? navigator.share({title: '한국 KTX 고속버스 외곽 교통 풀가이드', url: window.location.href}) : navigator.clipboard.writeText(window.location.href).then(function() { alert('링크 복사됨!'); })" aria-label="Kakao/Share">📤</button>
+    <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href).then(function() { this.textContent = '✓'; setTimeout(function() { document.querySelector('.share-copy').textContent = '🔗'; }, 1500); }.bind(this))" aria-label="Copy link">🔗</button>
+  </div>
+
+  <div class="detail-nav">
+    <div><a href="tmoney-payment.html" style="color:var(--red);">&larr; 한국 T-money 결제 환승 풀가이드</a></div>
+    <div><a href="korea-baseball.html" style="color:var(--red);">한국 야구 풀가이드 &rarr;</a></div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <p><a href="https://instagram.com/keychingu.korea" target="_blank">@keychingu.korea</a> &mdash; Seoul for MZ FIT Travelers</p>
+</footer>
+</body>
+</html>

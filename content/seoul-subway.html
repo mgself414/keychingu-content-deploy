@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>서울 지하철 풀가이드 — KeyChinGu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/main.css">
+<style>
+.detail-wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+}
+.breadcrumb {
+  font-size: 13px;
+  color: var(--text-soft);
+  margin-bottom: 24px;
+}
+.breadcrumb a { color: var(--red); font-weight: 600; }
+.detail-wrap h1 {
+  font-size: 28px; font-weight: 800;
+  color: var(--black); margin-bottom: 8px;
+}
+.detail-wrap h2 {
+  font-size: 22px; font-weight: 700;
+  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--red);
+}
+.detail-wrap h3 {
+  font-size: 17px; font-weight: 600;
+  color: var(--text-mid); margin-top: 20px; margin-bottom: 8px;
+}
+.detail-wrap p {
+  font-size: 15px; line-height: 1.7;
+  color: var(--text-mid); margin-bottom: 12px;
+}
+.detail-wrap ul {
+  padding-left: 20px; margin-bottom: 12px;
+}
+.detail-wrap li {
+  font-size: 14px; line-height: 1.6;
+  color: var(--text-mid); margin-bottom: 6px;
+}
+.detail-wrap table {
+  width: 100%; border-collapse: collapse;
+  margin-bottom: 16px; font-size: 13px;
+}
+.detail-wrap th {
+  background: var(--black); color: #fff;
+  padding: 10px 12px; text-align: left;
+  font-weight: 600; font-size: 11px;
+  text-transform: uppercase; letter-spacing: 0.06em;
+}
+.detail-wrap td {
+  padding: 10px 12px; border-bottom: 1px solid var(--border);
+  color: var(--text-mid);
+}
+.detail-wrap tr:nth-child(even) td { background: rgba(0,0,0,0.02); }
+.detail-wrap hr {
+  border: none; height: 1px;
+  background: var(--border); margin: 24px 0;
+}
+.detail-wrap code {
+  background: rgba(33,140,204,0.08);
+  padding: 2px 6px; border-radius: 4px;
+  font-size: 13px; color: var(--blue);
+}
+.detail-nav {
+  display: flex; justify-content: space-between;
+  margin-top: 48px; padding-top: 20px;
+  border-top: 1px solid var(--border);
+  font-size: 14px; font-weight: 600;
+}
+.share-bar {
+  display: flex; align-items: center; gap: 10px;
+  margin-top: 40px; padding: 16px 20px;
+  background: #f9f9f9; border-radius: 12px;
+  border: 1px solid var(--border);
+}
+.share-label {
+  font-size: 14px; font-weight: 600; color: var(--text-soft);
+  margin-right: 8px;
+}
+.share-btn {
+  width: 40px; height: 40px;
+  border: none; border-radius: 50%;
+  background: #fff; cursor: pointer;
+  font-size: 1.1rem; transition: all 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  display: inline-flex; align-items: center; justify-content: center;
+}
+.share-btn:hover { transform: translateY(-2px); box-shadow: 0 3px 8px rgba(0,0,0,0.15); }
+.share-twitter:hover { background: #000; color: #fff; }
+.share-facebook:hover { background: #1877f2; color: #fff; }
+.share-kakao:hover { background: #fee500; }
+.share-copy:hover { background: #218CCC; color: #fff; }
+/* EN toggle disabled — 영문판 미생성 콘텐츠 (2026-05-16 patch) */
+.lang-switch .lang-disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  text-decoration: line-through;
+  padding: 4px 10px;
+  color: var(--text-soft, #888);
+  font-size: 13px;
+  user-select: none;
+}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <div class="lang-switch">
+    <a href="../content/seoul-subway.html" class="active">KR</a>
+    <span class="lang-disabled" title="영문판 준비 중">EN</span>
+  </div>
+</header>
+
+<div class="detail-wrap">
+  <div class="breadcrumb"><a href="../index.html">전체 가이드</a> &rsaquo; 서울 지하철 풀가이드</div>
+  <h1>서울 지하철 풀가이드 — 외국인 inbound 1순위 도시 교통</h1>
+<p>&gt; <strong>부제</strong>: 1~9호선·신분당·경의중앙·공항철도·우이신설·신림선 + 환승·요금·외국인 친화 풀세트</p>
+<p>ISSUE 03 · #237 · 2026-05-19</p>
+<hr>
+<h2>🎯 왜 서울 지하철 풀가이드인가</h2>
+<p>외국인 한국 inbound 1순위 페인포인트 = <strong>지하철</strong>. 서울 지하철 <strong>24개 노선·750+ 역</strong>·세계 1번지 대중교통. 외국인 친화 영문·중문·일문 안내 완비 + T-money 24시간. 풀세트 동선 가이드.</p>
+<hr>
+<h2>★ 한눈에 12선</h2>
+<table><thead><tr>
+<th>#</th>
+<th>노선·역</th>
+<th>4축</th>
+<th>시그니처</th>
+</tr></thead><tbody>
+<tr>
+<td>1</td>
+<td><strong>1호선 (서울역·종각·시청)</strong> ★ 1974 한국 1번지</td>
+<td>핵심 노선</td>
+<td>서울역·시청·종각·청량리·인천 (#13·#172)</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>2호선 순환선 (강남·홍대)</strong> ★ 외국인 #1</td>
+<td>핵심 노선</td>
+<td>50.2km·서울 핵심 순환·강남·홍대·잠실·신촌 (#142·#138)</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>3호선 (압구정·경복궁·종로3가)</strong></td>
+<td>핵심 노선</td>
+<td>압구정 로데오·경복궁·종로3가·익선동 (#142·#207)</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>4호선 (명동·서울역·이촌)</strong></td>
+<td>핵심 노선</td>
+<td>명동·서울역·동대문·국립중앙박물관·창동 (#187·#172)</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>5호선 (광화문·종로·여의도·김포공항)</strong></td>
+<td>핵심 노선</td>
+<td>광화문·여의도·잠실·강동·김포공항 (#169·#175)</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>6호선 (이태원·한강진·합정·DMC)</strong> ★ 외국인 #2</td>
+<td>핵심 노선</td>
+<td>이태원·한강진·합정·홍대·DMC (#138·#188)</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>공항철도 (인천공항·서울역·홍대)</strong> ★ 외국인 1번지</td>
+<td>광역·환승</td>
+<td>직통 43분·일반 58분·서울역·홍대·디지털미디어시티 (#87)</td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>9호선 급행 (김포공항·여의도·강남·종합운동장)</strong></td>
+<td>광역·환승</td>
+<td>한국 1번지 급행·김포공항·여의도·강남·잠실 (#82·#169)</td>
+</tr>
+<tr>
+<td>9</td>
+<td><strong>신분당선 (강남·판교·정자·광교)</strong></td>
+<td>광역·환승</td>
+<td>강남·양재·판교·정자 외곽 신도시 + 1순위 IT 핫존</td>
+</tr>
+<tr>
+<td>10</td>
+<td><strong>경의중앙선 (서울역·홍대·일산·문산)</strong></td>
+<td>광역·환승</td>
+<td>서울역·홍대·일산·문산 외곽 출퇴근 + 한강 view</td>
+</tr>
+<tr>
+<td>11</td>
+<td><strong>우이신설선 + 신림선</strong></td>
+<td>특색·niche</td>
+<td>무인 경전철·우이동·강북·신림 외곽</td>
+</tr>
+<tr>
+<td>12</td>
+<td><strong>수인분당선 + 7호선</strong></td>
+<td>특색·niche</td>
+<td>수원·인천·강북·노원 외곽</td>
+</tr>
+</tbody></table>
+<p><strong>+ 추가 4</strong>: GTX-A (2027 개통 예정 강남↔파주)·서울 시내버스 환승·DRT(반응형 셔틀)·따릉이 (서울 공공자전거)</p>
+<hr>
+<h2>⚠ 외국인 자주 실수 5가지</h2>
+<p>1. <strong>&quot;환승 = 다른 노선 = 새로 결제&quot;</strong>: T-money 30분 이내 환승 <strong>무료</strong>. 4 환승까지 OK. 같은 카드 tag 필수.</p>
+<p>2. <strong>&quot;공항철도 = 직통만&quot;</strong>: 공항철도 <strong>2종</strong> — 직통 (Express, 9,500원·43분) + 일반 (4,250원·58분). MZ·예산 = 일반 OK. 14kg+ 캐리어 = 직통.</p>
+<p>3. <strong>&quot;막차 = 자정&quot;</strong>: 막차 23:30~00:30 (노선·역별 상이). 새벽 1시 OK라고 가정하면 위험. 막차 30분 전 출발 필수.</p>
+<p>4. <strong>&quot;9호선 = 일반차만&quot;</strong>: 9호선 <strong>급행/일반 2종</strong>. 급행 김포공항→잠실 25분 / 일반 50분. 외국인 길게 보면 급행 1순위. 단 급행 일부 역 무정차.</p>
+<p>5. <strong>&quot;외국인 발권 = 어려움&quot;</strong>: 1회용 T-money 발권기 영문 OK + 환불 500원 보증금. T-money 충전식 (편의점·역) 외국인 친화. 모바일 T-money (Naver Pay·Toss·KakaoPay 결제 OK 2024 확장).</p>
+<hr>
+<h2>① 핵심 노선 (6)</h2>
+<h3>1. 1호선 (서울역·종각·시청) ★ 1974 한국 1번지</h3>
+<ul>
+<li>외국인 ★: ◎◎ — 한국 최초 지하철 1974 + 서울역·시청·종각·청량리·인천 (수원)</li>
+<li>시그니처: KTX 서울역 + 시청·광화문 + 종각 (#172) + 청량리 + 인천 (1호선 직통)</li>
+<li>색상: 진청색</li>
+</ul>
+<h3>2. 2호선 순환선 (강남·홍대·잠실) ★ 외국인 #1</h3>
+<ul>
+<li>외국인 ★: ◎◎ — <strong>세계 1번지 도심 순환선</strong> 50.2km</li>
+<li>시그니처: 강남(#142) → 홍대(#138) → 시청(#172) → 동대문 → 잠실(#82) 순환</li>
+<li>색상: 녹색</li>
+</ul>
+<h3>3. 3호선 (압구정·경복궁·종로3가)</h3>
+<ul>
+<li>외국인 ★: ◎◎ — 압구정 로데오 + 경복궁 + 종로3가 + 익선동 + 안국 (#226·#207)</li>
+<li>색상: 주황색</li>
+</ul>
+<h3>4. 4호선 (명동·서울역·이촌)</h3>
+<ul>
+<li>외국인 ★: ◎◎ — 명동(#13)·서울역·동대문(#172)·국립중앙박물관(#187) + 창동·노원</li>
+<li>색상: 하늘색</li>
+</ul>
+<h3>5. 5호선 (광화문·여의도·김포공항)</h3>
+<ul>
+<li>외국인 ★: ◎◎ — 광화문·종로·여의도(#169)·잠실·강동·김포공항(#175)</li>
+<li>색상: 보라색</li>
+</ul>
+<h3>6. 6호선 (이태원·합정·DMC) ★ 외국인 #2</h3>
+<ul>
+<li>외국인 ★: ◎◎ — 이태원·한강진(LCT·#172)·합정·홍대·DMC(#188)</li>
+<li>색상: 황토색</li>
+</ul>
+<hr>
+<h2>② 광역·환승 (4)</h2>
+<h3>7. 공항철도 (인천공항·서울역·홍대) ★ 외국인 1번지</h3>
+<ul>
+<li>외국인 ★: ◎◎ — 외국인 인바운드 1순위 환승 노선</li>
+<li>직통 (Express): 9,500원·43분·캐리어 베이·좌석 지정</li>
+<li>일반: 4,250원·58분·일반 좌석·MZ·예산 1순위</li>
+<li>환승: 서울역(1호선)·홍대(2호선)·DMC(6호선)</li>
+</ul>
+<h3>8. 9호선 급행 (김포공항·잠실)</h3>
+<ul>
+<li>외국인 ★: ◎◎ — 한국 1번지 급행 지하철</li>
+<li>김포공항(#175) → 여의도(#169) → 강남(#142) → 종합운동장 25분 (일반 50분)</li>
+</ul>
+<h3>9. 신분당선 (강남·판교·광교)</h3>
+<ul>
+<li>외국인 ★: ◎ — 강남·양재·판교(외곽 IT 핫존)·정자·광교</li>
+<li>요금: 1,400원~ + 추가 운임 노선</li>
+</ul>
+<h3>10. 경의중앙선 (서울역·홍대·일산·문산)</h3>
+<ul>
+<li>외국인 ★: ◎ — 서울역·홍대·일산·문산 + 한강 view (한강 다리 통과)</li>
+</ul>
+<hr>
+<h2>③ 특색·niche (2 + 추가 4)</h2>
+<h3>11. 우이신설선 + 신림선</h3>
+<ul>
+<li>무인 경전철 + 우이동(#186)·강북·신림(외곽)</li>
+</ul>
+<h3>12. 수인분당선 + 7호선</h3>
+<ul>
+<li>수원·인천 + 강북·노원·도봉(#196 등산)</li>
+</ul>
+<h3>+ 추가 4</h3>
+<ul>
+<li><strong>GTX-A</strong> (2027 개통 예정) — 강남↔파주 광역 급행</li>
+<li><strong>서울 시내버스</strong> — 지선·간선·광역·마을 4종 + T-money 환승 무료</li>
+<li><strong>DRT (반응형 셔틀)</strong> — 외곽 (강남·은평) 호출 서비스</li>
+<li><strong>따릉이</strong> (서울 공공자전거) — 1000원/1시간·외국인 1순위 액티비티</li>
+</ul>
+<hr>
+<h2>⚙ FAQ 8개</h2>
+<p>1. <strong>외국인 T-money 발급</strong>: 편의점 (CU·GS25·세븐일레븐·이마트24) 4,000원 카드 + 충전. 환불은 카드 잔액 500원 보증금 미환불.</p>
+<p>2. <strong>모바일 T-money</strong>: 안드로이드 NFC + Naver Pay·KakaoPay·Toss 결제 OK (2024 확장). 아이폰 미지원.</p>
+<p>3. <strong>환승 룰</strong>: T-money tag 30분 이내 다른 노선·버스 환승 <strong>무료</strong> (최대 4 환승). 같은 노선 재진입은 1회.</p>
+<p>4. <strong>요금</strong>: 기본 1,400원 (10km까지) + 5km당 100원 추가. 외국인 일반 노선 1,400~2,400원.</p>
+<p>5. <strong>운행 시간</strong>: 보통 05:30~24:00. 막차는 노선·역별 상이 — 네이버 지도·카카오맵 실시간 확인 필수.</p>
+<p>6. <strong>외국인 친화</strong>: 1·2·4·5·6·9호선·공항철도 = 영·중·일·KR 4lang 안내 풀세트. 외곽 노선은 KR·EN만.</p>
+<p>7. <strong>카드 결제</strong>: 신용카드 (해외 발급 Visa·Master·JCB OK) 일부 역 직접 결제 (2024 확장). T-money 추천.</p>
+<p>8. <strong>사진·녹음</strong>: 지하철 내부 사진 OK (개인용)·라이브 방송 비추천 (전동 차량 안전 우선).</p>
+<hr>
+<h2>🗺 외국인 풀데이 코스 4개</h2>
+<h3>A. 인천공항 → 서울 도심 (도착 첫날)</h3>
+<ul>
+<li>인천공항 → <strong>공항철도 직통 (Express 43분)</strong> → 서울역 → <strong>1호선 또는 4호선</strong> 환승 → 명동·홍대·강남 호텔</li>
+</ul>
+<h3>B. 외국인 1일 풀공략 (지하철 only)</h3>
+<ul>
+<li>09:00 강남(#142, 2호선) → 12:00 명동(#13, 4호선) → 14:00 종로·인사동(#207, 3호선) → 17:00 홍대(#138, 2호선) → 20:00 이태원(#172, 6호선)</li>
+</ul>
+<h3>C. 한강 4 코스 (5호선·9호선)</h3>
+<ul>
+<li>여의도(#169, 5호선) → 반포(#173, 9호선) → 잠실(#82, 9호선) → 뚝섬(#01, 2호선)</li>
+</ul>
+<h3>D. 외곽 1일 (광역)</h3>
+<ul>
+<li>김포공항(#175, 5/9호선) → 마곡 서울식물원 → 신분당선 → 판교(외곽 IT) → 광교 호수공원</li>
+</ul>
+<hr>
+<h2>🌸 시즌·시간대 5</h2>
+<ul>
+<li><strong>러시아워</strong>: 07:30~09:00 / 17:30~19:30 — <strong>2·9호선 급행·공항철도 직통 피하기 권장</strong></li>
+<li><strong>막차 후</strong>: 24:00 이후 = 택시 (카카오T·우버 OK) + 심야버스 (N15·N16 등)</li>
+<li><strong>공항철도 직통 시간대</strong>: 06:00~22:30 (약 1시간 간격)</li>
+<li><strong>봄 4월</strong>: 윤중로(#230 벚꽃) = 5호선 여의나루</li>
+<li><strong>단풍 10~11월</strong>: 4호선 동대문 → 7호선 어린이대공원(#229)</li>
+</ul>
+<hr>
+<h2>🔗 관련</h2>
+<ul>
+<li>#87 인천공항·#175 마곡 김포공항·#142 강남·#138 홍대·#172 DDP·#82 잠실·#13 남산 명동·#169 여의도·#228 외국인 1주일·#238 T-money·#239 KTX 외곽</li>
+</ul>
+<h2>🏷 태그</h2>
+<p><code>#서울지하철풀가이드</code> <code>#KoreaSubway</code> <code>#SeoulMetro</code> <code>#2호선순환선</code> <code>#공항철도Express</code> <code>#9호선급행</code> <code>#5호선김포공항</code> <code>#1호선서울역</code> <code>#TMoney</code> <code>#지하철환승무료</code> <code>#외국인친화4lang</code> <code>#키친구</code></p>
+
+  <div class="share-bar">
+    <span class="share-label">공유</span>
+    <button class="share-btn share-twitter" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent('서울 지하철 풀가이드') + '&url=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Twitter">𝕏</button>
+    <button class="share-btn share-facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Facebook">f</button>
+    <button class="share-btn share-kakao" onclick="navigator.share ? navigator.share({title: '서울 지하철 풀가이드', url: window.location.href}) : navigator.clipboard.writeText(window.location.href).then(function() { alert('링크 복사됨!'); })" aria-label="Kakao/Share">📤</button>
+    <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href).then(function() { this.textContent = '✓'; setTimeout(function() { document.querySelector('.share-copy').textContent = '🔗'; }, 1500); }.bind(this))" aria-label="Copy link">🔗</button>
+  </div>
+
+  <div class="detail-nav">
+    <div><a href="family-kids-full.html" style="color:var(--red);">&larr; 서울 가족 자녀 풀가이드</a></div>
+    <div><a href="tmoney-payment.html" style="color:var(--red);">한국 T-money 결제 환승 풀가이드 &rarr;</a></div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <p><a href="https://instagram.com/keychingu.korea" target="_blank">@keychingu.korea</a> &mdash; Seoul for MZ FIT Travelers</p>
+</footer>
+</body>
+</html>
