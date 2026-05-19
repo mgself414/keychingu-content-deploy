@@ -161,6 +161,10 @@
 - [FAQ — Frequently Asked Questions](https://mgself414.github.io/keychingu-content-deploy/faq.html): 20 FAQs covering visa/K-ETA, transportation, payment, SIM, language, food, shopping, emergency for foreign tourists in Seoul.
 
 
+## University Campus Walks
+
+- [Seoul University Campus Walk Guide](https://mgself414.github.io/keychingu-content-deploy/content/university-campus.html): Korea's top 12 university campuses for cherry blossom (April), autumn foliage (Oct-Nov), and walking — Kyung Hee (Korea's #1 beauty campus, neo-European architecture, Peace Hall) + Yonsei Baekyangno (cherry blossom main avenue) + Korea University Anam Central Plaza (Oxford-style) + Seoul National University (70万 평 Jahayeon lake, Buddleia field) + Sungkyunkwan (Joseon's #1 educational institution since 1398, Myeongnyundang/Daeseongjeon) + Ewha Womans (Penley Chapel, Korea's #1 women's college 1886) + Hanyang (Sasak Garden, Han River view) + Konkuk (Ilgamho lake, 6,000+ international students) + Chung-Ang Heukseok (film/theater #1) + Dongguk (Buddhist hanok, Namsan adjacent) + Kookmin (Bukhansan nature campus) + Hongik (Korea's #1 art college, Hongdae street origin) + 4 extra (Sogang/Sookmyung/HUFS/Myongji) — foreign Instagram·K-drama hotspot deep dive
+
 ## Area Landing Pages (25 districts deep-dive)
 
 - [홍대·연남·합정·망원](https://mgself414.github.io/keychingu-content-deploy/areas/hongdae.html): 한국 MZ·인디 1번지 + 청춘 거리·라이브 클럽·연남 카페·합정 모던 다이닝·망원시장
