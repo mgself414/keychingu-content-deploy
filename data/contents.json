@@ -2233,6 +2233,17 @@
     "en_available": false
   },
   {
+    "id": "191",
+    "slug": "china-tourist-essentials",
+    "title_kr": "중국 관광객 요유객(요우커) 코스 — 방한 1위 segment 풀패키지 가이드",
+    "title_en": "China Tourist Essentials — #1 Inbound Segment Full Package Guide",
+    "category": "A",
+    "tags": ["foreigner","china","youke","myeongdong","dongdaemun","duty-free","hanbok","k-pop","lotte-world","n-seoul-tower"],
+    "summary_kr": "방한 1위 segment(2024 460만명) 풀패키지 — 명동·동대문 쇼핑(올리브영 95%+두타 새벽+롯데면세점 60%) + N서울타워·경복궁·롯데월드타워 555m 랜드마크 + 북촌 한복·광장시장·인사동 전통 + HYBE 사옥·롯데월드·여의도 한강 치맥 K-pop·테마파크 4축 12선. 1박2일 압축 / 3박4일 풀패키지 양면. 샤오홍슈·웨이보·도우인 시그니처.",
+    "summary_en": "Korea's #1 inbound segment full package — Myeongdong·Dongdaemun shopping (Olive Young 95% foreign sales + Doota night market + Lotte Duty Free 60% China share) + N Seoul Tower·Gyeongbokgung·Lotte World Tower 555m landmarks + Bukchon hanbok·Gwangjang Market·Insadong tradition + HYBE HQ·Lotte World·Yeouido Hangang chimaek 4-axis 12-pick. 1N2D compact + 3N4D full package. Xiaohongshu·Weibo·Douyin signature course.",
+    "en_available": false
+  },
+  {
     "id": "198",
     "slug": "challenge-food",
     "title_kr": "외국인 도전 음식 TOP 10",
