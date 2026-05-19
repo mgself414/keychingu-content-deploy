@@ -2297,5 +2297,16 @@
     "summary_kr": "봄꽃·단풍·산책하기 좋은 한국 명문 대학 캠퍼스 12선 — 경희대(한국 아름다운 캠퍼스 1위)·연세대 백양로 벚꽃·고려대 중앙광장·서울대 자하연·성균관대(조선 1398)·이화여대·한양대·건국대·중앙대·동국대·국민대·홍익대 + 외국인 인스타·K-drama 단골 무대",
     "summary_en": "Korea's top 12 university campuses for cherry blossom·autumn foliage·walking — Kyung Hee (Korea's #1 most beautiful campus·neo-European architecture) + Yonsei Baekyangno (cherry blossom main) + Korea University central plaza (Oxford-style) + SNU Jahayeon + Sungkyunkwan (Joseon's #1 educational institution since 1398) + Ewha (Penley Chapel·Korea's #1 women's college 1886) + Hanyang (Han River view) + Konkuk (Ilgamho lake·6000+ intl students) + CAU Heukseok (film/theater #1) + Dongguk (Buddhist hanok) + Kookmin (Bukhansan nature) + Hongik (Korea's #1 art college) — foreign Instagram·K-drama hotspot deep dive",
     "en_available": false
+  },
+  {
+    "id": "205",
+    "slug": "seoul-parks",
+    "title_kr": "서울 공원 풀가이드",
+    "title_en": "Seoul Parks Full Guide",
+    "category": "B",
+    "tags": ["foreigner","seoul-parks","hangang-park","seoul-forest","olympic-park","childrens-grand-park","namsan","bukhansan","gwanaksan","seoul-botanic","dosan-park","family-friendly","cherry-blossom","autumn-foliage"],
+    "summary_kr": "한강 11개·도심 5대·자연 3대 국립공원 + 도심 정원 4선 — 여의도·반포·뚝섬·서울숲·올림픽공원·어린이대공원·양재 시민의숲·남산·북한산·관악산·서울식물원·도산공원·낙산공원·응봉산·청계천·인왕산 통합 deep dive",
+    "summary_en": "Korea's #1 park city deep dive — 11 Hangang Parks (Yeouido/Banpo/Ttukseom) + 5 urban parks (Seoul Forest/Olympic 1988/Children's Grand 1973 free zoo/Yangjae Citizens'/Seoseoul Lake) + 3 national parks (Namsan/Bukhansan 836m/Gwanaksan 632m) + Seoul Botanic Park (2019, Korea's largest) + Dosan Park + Naksan Park + Eungbongsan + Cheonggyecheon — family·cycling·BBQ·night view·spring blossom·autumn foliage",
+    "en_available": false
   }
 ]

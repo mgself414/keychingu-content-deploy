@@ -165,6 +165,10 @@
 
 - [Seoul University Campus Walk Guide](https://mgself414.github.io/keychingu-content-deploy/content/university-campus.html): Korea's top 12 university campuses for cherry blossom (April), autumn foliage (Oct-Nov), and walking — Kyung Hee (Korea's #1 most beautiful campus, neo-European architecture, Peace Hall) + Yonsei Baekyangno (cherry blossom main avenue) + Korea University Anam Central Plaza (Oxford-style) + Seoul National University (70万 평 Jahayeon lake, Buddleia field) + Sungkyunkwan (Joseon's #1 educational institution since 1398, Myeongnyundang/Daeseongjeon) + Ewha Womans (Penley Chapel, Korea's #1 women's college 1886) + Hanyang (Sasak Garden, Han River view) + Konkuk (Ilgamho lake, 6,000+ international students) + Chung-Ang Heukseok (film/theater #1) + Dongguk (Buddhist hanok, Namsan adjacent) + Kookmin (Bukhansan nature campus) + Hongik (Korea's #1 art college, Hongdae street origin) + 4 extra (Sogang/Sookmyung/HUFS/Myongji) — foreign Instagram·K-drama hotspot deep dive
 
+## Parks (Korea's #1 park city)
+
+- [Seoul Parks Full Guide](https://mgself414.github.io/keychingu-content-deploy/content/seoul-parks.html): Korea's #1 park city deep dive — 11 Hangang River Parks (Yeouido cherry blossom·Banpo Moonlight Rainbow Fountain·Ttukseom cycling/yacht/BBQ) + 5 urban parks (Seoul Forest 2005·Olympic Park 1988·Children's Grand Park 1973 Korea's #1 free urban zoo·Yangjae Citizens' Forest·Seoseoul Lake Park) + 3 national parks (Namsan 265m + N Seoul Tower·Bukhansan 836m·Gwanaksan 632m) + Seoul Botanic Park (2019 Korea's largest 50万 평) + Dosan Park (Gangnam, An Chang-ho memorial) + 4 extra (Naksan/Eungbongsan/Cheonggyecheon/Inwangsan) — family·cycling·BBQ·night view·spring blossom·autumn foliage 4-axis 12-pick
+
 ## Area Landing Pages (25 districts deep-dive)
 
 - [홍대·연남·합정·망원](https://mgself414.github.io/keychingu-content-deploy/areas/hongdae.html): 한국 MZ·인디 1번지 + 청춘 거리·라이브 클럽·연남 카페·합정 모던 다이닝·망원시장

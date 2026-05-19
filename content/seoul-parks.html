@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>서울 공원 풀가이드 — KeyChinGu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/main.css">
+<style>
+.detail-wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+}
+.breadcrumb {
+  font-size: 13px;
+  color: var(--text-soft);
+  margin-bottom: 24px;
+}
+.breadcrumb a { color: var(--red); font-weight: 600; }
+.detail-wrap h1 {
+  font-size: 28px; font-weight: 800;
+  color: var(--black); margin-bottom: 8px;
+}
+.detail-wrap h2 {
+  font-size: 22px; font-weight: 700;
+  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--red);
+}
+.detail-wrap h3 {
+  font-size: 17px; font-weight: 600;
+  color: var(--text-mid); margin-top: 20px; margin-bottom: 8px;
+}
+.detail-wrap p {
+  font-size: 15px; line-height: 1.7;
+  color: var(--text-mid); margin-bottom: 12px;
+}
+.detail-wrap ul {
+  padding-left: 20px; margin-bottom: 12px;
+}
+.detail-wrap li {
+  font-size: 14px; line-height: 1.6;
+  color: var(--text-mid); margin-bottom: 6px;
+}
+.detail-wrap table {
+  width: 100%; border-collapse: collapse;
+  margin-bottom: 16px; font-size: 13px;
+}
+.detail-wrap th {
+  background: var(--black); color: #fff;
+  padding: 10px 12px; text-align: left;
+  font-weight: 600; font-size: 11px;
+  text-transform: uppercase; letter-spacing: 0.06em;
+}
+.detail-wrap td {
+  padding: 10px 12px; border-bottom: 1px solid var(--border);
+  color: var(--text-mid);
+}
+.detail-wrap tr:nth-child(even) td { background: rgba(0,0,0,0.02); }
+.detail-wrap hr {
+  border: none; height: 1px;
+  background: var(--border); margin: 24px 0;
+}
+.detail-wrap code {
+  background: rgba(33,140,204,0.08);
+  padding: 2px 6px; border-radius: 4px;
+  font-size: 13px; color: var(--blue);
+}
+.detail-nav {
+  display: flex; justify-content: space-between;
+  margin-top: 48px; padding-top: 20px;
+  border-top: 1px solid var(--border);
+  font-size: 14px; font-weight: 600;
+}
+.share-bar {
+  display: flex; align-items: center; gap: 10px;
+  margin-top: 40px; padding: 16px 20px;
+  background: #f9f9f9; border-radius: 12px;
+  border: 1px solid var(--border);
+}
+.share-label {
+  font-size: 14px; font-weight: 600; color: var(--text-soft);
+  margin-right: 8px;
+}
+.share-btn {
+  width: 40px; height: 40px;
+  border: none; border-radius: 50%;
+  background: #fff; cursor: pointer;
+  font-size: 1.1rem; transition: all 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  display: inline-flex; align-items: center; justify-content: center;
+}
+.share-btn:hover { transform: translateY(-2px); box-shadow: 0 3px 8px rgba(0,0,0,0.15); }
+.share-twitter:hover { background: #000; color: #fff; }
+.share-facebook:hover { background: #1877f2; color: #fff; }
+.share-kakao:hover { background: #fee500; }
+.share-copy:hover { background: #218CCC; color: #fff; }
+/* EN toggle disabled — 영문판 미생성 콘텐츠 (2026-05-16 patch) */
+.lang-switch .lang-disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  text-decoration: line-through;
+  padding: 4px 10px;
+  color: var(--text-soft, #888);
+  font-size: 13px;
+  user-select: none;
+}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <div class="lang-switch">
+    <a href="../content/seoul-parks.html" class="active">KR</a>
+    <span class="lang-disabled" title="영문판 준비 중">EN</span>
+  </div>
+</header>
+
+<div class="detail-wrap">
+  <div class="breadcrumb"><a href="../index.html">전체 가이드</a> &rsaquo; 서울 공원 풀가이드</div>
+  <h1>서울 공원 풀가이드 — 한강·도심·자연 공원 12선 + 도심 정원 4선</h1>
+<p>&gt; <strong>부제</strong>: 11개 한강공원 + 서울숲·올림픽공원·어린이대공원·남산·북한산·관악산 + 서울식물원·도산공원·낙산공원 — 외국인 산책·소풍·자전거·가족 deep dive</p>
+<p>ISSUE 03 · #205 · 2026-05-19</p>
+<hr>
+<h2>🎯 왜 서울 공원 풀가이드인가</h2>
+<p>서울은 <strong>한강 11개 공원 + 도심 5대 공원 (서울숲·올림픽·어린이대공원·양재 시민의숲·서서울호수) + 3대 국립공원 (남산·북한산·관악산)</strong> 이 한 도시에 압축된 <strong>세계 1번지 공원 도시</strong>. 외국인 한국 vlog·인스타 1순위 콘텐츠 + 가족·자녀·MZ·등산 매니아 풀세트 demand.</p>
+<p>키친구 #06 한강 치맥·#146 러닝코스·#151 한강 캠핑·#169·#173·#178·#182·#183·#185 area별 분산 가이드 → <strong>공원 단독 통합 풀가이드</strong> (분산 콘텐츠 cross-reference). 봄 벚꽃(4월) + 여름 야간(6~8월) + 가을 단풍(10~11월) + 겨울 일루미네이션(12~2월) 4시즌 + K-drama·외국인 인스타 단골 무대.</p>
+<hr>
+<h2>★ 한눈에 12선</h2>
+<table><thead><tr>
+<th>#</th>
+<th>공원</th>
+<th>4축</th>
+<th>sub-카테고리</th>
+<th>시그니처</th>
+</tr></thead><tbody>
+<tr>
+<td>1</td>
+<td><strong>여의도 한강공원</strong></td>
+<td>한강</td>
+<td>한강·시민공원</td>
+<td>윤중로 벚꽃·달빛광장·이크루즈 (#169)</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>반포 한강공원</strong></td>
+<td>한강</td>
+<td>한강·시민공원</td>
+<td>잠수교·달빛무지개분수 기네스북 (#173)</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>뚝섬 한강공원</strong></td>
+<td>한강</td>
+<td>한강·시민공원</td>
+<td>자전거·요트·SUP·BBQ (#178)</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>서울숲</strong> (Seoul Forest)</td>
+<td>도심 큰 공원</td>
+<td>도시 숲</td>
+<td>한강+숲 동시·뚝섬 연결 (#01)</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>올림픽공원</strong></td>
+<td>도심 큰 공원</td>
+<td>올림픽 기념·산책</td>
+<td>1988 메인 스타디움·5km 산책 (#82·#183)</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>어린이대공원</strong></td>
+<td>도심 큰 공원</td>
+<td>동물원·놀이공원</td>
+<td>1973 한국 1번지 도심 동물원·무료 (#178)</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>양재 시민의숲</strong></td>
+<td>도심 큰 공원</td>
+<td>시민공원</td>
+<td>25만평 도심 숲·매헌 윤봉길 기념관 (#173)</td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>남산공원·N서울타워</strong></td>
+<td>자연·산</td>
+<td>도심 산·랜드마크</td>
+<td>한국 1번지 야경·둘레길 (#13)</td>
+</tr>
+<tr>
+<td>9</td>
+<td><strong>북한산국립공원</strong></td>
+<td>자연·산</td>
+<td>도심 국립공원</td>
+<td>836m 인수봉·백운대 (#182·#177)</td>
+</tr>
+<tr>
+<td>10</td>
+<td><strong>관악산국립공원</strong></td>
+<td>자연·산</td>
+<td>도심 국립공원</td>
+<td>632m 서울대 자락·연주암 (#174)</td>
+</tr>
+<tr>
+<td>11</td>
+<td><strong>서울식물원</strong> (Seoul Botanic Park)</td>
+<td>도심 정원</td>
+<td>식물원·테마</td>
+<td>2019 한국 최대 50만평 (#175)</td>
+</tr>
+<tr>
+<td>12</td>
+<td><strong>도산공원</strong> (Dosan Park)</td>
+<td>도심 정원</td>
+<td>도산 안창호 기념</td>
+<td>강남 1번지 정원·도산안창호기념관 (#142)</td>
+</tr>
+</tbody></table>
+<p><strong>+ 추가 도심 정원·체험 4선</strong>: 낙산공원·응봉산·청계천 공원·인왕산</p>
+<hr>
+<h2>⚠ 외국인이 자주 하는 실수 3가지</h2>
+<p>1. <strong>&quot;한강공원 = 다 같음&quot; — 11개 한강공원 개성 미인지</strong></p>
+<p>서울에는 <strong>11개 한강공원</strong> (여의도·반포·뚝섬·잠실·잠원·이촌·망원·난지·강서·양화·광나루·강북강변 등). 각 공원 개성 다름:</p>
+<ul>
+<li><strong>여의도</strong> = 윤중로 벚꽃·이크루즈·달빛광장 (도심·랜드마크)</li>
+<li><strong>반포</strong> = 잠수교·달빛무지개분수 (인스타·야경)</li>
+<li><strong>뚝섬</strong> = 자전거·요트·BBQ (액티비티)</li>
+<li><strong>잠실</strong> = 가족·올림픽파크 인접 (#82)</li>
+<li><strong>망원·난지</strong> = 한적·자연 (서울 서쪽)</li>
+<li><strong>광나루</strong> = 한강 자전거 동쪽 출발지 (#183)</li>
+</ul>
+<p>2. <strong>&quot;어린이대공원 = 아이용만&quot; — 한국 1번지 무료 도심 동물원 미인지</strong></p>
+<p>어린이대공원 (1973 박정희 대통령 지시 설립)은 <strong>한국 1번지 도심 동물원·놀이공원·식물원 (56만 평) 무료 입장</strong>. 외국인 자녀 동반 + 한국 전통 정원 + 가족 산책 1순위. 5호선 어린이대공원역 직결.</p>
+<p>3. <strong>&quot;3대 국립공원 = 등산만&quot;</strong></p>
+<p>북한산·관악산·남산은 등산 외 <strong>둘레길 (등산 초보·가족 OK)</strong> + <strong>사찰</strong> (북한산 진관사·관악산 연주암·남산 동국대) + <strong>외국인 photo spot 1순위</strong>. 등산 초보·가족도 OK.</p>
+<hr>
+<h2>① 한강공원 (3 + 8 보너스)</h2>
+<h3>1. 여의도 한강공원 ★ 윤중로 벚꽃·이크루즈</h3>
+<ul>
+<li>주소: 서울 영등포구 여의동로 330</li>
+<li>외국인 ★: ◎◎ — 봄 윤중로 벚꽃·이크루즈·달빛광장</li>
+<li>시그니처: 4월 첫째~둘째 주 윤중로 벚꽃 1순위·여의도 이크루즈·63 빌딩</li>
+<li>자세히: #169 여의도 가이드</li>
+</ul>
+<h3>2. 반포 한강공원 ★ 잠수교·달빛무지개분수</h3>
+<ul>
+<li>주소: 서울 서초구 신반포로11길 40</li>
+<li>외국인 ★: ◎◎ — 잠수교(한국 유일 단층 다리)·달빛무지개분수(기네스북 세계 최장 다리 분수)</li>
+<li>시즌: 4~10월 야간 분수쇼 20:00·20:20·20:40·21:00·21:20</li>
+<li>자세히: #173 서초·서래 가이드</li>
+</ul>
+<h3>3. 뚝섬 한강공원 ★ 자전거·요트·SUP·BBQ</h3>
+<ul>
+<li>주소: 서울 광진구 강변북로 139</li>
+<li>외국인 ★: ◎◎ — 한강 액티비티 1번지</li>
+<li>시그니처: 자전거 도로·요트/SUP 대여 (30,000~50,000원/시간)·바베큐 지정 구역</li>
+<li>자세히: #178 광진·건대 가이드</li>
+</ul>
+<h3>+ 보너스 8개 한강공원</h3>
+<ul>
+<li><strong>잠실 한강공원</strong> — 가족·올림픽파크 인접 (#82)</li>
+<li><strong>잠원 한강공원</strong> — 한강·자전거</li>
+<li><strong>이촌 한강공원</strong> — 용산구·신용산 (#187)</li>
+<li><strong>망원 한강공원</strong> — 한적·연남 인접 (#138 자매)</li>
+<li><strong>난지 한강공원</strong> — 자연·캠핑 (서울 서쪽)</li>
+<li><strong>강서 한강공원</strong> — 마곡 인접 (#175)</li>
+<li><strong>양화 한강공원</strong> — 합정 인접</li>
+<li><strong>광나루 한강공원</strong> — 강동·한강 동쪽 출발지 (#183)</li>
+</ul>
+<hr>
+<h2>② 도심 큰 공원 (4)</h2>
+<h3>4. 서울숲 (Seoul Forest) ★ 한강+숲 동시</h3>
+<ul>
+<li>주소: 서울 성동구 뚝섬로 273 (분당선 서울숲역·2호선 뚝섬역)</li>
+<li>카테고리: 도시 숲 공원 (2005 개장)</li>
+<li>외국인 ★: ◎◎ — 한국 1번지 도시 숲</li>
+<li>시그니처: 35만 평 + 사슴원·곤충원·생태숲 + 한강 인접 + 뚝섬 한강공원 연결</li>
+<li>왜: 한국 1번지 도시 숲 + 한강+숲+동물 통합. 외국인 가족·MZ 1순위.</li>
+<li>시즌: 봄 벚꽃·여름 사슴원·가을 단풍·겨울 일루미네이션</li>
+<li>자세히: #01 성수 자매</li>
+</ul>
+<h3>5. 올림픽공원 (Olympic Park) ★ 1988 메인 스타디움</h3>
+<ul>
+<li>주소: 서울 송파구 올림픽로 424 (5·9호선 올림픽공원역)</li>
+<li>카테고리: 올림픽 기념 공원 (1986 개장)</li>
+<li>외국인 ★: ◎◎ — 1988 서울 올림픽 메인 스타디움</li>
+<li>시그니처: 5km 산책로 + 호수·조각공원 + 88서울올림픽기념관 + 한국 1번지 콘서트장</li>
+<li>왜: 1988 한국 올림픽 deep dive + 가족·산책 1순위. 봄·가을 단풍 1순위.</li>
+<li>자세히: #82 잠실·#183 강동 자매</li>
+</ul>
+<h3>6. 어린이대공원 (Children&#x27;s Grand Park) ★ 한국 1번지 도심 동물원 (무료)</h3>
+<ul>
+<li>주소: 서울 광진구 능동로 216 (5호선 어린이대공원역)</li>
+<li>카테고리: 동물원·놀이공원·식물원 (1973 개장)</li>
+<li>외국인 ★: ◎◎ — 한국 1번지 도심 동물원 (무료)</li>
+<li>시그니처: <strong>56만 평 + 동물원·놀이공원·식물원 + 무료 입장 + 외국인 자녀 동반 1순위</strong></li>
+<li>왜: 1973 박정희 대통령 지시 설립 + 한국 1번지 무료 도심 동물원. 외국인 가족 핫.</li>
+<li>자세히: #178 광진·건대 자매</li>
+</ul>
+<h3>7. 양재 시민의숲 (Yangjae Citizens&#x27; Forest)</h3>
+<ul>
+<li>주소: 서울 서초구 양재대로 11 (9호선 매헌역)</li>
+<li>카테고리: 시민공원 (1986 조성)</li>
+<li>외국인 ★: ◎ — 외국인 가족 산책 1순위</li>
+<li>시그니처: 25만 평 + 매헌 윤봉길 의사 기념관 + 양재천 + 봄 벚꽃·가을 단풍</li>
+<li>자세히: #173 서초·서래 자매</li>
+</ul>
+<hr>
+<h2>③ 자연·산 국립공원 (3)</h2>
+<h3>8. 남산공원·N서울타워 (Namsan Park · N Seoul Tower)</h3>
+<ul>
+<li>주소: 서울 중구 남산공원길 (4호선 명동역·회현역)</li>
+<li>카테고리: 도심 산·랜드마크</li>
+<li>외국인 ★: ◎◎ — 한국 1번지 랜드마크</li>
+<li>시그니처: 265m 남산 + N서울타워 (1969) + 둘레길 + 야경 1번지</li>
+<li>왜: 한국 1번지 야경 + 외국인 인스타·K-drama 단골 무대. 등산 초보·가족 OK.</li>
+<li>자세히: #13 남산 둘레길 자매</li>
+</ul>
+<h3>9. 북한산국립공원 (Bukhansan National Park)</h3>
+<ul>
+<li>주소: 서울 은평구·강북구·도봉구 (3호선 구파발·6호선 불광·우이신설선 북한산우이)</li>
+<li>카테고리: 도심 국립공원 (1983 지정)</li>
+<li>외국인 ★: ◎◎ — 한국 1번지 도심 국립공원</li>
+<li>시그니처: 836m + 인수봉·백운대·만경대 + 북한산성 + 등산 매니아 1순위</li>
+<li>자세히: #182 은평·#177 노원·도봉 자매</li>
+</ul>
+<h3>10. 관악산국립공원 (Gwanaksan)</h3>
+<ul>
+<li>주소: 서울 관악구 관악산 (2호선 서울대입구역)</li>
+<li>카테고리: 도심 산 (서울대 자락)</li>
+<li>외국인 ★: ◎ — 서울대 자락 등산·하이킹 1번지</li>
+<li>시그니처: 632m + 연주암 (사찰) + 정상 전망대 + 서울 1번지 등산 코스</li>
+<li>자세히: #174 서울대·샤로수길 자매</li>
+</ul>
+<hr>
+<h2>④ 도심 정원·체험 (2 + 추가 4)</h2>
+<h3>11. 서울식물원 (Seoul Botanic Park) ★ 한국 최대 식물원</h3>
+<ul>
+<li>주소: 서울 강서구 마곡동로 161 (9호선·공항철도 마곡나루역)</li>
+<li>카테고리: 식물원·테마 공원 (2019 개장)</li>
+<li>외국인 ★: ◎◎ — 한국 최대 식물원</li>
+<li>시그니처: <strong>50만 평 + 5개 식물 박물관 통합 (열대·지중해·온실 등) + 호수정원 + 마곡 한강공원 연결</strong></li>
+<li>입장료: 5,000원 (식물원 본관) / 호수정원·산책로 무료</li>
+<li>시즌: 봄 벚꽃·여름 호수정원 야간·가을 단풍·겨울 온실</li>
+<li>자세히: #175 마곡·김포공항 자매</li>
+</ul>
+<h3>12. 도산공원 (Dosan Park) ★ 강남 1번지 정원</h3>
+<ul>
+<li>주소: 서울 강남구 도산대로45길 20 (3호선 압구정·신사역)</li>
+<li>카테고리: 도시 정원·역사 (1973 조성)</li>
+<li>외국인 ★: ◎ — 강남 1번지 정원</li>
+<li>시그니처: 도산 안창호 (대한민국 임시정부 1번지) 묘소·기념관 + 강남 도산공원길 카페·매장 거리</li>
+<li>왜: 강남 (#142) 럭셔리 + 도산 안창호 역사 + 외국인 인스타 1순위 강남 정원</li>
+<li>자세히: #142 강남 카페 자매</li>
+</ul>
+<h3>+ 추가 도심 정원·체험 4곳</h3>
+<p><strong>① 낙산공원·한양도성 (Naksan Park)</strong></p>
+<ul>
+<li>종로구 동숭동 (4호선 혜화역) — 한양도성 + 서울 야경 1순위 (#170 대학로·혜화)</li>
+</ul>
+<p><strong>② 응봉산 (Eungbongsan)</strong></p>
+<ul>
+<li>성동구 응봉동 — 한강 야경 1순위 (#51·#189 성동·왕십리)</li>
+</ul>
+<p><strong>③ 청계천 공원 (Cheonggyecheon)</strong></p>
+<ul>
+<li>종로·중구 (1·5호선 시청·종각·동대문) — 청계광장 → 동대문 5.8km 야간 산책 (#172 DDP·동대문)</li>
+</ul>
+<p><strong>④ 인왕산 (Inwangsan)</strong></p>
+<ul>
+<li>종로구 누상동 (3호선 경복궁역 도보 30분) — 338m 도심 산·한양도성 (#176 walkable Seoul)</li>
+</ul>
+<hr>
+<h2>⚙ FAQ 8개</h2>
+<p><strong>Q1. 한강공원 11곳 중 외국인 1순위?</strong></p>
+<p><strong>봄 4월</strong>: 여의도 (윤중로 벚꽃) / <strong>여름</strong>: 뚝섬 (액티비티·BBQ) / <strong>연중 야경</strong>: 반포 (잠수교·달빛무지개분수). 한 번에 추천 = <strong>뚝섬</strong> (다양성 최강).</p>
+<p><strong>Q2. 한강공원 자전거 어떻게?</strong></p>
+<p><strong>따릉이 (서울시 공공자전거)</strong> — 1시간 1,000원. <strong>광나루 → 잠실 → 뚝섬 → 반포 → 여의도 30km 코스 (한국 1번지 자전거 코스)</strong>. 외국인 신용카드 OK.</p>
+<p><strong>Q3. 한강 BBQ 지정 구역?</strong></p>
+<p><strong>뚝섬·반포·잠실·여의도 한강공원</strong> 일부 지정 구역. 사전 예약 (서울시 한강공원 홈페이지, 영문 OK). 1구역 30,000원/4인. 5~10월 1순위.</p>
+<p><strong>Q4. 어린이대공원 무료?</strong></p>
+<p><strong>무료 + 24시간</strong> (동물원 10:00~18:00). 외국인 자녀 동반 1순위. 5호선 어린이대공원역.</p>
+<p><strong>Q5. 서울숲 + 한강공원 동선?</strong></p>
+<p>서울숲 (분당선 서울숲역) → 도보 5분 → <strong>뚝섬 한강공원</strong>. 한국 1번지 &quot;숲 + 한강&quot; 결합 1순위 동선.</p>
+<p><strong>Q6. 북한산·관악산·남산 중 등산 초보?</strong></p>
+<p><strong>남산 (265m, 30분~1시간) → 관악산 둘레길 → 북한산 둘레길</strong>. 모두 둘레길은 등산 초보·가족 OK.</p>
+<p><strong>Q7. 봄 벚꽃 공원 TOP 3?</strong></p>
+<p><strong>1위 여의도 윤중로</strong> (#169) + <strong>2위 서울숲 봄꽃</strong> + <strong>3위 양재 시민의숲·반포 한강공원·올림픽공원</strong>. 4월 첫째~둘째 주 절정.</p>
+<p><strong>Q8. 가을 단풍 공원 TOP 3?</strong></p>
+<p><strong>1위 북한산 (836m·#182)</strong> + <strong>2위 올림픽공원 (#82)</strong> + <strong>3위 양재 시민의숲·관악산·남산</strong>. 10~11월 절정.</p>
+<hr>
+<h2>🗺 1일 코스 4개</h2>
+<h3>A. 한강 자전거 풀데이 (30km)</h3>
+<ul>
+<li><strong>09:00</strong> 광나루 한강공원 (#183) 따릉이 대여</li>
+<li><strong>11:00</strong> 잠실 한강공원 → 뚝섬 한강공원 (BBQ·요트)</li>
+<li><strong>14:00</strong> 반포 한강공원 (잠수교·달빛무지개분수)</li>
+<li><strong>17:00</strong> 여의도 한강공원 (윤중로·이크루즈)</li>
+<li><strong>20:00</strong> 반포 달빛무지개분수쇼 (4~10월)</li>
+</ul>
+<h3>B. 가족·자녀 동반 풀데이</h3>
+<ul>
+<li><strong>10:00</strong> 어린이대공원 (#178, 무료 동물원·놀이공원)</li>
+<li><strong>13:00</strong> 서울숲 (#01 사슴원·곤충원)</li>
+<li><strong>16:00</strong> 뚝섬 한강공원 자전거</li>
+<li><strong>18:30</strong> 한강 BBQ 또는 야경</li>
+</ul>
+<h3>C. 가을 단풍 풀데이 (10~11월)</h3>
+<ul>
+<li><strong>09:00</strong> 북한산 둘레길 (#182 은평 또는 #177 노원·도봉)</li>
+<li><strong>13:00</strong> 올림픽공원 (#82)</li>
+<li><strong>16:00</strong> 양재 시민의숲 (#173)</li>
+<li><strong>18:00</strong> 한강 야경 + 반포 분수쇼</li>
+</ul>
+<h3>D. 봄 벚꽃 풀데이 (4월)</h3>
+<ul>
+<li><strong>09:00</strong> 윤중로 벚꽃 (여의도 #169)</li>
+<li><strong>12:00</strong> 서울숲 봄꽃</li>
+<li><strong>14:30</strong> 양재 시민의숲 벚꽃</li>
+<li><strong>17:00</strong> 반포 한강공원 + 달빛무지개분수</li>
+</ul>
+<hr>
+<h2>🌸 시즌·시간대 훅 5개</h2>
+<ul>
+<li><strong>봄 4월 첫째~둘째 주</strong>: 윤중로 (여의도)·서울숲·양재 시민의숲·반포·올림픽·서울식물원·남산 (한국 1번지 벚꽃 cluster)</li>
+<li><strong>여름 6~8월</strong>: 뚝섬 한강 BBQ + 반포 달빛무지개분수 + 한강 야간 자전거</li>
+<li><strong>가을 10~11월</strong>: 북한산·관악산 단풍 + 올림픽공원·서울숲·양재 단풍</li>
+<li><strong>겨울 12~2월</strong>: 서울식물원 온실 (열대·지중해) + 서울숲 일루미네이션</li>
+<li><strong>연중</strong>: 어린이대공원 무료 동물원·N서울타워 야경·반포 야간 분수쇼</li>
+</ul>
+<hr>
+<h2>🔗 관련 콘텐츠</h2>
+<ul>
+<li><strong>이전 시리즈</strong>: #06 한강 치맥·#146 러닝코스·#147 야간 러닝·#149 자전거·#151 한강 캠핑·#02 무료 야경</li>
+<li><strong>area 짝</strong>: #169 여의도·#173 서초 반포·#178 광진 뚝섬·#01 성수 서울숲·#82 잠실 올림픽파크·#175 마곡 서울식물원·#142 강남 도산</li>
+<li><strong>자연·산 짝</strong>: #13 남산 둘레길·#148 등산 가이드·#177 노원·도봉·#182 은평·북한산·#174 서울대 관악산</li>
+<li><strong>시즌 짝</strong>: #89 가을 단풍·#90 겨울 일루미네이션·#44 한강 여름</li>
+</ul>
+<hr>
+<h2>📌 발행 메타</h2>
+<ul>
+<li><strong>카테고리</strong>: B (Nature / Park)</li>
+<li><strong>시리즈</strong>: ISSUE 03 · 자연·공원 deep dive</li>
+<li><strong>타겟</strong>: FIT·MZ·가족·자녀·자전거·등산·외국인 인스타</li>
+<li><strong>언어</strong>: KR (EN/CN/JP 번역 Phase 2 batch 예정)</li>
+</ul>
+<h2>🏷 태그</h2>
+<p><code>#서울공원</code> <code>#SeoulParks</code> <code>#한강공원11선</code> <code>#서울숲</code> <code>#올림픽공원</code> <code>#어린이대공원</code> <code>#양재시민의숲</code> <code>#남산공원</code> <code>#북한산국립공원</code> <code>#관악산</code> <code>#서울식물원</code> <code>#도산공원</code> <code>#낙산공원</code> <code>#응봉산야경</code> <code>#청계천</code> <code>#인왕산</code> <code>#봄벚꽃</code> <code>#가을단풍</code> <code>#한국1번지공원도시</code> <code>#키친구</code> <code>#KeyChinGu</code></p>
+
+  <div class="share-bar">
+    <span class="share-label">공유</span>
+    <button class="share-btn share-twitter" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent('서울 공원 풀가이드') + '&url=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Twitter">𝕏</button>
+    <button class="share-btn share-facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Facebook">f</button>
+    <button class="share-btn share-kakao" onclick="navigator.share ? navigator.share({title: '서울 공원 풀가이드', url: window.location.href}) : navigator.clipboard.writeText(window.location.href).then(function() { alert('링크 복사됨!'); })" aria-label="Kakao/Share">📤</button>
+    <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href).then(function() { this.textContent = '✓'; setTimeout(function() { document.querySelector('.share-copy').textContent = '🔗'; }, 1500); }.bind(this))" aria-label="Copy link">🔗</button>
+  </div>
+
+  <div class="detail-nav">
+    <div><a href="university-campus.html" style="color:var(--red);">&larr; 서울 대학 캠퍼스 산책 가이드</a></div>
+    <div></div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <p><a href="https://instagram.com/keychingu.korea" target="_blank">@keychingu.korea</a> &mdash; Seoul for MZ FIT Travelers</p>
+</footer>
+</body>
+</html>
