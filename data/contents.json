@@ -2222,6 +2222,17 @@
     "en_available": false
   },
   {
+    "id": "190",
+    "slug": "japan-tourist-essentials",
+    "title_kr": "일본 관광객 국룰 코스 — 도쿄 당일치기 12시간 풀가이드",
+    "title_en": "Japan Tourist Essentials — Tokyo Day-Trip Seoul Course",
+    "category": "A",
+    "tags": ["foreigner","japan","gukrul","day-trip","cafe-tour","london-bagel","myeongdong","gwangjang-market","k-beauty","lotte-mart"],
+    "summary_kr": "韓国弾丸ツアー(한국 총알 12시간 당일치기) — 안국 카페(런던베이글·어니언) + 명동 아침·쇼핑(이삭토스트·전복죽·올리브영 95%·다이소 12층·약국 19개 +142%) + 광장시장·성수 식도락(진옥화 닭한마리·마약김밥·꽈배기·능동 미나리) + 롯데마트 서울역 캐리어 쇼핑 — 4축 12 시그니처. 일본 재방문율 44.8% + 평균 7회 매니아용 segment-specific 메타 가이드.",
+    "summary_en": "Japan Tourist Essentials — 'Korea Bullet Trip' 12-hour day-trip + 1N2D standard course. Anguk cafe tour (London Bagel·Cafe Onion) + Myeongdong morning·shopping (Isaac Toast·abalone porridge·Olive Young Town 95% foreign sales·Daiso 12F·pharmacy district +142%) + Gwangjang Market + Seongsu Neungdong (minari + yukhoe) + Lotte Mart Seoul Station carrier shopping — 4-axis 12 signature picks. Japan segment 44.8% revisit + 7 avg visits, segment-specific meta guide.",
+    "en_available": false
+  },
+  {
     "id": "198",
     "slug": "challenge-food",
     "title_kr": "외국인 도전 음식 TOP 10",
