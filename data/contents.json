@@ -2660,5 +2660,115 @@
     "summary_kr": "부산 시리즈 ⑤ 영화 문화 12선 — 부산국제영화제 BIFF(아시아 1번지 1996·매년 10월)·영화의전당 Centum City(BIFF 본부+외부 LED 4000 m²)·BIFF 거리 남포동·부산 시네마 센터·해동용궁사(부산 1번지 바다 위 사찰)·기장 죽성성당·달맞이고개+청사포·송정·일광·임랑 외곽 해변·Centum City Shinsegae(기네스 세계 1번지 백화점 293,905 m²)",
     "summary_en": "Busan Series ⑤ BIFF & Film Culture 12-pick — Busan International Film Festival BIFF (Asia's #1 film festival since 1996, every October) + Busan Cinema Center Centum City (BIFF HQ + 4,000 m² outdoor LED) + BIFF Street Nampo-dong + Busan Cinema Center + Haedong Yonggungsa (Busan's #1 temple, sea-side temple foreigner instagram #1) + Gijang Jukseong Cathedral + Dalmaji-gogae + Cheongsapo + outskirts beaches (Songjeong/Ilgwang/Imrang) + Centum City Shinsegae (Guinness World Record largest department store 293,905 m²)",
     "en_available": false
+  },
+  {
+    "id": "248",
+    "slug": "foreigner-visa",
+    "title_kr": "외국인 비자 K-ETA 입국 풀가이드",
+    "title_en": "Korea Visa & K-ETA Full Guide",
+    "category": "H",
+    "tags": ["foreigner","visa","k-eta","visa-free","c-3-9","c-3-3","e-9","e-2","e-7","d-2","f-6","f-5","arc","hi-korea"],
+    "summary_kr": "외국인 inbound 1순위 페인포인트 비자 12선 — K-ETA(2021 무비자 외국인 필수)·무비자 90일·C-3-9 관광·C-3-3 의료·E-9 비전문 취업·E-2 회화 강사·E-7 전문·D-2 유학·F-6 결혼·F-5 영주·ARC 외국인 등록증",
+    "summary_en": "Korea Visa & K-ETA 12-pick — K-ETA (2021 mandatory pre-authorization for 112 visa-free countries, $10) + Visa-free 90 days + C-3-9 short-term + C-3-3 medical + E-9 + E-2 English teacher + E-7 specialist + D-2 student + D-10 job-seeker + F-6 marriage + F-5 PR + F-4 overseas Korean + ARC",
+    "en_available": false
+  },
+  {
+    "id": "249",
+    "slug": "foreigner-driving",
+    "title_kr": "외국인 운전 렌터카 풀가이드",
+    "title_en": "Korea Driving & Car Rental Full Guide",
+    "category": "H",
+    "tags": ["foreigner","driving","idp","car-rental","lotte-rental","sk-rental","aj-rental","car-insurance","ev-rental","jeju-rental","carsharing"],
+    "summary_kr": "외국인 외곽 1순위 페인포인트 운전·렌터카 12선 — IDP 국제운전면허증·외국인 한국 면허 전환·롯데렌터카(한국 #1 영문 OK)·SK·AJ·자동차 보험·도로교통법·제주 렌터카·강릉 렌터카·ev 렌터카(테슬라·기아 ev6)",
+    "summary_en": "Korea Driving 12-pick — IDP (1 year validity, carry with home license) + Korean license conversion + Lotte Rent-a-Car (Korea's #1 English-friendly) + SK + AJ + Car insurance mandatory + Korean road law + Jeju car rental #1 + Gangneung + EV rental (Tesla/Kia EV6) + Carsharing (SoCar/Greencar)",
+    "en_available": false
+  },
+  {
+    "id": "250",
+    "slug": "foreigner-sim",
+    "title_kr": "외국인 SIM eSIM WiFi 풀가이드",
+    "title_en": "Korea SIM eSIM WiFi Full Guide",
+    "category": "H",
+    "tags": ["foreigner","sim","esim","wifi","kt","skt","lg-uplus","airalo","holafly","pocket-wifi","kt-m-mobile","5g"],
+    "summary_kr": "외국인 첫 도착 30분 안에 해결 1순위 페인포인트 SIM·eSIM·WiFi 12선 — KT(한국 1번지)·SKT·LG U+ + KT M Mobile·alleysim + Airalo eSIM(글로벌 1번지)·Holafly + WiFi 도시락(1일 5000원·1주일 30000원)",
+    "summary_en": "Korea SIM/eSIM/WiFi 12-pick — KT + SKT + LG U+ + KT M Mobile (foreigner-friendly) + alleysim + Airalo eSIM ($4.5/1GB, $26/10GB) + Holafly eSIM + Pocket WiFi Egg (5K won/day) + Incheon Airport telecom counters + Free WiFi cafes",
+    "en_available": false
+  },
+  {
+    "id": "251",
+    "slug": "foreigner-emergency",
+    "title_kr": "외국인 응급의료 보험 풀가이드",
+    "title_en": "Korea Foreigner Emergency Medical Guide",
+    "category": "H",
+    "tags": ["foreigner","emergency","119","1339","1345","er","snu-hospital","samsung-er","asan-er","severance-er","pharmacy","travel-insurance"],
+    "summary_kr": "외국인 안전 1순위 응급의료·보험 12선 — 119(응급)·1339(의료 안내)·1345(외국인 종합) + 외국인 친화 ER(서울대·삼성·아산·세브란스) + 24h 약국 + 외국인 의료 보험 Travel Insurance + 의료 통역 (영·중·일·아랍·러시아)",
+    "summary_en": "Korea Foreigner Emergency 12-pick — 119 (emergency multilingual 24h) + 1339 (medical advice) + 1345 (foreigner help) + 112 (police) + Foreigner-friendly ERs (SNU/Samsung/Asan/Severance) + 24h pharmacies + Travel insurance + Medical interpretation in EN/CN/JP/Arabic/Russian",
+    "en_available": false
+  },
+  {
+    "id": "252",
+    "slug": "foreigner-life",
+    "title_kr": "외국인 거주 생활 풀가이드",
+    "title_en": "Korea Foreigner Living Full Guide",
+    "category": "H",
+    "tags": ["foreigner","living","itaewon","seorae-maeul","yeonnam","ichon","foreign-mart","sfs","sis","citibank","stanchart","long-stay"],
+    "summary_kr": "외국인 long-stay·거주 1번지 12선 — 이태원·한남·해방촌(#144)·서래마을(#173 프랑스인)·연남동·이촌 + 외국인 친화 아파트·마트(Foreign Mart)·학교(SFS 1912·SIS)·은행(Citibank·StanChart·하나·신한)·종교(영문 미사·이슬람·힌두)",
+    "summary_en": "Korea Foreigner Living 12-pick — Itaewon/Hannam/Haebangchon (Korea's #1 foreigner area) + Seorae Maeul (Korea's #1 French community) + Yeonnam + Ichon + Foreign Mart + Hannam Foreign Food + Seoul Foreign School (SFS since 1912) + SIS + Citibank/Standard Chartered + Multilingual religious services",
+    "en_available": false
+  },
+  {
+    "id": "253",
+    "slug": "jeju",
+    "title_kr": "제주 풀가이드",
+    "title_en": "Jeju Island Full Guide",
+    "category": "A",
+    "tags": ["foreigner","jeju","seongsan","hallasan","manjanggul","udo","seogwipo","jungmun","cheonjiyeon","haenyeo","dolharubang","heuk-dwaeji"],
+    "summary_kr": "한국 1번지 휴양 섬·유네스코 세계자연유산(2007) 12선 — 성산일출봉(유네스코)·한라산(1947m 한국 #1)·만장굴(7.4km)·우도(페리 15분)·서귀포+중문·천지연·해녀 박물관(유네스코 2016)·돌하르방·흑돼지·갈치조림·옥돔구이·한라봉·오설록·올레길(425km)",
+    "summary_en": "Jeju Island 12-pick — Seongsan Ilchulbong (UNESCO 2007, sunrise #1) + Hallasan (Korea's #1 mountain 1,947m) + Manjanggul (7.4km lava tube UNESCO) + Udo (15min ferry) + Seogwipo + Jungmun + Cheonjiyeon Falls + Haenyeo Museum (UNESCO Intangible 2016) + Dolharubang + heuk-dwaeji + galchi-jorim + Hallabong + Osulloc + Olle-gil (425km)",
+    "en_available": false
+  },
+  {
+    "id": "254",
+    "slug": "gangneung-pyeongchang",
+    "title_kr": "강릉 평창 풀가이드",
+    "title_en": "Gangneung & Pyeongchang Full Guide",
+    "category": "A",
+    "tags": ["foreigner","gangneung","pyeongchang","anmok-coffee","jeongdongjin","gyeongpo","yongpyong","high1","alpensia","odaesan","seoraksan","sokcho"],
+    "summary_kr": "한국 동해·스키 외국인 1번지 12선 — 강릉 안목 커피거리(한국 카페 1번지·테라로사 본점·보헤미안)·정동진 일출(한국 #1)·경포대 + 평창 용평·하이원·휘닉스·알펜시아 스키(2018 동계올림픽)·오대산 + 설악산(속초)·속초·양양 서핑",
+    "summary_en": "Gangneung & Pyeongchang 12-pick — Gangneung Anmok Coffee Street (Korea's #1 cafe district, Terarosa flagship + Bohemian) + Jeongdongjin (Korea's #1 sunrise) + Gyeongpo Beach + Yongpyong Resort (Korea's #1 ski) + High1 + Phoenix + Alpensia (2018 Winter Olympics) + Odaesan + Seoraksan + Sokcho + Yangyang surfing — KTX 1h40m",
+    "en_available": false
+  },
+  {
+    "id": "255",
+    "slug": "jeonju-hanok",
+    "title_kr": "전주 한옥마을 풀가이드",
+    "title_en": "Jeonju Hanok Village Full Guide",
+    "category": "A",
+    "tags": ["foreigner","jeonju","hanok-village","pungnammun","gyeonggijeon","jeondong-cathedral","hanbyeokdang","bibimbap","hanjeongsik","kongnamul-gukbap"],
+    "summary_kr": "한국 1번지 한옥·한식 외국인 매니아 12선 — 전주 한옥마을(700+ 한옥)·풍남문·경기전(태조 어진)·전동성당(1914)·한벽당·자만벽화마을 + 전주 비빔밥(유네스코 음식 창의도시 2012)·전주 한정식·콩나물국밥 현대옥 + 외국인 한옥스테이",
+    "summary_en": "Jeonju Hanok Village 12-pick — Jeonju Hanok Village (700+ hanoks, Korea's #1) + Pungnammun Gate + Gyeonggijeon (Joseon Taejo portrait) + Jeondong Cathedral (1914) + Hanbyeokdang + Jaman Mural Village + Jeonju bibimbap (UNESCO Creative City 2012, 32 traditional restaurants) + Jeonju hanjeongsik + Hyundaeok kongnamul-gukbap + Hanok stay",
+    "en_available": false
+  },
+  {
+    "id": "256",
+    "slug": "gyeongju",
+    "title_kr": "경주 풀가이드",
+    "title_en": "Gyeongju Full Guide",
+    "category": "A",
+    "tags": ["foreigner","gyeongju","bulguksa","seokguram","cheomseongdae","donggung-wolji","hwangnyongsa","daereungwon","yangdong-village","hwangnidan-gil","hwangnam-bread"],
+    "summary_kr": "신라 1000년 도성(BC 57~AD 935) 한국 유네스코 1번지 도시 12선 — 불국사·석굴암(유네스코 1995)·첨성대(세계 1번지 천문대 632)·동궁과월지(안압지 야경)·황룡사 9층 목탑 터·대릉원·천마총·양동민속마을(유네스코 2010)·황리단길·황남빵",
+    "summary_en": "Gyeongju 12-pick (Silla 1000-year capital BC57-AD935, Korea's #1 UNESCO city) — Bulguksa (UNESCO 1995, Silla 751) + Seokguram Grotto (UNESCO 1995) + Cheomseongdae (world's oldest astronomical observatory 632) + Donggung & Wolji (Anapji night view) + Hwangnyongsa pagoda site + Daereungwon + Cheonmachong + Yangdong Folk Village (UNESCO 2010) + Hwangnidan-gil + Hwangnam-bread",
+    "en_available": false
+  },
+  {
+    "id": "257",
+    "slug": "tongyeong-yeosu",
+    "title_kr": "통영 여수 남해안 풀가이드",
+    "title_en": "Tongyeong Yeosu South Coast Full Guide",
+    "category": "A",
+    "tags": ["foreigner","tongyeong","yeosu","namhae","geoje","jinju","dongpirang","yeosu-night-sea","daraengi","boriam","tongyeong-oyster"],
+    "summary_kr": "한국 남해 매니아 1번지 12선 — 통영 동피랑 벽화마을·통영 케이블카+미륵산 + 여수 밤바다(한국 #1)·돌산공원·여수 엑스포·해상 케이블카·오동도·향일암 + 남해 다랭이마을(계단식 논)·보리암·금산 + 거제 외도 + 진주성·진주 남강 야경 + 통영 굴·여수 갓김치·남해 멸치쌈밥",
+    "summary_en": "Tongyeong-Yeosu South Coast 12-pick — Tongyeong Dongpirang Mural Village (instagram #1) + Cable Car + Mireuksan + Jungang Market + Yeosu Night Sea (Korea's #1) + Dolsan Park + Yeosu Expo + Maritime Cable Car (2012) + Odongdo + Hyangiram + Namhae Daraengi (stepped rice paddies) + Boriam + Geumsan + Geoje Oedo + Jinjuseong + Jinju Namgang night view + Tongyeong oyster + Yeosu gat-kimchi + Namhae anchovy ssambap",
+    "en_available": false
   }
 ]
