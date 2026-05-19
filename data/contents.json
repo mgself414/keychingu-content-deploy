@@ -2473,5 +2473,60 @@
     "summary_kr": "한국 빈티지·중고 12선 + 동묘 구제(한국 1번지·#49)·광장 vintage 2층(#50)·연희동(티티에이·5GU·니바하우스·#156)·홍대·성수·이태원 LCT·익선동 한옥 + 알라딘 중고서점·번개장터·강남터미널 GOTO몰·가산 아울렛 (마리오 1995·롯데팩토리·W몰)",
     "summary_en": "Korea vintage & thrift 12-pick — Dongmyo flea market (Korea's #1 vintage since #49) + Gwangjang vintage 2F arcade (#50) + Yeonhui-dong vintage cluster (TTA/5GU/Niva House/#156) + Hongdae/Yeonnam + Seongsu + Itaewon LCT (Lost & Found) + Hannam + Ikseondong hanok vintage + Aladin used books + Bunjang/Junggonara apps + Gangnam Terminal GOTO Mall + Gasan outlets (Mario 1995·Lotte Factory·W-Mall)",
     "en_available": false
+  },
+  {
+    "id": "228",
+    "slug": "first-visit-7day",
+    "title_kr": "외국인 첫 방문 1주일 코스",
+    "title_en": "Korea First Visit 7-Day Itinerary",
+    "category": "H",
+    "tags": ["foreigner","first-visit","7-day-itinerary","onboarding","myeongdong","gangnam","hongdae","jamsil","palace","hangang","kpop"],
+    "summary_kr": "외국인 첫 방문자 1주일 풀세트 — Day1 도착·명동·N서울타워 → Day2 궁궐·한복·북촌 → Day3 홍대·연남·연희 → Day4 강남·K-pop·HYBE → Day5 잠실·롯데월드 → Day6 한강·노량진수산·도전음식 → Day7 면세·출국 + Variant 4 (K-pop·가족·음식·자연)",
+    "summary_en": "Korea 7-day itinerary for first-time visitors — Day1 Arrival/Myeongdong/N Seoul Tower → Day2 Palaces/Hanbok/Bukchon → Day3 Hongdae/Yeonnam/Yeonhui → Day4 Gangnam/K-pop/HYBE Insight → Day5 Jamsil/Lotte World → Day6 Hangang/Noryangjin Fish Market/challenge food → Day7 Duty-free/Departure + 4 variants (K-pop/family/food/nature)",
+    "en_available": false
+  },
+  {
+    "id": "229",
+    "slug": "autumn-foliage-full",
+    "title_kr": "가을 단풍 풀가이드",
+    "title_en": "Korea Autumn Foliage Full Guide",
+    "category": "B",
+    "tags": ["foreigner","autumn-foliage","bukhansan","gwanaksan","dobongsan","achasan","olympic-park","seoul-forest","yangjae","namsan","changdeokgung-secret-garden","jongmyo","naksan","eungbongsan","naejangsan","seoraksan"],
+    "summary_kr": "한국 가을 단풍 (10~11월) 풀세트 12선 + 산(북한산·관악·도봉·아차)·도심 공원(올림픽·서울숲·양재·남산)·궁궐(창덕궁 후원·종묘)·산 전망(낙산·인왕·응봉) + 외곽 4 (내장·설악·지리·오대) — #89 후속",
+    "summary_en": "Korea autumn foliage Oct-Nov 12-pick — mountains (Bukhansan/Gwanaksan/Dobongsan/Achasan) + urban parks (Olympic 1988/Seoul Forest/Yangjae/Namsan) + palaces UNESCO (Changdeokgung Secret Garden/Jongmyo) + viewpoints (Naksan/Inwangsan/Eungbongsan) + 4 outskirts (Naejangsan/Seoraksan/Jirisan/Odaesan) — #89 follow-up with timing chart",
+    "en_available": false
+  },
+  {
+    "id": "230",
+    "slug": "spring-cherry-blossom",
+    "title_kr": "봄 벚꽃 풀가이드",
+    "title_en": "Korea Spring Cherry Blossom Full Guide",
+    "category": "B",
+    "tags": ["foreigner","cherry-blossom","yunjung-ro","banpo","seoul-forest","olympic-park","kyung-hee","yonsei","korea-univ","ewha","changdeokgung","jinhae","gyeongju"],
+    "summary_kr": "한국 봄 벚꽃 (4월 첫째~둘째 주) 풀세트 12선 + 한강(윤중로·반포·서울숲·올림픽)·캠퍼스(경희·연세·고려·이화)·궁궐(창덕궁·창경궁)·도심(남산·국립서울현충원) + 외곽 4 (진해·경주·서울대공원·석촌호수)",
+    "summary_en": "Korea spring cherry blossom April 12-pick — Hangang (Yunjung-ro Yeouido 1.7km #1·Banpo·Seoul Forest·Olympic Park) + campuses (Kyung Hee Peace Hall·Yonsei Baekyangno·Korea U Central Plaza·Ewha Hangaram) + palaces UNESCO (Changdeokgung + Secret Garden·Changgyeonggung) + Namsan + Seoul National Cemetery (free) + 4 outskirts (Jinhae Yeojacheon Korea's #1·Gyeongju Bomun Lake UNESCO·Seoul Grand Park·Seokchon Lake)",
+    "en_available": false
+  },
+  {
+    "id": "231",
+    "slug": "winter-illumination-full",
+    "title_kr": "겨울 일루미네이션 축제",
+    "title_en": "Korea Winter Illumination & Festival",
+    "category": "B",
+    "tags": ["foreigner","winter","illumination","cheonggyecheon","lotte-world","ddp-led","seoul-botanic","n-seoul-tower","bosingak","seollal","dongji","ski","yongpyong","hi-one"],
+    "summary_kr": "한국 겨울 (12~2월) 풀세트 + 일루미네이션(청계천 빛초롱·롯데월드·DDP LED·서울숲·광화문 트리)·실내(서울식물원 온실·N서울타워·롯데타워)·전통(보신각 타종 12/31·설날·동지 팥죽)·외곽(용평·하이원 스키 강원) 12선 (#90 후속)",
+    "summary_en": "Korea winter Dec-Feb 12-pick — illuminations (Seoul Lantern Festival Cheonggyecheon Nov-Dec·Lotte World·DDP 45K LED·Seoul Forest·Gwanghwamun Christmas Tree) + indoors (Seoul Botanic Park greenhouses·N Seoul Tower·Lotte Tower Seoul Sky) + tradition (Bosingak Bell Tolling Dec 31 midnight·Seollal Lunar New Year tteokguk·Dongji red bean porridge Dec 22) + ski (Yongpyong/Hi-one/Gonjiam Gangwon) — #90 follow-up",
+    "en_available": false
+  },
+  {
+    "id": "232",
+    "slug": "family-kids-full",
+    "title_kr": "서울 가족 자녀 풀가이드",
+    "title_en": "Seoul with Kids Full Guide",
+    "category": "H",
+    "tags": ["foreigner","family-kids","lotte-world","childrens-grand-park","seoul-forest","seoul-botanic","yangjae","n-seoul-tower","63-aqua-planet","coex-aquarium","nmk-childrens-museum","stroller-rental"],
+    "summary_kr": "외국인 가족·자녀 풀세트 — 테마파크(롯데월드·어린이대공원 1973 무료)·도심 공원(서울숲 사슴원·서울식물원·양재)·랜드마크(N서울타워·63빌딩 아쿠아플라넷·롯데·COEX 아쿠아리움)·학습(NMK 어린이박물관·한글박물관)·액티비티(한강 가족 자전거 4인용) 12선",
+    "summary_en": "Seoul with kids 12-pick — theme parks (Lotte World + Tower #1·Children's Grand Park 1973 Korea's #1 FREE urban zoo) + urban parks (Seoul Forest deer/insect park·Seoul Botanic Park·Yangjae Citizens') + landmarks (N Seoul Tower + cable car·63 Building Aqua Planet·Lotte World Aquarium·COEX Aquarium + Starfield Library) + learning (NMK Children's Museum + Hangul Museum FREE) + Hangang family bike 4-person — stroller rental + family hotel recommendations",
+    "en_available": false
   }
 ]
