@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>한국 술 deep dive — KeyChinGu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/main.css">
+<style>
+.detail-wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+}
+.breadcrumb {
+  font-size: 13px;
+  color: var(--text-soft);
+  margin-bottom: 24px;
+}
+.breadcrumb a { color: var(--red); font-weight: 600; }
+.detail-wrap h1 {
+  font-size: 28px; font-weight: 800;
+  color: var(--black); margin-bottom: 8px;
+}
+.detail-wrap h2 {
+  font-size: 22px; font-weight: 700;
+  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--red);
+}
+.detail-wrap h3 {
+  font-size: 17px; font-weight: 600;
+  color: var(--text-mid); margin-top: 20px; margin-bottom: 8px;
+}
+.detail-wrap p {
+  font-size: 15px; line-height: 1.7;
+  color: var(--text-mid); margin-bottom: 12px;
+}
+.detail-wrap ul {
+  padding-left: 20px; margin-bottom: 12px;
+}
+.detail-wrap li {
+  font-size: 14px; line-height: 1.6;
+  color: var(--text-mid); margin-bottom: 6px;
+}
+.detail-wrap table {
+  width: 100%; border-collapse: collapse;
+  margin-bottom: 16px; font-size: 13px;
+}
+.detail-wrap th {
+  background: var(--black); color: #fff;
+  padding: 10px 12px; text-align: left;
+  font-weight: 600; font-size: 11px;
+  text-transform: uppercase; letter-spacing: 0.06em;
+}
+.detail-wrap td {
+  padding: 10px 12px; border-bottom: 1px solid var(--border);
+  color: var(--text-mid);
+}
+.detail-wrap tr:nth-child(even) td { background: rgba(0,0,0,0.02); }
+.detail-wrap hr {
+  border: none; height: 1px;
+  background: var(--border); margin: 24px 0;
+}
+.detail-wrap code {
+  background: rgba(33,140,204,0.08);
+  padding: 2px 6px; border-radius: 4px;
+  font-size: 13px; color: var(--blue);
+}
+.detail-nav {
+  display: flex; justify-content: space-between;
+  margin-top: 48px; padding-top: 20px;
+  border-top: 1px solid var(--border);
+  font-size: 14px; font-weight: 600;
+}
+.share-bar {
+  display: flex; align-items: center; gap: 10px;
+  margin-top: 40px; padding: 16px 20px;
+  background: #f9f9f9; border-radius: 12px;
+  border: 1px solid var(--border);
+}
+.share-label {
+  font-size: 14px; font-weight: 600; color: var(--text-soft);
+  margin-right: 8px;
+}
+.share-btn {
+  width: 40px; height: 40px;
+  border: none; border-radius: 50%;
+  background: #fff; cursor: pointer;
+  font-size: 1.1rem; transition: all 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  display: inline-flex; align-items: center; justify-content: center;
+}
+.share-btn:hover { transform: translateY(-2px); box-shadow: 0 3px 8px rgba(0,0,0,0.15); }
+.share-twitter:hover { background: #000; color: #fff; }
+.share-facebook:hover { background: #1877f2; color: #fff; }
+.share-kakao:hover { background: #fee500; }
+.share-copy:hover { background: #218CCC; color: #fff; }
+/* EN toggle disabled — 영문판 미생성 콘텐츠 (2026-05-16 patch) */
+.lang-switch .lang-disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  text-decoration: line-through;
+  padding: 4px 10px;
+  color: var(--text-soft, #888);
+  font-size: 13px;
+  user-select: none;
+}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <div class="lang-switch">
+    <a href="../content/korean-liquor.html" class="active">KR</a>
+    <span class="lang-disabled" title="영문판 준비 중">EN</span>
+  </div>
+</header>
+
+<div class="detail-wrap">
+  <div class="breadcrumb"><a href="../index.html">전체 가이드</a> &rsaquo; 한국 술 deep dive</div>
+  <h1>한국 술 deep dive — 막걸리·소주·청주·전통주·하이볼·수제 맥주</h1>
+<p>&gt; <strong>부제</strong>: 한국 술 풀세트 + 외국인 한국 술 문화 deep dive (#136 막걸리·전통주 후속)</p>
+<p>ISSUE 03 · #203 · 2026-05-19</p>
+<hr>
+<h2>🎯 왜 한국 술 deep dive 가이드인가</h2>
+<p>외국인 한국 술 문화 deep dive 1순위 — 막걸리·소주·청주·전통주·하이볼·수제 맥주·과일소주. #136 막걸리·전통주 외 <strong>한국 술 풀세트 deep dive 가이드</strong>.</p>
+<hr>
+<h2>★ 한눈에 12종</h2>
+<table><thead><tr>
+<th>#</th>
+<th>술</th>
+<th>도수</th>
+<th>시그니처</th>
+</tr></thead><tbody>
+<tr>
+<td>1</td>
+<td><strong>막걸리</strong> (Makgeolli)</td>
+<td>6~8%</td>
+<td>한국 1번지 전통주</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>소주</strong> (Soju)</td>
+<td>16~20%</td>
+<td>한국 1번지 증류주</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>청주</strong> (Cheongju, Sake-like)</td>
+<td>13~16%</td>
+<td>한국 정통 청주</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>과일소주</strong> (Fruit Soju)</td>
+<td>12~15%</td>
+<td>자몽·복숭아·딸기</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>참이슬·진로이즈백</strong> (Jinro)</td>
+<td>16~17%</td>
+<td>한국 1번지 소주 브랜드</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>카스·테라</strong> (Beer)</td>
+<td>4~5%</td>
+<td>한국 1번지 맥주</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>수제 맥주</strong> (Craft Beer)</td>
+<td>5~8%</td>
+<td>을지로·홍대 정통</td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>하이볼</strong> (Highball)</td>
+<td>7~9%</td>
+<td>한국 MZ 1순위</td>
+</tr>
+<tr>
+<td>9</td>
+<td><strong>막걸리·동동주</strong> (Dongdongju)</td>
+<td>6~8%</td>
+<td>막걸리 + 떠다니는 쌀알</td>
+</tr>
+<tr>
+<td>10</td>
+<td><strong>전통주</strong> (Korean Traditional)</td>
+<td>다양</td>
+<td>안동·문배·이화주</td>
+</tr>
+<tr>
+<td>11</td>
+<td><strong>소맥</strong> (Somaek, Soju+Beer)</td>
+<td>8~10%</td>
+<td>한국 1번지 술자리</td>
+</tr>
+<tr>
+<td>12</td>
+<td><strong>폭탄주</strong> (Pokjuju)</td>
+<td>다양</td>
+<td>한국 직장인 술자리</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>⚠ 외국인 자주 실수 3가지</h2>
+<p>1. <strong>&quot;막걸리 = 그냥 술&quot;</strong>: 막걸리는 <strong>한국 1번지 발효 술</strong> (쌀 + 누룩) — 6,000년 한국 술 역사 1번지. 외국인 도전 1순위.</p>
+<p>2. <strong>&quot;소주 = 보드카처럼&quot;</strong>: 소주 16~20% — 보드카(40%)보다 약하지만 <strong>3~4잔 = 보드카 1샷</strong>. 외국인 도전 시 단계적 소주잔 (50ml).</p>
+<p>3. <strong>&quot;한국 술 매너 = 다 같음&quot;</strong>: 한국 술 매너 풀세트 — <strong>두 손 따르기·받기</strong>·<strong>고개 돌려 마시기</strong>·<strong>어른 먼저</strong>·<strong>1잔 비우기</strong> (한국식)</p>
+<hr>
+<h2>① 막걸리 (Makgeolli)</h2>
+<ul>
+<li><strong>추천</strong>: 장수 막걸리·국순당·서울장수</li>
+<li><strong>가격</strong>: 4,000~12,000원/병 (750ml)</li>
+<li><strong>외국인 demand</strong>: K-drama·K-vlog 1순위 + 전통주 deep dive</li>
+</ul>
+<hr>
+<h2>② 소주 (Soju)</h2>
+<ul>
+<li><strong>추천</strong>: 참이슬·진로이즈백·처음처럼·좋은데이</li>
+<li><strong>가격</strong>: 1,500~4,000원/병</li>
+<li><strong>외국인 demand</strong>: 한국 1번지 증류주 + 외국인 vlog 1순위</li>
+</ul>
+<hr>
+<h2>③ 청주 (Cheongju, Sake-like)</h2>
+<ul>
+<li><strong>추천</strong>: 백화수복·청하·차례주</li>
+<li><strong>가격</strong>: 5,000~15,000원/병</li>
+<li><strong>외국인 demand</strong>: 한국 정통 청주 + 일본 사케 짝</li>
+</ul>
+<hr>
+<h2>④ 과일소주 (Fruit Soju) ★ 외국인 MZ 1순위</h2>
+<ul>
+<li><strong>종류</strong>: 자몽·복숭아·딸기·청포도·자두</li>
+<li><strong>가격</strong>: 1,500~3,500원/병</li>
+<li><strong>외국인 demand</strong>: 외국인 첫 한국 술 도전 1순위 (단맛 + 낮은 도수 체감)</li>
+</ul>
+<hr>
+<h2>⑤ 참이슬·진로이즈백</h2>
+<ul>
+<li><strong>참이슬 후레쉬</strong>: 일반 소주</li>
+<li><strong>진로이즈백</strong> (Jinro Is Back): 1970s 복각 + 외국인 vlog 1순위</li>
+<li><strong>가격</strong>: 1,500~2,500원/병</li>
+</ul>
+<hr>
+<h2>⑥ 카스·테라 (Beer)</h2>
+<ul>
+<li><strong>카스</strong>: 한국 1번지 맥주</li>
+<li><strong>테라</strong>: 진로 + 테라 페어링 (소맥)</li>
+<li><strong>가격</strong>: 2,500~5,000원/병</li>
+</ul>
+<hr>
+<h2>⑦ 수제 맥주 (Craft Beer)</h2>
+<ul>
+<li><strong>을지로</strong>: 더부스·미스터리 브로잉</li>
+<li><strong>홍대</strong>: 크래프트한스·갈매기 브루잉</li>
+<li><strong>가격</strong>: 7,000~12,000원/잔</li>
+</ul>
+<hr>
+<h2>⑧ 하이볼 (Highball) ★ MZ 1순위</h2>
+<ul>
+<li><strong>추천</strong>: 한국 모든 이자카야 + 다이닝</li>
+<li><strong>가격</strong>: 8,000~15,000원</li>
+<li><strong>외국인 demand</strong>: 일본식 하이볼 (위스키+소다) 한국 MZ 1순위</li>
+</ul>
+<hr>
+<h2>⑨ 동동주 (Dongdongju)</h2>
+<ul>
+<li><strong>시그니처</strong>: 막걸리 + 떠다니는 쌀알</li>
+<li><strong>가격</strong>: 6,000~15,000원/주전자</li>
+<li><strong>외국인 demand</strong>: 한국 정통 전통주 deep dive</li>
+</ul>
+<hr>
+<h2>⑩ 전통주 (Korean Traditional)</h2>
+<ul>
+<li><strong>안동소주·문배주·이화주·이강주</strong></li>
+<li><strong>시그니처</strong>: 한국 지역별 정통주 + 무형문화재</li>
+<li><strong>외국인 demand</strong>: 한국 술 매니아 deep dive</li>
+</ul>
+<hr>
+<h2>⑪ 소맥 (Somaek)</h2>
+<ul>
+<li><strong>시그니처</strong>: 소주 + 맥주 = 한국 1번지 술자리 칵테일</li>
+<li><strong>외국인 demand</strong>: 한국 직장인·MZ 1순위</li>
+<li><strong>만드는 법</strong>: 맥주잔에 소주 1/3 + 맥주 2/3 (한국식)</li>
+</ul>
+<hr>
+<h2>⑫ 폭탄주 (Pokjuju)</h2>
+<ul>
+<li><strong>시그니처</strong>: 한국 직장인 회식 + 술자리 도전</li>
+<li><strong>종류</strong>: 소맥 폭탄주 + 위스키 폭탄주</li>
+<li><strong>외국인 demand</strong>: 한국 술 문화 deep dive 1순위</li>
+</ul>
+<hr>
+<h2>⚙ FAQ 6개</h2>
+<p>1. <strong>외국인 첫 한국 술 추천</strong>: 과일소주 (자몽·복숭아) → 막걸리 → 소맥.</p>
+<p>2. <strong>한국 술 매너</strong>: 두 손 따르기·받기 / 고개 돌려 마시기 / 어른 먼저 / 1잔 비우기.</p>
+<p>3. <strong>막걸리 시장</strong>: 장수·국순당·서울장수 + 지역 정통 (안동·전주·부산).</p>
+<p>4. <strong>편의점 술 외국인 OK?</strong>: 24시간 + 영어 OK. 단 음주 가능 연령 만 19세 + 신분증.</p>
+<p>5. <strong>K-drama 술 무대</strong>: 사당역포차(#181)·홍대 술집(#140)·강남 술집(#166)·종로 술집(#163).</p>
+<p>6. <strong>전통주 매니아 매장</strong>: #136 막걸리·전통주·#163 종로 술집 (와인바) 참조.</p>
+<hr>
+<h2>🔗 관련</h2>
+<ul>
+<li>인접: #136 막걸리·전통주·#140 홍대 술집·#163 종로 술집·#166 강남 술집·#137 야장 10선</li>
+<li>area 짝: #181 사당역포차·#174 야장집 낙성대·#178 민지슈퍼 건대·#170 04판 대학로</li>
+</ul>
+<h2>🏷 태그</h2>
+<p><code>#한국술</code> <code>#KoreanLiquor</code> <code>#막걸리</code> <code>#소주</code> <code>#과일소주</code> <code>#하이볼</code> <code>#소맥</code> <code>#수제맥주</code> <code>#전통주</code> <code>#안동소주</code> <code>#키친구</code></p>
+
+  <div class="share-bar">
+    <span class="share-label">공유</span>
+    <button class="share-btn share-twitter" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent('한국 술 deep dive') + '&url=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Twitter">𝕏</button>
+    <button class="share-btn share-facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Facebook">f</button>
+    <button class="share-btn share-kakao" onclick="navigator.share ? navigator.share({title: '한국 술 deep dive', url: window.location.href}) : navigator.clipboard.writeText(window.location.href).then(function() { alert('링크 복사됨!'); })" aria-label="Kakao/Share">📤</button>
+    <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href).then(function() { this.textContent = '✓'; setTimeout(function() { document.querySelector('.share-copy').textContent = '🔗'; }, 1500); }.bind(this))" aria-label="Copy link">🔗</button>
+  </div>
+
+  <div class="detail-nav">
+    <div><a href="vegan-halal-expand.html" style="color:var(--red);">&larr; 한국 비건·할랄·글루텐 프리 확장</a></div>
+    <div></div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <p><a href="https://instagram.com/keychingu.korea" target="_blank">@keychingu.korea</a> &mdash; Seoul for MZ FIT Travelers</p>
+</footer>
+</body>
+</html>

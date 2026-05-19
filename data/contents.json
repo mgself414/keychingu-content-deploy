@@ -2220,5 +2220,71 @@
     "summary_kr": "왕십리역(한국 1번지 5중 환승 2·5·KTX·경의중앙선·수인분당선)+마장축산물시장(한국 1번지 정육 도매 1961)+응봉산 야경+옥수·금호 한강·한양대 4축 12선 — 키친구 최초 성동구 본 area 진입 (seongdong cluster 168건)",
     "summary_en": "Wangsimni Station (Korea's #1 quintuple transit: lines 2/5/KTX/Gyeongui/Suin-Bundang, KTX Gangneung origin) + Majang Livestock Market (Korea's #1 meat wholesale since 1961) + Eungbongsan night view + Oksu·Geumho Han River + Hanyang University 4-axis 12-pick — KeyChinGu first Seongdong main entry (168 cluster)",
     "en_available": false
+  },
+  {
+    "id": "198",
+    "slug": "challenge-food",
+    "title_kr": "외국인 도전 음식 TOP 10",
+    "title_en": "Korean Challenge Food TOP 10",
+    "category": "C",
+    "tags": ["foreigner","challenge-food","k-vlog","sannakji","beondegi","hongeo","gopchang","dakbal","golbaengi","haejangguk"],
+    "summary_kr": "외국인 K-vlog #1 한식 도전 — 산낙지·번데기·홍어·곱창·닭발·골뱅이·해장국·소피·홍합탕·돼지국밥 TOP 10 + 시그니처 매장",
+    "summary_en": "Korean K-vlog #1 challenge food — live octopus·beondegi·hongeo·gopchang·dakbal·golbaengi·haejangguk·blood soup·mussel soup·pork rice soup TOP 10 + signature shops",
+    "en_available": false
+  },
+  {
+    "id": "199",
+    "slug": "korean-bbq-full",
+    "title_kr": "한국식 BBQ 풀가이드",
+    "title_en": "Korean BBQ Full Guide",
+    "category": "C",
+    "tags": ["foreigner","korean-bbq","hanwoo","samgyeopsal","galbi","yangkkochi","gopchang","majang-market"],
+    "summary_kr": "한우(1++)·삼겹살·양념갈비·양꼬치·내장 BBQ 4축 12선 — 마장축산물시장 + 외국인 K-BBQ deep dive",
+    "summary_en": "Hanwoo (1++) · samgyeopsal · seasoned galbi · yangkkochi · intestines BBQ 4-axis 12-pick — Majang Livestock Market + foreigner K-BBQ deep dive",
+    "en_available": false
+  },
+  {
+    "id": "200",
+    "slug": "korean-soups",
+    "title_kr": "한국 국·탕·찌개 deep dive",
+    "title_en": "Korean Soups, Stews & Hot Pots",
+    "category": "C",
+    "tags": ["foreigner","korean-soups","kimchi-jjigae","doenjang","samgyetang","seolleongtang","budae-jjigae","yukgaejang","tteokguk"],
+    "summary_kr": "김치찌개·된장찌개·갈비탕·삼계탕·설렁탕·부대찌개·매운탕·순두부·육개장·떡국·콩나물국밥 12선 — 한국 정통 국물 음식 풀세트",
+    "summary_en": "Kimchi jjigae · doenjang jjigae · galbitang · samgyetang · seolleongtang · budae jjigae · spicy fish stew · sundubu · yukgaejang · tteokguk · kongnamul gukbap 12-pick — Korean traditional soups full set",
+    "en_available": false
+  },
+  {
+    "id": "201",
+    "slug": "spicy-challenge",
+    "title_kr": "한식 매운 음식 챌린지",
+    "title_en": "Korean Spicy Food Challenge",
+    "category": "C",
+    "tags": ["foreigner","spicy-challenge","buldak","k-vlog","tteokbokki","galbijjim","nakji","agujjim","mala-tang"],
+    "summary_kr": "외국인 K-vlog 매운맛 챌린지 12선 — 불닭볶음면·매운떡볶이·매운갈비찜·낙지볶음·아구찜·매운탕·매운닭발·고추잡채·매운짬뽕·매운골뱅이·육개장·마라탕",
+    "summary_en": "Foreigner K-vlog spicy challenge 12-pick — Buldak fire noodles · spicy tteokbokki · spicy galbijjim · stir-fried octopus · agujjim · spicy fish stew · fire chicken feet · gochu japchae · spicy jjamppong · spicy golbaengi · yukgaejang · mala tang",
+    "en_available": false
+  },
+  {
+    "id": "202",
+    "slug": "vegan-halal-expand",
+    "title_kr": "한국 비건·할랄·글루텐 프리 확장",
+    "title_en": "Korean Vegan Halal Gluten-Free Expansion",
+    "category": "C",
+    "tags": ["foreigner","vegan","halal","gluten-free","plant","jinkwansa-templestay","makan","loving-hut"],
+    "summary_kr": "#69 후속 — 비건(플랜트·러빙헛)·할랄(MAKAN·EID·터키 케밥)·글루텐프리(쌀국수·일식)·사찰음식(진관사) 12선 — 다문화 식단 풀세트",
+    "summary_en": "#69 follow-up — vegan (Plant·Loving Hut) · halal (MAKAN·EID·Turkish kebab) · gluten-free (Pho·sushi) · temple food (Jinkwansa) 12-pick — Korean diverse diet full set",
+    "en_available": false
+  },
+  {
+    "id": "203",
+    "slug": "korean-liquor",
+    "title_kr": "한국 술 deep dive",
+    "title_en": "Korean Liquor Deep Dive",
+    "category": "C",
+    "tags": ["foreigner","makgeolli","soju","cheongju","fruit-soju","craft-beer","highball","somaek","traditional-liquor"],
+    "summary_kr": "막걸리·소주·청주·과일소주·참이슬·카스/테라·수제맥주·하이볼·동동주·전통주(안동/문배)·소맥·폭탄주 12종 — 한국 술 문화 풀세트 (#136 후속)",
+    "summary_en": "Makgeolli·soju·cheongju·fruit soju·Jinro·Korean beer·craft beer·highball·dongdongju·traditional liquor·somaek·bomb shot 12 types — Korean drinking culture full set (#136 follow-up)",
+    "en_available": false
   }
 ]
