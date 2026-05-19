@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>청담동 럭셔리 단독 deep dive — KeyChinGu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/main.css">
+<style>
+.detail-wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+}
+.breadcrumb {
+  font-size: 13px;
+  color: var(--text-soft);
+  margin-bottom: 24px;
+}
+.breadcrumb a { color: var(--red); font-weight: 600; }
+.detail-wrap h1 {
+  font-size: 28px; font-weight: 800;
+  color: var(--black); margin-bottom: 8px;
+}
+.detail-wrap h2 {
+  font-size: 22px; font-weight: 700;
+  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--red);
+}
+.detail-wrap h3 {
+  font-size: 17px; font-weight: 600;
+  color: var(--text-mid); margin-top: 20px; margin-bottom: 8px;
+}
+.detail-wrap p {
+  font-size: 15px; line-height: 1.7;
+  color: var(--text-mid); margin-bottom: 12px;
+}
+.detail-wrap ul {
+  padding-left: 20px; margin-bottom: 12px;
+}
+.detail-wrap li {
+  font-size: 14px; line-height: 1.6;
+  color: var(--text-mid); margin-bottom: 6px;
+}
+.detail-wrap table {
+  width: 100%; border-collapse: collapse;
+  margin-bottom: 16px; font-size: 13px;
+}
+.detail-wrap th {
+  background: var(--black); color: #fff;
+  padding: 10px 12px; text-align: left;
+  font-weight: 600; font-size: 11px;
+  text-transform: uppercase; letter-spacing: 0.06em;
+}
+.detail-wrap td {
+  padding: 10px 12px; border-bottom: 1px solid var(--border);
+  color: var(--text-mid);
+}
+.detail-wrap tr:nth-child(even) td { background: rgba(0,0,0,0.02); }
+.detail-wrap hr {
+  border: none; height: 1px;
+  background: var(--border); margin: 24px 0;
+}
+.detail-wrap code {
+  background: rgba(33,140,204,0.08);
+  padding: 2px 6px; border-radius: 4px;
+  font-size: 13px; color: var(--blue);
+}
+.detail-nav {
+  display: flex; justify-content: space-between;
+  margin-top: 48px; padding-top: 20px;
+  border-top: 1px solid var(--border);
+  font-size: 14px; font-weight: 600;
+}
+.share-bar {
+  display: flex; align-items: center; gap: 10px;
+  margin-top: 40px; padding: 16px 20px;
+  background: #f9f9f9; border-radius: 12px;
+  border: 1px solid var(--border);
+}
+.share-label {
+  font-size: 14px; font-weight: 600; color: var(--text-soft);
+  margin-right: 8px;
+}
+.share-btn {
+  width: 40px; height: 40px;
+  border: none; border-radius: 50%;
+  background: #fff; cursor: pointer;
+  font-size: 1.1rem; transition: all 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  display: inline-flex; align-items: center; justify-content: center;
+}
+.share-btn:hover { transform: translateY(-2px); box-shadow: 0 3px 8px rgba(0,0,0,0.15); }
+.share-twitter:hover { background: #000; color: #fff; }
+.share-facebook:hover { background: #1877f2; color: #fff; }
+.share-kakao:hover { background: #fee500; }
+.share-copy:hover { background: #218CCC; color: #fff; }
+/* EN toggle disabled — 영문판 미생성 콘텐츠 (2026-05-16 patch) */
+.lang-switch .lang-disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  text-decoration: line-through;
+  padding: 4px 10px;
+  color: var(--text-soft, #888);
+  font-size: 13px;
+  user-select: none;
+}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <div class="lang-switch">
+    <a href="../content/cheongdam.html" class="active">KR</a>
+    <span class="lang-disabled" title="영문판 준비 중">EN</span>
+  </div>
+</header>
+
+<div class="detail-wrap">
+  <div class="breadcrumb"><a href="../index.html">전체 가이드</a> &rsaquo; 청담동 럭셔리 단독 deep dive</div>
+  <h1>청담동 럭셔리 단독 deep dive — 명품·웨딩·다이닝</h1>
+<p>&gt; <strong>부제</strong>: 청담·갤러리아·명품·웨딩·럭셔리 다이닝 풀세트</p>
+<p>ISSUE 03 · #296 · 2026-05-20</p>
+<hr>
+<h2>🎯 왜 청담동 럭셔리 단독인가</h2>
+<p>청담동 = <strong>한국 럭셔리 1번지</strong> (#142 강남 sub-area). 명품·웨딩·럭셔리 다이닝·K-Wedding 외국인 매니아.</p>
+<hr>
+<h2>★ 한눈에 12선</h2>
+<table><thead><tr>
+<th>#</th>
+<th>청담 spot</th>
+<th>4축</th>
+<th>시그니처</th>
+</tr></thead><tbody>
+<tr>
+<td>1</td>
+<td><strong>갤러리아 백화점 명품관</strong> ★ 한국 1번지 럭셔리</td>
+<td>청담 명품</td>
+<td>외국인 매니아</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>청담동 명품 거리 (루이비통·샤넬·구찌)</strong></td>
+<td>청담 명품</td>
+<td>외국인 매니아</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>청담동 면세점 (롯데·신라)</strong></td>
+<td>청담 명품</td>
+<td>외국인 환급</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>K-Wedding 스튜디오 (#261)</strong> ★ 한국 1번지</td>
+<td>청담 웨딩</td>
+<td>외국인 매니아</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>K-Beauty 청담 (#227)</strong></td>
+<td>청담 웨딩</td>
+<td>외국인 매니아</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>청담 성형외과 (#242)</strong></td>
+<td>청담 K-Medical</td>
+<td>K-Medical 1번지</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>밍글스 (Mingles) ★ 미슐랭 3 별</strong></td>
+<td>청담 다이닝</td>
+<td>외국인 럭셔리</td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>권숙수·코린·외국인 친화 미슐랭</strong></td>
+<td>청담 다이닝</td>
+<td>외국인 럭셔리</td>
+</tr>
+<tr>
+<td>9</td>
+<td><strong>청담 와인바·위스키 바</strong></td>
+<td>청담 다이닝</td>
+<td>외국인 매니아</td>
+</tr>
+<tr>
+<td>10</td>
+<td><strong>청담 부띠끄 카페</strong></td>
+<td>청담 매니아</td>
+<td>MZ + 외국인</td>
+</tr>
+<tr>
+<td>11</td>
+<td><strong>청담 럭셔리 호텔 (인터컨티넨탈·노보텔)</strong></td>
+<td>청담 매니아</td>
+<td>외국인 매니아</td>
+</tr>
+<tr>
+<td>12</td>
+<td><strong>청담 외국인 럭셔리 vlog</strong></td>
+<td>매니아 culture</td>
+<td>YouTube 외국인 1번지</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>⚠ 외국인 자주 실수 3가지</h2>
+<p>1. <strong>&quot;청담 = 강남 = 같음&quot;</strong>: 청담동 = <strong>한국 럭셔리 1번지</strong> (#142 강남 sub-area).</p>
+<p>2. <strong>&quot;청담 다이닝 = 어디나&quot;</strong>: 밍글스 미슐랭 3별·권숙수 등 = <strong>외국인 럭셔리 매니아 1번지</strong>.</p>
+<p>3. <strong>&quot;청담 K-Wedding = 한국인만&quot;</strong>: 청담 K-Wedding 스튜디오 = <strong>외국인 셀프 웨딩 1번지</strong>.</p>
+<hr>
+<h2>⚙ FAQ 4개</h2>
+<p>1. <strong>외국인 청담 1순위</strong>: 갤러리아·명품 거리·밍글스·K-Wedding.</p>
+<p>2. <strong>외국인 청담 럭셔리</strong>: 밍글스·권숙수·럭셔리 호텔.</p>
+<p>3. <strong>외국인 청담 신혼 (#277)</strong>: K-Wedding + 다이닝 풀세트.</p>
+<p>4. <strong>외국인 청담 1박</strong>: 인터컨티넨탈 + 외국인 매니아.</p>
+<hr>
+<h2>🔗 관련</h2>
+<ul>
+<li>#142 강남·#234 한정식·#227 K-beauty·#242 K-Medical·#261 K-Wedding·#277 신혼·#260 루프탑·#283 골목</li>
+</ul>
+<h2>🏷 태그</h2>
+<p><code>#청담동럭셔리단독deepdive</code> <code>#CheongdamLuxury</code> <code>#갤러리아명품관</code> <code>#청담명품거리루이비통샤넬</code> <code>#KWedding청담스튜디오</code> <code>#청담K-Beauty성형외과</code> <code>#밍글스미슐랭3별</code> <code>#키친구</code></p>
+
+  <div class="share-bar">
+    <span class="share-label">공유</span>
+    <button class="share-btn share-twitter" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent('청담동 럭셔리 단독 deep dive') + '&url=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Twitter">𝕏</button>
+    <button class="share-btn share-facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Facebook">f</button>
+    <button class="share-btn share-kakao" onclick="navigator.share ? navigator.share({title: '청담동 럭셔리 단독 deep dive', url: window.location.href}) : navigator.clipboard.writeText(window.location.href).then(function() { alert('링크 복사됨!'); })" aria-label="Kakao/Share">📤</button>
+    <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href).then(function() { this.textContent = '✓'; setTimeout(function() { document.querySelector('.share-copy').textContent = '🔗'; }, 1500); }.bind(this))" aria-label="Copy link">🔗</button>
+  </div>
+
+  <div class="detail-nav">
+    <div><a href="garosugil.html" style="color:var(--red);">&larr; 가로수길 신사 단독 deep dive</a></div>
+    <div><a href="insadong.html" style="color:var(--red);">인사동 전통 단독 deep dive &rarr;</a></div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <p><a href="https://instagram.com/keychingu.korea" target="_blank">@keychingu.korea</a> &mdash; Seoul for MZ FIT Travelers</p>
+</footer>
+</body>
+</html>
