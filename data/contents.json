@@ -2308,5 +2308,38 @@
     "summary_kr": "한강 11개·도심 5대·자연 3대 국립공원 + 도심 정원 4선 — 여의도·반포·뚝섬·서울숲·올림픽공원·어린이대공원·양재 시민의숲·남산·북한산·관악산·서울식물원·도산공원·낙산공원·응봉산·청계천·인왕산 통합 deep dive",
     "summary_en": "Korea's #1 park city deep dive — 11 Hangang Parks (Yeouido/Banpo/Ttukseom) + 5 urban parks (Seoul Forest/Olympic 1988/Children's Grand 1973 free zoo/Yangjae Citizens'/Seoseoul Lake) + 3 national parks (Namsan/Bukhansan 836m/Gwanaksan 632m) + Seoul Botanic Park (2019, Korea's largest) + Dosan Park + Naksan Park + Eungbongsan + Cheonggyecheon — family·cycling·BBQ·night view·spring blossom·autumn foliage",
     "en_available": false
+  },
+  {
+    "id": "206",
+    "slug": "museum-art",
+    "title_kr": "한국 박물관·미술관 풀가이드",
+    "title_en": "Korea Museums & Art Galleries Full Guide",
+    "category": "D",
+    "tags": ["foreigner","museum","art-gallery","nmk","mmca","leeum","ddp-design","war-memorial","ewha-100","sema","free-entry"],
+    "summary_kr": "국립중앙박물관·국립민속박물관·국립한글박물관·한가람미술관·국립현대미술관·서울시립미술관·한성백제박물관·이화100주년기념박물관·서울역사박물관·DDP 디자인박물관·전쟁기념관·삼성미술관 리움 12선 + 추가 4 — 한국 1번지 박물관·미술관 통합 deep dive",
+    "summary_en": "Korea's top 12 museums & art galleries — National Museum of Korea (Asia's #1, 700K artifacts) + National Folk Museum + National Hangul Museum + Hangaram Art Museum + MMCA (National Modern Art) + SeMA + Hanseong Baekje Museum + Ewha 100 Memorial + Seoul Museum of History + DDP Design Museum (Zaha Hadid) + War Memorial of Korea + Leeum Samsung (Botta/Nouvel/Koolhaas) — most free entry, English docent available",
+    "en_available": false
+  },
+  {
+    "id": "207",
+    "slug": "temple-heritage",
+    "title_kr": "한국 사찰·전통 건축 풀가이드",
+    "title_en": "Korea Temples & Heritage Architecture",
+    "category": "D",
+    "tags": ["foreigner","temple","palace","heritage","unesco","jinkwansa","bongeunsa","jogyesa","gyeongbokgung","changdeokgung","jongmyo","sungkyunkwan","hanbok","templestay"],
+    "summary_kr": "한국 5대 사찰(진관사·봉은사·길상사)+도심 사찰(조계사·청룡사·도선사)+조선 4대 궁궐(경복궁·창덕궁·창경궁·덕수궁)+전통 교육·문화재(종묘·성균관) 12선 + 한옥·문화재 4 — 한국 1번지 전통 건축 통합 deep dive (한복 입으면 궁궐 무료)",
+    "summary_en": "Korea's traditional architecture deep dive — 3 major temples (Jinkwansa 1018/Bongeunsa 794/Gilsangsa 1997) + 3 urban temples (Jogyesa·Cheongryongsa·Doseonsa) + 4 Joseon palaces (Gyeongbokgung 1395·Changdeokgung 1405 UNESCO·Changgyeonggung·Deoksugung Daehan Empire) + Jongmyo (UNESCO 1995) + Sungkyunkwan (Joseon's #1 educational institution since 1398) + hanok villages — free entry with hanbok rental",
+    "en_available": false
+  },
+  {
+    "id": "208",
+    "slug": "korean-markets",
+    "title_kr": "한국 시장 풀가이드",
+    "title_en": "Korea Traditional Markets Full Guide",
+    "category": "F",
+    "tags": ["foreigner","markets","gwangjang","noryangjin-fish","dongdaemun","pyeonghwa","majang-livestock","garak","tongin","mangwon","myeonmok-urim","night-market","wholesale","hidden-gem"],
+    "summary_kr": "광장(외국인#1)·노량진수산(K-vlog#1)·동대문 종합·평화시장(의류 도매 1962)·마장축산(정육 도매 1961)·가락농수산·통인(도시락 통인)·망원·면목 우림·동대문 야시장·DDP청춘런웨이·서울풍물시장 12선 + 동묘·광장 vintage·연남·암사 4 — 한국 1번지 시장 도시 통합 deep dive",
+    "summary_en": "Korea's top 12 traditional markets — Gwangjang (foreigner #1, 1905) + Noryangjin Fish Market (K-vlog #1, 1971) + Dongdaemun General (1959) + Pyeonghwa Market (wholesale clothing #1, 1962) + Majang Livestock (meat wholesale #1, 1961) + Garak Agricultural + Tongin (dosirak 5000won) + Mangwon + Myeonmok Urim + Dongdaemun Night Market + DDP Cheong-chun Runway + Seoul Folk Flea Market — Korea's #1 market city deep dive",
+    "en_available": false
   }
 ]

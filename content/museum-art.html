@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>한국 박물관·미술관 풀가이드 — KeyChinGu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/main.css">
+<style>
+.detail-wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+}
+.breadcrumb {
+  font-size: 13px;
+  color: var(--text-soft);
+  margin-bottom: 24px;
+}
+.breadcrumb a { color: var(--red); font-weight: 600; }
+.detail-wrap h1 {
+  font-size: 28px; font-weight: 800;
+  color: var(--black); margin-bottom: 8px;
+}
+.detail-wrap h2 {
+  font-size: 22px; font-weight: 700;
+  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--red);
+}
+.detail-wrap h3 {
+  font-size: 17px; font-weight: 600;
+  color: var(--text-mid); margin-top: 20px; margin-bottom: 8px;
+}
+.detail-wrap p {
+  font-size: 15px; line-height: 1.7;
+  color: var(--text-mid); margin-bottom: 12px;
+}
+.detail-wrap ul {
+  padding-left: 20px; margin-bottom: 12px;
+}
+.detail-wrap li {
+  font-size: 14px; line-height: 1.6;
+  color: var(--text-mid); margin-bottom: 6px;
+}
+.detail-wrap table {
+  width: 100%; border-collapse: collapse;
+  margin-bottom: 16px; font-size: 13px;
+}
+.detail-wrap th {
+  background: var(--black); color: #fff;
+  padding: 10px 12px; text-align: left;
+  font-weight: 600; font-size: 11px;
+  text-transform: uppercase; letter-spacing: 0.06em;
+}
+.detail-wrap td {
+  padding: 10px 12px; border-bottom: 1px solid var(--border);
+  color: var(--text-mid);
+}
+.detail-wrap tr:nth-child(even) td { background: rgba(0,0,0,0.02); }
+.detail-wrap hr {
+  border: none; height: 1px;
+  background: var(--border); margin: 24px 0;
+}
+.detail-wrap code {
+  background: rgba(33,140,204,0.08);
+  padding: 2px 6px; border-radius: 4px;
+  font-size: 13px; color: var(--blue);
+}
+.detail-nav {
+  display: flex; justify-content: space-between;
+  margin-top: 48px; padding-top: 20px;
+  border-top: 1px solid var(--border);
+  font-size: 14px; font-weight: 600;
+}
+.share-bar {
+  display: flex; align-items: center; gap: 10px;
+  margin-top: 40px; padding: 16px 20px;
+  background: #f9f9f9; border-radius: 12px;
+  border: 1px solid var(--border);
+}
+.share-label {
+  font-size: 14px; font-weight: 600; color: var(--text-soft);
+  margin-right: 8px;
+}
+.share-btn {
+  width: 40px; height: 40px;
+  border: none; border-radius: 50%;
+  background: #fff; cursor: pointer;
+  font-size: 1.1rem; transition: all 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  display: inline-flex; align-items: center; justify-content: center;
+}
+.share-btn:hover { transform: translateY(-2px); box-shadow: 0 3px 8px rgba(0,0,0,0.15); }
+.share-twitter:hover { background: #000; color: #fff; }
+.share-facebook:hover { background: #1877f2; color: #fff; }
+.share-kakao:hover { background: #fee500; }
+.share-copy:hover { background: #218CCC; color: #fff; }
+/* EN toggle disabled — 영문판 미생성 콘텐츠 (2026-05-16 patch) */
+.lang-switch .lang-disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  text-decoration: line-through;
+  padding: 4px 10px;
+  color: var(--text-soft, #888);
+  font-size: 13px;
+  user-select: none;
+}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <div class="lang-switch">
+    <a href="../content/museum-art.html" class="active">KR</a>
+    <span class="lang-disabled" title="영문판 준비 중">EN</span>
+  </div>
+</header>
+
+<div class="detail-wrap">
+  <div class="breadcrumb"><a href="../index.html">전체 가이드</a> &rsaquo; 한국 박물관·미술관 풀가이드</div>
+  <h1>한국 박물관·미술관 풀가이드 — 12선 + 디자인·테마 4선</h1>
+<p>&gt; <strong>부제</strong>: 국립중앙박물관·국립민속박물관·한가람미술관·국립현대미술관·DDP·전쟁기념관·이화100주년기념박물관·삼성미술관 리움 — 한국 1번지 박물관·미술관 통합 deep dive</p>
+<p>ISSUE 03 · #206 · 2026-05-19</p>
+<hr>
+<h2>🎯 왜 한국 박물관·미술관 풀가이드인가</h2>
+<p>서울은 <strong>국립 박물관·미술관 + 도심 분관 + 전문 미술관·기념관</strong>이 한 도시에 압축된 한국 1번지 문화 도시. 외국인 한국 역사·예술·디자인 deep dive 1순위. #142 강남(도산공원·삼성미술관 리움)·#144 이태원(LCT)·#171 신촌·이화100주년기념박물관·#172 DDP·#173 서초·한가람미술관·#174 서울대 박물관·#181 동작·현충원·#183 강동·풍납토성·한성백제박물관·#187 용산·국립중앙박물관 area별 분산 → <strong>통합 풀가이드</strong> (외국인 영문 안내 + 대부분 무료).</p>
+<hr>
+<h2>★ 한눈에 12선</h2>
+<table><thead><tr>
+<th>#</th>
+<th>박물관·미술관</th>
+<th>4축</th>
+<th>시그니처</th>
+</tr></thead><tbody>
+<tr>
+<td>1</td>
+<td><strong>국립중앙박물관</strong> (NMK) ★ 한국 1번지</td>
+<td>국립 박물관</td>
+<td>용산 70만점 (#187)</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>국립민속박물관</strong></td>
+<td>국립 박물관</td>
+<td>경복궁 내·한국 전통 생활</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>국립한글박물관</strong></td>
+<td>국립 박물관</td>
+<td>한글 1번지·NMK 인접 (#187)</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>한가람미술관</strong> (예술의전당)</td>
+<td>미술관</td>
+<td>서초·기획 전시 1번지 (#173)</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>국립현대미술관</strong> (MMCA)</td>
+<td>미술관</td>
+<td>종로 서울관·과천·덕수궁</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>서울시립미술관</strong> (SeMA)</td>
+<td>미술관</td>
+<td>시청 본관·도심 1번지</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>한성백제박물관</strong></td>
+<td>역사·고궁</td>
+<td>송파 백제 한성 (#183)</td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>이화 100주년기념박물관</strong></td>
+<td>역사·고궁</td>
+<td>이화여대·한국 여성사 1번지 (#171)</td>
+</tr>
+<tr>
+<td>9</td>
+<td><strong>서울역사박물관</strong></td>
+<td>역사·고궁</td>
+<td>광화문·한양·서울 600년사</td>
+</tr>
+<tr>
+<td>10</td>
+<td><strong>DDP 디자인박물관</strong></td>
+<td>디자인·테마</td>
+<td>Zaha Hadid·한국 디자인 1번지 (#172)</td>
+</tr>
+<tr>
+<td>11</td>
+<td><strong>전쟁기념관</strong></td>
+<td>디자인·테마</td>
+<td>용산·한국 전쟁 1번지 (#187)</td>
+</tr>
+<tr>
+<td>12</td>
+<td><strong>삼성미술관 리움 (Leeum)</strong></td>
+<td>디자인·테마</td>
+<td>한남·한국 1번지 사립 미술관 (#144)</td>
+</tr>
+</tbody></table>
+<p><strong>+ 추가 4선</strong>: 서울대 박물관 (#174)·서울시립 남서울미술관 (#174)·호암미술관·디뮤지엄 (#01)</p>
+<hr>
+<h2>⚠ 외국인 자주 실수 3가지</h2>
+<p>1. <strong>&quot;박물관 = 비싸고 한국어만&quot;</strong>: 국립 박물관·미술관 <strong>대부분 무료 + 영문 안내 + 영어 도슨트 투어</strong> OK. 입장료는 기획 전시만 (5,000~15,000원).</p>
+<p>2. <strong>&quot;국립중앙박물관 = 그냥 박물관&quot;</strong>: NMK는 <strong>세계 5위·아시아 1위 박물관 (70만점 수장품)</strong> + 용산공원 인접 + 무료 입장. 한국 역사 전체 deep dive 1순위.</p>
+<p>3. <strong>&quot;DDP 박물관 = DDP 본관만&quot;</strong>: DDP는 <strong>자하 하디드 설계 건축 자체가 박물관</strong> + <strong>동대문운동장 유적</strong> (조선시대~일제·해방기 한국 산업화 유적) + 청춘런웨이마켓. 디자인·역사 결합 deep dive.</p>
+<hr>
+<h2>① 국립 박물관 (3)</h2>
+<h3>1. 국립중앙박물관 (National Museum of Korea) ★ 한국 1번지</h3>
+<ul>
+<li>주소: 용산구 서빙고로 137 (4호선 이촌역)</li>
+<li>외국인 ★: ◎◎ — <strong>세계 5위·아시아 1위 박물관</strong></li>
+<li>시그니처: 70만점 수장품 + 한국사 전체 + 영문 도슨트</li>
+<li>입장료: <strong>무료</strong> (기획 전시 별도)</li>
+<li>시간: 10:00~18:00 (수·토 21:00까지)</li>
+<li>자세히: #187 용산 자매</li>
+</ul>
+<h3>2. 국립민속박물관 (National Folk Museum)</h3>
+<ul>
+<li>주소: 종로구 삼청로 37 경복궁 내</li>
+<li>외국인 ★: ◎ — 한국 전통 생활·민속 1번지</li>
+<li>시그니처: 한국 전통 의복·도구·민속놀이 + 경복궁 결합</li>
+<li>입장료: <strong>무료</strong> + 경복궁 입장료 (3,000원)</li>
+</ul>
+<h3>3. 국립한글박물관 (National Hangul Museum)</h3>
+<ul>
+<li>주소: 용산구 서빙고로 139 (NMK 인접)</li>
+<li>외국인 ★: ◎◎ — 한글 deep dive 1번지</li>
+<li>시그니처: 한글 창제 (1443 세종대왕)·한글 디자인·발전사</li>
+<li>입장료: <strong>무료</strong> + NMK 결합 1일 코스</li>
+</ul>
+<hr>
+<h2>② 미술관 (3)</h2>
+<h3>4. 한가람미술관 (Hangaram Art Museum) ★ 기획 전시 1번지</h3>
+<ul>
+<li>주소: 서초구 남부순환로 2406 예술의전당 내 (#173)</li>
+<li>외국인 ★: ◎ — 한국·국제 기획 전시 1번지</li>
+<li>시그니처: 예술의전당 통합 (콘서트홀·오페라하우스 인접)</li>
+<li>입장료: 기획 전시 8,000~25,000원</li>
+</ul>
+<h3>5. 국립현대미술관 (MMCA, National Museum of Modern Art)</h3>
+<ul>
+<li>주소: 서울관 (종로 사간동) / 과천관 / 덕수궁관 (중구) / 청주관</li>
+<li>외국인 ★: ◎ — 한국 현대 미술 1번지</li>
+<li>시그니처: 서울관 (2013)·과천관 (1986·한국 1번지 현대미술관)·덕수궁관 (한국 근대 미술)</li>
+<li>입장료: 4,000원 (모든 관 통합)</li>
+<li>시간: 10:00~18:00 (수·토 21:00까지)</li>
+</ul>
+<h3>6. 서울시립미술관 (SeMA, Seoul Museum of Art)</h3>
+<ul>
+<li>주소: 본관 (중구 덕수궁길 61)·분관 (#174 남서울미술관)·북서울미술관 (노원)</li>
+<li>외국인 ★: ◎ — 한국 시립 1번지 미술관 (무료)</li>
+<li>시그니처: 서울시립 통합 (도심 1번지·분관 5곳)</li>
+<li>입장료: <strong>무료</strong> (기획 전시 일부 유료)</li>
+</ul>
+<hr>
+<h2>③ 역사·고궁 박물관 (3)</h2>
+<h3>7. 한성백제박물관 (Hanseong Baekje Museum)</h3>
+<ul>
+<li>주소: 송파구 위례성대로 71 (8호선 몽촌토성역)</li>
+<li>외국인 ★: ◎ — 백제 한성 (BC18~AD475) 1번지</li>
+<li>시그니처: <strong>백제 한성 도성 유적</strong> + 풍납·몽촌토성 (#183)</li>
+<li>입장료: <strong>무료</strong> + 영문 안내</li>
+</ul>
+<h3>8. 이화 100주년기념박물관 (Ewha 100 Memorial Museum)</h3>
+<ul>
+<li>주소: 서대문구 이화여대 캠퍼스 내 (#171)</li>
+<li>외국인 ★: ◎ — 한국 여성사 + 한국 최초 종합대학사</li>
+<li>시그니처: 1886 이화학당 + 한국 여성 교육·운동사 + 무료</li>
+<li>자세히: #171 신촌·이대 자매</li>
+</ul>
+<h3>9. 서울역사박물관 (Seoul Museum of History)</h3>
+<ul>
+<li>주소: 종로구 새문안로 55 (5호선 광화문역)</li>
+<li>외국인 ★: ◎ — 서울 600년사 1번지</li>
+<li>시그니처: 한양 도성·조선·일제·해방기·현대 서울사 통합</li>
+<li>입장료: <strong>무료</strong></li>
+</ul>
+<hr>
+<h2>④ 디자인·테마 (3 + 추가 4)</h2>
+<h3>10. DDP 디자인박물관 (Dongdaemun Design Plaza) ★ Zaha Hadid 건축</h3>
+<ul>
+<li>주소: 중구 을지로 281 DDP 내 (#172)</li>
+<li>외국인 ★: ◎◎ — 한국 디자인 1번지 + 자하 하디드 건축</li>
+<li>시그니처: 디자인 전시 + 동대문운동장 유적 + DDP 외벽 야간 LED (45,000)</li>
+<li>입장료: 일반 전시 <strong>무료</strong> + 기획 전시 별도</li>
+</ul>
+<h3>11. 전쟁기념관 (War Memorial of Korea) ★ 용산 한국 전쟁 1번지</h3>
+<ul>
+<li>주소: 용산구 이태원로 29 (4·6호선 삼각지역) (#187)</li>
+<li>외국인 ★: ◎◎ — 한국 전쟁 deep dive 1번지</li>
+<li>시그니처: 한국 전쟁(1950~53) 통합 + 외국인 영문 안내 + 미군 참전 기념</li>
+<li>입장료: <strong>무료</strong> + 영어 도슨트 OK</li>
+<li>시간: 09:30~18:00 (월 휴무)</li>
+</ul>
+<h3>12. 삼성미술관 리움 (Leeum, Samsung Museum of Art) ★ 한국 1번지 사립 미술관</h3>
+<ul>
+<li>주소: 용산구 이태원로55길 60-16 한남 (#144)</li>
+<li>외국인 ★: ◎◎ — 한국 1번지 사립 미술관 + 한국·국제 거장 전시</li>
+<li>시그니처: <strong>이건희 컬렉션 + Mario Botta·Jean Nouvel·Rem Koolhaas 건축 3 건물</strong></li>
+<li>입장료: 일반 전시 <strong>무료</strong> + 기획 전시 별도 (사전 예약 필수)</li>
+<li>시간: 10:30~18:00 (월 휴무)</li>
+</ul>
+<h3>+ 추가 4</h3>
+<ul>
+<li><strong>서울대 박물관</strong> — 관악 캠퍼스 내 (#174) 한국 1번지 대학 박물관</li>
+<li><strong>서울시립 남서울미술관</strong> — 관악구 (#174) 분관 무료</li>
+<li><strong>호암미술관</strong> (HoAm) — 경기도 용인 (이건희 컬렉션) — 별도 1일</li>
+<li><strong>디뮤지엄 (D MUSEUM)</strong> — 성수동 (#01·#145) MZ 인스타 1번지</li>
+</ul>
+<hr>
+<h2>⚙ FAQ 6개</h2>
+<p>1. <strong>외국인 무료 박물관 TOP 5</strong>: NMK·국립한글박물관·서울시립미술관·전쟁기념관·DDP 일반 전시.</p>
+<p>2. <strong>영문 도슨트 가능 박물관</strong>: NMK·전쟁기념관·MMCA·삼성미술관 리움.</p>
+<p>3. <strong>이건희 컬렉션</strong>: 삼성미술관 리움 (한남) + MMCA 일부 + 호암미술관 (용인).</p>
+<p>4. <strong>휴관일</strong>: 대부분 월요일 휴무.</p>
+<p>5. <strong>사전 예약 필수</strong>: 삼성미술관 리움 + 일부 기획 전시.</p>
+<p>6. <strong>K-drama 박물관 무대</strong>: NMK·MMCA 서울관·삼성미술관 리움 단골.</p>
+<hr>
+<h2>🗺 1일 코스 3개</h2>
+<h3>A. 용산 박물관 deep dive</h3>
+<ul>
+<li>10:00 국립중앙박물관 → 13:00 국립한글박물관 → 15:30 전쟁기념관 → 18:00 삼성미술관 리움</li>
+</ul>
+<h3>B. 종로·중구 도심 박물관</h3>
+<ul>
+<li>10:00 경복궁 + 국립민속박물관 → 13:30 MMCA 서울관 → 15:30 서울역사박물관 → 17:30 서울시립미술관 본관</li>
+</ul>
+<h3>C. 디자인·현대 미술</h3>
+<ul>
+<li>10:00 DDP 디자인박물관 (#172) → 13:00 MMCA 서울관 → 15:30 한가람미술관 예술의전당 (#173)</li>
+</ul>
+<hr>
+<h2>🌸 시즌 5</h2>
+<p>봄 4월·가을 10~11월 기획 전시 성수기 / 여름 6~8월 야간 개관 (수·토 21:00까지) / 겨울 12~2월 실내 박물관 1순위 / 연중 NMK·전쟁기념관 무료</p>
+<h2>🔗 관련</h2>
+<ul>
+<li>area 짝: #187 용산·#172 DDP·#173 서초·#144 이태원·#171 신촌·#183 강동·#174 서울대</li>
+<li>문화 짝: #16 한복 체험·#10 K드라마·#204 대학 캠퍼스·#207 사찰·전통 건축</li>
+</ul>
+<h2>🏷 태그</h2>
+<p><code>#한국박물관미술관</code> <code>#KoreaMuseums</code> <code>#국립중앙박물관</code> <code>#국립현대미술관</code> <code>#삼성미술관리움</code> <code>#한가람미술관</code> <code>#DDP디자인박물관</code> <code>#전쟁기념관</code> <code>#이화100주년기념박물관</code> <code>#서울역사박물관</code> <code>#한성백제박물관</code> <code>#한국1번지박물관</code> <code>#키친구</code></p>
+
+  <div class="share-bar">
+    <span class="share-label">공유</span>
+    <button class="share-btn share-twitter" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent('한국 박물관·미술관 풀가이드') + '&url=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Twitter">𝕏</button>
+    <button class="share-btn share-facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Facebook">f</button>
+    <button class="share-btn share-kakao" onclick="navigator.share ? navigator.share({title: '한국 박물관·미술관 풀가이드', url: window.location.href}) : navigator.clipboard.writeText(window.location.href).then(function() { alert('링크 복사됨!'); })" aria-label="Kakao/Share">📤</button>
+    <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href).then(function() { this.textContent = '✓'; setTimeout(function() { document.querySelector('.share-copy').textContent = '🔗'; }, 1500); }.bind(this))" aria-label="Copy link">🔗</button>
+  </div>
+
+  <div class="detail-nav">
+    <div><a href="seoul-parks.html" style="color:var(--red);">&larr; 서울 공원 풀가이드</a></div>
+    <div><a href="temple-heritage.html" style="color:var(--red);">한국 사찰·전통 건축 풀가이드 &rarr;</a></div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <p><a href="https://instagram.com/keychingu.korea" target="_blank">@keychingu.korea</a> &mdash; Seoul for MZ FIT Travelers</p>
+</footer>
+</body>
+</html>

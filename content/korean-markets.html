@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>한국 시장 풀가이드 — KeyChinGu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/main.css">
+<style>
+.detail-wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+}
+.breadcrumb {
+  font-size: 13px;
+  color: var(--text-soft);
+  margin-bottom: 24px;
+}
+.breadcrumb a { color: var(--red); font-weight: 600; }
+.detail-wrap h1 {
+  font-size: 28px; font-weight: 800;
+  color: var(--black); margin-bottom: 8px;
+}
+.detail-wrap h2 {
+  font-size: 22px; font-weight: 700;
+  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--red);
+}
+.detail-wrap h3 {
+  font-size: 17px; font-weight: 600;
+  color: var(--text-mid); margin-top: 20px; margin-bottom: 8px;
+}
+.detail-wrap p {
+  font-size: 15px; line-height: 1.7;
+  color: var(--text-mid); margin-bottom: 12px;
+}
+.detail-wrap ul {
+  padding-left: 20px; margin-bottom: 12px;
+}
+.detail-wrap li {
+  font-size: 14px; line-height: 1.6;
+  color: var(--text-mid); margin-bottom: 6px;
+}
+.detail-wrap table {
+  width: 100%; border-collapse: collapse;
+  margin-bottom: 16px; font-size: 13px;
+}
+.detail-wrap th {
+  background: var(--black); color: #fff;
+  padding: 10px 12px; text-align: left;
+  font-weight: 600; font-size: 11px;
+  text-transform: uppercase; letter-spacing: 0.06em;
+}
+.detail-wrap td {
+  padding: 10px 12px; border-bottom: 1px solid var(--border);
+  color: var(--text-mid);
+}
+.detail-wrap tr:nth-child(even) td { background: rgba(0,0,0,0.02); }
+.detail-wrap hr {
+  border: none; height: 1px;
+  background: var(--border); margin: 24px 0;
+}
+.detail-wrap code {
+  background: rgba(33,140,204,0.08);
+  padding: 2px 6px; border-radius: 4px;
+  font-size: 13px; color: var(--blue);
+}
+.detail-nav {
+  display: flex; justify-content: space-between;
+  margin-top: 48px; padding-top: 20px;
+  border-top: 1px solid var(--border);
+  font-size: 14px; font-weight: 600;
+}
+.share-bar {
+  display: flex; align-items: center; gap: 10px;
+  margin-top: 40px; padding: 16px 20px;
+  background: #f9f9f9; border-radius: 12px;
+  border: 1px solid var(--border);
+}
+.share-label {
+  font-size: 14px; font-weight: 600; color: var(--text-soft);
+  margin-right: 8px;
+}
+.share-btn {
+  width: 40px; height: 40px;
+  border: none; border-radius: 50%;
+  background: #fff; cursor: pointer;
+  font-size: 1.1rem; transition: all 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  display: inline-flex; align-items: center; justify-content: center;
+}
+.share-btn:hover { transform: translateY(-2px); box-shadow: 0 3px 8px rgba(0,0,0,0.15); }
+.share-twitter:hover { background: #000; color: #fff; }
+.share-facebook:hover { background: #1877f2; color: #fff; }
+.share-kakao:hover { background: #fee500; }
+.share-copy:hover { background: #218CCC; color: #fff; }
+/* EN toggle disabled — 영문판 미생성 콘텐츠 (2026-05-16 patch) */
+.lang-switch .lang-disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  text-decoration: line-through;
+  padding: 4px 10px;
+  color: var(--text-soft, #888);
+  font-size: 13px;
+  user-select: none;
+}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <div class="lang-switch">
+    <a href="../content/korean-markets.html" class="active">KR</a>
+    <span class="lang-disabled" title="영문판 준비 중">EN</span>
+  </div>
+</header>
+
+<div class="detail-wrap">
+  <div class="breadcrumb"><a href="../index.html">전체 가이드</a> &rsaquo; 한국 시장 풀가이드</div>
+  <h1>한국 시장 풀가이드 — 12선 + 야시장·테마 4선</h1>
+<p>&gt; <strong>부제</strong>: 광장·노량진수산·동대문 종합·평화·마장축산·가락·통인·망원·면목 우림 — 한국 1번지 시장 통합 deep dive</p>
+<p>ISSUE 03 · #208 · 2026-05-19</p>
+<hr>
+<h2>🎯 왜 한국 시장 풀가이드인가</h2>
+<p>서울은 <strong>외국인 vlog·인스타 1순위 시장</strong>이 압축된 한국 1번지 시장 도시. 광장시장 (외국인 #1)·노량진수산시장 (K-vlog #1)·동대문 종합시장·평화시장·마장축산물시장·가락농수산시장 등. 키친구 #03 시장 비교·#24 광장·#58 광장 빈대떡·#50 광장 vintage·#181 노량진수산·#189 마장축산·#172 동대문 종합·#82 가락·#184 면목 우림 area 분산 → <strong>통합 풀가이드</strong>.</p>
+<hr>
+<h2>★ 한눈에 12선</h2>
+<table><thead><tr>
+<th>#</th>
+<th>시장</th>
+<th>4축</th>
+<th>시그니처</th>
+</tr></thead><tbody>
+<tr>
+<td>1</td>
+<td><strong>광장시장</strong> ★ 외국인 #1</td>
+<td>외국인 핫 1번지</td>
+<td>빈대떡·마약김밥 (#24·#58)</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>노량진수산시장</strong> ★ K-vlog #1</td>
+<td>외국인 핫 1번지</td>
+<td>1971·새벽 경매·즉석 회 (#181)</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>동대문 종합시장</strong></td>
+<td>외국인 핫 1번지</td>
+<td>1959·종합 도매 (#172)</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>평화시장</strong> ★ 의류 도매 1번지</td>
+<td>도매·전문 1번지</td>
+<td>1962·새벽 도매 (#172)</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>마장축산물시장</strong> ★ 정육 도매 1번지</td>
+<td>도매·전문 1번지</td>
+<td>1961·정육 도매 (#189)</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>가락농수산시장</strong> ★ 종합 도매 1번지</td>
+<td>도매·전문 1번지</td>
+<td>농수산 종합 (#82)</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>통인시장</strong> ★ 도시락 통인</td>
+<td>외국인 hidden gem</td>
+<td>1941·도시락 통인·#03 비교</td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>망원시장</strong></td>
+<td>외국인 hidden gem</td>
+<td>마포 #03·#138·MZ 핫</td>
+</tr>
+<tr>
+<td>9</td>
+<td><strong>면목 우림시장</strong></td>
+<td>외국인 hidden gem</td>
+<td>중랑 정통 (#184)</td>
+</tr>
+<tr>
+<td>10</td>
+<td><strong>동대문 야시장</strong></td>
+<td>야시장·테마</td>
+<td>24시간·외국인 야간 1번지 (#172)</td>
+</tr>
+<tr>
+<td>11</td>
+<td><strong>DDP청춘런웨이마켓</strong></td>
+<td>야시장·테마</td>
+<td>DDP·신진 디자이너 (#172)</td>
+</tr>
+<tr>
+<td>12</td>
+<td><strong>서울풍물시장</strong></td>
+<td>야시장·테마</td>
+<td>신설동·고미술·골동품</td>
+</tr>
+</tbody></table>
+<p><strong>+ 추가 4 야시장·테마</strong>: 동묘 구제시장 (#49)·광장시장 2층 vintage (#50)·연남시장·암사 종합시장</p>
+<hr>
+<h2>⚠ 외국인 자주 실수 3가지</h2>
+<p>1. <strong>&quot;광장시장만 = 한국 시장&quot;</strong>: 광장은 외국인 #1이지만 <strong>노량진수산 (vlog #1)·동대문 종합 (도매)·마장축산 (정육)·평화시장 (의류 도매) 풀세트</strong> = 한국 시장 풀 deep dive.</p>
+<p>2. <strong>&quot;도매시장 = 외국인 못 감&quot;</strong>: 평화·마장·가락·동대문 종합 <strong>모두 외국인 친화</strong> + 가격 협상 + 도매가 50~70% (소매보다 30~50% 저렴). 새벽 경매·즉석 해체·시장 식당 OK.</p>
+<p>3. <strong>&quot;통인·망원·면목 = 모름&quot;</strong>: 외국인 잘 모르는 hidden gem — <strong>광장 인파 회피 + 정통 토박이 시장</strong> 1번지. 통인 (도시락 통인 5,000원)·망원 (MZ)·면목 (#184 토박이).</p>
+<hr>
+<h2>① 외국인 핫 1번지 (3)</h2>
+<h3>1. 광장시장 (Gwangjang Market) ★ 외국인 #1</h3>
+<ul>
+<li>주소: 종로구 창경궁로 88 (1·5호선 종로5가)</li>
+<li>외국인 ★: ◎◎ — 한국 외국인 #1 시장</li>
+<li>시그니처: 1905 설립·<strong>빈대떡·마약김밥·육회·녹두전·만두</strong> + 한국 시장 음식 풀세트</li>
+<li>K-vlog: BBC·Anthony Bourdain·외국인 vlogger 단골</li>
+<li>시간: 09:00~23:00 (먹거리), 24시간 (외관)</li>
+<li>자세히: #24·#58·#50</li>
+</ul>
+<h3>2. 노량진수산시장 (Noryangjin Fish Market) ★ K-vlog #1</h3>
+<ul>
+<li>주소: 동작구 노들로 674 (#181)</li>
+<li>외국인 ★: ◎◎ — 외국인 vlog·인스타 #1</li>
+<li>시그니처: <strong>1971·새벽 03~05시 경매</strong> + 즉석 회·매운탕 (1층 도매 + 2층 식당)</li>
+<li>자세히: #181 동작·노량진 자매</li>
+</ul>
+<h3>3. 동대문 종합시장 (Dongdaemun General Market)</h3>
+<ul>
+<li>주소: 중구 종로 240 (#172)</li>
+<li>외국인 ★: ○ — 종합 도매 (원단·액세서리·문구·완구·청과)</li>
+<li>시그니처: 1959 설립·한국 종합 도매 시장 + 도매 50~70%</li>
+<li>자세히: #172 DDP·동대문</li>
+</ul>
+<hr>
+<h2>② 도매·전문 1번지 (3)</h2>
+<h3>4. 평화시장 (Pyeonghwa Market) ★ 의류 도매 1번지</h3>
+<ul>
+<li>주소: 중구 청계천로 268 (#172)</li>
+<li>외국인 ★: ○ — 한국 의류 도매 1번지</li>
+<li>시그니처: <strong>1962·새벽 22:00~16:00 도매</strong> + 의류·원단·액세서리 50~70%</li>
+<li>자세히: #172 DDP·동대문</li>
+</ul>
+<h3>5. 마장축산물시장 (Majang Livestock Market) ★ 정육 도매 1번지</h3>
+<ul>
+<li>주소: 성동구 마장 (2호선 한양대역) (#189)</li>
+<li>외국인 ★: ◎ — 한국 정육 도매 1번지</li>
+<li>시그니처: <strong>1961 한국 1번지 정육 도매</strong> + 한우·돼지 직거래 30~50%·즉석 회·구이</li>
+<li>자세히: #189 성동·왕십리 자매</li>
+</ul>
+<h3>6. 가락농수산시장 (Garak Agricultural Market) ★ 농수산 도매 1번지</h3>
+<ul>
+<li>주소: 송파구 양재대로 932 (#82)</li>
+<li>외국인 ★: ○ — 한국 1번지 농수산 종합 도매 (1985 설립)</li>
+<li>시그니처: 새벽 4~10시 도매·일반 09~18시 소매·회·해산물 식당</li>
+<li>자세히: #82 잠실 자매</li>
+</ul>
+<hr>
+<h2>③ 외국인 hidden gem (3)</h2>
+<h3>7. 통인시장 (Tongin Market) ★ 도시락 통인</h3>
+<ul>
+<li>주소: 종로구 자하문로15길 18 (3호선 경복궁역)</li>
+<li>외국인 ★: ◎ — 외국인 hidden gem</li>
+<li>시그니처: 1941 설립·<strong>도시락 통인 (5,000원 = 시장 매장 자유 선택 도시락)</strong> + 한국 정통 분식</li>
+<li>시간: 09:00~21:00</li>
+</ul>
+<h3>8. 망원시장 (Mangwon Market)</h3>
+<ul>
+<li>주소: 마포구 망원로 28 (6호선 망원역)</li>
+<li>외국인 ★: ○ — MZ 정통 토박이 시장</li>
+<li>시그니처: 한국 정통 재래시장 + MZ·연남 인접·먹거리·도시락 (#138 인접)</li>
+</ul>
+<h3>9. 면목 우림시장 (Myeonmok Urim Market)</h3>
+<ul>
+<li>주소: 중랑구 면목 (7호선 면목역) (#184)</li>
+<li>외국인 ★: ◎ — 외국인 hidden gem (잘 알려지지 않음)</li>
+<li>시그니처: 한국 토박이 정통 + 주말 야시장</li>
+<li>자세히: #184 중랑·먹골 자매</li>
+</ul>
+<hr>
+<h2>④ 야시장·테마 (3 + 추가 4)</h2>
+<h3>10. 동대문 야시장 (Dongdaemun Night Market)</h3>
+<ul>
+<li>주소: 중구 두산타워·밀리오레·apM 일대 (#172)</li>
+<li>외국인 ★: ◎◎ — 외국인 야간 쇼핑 1순위</li>
+<li>시그니처: <strong>24시간 영업</strong> + 도매·소매·외국인 즉시 면세 환급</li>
+</ul>
+<h3>11. DDP청춘런웨이마켓 (DDP Cheong-chun Runway Market)</h3>
+<ul>
+<li>주소: 중구 DDP 내 (#172)</li>
+<li>외국인 ★: ◎ — 한국 신진 디자이너 1번지</li>
+<li>시그니처: 한국 패션 디자인학과 + 신진 디자이너 한정 의류·소품</li>
+</ul>
+<h3>12. 서울풍물시장 (Seoul Folk Flea Market)</h3>
+<ul>
+<li>주소: 동대문구 신설동 (1·2호선·우이신설선 신설동역)</li>
+<li>외국인 ★: ◎ — 외국인 골동품·고미술 1순위</li>
+<li>시그니처: 한국 골동품·고미술·민속품 + 풍물·국악기 + 한국 1번지 풍물 시장</li>
+</ul>
+<h3>+ 추가 4</h3>
+<ul>
+<li><strong>동묘 구제시장</strong> — 종로 #49 빈티지 시장</li>
+<li><strong>광장시장 2층 vintage</strong> — 광장 옆 빈티지 의류 (#50)</li>
+<li><strong>연남시장</strong> — 마포 연남동 작은 시장 (#138 인접)</li>
+<li><strong>암사 종합시장</strong> — 강동 #183 자매</li>
+</ul>
+<hr>
+<h2>⚙ FAQ 6개</h2>
+<p>1. <strong>외국인 방문 시장 TOP 3</strong>: 광장 (#1) + 노량진수산 (vlog #1) + 동대문 종합·야시장 (24시간).</p>
+<p>2. <strong>새벽 도매·경매 가능 시장</strong>: 노량진수산 (03~05)·평화시장 (22~16)·가락농수산 (04~10)·마장축산 (즉석 도매).</p>
+<p>3. <strong>K-vlog·먹방 단골</strong>: 광장시장 (빈대떡·마약김밥)·노량진수산 (산낙지·즉석 회)·동묘 구제·통인 도시락.</p>
+<p>4. <strong>외국인 가격 협상 OK</strong>: 모든 시장 (특히 평화·동대문 종합·마장축산·노량진수산).</p>
+<p>5. <strong>외국인 즉시 면세</strong>: 동대문 야시장 (두산타워·밀리오레·apM) 30,000원 이상 + 여권.</p>
+<p>6. <strong>K-drama 시장 무대</strong>: 광장 (&quot;도깨비&quot;·&quot;갬블링&quot; 등)·노량진수산 (&quot;이태원 클라쓰&quot;)·통인 (&quot;응답하라 1988&quot;).</p>
+<hr>
+<h2>🗺 1일 코스 3개</h2>
+<h3>A. 외국인 핫 시장 풀데이</h3>
+<ul>
+<li>09:00 광장시장 (빈대떡·마약김밥) → 12:00 통인시장 (도시락 5,000원) → 14:00 동묘 구제시장 → 17:00 노량진수산시장 (즉석 회) → 21:00 동대문 야시장 (#172)</li>
+</ul>
+<h3>B. 도매시장 deep dive (새벽 시작)</h3>
+<ul>
+<li>03:00 노량진수산 새벽 경매 → 06:00 마장축산 정육 → 09:00 평화시장 의류 도매 → 13:00 가락농수산 → 17:00 동대문 종합시장</li>
+</ul>
+<h3>C. Hidden gem + MZ 시장</h3>
+<ul>
+<li>10:00 망원시장 (마포 토박이) → 12:30 면목 우림시장 (#184) → 15:00 서울풍물시장 (신설동) → 17:30 DDP청춘런웨이마켓 → 21:00 동대문 야시장</li>
+</ul>
+<hr>
+<h2>🌸 시즌 5</h2>
+<p>봄 4월: 광장·통인 봄꽃 시즌 / 여름 6~8월: 노량진수산 즉석 회·동대문 야시장 / 가을 10~11월: 가락농수산 (전어·송이) / 겨울 12~2월: 마장축산 (한우 성수기) + 광장 따뜻한 빈대떡 / 연중: 노량진수산·평화시장·동대문 야시장 24시간</p>
+<h2>🔗 관련</h2>
+<ul>
+<li>area 짝: #181 노량진·#189 마장·#172 DDP·동대문·#82 잠실·가락·#184 면목·#138 망원·#03 시장 비교</li>
+<li>음식 짝: #24 광장시장·#58 광장 빈대떡·#50 광장 vintage·#49 동묘 구제·#198 도전 음식 (산낙지·홍어)</li>
+<li>쇼핑 짝: #41 24시간 쇼핑·#52 관광기념품·#180 가산 아울렛</li>
+</ul>
+<h2>🏷 태그</h2>
+<p><code>#한국시장</code> <code>#KoreaMarkets</code> <code>#광장시장</code> <code>#노량진수산시장</code> <code>#동대문종합시장</code> <code>#평화시장의류도매</code> <code>#마장축산물시장정육1번지</code> <code>#가락농수산시장</code> <code>#통인시장도시락</code> <code>#망원시장</code> <code>#면목우림시장</code> <code>#동대문야시장</code> <code>#서울풍물시장</code> <code>#한국1번지시장도시</code> <code>#키친구</code></p>
+
+  <div class="share-bar">
+    <span class="share-label">공유</span>
+    <button class="share-btn share-twitter" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent('한국 시장 풀가이드') + '&url=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Twitter">𝕏</button>
+    <button class="share-btn share-facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Facebook">f</button>
+    <button class="share-btn share-kakao" onclick="navigator.share ? navigator.share({title: '한국 시장 풀가이드', url: window.location.href}) : navigator.clipboard.writeText(window.location.href).then(function() { alert('링크 복사됨!'); })" aria-label="Kakao/Share">📤</button>
+    <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href).then(function() { this.textContent = '✓'; setTimeout(function() { document.querySelector('.share-copy').textContent = '🔗'; }, 1500); }.bind(this))" aria-label="Copy link">🔗</button>
+  </div>
+
+  <div class="detail-nav">
+    <div><a href="temple-heritage.html" style="color:var(--red);">&larr; 한국 사찰·전통 건축 풀가이드</a></div>
+    <div></div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <p><a href="https://instagram.com/keychingu.korea" target="_blank">@keychingu.korea</a> &mdash; Seoul for MZ FIT Travelers</p>
+</footer>
+</body>
+</html>
