@@ -160,6 +160,38 @@
 - [About — KeyChinGu Introduction](https://mgself414.github.io/keychingu-content-deploy/about.html): KeyChinGu mission, content categories (food/cafe/culture/activity/shopping/practical), target audience, contact info.
 - [FAQ — Frequently Asked Questions](https://mgself414.github.io/keychingu-content-deploy/faq.html): 20 FAQs covering visa/K-ETA, transportation, payment, SIM, language, food, shopping, emergency for foreign tourists in Seoul.
 
+
+## Area Landing Pages (25 districts deep-dive)
+
+- [홍대·연남·합정·망원](https://mgself414.github.io/keychingu-content-deploy/areas/hongdae.html): 한국 MZ·인디 1번지 + 청춘 거리·라이브 클럽·연남 카페·합정 모던 다이닝·망원시장
+- [종로·익선동·북촌·서촌](https://mgself414.github.io/keychingu-content-deploy/areas/jongno.html): 한국 전통·궁궐·한옥 1번지 + 경복궁·창덕궁·북촌 한옥마을·익선동 한옥 카페·인사동
+- [강남·도산·압구정·신논현](https://mgself414.github.io/keychingu-content-deploy/areas/gangnam.html): 한국 럭셔리·쇼핑 1번지 + 명품·면세·MZ 핫플·강남 술집·압구정 로데오
+- [이태원·한남·해방촌](https://mgself414.github.io/keychingu-content-deploy/areas/itaewon.html): 한국 글로벌·외국인 거주 1번지 + 다국적 음식·갤러리·한남동 LCT·해방촌 언덕
+- [성수동](https://mgself414.github.io/keychingu-content-deploy/areas/seongsu.html): 한국 팝업·창고 카페 1번지 + 트라이브 핫플·서울숲·뚝섬
+- [연희동](https://mgself414.github.io/keychingu-content-deploy/areas/yeonhui.html): 한국 라이프스타일·책방 1번지 + 독립서점·소품샵·동네 카페
+- [남산·명동](https://mgself414.github.io/keychingu-content-deploy/areas/namsan.html): 한국 1번지 관광·랜드마크 + N서울타워·명동성당·외국인 면세 쇼핑
+- [을지로·종각·시청](https://mgself414.github.io/keychingu-content-deploy/areas/euljiro.html): 한국 레트로·힙스터·노포 1번지 + 을지로 힙스터 바·종각 노포·시청 광장
+- [여의도·영등포](https://mgself414.github.io/keychingu-content-deploy/areas/yeouido.html): 한국 금융·미디어 1번지 + 한강·국회·KBS·여의도공원·더현대 서울
+- [혜화·대학로·성북](https://mgself414.github.io/keychingu-content-deploy/areas/hyehwa.html): 한국 청춘·문학 1번지 + 학림(1956 한국 최초 카페)·대학로 공연·이화벽화·낙산공원
+- [신촌·이대·서대문](https://mgself414.github.io/keychingu-content-deploy/areas/sinchon.html): 한국 대학·청춘 1번지 + 이화여대·연세대·MZ 카페·설빙 본점
+- [DDP·동대문](https://mgself414.github.io/keychingu-content-deploy/areas/ddp.html): 한국 디자인·야간 쇼핑 1번지 + DDP·두산타워·평화시장·청계천
+- [서초·서래·반포](https://mgself414.github.io/keychingu-content-deploy/areas/seocho.html): 외국인 거주 1번지 + 서래마을(프랑스인)·MAILLET·반포 한강·잠수교·달빛무지개분수
+- [관악·서울대·샤로수길](https://mgself414.github.io/keychingu-content-deploy/areas/gwanak.html): 한국 #1 국립대 + 샤로수길 MZ 인스타·관악산·남서울미술관
+- [강서·마곡·김포공항](https://mgself414.github.io/keychingu-content-deploy/areas/gangseo.html): 한국 1번지 공항·신도시 + 김포공항·서울식물원·LG 아트센터
+- [노원·도봉·등산](https://mgself414.github.io/keychingu-content-deploy/areas/nowon.html): 한국 등산 1번지 + 도봉산·수락산·불암산·서울둘레길·외국인 등산 매니아
+- [송파·잠실·올림픽](https://mgself414.github.io/keychingu-content-deploy/areas/jamsil.html): 한국 1번지 가족·테마파크 + 롯데월드·롯데타워·석촌호수·올림픽파크
+- [광진·건대·뚝섬](https://mgself414.github.io/keychingu-content-deploy/areas/gwangjin.html): 한국 외국인 학생 belt + 건국대·뚝섬 한강·어린이대공원·아차산
+- [구로·금천·신도림](https://mgself414.github.io/keychingu-content-deploy/areas/guro.html): 한국 산업화·외국인 거주 1번지 + 구로디지털·가산디지털·마리오 아울렛·가리봉동
+- [동작·노량진·사당](https://mgself414.github.io/keychingu-content-deploy/areas/dongjak.html): 한국 1번지 수산시장·고시촌 + 노량진수산시장·고시촌·국립서울현충원·사당
+- [은평·북한산](https://mgself414.github.io/keychingu-content-deploy/areas/eunpyeong.html): 한국 1번지 도심 국립공원 + 북한산·은평한옥마을·서오릉·진관사
+- [강동·천호·암사](https://mgself414.github.io/keychingu-content-deploy/areas/gangdong.html): 한국 신석기·백제 1번지 + 암사 선사유적·풍납토성·천호 한강·둔촌 올림픽파크
+- [중랑·먹골·면목](https://mgself414.github.io/keychingu-content-deploy/areas/jungnang.html): 한국 토박이·서민 동네 + 면목 우림시장·망우공원(박인환·박완서)·중랑천 자전거
+- [양천·목동·신정](https://mgself414.github.io/keychingu-content-deploy/areas/yangcheon.html): 한국 중산층·교육·방송 1번지 + SBS·서서울호수공원·목동 아파트단지
+- [강북·수유·미아·우이](https://mgself414.github.io/keychingu-content-deploy/areas/gangbuk.html): 한국 민주화 1번지 + 4·19 국립묘지·북한산 우이 게이트·정통 떡집
+- [용산·삼각지·신용산](https://mgself414.github.io/keychingu-content-deploy/areas/yongsan.html): 한국 1번지 철도·미군기지 + 용산역 KTX 호남·아모레퍼시픽 본사·국립중앙박물관
+- [마포·공덕·상암](https://mgself414.github.io/keychingu-content-deploy/areas/mapo.html): 한국 1번지 4중 환승·미디어 + 공덕역·상암 DMC·MBC·월드컵공원
+- [성동·왕십리·마장](https://mgself414.github.io/keychingu-content-deploy/areas/seongdong.html): 한국 1번지 5중 환승·정육 시장 + 왕십리역·마장축산물시장·응봉산·옥수 한강
+
 ## Key Facts
 
 - **Target audience**: Foreign MZ FIT travelers (20-35) visiting Seoul/Korea

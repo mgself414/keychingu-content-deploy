@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>연희동 가이드 — KeyChinGu</title>
+  <meta name="description" content="한국 라이프스타일·책방 1번지 + 독립서점·소품샵·동네 카페">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="연희동 — KeyChinGu 가이드">
+  <meta property="og:description" content="한국 라이프스타일·책방 1번지 + 독립서점·소품샵·동네 카페">
+  <meta property="og:url" content="https://mgself414.github.io/keychingu-content-deploy/areas/yeonhui.html">
+  <meta property="og:image" content="https://mgself414.github.io/keychingu-content-deploy/assets/logo/logo_2-4_color_small.png">
+  <meta property="og:locale" content="ko_KR">
+
+  <link rel="canonical" href="https://mgself414.github.io/keychingu-content-deploy/areas/yeonhui.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <nav class="site-nav">
+    <a href="../index.html">홈</a>
+    <a href="../about.html">About</a>
+    <a href="../faq.html">FAQ</a>
+  </nav>
+  <div class="lang-switch">
+    <a href="yeonhui.html" class="active">KR</a>
+    <a href="../en/index.html">EN</a>
+  </div>
+</header>
+
+<section class="area-hero">
+  <div class="area-hero-inner">
+    <div class="area-hero-gu">서대문구</div>
+    <h1>연희동</h1>
+    <p class="area-hero-en">Yeonhui</p>
+    <p class="area-hero-desc">한국 라이프스타일·책방 1번지 + 독립서점·소품샵·동네 카페</p>
+    <div class="area-hero-stats">
+      <span class="area-stat"><strong>1</strong> 가이드</span>
+      <span class="area-stat"><strong>0+</strong> 매장</span>
+    </div>
+  </div>
+</section>
+
+<main class="content-page">
+
+  <section class="content-section">
+    <h2>★ 시그니처 스팟</h2>
+    <ul class='bullet-list'><li>유어마인드 (독립서점)</li><li>연희맛로</li><li>연희문학창작촌</li></ul>
+  </section>
+
+  <section class="content-section">
+    <h2>🚇 교통</h2>
+    <p>2호선 홍대입구역 도보 20분 또는 마을버스 서대문 03·05</p>
+  </section>
+
+  <section class="content-section">
+    <h2>📖 관련 가이드 (1편)</h2>
+    <div class="card-grid">
+      <a class="card" href="../content/yeonhui.html"><div class="card-cover"><span class="cat-badge">A</span><span class="card-num">#156</span></div><div class="card-body"><h3>연희동 가이드</h3><p>책방·소품·카페·맛집 4축 12선 + 안산자락길·사러가쇼핑센터·연희문학창작촌 볼거리 5곳 — 외국인 로컬 deep dive 동네 (사용자 큐레이션 7곳 + 크롤 18곳)…</p></div></a>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <h2>📍 추천 매장 (상위 0곳)</h2>
+    <ul class="place-list">
+      
+    </ul>
+  </section>
+
+  <p class="back-link"><a href="../index.html">← 전체 area 목록으로</a></p>
+
+</main>
+
+<footer class="site-footer">
+  <nav class="footer-nav">
+    <a href="../about.html">About</a>
+    <a href="../faq.html">FAQ</a>
+    <a href="https://instagram.com/keychingu.korea" target="_blank">Instagram</a>
+    <a href="../llms.txt">llms.txt</a>
+  </nav>
+  <p><a href="https://instagram.com/keychingu.korea" target="_blank">@keychingu.korea</a> &mdash; Seoul for MZ FIT Travelers</p>
+</footer>
+
+<button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme" title="Toggle dark mode">🌙</button>
+
+<script>
+(function() {
+  const root = document.documentElement;
+  const btn = document.getElementById('theme-toggle');
+  const saved = localStorage.getItem('kc_theme');
+  if (saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    root.setAttribute('data-theme', 'dark');
+    btn.textContent = '☀';
+  }
+  btn.addEventListener('click', function() {
+    const isDark = root.getAttribute('data-theme') === 'dark';
+    if (isDark) {
+      root.removeAttribute('data-theme');
+      btn.textContent = '🌙';
+      localStorage.setItem('kc_theme', 'light');
+    } else {
+      root.setAttribute('data-theme', 'dark');
+      btn.textContent = '☀';
+      localStorage.setItem('kc_theme', 'dark');
+    }
+  });
+})();
+</script>
+
+</body>
+</html>
