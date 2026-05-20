@@ -3,7 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KeyChinGu — Seoul Travel Curation</title>
+  <title>KeyChinGu — Korea Travel Curation Guide 249+ Topics (Seoul·Busan·Outskirts)</title>
+  <meta name="description" content="Curated Korea travel guides for foreign MZ FIT travelers — 249+ topics covering Seoul 25 districts + Busan 10 sub-areas + 16 outskirts cities (Jeju/Gangneung/Jeonju/Gyeongju/Daegu/Incheon/Gwangju/Daejeon), K-content (BTS/BLACKPINK/K-drama/K-movie), foreigner essentials (visa/SIM/medical), and 6 ethnic personas.">
+  <meta name="keywords" content="Korea travel, Seoul guide, Busan guide, Jeju, BTS ARMY, BLACKPINK BLINK, K-pop, K-drama, K-medical, T-money, KTX, foreigner Korea">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="KeyChinGu — Korea Travel Curation 249+ Topics">
+  <meta property="og:description" content="Foreign MZ FIT traveler guide — Seoul + Busan + 16 outskirts + K-content + foreigner essentials">
+  <meta property="og:url" content="https://mgself414.github.io/keychingu-content-deploy/en/index.html">
+  <meta property="og:image" content="https://mgself414.github.io/keychingu-content-deploy/assets/logo/logo_2-4_color_small.png">
+  <meta property="og:locale" content="en_US">
+
+  <link rel="canonical" href="https://mgself414.github.io/keychingu-content-deploy/en/index.html">
+  <link rel="alternate" hreflang="ko" href="https://mgself414.github.io/keychingu-content-deploy/">
+  <link rel="alternate" hreflang="en" href="https://mgself414.github.io/keychingu-content-deploy/en/index.html">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -14,6 +28,11 @@
 <!-- HEADER -->
 <header class="site-header">
   <a href="../en/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <nav class="site-nav">
+    <a href="../en/index.html" class="active">Home</a>
+    <a href="../about.html">About</a>
+    <a href="../faq.html">FAQ</a>
+  </nav>
   <div class="lang-switch">
     <a href="../index.html">KR</a>
     <a href="../en/index.html" class="active">EN</a>
@@ -23,9 +42,105 @@
 <!-- HERO -->
 <section class="hero">
   <img src="../assets/logo/logo_2-4_expression.png" alt="KeyChinGu" class="hero-logo">
-  <h1>Seoul <em>for</em> You</h1>
-  <p>Curated guides for MZ FIT travelers visiting Korea — 20 essential topics</p>
+  <h1>Korea <em>for</em> You</h1>
+  <p>Curated guides for foreign MZ FIT travelers — <strong>249+ topics</strong> covering Seoul 25 districts + Busan 10 sub-areas + 16 outskirts cities + K-content + foreigner essentials + 6 ethnic personas</p>
 </section>
+
+<!-- SEARCH BAR -->
+<div class="search-bar">
+  <input type="text" id="search-input" list="search-suggestions" placeholder="🔍 Search — title, summary, tags (Hongdae, cafe, Gangnam, hanbok...)" autocomplete="off">
+  <datalist id="search-suggestions"></datalist>
+  <button id="fav-toggle" class="fav-toggle" title="Show favorites only">★ Favorites <span id="fav-count"></span></button>
+  <span id="result-count"></span>
+</div>
+
+<!-- FOREIGNER ESSENTIALS NAV -->
+<div class="area-landing-nav" style="background:linear-gradient(135deg, #fff0f5 0%, #ffe0eb 100%); border:1px solid #ff80b3;">
+  <p class="area-landing-label">📋 Foreigner Essentials — Visa·Driving·SIM·Emergency·Living</p>
+  <div class="area-landing-grid">
+    <a href="../content/foreigner-visa.html">📄 Visa & K-ETA</a>
+    <a href="../content/foreigner-driving.html">🚗 Driving & Car Rental</a>
+    <a href="../content/foreigner-sim.html">📱 SIM·eSIM·WiFi</a>
+    <a href="../content/foreigner-emergency.html">🚨 Emergency & Insurance</a>
+    <a href="../content/foreigner-life.html">🏠 Living in Korea</a>
+  </div>
+</div>
+
+<!-- TIME-VARIANT ITINERARIES NAV -->
+<div class="area-landing-nav" style="background:linear-gradient(135deg, #f5e6ff 0%, #e8d6ff 100%); border:1px solid #b380ff;">
+  <p class="area-landing-label">📅 Itineraries by Time — 3 to 14 days</p>
+  <div class="area-landing-grid">
+    <a href="../content/korea-3day.html">⚡ 3-day Short</a>
+    <a href="../content/korea-5day.html">🌟 5-day Balanced</a>
+    <a href="../content/first-visit-7day.html">🎯 7-day Standard</a>
+    <a href="../content/korea-10day.html">🗺️ 10-day Deep Dive</a>
+    <a href="../content/korea-2week.html">🌏 2-week Korea Tour</a>
+  </div>
+</div>
+
+<!-- OUTSKIRTS CITIES NAV -->
+<div class="area-landing-nav" style="background:linear-gradient(135deg, #e6f7ff 0%, #cce8ff 100%); border:1px solid #66b3ff;">
+  <p class="area-landing-label">🗾 Outskirts Cities — 16 cities for 1N2D to 1-week trips</p>
+  <div class="area-landing-grid">
+    <a href="../content/jeju.html">🌋 Jeju (UNESCO 2007)</a>
+    <a href="../content/gangneung-pyeongchang.html">⛷️ Gangneung·Pyeongchang</a>
+    <a href="../content/jeonju-hanok.html">🏯 Jeonju Hanok Village</a>
+    <a href="../content/gyeongju.html">🏛️ Gyeongju (Silla 1000y)</a>
+    <a href="../content/tongyeong-yeosu.html">🌊 Tongyeong·Yeosu</a>
+    <a href="../content/daegu.html">🌆 Daegu (Korea #3)</a>
+    <a href="../content/incheon-city.html">✈️ Incheon City</a>
+    <a href="../content/gwangju.html">🎨 Gwangju (Democracy·KIA)</a>
+    <a href="../content/daejeon-sejong.html">🔬 Daejeon·Sejong</a>
+    <a href="../content/suwon-yongin.html">🏰 Suwon·Yongin</a>
+    <a href="../content/chuncheon.html">🌅 Chuncheon (Nami Island)</a>
+    <a href="../content/cheongju.html">📜 Cheongju (Jikji UNESCO)</a>
+    <a href="../content/ulsan.html">🐋 Ulsan</a>
+    <a href="../content/changwon-jinhae.html">🌸 Changwon·Jinhae</a>
+    <a href="../content/pohang.html">☀️ Pohang</a>
+  </div>
+</div>
+
+<!-- BUSAN SERIES NAV -->
+<div class="area-landing-nav" style="background:linear-gradient(135deg, #fff5e6 0%, #ffe8d6 100%); border:1px solid #ffb380;">
+  <p class="area-landing-label">🌊 Busan Series — Korea's #2 city, 10 sub-areas</p>
+  <div class="area-landing-grid">
+    <a href="../content/busan-haeundae.html">🏖️ Haeundae·Gwangalli</a>
+    <a href="../content/busan-jagalchi.html">🐟 Jagalchi·Gukje Market</a>
+    <a href="../content/busan-gamcheon.html">🎨 Gamcheon Culture Village</a>
+    <a href="../content/busan-seomyeon.html">☕ Seomyeon·Jeonpo Cafe</a>
+    <a href="../content/busan-biff.html">🎬 BIFF Film Culture</a>
+    <a href="../content/busan-sajik.html">⚾ Sajik Baseball</a>
+    <a href="../content/busan-dongnae.html">♨️ Dongnae Hot Spring</a>
+    <a href="../content/busan-gijang.html">⛩️ Gijang Outskirts</a>
+    <a href="../content/busan-songdo.html">🚡 Songdo·Yeongdo</a>
+    <a href="../content/busan-dadaepo.html">🌅 Dadaepo·Nakdonggang</a>
+  </div>
+</div>
+
+<!-- K-CONTENT MICRO NAV -->
+<div class="area-landing-nav" style="background:linear-gradient(135deg, #fff0e6 0%, #ffd9b3 100%); border:1px solid #ffaa66;">
+  <p class="area-landing-label">🎬 K-Content Deep Dive — Artists·Dramas·Movies</p>
+  <div class="area-landing-grid">
+    <a href="../content/bts-fan.html">💜 BTS Fan (ARMY)</a>
+    <a href="../content/blackpink-fan.html">🖤💖 BLACKPINK Fan (BLINK)</a>
+    <a href="../content/kpop-4thgen.html">⚡ NewJeans·aespa·4th Gen</a>
+    <a href="../content/kdrama-classics.html">📺 K-drama Classics</a>
+    <a href="../content/kmovie.html">🎞️ K-movie (Parasite·Oldboy)</a>
+  </div>
+</div>
+
+<!-- FOREIGNER PERSONAS NAV -->
+<div class="area-landing-nav" style="background:linear-gradient(135deg, #f0e6ff 0%, #d9b3ff 100%); border:1px solid #aa66ff;">
+  <p class="area-landing-label">🌍 Foreigner Personas — 6 ethnic segments</p>
+  <div class="area-landing-grid">
+    <a href="../content/persona-anglo.html">🇺🇸 USA·Canada·Anglo</a>
+    <a href="../content/persona-sea.html">🇹🇭 Southeast Asia 6</a>
+    <a href="../content/persona-europe.html">🇫🇷 Europe 6</a>
+    <a href="../content/persona-middle-east.html">🕌 Middle East 6</a>
+    <a href="../content/persona-south-asia.html">🇮🇳 India·South Asia 5</a>
+    <a href="../content/templestay-deep.html">🛕 Temple Stay Deep Dive</a>
+  </div>
+</div>
 
 <!-- CATEGORY FILTER -->
 <div class="filter-bar">
