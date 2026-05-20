@@ -9,9 +9,11 @@
       "cafe",
       "popup",
       "shopping",
-      "mz"
+      "mz",
+      "seoul-forest",
+      "instagram"
     ],
-    "summary_kr": "MZ 핫플 성수 1번지, 카페/팝업/편집숍 완벽 투어",
+    "summary_kr": "성수동 MZ 핫플 1번지 — 카페·팝업스토어·편집숍·미술관·서울숲 통합 deep dive 가이드. 외국인 vlog 1순위 area + 한국 #1 트렌드 발신지 (#263 50선 완전판).",
     "summary_en": "MZ hotspot Seongsu — cafes, pop-ups & select shops",
     "en_available": true
   },
@@ -24,9 +26,12 @@
     "tags": [
       "free",
       "nightlife",
-      "photo"
+      "photo",
+      "night-view",
+      "n-seoul-tower",
+      "han-river"
     ],
-    "summary_kr": "돈 안 들이고 즐기는 서울 야경 베스트",
+    "summary_kr": "한국 야경 무료 1번지 — N서울타워·반포 달빛무지개분수·응봉산·낙산공원 등 돈 안 내고 즐기는 베스트 야경 풀세트 (#224 야경 풀가이드 + #260 루프탑).",
     "summary_en": "Best Seoul night views without spending a won",
     "en_available": true
   },
@@ -39,9 +44,14 @@
     "tags": [
       "foodie",
       "market",
-      "culture"
+      "culture",
+      "food",
+      "gwangjang",
+      "mangwon",
+      "tongin",
+      "must-try"
     ],
-    "summary_kr": "시장별 먹거리·분위기·접근성 비교",
+    "summary_kr": "한국 시장 비교 — 광장(외국인 #1)·망원(MZ)·통인(도시락) 시장 먹거리·분위기·접근성 완벽 비교 가이드 (#208 한국 시장 풀가이드).",
     "summary_en": "Gwangjang vs Mangwon vs Tongin — which market fits you?",
     "en_available": true
   },
@@ -54,9 +64,14 @@
     "tags": [
       "foodie",
       "nightlife",
-      "beer"
+      "beer",
+      "gamakjip",
+      "retro",
+      "jongno",
+      "euljiro",
+      "budget"
     ],
-    "summary_kr": "가게 맥주 한국식 로컬 음주 문화",
+    "summary_kr": "가맥집 — 한국 정통 corner-store beer culture 완벽 가이드. 종로·을지로·홍대·강남 가맥 매니아 1번지 (#304 한국 가맥 100선 확장판).",
     "summary_en": "Corner-store beer culture — drink like a local",
     "en_available": true
   },
@@ -69,9 +84,13 @@
     "tags": [
       "foodie",
       "nightlife",
-      "latenight"
+      "latenight",
+      "24h",
+      "haejangguk",
+      "must-try",
+      "korean"
     ],
-    "summary_kr": "새벽에도 열려있는 진짜 맛집",
+    "summary_kr": "서울 24시간 음식 — 새벽 1~5시 한식·국밥·해장국·24h BBQ·심야 매니아 1번지 풀가이드 (#282 24h 심야 + #281 새벽).",
     "summary_en": "Where to eat when everything else is closed",
     "en_available": true
   },
@@ -84,9 +103,15 @@
     "tags": [
       "foodie",
       "free",
-      "outdoor"
+      "outdoor",
+      "han-river",
+      "chicken",
+      "beer",
+      "picnic",
+      "summer",
+      "must-try"
     ],
-    "summary_kr": "배달앱·돗자리·추천 공원",
+    "summary_kr": "한강 치맥 피크닉 — 반포·뚝섬·여의도·잠실 한강 11개 공원별 배달앱·돗자리·치킨·맥주 가이드 (#305~#308 한강 4 cluster).",
     "summary_en": "Fried chicken & beer by the river",
     "en_available": true
   },
@@ -99,9 +124,13 @@
     "tags": [
       "culture",
       "wellness",
-      "budget"
+      "budget",
+      "jjimjilbang",
+      "dragon-hill-spa",
+      "spaland",
+      "foreigner-friendly"
     ],
-    "summary_kr": "양머리 수건·식혜·수면실 이용법",
+    "summary_kr": "한국 찜질방 외국인 가이드 — 양머리 수건·식혜·수면실·세신 이용법 완벽 풀세트. 드래곤힐스파(24h)·스파랜드·한솔 등 외국인 친화 매장 (#227 K-beauty).",
     "summary_en": "Towel hats, sikhye & sleep rooms",
     "en_available": true
   },
@@ -114,9 +143,13 @@
     "tags": [
       "culture",
       "nightlife",
-      "fun"
+      "fun",
+      "noraebang",
+      "karaoke",
+      "mz",
+      "foreigner-friendly"
     ],
-    "summary_kr": "코인/일반/럭셔리 타입별 가이드",
+    "summary_kr": "노래방 외국인 가이드 — 코인노래방(500원/곡 외국인 vlog #1)·일반·럭셔리 노래방 타입별 가이드 + 영문·일문·중문 외국어 곡 풀세트 (#258 솔로).",
     "summary_en": "Coin, standard & luxury karaoke styles",
     "en_available": true
   },
@@ -128,9 +161,13 @@
     "category": "E",
     "tags": [
       "beauty",
-      "shopping"
+      "shopping",
+      "personal-color",
+      "cheongdam",
+      "gangnam",
+      "foreigner-friendly"
     ],
-    "summary_kr": "컨설팅숍 비교·가격·예약법",
+    "summary_kr": "퍼스널 컬러 컨설팅 — 한국 1번지 청담·강남 컨설팅숍 가격·예약·외국인 친화 가이드 (#227 K-beauty + #277 신혼).",
     "summary_en": "Color analysis shops, pricing & booking",
     "en_available": true
   },
@@ -143,9 +180,13 @@
     "tags": [
       "culture",
       "photo",
-      "kdrama"
+      "kdrama",
+      "filming-spots",
+      "itaewon",
+      "bukchon",
+      "must-try"
     ],
-    "summary_kr": "대표 드라마 10선 로케이션",
+    "summary_kr": "K-드라마 촬영지 — 이태원클라쓰·도깨비·미생·SKY Castle·Reply 1988·Crash Landing 등 대표 드라마 10선 로케이션 풀세트 (#222 K-drama 풀가이드).",
     "summary_en": "Visit where your favorite K-dramas were filmed",
     "en_available": true
   },
@@ -158,9 +199,13 @@
     "tags": [
       "cafe",
       "nightlife",
-      "retro"
+      "retro",
+      "euljiro",
+      "hipster",
+      "noraebang",
+      "bar"
     ],
-    "summary_kr": "낡은 철공소 사이의 감성 바·카페 레이어",
+    "summary_kr": "을지로 레트로 — 낡은 철공소 사이의 감성 바·카페·노가리 골목 hidden 매니아 풀가이드 (#172 DDP + #283 골목길).",
     "summary_en": "Hidden bars & cafes among old ironworks",
     "en_available": true
   },
@@ -173,9 +218,14 @@
     "tags": [
       "culture",
       "photo",
-      "hanbok"
+      "hanbok",
+      "spa",
+      "massage",
+      "wellness",
+      "k-beauty",
+      "gangnam"
     ],
-    "summary_kr": "한복 체험과 함께하는 전통+현대 믹스",
+    "summary_kr": "한국 스파·마사지 — 전통 한방·타이·스웨디시·아로마·호텔 스파 외국인 풀가이드 (#292 마사지·테라피).",
     "summary_en": "Traditional meets modern with hanbok experience",
     "en_available": true
   },
@@ -188,9 +238,14 @@
     "tags": [
       "outdoor",
       "free",
-      "photo"
+      "photo",
+      "namsan",
+      "n-seoul-tower",
+      "night-view",
+      "trail",
+      "must-try"
     ],
-    "summary_kr": "N서울타워 배경의 도보 코스",
+    "summary_kr": "남산 둘레길·N서울타워 야경 — 일몰부터 야경까지 도보 코스 완벽 풀가이드 (#13 남산 + #14 + #224).",
     "summary_en": "Walk the trails around N Seoul Tower at sunset",
     "en_available": true
   },
@@ -203,9 +258,13 @@
     "tags": [
       "foodie",
       "culture",
-      "must-try"
+      "must-try",
+      "korean-food",
+      "first-visit",
+      "essentials",
+      "foreigner-friendly"
     ],
-    "summary_kr": "처음 한국인을 위한 필수 10선",
+    "summary_kr": "한국 음식 essentials TOP 10 — 처음 한국인을 위한 필수 한식 풀세트 외국인 매니아 1순위 (#15 + #234).",
     "summary_en": "10 dishes you must try on your first trip",
     "en_available": true
   },
@@ -218,9 +277,13 @@
     "tags": [
       "foodie",
       "market",
-      "budget"
+      "budget",
+      "street-food",
+      "gwangjang",
+      "mangwon",
+      "korean-food"
     ],
-    "summary_kr": "망원/광장/종로 스트리트 푸드",
+    "summary_kr": "한국 길거리 음식 — 망원·광장·종로 스트리트 푸드 외국인 매니아 풀가이드 (#16 + #208).",
     "summary_en": "Mangwon, Gwangjang & Jongno street food",
     "en_available": true
   },
@@ -233,9 +296,12 @@
     "tags": [
       "culture",
       "photo",
-      "hanbok"
+      "hanbok",
+      "palace",
+      "tradition",
+      "bukchon"
     ],
-    "summary_kr": "퓨전 한복·경복궁 무료입장",
+    "summary_kr": "한복 체험 모던 — 퓨전 한복·경복궁 무료 입장·인사동 한복 사진관 (#17 + #207 + #261).",
     "summary_en": "Fusion hanbok rentals & free palace entry",
     "en_available": true
   },
@@ -247,9 +313,13 @@
     "category": "E",
     "tags": [
       "beauty",
-      "wellness"
+      "wellness",
+      "spa",
+      "massage",
+      "k-beauty",
+      "luxury"
     ],
-    "summary_kr": "전신·스포츠·아로마 완벽 가이드",
+    "summary_kr": "한국 스파·마사지 — 전신·스포츠·아로마·호텔 스파 완벽 풀가이드 (#17 + #292).",
     "summary_en": "Full-body, sports & aroma — the complete guide",
     "en_available": true
   },
@@ -261,9 +331,14 @@
     "category": "F",
     "tags": [
       "shopping",
-      "mz"
+      "mz",
+      "cafe",
+      "chain",
+      "myeongdong",
+      "hongdae",
+      "seongsu"
     ],
-    "summary_kr": "명동/홍대/강남/성수 루트",
+    "summary_kr": "한국 카페 체인 — 명동·홍대·강남·성수 4 area 카페 체인 가이드 (#225 카페 deep dive + #138·#142·#13).",
     "summary_en": "Myeongdong, Hongdae, Gangnam & Seongsu in one day",
     "en_available": true
   },
@@ -276,9 +351,14 @@
     "tags": [
       "culture",
       "shopping",
-      "kpop"
+      "kpop",
+      "fanmeeting",
+      "hybe",
+      "sm",
+      "yg",
+      "music-show"
     ],
-    "summary_kr": "사옥·굿즈샵·팬카페부터 음악방송까지",
+    "summary_kr": "K-pop 덕질 매니아 — HYBE·SM·YG·JYP 사옥·굿즈샵·팬카페부터 음악방송까지 풀가이드 (#221 K-pop 후속).",
     "summary_en": "Agency HQs, merch shops, fan cafes & music shows",
     "en_available": true
   },
@@ -290,9 +370,13 @@
     "category": "H",
     "tags": [
       "practical",
-      "transport"
+      "transport",
+      "subway",
+      "kakao-t",
+      "navigation",
+      "foreigner-friendly"
     ],
-    "summary_kr": "지하철·버스·택시·앱 모두 해결",
+    "summary_kr": "한국 교통·내비 — 지하철·버스·택시·카카오T·구글맵 외국인 친화 가이드 (#237~#239 교통 풀가이드).",
     "summary_en": "Subway, bus, taxi & apps — all you need",
     "en_available": true
   },
@@ -324,9 +408,14 @@
       "shopping",
       "market",
       "vintage",
-      "foodie"
+      "foodie",
+      "spa",
+      "massage",
+      "wellness",
+      "k-beauty",
+      "luxury"
     ],
-    "summary_kr": "음식 시장 위 2층, 패턴 원피스·복고풍 코트의 보세 디깅",
+    "summary_kr": "한국 스파·마사지 — 전신·스포츠·아로마·호텔 스파 완벽 풀가이드 (#17 + #292).",
     "summary_en": "2F above the food market — patterned dresses & retro coats hidden vintage arcade",
     "en_available": true
   },
@@ -341,9 +430,12 @@
       "nightlife",
       "outdoor",
       "photo",
-      "spring"
+      "spring",
+      "eungbongsan",
+      "night-view",
+      "hiking"
     ],
-    "summary_kr": "15분 등산, 0원, 동호대교·N서울타워 한 프레임",
+    "summary_kr": "응봉산 야경 — 15분 등산·0원·동호대교·N서울타워 한 프레임 도심 hidden 야경 1번지 (#02 + #224).",
     "summary_en": "15-min climb, ₩0, Dongho Bridge + N Seoul Tower in one frame",
     "en_available": true
   },
@@ -909,9 +1001,14 @@
     "category": "F",
     "tags": [
       "foreigner",
-      "seoul"
+      "seoul",
+      "tteok",
+      "korean-dessert",
+      "tradition",
+      "jongno",
+      "must-try"
     ],
-    "summary_kr": "42 · 서울 떡 맛집 — ISSUE 02 시리즈",
+    "summary_kr": "서울 떡 맛집 — 종로·낙원·낙성대 정통 떡집 외국인 매니아 가이드. 가래떡·송편·인절미·꿀떡 풀세트 (#15 한식 + #279 명절).",
     "summary_en": "Seoul Tteok Shops (떡집) — ISSUE 02 series",
     "en_available": true
   },
@@ -923,9 +1020,14 @@
     "category": "F",
     "tags": [
       "foreigner",
-      "seoul"
+      "seoul",
+      "yangjaecheon",
+      "walk",
+      "cafe",
+      "seocho",
+      "hidden-gem"
     ],
-    "summary_kr": "43 · 양재천 산책과 맛집 — ISSUE 02 시리즈",
+    "summary_kr": "양재천 산책·맛집 — 서초·강남 hidden 산책로·맛집 풀가이드 (#173 서초·서래 + #205 공원).",
     "summary_en": "Yangjaecheon (양재천) Walk & Eats — ISSUE 02 series",
     "en_available": true
   },
@@ -937,9 +1039,14 @@
     "category": "F",
     "tags": [
       "foreigner",
-      "seoul"
+      "seoul",
+      "han-river",
+      "summer",
+      "chimaek",
+      "cycling",
+      "camping"
     ],
-    "summary_kr": "44 · 한강 여름 가이드 — ISSUE 02 시리즈",
+    "summary_kr": "한강 여름 가이드 — 7~8월 한강 치맥·캠핑·자전거·수영장 외국인 매니아 풀세트 (#06 + #149 + #151).",
     "summary_en": "Han River (한강) Summer Guide — ISSUE 02 series",
     "en_available": true
   },
@@ -951,9 +1058,14 @@
     "category": "F",
     "tags": [
       "foreigner",
-      "seoul"
+      "seoul",
+      "gwangjang",
+      "market",
+      "street-food",
+      "bindaetteok",
+      "must-try"
     ],
-    "summary_kr": "광장시장 맛집·체험·주의사항 풀가이드 — ISSUE 02 시리즈",
+    "summary_kr": "광장시장 맛집·체험·주의사항 — 빈대떡·마약김밥·외국인 vlog 1번지 풀가이드 (#208 + #50 광장 빈티지).",
     "summary_en": "Gwangjang Market (광장시장) Full Guide for Foreigners — ISSUE 02 series",
     "en_available": true
   },
@@ -2194,7 +2306,18 @@
     "title_kr": "용산 가이드",
     "title_en": "Yongsan Guide",
     "category": "A",
-    "tags": ["foreigner","yongsan","yongsan-station","amorepacific","yongsan-park","national-museum","ktx-honam","samgakji","new-yongsan","han-river"],
+    "tags": [
+      "foreigner",
+      "yongsan",
+      "yongsan-station",
+      "amorepacific",
+      "yongsan-park",
+      "national-museum",
+      "ktx-honam",
+      "samgakji",
+      "new-yongsan",
+      "han-river"
+    ],
     "summary_kr": "용산역(한국 1번지 철도 1900 KTX 호남)+아모레퍼시픽 본사(David Chipperfield)+용산공원·국립중앙박물관·신용산 아이파크몰·드래곤시티 4축 12선 — 키친구 최초 용산구 본 area 진입 (yongsan cluster 141건)",
     "summary_en": "Yongsan Station (Korea's #1 railway since 1900, KTX Honam line) + Amorepacific HQ (David Chipperfield architecture) + Yongsan Park (US military base transitioning to public park) + National Museum + New Yongsan I-Park Mall + Dragon City 4-axis 12-pick — KeyChinGu first Yongsan main entry (141 cluster)",
     "en_available": false
@@ -2205,7 +2328,18 @@
     "title_kr": "마포 공덕 가이드",
     "title_en": "Mapo Gongdeok Guide",
     "category": "A",
-    "tags": ["foreigner","mapo","gongdeok","ahyeon","sangam-dmc","mbc-hq","world-cup-park","quad-transit","mz-cafe","82-kim-min-kyung"],
+    "tags": [
+      "foreigner",
+      "mapo",
+      "gongdeok",
+      "ahyeon",
+      "sangam-dmc",
+      "mbc-hq",
+      "world-cup-park",
+      "quad-transit",
+      "mz-cafe",
+      "82-kim-min-kyung"
+    ],
     "summary_kr": "공덕역(4중 환승)+상암 DMC·MBC 본사+82년생 김민경 콜라보 카페+마포 한강·월드컵공원·아현시장 4축 12선 — 키친구 최초 마포구 본 area 진입 (mapo cluster 177건)",
     "summary_en": "Gongdeok Station (Korea's #1 quadruple transit: lines 5/6/AREX/Gyeongui-Jungang) + Sangam DMC & MBC HQ (K-drama/variety) + 82-Born Kim Min-kyung cafe (bestseller collab) + Mapo Hangang/World Cup Park + Ahyeon Market 4-axis 12-pick — KeyChinGu first Mapo main entry (177 cluster)",
     "en_available": false
@@ -2216,7 +2350,18 @@
     "title_kr": "성동 왕십리 가이드",
     "title_en": "Seongdong Wangsimni Guide",
     "category": "A",
-    "tags": ["foreigner","seongdong","wangsimni","majang-meat-market","quintuple-transit","eungbongsan","hanyang-university","oksu-han-river","geumho","majang"],
+    "tags": [
+      "foreigner",
+      "seongdong",
+      "wangsimni",
+      "majang-meat-market",
+      "quintuple-transit",
+      "eungbongsan",
+      "hanyang-university",
+      "oksu-han-river",
+      "geumho",
+      "majang"
+    ],
     "summary_kr": "왕십리역(한국 1번지 5중 환승 2·5·KTX·경의중앙선·수인분당선)+마장축산물시장(한국 1번지 정육 도매 1961)+응봉산 야경+옥수·금호 한강·한양대 4축 12선 — 키친구 최초 성동구 본 area 진입 (seongdong cluster 168건)",
     "summary_en": "Wangsimni Station (Korea's #1 quintuple transit: lines 2/5/KTX/Gyeongui/Suin-Bundang, KTX Gangneung origin) + Majang Livestock Market (Korea's #1 meat wholesale since 1961) + Eungbongsan night view + Oksu·Geumho Han River + Hanyang University 4-axis 12-pick — KeyChinGu first Seongdong main entry (168 cluster)",
     "en_available": false
@@ -2227,7 +2372,18 @@
     "title_kr": "일본 관광객 국룰 코스 — 도쿄 당일치기 12시간 풀가이드",
     "title_en": "Japan Tourist Essentials — Tokyo Day-Trip Seoul Course",
     "category": "A",
-    "tags": ["foreigner","japan","gukrul","day-trip","cafe-tour","london-bagel","myeongdong","gwangjang-market","k-beauty","lotte-mart"],
+    "tags": [
+      "foreigner",
+      "japan",
+      "gukrul",
+      "day-trip",
+      "cafe-tour",
+      "london-bagel",
+      "myeongdong",
+      "gwangjang-market",
+      "k-beauty",
+      "lotte-mart"
+    ],
     "summary_kr": "韓国弾丸ツアー(한국 총알 12시간 당일치기) — 안국 카페(런던베이글·어니언) + 명동 아침·쇼핑(이삭토스트·전복죽·올리브영 95%·다이소 12층·약국 19개 +142%) + 광장시장·성수 식도락(진옥화 닭한마리·마약김밥·꽈배기·능동 미나리) + 롯데마트 서울역 캐리어 쇼핑 — 4축 12 시그니처. 일본 재방문율 44.8% + 평균 7회 매니아용 segment-specific 메타 가이드.",
     "summary_en": "Japan Tourist Essentials — 'Korea Bullet Trip' 12-hour day-trip + 1N2D standard course. Anguk cafe tour (London Bagel·Cafe Onion) + Myeongdong morning·shopping (Isaac Toast·abalone porridge·Olive Young Town 95% foreign sales·Daiso 12F·pharmacy district +142%) + Gwangjang Market + Seongsu Neungdong (minari + yukhoe) + Lotte Mart Seoul Station carrier shopping — 4-axis 12 signature picks. Japan segment 44.8% revisit + 7 avg visits, segment-specific meta guide.",
     "en_available": false
@@ -2238,7 +2394,18 @@
     "title_kr": "중국 관광객 요유객(요우커) 코스 — 방한 1위 segment 풀패키지 가이드",
     "title_en": "China Tourist Essentials — #1 Inbound Segment Full Package Guide",
     "category": "A",
-    "tags": ["foreigner","china","youke","myeongdong","dongdaemun","duty-free","hanbok","k-pop","lotte-world","n-seoul-tower"],
+    "tags": [
+      "foreigner",
+      "china",
+      "youke",
+      "myeongdong",
+      "dongdaemun",
+      "duty-free",
+      "hanbok",
+      "k-pop",
+      "lotte-world",
+      "n-seoul-tower"
+    ],
     "summary_kr": "방한 1위 segment(2024 460만명) 풀패키지 — 명동·동대문 쇼핑(올리브영 95%+두타 새벽+롯데면세점 60%) + N서울타워·경복궁·롯데월드타워 555m 랜드마크 + 북촌 한복·광장시장·인사동 전통 + HYBE 사옥·롯데월드·여의도 한강 치맥 K-pop·테마파크 4축 12선. 1박2일 압축 / 3박4일 풀패키지 양면. 샤오홍슈·웨이보·도우인 시그니처.",
     "summary_en": "Korea's #1 inbound segment full package — Myeongdong·Dongdaemun shopping (Olive Young 95% foreign sales + Doota night market + Lotte Duty Free 60% China share) + N Seoul Tower·Gyeongbokgung·Lotte World Tower 555m landmarks + Bukchon hanbok·Gwangjang Market·Insadong tradition + HYBE HQ·Lotte World·Yeouido Hangang chimaek 4-axis 12-pick. 1N2D compact + 3N4D full package. Xiaohongshu·Weibo·Douyin signature course.",
     "en_available": false
@@ -2249,7 +2416,18 @@
     "title_kr": "외국인 도전 음식 TOP 10",
     "title_en": "Korean Challenge Food TOP 10",
     "category": "C",
-    "tags": ["foreigner","challenge-food","k-vlog","sannakji","beondegi","hongeo","gopchang","dakbal","golbaengi","haejangguk"],
+    "tags": [
+      "foreigner",
+      "challenge-food",
+      "k-vlog",
+      "sannakji",
+      "beondegi",
+      "hongeo",
+      "gopchang",
+      "dakbal",
+      "golbaengi",
+      "haejangguk"
+    ],
     "summary_kr": "외국인 K-vlog #1 한식 도전 — 산낙지·번데기·홍어·곱창·닭발·골뱅이·해장국·소피·홍합탕·돼지국밥 TOP 10 + 시그니처 매장",
     "summary_en": "Korean K-vlog #1 challenge food — live octopus·beondegi·hongeo·gopchang·dakbal·golbaengi·haejangguk·blood soup·mussel soup·pork rice soup TOP 10 + signature shops",
     "en_available": false
@@ -2260,7 +2438,16 @@
     "title_kr": "한국식 BBQ 풀가이드",
     "title_en": "Korean BBQ Full Guide",
     "category": "C",
-    "tags": ["foreigner","korean-bbq","hanwoo","samgyeopsal","galbi","yangkkochi","gopchang","majang-market"],
+    "tags": [
+      "foreigner",
+      "korean-bbq",
+      "hanwoo",
+      "samgyeopsal",
+      "galbi",
+      "yangkkochi",
+      "gopchang",
+      "majang-market"
+    ],
     "summary_kr": "한우(1++)·삼겹살·양념갈비·양꼬치·내장 BBQ 4축 12선 — 마장축산물시장 + 외국인 K-BBQ deep dive",
     "summary_en": "Hanwoo (1++) · samgyeopsal · seasoned galbi · yangkkochi · intestines BBQ 4-axis 12-pick — Majang Livestock Market + foreigner K-BBQ deep dive",
     "en_available": false
@@ -2271,7 +2458,17 @@
     "title_kr": "한국 국·탕·찌개 deep dive",
     "title_en": "Korean Soups, Stews & Hot Pots",
     "category": "C",
-    "tags": ["foreigner","korean-soups","kimchi-jjigae","doenjang","samgyetang","seolleongtang","budae-jjigae","yukgaejang","tteokguk"],
+    "tags": [
+      "foreigner",
+      "korean-soups",
+      "kimchi-jjigae",
+      "doenjang",
+      "samgyetang",
+      "seolleongtang",
+      "budae-jjigae",
+      "yukgaejang",
+      "tteokguk"
+    ],
     "summary_kr": "김치찌개·된장찌개·갈비탕·삼계탕·설렁탕·부대찌개·매운탕·순두부·육개장·떡국·콩나물국밥 12선 — 한국 정통 국물 음식 풀세트",
     "summary_en": "Kimchi jjigae · doenjang jjigae · galbitang · samgyetang · seolleongtang · budae jjigae · spicy fish stew · sundubu · yukgaejang · tteokguk · kongnamul gukbap 12-pick — Korean traditional soups full set",
     "en_available": false
@@ -2282,7 +2479,17 @@
     "title_kr": "한식 매운 음식 챌린지",
     "title_en": "Korean Spicy Food Challenge",
     "category": "C",
-    "tags": ["foreigner","spicy-challenge","buldak","k-vlog","tteokbokki","galbijjim","nakji","agujjim","mala-tang"],
+    "tags": [
+      "foreigner",
+      "spicy-challenge",
+      "buldak",
+      "k-vlog",
+      "tteokbokki",
+      "galbijjim",
+      "nakji",
+      "agujjim",
+      "mala-tang"
+    ],
     "summary_kr": "외국인 K-vlog 매운맛 챌린지 12선 — 불닭볶음면·매운떡볶이·매운갈비찜·낙지볶음·아구찜·매운탕·매운닭발·고추잡채·매운짬뽕·매운골뱅이·육개장·마라탕",
     "summary_en": "Foreigner K-vlog spicy challenge 12-pick — Buldak fire noodles · spicy tteokbokki · spicy galbijjim · stir-fried octopus · agujjim · spicy fish stew · fire chicken feet · gochu japchae · spicy jjamppong · spicy golbaengi · yukgaejang · mala tang",
     "en_available": false
@@ -2293,7 +2500,16 @@
     "title_kr": "한국 비건·할랄·글루텐 프리 확장",
     "title_en": "Korean Vegan Halal Gluten-Free Expansion",
     "category": "C",
-    "tags": ["foreigner","vegan","halal","gluten-free","plant","jinkwansa-templestay","makan","loving-hut"],
+    "tags": [
+      "foreigner",
+      "vegan",
+      "halal",
+      "gluten-free",
+      "plant",
+      "jinkwansa-templestay",
+      "makan",
+      "loving-hut"
+    ],
     "summary_kr": "#69 후속 — 비건(플랜트·러빙헛)·할랄(MAKAN·EID·터키 케밥)·글루텐프리(쌀국수·일식)·사찰음식(진관사) 12선 — 다문화 식단 풀세트",
     "summary_en": "#69 follow-up — vegan (Plant·Loving Hut) · halal (MAKAN·EID·Turkish kebab) · gluten-free (Pho·sushi) · temple food (Jinkwansa) 12-pick — Korean diverse diet full set",
     "en_available": false
@@ -2304,7 +2520,17 @@
     "title_kr": "한국 술 deep dive",
     "title_en": "Korean Liquor Deep Dive",
     "category": "C",
-    "tags": ["foreigner","makgeolli","soju","cheongju","fruit-soju","craft-beer","highball","somaek","traditional-liquor"],
+    "tags": [
+      "foreigner",
+      "makgeolli",
+      "soju",
+      "cheongju",
+      "fruit-soju",
+      "craft-beer",
+      "highball",
+      "somaek",
+      "traditional-liquor"
+    ],
     "summary_kr": "막걸리·소주·청주·과일소주·참이슬·카스/테라·수제맥주·하이볼·동동주·전통주(안동/문배)·소맥·폭탄주 12종 — 한국 술 문화 풀세트 (#136 후속)",
     "summary_en": "Makgeolli·soju·cheongju·fruit soju·Jinro·Korean beer·craft beer·highball·dongdongju·traditional liquor·somaek·bomb shot 12 types — Korean drinking culture full set (#136 follow-up)",
     "en_available": false
@@ -2315,7 +2541,25 @@
     "title_kr": "서울 대학 캠퍼스 산책 가이드",
     "title_en": "Seoul University Campus Walk Guide",
     "category": "D",
-    "tags": ["foreigner","university","campus","cherry-blossom","autumn-foliage","kyung-hee","yonsei","korea-university","snu","sungkyunkwan","ewha","hanyang","konkuk","hongik","dongguk","kookmin","instagram-spot"],
+    "tags": [
+      "foreigner",
+      "university",
+      "campus",
+      "cherry-blossom",
+      "autumn-foliage",
+      "kyung-hee",
+      "yonsei",
+      "korea-university",
+      "snu",
+      "sungkyunkwan",
+      "ewha",
+      "hanyang",
+      "konkuk",
+      "hongik",
+      "dongguk",
+      "kookmin",
+      "instagram-spot"
+    ],
     "summary_kr": "봄꽃·단풍·산책하기 좋은 한국 명문 대학 캠퍼스 12선 — 경희대(한국 아름다운 캠퍼스 1위)·연세대 백양로 벚꽃·고려대 중앙광장·서울대 자하연·성균관대(조선 1398)·이화여대·한양대·건국대·중앙대·동국대·국민대·홍익대 + 외국인 인스타·K-drama 단골 무대",
     "summary_en": "Korea's top 12 university campuses for cherry blossom·autumn foliage·walking — Kyung Hee (Korea's #1 most beautiful campus·neo-European architecture) + Yonsei Baekyangno (cherry blossom main) + Korea University central plaza (Oxford-style) + SNU Jahayeon + Sungkyunkwan (Joseon's #1 educational institution since 1398) + Ewha (Penley Chapel·Korea's #1 women's college 1886) + Hanyang (Han River view) + Konkuk (Ilgamho lake·6000+ intl students) + CAU Heukseok (film/theater #1) + Dongguk (Buddhist hanok) + Kookmin (Bukhansan nature) + Hongik (Korea's #1 art college) — foreign Instagram·K-drama hotspot deep dive",
     "en_available": false
@@ -2326,7 +2570,22 @@
     "title_kr": "서울 공원 풀가이드",
     "title_en": "Seoul Parks Full Guide",
     "category": "B",
-    "tags": ["foreigner","seoul-parks","hangang-park","seoul-forest","olympic-park","childrens-grand-park","namsan","bukhansan","gwanaksan","seoul-botanic","dosan-park","family-friendly","cherry-blossom","autumn-foliage"],
+    "tags": [
+      "foreigner",
+      "seoul-parks",
+      "hangang-park",
+      "seoul-forest",
+      "olympic-park",
+      "childrens-grand-park",
+      "namsan",
+      "bukhansan",
+      "gwanaksan",
+      "seoul-botanic",
+      "dosan-park",
+      "family-friendly",
+      "cherry-blossom",
+      "autumn-foliage"
+    ],
     "summary_kr": "한강 11개·도심 5대·자연 3대 국립공원 + 도심 정원 4선 — 여의도·반포·뚝섬·서울숲·올림픽공원·어린이대공원·양재 시민의숲·남산·북한산·관악산·서울식물원·도산공원·낙산공원·응봉산·청계천·인왕산 통합 deep dive",
     "summary_en": "Korea's #1 park city deep dive — 11 Hangang Parks (Yeouido/Banpo/Ttukseom) + 5 urban parks (Seoul Forest/Olympic 1988/Children's Grand 1973 free zoo/Yangjae Citizens'/Seoseoul Lake) + 3 national parks (Namsan/Bukhansan 836m/Gwanaksan 632m) + Seoul Botanic Park (2019, Korea's largest) + Dosan Park + Naksan Park + Eungbongsan + Cheonggyecheon — family·cycling·BBQ·night view·spring blossom·autumn foliage",
     "en_available": false
@@ -2337,7 +2596,19 @@
     "title_kr": "한국 박물관·미술관 풀가이드",
     "title_en": "Korea Museums & Art Galleries Full Guide",
     "category": "D",
-    "tags": ["foreigner","museum","art-gallery","nmk","mmca","leeum","ddp-design","war-memorial","ewha-100","sema","free-entry"],
+    "tags": [
+      "foreigner",
+      "museum",
+      "art-gallery",
+      "nmk",
+      "mmca",
+      "leeum",
+      "ddp-design",
+      "war-memorial",
+      "ewha-100",
+      "sema",
+      "free-entry"
+    ],
     "summary_kr": "국립중앙박물관·국립민속박물관·국립한글박물관·한가람미술관·국립현대미술관·서울시립미술관·한성백제박물관·이화100주년기념박물관·서울역사박물관·DDP 디자인박물관·전쟁기념관·삼성미술관 리움 12선 + 추가 4 — 한국 1번지 박물관·미술관 통합 deep dive",
     "summary_en": "Korea's top 12 museums & art galleries — National Museum of Korea (Asia's #1, 700K artifacts) + National Folk Museum + National Hangul Museum + Hangaram Art Museum + MMCA (National Modern Art) + SeMA + Hanseong Baekje Museum + Ewha 100 Memorial + Seoul Museum of History + DDP Design Museum (Zaha Hadid) + War Memorial of Korea + Leeum Samsung (Botta/Nouvel/Koolhaas) — most free entry, English docent available",
     "en_available": false
@@ -2348,7 +2619,22 @@
     "title_kr": "한국 사찰·전통 건축 풀가이드",
     "title_en": "Korea Temples & Heritage Architecture",
     "category": "D",
-    "tags": ["foreigner","temple","palace","heritage","unesco","jinkwansa","bongeunsa","jogyesa","gyeongbokgung","changdeokgung","jongmyo","sungkyunkwan","hanbok","templestay"],
+    "tags": [
+      "foreigner",
+      "temple",
+      "palace",
+      "heritage",
+      "unesco",
+      "jinkwansa",
+      "bongeunsa",
+      "jogyesa",
+      "gyeongbokgung",
+      "changdeokgung",
+      "jongmyo",
+      "sungkyunkwan",
+      "hanbok",
+      "templestay"
+    ],
     "summary_kr": "한국 5대 사찰(진관사·봉은사·길상사)+도심 사찰(조계사·청룡사·도선사)+조선 4대 궁궐(경복궁·창덕궁·창경궁·덕수궁)+전통 교육·문화재(종묘·성균관) 12선 + 한옥·문화재 4 — 한국 1번지 전통 건축 통합 deep dive (한복 입으면 궁궐 무료)",
     "summary_en": "Korea's traditional architecture deep dive — 3 major temples (Jinkwansa 1018/Bongeunsa 794/Gilsangsa 1997) + 3 urban temples (Jogyesa·Cheongryongsa·Doseonsa) + 4 Joseon palaces (Gyeongbokgung 1395·Changdeokgung 1405 UNESCO·Changgyeonggung·Deoksugung Daehan Empire) + Jongmyo (UNESCO 1995) + Sungkyunkwan (Joseon's #1 educational institution since 1398) + hanok villages — free entry with hanbok rental",
     "en_available": false
@@ -2359,7 +2645,22 @@
     "title_kr": "한국 시장 풀가이드",
     "title_en": "Korea Traditional Markets Full Guide",
     "category": "F",
-    "tags": ["foreigner","markets","gwangjang","noryangjin-fish","dongdaemun","pyeonghwa","majang-livestock","garak","tongin","mangwon","myeonmok-urim","night-market","wholesale","hidden-gem"],
+    "tags": [
+      "foreigner",
+      "markets",
+      "gwangjang",
+      "noryangjin-fish",
+      "dongdaemun",
+      "pyeonghwa",
+      "majang-livestock",
+      "garak",
+      "tongin",
+      "mangwon",
+      "myeonmok-urim",
+      "night-market",
+      "wholesale",
+      "hidden-gem"
+    ],
     "summary_kr": "광장(외국인#1)·노량진수산(K-vlog#1)·동대문 종합·평화시장(의류 도매 1962)·마장축산(정육 도매 1961)·가락농수산·통인(도시락 통인)·망원·면목 우림·동대문 야시장·DDP청춘런웨이·서울풍물시장 12선 + 동묘·광장 vintage·연남·암사 4 — 한국 1번지 시장 도시 통합 deep dive",
     "summary_en": "Korea's top 12 traditional markets — Gwangjang (foreigner #1, 1905) + Noryangjin Fish Market (K-vlog #1, 1971) + Dongdaemun General (1959) + Pyeonghwa Market (wholesale clothing #1, 1962) + Majang Livestock (meat wholesale #1, 1961) + Garak Agricultural + Tongin (dosirak 5000won) + Mangwon + Myeonmok Urim + Dongdaemun Night Market + DDP Cheong-chun Runway + Seoul Folk Flea Market — Korea's #1 market city deep dive",
     "en_available": false
@@ -2370,7 +2671,23 @@
     "title_kr": "K-pop 매니아 풀가이드",
     "title_en": "K-pop Fan Full Guide",
     "category": "G",
-    "tags": ["foreigner","kpop","hybe","sm","yg","jyp","bts","blackpink","newjeans","aespa","twice","karts","coex","line-friends","kakao"],
+    "tags": [
+      "foreigner",
+      "kpop",
+      "hybe",
+      "sm",
+      "yg",
+      "jyp",
+      "bts",
+      "blackpink",
+      "newjeans",
+      "aespa",
+      "twice",
+      "karts",
+      "coex",
+      "line-friends",
+      "kakao"
+    ],
     "summary_kr": "K-pop 매니아 12선 + HYBE 인사이트(BTS·NewJeans)·SM Town COEX(aespa·EXO)·YG(BLACKPINK)·JYP(TWICE)·KARTS·라인 프렌즈·카카오 프렌즈·콜라보 카페 통합 deep dive (#19 후속)",
     "summary_en": "K-pop fan 12-pick deep dive — HYBE Insight (BTS·NewJeans HQ) + SM Town COEX Artium (aespa·EXO·NCT) + YG (BLACKPINK·BIGBANG HQ in Hapjeong) + JYP (TWICE·Stray Kids HQ in Gangdong) + KARTS (Korea's #1 K-pop training) + COEX K-pop Square + Line Friends (BT21) + Kakao Friends + Y G/SM collab cafes — #19 follow-up",
     "en_available": false
@@ -2381,7 +2698,20 @@
     "title_kr": "K-drama 촬영지 풀세트",
     "title_en": "K-drama Filming Spots Full Set",
     "category": "G",
-    "tags": ["foreigner","kdrama","filming-spots","itaewon-class","goblin","misaeng","sky-castle","cheese-trap","that-summer","reply-1988","crash-landing","mz-romance"],
+    "tags": [
+      "foreigner",
+      "kdrama",
+      "filming-spots",
+      "itaewon-class",
+      "goblin",
+      "misaeng",
+      "sky-castle",
+      "cheese-trap",
+      "that-summer",
+      "reply-1988",
+      "crash-landing",
+      "mz-romance"
+    ],
     "summary_kr": "K-drama 단골 무대 12선 + 이태원클라쓰·도깨비·미생·스카이캐슬·치즈인더트랩·그해우리는·응답하라1988·푸른바다의전설·W·사랑의불시착·호텔델루나·여신강림 통합 (#10 후속)",
     "summary_en": "K-drama filming spots 12-pick — Itaewon Class·Goblin·Misaeng·SKY Castle·Cheese in the Trap·That Summer·Reply 1988·Legend of the Blue Sea·W·Crash Landing on You·Hotel del Luna·True Beauty — area·drama·season cross-reference (#10 follow-up)",
     "en_available": false
@@ -2392,7 +2722,20 @@
     "title_kr": "한국 영화 뮤지컬 공연 매니아",
     "title_en": "Korea Arts Performance Guide",
     "category": "G",
-    "tags": ["foreigner","arts","theater","cinema","seoul-arts-center","lg-arts-center","arko","biff","bffc","jiff","imax","independent-film"],
+    "tags": [
+      "foreigner",
+      "arts",
+      "theater",
+      "cinema",
+      "seoul-arts-center",
+      "lg-arts-center",
+      "arko",
+      "biff",
+      "bffc",
+      "jiff",
+      "imax",
+      "independent-film"
+    ],
     "summary_kr": "한국 종합 공연장·대학로 인디·CGV/메가박스 IMAX·BIFF·BFFC·JIFF 영화제 12선 + 예술의전당·LG 아트센터·세종문화회관·아르코·동숭·학전블루·CGV 용산 IMAX 통합",
     "summary_en": "Korea arts·performance·cinema fan 12-pick — Seoul Arts Center (Hangaram Art Museum complex) + LG Arts Center Magok 2022 + Sejong Center + Daehakro indie theaters (ARKO·Dongsoong·Hakchun) + CGV Yongsan IMAX + Megabox COEX + Lotte World Tower super-plex + BIFF Busan + BFFC Bucheon + JIFF Jeonju international film festivals",
     "en_available": false
@@ -2403,7 +2746,20 @@
     "title_kr": "한국 야경 풀가이드",
     "title_en": "Korea Night View Full Guide",
     "category": "B",
-    "tags": ["foreigner","night-view","n-seoul-tower","lotte-tower","63-building","banpo-rainbow-fountain","eungbongsan","naksan","inwangsan","ddp-led","cheonggyecheon","gwanghwamun"],
+    "tags": [
+      "foreigner",
+      "night-view",
+      "n-seoul-tower",
+      "lotte-tower",
+      "63-building",
+      "banpo-rainbow-fountain",
+      "eungbongsan",
+      "naksan",
+      "inwangsan",
+      "ddp-led",
+      "cheonggyecheon",
+      "gwanghwamun"
+    ],
     "summary_kr": "N서울타워·롯데타워·63빌딩·반포 달빛무지개분수·응봉산·낙산공원·인왕산·DDP LED·청계천·광화문 12선 — 한국 야경 통합 deep dive (#02 후속)",
     "summary_en": "Korea night view 12-pick — N Seoul Tower 1969·Lotte Tower Seoul Sky 555m·63 Building·Banpo Moonlight Rainbow Fountain (Guinness world's longest bridge fountain)·Eungbongsan Pavilion (Han River bridges)·Naksan Park (Hanyang Fortress)·Inwangsan·DDP 45,000 LED facade·Cheonggyecheon night walk·Gwanghwamun Plaza (#02 follow-up)",
     "en_available": false
@@ -2414,7 +2770,19 @@
     "title_kr": "한국 카페 deep dive",
     "title_en": "Korean Cafes Deep Dive",
     "category": "C",
-    "tags": ["foreigner","cafe","hakrim-1956","knotted","london-bagel-museum","blue-bottle","maillet","ym-coffee","starbucks-the","mega-coffee","cafe-onion"],
+    "tags": [
+      "foreigner",
+      "cafe",
+      "hakrim-1956",
+      "knotted",
+      "london-bagel-museum",
+      "blue-bottle",
+      "maillet",
+      "ym-coffee",
+      "starbucks-the",
+      "mega-coffee",
+      "cafe-onion"
+    ],
     "summary_kr": "정통(학림 1956 한국 최초)·트렌디 MZ(노티드·LBM·어니언)·글로벌(블루보틀·MAILLET·YM)·체인(스타벅스 더 서울·메가·이디야) 12선 — 한국 카페 통합 deep dive",
     "summary_en": "Korea cafes 12-pick — Hakrim (1956 Korea's first cafe) + Napoleon Confectionary 1968 + MAILLET (1995 Korea's #1 French bakery) + Blue Bottle (US specialty 2019 Hannam) + YM Coffee Project + Knotted (Korea's #1 donut chain) + London Bagel Museum (Korea's bagel #1) + Cafe Onion Seongsu + Starbucks 'The' flagship series + Mega Coffee budget chain — Korea's #1 cafe city",
     "en_available": false
@@ -2425,7 +2793,20 @@
     "title_kr": "한국 한옥 deep dive",
     "title_en": "Korea Hanok Deep Dive",
     "category": "D",
-    "tags": ["foreigner","hanok","bukchon","eunpyeong-hanok","ikseondong","seochon","namsan-hanok","gyeongbokgung","changdeokgung","jeonju-hanok","andong-hahoe","hanbok"],
+    "tags": [
+      "foreigner",
+      "hanok",
+      "bukchon",
+      "eunpyeong-hanok",
+      "ikseondong",
+      "seochon",
+      "namsan-hanok",
+      "gyeongbokgung",
+      "changdeokgung",
+      "jeonju-hanok",
+      "andong-hahoe",
+      "hanbok"
+    ],
     "summary_kr": "북촌(외국인 #1)·은평한옥마을·익선동·서촌·남산·경복궁·창덕궁·창경궁·덕수궁·인사동·청류·종로 한옥 카페 12선 + 전주·안동·경주·정선 외곽 4 한옥 통합",
     "summary_en": "Korea hanok 12-pick — Bukchon Hanok Village (Korea's #1 foreigner spot) + Eunpyeong Hanok Village (Korea's #1 newly-built 2007) + Ikseondong hanok cafe street + Seochon + Namsan Hanok Village + 4 Joseon palaces (Gyeongbokgung/Changdeokgung UNESCO/Changgyeonggung/Deoksugung) + Insadong + Cheongryu Eunpyeong Hanok + Jongno hanok cafe cluster + Jeonju (largest)·Andong Hahoe UNESCO·Gyeongju Yangdong·Jeongseon Arari rural 4",
     "en_available": false
@@ -2436,7 +2817,22 @@
     "title_kr": "한국 미용 스파 뷰티 통합",
     "title_en": "Korea K-beauty Spa Full Guide",
     "category": "E",
-    "tags": ["foreigner","kbeauty","cosmetics","myeongdong","olive-young","amorepacific","innisfree","laneige","dragon-hill-spa","spaland","jjimjilbang","personal-color","park-seung-cheol","k-wedding"],
+    "tags": [
+      "foreigner",
+      "kbeauty",
+      "cosmetics",
+      "myeongdong",
+      "olive-young",
+      "amorepacific",
+      "innisfree",
+      "laneige",
+      "dragon-hill-spa",
+      "spaland",
+      "jjimjilbang",
+      "personal-color",
+      "park-seung-cheol",
+      "k-wedding"
+    ],
     "summary_kr": "K-beauty 통합 12선 + 명동 코스메틱·올리브영·아모레퍼시픽 본사·이니스프리/라네즈 플래그십·드래곤힐스파·스파랜드·한솔찜질방·퍼스널컬러·박승철/차홍·웨딩 스튜디오·한복 사진관 + 면세 4선 (#09·#17·#73 후속)",
     "summary_en": "K-beauty·spa·beauty 12-pick — Myeongdong cosmetics street (Korea's #1) + Olive Young flagship + Amorepacific HQ (David Chipperfield) + Innisfree/Laneige flagships + Dragon Hill Spa (Korea's #1 24h jjimjilbang Yongsan) + Spaland Jamsil + Hansol Hongdae + Personal Color Consulting (청담) + Park Seung-cheol/Cha Hong hair salons + K-wedding studios (Cheongdam) + hanbok photo studios (#09·#17·#73 follow-up)",
     "en_available": false
@@ -2447,7 +2843,20 @@
     "title_kr": "한국 디저트 풀가이드",
     "title_en": "Korea Desserts Full Guide",
     "category": "C",
-    "tags": ["foreigner","desserts","bungeoppang","hotteok","yakgwa","injeolmi","bingsu","knotted","lbm","maillet","shilla","traditional-modern"],
+    "tags": [
+      "foreigner",
+      "desserts",
+      "bungeoppang",
+      "hotteok",
+      "yakgwa",
+      "injeolmi",
+      "bingsu",
+      "knotted",
+      "lbm",
+      "maillet",
+      "shilla",
+      "traditional-modern"
+    ],
     "summary_kr": "한국 정통·길거리·모던·럭셔리 디저트 12선 + 붕어빵·호떡·약과·인절미·빙수(설빙 본점)·노티드·LBM·MAILLET·신라호텔·금옥당 + 약식·꿀떡·매작과·강정",
     "summary_en": "Korea desserts 12-pick — bungeoppang (winter street #1) + hotteok + gyeran-ppang + yakgwa (gift #1) + injeolmi·songpyeon + Sulbing bingsu (Korea's flagship shaved ice, Ewha) + Knotted donuts + London Bagel Museum + MAILLET French pastry + Shilla Hotel + Geumokdang Yeonhui traditional",
     "en_available": false
@@ -2458,7 +2867,19 @@
     "title_kr": "한국 한정식 풀가이드",
     "title_en": "Korea Hanjeongsik Full Guide",
     "category": "C",
-    "tags": ["foreigner","hanjeongsik","royal-cuisine","yongsusan","samcheonggak","shilla-rayoun","palace-cuisine","insadong","bukchon-hanok","temple-food","baekban"],
+    "tags": [
+      "foreigner",
+      "hanjeongsik",
+      "royal-cuisine",
+      "yongsusan",
+      "samcheonggak",
+      "shilla-rayoun",
+      "palace-cuisine",
+      "insadong",
+      "bukchon-hanok",
+      "temple-food",
+      "baekban"
+    ],
     "summary_kr": "한국 정통 코스 한식 12선 + 궁중 한정식(용수산·삼청각·신라호텔 라연)·전통 노포(유담들밥·청기와타운·미포집)·모던(정원·고궁 인사동·궁 북촌)·가성비(백반·정식·한끼·사찰음식 진관사) 통합",
     "summary_en": "Korea Hanjeongsik (Korean course meal) 12-pick — royal cuisine (Yongsusan 1980·Samcheonggak·Shilla Hotel Rayoun Michelin) + traditional (Yudamdeulbap·Cheonggiwa Town·Mipojip) + modern foreigner-friendly (Jeongwon·Gogung Insadong·Goong Bukchon) + budget (baekban·jeongsik·hankki·temple food Jinkwansa) — 6,000~200,000원 range",
     "en_available": false
@@ -2469,7 +2890,19 @@
     "title_kr": "한국 책방 독립서점 풀가이드",
     "title_en": "Korea Bookstores Full Guide",
     "category": "D",
-    "tags": ["foreigner","bookstore","kyobo","yes24","aladin","your-mind","goyo-seosa","starfield-library","ark-and-book","82-kim-min-kyung","independent"],
+    "tags": [
+      "foreigner",
+      "bookstore",
+      "kyobo",
+      "yes24",
+      "aladin",
+      "your-mind",
+      "goyo-seosa",
+      "starfield-library",
+      "ark-and-book",
+      "82-kim-min-kyung",
+      "independent"
+    ],
     "summary_kr": "대형 서점(교보문고 광화문·영풍·예스24 홍대·알라딘 중고)·독립서점(유어마인드 연희·고요서사 성수·소설리스트 이태원·이상의집 북촌)·MZ 테마(별마당 도서관 코엑스·아크앤북 을지로·82년생 김민경·더현대 도서) 12선",
     "summary_en": "Korea bookstores 12-pick — major (Kyobo Gwanghwamun 1981·Yeongpoong·YES24 Hongdae·Aladin used books) + independent (Your Mind Yeonhui Korea's #1 indie since 2009·Goyo Seosa Seongsu·Mystery Bookshop Itaewon·Yi Sang's House Bukchon) + MZ theme (Starfield Library COEX 13m wall #1 instagram·Ark&Book Euljiro·82-Born Kim Min-kyung Mapo·Hyundai Library Gangnam)",
     "en_available": false
@@ -2480,7 +2913,20 @@
     "title_kr": "한국 빈티지 중고샵 풀가이드",
     "title_en": "Korea Vintage & Thrift Full Guide",
     "category": "F",
-    "tags": ["foreigner","vintage","thrift","dongmyo","gwangjang-vintage","yeonhui-vintage","hongdae-vintage","seongsu-vintage","itaewon-lct","ikseondong-vintage","gasan-outlet","aladin-used"],
+    "tags": [
+      "foreigner",
+      "vintage",
+      "thrift",
+      "dongmyo",
+      "gwangjang-vintage",
+      "yeonhui-vintage",
+      "hongdae-vintage",
+      "seongsu-vintage",
+      "itaewon-lct",
+      "ikseondong-vintage",
+      "gasan-outlet",
+      "aladin-used"
+    ],
     "summary_kr": "한국 빈티지·중고 12선 + 동묘 구제(한국 1번지·#49)·광장 vintage 2층(#50)·연희동(티티에이·5GU·니바하우스·#156)·홍대·성수·이태원 LCT·익선동 한옥 + 알라딘 중고서점·번개장터·강남터미널 GOTO몰·가산 아울렛 (마리오 1995·롯데팩토리·W몰)",
     "summary_en": "Korea vintage & thrift 12-pick — Dongmyo flea market (Korea's #1 vintage since #49) + Gwangjang vintage 2F arcade (#50) + Yeonhui-dong vintage cluster (TTA/5GU/Niva House/#156) + Hongdae/Yeonnam + Seongsu + Itaewon LCT (Lost & Found) + Hannam + Ikseondong hanok vintage + Aladin used books + Bunjang/Junggonara apps + Gangnam Terminal GOTO Mall + Gasan outlets (Mario 1995·Lotte Factory·W-Mall)",
     "en_available": false
@@ -2491,7 +2937,19 @@
     "title_kr": "외국인 첫 방문 1주일 코스",
     "title_en": "Korea First Visit 7-Day Itinerary",
     "category": "H",
-    "tags": ["foreigner","first-visit","7-day-itinerary","onboarding","myeongdong","gangnam","hongdae","jamsil","palace","hangang","kpop"],
+    "tags": [
+      "foreigner",
+      "first-visit",
+      "7-day-itinerary",
+      "onboarding",
+      "myeongdong",
+      "gangnam",
+      "hongdae",
+      "jamsil",
+      "palace",
+      "hangang",
+      "kpop"
+    ],
     "summary_kr": "외국인 첫 방문자 1주일 풀세트 — Day1 도착·명동·N서울타워 → Day2 궁궐·한복·북촌 → Day3 홍대·연남·연희 → Day4 강남·K-pop·HYBE → Day5 잠실·롯데월드 → Day6 한강·노량진수산·도전음식 → Day7 면세·출국 + Variant 4 (K-pop·가족·음식·자연)",
     "summary_en": "Korea 7-day itinerary for first-time visitors — Day1 Arrival/Myeongdong/N Seoul Tower → Day2 Palaces/Hanbok/Bukchon → Day3 Hongdae/Yeonnam/Yeonhui → Day4 Gangnam/K-pop/HYBE Insight → Day5 Jamsil/Lotte World → Day6 Hangang/Noryangjin Fish Market/challenge food → Day7 Duty-free/Departure + 4 variants (K-pop/family/food/nature)",
     "en_available": false
@@ -2502,7 +2960,24 @@
     "title_kr": "가을 단풍 풀가이드",
     "title_en": "Korea Autumn Foliage Full Guide",
     "category": "B",
-    "tags": ["foreigner","autumn-foliage","bukhansan","gwanaksan","dobongsan","achasan","olympic-park","seoul-forest","yangjae","namsan","changdeokgung-secret-garden","jongmyo","naksan","eungbongsan","naejangsan","seoraksan"],
+    "tags": [
+      "foreigner",
+      "autumn-foliage",
+      "bukhansan",
+      "gwanaksan",
+      "dobongsan",
+      "achasan",
+      "olympic-park",
+      "seoul-forest",
+      "yangjae",
+      "namsan",
+      "changdeokgung-secret-garden",
+      "jongmyo",
+      "naksan",
+      "eungbongsan",
+      "naejangsan",
+      "seoraksan"
+    ],
     "summary_kr": "한국 가을 단풍 (10~11월) 풀세트 12선 + 산(북한산·관악·도봉·아차)·도심 공원(올림픽·서울숲·양재·남산)·궁궐(창덕궁 후원·종묘)·산 전망(낙산·인왕·응봉) + 외곽 4 (내장·설악·지리·오대) — #89 후속",
     "summary_en": "Korea autumn foliage Oct-Nov 12-pick — mountains (Bukhansan/Gwanaksan/Dobongsan/Achasan) + urban parks (Olympic 1988/Seoul Forest/Yangjae/Namsan) + palaces UNESCO (Changdeokgung Secret Garden/Jongmyo) + viewpoints (Naksan/Inwangsan/Eungbongsan) + 4 outskirts (Naejangsan/Seoraksan/Jirisan/Odaesan) — #89 follow-up with timing chart",
     "en_available": false
@@ -2513,7 +2988,21 @@
     "title_kr": "봄 벚꽃 풀가이드",
     "title_en": "Korea Spring Cherry Blossom Full Guide",
     "category": "B",
-    "tags": ["foreigner","cherry-blossom","yunjung-ro","banpo","seoul-forest","olympic-park","kyung-hee","yonsei","korea-univ","ewha","changdeokgung","jinhae","gyeongju"],
+    "tags": [
+      "foreigner",
+      "cherry-blossom",
+      "yunjung-ro",
+      "banpo",
+      "seoul-forest",
+      "olympic-park",
+      "kyung-hee",
+      "yonsei",
+      "korea-univ",
+      "ewha",
+      "changdeokgung",
+      "jinhae",
+      "gyeongju"
+    ],
     "summary_kr": "한국 봄 벚꽃 (4월 첫째~둘째 주) 풀세트 12선 + 한강(윤중로·반포·서울숲·올림픽)·캠퍼스(경희·연세·고려·이화)·궁궐(창덕궁·창경궁)·도심(남산·국립서울현충원) + 외곽 4 (진해·경주·서울대공원·석촌호수)",
     "summary_en": "Korea spring cherry blossom April 12-pick — Hangang (Yunjung-ro Yeouido 1.7km #1·Banpo·Seoul Forest·Olympic Park) + campuses (Kyung Hee Peace Hall·Yonsei Baekyangno·Korea U Central Plaza·Ewha Hangaram) + palaces UNESCO (Changdeokgung + Secret Garden·Changgyeonggung) + Namsan + Seoul National Cemetery (free) + 4 outskirts (Jinhae Yeojacheon Korea's #1·Gyeongju Bomun Lake UNESCO·Seoul Grand Park·Seokchon Lake)",
     "en_available": false
@@ -2524,7 +3013,22 @@
     "title_kr": "겨울 일루미네이션 축제",
     "title_en": "Korea Winter Illumination & Festival",
     "category": "B",
-    "tags": ["foreigner","winter","illumination","cheonggyecheon","lotte-world","ddp-led","seoul-botanic","n-seoul-tower","bosingak","seollal","dongji","ski","yongpyong","hi-one"],
+    "tags": [
+      "foreigner",
+      "winter",
+      "illumination",
+      "cheonggyecheon",
+      "lotte-world",
+      "ddp-led",
+      "seoul-botanic",
+      "n-seoul-tower",
+      "bosingak",
+      "seollal",
+      "dongji",
+      "ski",
+      "yongpyong",
+      "hi-one"
+    ],
     "summary_kr": "한국 겨울 (12~2월) 풀세트 + 일루미네이션(청계천 빛초롱·롯데월드·DDP LED·서울숲·광화문 트리)·실내(서울식물원 온실·N서울타워·롯데타워)·전통(보신각 타종 12/31·설날·동지 팥죽)·외곽(용평·하이원 스키 강원) 12선 (#90 후속)",
     "summary_en": "Korea winter Dec-Feb 12-pick — illuminations (Seoul Lantern Festival Cheonggyecheon Nov-Dec·Lotte World·DDP 45K LED·Seoul Forest·Gwanghwamun Christmas Tree) + indoors (Seoul Botanic Park greenhouses·N Seoul Tower·Lotte Tower Seoul Sky) + tradition (Bosingak Bell Tolling Dec 31 midnight·Seollal Lunar New Year tteokguk·Dongji red bean porridge Dec 22) + ski (Yongpyong/Hi-one/Gonjiam Gangwon) — #90 follow-up",
     "en_available": false
@@ -2535,7 +3039,20 @@
     "title_kr": "서울 가족 자녀 풀가이드",
     "title_en": "Seoul with Kids Full Guide",
     "category": "H",
-    "tags": ["foreigner","family-kids","lotte-world","childrens-grand-park","seoul-forest","seoul-botanic","yangjae","n-seoul-tower","63-aqua-planet","coex-aquarium","nmk-childrens-museum","stroller-rental"],
+    "tags": [
+      "foreigner",
+      "family-kids",
+      "lotte-world",
+      "childrens-grand-park",
+      "seoul-forest",
+      "seoul-botanic",
+      "yangjae",
+      "n-seoul-tower",
+      "63-aqua-planet",
+      "coex-aquarium",
+      "nmk-childrens-museum",
+      "stroller-rental"
+    ],
     "summary_kr": "외국인 가족·자녀 풀세트 — 테마파크(롯데월드·어린이대공원 1973 무료)·도심 공원(서울숲 사슴원·서울식물원·양재)·랜드마크(N서울타워·63빌딩 아쿠아플라넷·롯데·COEX 아쿠아리움)·학습(NMK 어린이박물관·한글박물관)·액티비티(한강 가족 자전거 4인용) 12선",
     "summary_en": "Seoul with kids 12-pick — theme parks (Lotte World + Tower #1·Children's Grand Park 1973 Korea's #1 FREE urban zoo) + urban parks (Seoul Forest deer/insect park·Seoul Botanic Park·Yangjae Citizens') + landmarks (N Seoul Tower + cable car·63 Building Aqua Planet·Lotte World Aquarium·COEX Aquarium + Starfield Library) + learning (NMK Children's Museum + Hangul Museum FREE) + Hangang family bike 4-person — stroller rental + family hotel recommendations",
     "en_available": false
@@ -2546,7 +3063,20 @@
     "title_kr": "서울 지하철 풀가이드",
     "title_en": "Seoul Subway Full Guide",
     "category": "H",
-    "tags": ["foreigner","transport","subway","seoul-metro","line2","line6","airport-railroad","line9-express","sinbundang","gyeongui-jungang","tmoney","transfer"],
+    "tags": [
+      "foreigner",
+      "transport",
+      "subway",
+      "seoul-metro",
+      "line2",
+      "line6",
+      "airport-railroad",
+      "line9-express",
+      "sinbundang",
+      "gyeongui-jungang",
+      "tmoney",
+      "transfer"
+    ],
     "summary_kr": "서울 지하철 24개 노선 750+ 역 외국인 친화 풀세트 — 1~9호선·공항철도·신분당·경의중앙·우이신설·신림선 + T-money 환승 무료·9호선 급행·공항철도 직통 vs 일반·외국인 4lang 안내",
     "summary_en": "Seoul Subway 12-pick — Line 1 (since 1974 Korea's #1) + Line 2 ring (Korea's #1 50.2km foreigner #1) + Line 3 (Apgujeong-Gyeongbokgung-Jongno) + Line 4 (Myeongdong-NMK) + Line 5 (Gimpo Airport-Yeouido) + Line 6 (Itaewon-Hongdae foreigner #2) + Airport Railroad (ICN Express 43min·local 58min) + Line 9 Express (Gimpo-Gangnam) + Shinbundang (Pangyo) + Gyeongui-Jungang + T-money transfer free within 30min",
     "en_available": false
@@ -2557,7 +3087,20 @@
     "title_kr": "한국 T-money 결제 환승 풀가이드",
     "title_en": "Korea T-money & Payment Full Guide",
     "category": "H",
-    "tags": ["foreigner","tmoney","cashbee","wowpass","korea-tour-card","samsung-pay","apple-pay","kakao-t","uber","tax-refund","exchange","myeongdong-exchange"],
+    "tags": [
+      "foreigner",
+      "tmoney",
+      "cashbee",
+      "wowpass",
+      "korea-tour-card",
+      "samsung-pay",
+      "apple-pay",
+      "kakao-t",
+      "uber",
+      "tax-refund",
+      "exchange",
+      "myeongdong-exchange"
+    ],
     "summary_kr": "외국인 inbound 1순위 페인포인트 결제·교통 풀세트 — T-money·캐시비·레일플러스·WOWPASS(외국인 전용)·Korea Tour Card·모바일 T-money·삼성페이/Apple Pay·신용카드 직결·KakaoT 택시·Uber·면세 환급·외화 환전",
     "summary_en": "Korea payment & transport card 12-pick — T-money (Korea's #1 transit card, 4,000won) + Cashbee + RailPlus + WOWPASS (foreigner-exclusive with FX exchange + T-money + payment combined since 2022) + Korea Tour Card + Mobile T-money (Android NFC + Naver Pay/Toss/KakaoPay 2024 expansion) + Samsung Pay + Apple Pay + Direct credit card payment on subway/bus + KakaoT Taxi + Uber + Tax Refund (over 30,000won) + Myeongdong exchange #1 rate",
     "en_available": false
@@ -2568,7 +3111,20 @@
     "title_kr": "한국 KTX 고속버스 외곽 교통 풀가이드",
     "title_en": "Korea KTX & Intercity Transport Full Guide",
     "category": "H",
-    "tags": ["foreigner","ktx","srt","express-bus","domestic-flight","airport-limousine","car-rental","korail-pass","ferry","gangneung","busan","jeju"],
+    "tags": [
+      "foreigner",
+      "ktx",
+      "srt",
+      "express-bus",
+      "domestic-flight",
+      "airport-limousine",
+      "car-rental",
+      "korail-pass",
+      "ferry",
+      "gangneung",
+      "busan",
+      "jeju"
+    ],
     "summary_kr": "외국인 외곽 1순위 풀세트 — KTX 경부선(서울→부산 2.5h)·호남선·강릉선(평창)·SRT(수서)·ITX-새마을·고속버스 3터미널·국내선 LCC·공항리무진·렌터카·외곽 ferry(제주·울릉) + KORAIL Pass 외국인 전용",
     "summary_en": "Korea intercity transport 12-pick — KTX Gyeongbu Line (Seoul-Busan 2.5h, since 2004) + KTX Honam Line (Yongsan-Gwangju 2h) + KTX Gangneung Line (Seoul-Gangneung 1h40m for ski) + SRT (Suseo since 2016) + ITX-Saemaul (heritage rail) + Express Bus (3 terminals Gyeongbu/Dongseoul/Nambu) + Domestic LCC (Jeju Air/T'way/Eastar/Jin Air, Gimpo-Jeju 30-80K won) + Airport Limousine 18,000won + Car rental with IDP + Ferry (Jeju/Wando/Ulleung)",
     "en_available": false
@@ -2579,7 +3135,23 @@
     "title_kr": "한국 야구 풀가이드",
     "title_en": "Korea Baseball KBO Full Guide",
     "category": "G",
-    "tags": ["foreigner","baseball","kbo","jamsil","gocheok-dome","lg","doosan","ssg","kt","lotte","samsung","kia","nc","kiwoom","hanwha"],
+    "tags": [
+      "foreigner",
+      "baseball",
+      "kbo",
+      "jamsil",
+      "gocheok-dome",
+      "lg",
+      "doosan",
+      "ssg",
+      "kt",
+      "lotte",
+      "samsung",
+      "kia",
+      "nc",
+      "kiwoom",
+      "hanwha"
+    ],
     "summary_kr": "한국 1번지 스포츠 KBO 야구 12선 + 외국인 응원·치맥·외야 culture — 잠실(LG·두산 공유)·고척 스카이돔(키움 한국 유일 돔구장)·인천 SSG·수원 KT·대전 한화·광주 KIA·대구 삼성·창원 NC(2019 신축)·사직 롯데 + 외국인 KBO 매니아 패스",
     "summary_en": "Korea Baseball (KBO) 12-pick — Jamsil (Korea's #1, LG+Doosan shared 25,553 seats) + Gocheok Sky Dome (Korea's only dome 2015, Kiwoom 17K seats, BTS concerts) + Incheon SSG Landers Field (2002) + Suwon KT Wiz Park (2013) + Daejeon Hanwha Eagles Park (1964) + Gwangju KIA Champions Field (2014, 11 titles) + Daegu Samsung Lions Park (2016) + Changwon NC Park (2019 newest) + Sajik (Busan Lotte 1985) — chimaek + outfield cheering + KBO mania",
     "en_available": false
@@ -2590,7 +3162,20 @@
     "title_kr": "한국 e스포츠 풀가이드",
     "title_en": "Korea Esports & LCK Full Guide",
     "category": "G",
-    "tags": ["foreigner","esports","lck","lol-park","t1","faker","gen-g","drx","kt-rolster","dplus-kia","pc-bang","worlds"],
+    "tags": [
+      "foreigner",
+      "esports",
+      "lck",
+      "lol-park",
+      "t1",
+      "faker",
+      "gen-g",
+      "drx",
+      "kt-rolster",
+      "dplus-kia",
+      "pc-bang",
+      "worlds"
+    ],
     "summary_kr": "세계 1번지 e스포츠 한국 풀세트 — LoL Park(종로 그랑서울 LCK 본거지)·T1(페이커·Worlds 5회)·Gen.G·DRX(2022 우승)·KT Rolster·Dplus KIA·한화생명·PC방 culture(외국인 vlog 1순위)·Worlds 한국 개최",
     "summary_en": "Korea Esports & LCK 12-pick — LoL Park (Gwanghwamun Jongno Grand Seoul, LCK home 400 seats since 2018) + T1 (Faker, world's #1 LoL player, 5x Worlds 2013/2015/2016/2023/2024) + Gen.G (Worlds 2017) + DRX (Worlds 2022 underdog) + KT Rolster + Dplus KIA + Hanwha Life + Korean PC bang culture (1-2K won/hour 24h, foreigner vlog #1) + Worlds Korea hosting (2014/2018/2023)",
     "en_available": false
@@ -2601,7 +3186,21 @@
     "title_kr": "한국 의료 관광 풀가이드",
     "title_en": "Korea Medical Tourism Full Guide",
     "category": "E",
-    "tags": ["foreigner","medical-tourism","plastic-surgery","gangnam","jk-clinic","bk-clinic","dental","snu-hospital","samsung-medical","asan-medical","severance","dermatology","k-medical"],
+    "tags": [
+      "foreigner",
+      "medical-tourism",
+      "plastic-surgery",
+      "gangnam",
+      "jk-clinic",
+      "bk-clinic",
+      "dental",
+      "snu-hospital",
+      "samsung-medical",
+      "asan-medical",
+      "severance",
+      "dermatology",
+      "k-medical"
+    ],
     "summary_kr": "K-Medical 세계 1번지 외국인 inbound 12선 — 강남 성형 거리(JK·BK)·이대 치과·강남 치과·서울대 종합검진(혜화)·삼성서울·아산·세브란스(신촌) + K-Beauty 피부과(드림·콜투·차앤박) + 외국인 친화 호텔·통역·정부 인증 K-Medical",
     "summary_en": "Korea Medical Tourism 12-pick — Gangnam plastic surgery street (Apgujeong/Sinsa/Cheongdam #1) + JK Plastic Surgery + BK Plastic Surgery + Ewha & Gangnam dental street (implant 30-70% cheaper than US) + SNU Hospital comprehensive checkup (Hyehwa) + Samsung Medical Center + Asan Medical Center (Songpa) + Severance (Sinchon) + K-Beauty dermatology (Dream/Coltu/Cha&Park) + foreigner-friendly hotels (Seorae Maeul) + multilingual translation + K-Medical government certification",
     "en_available": false
@@ -2612,7 +3211,21 @@
     "title_kr": "부산 해운대 광안리 가이드",
     "title_en": "Busan Haeundae & Gwangalli Guide",
     "category": "A",
-    "tags": ["foreigner","busan","haeundae","gwangalli","gwangan-bridge","marine-city","dongbaek-island","the-bay-101","dalmaji","x-the-sky","lct","sea-life","busan-series"],
+    "tags": [
+      "foreigner",
+      "busan",
+      "haeundae",
+      "gwangalli",
+      "gwangan-bridge",
+      "marine-city",
+      "dongbaek-island",
+      "the-bay-101",
+      "dalmaji",
+      "x-the-sky",
+      "lct",
+      "sea-life",
+      "busan-series"
+    ],
     "summary_kr": "부산 시리즈 ① 해변 도시 1번지 12선 — 해운대 해수욕장(연 1000만+)·광안리(7.4km 광안대교 야경 1번지)·동백섬+The Bay 101·달맞이길·마린시티(80층+ 마천루)·SEA LIFE 아쿠아리움·X the SKY(411m·100층 LCT)·이기대·동백공원 APEC·해운대 회·횟집",
     "summary_en": "Busan Series ① Haeundae & Gwangalli 12-pick — Haeundae Beach (Korea's #1 beach, 1.5km, 10M+ annual visitors) + Gwangalli Beach + Gwangan Bridge (7.4km night view #1) + Dongbaek Island + The Bay 101 + Dalmaji-gil + Marine City (Korea's #1 skyscraper district, 80+ floors) + Busan SEA LIFE Aquarium + X the SKY LCT (411m, Korea's 2nd tallest after Lotte Tower) + Igidae natural park + Dongbaek APEC Nurimaru + Haeundae sashimi market",
     "en_available": false
@@ -2623,7 +3236,21 @@
     "title_kr": "부산 자갈치 국제시장 가이드",
     "title_en": "Busan Jagalchi & Gukje Market Guide",
     "category": "A",
-    "tags": ["foreigner","busan","jagalchi","gukje-market","biff-street","yongdusan","busan-tower","yeongdo","taejongdae","songdo","milmyeon","dwaeji-gukbap","busan-series"],
+    "tags": [
+      "foreigner",
+      "busan",
+      "jagalchi",
+      "gukje-market",
+      "biff-street",
+      "yongdusan",
+      "busan-tower",
+      "yeongdo",
+      "taejongdae",
+      "songdo",
+      "milmyeon",
+      "dwaeji-gukbap",
+      "busan-series"
+    ],
     "summary_kr": "부산 시리즈 ② 시장·정통 12선 — 자갈치시장(한국 1번지 수산·새벽 경매 05~07시)·국제시장(1948 영화 무대)·BIFF 거리(남포동)·남포동·광복로·용두산공원+부산타워(120m 360°)·영도 흰여울 문화마을·태종대(절벽·달뜨는 자리)·송도 케이블카·부평 깡통야시장·자갈치 정통 회·밀면·돼지국밥",
     "summary_en": "Busan Series ② Jagalchi & Gukje Market 12-pick — Jagalchi Market (Korea's #1 seafood market, dawn auction 5-7am) + Gukje Market (1948, 'Ode to My Father' movie set) + BIFF Street (Nampo-dong) + Nampo-dong + Gwangbok-ro shopping + Yongdusan Park + Busan Tower (120m 360° view) + Yeongdo Huinnyeoul Culture Village (Busan instagram #1) + Taejongdae (cliff + moonrise) + Songdo cable car + Bupyeong Kkangtong Night Market + Jagalchi sashimi + milmyeon (Busan's 1st-gen wheat noodle) + Nampo-dong dwaeji-gukbap",
     "en_available": false
@@ -2634,7 +3261,20 @@
     "title_kr": "부산 감천문화마을 산복도로 가이드",
     "title_en": "Busan Gamcheon Culture Village Guide",
     "category": "A",
-    "tags": ["foreigner","busan","gamcheon","sanbokdoro","ibagu-gil","168-stairs","ami-dong","choryang","chinatown","un-cemetery","busan-museum","busan-series"],
+    "tags": [
+      "foreigner",
+      "busan",
+      "gamcheon",
+      "sanbokdoro",
+      "ibagu-gil",
+      "168-stairs",
+      "ami-dong",
+      "choryang",
+      "chinatown",
+      "un-cemetery",
+      "busan-museum",
+      "busan-series"
+    ],
     "summary_kr": "부산 시리즈 ③ 인스타 마을 12선 — 감천문화마을('부산 마추픽추' 외국인 vlog #1 컬러 계단식)·산복도로 이바구길(6km)·168 계단+무료 모노레일·아미동 비석마을·초량 이바구길·부산역+초량 차이나타운(1884 한국 1번지)·광복동·부산 박물관·유엔기념공원(UN 한국전쟁 묘지)·부산 시민공원",
     "summary_en": "Busan Series ③ Gamcheon Culture Village 12-pick — Gamcheon Culture Village ('Busan's Machu Picchu', foreign vlog #1, colorful stepped hillside village) + Sanbokdoro Ibagu-gil (6km road) + 168 Stairs + free monorail + Ami-dong Tombstone Village (Japanese colonial relics) + Choryang Ibagu-gil + Busan Station + Choryang Chinatown (Korea's #1 since 1884) + Gwangbok-dong + Busan Museum + UN Memorial Cemetery (Korean War UN soldiers, especially loved by Canadian/Australian/NZ visitors) + Busan Citizens Park",
     "en_available": false
@@ -2645,7 +3285,21 @@
     "title_kr": "부산 서면 전포카페거리 가이드",
     "title_en": "Busan Seomyeon & Jeonpo Cafe Street Guide",
     "category": "A",
-    "tags": ["foreigner","busan","seomyeon","jeonpo-cafe","pnu","kyungsung","oncheonjang","dongnae","beomil","milmyeon","dwaeji-gukbap","mz","busan-series"],
+    "tags": [
+      "foreigner",
+      "busan",
+      "seomyeon",
+      "jeonpo-cafe",
+      "pnu",
+      "kyungsung",
+      "oncheonjang",
+      "dongnae",
+      "beomil",
+      "milmyeon",
+      "dwaeji-gukbap",
+      "mz",
+      "busan-series"
+    ],
     "summary_kr": "부산 시리즈 ④ MZ 핫스팟 12선 — 서면(부산 도심 1번지)·전포카페거리(200+ MZ 카페·외국인 인스타)·NC 서면점+롯데백화점 부산본점·서면 지하상가·부산대 거리·경성대(광안리 인접)·온천장 동래(한국 1번지 2000년 온천)·동래 미정관·범일·서면 한식(돼지국밥·밀면)·서면 야간 매니아",
     "summary_en": "Busan Series ④ Seomyeon & Jeonpo Cafe Street 12-pick — Seomyeon (Busan's #1 commercial district) + Jeonpo Cafe Street (Busan's #1 MZ cafe street with 200+ cafes since 2010s, foreigner instagram) + NC Seomyeon + Lotte Department Store Busan Main + Seomyeon underground arcade + Pusan National University (PNU) street + Kyungsung University (adjacent to Gwangalli) + Oncheonjang Dongnae (Korea's #1 hot spring with 2000-year history) + Dongnae traditional market + Beomil + Seomyeon traditional food (Hapcheon dwaeji-gukbap, Naeho milmyeon)",
     "en_available": false
@@ -2656,7 +3310,21 @@
     "title_kr": "부산 BIFF 영화 문화 가이드",
     "title_en": "Busan BIFF & Film Culture Guide",
     "category": "G",
-    "tags": ["foreigner","busan","biff","film-festival","cinema-center","centum-city","haedong-yonggungsa","gijang","jukseong-cathedral","cheongsapo","dalmaji","shinsegae-centum","busan-series"],
+    "tags": [
+      "foreigner",
+      "busan",
+      "biff",
+      "film-festival",
+      "cinema-center",
+      "centum-city",
+      "haedong-yonggungsa",
+      "gijang",
+      "jukseong-cathedral",
+      "cheongsapo",
+      "dalmaji",
+      "shinsegae-centum",
+      "busan-series"
+    ],
     "summary_kr": "부산 시리즈 ⑤ 영화 문화 12선 — 부산국제영화제 BIFF(아시아 1번지 1996·매년 10월)·영화의전당 Centum City(BIFF 본부+외부 LED 4000 m²)·BIFF 거리 남포동·부산 시네마 센터·해동용궁사(부산 1번지 바다 위 사찰)·기장 죽성성당·달맞이고개+청사포·송정·일광·임랑 외곽 해변·Centum City Shinsegae(기네스 세계 1번지 백화점 293,905 m²)",
     "summary_en": "Busan Series ⑤ BIFF & Film Culture 12-pick — Busan International Film Festival BIFF (Asia's #1 film festival since 1996, every October) + Busan Cinema Center Centum City (BIFF HQ + 4,000 m² outdoor LED) + BIFF Street Nampo-dong + Busan Cinema Center + Haedong Yonggungsa (Busan's #1 temple, sea-side temple foreigner instagram #1) + Gijang Jukseong Cathedral + Dalmaji-gogae + Cheongsapo + outskirts beaches (Songjeong/Ilgwang/Imrang) + Centum City Shinsegae (Guinness World Record largest department store 293,905 m²)",
     "en_available": false
@@ -2667,7 +3335,22 @@
     "title_kr": "외국인 비자 K-ETA 입국 풀가이드",
     "title_en": "Korea Visa & K-ETA Full Guide",
     "category": "H",
-    "tags": ["foreigner","visa","k-eta","visa-free","c-3-9","c-3-3","e-9","e-2","e-7","d-2","f-6","f-5","arc","hi-korea"],
+    "tags": [
+      "foreigner",
+      "visa",
+      "k-eta",
+      "visa-free",
+      "c-3-9",
+      "c-3-3",
+      "e-9",
+      "e-2",
+      "e-7",
+      "d-2",
+      "f-6",
+      "f-5",
+      "arc",
+      "hi-korea"
+    ],
     "summary_kr": "외국인 inbound 1순위 페인포인트 비자 12선 — K-ETA(2021 무비자 외국인 필수)·무비자 90일·C-3-9 관광·C-3-3 의료·E-9 비전문 취업·E-2 회화 강사·E-7 전문·D-2 유학·F-6 결혼·F-5 영주·ARC 외국인 등록증",
     "summary_en": "Korea Visa & K-ETA 12-pick — K-ETA (2021 mandatory pre-authorization for 112 visa-free countries, $10) + Visa-free 90 days + C-3-9 short-term + C-3-3 medical + E-9 + E-2 English teacher + E-7 specialist + D-2 student + D-10 job-seeker + F-6 marriage + F-5 PR + F-4 overseas Korean + ARC",
     "en_available": false
@@ -2678,7 +3361,19 @@
     "title_kr": "외국인 운전 렌터카 풀가이드",
     "title_en": "Korea Driving & Car Rental Full Guide",
     "category": "H",
-    "tags": ["foreigner","driving","idp","car-rental","lotte-rental","sk-rental","aj-rental","car-insurance","ev-rental","jeju-rental","carsharing"],
+    "tags": [
+      "foreigner",
+      "driving",
+      "idp",
+      "car-rental",
+      "lotte-rental",
+      "sk-rental",
+      "aj-rental",
+      "car-insurance",
+      "ev-rental",
+      "jeju-rental",
+      "carsharing"
+    ],
     "summary_kr": "외국인 외곽 1순위 페인포인트 운전·렌터카 12선 — IDP 국제운전면허증·외국인 한국 면허 전환·롯데렌터카(한국 #1 영문 OK)·SK·AJ·자동차 보험·도로교통법·제주 렌터카·강릉 렌터카·ev 렌터카(테슬라·기아 ev6)",
     "summary_en": "Korea Driving 12-pick — IDP (1 year validity, carry with home license) + Korean license conversion + Lotte Rent-a-Car (Korea's #1 English-friendly) + SK + AJ + Car insurance mandatory + Korean road law + Jeju car rental #1 + Gangneung + EV rental (Tesla/Kia EV6) + Carsharing (SoCar/Greencar)",
     "en_available": false
@@ -2689,7 +3384,20 @@
     "title_kr": "외국인 SIM eSIM WiFi 풀가이드",
     "title_en": "Korea SIM eSIM WiFi Full Guide",
     "category": "H",
-    "tags": ["foreigner","sim","esim","wifi","kt","skt","lg-uplus","airalo","holafly","pocket-wifi","kt-m-mobile","5g"],
+    "tags": [
+      "foreigner",
+      "sim",
+      "esim",
+      "wifi",
+      "kt",
+      "skt",
+      "lg-uplus",
+      "airalo",
+      "holafly",
+      "pocket-wifi",
+      "kt-m-mobile",
+      "5g"
+    ],
     "summary_kr": "외국인 첫 도착 30분 안에 해결 1순위 페인포인트 SIM·eSIM·WiFi 12선 — KT(한국 1번지)·SKT·LG U+ + KT M Mobile·alleysim + Airalo eSIM(글로벌 1번지)·Holafly + WiFi 도시락(1일 5000원·1주일 30000원)",
     "summary_en": "Korea SIM/eSIM/WiFi 12-pick — KT + SKT + LG U+ + KT M Mobile (foreigner-friendly) + alleysim + Airalo eSIM ($4.5/1GB, $26/10GB) + Holafly eSIM + Pocket WiFi Egg (5K won/day) + Incheon Airport telecom counters + Free WiFi cafes",
     "en_available": false
@@ -2700,7 +3408,20 @@
     "title_kr": "외국인 응급의료 보험 풀가이드",
     "title_en": "Korea Foreigner Emergency Medical Guide",
     "category": "H",
-    "tags": ["foreigner","emergency","119","1339","1345","er","snu-hospital","samsung-er","asan-er","severance-er","pharmacy","travel-insurance"],
+    "tags": [
+      "foreigner",
+      "emergency",
+      "119",
+      "1339",
+      "1345",
+      "er",
+      "snu-hospital",
+      "samsung-er",
+      "asan-er",
+      "severance-er",
+      "pharmacy",
+      "travel-insurance"
+    ],
     "summary_kr": "외국인 안전 1순위 응급의료·보험 12선 — 119(응급)·1339(의료 안내)·1345(외국인 종합) + 외국인 친화 ER(서울대·삼성·아산·세브란스) + 24h 약국 + 외국인 의료 보험 Travel Insurance + 의료 통역 (영·중·일·아랍·러시아)",
     "summary_en": "Korea Foreigner Emergency 12-pick — 119 (emergency multilingual 24h) + 1339 (medical advice) + 1345 (foreigner help) + 112 (police) + Foreigner-friendly ERs (SNU/Samsung/Asan/Severance) + 24h pharmacies + Travel insurance + Medical interpretation in EN/CN/JP/Arabic/Russian",
     "en_available": false
@@ -2711,7 +3432,20 @@
     "title_kr": "외국인 거주 생활 풀가이드",
     "title_en": "Korea Foreigner Living Full Guide",
     "category": "H",
-    "tags": ["foreigner","living","itaewon","seorae-maeul","yeonnam","ichon","foreign-mart","sfs","sis","citibank","stanchart","long-stay"],
+    "tags": [
+      "foreigner",
+      "living",
+      "itaewon",
+      "seorae-maeul",
+      "yeonnam",
+      "ichon",
+      "foreign-mart",
+      "sfs",
+      "sis",
+      "citibank",
+      "stanchart",
+      "long-stay"
+    ],
     "summary_kr": "외국인 long-stay·거주 1번지 12선 — 이태원·한남·해방촌(#144)·서래마을(#173 프랑스인)·연남동·이촌 + 외국인 친화 아파트·마트(Foreign Mart)·학교(SFS 1912·SIS)·은행(Citibank·StanChart·하나·신한)·종교(영문 미사·이슬람·힌두)",
     "summary_en": "Korea Foreigner Living 12-pick — Itaewon/Hannam/Haebangchon (Korea's #1 foreigner area) + Seorae Maeul (Korea's #1 French community) + Yeonnam + Ichon + Foreign Mart + Hannam Foreign Food + Seoul Foreign School (SFS since 1912) + SIS + Citibank/Standard Chartered + Multilingual religious services",
     "en_available": false
@@ -2722,7 +3456,20 @@
     "title_kr": "제주 풀가이드",
     "title_en": "Jeju Island Full Guide",
     "category": "A",
-    "tags": ["foreigner","jeju","seongsan","hallasan","manjanggul","udo","seogwipo","jungmun","cheonjiyeon","haenyeo","dolharubang","heuk-dwaeji"],
+    "tags": [
+      "foreigner",
+      "jeju",
+      "seongsan",
+      "hallasan",
+      "manjanggul",
+      "udo",
+      "seogwipo",
+      "jungmun",
+      "cheonjiyeon",
+      "haenyeo",
+      "dolharubang",
+      "heuk-dwaeji"
+    ],
     "summary_kr": "한국 1번지 휴양 섬·유네스코 세계자연유산(2007) 12선 — 성산일출봉(유네스코)·한라산(1947m 한국 #1)·만장굴(7.4km)·우도(페리 15분)·서귀포+중문·천지연·해녀 박물관(유네스코 2016)·돌하르방·흑돼지·갈치조림·옥돔구이·한라봉·오설록·올레길(425km)",
     "summary_en": "Jeju Island 12-pick — Seongsan Ilchulbong (UNESCO 2007, sunrise #1) + Hallasan (Korea's #1 mountain 1,947m) + Manjanggul (7.4km lava tube UNESCO) + Udo (15min ferry) + Seogwipo + Jungmun + Cheonjiyeon Falls + Haenyeo Museum (UNESCO Intangible 2016) + Dolharubang + heuk-dwaeji + galchi-jorim + Hallabong + Osulloc + Olle-gil (425km)",
     "en_available": false
@@ -2733,7 +3480,20 @@
     "title_kr": "강릉 평창 풀가이드",
     "title_en": "Gangneung & Pyeongchang Full Guide",
     "category": "A",
-    "tags": ["foreigner","gangneung","pyeongchang","anmok-coffee","jeongdongjin","gyeongpo","yongpyong","high1","alpensia","odaesan","seoraksan","sokcho"],
+    "tags": [
+      "foreigner",
+      "gangneung",
+      "pyeongchang",
+      "anmok-coffee",
+      "jeongdongjin",
+      "gyeongpo",
+      "yongpyong",
+      "high1",
+      "alpensia",
+      "odaesan",
+      "seoraksan",
+      "sokcho"
+    ],
     "summary_kr": "한국 동해·스키 외국인 1번지 12선 — 강릉 안목 커피거리(한국 카페 1번지·테라로사 본점·보헤미안)·정동진 일출(한국 #1)·경포대 + 평창 용평·하이원·휘닉스·알펜시아 스키(2018 동계올림픽)·오대산 + 설악산(속초)·속초·양양 서핑",
     "summary_en": "Gangneung & Pyeongchang 12-pick — Gangneung Anmok Coffee Street (Korea's #1 cafe district, Terarosa flagship + Bohemian) + Jeongdongjin (Korea's #1 sunrise) + Gyeongpo Beach + Yongpyong Resort (Korea's #1 ski) + High1 + Phoenix + Alpensia (2018 Winter Olympics) + Odaesan + Seoraksan + Sokcho + Yangyang surfing — KTX 1h40m",
     "en_available": false
@@ -2744,7 +3504,18 @@
     "title_kr": "전주 한옥마을 풀가이드",
     "title_en": "Jeonju Hanok Village Full Guide",
     "category": "A",
-    "tags": ["foreigner","jeonju","hanok-village","pungnammun","gyeonggijeon","jeondong-cathedral","hanbyeokdang","bibimbap","hanjeongsik","kongnamul-gukbap"],
+    "tags": [
+      "foreigner",
+      "jeonju",
+      "hanok-village",
+      "pungnammun",
+      "gyeonggijeon",
+      "jeondong-cathedral",
+      "hanbyeokdang",
+      "bibimbap",
+      "hanjeongsik",
+      "kongnamul-gukbap"
+    ],
     "summary_kr": "한국 1번지 한옥·한식 외국인 매니아 12선 — 전주 한옥마을(700+ 한옥)·풍남문·경기전(태조 어진)·전동성당(1914)·한벽당·자만벽화마을 + 전주 비빔밥(유네스코 음식 창의도시 2012)·전주 한정식·콩나물국밥 현대옥 + 외국인 한옥스테이",
     "summary_en": "Jeonju Hanok Village 12-pick — Jeonju Hanok Village (700+ hanoks, Korea's #1) + Pungnammun Gate + Gyeonggijeon (Joseon Taejo portrait) + Jeondong Cathedral (1914) + Hanbyeokdang + Jaman Mural Village + Jeonju bibimbap (UNESCO Creative City 2012, 32 traditional restaurants) + Jeonju hanjeongsik + Hyundaeok kongnamul-gukbap + Hanok stay",
     "en_available": false
@@ -2755,7 +3526,19 @@
     "title_kr": "경주 풀가이드",
     "title_en": "Gyeongju Full Guide",
     "category": "A",
-    "tags": ["foreigner","gyeongju","bulguksa","seokguram","cheomseongdae","donggung-wolji","hwangnyongsa","daereungwon","yangdong-village","hwangnidan-gil","hwangnam-bread"],
+    "tags": [
+      "foreigner",
+      "gyeongju",
+      "bulguksa",
+      "seokguram",
+      "cheomseongdae",
+      "donggung-wolji",
+      "hwangnyongsa",
+      "daereungwon",
+      "yangdong-village",
+      "hwangnidan-gil",
+      "hwangnam-bread"
+    ],
     "summary_kr": "신라 1000년 도성(BC 57~AD 935) 한국 유네스코 1번지 도시 12선 — 불국사·석굴암(유네스코 1995)·첨성대(세계 1번지 천문대 632)·동궁과월지(안압지 야경)·황룡사 9층 목탑 터·대릉원·천마총·양동민속마을(유네스코 2010)·황리단길·황남빵",
     "summary_en": "Gyeongju 12-pick (Silla 1000-year capital BC57-AD935, Korea's #1 UNESCO city) — Bulguksa (UNESCO 1995, Silla 751) + Seokguram Grotto (UNESCO 1995) + Cheomseongdae (world's oldest astronomical observatory 632) + Donggung & Wolji (Anapji night view) + Hwangnyongsa pagoda site + Daereungwon + Cheonmachong + Yangdong Folk Village (UNESCO 2010) + Hwangnidan-gil + Hwangnam-bread",
     "en_available": false
@@ -2766,62 +3549,1098 @@
     "title_kr": "통영 여수 남해안 풀가이드",
     "title_en": "Tongyeong Yeosu South Coast Full Guide",
     "category": "A",
-    "tags": ["foreigner","tongyeong","yeosu","namhae","geoje","jinju","dongpirang","yeosu-night-sea","daraengi","boriam","tongyeong-oyster"],
+    "tags": [
+      "foreigner",
+      "tongyeong",
+      "yeosu",
+      "namhae",
+      "geoje",
+      "jinju",
+      "dongpirang",
+      "yeosu-night-sea",
+      "daraengi",
+      "boriam",
+      "tongyeong-oyster"
+    ],
     "summary_kr": "한국 남해 매니아 1번지 12선 — 통영 동피랑 벽화마을·통영 케이블카+미륵산 + 여수 밤바다(한국 #1)·돌산공원·여수 엑스포·해상 케이블카·오동도·향일암 + 남해 다랭이마을(계단식 논)·보리암·금산 + 거제 외도 + 진주성·진주 남강 야경 + 통영 굴·여수 갓김치·남해 멸치쌈밥",
     "summary_en": "Tongyeong-Yeosu South Coast 12-pick — Tongyeong Dongpirang Mural Village (instagram #1) + Cable Car + Mireuksan + Jungang Market + Yeosu Night Sea (Korea's #1) + Dolsan Park + Yeosu Expo + Maritime Cable Car (2012) + Odongdo + Hyangiram + Namhae Daraengi (stepped rice paddies) + Boriam + Geumsan + Geoje Oedo + Jinjuseong + Jinju Namgang night view + Tongyeong oyster + Yeosu gat-kimchi + Namhae anchovy ssambap",
     "en_available": false
   },
-  {"id":"258","slug":"solo-travel","title_kr":"서울 솔로 여행자 풀가이드","title_en":"Seoul Solo Travel Full Guide","category":"H","tags":["foreigner","solo-travel","coin-noraebang","1person-bbq","capsule-hotel","han-river-cycling","cgv-gold","1person-cafe"],"summary_kr":"한국 세계 1번지 1인 친화 도시 12선 — 1인 한식·1인 BBQ·이찌멘·코인노래방(500원 1곡)·1인 PC방·1인 영화관 CGV 골드·1인 카페·캡슐호텔·1인 게스트하우스·솔로 한강 자전거·솔로 등산·외국인 안전 1번지","summary_en":"Korea Solo Travel 12-pick (world's #1 solo-friendly city) — 1-person Korean food + 1-person BBQ (Gangnam/Jamsil/Hongdae) + Ichimen/Ichiran + Coin Noraebang (500won/song, foreigner vlog #1) + 1-person PC bang + 1-person cinema CGV Gold + 1-person cafe + Capsule hotel (Hongdae/Gangnam) + 1-person guesthouse + Solo Han River cycling + Solo hiking + Korea's #1 safe city","en_available":false},
-  {"id":"259","slug":"monthly-guide","title_kr":"서울 월별 가이드","title_en":"Seoul Monthly Guide","category":"H","tags":["foreigner","monthly","seasonal","january","april-cherry","july-rain","october-foliage","november-biff","december-illumination"],"summary_kr":"외국인 한국 시기별 페인포인트 매트릭스 12개월 — 1월 보신각·설날·2월 한복·3월 봄시작·4월 벚꽃·5월 가족·6월 한강·7월 장마·8월 한강 치맥·9월 추석·10월 단풍·11월 BIFF·12월 일루미네이션","summary_en":"Seoul Monthly Guide 12-month matrix — January Bosingak/Seollal + February Hanbok/temple + March spring/cherry early + April cherry blossom peak (#230) + May family/Children's Day + June Han River season + July rain indoor + August Han River chimaek + September Chuseok + October foliage start (#229) + November foliage peak + BIFF (#247) + December illumination + Bosingak (#231)","en_available":false},
-  {"id":"260","slug":"rooftop-bars","title_kr":"서울 루프탑 옥상 풀가이드","title_en":"Seoul Rooftop Bars Full Guide","category":"B","tags":["foreigner","rooftop","night-view","signiel","banyan-tree","griffin-bar","conrad","jw-marriott","ddp-rooftop"],"summary_kr":"외국인 야경 인스타 1번지 12선 — The Griffin(한남)·L7 Hotel·반얀트리 Moon Bar(남산)·시그니엘(잠실 86층)·콘래드(여의도)·JW메리어트(강남)·그랜드 인터컨티넨탈·DDP 루프탑·JBC 종각·홍대 케이스·놀","summary_en":"Seoul Rooftop Bars 12-pick — The Griffin Bar (Hannam, foreigner #1) + L7 Hotel Hannam + Ichawon Workshop + Banyan Tree Moon Bar (Namsan luxury) + Lotte Hotel Signiel (Jamsil Lotte Tower 81F) + Conrad (Yeouido) + JW Marriott (Gangnam) + Grand InterContinental + Signiel Seoul (Lotte Tower 86F, world's #1 view) + DDP rooftop + JBC Jongno + Hongdae Case/Knoll","en_available":false},
-  {"id":"261","slug":"photo-booths","title_kr":"한국 사진관 인생네컷 풀가이드","title_en":"Korea Photo Booths Life4Cuts Full Guide","category":"G","tags":["foreigner","photo-booth","life-four-cuts","photoism","harufilm","selpix","monomansion","self-studio","hanbok-photo","k-wedding"],"summary_kr":"한국 세계 1번지 인생네컷 culture 12선 — 인생네컷(Life Four Cuts·4000원 4컷)·포토이즘·하루필름·셀픽스·모노맨션·포토매틱 + 셀프 스튜디오·한복 사진관(북촌·인사동·경복궁)·K-Wedding(청담·강남)","summary_en":"Korea Photo Booths Life4Cuts 12-pick — Life Four Cuts (4,000won/4 photos, Korea's #1) + Photoism + Harufilm + Selpix + Monomansion (B&W concept) + Photomatic + Self Studio (Gangnam/Hongdae/Itaewon, 30-50K won/1h) + Hanbok photo studios (Bukchon/Insadong/Gyeongbokgung) + K-Wedding studios (Cheongdam/Gangnam) + Profile photo + Foreigner-friendly photo studios","en_available":false},
-  {"id":"262","slug":"pet-friendly","title_kr":"서울 펫 친화 풀가이드","title_en":"Seoul Pet-Friendly Full Guide","category":"H","tags":["foreigner","pet","dog-cafe","cat-cafe","pet-hotel","vet","pet-shop","mollys","cocos","pet-park","quarantine"],"summary_kr":"외국인 long-stay 매니아 펫 친화 12선 — 도그카페(강남·홍대·이태원 15~25K원)·고양이 카페·이색 동물 카페·펫호텔(50~150K/1박)·24h 응급 동물병원·펫샵(몰리스·코코스)·펫 친화 호텔·펫 친화 공원(서울숲·올림픽·뚝섬)·펫 친화 한강(반포·뚝섬·여의도)","summary_en":"Seoul Pet-Friendly 12-pick — Dog cafes (Gangnam/Hongdae/Itaewon 15-25K won) + Cat cafes + Exotic animal cafes (raccoon/meerkat/sheep) + Pet hotels (Gangnam/Jamsil 50-150K won/night) + Pet daycare + Foreigner-friendly vet clinics (Gangnam/Itaewon/Hannam) + 24h emergency vets + Pet shops (Mollys/Cocos) + Pet-friendly hotels + Pet-friendly parks (Seoul Forest/Olympic/Ttukseom) + Pet-friendly Han River + Pet entry quarantine","en_available":false},
-  {"id":"263","slug":"seongsu-50","title_kr":"성수동 50선 완전판","title_en":"Seongsu 50 Complete Guide","category":"A","tags":["foreigner","seongsu","cafe","popup","gallery","d-museum","blue-bottle","cafe-onion","notted","center-coffee","lifestyle-shop"],"summary_kr":"성수동 50선 완전판 (#01 팝업 + #145 카페 확장) — 카페 15선(어니언·블루보틀·센터커피·데일리트림·노티드) + 맛집 15선(BBQ·이탈리안·라멘·한정식·분식) + 팝업·갤러리 10선(D museum·갤러리 일우·에스팩토리·누데이크·LCA) + 소품샵 10선","summary_en":"Seongsu 50 Complete Guide (extends #01 popup + #145 cafe) — 15 Cafes (Cafe Onion + Blue Bottle Seongsu + Center Coffee + Notted donut + Daily Trim + Cafe The Bakers Table + Cafe Onion + Halia) + 15 Restaurants (Korean BBQ/Italian/Ramen/Korean course/Bunsik) + 10 Pop-ups & Galleries (D museum + Gallery Iluwoo + S-Factory + Nudake + LCA Living Center Atelier + Workshop) + 10 Lifestyle/Souvenir shops","en_available":false},
-  {"id":"264","slug":"korea-3day","title_kr":"외국인 3일 코스 단기","title_en":"Korea First Visit 3-Day Short Itinerary","category":"H","tags":["foreigner","3-day","short-trip","myeongdong","palace","gangnam","han-river","business-trip"],"summary_kr":"외국인 첫 방문 3일 단기 풀세트 — Day1 명동·N서울타워·면세 → Day2 경복궁·한복·북촌·익선·홍대 → Day3 강남·K-pop·반포 한강·출국. #228 7일 단기 Variant + Variant 4 (K-pop/음식/자연)","summary_en":"Korea 3-Day Short Itinerary — Day1 Arrival/Myeongdong/N Seoul Tower/Duty-free + Day2 Gyeongbokgung/Hanbok/Bukchon/Ikseondong/Hongdae + Day3 Gangnam/K-pop/Banpo Han River/Departure. #228 short variant + 4 sub-variants (K-pop/Food/Nature/Business)","en_available":false},
-  {"id":"265","slug":"korea-5day","title_kr":"외국인 5일 코스","title_en":"Korea First Visit 5-Day Itinerary","category":"H","tags":["foreigner","5-day","seoul-busan","ktx","family","kpop","balanced"],"summary_kr":"외국인 4박5일 풀세트 — Option A 서울 3일 + 부산 1박2일(KTX) / Option B 서울 5일 deep dive. Variant 5 (가족·K-pop·음식·자연·문화)","summary_en":"Korea 5-Day Itinerary — Option A Seoul 3 days + Busan 1N2D (KTX 2.5h to Haeundae/Gwangalli) / Option B Seoul 5-day deep dive + 5 sub-variants (Family #232/K-pop #221/Food/Nature/Culture)","en_available":false},
-  {"id":"266","slug":"korea-10day","title_kr":"외국인 10일 코스","title_en":"Korea First Visit 10-Day Itinerary","category":"H","tags":["foreigner","10-day","long-trip","seoul-7day","busan","jeju","gangneung","jeonju","gyeongju"],"summary_kr":"외국인 9박10일 풀세트 — Week1 서울 5일(#228) + Day6~7 부산 1박2일(#243~#247) + Day8~9 외곽 도시 1박2일(제주/강릉/전주/경주 중 1) + Day10 출국","summary_en":"Korea 10-Day Itinerary — Day1-5 Seoul (#228) + Day6-7 Busan 1N2D (Haeundae/Gwangalli/Jagalchi/Gamcheon) + Day8-9 Outskirts (Jeju #253/Gangneung #254/Jeonju #255/Gyeongju #256 — choose 1) + Day10 Han River + Departure. Budget ~$1500-3000","en_available":false},
-  {"id":"267","slug":"korea-2week","title_kr":"외국인 2주 코스","title_en":"Korea First Visit 2-Week Itinerary","category":"H","tags":["foreigner","2-week","long-stay","seoul","busan","jeju","gangneung","jeonju","gyeongju","tongyeong"],"summary_kr":"외국인 13박14일 한국 전국 풀세트 — Week1 서울 7일(#228) + Week2 부산 2박3일·경주 1박·전주 1박·강릉 1박·출국. 외국인 매니아 deep dive 1순위","summary_en":"Korea 2-Week Itinerary — Week1 Seoul 7 days (#228) + Week2 Busan 2N3D + Gyeongju 1N + Jeonju 1N + Gangneung 1N + Departure. Alternative: Jeju 4 days variant. Budget ~$3000-5000. Korea's #1 foreigner deep dive package","en_available":false},
-  {"id":"268","slug":"busan-sajik","title_kr":"부산 사직 야구 가이드","title_en":"Busan Sajik Baseball Guide","category":"G","tags":["foreigner","busan","sajik","lotte-giants","kbo","outfield-cheering","busan-series"],"summary_kr":"부산 사직 야구장 12선 (#240 KBO + #246 서면 sub-area 확장) — 사직 야구장(1985·22000석)·롯데 자이언츠·외야 응원 culture('마!' + 신문지 응원)·치맥·동래 인접·외국인 KBO vlog 1순위","summary_en":"Busan Sajik Baseball Stadium 12-pick (extends #240 KBO + #246 Seomyeon sub-area) — Sajik Baseball Stadium (1985, 22,000 seats) + Lotte Giants + outfield cheering culture ('Ma!' chants + newspaper cheering, Korea's #1) + chimaek + Dongnae adjacent + Korean traditional cheering + Foreigner KBO vlog #1 + Klook/Interpark booking","en_available":false},
-  {"id":"269","slug":"busan-dongnae","title_kr":"부산 동래 온천 가이드","title_en":"Busan Dongnae Hot Spring Guide","category":"A","tags":["foreigner","busan","dongnae","oncheonjang","heosimcheong","hot-spring","2000-years","dongnaeupseong","busan-series"],"summary_kr":"부산 동래·온천장 12선 (#246 sub-area 확장) — 동래 온천장(한국 1번지 2000년 신라시대 기록)·허심청(한국 #1 온천)·농심 호텔·동래읍성·충렬사(임진왜란 1592)·동래학춤 무형문화재·동래 한정식","summary_en":"Busan Dongnae Hot Spring 12-pick (extends #246 Seomyeon sub-area) — Dongnae Oncheonjang (Korea's #1 hot spring, 2,000-year history since Silla) + Heosimcheong (Korea's #1 hot spring complex) + Nongshim Hotel hot spring + Dongnae Mijeonggwan + Dongnae traditional market + Dongnaeupseong fortress + Chungryeolsa (Imjin War 1592) + Dongnae Hakchum intangible heritage + Geumjeongsan outskirts","en_available":false},
-  {"id":"270","slug":"busan-gijang","title_kr":"부산 기장 외곽 가이드","title_en":"Busan Gijang Outskirts Guide","category":"A","tags":["foreigner","busan","gijang","haedong-yonggungsa","jukseong-cathedral","ilgwang","lotte-world-busan","busan-series"],"summary_kr":"부산 기장 외곽 12선 (#247 BIFF sub-area 확장) — 해동용궁사(부산 1번지 바다 위 사찰)·죽성성당(K-drama 무대)·일광/임랑/칠암 외곽 해변·기장 시장(한국 1번지 멸치)·롯데월드 어드벤처 부산(2022 신축)","summary_en":"Busan Gijang Outskirts 12-pick (extends #247 BIFF sub-area) — Haedong Yonggungsa (Busan's #1 sea-side temple, foreigner instagram #1) + Jukseong Cathedral (K-drama filming spot) + Ilgwang Beach + Imrang Beach + Chilam fishing village + Gijang Market (Korea's #1 anchovy/seaweed) + Lotte World Adventure Busan (2022 newest theme park) + Foreigner-friendly pensions + Outskirts ferry","en_available":false},
-  {"id":"271","slug":"busan-songdo","title_kr":"부산 송도 영도 가이드","title_en":"Busan Songdo Yeongdo Guide","category":"A","tags":["foreigner","busan","songdo","yeongdo","cable-car","skywalk","huinnyeoul","taejongdae","kkangkkangi","busan-series"],"summary_kr":"부산 송도·영도 12선 (#244 자갈치 sub-area 확장) — 송도 해수욕장(한국 1번지 1913)·송도 해상 케이블카(1.62km 한국 #1)·송도 스카이워크(365m)·용궁구름다리 + 영도 흰여울 문화마을·태종대·깡깡이 예술마을","summary_en":"Busan Songdo & Yeongdo 12-pick (extends #244 Jagalchi sub-area) — Songdo Beach (Korea's #1 beach since 1913) + Songdo Maritime Cable Car (1.62km, Korea's #1 sea cable car) + Songdo Skywalk (365m) + Yonggung Cloud Bridge + Yeongdo Huinnyeoul Culture Village (Busan instagram #1) + Taejongdae cliffs + Yeongdo Kkangkkangi Art Village","en_available":false},
-  {"id":"272","slug":"busan-dadaepo","title_kr":"부산 다대포 낙동강 가이드","title_en":"Busan Dadaepo Nakdonggang Guide","category":"A","tags":["foreigner","busan","dadaepo","sunset","fountain","molundae","nakdonggang","eulsukdo","busan-series"],"summary_kr":"부산 다대포 외곽 노을 1번지 12선 (#244 sub-area 마지막) — 다대포 해수욕장(부산 외곽 1번지)·꿈의 낙조분수(세계 #1 음악분수 2009)·다대포 노을·몰운대·낙동강 하구·을숙도 생태(한국 1번지 철새)·사하 한식","summary_en":"Busan Dadaepo & Nakdonggang 12-pick (extends #244 Jagalchi sub-area, final) — Dadaepo Beach (Busan outskirts #1) + Korean Dream Fountain (Sunset Music Fountain, Guinness world's largest music fountain since 2009, foreigner instagram #1) + Dadaepo sunset (Busan's #1 sunset) + Molundae + Nakdonggang Estuary + Eulsukdo Ecological Park (Korea's #1 migratory bird sanctuary) + Sahagu traditional food","en_available":false},
-  {"id":"273","slug":"autumn-foliage-matrix","title_kr":"가을 단풍 시기 매트릭스","title_en":"Korea Autumn Foliage Weekly Matrix","category":"B","tags":["foreigner","autumn-foliage","weekly-matrix","seoraksan","bukhansan","changdeokgung","olympic","seoul-forest","naejangsan","busan","biff"],"summary_kr":"가을 단풍 (#229 후속) 매주 8주 매트릭스 — 10월 1주 설악산 → 10월 3주 북한산 절정 → 10월 4주 창덕궁 후원(UNESCO) → 11월 1주 서울숲·올림픽·남산 절정 → 11월 3주 내장산 절정 → 11월 4주 부산 BIFF 단풍","summary_en":"Korea Autumn Foliage Weekly Matrix (extends #229) — 8-week timing chart — Oct W1 Seoraksan/Odaesan start + Oct W2 Bukhansan/Gwanaksan progression + Oct W3 Bukhansan peak + Dobongsan/Suraksan/Achasan + Oct W4 Olympic Park/Changdeokgung Secret Garden UNESCO/Jongmyo + Nov W1 Seoul Forest/Olympic peak + Nov W2 Namsan/Naksan/Inwangsan/Eungbongsan peak + Nov W3 Naejangsan peak + Jirisan + Nov W4 Busan BIFF + Yeosu/Tongyeong","en_available":false},
-  {"id":"275","slug":"lgbtq-friendly","title_kr":"서울 LGBTQ+ 친화 풀가이드","title_en":"Seoul LGBTQ+ Friendly Full Guide","category":"H","tags":["foreigner","lgbtq","itaewon","hongdae","queer-festival","gay-hill","trans-friendly"],"summary_kr":"이태원·홍대 LGBTQ+ 친화 12선 + 서울 퀴어문화축제(6월 시청광장)·외국인 매니아 1번지","summary_en":"Seoul LGBTQ+ 12-pick — Itaewon Gay Hill (Korea's #1) + Trans clubs + Itaewon foreigner-friendly bars + Hongdae LGBTQ+ MZ clubs + Jongno Insadong + Seoul Queer Culture Festival (June, City Hall Plaza, Korea's #1) + LGBTQ+ Film Festival + foreigner LGBTQ+ hotels + foreigner-friendly cafes + LGBTQ+ vlogs + Korean LGBTQ+ rights orgs","en_available":false},
-  {"id":"276","slug":"senior-friendly","title_kr":"서울 시니어 60+ 친화 풀가이드","title_en":"Seoul Senior 60+ Friendly Full Guide","category":"H","tags":["foreigner","senior","free-entry","palace","park","wheelchair","museum"],"summary_kr":"외국인 시니어 60+ 12선 — 무료 박물관(NMK·한글·민속)·궁궐 한복·평지 산책(서울숲·올림픽·양재)·N서울타워·드래곤힐스파","summary_en":"Seoul Senior 60+ 12-pick — Free NMK + Hangul Museum + 4 Joseon palaces (free hanbok) + Seoul Forest flat walking + Olympic Park + Yangjae + Bukchon flat hanok + Insadong traditional + N Seoul Tower cable car + Dragon Hill Spa jjimjilbang + Lotte Tower Seoul Sky","en_available":false},
-  {"id":"277","slug":"honeymoon","title_kr":"서울 신혼 커플 풀가이드","title_en":"Seoul Honeymoon & Couples Full Guide","category":"H","tags":["foreigner","honeymoon","couples","banpo","n-seoul-tower","signiel","k-wedding","luxury"],"summary_kr":"외국인 신혼·커플 12선 — 반포 달빛무지개분수·N서울타워·남산·응봉산·시그니엘·K-Wedding 청담·한복 사진관·럭셔리 호텔","summary_en":"Seoul Honeymoon 12-pick — Banpo Moonlight Rainbow Fountain (Korea's #1 night view) + N Seoul Tower + Love Locks + Namsan night walk + Eungbongsan + Rooftop bars + Signiel + Life4Cuts + K-Wedding Cheongdam + Hanbok photo studios + Bukchon hanok + Luxury hotels (Signiel/Banyan Tree/Shilla)","en_available":false},
-  {"id":"278","slug":"digital-nomad","title_kr":"서울 디지털 노매드 풀가이드","title_en":"Seoul Digital Nomad Full Guide","category":"H","tags":["foreigner","digital-nomad","coworking","wework","fastfive","24h-cafe","airbnb","long-stay","d-10-visa"],"summary_kr":"외국인 디지털 노매드 12선 — WeWork·패스트파이브·스파크플러스·24h 카페·롱스테이 호텔·에어비앤비 1개월 할인·외국인 거주 1번지·D-10 구직 비자","summary_en":"Seoul Digital Nomad 12-pick — WeWork (Gangnam/City Hall/Samseong-dong) + Fastfive (Korea's #1) + Sparkplus + 24h cafes (Starbucks The series/Gangnam/Hongdae) + 1-person friendly cafes + Long-stay hotels + Airbnb 1-month 30% discount + Foreigner residential areas + Foreigner nomad vlogs + D-10 job-seeker visa (6mo-2yr)","en_available":false},
-  {"id":"279","slug":"korean-holidays","title_kr":"한국 명절 풀가이드","title_en":"Korean Holidays Full Guide","category":"H","tags":["foreigner","holidays","seollal","chuseok","sambok","dongji","tteokguk","songpyeon","samgyetang"],"summary_kr":"한국 4대 명절 12선 — 설날(음력 1/1 떡국·세배·한복·민속놀이)·추석(음력 8/15 송편·차례·강강술래)·삼복(7~8월 삼계탕)·동지(12/22 팥죽)","summary_en":"Korean Holidays 12-pick — Seollal Lunar New Year (tteokguk + sebae + hanbok + minsok-nori) + Chuseok harvest festival (songpyeon + charye + ganggangsullae) + Sambok (Cho/Jung/Mal-bok, 7-8 Aug, samgyetang) + Dongji (Dec 22, patjuk red bean) + Palace free hanbok + Korean Folk Village Yongin + Temple Jinkwansa + Toseokchon/Goryeo/Harimgak samgyetang shops","en_available":false},
-  {"id":"280","slug":"rainy-day","title_kr":"서울 비 오는 날 풀가이드","title_en":"Seoul Rainy Day Indoor Full Guide","category":"H","tags":["foreigner","rainy-day","indoor","museum","aquarium","jjimjilbang","botanic-garden"],"summary_kr":"외국인 비 오는 날 12선 — NMK·한글박물관·DDP 야간 LED·63 아쿠아·롯데월드 아쿠아·COEX 아쿠아+별마당·롯데월드 어드벤처·드래곤힐스파·스파랜드·서울식물원 온실·인생네컷·1인 영화관","summary_en":"Seoul Rainy Day 12-pick — NMK (Korea's #1 free) + Hangul Museum free + DDP night LED + 63 Aqua Planet + Lotte World Aquarium + COEX Aquarium + Starfield Library + Lotte World Adventure indoor + Dragon Hill Spa 24h + Spaland Jamsil + Hansol Hongdae + Seoul Botanic Park greenhouses + Life4Cuts + 1-person cinema","en_available":false},
-  {"id":"281","slug":"dawn-seoul","title_kr":"서울 새벽 5~9시 풀가이드","title_en":"Seoul Dawn 5-9am Full Guide","category":"H","tags":["foreigner","dawn","sunrise","fish-market","hangover","first-train","eungbongsan"],"summary_kr":"외국인 새벽 5~9시 12선 — 노량진수산 새벽 경매(03~06)·자갈치(부산)·마장축산물·응봉산 해돋이·남산·반포·북한산 해돋이·새벽 해장(선지·콩나물·곰탕)·콩나물국밥 현대옥·24h 해장국","summary_en":"Seoul Dawn 5-9am 12-pick — Noryangjin Fish Market dawn auction (3-6am, foreigner vlog #1) + Jagalchi Busan + Majang Livestock + Eungbongsan sunrise (Seoul's #1) + Namsan sunrise + Banpo Han River + Bukhansan + Dawn hangover food (seonji/kongnamul/gomtang) + Hyundaeok kongnamul-gukbap + 24h hangover shops + First train (subway 5:30 + Airport Railroad) + 24h cafes","en_available":false},
-  {"id":"282","slug":"late-night","title_kr":"서울 24h 심야 풀가이드","title_en":"Seoul 24h Late-Night Full Guide","category":"H","tags":["foreigner","24h","late-night","convenience-store","coin-noraebang","jjimjilbang","dongdaemun-night"],"summary_kr":"외국인 24h·심야 12선 — 24h 한식·분식·편의점·BBQ·코인노래방·PC방·찜질방·24h 카페·동대문 야시장·24h 약국·심야버스·외국인 안전","summary_en":"Seoul 24h Late-Night 12-pick — 24h Korean (haejangguk/gukbap) + 24h Bunsik (tteokbokki/ramen) + 24h Convenience stores (CU/GS25/7-Eleven) + 24h BBQ (Hongdae/Gangnam) + 24h Coin noraebang (500won/song, foreigner vlog #1) + 24h PC bang + 24h Jjimjilbang + 24h Cafes (Starbucks The/Hollys) + Dongdaemun Night Market (24h) + 24h Pharmacies + Night bus N15/N16 + KakaoT 24h + Korea's #1 safe","en_available":false},
-  {"id":"283","slug":"alleys-deep-dive","title_kr":"서울 골목길 deep dive","title_en":"Seoul Alleys Deep Dive","category":"A","tags":["foreigner","alley","ikseondong","seochon","bukchon","gyeongridan","haebangchon","yeonnam","mangridan","sharosu","euljiro","pimatgol"],"summary_kr":"서울 골목길 12선 — 익선동(한국 1번지 한옥 골목)·서촌·북촌·이태원 경리단길·해방촌·우사단로·연남 연트럴파크·망원 망리단길·성수 골목·샤로수길·을지로 노가리 골목·종로 피맛골","summary_en":"Seoul Alleys 12-pick — Ikseondong (Korea's #1 hanok cafe alley) + Seochon + Bukchon + Itaewon Gyeongnidan-gil + Haebangchon (Korea's #1 hill village) + Itaewon Usadan-ro + Yeonnam Yeontral Park + Mangwon Mangridan-gil + Seongsu alleys + SNU Sharosu-gil + Euljiro Nogari alley + Jongno Pimatgol","en_available":false},
-  {"id":"284","slug":"free-entry","title_kr":"서울 무료 입장 spot 풀가이드","title_en":"Seoul Free Entry Spots Full Guide","category":"H","tags":["foreigner","free","museum","palace","park","budget","hanbok","mmca-night"],"summary_kr":"서울 무료 입장 12선 — NMK·한글박물관·민속박물관·전쟁기념관·SeMA·MMCA(수요·토요 야간)·광화문 광장·궁궐 한복·어린이대공원·서울숲·N서울타워 둘레길·유엔기념공원","summary_en":"Seoul Free Entry 12-pick — National Museum of Korea (Asia's #1 free) + National Hangul Museum + National Folk Museum + War Memorial of Korea + SeMA Seoul Museum of Art + MMCA Wed/Sat night free + Gwanghwamun Plaza + 4 palaces FREE with hanbok + Children's Grand Park 1973 + Seoul Forest + N Seoul Tower trail + UN Memorial Cemetery","en_available":false},
-  {"id":"285","slug":"hidden-galleries","title_kr":"서울 hidden 갤러리 미술관","title_en":"Seoul Hidden Galleries & Art","category":"D","tags":["foreigner","gallery","art","hannam","samcheong","seochon","pkm","pace","tadeus-ropak","dalim"],"summary_kr":"서울 hidden 갤러리 12선 — PKM·국제·갤러리현대·학고재(삼청)·Pace·타데우스 로팍·갤러리바톤·리만 머핀(한남)·대림미술관·갤러리 SP(서촌)·OCI·아라리오","summary_en":"Seoul Hidden Galleries 12-pick — PKM (Samcheong-dong, Korea's #1) + Kukje Gallery + Gallery Hyundai + Hakgojae + Pace Gallery Seoul (Hannam, foreigner #1) + Thaddaeus Ropac Seoul (Hannam) + Gallery Baton + Lehmann Maupin Seoul + Daelim Museum (Seochon, MZ instagram #1) + Gallery SP + OCI Museum + Arario Gallery Sogyeok","en_available":false},
-  {"id":"286","slug":"hidden-hanok","title_kr":"서울 hidden 한옥 정자 서원","title_en":"Seoul Hidden Hanok Pavilions Seowons","category":"D","tags":["foreigner","hidden-hanok","buam","pyeongchang","jeongneung","naksungdae","changdeokgung-secret-garden","sungkyunkwan","dosan-seowon"],"summary_kr":"서울 hidden 한옥 12선 — 부암동·평창동·정릉·낙성대 외곽 한옥 + 창덕궁 후원·창경궁·덕수궁 정관헌·중명전·성균관 명륜당·도산서원·소수서원(UNESCO 2019)·창의문·백사실 계곡","summary_en":"Seoul Hidden Hanok 12-pick — Buam-dong + Pyeongchang-dong + Jeongneung + Naksungdae outskirts hanok + Changdeokgung Secret Garden (UNESCO Pavilions) + Changgyeonggung + Deoksugung Jeonggwanheon/Jungmyeongjeon (Western-Korean fusion) + Sungkyunkwan Myeongnyundang (Joseon's #1 academy since 1398) + Dosan Seowon Andong + Sosu Seowon Yeongju (UNESCO 2019) + Changuimun + Baeksasil Valley hanok","en_available":false},
-  {"id":"287","slug":"webtoon-mania","title_kr":"한국 만화 웹툰 매니아","title_en":"Korea Webtoon & Manhwa Fan Guide","category":"G","tags":["foreigner","webtoon","manhwa","naver-webtoon","kakao-page","manhwa-cafe","bucheon-museum"],"summary_kr":"K-웹툰 12선 — 네이버 웹툰 라프스(분당)·카카오 페이지(판교)·만화 박물관(부천)·만화방·만화 카페·웹툰 콜라보 카페·이태원·신촌 만화 거리·외국인 vlog·K-웹툰→K-drama","summary_en":"Korea Webtoon 12-pick (world's #1 webtoon nation) — Naver Webtoon HQ Bundang + Kakao Page HQ Pangyo + Bucheon Manhwa Museum + Manhwabang (Hongdae/Gangnam/traditional rentals) + Manhwa cafes + Webtoon collab cafes + Itaewon/Sinchon manhwa streets + Foreigner webtoon vlogs + Webtoon→K-drama adaptations (Itaewon Class/Cheese in the Trap) + K-webtoon merch + English webtoon access","en_available":false},
-  {"id":"288","slug":"daiso","title_kr":"한국 다이소 생활용품 풀가이드","title_en":"Korea Daiso & Lifestyle Full Guide","category":"F","tags":["foreigner","daiso","olive-young","tax-refund","myeongdong","hongdae","budget-shopping"],"summary_kr":"한국 다이소·생활용품 12선 — 다이소(한국 1번지 1000원숍 1700+ 매장)·명동·홍대 플래그십·올리브영·랄라블라·롭스·이마트·홈플러스·코스트코·노브랜드·이케아 광명·다이소 vlog Haul","summary_en":"Korea Daiso 12-pick — Daiso (Korea's #1 1000won shop with 1700+ stores) + Daiso Myeongdong/Hongdae flagships + Daiso K-Beauty corner (1-5K won) + Olive Young (K-Beauty #1) + LalaVla + Lohbs + E-Mart + HomePlus + Costco (foreigner membership Gangnam/Jamsil) + No Brand + IKEA Gwangmyeong + Foreigner 'Korea Daiso Haul' vlogs + Tax Refund 30K+ won","en_available":false},
-  {"id":"289","slug":"convenience-store","title_kr":"한국 편의점 deep dive","title_en":"Korea Convenience Store Deep Dive","category":"F","tags":["foreigner","convenience-store","cu","gs25","7-eleven","emart24","bento","ramen","tmoney"],"summary_kr":"한국 편의점 12선 — CU(한국 1번지 17000+)·GS25(16000+)·세븐일레븐·이마트24·미니스톱·편의점 도시락·라면·술·K-Beauty·외화 ATM·외국인 vlog·T-money 충전","summary_en":"Korea Convenience Store 12-pick (world's #1 density) — CU (Korea's #1, 17,000+ stores) + GS25 (16,000+) + 7-Eleven (13,000+) + Emart24 (6,000+) + Mini Stop + Convenience store bento (5,000won, foreigner vlog #1) + Korean ramen + Soju/Beer/Makgeolli + K-Beauty corner + Foreign ATM (Citibank/Foreign Exchange) + Korea Convenience Store vlogs + T-money charging","en_available":false},
-  {"id":"290","slug":"yoga-pilates","title_kr":"서울 요가 필라테스 명상","title_en":"Seoul Yoga Pilates Meditation","category":"E","tags":["foreigner","yoga","pilates","meditation","temple-stay","english-friendly","yogatribe"],"summary_kr":"서울 요가·필라테스·명상 12선 — YogaTribe(이태원)·YogaJang(한남)·이태원·한남 외국인 친화 요가·필라테스 G·M(강남)·명상(템플스테이 진관사·봉은사)·핫요가","summary_en":"Seoul Yoga Pilates Meditation 12-pick — YogaTribe Itaewon (foreigner #1, English) + YogaJang Hannam + Itaewon/Hannam English-friendly yoga + Pilates G·M Gangnam/Itaewon + Goyang/Jamsil pilates + Daejung Pilates + Temple-stay meditation (Jinkwansa/Bongeunsa) + Hot yoga + Wellness vlogs + Temple-stay 1N2D packages","en_available":false},
-  {"id":"291","slug":"vegan","title_kr":"서울 채식 비건 풀가이드","title_en":"Seoul Vegan Full Guide","category":"C","tags":["foreigner","vegan","temple-food","jinkwansa","plant","loving-hut","bread-blue"],"summary_kr":"서울 채식·비건 12선 — 사찰음식 진관사·산촌·발우공양(인사동)·The Bread Blue(한남)·Plant(이태원)·러빙헛·Veg-able·Soulful Life·외국인 친화 비건 카페·다이소·올리브영 비건","summary_en":"Seoul Vegan 12-pick — Temple food Jinkwansa (Korea's #1 since 1018) + Sancheon + Balwoo Gongyang (Insadong) + The Bread Blue (Hannam, vegan bakery) + Plant Itaewon (foreigner #1 vegan) + Loving Hut (Gangnam/Jongno, Korea's #1 vegan chain) + Veg-able (Hannam) + Soulful Life (Itaewon) + Foreigner vegan cafes + Daiso/Olive Young vegan + Foreign Mart vegan","en_available":false},
-  {"id":"292","slug":"massage","title_kr":"서울 마사지 테라피 풀가이드","title_en":"Seoul Massage & Therapy Full Guide","category":"E","tags":["foreigner","massage","traditional-korean","thai","swedish","foot","aroma","spa","signiel-spa"],"summary_kr":"서울 마사지 12선 — 전통 한방(강남)·타이(이태원·강남)·스웨디시(한남)·발 마사지·아로마(청담)·호텔 스파(시그니엘·신라·반얀트리)·드래곤힐스파·스파랜드·한솔·외국인 영문","summary_en":"Seoul Massage 12-pick — Traditional Korean herbal massage (Gangnam) + Thai massage (Itaewon/Gangnam) + Swedish massage (Hannam/Itaewon) + Foot massage (Gangnam/Hongdae) + Aroma massage (Cheongdam) + Hotel spas (Signiel/Shilla/Banyan Tree luxury 200K+) + Dragon Hill Spa massage + Spaland Jamsil + Hansol Hongdae + English-friendly massage","en_available":false},
-  {"id":"293","slug":"hannam","title_kr":"한남동 단독 deep dive","title_en":"Hannam-dong Standalone Deep Dive","category":"A","tags":["foreigner","hannam","lct","pace-gallery","blue-bottle","griffin","luxury","gallery"],"summary_kr":"한남동 12선 — 한남대로 LCT·꼼데가르송·Pace·타데우스 로팍·갤러리바톤·리만 머핀·블루보틀 1호점·노티드·The Bread Blue·Plant·The Griffin·L7 Hotel","summary_en":"Hannam-dong 12-pick (extends #144 Itaewon sub-area) — Hannam-daero + LCT (Lost & Found) + Comme des Garçons Hannam + Pace Gallery + Thaddaeus Ropac + Gallery Baton + Lehmann Maupin + Blue Bottle Hannam (#1 store) + Knotted Hannam + The Bread Blue vegan + Plant vegan + The Griffin Bar + L7 Hotel rooftop + Korea's #1 foreigner residential area","en_available":false},
-  {"id":"294","slug":"ikseondong","title_kr":"익선동 한옥 단독 deep dive","title_en":"Ikseondong Hanok Standalone Deep Dive","category":"A","tags":["foreigner","ikseondong","hanok-cafe","jongno","hanbok-photo","wine-bar"],"summary_kr":"익선동 12선 — 한옥마을·한옥 카페 거리(동백·락고재)·와인바·한정식·한복 사진관·한옥 게스트하우스·종로 3가 인접·인사동 동선·광장시장 동선","summary_en":"Ikseondong Hanok 12-pick (extends #226 hanok + Jongno sub-area) — Ikseondong Hanok Village (Korea's #1 hanok cafe street) + Hanok cafe street (Dongbaek + Lakgojae) + Wine bars + Hanjeongsik + Hanbok photo studios + Hanok guesthouses + Jongno 3-ga adjacent + Insadong + Gwangjang Market connections","en_available":false},
-  {"id":"295","slug":"garosugil","title_kr":"가로수길 신사 단독 deep dive","title_en":"Garosu-gil Sinsa Standalone Deep Dive","category":"A","tags":["foreigner","garosugil","sinsa","mz-shopping","blue-bottle","k-beauty","k-fashion"],"summary_kr":"가로수길·신사 12선 — 가로수길·세로수길 hidden 골목·신사역·한식·카페(블루보틀·LBM)·디저트·K-Beauty·K-Fashion·인생네컷·압구정 동선·청담 동선","summary_en":"Garosu-gil Sinsa 12-pick (extends #142 Gangnam sub-area) — Garosu-gil (Korea's #1 MZ shopping street) + Serosu-gil hidden alleys + Sinsa Station + Korean food + Cafes (Blue Bottle + LBM) + Desserts + K-Beauty stores + K-Fashion stores + Life4Cuts + Apgujeong connection + Cheongdam connection","en_available":false},
-  {"id":"296","slug":"cheongdam","title_kr":"청담동 럭셔리 단독 deep dive","title_en":"Cheongdam-dong Luxury Standalone","category":"A","tags":["foreigner","cheongdam","luxury","galleria","k-wedding","mingles","michelin"],"summary_kr":"청담동 12선 — 갤러리아 명품관·명품 거리(루이비통·샤넬·구찌)·면세점·K-Wedding·K-Beauty·청담 성형·밍글스 미슐랭 3별·권숙수·와인바·부띠끄 카페·럭셔리 호텔","summary_en":"Cheongdam-dong Luxury 12-pick (extends #142 Gangnam sub-area) — Galleria Department Store luxury hall + Cheongdam luxury street (LV/Chanel/Gucci) + Lotte/Shilla Duty-Free + K-Wedding studios (Korea's #1) + K-Beauty Cheongdam + Cheongdam plastic surgery (#242) + Mingles (Michelin 3-star) + Kwonsooksoo + Corin + Cheongdam wine bars + Boutique cafes + InterContinental","en_available":false},
-  {"id":"297","slug":"insadong","title_kr":"인사동 전통 단독 deep dive","title_en":"Insadong Traditional Standalone","category":"A","tags":["foreigner","insadong","traditional","ssamzigil","hanji","hanbok","tea-cafe","sancheon","balwoo-gongyang"],"summary_kr":"인사동 12선 — 인사동 거리·쌈지길·한복·한지 공예·전통 공예·차 카페(수희찻집)·산촌·발우공양·정원·고궁·안국 동선·익선동·광장 동선","summary_en":"Insadong Traditional 12-pick (extends #141 Jongno sub-area) — Insadong street (Korea's #1 traditional shopping area) + Ssamzigil (Korea's #1 traditional mall) + Hanbok district + Hanji paper crafts + Traditional crafts + Tea cafes (Suheechatjip) + Sancheon temple food + Balwoo Gongyang temple food + Jeongwon hanjeongsik + Gogung hanjeongsik + Anguk connection + Ikseondong + Gwangjang connections","en_available":false},
-  {"id":"298","slug":"kids-learning","title_kr":"서울 외국인 자녀 학습 놀이","title_en":"Seoul Foreign Kids Learning & Play","category":"H","tags":["foreigner","kids","childrens-museum","gwacheon-science","lotte-world","aquarium","kids-cafe"],"summary_kr":"외국인 자녀 12선 — NMK 어린이박물관·한글박물관·과천과학관·서울식물원·롯데월드·어린이대공원·63 아쿠아·롯데·COEX 아쿠아·키즈카페·영문 친화·외국인 자녀 호텔","summary_en":"Seoul Foreign Kids 12-pick (extends #232 family) — NMK Children's Museum (Asia's #1, free) + Hangul Children's Museum + Gwacheon National Science Museum + Seoul Botanic Park kids + Lotte World Adventure + Children's Grand Park (1973 free) + 63 Aqua Planet + Lotte World Aquarium + COEX Aquarium + Kids cafes + English-friendly kids spots + Family-friendly hotels","en_available":false},
-  {"id":"299","slug":"barrier-free","title_kr":"서울 배리어프리 휠체어 친화","title_en":"Seoul Barrier-Free Wheelchair Guide","category":"H","tags":["foreigner","barrier-free","wheelchair","accessibility","subway-elevator","ktx-wheelchair"],"summary_kr":"외국인 배리어프리·휠체어 12선 — NMK·NMK 어린이·롯데월드·인천·김포공항 휠체어·지하철 엘리베이터·KTX 휠체어 좌석·시그니엘·신라 배리어프리·서울숲·반포 한강","summary_en":"Seoul Barrier-Free 12-pick — NMK wheelchair-accessible + NMK Children's Museum + Lotte World Adventure barrier-free + Incheon/Gimpo Airport wheelchair services + Subway elevators (every station accessible) + KTX wheelchair seats + Signiel/Shilla/Banyan Tree barrier-free rooms + Barrier-free restaurants + Seoul Forest/Olympic Park flat parks + Han River accessible parks (Banpo/Ttukseom/Yeouido)","en_available":false},
-  {"id":"300","slug":"jamsil-50","title_kr":"잠실 50선 완전판","title_en":"Jamsil 50 Complete Guide","category":"A","tags":["foreigner","jamsil","lotte-world","lotte-tower","songridan-gil","seokchon-lake","olympic"],"summary_kr":"잠실 50선 (#82 확장) — 랜드마크 10(롯데월드·롯데타워·시그니엘·석촌호수·올림픽공원) + 송리단길 카페 10 + 잠실 한식 10 + K-pop·K-Wedding 10 + 외국인 매니아 10","summary_en":"Jamsil 50 Complete (extends #82) — 10 Landmarks (Lotte World Adventure + Magic Island + Aquarium + Lotte Tower Seoul Sky 555m + Signiel 86F + Lotte World Mall + Seokchon Lake cherry blossom + Olympic Park 1988 + Jamsil Han River Park + Baseball Stadium) + 10 Songridan-gil cafes/dining + 10 Jamsil Korean food + 10 K-pop/K-Wedding spots + 10 Foreigner spots","en_available":false},
-  {"id":"301","slug":"gangnam-100","title_kr":"강남 100선 완전판","title_en":"Gangnam 100 Complete Guide","category":"A","tags":["foreigner","gangnam","gangnam-station","dosan","cheongdam","apgujeong","sinnonhyeon"],"summary_kr":"강남 100선 (#142 확장) — 5 sub-area × 20 — 강남역 20 + 도산 20 + 청담 20 + 압구정 20 + 신논현 20","summary_en":"Gangnam 100 Complete (extends #142) — 5 sub-areas × 20 — Gangnam Station/Sinnonhyeon (downtown 20) + Dosan/Sinsa (MZ 20) + Cheongdam (luxury 20, #296) + Apgujeong Rodeo (MZ shopping 20) + Sinnonhyeon/Gangnam-daero (Korean food/bars/clubs 20)","en_available":false},
-  {"id":"302","slug":"itaewon-50","title_kr":"이태원 50선 완전판","title_en":"Itaewon 50 Complete Guide","category":"A","tags":["foreigner","itaewon","hannam","haebangchon","huam-dong","global","foreign-residential"],"summary_kr":"이태원 50선 (#144 확장) — 4 sub-area — 이태원 메인 15 + 한남 15 + 해방촌 10 + 후암동 10","summary_en":"Itaewon 50 Complete (extends #144) — 4 sub-areas — Itaewon main (Itaewon Station + Noksapyeong + global dining 15) + Hannam-dong (LCT + galleries + luxury 15, #293) + Haebangchon (hill village MZ 10) + Huam-dong (hidden newtown foreigner 10)","en_available":false},
-  {"id":"303","slug":"cherry-blossom-chart","title_kr":"봄 벚꽃 시기 chart","title_en":"Korea Spring Cherry Blossom Weekly Chart","category":"B","tags":["foreigner","cherry-blossom","weekly-chart","yunjung-ro","jinhae","gyeongju"],"summary_kr":"봄 벚꽃 (#230 후속) 매주 5주 chart — 3월 4주(제주 동백 시작) → 4월 1주(윤중로 시작) → 4월 2주 절정(서울 윤중로·캠퍼스·궁궐) → 4월 3주(진해 군항제·경주) → 4월 4주(외곽 후기)","summary_en":"Korea Cherry Blossom 5-week Chart (extends #230) — Mar W4 Jeju camellia + Busan early + Seoul National Cemetery first + Apr W1 Yunjung-ro start + Banpo + Seokchon Lake + Apr W2 PEAK Seoul (Yunjung-ro Korea's #1 + Banpo + Seoul Forest + Olympic + 4 universities + Changdeokgung + Changgyeonggung) + Apr W3 Jinhae Gunhangje (Korea's #1 festival) + Gyeongju Bomun Lake + Apr W4 outskirts late","en_available":false},
-  {"id":"304","slug":"gamakjip-100","title_kr":"한국 가맥집 100선","title_en":"Korea Gamakjip 100 Complete","category":"C","tags":["foreigner","gamakjip","beer","corner-store","jongno","euljiro","mapo","gangnam"],"summary_kr":"한국 가맥집 100선 (#04 확장) — 5 sub-area × 20 — 종로·익선·인사 20 + 을지로·동대문 20 + 마포·홍대·연남 20 + 강남·신촌·명동 20 + 외곽·hidden 20","summary_en":"Korea Gamakjip 100 Complete (extends #04) — 5 sub-areas × 20 — Jongno/Ikseondong/Insadong (20) + Euljiro Nogari alley/Dongdaemun (20) + Mapo/Hongdae/Yeonnam (20) + Gangnam/Sinchon/Myeongdong (20) + Outskirts/hidden gems (20). Korea's traditional corner-store beer culture, 3K-7K won per beer","en_available":false},
-  {"id":"305","slug":"han-river-west","title_kr":"한강 서부 공원 가이드","title_en":"Han River West Parks Guide","category":"B","tags":["foreigner","han-river","west","gangseo","nanji","mangwon","yanghwa","seonyudo","sky-park"],"summary_kr":"한강 서부 4공원 (#06 확장) — 강서·난지·망원·양화 + 캠핑·BBQ·자전거·하늘공원·선유도","summary_en":"Han River West Parks (extends #06) — Gangseo (Magok/Gimpo Airport adjacent) + Nanji (camping/BBQ/Sky Park) + Mangwon (Korea's #1 chimaek + cycling) + Yanghwa (bridge night view + Seonyudo reclaimed water treatment park) + DMC connection","en_available":false},
-  {"id":"306","slug":"han-river-central","title_kr":"한강 중부 공원 가이드","title_en":"Han River Central Parks Guide","category":"B","tags":["foreigner","han-river","central","yeouido","ichon","yunjung-ro","63-building","kbs"],"summary_kr":"한강 중부 2공원 (#06 확장) — 여의도·이촌 + 윤중로 벚꽃·63빌딩·더현대·KBS·MBC·외국인 거주 1번지","summary_en":"Han River Central Parks (extends #06) — Yeouido (Korea's #1 Yunjung-ro cherry blossom + 63 Building Aqua Planet + The Hyundai Seoul + KBS/MBC + Yeouido night view) + Ichon (Korea's #1 foreigner residential + Han River + cycling)","en_available":false},
-  {"id":"307","slug":"han-river-core","title_kr":"한강 핵심 공원 가이드","title_en":"Han River Core Parks Guide","category":"B","tags":["foreigner","han-river","core","banpo","jamwon","ttukseom","moonlight-fountain","jasubug","bbq"],"summary_kr":"한강 핵심 3공원 (#06 확장) — 반포·잠원·뚝섬 + 달빛무지개분수(Guinness)·잠수교·세빛섬·자벌레·뚝섬 BBQ·캠핑·서울숲","summary_en":"Han River Core Parks (extends #06) — Banpo (Korea's #1 + Moonlight Rainbow Fountain Guinness world's longest bridge fountain + Jamsugyo + Sebit Floating Islands) + Jamwon (K-pop/Gangnam adjacent cycling) + Ttukseom (Korea's #1 BBQ/camping/chimaek + Jasubug curl observatory + Seoul Forest adjacent)","en_available":false},
-  {"id":"308","slug":"han-river-east","title_kr":"한강 동부 공원 가이드","title_en":"Han River East Parks Guide","category":"B","tags":["foreigner","han-river","east","jamsil","gwangnaru","amsa","olympic","seokchon"],"summary_kr":"한강 동부 2공원 (#06 확장) — 잠실·광나루 + 석촌호수·롯데월드·올림픽공원·암사 선사유적","summary_en":"Han River East Parks (extends #06) — Jamsil (Korea's #1 family Han River + Seokchon Lake cherry blossom + Lotte World adjacent + cycling) + Gwangnaru (outskirts hidden + Amsa Prehistoric Site Korea's #1 neolithic + Gwangjin/Cheonho connection) + Olympic Park (1988, foreigner foliage/cherry blossom #1)","en_available":false},
-  {"id":"309","slug":"hanjeongsik-tiers","title_kr":"한정식 가격 3단계 매트릭스","title_en":"Hanjeongsik 3-Tier Pricing Matrix","category":"C","tags":["foreigner","hanjeongsik","budget","mid-tier","luxury","mingles","michelin","jeongwon","gogung"],"summary_kr":"한정식 3단계 (#234 분화) — 가성비(6K~15K 백반·정식·사찰음식·인사동) / 표준(15K~50K 정원·고궁·궁·모던 강남) / 럭셔리(50K~200K+ 신라 라연·밍글스·권숙수·롯데 무궁화)","summary_en":"Hanjeongsik 3-Tier Pricing (extends #234) — Budget tier (6K-15K won: baekban + jeongsik + temple food Jinkwansa + Insadong foreigner-friendly) + Standard tier (15K-50K won: Jeongwon Insadong + Gogung + Goong Bukchon + modern Cheongdam) + Luxury tier (50K-200K+ won: Shilla Hotel Rayoun Michelin + Mingles Cheongdam Michelin 3-star + Kwonsooksoo Michelin + Lotte Hotel Mugunghwa + Signiel)","en_available":false},
-  {"id":"310","slug":"gangnam-budget","title_kr":"강남 예산 3단계 매트릭스","title_en":"Gangnam Budget 3-Tier Matrix","category":"H","tags":["foreigner","gangnam","budget","100k","300k","1m","luxury","mz"],"summary_kr":"강남 예산 3단계 (#142·#301 분화) — 10만원(MZ 가성비)·30만원(K-Beauty·표준)·100만원+(청담 럭셔리·미슐랭)","summary_en":"Gangnam Budget 3-Tier (extends #142/#301) — 100K won/day (MZ budget: Korean food + Garosu-gil cafes + Life4Cuts + Daiso + Coin noraebang) + 300K won/day (standard: K-Beauty + Apgujeong shopping + Hanjeongsik + InterContinental 1N) + 1M won+/day (luxury: Cheongdam Galleria + K-Wedding + Mingles Michelin + JW Marriott/Signiel 1N)","en_available":false},
-  {"id":"311","slug":"hanokstay-tiers","title_kr":"한옥스테이 가격 3단계 매트릭스","title_en":"Hanok Stay 3-Tier Pricing Matrix","category":"D","tags":["foreigner","hanok-stay","budget","mid-tier","luxury","shilla-yeongbingwan","rakgojae","andong"],"summary_kr":"한옥스테이 3단계 (#226·#255·#286 분화) — 게스트하우스 50K(북촌·익선·전주·부암·평창) / 표준 200K(북촌·남산·전주·경주) / 프리미엄 500K+(신라 영빈관·롯데 무궁화·락고재·안동 하회)","summary_en":"Hanok Stay 3-Tier Pricing (extends #226/#255/#286) — Budget tier 50K won/night (guesthouses: Bukchon + Ikseondong + Jeonju + Buam-dong outskirts + Pyeongchang-dong) + Standard tier 200K won/night (Bukchon hanok hotels + Namsan Hanok Village + Jeonju Hanok hotels + Gyeongju Yangdong UNESCO) + Premium tier 500K-1M+ won/night (Shilla Hotel Yeongbingwan Korea's #1 luxury hanok + Lotte Hotel Mugunghwa hanok rooms + Bukchon Rakgojae premium + Andong Hahoe/Dosan UNESCO 2019)","en_available":false}
+  {
+    "id": "258",
+    "slug": "solo-travel",
+    "title_kr": "서울 솔로 여행자 풀가이드",
+    "title_en": "Seoul Solo Travel Full Guide",
+    "category": "H",
+    "tags": [
+      "foreigner",
+      "solo-travel",
+      "coin-noraebang",
+      "1person-bbq",
+      "capsule-hotel",
+      "han-river-cycling",
+      "cgv-gold",
+      "1person-cafe"
+    ],
+    "summary_kr": "한국 세계 1번지 1인 친화 도시 12선 — 1인 한식·1인 BBQ·이찌멘·코인노래방(500원 1곡)·1인 PC방·1인 영화관 CGV 골드·1인 카페·캡슐호텔·1인 게스트하우스·솔로 한강 자전거·솔로 등산·외국인 안전 1번지",
+    "summary_en": "Korea Solo Travel 12-pick (world's #1 solo-friendly city) — 1-person Korean food + 1-person BBQ (Gangnam/Jamsil/Hongdae) + Ichimen/Ichiran + Coin Noraebang (500won/song, foreigner vlog #1) + 1-person PC bang + 1-person cinema CGV Gold + 1-person cafe + Capsule hotel (Hongdae/Gangnam) + 1-person guesthouse + Solo Han River cycling + Solo hiking + Korea's #1 safe city",
+    "en_available": false
+  },
+  {
+    "id": "259",
+    "slug": "monthly-guide",
+    "title_kr": "서울 월별 가이드",
+    "title_en": "Seoul Monthly Guide",
+    "category": "H",
+    "tags": [
+      "foreigner",
+      "monthly",
+      "seasonal",
+      "january",
+      "april-cherry",
+      "july-rain",
+      "october-foliage",
+      "november-biff",
+      "december-illumination"
+    ],
+    "summary_kr": "외국인 한국 시기별 페인포인트 매트릭스 12개월 — 1월 보신각·설날·2월 한복·3월 봄시작·4월 벚꽃·5월 가족·6월 한강·7월 장마·8월 한강 치맥·9월 추석·10월 단풍·11월 BIFF·12월 일루미네이션",
+    "summary_en": "Seoul Monthly Guide 12-month matrix — January Bosingak/Seollal + February Hanbok/temple + March spring/cherry early + April cherry blossom peak (#230) + May family/Children's Day + June Han River season + July rain indoor + August Han River chimaek + September Chuseok + October foliage start (#229) + November foliage peak + BIFF (#247) + December illumination + Bosingak (#231)",
+    "en_available": false
+  },
+  {
+    "id": "260",
+    "slug": "rooftop-bars",
+    "title_kr": "서울 루프탑 옥상 풀가이드",
+    "title_en": "Seoul Rooftop Bars Full Guide",
+    "category": "B",
+    "tags": [
+      "foreigner",
+      "rooftop",
+      "night-view",
+      "signiel",
+      "banyan-tree",
+      "griffin-bar",
+      "conrad",
+      "jw-marriott",
+      "ddp-rooftop"
+    ],
+    "summary_kr": "외국인 야경 인스타 1번지 12선 — The Griffin(한남)·L7 Hotel·반얀트리 Moon Bar(남산)·시그니엘(잠실 86층)·콘래드(여의도)·JW메리어트(강남)·그랜드 인터컨티넨탈·DDP 루프탑·JBC 종각·홍대 케이스·놀",
+    "summary_en": "Seoul Rooftop Bars 12-pick — The Griffin Bar (Hannam, foreigner #1) + L7 Hotel Hannam + Ichawon Workshop + Banyan Tree Moon Bar (Namsan luxury) + Lotte Hotel Signiel (Jamsil Lotte Tower 81F) + Conrad (Yeouido) + JW Marriott (Gangnam) + Grand InterContinental + Signiel Seoul (Lotte Tower 86F, world's #1 view) + DDP rooftop + JBC Jongno + Hongdae Case/Knoll",
+    "en_available": false
+  },
+  {
+    "id": "261",
+    "slug": "photo-booths",
+    "title_kr": "한국 사진관 인생네컷 풀가이드",
+    "title_en": "Korea Photo Booths Life4Cuts Full Guide",
+    "category": "G",
+    "tags": [
+      "foreigner",
+      "photo-booth",
+      "life-four-cuts",
+      "photoism",
+      "harufilm",
+      "selpix",
+      "monomansion",
+      "self-studio",
+      "hanbok-photo",
+      "k-wedding"
+    ],
+    "summary_kr": "한국 세계 1번지 인생네컷 culture 12선 — 인생네컷(Life Four Cuts·4000원 4컷)·포토이즘·하루필름·셀픽스·모노맨션·포토매틱 + 셀프 스튜디오·한복 사진관(북촌·인사동·경복궁)·K-Wedding(청담·강남)",
+    "summary_en": "Korea Photo Booths Life4Cuts 12-pick — Life Four Cuts (4,000won/4 photos, Korea's #1) + Photoism + Harufilm + Selpix + Monomansion (B&W concept) + Photomatic + Self Studio (Gangnam/Hongdae/Itaewon, 30-50K won/1h) + Hanbok photo studios (Bukchon/Insadong/Gyeongbokgung) + K-Wedding studios (Cheongdam/Gangnam) + Profile photo + Foreigner-friendly photo studios",
+    "en_available": false
+  },
+  {
+    "id": "262",
+    "slug": "pet-friendly",
+    "title_kr": "서울 펫 친화 풀가이드",
+    "title_en": "Seoul Pet-Friendly Full Guide",
+    "category": "H",
+    "tags": [
+      "foreigner",
+      "pet",
+      "dog-cafe",
+      "cat-cafe",
+      "pet-hotel",
+      "vet",
+      "pet-shop",
+      "mollys",
+      "cocos",
+      "pet-park",
+      "quarantine"
+    ],
+    "summary_kr": "외국인 long-stay 매니아 펫 친화 12선 — 도그카페(강남·홍대·이태원 15~25K원)·고양이 카페·이색 동물 카페·펫호텔(50~150K/1박)·24h 응급 동물병원·펫샵(몰리스·코코스)·펫 친화 호텔·펫 친화 공원(서울숲·올림픽·뚝섬)·펫 친화 한강(반포·뚝섬·여의도)",
+    "summary_en": "Seoul Pet-Friendly 12-pick — Dog cafes (Gangnam/Hongdae/Itaewon 15-25K won) + Cat cafes + Exotic animal cafes (raccoon/meerkat/sheep) + Pet hotels (Gangnam/Jamsil 50-150K won/night) + Pet daycare + Foreigner-friendly vet clinics (Gangnam/Itaewon/Hannam) + 24h emergency vets + Pet shops (Mollys/Cocos) + Pet-friendly hotels + Pet-friendly parks (Seoul Forest/Olympic/Ttukseom) + Pet-friendly Han River + Pet entry quarantine",
+    "en_available": false
+  },
+  {
+    "id": "263",
+    "slug": "seongsu-50",
+    "title_kr": "성수동 50선 완전판",
+    "title_en": "Seongsu 50 Complete Guide",
+    "category": "A",
+    "tags": [
+      "foreigner",
+      "seongsu",
+      "cafe",
+      "popup",
+      "gallery",
+      "d-museum",
+      "blue-bottle",
+      "cafe-onion",
+      "notted",
+      "center-coffee",
+      "lifestyle-shop"
+    ],
+    "summary_kr": "성수동 50선 완전판 (#01 팝업 + #145 카페 확장) — 카페 15선(어니언·블루보틀·센터커피·데일리트림·노티드) + 맛집 15선(BBQ·이탈리안·라멘·한정식·분식) + 팝업·갤러리 10선(D museum·갤러리 일우·에스팩토리·누데이크·LCA) + 소품샵 10선",
+    "summary_en": "Seongsu 50 Complete Guide (extends #01 popup + #145 cafe) — 15 Cafes (Cafe Onion + Blue Bottle Seongsu + Center Coffee + Notted donut + Daily Trim + Cafe The Bakers Table + Cafe Onion + Halia) + 15 Restaurants (Korean BBQ/Italian/Ramen/Korean course/Bunsik) + 10 Pop-ups & Galleries (D museum + Gallery Iluwoo + S-Factory + Nudake + LCA Living Center Atelier + Workshop) + 10 Lifestyle/Souvenir shops",
+    "en_available": false
+  },
+  {
+    "id": "264",
+    "slug": "korea-3day",
+    "title_kr": "외국인 3일 코스 단기",
+    "title_en": "Korea First Visit 3-Day Short Itinerary",
+    "category": "H",
+    "tags": [
+      "foreigner",
+      "3-day",
+      "short-trip",
+      "myeongdong",
+      "palace",
+      "gangnam",
+      "han-river",
+      "business-trip"
+    ],
+    "summary_kr": "외국인 첫 방문 3일 단기 풀세트 — Day1 명동·N서울타워·면세 → Day2 경복궁·한복·북촌·익선·홍대 → Day3 강남·K-pop·반포 한강·출국. #228 7일 단기 Variant + Variant 4 (K-pop/음식/자연)",
+    "summary_en": "Korea 3-Day Short Itinerary — Day1 Arrival/Myeongdong/N Seoul Tower/Duty-free + Day2 Gyeongbokgung/Hanbok/Bukchon/Ikseondong/Hongdae + Day3 Gangnam/K-pop/Banpo Han River/Departure. #228 short variant + 4 sub-variants (K-pop/Food/Nature/Business)",
+    "en_available": false
+  },
+  {
+    "id": "265",
+    "slug": "korea-5day",
+    "title_kr": "외국인 5일 코스",
+    "title_en": "Korea First Visit 5-Day Itinerary",
+    "category": "H",
+    "tags": [
+      "foreigner",
+      "5-day",
+      "seoul-busan",
+      "ktx",
+      "family",
+      "kpop",
+      "balanced"
+    ],
+    "summary_kr": "외국인 4박5일 풀세트 — Option A 서울 3일 + 부산 1박2일(KTX) / Option B 서울 5일 deep dive. Variant 5 (가족·K-pop·음식·자연·문화)",
+    "summary_en": "Korea 5-Day Itinerary — Option A Seoul 3 days + Busan 1N2D (KTX 2.5h to Haeundae/Gwangalli) / Option B Seoul 5-day deep dive + 5 sub-variants (Family #232/K-pop #221/Food/Nature/Culture)",
+    "en_available": false
+  },
+  {
+    "id": "266",
+    "slug": "korea-10day",
+    "title_kr": "외국인 10일 코스",
+    "title_en": "Korea First Visit 10-Day Itinerary",
+    "category": "H",
+    "tags": [
+      "foreigner",
+      "10-day",
+      "long-trip",
+      "seoul-7day",
+      "busan",
+      "jeju",
+      "gangneung",
+      "jeonju",
+      "gyeongju"
+    ],
+    "summary_kr": "외국인 9박10일 풀세트 — Week1 서울 5일(#228) + Day6~7 부산 1박2일(#243~#247) + Day8~9 외곽 도시 1박2일(제주/강릉/전주/경주 중 1) + Day10 출국",
+    "summary_en": "Korea 10-Day Itinerary — Day1-5 Seoul (#228) + Day6-7 Busan 1N2D (Haeundae/Gwangalli/Jagalchi/Gamcheon) + Day8-9 Outskirts (Jeju #253/Gangneung #254/Jeonju #255/Gyeongju #256 — choose 1) + Day10 Han River + Departure. Budget ~$1500-3000",
+    "en_available": false
+  },
+  {
+    "id": "267",
+    "slug": "korea-2week",
+    "title_kr": "외국인 2주 코스",
+    "title_en": "Korea First Visit 2-Week Itinerary",
+    "category": "H",
+    "tags": [
+      "foreigner",
+      "2-week",
+      "long-stay",
+      "seoul",
+      "busan",
+      "jeju",
+      "gangneung",
+      "jeonju",
+      "gyeongju",
+      "tongyeong"
+    ],
+    "summary_kr": "외국인 13박14일 한국 전국 풀세트 — Week1 서울 7일(#228) + Week2 부산 2박3일·경주 1박·전주 1박·강릉 1박·출국. 외국인 매니아 deep dive 1순위",
+    "summary_en": "Korea 2-Week Itinerary — Week1 Seoul 7 days (#228) + Week2 Busan 2N3D + Gyeongju 1N + Jeonju 1N + Gangneung 1N + Departure. Alternative: Jeju 4 days variant. Budget ~$3000-5000. Korea's #1 foreigner deep dive package",
+    "en_available": false
+  },
+  {
+    "id": "268",
+    "slug": "busan-sajik",
+    "title_kr": "부산 사직 야구 가이드",
+    "title_en": "Busan Sajik Baseball Guide",
+    "category": "G",
+    "tags": [
+      "foreigner",
+      "busan",
+      "sajik",
+      "lotte-giants",
+      "kbo",
+      "outfield-cheering",
+      "busan-series"
+    ],
+    "summary_kr": "부산 사직 야구장 12선 (#240 KBO + #246 서면 sub-area 확장) — 사직 야구장(1985·22000석)·롯데 자이언츠·외야 응원 culture('마!' + 신문지 응원)·치맥·동래 인접·외국인 KBO vlog 1순위",
+    "summary_en": "Busan Sajik Baseball Stadium 12-pick (extends #240 KBO + #246 Seomyeon sub-area) — Sajik Baseball Stadium (1985, 22,000 seats) + Lotte Giants + outfield cheering culture ('Ma!' chants + newspaper cheering, Korea's #1) + chimaek + Dongnae adjacent + Korean traditional cheering + Foreigner KBO vlog #1 + Klook/Interpark booking",
+    "en_available": false
+  },
+  {
+    "id": "269",
+    "slug": "busan-dongnae",
+    "title_kr": "부산 동래 온천 가이드",
+    "title_en": "Busan Dongnae Hot Spring Guide",
+    "category": "A",
+    "tags": [
+      "foreigner",
+      "busan",
+      "dongnae",
+      "oncheonjang",
+      "heosimcheong",
+      "hot-spring",
+      "2000-years",
+      "dongnaeupseong",
+      "busan-series"
+    ],
+    "summary_kr": "부산 동래·온천장 12선 (#246 sub-area 확장) — 동래 온천장(한국 1번지 2000년 신라시대 기록)·허심청(한국 #1 온천)·농심 호텔·동래읍성·충렬사(임진왜란 1592)·동래학춤 무형문화재·동래 한정식",
+    "summary_en": "Busan Dongnae Hot Spring 12-pick (extends #246 Seomyeon sub-area) — Dongnae Oncheonjang (Korea's #1 hot spring, 2,000-year history since Silla) + Heosimcheong (Korea's #1 hot spring complex) + Nongshim Hotel hot spring + Dongnae Mijeonggwan + Dongnae traditional market + Dongnaeupseong fortress + Chungryeolsa (Imjin War 1592) + Dongnae Hakchum intangible heritage + Geumjeongsan outskirts",
+    "en_available": false
+  },
+  {
+    "id": "270",
+    "slug": "busan-gijang",
+    "title_kr": "부산 기장 외곽 가이드",
+    "title_en": "Busan Gijang Outskirts Guide",
+    "category": "A",
+    "tags": [
+      "foreigner",
+      "busan",
+      "gijang",
+      "haedong-yonggungsa",
+      "jukseong-cathedral",
+      "ilgwang",
+      "lotte-world-busan",
+      "busan-series"
+    ],
+    "summary_kr": "부산 기장 외곽 12선 (#247 BIFF sub-area 확장) — 해동용궁사(부산 1번지 바다 위 사찰)·죽성성당(K-drama 무대)·일광/임랑/칠암 외곽 해변·기장 시장(한국 1번지 멸치)·롯데월드 어드벤처 부산(2022 신축)",
+    "summary_en": "Busan Gijang Outskirts 12-pick (extends #247 BIFF sub-area) — Haedong Yonggungsa (Busan's #1 sea-side temple, foreigner instagram #1) + Jukseong Cathedral (K-drama filming spot) + Ilgwang Beach + Imrang Beach + Chilam fishing village + Gijang Market (Korea's #1 anchovy/seaweed) + Lotte World Adventure Busan (2022 newest theme park) + Foreigner-friendly pensions + Outskirts ferry",
+    "en_available": false
+  },
+  {
+    "id": "271",
+    "slug": "busan-songdo",
+    "title_kr": "부산 송도 영도 가이드",
+    "title_en": "Busan Songdo Yeongdo Guide",
+    "category": "A",
+    "tags": [
+      "foreigner",
+      "busan",
+      "songdo",
+      "yeongdo",
+      "cable-car",
+      "skywalk",
+      "huinnyeoul",
+      "taejongdae",
+      "kkangkkangi",
+      "busan-series"
+    ],
+    "summary_kr": "부산 송도·영도 12선 (#244 자갈치 sub-area 확장) — 송도 해수욕장(한국 1번지 1913)·송도 해상 케이블카(1.62km 한국 #1)·송도 스카이워크(365m)·용궁구름다리 + 영도 흰여울 문화마을·태종대·깡깡이 예술마을",
+    "summary_en": "Busan Songdo & Yeongdo 12-pick (extends #244 Jagalchi sub-area) — Songdo Beach (Korea's #1 beach since 1913) + Songdo Maritime Cable Car (1.62km, Korea's #1 sea cable car) + Songdo Skywalk (365m) + Yonggung Cloud Bridge + Yeongdo Huinnyeoul Culture Village (Busan instagram #1) + Taejongdae cliffs + Yeongdo Kkangkkangi Art Village",
+    "en_available": false
+  },
+  {
+    "id": "272",
+    "slug": "busan-dadaepo",
+    "title_kr": "부산 다대포 낙동강 가이드",
+    "title_en": "Busan Dadaepo Nakdonggang Guide",
+    "category": "A",
+    "tags": [
+      "foreigner",
+      "busan",
+      "dadaepo",
+      "sunset",
+      "fountain",
+      "molundae",
+      "nakdonggang",
+      "eulsukdo",
+      "busan-series"
+    ],
+    "summary_kr": "부산 다대포 외곽 노을 1번지 12선 (#244 sub-area 마지막) — 다대포 해수욕장(부산 외곽 1번지)·꿈의 낙조분수(세계 #1 음악분수 2009)·다대포 노을·몰운대·낙동강 하구·을숙도 생태(한국 1번지 철새)·사하 한식",
+    "summary_en": "Busan Dadaepo & Nakdonggang 12-pick (extends #244 Jagalchi sub-area, final) — Dadaepo Beach (Busan outskirts #1) + Korean Dream Fountain (Sunset Music Fountain, Guinness world's largest music fountain since 2009, foreigner instagram #1) + Dadaepo sunset (Busan's #1 sunset) + Molundae + Nakdonggang Estuary + Eulsukdo Ecological Park (Korea's #1 migratory bird sanctuary) + Sahagu traditional food",
+    "en_available": false
+  },
+  {
+    "id": "273",
+    "slug": "autumn-foliage-matrix",
+    "title_kr": "가을 단풍 시기 매트릭스",
+    "title_en": "Korea Autumn Foliage Weekly Matrix",
+    "category": "B",
+    "tags": [
+      "foreigner",
+      "autumn-foliage",
+      "weekly-matrix",
+      "seoraksan",
+      "bukhansan",
+      "changdeokgung",
+      "olympic",
+      "seoul-forest",
+      "naejangsan",
+      "busan",
+      "biff"
+    ],
+    "summary_kr": "가을 단풍 (#229 후속) 매주 8주 매트릭스 — 10월 1주 설악산 → 10월 3주 북한산 절정 → 10월 4주 창덕궁 후원(UNESCO) → 11월 1주 서울숲·올림픽·남산 절정 → 11월 3주 내장산 절정 → 11월 4주 부산 BIFF 단풍",
+    "summary_en": "Korea Autumn Foliage Weekly Matrix (extends #229) — 8-week timing chart — Oct W1 Seoraksan/Odaesan start + Oct W2 Bukhansan/Gwanaksan progression + Oct W3 Bukhansan peak + Dobongsan/Suraksan/Achasan + Oct W4 Olympic Park/Changdeokgung Secret Garden UNESCO/Jongmyo + Nov W1 Seoul Forest/Olympic peak + Nov W2 Namsan/Naksan/Inwangsan/Eungbongsan peak + Nov W3 Naejangsan peak + Jirisan + Nov W4 Busan BIFF + Yeosu/Tongyeong",
+    "en_available": false
+  },
+  {
+    "id": "275",
+    "slug": "lgbtq-friendly",
+    "title_kr": "서울 LGBTQ+ 친화 풀가이드",
+    "title_en": "Seoul LGBTQ+ Friendly Full Guide",
+    "category": "H",
+    "tags": [
+      "foreigner",
+      "lgbtq",
+      "itaewon",
+      "hongdae",
+      "queer-festival",
+      "gay-hill",
+      "trans-friendly"
+    ],
+    "summary_kr": "이태원·홍대 LGBTQ+ 친화 12선 + 서울 퀴어문화축제(6월 시청광장)·외국인 매니아 1번지",
+    "summary_en": "Seoul LGBTQ+ 12-pick — Itaewon Gay Hill (Korea's #1) + Trans clubs + Itaewon foreigner-friendly bars + Hongdae LGBTQ+ MZ clubs + Jongno Insadong + Seoul Queer Culture Festival (June, City Hall Plaza, Korea's #1) + LGBTQ+ Film Festival + foreigner LGBTQ+ hotels + foreigner-friendly cafes + LGBTQ+ vlogs + Korean LGBTQ+ rights orgs",
+    "en_available": false
+  },
+  {
+    "id": "276",
+    "slug": "senior-friendly",
+    "title_kr": "서울 시니어 60+ 친화 풀가이드",
+    "title_en": "Seoul Senior 60+ Friendly Full Guide",
+    "category": "H",
+    "tags": [
+      "foreigner",
+      "senior",
+      "free-entry",
+      "palace",
+      "park",
+      "wheelchair",
+      "museum"
+    ],
+    "summary_kr": "외국인 시니어 60+ 12선 — 무료 박물관(NMK·한글·민속)·궁궐 한복·평지 산책(서울숲·올림픽·양재)·N서울타워·드래곤힐스파",
+    "summary_en": "Seoul Senior 60+ 12-pick — Free NMK + Hangul Museum + 4 Joseon palaces (free hanbok) + Seoul Forest flat walking + Olympic Park + Yangjae + Bukchon flat hanok + Insadong traditional + N Seoul Tower cable car + Dragon Hill Spa jjimjilbang + Lotte Tower Seoul Sky",
+    "en_available": false
+  },
+  {
+    "id": "277",
+    "slug": "honeymoon",
+    "title_kr": "서울 신혼 커플 풀가이드",
+    "title_en": "Seoul Honeymoon & Couples Full Guide",
+    "category": "H",
+    "tags": [
+      "foreigner",
+      "honeymoon",
+      "couples",
+      "banpo",
+      "n-seoul-tower",
+      "signiel",
+      "k-wedding",
+      "luxury"
+    ],
+    "summary_kr": "외국인 신혼·커플 12선 — 반포 달빛무지개분수·N서울타워·남산·응봉산·시그니엘·K-Wedding 청담·한복 사진관·럭셔리 호텔",
+    "summary_en": "Seoul Honeymoon 12-pick — Banpo Moonlight Rainbow Fountain (Korea's #1 night view) + N Seoul Tower + Love Locks + Namsan night walk + Eungbongsan + Rooftop bars + Signiel + Life4Cuts + K-Wedding Cheongdam + Hanbok photo studios + Bukchon hanok + Luxury hotels (Signiel/Banyan Tree/Shilla)",
+    "en_available": false
+  },
+  {
+    "id": "278",
+    "slug": "digital-nomad",
+    "title_kr": "서울 디지털 노매드 풀가이드",
+    "title_en": "Seoul Digital Nomad Full Guide",
+    "category": "H",
+    "tags": [
+      "foreigner",
+      "digital-nomad",
+      "coworking",
+      "wework",
+      "fastfive",
+      "24h-cafe",
+      "airbnb",
+      "long-stay",
+      "d-10-visa"
+    ],
+    "summary_kr": "외국인 디지털 노매드 12선 — WeWork·패스트파이브·스파크플러스·24h 카페·롱스테이 호텔·에어비앤비 1개월 할인·외국인 거주 1번지·D-10 구직 비자",
+    "summary_en": "Seoul Digital Nomad 12-pick — WeWork (Gangnam/City Hall/Samseong-dong) + Fastfive (Korea's #1) + Sparkplus + 24h cafes (Starbucks The series/Gangnam/Hongdae) + 1-person friendly cafes + Long-stay hotels + Airbnb 1-month 30% discount + Foreigner residential areas + Foreigner nomad vlogs + D-10 job-seeker visa (6mo-2yr)",
+    "en_available": false
+  },
+  {
+    "id": "279",
+    "slug": "korean-holidays",
+    "title_kr": "한국 명절 풀가이드",
+    "title_en": "Korean Holidays Full Guide",
+    "category": "H",
+    "tags": [
+      "foreigner",
+      "holidays",
+      "seollal",
+      "chuseok",
+      "sambok",
+      "dongji",
+      "tteokguk",
+      "songpyeon",
+      "samgyetang"
+    ],
+    "summary_kr": "한국 4대 명절 12선 — 설날(음력 1/1 떡국·세배·한복·민속놀이)·추석(음력 8/15 송편·차례·강강술래)·삼복(7~8월 삼계탕)·동지(12/22 팥죽)",
+    "summary_en": "Korean Holidays 12-pick — Seollal Lunar New Year (tteokguk + sebae + hanbok + minsok-nori) + Chuseok harvest festival (songpyeon + charye + ganggangsullae) + Sambok (Cho/Jung/Mal-bok, 7-8 Aug, samgyetang) + Dongji (Dec 22, patjuk red bean) + Palace free hanbok + Korean Folk Village Yongin + Temple Jinkwansa + Toseokchon/Goryeo/Harimgak samgyetang shops",
+    "en_available": false
+  },
+  {
+    "id": "280",
+    "slug": "rainy-day",
+    "title_kr": "서울 비 오는 날 풀가이드",
+    "title_en": "Seoul Rainy Day Indoor Full Guide",
+    "category": "H",
+    "tags": [
+      "foreigner",
+      "rainy-day",
+      "indoor",
+      "museum",
+      "aquarium",
+      "jjimjilbang",
+      "botanic-garden"
+    ],
+    "summary_kr": "외국인 비 오는 날 12선 — NMK·한글박물관·DDP 야간 LED·63 아쿠아·롯데월드 아쿠아·COEX 아쿠아+별마당·롯데월드 어드벤처·드래곤힐스파·스파랜드·서울식물원 온실·인생네컷·1인 영화관",
+    "summary_en": "Seoul Rainy Day 12-pick — NMK (Korea's #1 free) + Hangul Museum free + DDP night LED + 63 Aqua Planet + Lotte World Aquarium + COEX Aquarium + Starfield Library + Lotte World Adventure indoor + Dragon Hill Spa 24h + Spaland Jamsil + Hansol Hongdae + Seoul Botanic Park greenhouses + Life4Cuts + 1-person cinema",
+    "en_available": false
+  },
+  {
+    "id": "281",
+    "slug": "dawn-seoul",
+    "title_kr": "서울 새벽 5~9시 풀가이드",
+    "title_en": "Seoul Dawn 5-9am Full Guide",
+    "category": "H",
+    "tags": [
+      "foreigner",
+      "dawn",
+      "sunrise",
+      "fish-market",
+      "hangover",
+      "first-train",
+      "eungbongsan"
+    ],
+    "summary_kr": "외국인 새벽 5~9시 12선 — 노량진수산 새벽 경매(03~06)·자갈치(부산)·마장축산물·응봉산 해돋이·남산·반포·북한산 해돋이·새벽 해장(선지·콩나물·곰탕)·콩나물국밥 현대옥·24h 해장국",
+    "summary_en": "Seoul Dawn 5-9am 12-pick — Noryangjin Fish Market dawn auction (3-6am, foreigner vlog #1) + Jagalchi Busan + Majang Livestock + Eungbongsan sunrise (Seoul's #1) + Namsan sunrise + Banpo Han River + Bukhansan + Dawn hangover food (seonji/kongnamul/gomtang) + Hyundaeok kongnamul-gukbap + 24h hangover shops + First train (subway 5:30 + Airport Railroad) + 24h cafes",
+    "en_available": false
+  },
+  {
+    "id": "282",
+    "slug": "late-night",
+    "title_kr": "서울 24h 심야 풀가이드",
+    "title_en": "Seoul 24h Late-Night Full Guide",
+    "category": "H",
+    "tags": [
+      "foreigner",
+      "24h",
+      "late-night",
+      "convenience-store",
+      "coin-noraebang",
+      "jjimjilbang",
+      "dongdaemun-night"
+    ],
+    "summary_kr": "외국인 24h·심야 12선 — 24h 한식·분식·편의점·BBQ·코인노래방·PC방·찜질방·24h 카페·동대문 야시장·24h 약국·심야버스·외국인 안전",
+    "summary_en": "Seoul 24h Late-Night 12-pick — 24h Korean (haejangguk/gukbap) + 24h Bunsik (tteokbokki/ramen) + 24h Convenience stores (CU/GS25/7-Eleven) + 24h BBQ (Hongdae/Gangnam) + 24h Coin noraebang (500won/song, foreigner vlog #1) + 24h PC bang + 24h Jjimjilbang + 24h Cafes (Starbucks The/Hollys) + Dongdaemun Night Market (24h) + 24h Pharmacies + Night bus N15/N16 + KakaoT 24h + Korea's #1 safe",
+    "en_available": false
+  },
+  {
+    "id": "283",
+    "slug": "alleys-deep-dive",
+    "title_kr": "서울 골목길 deep dive",
+    "title_en": "Seoul Alleys Deep Dive",
+    "category": "A",
+    "tags": [
+      "foreigner",
+      "alley",
+      "ikseondong",
+      "seochon",
+      "bukchon",
+      "gyeongridan",
+      "haebangchon",
+      "yeonnam",
+      "mangridan",
+      "sharosu",
+      "euljiro",
+      "pimatgol"
+    ],
+    "summary_kr": "서울 골목길 12선 — 익선동(한국 1번지 한옥 골목)·서촌·북촌·이태원 경리단길·해방촌·우사단로·연남 연트럴파크·망원 망리단길·성수 골목·샤로수길·을지로 노가리 골목·종로 피맛골",
+    "summary_en": "Seoul Alleys 12-pick — Ikseondong (Korea's #1 hanok cafe alley) + Seochon + Bukchon + Itaewon Gyeongnidan-gil + Haebangchon (Korea's #1 hill village) + Itaewon Usadan-ro + Yeonnam Yeontral Park + Mangwon Mangridan-gil + Seongsu alleys + SNU Sharosu-gil + Euljiro Nogari alley + Jongno Pimatgol",
+    "en_available": false
+  },
+  {
+    "id": "284",
+    "slug": "free-entry",
+    "title_kr": "서울 무료 입장 spot 풀가이드",
+    "title_en": "Seoul Free Entry Spots Full Guide",
+    "category": "H",
+    "tags": [
+      "foreigner",
+      "free",
+      "museum",
+      "palace",
+      "park",
+      "budget",
+      "hanbok",
+      "mmca-night"
+    ],
+    "summary_kr": "서울 무료 입장 12선 — NMK·한글박물관·민속박물관·전쟁기념관·SeMA·MMCA(수요·토요 야간)·광화문 광장·궁궐 한복·어린이대공원·서울숲·N서울타워 둘레길·유엔기념공원",
+    "summary_en": "Seoul Free Entry 12-pick — National Museum of Korea (Asia's #1 free) + National Hangul Museum + National Folk Museum + War Memorial of Korea + SeMA Seoul Museum of Art + MMCA Wed/Sat night free + Gwanghwamun Plaza + 4 palaces FREE with hanbok + Children's Grand Park 1973 + Seoul Forest + N Seoul Tower trail + UN Memorial Cemetery",
+    "en_available": false
+  },
+  {
+    "id": "285",
+    "slug": "hidden-galleries",
+    "title_kr": "서울 hidden 갤러리 미술관",
+    "title_en": "Seoul Hidden Galleries & Art",
+    "category": "D",
+    "tags": [
+      "foreigner",
+      "gallery",
+      "art",
+      "hannam",
+      "samcheong",
+      "seochon",
+      "pkm",
+      "pace",
+      "tadeus-ropak",
+      "dalim"
+    ],
+    "summary_kr": "서울 hidden 갤러리 12선 — PKM·국제·갤러리현대·학고재(삼청)·Pace·타데우스 로팍·갤러리바톤·리만 머핀(한남)·대림미술관·갤러리 SP(서촌)·OCI·아라리오",
+    "summary_en": "Seoul Hidden Galleries 12-pick — PKM (Samcheong-dong, Korea's #1) + Kukje Gallery + Gallery Hyundai + Hakgojae + Pace Gallery Seoul (Hannam, foreigner #1) + Thaddaeus Ropac Seoul (Hannam) + Gallery Baton + Lehmann Maupin Seoul + Daelim Museum (Seochon, MZ instagram #1) + Gallery SP + OCI Museum + Arario Gallery Sogyeok",
+    "en_available": false
+  },
+  {
+    "id": "286",
+    "slug": "hidden-hanok",
+    "title_kr": "서울 hidden 한옥 정자 서원",
+    "title_en": "Seoul Hidden Hanok Pavilions Seowons",
+    "category": "D",
+    "tags": [
+      "foreigner",
+      "hidden-hanok",
+      "buam",
+      "pyeongchang",
+      "jeongneung",
+      "naksungdae",
+      "changdeokgung-secret-garden",
+      "sungkyunkwan",
+      "dosan-seowon"
+    ],
+    "summary_kr": "서울 hidden 한옥 12선 — 부암동·평창동·정릉·낙성대 외곽 한옥 + 창덕궁 후원·창경궁·덕수궁 정관헌·중명전·성균관 명륜당·도산서원·소수서원(UNESCO 2019)·창의문·백사실 계곡",
+    "summary_en": "Seoul Hidden Hanok 12-pick — Buam-dong + Pyeongchang-dong + Jeongneung + Naksungdae outskirts hanok + Changdeokgung Secret Garden (UNESCO Pavilions) + Changgyeonggung + Deoksugung Jeonggwanheon/Jungmyeongjeon (Western-Korean fusion) + Sungkyunkwan Myeongnyundang (Joseon's #1 academy since 1398) + Dosan Seowon Andong + Sosu Seowon Yeongju (UNESCO 2019) + Changuimun + Baeksasil Valley hanok",
+    "en_available": false
+  },
+  {
+    "id": "287",
+    "slug": "webtoon-mania",
+    "title_kr": "한국 만화 웹툰 매니아",
+    "title_en": "Korea Webtoon & Manhwa Fan Guide",
+    "category": "G",
+    "tags": [
+      "foreigner",
+      "webtoon",
+      "manhwa",
+      "naver-webtoon",
+      "kakao-page",
+      "manhwa-cafe",
+      "bucheon-museum"
+    ],
+    "summary_kr": "K-웹툰 12선 — 네이버 웹툰 라프스(분당)·카카오 페이지(판교)·만화 박물관(부천)·만화방·만화 카페·웹툰 콜라보 카페·이태원·신촌 만화 거리·외국인 vlog·K-웹툰→K-drama",
+    "summary_en": "Korea Webtoon 12-pick (world's #1 webtoon nation) — Naver Webtoon HQ Bundang + Kakao Page HQ Pangyo + Bucheon Manhwa Museum + Manhwabang (Hongdae/Gangnam/traditional rentals) + Manhwa cafes + Webtoon collab cafes + Itaewon/Sinchon manhwa streets + Foreigner webtoon vlogs + Webtoon→K-drama adaptations (Itaewon Class/Cheese in the Trap) + K-webtoon merch + English webtoon access",
+    "en_available": false
+  },
+  {
+    "id": "288",
+    "slug": "daiso",
+    "title_kr": "한국 다이소 생활용품 풀가이드",
+    "title_en": "Korea Daiso & Lifestyle Full Guide",
+    "category": "F",
+    "tags": [
+      "foreigner",
+      "daiso",
+      "olive-young",
+      "tax-refund",
+      "myeongdong",
+      "hongdae",
+      "budget-shopping"
+    ],
+    "summary_kr": "한국 다이소·생활용품 12선 — 다이소(한국 1번지 1000원숍 1700+ 매장)·명동·홍대 플래그십·올리브영·랄라블라·롭스·이마트·홈플러스·코스트코·노브랜드·이케아 광명·다이소 vlog Haul",
+    "summary_en": "Korea Daiso 12-pick — Daiso (Korea's #1 1000won shop with 1700+ stores) + Daiso Myeongdong/Hongdae flagships + Daiso K-Beauty corner (1-5K won) + Olive Young (K-Beauty #1) + LalaVla + Lohbs + E-Mart + HomePlus + Costco (foreigner membership Gangnam/Jamsil) + No Brand + IKEA Gwangmyeong + Foreigner 'Korea Daiso Haul' vlogs + Tax Refund 30K+ won",
+    "en_available": false
+  },
+  {
+    "id": "289",
+    "slug": "convenience-store",
+    "title_kr": "한국 편의점 deep dive",
+    "title_en": "Korea Convenience Store Deep Dive",
+    "category": "F",
+    "tags": [
+      "foreigner",
+      "convenience-store",
+      "cu",
+      "gs25",
+      "7-eleven",
+      "emart24",
+      "bento",
+      "ramen",
+      "tmoney"
+    ],
+    "summary_kr": "한국 편의점 12선 — CU(한국 1번지 17000+)·GS25(16000+)·세븐일레븐·이마트24·미니스톱·편의점 도시락·라면·술·K-Beauty·외화 ATM·외국인 vlog·T-money 충전",
+    "summary_en": "Korea Convenience Store 12-pick (world's #1 density) — CU (Korea's #1, 17,000+ stores) + GS25 (16,000+) + 7-Eleven (13,000+) + Emart24 (6,000+) + Mini Stop + Convenience store bento (5,000won, foreigner vlog #1) + Korean ramen + Soju/Beer/Makgeolli + K-Beauty corner + Foreign ATM (Citibank/Foreign Exchange) + Korea Convenience Store vlogs + T-money charging",
+    "en_available": false
+  },
+  {
+    "id": "290",
+    "slug": "yoga-pilates",
+    "title_kr": "서울 요가 필라테스 명상",
+    "title_en": "Seoul Yoga Pilates Meditation",
+    "category": "E",
+    "tags": [
+      "foreigner",
+      "yoga",
+      "pilates",
+      "meditation",
+      "temple-stay",
+      "english-friendly",
+      "yogatribe"
+    ],
+    "summary_kr": "서울 요가·필라테스·명상 12선 — YogaTribe(이태원)·YogaJang(한남)·이태원·한남 외국인 친화 요가·필라테스 G·M(강남)·명상(템플스테이 진관사·봉은사)·핫요가",
+    "summary_en": "Seoul Yoga Pilates Meditation 12-pick — YogaTribe Itaewon (foreigner #1, English) + YogaJang Hannam + Itaewon/Hannam English-friendly yoga + Pilates G·M Gangnam/Itaewon + Goyang/Jamsil pilates + Daejung Pilates + Temple-stay meditation (Jinkwansa/Bongeunsa) + Hot yoga + Wellness vlogs + Temple-stay 1N2D packages",
+    "en_available": false
+  },
+  {
+    "id": "291",
+    "slug": "vegan",
+    "title_kr": "서울 채식 비건 풀가이드",
+    "title_en": "Seoul Vegan Full Guide",
+    "category": "C",
+    "tags": [
+      "foreigner",
+      "vegan",
+      "temple-food",
+      "jinkwansa",
+      "plant",
+      "loving-hut",
+      "bread-blue"
+    ],
+    "summary_kr": "서울 채식·비건 12선 — 사찰음식 진관사·산촌·발우공양(인사동)·The Bread Blue(한남)·Plant(이태원)·러빙헛·Veg-able·Soulful Life·외국인 친화 비건 카페·다이소·올리브영 비건",
+    "summary_en": "Seoul Vegan 12-pick — Temple food Jinkwansa (Korea's #1 since 1018) + Sancheon + Balwoo Gongyang (Insadong) + The Bread Blue (Hannam, vegan bakery) + Plant Itaewon (foreigner #1 vegan) + Loving Hut (Gangnam/Jongno, Korea's #1 vegan chain) + Veg-able (Hannam) + Soulful Life (Itaewon) + Foreigner vegan cafes + Daiso/Olive Young vegan + Foreign Mart vegan",
+    "en_available": false
+  },
+  {
+    "id": "292",
+    "slug": "massage",
+    "title_kr": "서울 마사지 테라피 풀가이드",
+    "title_en": "Seoul Massage & Therapy Full Guide",
+    "category": "E",
+    "tags": [
+      "foreigner",
+      "massage",
+      "traditional-korean",
+      "thai",
+      "swedish",
+      "foot",
+      "aroma",
+      "spa",
+      "signiel-spa"
+    ],
+    "summary_kr": "서울 마사지 12선 — 전통 한방(강남)·타이(이태원·강남)·스웨디시(한남)·발 마사지·아로마(청담)·호텔 스파(시그니엘·신라·반얀트리)·드래곤힐스파·스파랜드·한솔·외국인 영문",
+    "summary_en": "Seoul Massage 12-pick — Traditional Korean herbal massage (Gangnam) + Thai massage (Itaewon/Gangnam) + Swedish massage (Hannam/Itaewon) + Foot massage (Gangnam/Hongdae) + Aroma massage (Cheongdam) + Hotel spas (Signiel/Shilla/Banyan Tree luxury 200K+) + Dragon Hill Spa massage + Spaland Jamsil + Hansol Hongdae + English-friendly massage",
+    "en_available": false
+  },
+  {
+    "id": "293",
+    "slug": "hannam",
+    "title_kr": "한남동 단독 deep dive",
+    "title_en": "Hannam-dong Standalone Deep Dive",
+    "category": "A",
+    "tags": [
+      "foreigner",
+      "hannam",
+      "lct",
+      "pace-gallery",
+      "blue-bottle",
+      "griffin",
+      "luxury",
+      "gallery"
+    ],
+    "summary_kr": "한남동 12선 — 한남대로 LCT·꼼데가르송·Pace·타데우스 로팍·갤러리바톤·리만 머핀·블루보틀 1호점·노티드·The Bread Blue·Plant·The Griffin·L7 Hotel",
+    "summary_en": "Hannam-dong 12-pick (extends #144 Itaewon sub-area) — Hannam-daero + LCT (Lost & Found) + Comme des Garçons Hannam + Pace Gallery + Thaddaeus Ropac + Gallery Baton + Lehmann Maupin + Blue Bottle Hannam (#1 store) + Knotted Hannam + The Bread Blue vegan + Plant vegan + The Griffin Bar + L7 Hotel rooftop + Korea's #1 foreigner residential area",
+    "en_available": false
+  },
+  {
+    "id": "294",
+    "slug": "ikseondong",
+    "title_kr": "익선동 한옥 단독 deep dive",
+    "title_en": "Ikseondong Hanok Standalone Deep Dive",
+    "category": "A",
+    "tags": [
+      "foreigner",
+      "ikseondong",
+      "hanok-cafe",
+      "jongno",
+      "hanbok-photo",
+      "wine-bar"
+    ],
+    "summary_kr": "익선동 12선 — 한옥마을·한옥 카페 거리(동백·락고재)·와인바·한정식·한복 사진관·한옥 게스트하우스·종로 3가 인접·인사동 동선·광장시장 동선",
+    "summary_en": "Ikseondong Hanok 12-pick (extends #226 hanok + Jongno sub-area) — Ikseondong Hanok Village (Korea's #1 hanok cafe street) + Hanok cafe street (Dongbaek + Lakgojae) + Wine bars + Hanjeongsik + Hanbok photo studios + Hanok guesthouses + Jongno 3-ga adjacent + Insadong + Gwangjang Market connections",
+    "en_available": false
+  },
+  {
+    "id": "295",
+    "slug": "garosugil",
+    "title_kr": "가로수길 신사 단독 deep dive",
+    "title_en": "Garosu-gil Sinsa Standalone Deep Dive",
+    "category": "A",
+    "tags": [
+      "foreigner",
+      "garosugil",
+      "sinsa",
+      "mz-shopping",
+      "blue-bottle",
+      "k-beauty",
+      "k-fashion"
+    ],
+    "summary_kr": "가로수길·신사 12선 — 가로수길·세로수길 hidden 골목·신사역·한식·카페(블루보틀·LBM)·디저트·K-Beauty·K-Fashion·인생네컷·압구정 동선·청담 동선",
+    "summary_en": "Garosu-gil Sinsa 12-pick (extends #142 Gangnam sub-area) — Garosu-gil (Korea's #1 MZ shopping street) + Serosu-gil hidden alleys + Sinsa Station + Korean food + Cafes (Blue Bottle + LBM) + Desserts + K-Beauty stores + K-Fashion stores + Life4Cuts + Apgujeong connection + Cheongdam connection",
+    "en_available": false
+  },
+  {
+    "id": "296",
+    "slug": "cheongdam",
+    "title_kr": "청담동 럭셔리 단독 deep dive",
+    "title_en": "Cheongdam-dong Luxury Standalone",
+    "category": "A",
+    "tags": [
+      "foreigner",
+      "cheongdam",
+      "luxury",
+      "galleria",
+      "k-wedding",
+      "mingles",
+      "michelin"
+    ],
+    "summary_kr": "청담동 12선 — 갤러리아 명품관·명품 거리(루이비통·샤넬·구찌)·면세점·K-Wedding·K-Beauty·청담 성형·밍글스 미슐랭 3별·권숙수·와인바·부띠끄 카페·럭셔리 호텔",
+    "summary_en": "Cheongdam-dong Luxury 12-pick (extends #142 Gangnam sub-area) — Galleria Department Store luxury hall + Cheongdam luxury street (LV/Chanel/Gucci) + Lotte/Shilla Duty-Free + K-Wedding studios (Korea's #1) + K-Beauty Cheongdam + Cheongdam plastic surgery (#242) + Mingles (Michelin 3-star) + Kwonsooksoo + Corin + Cheongdam wine bars + Boutique cafes + InterContinental",
+    "en_available": false
+  },
+  {
+    "id": "297",
+    "slug": "insadong",
+    "title_kr": "인사동 전통 단독 deep dive",
+    "title_en": "Insadong Traditional Standalone",
+    "category": "A",
+    "tags": [
+      "foreigner",
+      "insadong",
+      "traditional",
+      "ssamzigil",
+      "hanji",
+      "hanbok",
+      "tea-cafe",
+      "sancheon",
+      "balwoo-gongyang"
+    ],
+    "summary_kr": "인사동 12선 — 인사동 거리·쌈지길·한복·한지 공예·전통 공예·차 카페(수희찻집)·산촌·발우공양·정원·고궁·안국 동선·익선동·광장 동선",
+    "summary_en": "Insadong Traditional 12-pick (extends #141 Jongno sub-area) — Insadong street (Korea's #1 traditional shopping area) + Ssamzigil (Korea's #1 traditional mall) + Hanbok district + Hanji paper crafts + Traditional crafts + Tea cafes (Suheechatjip) + Sancheon temple food + Balwoo Gongyang temple food + Jeongwon hanjeongsik + Gogung hanjeongsik + Anguk connection + Ikseondong + Gwangjang connections",
+    "en_available": false
+  },
+  {
+    "id": "298",
+    "slug": "kids-learning",
+    "title_kr": "서울 외국인 자녀 학습 놀이",
+    "title_en": "Seoul Foreign Kids Learning & Play",
+    "category": "H",
+    "tags": [
+      "foreigner",
+      "kids",
+      "childrens-museum",
+      "gwacheon-science",
+      "lotte-world",
+      "aquarium",
+      "kids-cafe"
+    ],
+    "summary_kr": "외국인 자녀 12선 — NMK 어린이박물관·한글박물관·과천과학관·서울식물원·롯데월드·어린이대공원·63 아쿠아·롯데·COEX 아쿠아·키즈카페·영문 친화·외국인 자녀 호텔",
+    "summary_en": "Seoul Foreign Kids 12-pick (extends #232 family) — NMK Children's Museum (Asia's #1, free) + Hangul Children's Museum + Gwacheon National Science Museum + Seoul Botanic Park kids + Lotte World Adventure + Children's Grand Park (1973 free) + 63 Aqua Planet + Lotte World Aquarium + COEX Aquarium + Kids cafes + English-friendly kids spots + Family-friendly hotels",
+    "en_available": false
+  },
+  {
+    "id": "299",
+    "slug": "barrier-free",
+    "title_kr": "서울 배리어프리 휠체어 친화",
+    "title_en": "Seoul Barrier-Free Wheelchair Guide",
+    "category": "H",
+    "tags": [
+      "foreigner",
+      "barrier-free",
+      "wheelchair",
+      "accessibility",
+      "subway-elevator",
+      "ktx-wheelchair"
+    ],
+    "summary_kr": "외국인 배리어프리·휠체어 12선 — NMK·NMK 어린이·롯데월드·인천·김포공항 휠체어·지하철 엘리베이터·KTX 휠체어 좌석·시그니엘·신라 배리어프리·서울숲·반포 한강",
+    "summary_en": "Seoul Barrier-Free 12-pick — NMK wheelchair-accessible + NMK Children's Museum + Lotte World Adventure barrier-free + Incheon/Gimpo Airport wheelchair services + Subway elevators (every station accessible) + KTX wheelchair seats + Signiel/Shilla/Banyan Tree barrier-free rooms + Barrier-free restaurants + Seoul Forest/Olympic Park flat parks + Han River accessible parks (Banpo/Ttukseom/Yeouido)",
+    "en_available": false
+  },
+  {
+    "id": "300",
+    "slug": "jamsil-50",
+    "title_kr": "잠실 50선 완전판",
+    "title_en": "Jamsil 50 Complete Guide",
+    "category": "A",
+    "tags": [
+      "foreigner",
+      "jamsil",
+      "lotte-world",
+      "lotte-tower",
+      "songridan-gil",
+      "seokchon-lake",
+      "olympic"
+    ],
+    "summary_kr": "잠실 50선 (#82 확장) — 랜드마크 10(롯데월드·롯데타워·시그니엘·석촌호수·올림픽공원) + 송리단길 카페 10 + 잠실 한식 10 + K-pop·K-Wedding 10 + 외국인 매니아 10",
+    "summary_en": "Jamsil 50 Complete (extends #82) — 10 Landmarks (Lotte World Adventure + Magic Island + Aquarium + Lotte Tower Seoul Sky 555m + Signiel 86F + Lotte World Mall + Seokchon Lake cherry blossom + Olympic Park 1988 + Jamsil Han River Park + Baseball Stadium) + 10 Songridan-gil cafes/dining + 10 Jamsil Korean food + 10 K-pop/K-Wedding spots + 10 Foreigner spots",
+    "en_available": false
+  },
+  {
+    "id": "301",
+    "slug": "gangnam-100",
+    "title_kr": "강남 100선 완전판",
+    "title_en": "Gangnam 100 Complete Guide",
+    "category": "A",
+    "tags": [
+      "foreigner",
+      "gangnam",
+      "gangnam-station",
+      "dosan",
+      "cheongdam",
+      "apgujeong",
+      "sinnonhyeon"
+    ],
+    "summary_kr": "강남 100선 (#142 확장) — 5 sub-area × 20 — 강남역 20 + 도산 20 + 청담 20 + 압구정 20 + 신논현 20",
+    "summary_en": "Gangnam 100 Complete (extends #142) — 5 sub-areas × 20 — Gangnam Station/Sinnonhyeon (downtown 20) + Dosan/Sinsa (MZ 20) + Cheongdam (luxury 20, #296) + Apgujeong Rodeo (MZ shopping 20) + Sinnonhyeon/Gangnam-daero (Korean food/bars/clubs 20)",
+    "en_available": false
+  },
+  {
+    "id": "302",
+    "slug": "itaewon-50",
+    "title_kr": "이태원 50선 완전판",
+    "title_en": "Itaewon 50 Complete Guide",
+    "category": "A",
+    "tags": [
+      "foreigner",
+      "itaewon",
+      "hannam",
+      "haebangchon",
+      "huam-dong",
+      "global",
+      "foreign-residential"
+    ],
+    "summary_kr": "이태원 50선 (#144 확장) — 4 sub-area — 이태원 메인 15 + 한남 15 + 해방촌 10 + 후암동 10",
+    "summary_en": "Itaewon 50 Complete (extends #144) — 4 sub-areas — Itaewon main (Itaewon Station + Noksapyeong + global dining 15) + Hannam-dong (LCT + galleries + luxury 15, #293) + Haebangchon (hill village MZ 10) + Huam-dong (hidden newtown foreigner 10)",
+    "en_available": false
+  },
+  {
+    "id": "303",
+    "slug": "cherry-blossom-chart",
+    "title_kr": "봄 벚꽃 시기 chart",
+    "title_en": "Korea Spring Cherry Blossom Weekly Chart",
+    "category": "B",
+    "tags": [
+      "foreigner",
+      "cherry-blossom",
+      "weekly-chart",
+      "yunjung-ro",
+      "jinhae",
+      "gyeongju"
+    ],
+    "summary_kr": "봄 벚꽃 (#230 후속) 매주 5주 chart — 3월 4주(제주 동백 시작) → 4월 1주(윤중로 시작) → 4월 2주 절정(서울 윤중로·캠퍼스·궁궐) → 4월 3주(진해 군항제·경주) → 4월 4주(외곽 후기)",
+    "summary_en": "Korea Cherry Blossom 5-week Chart (extends #230) — Mar W4 Jeju camellia + Busan early + Seoul National Cemetery first + Apr W1 Yunjung-ro start + Banpo + Seokchon Lake + Apr W2 PEAK Seoul (Yunjung-ro Korea's #1 + Banpo + Seoul Forest + Olympic + 4 universities + Changdeokgung + Changgyeonggung) + Apr W3 Jinhae Gunhangje (Korea's #1 festival) + Gyeongju Bomun Lake + Apr W4 outskirts late",
+    "en_available": false
+  },
+  {
+    "id": "304",
+    "slug": "gamakjip-100",
+    "title_kr": "한국 가맥집 100선",
+    "title_en": "Korea Gamakjip 100 Complete",
+    "category": "C",
+    "tags": [
+      "foreigner",
+      "gamakjip",
+      "beer",
+      "corner-store",
+      "jongno",
+      "euljiro",
+      "mapo",
+      "gangnam"
+    ],
+    "summary_kr": "한국 가맥집 100선 (#04 확장) — 5 sub-area × 20 — 종로·익선·인사 20 + 을지로·동대문 20 + 마포·홍대·연남 20 + 강남·신촌·명동 20 + 외곽·hidden 20",
+    "summary_en": "Korea Gamakjip 100 Complete (extends #04) — 5 sub-areas × 20 — Jongno/Ikseondong/Insadong (20) + Euljiro Nogari alley/Dongdaemun (20) + Mapo/Hongdae/Yeonnam (20) + Gangnam/Sinchon/Myeongdong (20) + Outskirts/hidden gems (20). Korea's traditional corner-store beer culture, 3K-7K won per beer",
+    "en_available": false
+  },
+  {
+    "id": "305",
+    "slug": "han-river-west",
+    "title_kr": "한강 서부 공원 가이드",
+    "title_en": "Han River West Parks Guide",
+    "category": "B",
+    "tags": [
+      "foreigner",
+      "han-river",
+      "west",
+      "gangseo",
+      "nanji",
+      "mangwon",
+      "yanghwa",
+      "seonyudo",
+      "sky-park"
+    ],
+    "summary_kr": "한강 서부 4공원 (#06 확장) — 강서·난지·망원·양화 + 캠핑·BBQ·자전거·하늘공원·선유도",
+    "summary_en": "Han River West Parks (extends #06) — Gangseo (Magok/Gimpo Airport adjacent) + Nanji (camping/BBQ/Sky Park) + Mangwon (Korea's #1 chimaek + cycling) + Yanghwa (bridge night view + Seonyudo reclaimed water treatment park) + DMC connection",
+    "en_available": false
+  },
+  {
+    "id": "306",
+    "slug": "han-river-central",
+    "title_kr": "한강 중부 공원 가이드",
+    "title_en": "Han River Central Parks Guide",
+    "category": "B",
+    "tags": [
+      "foreigner",
+      "han-river",
+      "central",
+      "yeouido",
+      "ichon",
+      "yunjung-ro",
+      "63-building",
+      "kbs"
+    ],
+    "summary_kr": "한강 중부 2공원 (#06 확장) — 여의도·이촌 + 윤중로 벚꽃·63빌딩·더현대·KBS·MBC·외국인 거주 1번지",
+    "summary_en": "Han River Central Parks (extends #06) — Yeouido (Korea's #1 Yunjung-ro cherry blossom + 63 Building Aqua Planet + The Hyundai Seoul + KBS/MBC + Yeouido night view) + Ichon (Korea's #1 foreigner residential + Han River + cycling)",
+    "en_available": false
+  },
+  {
+    "id": "307",
+    "slug": "han-river-core",
+    "title_kr": "한강 핵심 공원 가이드",
+    "title_en": "Han River Core Parks Guide",
+    "category": "B",
+    "tags": [
+      "foreigner",
+      "han-river",
+      "core",
+      "banpo",
+      "jamwon",
+      "ttukseom",
+      "moonlight-fountain",
+      "jasubug",
+      "bbq"
+    ],
+    "summary_kr": "한강 핵심 3공원 (#06 확장) — 반포·잠원·뚝섬 + 달빛무지개분수(Guinness)·잠수교·세빛섬·자벌레·뚝섬 BBQ·캠핑·서울숲",
+    "summary_en": "Han River Core Parks (extends #06) — Banpo (Korea's #1 + Moonlight Rainbow Fountain Guinness world's longest bridge fountain + Jamsugyo + Sebit Floating Islands) + Jamwon (K-pop/Gangnam adjacent cycling) + Ttukseom (Korea's #1 BBQ/camping/chimaek + Jasubug curl observatory + Seoul Forest adjacent)",
+    "en_available": false
+  },
+  {
+    "id": "308",
+    "slug": "han-river-east",
+    "title_kr": "한강 동부 공원 가이드",
+    "title_en": "Han River East Parks Guide",
+    "category": "B",
+    "tags": [
+      "foreigner",
+      "han-river",
+      "east",
+      "jamsil",
+      "gwangnaru",
+      "amsa",
+      "olympic",
+      "seokchon"
+    ],
+    "summary_kr": "한강 동부 2공원 (#06 확장) — 잠실·광나루 + 석촌호수·롯데월드·올림픽공원·암사 선사유적",
+    "summary_en": "Han River East Parks (extends #06) — Jamsil (Korea's #1 family Han River + Seokchon Lake cherry blossom + Lotte World adjacent + cycling) + Gwangnaru (outskirts hidden + Amsa Prehistoric Site Korea's #1 neolithic + Gwangjin/Cheonho connection) + Olympic Park (1988, foreigner foliage/cherry blossom #1)",
+    "en_available": false
+  },
+  {
+    "id": "309",
+    "slug": "hanjeongsik-tiers",
+    "title_kr": "한정식 가격 3단계 매트릭스",
+    "title_en": "Hanjeongsik 3-Tier Pricing Matrix",
+    "category": "C",
+    "tags": [
+      "foreigner",
+      "hanjeongsik",
+      "budget",
+      "mid-tier",
+      "luxury",
+      "mingles",
+      "michelin",
+      "jeongwon",
+      "gogung"
+    ],
+    "summary_kr": "한정식 3단계 (#234 분화) — 가성비(6K~15K 백반·정식·사찰음식·인사동) / 표준(15K~50K 정원·고궁·궁·모던 강남) / 럭셔리(50K~200K+ 신라 라연·밍글스·권숙수·롯데 무궁화)",
+    "summary_en": "Hanjeongsik 3-Tier Pricing (extends #234) — Budget tier (6K-15K won: baekban + jeongsik + temple food Jinkwansa + Insadong foreigner-friendly) + Standard tier (15K-50K won: Jeongwon Insadong + Gogung + Goong Bukchon + modern Cheongdam) + Luxury tier (50K-200K+ won: Shilla Hotel Rayoun Michelin + Mingles Cheongdam Michelin 3-star + Kwonsooksoo Michelin + Lotte Hotel Mugunghwa + Signiel)",
+    "en_available": false
+  },
+  {
+    "id": "310",
+    "slug": "gangnam-budget",
+    "title_kr": "강남 예산 3단계 매트릭스",
+    "title_en": "Gangnam Budget 3-Tier Matrix",
+    "category": "H",
+    "tags": [
+      "foreigner",
+      "gangnam",
+      "budget",
+      "100k",
+      "300k",
+      "1m",
+      "luxury",
+      "mz"
+    ],
+    "summary_kr": "강남 예산 3단계 (#142·#301 분화) — 10만원(MZ 가성비)·30만원(K-Beauty·표준)·100만원+(청담 럭셔리·미슐랭)",
+    "summary_en": "Gangnam Budget 3-Tier (extends #142/#301) — 100K won/day (MZ budget: Korean food + Garosu-gil cafes + Life4Cuts + Daiso + Coin noraebang) + 300K won/day (standard: K-Beauty + Apgujeong shopping + Hanjeongsik + InterContinental 1N) + 1M won+/day (luxury: Cheongdam Galleria + K-Wedding + Mingles Michelin + JW Marriott/Signiel 1N)",
+    "en_available": false
+  },
+  {
+    "id": "311",
+    "slug": "hanokstay-tiers",
+    "title_kr": "한옥스테이 가격 3단계 매트릭스",
+    "title_en": "Hanok Stay 3-Tier Pricing Matrix",
+    "category": "D",
+    "tags": [
+      "foreigner",
+      "hanok-stay",
+      "budget",
+      "mid-tier",
+      "luxury",
+      "shilla-yeongbingwan",
+      "rakgojae",
+      "andong"
+    ],
+    "summary_kr": "한옥스테이 3단계 (#226·#255·#286 분화) — 게스트하우스 50K(북촌·익선·전주·부암·평창) / 표준 200K(북촌·남산·전주·경주) / 프리미엄 500K+(신라 영빈관·롯데 무궁화·락고재·안동 하회)",
+    "summary_en": "Hanok Stay 3-Tier Pricing (extends #226/#255/#286) — Budget tier 50K won/night (guesthouses: Bukchon + Ikseondong + Jeonju + Buam-dong outskirts + Pyeongchang-dong) + Standard tier 200K won/night (Bukchon hanok hotels + Namsan Hanok Village + Jeonju Hanok hotels + Gyeongju Yangdong UNESCO) + Premium tier 500K-1M+ won/night (Shilla Hotel Yeongbingwan Korea's #1 luxury hanok + Lotte Hotel Mugunghwa hanok rooms + Bukchon Rakgojae premium + Andong Hahoe/Dosan UNESCO 2019)",
+    "en_available": false
+  },
+  {"id":"312","slug":"bts-fan","title_kr":"BTS 매니아 풀가이드","title_en":"BTS Fan Full Guide","category":"G","tags":["foreigner","bts","army","hybe","hybe-insight","yongsan","bt21"],"summary_kr":"BTS 매니아 12선 — HYBE Insight 용산·HYBE 본사 외관·BTS 단골·Pop-up Cafe·반포 한강(봄날 MV)·부산(정국·지민)·대구(슈가·뷔)·광주(제이홉)·BT21","summary_en":"BTS Fan 12-pick: HYBE Insight Yongsan (foreigner ARMY #1) + HYBE HQ + BTS Pop-up Cafe + Banpo (Spring Day MV) + Busan (Jungkook/Jimin) + Daegu (Suga/V) + Gwangju (J-Hope) + BT21","en_available":false},
+  {"id":"313","slug":"blackpink-fan","title_kr":"BLACKPINK 매니아 풀가이드","title_en":"BLACKPINK Fan Full Guide","category":"G","tags":["foreigner","blackpink","blink","yg","hapjeong","cheongdam"],"summary_kr":"BLACKPINK 매니아 12선 — YG 본사(합정)·YG 굿즈샵·청담 단골·MV 무대·지수 부산·Pop-up Cafe","summary_en":"BLACKPINK Fan 12-pick: YG HQ Hapjeong + YG goods + Cheongdam favorites + MV spots + Jisoo Busan + Pop-up + international BLINK","en_available":false},
+  {"id":"314","slug":"kpop-4thgen","title_kr":"NewJeans aespa 4세대 매니아","title_en":"K-pop 4th Gen Fan Guide","category":"G","tags":["foreigner","newjeans","aespa","twice","le-sserafim","ive","stray-kids","4th-gen"],"summary_kr":"4세대 K-pop 12선 — NewJeans(HYBE/ADOR)·aespa(SM COEX)·TWICE(JYP)·LE SSERAFIM·IVE·(G)I-DLE·Stray Kids·Seventeen·ENHYPEN","summary_en":"K-pop 4th Gen 12-pick: NewJeans HYBE/ADOR + aespa SM Town COEX + TWICE JYP + LE SSERAFIM + IVE Starship + (G)I-DLE CUBE + Stray Kids + Seventeen + ENHYPEN","en_available":false},
+  {"id":"315","slug":"kdrama-classics","title_kr":"K-drama 명작 촬영지 deep dive","title_en":"K-drama Classics Spots Deep Dive","category":"G","tags":["foreigner","kdrama","itaewon-class","goblin","sky-castle","crash-landing","filming-spots"],"summary_kr":"K-drama 명작 12선 — 이태원클라쓰·도깨비(시그니엘·정동진)·SKY Castle(청담)·Crash Landing(잠실)·Hotel del Luna·응팔·W·여신강림","summary_en":"K-drama Classics 12-pick: Itaewon Class (Itaewon/Haebangchon) + Goblin (Signiel/Jeongdongjin) + SKY Castle (Cheongdam) + Crash Landing (Jamsil) + Hotel del Luna (Insadong) + Reply 1988","en_available":false},
+  {"id":"316","slug":"kmovie","title_kr":"K-movie 매니아 풀가이드","title_en":"K-movie Fan Full Guide","category":"G","tags":["foreigner","kmovie","parasite","oldboy","train-to-busan","bong-joon-ho","park-chan-wook","biff"],"summary_kr":"K-movie 매니아 12선 — 기생충(Oscar 2019)·올드보이(칸 2003)·부산행·택시운전사·국제시장·봉준호·박찬욱·이창동 + BIFF·JIFF·BFFC","summary_en":"K-movie Fan 12-pick: Parasite (Oscar 2019) + Oldboy (Cannes 2003 Park Chan-wook) + Train to Busan + Taxi Driver (Gwangju 5·18) + Ode to My Father + Bong Joon-ho + Park Chan-wook + BIFF/JIFF/BFFC","en_available":false}
 ]
