@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>강북 수유·미아·우이 라이프스타일 deep dive — #186 follow-up — KeyChinGu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/main.css">
+<style>
+.detail-wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+}
+.breadcrumb {
+  font-size: 13px;
+  color: var(--text-soft);
+  margin-bottom: 24px;
+}
+.breadcrumb a { color: var(--red); font-weight: 600; }
+.detail-wrap h1 {
+  font-size: 28px; font-weight: 800;
+  color: var(--black); margin-bottom: 8px;
+}
+.detail-wrap h2 {
+  font-size: 22px; font-weight: 700;
+  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--red);
+}
+.detail-wrap h3 {
+  font-size: 17px; font-weight: 600;
+  color: var(--text-mid); margin-top: 20px; margin-bottom: 8px;
+}
+.detail-wrap p {
+  font-size: 15px; line-height: 1.7;
+  color: var(--text-mid); margin-bottom: 12px;
+}
+.detail-wrap ul {
+  padding-left: 20px; margin-bottom: 12px;
+}
+.detail-wrap li {
+  font-size: 14px; line-height: 1.6;
+  color: var(--text-mid); margin-bottom: 6px;
+}
+.detail-wrap table {
+  width: 100%; border-collapse: collapse;
+  margin-bottom: 16px; font-size: 13px;
+}
+.detail-wrap th {
+  background: var(--black); color: #fff;
+  padding: 10px 12px; text-align: left;
+  font-weight: 600; font-size: 11px;
+  text-transform: uppercase; letter-spacing: 0.06em;
+}
+.detail-wrap td {
+  padding: 10px 12px; border-bottom: 1px solid var(--border);
+  color: var(--text-mid);
+}
+.detail-wrap tr:nth-child(even) td { background: rgba(0,0,0,0.02); }
+.detail-wrap hr {
+  border: none; height: 1px;
+  background: var(--border); margin: 24px 0;
+}
+.detail-wrap code {
+  background: rgba(33,140,204,0.08);
+  padding: 2px 6px; border-radius: 4px;
+  font-size: 13px; color: var(--blue);
+}
+.detail-nav {
+  display: flex; justify-content: space-between;
+  margin-top: 48px; padding-top: 20px;
+  border-top: 1px solid var(--border);
+  font-size: 14px; font-weight: 600;
+}
+.share-bar {
+  display: flex; align-items: center; gap: 10px;
+  margin-top: 40px; padding: 16px 20px;
+  background: #f9f9f9; border-radius: 12px;
+  border: 1px solid var(--border);
+}
+.share-label {
+  font-size: 14px; font-weight: 600; color: var(--text-soft);
+  margin-right: 8px;
+}
+.share-btn {
+  width: 40px; height: 40px;
+  border: none; border-radius: 50%;
+  background: #fff; cursor: pointer;
+  font-size: 1.1rem; transition: all 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  display: inline-flex; align-items: center; justify-content: center;
+}
+.share-btn:hover { transform: translateY(-2px); box-shadow: 0 3px 8px rgba(0,0,0,0.15); }
+.share-twitter:hover { background: #000; color: #fff; }
+.share-facebook:hover { background: #1877f2; color: #fff; }
+.share-kakao:hover { background: #fee500; }
+.share-copy:hover { background: #218CCC; color: #fff; }
+/* EN toggle disabled — 영문판 미생성 콘텐츠 (2026-05-16 patch) */
+.lang-switch .lang-disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  text-decoration: line-through;
+  padding: 4px 10px;
+  color: var(--text-soft, #888);
+  font-size: 13px;
+  user-select: none;
+}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <div class="lang-switch">
+    <a href="../content/gangbuk-suyu-mia.html" class="active">KR</a>
+    <span class="lang-disabled" title="영문판 준비 중">EN</span>
+  </div>
+</header>
+
+<div class="detail-wrap">
+  <div class="breadcrumb"><a href="../index.html">전체 가이드</a> &rsaquo; 강북 수유·미아·우이 라이프스타일 deep dive — #186 follow-up</div>
+  <h1>강북 수유·미아·우이 라이프스타일 deep dive — #186 follow-up</h1>
+<p>&gt; <strong>부제</strong>: #186 강북·수유 첫 진입 후속편 — gangbuk cluster 67건 풀에서 고기·면·갈비찜·베이커리 4축 12선. 수유·미아·우이·번동 4동 cluster + 북한산 둘레길 (#177 연계)</p>
+<p>ISSUE 03 · #196 · 2026-05-20</p>
+<hr>
+<h2>🎯 왜 강북 라이프스타일 deep dive인가</h2>
+<p>키친구 #186 강북·수유 가이드 후속 — gangbuk cluster 67건(local 61건) 풀에서 <strong>미아·우이·번동</strong> deep dive 미커버. 본 가이드는 <strong>review_count top + #177 노원·도봉 등산 연계 + 시민 일상 cluster</strong>로 추려낸 4축 12 매장. <strong>스시노칸도 수유(11,822 rv 강북 #1)·옥류헌릴렉스(7,813 rv)·신사랑매운갈비찜(7,497 rv)·하이그라운드제빵소(7,275 rv)</strong> 등 강북 시그니처.</p>
+<hr>
+<h2>★ 한눈에 비교 (4축 12선)</h2>
+<table><thead><tr>
+<th>#</th>
+<th>매장</th>
+<th>sub-area</th>
+<th>4축</th>
+<th>rv</th>
+<th>시그니처</th>
+</tr></thead><tbody>
+<tr>
+<td>1</td>
+<td><strong>스시노칸도 수유점</strong></td>
+<td>수유</td>
+<td>일식·면</td>
+<td><strong>11,822</strong></td>
+<td>강북 매장 #1</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>수유골목냉면 본점</strong></td>
+<td>수유</td>
+<td>일식·면</td>
+<td>4,185</td>
+<td>수유 평양식 냉면</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>이설면옥 수유본점</strong></td>
+<td>수유</td>
+<td>일식·면</td>
+<td>4,161</td>
+<td>수유 면옥 시그니처</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>신사랑매운갈비찜 수유본점</strong></td>
+<td>수유</td>
+<td>한식·고기</td>
+<td>7,497</td>
+<td>강북 매운갈비찜 #1</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>명인갈비 미아점</strong></td>
+<td>미아</td>
+<td>한식·고기</td>
+<td>6,023</td>
+<td>미아 갈비 시그니처</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>깃든</strong></td>
+<td>강북</td>
+<td>한식·고기</td>
+<td>3,557</td>
+<td>강북 고기·요리 hidden</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>옥류헌릴렉스</strong></td>
+<td>강북</td>
+<td>한식·국밥</td>
+<td>7,813</td>
+<td>강북 평양식</td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>하이그라운드제빵소</strong></td>
+<td>수유</td>
+<td>베이커리</td>
+<td>7,275</td>
+<td>강북 베이커리 #1</td>
+</tr>
+<tr>
+<td>9</td>
+<td><strong>파스타브로 수유본점</strong></td>
+<td>수유</td>
+<td>다국적·다이닝</td>
+<td>6,688</td>
+<td>강북 양식·파스타</td>
+</tr>
+<tr>
+<td>10</td>
+<td><strong>북한산 둘레길 1구간</strong></td>
+<td>우이</td>
+<td>트레킹·자연</td>
+<td>-</td>
+<td>우이역(우이신설선) → 북한산 둘레 (#177 연계)</td>
+</tr>
+<tr>
+<td>11</td>
+<td><strong>4·19묘지 (역사)</strong></td>
+<td>수유</td>
+<td>역사·전통</td>
+<td>-</td>
+<td>한국 4·19혁명 기념, 무료, 영문 가이드</td>
+</tr>
+<tr>
+<td>12</td>
+<td><strong>북서울꿈의숲</strong></td>
+<td>번동</td>
+<td>라이프스타일</td>
+<td>-</td>
+<td>강북 공원 시그니처</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>⚠ 외국인 실수 3가지</h2>
+<p>1. <strong>&quot;강북=북한산만&quot; — 시민 일상 cluster 미인지</strong>: #186에서 #177 등산 연계로 강북 다뤘지만 <strong>수유·미아 시민 일상 매장</strong>(스시노칸도 11,822 rv 강북 #1·옥류헌·하이그라운드제빵소) 미커버.</p>
+<p>2. <strong>&quot;강북 = 베드타운 외 볼 게 없다&quot; — 역사·자연 cluster 미인지</strong>: <strong>4·19묘지(4·19혁명 기념)·북서울꿈의숲(번동)·북한산 둘레길 1구간 진입(우이역)</strong> 등 역사·자연 cluster 다수.</p>
+<p>3. <strong>&quot;수유는 멀다&quot; — 4호선·우이신설선 접근성 미인지</strong>: 수유역(4호선) — 시내 30분. 우이역(우이신설선) — 강남에서 40~50분. <strong>#177 노원·도봉 등산 + 강북 수유 식당</strong> 묶음 1일 코스 가능.</p>
+<hr>
+<h2>4축 매핑</h2>
+<ul>
+<li><strong>① 일식·면 (3)</strong>: 스시노칸도(강북 #1) + 수유골목냉면 + 이설면옥</li>
+<li><strong>② 한식·고기·국밥 (4)</strong>: 신사랑매운갈비찜 + 명인갈비 + 깃든 + 옥류헌릴렉스</li>
+<li><strong>③ 베이커리·다국적 (2)</strong>: 하이그라운드제빵소 + 파스타브로</li>
+<li><strong>④ 자연·역사·라이프스타일 (3)</strong>: 북한산 둘레길 + 4·19묘지 + 북서울꿈의숲</li>
+</ul>
+<hr>
+<h2>동선 추천</h2>
+<h3>[A] 강북 1일 코스 (수유·미아)</h3>
+<p><strong>오전</strong>: 우이역 → 북한산 둘레길 1구간 (4·19묘지 포함 4시간)</p>
+<p><strong>점심</strong>: 수유역 → 스시노칸도 또는 신사랑매운갈비찜</p>
+<p><strong>오후</strong>: 하이그라운드제빵소 + 미아역 명인갈비</p>
+<p><strong>저녁</strong>: 북서울꿈의숲 야경 산책</p>
+<h3>[B] 강북+노원·도봉 등산 묶음 (1박2일, #177 연계)</h3>
+<p><strong>Day 1</strong>: 수락산·도봉산 등산 (#177) + 노원역 식당</p>
+<p><strong>Day 2</strong>: 북한산 둘레길 1구간 (수유~우이) + 4·19묘지 + 수유 식당 (#196)</p>
+<hr>
+<p><em>외국인 demand-supply gap 분석에서 강북 area follow-up Top 6 (gap 220+, cov 30%) — #186 첫 진입 후속 + #177 등산 연계 deep dive.</em></p>
+
+  <div class="share-bar">
+    <span class="share-label">공유</span>
+    <button class="share-btn share-twitter" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent('강북 수유·미아·우이 라이프스타일 deep dive — #186 follow-up') + '&url=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Twitter">𝕏</button>
+    <button class="share-btn share-facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Facebook">f</button>
+    <button class="share-btn share-kakao" onclick="navigator.share ? navigator.share({title: '강북 수유·미아·우이 라이프스타일 deep dive — #186 follow-up', url: window.location.href}) : navigator.clipboard.writeText(window.location.href).then(function() { alert('링크 복사됨!'); })" aria-label="Kakao/Share">📤</button>
+    <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href).then(function() { this.textContent = '✓'; setTimeout(function() { document.querySelector('.share-copy').textContent = '🔗'; }, 1500); }.bind(this))" aria-label="Copy link">🔗</button>
+  </div>
+
+  <div class="detail-nav">
+    <div><a href="gangdong-cheonho-godeok.html" style="color:var(--red);">&larr; 강동 천호·고덕·길동 라이프스타일 deep dive — #183 follow-up</a></div>
+    <div><a href="yangcheon-mokdong-life.html" style="color:var(--red);">양천 목동·신정·신월 라이프스타일 deep dive — #185 follow-up &rarr;</a></div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <p><a href="https://instagram.com/keychingu.korea" target="_blank">@keychingu.korea</a> &mdash; Seoul for MZ FIT Travelers</p>
+</footer>
+</body>
+</html>

@@ -2444,6 +2444,50 @@
     "en_available": false
   },
   {
+    "id": "195",
+    "slug": "gangdong-cheonho-godeok",
+    "title_kr": "강동 천호·고덕·길동 라이프스타일 deep dive — #183 follow-up",
+    "title_en": "Gangdong Cheonho·Godeok·Gildong Lifestyle Deep Dive",
+    "category": "A",
+    "tags": ["foreigner","gangdong","cheonho","godeok","gildong","sushi-doku","sweet-salt","chicken-feet","cafe-deep","followup"],
+    "summary_kr": "#183 강동 첫 진입 follow-up — gangdong cluster 87건 풀 deep dive. 스시도쿠 엔 고덕(21322 rv 강동 #1)·스윗솔트(14983 rv)·브랜뉴하이몬드(9606 rv)·대팔이네곱창(9180 rv)·119닭발(9151 rv) 등 4축 12선(일식·면 / 한식·고기 / 카페·베이커리 / 라이프스타일). 천호·고덕·길동·둔촌·암사 5동.",
+    "summary_en": "#183 Gangdong follow-up — 87 cluster deep dive. Sushi Doku En Godeok (21,322 rv #1) + Sweet Salt (14,983 rv) + Brand New High Mond (9,606 rv) + Daepalin Gopchang (9,180 rv) + 119 Dalkbal (9,151 rv) — 4-axis 12-pick (Japanese/Korean meat/cafe-bakery/lifestyle). Cheonho·Godeok·Gildong·Dunchon·Amsa 5 dong cluster.",
+    "en_available": false
+  },
+  {
+    "id": "196",
+    "slug": "gangbuk-suyu-mia",
+    "title_kr": "강북 수유·미아·우이 라이프스타일 deep dive — #186 follow-up",
+    "title_en": "Gangbuk Suyu·Mia·Ui Lifestyle Deep Dive",
+    "category": "A",
+    "tags": ["foreigner","gangbuk","suyu","mia","ui","bukhansan-dulegil","sushi-no-kando","419-memorial","bukseoul-dreamforest","followup"],
+    "summary_kr": "#186 강북·수유 follow-up — gangbuk cluster 67건 풀 deep dive. 스시노칸도 수유(11822 rv 강북 #1)·옥류헌릴렉스(7813 rv)·신사랑매운갈비찜(7497 rv)·하이그라운드제빵소(7275 rv) 등 4축 12선(일식·면 / 한식·고기·국밥 / 베이커리·다국적 / 자연·역사·라이프). 북한산 둘레길 1구간 + 4·19묘지 + 북서울꿈의숲 + #177 노원·도봉 등산 연계.",
+    "summary_en": "#186 Gangbuk follow-up — 67 cluster deep dive. Sushi No Kando Suyu (11,822 rv #1) + Okryuheon Relax (7,813 rv) + Sinsa Spicy Galbijjim (7,497 rv) + Highground Bakery (7,275 rv) — 4-axis 12-pick. + Bukhansan Trail Section 1 + 4·19 Memorial + Buk Seoul Dream Forest + #177 hiking link.",
+    "en_available": false
+  },
+  {
+    "id": "197",
+    "slug": "yangcheon-mokdong-life",
+    "title_kr": "양천 목동·신정·신월 라이프스타일 deep dive — #185 follow-up",
+    "title_en": "Yangcheon Mokdong·Sinjeong·Sinwol Lifestyle Deep Dive",
+    "category": "A",
+    "tags": ["foreigner","yangcheon","mokdong","sinjeong","sinwol","ilmiraк","bbang-time","gopchang","broadcasting","followup"],
+    "summary_kr": "#185 양천·목동 follow-up — yangcheon cluster 55건 풀 deep dive. 일미락(6082 rv 양천 #1)·빵의시간(4336 rv)·오목교곱창(3932 rv)·청기와타운(3915 rv) 등 4축 12선(한식·고기·곱창·족발 / 베이커리·디저트 / 미디어·방송국 SBS·EBS·KBS / 가족·라이프). 목동·신정·신월·오목교 4동.",
+    "summary_en": "#185 Yangcheon follow-up — 55 cluster deep dive. Ilmirak (6,082 rv #1) + Bbang-eui Sigan Bakery (4,336 rv) + Omokgyo Gopchang (3,932 rv) + Cheonggiwa Town (3,915 rv) — 4-axis 12-pick + Mokdong broadcasting cluster (SBS·EBS·KBS).",
+    "en_available": false
+  },
+  {
+    "id": "333",
+    "slug": "jungnang-meokgol-life",
+    "title_kr": "중랑 먹골·면목·상봉 라이프스타일 deep dive — #184 follow-up",
+    "title_en": "Jungnang Meokgol·Myeonmok·Sangbong Lifestyle Deep Dive",
+    "category": "A",
+    "tags": ["foreigner","jungnang","meokgol","myeonmok","sangbong","okinara-izakaya","yeobong-dakbal","cafe252","urim-market","followup"],
+    "summary_kr": "#184 중랑·먹골 follow-up — jungnang cluster 64건 풀 deep dive. 오키나라(10046 rv 중랑 #1 이자카야)·여봉닭발(5567 rv)·카페252(4858 rv)·다함닭갈비 먹골(4358 rv)·망우식당 우림시장(3025 rv) 등 4축 12선(다국적·이자카야 / 한식·닭·장어 / 시장·분식 / 카페·자연). 용마산·아차산 등산로 + 망우 우림시장.",
+    "summary_en": "#184 Jungnang follow-up — 64 cluster deep dive. Okinara Izakaya (10,046 rv #1) + Yeobong Dakbal (5,567 rv) + Cafe252 (4,858 rv) + Daham Dakgalbi Meokgol (4,358 rv) + Mangu Sikdang Urim Market (3,025 rv) — 4-axis 12-pick + Yongmasan·Achasan hiking link.",
+    "en_available": false
+  },
+  {
     "id": "198",
     "slug": "challenge-food",
     "title_kr": "외국인 도전 음식 TOP 10",

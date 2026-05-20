@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>중랑 먹골·면목·상봉 라이프스타일 deep dive — #184 follow-up — KeyChinGu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/main.css">
+<style>
+.detail-wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+}
+.breadcrumb {
+  font-size: 13px;
+  color: var(--text-soft);
+  margin-bottom: 24px;
+}
+.breadcrumb a { color: var(--red); font-weight: 600; }
+.detail-wrap h1 {
+  font-size: 28px; font-weight: 800;
+  color: var(--black); margin-bottom: 8px;
+}
+.detail-wrap h2 {
+  font-size: 22px; font-weight: 700;
+  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--red);
+}
+.detail-wrap h3 {
+  font-size: 17px; font-weight: 600;
+  color: var(--text-mid); margin-top: 20px; margin-bottom: 8px;
+}
+.detail-wrap p {
+  font-size: 15px; line-height: 1.7;
+  color: var(--text-mid); margin-bottom: 12px;
+}
+.detail-wrap ul {
+  padding-left: 20px; margin-bottom: 12px;
+}
+.detail-wrap li {
+  font-size: 14px; line-height: 1.6;
+  color: var(--text-mid); margin-bottom: 6px;
+}
+.detail-wrap table {
+  width: 100%; border-collapse: collapse;
+  margin-bottom: 16px; font-size: 13px;
+}
+.detail-wrap th {
+  background: var(--black); color: #fff;
+  padding: 10px 12px; text-align: left;
+  font-weight: 600; font-size: 11px;
+  text-transform: uppercase; letter-spacing: 0.06em;
+}
+.detail-wrap td {
+  padding: 10px 12px; border-bottom: 1px solid var(--border);
+  color: var(--text-mid);
+}
+.detail-wrap tr:nth-child(even) td { background: rgba(0,0,0,0.02); }
+.detail-wrap hr {
+  border: none; height: 1px;
+  background: var(--border); margin: 24px 0;
+}
+.detail-wrap code {
+  background: rgba(33,140,204,0.08);
+  padding: 2px 6px; border-radius: 4px;
+  font-size: 13px; color: var(--blue);
+}
+.detail-nav {
+  display: flex; justify-content: space-between;
+  margin-top: 48px; padding-top: 20px;
+  border-top: 1px solid var(--border);
+  font-size: 14px; font-weight: 600;
+}
+.share-bar {
+  display: flex; align-items: center; gap: 10px;
+  margin-top: 40px; padding: 16px 20px;
+  background: #f9f9f9; border-radius: 12px;
+  border: 1px solid var(--border);
+}
+.share-label {
+  font-size: 14px; font-weight: 600; color: var(--text-soft);
+  margin-right: 8px;
+}
+.share-btn {
+  width: 40px; height: 40px;
+  border: none; border-radius: 50%;
+  background: #fff; cursor: pointer;
+  font-size: 1.1rem; transition: all 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  display: inline-flex; align-items: center; justify-content: center;
+}
+.share-btn:hover { transform: translateY(-2px); box-shadow: 0 3px 8px rgba(0,0,0,0.15); }
+.share-twitter:hover { background: #000; color: #fff; }
+.share-facebook:hover { background: #1877f2; color: #fff; }
+.share-kakao:hover { background: #fee500; }
+.share-copy:hover { background: #218CCC; color: #fff; }
+/* EN toggle disabled — 영문판 미생성 콘텐츠 (2026-05-16 patch) */
+.lang-switch .lang-disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  text-decoration: line-through;
+  padding: 4px 10px;
+  color: var(--text-soft, #888);
+  font-size: 13px;
+  user-select: none;
+}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <div class="lang-switch">
+    <a href="../content/jungnang-meokgol-life.html" class="active">KR</a>
+    <span class="lang-disabled" title="영문판 준비 중">EN</span>
+  </div>
+</header>
+
+<div class="detail-wrap">
+  <div class="breadcrumb"><a href="../index.html">전체 가이드</a> &rsaquo; 중랑 먹골·면목·상봉 라이프스타일 deep dive — #184 follow-up</div>
+  <h1>중랑 먹골·면목·상봉 라이프스타일 deep dive — #184 follow-up</h1>
+<p>&gt; <strong>부제</strong>: #184 중랑·먹골 첫 진입 후속편 — jungnang cluster 64건 풀에서 닭갈비·닭발·이자카야·시장·카페 4축 12선. 먹골·면목·상봉·중화·망우 5동 cluster</p>
+<p>ISSUE 03 · #333 · 2026-05-20</p>
+<hr>
+<h2>🎯 왜 중랑 라이프스타일 deep dive인가</h2>
+<p>키친구 #184 중랑·먹골 가이드 후속 — jungnang cluster 64건(local 52건) 풀에서 <strong>면목·상봉·중화·망우</strong> deep dive 미커버. 본 가이드는 <strong>review_count top + 시장·전통 angle</strong>로 추려낸 4축 12 매장. <strong>오키나라(10,046 rv 중랑 #1 이자카야)·여봉닭발(5,567 rv)·카페252(4,858 rv)·다함닭갈비 먹골(4,358 rv)</strong> 등 중랑 시그니처.</p>
+<hr>
+<h2>★ 한눈에 비교 (4축 12선)</h2>
+<table><thead><tr>
+<th>#</th>
+<th>매장</th>
+<th>sub-area</th>
+<th>4축</th>
+<th>rv</th>
+<th>시그니처</th>
+</tr></thead><tbody>
+<tr>
+<td>1</td>
+<td><strong>오키나라</strong></td>
+<td>중랑</td>
+<td>다국적·이자카야</td>
+<td><strong>10,046</strong></td>
+<td>중랑 매장 #1, 일본식 이자카야</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>피제리아 디 파올로</strong></td>
+<td>중랑</td>
+<td>다국적·이태리</td>
+<td>2,630</td>
+<td>중랑 이태리·피자 시그니처</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>여봉닭발 중랑본점</strong></td>
+<td>중랑</td>
+<td>한식·닭발</td>
+<td>5,567</td>
+<td>중랑 닭발 #1</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>다함닭갈비 먹골역직영점</strong></td>
+<td>먹골</td>
+<td>한식·닭갈비</td>
+<td>4,358</td>
+<td>먹골 닭갈비 (#177·다함닭갈비 노원과 동일 브랜드 분점)</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>천상애장어가 면목사가정점</strong></td>
+<td>면목</td>
+<td>한식·장어</td>
+<td>1,942</td>
+<td>면목 장어 시그니처</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>산채가 한정식 먹골본점</strong></td>
+<td>먹골</td>
+<td>한식·한정식</td>
+<td>1,707</td>
+<td>먹골 한정식</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>망우식당 우림시장 본점</strong></td>
+<td>망우</td>
+<td>한식·시장</td>
+<td>3,025</td>
+<td>망우 우림시장 식당 시그니처</td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>홍이네떡볶이</strong></td>
+<td>중랑</td>
+<td>한식·분식</td>
+<td>2,218</td>
+<td>중랑 떡볶이 시그니처</td>
+</tr>
+<tr>
+<td>9</td>
+<td><strong>카페252</strong></td>
+<td>중랑</td>
+<td>카페·브런치</td>
+<td>4,858</td>
+<td>중랑 브런치 카페 #1</td>
+</tr>
+<tr>
+<td>10</td>
+<td><strong>빈스빈스 율동공원점</strong></td>
+<td>중랑</td>
+<td>카페·디저트</td>
+<td>1,632</td>
+<td>중랑 카페 hidden</td>
+</tr>
+<tr>
+<td>11</td>
+<td><strong>우림시장 (망우)</strong></td>
+<td>망우</td>
+<td>시장·전통</td>
+<td>-</td>
+<td>중랑 전통시장 시그니처</td>
+</tr>
+<tr>
+<td>12</td>
+<td><strong>용마산·아차산 등산로 진입</strong></td>
+<td>면목</td>
+<td>자연·트레킹</td>
+<td>-</td>
+<td>중랑 등산로 + #177 노원·도봉 연계</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>⚠ 외국인 실수 3가지</h2>
+<p>1. <strong>&quot;중랑=먹골만&quot; — 면목·상봉·망우 deep dive 미인지</strong>: #184에서 먹골 다뤘지만 <strong>면목(천상애장어)·망우(우림시장·망우식당)·상봉(이자카야·카페)</strong> 별도 cluster.</p>
+<p>2. <strong>&quot;중랑 이자카야 모름&quot; — 오키나라(10,046 rv)</strong> 강세: 중랑 #1 매장이 일본식 이자카야 — 외국인(특히 일본 segment) 매니아 잠재력 강함. 일본인 review 비중 ↑.</p>
+<p>3. <strong>&quot;중랑 등산 모름&quot; — 용마산·아차산 진입 미인지</strong>: 중랑에서 <strong>용마산·아차산 등산로 진입</strong> 가능. #177 노원·도봉 + 중랑 용마·아차 묶음 = 강북·강동 동북 5산 풀체험.</p>
+<hr>
+<h2>4축 매핑</h2>
+<ul>
+<li><strong>① 다국적·이자카야·이태리 (2)</strong>: 오키나라(중랑 #1) + 피제리아 디 파올로</li>
+<li><strong>② 한식·닭·장어·한정식 (4)</strong>: 여봉닭발 + 다함닭갈비 먹골 + 천상애장어가 + 산채가 한정식</li>
+<li><strong>③ 한식·시장·분식 (2)</strong>: 망우식당 우림시장 + 홍이네떡볶이</li>
+<li><strong>④ 카페·자연·시장 (4)</strong>: 카페252 + 빈스빈스 + 우림시장 + 용마산·아차산</li>
+</ul>
+<hr>
+<h2>동선 추천</h2>
+<h3>[A] 중랑 1일 코스 (먹골·면목·중랑)</h3>
+<p><strong>오전</strong>: 망우역 → 망우식당 우림시장 시장 점심 + 시장 산책</p>
+<p><strong>오후</strong>: 먹골역 → 다함닭갈비 + 산채가 한정식</p>
+<p><strong>저녁</strong>: 오키나라 이자카야 (중랑 #1) 또는 여봉닭발</p>
+<p><strong>카페</strong>: 카페252 브런치 또는 빈스빈스</p>
+<h3>[B] 중랑+노원·도봉 묶음 (1박2일, #177 연계)</h3>
+<p><strong>Day 1</strong>: 노원 등산 (#177) + 노원역 식당</p>
+<p><strong>Day 2</strong>: 중랑 용마산 등산 + 중랑 식당 (#184·#333) + 망우 우림시장</p>
+<ul>
+<li>추천: 강북·강동·동북 동맥 풀체험</li>
+</ul>
+<hr>
+<p><em>외국인 demand-supply gap 분석에서 중랑 area follow-up Top 10 (gap 160+, cov 15%) — #184 첫 진입 후속 + #177 연계 deep dive.</em></p>
+
+  <div class="share-bar">
+    <span class="share-label">공유</span>
+    <button class="share-btn share-twitter" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent('중랑 먹골·면목·상봉 라이프스타일 deep dive — #184 follow-up') + '&url=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Twitter">𝕏</button>
+    <button class="share-btn share-facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Facebook">f</button>
+    <button class="share-btn share-kakao" onclick="navigator.share ? navigator.share({title: '중랑 먹골·면목·상봉 라이프스타일 deep dive — #184 follow-up', url: window.location.href}) : navigator.clipboard.writeText(window.location.href).then(function() { alert('링크 복사됨!'); })" aria-label="Kakao/Share">📤</button>
+    <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href).then(function() { this.textContent = '✓'; setTimeout(function() { document.querySelector('.share-copy').textContent = '🔗'; }, 1500); }.bind(this))" aria-label="Copy link">🔗</button>
+  </div>
+
+  <div class="detail-nav">
+    <div><a href="yangcheon-mokdong-life.html" style="color:var(--red);">&larr; 양천 목동·신정·신월 라이프스타일 deep dive — #185 follow-up</a></div>
+    <div><a href="challenge-food.html" style="color:var(--red);">외국인 도전 음식 TOP 10 &rarr;</a></div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <p><a href="https://instagram.com/keychingu.korea" target="_blank">@keychingu.korea</a> &mdash; Seoul for MZ FIT Travelers</p>
+</footer>
+</body>
+</html>
