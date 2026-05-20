@@ -1,0 +1,25 @@
+name: Sitemap Ping
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'sitemap.xml'
+      - 'content/*.html'
+      - 'areas/*.html'
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Google
+        run: |
+          curl -sI "https://www.google.com/ping?sitemap=https%3A%2F%2Fmgself414.github.io%2Fkeychingu-content-deploy%2Fsitemap.xml" | head -1 || true
+      - name: Ping Bing
+        run: |
+          curl -sI "https://www.bing.com/ping?sitemap=https%3A%2F%2Fmgself414.github.io%2Fkeychingu-content-deploy%2Fsitemap.xml" | head -1 || true
+      - name: Note
+        run: |
+          echo "Google/Bing ping endpoints deprecated 2022-2023."
+          echo "For reliable indexing, use Google Search Console + Bing Webmaster Tools."
+          echo "Or use IndexNow API: https://www.indexnow.org/"

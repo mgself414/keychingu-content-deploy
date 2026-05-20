@@ -50,8 +50,15 @@
 <div class="search-bar">
   <input type="text" id="search-input" list="search-suggestions" placeholder="🔍 Search — title, summary, tags (Hongdae, cafe, Gangnam, hanbok...)" autocomplete="off">
   <datalist id="search-suggestions"></datalist>
+  <select id="sort-select" title="Sort options">
+    <option value="">Default order</option>
+    <option value="id-desc">Newest (#high)</option>
+    <option value="id-asc">Oldest (#low)</option>
+    <option value="category">By category</option>
+  </select>
   <button id="fav-toggle" class="fav-toggle" title="Show favorites only">★ Favorites <span id="fav-count"></span></button>
   <span id="result-count"></span>
+  <a href="../stats.html" class="stats-link" title="Content statistics dashboard">📊 Stats</a>
 </div>
 
 <!-- FOREIGNER ESSENTIALS NAV -->
@@ -186,6 +193,17 @@
 <div class="card-grid" id="card-grid">
   <!-- JS renders cards here -->
 </div>
+
+<!-- NEWSLETTER SUBSCRIBE -->
+<section class="newsletter-section" style="max-width:600px;margin:3rem auto;padding:2rem;background:linear-gradient(135deg,#fff5e6 0%,#ffe8d6 100%);border:1px solid #ffcc99;border-radius:14px;text-align:center;">
+  <h3 style="margin-top:0;font-size:1.4rem;color:#c63b40;">📬 Subscribe to KeyChinGu Newsletter</h3>
+  <p style="color:#555;margin:0.5rem 0 1.2rem;">Get weekly Korea travel updates, seasonal picks, and foreigner-friendly tips</p>
+  <form style="display:flex;gap:0.5rem;justify-content:center;flex-wrap:wrap;" onsubmit="alert('Newsletter signup coming soon! Follow @keychingu.korea on Instagram for now.');return false;">
+    <input type="email" name="email" placeholder="your@email.com" required style="flex:1;min-width:240px;padding:0.7rem 1rem;border:1px solid #ddd;border-radius:8px;font-size:0.95rem;">
+    <button type="submit" style="padding:0.7rem 1.5rem;background:#D94C53;color:#fff;border:none;border-radius:8px;font-size:0.95rem;font-weight:600;cursor:pointer;">Subscribe</button>
+  </form>
+  <p style="margin:1rem 0 0;font-size:0.85rem;color:#888;">Or follow <a href="https://instagram.com/keychingu.korea" target="_blank" style="color:#c63b40;">@keychingu.korea</a> on Instagram</p>
+</section>
 
 <!-- FOOTER -->
 <footer class="site-footer">

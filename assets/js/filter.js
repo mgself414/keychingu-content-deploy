@@ -211,19 +211,45 @@
       filtered = filtered.filter(function(item) { return favs.indexOf(String(item.id)) !== -1; });
     }
     if (searchQuery) {
-      const q = searchQuery.toLowerCase();
-      filtered = filtered.filter(function(item) {
-        const haystack = [
-          item.title_kr || '',
-          item.title_en || '',
-          item.summary_kr || '',
-          item.summary_en || '',
-          (item.tags || []).join(' '),
-          item.slug || '',
-          '#' + item.id
-        ].join(' ').toLowerCase();
-        return haystack.indexOf(q) !== -1;
-      });
+      // 멀티 키워드 분리 (공백 또는 +)
+      const tokens = searchQuery.toLowerCase().split(/[\s+]+/).filter(Boolean);
+      filtered = filtered.map(function(item) {
+        // ranking score: title 매치 = 10, tags 매치 = 5, summary 매치 = 2, slug/id = 1
+        var score = 0;
+        const titleKr = (item.title_kr || '').toLowerCase();
+        const titleEn = (item.title_en || '').toLowerCase();
+        const tagsLow = (item.tags || []).join(' ').toLowerCase();
+        const summaryKr = (item.summary_kr || '').toLowerCase();
+        const summaryEn = (item.summary_en || '').toLowerCase();
+        const slug = (item.slug || '').toLowerCase();
+        const idStr = '#' + item.id;
+        var allMatch = true;
+        tokens.forEach(function(t) {
+          var matched = false;
+          if (titleKr.indexOf(t) !== -1) { score += 10; matched = true; }
+          if (titleEn.indexOf(t) !== -1) { score += 10; matched = true; }
+          if (tagsLow.indexOf(t) !== -1) { score += 5; matched = true; }
+          if (summaryKr.indexOf(t) !== -1) { score += 2; matched = true; }
+          if (summaryEn.indexOf(t) !== -1) { score += 2; matched = true; }
+          if (slug.indexOf(t) !== -1) { score += 1; matched = true; }
+          if (idStr.indexOf(t) !== -1) { score += 1; matched = true; }
+          if (!matched) allMatch = false;
+        });
+        return { item: item, score: allMatch ? score : 0 };
+      }).filter(function(r) { return r.score > 0; })
+        .sort(function(a, b) { return b.score - a.score; })
+        .map(function(r) { return r.item; });
+    } else {
+      // 검색 없을 때 정렬 옵션 적용
+      const sortBy = (document.getElementById('sort-select') || {}).value;
+      if (sortBy === 'id-desc') {
+        filtered = filtered.slice().sort(function(a, b) { return parseInt(b.id) - parseInt(a.id); });
+      } else if (sortBy === 'id-asc') {
+        filtered = filtered.slice().sort(function(a, b) { return parseInt(a.id) - parseInt(b.id); });
+      } else if (sortBy === 'category') {
+        filtered = filtered.slice().sort(function(a, b) { return (a.category || '').localeCompare(b.category || ''); });
+      }
+      // default: 입력 순서 유지
     }
     renderCards(filtered);
     updateCount(filtered.length, data.length);
@@ -289,6 +315,14 @@
         applyFilters(data);
       }, 150);
     });
+    // 정렬 select binding
+    const sortEl = document.getElementById('sort-select');
+    if (sortEl) {
+      sortEl.addEventListener('change', function() {
+        currentPage = 1;
+        applyFilters(data);
+      });
+    }
   }
 
   function bindFavToggle(data) {

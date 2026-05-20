@@ -79,10 +79,17 @@
 
 <!-- SEARCH BAR -->
 <div class="search-bar">
-  <input type="text" id="search-input" list="search-suggestions" placeholder="🔍 검색 — 제목·요약·태그 (홍대, 카페, 강남, 한복...)" autocomplete="off">
+  <input type="text" id="search-input" list="search-suggestions" placeholder="🔍 검색 (멀티 키워드: '성수 카페') — 제목·요약·태그" autocomplete="off">
   <datalist id="search-suggestions"></datalist>
+  <select id="sort-select" title="정렬 옵션">
+    <option value="">기본 순서</option>
+    <option value="id-desc">신규순 (#높은)</option>
+    <option value="id-asc">오래된 순 (#낮은)</option>
+    <option value="category">카테고리 순</option>
+  </select>
   <button id="fav-toggle" class="fav-toggle" title="즐겨찾기만 보기">★ 즐겨찾기 <span id="fav-count"></span></button>
   <span id="result-count"></span>
+  <a href="stats.html" class="stats-link" title="콘텐츠 통계 대시보드">📊 통계</a>
 </div>
 
 <!-- AREA FILTER -->
@@ -346,6 +353,17 @@
 
 <!-- PAGINATION -->
 <div class="pagination" id="pagination"></div>
+
+<!-- NEWSLETTER SUBSCRIBE -->
+<section class="newsletter-section" style="max-width:600px;margin:3rem auto;padding:2rem;background:linear-gradient(135deg,#fff5e6 0%,#ffe8d6 100%);border:1px solid #ffcc99;border-radius:14px;text-align:center;">
+  <h3 style="margin-top:0;font-size:1.4rem;color:#c63b40;">📬 키친구 뉴스레터 구독</h3>
+  <p style="color:#555;margin:0.5rem 0 1.2rem;">매주 신규 가이드·시즌 추천·외국인 friendly 정보를 받아보세요</p>
+  <form action="https://docs.google.com/forms/d/e/1FAIpQLServed/formResponse" method="POST" target="_blank" style="display:flex;gap:0.5rem;justify-content:center;flex-wrap:wrap;" onsubmit="alert('구독 form은 향후 활성화 예정입니다. 현재는 Instagram @keychingu.korea를 팔로우해주세요!');return false;">
+    <input type="email" name="email" placeholder="your@email.com" required style="flex:1;min-width:240px;padding:0.7rem 1rem;border:1px solid #ddd;border-radius:8px;font-size:0.95rem;">
+    <button type="submit" style="padding:0.7rem 1.5rem;background:#D94C53;color:#fff;border:none;border-radius:8px;font-size:0.95rem;font-weight:600;cursor:pointer;">구독</button>
+  </form>
+  <p style="margin:1rem 0 0;font-size:0.85rem;color:#888;">또는 <a href="https://instagram.com/keychingu.korea" target="_blank" style="color:#c63b40;">@keychingu.korea</a> 인스타 팔로우</p>
+</section>
 
 <!-- FOOTER -->
 <footer class="site-footer">
