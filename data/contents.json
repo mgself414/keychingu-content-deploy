@@ -2411,6 +2411,39 @@
     "en_available": false
   },
   {
+    "id": "192",
+    "slug": "sea-tourist-halal-kdrama",
+    "title_kr": "동남아 관광객 K-drama·할랄 코스 — 무슬림·MZ 무비자 1주 풀가이드",
+    "title_en": "SEA Tourist K-drama & Halal Course — Muslim·MZ 1-Week Full Guide",
+    "category": "A",
+    "tags": ["foreigner","sea","halal","muslim","kdrama","itaewon","hanbok","kpop","namisum","family-package"],
+    "summary_kr": "동남아 5국(베트남·태국·인도네시아·말레이시아·필리핀, 합산 2024 230만명) 평균 15박 장기 체류 segment — 이태원 이슬람 성원·KMF 인증 할랄 30+ + 북촌 한복·K-drama 외곽(남이섬·인천 도깨비·부암동) + 올리브영·약국·롯데마트 K-beauty·쇼핑 + HYBE·명동 K-pop·롯데월드·N서울타워 4축 12선. 1주 패키지 / 무슬림 친화 5박6일 / K-drama·K-pop 3일 / 가족 1박2일 4종. 키친구 첫 할랄·다종교 친화 콘텐츠.",
+    "summary_en": "SEA 5 countries (Vietnam·Thailand·Indonesia·Malaysia·Philippines, total 2.3M in 2024) avg 15-night long stay — Itaewon Islamic Mosque + 30+ KMF halal restaurants + Bukchon hanbok + K-drama spots (Namiseom·Incheon Goblin·Buam-dong) + Olive Young·pharmacy·Lotte Mart K-beauty·shopping + HYBE HQ·Myeongdong K-pop·Lotte World·N Seoul Tower 4-axis 12-pick. 1-week package + Muslim-friendly 5N6D + K-drama·K-pop 3D + family 1N2D 4 courses. KeyChinGu's first halal·multi-faith content.",
+    "en_available": false
+  },
+  {
+    "id": "193",
+    "slug": "europe-tourist-heritage",
+    "title_kr": "유럽 관광객 역사·트레킹·전통 매니아 코스 — 영·프·독·스페인 풀가이드",
+    "title_en": "Europe Tourist Heritage·Trekking Course — UK·FR·DE·ES Full Guide",
+    "category": "A",
+    "tags": ["foreigner","europe","unesco","trekking","michelin","gyeongbokgung","changdeokgung","bukhansan","gugak","heritage"],
+    "summary_kr": "유럽 5국(영국·프랑스·독일·스페인·이탈리아 합산 60만, 객단가 #2) 자유여행 90% + 10박 평균 segment — 경복궁·창덕궁(UNESCO)·종묘(UNESCO) + 북촌·서촌·북한산·인왕산·서울둘레길 트레킹 + 국립중앙박물관·미슐랭 한식(밍글스 3 stars·한식공간)·시장 미식 + 국립국악원·종묘제례 4축 12선. 10박 풀패키지 / UNESCO 3일 / 트레킹 3일 / 미식 2일. 키친구 첫 UNESCO·미슐랭·전통공연 매니아 콘텐츠.",
+    "summary_en": "Europe 5 countries (UK·France·Germany·Spain·Italy, 600k total, #2 ARPU) 90% self-tour + 10-night avg segment — Gyeongbokgung·Changdeokgung (UNESCO)·Jongmyo (UNESCO) + Bukchon·Seochon·Bukhansan·Inwangsan·Seoul Trail 156km trekking + National Museum·Michelin Korean (Mingles 3 stars·Hansik Gonggan)·market food + National Gugak·Jongmyo Jerye 4-axis 12-pick. 10-night full + UNESCO 3D + trekking 3D + cuisine 2D. KeyChinGu's first UNESCO·Michelin·heritage content.",
+    "en_available": false
+  },
+  {
+    "id": "194",
+    "slug": "us-tourist-kpop-korean-american",
+    "title_kr": "미국 관광객 K-pop·Korean American 코스 — 매니아·향수·가족 풀가이드",
+    "title_en": "US Tourist K-pop·Korean American Course — Stan·Heritage·Family Full Guide",
+    "category": "A",
+    "tags": ["foreigner","usa","kpop","korean-american","army","blink","hybe","sm","korean-food-heritage","usfk"],
+    "summary_kr": "미국 110만 segment (Korean American 40%·45만 + K-pop fan 1000만+ 풀·객단가 #2 1650 USD) 평균 6박 자유여행 80% — HYBE·SM Town·JYP·YG·명동 위버스 K-pop 매니아 + 광장시장·명동·인사동·북촌·삼청동 Korean American 향수 + N서울타워·롯데월드·이태원 essentials + 성수 K-MZ Modern 4축 12선. K-pop 4박5일 / Korean American 6박7일 / essentials 5박6일 / USFK 1박2일 4종. 키친구 첫 K-pop·Korean American 메타 가이드.",
+    "summary_en": "US 1.1M segment (Korean American 40%·450k + K-pop fan pool 10M+ in US·#2 ARPU 1,650 USD) 6-night avg + 80% self-tour — HYBE·SM Town·JYP·YG·Myeongdong Weverse K-pop stan + Gwangjang·Myeongdong·Insadong·Bukchon·Samcheong Korean American heritage + N Seoul Tower·Lotte World·Itaewon essentials + Seongsu K-MZ Modern 4-axis 12-pick. K-pop 4N5D + Korean American 6N7D + essentials 5N6D + USFK 1N2D 4 courses. KeyChinGu's first K-pop·Korean American meta guide.",
+    "en_available": false
+  },
+  {
     "id": "198",
     "slug": "challenge-food",
     "title_kr": "외국인 도전 음식 TOP 10",
