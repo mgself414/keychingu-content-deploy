@@ -5939,5 +5939,26 @@
     "summary_kr": "MZ 트렌디 양식+카페·디저트+연남 브런치+동진시장 4축 8선",
     "summary_en": "MZ trendy yangsik + cafe + Yeonnam brunch + Dongjin market 4-axis",
     "en_available": false
+  },
+  {
+    "id": "500",
+    "slug": "guro-local-picks",
+    "title_kr": "구로·가산 로컬 큐레이션 가이드",
+    "title_en": "Guro·Gasan Local Picks Guide",
+    "category": "C",
+    "tags": [
+      "area",
+      "foreigner",
+      "guro",
+      "gasan",
+      "geumcheon",
+      "local",
+      "hidden-gems",
+      "digital-complex",
+      "curated"
+    ],
+    "summary_kr": "사용자 인스타·플레이스 큐레이션 6 매장 + hidden 2 = 직장인 hidden gems 8선 (월래순교자관 r4.33·진영면옥 signal 12.2 검증)",
+    "summary_en": "User Instagram·Place curated 6 + hidden 2 = office worker hidden gems 8-pick (Wollaesun r4.33 + Jinyeong signal 12.2 verified)",
+    "en_available": false
   }
 ]
