@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="KeyChinGu — Curated Korean travel guides for foreigners. Quick links to the most popular guides.">
+<meta name="robots" content="index, follow">
+<title>KeyChinGu — Links</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.min.css">
+<style>
+:root {
+  --bi-red: #D94C53;
+  --bi-yellow: #FAAD19;
+  --bi-blue: #218CCC;
+  --bi-black: #020304;
+  --bg: #FAFAF7;
+  --card: #FFFFFF;
+  --muted: #6B6B6B;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body {
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", sans-serif;
+  background: var(--bg);
+  color: var(--bi-black);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+.container {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 32px 20px 60px;
+}
+.brand {
+  text-align: center;
+  margin-bottom: 32px;
+}
+.brand-logo {
+  display: inline-block;
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  color: var(--bi-black);
+  margin-bottom: 6px;
+}
+.brand-logo .accent { color: var(--bi-red); }
+.brand-tagline {
+  font-size: 13px;
+  color: var(--muted);
+  font-weight: 500;
+}
+.brand-bar {
+  display: flex;
+  width: 60px;
+  height: 4px;
+  margin: 14px auto 0;
+  border-radius: 2px;
+  overflow: hidden;
+}
+.brand-bar span { flex: 1; }
+.brand-bar .b1 { background: var(--bi-red); }
+.brand-bar .b2 { background: var(--bi-yellow); }
+.brand-bar .b3 { background: var(--bi-blue); }
+.brand-bar .b4 { background: var(--bi-black); }
+
+.intro {
+  text-align: center;
+  font-size: 14px;
+  color: var(--muted);
+  margin-bottom: 28px;
+  line-height: 1.6;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.link-card {
+  display: block;
+  background: var(--card);
+  border: 1.5px solid var(--bi-black);
+  border-radius: 12px;
+  padding: 16px 18px;
+  text-decoration: none;
+  color: var(--bi-black);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  position: relative;
+}
+.link-card:hover, .link-card:active {
+  transform: translateY(-2px);
+  box-shadow: 4px 4px 0 var(--bi-black);
+}
+.link-card .tag {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+.link-card.cat-food .tag { background: var(--bi-red); color: #fff; }
+.link-card.cat-area .tag { background: var(--bi-blue); color: #fff; }
+.link-card.cat-experience .tag { background: var(--bi-yellow); color: var(--bi-black); }
+.link-card.cat-itinerary .tag { background: var(--bi-black); color: #fff; }
+.link-card.cat-shopping .tag { background: var(--bi-red); color: #fff; }
+.link-card .title {
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 4px;
+  line-height: 1.3;
+}
+.link-card .desc {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.45;
+}
+.link-card .arrow {
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: var(--bi-black);
+  opacity: 0.4;
+}
+
+.main-site {
+  text-align: center;
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid #E5E5E0;
+}
+.main-site a {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--bi-blue);
+  text-decoration: none;
+  border-bottom: 1px solid var(--bi-blue);
+  padding-bottom: 1px;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 24px;
+  font-size: 11px;
+  color: var(--muted);
+}
+.footer a { color: var(--muted); text-decoration: none; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header class="brand">
+  <div class="brand-logo">Key<span class="accent">Chin</span>Gu</div>
+  <div class="brand-tagline">Curated Korean travel guides for foreigners</div>
+  <div class="brand-bar"><span class="b1"></span><span class="b2"></span><span class="b3"></span><span class="b4"></span></div>
+</header>
+
+<p class="intro">
+  Pick a guide below.<br>
+  More than 400 detailed guides available on the main site.
+</p>
+
+<div class="links">
+
+  <a class="link-card cat-food" href="/keychingu-content-deploy/content/korea-dessert-meta.html">
+    <span class="tag">Food</span>
+    <div class="title">Korea Dessert Category Meta Guide</div>
+    <div class="desc">Bingsu, hotteok, yakgwa & more — the whole dessert map in one read.</div>
+    <span class="arrow">›</span>
+  </a>
+
+  <a class="link-card cat-area" href="/keychingu-content-deploy/content/hapjeong.html">
+    <span class="tag">Area</span>
+    <div class="title">Hapjeong Neighborhood Guide</div>
+    <div class="desc">Cafés, bars, select shops & galleries — Hapjeong in one walk.</div>
+    <span class="arrow">›</span>
+  </a>
+
+  <a class="link-card cat-experience" href="/keychingu-content-deploy/content/kpop-fan-day-tour.html">
+    <span class="tag">Experience</span>
+    <div class="title">K-pop Fan 1-Day Complete Itinerary</div>
+    <div class="desc">SM, HYBE, JYP, YG — fan spots, cafés & merch shops, full route.</div>
+    <span class="arrow">›</span>
+  </a>
+
+  <a class="link-card cat-itinerary" href="/keychingu-content-deploy/content/seoul-7day-guide.html">
+    <span class="tag">Itinerary</span>
+    <div class="title">Korea 7-Day Complete Guide for Foreigners</div>
+    <div class="desc">Day-by-day plan — arrival to departure, no guesswork.</div>
+    <span class="arrow">›</span>
+  </a>
+
+  <a class="link-card cat-shopping" href="/keychingu-content-deploy/content/hongdae-select-shops.html">
+    <span class="tag">Shopping</span>
+    <div class="title">Hongdae Select Shops Guide</div>
+    <div class="desc">Indie fashion, vintage, design objects — Hongdae's curated shops.</div>
+    <span class="arrow">›</span>
+  </a>
+
+</div>
+
+<div class="main-site">
+  <a href="/keychingu-content-deploy/">Browse all 400+ guides →</a>
+</div>
+
+<footer class="footer">
+  <p>© KeyChinGu · <a href="https://www.instagram.com/keychingu.korea/">@keychingu.korea</a></p>
+</footer>
+
+</div>
+</body>
+</html>
