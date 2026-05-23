@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>경의선숲길 산책 가이드 — KeyChinGu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/main.css">
+<style>
+.detail-wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+}
+.breadcrumb {
+  font-size: 13px;
+  color: var(--text-soft);
+  margin-bottom: 24px;
+}
+.breadcrumb a { color: var(--red); font-weight: 600; }
+.detail-wrap h1 {
+  font-size: 28px; font-weight: 800;
+  color: var(--black); margin-bottom: 8px;
+}
+.detail-wrap h2 {
+  font-size: 22px; font-weight: 700;
+  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--red);
+}
+.detail-wrap h3 {
+  font-size: 17px; font-weight: 600;
+  color: var(--text-mid); margin-top: 20px; margin-bottom: 8px;
+}
+.detail-wrap p {
+  font-size: 15px; line-height: 1.7;
+  color: var(--text-mid); margin-bottom: 12px;
+}
+.detail-wrap ul {
+  padding-left: 20px; margin-bottom: 12px;
+}
+.detail-wrap li {
+  font-size: 14px; line-height: 1.6;
+  color: var(--text-mid); margin-bottom: 6px;
+}
+.detail-wrap table {
+  width: 100%; border-collapse: collapse;
+  margin-bottom: 16px; font-size: 13px;
+}
+.detail-wrap th {
+  background: var(--black); color: #fff;
+  padding: 10px 12px; text-align: left;
+  font-weight: 600; font-size: 11px;
+  text-transform: uppercase; letter-spacing: 0.06em;
+}
+.detail-wrap td {
+  padding: 10px 12px; border-bottom: 1px solid var(--border);
+  color: var(--text-mid);
+}
+.detail-wrap tr:nth-child(even) td { background: rgba(0,0,0,0.02); }
+.detail-wrap hr {
+  border: none; height: 1px;
+  background: var(--border); margin: 24px 0;
+}
+.detail-wrap code {
+  background: rgba(33,140,204,0.08);
+  padding: 2px 6px; border-radius: 4px;
+  font-size: 13px; color: var(--blue);
+}
+.detail-nav {
+  display: flex; justify-content: space-between;
+  margin-top: 48px; padding-top: 20px;
+  border-top: 1px solid var(--border);
+  font-size: 14px; font-weight: 600;
+}
+.share-bar {
+  display: flex; align-items: center; gap: 10px;
+  margin-top: 40px; padding: 16px 20px;
+  background: #f9f9f9; border-radius: 12px;
+  border: 1px solid var(--border);
+}
+.share-label {
+  font-size: 14px; font-weight: 600; color: var(--text-soft);
+  margin-right: 8px;
+}
+.share-btn {
+  width: 40px; height: 40px;
+  border: none; border-radius: 50%;
+  background: #fff; cursor: pointer;
+  font-size: 1.1rem; transition: all 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  display: inline-flex; align-items: center; justify-content: center;
+}
+.share-btn:hover { transform: translateY(-2px); box-shadow: 0 3px 8px rgba(0,0,0,0.15); }
+.share-twitter:hover { background: #000; color: #fff; }
+.share-facebook:hover { background: #1877f2; color: #fff; }
+.share-kakao:hover { background: #fee500; }
+.share-copy:hover { background: #218CCC; color: #fff; }
+/* EN toggle disabled — 영문판 미생성 콘텐츠 (2026-05-16 patch) */
+.lang-switch .lang-disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  text-decoration: line-through;
+  padding: 4px 10px;
+  color: var(--text-soft, #888);
+  font-size: 13px;
+  user-select: none;
+}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <div class="lang-switch">
+    <a href="../content/gyeongui-line-forest.html" class="active">KR</a>
+    <span class="lang-disabled" title="영문판 준비 중">EN</span>
+  </div>
+</header>
+
+<div class="detail-wrap">
+  <div class="breadcrumb"><a href="../index.html">전체 가이드</a> &rsaquo; 경의선숲길 산책 가이드</div>
+  <h1>경의선숲길 산책 가이드 — 연남-연희 외국인 산책로 마스터</h1>
+<p>&gt; <strong>부제</strong>: 연남동 시작 + 연희동 마무리 + 경의선숲길 6.3km + 카페·브런치·양식 stop 매핑 — 외국인 홍대권 산책 마스터</p>
+<p>ISSUE 03 · #225 · 2026-05-22</p>
+<hr>
+<h2>🎯 왜 경의선숲길 산책 메타가 필요한가</h2>
+<p><strong>경의선숲길</strong>은 옛 경의선 철길을 공원으로 재생한 <strong>서울 트렌디 산책로</strong> — 마포구 효창동~서대문구 연희동 6.3km. <strong>연남동·연희동 segment 1.5km</strong>가 외국인 동선 1위 (홍대입구역 3번 출구 도보 0분).</p>
+<p>본 메타 가이드는 <strong>경의선숲길 + 매장 stop 결합</strong> — #220 연남·#224 연희동 가이드와 결합해 <strong>산책로 따라 카페·브런치·양식 stop 매핑</strong>. 외국인 검색어 (&quot;Gyeongui Line Forest Park&quot; · &quot;Seoul forest walk&quot; · &quot;Yeonnam-dong walk&quot;): 외국인 산책·자연 fan demand 강함.</p>
+<hr>
+<h2>★ 경의선숲길 segment 한눈에</h2>
+<table><thead><tr>
+<th>segment</th>
+<th>길이</th>
+<th>핵심 spot</th>
+<th>매장 stop</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>연남동 ① (홍대입구역 시작)</strong></td>
+<td>0.3 km</td>
+<td>홍대입구역 3번 출구 → 동진시장 골목</td>
+<td>터틀힙 연남 · 카멜로연남</td>
+</tr>
+<tr>
+<td><strong>연남동 ② (동진시장 ~ 연남장)</strong></td>
+<td>0.4 km</td>
+<td>동진시장 골목 + 연남장</td>
+<td>도트블랭킷 · 연남장</td>
+</tr>
+<tr>
+<td><strong>연남-연희 경계</strong></td>
+<td>0.3 km</td>
+<td>경의선숲길 메인 산책로 + 벤치</td>
+<td>카페드로잉 · 카페 마</td>
+</tr>
+<tr>
+<td><strong>연희동 ① (산책로 ~ 카페)</strong></td>
+<td>0.3 km</td>
+<td>연희동 메인 거리 진입</td>
+<td>펠루시드커피 · 새라울</td>
+</tr>
+<tr>
+<td><strong>연희동 ② (끝)</strong></td>
+<td>0.2 km</td>
+<td>연희동 깊은 골목 + 한식</td>
+<td>녹원쌈밥 · 금옥당</td>
+</tr>
+</tbody></table>
+<p>→ 총 1.5km, 도보 30-40분 (산책 + 매장 stop 포함 4-5시간 코스).</p>
+<hr>
+<h2>⚠ 경의선숲길 외국인 5대 실수</h2>
+<p>1. <strong>&quot;경의선숲길 = 일반 공원&quot; 인식</strong></p>
+<p>외국인이 경의선숲길을 서울숲·여의도공원 같은 일반 공원으로 인식. 실제로는 <strong>옛 경의선 철길 재생 공원</strong> — 매장 + 산책 결합 시그니처. 연남동·연희동 매장 동선과 분리 불가.</p>
+<p>2. <strong>연남동 → 연희동 산책 방향 모름</strong></p>
+<p>외국인 첫 경의선숲길은 어디서 시작·끝낼지 모름. 권장: <strong>홍대입구역 3번 출구 시작 → 연희동 마무리</strong> (점진적 hidden gems).</p>
+<p>3. <strong>산책로 + 매장 stop 결합 시간 못 짬</strong></p>
+<p>외국인이 산책만 또는 매장만. 실제로는 <strong>산책 30분 + 매장 stop 30분씩 × 4 spot = 4시간 풀 코스</strong> 권장.</p>
+<p>4. <strong>계절·시간대 적합성 모름</strong></p>
+<p>봄(벚꽃)·여름(저녁·일몰)·가을(단풍)·겨울(낮 햇빛) — 시즌별 최적 시간 다름. 여름은 저녁 18-21시, 겨울은 낮 12-15시.</p>
+<p>5. <strong>경의선숲길 vs 한강 공원 차이 모름</strong></p>
+<p>한강 공원이 광역·트래픽 영역이면, 경의선숲길은 <strong>연남-연희 동네 hidden 산책로</strong>. 외국인 만족도는 hidden 매장 결합이 핵심.</p>
+<hr>
+<h2>① 연남동 ① — 홍대입구역 시작 (0.3 km)</h2>
+<p><strong>시작 점</strong>: 홍대입구역 3번 출구 → 경의선숲길 진입 → 동진시장 골목</p>
+<p><strong>매장 stop</strong>:</p>
+<ul>
+<li><strong>터틀힙 연남</strong> (#220, signal 46.2) — 연남 카페 시그니처</li>
+<li><strong>카멜로연남</strong> (#220) — 연남 브런치 양식</li>
+</ul>
+<p><strong>산책 팁</strong>:</p>
+<ul>
+<li>3번 출구에서 좌측 진행</li>
+<li>경의선숲길 입구 + 표지판 사진 핫컷</li>
+<li>트래픽 분리된 자전거·도보 lane</li>
+</ul>
+<p><strong>소요 시간</strong>: 15분 (산책 5분 + 매장 stop 10분)</p>
+<hr>
+<h2>② 연남동 ② — 동진시장 ~ 연남장 (0.4 km)</h2>
+<p><strong>경유</strong>: 동진시장 골목 + 연남장 (외국인 인스타 핫스팟)</p>
+<p><strong>매장 stop</strong>:</p>
+<ul>
+<li><strong>도트블랭킷 연남 브런치카페</strong> (#220, signal 49) — 연남 브런치 시그니처</li>
+<li><strong>연남장</strong> — 연남 인스타 핫스팟 + 옛 주조장 재생 카페·다이닝</li>
+</ul>
+<p><strong>산책 팁</strong>:</p>
+<ul>
+<li>동진시장 골목 도보 5분 detour 가능</li>
+<li>연남장은 시즌 한정 카페·이벤트</li>
+<li>골목 인스타 핫컷</li>
+</ul>
+<p><strong>소요 시간</strong>: 30분 (산책 10분 + 매장 stop 20분)</p>
+<hr>
+<h2>③ 연남-연희 경계 (0.3 km)</h2>
+<p><strong>메인</strong>: 경의선숲길 메인 산책로 + 벤치 + 자전거 도로</p>
+<p><strong>매장 stop</strong>:</p>
+<ul>
+<li><strong>카페드로잉</strong> — 연남-연희 경계 카페 hidden</li>
+<li><strong>카페 마</strong> (#224, signal 37.1) — 연희 트렌디 카페</li>
+</ul>
+<p><strong>산책 팁</strong>:</p>
+<ul>
+<li>경의선숲길 가장 wide segment</li>
+<li>벤치 다수 — 1인 산책·독서</li>
+<li>봄 벚꽃 (4월 초) + 가을 단풍 (10월) 시즌 1위</li>
+</ul>
+<p><strong>소요 시간</strong>: 30분 (산책 15분 + 카페 stop 15분)</p>
+<hr>
+<h2>④ 연희동 ① — 산책로 ~ 카페 (0.3 km)</h2>
+<p><strong>진입</strong>: 연희동 메인 거리 + 연희로</p>
+<p><strong>매장 stop</strong>:</p>
+<ul>
+<li><strong>펠루시드커피</strong> (#224, signal 42.9) — 연희 스페셜티 카페 시그니처</li>
+<li><strong>새라울</strong> (#224, signal 45.1) — 연희 카페·양식 결합</li>
+</ul>
+<p><strong>산책 팁</strong>:</p>
+<ul>
+<li>경의선숲길 메인에서 연희로로 진입</li>
+<li>연희동 거주민 단골 매장 hidden 영역</li>
+</ul>
+<p><strong>소요 시간</strong>: 40분 (산책 5분 + 매장 stop 35분)</p>
+<hr>
+<h2>⑤ 연희동 ② — 끝 (0.2 km)</h2>
+<p><strong>마무리</strong>: 연희동 깊은 골목 + 한식 매장</p>
+<p><strong>매장 stop</strong>:</p>
+<ul>
+<li><strong>녹원쌈밥 연희점</strong> (#224) — 연희 쌈밥 정통</li>
+<li><strong>금옥당 연희점</strong> (#224) — 연희 한식 hidden</li>
+</ul>
+<p><strong>산책 팁</strong>:</p>
+<ul>
+<li>경의선숲길 끝 — 연희동 안쪽 골목 진입</li>
+<li>디너 코스 최적</li>
+</ul>
+<p><strong>소요 시간</strong>: 60분 (산책 5분 + 디너 55분)</p>
+<hr>
+<h2>시즌별 경의선숲길 추천</h2>
+<p><strong>봄 (3-5월)</strong>: <strong>벚꽃 시즌 1위</strong> — 4월 초·중순 윤중로 벚꽃 다음 핫스팟. 연남동 segment에 벚꽃 다수.</p>
+<p><strong>여름 (5-9월)</strong>: <strong>저녁 18-21시 일몰 시즌</strong> — 한낮 더위 피하고 저녁 산책. 매장 stop 디너 결합.</p>
+<p><strong>가을 (9-11월)</strong>: <strong>단풍 시즌 1위</strong> — 10월 중·하순 단풍 + 산책. 카페 시즌 메뉴 결합.</p>
+<p><strong>겨울 (12-2월)</strong>: <strong>낮 12-15시 햇빛 시즌</strong> — 추위 회피, 햇빛 받기 좋은 시간대.</p>
+<hr>
+<h2>외국인 경의선숲길 추천 코스 (3 패턴)</h2>
+<p><strong>[A] 풀 1.5km 코스 (4시간, 가장 일반)</strong></p>
+<p>홍대입구역 3번 출구 시작 → 연남동 ① ② → 경계 → 연희동 ① ② 마무리</p>
+<ul>
+<li>추천 시간: 14시 ~ 18시 (오후·저녁)</li>
+<li>매장 stop 4-5개 + 산책 + 디너</li>
+</ul>
+<p><strong>[B] 짧은 1km 코스 (2시간, 카페 fan)</strong></p>
+<p>홍대입구역 → 연남동 ① 카페 → 경계 산책 → 연남 마무리</p>
+<ul>
+<li>추천 시간: 11시 ~ 13시 (오전·점심)</li>
+<li>카페 2-3개 + 산책</li>
+</ul>
+<p><strong>[C] 연희동 deep dive (3-4시간)</strong></p>
+<p>경의선숲길 끝(연희) 시작 → 연희동 ② ① → 경계 → 연남 마무리 (역방향)</p>
+<ul>
+<li>추천 시간: 13시 ~ 17시</li>
+<li>연희동 hidden 매장 집중 + 산책</li>
+</ul>
+<hr>
+<h2>경의선숲길 매너·주의사항</h2>
+<p><strong>필수 매너</strong>:</p>
+<p>1. <strong>자전거·도보 lane 분리</strong> — 보행자 매너 (자전거 길 점유 X)</p>
+<p>2. <strong>벤치 점유 매너</strong> — 1인 30분 권장</p>
+<p>3. <strong>반려동물</strong> — 가능 (목줄 필수)</p>
+<p>4. <strong>쓰레기</strong> — 산책로 쓰레기통 활용</p>
+<p><strong>주의사항</strong>:</p>
+<ul>
+<li><strong>여름 모기</strong> — 6-9월 저녁 모기 spray 권장</li>
+<li><strong>겨울 추위</strong> — 12-2월 산책 무리, 카페 stop 위주</li>
+<li><strong>장마 (6-7월)</strong> — 우천 시 산책 어려움</li>
+</ul>
+<hr>
+<h2>경의선숲길 cross-reference 풀세트</h2>
+<p>본 메타 가이드는 키친구 콘텐츠 cross-reference 1순위:</p>
+<ul>
+<li><strong>#220 연남 가이드</strong> — 연남동 8선 (산책 + 매장 stop)</li>
+<li><strong>#224 연희동 Phase 2</strong> — 연희동 8선</li>
+<li><strong>#138 홍대 가이드</strong> — 홍대 전체 overview</li>
+<li><strong>#139 홍대 카페</strong> — 카페 deep dive</li>
+<li><strong>#153 홍대 양식</strong> — 양식 deep dive</li>
+<li><strong>#202 홍대 편집샵</strong> — 라이프스타일 매장</li>
+</ul>
+<hr>
+<h2>결국, 경의선숲길은</h2>
+<p><strong>연남-연희 1.5km 산책로 + 외국인 hidden 매장 stop 결합</strong> — 외국인 홍대권 trafiic 회피하면서 hidden gems 발견 시그니처 코스. 외국인 첫 산책이라면 <strong>풀 1.5km 코스 (홍대입구역 → 연희동) 4시간 + 매장 4-5 stop</strong>가 1순위 권장.</p>
+<p>봄·가을 시즌이 산책 1위, 여름은 저녁 일몰, 겨울은 낮 햇빛 시간대 활용.</p>
+<hr>
+<p><em>홍대 광역 시리즈 #225 — #220 연남·#221 상수·#222 합정·#223 망원·#224 연희동 Phase 2와 cross-reference. 외국인 산책·자연 fan navigation entry point.</em></p>
+
+  <div class="share-bar">
+    <span class="share-label">공유</span>
+    <button class="share-btn share-twitter" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent('경의선숲길 산책 가이드') + '&url=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Twitter">𝕏</button>
+    <button class="share-btn share-facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Facebook">f</button>
+    <button class="share-btn share-kakao" onclick="navigator.share ? navigator.share({title: '경의선숲길 산책 가이드', url: window.location.href}) : navigator.clipboard.writeText(window.location.href).then(function() { alert('링크 복사됨!'); })" aria-label="Kakao/Share">📤</button>
+    <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href).then(function() { this.textContent = '✓'; setTimeout(function() { document.querySelector('.share-copy').textContent = '🔗'; }, 1500); }.bind(this))" aria-label="Copy link">🔗</button>
+  </div>
+
+  <div class="detail-nav">
+    <div><a href="yeonhui-phase2.html" style="color:var(--red);">&larr; 연희동 Phase 2 가이드</a></div>
+    <div><a href="hongdae-lifestyle-furniture.html" style="color:var(--red);">홍대 가구·라이프스타일 가이드 &rarr;</a></div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <p><a href="https://instagram.com/keychingu.korea" target="_blank">@keychingu.korea</a> &mdash; Seoul for MZ FIT Travelers</p>
+</footer>
+</body>
+</html>

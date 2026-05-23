@@ -5941,6 +5941,238 @@
     "en_available": false
   },
   {
+    "id": "221",
+    "slug": "sangsu-hongdae",
+    "title_kr": "상수·홍대 다운타운 가이드",
+    "title_en": "Sangsu & Hongdae Downtown Guide",
+    "category": "A",
+    "tags": [
+      "hongdae",
+      "sangsu",
+      "cafe",
+      "bar",
+      "nightlife"
+    ],
+    "summary_kr": "상수동·홍대 핵심 다운타운 골목 — 바, 카페, 클럽, 편집샵 통합 가이드.",
+    "summary_en": "Sangsu & Hongdae downtown lanes — bars, cafes, clubs & select shops.",
+    "en_available": false
+  },
+  {
+    "id": "222",
+    "slug": "hapjeong",
+    "title_kr": "합정 가이드",
+    "title_en": "Hapjeong Guide",
+    "category": "A",
+    "tags": [
+      "hapjeong",
+      "cafe",
+      "bar",
+      "shopping"
+    ],
+    "summary_kr": "합정역 반경 카페·바·편집샵·갤러리 완전 공략.",
+    "summary_en": "Hapjeong — cafes, bars, select shops & galleries.",
+    "en_available": false
+  },
+  {
+    "id": "223",
+    "slug": "mangwon",
+    "title_kr": "망원 가이드",
+    "title_en": "Mangwon Guide",
+    "category": "A",
+    "tags": [
+      "mangwon",
+      "market",
+      "cafe",
+      "local"
+    ],
+    "summary_kr": "망원시장부터 망원한강공원까지 — 로컬 감성 맛집·카페·쇼핑 풀가이드.",
+    "summary_en": "Mangwon market to han river park — local eateries, cafes & shops.",
+    "en_available": false
+  },
+  {
+    "id": "224",
+    "slug": "yeonhui-phase2",
+    "title_kr": "연희동 Phase 2 가이드",
+    "title_en": "Yeonhui-dong Phase 2 Guide",
+    "category": "A",
+    "tags": [
+      "yeonhui",
+      "cafe",
+      "bakery",
+      "residential"
+    ],
+    "summary_kr": "연희동 심화편 — 숨겨진 카페·베이커리·레스토랑 추가 40선.",
+    "summary_en": "Yeonhui-dong Phase 2 — hidden cafes, bakeries & restaurants.",
+    "en_available": false
+  },
+  {
+    "id": "225",
+    "slug": "gyeongui-line-forest",
+    "title_kr": "경의선숲길 산책 가이드",
+    "title_en": "Gyeongui Line Forest Walk Guide",
+    "category": "B",
+    "tags": [
+      "walking",
+      "park",
+      "hongdae",
+      "cafe",
+      "nature"
+    ],
+    "summary_kr": "경의선숲길 6km 전구간 — 카페·공원·벤치·산책로 완전 공략.",
+    "summary_en": "6 km Gyeongui Line forest trail — cafes, parks & scenic walks.",
+    "en_available": false
+  },
+  {
+    "id": "200_furniture",
+    "slug": "hongdae-lifestyle-furniture",
+    "title_kr": "홍대 가구·라이프스타일 가이드",
+    "title_en": "Hongdae Furniture & Lifestyle Guide",
+    "category": "C",
+    "tags": [
+      "hongdae",
+      "furniture",
+      "lifestyle",
+      "interior",
+      "shopping"
+    ],
+    "summary_kr": "홍대·상수 인테리어·라이프스타일 편집샵 완전 정복.",
+    "summary_en": "Hongdae & Sangsu interior design & lifestyle select shops.",
+    "en_available": false
+  },
+  {
+    "id": "202_select",
+    "slug": "hongdae-select-shops",
+    "title_kr": "홍대 편집샵 가이드",
+    "title_en": "Hongdae Select Shops Guide",
+    "category": "C",
+    "tags": [
+      "hongdae",
+      "select-shop",
+      "fashion",
+      "shopping"
+    ],
+    "summary_kr": "홍대·상수 편집샵 20+ — 패션·뷰티·소품 큐레이션.",
+    "summary_en": "20+ select shops in Hongdae & Sangsu — fashion, beauty & goods.",
+    "en_available": false
+  },
+  {
+    "id": "203_cafe2",
+    "slug": "gangnam-cafe-phase2",
+    "title_kr": "강남 카페 Phase 2 가이드",
+    "title_en": "Gangnam Cafe Phase 2 Guide",
+    "category": "A",
+    "tags": [
+      "gangnam",
+      "cafe",
+      "specialty-coffee",
+      "dessert"
+    ],
+    "summary_kr": "강남·청담·압구정 카페 Phase 2 — 스페셜티·디저트·분위기 맛집 추가 30선.",
+    "summary_en": "Gangnam Phase 2 cafes — specialty coffee, desserts & atmosphere.",
+    "en_available": false
+  },
+  {
+    "id": "204_7day",
+    "slug": "seoul-7day-guide",
+    "title_kr": "외국인 한국 7일 완전 가이드",
+    "title_en": "Korea 7-Day Complete Guide for Foreigners",
+    "category": "D",
+    "tags": [
+      "itinerary",
+      "7-day",
+      "beginner",
+      "complete-guide"
+    ],
+    "summary_kr": "한국 첫 방문 외국인을 위한 7일 최적 동선 — 서울·부산·제주 분기 옵션 포함.",
+    "summary_en": "Optimal 7-day Korea itinerary for first-time foreign visitors.",
+    "en_available": false
+  },
+  {
+    "id": "205_dessert",
+    "slug": "korea-dessert-meta",
+    "title_kr": "한국 디저트 카테고리 메타 가이드",
+    "title_en": "Korea Dessert Category Meta Guide",
+    "category": "C",
+    "tags": [
+      "dessert",
+      "bingsu",
+      "tteok",
+      "patisserie",
+      "sweet"
+    ],
+    "summary_kr": "한국 디저트 전 카테고리 — 빙수·떡·케이크·마카롱·전통과자 완전 정리.",
+    "summary_en": "All Korean dessert categories — bingsu, tteok, cakes & traditional sweets.",
+    "en_available": false
+  },
+  {
+    "id": "206_cj",
+    "slug": "gangnam-chinese-japanese",
+    "title_kr": "강남 중식·일식 가이드",
+    "title_en": "Gangnam Chinese & Japanese Restaurant Guide",
+    "category": "C",
+    "tags": [
+      "gangnam",
+      "chinese",
+      "japanese",
+      "fine-dining",
+      "restaurant"
+    ],
+    "summary_kr": "강남 고급 중식·일식 레스토랑 30선 — 가격대별·분위기별 완전 분류.",
+    "summary_en": "30 top Chinese & Japanese restaurants in Gangnam — tiered by price & vibe.",
+    "en_available": false
+  },
+  {
+    "id": "207_kpop",
+    "slug": "kpop-fan-day-tour",
+    "title_kr": "K-pop 팬 1일 완전 동선 가이드",
+    "title_en": "K-pop Fan 1-Day Complete Itinerary Guide",
+    "category": "D",
+    "tags": [
+      "kpop",
+      "fan",
+      "idol",
+      "1-day",
+      "itinerary"
+    ],
+    "summary_kr": "K-pop 팬을 위한 1일 최적 동선 — SM·HYBE·JYP 주변 + 성지 + 굿즈샵.",
+    "summary_en": "Perfect 1-day K-pop fan itinerary — label districts, shrines & merch shops.",
+    "en_available": false
+  },
+  {
+    "id": "208_jetlag",
+    "slug": "seoul-24h-jet-lag",
+    "title_kr": "외국인 시차 적응 24시간 코스 가이드",
+    "title_en": "Seoul Jet-Lag Recovery 24-Hour Guide",
+    "category": "D",
+    "tags": [
+      "jet-lag",
+      "24h",
+      "night",
+      "arrival",
+      "tips"
+    ],
+    "summary_kr": "서울 도착 후 시차 적응 최적 24시간 동선 — 야간 도착·새벽 맛집·찜질방 루틴.",
+    "summary_en": "24-hour jet-lag recovery itinerary in Seoul — late-night eats & jjimjilbang.",
+    "en_available": false
+  },
+  {
+    "id": "210_family",
+    "slug": "seoul-family-guide",
+    "title_kr": "외국인 가족 동반 서울 가이드",
+    "title_en": "Seoul Family Travel Guide for Foreigners",
+    "category": "D",
+    "tags": [
+      "family",
+      "kids",
+      "theme-park",
+      "museum",
+      "safe"
+    ],
+    "summary_kr": "가족 여행객을 위한 서울 완전 가이드 — 아이 동반 가능 맛집·체험·숙소.",
+    "summary_en": "Seoul complete guide for families — kid-friendly food, experiences & stays.",
+    "en_available": false
+  },
+  {
     "id": "500",
     "slug": "guro-local-picks",
     "title_kr": "구로·가산 로컬 큐레이션 가이드",
