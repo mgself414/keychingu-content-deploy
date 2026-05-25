@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>한국 음식 매트릭스 통합 인덱스 — KeyChinGu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/main.css">
+<style>
+.detail-wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+}
+.breadcrumb {
+  font-size: 13px;
+  color: var(--text-soft);
+  margin-bottom: 24px;
+}
+.breadcrumb a { color: var(--red); font-weight: 600; }
+.detail-wrap h1 {
+  font-size: 28px; font-weight: 800;
+  color: var(--black); margin-bottom: 8px;
+}
+.detail-wrap h2 {
+  font-size: 22px; font-weight: 700;
+  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--red);
+}
+.detail-wrap h3 {
+  font-size: 17px; font-weight: 600;
+  color: var(--text-mid); margin-top: 20px; margin-bottom: 8px;
+}
+.detail-wrap p {
+  font-size: 15px; line-height: 1.7;
+  color: var(--text-mid); margin-bottom: 12px;
+}
+.detail-wrap ul {
+  padding-left: 20px; margin-bottom: 12px;
+}
+.detail-wrap li {
+  font-size: 14px; line-height: 1.6;
+  color: var(--text-mid); margin-bottom: 6px;
+}
+.detail-wrap table {
+  width: 100%; border-collapse: collapse;
+  margin-bottom: 16px; font-size: 13px;
+}
+.detail-wrap th {
+  background: var(--black); color: #fff;
+  padding: 10px 12px; text-align: left;
+  font-weight: 600; font-size: 11px;
+  text-transform: uppercase; letter-spacing: 0.06em;
+}
+.detail-wrap td {
+  padding: 10px 12px; border-bottom: 1px solid var(--border);
+  color: var(--text-mid);
+}
+.detail-wrap tr:nth-child(even) td { background: rgba(0,0,0,0.02); }
+.detail-wrap hr {
+  border: none; height: 1px;
+  background: var(--border); margin: 24px 0;
+}
+.detail-wrap code {
+  background: rgba(33,140,204,0.08);
+  padding: 2px 6px; border-radius: 4px;
+  font-size: 13px; color: var(--blue);
+}
+.detail-nav {
+  display: flex; justify-content: space-between;
+  margin-top: 48px; padding-top: 20px;
+  border-top: 1px solid var(--border);
+  font-size: 14px; font-weight: 600;
+}
+.share-bar {
+  display: flex; align-items: center; gap: 10px;
+  margin-top: 40px; padding: 16px 20px;
+  background: #f9f9f9; border-radius: 12px;
+  border: 1px solid var(--border);
+}
+.share-label {
+  font-size: 14px; font-weight: 600; color: var(--text-soft);
+  margin-right: 8px;
+}
+.share-btn {
+  width: 40px; height: 40px;
+  border: none; border-radius: 50%;
+  background: #fff; cursor: pointer;
+  font-size: 1.1rem; transition: all 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  display: inline-flex; align-items: center; justify-content: center;
+}
+.share-btn:hover { transform: translateY(-2px); box-shadow: 0 3px 8px rgba(0,0,0,0.15); }
+.share-twitter:hover { background: #000; color: #fff; }
+.share-facebook:hover { background: #1877f2; color: #fff; }
+.share-kakao:hover { background: #fee500; }
+.share-copy:hover { background: #218CCC; color: #fff; }
+/* EN toggle disabled — 영문판 미생성 콘텐츠 (2026-05-16 patch) */
+.lang-switch .lang-disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  text-decoration: line-through;
+  padding: 4px 10px;
+  color: var(--text-soft, #888);
+  font-size: 13px;
+  user-select: none;
+}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <div class="lang-switch">
+    <a href="../content/food-matrix-index.html" class="active">KR</a>
+    <span class="lang-disabled" title="영문판 준비 중">EN</span>
+  </div>
+</header>
+
+<div class="detail-wrap">
+  <div class="breadcrumb"><a href="../index.html">전체 가이드</a> &rsaquo; 한국 음식 매트릭스 통합 인덱스</div>
+  <h1>한국 음식 매트릭스 통합 인덱스 — 12 카테고리 × 4 매트릭스</h1>
+<p>&gt; <strong>부제</strong>: 한식·국밥·만두·고깃집·냉면·치킨·일식·디저트·차·정통주 통합 deep dive·#14 한식 후속</p>
+<p>ISSUE 03 · #391 · 2026-05-26</p>
+<hr>
+<h2>🎯 왜 한국 음식 매트릭스인가</h2>
+<p>외국인 음식 탐색 #1 페이지 = <strong>한국 음식 매트릭스 통합 인덱스</strong> (#14 한식·#129 냉면·#130 고깃집·#131 닭갈비·#132 분식·#133 국밥·#134 만두·#155 이태원·#206 강남 일식·#225 카페·#233 디저트·#357 사찰음식·#359 차·#361 베이커리·#362 정통주·#383 노포 통합). 12 카테고리 × 4 매트릭스 (지역·가격·외국인 친화·시그니처).</p>
+<hr>
+<h2>★ 한눈에 12 카테고리</h2>
+<table><thead><tr>
+<th>#</th>
+<th>카테고리</th>
+<th>키친구 콘텐츠</th>
+<th>시그니처</th>
+</tr></thead><tbody>
+<tr>
+<td>1</td>
+<td><strong>한식 정통 (한정식·반찬·궁중)</strong></td>
+<td>#14 한식·#143 강남 한식</td>
+<td>한정식·반찬·궁중·외국인 정통</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>국밥 (설농탕·곰탕·돼지)</strong></td>
+<td>#133·#383 노포·#143</td>
+<td>이문설농탕 1902·하동관 1939</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>냉면 (평양·함흥)</strong></td>
+<td>#129 냉면·#383</td>
+<td>우래옥 1946·외국인 정통</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>고깃집 (삼겹살·우삼겹·소고기)</strong></td>
+<td>#130·#143</td>
+<td>한국 #1 고깃집·외국인 매니아</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>분식 (떡볶이·김밥·라면)</strong></td>
+<td>#132·#15 길거리·#380 망원</td>
+<td>외국인 가성비·#15 길거리</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>만두 (왕만두·물만두·평양)</strong></td>
+<td>#134·#380</td>
+<td>자하손만두·#380 시장 통합</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>닭갈비·치킨</strong></td>
+<td>#131·#06 치맥</td>
+<td>닭갈비 + #06 한강 치맥</td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>사찰음식·비건</strong></td>
+<td>#357 사찰음식·#291 비건</td>
+<td>발우공양·외국인 정통 wellness</td>
+</tr>
+<tr>
+<td>9</td>
+<td><strong>베이커리·디저트·빙수</strong></td>
+<td>#225 카페·#233 디저트·#361 베이커리</td>
+<td>어니언·LBM·태극당 1946·MAILLET 1995</td>
+</tr>
+<tr>
+<td>10</td>
+<td><strong>차·다도 (#359 통합)</strong></td>
+<td>#359 차·다도·#357 사찰차</td>
+<td>오설록·수희찻집 1960s·외국인 정통</td>
+</tr>
+<tr>
+<td>11</td>
+<td><strong>정통주·소주·막걸리</strong></td>
+<td>#362 정통주·#04 가맥집</td>
+<td>안동소주 700년·서울 장수 1962</td>
+</tr>
+<tr>
+<td>12</td>
+<td><strong>외국인 친화·KTO 인증</strong></td>
+<td>#383·#384·#380·외국인 패키지</td>
+<td>Klook·KKday·KTO 인증 풀세트</td>
+</tr>
+</tbody></table>
+<p><strong>+ 추가 4</strong>: 이태원 음식 (#155)·강남 일식·중식 (#206)·홍대 양식 (#153·#164·#165·#168)·외곽 음식 (#143 부산 돼지국밥·#244 자갈치·#255 전주 비빔밥·#317 대구·#318 광주)</p>
+<hr>
+<h2>⚠ 외국인 자주 실수 5가지</h2>
+<p>1. <strong>&quot;한국 음식 = 한식만&quot;</strong>: 한국 음식 = <strong>한식 + 국밥 + 냉면 + 고깃집 + 분식 + 만두 + 닭갈비 + 사찰 + 디저트 + 차 + 정통주 + 일식·중식·양식</strong> 12 카테고리 풀세트.</p>
+<p>2. <strong>&quot;한식 = 비쌈&quot;</strong>: 한식 = <strong>이문설농탕 8K·국밥 8~12K·분식 3~10K·노포 가성비 1번지</strong> + 외국인 매니아 1순위·#380 시장 통합.</p>
+<p>3. <strong>&quot;외국인 친화 식당 = 강남만&quot;</strong>: 외국인 친화 = <strong>이태원 (#144·#155)·홍대 (#138·#159)·명동 (#13)·강남 (#142·#143)·#206 강남 일식·외국인 영어 OK</strong> 풀세트.</p>
+<p>4. <strong>&quot;한식 디저트 = 없음&quot;</strong>: 한식 디저트 = <strong>#233 디저트·#361 베이커리·#359 차·#357 사찰차·태극당 1946 (#383)·MAILLET 1995 (#173)</strong> + 외국인 매니아 1번지.</p>
+<p>5. <strong>&quot;외곽 음식 = 비슷&quot;</strong>: 외곽 음식 = <strong>부산 돼지국밥 (#143)·자갈치 회 (#244)·전주 비빔밥 (#255)·대구 막창 (#317)·광주 한정식 (#318)</strong> + 외국인 외곽 매니아.</p>
+<hr>
+<h2>① 한식 정통·국밥·냉면·고깃집 매트릭스 (4)</h2>
+<h3>1. 한식 정통 (한정식·반찬·궁중)</h3>
+<ul>
+<li>키친구: #14 한식·#143 강남 한식</li>
+<li>외국인 ★: ◎◎ — 외국인 정통 매니아 1번지</li>
+<li>시그니처: 한정식·반찬·궁중·한정식</li>
+</ul>
+<h3>2. 국밥 (설농탕·곰탕·돼지)</h3>
+<ul>
+<li>키친구: #133·#383 노포·#143</li>
+<li>외국인 ★: ◎◎ — 이문설농탕 1902·하동관 1939</li>
+<li>시그니처: 외국인 정통 노포 vlog 1번지</li>
+</ul>
+<h3>3. 냉면 (평양·함흥)</h3>
+<ul>
+<li>키친구: #129·#383</li>
+<li>외국인 ★: ◎◎ — 우래옥 1946 평양냉면</li>
+<li>시그니처: 외국인 정통 매니아</li>
+</ul>
+<h3>4. 고깃집 (삼겹살·우삼겹·소고기)</h3>
+<ul>
+<li>키친구: #130·#143</li>
+<li>외국인 ★: ◎◎ — 한국 #1 고깃집</li>
+<li>시그니처: 외국인 매니아·삼겹살</li>
+</ul>
+<hr>
+<h2>② 분식·만두·닭갈비·사찰 매트릭스 (4)</h2>
+<h3>5. 분식 (떡볶이·김밥·라면)</h3>
+<ul>
+<li>키친구: #132·#15 길거리·#380 망원</li>
+<li>외국인 ★: ◎◎ — 외국인 가성비·#15 통합</li>
+<li>시그니처: 떡볶이·김밥·외국인 매니아</li>
+</ul>
+<h3>6. 만두 (왕만두·물만두·평양)</h3>
+<ul>
+<li>키친구: #134·#380 시장</li>
+<li>외국인 ★: ◎◎ — 자하손만두·외국인 정통</li>
+<li>시그니처: 평양·왕·물만두·외국인 매니아</li>
+</ul>
+<h3>7. 닭갈비·치킨 (#06 치맥)</h3>
+<ul>
+<li>키친구: #131·#06 치맥</li>
+<li>외국인 ★: ◎◎ — 닭갈비 + 한강 치맥</li>
+<li>시그니처: 외국인 매니아 1순위</li>
+</ul>
+<h3>8. 사찰음식·비건 (#291)</h3>
+<ul>
+<li>키친구: #357 사찰음식·#291 비건</li>
+<li>외국인 ★: ◎◎ — 발우공양·외국인 정통 wellness</li>
+<li>시그니처: 5개 오신채 미사용·외국인 매니아</li>
+</ul>
+<hr>
+<h2>③ 디저트·차·정통주·외국인 친화 매트릭스 (4)</h2>
+<h3>9. 베이커리·디저트·빙수</h3>
+<ul>
+<li>키친구: #225 카페·#233·#361 베이커리</li>
+<li>외국인 ★: ◎◎ — 어니언·LBM·태극당 1946·MAILLET 1995</li>
+<li>시그니처: 외국인 인스타·MZ 매니아</li>
+</ul>
+<h3>10. 차·다도 (#359)</h3>
+<ul>
+<li>키친구: #359·#357 사찰차</li>
+<li>외국인 ★: ◎◎ — 오설록·수희찻집 1960s</li>
+<li>시그니처: 외국인 정통 wellness</li>
+</ul>
+<h3>11. 정통주·소주·막걸리 (#362)</h3>
+<ul>
+<li>키친구: #362·#04 가맥집</li>
+<li>외국인 ★: ◎◎ — 안동소주 700년·서울 장수 1962</li>
+<li>시그니처: 외국인 정통 매니아 1번지</li>
+</ul>
+<h3>12. 외국인 친화·KTO 인증 ★ 통합</h3>
+<ul>
+<li>키친구: #383 노포·#384·#380 시장 + Klook·KKday·KTO 인증</li>
+<li>외국인 ★: ◎◎ — 외국인 패키지 1번지</li>
+<li>시그니처: 영어·중문·일문·외국인 영어 메뉴</li>
+</ul>
+<hr>
+<h2>④ 외곽·일식·중식·양식 추가 (4)</h2>
+<ul>
+<li><strong>이태원 음식</strong> (#155) — 외국인 거주 + 음식 cluster</li>
+<li><strong>강남 일식·중식</strong> (#206) — 외국인 럭셔리 매니아</li>
+<li><strong>홍대 양식</strong> (#153·#164·#165·#168) — 외국인 MZ 매니아</li>
+<li><strong>외곽 음식</strong> — 부산 돼지국밥 (#143)·자갈치 (#244)·전주 비빔밥 (#255)·대구 (#317)·광주 (#318)</li>
+</ul>
+<hr>
+<h2>⚙ FAQ 6개</h2>
+<p>1. <strong>외국인 음식 1순위</strong>: 광장시장 (#380·외국인 vlog #1)·이문설농탕 (#383 1902)·우래옥 (#383 1946)·삼겹살 (#130)·치맥 (#06).</p>
+<p>2. <strong>외국인 가성비 1번지</strong>: 통인시장 엽전 5K·이문설농탕 8K·국밥 8~12K·분식 3~10K.</p>
+<p>3. <strong>외국인 정통 매니아</strong>: #14 한식·#383 노포·#357 사찰음식·#359 차·#362 정통주.</p>
+<p>4. <strong>외국인 MZ 매니아</strong>: #233 디저트·#361 베이커리·#381 카페 거리·#225 카페.</p>
+<p>5. <strong>외국인 K-Beauty 통합</strong>: 음식 + #384 K-Beauty + #227 K-beauty + #09 퍼스널컬러.</p>
+<p>6. <strong>외국인 외곽 1박2일</strong>: #143 부산·#255 전주·#244 자갈치·#317 대구·#318 광주.</p>
+<hr>
+<h2>🗺 외국인 풀데이 코스 3개</h2>
+<h3>A. 외국인 첫 음식 풀데이 (12 카테고리 4 hit)</h3>
+<ul>
+<li>09:00 이문설농탕 (#383 1902) → 12:00 광장시장 (#380 빈대떡·녹두전) → 15:00 카페 어니언 (#381 성수) → 19:00 삼겹살 + 한강 치맥 (#130·#06)</li>
+</ul>
+<h3>B. 외국인 정통 매니아 1일 (한식 + 노포)</h3>
+<ul>
+<li>09:00 토속촌 삼계탕 (#143 1960s) → 12:00 우래옥 평양냉면 (#383 1946) → 15:00 태극당 1946 (#361) → 19:00 안동소주 정통주 (#362)</li>
+</ul>
+<h3>C. 외국인 외곽 1박2일 (음식 + 매니아)</h3>
+<ul>
+<li>Day 1: KTX 서울→부산 → 자갈치 회 (#244) → 부전시장 돼지국밥 (#143)</li>
+<li>Day 2: KTX 부산→전주 → 비빔밥 (#255) → 서울 복귀</li>
+</ul>
+<hr>
+<h2>🌸 시즌 5</h2>
+<ul>
+<li><strong>봄 3~5월</strong>: 신선 채소·딸기·외국인 매니아</li>
+<li><strong>여름 6~8월</strong>: 삼복 삼계탕 (#279)·빙수·한강 치맥 (#06)</li>
+<li><strong>가을 9~11월</strong>: 김장·인삼·#357 사찰음식</li>
+<li><strong>겨울 12~2월</strong>: 호빵·붕어빵·따뜻한 국밥·#383 노포</li>
+<li><strong>연중</strong>: 12 카테고리 × 4 매트릭스 풀세트</li>
+</ul>
+<hr>
+<h2>🔗 관련 (음식 매트릭스 풀)</h2>
+<ul>
+<li>#04 가맥집·#06 한강 치맥·#13 명동·#14 한식·#15 길거리·#129 냉면·#130 고깃집·#131 닭갈비·#132 분식·#133 국밥·#134 만두·#135 서점·#138 홍대·#142 강남·#143 강남 한식·#144 이태원·#155 이태원 음식·#159 홍대 맛집·#168 홍대 브런치·#206 강남 일식·#225 카페·#233 디저트·#244 자갈치·#255 전주·#279 명절 삼복·#291 비건·#317 대구·#318 광주·#357 사찰음식·#359 차·다도·#361 베이커리·#362 정통주·#380 전통시장·#381 카페 거리·#383·#388 노포·#384·#389 K-Beauty (음식 wellness)</li>
+</ul>
+<h2>🏷 태그</h2>
+<p><code>#한국음식매트릭스통합인덱스</code> <code>#KoreaFoodMatrixIndex</code> <code>#12카테고리4매트릭스</code> <code>#한식정통한정식반찬궁중</code> <code>#국밥설농탕곰탕돼지</code> <code>#냉면평양함흥우래옥1946</code> <code>#고깃집삼겹살우삼겹</code> <code>#분식떡볶이김밥라면</code> <code>#만두왕만두물만두평양자하손</code> <code>#닭갈비치킨한강치맥</code> <code>#사찰음식발우공양5오신채</code> <code>#베이커리어니언LBM태극당MAILLET</code> <code>#차다도오설록수희찻집1960s</code> <code>#정통주안동소주700년서울장수1962</code> <code>#외국인친화KTO인증Klook</code> <code>#이태원강남일식홍대양식외곽부산전주대구광주</code> <code>#키친구</code></p>
+
+  <div class="share-bar">
+    <span class="share-label">공유</span>
+    <button class="share-btn share-twitter" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent('한국 음식 매트릭스 통합 인덱스') + '&url=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Twitter">𝕏</button>
+    <button class="share-btn share-facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Facebook">f</button>
+    <button class="share-btn share-kakao" onclick="navigator.share ? navigator.share({title: '한국 음식 매트릭스 통합 인덱스', url: window.location.href}) : navigator.clipboard.writeText(window.location.href).then(function() { alert('링크 복사됨!'); })" aria-label="Kakao/Share">📤</button>
+    <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href).then(function() { this.textContent = '✓'; setTimeout(function() { document.querySelector('.share-copy').textContent = '🔗'; }, 1500); }.bind(this))" aria-label="Copy link">🔗</button>
+  </div>
+
+  <div class="detail-nav">
+    <div><a href="four-seasons.html" style="color:var(--red);">&larr; 한국 4계절 매트릭스</a></div>
+    <div><a href="namsan.html" style="color:var(--red);">남산 둘레길 & 야경 &rarr;</a></div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <p><a href="https://instagram.com/keychingu.korea" target="_blank">@keychingu.korea</a> &mdash; Seoul for MZ FIT Travelers</p>
+</footer>
+</body>
+</html>
