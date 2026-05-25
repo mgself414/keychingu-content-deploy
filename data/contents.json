@@ -2745,29 +2745,6 @@
     "en_available": false
   },
   {
-    "id": "206",
-    "slug": "museum-art",
-    "title_kr": "한국 박물관·미술관 풀가이드",
-    "title_en": "Korea Museums & Art Galleries Full Guide",
-    "category": "D",
-    "tags": [
-      "foreigner",
-      "museum",
-      "art-gallery",
-      "nmk",
-      "mmca",
-      "leeum",
-      "ddp-design",
-      "war-memorial",
-      "ewha-100",
-      "sema",
-      "free-entry"
-    ],
-    "summary_kr": "국립중앙박물관·국립민속박물관·국립한글박물관·한가람미술관·국립현대미술관·서울시립미술관·한성백제박물관·이화100주년기념박물관·서울역사박물관·DDP 디자인박물관·전쟁기념관·삼성미술관 리움 12선 + 추가 4 — 한국 1번지 박물관·미술관 통합 deep dive",
-    "summary_en": "Korea's top 12 museums & art galleries — National Museum of Korea (Asia's #1, 700K artifacts) + National Folk Museum + National Hangul Museum + Hangaram Art Museum + MMCA (National Modern Art) + SeMA + Hanseong Baekje Museum + Ewha 100 Memorial + Seoul Museum of History + DDP Design Museum (Zaha Hadid) + War Memorial of Korea + Leeum Samsung (Botta/Nouvel/Koolhaas) — most free entry, English docent available",
-    "en_available": false
-  },
-  {
     "id": "207",
     "slug": "temple-heritage",
     "title_kr": "한국 사찰·전통 건축 풀가이드",
@@ -6053,6 +6030,10 @@
     "summary_en": "Korea Museum & Art Gallery 12-pick (extends #285 galleries / #366 cultural complex) — National Museum of Korea (Yongsan, Korea's #1 with 15,000 artifacts, free entry, English audio guide) + MMCA National Museum of Modern and Contemporary Art (4 branches: Seoul/Gwacheon/Deoksugung/Cheongju, Korea's #1 contemporary) + National Folk Museum (inside Gyeongbokgung Palace, free) + Leeum Museum Hannam (Korea's #1 private museum, Samsung, Mario Botta + Jean Nouvel + Rem Koolhaas architecture) + Kansong Art Museum (Seongbuk, Korea's #1 traditional art with celadon/baekja/Shin Yun-bok/Kim Hong-do, twice-yearly special exhibitions) + Amorepacific Museum APMA (Yongsan, David Chipperfield architecture) + Seoul Museum of Art SeMA (next to Deoksugung, free entry, Cheon Kyung-ja permanent) + D Museum (Seongsu/Hannam, photography·design MZ #1) + Hangaram Art Museum at Seoul Arts Center (Seocho, blockbuster exhibitions) + DDP Design Museum (Zaha Hadid) + Ho-Am Museum (Yongin Samsung) + Museum SAN (Wonju, Ando Tadao architecture) + Gwangju Biennale + Busan/Daegu municipal",
     "en_available": false
   },
+  {"id":"378","slug":"kdrama-filming","title_kr":"한국 K-드라마 영화 촬영지 풀가이드","title_en":"Korea K-Drama & Movie Filming Locations Full Guide","category":"D","tags":["foreigner","k-drama","movie","filming-location","parasite","squid-game","goblin","itaewon-class","crash-landing","extraordinary-attorney-woo","mr-sunshine","bts","blackpink","sky-castle"],"summary_kr":"한국 K-드라마·영화 촬영지 12선 (#10 K드라마·#207 K-pop 후속) — 기생충(자하문 계단·아현 슈퍼·정자동 오스카 4관)·올드보이 박찬욱(인천 차이나타운) + 오징어게임(쌍문동 강북 도봉 Netflix #1)·도깨비(인천 차이나타운·강릉 주문진·운현궁)·이태원 클라스(녹사평 단밤) + 사랑의 불시착(한남 청담)·우영우(수원 광교 한옥)·미스터 션샤인(논산) + BTS·BLACKPINK MV(HYBE 용산·SM 성수·YG 합정·JYP 강동 4 기획사)·SKY 캐슬 재벌집(분당 청담)·응답하라 동백꽃 갯마을","summary_en":"Korea K-Drama & Movie Filming Locations 12-pick (extends #10 K-drama / #207 K-pop) — Parasite (Jahamun stairs / Ahyeon supermarket / Jeongja-dong, Oscar 4-wins 2020) + Park Chan-wook Oldboy·Thirst (Incheon Chinatown) + Squid Game (Ssangmun-dong/Gangbuk/Dobong, Netflix #1 2021·2024) + Goblin (Incheon Chinatown / Gangneung Jumunjin breakwater / Unhyeongung) + Itaewon Class (Noksapyeong / Danbam) + Crash Landing on You (Hannam / Cheongdam) + Extraordinary Attorney Woo (Suwon Gwanggyo hanok) + Mr. Sunshine (Nonsan / Gangwon) + BTS·BLACKPINK MV locations (HYBE Yongsan + SM Seongsu + YG Hapjeong + JYP Gangdong, 4 K-pop agency cluster) + SKY Castle·Reborn Rich (Bundang Jeongja / Cheongdam) + Reply 1988·Camellia Blooms·Hometown Cha-Cha-Cha outskirts","en_available":false},
+  {"id":"379","slug":"hanbok-palace","title_kr":"한국 한복 궁궐 체험 풀가이드","title_en":"Korea Hanbok & Palace Experience Full Guide","category":"D","tags":["foreigner","hanbok","palace","gyeongbokgung","changdeokgung","deoksugung","changgyeonggung","jongmyo","unesco","bukchon","seochon","samcheong","jeonju","hahoe","yangdong"],"summary_kr":"한국 한복·궁궐 체험 12선 (#16 한복·#12 북촌·#297 인사동·#255 전주 후속) — 경복궁(조선 정전 1395 수문장 교대식)·창덕궁(UNESCO 1405 후원 비원)·덕수궁(대한제국 돌담길)·창경궁(야간 개장)·종묘(UNESCO + 종묘제례악) + 한복남(북촌 인사동 #1 15~30K)·한복 빌리기(경복궁 가성비)·색다른 한복(삼청 MZ) + 북촌 한옥마을(가회동 11길 30만/월)·서촌 한옥(통의동)·삼청 한옥 카페 + 전주 한옥마을(800채 KTX 2시간)","summary_en":"Korea Hanbok & Palace Experience 12-pick (extends #16 hanbok / #12 Bukchon / #297 Insadong / #255 Jeonju) — Gyeongbokgung (Joseon main palace since 1395, royal guard ceremony 10am·2pm, Korea's #1) + Changdeokgung (UNESCO since 1405, Huwon Secret Garden with English guide) + Deoksugung (Korean Empire, Western-Korean mixed, stone wall path) + Changgyeonggung (night opening Apr/May/Aug/Sep/Oct) + Jongmyo (UNESCO + Jongmyo Jeryeak UNESCO Intangible Heritage, 600-year royal ancestral rites) + Hanbok Nam (Bukchon/Insadong Korea's #1 rental 15-30K/3h) + Hanbok Billigi (Gyeongbokgung gate budget) + Saekdareun Hanbok (Samcheong MZ modern) + Bukchon Hanok Village (Korea's #1 hanok, Gahoe-dong 11-gil, 300k visitors/month) + Seochon Hanok (Tongui-dong/Chebu-dong) + Samcheong hanok cafe + Jeonju Hanok Village (800 houses, KTX 2h, foreigner overnight #1)","en_available":false},
+  {"id":"380","slug":"traditional-market","title_kr":"한국 전통시장 풀가이드","title_en":"Korea Traditional Markets Full Guide","category":"C","tags":["foreigner","market","gwangjang","namdaemun","dongdaemun","tongin","mangwon","gyeongdong","jagalchi","yangnyeongsi","jeonju-nambu","gwangju-yangdong","vlog","gastronomy"],"summary_kr":"한국 전통시장 12선 (#03 시장·#244 부산·#365 한약 통합) — 광장시장(종로 1905 빈대떡 녹두전 육회 외국인 vlog #1)·남대문 시장(중구 1414 갈치조림 꼬리곰탕)·동대문 시장(#172 패션 야시장 24h)·통인시장(서촌 #191 엽전 도시락) + 망원시장(#223 떡볶이)·경동시장(#365 청량리 한약)·중부시장(#11 을지로 건어물) + 부전시장(#143 부산 돼지국밥)·자갈치(#244 한국 #1 수산)·약령시(#317 대구 350년) + 전주 남부시장(#255 야시장 금토)·광주 양동시장(#318 호남 최대)","summary_en":"Korea Traditional Markets 12-pick (integrates #03 market / #244 Busan / #365 herbal) — Gwangjang Market (Jongno since 1905, bindaetteok·nokdujeon·yukhoe, foreigner vlog #1) + Namdaemun Market (Junggu since 1414, galchijorim·kkorigomtang) + Dongdaemun Market (#172 fashion + night market 24h) + Tongin Market (Seochon #191, brass coins = bento, MZ #1) + Mangwon Market (#223 tteokbokki·skate) + Gyeongdong Market (#365 Cheongnyangni herbal medicine #1) + Jungbu Market (#11 Euljiro dried seafood) + Bujeon Market (#143 Busan dwaeji-gukbap·offal) + Jagalchi Market (#244 Korea's #1 seafood/sashimi, foreigner vlog #1) + Yangnyeongsi Daegu (#317 350-year, Korea's #1 herbal) + Jeonju Nambu Market (#255 night market Fri/Sat, hanok village adjacent) + Gwangju Yangdong Market (#318 Honam's largest)","en_available":false},
+  {"id":"381","slug":"cafe-district","title_kr":"한국 카페 거리 매트릭스","title_en":"Korea Cafe District Matrix Full Guide","category":"C","tags":["foreigner","cafe","mz","seongsu","dosan","ikseondong","yeonnam","hannam","gangnam","seorae","yeouido","outskirts","hanok-cafe","instagram"],"summary_kr":"한국 카페 거리 매트릭스 12선 (#225 카페·#145 성수·#361 베이커리·#295 도산 후속) — 성수 카페 거리(어니언 LBM 누데이크 OPS 한국 #1 MZ)·도산공원 가로수길(#295 MZ 1번지)·한남 이태원(#144 OPS LBM) + 익선동 한옥 카페(#12 한옥 #1)·북촌 삼청 한옥(#12)·서촌 한옥(#191 통의 체부) + 연남 연희(#156 연트럴파크 MZ 골목)·홍대 합정(#138·#222)·망원(#223) + 강남 서래 반포(#142·#173 MAILLET 프랑스 #1)·여의도 더현대(#169·#366 12층 MZ)·외곽(양평 강화 파주 신혼 #277)","summary_en":"Korea Cafe District Matrix 12-pick (extends #225 cafe / #145 Seongsu / #361 bakery / #295 Dosan) — Seongsu cafe street (Onion + LBM + Nudake + OPS, Korea's #1 MZ) + Dosan/Garosu-gil (#295 MZ #1) + Hannam/Itaewon (#144 OPS + LBM) + Ikseondong hanok cafe (#12 Korea's #1 hanok cafe, foreigner Instagram #1) + Bukchon/Samcheong hanok (#12) + Seochon hanok (#191 Tongui/Chebu) + Yeonnam/Yeonhui (#156 Yeontral Park MZ alley) + Hongdae/Hapjeong (#138/#222) + Mangwon (#223) + Gangnam/Seorae/Banpo (#142/#173 MAILLET Korea's #1 French bakery since 1995) + Yeouido The Hyundai (#169/#366 2021 12-floor MZ #1) + Outskirts (Yangpyeong/Ganghwa/Paju, #277 honeymoon)","en_available":false},
   {
     "id": "013",
     "slug": "namsan",
