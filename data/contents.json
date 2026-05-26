@@ -7666,5 +7666,102 @@
     "summary_kr": "정선 5일장 한국 #1 (장날 2·7일자) + **정선아리랑 UNESCO 인류무형문화유산** + 아우라지 아리랑 발상지 + 하이원 리조트 (스키)·강원랜드 카지노·하이원 슬로프 18 + 정암사 (적멸보궁) + 화암동굴·민둥산 (10월 억새) + 곤드레밥·황기·메밀전·콧등치기 국수. KTX 청량리 2.5h. 1박2일 풀/겨울 스키 2박. 서울 외 #20 완결.",
     "summary_en": "Jeongseon 5-day Market Korea #1 (2nd/7th day) + **Jeongseon Arirang UNESCO Intangible Heritage** + Aurogi (Arirang origin) + High1 Resort (ski)·Kangwon Land Casino·High1 18 slopes + Jeongam-sa (jeokmyeolbogung) + Hwaam Cave·Mindungsan (Oct silver grass) + gondre-bap·hwanggi·buckwheat pancake. KTX Cheongnyangni 2.5h. 1N2D + winter 2N. Non-Seoul #20 final.",
     "en_available": false
+  },
+  {
+    "id": "421",
+    "slug": "korea-spring-map",
+    "title_kr": "Korea Spring Map — 외국인 관광객 한국 봄 (3~5월) 풀 메타 가이드 12 시그니처",
+    "title_en": "Korea Spring Map",
+    "category": "B",
+    "tags": [
+      "foreigner",
+      "spring",
+      "cherry-blossom",
+      "plum-blossom",
+      "tulip",
+      "flower-expo",
+      "meta-season"
+    ],
+    "summary_kr": "한국 전국 봄 매트릭스 (3~5월) — 진해 군항제·여의도·경주·서울숲 벚꽃 + 광양 매화·통도사 + 태안 안면도 꽃박람회·에버랜드 튤립·고양 꽃박람회 + 봄나물·딸기·미나리 + 한복·궁궐 봄. 시즌·축제 메타 1편.",
+    "summary_en": "Korea nationwide spring matrix (Mar~May) — Jinhae·Yeouido·Gyeongju·Seoul cherry blossom + Gwangyang plum·Tongdosa + Taean·Everland·Goyang flower expo + spring greens·strawberry·minari + hanbok·palace spring. Season·festival #1.",
+    "en_available": false
+  },
+  {
+    "id": "422",
+    "slug": "korea-summer-map",
+    "title_kr": "Korea Summer Map — 외국인 관광객 한국 여름 (6~8월) 풀 메타 가이드 12 시그니처",
+    "title_en": "Korea Summer Map",
+    "category": "B",
+    "tags": [
+      "foreigner",
+      "summer",
+      "hangang",
+      "beach",
+      "boryeong-mud",
+      "surfing",
+      "meta-season"
+    ],
+    "summary_kr": "한국 여름 매트릭스 (6~8월) — 한강 11권역·여의도 매직카펫·반포 무지개분수 + 부산 해운대·광안리·송정·여수 밤바다 + 양양 서핑 + 보령 머드축제 7월·부산 바다축제 8월 + 냉면·삼계탕·빙수·수박·콩국수. 시즌·축제 메타 2편.",
+    "summary_en": "Korea summer matrix (Jun~Aug) — Hangang 11 zones·Yeouido Magic Carpet·Banpo Rainbow Fountain + Busan Haeundae·Gwangalli·Songjeong·Yeosu night sea + Yangyang surfing + Boryeong Mud (Jul)·Busan Sea (Aug) + naengmyeon·samgyetang·bingsu·watermelon. Season #2.",
+    "en_available": false
+  },
+  {
+    "id": "423",
+    "slug": "korea-autumn-map",
+    "title_kr": "Korea Autumn Map — 외국인 관광객 한국 가을 (9~11월) 풀 메타 가이드 12 시그니처",
+    "title_en": "Korea Autumn Map",
+    "category": "B",
+    "tags": [
+      "foreigner",
+      "autumn",
+      "foliage",
+      "silver-grass",
+      "biff",
+      "festival",
+      "meta-season"
+    ],
+    "summary_kr": "한국 가을 매트릭스 (9~11월) — 설악 (10말)·내장 (11초)·지리·북한 단풍 + 정선 민둥산·영남알프스 신불산 억새 + 봉평 이효석문화제 9월·BIFF 10월·서울 BISA 11월 + 영덕 대게·전어·송이·곶감. 시즌·축제 메타 3편.",
+    "summary_en": "Korea autumn matrix (Sep~Nov) — Seorak (late Oct)·Naejang (early Nov)·Jiri·Bukhansan foliage + Jeongseon Mindungsan·Yeongnam Sinbulsan silver grass + Bongpyeong Lee Hyo-seok Festival Sep·BIFF Oct·Seoul BISA Nov + Yeongdeok snow crab·gizzard shad·matsutake. Season #3.",
+    "en_available": false
+  },
+  {
+    "id": "424",
+    "slug": "korea-winter-map",
+    "title_kr": "Korea Winter Map — 외국인 관광객 한국 겨울 (12~2월) 풀 메타 가이드 12 시그니처",
+    "title_en": "Korea Winter Map",
+    "category": "B",
+    "tags": [
+      "foreigner",
+      "winter",
+      "ski",
+      "illumination",
+      "hwacheon",
+      "onsen",
+      "meta-season"
+    ],
+    "summary_kr": "한국 겨울 매트릭스 (12~2월) — 평창·정선·휘닉스·곤지암 스키 + DDP·롯데타워·광화문·에버랜드·청계천 일루미네이션 + 화천 산천어축제 1월 (외국인 50만+)·태백 눈축제·인제 빙어 + 이천 테르메덴·수안보·도고 온천 + 동지팥죽·만두국·붕어빵·호떡. 시즌·축제 메타 4편.",
+    "summary_en": "Korea winter matrix (Dec~Feb) — Pyeongchang·Jeongseon·Phoenix·Konjiam ski + DDP·Lotte Tower·Gwanghwamun·Everland·Cheonggyecheon illumination + Hwacheon Sancheoneo Festival Jan (50k+ foreigners)·Taebaek Snow·Inje Bingeo + Icheon Thermeden·Suanbo·Dogo hot springs + dongji patjuk·mandu-guk·bungeoppang·hotteok. Season #4.",
+    "en_available": false
+  },
+  {
+    "id": "425",
+    "slug": "korea-festivals-map",
+    "title_kr": "Korea Festivals Map — 외국인 관광객 한국 연중 축제·이벤트 풀 메타 가이드 12 시그니처",
+    "title_en": "Korea Festivals Map",
+    "category": "B",
+    "tags": [
+      "foreigner",
+      "festival",
+      "year-round",
+      "hwacheon",
+      "boryeong",
+      "biff",
+      "jongmyo",
+      "biennale",
+      "meta-season"
+    ],
+    "summary_kr": "한국 연중 축제 매트릭스 12선 — 1월 화천 산천어·태백 눈 + 3월 광양 매화 + 4월 진해 군항제·태안 꽃박람회 + 5월 종묘대제 (UNESCO 인류무형문화유산)·전주국제영화제 + 7월 보령 머드 (외국인 50만+) + 9월 이효석·청주공예비엔날레 + 10월 BIFF + 11월 광주비엔날레. KTO 글로벌 축제 인증. 시즌·축제 메타 5편 완결.",
+    "summary_en": "Korea year-round festivals matrix 12-pick — Jan Hwacheon Sancheoneo·Taebaek Snow + Mar Gwangyang Plum + Apr Jinhae Gunhangje·Taean Flower Expo + May Jongmyo Jerye (UNESCO Intangible)·Jeonju Film Festival + Jul Boryeong Mud (50k+ foreigners) + Sep Lee Hyo-seok·Cheongju Craft Biennale + Oct BIFF + Nov Gwangju Biennale. KTO Global Festival certified. Season #5 final.",
+    "en_available": false
   }
 ]
