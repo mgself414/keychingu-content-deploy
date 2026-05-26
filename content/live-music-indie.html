@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>외국인 라이브 음악 인디 deep dive — KeyChinGu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/main.css">
+<style>
+.detail-wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+}
+.breadcrumb {
+  font-size: 13px;
+  color: var(--text-soft);
+  margin-bottom: 24px;
+}
+.breadcrumb a { color: var(--red); font-weight: 600; }
+.detail-wrap h1 {
+  font-size: 28px; font-weight: 800;
+  color: var(--black); margin-bottom: 8px;
+}
+.detail-wrap h2 {
+  font-size: 22px; font-weight: 700;
+  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--red);
+}
+.detail-wrap h3 {
+  font-size: 17px; font-weight: 600;
+  color: var(--text-mid); margin-top: 20px; margin-bottom: 8px;
+}
+.detail-wrap p {
+  font-size: 15px; line-height: 1.7;
+  color: var(--text-mid); margin-bottom: 12px;
+}
+.detail-wrap ul {
+  padding-left: 20px; margin-bottom: 12px;
+}
+.detail-wrap li {
+  font-size: 14px; line-height: 1.6;
+  color: var(--text-mid); margin-bottom: 6px;
+}
+.detail-wrap table {
+  width: 100%; border-collapse: collapse;
+  margin-bottom: 16px; font-size: 13px;
+}
+.detail-wrap th {
+  background: var(--black); color: #fff;
+  padding: 10px 12px; text-align: left;
+  font-weight: 600; font-size: 11px;
+  text-transform: uppercase; letter-spacing: 0.06em;
+}
+.detail-wrap td {
+  padding: 10px 12px; border-bottom: 1px solid var(--border);
+  color: var(--text-mid);
+}
+.detail-wrap tr:nth-child(even) td { background: rgba(0,0,0,0.02); }
+.detail-wrap hr {
+  border: none; height: 1px;
+  background: var(--border); margin: 24px 0;
+}
+.detail-wrap code {
+  background: rgba(33,140,204,0.08);
+  padding: 2px 6px; border-radius: 4px;
+  font-size: 13px; color: var(--blue);
+}
+.detail-nav {
+  display: flex; justify-content: space-between;
+  margin-top: 48px; padding-top: 20px;
+  border-top: 1px solid var(--border);
+  font-size: 14px; font-weight: 600;
+}
+.share-bar {
+  display: flex; align-items: center; gap: 10px;
+  margin-top: 40px; padding: 16px 20px;
+  background: #f9f9f9; border-radius: 12px;
+  border: 1px solid var(--border);
+}
+.share-label {
+  font-size: 14px; font-weight: 600; color: var(--text-soft);
+  margin-right: 8px;
+}
+.share-btn {
+  width: 40px; height: 40px;
+  border: none; border-radius: 50%;
+  background: #fff; cursor: pointer;
+  font-size: 1.1rem; transition: all 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  display: inline-flex; align-items: center; justify-content: center;
+}
+.share-btn:hover { transform: translateY(-2px); box-shadow: 0 3px 8px rgba(0,0,0,0.15); }
+.share-twitter:hover { background: #000; color: #fff; }
+.share-facebook:hover { background: #1877f2; color: #fff; }
+.share-kakao:hover { background: #fee500; }
+.share-copy:hover { background: #218CCC; color: #fff; }
+/* EN toggle disabled — 영문판 미생성 콘텐츠 (2026-05-16 patch) */
+.lang-switch .lang-disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  text-decoration: line-through;
+  padding: 4px 10px;
+  color: var(--text-soft, #888);
+  font-size: 13px;
+  user-select: none;
+}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <div class="lang-switch">
+    <a href="../content/live-music-indie.html" class="active">KR</a>
+    <span class="lang-disabled" title="영문판 준비 중">EN</span>
+  </div>
+</header>
+
+<div class="detail-wrap">
+  <div class="breadcrumb"><a href="../index.html">전체 가이드</a> &rsaquo; 외국인 라이브 음악 인디 deep dive</div>
+  <h1>외국인 라이브 음악·인디 deep dive — 롤링홀·KT&amp;G 상상마당 12선</h1>
+<p>&gt; <strong>부제</strong>: 홍대 라이브·인디·재즈·외국인 글로벌 매니아·#138·#387·#454 후속</p>
+<p>ISSUE 03 · #455 · 2026-05-26</p>
+<hr>
+<h2>🎯 왜 외국인 라이브 음악·인디인가</h2>
+<p>외국인 글로벌 매니아 1번지 = <strong>라이브 음악·인디 deep dive</strong> (#138 홍대·#387 K-pop·#454 클럽 후속). 홍대 라이브 + 인디 + 재즈 + 외국인 글로벌 매니아 + KT&amp;G 상상마당·롤링홀.</p>
+<hr>
+<h2>★ 한눈에 12선</h2>
+<table><thead><tr>
+<th>#</th>
+<th>라이브 홀</th>
+<th>4축</th>
+<th>시그니처</th>
+</tr></thead><tbody>
+<tr>
+<td>1</td>
+<td><strong>KT&amp;G 상상마당 (홍대)</strong> ★ 한국 #1 인디 (#366·#138)</td>
+<td>홍대 라이브 #1</td>
+<td>1500석·외국인 매니아·#366</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>롤링홀 (홍대)</strong> ★ 인디 #1 홀</td>
+<td>홍대 라이브 #1</td>
+<td>500석·외국인 매니아 1번지</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>라이브존 (홍대)</strong></td>
+<td>홍대 라이브 #1</td>
+<td>200~500석·외국인 매니아</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>클럽 FF·NB (홍대 라이브)</strong> ★ #138·#454</td>
+<td>인디 클럽</td>
+<td>외국인 매니아·#454 통합</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>Strange Fruit·Veloso (홍대)</strong></td>
+<td>인디 클럽</td>
+<td>외국인 인디·MZ</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>EBS 스페이스 공감·KBS 공개홀</strong></td>
+<td>인디 클럽</td>
+<td>한국 #1 라이브 방송·외국인 매니아</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>올댓재즈 (이태원)</strong> ★ 한국 #1 재즈</td>
+<td>재즈·라운지</td>
+<td>1976 한국 #1 재즈·외국인 매니아 1번지</td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>재즈 클럽 Onefive (강남·청담 #296)</strong></td>
+<td>재즈·라운지</td>
+<td>외국인 럭셔리·MZ</td>
+</tr>
+<tr>
+<td>9</td>
+<td><strong>부기 우기 (홍대 재즈)</strong></td>
+<td>재즈·라운지</td>
+<td>홍대·외국인 매니아</td>
+</tr>
+<tr>
+<td>10</td>
+<td><strong>외국인 K-pop 라이브 + #387 콘서트</strong> ★</td>
+<td>K-content 매니아</td>
+<td>#387 4 기획사·#402 통합</td>
+</tr>
+<tr>
+<td>11</td>
+<td><strong>외국인 영어 OK 음악 패키지 (Klook·KKday)</strong></td>
+<td>K-content 매니아</td>
+<td>영어 OK·외국인 매니아</td>
+</tr>
+<tr>
+<td>12</td>
+<td><strong>외국인 라이브 음악 패키지 (Klook·KKday·KTO)</strong> ★</td>
+<td>K-content 매니아</td>
+<td>KTO 인증·외국인 매니아</td>
+</tr>
+</tbody></table>
+<p><strong>+ 추가 4</strong>: 외국인 인디 페스티벌 (DMZ Peace Train·자라섬 재즈)·외국인 K-pop 인디 아티스트 (IU·악동뮤지션·잔나비)·외국인 명동·강남 라이브 (#13·#142)·외국인 음악 + #387 댄스 + #399 통합</p>
+<hr>
+<h2>⚠ 외국인 자주 실수 5가지</h2>
+<p>1. <strong>&quot;한국 음악 = K-pop만&quot;</strong>: 한국 음악 = <strong>K-pop + 인디 (잔나비·IU·악동뮤지션) + 재즈 (올댓재즈 1976) + 외국인 글로벌 매니아</strong> + #387·#138 통합.</p>
+<p>2. <strong>&quot;홍대 라이브 = 그냥 클럽&quot;</strong>: 홍대 라이브 = <strong>KT&amp;G 상상마당 (1500석 한국 #1)·롤링홀 (500석)·라이브존·외국인 매니아 1번지</strong> + 인디·#138·#366 통합.</p>
+<p>3. <strong>&quot;외국인 영어 OK 라이브 = 없음&quot;</strong>: 외국인 영어 OK = <strong>KT&amp;G 상상마당·롤링홀·올댓재즈·외국인 매니아 1번지</strong> + Klook·KKday·KTO 패키지·#387 통합.</p>
+<p>4. <strong>&quot;올댓재즈 = 한국인만&quot;</strong>: 올댓재즈 (이태원) = <strong>1976 한국 #1 재즈 + 외국인 매니아 1번지</strong> + #144 외국인 거주·#252 통합.</p>
+<p>5. <strong>&quot;외국인 인디 = 못 함&quot;</strong>: 외국인 인디 = <strong>KT&amp;G 상상마당·롤링홀·#138·외국인 글로벌 매니아 1번지</strong> + IU·악동뮤지션·잔나비·#387 통합.</p>
+<hr>
+<h2>① 홍대 라이브 #1 (3)</h2>
+<h3>1. KT&amp;G 상상마당 ★ 한국 #1 인디</h3>
+<ul>
+<li>주소: 홍대 (#138·#366)</li>
+<li>외국인 ★: ◎◎ — 한국 #1 인디 1500석·외국인 매니아</li>
+<li>시그니처: 외국인 매니아 1번지·#366 통합</li>
+</ul>
+<h3>2. 롤링홀 ★ 인디 #1 홀</h3>
+<ul>
+<li>주소: 홍대 (#138)</li>
+<li>외국인 ★: ◎◎ — 500석·외국인 매니아 1번지</li>
+<li>시그니처: 외국인 인디 매니아·#138</li>
+</ul>
+<h3>3. 라이브존 (홍대)</h3>
+<ul>
+<li>주소: 홍대 (#138)</li>
+<li>외국인 ★: ◎◎ — 200~500석·외국인 매니아</li>
+<li>시그니처: 외국인 매니아·#138 통합</li>
+</ul>
+<hr>
+<h2>② 인디 클럽 (3)</h2>
+<h3>4. 클럽 FF·NB ★ #138·#454</h3>
+<ul>
+<li>매장: 홍대 (#138)</li>
+<li>외국인 ★: ◎◎ — 외국인 매니아·#454 통합</li>
+<li>시그니처: 외국인 매니아·#454 통합</li>
+</ul>
+<h3>5. Strange Fruit·Veloso (홍대)</h3>
+<ul>
+<li>매장: 홍대 (#138)</li>
+<li>외국인 ★: ◎◎ — 외국인 인디·MZ</li>
+<li>시그니처: 외국인 인디 매니아·#138</li>
+</ul>
+<h3>6. EBS 스페이스 공감·KBS 공개홀</h3>
+<ul>
+<li>주소: EBS·KBS 라이브 방송</li>
+<li>외국인 ★: ◎◎ — 한국 #1 라이브 방송·외국인 매니아</li>
+<li>시그니처: 외국인 매니아·#387 통합</li>
+</ul>
+<hr>
+<h2>③ 재즈·라운지 (3)</h2>
+<h3>7. 올댓재즈 ★ 한국 #1 재즈 1976</h3>
+<ul>
+<li>주소: 이태원 (#144)</li>
+<li>외국인 ★: ◎◎ — 1976·한국 #1 재즈·외국인 매니아 1번지</li>
+<li>시그니처: 외국인 매니아·#144 통합·#252</li>
+</ul>
+<h3>8. 재즈 클럽 Onefive (강남·청담)</h3>
+<ul>
+<li>주소: 강남·청담 (#142·#296)</li>
+<li>외국인 ★: ◎◎ — 외국인 럭셔리·MZ</li>
+<li>시그니처: 외국인 매니아·#296 통합</li>
+</ul>
+<h3>9. 부기 우기 (홍대 재즈)</h3>
+<ul>
+<li>주소: 홍대 (#138)</li>
+<li>외국인 ★: ◎ — 외국인 매니아·홍대 재즈</li>
+<li>시그니처: 외국인 매니아·#138</li>
+</ul>
+<hr>
+<h2>④ K-content 매니아 (3 + 추가 4)</h2>
+<h3>10. 외국인 K-pop 라이브 + #387 콘서트 ★</h3>
+<ul>
+<li>#387·#402 통합·KSPO·잠실·고척돔</li>
+<li>외국인 ★: ◎◎ — #387 4 기획사·#402 통합</li>
+<li>시그니처: 외국인 매니아·#402·#387</li>
+</ul>
+<h3>11. 외국인 영어 OK 음악 패키지 (Klook·KKday)</h3>
+<ul>
+<li>외국인 ★: ◎◎ — 영어 OK·외국인 매니아</li>
+<li>시그니처: 외국인 매니아·#387 통합</li>
+</ul>
+<h3>12. 외국인 라이브 음악 패키지 ★ Klook·KKday·KTO</h3>
+<ul>
+<li>KTO 인증·외국인 매니아 패키지</li>
+<li>외국인 ★: ◎◎ — 외국인 매니아 1번지</li>
+<li>시그니처: 외국인 매니아 풀세트</li>
+</ul>
+<h3>+ 추가 4</h3>
+<ul>
+<li><strong>외국인 인디 페스티벌</strong> — DMZ Peace Train·자라섬 재즈</li>
+<li><strong>외국인 K-pop 인디 아티스트</strong> — IU·악동뮤지션·잔나비</li>
+<li><strong>외국인 명동·강남 라이브 (#13·#142)</strong> — 외국인 매니아</li>
+<li><strong>외국인 음악 + #387 댄스 + #399 통합</strong> — 외국인 매니아 풀세트</li>
+</ul>
+<hr>
+<h2>⚙ FAQ 6개</h2>
+<p>1. <strong>외국인 홍대 라이브 1순위</strong>: KT&amp;G 상상마당·롤링홀·라이브존·#138.</p>
+<p>2. <strong>외국인 재즈</strong>: 올댓재즈 (이태원 1976·#1)·Onefive (청담)·부기 우기 (홍대).</p>
+<p>3. <strong>외국인 K-pop 라이브</strong>: #387 4 기획사·#402 콘서트·KSPO·잠실·고척돔.</p>
+<p>4. <strong>외국인 인디 아티스트</strong>: IU·악동뮤지션·잔나비·외국인 글로벌 매니아.</p>
+<p>5. <strong>외국인 영어 OK</strong>: KT&amp;G 상상마당·롤링홀·올댓재즈·#387 영어 풀세트.</p>
+<p>6. <strong>외국인 통합</strong>: 라이브 음악 + #387 K-pop + #399 댄스 + #402 콘서트 + #454 클럽.</p>
+<hr>
+<h2>🗺 외국인 풀데이 코스 3개</h2>
+<h3>A. 외국인 첫 라이브 풀데이 (홍대 #138)</h3>
+<ul>
+<li>19:00 홍대 한식·#138 → 21:00 KT&amp;G 상상마당 (#366) → 23:00 롤링홀 → 02:00 #454 클럽</li>
+</ul>
+<h3>B. 외국인 재즈 1박2일 (#144·#296)</h3>
+<ul>
+<li>Day 1: 올댓재즈 (이태원 1976) + #356 호텔</li>
+<li>Day 2: Onefive 청담 (#296) + #387 K-pop 콘서트 (#402)</li>
+</ul>
+<h3>C. 외국인 K-pop + 라이브 풀세트 1주일 (#387·#399·#402·#455)</h3>
+<ul>
+<li>Day 1~2: 라이브 (KT&amp;G·롤링홀) + 인디 아티스트</li>
+<li>Day 3~5: K-pop (#387) + 콘서트 (#402) + 댄스 (#399)</li>
+<li>Day 6~7: 외국인 매니아 패키지·KTO·#454 클럽</li>
+</ul>
+<hr>
+<h2>🌸 시즌 5</h2>
+<ul>
+<li><strong>봄 3~5월</strong>: 외국인 매니아·#385 자라섬 재즈 (10월)·외국인 매니아</li>
+<li><strong>여름 6~8월</strong>: 외국인 매니아·여름 야외 라이브·#385</li>
+<li><strong>가을 9~11월</strong>: 자라섬 재즈 (10월)·외국인 매니아 1번지</li>
+<li><strong>겨울 12~2월</strong>: 외국인 매니아·#385 통합</li>
+<li><strong>연중</strong>: KT&amp;G·롤링홀·올댓재즈·외국인 매니아</li>
+</ul>
+<hr>
+<h2>🔗 관련</h2>
+<ul>
+<li>#13 명동·#138 홍대·#142 강남·#144 이태원·#178 외국인 첫 방문·#252 외국인 거주·#293 한남·#296 청담·#356 호텔·#366 복합 문화공간·#385 4계절·#387 K-pop·#399 K-pop 댄스·#402 K-pop 콘서트·#404 페스티벌·#454 클럽·야간</li>
+</ul>
+<h2>🏷 태그</h2>
+<p><code>#외국인라이브음악인디deepdive</code> <code>#KoreaLiveMusicIndieForeigner</code> <code>#KT&amp;G상상마당홍대한국1인디1500석</code> <code>#롤링홀홍대인디1</code> <code>#라이브존홍대200-500석</code> <code>#클럽FFNB홍대#454</code> <code>#StrangeFruitVeloso홍대인디</code> <code>#EBS스페이스공감KBS공개홀</code> <code>#올댓재즈이태원1976한국1재즈</code> <code>#Onefive강남청담재즈</code> <code>#부기우기홍대재즈</code> <code>#K-pop라이브#387 4기획사#402</code> <code>#영어OK음악Klook KKday</code> <code>#KlookKKdayKTO라이브패키지</code> <code>#DMZ Peace Train자라섬재즈IU악동뮤지션잔나비</code> <code>#키친구</code></p>
+
+  <div class="share-bar">
+    <span class="share-label">공유</span>
+    <button class="share-btn share-twitter" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent('외국인 라이브 음악 인디 deep dive') + '&url=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Twitter">𝕏</button>
+    <button class="share-btn share-facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Facebook">f</button>
+    <button class="share-btn share-kakao" onclick="navigator.share ? navigator.share({title: '외국인 라이브 음악 인디 deep dive', url: window.location.href}) : navigator.clipboard.writeText(window.location.href).then(function() { alert('링크 복사됨!'); })" aria-label="Kakao/Share">📤</button>
+    <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href).then(function() { this.textContent = '✓'; setTimeout(function() { document.querySelector('.share-copy').textContent = '🔗'; }, 1500); }.bind(this))" aria-label="Copy link">🔗</button>
+  </div>
+
+  <div class="detail-nav">
+    <div><a href="club-nightlife.html" style="color:var(--red);">&larr; 외국인 클럽 야간 라이프스타일 deep dive</a></div>
+    <div><a href="gym-fitness-boxing.html" style="color:var(--red);">외국인 헬스장 피트니스 복싱 deep dive &rarr;</a></div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <p><a href="https://instagram.com/keychingu.korea" target="_blank">@keychingu.korea</a> &mdash; Seoul for MZ FIT Travelers</p>
+</footer>
+</body>
+</html>
