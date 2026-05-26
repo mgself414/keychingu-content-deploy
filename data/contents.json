@@ -8554,5 +8554,96 @@
     "summary_kr": "한국 웰니스 리트리트 매트릭스 — 진관사·봉은사·해인사 템플스테이 + 드래곤힐·실로암·아쿠아필드·부산 스파랜드 K-spa + 서울숲·강남·이태원 vinyasa 요가 + 이천 테르메덴·수안보 온천 + 약령시 (대구 #393·350년)·강남 한방·아유르베다·도심 자연 명상 (북한산·#176·#177). 라이프스타일 axis 5편 완결.",
     "summary_en": "Korea wellness retreat matrix — Jinkwansa·Bongeunsa·Haeinsa temple stay + Dragon Hill·Siloam·Aquafield·Busan Spa Land K-spa + Seoul Forest·Gangnam·Itaewon vinyasa yoga + Icheon Termeden·Suanbo hot springs + Yangnyeongsi (Daegu·350yr)·Gangnam hanbang·Ayurveda·urban nature meditation. Lifestyle axis #5 final.",
     "en_available": false
+  },
+  {
+    "id": "464",
+    "slug": "canada-tourist-essentials",
+    "title_kr": "Canada Tourist Essentials — 외국인 관광객 캐나다 K-pop·워케이션·교환학생 풀 메타 가이드 12 시그니처",
+    "title_en": "Canada Tourist Essentials",
+    "category": "B",
+    "tags": [
+      "foreigner",
+      "canada",
+      "kpop",
+      "workation",
+      "korean-canadian",
+      "meta-segment"
+    ],
+    "summary_kr": "캐나다 매트릭스 — 40만/년 + K-pop fan 500만+ (인구 12%) + 한·캐 워홀 (35세·1년·연 4,000명) + Korean Canadian 25만+ + SKY KLI 교환학생 + 디지털 노마드 비자 2024 + 자유여행 90%. 신규 segment 1편 (4th tier 도달).",
+    "summary_en": "Canada matrix — 400k/yr + K-pop fan 5M+ (12% of population) + Korea-Canada working holiday (35yo·1yr·4,000/yr) + Korean Canadians 250k+ + SKY KLI exchange + Digital Nomad visa 2024 + self-tour 90%. New segment #1 (4th tier).",
+    "en_available": false
+  },
+  {
+    "id": "465",
+    "slug": "thailand-tourist-essentials",
+    "title_kr": "Thailand Tourist Essentials — 외국인 관광객 태국 K-drama·자유여행·할랄 풀 메타 가이드 12 시그니처",
+    "title_en": "Thailand Tourist Essentials",
+    "category": "B",
+    "tags": [
+      "foreigner",
+      "thailand",
+      "kdrama",
+      "buddhism",
+      "self-tour",
+      "meta-segment"
+    ],
+    "summary_kr": "태국 매트릭스 — 60만/년 동남아 #1 단독 + 한·태 직항 + BTS Thailand ARMY 100만+ + 자유여행 70%·14박 #2 장기 + 무비자 90일 + 불교 90% (#345·#463 한·태 불교 fit) + #192 동남아 메타와 단독 차별. 신규 segment 2편.",
+    "summary_en": "Thailand matrix — 600k/yr SEA #1 + Korea-Thailand direct flights + BTS Thailand ARMY 1M+ + self-tour 70%·14-night #2 long stay + visa-free 90 days + Buddhism 90% (#345·#463 Korea-Thailand Buddhism fit). New segment #2 (SEA #1 standalone).",
+    "en_available": false
+  },
+  {
+    "id": "466",
+    "slug": "philippines-tourist-essentials",
+    "title_kr": "Philippines Tourist Essentials — 외국인 관광객 필리핀 한류·OFW·다종교 풀 메타 가이드 12 시그니처",
+    "title_en": "Philippines Tourist Essentials",
+    "category": "B",
+    "tags": [
+      "foreigner",
+      "philippines",
+      "ofw",
+      "catholic",
+      "english-friendly",
+      "meta-segment"
+    ],
+    "summary_kr": "필리핀 매트릭스 — 35만/년 + 한·필 직항 + 가톨릭 80% (혜화·명동 가톨릭 cluster·동남아 #1 가톨릭) + 영어 90% (#194 미국 영어 fit) + OFW 한국 거주 50만+ 가족 방문 (자동차·조선·삼성·LG) + BTS Philippines ARMY 50만+. 신규 segment 3편.",
+    "summary_en": "Philippines matrix — 350k/yr + Korea-Philippines direct flights + Catholic 80% (Hyehwa·Myeongdong Catholic cluster·SEA #1 Catholic) + English 90% + OFW Korea 500k+ family visits (auto·shipyard·Samsung·LG) + BTS Philippines ARMY 500k+. New segment #3.",
+    "en_available": false
+  },
+  {
+    "id": "467",
+    "slug": "malaysia-tourist-essentials",
+    "title_kr": "Malaysia Tourist Essentials — 외국인 관광객 말레이시아 할랄·K-pop·다종교 풀 메타 가이드 12 시그니처",
+    "title_en": "Malaysia Tourist Essentials",
+    "category": "B",
+    "tags": [
+      "foreigner",
+      "malaysia",
+      "halal",
+      "multi-religion",
+      "kpop",
+      "meta-segment"
+    ],
+    "summary_kr": "말레이 매트릭스 — 40만/년 + 한·말 직항 (KL·페낭·코타키나발루) + 무슬림 65%·중화계 25%·인도계 7% 다종교 한국 #1 fit (#192·#453·#367) + KMF 할랄 30+ + 영어 친화 (구 영국령) + BTS Malaysia ARMY 80만+. 신규 segment 4편.",
+    "summary_en": "Malaysia matrix — 400k/yr + Korea-Malaysia direct flights (KL·Penang·Kota Kinabalu) + Muslim 65%·Chinese 25%·Indian 7% multi-religion #1 (#192·#453·#367) + KMF halal 30+ + English-friendly (former British) + BTS Malaysia ARMY 800k+. New segment #4.",
+    "en_available": false
+  },
+  {
+    "id": "468",
+    "slug": "indonesia-tourist-essentials",
+    "title_kr": "Indonesia Tourist Essentials — 외국인 관광객 인도네시아 무슬림·K-pop·할랄 풀 메타 가이드 12 시그니처",
+    "title_en": "Indonesia Tourist Essentials",
+    "category": "B",
+    "tags": [
+      "foreigner",
+      "indonesia",
+      "muslim",
+      "halal",
+      "kpop-army",
+      "bali",
+      "meta-segment"
+    ],
+    "summary_kr": "인도네시아 매트릭스 — 45만/년 + 세계 #1 무슬림 인구 2.7억 (87%) + 한·인니 직항 (자카르타·발리·수라바야) + BTS Indonesia ARMY 200만+ (세계 #1 K-pop fan 인구) + KMF 할랄 30+ + 발리 힌두 1.7% 다종교 + 자유여행 60%. 신규 segment 5편 완결 (segment 13→18).",
+    "summary_en": "Indonesia matrix — 450k/yr + world's #1 Muslim population 270M (87%) + Korea-Indonesia direct flights (Jakarta·Bali·Surabaya) + BTS Indonesia ARMY 2M+ (world's #1 K-pop fan country) + KMF halal 30+ + Bali Hindu 1.7% + self-tour 60%. New segment #5 final (13→18 segments).",
+    "en_available": false
   }
 ]
