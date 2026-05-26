@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>한국 밥상 문화 deep dive — KeyChinGu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/main.css">
+<style>
+.detail-wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+}
+.breadcrumb {
+  font-size: 13px;
+  color: var(--text-soft);
+  margin-bottom: 24px;
+}
+.breadcrumb a { color: var(--red); font-weight: 600; }
+.detail-wrap h1 {
+  font-size: 28px; font-weight: 800;
+  color: var(--black); margin-bottom: 8px;
+}
+.detail-wrap h2 {
+  font-size: 22px; font-weight: 700;
+  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--red);
+}
+.detail-wrap h3 {
+  font-size: 17px; font-weight: 600;
+  color: var(--text-mid); margin-top: 20px; margin-bottom: 8px;
+}
+.detail-wrap p {
+  font-size: 15px; line-height: 1.7;
+  color: var(--text-mid); margin-bottom: 12px;
+}
+.detail-wrap ul {
+  padding-left: 20px; margin-bottom: 12px;
+}
+.detail-wrap li {
+  font-size: 14px; line-height: 1.6;
+  color: var(--text-mid); margin-bottom: 6px;
+}
+.detail-wrap table {
+  width: 100%; border-collapse: collapse;
+  margin-bottom: 16px; font-size: 13px;
+}
+.detail-wrap th {
+  background: var(--black); color: #fff;
+  padding: 10px 12px; text-align: left;
+  font-weight: 600; font-size: 11px;
+  text-transform: uppercase; letter-spacing: 0.06em;
+}
+.detail-wrap td {
+  padding: 10px 12px; border-bottom: 1px solid var(--border);
+  color: var(--text-mid);
+}
+.detail-wrap tr:nth-child(even) td { background: rgba(0,0,0,0.02); }
+.detail-wrap hr {
+  border: none; height: 1px;
+  background: var(--border); margin: 24px 0;
+}
+.detail-wrap code {
+  background: rgba(33,140,204,0.08);
+  padding: 2px 6px; border-radius: 4px;
+  font-size: 13px; color: var(--blue);
+}
+.detail-nav {
+  display: flex; justify-content: space-between;
+  margin-top: 48px; padding-top: 20px;
+  border-top: 1px solid var(--border);
+  font-size: 14px; font-weight: 600;
+}
+.share-bar {
+  display: flex; align-items: center; gap: 10px;
+  margin-top: 40px; padding: 16px 20px;
+  background: #f9f9f9; border-radius: 12px;
+  border: 1px solid var(--border);
+}
+.share-label {
+  font-size: 14px; font-weight: 600; color: var(--text-soft);
+  margin-right: 8px;
+}
+.share-btn {
+  width: 40px; height: 40px;
+  border: none; border-radius: 50%;
+  background: #fff; cursor: pointer;
+  font-size: 1.1rem; transition: all 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  display: inline-flex; align-items: center; justify-content: center;
+}
+.share-btn:hover { transform: translateY(-2px); box-shadow: 0 3px 8px rgba(0,0,0,0.15); }
+.share-twitter:hover { background: #000; color: #fff; }
+.share-facebook:hover { background: #1877f2; color: #fff; }
+.share-kakao:hover { background: #fee500; }
+.share-copy:hover { background: #218CCC; color: #fff; }
+/* EN toggle disabled — 영문판 미생성 콘텐츠 (2026-05-16 patch) */
+.lang-switch .lang-disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  text-decoration: line-through;
+  padding: 4px 10px;
+  color: var(--text-soft, #888);
+  font-size: 13px;
+  user-select: none;
+}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <div class="lang-switch">
+    <a href="../content/korean-meal-culture.html" class="active">KR</a>
+    <span class="lang-disabled" title="영문판 준비 중">EN</span>
+  </div>
+</header>
+
+<div class="detail-wrap">
+  <div class="breadcrumb"><a href="../index.html">전체 가이드</a> &rsaquo; 한국 밥상 문화 deep dive</div>
+  <h1>한국 밥상 문화 deep dive — 국·밥·반찬·먹는법 12 매트릭스</h1>
+<p>&gt; <strong>부제</strong>: 한식 밥상 구조·먹는 순서·매너·#14·#400 후속 deep dive</p>
+<p>ISSUE 03 · #502 · 2026-05-27</p>
+<hr>
+<h2>🎯 왜 한국 밥상 문화 deep dive인가</h2>
+<p>외국인 첫 방문자 100% 필수 = <strong>한국 밥상 문화 deep dive</strong> (#14 한식·#133 국밥·#400 외국인 친화 식당 후속). 한국 밥상 = 밥·국·반찬 구조 + 먹는 순서·매너 + 외국인 매니아 1번지.</p>
+<hr>
+<h2>★ 한눈에 12 밥상 매트릭스</h2>
+<table><thead><tr>
+<th>#</th>
+<th>밥상 구성</th>
+<th>4축</th>
+<th>시그니처</th>
+</tr></thead><tbody>
+<tr>
+<td>1</td>
+<td><strong>밥 (Bap·쌀밥·잡곡밥·곤드레)</strong> ★</td>
+<td>밥상 구성 #1</td>
+<td>한식 1번지·외국인 매니아</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>국·찌개 (Guk·Jjigae)</strong></td>
+<td>밥상 구성 #1</td>
+<td>된장찌개·김치찌개·미역국·외국인 매니아</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>반찬 (Banchan 3~10종)</strong> ★</td>
+<td>밥상 구성 #1</td>
+<td>김치·콩나물·시금치·#357 사찰음식 통합</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>한정식 풀세트 (#143·#356 라연 미쉐린)</strong></td>
+<td>밥상 구성 #1</td>
+<td>외국인 럭셔리 매니아·12~24첩</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>백반·기사식당·#388 노포</strong> ★</td>
+<td>밥상 가성비</td>
+<td>외국인 가성비 #1·이문 1902</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>국밥 (#133·#388 우래옥 1946)</strong></td>
+<td>밥상 가성비</td>
+<td>외국인 vlog #1·#129 냉면 통합</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>밥 + 국 + 반찬 먹는 순서</strong> ★</td>
+<td>매너·먹는법</td>
+<td>한국 정통 매니아·외국인 첫 방문</td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>숟가락·젓가락 매너</strong></td>
+<td>매너·먹는법</td>
+<td>외국인 매니아·일본·중국과 차이</td>
+</tr>
+<tr>
+<td>9</td>
+<td><strong>매운맛 레벨 매트릭스 (Spicy 1~5)</strong></td>
+<td>매너·먹는법</td>
+<td>외국인 매니아·물김치·계란찜</td>
+</tr>
+<tr>
+<td>10</td>
+<td><strong>사찰음식 (#357 발우공양) deep</strong> ★</td>
+<td>정통 매니아</td>
+<td>외국인 wellness·5 오신채 미사용</td>
+</tr>
+<tr>
+<td>11</td>
+<td><strong>궁중요리 (한정식·궁중 음식 박물관)</strong></td>
+<td>정통 매니아</td>
+<td>외국인 정통 매니아·#377 박물관</td>
+</tr>
+<tr>
+<td>12</td>
+<td><strong>외국인 한국 밥상 패키지 (Klook·KKday·KTO)</strong> ★</td>
+<td>정통 매니아</td>
+<td>영어 OK·한국 쿠킹 클래스·외국인 매니아</td>
+</tr>
+</tbody></table>
+<p><strong>+ 추가 4</strong>: 외국인 한국 음식 명절 (#279 설·추석·차례상)·외국인 한국 밥상 + #279 통합·외국인 가족 한정식 (#210)·외국인 신혼 한정식 (#277·#416)</p>
+<hr>
+<h2>⚠ 외국인 자주 실수 5가지</h2>
+<p>1. <strong>&quot;한국 음식 = 김치만&quot;</strong>: 한국 밥상 = <strong>밥 (정식 한 그릇) + 국·찌개 + 반찬 3~10종 풀세트</strong> + 외국인 매니아 1번지·#357·#388 통합.</p>
+<p>2. <strong>&quot;반찬 = 무료 무한 리필 안 됨&quot;</strong>: 한국 반찬 = <strong>무료 + 무한 리필 OK</strong> (한식당) + 외국인 매니아·#400 통합·외국인 가성비 1번지.</p>
+<p>3. <strong>&quot;숟가락 = 일본·중국 같음&quot;</strong>: 한국 숟가락 = <strong>밥·국 모두 숟가락 사용</strong> (일본·중국과 차이) + 외국인 매니아 풀세트·매너.</p>
+<p>4. <strong>&quot;한식 = 모두 매움&quot;</strong>: 한식 = <strong>매운맛 1~5 레벨 + 백반·궁중·사찰음식 안 매움</strong> + 외국인 매니아 1순위·#357 사찰·#143 한정식.</p>
+<p>5. <strong>&quot;한정식 = 비쌈만&quot;</strong>: 한정식 = <strong>가성비 (10~25K·#400 외국인 친화) + 럭셔리 (#143·#356 라연 미쉐린 300~800K)</strong> + 외국인 매니아 풀세트.</p>
+<hr>
+<h2>① 밥상 구성 #1 (4)</h2>
+<h3>1. 밥 ★ 쌀밥·잡곡밥·곤드레</h3>
+<ul>
+<li>종류: 쌀밥·잡곡밥·곤드레·콩밥·솥밥</li>
+<li>외국인 ★: ◎◎ — 한식 1번지·외국인 매니아</li>
+<li>시그니처: 1인 1공기·외국인 매니아·#400 통합</li>
+</ul>
+<h3>2. 국·찌개 (Guk·Jjigae)</h3>
+<ul>
+<li>종류: 된장찌개·김치찌개·미역국·소고기무국·청국장·콩나물국</li>
+<li>외국인 ★: ◎◎ — 외국인 매니아·#133·#388 통합</li>
+<li>시그니처: 매운맛 1~5 레벨·외국인 매니아</li>
+</ul>
+<h3>3. 반찬 (Banchan 3~10종) ★</h3>
+<ul>
+<li>종류: 김치·콩나물·시금치·무생채·계란말이·멸치볶음·생선구이·잡채</li>
+<li>외국인 ★: ◎◎ — 외국인 매니아·#357 통합</li>
+<li>시그니처: 무료 + 무한 리필·외국인 가성비 #1</li>
+</ul>
+<h3>4. 한정식 풀세트 ★ #143·#356 라연</h3>
+<ul>
+<li>매장: 신라호텔 라연 (#356·#358 미쉐린)·반얀트리 페스타 (#360)·강남 한정식 (#143)</li>
+<li>외국인 ★: ◎◎ — 외국인 럭셔리 매니아 1번지</li>
+<li>시그니처: 12~24첩·외국인 매니아·#356·#358 통합</li>
+</ul>
+<hr>
+<h2>② 밥상 가성비 (2)</h2>
+<h3>5. 백반·기사식당·#388 노포 ★</h3>
+<ul>
+<li>매장: 이문설농탕 (1902 #388)·기사식당·백반 cluster (8~12K)</li>
+<li>외국인 ★: ◎◎ — 외국인 가성비 #1·외국인 매니아</li>
+<li>시그니처: 외국인 매니아·#388·#400 통합</li>
+</ul>
+<h3>6. 국밥 (#133·#388)</h3>
+<ul>
+<li>매장: 우래옥 1946 평양냉면 (#388)·이문설농탕 1902 (#388)·#133 국밥</li>
+<li>외국인 ★: ◎◎ — 외국인 vlog #1·#129 냉면 통합</li>
+<li>시그니처: 외국인 매니아·#388 통합</li>
+</ul>
+<hr>
+<h2>③ 매너·먹는법 (3)</h2>
+<h3>7. 밥 + 국 + 반찬 먹는 순서 ★</h3>
+<ul>
+<li>순서: 1) 국 한 숟가락 (먼저 입맛) → 2) 밥 한 숟가락 + 반찬 → 3) 국·밥·반찬 반복</li>
+<li>외국인 ★: ◎◎ — 외국인 정통 매니아·#357 통합</li>
+<li>시그니처: 한국 정통 매니아·#400 통합</li>
+</ul>
+<h3>8. 숟가락·젓가락 매너</h3>
+<ul>
+<li>한국 숟가락 = 밥·국 모두 사용 (일본·중국 차이)·금속 젓가락 (한국 정통)</li>
+<li>외국인 ★: ◎◎ — 외국인 매니아·#357·#388 통합</li>
+<li>시그니처: 외국인 매니아 풀세트</li>
+</ul>
+<h3>9. 매운맛 레벨 매트릭스 (Spicy 1~5)</h3>
+<ul>
+<li>1 (순한): 미역국·갈비탕·삼계탕 / 5 (매운): 불닭볶음면·낙곱새·매운 갈비찜</li>
+<li>외국인 ★: ◎◎ — 외국인 매니아·#400 통합</li>
+<li>시그니처: 물김치·계란찜·우유 도움·외국인 매니아</li>
+</ul>
+<hr>
+<h2>④ 정통 매니아 (3 + 추가 4)</h2>
+<h3>10. 사찰음식 (#357 발우공양) deep ★</h3>
+<ul>
+<li>매장: 발우공양 (미쉐린 #357)·#357 사찰음식·향적세계 영어 OK</li>
+<li>외국인 ★: ◎◎ — 외국인 wellness 매니아 1번지</li>
+<li>시그니처: 5 오신채 미사용 (마늘·파·부추·달래·흥거)·외국인 매니아</li>
+</ul>
+<h3>11. 궁중요리·궁중 음식</h3>
+<ul>
+<li>매장: 궁중 음식 박물관 (#377)·#143 강남 한식·#356 라연</li>
+<li>외국인 ★: ◎◎ — 외국인 정통 매니아·#377 통합</li>
+<li>시그니처: 신선로·구절판·외국인 럭셔리 매니아</li>
+</ul>
+<h3>12. 외국인 한국 밥상 패키지 ★ Klook·KKday·KTO</h3>
+<ul>
+<li>Klook·KKday·KTO 인증 + 영어 한국 쿠킹 클래스 (50~150K)</li>
+<li>외국인 ★: ◎◎ — 외국인 매니아 1번지</li>
+<li>시그니처: 외국인 매니아·#400 통합</li>
+</ul>
+<h3>+ 추가 4</h3>
+<ul>
+<li><strong>외국인 한국 명절 (#279)</strong> — 설·추석·차례상·외국인 매니아</li>
+<li><strong>외국인 한국 밥상 + #279 통합</strong> — 명절 매니아 풀세트</li>
+<li><strong>외국인 가족 한정식 (#210)</strong> — 외국인 가족 매니아</li>
+<li><strong>외국인 신혼 한정식 (#277·#416)</strong> — 외국인 신혼 럭셔리 매니아</li>
+</ul>
+<hr>
+<h2>⚙ FAQ 6개</h2>
+<p>1. <strong>외국인 첫 한식 1순위</strong>: 백반 (#388)·한정식 (#400)·국밥 (#133·#388)·외국인 매니아.</p>
+<p>2. <strong>외국인 매너 1순위</strong>: 1) 국 먼저 2) 밥·반찬 3) 숟가락·젓가락·#357 통합.</p>
+<p>3. <strong>외국인 매운맛 대응</strong>: 물김치·계란찜·우유·#400 영어 메뉴 매니아.</p>
+<p>4. <strong>외국인 가성비</strong>: 백반 8~12K·국밥 8~15K·기사식당 5~10K·#388 노포·#400.</p>
+<p>5. <strong>외국인 럭셔리</strong>: 한정식 (#143·#356·#360)·라연 미쉐린·#356·#358 통합.</p>
+<p>6. <strong>외국인 wellness</strong>: 사찰음식 (#357 발우공양)·궁중요리·#357·#359·#365 통합.</p>
+<hr>
+<h2>🗺 외국인 풀데이 밥상 코스 3개</h2>
+<h3>A. 외국인 첫 한식 풀데이 (가성비·정통)</h3>
+<ul>
+<li>09:00 백반·#388 이문설농탕 1902 → 13:00 #143 한정식 (가성비) → 19:00 #133 국밥·#388 우래옥 1946</li>
+</ul>
+<h3>B. 외국인 wellness·사찰 1박2일 (#357·#502)</h3>
+<ul>
+<li>Day 1: 발우공양 (#357·미쉐린) + #359 차·다도 + #357 사찰음식</li>
+<li>Day 2: 진관사 템플스테이 (#332·#357) + #143 한정식 + #357 통합</li>
+</ul>
+<h3>C. 외국인 럭셔리 한정식 1박2일 (#143·#356)</h3>
+<ul>
+<li>Day 1: 신라호텔 라연 (#356·#358 미쉐린) + 시그니엘 호텔 (#356)</li>
+<li>Day 2: 반얀트리 페스타 (#360) + 외국인 한국 쿠킹 클래스 (Klook·#502)</li>
+</ul>
+<hr>
+<h2>🌸 시즌 5</h2>
+<ul>
+<li><strong>봄 3~5월</strong>: 봄나물·외국인 매니아 1순위·#357 통합</li>
+<li><strong>여름 6~8월</strong>: 삼복 삼계탕 (#279 보양)·물김치·#388·외국인 매니아</li>
+<li><strong>가을 9~11월</strong>: 김장 + 외국인 매니아·#357 사찰음식</li>
+<li><strong>겨울 12~2월</strong>: 김치찌개·국밥·#388 노포·따뜻한 한식</li>
+<li><strong>연중</strong>: 백반·한정식·#357·#388·외국인 매니아</li>
+</ul>
+<hr>
+<h2>🔗 관련</h2>
+<ul>
+<li>#14 한식 필수·#129 냉면·#130 고깃집·#131 닭갈비·#132 분식·#133 국밥·#134 만두·#143 강남 한식·#155 이태원·#178 외국인 첫 방문·#206 강남 일식·#210 외국인 가족·#225 카페·#233 디저트·#244 자갈치·#255 전주·#277 신혼·#279 명절·#332 템플스테이·#356 호텔·#357 사찰음식·#358 호텔 조식·#359 차·다도·#360 호텔 다이닝·#365 한방·#377 박물관·#388 노포·#391 음식 매트릭스·#400 외국인 친화 식당·#416 결혼식·#447 사진관</li>
+</ul>
+<h2>🏷 태그</h2>
+<p><code>#한국밥상문화deepdive</code> <code>#KoreaBabsangTableManners</code> <code>#밥쌀밥잡곡밥곤드레솥밥1인1공기</code> <code>#국찌개된장김치미역소고기무국청국장콩나물</code> <code>#반찬3-10종김치콩나물시금치무료무한리필</code> <code>#한정식라연미쉐린반얀트리12-24첩</code> <code>#백반기사식당이문설농탕1902 8-12K가성비1</code> <code>#국밥우래옥1946평양냉면#388#133</code> <code>#먹는순서국먼저밥반찬숟가락젓가락</code> <code>#매운맛Spicy 1-5물김치계란찜우유</code> <code>#사찰음식발우공양미쉐린5오신채미사용</code> <code>#궁중요리신선로구절판박물관</code> <code>#KlookKKdayKTO쿠킹클래스50-150K영어</code> <code>#명절#279차례상가족#210신혼#277</code> <code>#키친구</code></p>
+
+  <div class="share-bar">
+    <span class="share-label">공유</span>
+    <button class="share-btn share-twitter" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent('한국 밥상 문화 deep dive') + '&url=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Twitter">𝕏</button>
+    <button class="share-btn share-facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Facebook">f</button>
+    <button class="share-btn share-kakao" onclick="navigator.share ? navigator.share({title: '한국 밥상 문화 deep dive', url: window.location.href}) : navigator.clipboard.writeText(window.location.href).then(function() { alert('링크 복사됨!'); })" aria-label="Kakao/Share">📤</button>
+    <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href).then(function() { this.textContent = '✓'; setTimeout(function() { document.querySelector('.share-copy').textContent = '🔗'; }, 1500); }.bind(this))" aria-label="Copy link">🔗</button>
+  </div>
+
+  <div class="detail-nav">
+    <div><a href="women-solo-safety.html" style="color:var(--red);">&larr; 외국인 여성 솔로 안전 사기예방 풀가이드</a></div>
+    <div><a href="new-kdrama-2026.html" style="color:var(--red);">2026 신규 K-드라마 영화 촬영지 풀가이드 &rarr;</a></div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <p><a href="https://instagram.com/keychingu.korea" target="_blank">@keychingu.korea</a> &mdash; Seoul for MZ FIT Travelers</p>
+</footer>
+</body>
+</html>
