@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>외국인 SIM 통신 WiFi deep dive — KeyChinGu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/main.css">
+<style>
+.detail-wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+}
+.breadcrumb {
+  font-size: 13px;
+  color: var(--text-soft);
+  margin-bottom: 24px;
+}
+.breadcrumb a { color: var(--red); font-weight: 600; }
+.detail-wrap h1 {
+  font-size: 28px; font-weight: 800;
+  color: var(--black); margin-bottom: 8px;
+}
+.detail-wrap h2 {
+  font-size: 22px; font-weight: 700;
+  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--red);
+}
+.detail-wrap h3 {
+  font-size: 17px; font-weight: 600;
+  color: var(--text-mid); margin-top: 20px; margin-bottom: 8px;
+}
+.detail-wrap p {
+  font-size: 15px; line-height: 1.7;
+  color: var(--text-mid); margin-bottom: 12px;
+}
+.detail-wrap ul {
+  padding-left: 20px; margin-bottom: 12px;
+}
+.detail-wrap li {
+  font-size: 14px; line-height: 1.6;
+  color: var(--text-mid); margin-bottom: 6px;
+}
+.detail-wrap table {
+  width: 100%; border-collapse: collapse;
+  margin-bottom: 16px; font-size: 13px;
+}
+.detail-wrap th {
+  background: var(--black); color: #fff;
+  padding: 10px 12px; text-align: left;
+  font-weight: 600; font-size: 11px;
+  text-transform: uppercase; letter-spacing: 0.06em;
+}
+.detail-wrap td {
+  padding: 10px 12px; border-bottom: 1px solid var(--border);
+  color: var(--text-mid);
+}
+.detail-wrap tr:nth-child(even) td { background: rgba(0,0,0,0.02); }
+.detail-wrap hr {
+  border: none; height: 1px;
+  background: var(--border); margin: 24px 0;
+}
+.detail-wrap code {
+  background: rgba(33,140,204,0.08);
+  padding: 2px 6px; border-radius: 4px;
+  font-size: 13px; color: var(--blue);
+}
+.detail-nav {
+  display: flex; justify-content: space-between;
+  margin-top: 48px; padding-top: 20px;
+  border-top: 1px solid var(--border);
+  font-size: 14px; font-weight: 600;
+}
+.share-bar {
+  display: flex; align-items: center; gap: 10px;
+  margin-top: 40px; padding: 16px 20px;
+  background: #f9f9f9; border-radius: 12px;
+  border: 1px solid var(--border);
+}
+.share-label {
+  font-size: 14px; font-weight: 600; color: var(--text-soft);
+  margin-right: 8px;
+}
+.share-btn {
+  width: 40px; height: 40px;
+  border: none; border-radius: 50%;
+  background: #fff; cursor: pointer;
+  font-size: 1.1rem; transition: all 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  display: inline-flex; align-items: center; justify-content: center;
+}
+.share-btn:hover { transform: translateY(-2px); box-shadow: 0 3px 8px rgba(0,0,0,0.15); }
+.share-twitter:hover { background: #000; color: #fff; }
+.share-facebook:hover { background: #1877f2; color: #fff; }
+.share-kakao:hover { background: #fee500; }
+.share-copy:hover { background: #218CCC; color: #fff; }
+/* EN toggle disabled — 영문판 미생성 콘텐츠 (2026-05-16 patch) */
+.lang-switch .lang-disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  text-decoration: line-through;
+  padding: 4px 10px;
+  color: var(--text-soft, #888);
+  font-size: 13px;
+  user-select: none;
+}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <div class="lang-switch">
+    <a href="../content/sim-comm-wifi.html" class="active">KR</a>
+    <span class="lang-disabled" title="영문판 준비 중">EN</span>
+  </div>
+</header>
+
+<div class="detail-wrap">
+  <div class="breadcrumb"><a href="../index.html">전체 가이드</a> &rsaquo; 외국인 SIM 통신 WiFi deep dive</div>
+  <h1>외국인 SIM·통신·WiFi deep dive — eSIM·요금제 12선</h1>
+<p>&gt; <strong>부제</strong>: KT·SKT·LGU+·Klook·Airalo·WiFi 도시락·#398 후속 deep dive</p>
+<p>ISSUE 03 · #407 · 2026-05-26</p>
+<hr>
+<h2>🎯 왜 외국인 SIM·통신·WiFi인가</h2>
+<p>외국인 첫 방문 필수 #2 = <strong>SIM·통신·WiFi deep dive</strong> (#398 도착·#178 첫 방문 후속). KT·SKT·LGU+ + eSIM·유심·WiFi 도시락 + Klook·Airalo·외국인 영어 OK + 요금제 매트릭스.</p>
+<hr>
+<h2>★ 한눈에 12선</h2>
+<table><thead><tr>
+<th>#</th>
+<th>SIM·통신</th>
+<th>4축</th>
+<th>시그니처</th>
+</tr></thead><tbody>
+<tr>
+<td>1</td>
+<td><strong>KT 유심·eSIM (한국 #1 5G)</strong> ★</td>
+<td>한국 3사 통신</td>
+<td>5G 1위·외국인 매니아 1번지</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>SKT 유심·eSIM (한국 #1 4G)</strong></td>
+<td>한국 3사 통신</td>
+<td>4G 1위·외국인 매니아</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>LGU+ 유심·eSIM</strong></td>
+<td>한국 3사 통신</td>
+<td>가성비·외국인 매니아</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>알뜰폰 MVNO (KT M모바일·U+알뜰모바일)</strong></td>
+<td>한국 3사 통신</td>
+<td>가성비·외국인 장기 매니아</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>Klook eSIM (외국인 영어 #1)</strong> ★</td>
+<td>외국인 eSIM</td>
+<td>7일 30K·30일 80K·외국인 매니아</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>Airalo eSIM (글로벌 1번지)</strong> ★</td>
+<td>외국인 eSIM</td>
+<td>글로벌 외국인 매니아 1번지</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>KKday eSIM·12go eSIM</strong></td>
+<td>외국인 eSIM</td>
+<td>외국인 매니아 외국인 영어</td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>WiFi 도시락 (KT)</strong> ★ 한국 #1</td>
+<td>WiFi 도시락</td>
+<td>1일 4K~·외국인 매니아 1번지</td>
+</tr>
+<tr>
+<td>9</td>
+<td><strong>WiFi PoketWiFi·HyMobile</strong></td>
+<td>WiFi 도시락</td>
+<td>외국인 매니아 가성비</td>
+</tr>
+<tr>
+<td>10</td>
+<td><strong>요금제 매트릭스 (단기·장기·외국인 거주 #252)</strong> ★</td>
+<td>외국인 매니아</td>
+<td>7일·15일·30일·90일·1년</td>
+</tr>
+<tr>
+<td>11</td>
+<td><strong>외국인 영어 통신 매장 (명동 #13·강남 #142)</strong></td>
+<td>외국인 매니아</td>
+<td>KT·SKT·LGU+ 외국인 매장</td>
+</tr>
+<tr>
+<td>12</td>
+<td><strong>외국인 통신 패키지 (Klook·KKday·KTO)</strong> ★</td>
+<td>외국인 매니아</td>
+<td>SIM + WiFi + 외국인 영어 OK</td>
+</tr>
+</tbody></table>
+<p><strong>+ 추가 4</strong>: 외국인 SIM·여권 등록 (외국인 첫 방문 필수)·외국인 무제한 데이터·외국인 음성 통화·외국인 듀얼 SIM (한국 + 본국)</p>
+<hr>
+<h2>⚠ 외국인 자주 실수 5가지</h2>
+<p>1. <strong>&quot;한국 3사 = 너무 비쌈&quot;</strong>: 한국 통신 = <strong>Klook eSIM 7일 30K + 30일 80K + 외국인 가성비 1번지</strong> + 일본·미국 대비 50% 저렴.</p>
+<p>2. <strong>&quot;eSIM = 안 됨&quot;</strong>: eSIM = <strong>iPhone XS+·Galaxy S20+·외국인 매니아 1번지</strong> + Klook·Airalo·즉시 활성화 + 외국인 영어 OK.</p>
+<p>3. <strong>&quot;한국 SIM = 한국인만&quot;</strong>: 한국 SIM = <strong>여권 등록 + 외국인 신용카드 + 외국인 영어 OK 매장 (명동·강남)</strong> + 외국인 매니아 1번지·#398 통합.</p>
+<p>4. <strong>&quot;WiFi 도시락 = 안 빌려옴&quot;</strong>: WiFi 도시락 = <strong>Klook·KKday 예약 1일 4K~ + 인천공항 픽업 + 외국인 매니아 1번지</strong> + 무제한 데이터 풀세트.</p>
+<p>5. <strong>&quot;외국인 장기 = 너무 비쌈&quot;</strong>: 외국인 장기 (90일·1년) = <strong>알뜰폰 MVNO (KT M모바일·U+알뜰모바일)</strong> + 외국인 거주 (#252) 매니아·#403 통합.</p>
+<hr>
+<h2>① 한국 3사 통신 (4)</h2>
+<h3>1. KT 유심·eSIM ★ 한국 #1 5G</h3>
+<ul>
+<li>외국인 ★: ◎◎ — 5G 1위·외국인 매니아 1번지</li>
+<li>시그니처: 5G 풀세트·외국인 영어 OK</li>
+</ul>
+<h3>2. SKT 유심·eSIM ★ 한국 #1 4G</h3>
+<ul>
+<li>외국인 ★: ◎◎ — 4G 1위·외국인 매니아</li>
+<li>시그니처: 4G·외국인 매니아 1순위</li>
+</ul>
+<h3>3. LGU+ 유심·eSIM</h3>
+<ul>
+<li>외국인 ★: ◎◎ — 가성비·외국인 매니아</li>
+<li>시그니처: 가성비·외국인 영어 OK</li>
+</ul>
+<h3>4. 알뜰폰 MVNO ★ 가성비</h3>
+<ul>
+<li>KT M모바일·U+알뜰모바일·SK 7모바일</li>
+<li>외국인 ★: ◎ — 외국인 장기 매니아·#252 외국인 거주</li>
+<li>시그니처: 가성비·외국인 매니아 1순위</li>
+</ul>
+<hr>
+<h2>② 외국인 eSIM (3)</h2>
+<h3>5. Klook eSIM ★ 외국인 영어 #1</h3>
+<ul>
+<li>외국인 ★: ◎◎ — 7일 30K·30일 80K</li>
+<li>시그니처: 외국인 매니아 1번지·즉시 활성화</li>
+</ul>
+<h3>6. Airalo eSIM ★ 글로벌 1번지</h3>
+<ul>
+<li>외국인 ★: ◎◎ — 글로벌 외국인 매니아 1번지</li>
+<li>시그니처: 외국인 글로벌 매니아·#398·#178</li>
+</ul>
+<h3>7. KKday eSIM·12go eSIM</h3>
+<ul>
+<li>외국인 ★: ◎◎ — 외국인 영어 OK</li>
+<li>시그니처: 외국인 매니아·다국어</li>
+</ul>
+<hr>
+<h2>③ WiFi 도시락 (2)</h2>
+<h3>8. WiFi 도시락 (KT) ★ 한국 #1</h3>
+<ul>
+<li>외국인 ★: ◎◎ — 1일 4K~·외국인 매니아 1번지</li>
+<li>시그니처: KT·외국인 영어 OK·인천공항 픽업</li>
+</ul>
+<h3>9. PoketWiFi·HyMobile</h3>
+<ul>
+<li>외국인 ★: ◎◎ — 외국인 매니아 가성비</li>
+<li>시그니처: 외국인 매니아·Klook 예약</li>
+</ul>
+<hr>
+<h2>④ 외국인 매니아 (3 + 추가 4)</h2>
+<h3>10. 요금제 매트릭스 ★ 단기·장기</h3>
+<ul>
+<li>7일·15일·30일·90일·1년 매트릭스</li>
+<li>외국인 ★: ◎◎ — 외국인 매니아 1번지</li>
+<li>시그니처: 외국인 첫 방문·#252 외국인 거주·#403</li>
+</ul>
+<h3>11. 외국인 영어 통신 매장 (명동 #13·강남 #142)</h3>
+<ul>
+<li>KT·SKT·LGU+ 외국인 매장</li>
+<li>외국인 ★: ◎◎ — 외국인 매니아·영어 OK</li>
+<li>시그니처: 외국인 영어 풀세트</li>
+</ul>
+<h3>12. 외국인 통신 패키지 ★ Klook·KKday·KTO</h3>
+<ul>
+<li>SIM + WiFi + 외국인 영어 OK</li>
+<li>외국인 ★: ◎◎ — 외국인 매니아·#398·#392 통합</li>
+<li>시그니처: 외국인 영어 풀세트</li>
+</ul>
+<h3>+ 추가 4</h3>
+<ul>
+<li><strong>외국인 SIM·여권 등록</strong> — 외국인 첫 방문 필수</li>
+<li><strong>외국인 무제한 데이터</strong> — 외국인 매니아 1순위</li>
+<li><strong>외국인 음성 통화</strong> — Skype·WhatsApp·KakaoTalk</li>
+<li><strong>외국인 듀얼 SIM</strong> — 한국 + 본국 동시 사용</li>
+</ul>
+<hr>
+<h2>⚙ FAQ 6개</h2>
+<p>1. <strong>외국인 SIM 1순위</strong>: Klook eSIM (영어 #1)·KT 유심·Airalo eSIM·KT M모바일.</p>
+<p>2. <strong>외국인 가성비</strong>: Klook 7일 30K·30일 80K·알뜰폰 1년 100~200K.</p>
+<p>3. <strong>외국인 WiFi 도시락</strong>: KT 한국 #1·Klook·KKday 1일 4K~.</p>
+<p>4. <strong>외국인 5G</strong>: KT 5G 한국 #1·외국인 매니아 1번지.</p>
+<p>5. <strong>외국인 장기 매니아</strong>: 알뜰폰 MVNO (KT M모바일·U+알뜰)·#252 외국인 거주·#403.</p>
+<p>6. <strong>외국인 첫 방문 필수</strong>: SIM·여권 등록·#398 통합·#178 첫 방문.</p>
+<hr>
+<h2>🗺 외국인 풀데이 코스 3개</h2>
+<h3>A. 외국인 첫 방문 SIM 풀데이 (#178·#398)</h3>
+<ul>
+<li>도착 전: Klook eSIM 예약·여권 등록 → 도착 후: 인천공항 → 5분 활성화 → 외국인 영어 OK 매장 (명동·강남)</li>
+</ul>
+<h3>B. 외국인 매니아 통신 패키지 1박2일</h3>
+<ul>
+<li>Day 1: KT 유심 + WiFi 도시락 + #398 도착 통합</li>
+<li>Day 2: 외국인 영어 통신 매장 + #406 면세 + #392 코스</li>
+</ul>
+<h3>C. 외국인 장기 거주 1주일 (#252·#403)</h3>
+<ul>
+<li>Day 1~2: KT M모바일 알뜰폰 + 외국인 거주 매니아</li>
+<li>Day 3~7: 어학연수 (#403) + 외국인 매니아 패키지</li>
+</ul>
+<hr>
+<h2>🌸 시즌 5</h2>
+<ul>
+<li><strong>봄 3~5월</strong>: 외국인 첫 방문 SIM 시즌·외국인 매니아 1순위</li>
+<li><strong>여름 6~8월</strong>: 외국인 매니아·여름 휴가 결합</li>
+<li><strong>가을 9~11월</strong>: 외국인 매니아 1순위·#385 통합</li>
+<li><strong>겨울 12~2월</strong>: 외국인 매니아·#385 매니아</li>
+<li><strong>연중</strong>: KT·SKT·LGU+·Klook·Airalo·외국인 매니아</li>
+</ul>
+<hr>
+<h2>🔗 관련</h2>
+<ul>
+<li>#13 명동·#142 강남·#178 외국인 첫 방문·#252 외국인 거주·#392 코스·#398 도착·#403 한국어 학원·#406 면세점</li>
+</ul>
+<h2>🏷 태그</h2>
+<p><code>#외국인SIM통신WiFi deepdive</code> <code>#KoreaSIMCommWiFiDeepDive</code> <code>#KT유심eSIM5G한국1외국인1번지</code> <code>#SKT유심eSIM4G한국1</code> <code>#LGU+유심eSIM가성비</code> <code>#알뜰폰KT M모바일U+알뜰모바일SK7모바일</code> <code>#KlookeSIM영어1 7일30K30일80K</code> <code>#AiraloeSIM글로벌1번지</code> <code>#KKday12go eSIM</code> <code>#WiFi도시락KT한국1 1일4K</code> <code>#PoketWiFi HyMobile</code> <code>#요금제매트릭스7일15일30일90일1년</code> <code>#외국인영어통신매장명동강남</code> <code>#KlookKKdayKTO통신패키지</code> <code>#SIM여권등록무제한데이터음성통화WhatsApp듀얼SIM</code> <code>#키친구</code></p>
+
+  <div class="share-bar">
+    <span class="share-label">공유</span>
+    <button class="share-btn share-twitter" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent('외국인 SIM 통신 WiFi deep dive') + '&url=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Twitter">𝕏</button>
+    <button class="share-btn share-facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Facebook">f</button>
+    <button class="share-btn share-kakao" onclick="navigator.share ? navigator.share({title: '외국인 SIM 통신 WiFi deep dive', url: window.location.href}) : navigator.clipboard.writeText(window.location.href).then(function() { alert('링크 복사됨!'); })" aria-label="Kakao/Share">📤</button>
+    <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href).then(function() { this.textContent = '✓'; setTimeout(function() { document.querySelector('.share-copy').textContent = '🔗'; }, 1500); }.bind(this))" aria-label="Copy link">🔗</button>
+  </div>
+
+  <div class="detail-nav">
+    <div><a href="duty-free.html" style="color:var(--red);">&larr; 외국인 면세점 deep dive</a></div>
+    <div><a href="casino.html" style="color:var(--red);">외국인 카지노 풀가이드 &rarr;</a></div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <p><a href="https://instagram.com/keychingu.korea" target="_blank">@keychingu.korea</a> &mdash; Seoul for MZ FIT Travelers</p>
+</footer>
+</body>
+</html>
