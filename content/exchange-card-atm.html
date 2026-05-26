@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>외국인 환전 신용카드 ATM 결제 deep dive — KeyChinGu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/main.css">
+<style>
+.detail-wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+}
+.breadcrumb {
+  font-size: 13px;
+  color: var(--text-soft);
+  margin-bottom: 24px;
+}
+.breadcrumb a { color: var(--red); font-weight: 600; }
+.detail-wrap h1 {
+  font-size: 28px; font-weight: 800;
+  color: var(--black); margin-bottom: 8px;
+}
+.detail-wrap h2 {
+  font-size: 22px; font-weight: 700;
+  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--red);
+}
+.detail-wrap h3 {
+  font-size: 17px; font-weight: 600;
+  color: var(--text-mid); margin-top: 20px; margin-bottom: 8px;
+}
+.detail-wrap p {
+  font-size: 15px; line-height: 1.7;
+  color: var(--text-mid); margin-bottom: 12px;
+}
+.detail-wrap ul {
+  padding-left: 20px; margin-bottom: 12px;
+}
+.detail-wrap li {
+  font-size: 14px; line-height: 1.6;
+  color: var(--text-mid); margin-bottom: 6px;
+}
+.detail-wrap table {
+  width: 100%; border-collapse: collapse;
+  margin-bottom: 16px; font-size: 13px;
+}
+.detail-wrap th {
+  background: var(--black); color: #fff;
+  padding: 10px 12px; text-align: left;
+  font-weight: 600; font-size: 11px;
+  text-transform: uppercase; letter-spacing: 0.06em;
+}
+.detail-wrap td {
+  padding: 10px 12px; border-bottom: 1px solid var(--border);
+  color: var(--text-mid);
+}
+.detail-wrap tr:nth-child(even) td { background: rgba(0,0,0,0.02); }
+.detail-wrap hr {
+  border: none; height: 1px;
+  background: var(--border); margin: 24px 0;
+}
+.detail-wrap code {
+  background: rgba(33,140,204,0.08);
+  padding: 2px 6px; border-radius: 4px;
+  font-size: 13px; color: var(--blue);
+}
+.detail-nav {
+  display: flex; justify-content: space-between;
+  margin-top: 48px; padding-top: 20px;
+  border-top: 1px solid var(--border);
+  font-size: 14px; font-weight: 600;
+}
+.share-bar {
+  display: flex; align-items: center; gap: 10px;
+  margin-top: 40px; padding: 16px 20px;
+  background: #f9f9f9; border-radius: 12px;
+  border: 1px solid var(--border);
+}
+.share-label {
+  font-size: 14px; font-weight: 600; color: var(--text-soft);
+  margin-right: 8px;
+}
+.share-btn {
+  width: 40px; height: 40px;
+  border: none; border-radius: 50%;
+  background: #fff; cursor: pointer;
+  font-size: 1.1rem; transition: all 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  display: inline-flex; align-items: center; justify-content: center;
+}
+.share-btn:hover { transform: translateY(-2px); box-shadow: 0 3px 8px rgba(0,0,0,0.15); }
+.share-twitter:hover { background: #000; color: #fff; }
+.share-facebook:hover { background: #1877f2; color: #fff; }
+.share-kakao:hover { background: #fee500; }
+.share-copy:hover { background: #218CCC; color: #fff; }
+/* EN toggle disabled — 영문판 미생성 콘텐츠 (2026-05-16 patch) */
+.lang-switch .lang-disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  text-decoration: line-through;
+  padding: 4px 10px;
+  color: var(--text-soft, #888);
+  font-size: 13px;
+  user-select: none;
+}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <div class="lang-switch">
+    <a href="../content/exchange-card-atm.html" class="active">KR</a>
+    <span class="lang-disabled" title="영문판 준비 중">EN</span>
+  </div>
+</header>
+
+<div class="detail-wrap">
+  <div class="breadcrumb"><a href="../index.html">전체 가이드</a> &rsaquo; 외국인 환전 신용카드 ATM 결제 deep dive</div>
+  <h1>외국인 환전·신용카드·ATM·결제 deep dive — 명동·KEB하나 12선</h1>
+<p>&gt; <strong>부제</strong>: 환전·외국인 신용카드·KakaoPay·Naver Pay·ATM·#398·#406 후속</p>
+<p>ISSUE 03 · #421 · 2026-05-26</p>
+<hr>
+<h2>🎯 왜 외국인 환전·결제 deep dive인가</h2>
+<p>외국인 첫 방문 #3 필수 = <strong>환전·신용카드·ATM·결제 deep dive</strong> (#398 도착·#406 면세 후속). 환전 매트릭스·외국인 신용카드·KakaoPay·Naver Pay·ATM 풀세트.</p>
+<hr>
+<h2>★ 한눈에 12선</h2>
+<table><thead><tr>
+<th>#</th>
+<th>항목</th>
+<th>4축</th>
+<th>시그니처</th>
+</tr></thead><tbody>
+<tr>
+<td>1</td>
+<td><strong>명동 환전 거리</strong> ★ 시내 환율 #1</td>
+<td>환전 매트릭스</td>
+<td>명동·#13·외국인 매니아 1번지</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>인천공항 환전</strong></td>
+<td>환전 매트릭스</td>
+<td>도착 환전·외국인 매니아</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>KEB하나·신한·우리은행 환전</strong> ★</td>
+<td>환전 매트릭스</td>
+<td>외국인 영어 OK·KTO 인증</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>사설 환전소 (Travelex·외국인 매니아)</strong></td>
+<td>환전 매트릭스</td>
+<td>외국인 영어 OK 풀세트</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>외국인 신용카드 (Visa·Master·Amex)</strong> ★ 90%+ 매장</td>
+<td>외국인 신용카드</td>
+<td>외국인 매니아 1번지·#398 통합</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>외국인 직불카드 (Visa·Master Debit)</strong></td>
+<td>외국인 신용카드</td>
+<td>외국인 가성비 매니아</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>외국인 트래블 카드 (Wise·Revolut)</strong></td>
+<td>외국인 신용카드</td>
+<td>외국인 글로벌 매니아 1번지</td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>KakaoPay·Naver Pay</strong> ★ 외국인 영어 OK</td>
+<td>한국 페이</td>
+<td>외국인 등록 OK·#398 통합</td>
+</tr>
+<tr>
+<td>9</td>
+<td><strong>Toss Pay·삼성페이·LG페이</strong></td>
+<td>한국 페이</td>
+<td>외국인 매니아·QR 결제</td>
+</tr>
+<tr>
+<td>10</td>
+<td><strong>외국인 ATM (Citibank·KEB하나·외환은행)</strong> ★</td>
+<td>ATM</td>
+<td>24h 외국인 출금·KTO 인증</td>
+</tr>
+<tr>
+<td>11</td>
+<td><strong>외국인 환율 매트릭스 (USD·JPY·CNY·EUR·CAD)</strong></td>
+<td>외국인 매니아</td>
+<td>외국인 매니아 가성비 1번지</td>
+</tr>
+<tr>
+<td>12</td>
+<td><strong>외국인 결제 패키지 (Klook·KKday·KTO)</strong> ★</td>
+<td>외국인 매니아</td>
+<td>외국인 영어 OK·KTO 인증</td>
+</tr>
+</tbody></table>
+<p><strong>+ 추가 4</strong>: 외국인 면세 환급 (Tax Free·#406 통합)·외국인 환전 어플 (네이버·다음·은행 앱)·외국인 환율 알림 서비스·외국인 환전 매니아 매니아 (대량 환전 + 외국인 매니아 패키지)</p>
+<hr>
+<h2>⚠ 외국인 자주 실수 5가지</h2>
+<p>1. <strong>&quot;환전 = 공항만&quot;</strong>: 환전 = <strong>명동 시내 (환율 #1) + KEB하나·신한·우리 + 인천공항 + 사설 환전소</strong> + 외국인 가성비 1번지 (시내 vs 공항 5~10% 차이).</p>
+<p>2. <strong>&quot;외국인 신용카드 = 한국에서 안 됨&quot;</strong>: 외국인 신용카드 = <strong>Visa·Master·Amex 90%+ 매장 + 외국인 매니아 1번지</strong> + 외국인 영어 OK + 외국인 가성비.</p>
+<p>3. <strong>&quot;KakaoPay·Naver Pay = 한국인만&quot;</strong>: KakaoPay·Naver Pay = <strong>외국인 신용카드 등록 OK + 외국인 영어 OK</strong> + 외국인 매니아 1번지·#398 통합.</p>
+<p>4. <strong>&quot;ATM = 한국인만&quot;</strong>: 외국인 ATM = <strong>Citibank·KEB하나·외환은행·24h + 외국인 신용카드 출금</strong> + 외국인 매니아 1번지·KTO 인증.</p>
+<p>5. <strong>&quot;외국인 트래블 카드 = 어려움&quot;</strong>: Wise·Revolut = <strong>외국인 글로벌 매니아 1번지 + 환율 자동 + 외국인 가성비 1번지</strong> + 외국인 영어 OK 풀세트.</p>
+<hr>
+<h2>① 환전 매트릭스 (4)</h2>
+<h3>1. 명동 환전 거리 ★ 시내 환율 #1</h3>
+<ul>
+<li>주소: 중구 명동 (#13 명동)</li>
+<li>외국인 ★: ◎◎ — 시내 환율 #1·외국인 매니아 1번지</li>
+<li>시그니처: 명동 cluster·외국인 영어 OK</li>
+</ul>
+<h3>2. 인천공항 환전</h3>
+<ul>
+<li>주소: 인천공항 1·2 터미널 (#178·#398)</li>
+<li>외국인 ★: ◎◎ — 도착 환전·외국인 매니아</li>
+<li>시그니처: 외국인 매니아·#398 통합</li>
+</ul>
+<h3>3. KEB하나·신한·우리은행 환전 ★</h3>
+<ul>
+<li>매장: 시내·외국인 영어 OK 풀세트</li>
+<li>외국인 ★: ◎◎ — 외국인 매니아·KTO 인증</li>
+<li>시그니처: 영어 OK·외국인 첫 방문</li>
+</ul>
+<h3>4. 사설 환전소 (Travelex·외국인 매니아)</h3>
+<ul>
+<li>매장: 명동·강남 (#13·#142)</li>
+<li>외국인 ★: ◎◎ — 외국인 영어 OK 풀세트</li>
+<li>시그니처: 외국인 매니아·#13 통합</li>
+</ul>
+<hr>
+<h2>② 외국인 신용카드 (3)</h2>
+<h3>5. 외국인 신용카드 (Visa·Master·Amex) ★ 90%+ 매장</h3>
+<ul>
+<li>외국인 ★: ◎◎ — 외국인 매니아 1번지·#398 통합</li>
+<li>시그니처: Visa·Master·Amex 풀세트</li>
+</ul>
+<h3>6. 외국인 직불카드 (Visa·Master Debit)</h3>
+<ul>
+<li>외국인 ★: ◎◎ — 외국인 가성비 매니아</li>
+<li>시그니처: 외국인 매니아·실시간 출금</li>
+</ul>
+<h3>7. 외국인 트래블 카드 (Wise·Revolut)</h3>
+<ul>
+<li>외국인 ★: ◎◎ — 외국인 글로벌 매니아 1번지</li>
+<li>시그니처: 환율 자동·외국인 가성비</li>
+</ul>
+<hr>
+<h2>③ 한국 페이 (2)</h2>
+<h3>8. KakaoPay·Naver Pay ★ 외국인 영어 OK</h3>
+<ul>
+<li>외국인 ★: ◎◎ — 외국인 등록 OK·#398 통합</li>
+<li>시그니처: 외국인 매니아 1번지·90%+ 매장</li>
+</ul>
+<h3>9. Toss Pay·삼성페이·LG페이</h3>
+<ul>
+<li>외국인 ★: ◎◎ — 외국인 매니아·QR 결제</li>
+<li>시그니처: 한국 페이 풀세트·외국인 영어 OK</li>
+</ul>
+<hr>
+<h2>④ ATM·매트릭스·매니아 (3 + 추가 4)</h2>
+<h3>10. 외국인 ATM (Citibank·KEB하나·외환은행) ★</h3>
+<ul>
+<li>24h 외국인 신용카드 출금</li>
+<li>외국인 ★: ◎◎ — 외국인 매니아 1번지·KTO 인증</li>
+<li>시그니처: 외국인 영어 OK·#398 통합</li>
+</ul>
+<h3>11. 외국인 환율 매트릭스 (USD·JPY·CNY·EUR·CAD)</h3>
+<ul>
+<li>외국인 ★: ◎◎ — 외국인 매니아 가성비 1번지</li>
+<li>시그니처: 외국인 매니아 풀세트</li>
+</ul>
+<h3>12. 외국인 결제 패키지 ★ Klook·KKday·KTO</h3>
+<ul>
+<li>외국인 영어 OK·KTO 인증 패키지</li>
+<li>외국인 ★: ◎◎ — 외국인 매니아 1번지</li>
+<li>시그니처: 외국인 결제·#398·#406 통합</li>
+</ul>
+<h3>+ 추가 4</h3>
+<ul>
+<li><strong>외국인 면세 환급 (Tax Free)</strong> — #406 통합·외국인 매니아</li>
+<li><strong>외국인 환전 어플</strong> — 네이버·다음·은행 앱</li>
+<li><strong>외국인 환율 알림 서비스</strong> — 외국인 매니아 가성비</li>
+<li><strong>외국인 환전 매니아 매니아</strong> — 대량 환전 + 외국인 패키지</li>
+</ul>
+<hr>
+<h2>⚙ FAQ 6개</h2>
+<p>1. <strong>외국인 환전 1순위</strong>: 명동 (시내 #1)·KEB하나·신한·우리·인천공항·#13.</p>
+<p>2. <strong>외국인 신용카드 1순위</strong>: Visa·Master·Amex 90%+ 매장·외국인 영어 OK.</p>
+<p>3. <strong>외국인 페이</strong>: KakaoPay·Naver Pay·Toss Pay·삼성페이·QR 결제·#398.</p>
+<p>4. <strong>외국인 ATM</strong>: Citibank·KEB하나·외환은행 24h·외국인 출금.</p>
+<p>5. <strong>외국인 트래블 카드</strong>: Wise·Revolut·외국인 글로벌 매니아·환율 자동.</p>
+<p>6. <strong>외국인 환율 가성비</strong>: 시내 환전 vs 공항 5~10% 차이·외국인 매니아.</p>
+<hr>
+<h2>🗺 외국인 풀데이 코스 3개</h2>
+<h3>A. 외국인 첫 방문 환전 풀데이 (#398·#178)</h3>
+<ul>
+<li>도착 후: 1) 인천공항 환전 (50~100K 미니) 2) KakaoPay 등록 3) Visa 카드 ATM 출금 → 명동 본격 환전 (#13)</li>
+</ul>
+<h3>B. 외국인 매니아 결제 1박2일</h3>
+<ul>
+<li>Day 1: KakaoPay + Naver Pay 등록·외국인 신용카드 + #398·#406 면세</li>
+<li>Day 2: ATM 출금·환전·외국인 결제 패키지·Klook 외국인 매니아</li>
+</ul>
+<h3>C. 외국인 장기 거주 1주일 (#252·#403)</h3>
+<ul>
+<li>Day 1~3: KEB하나·신한 외국인 계좌·Wise·Revolut</li>
+<li>Day 4~7: 외국인 결제 풀세트·외국인 매니아 1번지</li>
+</ul>
+<hr>
+<h2>🌸 시즌 5</h2>
+<ul>
+<li><strong>봄 3~5월</strong>: 외국인 환전 시즌·외국인 매니아 1순위</li>
+<li><strong>여름 6~8월</strong>: 외국인 매니아·여름 휴가 결합</li>
+<li><strong>가을 9~11월</strong>: 외국인 매니아 1순위·#385 통합</li>
+<li><strong>겨울 12~2월</strong>: 외국인 매니아·#385 매니아</li>
+<li><strong>연중</strong>: 명동·KEB하나·Citibank·외국인 매니아</li>
+</ul>
+<hr>
+<h2>🔗 관련</h2>
+<ul>
+<li>#13 명동·#142 강남·#178 외국인 첫 방문·#252 외국인 거주·#392 코스·#398 도착·#403 한국어 학원·#406 면세점·#414 SIM·#415 카지노·#416 결혼식·#417 인스타</li>
+</ul>
+<h2>🏷 태그</h2>
+<p><code>#외국인환전신용카드ATM결제deepdive</code> <code>#KoreaExchangeCardATMPayment</code> <code>#명동환전거리시내환율1</code> <code>#인천공항환전도착</code> <code>#KEB하나신한우리은행외국인영어</code> <code>#사설환전소Travelex</code> <code>#VisaMasterAmex90%매장외국인1</code> <code>#VisaMasterDebit직불카드</code> <code>#WiseRevolut트래블카드글로벌</code> <code>#KakaoPayNaverPay등록OK영어</code> <code>#TossPay삼성페이LG페이QR</code> <code>#Citibank KEB하나외환은행24h ATM</code> <code>#환율매트릭스USD JPY CNY EUR CAD</code> <code>#KlookKKdayKTO결제패키지</code> <code>#TaxFree환급환전앱알림서비스대량환전</code> <code>#키친구</code></p>
+
+  <div class="share-bar">
+    <span class="share-label">공유</span>
+    <button class="share-btn share-twitter" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent('외국인 환전 신용카드 ATM 결제 deep dive') + '&url=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Twitter">𝕏</button>
+    <button class="share-btn share-facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Facebook">f</button>
+    <button class="share-btn share-kakao" onclick="navigator.share ? navigator.share({title: '외국인 환전 신용카드 ATM 결제 deep dive', url: window.location.href}) : navigator.clipboard.writeText(window.location.href).then(function() { alert('링크 복사됨!'); })" aria-label="Kakao/Share">📤</button>
+    <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href).then(function() { this.textContent = '✓'; setTimeout(function() { document.querySelector('.share-copy').textContent = '🔗'; }, 1500); }.bind(this))" aria-label="Copy link">🔗</button>
+  </div>
+
+  <div class="detail-nav">
+    <div><a href="instagram-spots.html" style="color:var(--red);">&larr; 외국인 인스타 명소 포토스팟 매트릭스</a></div>
+    <div><a href="noraebang-coin.html" style="color:var(--red);">외국인 노래방 코인노래방 deep dive &rarr;</a></div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <p><a href="https://instagram.com/keychingu.korea" target="_blank">@keychingu.korea</a> &mdash; Seoul for MZ FIT Travelers</p>
+</footer>
+</body>
+</html>
