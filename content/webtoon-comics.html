@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>외국인 만화 웹툰 deep dive — KeyChinGu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/main.css">
+<style>
+.detail-wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+}
+.breadcrumb {
+  font-size: 13px;
+  color: var(--text-soft);
+  margin-bottom: 24px;
+}
+.breadcrumb a { color: var(--red); font-weight: 600; }
+.detail-wrap h1 {
+  font-size: 28px; font-weight: 800;
+  color: var(--black); margin-bottom: 8px;
+}
+.detail-wrap h2 {
+  font-size: 22px; font-weight: 700;
+  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--red);
+}
+.detail-wrap h3 {
+  font-size: 17px; font-weight: 600;
+  color: var(--text-mid); margin-top: 20px; margin-bottom: 8px;
+}
+.detail-wrap p {
+  font-size: 15px; line-height: 1.7;
+  color: var(--text-mid); margin-bottom: 12px;
+}
+.detail-wrap ul {
+  padding-left: 20px; margin-bottom: 12px;
+}
+.detail-wrap li {
+  font-size: 14px; line-height: 1.6;
+  color: var(--text-mid); margin-bottom: 6px;
+}
+.detail-wrap table {
+  width: 100%; border-collapse: collapse;
+  margin-bottom: 16px; font-size: 13px;
+}
+.detail-wrap th {
+  background: var(--black); color: #fff;
+  padding: 10px 12px; text-align: left;
+  font-weight: 600; font-size: 11px;
+  text-transform: uppercase; letter-spacing: 0.06em;
+}
+.detail-wrap td {
+  padding: 10px 12px; border-bottom: 1px solid var(--border);
+  color: var(--text-mid);
+}
+.detail-wrap tr:nth-child(even) td { background: rgba(0,0,0,0.02); }
+.detail-wrap hr {
+  border: none; height: 1px;
+  background: var(--border); margin: 24px 0;
+}
+.detail-wrap code {
+  background: rgba(33,140,204,0.08);
+  padding: 2px 6px; border-radius: 4px;
+  font-size: 13px; color: var(--blue);
+}
+.detail-nav {
+  display: flex; justify-content: space-between;
+  margin-top: 48px; padding-top: 20px;
+  border-top: 1px solid var(--border);
+  font-size: 14px; font-weight: 600;
+}
+.share-bar {
+  display: flex; align-items: center; gap: 10px;
+  margin-top: 40px; padding: 16px 20px;
+  background: #f9f9f9; border-radius: 12px;
+  border: 1px solid var(--border);
+}
+.share-label {
+  font-size: 14px; font-weight: 600; color: var(--text-soft);
+  margin-right: 8px;
+}
+.share-btn {
+  width: 40px; height: 40px;
+  border: none; border-radius: 50%;
+  background: #fff; cursor: pointer;
+  font-size: 1.1rem; transition: all 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  display: inline-flex; align-items: center; justify-content: center;
+}
+.share-btn:hover { transform: translateY(-2px); box-shadow: 0 3px 8px rgba(0,0,0,0.15); }
+.share-twitter:hover { background: #000; color: #fff; }
+.share-facebook:hover { background: #1877f2; color: #fff; }
+.share-kakao:hover { background: #fee500; }
+.share-copy:hover { background: #218CCC; color: #fff; }
+/* EN toggle disabled — 영문판 미생성 콘텐츠 (2026-05-16 patch) */
+.lang-switch .lang-disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  text-decoration: line-through;
+  padding: 4px 10px;
+  color: var(--text-soft, #888);
+  font-size: 13px;
+  user-select: none;
+}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <div class="lang-switch">
+    <a href="../content/webtoon-comics.html" class="active">KR</a>
+    <span class="lang-disabled" title="영문판 준비 중">EN</span>
+  </div>
+</header>
+
+<div class="detail-wrap">
+  <div class="breadcrumb"><a href="../index.html">전체 가이드</a> &rsaquo; 외국인 만화 웹툰 deep dive</div>
+  <h1>외국인 만화·웹툰 deep dive — 네이버·카카오·Tower of God 12선</h1>
+<p>&gt; <strong>부제</strong>: 웹툰·만화 카페·외국인 글로벌 매니아·#444·#138·#142 후속</p>
+<p>ISSUE 03 · #445 · 2026-05-26</p>
+<hr>
+<h2>🎯 왜 외국인 만화·웹툰 deep dive인가</h2>
+<p>외국인 글로벌 매니아 1번지 = <strong>만화·웹툰 deep dive</strong> (#444 보드게임·#138 홍대·#142 강남 후속). 네이버·카카오 웹툰·Tower of God·Solo Leveling·외국인 글로벌 매니아 #1.</p>
+<hr>
+<h2>★ 한눈에 12선</h2>
+<table><thead><tr>
+<th>#</th>
+<th>만화·웹툰</th>
+<th>4축</th>
+<th>시그니처</th>
+</tr></thead><tbody>
+<tr>
+<td>1</td>
+<td><strong>네이버 웹툰</strong> ★ 한국 #1 글로벌</td>
+<td>웹툰 플랫폼</td>
+<td>글로벌 1억+·외국인 영어 OK</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>카카오 웹툰</strong></td>
+<td>웹툰 플랫폼</td>
+<td>한국 #2·외국인 영어 OK</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>레진코믹스·봄툰·코미코</strong></td>
+<td>웹툰 플랫폼</td>
+<td>외국인 매니아·MZ</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Tower of God (신의 탑)</strong> ★ 외국인 #1</td>
+<td>글로벌 매니아</td>
+<td>외국인 글로벌 #1·SIU</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>Solo Leveling (나 혼자만 레벨업)</strong> ★</td>
+<td>글로벌 매니아</td>
+<td>외국인 글로벌 매니아 1번지</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>노블레스·기기괴괴·외모지상주의</strong></td>
+<td>글로벌 매니아</td>
+<td>외국인 매니아 1순위</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>만화 카페 (강남·홍대 #138·#142)</strong> ★</td>
+<td>만화 카페</td>
+<td>외국인 영어 OK·시간당 3~5K</td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>이태원·한남 만화 카페 (#144)</strong></td>
+<td>만화 카페</td>
+<td>외국인 거주·#144</td>
+</tr>
+<tr>
+<td>9</td>
+<td><strong>카페 + 만화 통합 (#381·#444)</strong></td>
+<td>만화 카페</td>
+<td>외국인 매니아·#381 통합</td>
+</tr>
+<tr>
+<td>10</td>
+<td><strong>부천 만화 박물관 (외곽)</strong> ★</td>
+<td>매니아·박물관</td>
+<td>한국 #1 만화 박물관·외국인 매니아</td>
+</tr>
+<tr>
+<td>11</td>
+<td><strong>외국인 영어 OK 웹툰 캐릭터 카페</strong></td>
+<td>매니아·박물관</td>
+<td>외국인 매니아·MZ 1번지</td>
+</tr>
+<tr>
+<td>12</td>
+<td><strong>외국인 만화·웹툰 패키지 (Klook·KKday·KTO)</strong> ★</td>
+<td>매니아·박물관</td>
+<td>영어 OK·KTO 인증·#404 통합</td>
+</tr>
+</tbody></table>
+<p><strong>+ 추가 4</strong>: 외국인 K-pop + 웹툰 통합 (#387·BTS·BLACKPINK 웹툰)·외국인 영어 웹툰 어플 (LINE Webtoon)·외국인 웹툰 작가 (SIU·Chugong·DICE)·외국인 만화·웹툰 + K-드라마 통합 (#378 #424)</p>
+<hr>
+<h2>⚠ 외국인 자주 실수 5가지</h2>
+<p>1. <strong>&quot;한국 만화·웹툰 = 한국어만&quot;</strong>: 한국 웹툰 = <strong>외국인 영어 OK 글로벌 1번지 (LINE Webtoon)·Tower of God·Solo Leveling</strong> + 외국인 글로벌 매니아 #1·#444 통합.</p>
+<p>2. <strong>&quot;웹툰 = 무료만&quot;</strong>: 웹툰 = <strong>네이버·카카오 무료 + 유료 미리보기 + 외국인 글로벌 매니아 1번지</strong> + 외국인 영어 OK 풀세트.</p>
+<p>3. <strong>&quot;만화 카페 = 한국인만&quot;</strong>: 만화 카페 = <strong>외국인 영어 OK + 외국인 매니아 1번지 (시간당 3~5K)</strong> + 강남·홍대·이태원·#138·#142·#144 cluster.</p>
+<p>4. <strong>&quot;Solo Leveling = TV만&quot;</strong>: Solo Leveling = <strong>외국인 글로벌 매니아 1번지 + 웹툰·애니메이션·#387 K-pop 통합</strong> + 외국인 매니아·#404 통합.</p>
+<p>5. <strong>&quot;부천 만화 박물관 = 못 감&quot;</strong>: 부천 만화 박물관 = <strong>한국 #1 만화 박물관 + 외국인 영어 OK 풀세트</strong> + 외국인 매니아·KTX 1박2일.</p>
+<hr>
+<h2>① 웹툰 플랫폼 (3)</h2>
+<h3>1. 네이버 웹툰 ★ 한국 #1 글로벌</h3>
+<ul>
+<li>외국인 ★: ◎◎ — 글로벌 1억+·외국인 영어 OK</li>
+<li>시그니처: LINE Webtoon·외국인 글로벌 매니아 1번지</li>
+</ul>
+<h3>2. 카카오 웹툰</h3>
+<ul>
+<li>외국인 ★: ◎◎ — 한국 #2·외국인 영어 OK</li>
+<li>시그니처: 외국인 매니아·KakaoPage</li>
+</ul>
+<h3>3. 레진코믹스·봄툰·코미코</h3>
+<ul>
+<li>외국인 ★: ◎◎ — 외국인 매니아·MZ</li>
+<li>시그니처: 외국인 매니아 1순위</li>
+</ul>
+<hr>
+<h2>② 글로벌 매니아 (3)</h2>
+<h3>4. Tower of God (신의 탑) ★ 외국인 #1</h3>
+<ul>
+<li>외국인 ★: ◎◎ — 외국인 글로벌 #1·SIU</li>
+<li>시그니처: 한국 글로벌 웹툰 #1·외국인 매니아 1번지</li>
+</ul>
+<h3>5. Solo Leveling (나 혼자만 레벨업) ★</h3>
+<ul>
+<li>외국인 ★: ◎◎ — 외국인 글로벌 매니아 1번지</li>
+<li>시그니처: 외국인 매니아·#387 K-pop 통합</li>
+</ul>
+<h3>6. 노블레스·기기괴괴·외모지상주의</h3>
+<ul>
+<li>외국인 ★: ◎◎ — 외국인 매니아 1순위</li>
+<li>시그니처: 외국인 매니아·#387 K-pop</li>
+</ul>
+<hr>
+<h2>③ 만화 카페 (3)</h2>
+<h3>7. 만화 카페 (강남·홍대) ★ #138·#142</h3>
+<ul>
+<li>매장: 강남·홍대 (#138·#142)</li>
+<li>외국인 ★: ◎◎ — 외국인 영어 OK·시간당 3~5K</li>
+<li>시그니처: 외국인 매니아·#444 통합</li>
+</ul>
+<h3>8. 이태원·한남 만화 카페 (#144)</h3>
+<ul>
+<li>매장: 이태원·한남 (#144·#293)</li>
+<li>외국인 ★: ◎◎ — 외국인 거주·#144</li>
+<li>시그니처: 외국인 매니아·#144 통합</li>
+</ul>
+<h3>9. 카페 + 만화 통합 (#381·#444)</h3>
+<ul>
+<li>매장: 강남·홍대 cluster</li>
+<li>외국인 ★: ◎◎ — 외국인 매니아·#381 통합</li>
+<li>시그니처: 카페 + 만화·외국인 매니아 1번지</li>
+</ul>
+<hr>
+<h2>④ 매니아·박물관 (3 + 추가 4)</h2>
+<h3>10. 부천 만화 박물관 ★ 한국 #1 박물관</h3>
+<ul>
+<li>주소: 경기 부천 (KTX 1박2일)</li>
+<li>외국인 ★: ◎◎ — 한국 #1 만화 박물관·외국인 매니아</li>
+<li>시그니처: 외국인 매니아·KTX 외곽 1박2일</li>
+</ul>
+<h3>11. 외국인 영어 OK 웹툰 캐릭터 카페</h3>
+<ul>
+<li>매장: 강남·홍대 (#138·#142)</li>
+<li>외국인 ★: ◎◎ — 외국인 매니아·MZ 1번지</li>
+<li>시그니처: 외국인 매니아 1번지·#387 통합</li>
+</ul>
+<h3>12. 외국인 만화·웹툰 패키지 ★ Klook·KKday·KTO</h3>
+<ul>
+<li>영어 OK·KTO 인증·외국인 매니아 패키지</li>
+<li>외국인 ★: ◎◎ — 외국인 매니아 1번지</li>
+<li>시그니처: 외국인 매니아·#404 통합</li>
+</ul>
+<h3>+ 추가 4</h3>
+<ul>
+<li><strong>외국인 K-pop + 웹툰 통합 (#387)</strong> — BTS·BLACKPINK 웹툰·외국인 글로벌 매니아</li>
+<li><strong>외국인 영어 웹툰 어플</strong> — LINE Webtoon·KakaoPage·외국인 영어 OK</li>
+<li><strong>외국인 웹툰 작가</strong> — SIU·Chugong·DICE·외국인 매니아</li>
+<li><strong>외국인 만화·웹툰 + K-드라마 통합 (#378·#424)</strong> — 외국인 매니아 풀세트</li>
+</ul>
+<hr>
+<h2>⚙ FAQ 6개</h2>
+<p>1. <strong>외국인 웹툰 1순위</strong>: 네이버 (한국 #1 글로벌)·카카오·LINE Webtoon·외국인 영어 OK.</p>
+<p>2. <strong>외국인 글로벌 매니아</strong>: Tower of God·Solo Leveling·노블레스·외국인 매니아 #1.</p>
+<p>3. <strong>외국인 만화 카페</strong>: 강남·홍대·이태원·#138·#142·#144·시간당 3~5K.</p>
+<p>4. <strong>외국인 박물관</strong>: 부천 만화 박물관·외국인 매니아·KTX 1박2일.</p>
+<p>5. <strong>외국인 패키지</strong>: Klook·KKday·KTO·외국인 영어 OK 풀세트.</p>
+<p>6. <strong>외국인 통합</strong>: 만화·웹툰 + K-pop (#387) + K-드라마 (#378·#424) + 영화 (#424).</p>
+<hr>
+<h2>🗺 외국인 풀데이 코스 3개</h2>
+<h3>A. 외국인 첫 만화·웹툰 풀데이 (#444·#445)</h3>
+<ul>
+<li>14:00 만화 카페 강남 (#142) → 16:00 웹툰 캐릭터 카페 (#138) → 18:00 #444 보드게임 카페 → 21:00 #436 노래방</li>
+</ul>
+<h3>B. 외국인 글로벌 매니아 1박2일 (#387·#404)</h3>
+<ul>
+<li>Day 1: 네이버 웹툰 + 카카오 웹툰 카페 + 만화 카페·#138</li>
+<li>Day 2: 부천 만화 박물관 + KCON·MAMA 페스티벌 (#404)</li>
+</ul>
+<h3>C. 외국인 매니아 풀세트 1주일 (#378·#387·#444·#445)</h3>
+<ul>
+<li>Day 1~2: 만화 카페·웹툰·외국인 매니아·#444 통합</li>
+<li>Day 3~5: K-드라마 (#378·#424)·K-pop (#387·#399·#402)</li>
+<li>Day 6~7: 외국인 매니아 패키지·KTO</li>
+</ul>
+<hr>
+<h2>🌸 시즌 5</h2>
+<ul>
+<li><strong>봄 3~5월</strong>: 외국인 매니아 1순위·#385 통합</li>
+<li><strong>여름 6~8월</strong>: 외국인 실내 매니아 1번지·#444</li>
+<li><strong>가을 9~11월</strong>: 외국인 매니아·#385 통합</li>
+<li><strong>겨울 12~2월</strong>: 실내 매니아·외국인 매니아</li>
+<li><strong>연중</strong>: 네이버·카카오·만화 카페·외국인 매니아</li>
+</ul>
+<hr>
+<h2>🔗 관련</h2>
+<ul>
+<li>#138 홍대·#142 강남·#144 이태원·#178 외국인 첫 방문·#293 한남·#356 호텔·#378 K-드라마·#381 카페·#387 K-pop·#399 K-pop 댄스·#402 K-pop 콘서트·#404 페스티벌·#424 한국 영화·#436 노래방·#440 테마파크·#443 PC방·VR·#444 보드게임</li>
+</ul>
+<h2>🏷 태그</h2>
+<p><code>#외국인만화웹툰deepdive</code> <code>#KoreaWebtoonComicsDeepDive</code> <code>#네이버웹툰한국1글로벌1억+</code> <code>#카카오웹툰KakaoPage</code> <code>#레진코믹스봄툰코미코</code> <code>#TowerofGod신의탑외국인1SIU</code> <code>#SoloLeveling나혼자만레벨업글로벌1번지</code> <code>#노블레스기기괴괴외모지상주의</code> <code>#만화카페강남홍대#138#142 3-5K</code> <code>#만화카페이태원한남거주</code> <code>#카페만화통합#381#444</code> <code>#부천만화박물관한국1KTX</code> <code>#영어OK웹툰캐릭터카페</code> <code>#KlookKKdayKTO만화웹툰패키지</code> <code>#K-pop웹툰통합LINEWebtoonSIUChugongDICEK-드라마통합</code> <code>#키친구</code></p>
+
+  <div class="share-bar">
+    <span class="share-label">공유</span>
+    <button class="share-btn share-twitter" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent('외국인 만화 웹툰 deep dive') + '&url=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Twitter">𝕏</button>
+    <button class="share-btn share-facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Facebook">f</button>
+    <button class="share-btn share-kakao" onclick="navigator.share ? navigator.share({title: '외국인 만화 웹툰 deep dive', url: window.location.href}) : navigator.clipboard.writeText(window.location.href).then(function() { alert('링크 복사됨!'); })" aria-label="Kakao/Share">📤</button>
+    <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href).then(function() { this.textContent = '✓'; setTimeout(function() { document.querySelector('.share-copy').textContent = '🔗'; }, 1500); }.bind(this))" aria-label="Copy link">🔗</button>
+  </div>
+
+  <div class="detail-nav">
+    <div><a href="board-game-cafe.html" style="color:var(--red);">&larr; 외국인 보드게임 카페 deep dive</a></div>
+    <div><a href="sports-mania.html" style="color:var(--red);">외국인 스포츠 매니아 deep dive &rarr;</a></div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <p><a href="https://instagram.com/keychingu.korea" target="_blank">@keychingu.korea</a> &mdash; Seoul for MZ FIT Travelers</p>
+</footer>
+</body>
+</html>
