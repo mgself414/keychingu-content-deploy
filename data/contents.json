@@ -9148,5 +9148,105 @@
     "summary_kr": "서울 분식 매트릭스 — 5축 (떡볶이·김밥·만두·순대·튀김) — 광장시장 진옥화 마약김밥 (미슐랭 빕구르망·한국 #1)·통인시장 5,000원 동전 도시락·망원시장 MZ 분식·떡볶이 체인 3대장 (신전·엽기·죠스 #66 연계)·명동 만두·종로3가 24h 순대국 (#338) + 4 동선 + 5팁 + segment cross-link. 카테고리 메타 가성비·일상식 1편 (#337·#343 sub-deep).",
     "summary_en": "Seoul bunsik (Korean street food) matrix — 5 axes (tteokbokki·gimbap·mandu·sundae·twigim) — Gwangjang Jin Okhwa magic gimbap (Michelin Bib Gourmand·Korea #1)·Tongin Market 5,000 won coin lunch·Mangwon MZ bunsik·tteokbokki top-3 chains (Shinjeon·Yeopgi·Jaws #66 link)·Myeongdong mandu·Jongno 3-ga 24h sundae-guk (#338) + 4 routes + 5 tips. Category meta budget/daily-food #1 (#337·#343 sub-deep).",
     "en_available": false
+  },
+  {
+    "id": "472",
+    "slug": "korea-sool-map",
+    "title_kr": "Korea Sool Map — 외국인 관광객 한국 술 (막걸리·소주·수제맥주·전통주) 풀 메타 가이드 12 시그니처",
+    "title_en": "Korea Sool Map",
+    "category": "C",
+    "tags": [
+      "foreigner",
+      "sool",
+      "makgeolli",
+      "soju",
+      "craft-beer",
+      "traditional-alcohol",
+      "andong-soju",
+      "meta-category"
+    ],
+    "summary_kr": "한국 술 매트릭스 — 5축 (막걸리·소주·수제맥주·전통주·체험) — 막걸리 5대 양조장 (장수·국순당·지평·포천도원·서울장수) + 소주 4대 (참이슬·진로·처음처럼·새로) + 이태원/해방촌/연남 수제맥주 cluster + 안동소주 700년 UNESCO·문배주·이강주 전통주 + 인사동 전통주 갤러리 시음·국순당 가양주 체험 영문 + 신라/시그니엘 럭셔리 바. 카테고리 메타 술·음주 axis 1편 (#450·#337 sub-deep).",
+    "summary_en": "Korea Sool matrix — 5 axes (makgeolli·soju·craft beer·traditional·experience) — 5 makgeolli breweries (Jangsu·Kooksoondang·Jipyeong·Pocheon·Seoul Jangsu) + 4 soju brands + Itaewon/Haebangchon/Yeonnam craft beer cluster + Andong Soju 700yr UNESCO·Munbaeju·Igangju traditional + Insadong traditional alcohol gallery + Shilla/Signiel luxury bars. Category meta sool axis #1 (#450·#337 sub-deep).",
+    "en_available": false
+  },
+  {
+    "id": "473",
+    "slug": "korea-tteok-map",
+    "title_kr": "Korea Tteok Map — 외국인 관광객 한국 떡 (인절미·송편·약밥·찰떡·증편) 풀 메타 가이드 12 시그니처",
+    "title_en": "Korea Tteok Map",
+    "category": "C",
+    "tags": [
+      "foreigner",
+      "tteok",
+      "injeolmi",
+      "songpyeon",
+      "yakbap",
+      "traditional-dessert",
+      "unesco-intangible",
+      "meta-category"
+    ],
+    "summary_kr": "한국 떡 매트릭스 — 5축 (전통 5종·시즌·떡집·MZ 한옥·UNESCO 체험) — 인절미·송편·약밥·찰떡·증편 5종 + 설 가래떡·정월대보름 약밥·추석 송편·동지 팥떡 시즌 + 낙원떡집·단양 노포 + 인사동·북촌·전주 MZ 한옥 떡 카페 (#462) + 떡 만들기 UNESCO 인류무형 (2018) 외국인 영문 체험. 카테고리 메타 전통 디저트 axis 1편 (#337·#469·#471·#462 sub-deep).",
+    "summary_en": "Korea Tteok matrix — 5 axes (5 traditional·seasonal·noporo·MZ hanok·UNESCO experience) — Injeolmi·Songpyeon·Yakbap·Chaltteok·Jeungpyeon 5 types + Lunar New Year garaetteok·Daeboreum yakbap·Chuseok songpyeon·Dongji red-bean + Nakwon Tteokjip·Danyang noporo + Insadong/Bukchon/Jeonju MZ hanok tteok cafes (#462) + Tteok-making UNESCO Intangible (2018) EN experience. Category meta traditional dessert axis #1 (#337·#469·#471·#462 sub-deep).",
+    "en_available": false
+  },
+  {
+    "id": "474",
+    "slug": "korea-spring-dessert-map",
+    "title_kr": "Korea Spring Dessert Map — 외국인 관광객 봄 K-디저트 (딸기·벚꽃·쑥) 풀 메타 가이드 12 시그니처",
+    "title_en": "Korea Spring Dessert Map",
+    "category": "C",
+    "tags": [
+      "foreigner",
+      "spring-dessert",
+      "strawberry",
+      "cherry-blossom",
+      "mugwort",
+      "plum-blossom",
+      "tulip",
+      "meta-seasonal"
+    ],
+    "summary_kr": "봄 K-디저트 매트릭스 (3~5월) — 딸기 (설향·매향·죽향 1~5월)·벚꽃 (4월 글로벌 스타벅스 cherry blossom·여의도·경복궁 디저트 카페)·쑥 (디어다온 #469·쑥떡 #473 3~5월)·매화 (광양 3월·#421)·튤립 (고양 4~5월 #421)·봄나물·신라호텔 봄 한정 디저트. 시즌 디저트 axis 봄 1편 (#421·#469 sub-deep). 시즌 K-디저트 3편 batch 1편.",
+    "summary_en": "Korea spring dessert matrix (Mar~May) — strawberry (Seolhyang·Maehyang·Jukhyang Jan~May)·cherry blossom (Apr global Starbucks·Yeouido·Gyeongbokgung dessert cafes)·mugwort (Dear Daon #469·ssuktteok #473 Mar~May)·plum (Gwangyang Mar·#421)·tulip (Goyang Apr~May #421)·spring greens·Shilla Hotel spring limited dessert. Seasonal dessert axis spring #1 (#421·#469 sub-deep). Seasonal K-dessert 3-batch part 1.",
+    "en_available": false
+  },
+  {
+    "id": "475",
+    "slug": "korea-autumn-dessert-map",
+    "title_kr": "Korea Autumn Dessert Map — 외국인 관광객 가을 K-디저트 (감·밤·호박·고구마) 풀 메타 가이드 12 시그니처",
+    "title_en": "Korea Autumn Dessert Map",
+    "category": "C",
+    "tags": [
+      "foreigner",
+      "autumn-dessert",
+      "persimmon",
+      "chestnut",
+      "pumpkin",
+      "sweet-potato",
+      "halloween",
+      "meta-seasonal"
+    ],
+    "summary_kr": "가을 K-디저트 매트릭스 (9~11월) — 감 (단감·반시·홍시·곶감 상주 9~12월)·밤 (공주·청양 9~10월)·호박 (단호박·국수호박·핼러윈 10월 #451)·고구마 (군고구마·고구마 라떼)·봉평 메밀꽃 이효석 (9월·#423)·신라호텔 가을 단풍 시즌 한정. 시즌 디저트 axis 가을 1편 (#423·#469 sub-deep). 시즌 K-디저트 3편 batch 2편.",
+    "summary_en": "Korea autumn dessert matrix (Sep~Nov) — persimmon (sweet·bansi·hongsi·gotgam Sangju 9~12月)·chestnut (Gongju·Cheongyang 9~10月)·pumpkin (danbahan·gugsuhobak·Halloween Oct #451)·sweet potato (roasted·latte)·Bongpyeong buckwheat Lee Hyo-seok (Sep·#423)·Shilla Hotel autumn foliage seasonal. Seasonal dessert axis autumn #1 (#423·#469 sub-deep). Seasonal K-dessert 3-batch part 2.",
+    "en_available": false
+  },
+  {
+    "id": "476",
+    "slug": "korea-winter-dessert-map",
+    "title_kr": "Korea Winter Dessert Map — 외국인 관광객 겨울 K-디저트 (붕어빵·호떡·딸기·동지 팥죽) 풀 메타 가이드 12 시그니처",
+    "title_en": "Korea Winter Dessert Map",
+    "category": "C",
+    "tags": [
+      "foreigner",
+      "winter-dessert",
+      "bungeoppang",
+      "hotteok",
+      "strawberry-hotel",
+      "dongji-patjuk",
+      "illumination",
+      "meta-seasonal"
+    ],
+    "summary_kr": "겨울 K-디저트 매트릭스 (12~2월) — 붕어빵 (팥·슈크림·피자·치즈 11월~3월 길거리)·호떡 (씨앗 부산 남포·꿀·견과)·딸기 (12~5월 호텔 시즌 #469·#474 follow-up)·동지 팥죽 (12/22 #473·#424)·DDP·롯데타워·청계천 일루미네이션 카페 (#424)·에버랜드 크리스마스 (12월·#451)·군고구마·계란빵 길거리 (#471). 시즌 디저트 axis 겨울 1편 완결 (#424·#469 sub-deep). 시즌 K-디저트 3편 batch 완결.",
+    "summary_en": "Korea winter dessert matrix (Dec~Feb) — bungeoppang (red bean·custard·pizza·cheese Nov~Mar street)·hotteok (seed Busan Nampo·honey·nuts)·strawberry (Dec~May hotel #469·#474 follow-up)·dongji patjuk (12/22 #473·#424)·DDP·Lotte Tower·Cheonggyecheon illumination cafes (#424)·Everland Christmas (Dec·#451)·roasted sweet potato·egg bread street food (#471). Seasonal dessert axis winter #1 final (#424·#469 sub-deep). Seasonal K-dessert 3-batch final.",
+    "en_available": false
   }
 ]
