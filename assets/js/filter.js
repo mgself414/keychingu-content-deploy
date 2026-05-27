@@ -46,8 +46,12 @@
     }
   }
 
+  // 페이지 위치에 따라 contents.json 경로 자동 결정 (KR / EN 호환)
+  const IS_EN = /\/en\//.test(window.location.pathname);
+  const DATA_PATH = IS_EN ? '../data/contents.json' : 'data/contents.json';
+
   function init() {
-    fetch('data/contents.json')
+    fetch(DATA_PATH)
       .then(r => r.json())
       .then(data => {
         window.__contents = data;
@@ -57,7 +61,8 @@
         bindFavToggle(data);
         populateSearchSuggestions(data);
         updateFavCount();
-      });
+      })
+      .catch(err => console.error('[filter.js] failed to load', DATA_PATH, err));
   }
 
   function populateSearchSuggestions(data) {

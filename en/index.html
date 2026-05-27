@@ -11,7 +11,7 @@
   <meta property="og:title" content="KeyChinGu — Korea Travel Curation 446 Topics">
   <meta property="og:description" content="Foreign MZ FIT traveler guide — Seoul + Busan + 16 outskirts + K-content + foreigner essentials">
   <meta property="og:url" content="https://mgself414.github.io/keychingu-content-deploy/en/index.html">
-  <meta property="og:image" content="https://mgself414.github.io/keychingu-content-deploy/assets/logo/logo_2-4_color_small.png">
+  <meta property="og:image" content="https://mgself414.github.io/keychingu-content-deploy/assets/logo/og-image-1200x630.png">
   <meta property="og:locale" content="en_US">
 
   <link rel="canonical" href="https://mgself414.github.io/keychingu-content-deploy/en/index.html">
@@ -25,7 +25,35 @@
 <link rel="icon" href="../favicon.ico" sizes="any">
   <link rel="icon" type="image/png" sizes="192x192" href="../assets/logo/favicon-192.png">
   <link rel="apple-touch-icon" href="../assets/logo/favicon-192.png">
-  </head>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "KeyChinGu",
+  "alternateName": "키친구",
+  "url": "https://mgself414.github.io/keychingu-content-deploy/",
+  "logo": "https://mgself414.github.io/keychingu-content-deploy/assets/logo/og-image-1200x630.png",
+  "sameAs": ["https://instagram.com/keychingu.korea"]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "KeyChinGu Categories",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Neighborhood — Seoul 25 Districts", "url": "https://mgself414.github.io/keychingu-content-deploy/index.html#A"},
+    {"@type": "ListItem", "position": 2, "name": "Nature & Night Views", "url": "https://mgself414.github.io/keychingu-content-deploy/index.html#B"},
+    {"@type": "ListItem", "position": 3, "name": "Food & Restaurants", "url": "https://mgself414.github.io/keychingu-content-deploy/index.html#C"},
+    {"@type": "ListItem", "position": 4, "name": "Culture & Experience", "url": "https://mgself414.github.io/keychingu-content-deploy/index.html#D"},
+    {"@type": "ListItem", "position": 5, "name": "Beauty & Wellness", "url": "https://mgself414.github.io/keychingu-content-deploy/index.html#E"},
+    {"@type": "ListItem", "position": 6, "name": "Shopping", "url": "https://mgself414.github.io/keychingu-content-deploy/index.html#F"},
+    {"@type": "ListItem", "position": 7, "name": "K-Content (BTS·BLACKPINK·K-drama)", "url": "https://mgself414.github.io/keychingu-content-deploy/index.html#G"},
+    {"@type": "ListItem", "position": 8, "name": "Practical (Visa·SIM·Transit·Payment)", "url": "https://mgself414.github.io/keychingu-content-deploy/index.html#H"}
+  ]
+}
+</script>
+</head>
 <body>
 
 <!-- HEADER -->
@@ -33,7 +61,7 @@
   <a href="../en/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
   <nav class="site-nav">
     <a href="../en/index.html" class="active">Home</a>
-    <a href="meta-guides.html">📚 38 Meta Guides</a>
+    <a href="meta-guides.html">📚 95 Meta Guides</a>
     <a href="../about.html">About</a>
     <a href="../faq.html">FAQ</a>
   </nav>
@@ -263,6 +291,7 @@
   'use strict';
   let activeCategory = null;
   let activeTag = null;
+  let searchQuery = '';
   const CAT_COLORS = {A:'#218CCC',B:'#2E8B57',C:'#D94C53',D:'#FAAD19',E:'#E79397',F:'#6AB2DC',G:'#9B59B6',H:'#34495E'};
   const CAT_LABELS = {A:'Neighborhood',B:'Nature',C:'Food',D:'Culture',E:'Beauty',F:'Shopping',G:'K-Content',H:'Practical'};
 
@@ -287,6 +316,18 @@
         applyFilters(data);
       });
     });
+    // Search (debounced) — added 2026-05-28
+    const searchInput = document.getElementById('search-input');
+    if (searchInput) {
+      let debounceT;
+      searchInput.addEventListener('input', function () {
+        clearTimeout(debounceT);
+        debounceT = setTimeout(function () {
+          searchQuery = searchInput.value.trim().toLowerCase();
+          applyFilters(data);
+        }, 150);
+      });
+    }
   });
 
   function renderCards(items){
@@ -308,9 +349,23 @@
     let f=data;
     if(activeCategory) f=f.filter(i=>i.category===activeCategory);
     if(activeTag) f=f.filter(i=>i.tags.indexOf(activeTag)!==-1);
+    if(searchQuery){
+      const tokens = searchQuery.split(/[\s+]+/).filter(Boolean);
+      f = f.filter(item => {
+        const haystack = [
+          (item.title_en||'').toLowerCase(),
+          (item.title_kr||'').toLowerCase(),
+          (item.summary_en||'').toLowerCase(),
+          (item.summary_kr||'').toLowerCase(),
+          (item.tags||[]).join(' ').toLowerCase()
+        ].join(' ');
+        return tokens.every(t => haystack.indexOf(t) !== -1);
+      });
+    }
     renderCards(f);
   }
 })();
 </script>
+<script>(function(){var s=document.getElementById('search-input');if(s&&window.matchMedia('(max-width:520px)').matches){s.placeholder='🔍 Search';}})();</script>
 </body>
 </html>

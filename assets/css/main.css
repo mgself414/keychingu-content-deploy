@@ -440,6 +440,13 @@ a { color: inherit; text-decoration: none; }
     width: 100%;
     text-align: center;
   }
+  /* 통계 링크 모바일 — search-bar 끝으로 inline 처리 (2026-05-28) */
+  .search-bar .stats-link {
+    order: 99;
+    font-size: 0.85rem;
+    padding: 0.4rem 0.8rem;
+    margin-left: auto;
+  }
   .area-bar, .filter-bar, .tag-bar {
     gap: 0.4rem;
     padding: 0 0.6rem;
