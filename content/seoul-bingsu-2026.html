@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>서울 빙수 완전정복 2026여름 deep dive — KeyChinGu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/main.css">
+<style>
+.detail-wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+}
+.breadcrumb {
+  font-size: 13px;
+  color: var(--text-soft);
+  margin-bottom: 24px;
+}
+.breadcrumb a { color: var(--red); font-weight: 600; }
+.detail-wrap h1 {
+  font-size: 28px; font-weight: 800;
+  color: var(--black); margin-bottom: 8px;
+}
+.detail-wrap h2 {
+  font-size: 22px; font-weight: 700;
+  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--red);
+}
+.detail-wrap h3 {
+  font-size: 17px; font-weight: 600;
+  color: var(--text-mid); margin-top: 20px; margin-bottom: 8px;
+}
+.detail-wrap p {
+  font-size: 15px; line-height: 1.7;
+  color: var(--text-mid); margin-bottom: 12px;
+}
+.detail-wrap ul {
+  padding-left: 20px; margin-bottom: 12px;
+}
+.detail-wrap li {
+  font-size: 14px; line-height: 1.6;
+  color: var(--text-mid); margin-bottom: 6px;
+}
+.detail-wrap table {
+  width: 100%; border-collapse: collapse;
+  margin-bottom: 16px; font-size: 13px;
+}
+.detail-wrap th {
+  background: var(--black); color: #fff;
+  padding: 10px 12px; text-align: left;
+  font-weight: 600; font-size: 11px;
+  text-transform: uppercase; letter-spacing: 0.06em;
+}
+.detail-wrap td {
+  padding: 10px 12px; border-bottom: 1px solid var(--border);
+  color: var(--text-mid);
+}
+.detail-wrap tr:nth-child(even) td { background: rgba(0,0,0,0.02); }
+.detail-wrap hr {
+  border: none; height: 1px;
+  background: var(--border); margin: 24px 0;
+}
+.detail-wrap code {
+  background: rgba(33,140,204,0.08);
+  padding: 2px 6px; border-radius: 4px;
+  font-size: 13px; color: var(--blue);
+}
+.detail-nav {
+  display: flex; justify-content: space-between;
+  margin-top: 48px; padding-top: 20px;
+  border-top: 1px solid var(--border);
+  font-size: 14px; font-weight: 600;
+}
+.share-bar {
+  display: flex; align-items: center; gap: 10px;
+  margin-top: 40px; padding: 16px 20px;
+  background: #f9f9f9; border-radius: 12px;
+  border: 1px solid var(--border);
+}
+.share-label {
+  font-size: 14px; font-weight: 600; color: var(--text-soft);
+  margin-right: 8px;
+}
+.share-btn {
+  width: 40px; height: 40px;
+  border: none; border-radius: 50%;
+  background: #fff; cursor: pointer;
+  font-size: 1.1rem; transition: all 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  display: inline-flex; align-items: center; justify-content: center;
+}
+.share-btn:hover { transform: translateY(-2px); box-shadow: 0 3px 8px rgba(0,0,0,0.15); }
+.share-twitter:hover { background: #000; color: #fff; }
+.share-facebook:hover { background: #1877f2; color: #fff; }
+.share-kakao:hover { background: #fee500; }
+.share-copy:hover { background: #218CCC; color: #fff; }
+/* EN toggle disabled — 영문판 미생성 콘텐츠 (2026-05-16 patch) */
+.lang-switch .lang-disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  text-decoration: line-through;
+  padding: 4px 10px;
+  color: var(--text-soft, #888);
+  font-size: 13px;
+  user-select: none;
+}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <div class="lang-switch">
+    <a href="../content/seoul-bingsu-2026.html" class="active">KR</a>
+    <span class="lang-disabled" title="영문판 준비 중">EN</span>
+  </div>
+</header>
+
+<div class="detail-wrap">
+  <div class="breadcrumb"><a href="../index.html">전체 가이드</a> &rsaquo; 서울 빙수 완전정복 2026여름 deep dive</div>
+  <h1>서울 빙수 완전정복 deep dive — 트렌드·노포·럭셔리 12선</h1>
+<p>&gt; <strong>부제</strong>: 두바이초콜릿·우베·쑥·호텔 13만원·#233·#361·#385 후속 (2026 여름)</p>
+<p>ISSUE 03 · #510 · 2026-05-27</p>
+<hr>
+<h2>🎯 왜 서울 빙수 완전정복 deep dive인가</h2>
+<p>외국인 여름·MZ·럭셔리 매니아 1번지 = <strong>서울 빙수 deep dive</strong> (#233 디저트·#361 베이커리·#385 4계절 여름·#502 밥상 후속). 2026 서울 빙수 = <strong>글로벌 트렌드 (두바이·우베·양쯔깐루) + 한국 정통 (쑥·팥·인절미) + 호텔 럭셔리 (13~15만원)</strong> 동시 폭발 시기.</p>
+<p>외국인에게 빙수는 &quot;Patbingsu = 팥빙수&quot;로만 알려졌지만, 2026년 서울 빙수 신은 <strong>두바이 초콜릿 (Pistachio + Kataifi)·필리핀 우베·중국 양쯔깐루</strong> 같은 글로벌 디저트 트렌드를 빠르게 흡수하면서도, 동시에 <strong>쑥·팥·인절미</strong> 같은 전통 식재료를 재해석한 작품이 함께 폭발하고 있는 <strong>매우 흥미로운 시기</strong>.</p>
+<hr>
+<h2>★ 한눈에 12 빙수 명소</h2>
+<table><thead><tr>
+<th>#</th>
+<th>카페</th>
+<th>4축</th>
+<th>시그니처·가격</th>
+</tr></thead><tbody>
+<tr>
+<td>1</td>
+<td><strong>Ohlinzi 오린지 (송파)</strong> ★ 양쯔깐루</td>
+<td>트렌드 6</td>
+<td>중국 산시성 디저트·송파 해븐빌딩 5층</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>KORIYA 코리야 (성수)</strong> ★ 두바이 초콜릿</td>
+<td>트렌드 6</td>
+<td>Pistachio + Kataifi + 떡·성수 무신사 인근</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>MOVEMOVE 무브모브 (성수)</strong> ★ 우베</td>
+<td>트렌드 6</td>
+<td>필리핀 보랏빛 우베·뚝섬역 도보 7분</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Among 애몽 (연남)</strong> ★ 토마토 거북이</td>
+<td>트렌드 6</td>
+<td>대저토마토 소르베·홍대입구 도보 7분·7K</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>Moonduck 문덕카페 (을지로)</strong> ★ 파인애플</td>
+<td>트렌드 6</td>
+<td>파인애플 통째 + 파블로바·골뱅이골목</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>Dear Daon 디어다온 (연남)</strong> ★ 쑥푸딩</td>
+<td>트렌드 6</td>
+<td>쑥크림+쑥푸딩+우유빙수 3중 레이어·8.9K</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>Patjanggun 팥장군 (은평)</strong> ★ 저당 팥</td>
+<td>숨은 명소 6</td>
+<td>단맛 빼고 팥알 질감만·7~9K (가성비 #1)</td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>Dongbinggo 동빙고 (이촌)</strong> ★ 정통 30년</td>
+<td>숨은 명소 6</td>
+<td>한국 팥빙수 표준·외국인 거주 1번지</td>
+</tr>
+<tr>
+<td>9</td>
+<td><strong>Bubing 부빙 (부암동)</strong> ★ 말차</td>
+<td>숨은 명소 6</td>
+<td>청와대 뒤 산자락·캐치테이블 웨이팅</td>
+</tr>
+<tr>
+<td>10</td>
+<td><strong>Okryumong 옥루몽</strong> ★ 다점포 전통</td>
+<td>숨은 명소 6</td>
+<td>어린이대공원·이스트폴·전통+오름 눈꽃</td>
+</tr>
+<tr>
+<td>11</td>
+<td><strong>Mealtop 밀탑</strong> ★ 백화점 40년</td>
+<td>숨은 명소 6</td>
+<td>현대 압구정·신세계 본점·우유빙수+단팥죽</td>
+</tr>
+<tr>
+<td>12</td>
+<td><strong>Hotel Bingsu 호텔 빙수</strong> ★ 럭셔리 13~15만원</td>
+<td>숨은 명소 6</td>
+<td>신라·시그니엘·포시즌스·조선팰리스</td>
+</tr>
+</tbody></table>
+<p><strong>+ 추가 프랜차이즈 5</strong>: Sulbing 설빙 (#1)·Homing 호미빙 (대만식)·Okryumong·Mealtop·투썸플레이스 컵빙수</p>
+<hr>
+<h2>⚠ 외국인 자주 실수 5가지</h2>
+<p>1. <strong>&quot;빙수 = 팥빙수만&quot;</strong>: 2026 서울 빙수 = <strong>두바이 초콜릿 (KORIYA 성수)·우베 (MOVEMOVE)·양쯔깐루 (오린지 송파) 글로벌 트렌드 + 쑥 (디어다온)·팥 (팥장군)·인절미 (설빙) 정통 + 호텔 럭셔리 13만원</strong> 풀세트.</p>
+<p>2. <strong>&quot;1인 1빙수&quot;</strong>: 한국 빙수 = <strong>평균 2~3인분 사이즈·1인 1빙수는 너무 많음</strong> + 외국인 매니아 친구·연인 동행 권장.</p>
+<p>3. <strong>&quot;호텔 빙수 예약 없이 OK&quot;</strong>: 신라 더 라이브러리·시그니엘 79층·포시즌스 = <strong>온라인 예약·오픈런 (10AM) 필수</strong> + 7~8월 망고 시즌 절정.</p>
+<p>4. <strong>&quot;빙수 = 사진 천천히&quot;</strong>: 트렌드 빙수 = <strong>녹기 전 1분 안에 사진</strong> + 두바이 초콜릿 (KORIYA) 5분 내 카다이프 식감 유지.</p>
+<p>5. <strong>&quot;인절미·팥 헷갈림&quot;</strong>: 인절미 (Injeolmi) = <strong>떡</strong> / 팥 (Pat) = <strong>적두</strong> + 한국 디저트 기본 알파벳·외국인 매니아 필수.</p>
+<hr>
+<h2>① 트렌드 빙수 6선 (Trend-Driven 2026)</h2>
+<h3>1. Ohlinzi 오린지 ★ 양쯔깐루 (송파)</h3>
+<ul>
+<li><strong>주소</strong>: 송파구 백제고분로41길 10 해븐빌딩 5층</li>
+<li><strong>교통</strong>: 송파역·잠실역 도보권</li>
+<li><strong>시그니처</strong>: 양쯔깐루 (杨枝甘露·홍콩 광동) — 망고·자몽·당근 트로피컬</li>
+<li>외국인 ★: ◎◎ — 한국에서 흔치 않은 시그니처·인스타·블로그 인증샷</li>
+<li><strong>Pro Tip</strong>: 자몽 특유의 살짝 쌉쌀한 맛·단맛만 기대 X</li>
+</ul>
+<h3>2. KORIYA 코리야 ★ 두바이 초콜릿 (성수)</h3>
+<ul>
+<li><strong>주소</strong>: 성동구 왕십리로4길 10-20 B1층</li>
+<li><strong>교통</strong>: 성수역 3번 출구 도보 8분</li>
+<li><strong>시그니처</strong>: Pistachio + Kataifi + 떡 + 우유빙수</li>
+<li>외국인 ★: ◎◎ — 글로벌 SNS 트렌드 + 외국인 즉시 친숙</li>
+<li><strong>Pro Tip</strong>: 카다이프 (Kataifi) 눅눅해지면 매력 반감·<strong>나오자마자 5분 안에 사진·먹기</strong></li>
+</ul>
+<h3>3. MOVEMOVE 무브모브 ★ 우베 스노우 (성수)</h3>
+<ul>
+<li><strong>주소</strong>: 성동구 성수일로 56</li>
+<li><strong>교통</strong>: 뚝섬역 도보 7분·성수역 도보 10분</li>
+<li><strong>시그니처</strong>: 필리핀 보랏빛 우베 (Ube) + 스튜디오 컨셉</li>
+<li>외국인 ★: ◎◎ — 2026 우베 트렌드 오리지널·스타벅스·CU도 우베 메뉴 출시</li>
+<li><strong>Pro Tip</strong>: 우베는 한국 팥보다 깊은 단맛 + 코코넛 향·<strong>말차 못 먹어도 우베는 도전</strong></li>
+</ul>
+<h3>4. Among 애몽 ★ 토마토 거북이 (연남)</h3>
+<ul>
+<li><strong>주소</strong>: 마포구 연남로3길 13 2층</li>
+<li><strong>교통</strong>: 홍대입구 3번 출구 도보 7분·<strong>공항철도 인천공항 직결</strong></li>
+<li><strong>시그니처</strong>: 대저토마토 소르베·거북이 모양·『구름빵』 알파세대 감성</li>
+<li><strong>시간</strong>: 13:00~21:00·화요일 휴무</li>
+<li>외국인 ★: ◎◎ — 7K 합리적·<strong>출국 전 마지막 코스 추천</strong></li>
+<li><strong>Pro Tip</strong>: 토마토 = 채소 상식 깨는 짭짤·달큰 맛</li>
+</ul>
+<h3>5. Moonduck 문덕카페 ★ 파인애플 (을지로)</h3>
+<ul>
+<li><strong>주소</strong>: 중구 수표로 42-3 2층</li>
+<li><strong>교통</strong>: 을지로3가역 11번 출구 도보 3분</li>
+<li><strong>시그니처</strong>: 파인애플 한 통 통째·파블로바 (Pavlova)·<strong>노포 vs 모던</strong> Old meets New</li>
+<li>외국인 ★: ◎◎ — 외국인이 사랑하는 서울의 전형</li>
+<li><strong>Pro Tip</strong>: 빙수 전후 <strong>을지로 노가리골목·골뱅이골목</strong> 산책·저녁 분위기 최고</li>
+</ul>
+<h3>6. Dear Daon 디어다온 ★ 쑥푸딩 (연남)</h3>
+<ul>
+<li><strong>주소</strong>: 마포구 동교로38길 33-9 101호</li>
+<li><strong>교통</strong>: 홍대입구 3번 출구 도보 10분</li>
+<li><strong>시그니처</strong>: 쑥크림 + 쑥푸딩 + 우유빙수 3중 레이어·<strong>쑥푸딩빙수 8,900원</strong></li>
+<li><strong>결제</strong>: 서울페이 OK·캐치테이블 예약</li>
+<li>외국인 ★: ◎◎ — 쑥 (mugwort) = 약초 이미지 깨는 고급 디저트</li>
+<li><strong>Pro Tip</strong>: 메뉴 사실상 쑥푸딩·커스터드 2종·<strong>처음이면 무조건 쑥푸딩 (₩8,900)</strong>·푸딩 선물박스 OK</li>
+</ul>
+<hr>
+<h2>② 숨은 명소 6선 (Hidden Gems)</h2>
+<h3>7. Patjanggun 팥장군 ★ 저당 팥 (은평·구산)</h3>
+<ul>
+<li><strong>주소</strong>: 은평구 연서로 150 1층 (대조동)</li>
+<li><strong>교통</strong>: 구산역 (6호선) 도보 5분</li>
+<li><strong>시그니처</strong>: <strong>단맛 빼고 팥알 질감만</strong>·미니멀 팥빙수·<strong>7~9K 가성비 #1</strong></li>
+<li>외국인 ★: ◎◎ — Deep Local·일본·동남아 거부감 없이 즐김</li>
+<li><strong>Pro Tip</strong>: 진정한 팥의 맛 미식가 추천·강한 단맛 기대 X</li>
+</ul>
+<h3>8. Dongbinggo 동빙고 ★ 정통 30년 (이촌)</h3>
+<ul>
+<li><strong>주소</strong>: 용산구 이촌로 319 현대아파트 상가</li>
+<li><strong>교통</strong>: 이촌역 (4호선·경의중앙선) 도보 5분</li>
+<li><strong>시그니처</strong>: 30년 정통 팥+우유얼음+찰떡·한국 팥빙수 표준</li>
+<li>외국인 ★: ◎◎ — 한남·이태원 가까워 외국인 거주 동선 편입</li>
+<li><strong>Pro Tip</strong>: 3~5시 가장 한가·주말 오후 만석·<strong>이촌 한강공원 산책 연계</strong></li>
+</ul>
+<h3>9. Bubing 부빙 ★ 말차 (부암동)</h3>
+<ul>
+<li><strong>주소</strong>: 종로 부암동 본점</li>
+<li><strong>교통</strong>: 경복궁역 (3호선) → 버스 1020/7022번</li>
+<li><strong>시그니처</strong>: 산자락 한적·<strong>&quot;서울에 이런 곳이?&quot;</strong> 외국인 반응 #1</li>
+<li>외국인 ★: ◎◎ — 본점 외 북촌·연남 지점·캐치테이블 웨이팅</li>
+<li><strong>Pro Tip</strong>: 부암동 <strong>석파정·서울미술관·창의문</strong> 한나절 코스·접근성 부족 시 북촌 지점 추천</li>
+</ul>
+<h3>10. Okryumong 옥루몽 ★ 다점포 전통</h3>
+<ul>
+<li><strong>주소</strong>: 어린이대공원점·이스트폴 (구의)점 등 다수</li>
+<li><strong>교통</strong>: 어린이대공원역·구의역</li>
+<li><strong>시그니처</strong>: 전통 팥빙수 + <strong>오름 눈꽃빙수 (산 모양)</strong> + 인절미·콩가루 클래식</li>
+<li>외국인 ★: ◎◎ — 한방 컨셉·외국인 동선 밖 진짜 로컬</li>
+<li><strong>Pro Tip</strong>: 비 오는 날 우산 없이 이동 가능한 <strong>이스트폴 직영점</strong> 외국인 편리</li>
+</ul>
+<h3>11. Mealtop 밀탑 ★ 백화점 40년</h3>
+<ul>
+<li><strong>주소</strong>: 현대백화점 압구정 본점 5층·신세계백화점 본점 외</li>
+<li><strong>교통</strong>: 압구정역·회현역</li>
+<li><strong>시그니처</strong>: <strong>우유빙수 + 단팥죽 사이드</strong>·찹쌀떡·40년 정통·시즌 한정 (샤인머스켓·녹차)</li>
+<li>외국인 ★: ◎◎ — 백화점 쇼핑 동선·#406 면세 통합</li>
+<li><strong>Pro Tip</strong>: 백화점 영업시간 10:30~20:00·<strong>점심 직후 1~3시 명당</strong></li>
+</ul>
+<h3>12. Hotel Bingsu Scene ★ 럭셔리 13~15만원</h3>
+<ul>
+<li><strong>신라호텔 더 라이브러리</strong>: 애플망고빙수 <strong>130,000원</strong>·매년 오픈런 #1·평일 10:00 5번 출구 줄</li>
+<li><strong>시그니엘 서울 79층</strong>: 드라이아이스 퍼포먼스 <strong>135,000원</strong> (#356·#360)</li>
+<li><strong>포시즌스 호텔 서울</strong>: 2026 최고가 <strong>149,000원</strong></li>
+<li><strong>조선팰리스 강남</strong>: 130,000원·롯데호텔 서울 120,000원</li>
+<li><strong>시즌</strong>: 5~9월·<strong>예약 필수</strong>·둘이서 130K</li>
+<li>외국인 ★: ◎◎ — 외국인 럭셔리 매니아 1번지·7~8월 망고 시즌</li>
+<li><strong>Pro Tip</strong>: 한 번은 경험해볼 가치 있는 <strong>빙수계의 끝판왕</strong></li>
+</ul>
+<hr>
+<h2>🏪 프랜차이즈 빙수 비교 Top 5</h2>
+<table><thead><tr>
+<th>Brand</th>
+<th>시그니처</th>
+<th>가격대</th>
+<th>외국인 친숙도</th>
+<th>키친구 추천 포인트</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>Sulbing 설빙</strong></td>
+<td>인절미·흑임자·딸기</td>
+<td>10~14K</td>
+<td>★★★★★</td>
+<td>한국식 빙수 = 설빙·K-드라마/유튜브 노출 #1</td>
+</tr>
+<tr>
+<td><strong>Homing 호미빙</strong></td>
+<td>대만식 망고빙수</td>
+<td>9~13K</td>
+<td>★★★</td>
+<td><strong>대패빙수</strong> (shaved milk ice) 식감 차이</td>
+</tr>
+<tr>
+<td><strong>Okryumong 옥루몽</strong></td>
+<td>전통 팥·오름 눈꽃</td>
+<td>9~12K</td>
+<td>★★</td>
+<td>노포 감성 + 프랜차이즈 위생</td>
+</tr>
+<tr>
+<td><strong>Mealtop 밀탑</strong></td>
+<td>우유빙수+단팥죽</td>
+<td>13~18K</td>
+<td>★★★</td>
+<td>백화점 쇼핑 동선</td>
+</tr>
+<tr>
+<td><strong>Twosome Place 투썸플레이스</strong></td>
+<td>팥·망고·컵빙수</td>
+<td>7~14K</td>
+<td>★★★★</td>
+<td>카페체인·진입 장벽 최저·컵빙수 ₩5K</td>
+</tr>
+</tbody></table>
+<h3>🏆 외국인 첫 빙수 선택 가이드</h3>
+<ul>
+<li><strong>한국 빙수 표준</strong> → 🥇 <strong>설빙 인절미빙수</strong></li>
+<li><strong>시간 없고 카페 안에서 끝</strong> → 🥈 <strong>투썸플레이스 컵빙수</strong></li>
+<li><strong>백화점 쇼핑 동선</strong> → 🥉 <strong>밀탑 (현대 압구정·신세계 본점)</strong></li>
+</ul>
+<hr>
+<h2>🍯 외국인 빙수 5 Tips</h2>
+<p>1. <strong>여러 명이 한 그릇</strong> — 평균 2~3인분 사이즈·1인 1빙수 X</p>
+<p>2. <strong>인절미 vs 팥</strong> — 인절미 = 떡, 팥 = 적두·외국인 헷갈리는 두 토핑</p>
+<p>3. <strong>녹기 전 사진 1분 안</strong> — 트렌드 빙수일수록 빠르게</p>
+<p>4. <strong>현금 거의 안 받음</strong> — 신용카드·삼성페이·서울페이만·해외 카드 미리 활성화 (#421 통합)</p>
+<p>5. <strong>호텔 빙수 예약 필수</strong> — 신라·시그니엘·포시즌스 온라인 예약·오픈런 없이는 거의 불가능</p>
+<hr>
+<h2>🗺 외국인 빙수 크롤 추천 동선 4 Routes</h2>
+<h3>Route A. <strong>연남 동선</strong> (캐주얼 + 트렌드) ★ 외국인 첫 빙수</h3>
+<ul>
+<li>디어다온 (쑥푸딩) → 애몽 (토마토 거북이) → 부빙 연남점 (말차)</li>
+<li>도보 동선·약 3시간·#156 연남 통합</li>
+</ul>
+<h3>Route B. <strong>성수 동선</strong> (글로벌 트렌드) ★ MZ 매니아 #1</h3>
+<ul>
+<li>코리야 (두바이) → 무브모브 (우베) → 옥루몽 이스트폴 (전통팥)</li>
+<li>도보 + 1정거장·#01·#145·#263 통합</li>
+</ul>
+<h3>Route C. <strong>을지로·익선 동선</strong> (노포 감성)</h3>
+<ul>
+<li>문덕카페 (파인애플) → 익선동 한옥거리 → 인사동 (#297)</li>
+<li>도보 동선·#11·#12·#383 통합</li>
+</ul>
+<h3>Route D. <strong>럭셔리 호텔 빙수 데이</strong> ★ 외국인 럭셔리 매니아</h3>
+<ul>
+<li>신라호텔 더 라이브러리 오픈런 10AM → 동대문 DDP (#172) → 시그니엘 잠실 79층 저녁 (#356·#360)</li>
+<li>130K~149K·예약 필수·#356·#358·#360 통합</li>
+</ul>
+<hr>
+<h2>⚙ FAQ 6개</h2>
+<p>1. <strong>외국인 첫 빙수 1순위</strong>: 설빙 (인절미)·디어다온 (쑥푸딩 8.9K)·동빙고 (정통 30년).</p>
+<p>2. <strong>외국인 글로벌 트렌드</strong>: 코리야 두바이·무브모브 우베·오린지 양쯔깐루·#01·#145 통합.</p>
+<p>3. <strong>외국인 가성비</strong>: 팥장군 7K·애몽 7K·투썸 컵빙수 5K·외국인 매니아.</p>
+<p>4. <strong>외국인 럭셔리</strong>: 신라 더 라이브러리 130K·시그니엘 135K·포시즌스 149K·#356 통합.</p>
+<p>5. <strong>외국인 호텔 빙수 예약</strong>: 온라인 예약·신라 10AM 오픈런·5~9월 시즌·7~8월 망고 절정.</p>
+<p>6. <strong>외국인 동선 매니아</strong>: Route A (연남)·B (성수)·C (을지로)·D (럭셔리)·#385 여름 #1.</p>
+<hr>
+<h2>🌸 시즌 5</h2>
+<ul>
+<li><strong>봄 3~5월</strong>: 딸기 빙수 (설빙·밀탑 시즌)·외국인 매니아 1순위</li>
+<li><strong>여름 6~8월</strong>: 빙수 절정 시즌·호텔 빙수 7~8월 망고·외국인 #1 demand·#385·#06 통합</li>
+<li><strong>가을 9~11월</strong>: 9월 한정 빙수 일부·외국인 매니아·#229 단풍 결합</li>
+<li><strong>겨울 12~2월</strong>: 따뜻한 카페 + 일부 빙수·외국인 매니아</li>
+<li><strong>연중</strong>: 설빙·투썸·옥루몽·#225 카페·#381 통합</li>
+</ul>
+<hr>
+<h2>🔗 관련</h2>
+<ul>
+<li>#01 성수·#11 을지로·#12 익선·북촌·#142 강남·#156 연남·#172 DDP·#178 외국인 첫 방문·#191 부암동·#225 카페·#229 가을·#233 디저트·#244·#263 성수·#296 청담·#297 인사동·#356 호텔·#358 호텔 조식·#360 호텔 다이닝·#361 베이커리·#380 시장·#381 카페·#383 노포·#385 4계절·#391 음식 매트릭스·#400 외국인 친화 식당·#406 면세점·#421 환전·#502 밥상 문화·#505 차·다도·#506 명절 calendar</li>
+</ul>
+<h2>🏷 태그</h2>
+<p><code>#서울빙수완전정복2026여름deepdive</code> <code>#SeoulBingsuCrawl2026</code> <code>#오린지Ohlinzi양쯔깐루송파해븐빌딩5층</code> <code>#KORIYA코리야두바이초콜릿Pistachio Kataifi성수</code> <code>#MOVEMOVE무브모브우베필리핀보랏빛성수</code> <code>#Among애몽토마토거북이연남7K공항철도</code> <code>#문덕카페Moonduck파인애플파블로바을지로골뱅이골목</code> <code>#디어다온DearDaon쑥푸딩3중레이어연남8.9K</code> <code>#팥장군Patjanggun저당팥7K은평구산</code> <code>#동빙고Dongbinggo정통30년이촌</code> <code>#부빙Bubing말차부암동산자락캐치테이블</code> <code>#옥루몽Okryumong전통오름눈꽃이스트폴</code> <code>#밀탑Mealtop백화점40년현대신세계우유빙수단팥죽</code> <code>#호텔빙수신라130K시그니엘135K포시즌스149K조선팰리스롯데</code> <code>#프랜차이즈설빙SulbingHoming Okryumong Mealtop Twosome컵빙수</code> <code>#외국인5tips 2-3인분인절미팥1분사진현금카드호텔예약</code> <code>#Route A연남B성수C을지로D호텔</code> <code>#키친구</code></p>
+
+  <div class="share-bar">
+    <span class="share-label">공유</span>
+    <button class="share-btn share-twitter" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent('서울 빙수 완전정복 2026여름 deep dive') + '&url=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Twitter">𝕏</button>
+    <button class="share-btn share-facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Facebook">f</button>
+    <button class="share-btn share-kakao" onclick="navigator.share ? navigator.share({title: '서울 빙수 완전정복 2026여름 deep dive', url: window.location.href}) : navigator.clipboard.writeText(window.location.href).then(function() { alert('링크 복사됨!'); })" aria-label="Kakao/Share">📤</button>
+    <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href).then(function() { this.textContent = '✓'; setTimeout(function() { document.querySelector('.share-copy').textContent = '🔗'; }, 1500); }.bind(this))" aria-label="Copy link">🔗</button>
+  </div>
+
+  <div class="detail-nav">
+    <div><a href="temple-experience-deep.html" style="color:var(--red);">&larr; 외국인 사찰 체험 템플스테이 deep dive</a></div>
+    <div><a href="emergency-hospital.html" style="color:var(--red);">외국인 응급 병원 안전 풀가이드 &rarr;</a></div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <p><a href="https://instagram.com/keychingu.korea" target="_blank">@keychingu.korea</a> &mdash; Seoul for MZ FIT Travelers</p>
+</footer>
+</body>
+</html>
