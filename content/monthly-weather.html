@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>한국 월별 날씨 복장 준비물 deep dive — KeyChinGu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/main.css">
+<style>
+.detail-wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+}
+.breadcrumb {
+  font-size: 13px;
+  color: var(--text-soft);
+  margin-bottom: 24px;
+}
+.breadcrumb a { color: var(--red); font-weight: 600; }
+.detail-wrap h1 {
+  font-size: 28px; font-weight: 800;
+  color: var(--black); margin-bottom: 8px;
+}
+.detail-wrap h2 {
+  font-size: 22px; font-weight: 700;
+  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--red);
+}
+.detail-wrap h3 {
+  font-size: 17px; font-weight: 600;
+  color: var(--text-mid); margin-top: 20px; margin-bottom: 8px;
+}
+.detail-wrap p {
+  font-size: 15px; line-height: 1.7;
+  color: var(--text-mid); margin-bottom: 12px;
+}
+.detail-wrap ul {
+  padding-left: 20px; margin-bottom: 12px;
+}
+.detail-wrap li {
+  font-size: 14px; line-height: 1.6;
+  color: var(--text-mid); margin-bottom: 6px;
+}
+.detail-wrap table {
+  width: 100%; border-collapse: collapse;
+  margin-bottom: 16px; font-size: 13px;
+}
+.detail-wrap th {
+  background: var(--black); color: #fff;
+  padding: 10px 12px; text-align: left;
+  font-weight: 600; font-size: 11px;
+  text-transform: uppercase; letter-spacing: 0.06em;
+}
+.detail-wrap td {
+  padding: 10px 12px; border-bottom: 1px solid var(--border);
+  color: var(--text-mid);
+}
+.detail-wrap tr:nth-child(even) td { background: rgba(0,0,0,0.02); }
+.detail-wrap hr {
+  border: none; height: 1px;
+  background: var(--border); margin: 24px 0;
+}
+.detail-wrap code {
+  background: rgba(33,140,204,0.08);
+  padding: 2px 6px; border-radius: 4px;
+  font-size: 13px; color: var(--blue);
+}
+.detail-nav {
+  display: flex; justify-content: space-between;
+  margin-top: 48px; padding-top: 20px;
+  border-top: 1px solid var(--border);
+  font-size: 14px; font-weight: 600;
+}
+.share-bar {
+  display: flex; align-items: center; gap: 10px;
+  margin-top: 40px; padding: 16px 20px;
+  background: #f9f9f9; border-radius: 12px;
+  border: 1px solid var(--border);
+}
+.share-label {
+  font-size: 14px; font-weight: 600; color: var(--text-soft);
+  margin-right: 8px;
+}
+.share-btn {
+  width: 40px; height: 40px;
+  border: none; border-radius: 50%;
+  background: #fff; cursor: pointer;
+  font-size: 1.1rem; transition: all 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  display: inline-flex; align-items: center; justify-content: center;
+}
+.share-btn:hover { transform: translateY(-2px); box-shadow: 0 3px 8px rgba(0,0,0,0.15); }
+.share-twitter:hover { background: #000; color: #fff; }
+.share-facebook:hover { background: #1877f2; color: #fff; }
+.share-kakao:hover { background: #fee500; }
+.share-copy:hover { background: #218CCC; color: #fff; }
+/* EN toggle disabled — 영문판 미생성 콘텐츠 (2026-05-16 patch) */
+.lang-switch .lang-disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  text-decoration: line-through;
+  padding: 4px 10px;
+  color: var(--text-soft, #888);
+  font-size: 13px;
+  user-select: none;
+}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <div class="lang-switch">
+    <a href="../content/monthly-weather.html" class="active">KR</a>
+    <span class="lang-disabled" title="영문판 준비 중">EN</span>
+  </div>
+</header>
+
+<div class="detail-wrap">
+  <div class="breadcrumb"><a href="../index.html">전체 가이드</a> &rsaquo; 한국 월별 날씨 복장 준비물 deep dive</div>
+  <h1>한국 월별 날씨·복장·준비물 deep dive — 1월~12월 12개월 매트릭스</h1>
+<p>&gt; <strong>부제</strong>: 4계절 12개월 날씨·복장·준비물·#385·#506·#178 후속 deep dive</p>
+<p>ISSUE 03 · #518 · 2026-05-27</p>
+<hr>
+<h2>🎯 왜 한국 월별 날씨·복장·준비물 deep dive인가</h2>
+<p>외국인 첫 방문 필수 #1 = <strong>월별 날씨·복장·준비물 deep dive</strong> (#385 4계절·#506 명절·#178 첫 방문·#398 도착 후속). 한국 사계절 뚜렷 + 월별 평균 기온·강수량·복장·외국인 매니아 풀세트.</p>
+<hr>
+<h2>★ 한눈에 12개월 날씨·복장 매트릭스</h2>
+<table><thead><tr>
+<th>월</th>
+<th>기온 (서울)</th>
+<th>4축</th>
+<th>시그니처·복장·준비물</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>1월</strong></td>
+<td>-6 ~ 2℃ ★ 최한</td>
+<td>겨울 (12-2월)</td>
+<td>패딩·내복·장갑·핫팩·평창 눈축제 (#385)</td>
+</tr>
+<tr>
+<td><strong>2월</strong></td>
+<td>-4 ~ 5℃ + 설날</td>
+<td>겨울 (12-2월)</td>
+<td>패딩·#506 설날 한복 + 패딩·#385</td>
+</tr>
+<tr>
+<td><strong>3월</strong></td>
+<td>2 ~ 11℃ ★ 환절기</td>
+<td>봄 (3-5월)</td>
+<td>자켓·매화·진달래·#506 삼일절·황사 마스크</td>
+</tr>
+<tr>
+<td><strong>4월</strong></td>
+<td>7 ~ 18℃ ★ 벚꽃 절정</td>
+<td>봄 (3-5월)</td>
+<td>가벼운 자켓·<strong>윤중로 벚꽃 (#385)</strong>·진해 군항제</td>
+</tr>
+<tr>
+<td><strong>5월</strong></td>
+<td>12 ~ 23℃ ★ 최적 시즌</td>
+<td>봄 (3-5월)</td>
+<td>긴팔·<strong>부처님오신날 연등 (#506)</strong>·신선한 봄나물</td>
+</tr>
+<tr>
+<td><strong>6월</strong></td>
+<td>17 ~ 28℃ + 장마 시작</td>
+<td>여름 (6-8월)</td>
+<td>반팔·우산·<strong>단오 (#506 UNESCO 강릉)</strong></td>
+</tr>
+<tr>
+<td><strong>7월</strong></td>
+<td>22 ~ 30℃ + 장마 절정</td>
+<td>여름 (6-8월)</td>
+<td>반팔·우산·<strong>보령 머드 축제 (#385 #1)</strong>·삼복 (#506)</td>
+</tr>
+<tr>
+<td><strong>8월</strong></td>
+<td>23 ~ 31℃ ★ 최고온</td>
+<td>여름 (6-8월)</td>
+<td>반팔·<strong>광복절 (#506)</strong>·#06 한강 치맥·해운대</td>
+</tr>
+<tr>
+<td><strong>9월</strong></td>
+<td>18 ~ 27℃ ★ 추석</td>
+<td>가을 (9-11월)</td>
+<td>긴팔·<strong>추석 한복 (#506 9.24-26)</strong>·서울 불꽃축제</td>
+</tr>
+<tr>
+<td><strong>10월</strong></td>
+<td>12 ~ 21℃ ★ 단풍 시작</td>
+<td>가을 (9-11월)</td>
+<td>자켓·<strong>설악산 단풍 (#385·#511)</strong>·#506 개천절·한글날</td>
+</tr>
+<tr>
+<td><strong>11월</strong></td>
+<td>5 ~ 14℃ ★ 단풍 절정</td>
+<td>가을 (9-11월)</td>
+<td>자켓·코트·<strong>내장·남이섬 단풍·#385</strong></td>
+</tr>
+<tr>
+<td><strong>12월</strong></td>
+<td>-2 ~ 7℃ + 일루미네이션</td>
+<td>겨울 (12-2월)</td>
+<td>패딩·<strong>DDP 일루미네이션 (#172·#260)</strong>·크리스마스 (#506)</td>
+</tr>
+</tbody></table>
+<p><strong>+ 추가 4</strong>: 외국인 황사·미세먼지 마스크·외국인 우산·#421 환전 (시즌 환율)·외국인 KTO 시즌 패키지</p>
+<hr>
+<h2>⚠ 외국인 자주 실수 5가지</h2>
+<p>1. <strong>&quot;한국 = 사계절만&quot;</strong>: 한국 사계절 = <strong>봄 (3-5월 매화·벚꽃·진달래) + 여름 (6-8월 장마·삼복) + 가을 (9-11월 단풍 절정) + 겨울 (12-2월 -10℃·평창 눈축제)</strong> + 외국인 매니아 매트릭스·#385·#506 통합.</p>
+<p>2. <strong>&quot;한국 겨울 = 일본·유럽보다 따뜻&quot;</strong>: 한국 겨울 = <strong>1월 평균 -6℃·체감 -15℃·</strong>패딩·내복·장갑·핫팩 필수** + 외국인 매니아·평창 눈축제·#385·#456 통합.</p>
+<p>3. <strong>&quot;한국 여름 = 미국·유럽 같음&quot;</strong>: 한국 여름 = <strong>7-8월 30-35℃ + 습도 80%+ + 장마 (6.20~7.20) + 삼복 보양식 (#506·#388)</strong> + 외국인 매니아·#06 한강 치맥.</p>
+<p>4. <strong>&quot;가을 단풍 = 11월&quot;</strong>: 한국 단풍 = <strong>설악산 10월 중순 → 내장산·남이섬 10월 말 → 서울 11월 초</strong> + #385·#229·#273 매트릭스·외국인 매니아 1번지.</p>
+<p>5. <strong>&quot;황사·미세먼지 = 봄만&quot;</strong>: 황사·미세먼지 = <strong>봄 (3-5월 #1)·겨울 (12-2월 #2)·마스크 필수</strong> + Naver Map 미세먼지 확인·KF94 마스크·외국인 매니아.</p>
+<hr>
+<h2>① 봄 (3-5월) (3)</h2>
+<h3>3월 ★ 환절기·매화·진달래</h3>
+<ul>
+<li>기온: 2 ~ 11℃</li>
+<li>복장: 자켓·#506 삼일절 (3.1)</li>
+<li>시그니처: 매화 (광양·산청)·황사 마스크·외국인 매니아</li>
+</ul>
+<h3>4월 ★ 벚꽃 절정</h3>
+<ul>
+<li>기온: 7 ~ 18℃</li>
+<li>복장: 가벼운 자켓</li>
+<li>시그니처: <strong>윤중로 벚꽃 (#385 한국 #1)</strong>·진해 군항제·외국인 매니아 1번지</li>
+</ul>
+<h3>5월 ★ 최적 시즌</h3>
+<ul>
+<li>기온: 12 ~ 23℃</li>
+<li>복장: 긴팔·외국인 매니아 1번지</li>
+<li>시그니처: <strong>부처님오신날 연등 (#506·#509)</strong>·봄나물·#506 어린이날 (5.5)</li>
+</ul>
+<hr>
+<h2>② 여름 (6-8월) (3)</h2>
+<h3>6월 + 장마 시작</h3>
+<ul>
+<li>기온: 17 ~ 28℃</li>
+<li>복장: 반팔·우산</li>
+<li>시그니처: <strong>단오 (#506 6.19 UNESCO 강릉)</strong>·강릉 단오제·외국인 매니아</li>
+</ul>
+<h3>7월 + 장마 절정</h3>
+<ul>
+<li>기온: 22 ~ 30℃·강수량 #1</li>
+<li>복장: 반팔·우산</li>
+<li>시그니처: <strong>보령 머드 축제 (#385 #1)</strong>·#506 삼복·#06 한강</li>
+</ul>
+<h3>8월 ★ 최고온</h3>
+<ul>
+<li>기온: 23 ~ 31℃·체감 35℃</li>
+<li>복장: 반팔·선크림</li>
+<li>시그니처: <strong>광복절 (#506 8.15)</strong>·#06 한강 치맥·해운대·외국인 매니아</li>
+</ul>
+<hr>
+<h2>③ 가을 (9-11월) (3)</h2>
+<h3>9월 ★ 추석</h3>
+<ul>
+<li>기온: 18 ~ 27℃·외국인 매니아 1번지</li>
+<li>복장: 긴팔</li>
+<li>시그니처: <strong>추석 한복 (#506 9.24-26)</strong>·서울 국제 불꽃축제·외국인 매니아</li>
+</ul>
+<h3>10월 ★ 단풍 시작</h3>
+<ul>
+<li>기온: 12 ~ 21℃·외국인 매니아 1번지</li>
+<li>복장: 자켓</li>
+<li>시그니처: <strong>설악산 단풍 (10월 중순 #385·#511)</strong>·#506 개천절 (10.3)·한글날 (10.9)</li>
+</ul>
+<h3>11월 ★ 단풍 절정</h3>
+<ul>
+<li>기온: 5 ~ 14℃</li>
+<li>복장: 자켓·코트</li>
+<li>시그니처: <strong>내장산·남이섬 단풍·#385·#229·#273</strong> 매트릭스</li>
+</ul>
+<hr>
+<h2>④ 겨울 (12-2월) + 추가 4</h2>
+<h3>12월 + 일루미네이션</h3>
+<ul>
+<li>기온: -2 ~ 7℃</li>
+<li>복장: 패딩</li>
+<li>시그니처: <strong>DDP 일루미네이션 (#172·#260)</strong>·크리스마스 (#506 12.25)·연말 신정</li>
+</ul>
+<h3>1월 ★ 최한</h3>
+<ul>
+<li>기온: -6 ~ 2℃·체감 -15℃</li>
+<li>복장: <strong>패딩·내복·장갑·핫팩 필수</strong></li>
+<li>시그니처: <strong>평창 눈축제 (#385 #1)</strong>·태백 눈축제·외국인 매니아</li>
+</ul>
+<h3>2월 + 설날</h3>
+<ul>
+<li>기온: -4 ~ 5℃</li>
+<li>복장: 패딩</li>
+<li>시그니처: <strong>설날 한복 (#506 2.16-18)</strong>·#506 정월대보름·외국인 매니아</li>
+</ul>
+<h3>+ 추가 4</h3>
+<ul>
+<li><strong>외국인 황사·미세먼지 마스크</strong> — KF94·Naver Map 확인·외국인 매니아</li>
+<li><strong>외국인 우산 (장마 6-7월)</strong> — 편의점·다이소·외국인 매니아</li>
+<li><strong>외국인 시즌 환전 (#421)</strong> — 외국인 환율·#421·#398 통합</li>
+<li><strong>외국인 KTO 시즌 패키지</strong> — Klook·KKday·KTO 인증·외국인 매니아</li>
+</ul>
+<hr>
+<h2>⚙ FAQ 6개</h2>
+<p>1. <strong>외국인 최적 시즌</strong>: 5월 (12-23℃)·10월 (12-21℃ 단풍)·외국인 매니아 1순위.</p>
+<p>2. <strong>외국인 겨울 복장</strong>: 패딩·내복·장갑·핫팩·1월 -15℃ 체감·외국인 매니아.</p>
+<p>3. <strong>외국인 여름 매니아</strong>: 7월 보령 머드 (#385)·8월 광복절·#06 한강·외국인 매니아.</p>
+<p>4. <strong>외국인 단풍 매니아</strong>: 설악 10월 중순·내장 10월 말·서울 11월 초·#385·#229·#273.</p>
+<p>5. <strong>외국인 황사·미세먼지</strong>: 봄 (3-5월 #1)·겨울 (12-2월 #2)·KF94 마스크·외국인 매니아.</p>
+<p>6. <strong>외국인 통합 패키지</strong>: #385·#506·#178·#398·#421·KTO·외국인 매니아 풀세트.</p>
+<hr>
+<h2>🗺 외국인 풀데이 코스 3개</h2>
+<h3>A. 외국인 5월 최적 시즌 풀데이 (#506·#518)</h3>
+<ul>
+<li>09:00 한복 + 부처님오신날 연등 (#506·#509·#379) → 13:00 #502 한정식 → 15:00 봄나물 카페 (#381) → 19:00 한강 야경 (#06·#260)</li>
+</ul>
+<h3>B. 외국인 10월 단풍 1박2일 (#385·#511·#518)</h3>
+<ul>
+<li>Day 1: KTX 서울→속초 → 설악산 단풍 (#511·#385) + 진관사 사찰 (#509·#357)</li>
+<li>Day 2: 신라호텔 (#356)·#506 한글날 (10.9) + 외국인 매니아</li>
+</ul>
+<h3>C. 외국인 1월 겨울 1박2일 (#385·#518)</h3>
+<ul>
+<li>Day 1: 평창 눈축제 (#385 #1)·스키 + 호텔 SPA (#364)</li>
+<li>Day 2: DDP 일루미네이션 (#172·#260) + 설 한복 시연 (#506·#379)</li>
+</ul>
+<hr>
+<h2>🌸 시즌 5</h2>
+<ul>
+<li><strong>봄 3~5월</strong>: 매화·벚꽃·진달래·#506 부처님오신날·외국인 매니아 #1</li>
+<li><strong>여름 6~8월</strong>: 장마·삼복·보령 머드·#06 한강·#385·#506</li>
+<li><strong>가을 9~11월</strong>: <strong>단풍 절정·#385·#229·#273·추석·한글날·외국인 매니아 1번지</strong></li>
+<li><strong>겨울 12~2월</strong>: 평창 눈축제·DDP 일루미네이션·#506 설·신정·#260</li>
+<li><strong>연중</strong>: 12개월 매트릭스·외국인 매니아·#385·#506 통합</li>
+</ul>
+<hr>
+<h2>🔗 관련</h2>
+<ul>
+<li>#06 한강 치맥·#172 DDP·#178 외국인 첫 방문·#229 가을 단풍·#260 야경·#273 단풍 매트릭스·#303 벚꽃 chart·#319 강원·#356 호텔·#357 사찰음식·#364 호텔 SPA·#379 한복·궁궐·#385 4계절·#388 노포·#398 도착·#421 환전·#456 헬스장·#502 밥상 문화·#506 명절 calendar·#509 사찰 체험·#511 hiking 둘레길</li>
+</ul>
+<h2>🏷 태그</h2>
+<p><code>#한국월별날씨복장준비물deepdive</code> <code>#KoreaMonthlyWeatherClothingPacking</code> <code>#1월-6 2℃최한패딩내복장갑핫팩평창눈축제</code> <code>#2월설날한복패딩-4 5℃</code> <code>#3월환절기매화진달래자켓황사마스크삼일절</code> <code>#4월벚꽃절정7 18℃윤중로진해군항제</code> <code>#5월최적시즌12 23℃부처님오신날연등어린이날</code> <code>#6월장마시작17 28℃반팔우산단오UNESCO강릉</code> <code>#7월장마절정22 30℃보령머드축제삼복</code> <code>#8월최고온23 31℃광복절한강치맥해운대</code> <code>#9월추석한복서울불꽃축제18 27℃</code> <code>#10월단풍시작설악12 21℃개천절한글날</code> <code>#11월단풍절정내장남이섬5 14℃</code> <code>#12월일루미네이션DDP-2 7℃크리스마스</code> <code>#KF94황사미세먼지마스크우산KTO시즌패키지</code> <code>#키친구</code></p>
+
+  <div class="share-bar">
+    <span class="share-label">공유</span>
+    <button class="share-btn share-twitter" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent('한국 월별 날씨 복장 준비물 deep dive') + '&url=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Twitter">𝕏</button>
+    <button class="share-btn share-facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Facebook">f</button>
+    <button class="share-btn share-kakao" onclick="navigator.share ? navigator.share({title: '한국 월별 날씨 복장 준비물 deep dive', url: window.location.href}) : navigator.clipboard.writeText(window.location.href).then(function() { alert('링크 복사됨!'); })" aria-label="Kakao/Share">📤</button>
+    <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href).then(function() { this.textContent = '✓'; setTimeout(function() { document.querySelector('.share-copy').textContent = '🔗'; }, 1500); }.bind(this))" aria-label="Copy link">🔗</button>
+  </div>
+
+  <div class="detail-nav">
+    <div><a href="business-hours.html" style="color:var(--red);">&larr; 한국 영업시간 휴무일 매트릭스 deep dive</a></div>
+    <div><a href="emergency-hospital.html" style="color:var(--red);">외국인 응급 병원 안전 풀가이드 &rarr;</a></div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <p><a href="https://instagram.com/keychingu.korea" target="_blank">@keychingu.korea</a> &mdash; Seoul for MZ FIT Travelers</p>
+</footer>
+</body>
+</html>
