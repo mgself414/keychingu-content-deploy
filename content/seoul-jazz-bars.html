@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>서울 재즈 바 라운지 deep dive — KeyChinGu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/main.css">
+<style>
+.detail-wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+}
+.breadcrumb {
+  font-size: 13px;
+  color: var(--text-soft);
+  margin-bottom: 24px;
+}
+.breadcrumb a { color: var(--red); font-weight: 600; }
+.detail-wrap h1 {
+  font-size: 28px; font-weight: 800;
+  color: var(--black); margin-bottom: 8px;
+}
+.detail-wrap h2 {
+  font-size: 22px; font-weight: 700;
+  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--red);
+}
+.detail-wrap h3 {
+  font-size: 17px; font-weight: 600;
+  color: var(--text-mid); margin-top: 20px; margin-bottom: 8px;
+}
+.detail-wrap p {
+  font-size: 15px; line-height: 1.7;
+  color: var(--text-mid); margin-bottom: 12px;
+}
+.detail-wrap ul {
+  padding-left: 20px; margin-bottom: 12px;
+}
+.detail-wrap li {
+  font-size: 14px; line-height: 1.6;
+  color: var(--text-mid); margin-bottom: 6px;
+}
+.detail-wrap table {
+  width: 100%; border-collapse: collapse;
+  margin-bottom: 16px; font-size: 13px;
+}
+.detail-wrap th {
+  background: var(--black); color: #fff;
+  padding: 10px 12px; text-align: left;
+  font-weight: 600; font-size: 11px;
+  text-transform: uppercase; letter-spacing: 0.06em;
+}
+.detail-wrap td {
+  padding: 10px 12px; border-bottom: 1px solid var(--border);
+  color: var(--text-mid);
+}
+.detail-wrap tr:nth-child(even) td { background: rgba(0,0,0,0.02); }
+.detail-wrap hr {
+  border: none; height: 1px;
+  background: var(--border); margin: 24px 0;
+}
+.detail-wrap code {
+  background: rgba(33,140,204,0.08);
+  padding: 2px 6px; border-radius: 4px;
+  font-size: 13px; color: var(--blue);
+}
+.detail-nav {
+  display: flex; justify-content: space-between;
+  margin-top: 48px; padding-top: 20px;
+  border-top: 1px solid var(--border);
+  font-size: 14px; font-weight: 600;
+}
+.share-bar {
+  display: flex; align-items: center; gap: 10px;
+  margin-top: 40px; padding: 16px 20px;
+  background: #f9f9f9; border-radius: 12px;
+  border: 1px solid var(--border);
+}
+.share-label {
+  font-size: 14px; font-weight: 600; color: var(--text-soft);
+  margin-right: 8px;
+}
+.share-btn {
+  width: 40px; height: 40px;
+  border: none; border-radius: 50%;
+  background: #fff; cursor: pointer;
+  font-size: 1.1rem; transition: all 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  display: inline-flex; align-items: center; justify-content: center;
+}
+.share-btn:hover { transform: translateY(-2px); box-shadow: 0 3px 8px rgba(0,0,0,0.15); }
+.share-twitter:hover { background: #000; color: #fff; }
+.share-facebook:hover { background: #1877f2; color: #fff; }
+.share-kakao:hover { background: #fee500; }
+.share-copy:hover { background: #218CCC; color: #fff; }
+/* EN toggle disabled — 영문판 미생성 콘텐츠 (2026-05-16 patch) */
+.lang-switch .lang-disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  text-decoration: line-through;
+  padding: 4px 10px;
+  color: var(--text-soft, #888);
+  font-size: 13px;
+  user-select: none;
+}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <div class="lang-switch">
+    <a href="../content/seoul-jazz-bars.html" class="active">KR</a>
+    <span class="lang-disabled" title="영문판 준비 중">EN</span>
+  </div>
+</header>
+
+<div class="detail-wrap">
+  <div class="breadcrumb"><a href="../index.html">전체 가이드</a> &rsaquo; 서울 재즈 바 라운지 deep dive</div>
+  <h1>서울 재즈 바·라운지 deep dive — 야누스·올댓재즈 12선</h1>
+<p>&gt; <strong>부제</strong>: 50년 재즈·노포·트렌디 라운지·외국인 영어 OK·#455·#454 후속 deep dive</p>
+<p>ISSUE 03 · #511 · 2026-05-27</p>
+<hr>
+<h2>🎯 왜 서울 재즈 바·라운지 deep dive인가</h2>
+<p>외국인 야간·매니아 1번지 = <strong>서울 재즈 신 50년 deep dive</strong> (#455 라이브 음악·#454 클럽·#138 홍대·#144 이태원 후속). K-pop·한강 야경에 익숙해진 외국인에게 진짜 매력 = <strong>재즈 바</strong>. 1976년 노포부터 2021년 트렌디 라운지까지·아시아에서 가장 깊은 재즈 신.</p>
+<p>&gt; &quot;In Seoul, jazz isn&#x27;t a trend — it&#x27;s a 50-year-old conversation between generations, neighborhoods, and instruments.&quot; — 50년 동안 이어온 세대·동네·악기의 대화.</p>
+<hr>
+<h2>★ 한눈에 12선</h2>
+<table><thead><tr>
+<th>#</th>
+<th>재즈 바</th>
+<th>4축</th>
+<th>시그니처</th>
+</tr></thead><tbody>
+<tr>
+<td>1</td>
+<td><strong>야누스 Janus (광화문)</strong> ★ 한국 재즈 보컬 1세대</td>
+<td>노포·1세대</td>
+<td>1978 박성연·6번 이전·2025 광화문 재개관</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>천년동안도 (낙원·종각)</strong> ★ 한국 3대 재즈</td>
+<td>노포·1세대</td>
+<td>1987·낙원악기상가 2층·매일 18-24시</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>올댓재즈 All That Jazz (이태원)</strong> ★ 한국 최고(最古)</td>
+<td>노포·1세대</td>
+<td>1976·2023 리뉴얼·364일 운영·#144</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>원스인어블루문 (청담)</strong> ★ 럭셔리 라운지</td>
+<td>럭셔리 라운지</td>
+<td>1998·3개 층·디너+라이브·#296·#142</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>클럽 에반스 Club Evans (홍대)</strong> ★ 정통 성지</td>
+<td>정통 클럽</td>
+<td>2001·25년 정통 재즈·홍대·#138</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>부기우기 Boogie Woogie (경리단길)</strong> ★ 365일 라이브</td>
+<td>정통 클럽</td>
+<td>캐주얼·매일 17-02시·#144 경리단</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>디도 재즈 라운지 (구의)</strong> ★ 트렌디 2021</td>
+<td>트렌디 라운지</td>
+<td>셰프+소믈리에·캐치테이블 영문·구의</td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>어썸그라운드 (용산 숙대입구)</strong> ★ 영어 OK</td>
+<td>외국인 친화</td>
+<td>금요일만·20K (하이볼 1잔)·LINE 영문</td>
+</tr>
+<tr>
+<td>9</td>
+<td><strong>SEOB&#x27;s (연남)</strong> ★ 버클리 출신 비밀 바</td>
+<td>외국인 친화</td>
+<td>10-15석·오너 영어 능통·인스타 DM</td>
+</tr>
+<tr>
+<td>10</td>
+<td><strong>사운드독 (후암시장)</strong> ★ 시장 안의 재즈</td>
+<td>숨은 매니아</td>
+<td>후암시장 골목·뮤지션 1m 거리</td>
+</tr>
+<tr>
+<td>11</td>
+<td><strong>외국인 동선 추천 5 Routes</strong> ★</td>
+<td>매니아 매트릭스</td>
+<td>역사·이태원·외국인 친구·인생샷·디스커버리</td>
+</tr>
+<tr>
+<td>12</td>
+<td><strong>외국인 재즈 패키지 (Klook·KKday·KTO)</strong> ★</td>
+<td>매니아 매트릭스</td>
+<td>영어 OK·KTO 인증·#455 통합</td>
+</tr>
+</tbody></table>
+<p><strong>+ 보조 후보</strong>: 더 자메이카 (이태원)·Yeonnam 5701 (홍대)·모벰바 (연남) — 시즌 콘텐츠</p>
+<hr>
+<h2>⚠ 외국인 자주 실수 5가지</h2>
+<p>1. <strong>&quot;재즈 = 한국에 별로 없음&quot;</strong>: 서울 재즈 = <strong>아시아 가장 깊은 재즈 신 (1976~2026 50년) + 1세대 노포 3 (야누스·천년동안도·올댓재즈) + 트렌디 라운지 (디도·SEOB&#x27;s)</strong> + 외국인 매니아 1번지.</p>
+<p>2. <strong>&quot;공연 중 박수 = 곡 끝나면&quot;</strong>: 재즈 박수 = <strong>각 연주자의 즉흥 솔로 끝나는 순간</strong> (곡 시작·끝 X)·모르면 옆 손님 따라 하기·외국인 매니아 매너.</p>
+<p>3. <strong>&quot;예약 = 전화만&quot;</strong>: 한국 재즈 바 예약 = <strong>인스타그램 DM 가장 빠름 + SNS 영어 응대 더 자연스러움</strong> + 캐치테이블 영문 (디도)·LINE 영문 (어썸그라운드)·외국인 매니아.</p>
+<p>4. <strong>&quot;드레스 코드 = 다 정장&quot;</strong>: 드레스 코드 = <strong>청담 (원스인어블루문) 스마트 캐주얼 + 그 외 (부기우기·SEOB&#x27;s) 청바지 후드 OK</strong> + 외국인 매니아 풀세트.</p>
+<p>5. <strong>&quot;노포 재즈 = 카드 OK&quot;</strong>: 노포 재즈 (천년동안도·사운드독) = <strong>카드 단말기 없을 수 있음·현금 5만원 지참 권장</strong> + 외국인 매니아 필수 (#421 통합).</p>
+<hr>
+<h2>① 노포·1세대 3 (한국 3대 재즈)</h2>
+<h3>1. 야누스 Janus ★ 한국 재즈 보컬 1세대</h3>
+<ul>
+<li><strong>Where</strong>: 종로구 광화문 일대 (2025년 9월 재개관)</li>
+<li><strong>History</strong>: 1978 故 박성연·6번 이전 (신촌→대학로→이대후문→청담→서초→압구정→광화문)</li>
+<li><strong>외국인 ★</strong>: ◎◎ — 한국 재즈 역사 &#x27;시작점&#x27;·살아있는 박물관</li>
+<li><strong>연계 코스</strong>: 경복궁 야간개장 → 야누스 → 광화문 광장 산책</li>
+<li><strong>Pro Tip</strong>: 박성연 헌정 무대 화·수요일·도착 30분 전 인스타그램 DM·외국인 매니아 1번지</li>
+</ul>
+<h3>2. 천년동안도 ★ 한국 3대 재즈 노포</h3>
+<ul>
+<li><strong>낙원점</strong>: 종로구 수표로 134 2층 (낙원악기상가)</li>
+<li><strong>종각점</strong>: 종로구 삼일대로15길 6 지하 1층·2층</li>
+<li><strong>시간</strong>: 매일 18:00~24:00</li>
+<li><strong>History</strong>: 1987 대학로 → 종로 (낙원·종각 2개점)</li>
+<li><strong>외국인 ★</strong>: ◎◎ — 한국 1세대~신예 매일 라인업·재즈 입문 친화</li>
+<li><strong>연계 코스</strong>: 익선동 한옥거리 → 낙원악기상가 (1979) → 천년동안도</li>
+<li><strong>Pro Tip</strong>: 1979 낙원악기상가 1~3층 둘러본 후 올라가면 한국 음악사 투어·외국인 매니아</li>
+</ul>
+<h3>3. 올댓재즈 All That Jazz ★ 한국 최고(最古) 1976</h3>
+<ul>
+<li><strong>Where</strong>: 용산구 이태원동 (2023 리뉴얼)·#144 통합</li>
+<li><strong>운영</strong>: 매일 (현충일만 휴무)·364일 라이브·외국인 일정 짜기 #1</li>
+<li><strong>예약</strong>: allthatjazz.kr / 카카오 채널</li>
+<li><strong>외국인 ★</strong>: ◎◎ — 외국인 비율 #1·영어 메뉴·안내 완비</li>
+<li><strong>연계 코스</strong>: 리움미술관 (#377) → 한남동 카페 → 올댓재즈</li>
+<li><strong>Pro Tip</strong>: @allthatjazz_itaewon 라인업 확인·빅밴드 vs 보컬 트리오 선택</li>
+</ul>
+<hr>
+<h2>② 럭셔리·정통 클럽 3</h2>
+<h3>4. 원스인어블루문 Once In A Blue Moon ★ 청담 럭셔리</h3>
+<ul>
+<li><strong>Where</strong>: 강남구 청담동 (선릉로 824 부근)·#296·#142</li>
+<li><strong>공식</strong>: onceinabluemoon.co.kr</li>
+<li><strong>History</strong>: 1998·3개 층·디너+라이브</li>
+<li><strong>가격</strong>: 입장료 X·디너 코스 7~8만원·단품 2~5만원·1인 8~10만원</li>
+<li><strong>드레스</strong>: 스마트 캐주얼 권장</li>
+<li><strong>외국인 ★</strong>: ◎◎ — 서울에서 가장 &#x27;영화 같은&#x27; 밤·웨딩 프러포즈 명소</li>
+<li><strong>연계 코스</strong>: 압구정 갤러리아 (#406·#457) → 청담 명품거리 → 원스인어블루문</li>
+<li><strong>Pro Tip</strong>: 주말 8시 무대 한 달 전 예약 안전·#356 호텔 연계</li>
+</ul>
+<h3>5. 클럽 에반스 Club Evans ★ 홍대 정통 성지</h3>
+<ul>
+<li><strong>주소</strong>: 마포구 와우산로 63 2층</li>
+<li><strong>시간</strong>: 입장 19:00 / 공연 20:00~22:10 매일</li>
+<li><strong>입장료</strong>: 일~금 15K · 토 20K · 음료 1잔 별도</li>
+<li><strong>History</strong>: 2001~ 25년 홍대 정통 재즈</li>
+<li><strong>외국인 ★</strong>: ◎◎ — 신인 등용문·미래의 별 최초 무대·외국인 매니아</li>
+<li><strong>연계 코스</strong>: 홍대 걷고싶은거리 → 상수동 카페 → 클럽 에반스</li>
+<li><strong>Pro Tip</strong>: 공연 중 사진 자제·1층 입구 빈티지 포스터 (25년 헤드라이너) 둘러보기</li>
+</ul>
+<h3>6. 부기우기 Boogie Woogie ★ 365일 매일 라이브</h3>
+<ul>
+<li><strong>주소</strong>: 용산구 회나무로 21 2층 (경리단길 #144)</li>
+<li><strong>시간</strong>: 매일 17:00~02:00</li>
+<li><strong>예약</strong>: @boogiewoogieseoul / 010-2396-3050</li>
+<li><strong>외국인 ★</strong>: ◎◎ — 캐주얼·청바지 OK·자정 이후 즉흥 잼 세션</li>
+<li><strong>연계 코스</strong>: 남산 산책 (#13) → 해방촌 야경 (#260) → 부기우기</li>
+<li><strong>Pro Tip</strong>: 1차 경리단길 수제맥주집 (#04) → 부기우기 라이브 마무리</li>
+</ul>
+<hr>
+<h2>③ 외국인 친화·트렌디 3</h2>
+<h3>7. 디도 재즈 라운지 Dido Jazz Lounge ★ 트렌디 2021</h3>
+<ul>
+<li><strong>주소</strong>: 광진구 자양로18길 56 지하 1층 (구의역 도보 5분)</li>
+<li><strong>전화</strong>: 070-8621-7869</li>
+<li><strong>예약</strong>: 캐치테이블 영문 OK·@dido_jazz_lounge 한 달 전</li>
+<li><strong>History</strong>: 2021·페스티벌 기획자+셰프+소믈리에+음향감독+뮤지션 합심</li>
+<li><strong>외국인 ★</strong>: ◎◎ — 캐치테이블 영문·외국인 가장 쉽게 접근</li>
+<li><strong>시그니처</strong>: 음식·와인 페어링·페스티벌 수준 사운드</li>
+<li><strong>Pro Tip</strong>: 주말 1~2주 전 마감·평일 화·수 8시 노리기·영문 메뉴 풀세트</li>
+</ul>
+<h3>8. 어썸그라운드 Asome Ground ★ 외국인 영어 #1</h3>
+<ul>
+<li><strong>위치</strong>: 용산구 한강대로 일대 (숙대입구역 도보 5분)</li>
+<li><strong>운영</strong>: 매주 금요일만 19:30~24:00·공연 20:30·21:30 (크리스마스 토·25일 추가)</li>
+<li><strong>예약</strong>: @asome_ground DM · LINE asomeground (영문 응답)</li>
+<li><strong>가격</strong>: 20K (하이볼 1잔 포함)·리뷰 작성 시 무료 음료 1잔</li>
+<li><strong>모토</strong>: &quot;NO RULE, JUST GROOVE&quot;</li>
+<li><strong>외국인 ★</strong>: ◎◎ — 한국어 한 마디 못 해도 OK·솔로 친화·1인 좌석</li>
+<li><strong>연계 코스</strong>: 전쟁기념관 (#377) → 용리단길 식사 (#187) → 어썸그라운드</li>
+<li><strong>Pro Tip</strong>: 외국인 관광객 가이드용 #1 추천·LINE 영문 응답 빠름</li>
+</ul>
+<h3>9. SEOB&#x27;s ★ 버클리 출신 비밀 바 (연남)</h3>
+<ul>
+<li><strong>위치</strong>: 마포구 연남동 (홍대입구 3번 출구 도보 10분·경의선숲길 끝자락)</li>
+<li><strong>운영</strong>: 비정기·인스타그램 SNS 공지 필수</li>
+<li><strong>예약</strong>: 인스타그램 DM (좌석 매우 한정)</li>
+<li><strong>시그니처</strong>: 마티니 잔 작은 나무 간판 (유일한 표식)</li>
+<li><strong>외국인 ★</strong>: ◎◎ — 오너 영어 능통·보스턴 유학·10-15석 초소형</li>
+<li><strong>연계 코스</strong>: 연남동 경의선숲길 (#156) → 연남 카페 (#381) → SEOB&#x27;s</li>
+<li><strong>Pro Tip</strong>: 카운터 좌석·오너 직접 칵테일·대화 메인·사진보다 대화</li>
+</ul>
+<hr>
+<h2>④ 숨은 매니아·동선·패키지 (3 + 추가)</h2>
+<h3>10. 사운드독 Sound Dog ★ 후암시장 안의 재즈</h3>
+<ul>
+<li><strong>위치</strong>: 용산구 후암동 후암시장 내</li>
+<li><strong>운영</strong>: 비정기·인스타그램 공지</li>
+<li><strong>예약</strong>: SNS DM</li>
+<li><strong>시그니처</strong>: 1960~70년대 재래시장 골목·뮤지션 1m 거리</li>
+<li><strong>외국인 ★</strong>: ◎◎ — 외국인이 상상 못할 한국적 컨트라스트·후암동 신상 핫플</li>
+<li><strong>연계 코스</strong>: 남산 둘레길 (#13) → 후암동 카페·서점 → 후암시장 → 사운드독</li>
+<li><strong>Pro Tip</strong>: 시장 입구 떡집·반찬가게·구두수선집 동선 영상화·&#x27;진짜 한국&#x27; 클립</li>
+</ul>
+<h3>11. 외국인 동선 추천 5 Routes ★</h3>
+<table><thead><tr>
+<th>테마</th>
+<th>추천 동선</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>하루 한국 재즈 역사 투어</strong></td>
+<td>천년동안도 (낙원 18시) → 야누스 (광화문 21시)</td>
+</tr>
+<tr>
+<td><strong>이태원 나이트 코스</strong></td>
+<td>올댓재즈 (이태원 19시) → 부기우기 (경리단길 22시)</td>
+</tr>
+<tr>
+<td><strong>외국인 친구 첫 재즈</strong></td>
+<td>어썸그라운드 (금요일 20:30) — 단독 추천 #1</td>
+</tr>
+<tr>
+<td><strong>인생샷 &amp; 디너</strong></td>
+<td>원스인어블루문 (청담 19:30)</td>
+</tr>
+<tr>
+<td><strong>숨은 보석 디스커버리</strong></td>
+<td>SEOB&#x27;s (연남) → 사운드독 (후암) — 차 30분</td>
+</tr>
+</tbody></table>
+<h3>12. 외국인 재즈 패키지 ★ Klook·KKday·KTO</h3>
+<ul>
+<li>영어 OK·KTO 인증·외국인 매니아 패키지</li>
+<li>외국인 ★: ◎◎ — 외국인 매니아 1번지·#455·#454 통합</li>
+<li>시그니처: 외국인 매니아 풀세트·콘텐츠 작성자용 메모</li>
+</ul>
+<hr>
+<h2>⚙ FAQ 6개</h2>
+<p>1. <strong>외국인 재즈 1순위</strong>: 어썸그라운드 (영어 #1 금요일)·올댓재즈 (1976 #144)·디도 (캐치테이블 영문).</p>
+<p>2. <strong>외국인 한국 재즈 역사</strong>: 야누스 (1978)·천년동안도 (1987)·올댓재즈 (1976) — 한국 3대.</p>
+<p>3. <strong>외국인 럭셔리 매니아</strong>: 원스인어블루문 (청담)·1인 8-10만원·디너+라이브.</p>
+<p>4. <strong>외국인 가성비</strong>: 어썸그라운드 20K (하이볼 포함)·클럽 에반스 15-20K·부기우기.</p>
+<p>5. <strong>외국인 영어 OK</strong>: 어썸그라운드·디도·SEOB&#x27;s·올댓재즈·외국인 매니아 풀세트.</p>
+<p>6. <strong>외국인 매너</strong>: 박수 = 솔로 후·청담 스마트 캐주얼·노포 현금 5만원·인스타 DM 예약.</p>
+<hr>
+<h2>🗺 외국인 재즈 풀데이 코스 3개 (위 5 Routes + 추가 통합)</h2>
+<h3>A. 외국인 첫 재즈 풀데이 (외국인 친화 동선)</h3>
+<ul>
+<li>19:00 어썸그라운드 (금요일·#187 용산) → 22:00 #436 노래방 → 02:00 #423 24h 한식</li>
+</ul>
+<h3>B. 외국인 1세대 재즈 1박2일 (한국 3대 매니아)</h3>
+<ul>
+<li>Day 1: 천년동안도 (낙원 18시) → 야누스 (광화문 21시) + 시그니엘 호텔 (#356)</li>
+<li>Day 2: 올댓재즈 (이태원 19시·#144) + 리움 (#377) + 한남 매니아</li>
+</ul>
+<h3>C. 외국인 럭셔리·디스커버리 1박2일</h3>
+<ul>
+<li>Day 1: 원스인어블루문 청담 (#296·#456) + 청담 카페 (#381)</li>
+<li>Day 2: SEOB&#x27;s (연남·#156) + 사운드독 (후암시장) + 외국인 매니아 패키지</li>
+</ul>
+<hr>
+<h2>🌸 시즌 5</h2>
+<ul>
+<li><strong>봄 3~5월</strong>: 외국인 매니아·#385 통합·#506 부처님 오신 날 연등 + 야누스</li>
+<li><strong>여름 6~8월</strong>: 외국인 매니아·#06 한강·#385·자라섬 재즈 (10월) 예고</li>
+<li><strong>가을 9~11월</strong>: <strong>자라섬 재즈 페스티벌 (10월·외국인 매니아 1번지)</strong>·#404 통합</li>
+<li><strong>겨울 12~2월</strong>: 외국인 매니아·연말 시상식 (#402)·재즈 컴백</li>
+<li><strong>연중</strong>: 야누스·천년동안도·올댓재즈 1세대 노포·외국인 매니아</li>
+</ul>
+<hr>
+<h2>🔗 관련</h2>
+<ul>
+<li>#04 가맥집·#13 명동·#138 홍대·#144 이태원·#156 연희·연남·#178 외국인 첫 방문·#187 용산·#198 송파·#225 카페·#260 야경·#293 한남·#296 청담·#356 호텔·#360 호텔 다이닝·#377 박물관·#381 카페·#385 4계절·#387 K-pop·#402 K-pop 콘서트·#404 페스티벌·#421 환전·#423 24h·#436 노래방·#454 클럽·#455 라이브 음악·인디·#456 헬스장 (BAR 81 통합)</li>
+</ul>
+<h2>🏷 태그</h2>
+<p><code>#서울재즈바라운지deepdive</code> <code>#SeoulJazzBarsRoute</code> <code>#야누스Janus1978박성연광화문2025재개관</code> <code>#천년동안도Chunnyundoando1987낙원악기상가종각</code> <code>#올댓재즈AllThatJazz1976이태원2023리뉴얼364일</code> <code>#원스인어블루문OnceinaBlueMoon청담1998럭셔리디너라이브</code> <code>#클럽에반스ClubEvans홍대2001 25년정통</code> <code>#부기우기BoogieWoogie경리단길365일매일라이브</code> <code>#디도재즈라운지DidoJazzLounge구의2021셰프소믈리에캐치테이블영문</code> <code>#어썸그라운드AsomeGround용산숙대입구금요일20K영어OK LINE</code> <code>#SEOBs연남버클리피아니스트10-15석오너영어</code> <code>#사운드독SoundDog후암시장재래시장골목재즈</code> <code>#5Routes역사이태원외국인친구인생샷디스커버리</code> <code>#매너박수솔로후스마트캐주얼노포현금인스타DM</code> <code>#KlookKKdayKTO재즈패키지#455#454통합</code> <code>#키친구</code></p>
+
+  <div class="share-bar">
+    <span class="share-label">공유</span>
+    <button class="share-btn share-twitter" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent('서울 재즈 바 라운지 deep dive') + '&url=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Twitter">𝕏</button>
+    <button class="share-btn share-facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Facebook">f</button>
+    <button class="share-btn share-kakao" onclick="navigator.share ? navigator.share({title: '서울 재즈 바 라운지 deep dive', url: window.location.href}) : navigator.clipboard.writeText(window.location.href).then(function() { alert('링크 복사됨!'); })" aria-label="Kakao/Share">📤</button>
+    <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href).then(function() { this.textContent = '✓'; setTimeout(function() { document.querySelector('.share-copy').textContent = '🔗'; }, 1500); }.bind(this))" aria-label="Copy link">🔗</button>
+  </div>
+
+  <div class="detail-nav">
+    <div><a href="seoul-bingsu-2026.html" style="color:var(--red);">&larr; 서울 빙수 완전정복 2026여름 deep dive</a></div>
+    <div><a href="gyeonggi-daytrip.html" style="color:var(--red);">외국인 경기도 day-trip 매트릭스 deep dive &rarr;</a></div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <p><a href="https://instagram.com/keychingu.korea" target="_blank">@keychingu.korea</a> &mdash; Seoul for MZ FIT Travelers</p>
+</footer>
+</body>
+</html>

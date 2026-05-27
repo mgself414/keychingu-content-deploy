@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>외국인 야간 클럽 라운지 바 deep dive 확장 — KeyChinGu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/main.css">
+<style>
+.detail-wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+}
+.breadcrumb {
+  font-size: 13px;
+  color: var(--text-soft);
+  margin-bottom: 24px;
+}
+.breadcrumb a { color: var(--red); font-weight: 600; }
+.detail-wrap h1 {
+  font-size: 28px; font-weight: 800;
+  color: var(--black); margin-bottom: 8px;
+}
+.detail-wrap h2 {
+  font-size: 22px; font-weight: 700;
+  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--red);
+}
+.detail-wrap h3 {
+  font-size: 17px; font-weight: 600;
+  color: var(--text-mid); margin-top: 20px; margin-bottom: 8px;
+}
+.detail-wrap p {
+  font-size: 15px; line-height: 1.7;
+  color: var(--text-mid); margin-bottom: 12px;
+}
+.detail-wrap ul {
+  padding-left: 20px; margin-bottom: 12px;
+}
+.detail-wrap li {
+  font-size: 14px; line-height: 1.6;
+  color: var(--text-mid); margin-bottom: 6px;
+}
+.detail-wrap table {
+  width: 100%; border-collapse: collapse;
+  margin-bottom: 16px; font-size: 13px;
+}
+.detail-wrap th {
+  background: var(--black); color: #fff;
+  padding: 10px 12px; text-align: left;
+  font-weight: 600; font-size: 11px;
+  text-transform: uppercase; letter-spacing: 0.06em;
+}
+.detail-wrap td {
+  padding: 10px 12px; border-bottom: 1px solid var(--border);
+  color: var(--text-mid);
+}
+.detail-wrap tr:nth-child(even) td { background: rgba(0,0,0,0.02); }
+.detail-wrap hr {
+  border: none; height: 1px;
+  background: var(--border); margin: 24px 0;
+}
+.detail-wrap code {
+  background: rgba(33,140,204,0.08);
+  padding: 2px 6px; border-radius: 4px;
+  font-size: 13px; color: var(--blue);
+}
+.detail-nav {
+  display: flex; justify-content: space-between;
+  margin-top: 48px; padding-top: 20px;
+  border-top: 1px solid var(--border);
+  font-size: 14px; font-weight: 600;
+}
+.share-bar {
+  display: flex; align-items: center; gap: 10px;
+  margin-top: 40px; padding: 16px 20px;
+  background: #f9f9f9; border-radius: 12px;
+  border: 1px solid var(--border);
+}
+.share-label {
+  font-size: 14px; font-weight: 600; color: var(--text-soft);
+  margin-right: 8px;
+}
+.share-btn {
+  width: 40px; height: 40px;
+  border: none; border-radius: 50%;
+  background: #fff; cursor: pointer;
+  font-size: 1.1rem; transition: all 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  display: inline-flex; align-items: center; justify-content: center;
+}
+.share-btn:hover { transform: translateY(-2px); box-shadow: 0 3px 8px rgba(0,0,0,0.15); }
+.share-twitter:hover { background: #000; color: #fff; }
+.share-facebook:hover { background: #1877f2; color: #fff; }
+.share-kakao:hover { background: #fee500; }
+.share-copy:hover { background: #218CCC; color: #fff; }
+/* EN toggle disabled — 영문판 미생성 콘텐츠 (2026-05-16 patch) */
+.lang-switch .lang-disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  text-decoration: line-through;
+  padding: 4px 10px;
+  color: var(--text-soft, #888);
+  font-size: 13px;
+  user-select: none;
+}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <div class="lang-switch">
+    <a href="../content/nightlife-deep.html" class="active">KR</a>
+    <span class="lang-disabled" title="영문판 준비 중">EN</span>
+  </div>
+</header>
+
+<div class="detail-wrap">
+  <div class="breadcrumb"><a href="../index.html">전체 가이드</a> &rsaquo; 외국인 야간 클럽 라운지 바 deep dive 확장</div>
+  <h1>외국인 야간 클럽·라운지·바 deep dive 확장 — 강남·홍대·이태원 12선</h1>
+<p>&gt; <strong>부제</strong>: Octagon·Cakeshop·홍대·이태원 deep 확장·#454·#436·#511 후속</p>
+<p>ISSUE 03 · #513 · 2026-05-27</p>
+<hr>
+<h2>🎯 왜 외국인 야간 클럽·라운지·바 deep dive 확장인가</h2>
+<p>외국인 글로벌 MZ·야간 매니아 1번지 = <strong>클럽·라운지·바 deep 확장</strong> (#454 클럽·#436 노래방·#511 재즈 후속). Octagon (World #5)·Cakeshop·이태원 외국인 거주·홍대 MZ + 외국인 글로벌 매니아 풀세트.</p>
+<hr>
+<h2>★ 한눈에 12 야간 매트릭스</h2>
+<table><thead><tr>
+<th>#</th>
+<th>매장</th>
+<th>4축</th>
+<th>시그니처</th>
+</tr></thead><tbody>
+<tr>
+<td>1</td>
+<td><strong>Octagon (강남)</strong> ★ World #5 DJ Mag</td>
+<td>강남 클럽 #1</td>
+<td>한국 #1·세계 #5·외국인 글로벌 매니아</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Club Made (강남)</strong></td>
+<td>강남 클럽 #1</td>
+<td>외국인 럭셔리·#142·#296</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Club Pause (청담)</strong> ★ 럭셔리 신축</td>
+<td>강남 클럽 #1</td>
+<td>청담 #296·외국인 매니아 1번지</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Cakeshop (이태원)</strong> ★ 외국인 글로벌 매니아</td>
+<td>이태원 클럽</td>
+<td>외국인 거주·#144·인디·MZ</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>Vurt (이태원)</strong></td>
+<td>이태원 클럽</td>
+<td>외국인 매니아·#144 통합</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>Faust·Pistil (이태원)</strong></td>
+<td>이태원 클럽</td>
+<td>인디·언더그라운드·외국인 매니아</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>Club NB·NB Drink (홍대)</strong> ★ 홍대 #1</td>
+<td>홍대 클럽</td>
+<td>홍대 #138·외국인 매니아</td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>Club FF·Cocoon (홍대)</strong></td>
+<td>홍대 클럽</td>
+<td>MZ·외국인 매니아</td>
+</tr>
+<tr>
+<td>9</td>
+<td><strong>Aura·Henz·m2 (홍대·신촌)</strong></td>
+<td>홍대 클럽</td>
+<td>외국인 MZ 매니아·#138·#171</td>
+</tr>
+<tr>
+<td>10</td>
+<td><strong>루프탑 바 (시그니엘 81F·#356·#360)</strong> ★</td>
+<td>럭셔리 바</td>
+<td>81F·555m·외국인 럭셔리 1번지</td>
+</tr>
+<tr>
+<td>11</td>
+<td><strong>호텔 라운지 바 (반얀트리 Moon Bar·콘래드 37)</strong></td>
+<td>럭셔리 바</td>
+<td>남산 인피니티·여의도 한강·외국인 럭셔리</td>
+</tr>
+<tr>
+<td>12</td>
+<td><strong>외국인 야간 패키지 (Klook·KKday·KTO)</strong> ★</td>
+<td>외국인 매니아</td>
+<td>영어 OK·KTO 인증·#454·#511 통합</td>
+</tr>
+</tbody></table>
+<p><strong>+ 추가 4</strong>: 외국인 야간 매너·드레스코드·#06 한강 치맥 연계·#436 노래방·24h 한식 (#423)·외국인 안전 (#501 통합)</p>
+<hr>
+<h2>⚠ 외국인 자주 실수 5가지</h2>
+<p>1. <strong>&quot;한국 클럽 = Octagon만&quot;</strong>: 한국 클럽 = <strong>Octagon (World #5) + Cakeshop (이태원 글로벌) + NB (홍대 #1) + 호텔 루프탑 바 (#356)</strong> + 외국인 글로벌 매니아 풀세트.</p>
+<p>2. <strong>&quot;이태원 클럽 = 위험&quot;</strong>: 이태원 클럽 = <strong>외국인 거주 1번지 (#144·#252) + 외국인 영어 OK + 외국인 글로벌 매니아</strong> + #405 안전·#501 여성 솔로 통합.</p>
+<p>3. <strong>&quot;클럽 입장료 = 비쌈&quot;</strong>: 클럽 입장료 = <strong>30~50K (Octagon·Cakeshop) + 외국인 매니아 1번지</strong> + 호텔 루프탑 무료 (음료 별도)·외국인 럭셔리 매니아.</p>
+<p>4. <strong>&quot;드레스 코드 = 다 정장&quot;</strong>: 드레스 코드 = <strong>Octagon 스마트 캐주얼·Cakeshop·NB 캐주얼 OK + 호텔 루프탑 스마트 캐주얼</strong> + 외국인 매니아 풀세트.</p>
+<p>5. <strong>&quot;새벽 귀가 = 위험&quot;</strong>: 새벽 귀가 = <strong>KakaoT 영문 OK + 심야 N16·N26 + 24h 한식 (#423) + #501 안전</strong> + 외국인 매니아·#398 통합.</p>
+<hr>
+<h2>① 강남 클럽 #1 (3)</h2>
+<h3>1. Octagon ★ World #5 DJ Mag</h3>
+<ul>
+<li>주소: 강남 (#142)</li>
+<li>외국인 ★: ◎◎ — 한국 #1·세계 #5·외국인 글로벌 매니아 1번지</li>
+<li>시그니처: 외국인 글로벌 매니아·#142 통합</li>
+</ul>
+<h3>2. Club Made (강남)</h3>
+<ul>
+<li>주소: 강남 (#142·#296)</li>
+<li>외국인 ★: ◎◎ — 외국인 럭셔리·#142·#296</li>
+<li>시그니처: 외국인 럭셔리 매니아</li>
+</ul>
+<h3>3. Club Pause (청담) ★ 신축</h3>
+<ul>
+<li>주소: 청담 (#296)</li>
+<li>외국인 ★: ◎◎ — 청담 외국인 매니아 1번지</li>
+<li>시그니처: 외국인 럭셔리·#296 통합</li>
+</ul>
+<hr>
+<h2>② 이태원 클럽 (3)</h2>
+<h3>4. Cakeshop ★ 외국인 글로벌 매니아 1번지</h3>
+<ul>
+<li>주소: 이태원·강남 (#144·#142)</li>
+<li>외국인 ★: ◎◎ — 외국인 거주·#144·인디·MZ</li>
+<li>시그니처: 외국인 매니아 1번지·#144·#252 통합</li>
+</ul>
+<h3>5. Vurt (이태원)</h3>
+<ul>
+<li>주소: 이태원 (#144·#293)</li>
+<li>외국인 ★: ◎◎ — 외국인 매니아·#144 통합</li>
+<li>시그니처: 외국인 매니아·#144</li>
+</ul>
+<h3>6. Faust·Pistil (이태원)</h3>
+<ul>
+<li>주소: 이태원 (#144)</li>
+<li>외국인 ★: ◎◎ — 인디·언더그라운드·외국인 매니아</li>
+<li>시그니처: 외국인 매니아·#144 통합</li>
+</ul>
+<hr>
+<h2>③ 홍대 클럽 (3)</h2>
+<h3>7. Club NB·NB Drink ★ 홍대 #1</h3>
+<ul>
+<li>주소: 홍대 (#138)</li>
+<li>외국인 ★: ◎◎ — 홍대 #1·외국인 매니아</li>
+<li>시그니처: 외국인 매니아 1번지·#138</li>
+</ul>
+<h3>8. Club FF·Cocoon (홍대)</h3>
+<ul>
+<li>주소: 홍대 (#138)</li>
+<li>외국인 ★: ◎◎ — MZ·외국인 매니아</li>
+<li>시그니처: 외국인 MZ 매니아·#138</li>
+</ul>
+<h3>9. Aura·Henz·m2 (홍대·신촌)</h3>
+<ul>
+<li>주소: 홍대·신촌 (#138·#171)</li>
+<li>외국인 ★: ◎◎ — 외국인 MZ 매니아·#138·#171</li>
+<li>시그니처: 외국인 매니아·#138 통합</li>
+</ul>
+<hr>
+<h2>④ 럭셔리 바·매니아 (3 + 추가 4)</h2>
+<h3>10. 루프탑 바 ★ 시그니엘 81F (#356·#360)</h3>
+<ul>
+<li>주소: 잠실 시그니엘 81F (#356·#360)</li>
+<li>외국인 ★: ◎◎ — 81F·555m·외국인 럭셔리 1번지</li>
+<li>시그니처: 외국인 럭셔리 매니아·#356·#360 통합</li>
+</ul>
+<h3>11. 호텔 라운지 바 (반얀트리 Moon·콘래드 37)</h3>
+<ul>
+<li>반얀트리 Moon Bar (남산 인피니티)·콘래드 37 (여의도 37F 한강·#169)</li>
+<li>외국인 ★: ◎◎ — 외국인 럭셔리 매니아·#356·#360</li>
+<li>시그니처: 외국인 매니아·#356 통합</li>
+</ul>
+<h3>12. 외국인 야간 패키지 ★ Klook·KKday·KTO</h3>
+<ul>
+<li>영어 OK·KTO 인증·외국인 매니아 패키지</li>
+<li>외국인 ★: ◎◎ — 외국인 매니아 1번지</li>
+<li>시그니처: 외국인 매니아·#454·#511 통합</li>
+</ul>
+<h3>+ 추가 4</h3>
+<ul>
+<li><strong>외국인 야간 매너·드레스코드</strong> — Octagon 스마트 캐주얼·외국인 매니아</li>
+<li><strong>#06 한강 치맥 연계</strong> — 외국인 매니아·#06 통합</li>
+<li><strong>#436 노래방·24h 한식 (#423)</strong> — 외국인 매니아·#454·#436·#423</li>
+<li><strong>외국인 안전 (#501)</strong> — 여성 솔로 매니아·#501 통합</li>
+</ul>
+<hr>
+<h2>⚙ FAQ 6개</h2>
+<p>1. <strong>외국인 클럽 1순위</strong>: Octagon (World #5)·Cakeshop·NB·#142·#138·#144.</p>
+<p>2. <strong>외국인 럭셔리</strong>: 호텔 루프탑 (시그니엘 81F·반얀트리 Moon·콘래드 37)·외국인 매니아.</p>
+<p>3. <strong>외국인 영어 OK</strong>: Cakeshop·Vurt·Octagon·호텔 라운지·외국인 매니아.</p>
+<p>4. <strong>외국인 가성비</strong>: 클럽 30-50K·호텔 루프탑 음료 25-50K·외국인 매니아.</p>
+<p>5. <strong>외국인 안전</strong>: KakaoT·심야 N16·N26·#501·#405 통합·외국인 매니아.</p>
+<p>6. <strong>외국인 통합</strong>: 클럽 + #06 한강 치맥 + #436 노래방 + #423 24h + #511 재즈.</p>
+<hr>
+<h2>🗺 외국인 풀데이 코스 3개</h2>
+<h3>A. 외국인 첫 클럽 풀데이 (#454·#513)</h3>
+<ul>
+<li>19:00 강남 한식 (#143) → 21:00 시그니엘 81F (#356·#360) → 23:00 Octagon (#142) → 04:00 24h 한식 (#423)</li>
+</ul>
+<h3>B. 외국인 이태원 클럽 1박2일 (#144·#252)</h3>
+<ul>
+<li>Day 1: 이태원 Cakeshop·Vurt·#144 + Faust 인디</li>
+<li>Day 2: 강남 Octagon + 시그니엘 호텔 (#356)</li>
+</ul>
+<h3>C. 외국인 야간 풀세트 1박2일 (#06·#436·#423·#454·#511)</h3>
+<ul>
+<li>Day 1: #06 한강 치맥 + 홍대 NB·클럽 → #436 노래방</li>
+<li>Day 2: 이태원 Cakeshop + 강남 Octagon + 24h 한식 (#423) + #511 재즈</li>
+</ul>
+<hr>
+<h2>🌸 시즌 5</h2>
+<ul>
+<li><strong>봄 3~5월</strong>: 외국인 매니아 1순위·#385 통합</li>
+<li><strong>여름 6~8월</strong>: 외국인 매니아·#06 한강·#385</li>
+<li><strong>가을 9~11월</strong>: 외국인 매니아·#385·#404 페스티벌</li>
+<li><strong>겨울 12~2월</strong>: 외국인 매니아·연말·#506 통합</li>
+<li><strong>연중</strong>: Octagon·Cakeshop·NB·이태원·외국인 매니아</li>
+</ul>
+<hr>
+<h2>🔗 관련</h2>
+<ul>
+<li>#04 가맥집·#06 한강 치맥·#138 홍대·#140 홍대 술집·#142 강남·#144 이태원·#169 여의도·#171 신촌·#178 외국인 첫 방문·#252 외국인 거주·#293 한남·#296 청담·#356 호텔·#360 호텔 다이닝·#387 K-pop·#398 도착·#402 K-pop 콘서트·#405 응급·안전·#423 24h·#436 노래방·#454 클럽·#455 라이브 음악·#501 여성 솔로 안전·#511 재즈 바</li>
+</ul>
+<h2>🏷 태그</h2>
+<p><code>#외국인야간클럽라운지바deepdive확장</code> <code>#KoreaForeignerNightlifeExpanded</code> <code>#Octagon한국1World5DJMag강남</code> <code>#ClubMade강남청담럭셔리</code> <code>#ClubPause청담신축럭셔리</code> <code>#Cakeshop이태원외국인글로벌</code> <code>#Vurt이태원외국인거주</code> <code>#FaustPistil이태원인디언더그라운드</code> <code>#ClubNB NB Drink홍대1</code> <code>#ClubFFCocoon홍대MZ</code> <code>#AuraHenz m2홍대신촌</code> <code>#루프탑바시그니엘81F반얀트리Moon콘래드37</code> <code>#호텔라운지바외국인럭셔리</code> <code>#KlookKKdayKTO야간패키지</code> <code>#매너드레스코드#06치맥#436노래방#423 24h#501안전#511재즈</code> <code>#키친구</code></p>
+
+  <div class="share-bar">
+    <span class="share-label">공유</span>
+    <button class="share-btn share-twitter" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent('외국인 야간 클럽 라운지 바 deep dive 확장') + '&url=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Twitter">𝕏</button>
+    <button class="share-btn share-facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Facebook">f</button>
+    <button class="share-btn share-kakao" onclick="navigator.share ? navigator.share({title: '외국인 야간 클럽 라운지 바 deep dive 확장', url: window.location.href}) : navigator.clipboard.writeText(window.location.href).then(function() { alert('링크 복사됨!'); })" aria-label="Kakao/Share">📤</button>
+    <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href).then(function() { this.textContent = '✓'; setTimeout(function() { document.querySelector('.share-copy').textContent = '🔗'; }, 1500); }.bind(this))" aria-label="Copy link">🔗</button>
+  </div>
+
+  <div class="detail-nav">
+    <div><a href="gyeonggi-daytrip.html" style="color:var(--red);">&larr; 외국인 경기도 day-trip 매트릭스 deep dive</a></div>
+    <div><a href="museum-expanded.html" style="color:var(--red);">한국 박물관 미술관 deep dive 확장 &rarr;</a></div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <p><a href="https://instagram.com/keychingu.korea" target="_blank">@keychingu.korea</a> &mdash; Seoul for MZ FIT Travelers</p>
+</footer>
+</body>
+</html>
