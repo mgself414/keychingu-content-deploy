@@ -235,6 +235,9 @@ a { color: inherit; text-decoration: none; }
   white-space: nowrap;
   font-weight: 500;
 }
+.stats-link {
+  white-space: nowrap;
+}
 .area-bar {
   max-width: 1000px;
   margin: 0.8rem auto;
