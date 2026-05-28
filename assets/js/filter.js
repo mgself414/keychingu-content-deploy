@@ -259,19 +259,12 @@
     renderCards(filtered);
     updateCount(filtered.length, data.length);
 
-    // 검색 active 시 중간 nav 숨기고 card-grid 바로 노출
+    // 검색 active 시 중간 nav 숨기고 card-grid 바로 노출 (스크롤 없이)
     var midSections = document.querySelectorAll('.area-bar, .area-landing-nav');
     var isSearchActive = !!searchQuery;
     midSections.forEach(function(el) {
       el.style.display = isSearchActive ? 'none' : '';
     });
-    // 검색 시 card-grid로 부드러운 스크롤
-    if (isSearchActive) {
-      var grid = document.getElementById('card-grid');
-      if (grid) {
-        grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
-    }
   }
 
   function bindFilters(data) {

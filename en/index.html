@@ -363,14 +363,10 @@
       });
     }
     renderCards(f);
-    // 검색 active 시 중간 nav 숨기고 card-grid 바로 노출
+    // 검색 active 시 중간 nav 숨기고 card-grid 바로 노출 (스크롤 없이)
     var midSections = document.querySelectorAll('.area-landing-nav');
     var isSearch = !!searchQuery;
     midSections.forEach(function(el){ el.style.display = isSearch ? 'none' : ''; });
-    if(isSearch){
-      var grid = document.getElementById('card-grid');
-      if(grid) grid.scrollIntoView({behavior:'smooth',block:'start'});
-    }
   }
 })();
 </script>
