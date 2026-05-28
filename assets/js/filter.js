@@ -259,11 +259,12 @@
     renderCards(filtered);
     updateCount(filtered.length, data.length);
 
-    // 검색 active 시 중간 nav 숨기고 card-grid 바로 노출 (스크롤 없이)
+    // 검색 또는 정렬 active 시 중간 nav 숨기고 card-grid 바로 노출
     var midSections = document.querySelectorAll('.area-bar, .area-landing-nav');
-    var isSearchActive = !!searchQuery;
+    var sortBy = (document.getElementById('sort-select') || {}).value;
+    var isActive = !!searchQuery || !!sortBy || !!activeCategory || !!activeTag || !!activeArea || showFavoritesOnly;
     midSections.forEach(function(el) {
-      el.style.display = isSearchActive ? 'none' : '';
+      el.style.display = isActive ? 'none' : '';
     });
   }
 
