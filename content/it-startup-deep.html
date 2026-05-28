@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>외국인 한국 IT·스타트업 deep dive — KeyChinGu</title>
+<meta name="description" content="외국인 한국 IT·스타트업 deep dive — Naver·Kakao·강남 12선 > 부제: IT·스타트업·142 강남·504·526 후속 deep dive ISSUE 03 · 535 · 2026-05-28 --- 🎯 왜 외국인 한국 IT·스타트업 deep dive인가 외국인 테크...">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="192x192" href="../assets/logo/favicon-192.png">
+<link rel="apple-touch-icon" href="../assets/logo/favicon-192.png">
+<link rel="canonical" href="https://mgself414.github.io/keychingu-content-deploy/content/it-startup-deep.html">
+<link rel="alternate" hreflang="ko" href="https://mgself414.github.io/keychingu-content-deploy/content/it-startup-deep.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="외국인 한국 IT·스타트업 deep dive">
+<meta property="og:description" content="외국인 한국 IT·스타트업 deep dive — Naver·Kakao·강남 12선 > 부제: IT·스타트업·142 강남·504·526 후속 deep dive ISSUE 03 · 535 · 2026-05-28 --- 🎯 왜 외국인 한국 IT·스타트업 deep dive인가 외국인 테크...">
+<meta property="og:url" content="https://mgself414.github.io/keychingu-content-deploy/content/it-startup-deep.html">
+<meta property="og:image" content="https://mgself414.github.io/keychingu-content-deploy/assets/logo/og-image-1200x630.png">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="외국인 한국 IT·스타트업 deep dive">
+<meta name="twitter:description" content="외국인 한국 IT·스타트업 deep dive — Naver·Kakao·강남 12선 > 부제: IT·스타트업·142 강남·504·526 후속 deep dive ISSUE 03 · 535 · 2026-05-28 --- 🎯 왜 외국인 한국 IT·스타트업 deep dive인가 외국인 테크...">
+<meta name="twitter:image" content="https://mgself414.github.io/keychingu-content-deploy/assets/logo/og-image-1200x630.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"외국인 한국 IT·스타트업 deep dive","description":"외국인 한국 IT·스타트업 deep dive — Naver·Kakao·강남 12선 > 부제: IT·스타트업·142 강남·504·526 후속 deep dive ISSUE 03 · 535 · 2026-05-28 --- 🎯 왜 외국인 한국 IT·스타트업 deep dive인가 외국인 테크...","datePublished":"2026-05-01","inLanguage":"ko","url":"https://mgself414.github.io/keychingu-content-deploy/content/it-startup-deep.html","image":"https://mgself414.github.io/keychingu-content-deploy/assets/logo/og-image-1200x630.png","publisher":{"@type":"Organization","name":"KeyChinGu","logo":{"@type":"ImageObject","url":"https://mgself414.github.io/keychingu-content-deploy/assets/logo/logo_2-4_color_small.png"}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/main.css">
+<style>
+.detail-wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+}
+.breadcrumb {
+  font-size: 13px;
+  color: var(--text-soft);
+  margin-bottom: 24px;
+}
+.breadcrumb a { color: var(--red); font-weight: 600; }
+.detail-wrap h1 {
+  font-size: 28px; font-weight: 800;
+  color: var(--black); margin-bottom: 8px;
+}
+.detail-wrap h2 {
+  font-size: 22px; font-weight: 700;
+  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--red);
+}
+.detail-wrap h3 {
+  font-size: 17px; font-weight: 600;
+  color: var(--text-mid); margin-top: 20px; margin-bottom: 8px;
+}
+.detail-wrap p {
+  font-size: 15px; line-height: 1.7;
+  color: var(--text-mid); margin-bottom: 12px;
+}
+.detail-wrap ul {
+  padding-left: 20px; margin-bottom: 12px;
+}
+.detail-wrap li {
+  font-size: 14px; line-height: 1.6;
+  color: var(--text-mid); margin-bottom: 6px;
+}
+.detail-wrap table {
+  width: 100%; border-collapse: collapse;
+  margin-bottom: 16px; font-size: 13px;
+}
+.detail-wrap th {
+  background: var(--black); color: #fff;
+  padding: 10px 12px; text-align: left;
+  font-weight: 600; font-size: 11px;
+  text-transform: uppercase; letter-spacing: 0.06em;
+}
+.detail-wrap td {
+  padding: 10px 12px; border-bottom: 1px solid var(--border);
+  color: var(--text-mid);
+}
+.detail-wrap tr:nth-child(even) td { background: rgba(0,0,0,0.02); }
+.detail-wrap hr {
+  border: none; height: 1px;
+  background: var(--border); margin: 24px 0;
+}
+.detail-wrap code {
+  background: rgba(33,140,204,0.08);
+  padding: 2px 6px; border-radius: 4px;
+  font-size: 13px; color: var(--blue);
+}
+.detail-nav {
+  display: flex; justify-content: space-between;
+  margin-top: 48px; padding-top: 20px;
+  border-top: 1px solid var(--border);
+  font-size: 14px; font-weight: 600;
+}
+.share-bar {
+  display: flex; align-items: center; gap: 10px;
+  margin-top: 40px; padding: 16px 20px;
+  background: #f9f9f9; border-radius: 12px;
+  border: 1px solid var(--border);
+}
+.share-label {
+  font-size: 14px; font-weight: 600; color: var(--text-soft);
+  margin-right: 8px;
+}
+.share-btn {
+  width: 40px; height: 40px;
+  border: none; border-radius: 50%;
+  background: #fff; cursor: pointer;
+  font-size: 1.1rem; transition: all 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  display: inline-flex; align-items: center; justify-content: center;
+}
+.share-btn:hover { transform: translateY(-2px); box-shadow: 0 3px 8px rgba(0,0,0,0.15); }
+.share-twitter:hover { background: #000; color: #fff; }
+.share-facebook:hover { background: #1877f2; color: #fff; }
+.share-kakao:hover { background: #fee500; }
+.share-copy:hover { background: #218CCC; color: #fff; }
+/* EN toggle disabled — 영문판 미생성 콘텐츠 (2026-05-16 patch) */
+.lang-switch .lang-disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  text-decoration: line-through;
+  padding: 4px 10px;
+  color: var(--text-soft, #888);
+  font-size: 13px;
+  user-select: none;
+}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <div class="lang-switch">
+    <a href="../content/it-startup-deep.html" class="active">KR</a>
+    <span class="lang-disabled" title="영문판 준비 중">EN</span>
+  </div>
+</header>
+
+<main class="detail-wrap">
+  <nav class="breadcrumb" aria-label="breadcrumb"><a href="../index.html">전체 가이드</a> &rsaquo; 외국인 한국 IT·스타트업 deep dive</nav>
+  <article>
+  <h1>외국인 한국 IT·스타트업 deep dive — Naver·Kakao·강남 12선</h1>
+<p>&gt; <strong>부제</strong>: IT·스타트업·#142 강남·#504·#526 후속 deep dive</p>
+<p>ISSUE 03 · #535 · 2026-05-28</p>
+<hr>
+<h2>🎯 왜 외국인 한국 IT·스타트업 deep dive인가</h2>
+<p>외국인 테크 매니아 1번지 = <strong>IT·스타트업 deep dive</strong> (#504 직장 취업·#526 워홀·#142 강남 후속). Naver + Kakao + 쿠팡 + 토스 + Coupang + 외국인 영어 OK + Y Combinator 코리아 풀세트.</p>
+<hr>
+<h2>★ 한눈에 12 IT·스타트업 매트릭스</h2>
+<table><thead><tr>
+<th>#</th>
+<th>회사·매장</th>
+<th>4축</th>
+<th>시그니처</th>
+</tr></thead><tbody>
+<tr>
+<td>1</td>
+<td><strong>Naver ★ 한국 #1 IT (성남 그린팩토리)</strong></td>
+<td>대기업 cluster</td>
+<td>한국 #1·외국인 영어 OK·평점 4.8</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Kakao (제주·판교·외국인 매니아)</strong></td>
+<td>대기업 cluster</td>
+<td>외국인 매니아·#142·#504 통합</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>쿠팡 (Coupang·잠실·외국인 영어)</strong> ★</td>
+<td>대기업 cluster</td>
+<td>외국인 영어 OK·미국 상장·평점 4.7</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>삼성전자·SK하이닉스·LG전자 (수원·이천)</strong></td>
+<td>대기업 cluster</td>
+<td>외국인 매니아·#143·반도체</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>토스 (비바리퍼블리카·강남 #142)</strong> ★</td>
+<td>핀테크 cluster</td>
+<td>외국인 영어 OK·MZ·#527 통합</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>카카오뱅크·토스뱅크·뱅크샐러드</strong></td>
+<td>핀테크 cluster</td>
+<td>외국인 매니아·#252·#527 통합</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>당근·우아한형제들 (배민) ★</strong></td>
+<td>스타트업 cluster</td>
+<td>외국인 매니아·#400·평점 4.7</td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>마켓컬리·오늘의집·야놀자</strong></td>
+<td>스타트업 cluster</td>
+<td>외국인 매니아·E-commerce·#449</td>
+</tr>
+<tr>
+<td>9</td>
+<td><strong>Y Combinator 코리아·Startup Korea ★</strong></td>
+<td>액셀러레이터</td>
+<td>외국인 1순위·영어 OK·#178</td>
+</tr>
+<tr>
+<td>10</td>
+<td><strong>D.CAMP·매쉬업엔젤스·소프트뱅크 코리아</strong></td>
+<td>액셀러레이터</td>
+<td>외국인 영어 OK·#142·#504</td>
+</tr>
+<tr>
+<td>11</td>
+<td><strong>외국인 IT 취업 (#504·H-1·E-7 비자)</strong> ★</td>
+<td>취업 cluster</td>
+<td>외국인 매니아·#504·#526 통합</td>
+</tr>
+<tr>
+<td>12</td>
+<td><strong>외국인 IT 통합 패키지 (KISED·KOTRA·Startup Korea)</strong> ★</td>
+<td>통합 cluster</td>
+<td>영어 OK·KOTRA 인증·외국인 1순위</td>
+</tr>
+</tbody></table>
+<p><strong>+ 추가 4</strong>: 외국인 IT 컨퍼런스 (NEXTRISE·DEVIEW·외국인 1순위)·외국인 코딩 부트캠프 (코드스테이츠·스파르타·#403)·외국인 코워킹 스페이스 (WeWork·Patio7·#252)·외국인 디지털 노마드 비자 (D-10·F-2)</p>
+<hr>
+<h2>⚠ 외국인 자주 실수 5가지</h2>
+<p>1. <strong>&quot;한국 IT = 영어 안됨&quot;</strong>: 영어 OK = <strong>Naver·Kakao·쿠팡·토스 외국인 영어 OK + 매니저 영어 + 외국인 IT 매니아 1번지</strong> + #504·#526 통합.</p>
+<p>2. <strong>&quot;스타트업 = 미국·실리콘밸리만&quot;</strong>: 한국 스타트업 = <strong>토스 (한국 #2 핀테크)·당근·우아한형제들·마켓컬리·야놀자 (외국인 1번지) + Y Combinator 코리아 + 외국인 매니아</strong> + #504·#178 통합.</p>
+<p>3. <strong>&quot;IT 취업 = 어려움&quot;</strong>: 외국인 IT 취업 = <strong>#504 외국인 영어 OK + H-1·E-7 비자 + Naver·Kakao·쿠팡 매니아 1번지</strong> + #504·#526·#252 통합.</p>
+<p>4. <strong>&quot;코워킹 = 한국 없음&quot;</strong>: 코워킹 = <strong>WeWork·Patio7·Fastfive·외국인 영어 OK·#142 강남 + 외국인 디지털 노마드 1번지</strong> + #252·D-10 통합.</p>
+<p>5. <strong>&quot;디지털 노마드 = 비자 어려움&quot;</strong>: 디지털 노마드 = <strong>D-10 (구직) 6개월 + F-2 (점수제) + 외국인 IT 매니아 1번지 + KISED·KOTRA 패키지</strong> + #526·#252 통합.</p>
+<hr>
+<h2>① 대기업 cluster (4)</h2>
+<h3>1. Naver ★ 한국 #1 IT (성남 그린팩토리)</h3>
+<ul>
+<li>한국 #1·외국인 영어 OK·평점 4.8</li>
+<li>외국인 ★: ◎◎ — 한국 #1·외국인 영어 OK</li>
+<li>시그니처: 외국인 매니아 1번지·#504·#516 통합</li>
+</ul>
+<h3>2. Kakao (제주·판교·외국인 매니아)</h3>
+<ul>
+<li>외국인 매니아·#142·#504 통합</li>
+<li>외국인 ★: ◎◎ — 외국인 매니아·#142·#504</li>
+<li>시그니처: 외국인 매니아·#142·#504 통합</li>
+</ul>
+<h3>3. 쿠팡 (Coupang) ★ 잠실</h3>
+<ul>
+<li>외국인 영어 OK·미국 상장·평점 4.7</li>
+<li>외국인 ★: ◎◎ — 외국인 영어 OK·미국 상장</li>
+<li>시그니처: 외국인 매니아 1번지·#449·#504 통합</li>
+</ul>
+<h3>4. 삼성전자·SK하이닉스·LG전자 (수원·이천)</h3>
+<ul>
+<li>외국인 매니아·#143·반도체</li>
+<li>외국인 ★: ◎◎ — 외국인 매니아·#143·반도체</li>
+<li>시그니처: 외국인 매니아·#143·#504 통합</li>
+</ul>
+<hr>
+<h2>② 핀테크 cluster (2)</h2>
+<h3>5. 토스 (비바리퍼블리카·강남) ★ #142</h3>
+<ul>
+<li>외국인 영어 OK·MZ·#527 통합</li>
+<li>외국인 ★: ◎◎ — 외국인 영어 OK·MZ·#527</li>
+<li>시그니처: 외국인 MZ 매니아·#527 통합</li>
+</ul>
+<h3>6. 카카오뱅크·토스뱅크·뱅크샐러드</h3>
+<ul>
+<li>외국인 매니아·#252·#527 통합</li>
+<li>외국인 ★: ◎◎ — 외국인 매니아·#252·#527</li>
+<li>시그니처: 외국인 매니아·#252·#527 통합</li>
+</ul>
+<hr>
+<h2>③ 스타트업 cluster (2)</h2>
+<h3>7. 당근·우아한형제들 (배민) ★</h3>
+<ul>
+<li>외국인 매니아·#400·평점 4.7</li>
+<li>외국인 ★: ◎◎ — 외국인 매니아·#400·평점 4.7</li>
+<li>시그니처: 외국인 매니아·#400·#449 통합</li>
+</ul>
+<h3>8. 마켓컬리·오늘의집·야놀자</h3>
+<ul>
+<li>외국인 매니아·E-commerce·#449</li>
+<li>외국인 ★: ◎◎ — 외국인 매니아·E-commerce·#449</li>
+<li>시그니처: 외국인 매니아·#449 통합</li>
+</ul>
+<hr>
+<h2>④ 액셀러레이터·취업·통합 cluster (4 + 추가 4)</h2>
+<h3>9. Y Combinator 코리아·Startup Korea ★</h3>
+<ul>
+<li>외국인 1순위·영어 OK·#178</li>
+<li>외국인 ★: ◎◎ — 외국인 1순위·영어 OK·#178</li>
+<li>시그니처: 외국인 매니아 1번지·#178·#504 통합</li>
+</ul>
+<h3>10. D.CAMP·매쉬업엔젤스·소프트뱅크 코리아</h3>
+<ul>
+<li>외국인 영어 OK·#142·#504</li>
+<li>외국인 ★: ◎◎ — 외국인 영어 OK·#142·#504</li>
+<li>시그니처: 외국인 매니아·#142·#504 통합</li>
+</ul>
+<h3>11. 외국인 IT 취업 ★ #504·H-1·E-7 비자</h3>
+<ul>
+<li>외국인 매니아·#504·#526 통합</li>
+<li>외국인 ★: ◎◎ — 외국인 매니아·#504·#526</li>
+<li>시그니처: 외국인 매니아 1번지·#504·#526·#252 통합</li>
+</ul>
+<h3>12. 외국인 IT 통합 패키지 ★ KISED·KOTRA·Startup Korea</h3>
+<ul>
+<li>영어 OK·KOTRA 인증·외국인 1순위</li>
+<li>외국인 ★: ◎◎ — 영어 OK·KOTRA 인증·외국인 1순위</li>
+<li>시그니처: 외국인 매니아·#178·#504·#526 통합</li>
+</ul>
+<h3>+ 추가 4</h3>
+<ul>
+<li><strong>외국인 IT 컨퍼런스 (NEXTRISE·DEVIEW)</strong> — 외국인 1순위·영어 OK</li>
+<li><strong>외국인 코딩 부트캠프 (코드스테이츠·스파르타)</strong> — 외국인 매니아·#403</li>
+<li><strong>외국인 코워킹 스페이스 (WeWork·Patio7·Fastfive)</strong> — 외국인 매니아·#252·#142</li>
+<li><strong>외국인 디지털 노마드 비자 (D-10·F-2)</strong> — 외국인 매니아·#526 통합</li>
+</ul>
+<hr>
+<h2>⚙ FAQ 6개</h2>
+<p>1. <strong>외국인 IT 1순위</strong>: Naver·Kakao·쿠팡·토스·당근·마켓컬리 풀세트.</p>
+<p>2. <strong>외국인 IT 취업</strong>: #504·H-1·E-7 비자·Naver·Kakao·쿠팡 영어 OK.</p>
+<p>3. <strong>외국인 스타트업</strong>: 토스·당근·야놀자·Y Combinator 코리아·외국인 매니아.</p>
+<p>4. <strong>외국인 코워킹</strong>: WeWork·Patio7·Fastfive·강남·#142·#252.</p>
+<p>5. <strong>외국인 디지털 노마드</strong>: D-10 (6개월)·F-2 (점수제)·#526·#252 통합.</p>
+<p>6. <strong>외국인 통합</strong>: Naver + 토스 + Y Combinator + WeWork + KOTRA 풀세트.</p>
+<hr>
+<h2>🗺 외국인 풀데이 코스 3개</h2>
+<h3>A. 외국인 IT 풀데이 강남 (#142·#535)</h3>
+<ul>
+<li>09:00 강남 토스 → 13:00 외국인 친화 식당 (#400) → 15:00 WeWork 강남 (#142) → 18:00 Naver·Kakao 외국인 미팅</li>
+</ul>
+<h3>B. 외국인 IT 취업 1주일 (#504·#535)</h3>
+<ul>
+<li>Day 1~2: Naver·Kakao·쿠팡 면접 + 외국인 영어 OK</li>
+<li>Day 3~4: 토스·당근·야놀자 면접 + Y Combinator 코리아</li>
+<li>Day 5~7: 코딩 부트캠프 + 외국인 IT 매니아</li>
+</ul>
+<h3>C. 외국인 디지털 노마드 1년 (#252·#526·#535)</h3>
+<ul>
+<li>1~3개월: D-10 비자 + 코워킹 (WeWork) + 한국어 (#403)</li>
+<li>4~9개월: 외국인 IT 취업 (#504) + F-2 비자 신청</li>
+<li>10~12개월: F-2 거주 + 외국인 IT 매니아 1번지</li>
+</ul>
+<hr>
+<h2>🌸 시즌 5</h2>
+<ul>
+<li><strong>봄 3~5월</strong>: NEXTRISE·DEVIEW (5월)·외국인 IT 1순위·#385</li>
+<li><strong>여름 6~8월</strong>: 외국인 매니아·여름 IT 컨퍼런스·인턴십 1순위</li>
+<li><strong>가을 9~11월</strong>: 외국인 매니아·#385·신학기 코딩 부트캠프</li>
+<li><strong>겨울 12~2월</strong>: 외국인 매니아·연말 IT 시상식·#385</li>
+<li><strong>연중</strong>: 12 IT·스타트업 + 외국인 매니아 1번지</li>
+</ul>
+<hr>
+<h2>🔗 관련</h2>
+<ul>
+<li>#142 강남·#143 경기도·#178 외국인 첫 방문·#252 외국인 거주·#400 외국인 친화 식당·#403 한국어 학원·#449 쇼핑몰·#504 직장 취업·#516 SNS·#522 메타 인덱스·#526 워홀·#527 결제</li>
+</ul>
+<h2>🏷 태그</h2>
+<p><code>#외국인한국IT스타트업deepdive</code> <code>#KoreaForeignerITStartup</code> <code>#Naver한국1IT성남그린팩토리4.8</code> <code>#Kakao제주판교#142#504</code> <code>#쿠팡Coupang잠실미국상장4.7</code> <code>#삼성전자SK하이닉스LG전자수원이천반도체</code> <code>#토스비바리퍼블리카강남#142MZ#527</code> <code>#카카오뱅크토스뱅크뱅크샐러드#252</code> <code>#당근우아한형제들배민#400 4.7</code> <code>#마켓컬리오늘의집야놀자E-commerce#449</code> <code>#YCombinator코리아Startup Korea영어OK#178</code> <code>#D.CAMP매쉬업엔젤스소프트뱅크코리아#142#504</code> <code>#외국인IT취업H-1E-7비자#504#526</code> <code>#KISED KOTRA Startup Korea영어OK</code> <code>#NEXTRISE DEVIEW코딩부트캠프WeWork Patio7</code> <code>#디지털노마드D-10F-2점수제#526</code> <code>#키친구</code></p>
+  </article>
+
+  <div class="share-bar">
+    <span class="share-label">공유</span>
+    <button class="share-btn share-twitter" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent('외국인 한국 IT·스타트업 deep dive') + '&url=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Twitter">𝕏</button>
+    <button class="share-btn share-facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Facebook">f</button>
+    <button class="share-btn share-kakao" onclick="navigator.share ? navigator.share({title: '외국인 한국 IT·스타트업 deep dive', url: window.location.href}) : navigator.clipboard.writeText(window.location.href).then(function() { alert('링크 복사됨!'); })" aria-label="Kakao/Share">📤</button>
+    <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href).then(function() { this.textContent = '✓'; setTimeout(function() { document.querySelector('.share-copy').textContent = '🔗'; }, 1500); }.bind(this))" aria-label="Copy link">🔗</button>
+  </div>
+
+  <nav class="detail-nav" aria-label="previous-next">
+    <div><a href="national-cities-deep.html" style="color:var(--red);">&larr; 외국인 전국 광역시·도시 deep dive</a></div>
+    <div><a href="art-gallery-deep.html" style="color:var(--red);">외국인 한국 아트·갤러리 deep dive &rarr;</a></div>
+  </nav>
+</main>
+
+<footer class="site-footer">
+  <p><a href="https://instagram.com/keychingu.korea" target="_blank">@keychingu.korea</a> &mdash; Seoul for MZ FIT Travelers</p>
+</footer>
+</body>
+</html>

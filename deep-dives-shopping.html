@@ -27,6 +27,12 @@
     .course-box { background: #fdf2f8; border-left: 4px solid #C2185B; padding: 20px 24px; border-radius: 8px; margin-top: 24px; }
     .course-box h3 { font-size: 18px; margin-bottom: 12px; color: #C2185B; }
     .course-box p { font-size: 14px; color: #444; line-height: 1.6; margin: 8px 0; }
+
+    .search-bar { max-width: 720px; margin: 24px auto 0; padding: 0 24px; }
+    .search-bar input { width: 100%; padding: 12px 18px; font-size: 14px; border: 2px solid rgba(255,255,255,0.6); border-radius: 30px; outline: none; background: rgba(255,255,255,0.95); color: #020304; box-sizing: border-box; font-family: inherit; }
+    .search-bar input:focus { border-color: #fff; background: #fff; }
+    .search-stat { text-align: center; font-size: 12px; color: rgba(255,255,255,0.85); margin-top: 6px; }
+    .hide { display: none !important; }
   </style>
   <link rel="icon" href="./favicon.ico" sizes="any">
 </head>
@@ -37,7 +43,7 @@
   <nav class="site-nav">
     <a href="index.html">홈</a>
     <a href="meta-guides.html">📚 메타 95편</a>
-    <a href="deep-dives.html">🔍 Deep Dive 73편</a>
+    <a href="deep-dives.html">🔍 Deep Dive 77편</a>
     <a href="about.html">About</a>
     <a href="faq.html">FAQ</a>
   </nav>
@@ -46,13 +52,17 @@
 <section class="axis-hero">
   <h1>🛍 쇼핑·럭셔리 Deep Dive</h1>
   <p>외국인 면세·럭셔리·MZ 패션 매니아 풀 cover — 면세점·카지노·streetwear·동대문·성수</p>
+  <div class="search-bar">
+    <input id="search" type="text" placeholder="🔍 이 축의 deep dive 검색">
+    <div class="search-stat" id="search-stat">4편 표시 중</div>
+  </div>
 </section>
 
 <nav class="axis-nav">
   <div class="axis-nav-inner">
-    <a href="deep-dives-arrival.html">🛬 도착·실용 (13)</a>
+    <a href="deep-dives-arrival.html">🛬 도착·실용 (16)</a>
     <a href="deep-dives-food.html">🍽 음식·음료 (11)</a>
-    <a href="deep-dives-culture.html">🎭 문화·정통 (13)</a>
+    <a href="deep-dives-culture.html">🎭 문화·정통 (14)</a>
     <a href="deep-dives-kcontent.html">🎤 K-content·MZ (12)</a>
     <a href="deep-dives-wellness.html">💆 Wellness·뷰티 (8)</a>
     <a href="deep-dives-shopping.html" class="active">🛍 쇼핑·럭셔리 (4)</a>
@@ -81,9 +91,31 @@
 
 <footer class="site-footer">
   <p style="text-align: center; padding: 24px; color: #888; font-size: 13px;">
-    © 2026 KeyChinGu · <a href="deep-dives.html" style="color:#C2185B;">전체 Deep Dive 73편</a> · <a href="meta-guides.html" style="color:#C2185B;">메타 가이드 95편</a>
+    © 2026 KeyChinGu · <a href="deep-dives.html" style="color:#C2185B;">전체 Deep Dive 77편</a> · <a href="meta-guides.html" style="color:#C2185B;">메타 가이드 95편</a>
   </p>
 </footer>
+
+
+<script>
+// Client-side card search
+(function() {
+  var input = document.getElementById('search');
+  var stat = document.getElementById('search-stat');
+  if (!input) return;
+  var cards = Array.from(document.querySelectorAll('.meta-card'));
+  input.addEventListener('input', function() {
+    var q = this.value.trim().toLowerCase();
+    var visible = 0;
+    cards.forEach(function(card) {
+      var txt = card.textContent.toLowerCase();
+      var hit = !q || txt.indexOf(q) !== -1;
+      card.classList.toggle('hide', !hit);
+      if (hit) visible++;
+    });
+    stat.textContent = q ? '"' + q + '" 검색 — ' + visible + '편 표시' : 4 + '편 표시 중';
+  });
+})();
+</script>
 
 </body>
 </html>

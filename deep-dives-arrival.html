@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>🛬 도착·실용 Deep Dive 12편 — KeyChinGu</title>
-  <meta name="description" content="외국인 도착·실용 Deep Dive 12편 — 도착·SIM·환전·응급·안전·결제·SNS·날씨·취업·워홀·한국어. 외국인 첫 방문 lifecycle 첫 관문 풀 cover.">
+  <title>🛬 도착·실용 Deep Dive 16편 — KeyChinGu</title>
+  <meta name="description" content="외국인 도착·실용 Deep Dive 16편 — 도착·SIM·환전·응급·안전·결제·SNS·날씨·취업·워홀·한국어. 외국인 첫 방문 lifecycle 첫 관문 풀 cover.">
   <link rel="canonical" href="https://mgself414.github.io/keychingu-content-deploy/deep-dives-arrival.html">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,6 +29,12 @@
     .course-box { background: #f8f9fc; border-left: 4px solid #4A90E2; padding: 20px 24px; border-radius: 8px; margin-top: 24px; }
     .course-box h3 { font-size: 18px; margin-bottom: 12px; color: #1E88B0; }
     .course-box p { font-size: 14px; color: #444; line-height: 1.6; margin: 8px 0; }
+
+    .search-bar { max-width: 720px; margin: 24px auto 0; padding: 0 24px; }
+    .search-bar input { width: 100%; padding: 12px 18px; font-size: 14px; border: 2px solid rgba(255,255,255,0.6); border-radius: 30px; outline: none; background: rgba(255,255,255,0.95); color: #020304; box-sizing: border-box; font-family: inherit; }
+    .search-bar input:focus { border-color: #fff; background: #fff; }
+    .search-stat { text-align: center; font-size: 12px; color: rgba(255,255,255,0.85); margin-top: 6px; }
+    .hide { display: none !important; }
   </style>
   <link rel="icon" href="./favicon.ico" sizes="any">
   <link rel="icon" type="image/png" sizes="192x192" href="./assets/logo/favicon-192.png">
@@ -40,7 +46,7 @@
   <nav class="site-nav">
     <a href="index.html">홈</a>
     <a href="meta-guides.html">📚 메타 95편</a>
-    <a href="deep-dives.html">🔍 Deep Dive 73편</a>
+    <a href="deep-dives.html">🔍 Deep Dive 77편</a>
     <a href="about.html">About</a>
     <a href="faq.html">FAQ</a>
   </nav>
@@ -49,13 +55,17 @@
 <section class="axis-hero">
   <h1>🛬 도착·실용 Deep Dive</h1>
   <p>외국인 lifecycle 첫 관문 — 도착·SIM·환전·결제·응급·안전·SNS·날씨·취업·워홀 풀 cover</p>
+  <div class="search-bar">
+    <input id="search" type="text" placeholder="🔍 이 축의 deep dive 검색">
+    <div class="search-stat" id="search-stat">16편 표시 중</div>
+  </div>
 </section>
 
 <nav class="axis-nav">
   <div class="axis-nav-inner">
-    <a href="deep-dives-arrival.html" class="active">🛬 도착·실용 (13)</a>
+    <a href="deep-dives-arrival.html" class="active">🛬 도착·실용 (16)</a>
     <a href="deep-dives-food.html">🍽 음식·음료 (11)</a>
-    <a href="deep-dives-culture.html">🎭 문화·정통 (13)</a>
+    <a href="deep-dives-culture.html">🎭 문화·정통 (14)</a>
     <a href="deep-dives-kcontent.html">🎤 K-content·MZ (12)</a>
     <a href="deep-dives-wellness.html">💆 Wellness·뷰티 (8)</a>
     <a href="deep-dives-shopping.html">🛍 쇼핑·럭셔리 (4)</a>
@@ -79,6 +89,9 @@
     <a href="content/working-holiday-deep.html" class="meta-card"><span class="num">#526</span><h3>워킹홀리데이 H-1 비자 deep</h3><p>22 국가·호주·캐나다·F-2 F-5 영주권</p></a>
     <a href="content/payment-system-deep.html" class="meta-card"><span class="num">#527</span><h3>한국 결제 시스템 deep</h3><p>WOWPASS·Naver Pay·KakaoPay·Wise·24h ATM</p></a>
     <a href="content/volunteer-exchange.html" class="meta-card"><span class="num">#529</span><h3>자원봉사·문화교류 deep</h3><p>Korea Foundation·KOICA·CIEE·EPIK·WWOOF</p></a>
+    <a href="content/it-startup-deep.html" class="meta-card"><span class="num">#535</span><h3>한국 IT·스타트업 deep</h3><p>Naver·Kakao·쿠팡·토스·Y Combinator·디지털 노마드</p></a>
+    <a href="content/korean-conversation.html" class="meta-card"><span class="num">#537</span><h3>한국어 회화 실전 deep</h3><p>KIIP·TTMIK·HelloTalk·Tandem·TOPIK·발음 1:1</p></a>
+    <a href="content/long-term-residence.html" class="meta-card"><span class="num">#538</span><h3>거주 1년+ 매니아 deep</h3><p>F-2 점수제·F-5 영주권·고시텔·NHIS·HiKorea</p></a>
   </div>
 
   <div class="course-box">
@@ -93,9 +106,31 @@
 
 <footer class="site-footer">
   <p style="text-align: center; padding: 24px; color: #888; font-size: 13px;">
-    © 2026 KeyChinGu · <a href="deep-dives.html" style="color:#4A90E2;">전체 Deep Dive 73편</a> · <a href="meta-guides.html" style="color:#4A90E2;">메타 가이드 95편</a>
+    © 2026 KeyChinGu · <a href="deep-dives.html" style="color:#4A90E2;">전체 Deep Dive 77편</a> · <a href="meta-guides.html" style="color:#4A90E2;">메타 가이드 95편</a>
   </p>
 </footer>
+
+
+<script>
+// Client-side card search
+(function() {
+  var input = document.getElementById('search');
+  var stat = document.getElementById('search-stat');
+  if (!input) return;
+  var cards = Array.from(document.querySelectorAll('.meta-card'));
+  input.addEventListener('input', function() {
+    var q = this.value.trim().toLowerCase();
+    var visible = 0;
+    cards.forEach(function(card) {
+      var txt = card.textContent.toLowerCase();
+      var hit = !q || txt.indexOf(q) !== -1;
+      card.classList.toggle('hide', !hit);
+      if (hit) visible++;
+    });
+    stat.textContent = q ? '"' + q + '" 검색 — ' + visible + '편 표시' : 16 + '편 표시 중';
+  });
+})();
+</script>
 
 </body>
 </html>

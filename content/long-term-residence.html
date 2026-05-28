@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>외국인 거주 1년+ 매니아 deep dive — KeyChinGu</title>
+<meta name="description" content="외국인 거주 1년+ 매니아 deep dive — F-2·F-5·고시텔 12선 > 부제: 외국인 거주·F-2·F-5·252·526·504 후속 deep dive ISSUE 03 · 538 · 2026-05-28 --- 🎯 왜 외국인 거주 1년+ 매니아 deep dive인가 외국인 거...">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="192x192" href="../assets/logo/favicon-192.png">
+<link rel="apple-touch-icon" href="../assets/logo/favicon-192.png">
+<link rel="canonical" href="https://mgself414.github.io/keychingu-content-deploy/content/long-term-residence.html">
+<link rel="alternate" hreflang="ko" href="https://mgself414.github.io/keychingu-content-deploy/content/long-term-residence.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="외국인 거주 1년+ 매니아 deep dive">
+<meta property="og:description" content="외국인 거주 1년+ 매니아 deep dive — F-2·F-5·고시텔 12선 > 부제: 외국인 거주·F-2·F-5·252·526·504 후속 deep dive ISSUE 03 · 538 · 2026-05-28 --- 🎯 왜 외국인 거주 1년+ 매니아 deep dive인가 외국인 거...">
+<meta property="og:url" content="https://mgself414.github.io/keychingu-content-deploy/content/long-term-residence.html">
+<meta property="og:image" content="https://mgself414.github.io/keychingu-content-deploy/assets/logo/og-image-1200x630.png">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="외국인 거주 1년+ 매니아 deep dive">
+<meta name="twitter:description" content="외국인 거주 1년+ 매니아 deep dive — F-2·F-5·고시텔 12선 > 부제: 외국인 거주·F-2·F-5·252·526·504 후속 deep dive ISSUE 03 · 538 · 2026-05-28 --- 🎯 왜 외국인 거주 1년+ 매니아 deep dive인가 외국인 거...">
+<meta name="twitter:image" content="https://mgself414.github.io/keychingu-content-deploy/assets/logo/og-image-1200x630.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"외국인 거주 1년+ 매니아 deep dive","description":"외국인 거주 1년+ 매니아 deep dive — F-2·F-5·고시텔 12선 > 부제: 외국인 거주·F-2·F-5·252·526·504 후속 deep dive ISSUE 03 · 538 · 2026-05-28 --- 🎯 왜 외국인 거주 1년+ 매니아 deep dive인가 외국인 거...","datePublished":"2026-05-01","inLanguage":"ko","url":"https://mgself414.github.io/keychingu-content-deploy/content/long-term-residence.html","image":"https://mgself414.github.io/keychingu-content-deploy/assets/logo/og-image-1200x630.png","publisher":{"@type":"Organization","name":"KeyChinGu","logo":{"@type":"ImageObject","url":"https://mgself414.github.io/keychingu-content-deploy/assets/logo/logo_2-4_color_small.png"}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/main.css">
+<style>
+.detail-wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+}
+.breadcrumb {
+  font-size: 13px;
+  color: var(--text-soft);
+  margin-bottom: 24px;
+}
+.breadcrumb a { color: var(--red); font-weight: 600; }
+.detail-wrap h1 {
+  font-size: 28px; font-weight: 800;
+  color: var(--black); margin-bottom: 8px;
+}
+.detail-wrap h2 {
+  font-size: 22px; font-weight: 700;
+  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--red);
+}
+.detail-wrap h3 {
+  font-size: 17px; font-weight: 600;
+  color: var(--text-mid); margin-top: 20px; margin-bottom: 8px;
+}
+.detail-wrap p {
+  font-size: 15px; line-height: 1.7;
+  color: var(--text-mid); margin-bottom: 12px;
+}
+.detail-wrap ul {
+  padding-left: 20px; margin-bottom: 12px;
+}
+.detail-wrap li {
+  font-size: 14px; line-height: 1.6;
+  color: var(--text-mid); margin-bottom: 6px;
+}
+.detail-wrap table {
+  width: 100%; border-collapse: collapse;
+  margin-bottom: 16px; font-size: 13px;
+}
+.detail-wrap th {
+  background: var(--black); color: #fff;
+  padding: 10px 12px; text-align: left;
+  font-weight: 600; font-size: 11px;
+  text-transform: uppercase; letter-spacing: 0.06em;
+}
+.detail-wrap td {
+  padding: 10px 12px; border-bottom: 1px solid var(--border);
+  color: var(--text-mid);
+}
+.detail-wrap tr:nth-child(even) td { background: rgba(0,0,0,0.02); }
+.detail-wrap hr {
+  border: none; height: 1px;
+  background: var(--border); margin: 24px 0;
+}
+.detail-wrap code {
+  background: rgba(33,140,204,0.08);
+  padding: 2px 6px; border-radius: 4px;
+  font-size: 13px; color: var(--blue);
+}
+.detail-nav {
+  display: flex; justify-content: space-between;
+  margin-top: 48px; padding-top: 20px;
+  border-top: 1px solid var(--border);
+  font-size: 14px; font-weight: 600;
+}
+.share-bar {
+  display: flex; align-items: center; gap: 10px;
+  margin-top: 40px; padding: 16px 20px;
+  background: #f9f9f9; border-radius: 12px;
+  border: 1px solid var(--border);
+}
+.share-label {
+  font-size: 14px; font-weight: 600; color: var(--text-soft);
+  margin-right: 8px;
+}
+.share-btn {
+  width: 40px; height: 40px;
+  border: none; border-radius: 50%;
+  background: #fff; cursor: pointer;
+  font-size: 1.1rem; transition: all 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  display: inline-flex; align-items: center; justify-content: center;
+}
+.share-btn:hover { transform: translateY(-2px); box-shadow: 0 3px 8px rgba(0,0,0,0.15); }
+.share-twitter:hover { background: #000; color: #fff; }
+.share-facebook:hover { background: #1877f2; color: #fff; }
+.share-kakao:hover { background: #fee500; }
+.share-copy:hover { background: #218CCC; color: #fff; }
+/* EN toggle disabled — 영문판 미생성 콘텐츠 (2026-05-16 patch) */
+.lang-switch .lang-disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  text-decoration: line-through;
+  padding: 4px 10px;
+  color: var(--text-soft, #888);
+  font-size: 13px;
+  user-select: none;
+}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <div class="lang-switch">
+    <a href="../content/long-term-residence.html" class="active">KR</a>
+    <span class="lang-disabled" title="영문판 준비 중">EN</span>
+  </div>
+</header>
+
+<main class="detail-wrap">
+  <nav class="breadcrumb" aria-label="breadcrumb"><a href="../index.html">전체 가이드</a> &rsaquo; 외국인 거주 1년+ 매니아 deep dive</nav>
+  <article>
+  <h1>외국인 거주 1년+ 매니아 deep dive — F-2·F-5·고시텔 12선</h1>
+<p>&gt; <strong>부제</strong>: 외국인 거주·F-2·F-5·#252·#526·#504 후속 deep dive</p>
+<p>ISSUE 03 · #538 · 2026-05-28</p>
+<hr>
+<h2>🎯 왜 외국인 거주 1년+ 매니아 deep dive인가</h2>
+<p>외국인 거주 매니아 1번지 = <strong>거주 1년+ deep dive</strong> (#252 거주·#526 워홀·#504 취업·#403 한국어 후속). F-2 점수제 + F-5 영주권 + 고시텔 + 외국인 영어 OK + 한국 거주 1년+ 풀세트.</p>
+<hr>
+<h2>★ 한눈에 12 거주 1년+ 매트릭스</h2>
+<table><thead><tr>
+<th>#</th>
+<th>항목·서비스</th>
+<th>4축</th>
+<th>시그니처</th>
+</tr></thead><tbody>
+<tr>
+<td>1</td>
+<td><strong>F-2 비자 (점수제 80점+) ★ 한국 #1</strong></td>
+<td>비자 cluster</td>
+<td>외국인 거주 1번지·점수제·#526</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>F-5 영주권 (5년 거주·외국인 매니아)</strong></td>
+<td>비자 cluster</td>
+<td>외국인 거주 최종·5년+ ·#252·#526</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>F-4 재외동포·F-6 국제결혼 ★</strong></td>
+<td>비자 cluster</td>
+<td>외국인 매니아·#416·#252</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>고시텔·셰어하우스 (외국인 1순위)</strong></td>
+<td>거주 cluster</td>
+<td>외국인 거주 1번지·#252·서울</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>외국인 월세·전세 (강남·홍대·이태원)</strong> ★</td>
+<td>거주 cluster</td>
+<td>외국인 거주·#142·#138·#144</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>외국인 가족 동반 (자녀 학교·외국인 학교)</strong></td>
+<td>거주 cluster</td>
+<td>외국인 가족 매니아·#533·#142</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>외국인 운전면허·자동차 등록 (#439)</strong> ★</td>
+<td>실용 cluster</td>
+<td>외국인 거주·#439·#252</td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>외국인 세금·소득세·연말정산</strong></td>
+<td>실용 cluster</td>
+<td>외국인 거주·#252·#527</td>
+</tr>
+<tr>
+<td>9</td>
+<td><strong>외국인 NHIS·연금·국민건강보험 ★</strong></td>
+<td>실용 cluster</td>
+<td>외국인 거주 1순위·#401·#528</td>
+</tr>
+<tr>
+<td>10</td>
+<td><strong>외국인 자녀 교육·국제학교·#142</strong></td>
+<td>가족 cluster</td>
+<td>외국인 가족·#142·#533</td>
+</tr>
+<tr>
+<td>11</td>
+<td><strong>외국인 한국 친구·커뮤니티 (#520·#529)</strong> ★</td>
+<td>커뮤니티</td>
+<td>외국인 매니아·#520·#529 통합</td>
+</tr>
+<tr>
+<td>12</td>
+<td><strong>외국인 거주 통합 패키지 (HiKorea·Seoul Global Center)</strong> ★</td>
+<td>통합 cluster</td>
+<td>정부 인증·영어 OK·외국인 1순위</td>
+</tr>
+</tbody></table>
+<p><strong>+ 추가 4</strong>: 외국인 거주자 정보 카드·외국인 등록증·외국인 운전면허 (국제→한국)·외국인 거주 1년+ 종합 검진 (#401·#528)·외국인 거주 펫 등록 (#525)</p>
+<hr>
+<h2>⚠ 외국인 자주 실수 5가지</h2>
+<p>1. <strong>&quot;F-2 = 어려움&quot;</strong>: F-2 = <strong>점수제 80점+ (학력·소득·한국어·연령) + 외국인 거주 1순위 + Hi Korea 패키지</strong> + #526·#252·#403·#504 통합.</p>
+<p>2. <strong>&quot;F-5 = 5년만&quot;</strong>: F-5 영주권 = <strong>5년 거주 + F-2 → F-5 + 외국인 매니아 최종 + 외국인 거주 1번지</strong> + #252·#526 통합.</p>
+<p>3. <strong>&quot;거주 = 강남만&quot;</strong>: 거주 = <strong>강남 (#142) + 홍대 (#138) + 이태원 (#144) + 고시텔·셰어하우스 + 외국인 거주 1번지 풀세트</strong> + #252·#178 통합.</p>
+<p>4. <strong>&quot;운전 = 못 함&quot;</strong>: 외국인 운전 = <strong>국제면허 1년 + 한국 면허 전환 + 외국인 운전면허 (#439) + 외국인 거주 1번지</strong> + #439·#252 통합.</p>
+<p>5. <strong>&quot;세금 = 어려움&quot;</strong>: 세금 = <strong>외국인 소득세 (연말정산) + NHIS 의무 + 외국인 거주 1순위 + Hi Korea 영어 OK 패키지</strong> + #527·#252 통합.</p>
+<hr>
+<h2>① 비자 cluster (3)</h2>
+<h3>1. F-2 비자 (점수제 80점+) ★ 한국 #1</h3>
+<ul>
+<li>외국인 거주 1번지·점수제·#526</li>
+<li>외국인 ★: ◎◎ — 외국인 거주 1번지·점수제·#526</li>
+<li>시그니처: 외국인 거주 매니아 1번지·#252·#526 통합</li>
+</ul>
+<h3>2. F-5 영주권 (5년 거주·외국인 매니아)</h3>
+<ul>
+<li>외국인 거주 최종·5년+ ·#252·#526</li>
+<li>외국인 ★: ◎◎ — 외국인 거주 최종·5년+</li>
+<li>시그니처: 외국인 거주 매니아 최종·#252·#526 통합</li>
+</ul>
+<h3>3. F-4 재외동포·F-6 국제결혼 ★</h3>
+<ul>
+<li>외국인 매니아·#416·#252</li>
+<li>외국인 ★: ◎◎ — 외국인 매니아·#416·#252</li>
+<li>시그니처: 외국인 매니아·#416·#252 통합</li>
+</ul>
+<hr>
+<h2>② 거주 cluster (3)</h2>
+<h3>4. 고시텔·셰어하우스 (외국인 1순위)</h3>
+<ul>
+<li>외국인 거주 1번지·#252·서울</li>
+<li>외국인 ★: ◎◎ — 외국인 거주 1번지·#252·서울</li>
+<li>시그니처: 외국인 거주 매니아·#252 통합</li>
+</ul>
+<h3>5. 외국인 월세·전세 ★ 강남·홍대·이태원</h3>
+<ul>
+<li>외국인 거주·#142·#138·#144</li>
+<li>외국인 ★: ◎◎ — 외국인 거주·#142·#138·#144</li>
+<li>시그니처: 외국인 거주 매니아·#142·#138·#144 통합</li>
+</ul>
+<h3>6. 외국인 가족 동반 (자녀 학교·외국인 학교)</h3>
+<ul>
+<li>외국인 가족 매니아·#533·#142</li>
+<li>외국인 ★: ◎◎ — 외국인 가족 매니아·#533·#142</li>
+<li>시그니처: 외국인 가족 매니아·#533·#142 통합</li>
+</ul>
+<hr>
+<h2>③ 실용 cluster (3)</h2>
+<h3>7. 외국인 운전면허·자동차 등록 ★ #439</h3>
+<ul>
+<li>외국인 거주·#439·#252</li>
+<li>외국인 ★: ◎◎ — 외국인 거주·#439·#252</li>
+<li>시그니처: 외국인 거주 매니아·#439·#252 통합</li>
+</ul>
+<h3>8. 외국인 세금·소득세·연말정산</h3>
+<ul>
+<li>외국인 거주·#252·#527</li>
+<li>외국인 ★: ◎◎ — 외국인 거주·#252·#527</li>
+<li>시그니처: 외국인 거주 매니아·#252·#527 통합</li>
+</ul>
+<h3>9. 외국인 NHIS·연금·국민건강보험 ★</h3>
+<ul>
+<li>외국인 거주 1순위·#401·#528</li>
+<li>외국인 ★: ◎◎ — 외국인 거주 1순위·#401·#528</li>
+<li>시그니처: 외국인 거주 매니아 1번지·#401·#528 통합</li>
+</ul>
+<hr>
+<h2>④ 가족·커뮤니티·통합 cluster (3 + 추가 4)</h2>
+<h3>10. 외국인 자녀 교육·국제학교·#142</h3>
+<ul>
+<li>외국인 가족·#142·#533</li>
+<li>외국인 ★: ◎◎ — 외국인 가족·#142·#533</li>
+<li>시그니처: 외국인 가족 매니아·#142·#533 통합</li>
+</ul>
+<h3>11. 외국인 한국 친구·커뮤니티 ★ #520·#529</h3>
+<ul>
+<li>외국인 매니아·#520·#529 통합</li>
+<li>외국인 ★: ◎◎ — 외국인 매니아·#520·#529 통합</li>
+<li>시그니처: 외국인 매니아·#520·#529 통합</li>
+</ul>
+<h3>12. 외국인 거주 통합 패키지 ★ HiKorea·Seoul Global Center</h3>
+<ul>
+<li>정부 인증·영어 OK·외국인 1순위</li>
+<li>외국인 ★: ◎◎ — 정부 인증·영어 OK·외국인 1순위</li>
+<li>시그니처: 외국인 매니아·#178·#252·#526 통합</li>
+</ul>
+<h3>+ 추가 4</h3>
+<ul>
+<li><strong>외국인 거주자 정보 카드·외국인 등록증</strong> — 외국인 거주 필수·#178</li>
+<li><strong>외국인 운전면허 (국제→한국)</strong> — 외국인 거주·#439 통합</li>
+<li><strong>외국인 거주 1년+ 종합 검진 (#401·#528)</strong> — 외국인 매니아·#401</li>
+<li><strong>외국인 거주 펫 등록 (#525)</strong> — 외국인 매니아·#525 통합</li>
+</ul>
+<hr>
+<h2>⚙ FAQ 6개</h2>
+<p>1. <strong>외국인 F-2</strong>: 점수제 80점+ (학력·소득·한국어·연령)·#526·#252.</p>
+<p>2. <strong>외국인 F-5 영주권</strong>: 5년 거주·F-2 → F-5·외국인 매니아 최종.</p>
+<p>3. <strong>외국인 거주 1순위</strong>: 강남·홍대·이태원·고시텔·#142·#138·#144·#252.</p>
+<p>4. <strong>외국인 세금</strong>: 소득세·연말정산·NHIS·외국인 거주 영어 OK Hi Korea.</p>
+<p>5. <strong>외국인 가족 동반</strong>: 자녀 학교·국제학교·#142·#533·외국인 가족 매니아.</p>
+<p>6. <strong>외국인 통합</strong>: F-2 + F-5 + Hi Korea + Seoul Global Center 풀세트.</p>
+<hr>
+<h2>🗺 외국인 풀데이 코스 3개</h2>
+<h3>A. 외국인 거주 입문 1개월 (#252·#538)</h3>
+<ul>
+<li>Week 1: 외국인 등록증 + Hi Korea 등록 + Seoul Global Center</li>
+<li>Week 2: 한국어 (#403) + KIIP (#537) + 한국 친구 (#520)</li>
+<li>Week 3: NHIS + 은행 계좌 (#527) + 운전면허 (#439)</li>
+<li>Week 4: 외국인 거주 매니아 1번지</li>
+</ul>
+<h3>B. 외국인 F-2 1년 신청 (#526·#538)</h3>
+<ul>
+<li>1~3개월: 한국어 (#403·#537) + TOPIK 4~6</li>
+<li>4~9개월: 직장 (#504) + 거주 (#252)</li>
+<li>10~12개월: F-2 점수제 신청·외국인 매니아 1번지</li>
+</ul>
+<h3>C. 외국인 F-5 5년 영주권 (#252·#526·#538)</h3>
+<ul>
+<li>1년차: 워홀·E-9 + 한국어 #403</li>
+<li>2~3년차: 직장 (#504) + F-2 신청</li>
+<li>4~5년차: F-2 거주 + 영주권 준비</li>
+<li>5년+: F-5 영주권 + 외국인 매니아 최종</li>
+</ul>
+<hr>
+<h2>🌸 시즌 5</h2>
+<ul>
+<li><strong>봄 3~5월</strong>: 외국인 매니아·#385·신학기 1순위 (#403·#537)</li>
+<li><strong>여름 6~8월</strong>: 외국인 매니아·여름 휴가·#385</li>
+<li><strong>가을 9~11월</strong>: 외국인 매니아·#385·#506 명절</li>
+<li><strong>겨울 12~2월</strong>: <strong>외국인 연말정산 (1~2월) 1순위</strong> + #527</li>
+<li><strong>연중</strong>: 12 거주 매트릭스 + 외국인 매니아 1번지</li>
+</ul>
+<hr>
+<h2>🔗 관련</h2>
+<ul>
+<li>#138 홍대·#142 강남·#144 이태원·#178 외국인 첫 방문·#252 외국인 거주·#401 의료관광·#403 한국어 학원·#416 결혼·#439 렌터카·#504 직장 취업·#520 친구·#522 메타 인덱스·#525 펫·#526 워홀·#527 결제·#528 약국 헬스케어·#529 자원봉사·#533 가족·#537 한국어 회화</li>
+</ul>
+<h2>🏷 태그</h2>
+<p><code>#외국인거주1년이상매니아deepdive</code> <code>#KoreaForeignerResidenceLongTerm</code> <code>#F-2비자점수제80점학력소득한국어연령#526</code> <code>#F-5영주권5년거주외국인매니아최종</code> <code>#F-4재외동포F-6국제결혼#416#252</code> <code>#고시텔셰어하우스외국인거주1번지#252</code> <code>#월세전세강남홍대이태원#142#138#144</code> <code>#가족동반자녀학교국제학교외국인학교#533#142</code> <code>#운전면허자동차등록#439#252</code> <code>#세금소득세연말정산#527외국인거주</code> <code>#NHIS연금국민건강보험#401#528 1순위</code> <code>#자녀교육국제학교#142#533가족</code> <code>#한국친구커뮤니티#520#529</code> <code>#HiKorea Seoul Global Center정부영어OK1순위</code> <code>#외국인등록증운전면허국제→한국종합검진펫등록#525</code> <code>#키친구</code></p>
+  </article>
+
+  <div class="share-bar">
+    <span class="share-label">공유</span>
+    <button class="share-btn share-twitter" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent('외국인 거주 1년+ 매니아 deep dive') + '&url=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Twitter">𝕏</button>
+    <button class="share-btn share-facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Facebook">f</button>
+    <button class="share-btn share-kakao" onclick="navigator.share ? navigator.share({title: '외국인 거주 1년+ 매니아 deep dive', url: window.location.href}) : navigator.clipboard.writeText(window.location.href).then(function() { alert('링크 복사됨!'); })" aria-label="Kakao/Share">📤</button>
+    <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href).then(function() { this.textContent = '✓'; setTimeout(function() { document.querySelector('.share-copy').textContent = '🔗'; }, 1500); }.bind(this))" aria-label="Copy link">🔗</button>
+  </div>
+
+  <nav class="detail-nav" aria-label="previous-next">
+    <div><a href="korean-conversation.html" style="color:var(--red);">&larr; 외국인 한국어 회화 실전 deep dive</a></div>
+    <div><a href="emergency-hospital.html" style="color:var(--red);">외국인 응급 병원 안전 풀가이드 &rarr;</a></div>
+  </nav>
+</main>
+
+<footer class="site-footer">
+  <p><a href="https://instagram.com/keychingu.korea" target="_blank">@keychingu.korea</a> &mdash; Seoul for MZ FIT Travelers</p>
+</footer>
+</body>
+</html>
