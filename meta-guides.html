@@ -36,6 +36,10 @@
     .search-bar input { width: 100%; padding: 14px 18px; font-size: 15px; border: 2px solid rgba(255,255,255,0.6); border-radius: 30px; outline: none; transition: border 0.2s; box-sizing: border-box; font-family: inherit; background: rgba(255,255,255,0.95); color: #020304; }
     .search-bar input:focus { border-color: #fff; background: #fff; }
     .search-stat { text-align: center; font-size: 13px; color: rgba(255,255,255,0.85); margin-top: 8px; }
+    .filter-bar { max-width: 1280px; margin: 16px auto 0; padding: 0 24px; display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
+    .filter-btn { font-size: 12px; padding: 6px 12px; background: rgba(255,255,255,0.18); color: #fff; border: 1px solid rgba(255,255,255,0.4); border-radius: 16px; cursor: pointer; font-family: inherit; transition: all 0.2s; }
+    .filter-btn:hover { background: rgba(255,255,255,0.35); }
+    .filter-btn.active { background: #fff; color: #D94C53; border-color: #fff; font-weight: 600; }
     .hide { display: none !important; }
     @media (max-width: 768px) {
       .matrix-hero h1 { font-size: 28px; }
@@ -74,6 +78,18 @@
   <div class="search-bar">
     <input id="search" type="text" placeholder="🔍 검색 — 제목·국가·도시 (예: 일본, 부산, K-pop, 할랄)">
     <div class="search-stat" id="search-stat">95편 표시 중</div>
+  </div>
+  <div class="filter-bar" id="filter-bar">
+    <button class="filter-btn active" data-filter="all">전체</button>
+    <button class="filter-btn" data-filter="city-wide">🏙 City-wide</button>
+    <button class="filter-btn" data-filter="segment-1st">🌏 1st tier</button>
+    <button class="filter-btn" data-filter="segment-2nd">🌐 2nd tier</button>
+    <button class="filter-btn" data-filter="segment-3rd">🌍 3rd tier</button>
+    <button class="filter-btn" data-filter="segment-4th">🌎 4th tier</button>
+    <button class="filter-btn" data-filter="category">🎯 카테고리</button>
+    <button class="filter-btn" data-filter="traveler-type">👥 일행형태</button>
+    <button class="filter-btn" data-filter="non-seoul">🚄 서울외</button>
+    <button class="filter-btn" data-filter="practical">🛂 실용</button>
   </div>
   <div class="matrix-stats" style="margin-top: 32px;">
     <div class="stat"><b>95</b><span>메타 가이드</span></div>
@@ -684,27 +700,46 @@ document.querySelectorAll('.toc-bar a').forEach(function(a){
   });
 });
 
-// Client-side search across meta cards
+// Client-side search + category filter across meta cards
 (function() {
   var input = document.getElementById('search');
   var stat = document.getElementById('search-stat');
   if (!input) return;
   var cards = Array.from(document.querySelectorAll('.meta-card'));
   var sections = Array.from(document.querySelectorAll('.meta-section'));
-  input.addEventListener('input', function() {
-    var q = this.value.trim().toLowerCase();
+  var filterBtns = Array.from(document.querySelectorAll('.filter-btn'));
+  var activeFilter = 'all';
+
+  function apply() {
+    var q = input.value.trim().toLowerCase();
     var visible = 0;
-    cards.forEach(function(card) {
-      var txt = card.textContent.toLowerCase();
-      var hit = !q || txt.indexOf(q) !== -1;
-      card.classList.toggle('hide', !hit);
-      if (hit) visible++;
-    });
     sections.forEach(function(sec) {
+      var secId = sec.id;
+      var categoryMatch = activeFilter === 'all' || secId === activeFilter;
+      sec.classList.toggle('hide', !categoryMatch);
+      if (!categoryMatch) return;
+      sec.querySelectorAll('.meta-card').forEach(function(card) {
+        var txt = card.textContent.toLowerCase();
+        var hit = !q || txt.indexOf(q) !== -1;
+        card.classList.toggle('hide', !hit);
+        if (hit) visible++;
+      });
+      // hide section if no card visible within it
       var has = sec.querySelectorAll('.meta-card:not(.hide)').length > 0;
-      sec.classList.toggle('hide', !has);
+      if (!has) sec.classList.add('hide');
     });
-    stat.textContent = q ? '"' + q + '" 검색 — ' + visible + '편 표시' : cards.length + '편 표시 중';
+    var filterLabel = activeFilter === 'all' ? '' : ' (' + activeFilter + ')';
+    stat.textContent = q ? '"' + q + '" 검색' + filterLabel + ' — ' + visible + '편 표시' : (activeFilter === 'all' ? cards.length + '편 표시 중' : visible + '편 표시 중' + filterLabel);
+  }
+
+  input.addEventListener('input', apply);
+
+  filterBtns.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      activeFilter = this.dataset.filter;
+      filterBtns.forEach(function(b) { b.classList.toggle('active', b === btn); });
+      apply();
+    });
   });
 })();
 </script>
