@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>외국인 한국 캠핑·글램핑 풀세트 deep dive — KeyChinGu</title>
+<meta name="description" content="외국인 한국 캠핑·글램핑 풀세트 deep dive — 가평·강원·제주 12선 > 부제: 캠핑·글램핑·525·539·430 후속 deep dive ISSUE 03 · 560 · 2026-05-30 --- 🎯 왜 외국인 한국 캠핑·글램핑 풀세트 deep dive인가 외국인 가족·자연 ...">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="192x192" href="../assets/logo/favicon-192.png">
+<link rel="apple-touch-icon" href="../assets/logo/favicon-192.png">
+<link rel="canonical" href="https://mgself414.github.io/keychingu-content-deploy/content/camping-glamping-deep.html">
+<link rel="alternate" hreflang="ko" href="https://mgself414.github.io/keychingu-content-deploy/content/camping-glamping-deep.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="외국인 한국 캠핑·글램핑 풀세트 deep dive">
+<meta property="og:description" content="외국인 한국 캠핑·글램핑 풀세트 deep dive — 가평·강원·제주 12선 > 부제: 캠핑·글램핑·525·539·430 후속 deep dive ISSUE 03 · 560 · 2026-05-30 --- 🎯 왜 외국인 한국 캠핑·글램핑 풀세트 deep dive인가 외국인 가족·자연 ...">
+<meta property="og:url" content="https://mgself414.github.io/keychingu-content-deploy/content/camping-glamping-deep.html">
+<meta property="og:image" content="https://mgself414.github.io/keychingu-content-deploy/assets/logo/og-image-1200x630.png">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="외국인 한국 캠핑·글램핑 풀세트 deep dive">
+<meta name="twitter:description" content="외국인 한국 캠핑·글램핑 풀세트 deep dive — 가평·강원·제주 12선 > 부제: 캠핑·글램핑·525·539·430 후속 deep dive ISSUE 03 · 560 · 2026-05-30 --- 🎯 왜 외국인 한국 캠핑·글램핑 풀세트 deep dive인가 외국인 가족·자연 ...">
+<meta name="twitter:image" content="https://mgself414.github.io/keychingu-content-deploy/assets/logo/og-image-1200x630.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"외국인 한국 캠핑·글램핑 풀세트 deep dive","description":"외국인 한국 캠핑·글램핑 풀세트 deep dive — 가평·강원·제주 12선 > 부제: 캠핑·글램핑·525·539·430 후속 deep dive ISSUE 03 · 560 · 2026-05-30 --- 🎯 왜 외국인 한국 캠핑·글램핑 풀세트 deep dive인가 외국인 가족·자연 ...","datePublished":"2026-05-01","inLanguage":"ko","url":"https://mgself414.github.io/keychingu-content-deploy/content/camping-glamping-deep.html","image":"https://mgself414.github.io/keychingu-content-deploy/assets/logo/og-image-1200x630.png","publisher":{"@type":"Organization","name":"KeyChinGu","logo":{"@type":"ImageObject","url":"https://mgself414.github.io/keychingu-content-deploy/assets/logo/logo_2-4_color_small.png"}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/main.css">
+<style>
+.detail-wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+}
+.breadcrumb {
+  font-size: 13px;
+  color: var(--text-soft);
+  margin-bottom: 24px;
+}
+.breadcrumb a { color: var(--red); font-weight: 600; }
+.detail-wrap h1 {
+  font-size: 28px; font-weight: 800;
+  color: var(--black); margin-bottom: 8px;
+}
+.detail-wrap h2 {
+  font-size: 22px; font-weight: 700;
+  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--red);
+}
+.detail-wrap h3 {
+  font-size: 17px; font-weight: 600;
+  color: var(--text-mid); margin-top: 20px; margin-bottom: 8px;
+}
+.detail-wrap p {
+  font-size: 15px; line-height: 1.7;
+  color: var(--text-mid); margin-bottom: 12px;
+}
+.detail-wrap ul {
+  padding-left: 20px; margin-bottom: 12px;
+}
+.detail-wrap li {
+  font-size: 14px; line-height: 1.6;
+  color: var(--text-mid); margin-bottom: 6px;
+}
+.detail-wrap table {
+  width: 100%; border-collapse: collapse;
+  margin-bottom: 16px; font-size: 13px;
+}
+.detail-wrap th {
+  background: var(--black); color: #fff;
+  padding: 10px 12px; text-align: left;
+  font-weight: 600; font-size: 11px;
+  text-transform: uppercase; letter-spacing: 0.06em;
+}
+.detail-wrap td {
+  padding: 10px 12px; border-bottom: 1px solid var(--border);
+  color: var(--text-mid);
+}
+.detail-wrap tr:nth-child(even) td { background: rgba(0,0,0,0.02); }
+.detail-wrap hr {
+  border: none; height: 1px;
+  background: var(--border); margin: 24px 0;
+}
+.detail-wrap code {
+  background: rgba(33,140,204,0.08);
+  padding: 2px 6px; border-radius: 4px;
+  font-size: 13px; color: var(--blue);
+}
+.detail-nav {
+  display: flex; justify-content: space-between;
+  margin-top: 48px; padding-top: 20px;
+  border-top: 1px solid var(--border);
+  font-size: 14px; font-weight: 600;
+}
+.share-bar {
+  display: flex; align-items: center; gap: 10px;
+  margin-top: 40px; padding: 16px 20px;
+  background: #f9f9f9; border-radius: 12px;
+  border: 1px solid var(--border);
+}
+.share-label {
+  font-size: 14px; font-weight: 600; color: var(--text-soft);
+  margin-right: 8px;
+}
+.share-btn {
+  width: 40px; height: 40px;
+  border: none; border-radius: 50%;
+  background: #fff; cursor: pointer;
+  font-size: 1.1rem; transition: all 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  display: inline-flex; align-items: center; justify-content: center;
+}
+.share-btn:hover { transform: translateY(-2px); box-shadow: 0 3px 8px rgba(0,0,0,0.15); }
+.share-twitter:hover { background: #000; color: #fff; }
+.share-facebook:hover { background: #1877f2; color: #fff; }
+.share-kakao:hover { background: #fee500; }
+.share-copy:hover { background: #218CCC; color: #fff; }
+/* EN toggle disabled — 영문판 미생성 콘텐츠 (2026-05-16 patch) */
+.lang-switch .lang-disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  text-decoration: line-through;
+  padding: 4px 10px;
+  color: var(--text-soft, #888);
+  font-size: 13px;
+  user-select: none;
+}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <div class="lang-switch">
+    <a href="../content/camping-glamping-deep.html" class="active">KR</a>
+    <span class="lang-disabled" title="영문판 준비 중">EN</span>
+  </div>
+</header>
+
+<main class="detail-wrap">
+  <nav class="breadcrumb" aria-label="breadcrumb"><a href="../index.html">전체 가이드</a> &rsaquo; 외국인 한국 캠핑·글램핑 풀세트 deep dive</nav>
+  <article>
+  <h1>외국인 한국 캠핑·글램핑 풀세트 deep dive — 가평·강원·제주 12선</h1>
+<p>&gt; <strong>부제</strong>: 캠핑·글램핑·#525·#539·#430 후속 deep dive</p>
+<p>ISSUE 03 · #560 · 2026-05-30</p>
+<hr>
+<h2>🎯 왜 외국인 한국 캠핑·글램핑 풀세트 deep dive인가</h2>
+<p>외국인 가족·자연 매니아 1번지 = <strong>캠핑·글램핑 deep dive</strong> (#525 펫·#539 자연·국립공원·#430 day-trip 후속). 가평 + 강원 + 제주 + 외국인 영어 OK + 시즌 풀세트.</p>
+<hr>
+<h2>★ 한눈에 12 캠핑·글램핑 매트릭스</h2>
+<table><thead><tr>
+<th>#</th>
+<th>캠핑장·시설</th>
+<th>4축</th>
+<th>시그니처</th>
+</tr></thead><tbody>
+<tr>
+<td>1</td>
+<td><strong>가평 자라섬 캠핑장 ★ 한국 #1 (#430)</strong></td>
+<td>가평 cluster</td>
+<td>한국 #1·#430·외국인 1번지·평점 4.9</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>양평 두물머리·문호리 글램핑</strong></td>
+<td>양평 cluster</td>
+<td>#430·#512·외국인 가족·#525</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>강원 평창·인제·홍천 캠핑 (#539)</strong> ★</td>
+<td>강원 cluster</td>
+<td>#539·자연 1번지·외국인 매니아</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>제주 자연·해변 캠핑 (Visa-free)</strong> ★</td>
+<td>제주 cluster</td>
+<td>Visa-free·#534·#525·외국인 1번지</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>글램핑 cluster (감성·럭셔리)</strong> ★</td>
+<td>글램핑 cluster</td>
+<td>외국인 럭셔리·#142·#533·평점 4.8</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>캠핑카·카라반 (#439 렌터카)</strong></td>
+<td>캠핑카 cluster</td>
+<td>외국인 매니아·#439·#525</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>펫 동반 캠핑 (#525)</strong> ★</td>
+<td>펫 cluster</td>
+<td>#525·#442·외국인 가족 매니아</td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>가족 글램핑 (#533·키즈 풀세트)</strong></td>
+<td>가족 cluster</td>
+<td>외국인 가족·#533·#525</td>
+</tr>
+<tr>
+<td>9</td>
+<td><strong>외국인 캠핑 장비 렌탈 (코오롱·노스페이스 #539)</strong></td>
+<td>장비 cluster</td>
+<td>외국인 매니아·#539·#138·#142</td>
+</tr>
+<tr>
+<td>10</td>
+<td><strong>외국인 캠핑 음식·BBQ·#502</strong> ★</td>
+<td>음식 cluster</td>
+<td>외국인 매니아·#502·#400</td>
+</tr>
+<tr>
+<td>11</td>
+<td><strong>외국인 캠핑 영어 가이드·통역 (KTO)</strong></td>
+<td>통역 cluster</td>
+<td>외국인 매니아·KTO 인증·영어 OK</td>
+</tr>
+<tr>
+<td>12</td>
+<td><strong>외국인 캠핑 통합 패키지 (Klook·KKday·KTO·#525)</strong> ★</td>
+<td>통합 cluster</td>
+<td>영어 OK·KTO 인증·외국인 1순위</td>
+</tr>
+</tbody></table>
+<p><strong>+ 추가 4</strong>: 외국인 산악 캠핑 (#515·#539)·외국인 호수 캠핑 (소양호·청평호)·외국인 캠핑 사진 (#417)·외국인 캠핑 봉사 (#529 환경)</p>
+<hr>
+<h2>⚠ 외국인 자주 실수 5가지</h2>
+<p>1. <strong>&quot;한국 캠핑 = 안전 X&quot;</strong>: 한국 캠핑 = <strong>외국인 영어 OK + KTO 인증 + 가평 자라섬 (한국 #1) + 외국인 매니아 1번지</strong> + #430·#525·#539 통합.</p>
+<p>2. <strong>&quot;글램핑 = 비쌈&quot;</strong>: 글램핑 = <strong>20~50만원/1박 + Klook 30~50% 할인 + 외국인 가족 1번지 풀세트</strong> + #142·#533·#525 통합.</p>
+<p>3. <strong>&quot;펫 캠핑 = 불가&quot;</strong>: 펫 동반 = <strong>가평·양평·강원·제주 펫 캠핑 풀세트 + 외국인 가족 1번지</strong> + #525·#442·#533 통합.</p>
+<p>4. <strong>&quot;제주 캠핑 = 멀음&quot;</strong>: 제주 = <strong>Visa-free 30일·렌터카 #439·#534·#525·외국인 1번지</strong> + #534·#525·#439 통합.</p>
+<p>5. <strong>&quot;외국인 = 영어 안됨&quot;</strong>: 영어 OK = <strong>자라섬·강원 글램핑·KTO 인증·외국인 매니아 1번지</strong> + #178·KTO 통합.</p>
+<hr>
+<h2>① 가평·양평 cluster (2)</h2>
+<h3>1. 가평 자라섬 캠핑장 ★ 한국 #1</h3>
+<ul>
+<li>#430·외국인 1번지·평점 4.9</li>
+<li>외국인 ★: ◎◎ — 한국 #1·#430·외국인 1번지</li>
+<li>시그니처: 외국인 매니아 1번지·#430·#512·#525 통합</li>
+</ul>
+<h3>2. 양평 두물머리·문호리 글램핑</h3>
+<ul>
+<li>#430·#512·외국인 가족·#525</li>
+<li>외국인 ★: ◎◎ — #430·#512·외국인 가족·#525</li>
+<li>시그니처: 외국인 가족 매니아·#430·#512·#533 통합</li>
+</ul>
+<hr>
+<h2>② 강원·제주 cluster (2)</h2>
+<h3>3. 강원 평창·인제·홍천 캠핑 ★ #539</h3>
+<ul>
+<li>#539·자연 1번지·외국인 매니아</li>
+<li>외국인 ★: ◎◎ — #539·자연 1번지·외국인 매니아</li>
+<li>시그니처: 외국인 매니아·#539·#534 통합</li>
+</ul>
+<h3>4. 제주 자연·해변 캠핑 ★ Visa-free</h3>
+<ul>
+<li>Visa-free·#534·#525·외국인 1번지</li>
+<li>외국인 ★: ◎◎ — Visa-free·#534·#525·외국인 1번지</li>
+<li>시그니처: 외국인 매니아 1번지·#534·#525·#439 통합</li>
+</ul>
+<hr>
+<h2>③ 글램핑·캠핑카·펫·가족 cluster (4)</h2>
+<h3>5. 글램핑 cluster ★ 감성·럭셔리</h3>
+<ul>
+<li>외국인 럭셔리·#142·#533·평점 4.8</li>
+<li>외국인 ★: ◎◎ — 외국인 럭셔리·#142·#533·평점 4.8</li>
+<li>시그니처: 외국인 럭셔리 매니아·#142·#533 통합</li>
+</ul>
+<h3>6. 캠핑카·카라반 (#439 렌터카)</h3>
+<ul>
+<li>외국인 매니아·#439·#525</li>
+<li>외국인 ★: ◎◎ — 외국인 매니아·#439·#525</li>
+<li>시그니처: 외국인 매니아·#439·#525·#534 통합</li>
+</ul>
+<h3>7. 펫 동반 캠핑 ★ #525</h3>
+<ul>
+<li>#525·#442·외국인 가족 매니아</li>
+<li>외국인 ★: ◎◎ — #525·#442·외국인 가족 매니아</li>
+<li>시그니처: 외국인 가족 매니아·#525·#442·#533 통합</li>
+</ul>
+<h3>8. 가족 글램핑 (#533·키즈 풀세트)</h3>
+<ul>
+<li>외국인 가족·#533·#525</li>
+<li>외국인 ★: ◎◎ — 외국인 가족·#533·#525</li>
+<li>시그니처: 외국인 가족 매니아·#533·#525 통합</li>
+</ul>
+<hr>
+<h2>④ 장비·음식·통역·통합 cluster (4 + 추가 4)</h2>
+<h3>9. 외국인 캠핑 장비 렌탈 (코오롱·노스페이스 #539)</h3>
+<ul>
+<li>외국인 매니아·#539·#138·#142</li>
+<li>외국인 ★: ◎◎ — 외국인 매니아·#539·#138·#142</li>
+<li>시그니처: 외국인 매니아·#539·#138·#142 통합</li>
+</ul>
+<h3>10. 외국인 캠핑 음식 ★ BBQ·#502</h3>
+<ul>
+<li>외국인 매니아·#502·#400</li>
+<li>외국인 ★: ◎◎ — 외국인 매니아·#502·#400</li>
+<li>시그니처: 외국인 매니아·#502·#400·#523 통합</li>
+</ul>
+<h3>11. 외국인 캠핑 영어 가이드·통역 (KTO)</h3>
+<ul>
+<li>외국인 매니아·KTO 인증·영어 OK</li>
+<li>외국인 ★: ◎◎ — 외국인 매니아·KTO 인증·영어 OK</li>
+<li>시그니처: 외국인 매니아·#178 통합</li>
+</ul>
+<h3>12. 외국인 캠핑 통합 패키지 ★ Klook·KKday·KTO·#525</h3>
+<ul>
+<li>영어 OK·KTO 인증·외국인 1순위</li>
+<li>외국인 ★: ◎◎ — 영어 OK·KTO 인증·외국인 1순위</li>
+<li>시그니처: 외국인 매니아·#178·#430·#534·#525 통합</li>
+</ul>
+<h3>+ 추가 4</h3>
+<ul>
+<li><strong>외국인 산악 캠핑 (#515·#539)</strong> — 외국인 매니아·#515·#539</li>
+<li><strong>외국인 호수 캠핑 (소양호·청평호)</strong> — 외국인 매니아·#534</li>
+<li><strong>외국인 캠핑 사진 (#417)</strong> — 외국인 MZ·#417</li>
+<li><strong>외국인 캠핑 봉사 (#529 환경)</strong> — 외국인 매니아·#529</li>
+</ul>
+<hr>
+<h2>⚙ FAQ 6개</h2>
+<p>1. <strong>외국인 캠핑 1순위</strong>: 자라섬 (한국 #1)·강원 평창·제주 Visa-free·#430·#534.</p>
+<p>2. <strong>외국인 글램핑</strong>: 가평·양평·강원·20~50만원·#142·#533·#525.</p>
+<p>3. <strong>외국인 펫 캠핑</strong>: 가평·양평·강원·제주·#525·#442·#533.</p>
+<p>4. <strong>외국인 캠핑카</strong>: #439 렌터카·#534·#525·외국인 매니아.</p>
+<p>5. <strong>외국인 장비 렌탈</strong>: 코오롱·노스페이스·#539·#138·#142.</p>
+<p>6. <strong>외국인 통합</strong>: 자라섬 + 글램핑 + 펫 캠핑 + Klook 풀세트.</p>
+<hr>
+<h2>🗺 외국인 풀데이 코스 3개</h2>
+<h3>A. 외국인 캠핑 풀데이 가평 (#430·#560)</h3>
+<ul>
+<li>09:00 가평 자라섬 도착 → 13:00 외국인 친화 식당 (#400) → 15:00 BBQ·#502 → 21:00 외국인 매니아</li>
+</ul>
+<h3>B. 외국인 글램핑 1박2일 (#525·#560)</h3>
+<ul>
+<li>Day 1: 가평·양평 글램핑 + 펫 동반 (#525) + 외국인 가족</li>
+<li>Day 2: 외국인 매니아 + #533·#525</li>
+</ul>
+<h3>C. 외국인 캠핑 1주일 매니아 (#534·#560)</h3>
+<ul>
+<li>Day 1~2: 자라섬·양평 (#430·#512)</li>
+<li>Day 3~4: 강원 평창·인제 (#539)</li>
+<li>Day 5~6: 제주 Visa-free (#534·#439)</li>
+<li>Day 7: 펫 캠핑·#525·#533</li>
+</ul>
+<hr>
+<h2>🌸 시즌 5</h2>
+<ul>
+<li><strong>봄 3~5월</strong>: 외국인 매니아·#385·<strong>봄 캠핑 1순위 (4~5월)</strong> + #525</li>
+<li><strong>여름 6~8월</strong>: <strong>여름 캠핑·계곡 1순위</strong> + 외국인 매니아·#430</li>
+<li><strong>가을 9~11월</strong>: <strong>가을 캠핑·단풍 1순위 (10~11월)</strong> + 외국인 매니아·#539</li>
+<li><strong>겨울 12~2월</strong>: 글램핑·실내·외국인 럭셔리 매니아·#142</li>
+<li><strong>연중</strong>: 12 캠핑·글램핑 + 외국인 매니아 1번지</li>
+</ul>
+<hr>
+<h2>🔗 관련</h2>
+<ul>
+<li>#138 홍대·#142 강남·#178 외국인 첫 방문·#385 4계절·#400 외국인 친화 식당·#417 인스타·#430 day-trip·#439 렌터카·#442 동물 카페·#502 밥상 문화·#512 경기도·#515 hiking 둘레길·#522 메타 인덱스·#523 김치 발효·#525 펫·#529 자원봉사·#533 가족·#534 전국 도시·#539 자연 국립공원</li>
+</ul>
+<h2>🏷 태그</h2>
+<p><code>#외국인한국캠핑글램핑풀세트deepdive</code> <code>#KoreaForeignerCampingGlamping</code> <code>#가평자라섬한국1#430 4.9</code> <code>#양평두물머리문호리글램핑#430#512</code> <code>#강원평창인제홍천#539자연1번지</code> <code>#제주Visa-free해변캠핑#534#525#439</code> <code>#글램핑감성럭셔리#142#533 4.8</code> <code>#캠핑카카라반#439#525</code> <code>#펫동반캠핑#525#442#533가족1번지</code> <code>#가족글램핑키즈#533#525</code> <code>#장비렌탈코오롱노스페이스#539#138#142</code> <code>#캠핑음식BBQ#502#400</code> <code>#KTO영어가이드통역</code> <code>#KlookKKdayKTO캠핑패키지영어OK#525</code> <code>#산악#515호수소양청평사진#417봉사#529</code> <code>#키친구</code></p>
+  </article>
+
+  <div class="share-bar">
+    <span class="share-label">공유</span>
+    <button class="share-btn share-twitter" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent('외국인 한국 캠핑·글램핑 풀세트 deep dive') + '&url=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Twitter">𝕏</button>
+    <button class="share-btn share-facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Facebook">f</button>
+    <button class="share-btn share-kakao" onclick="navigator.share ? navigator.share({title: '외국인 한국 캠핑·글램핑 풀세트 deep dive', url: window.location.href}) : navigator.clipboard.writeText(window.location.href).then(function() { alert('링크 복사됨!'); })" aria-label="Kakao/Share">📤</button>
+    <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href).then(function() { this.textContent = '✓'; setTimeout(function() { document.querySelector('.share-copy').textContent = '🔗'; }, 1500); }.bind(this))" aria-label="Copy link">🔗</button>
+  </div>
+
+  <nav class="detail-nav" aria-label="previous-next">
+    <div><a href="cybersecurity-deep.html" style="color:var(--red);">&larr; 외국인 한국 사이버 시큐리티·보안 deep dive</a></div>
+    <div><a href="topik-kiip-exam.html" style="color:var(--red);">외국인 한국 TOPIK·KIIP 시험 풀가이드 deep dive &rarr;</a></div>
+  </nav>
+</main>
+
+<footer class="site-footer">
+  <p><a href="https://instagram.com/keychingu.korea" target="_blank">@keychingu.korea</a> &mdash; Seoul for MZ FIT Travelers</p>
+</footer>
+</body>
+</html>
