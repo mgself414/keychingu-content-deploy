@@ -8167,7 +8167,30 @@
     "summary_en": "Foreigner Korea Cycling Bike Deep Dive 12 Matrix (extends #149·#363·#515) — Han River Bike Path (Seoul #1 #149 4.9) + Seoul 4 Gates Bike Course (#13/#176) + 4 Rivers Bike Path (Han/Nakdong/Geum/Yeongsan 1853km #534) + Gukto Cross-country traverse (Incheon-Busan 633km #534) + Jeju Loop (234km UNESCO #534/#525) + Bukhangang/Namhangang (Gapyeong/Yangpyeong #430/#512/#149) + Ttareungi (Seoul public bike 365 days English OK #149/#516 4.9) + Seoul Cyclists club (#520/#516 English OK) + Bike shops/rental Gangnam/Hongdae (#142/#138/#149) + MTB Bukhansan/Gangwon (#515/#539/#534) + KTO English guides + Klook/KKday/KTO + Hotel/Food/Rest stops/Insurance/Safety/Instagram (#417)",
     "en_available": false
   },
-  {"id":"551","slug":"kongguksu-summer-deep","title_kr":"외국인 한국 콩국수·여름 보양식 deep dive","title_en":"Foreigner Korea Kongguksu·Summer Tonic Deep Dive","category":"C","tags":["foreigner","kongguksu","kalguksu","summer-food","jinjuhoe-gwan","myeongdong-gyoja","pyongyang-style","jinju-style","vegan","halal","dongui-bogam","noodle"],"summary_kr":"외국인 한국 콩국수·여름 보양식 12 매트릭스 + 22 매장 풀세트 (#510·#502·#400 후속) — 콩국수 유래(17세기 조선 양반·동의보감 UNESCO #546)·4 유파(평양식·진주식·서울식·노포식) + 여름 5 이유(단백질 36g·체온 조절·소화 흡수·비건 할랄 #521·다이어트 보양) + 진주회관(서울 1 노포 1962 #13 4.9)·진주집·명동교자(#13 4.9 칼국수 1)·피양콩할머니(평양식 1)·강산옥(을지로 #13 #191)·황금콩밭(100년 노포)·서민준 밀밭(MZ 4.8)·맛자랑(선릉 #142)·제일콩집(태릉 #177)·정성칼국수(풀세트 4.7)·이조손칼국수 + 추가 10(리두부로 밀란 풀발효 정선소소정 메밀진미 홍탁목포 밀콩제면 파머스팥 원주고모네 생각보다맛있는)·KTO Klook 통합 영어 OK","summary_en":"Foreigner Korea Kongguksu Summer Tonic Deep Dive 12 Matrix + 22 stores (extends #510·#502·#400) — Origin (17th century Joseon yangban/Dongui Bogam UNESCO #546) + 4 schools (Pyongyang/Jinju/Seoul/Noporo) + 5 summer reasons (protein 36g/temperature regulation/digestion/vegan-halal #521/diet-tonic) + Jinjuhoegwan (Seoul #1 noporo 1962 #13 4.9) + Jinjujip + Myeongdong Gyoja (#13 4.9 kalguksu #1) + Pyangkong Halmeoni (Pyongyang style #1) + Gangsanok (Euljiro #13/#191) + Hwanggeumkongbat (100-year noporo) + Seominjun Milbat (MZ 4.8) + Matjarang (Seolleung #142) + Jeilkongjip (Taereung #177) + Jeongseong Kalguksu (full set 4.7) + Ijo Son Kalguksu + 10 more (Riduburo/Milan/Pulbalhyo Buekk/Jeongseon Sosojeong/Memil Jinmi/Hongtak Mokpo/Milkong Jemyeonso/Farmers Patjip/Wonju Gomone/Saenggakboda Masitneun) + KTO/Klook English OK","en_available":false},
+  {
+    "id": "551",
+    "slug": "kongguksu-summer-deep",
+    "title_kr": "외국인 한국 콩국수·여름 보양식 deep dive",
+    "title_en": "Foreigner Korea Kongguksu·Summer Tonic Deep Dive",
+    "category": "C",
+    "tags": [
+      "foreigner",
+      "kongguksu",
+      "kalguksu",
+      "summer-food",
+      "jinjuhoe-gwan",
+      "myeongdong-gyoja",
+      "pyongyang-style",
+      "jinju-style",
+      "vegan",
+      "halal",
+      "dongui-bogam",
+      "noodle"
+    ],
+    "summary_kr": "외국인 한국 콩국수·여름 보양식 12 매트릭스 + 22 매장 풀세트 (#510·#502·#400 후속) — 콩국수 유래(17세기 조선 양반·동의보감 UNESCO #546)·4 유파(평양식·진주식·서울식·노포식) + 여름 5 이유(단백질 36g·체온 조절·소화 흡수·비건 할랄 #521·다이어트 보양) + 진주회관(서울 1 노포 1962 #13 4.9)·진주집·명동교자(#13 4.9 칼국수 1)·피양콩할머니(평양식 1)·강산옥(을지로 #13 #191)·황금콩밭(100년 노포)·서민준 밀밭(MZ 4.8)·맛자랑(선릉 #142)·제일콩집(태릉 #177)·정성칼국수(풀세트 4.7)·이조손칼국수 + 추가 10(리두부로 밀란 풀발효 정선소소정 메밀진미 홍탁목포 밀콩제면 파머스팥 원주고모네 생각보다맛있는)·KTO Klook 통합 영어 OK",
+    "summary_en": "Foreigner Korea Kongguksu Summer Tonic Deep Dive 12 Matrix + 22 stores (extends #510·#502·#400) — Origin (17th century Joseon yangban/Dongui Bogam UNESCO #546) + 4 schools (Pyongyang/Jinju/Seoul/Noporo) + 5 summer reasons (protein 36g/temperature regulation/digestion/vegan-halal #521/diet-tonic) + Jinjuhoegwan (Seoul #1 noporo 1962 #13 4.9) + Jinjujip + Myeongdong Gyoja (#13 4.9 kalguksu #1) + Pyangkong Halmeoni (Pyongyang style #1) + Gangsanok (Euljiro #13/#191) + Hwanggeumkongbat (100-year noporo) + Seominjun Milbat (MZ 4.8) + Matjarang (Seolleung #142) + Jeilkongjip (Taereung #177) + Jeongseong Kalguksu (full set 4.7) + Ijo Son Kalguksu + 10 more (Riduburo/Milan/Pulbalhyo Buekk/Jeongseon Sosojeong/Memil Jinmi/Hongtak Mokpo/Milkong Jemyeonso/Farmers Patjip/Wonju Gomone/Saenggakboda Masitneun) + KTO/Klook English OK",
+    "en_available": false
+  },
   {
     "id": "405",
     "slug": "emergency-hospital",
@@ -10163,6 +10186,86 @@
     ],
     "summary_kr": "종묘대제 매트릭스 — **UNESCO 인류무형문화유산 (2001 등재)** + **UNESCO 세계문화유산 종묘 (1995)** = 한국 #1 UNESCO 2건 동시 — 종묘 정전 (세계 #1 길이 101m·조선왕 19대 신주)·영녕전·향대청·재궁 cluster + 종묘대제 (매년 5월 첫째 일요일·조선 600년 의례 완전 재현·외국인 영문 가이드) + **종묘제례악 한국 #1 의례 음악 UNESCO 등재** (#351 Music sub·국립국악원) + #176 walkable·#461 UNESCO Tour·#462 Hanok cluster·#421 봄·#474 봄 디저트. 시즌 이벤트 deep dive 3편 완결 (5월 한정).",
     "summary_en": "Jongmyo Jerye matrix — **UNESCO Intangible (2001)** + **UNESCO World Heritage Jongmyo (1995)** = Korea's #1 dual UNESCO — Jongmyo Jeongjeon (world #1 length 101m·19 Joseon kings' spirit tablets)·Yeongnyeongjeon·Hyangdaecheong·Jaegung cluster + Jongmyo Jerye (annually May 1st Sun·complete 600yr Joseon ritual·EN guides) + **Jongmyo Jeryeak Korea #1 ritual music UNESCO** (#351 sub·National Gugak Center) + #176·#461·#462·#421·#474 spring. Seasonal event deep dive #3 final (May only). Seasonal event 3-batch final.",
+    "en_available": false
+  },
+  {
+    "id": "485",
+    "slug": "korea-pojangmacha-map",
+    "title_kr": "Korea Pojangmacha Map — 외국인 관광객 한국 포장마차·노점 풀 메타 가이드 12 시그니처",
+    "title_en": "Korea Pojangmacha Map",
+    "category": "C",
+    "tags": [
+      "foreigner",
+      "pojangmacha",
+      "street-stall",
+      "jongno3",
+      "eulji",
+      "night",
+      "k-drama",
+      "meta-category"
+    ],
+    "summary_kr": "한국 포장마차 매트릭스 — 5축 (종로3가·을지로 노가리 골목·주마동·창전·해방촌 노점·광장 야간·일품·페어링·외국인 친화) — 종로3가 노가리 (한국 #1 18:00~02:00)·을지로 (#338 24h·MZ)·주마동·창전·해방촌 + 떡볶이·오뎅·곱창·번데기·계란말이 + 소주·맥주 (#472) + K-drama 시그니처 (사랑의 불시착) + #460 Solo Female 안전·OECD #1. 카테고리 메타 한식 deep dive 9편 (#338·#450·#472·#479 sub-deep).",
+    "summary_en": "Korea pojangmacha (street stall) matrix — 5 axes (Jongno 3-ga/Eulji-ro nogari alley·Jumadong/Changjeon/Haebangchon stalls·Gwangjang night·food·pairing·EN-friendly) — Jongno 3-ga nogari (Korea #1 18:00-02:00)·Eulji-ro (#338 24h·MZ)·Jumadong·Changjeon·Haebangchon + tteokbokki·odeng·gopchang·beondegi·gyeran-mari + soju·beer (#472) + K-drama signatures + #460 Solo Female·OECD safety #1. Category meta Korean food deep dive #9 (#338·#450·#472·#479 sub-deep).",
+    "en_available": false
+  },
+  {
+    "id": "486",
+    "slug": "korea-jjigae-map",
+    "title_kr": "Korea Jjigae Map — 외국인 관광객 한국 찌개·국 (김치·된장·부대·해장국) 풀 메타 가이드 12 시그니처",
+    "title_en": "Korea Jjigae Map",
+    "category": "C",
+    "tags": [
+      "foreigner",
+      "jjigae",
+      "kimchi-jjigae",
+      "doenjang",
+      "budae",
+      "haejang",
+      "cheonggukjang",
+      "meta-category"
+    ],
+    "summary_kr": "한국 찌개·국 매트릭스 — 5축 (김치찌개·된장찌개·부대찌개·해장국·맑은국) — 광장·종로 김치찌개 노포 (한국 #1·외국인 매니아 #1)·체인 (놀부·새마을 #65·#479) + 인사동·종로 된장찌개·사찰음식 (#463·#478) + **의정부·송탄 부대찌개 #194 미군기지** + 종로3가·동대문 24h 해장국 (#338·#472 술 해장 #477 국밥) + 미역국·청국장 (한국 #1 발효·#190 일본 매니아 #1). 카테고리 메타 한식 deep dive 10편.",
+    "summary_en": "Korea jjigae (stew/soup) matrix — 5 axes (kimchi·doenjang·budae·haejang·clear soup) — Gwangjang/Jongno kimchi jjigae noporo (Korea #1·foreigner mania #1)·chains (Nolbu/Saemaeul #65/#479) + Insadong/Jongno doenjang·temple food (#463/#478) + **Uijeongbu/Songtan budae jjigae #194 US military fit** + Jongno 3-ga/Dongdaemun 24h haejang (#338·#472 soju·#477 gukbap) + miyeok/cheonggukjang (Korea #1 fermentation·#190 mania). Category meta #10.",
+    "en_available": false
+  },
+  {
+    "id": "487",
+    "slug": "seoul-izakaya-map",
+    "title_kr": "Seoul Izakaya Map — 외국인 관광객 서울 이자카야·일본식 술집 풀 메타 가이드 12 시그니처",
+    "title_en": "Seoul Izakaya Map",
+    "category": "C",
+    "tags": [
+      "foreigner",
+      "izakaya",
+      "japanese",
+      "hannam",
+      "gangnam",
+      "itaewon",
+      "fusion",
+      "meta-category"
+    ],
+    "summary_kr": "서울 이자카야 매트릭스 — 5축 (한남·강남·이태원·홍대·페어링·야간 cluster) — **한남 이자카야 cluster (한국 #1·외국인 매니아 #1·#192 fit)** + 강남 럭셔리 (#344·#449·#469)·압구정 sushi·sashimi + 이태원 영문 (#192·#194)·홍대 MZ (#371·#460) + 꼬치·사시미·우동·라멘 (#480 Noodle) + 사케·하이볼·생맥주 (#472) + #470 재즈·#450 야간 cluster·#485 포장마차 cross-link. 카테고리 메타 한일 fusion 야간 deep dive 1편.",
+    "summary_en": "Seoul izakaya matrix — 5 axes (Hannam·Gangnam·Itaewon·Hongdae·pairing·night) — **Hannam izakaya cluster (Korea #1·foreigner mania #1·#192 fit)** + Gangnam luxury (#344/#449/#469)·Apgujeong sushi/sashimi + Itaewon EN (#192/#194)·Hongdae MZ (#371/#460) + skewers·sashimi·udon·ramen (#480) + sake·highball·draft (#472) + #470 jazz·#450 night cluster·#485 pojangmacha cross-link. Category meta Korea-Japan fusion night deep dive #1.",
+    "en_available": false
+  },
+  {
+    "id": "488",
+    "slug": "korea-banchan-map",
+    "title_kr": "Korea Banchan Map — 외국인 관광객 한국 반찬·정식 (반가·종갓집·사찰음식) 풀 메타 가이드 12 시그니처",
+    "title_en": "Korea Banchan Map",
+    "category": "C",
+    "tags": [
+      "foreigner",
+      "banchan",
+      "jonggajip",
+      "banga",
+      "temple-food",
+      "court-cuisine",
+      "seonjae",
+      "meta-category"
+    ],
+    "summary_kr": "한국 반찬·정식 매트릭스 — 5축 (종갓집 안동/전주·반가 음식 조선 양반·사찰음식·궁중 음식·반찬 가게) — **안동 종갓집·UNESCO 하회 #397**·전주 종가 #384·UNESCO 음식창의도시 + 북촌·삼청·인사동 반가 음식 (#462 Hanok·#176) + **진관사 국가무형문화재·선재 Netflix Chef's Table 정관 스님**·봉은사·해인사 (#463·#345·#453) + 조선 궁중 음식 (#484 종묘제례·#461 UNESCO) + 광장·통인 5,000원 반찬 도시락 (#471·#343 Budget). 카테고리 메타 한식 deep dive 11편 완결. **한식 11소계 풀 cover 완결**.",
+    "summary_en": "Korea banchan (side dishes & set meals) matrix — 5 axes (jonggajip Andong/Jeonju·banga court·temple·court cuisine·banchan shops) — **Andong jonggajip·UNESCO Hahoe #397**·Jeonju #384·UNESCO Gastronomy + Bukchon/Samcheong/Insadong banga (#462/#176) + **Jinkwansa Intangible·Seonjae Netflix Chef's Table Jeong-kwan**·Bongeunsa·Haeinsa (#463/#345/#453) + Joseon court (#484/#461) + Gwangjang/Tongin 5,000won banchan (#471/#343). Category meta Korean food deep dive #11 final. **Korean food 11-subseries full cover final**.",
     "en_available": false
   }
 ]
