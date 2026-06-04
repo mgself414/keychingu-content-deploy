@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KeyChinGu Deep Dive Integrated Meta Index — KeyChinGu</title>
+<meta name="description" content="Key Friend Deep Dive Integrated Meta Index — Part 61 Matrix > Subtitle: Foreign lifecycle full cover/Part 61 deep dive cluster integrated index ISSUE 03 · 52...">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="192x192" href="../assets/logo/favicon-192.png">
+<link rel="apple-touch-icon" href="../assets/logo/favicon-192.png">
+<link rel="canonical" href="https://mgself414.github.io/keychingu-content-deploy/content/deep-dive-index.en.html">
+<link rel="alternate" hreflang="ko" href="https://mgself414.github.io/keychingu-content-deploy/content/deep-dive-index.html">
+<link rel="alternate" hreflang="en" href="https://mgself414.github.io/keychingu-content-deploy/content/deep-dive-index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://mgself414.github.io/keychingu-content-deploy/content/deep-dive-index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="KeyChinGu Deep Dive Integrated Meta Index">
+<meta property="og:description" content="Key Friend Deep Dive Integrated Meta Index — Part 61 Matrix > Subtitle: Foreign lifecycle full cover/Part 61 deep dive cluster integrated index ISSUE 03 · 52...">
+<meta property="og:url" content="https://mgself414.github.io/keychingu-content-deploy/content/deep-dive-index.en.html">
+<meta property="og:image" content="https://mgself414.github.io/keychingu-content-deploy/assets/logo/og-image-1200x630.png">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="KeyChinGu Deep Dive Integrated Meta Index">
+<meta name="twitter:description" content="Key Friend Deep Dive Integrated Meta Index — Part 61 Matrix > Subtitle: Foreign lifecycle full cover/Part 61 deep dive cluster integrated index ISSUE 03 · 52...">
+<meta name="twitter:image" content="https://mgself414.github.io/keychingu-content-deploy/assets/logo/og-image-1200x630.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"KeyChinGu Deep Dive Integrated Meta Index","description":"Key Friend Deep Dive Integrated Meta Index — Part 61 Matrix > Subtitle: Foreign lifecycle full cover/Part 61 deep dive cluster integrated index ISSUE 03 · 52...","datePublished":"2026-05-01","inLanguage":"en","url":"https://mgself414.github.io/keychingu-content-deploy/content/deep-dive-index.en.html","image":"https://mgself414.github.io/keychingu-content-deploy/assets/logo/og-image-1200x630.png","publisher":{"@type":"Organization","name":"KeyChinGu","logo":{"@type":"ImageObject","url":"https://mgself414.github.io/keychingu-content-deploy/assets/logo/logo_2-4_color_small.png"}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/main.css">
+<style>
+.detail-wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+}
+.breadcrumb {
+  font-size: 13px;
+  color: var(--text-soft);
+  margin-bottom: 24px;
+}
+.breadcrumb a { color: var(--red); font-weight: 600; }
+.detail-wrap h1 {
+  font-size: 28px; font-weight: 800;
+  color: var(--black); margin-bottom: 8px;
+}
+.detail-wrap h2 {
+  font-size: 22px; font-weight: 700;
+  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--red);
+}
+.detail-wrap h3 {
+  font-size: 17px; font-weight: 600;
+  color: var(--text-mid); margin-top: 20px; margin-bottom: 8px;
+}
+.detail-wrap p {
+  font-size: 15px; line-height: 1.7;
+  color: var(--text-mid); margin-bottom: 12px;
+}
+.detail-wrap ul {
+  padding-left: 20px; margin-bottom: 12px;
+}
+.detail-wrap li {
+  font-size: 14px; line-height: 1.6;
+  color: var(--text-mid); margin-bottom: 6px;
+}
+.detail-wrap table {
+  width: 100%; border-collapse: collapse;
+  margin-bottom: 16px; font-size: 13px;
+}
+.detail-wrap th {
+  background: var(--black); color: #fff;
+  padding: 10px 12px; text-align: left;
+  font-weight: 600; font-size: 11px;
+  text-transform: uppercase; letter-spacing: 0.06em;
+}
+.detail-wrap td {
+  padding: 10px 12px; border-bottom: 1px solid var(--border);
+  color: var(--text-mid);
+}
+.detail-wrap tr:nth-child(even) td { background: rgba(0,0,0,0.02); }
+.detail-wrap hr {
+  border: none; height: 1px;
+  background: var(--border); margin: 24px 0;
+}
+.detail-wrap code {
+  background: rgba(33,140,204,0.08);
+  padding: 2px 6px; border-radius: 4px;
+  font-size: 13px; color: var(--blue);
+}
+.detail-nav {
+  display: flex; justify-content: space-between;
+  margin-top: 48px; padding-top: 20px;
+  border-top: 1px solid var(--border);
+  font-size: 14px; font-weight: 600;
+}
+.share-bar {
+  display: flex; align-items: center; gap: 10px;
+  margin-top: 40px; padding: 16px 20px;
+  background: #f9f9f9; border-radius: 12px;
+  border: 1px solid var(--border);
+}
+.share-label {
+  font-size: 14px; font-weight: 600; color: var(--text-soft);
+  margin-right: 8px;
+}
+.share-btn {
+  width: 40px; height: 40px;
+  border: none; border-radius: 50%;
+  background: #fff; cursor: pointer;
+  font-size: 1.1rem; transition: all 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  display: inline-flex; align-items: center; justify-content: center;
+}
+.share-btn:hover { transform: translateY(-2px); box-shadow: 0 3px 8px rgba(0,0,0,0.15); }
+.share-twitter:hover { background: #000; color: #fff; }
+.share-facebook:hover { background: #1877f2; color: #fff; }
+.share-kakao:hover { background: #fee500; }
+.share-copy:hover { background: #218CCC; color: #fff; }
+/* EN toggle disabled — 영문판 미생성 콘텐츠 (2026-05-16 patch) */
+.lang-switch .lang-disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  text-decoration: line-through;
+  padding: 4px 10px;
+  color: var(--text-soft, #888);
+  font-size: 13px;
+  user-select: none;
+}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <a href="../en/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <div class="lang-switch">
+    <a href="../content/deep-dive-index.html" >KR</a>
+    <a href="../content/deep-dive-index.en.html" class="active">EN</a>
+  </div>
+</header>
+
+<main class="detail-wrap">
+  <nav class="breadcrumb" aria-label="breadcrumb"><a href="../en/index.html">All Guides</a> &rsaquo; KeyChinGu Deep Dive Integrated Meta Index</nav>
+  <article>
+  <h1>Key Friend Deep Dive Integrated Meta Index — Part 61 Matrix</h1>
+<p>&gt; <strong>Subtitle</strong>: Foreign lifecycle full cover/Part 61 deep dive cluster integrated index</p>
+<p>ISSUE 03 · #522 · 2026-05-27</p>
+<hr>
+<h2>🎯 Why Keyfriend Deep Dive Integrated Meta Index?</h2>
+<p>Exploring foreign content #1 = <strong>Part 61 deep dive integrated index</strong> (created 2026-05-24~05-27). Foreigner lifecycle 8 axes (arrival, food, culture, K-content, wellness, shopping, night, practical) × 61 matrix one-page navigation.</p>
+<hr>
+<h2>★ Part 61 Deep Dive Matrix (by category)</h2>
+<h3>📍 Culture/Orthodoxy (12 episodes)</h3>
+<table><thead><tr>
+<th>#</th>
+<th>Title</th>
+<th>slug</th>
+</tr></thead><tbody>
+<tr>
+<td>#366</td>
+<td>12 complex cultural spaces in Seoul</td>
+<td><code>cultural-complex</code></td>
+</tr>
+<tr>
+<td>#377</td>
+<td>12 Korean museums and art galleries</td>
+<td><code>museum-art</code></td>
+</tr>
+<tr>
+<td>#378</td>
+<td>12 K-drama movie filming locations</td>
+<td><code>kdrama-filming</code></td>
+</tr>
+<tr>
+<td>#379</td>
+<td>12 Hanbok Palace Experiences</td>
+<td><code>hanbok-palace</code></td>
+</tr>
+<tr>
+<td>#388</td>
+<td>12 long-established Korean stores with 100 years of history</td>
+<td><code>century-restaurants</code></td>
+</tr>
+<tr>
+<td>#503</td>
+<td>12 New K-Drama Movies of 2026</td>
+<td><code>new-kdrama-2026</code></td>
+</tr>
+<tr>
+<td>#506</td>
+<td>12 Korean holiday festival calendar 2026</td>
+<td><code>holiday-calendar-2026</code></td>
+</tr>
+<tr>
+<td>#507</td>
+<td>12 filming locations for webtoon web dramas</td>
+<td><code>webtoon-locations</code></td>
+</tr>
+<tr>
+<td>#509</td>
+<td>12 Temple Stays</td>
+<td><code>temple-experience-deep</code></td>
+</tr>
+<tr>
+<td>#511</td>
+<td>12 Jazz Bar Lounges in Seoul</td>
+<td><code>seoul-jazz-bars</code></td>
+</tr>
+<tr>
+<td>#514</td>
+<td>12 Museum Art Gallery Expansion</td>
+<td><code>museum-expanded</code></td>
+</tr>
+<tr>
+<td>#519</td>
+<td>12 new K-pop dance trends for 2026</td>
+<td><code>kpop-dance-2026</code></td>
+</tr>
+</tbody></table>
+<h3>🍽 Food &amp; Drink (10 episodes)</h3>
+<table><thead><tr>
+<th>#</th>
+<th>Title</th>
+<th>slug</th>
+</tr></thead><tbody>
+<tr>
+<td>#380</td>
+<td>12 traditional markets in Korea</td>
+<td><code>traditional-market</code></td>
+</tr>
+<tr>
+<td>#381</td>
+<td>12 Cafe Street Matrix</td>
+<td><code>cafe-district</code></td>
+</tr>
+<tr>
+<td>#391</td>
+<td>Food Matrix Integrated Index</td>
+<td><code>food-matrix-index</code></td>
+</tr>
+<tr>
+<td>#400</td>
+<td>12 Foreigner-Friendly Restaurants</td>
+<td><code>foreigner-friendly-restaurants</code></td>
+</tr>
+<tr>
+<td>#502</td>
+<td>12 deep dives into Korean dining table culture</td>
+<td><code>korean-meal-culture</code></td>
+</tr>
+<tr>
+<td>#505</td>
+<td>12 Korean Tea Ceremony Teahouse Experiences</td>
+<td><code>tea-ceremony-deep</code></td>
+</tr>
+<tr>
+<td>#510</td>
+<td>12 summer picks for 2026 to conquer Seoul’s shaved ice</td>
+<td><code>seoul-bingsu-2026</code></td>
+</tr>
+<tr>
+<td>#521</td>
+<td>12 vegan halal restaurants for foreigners</td>
+<td><code>vegan-halal-deep</code></td>
+</tr>
+<tr>
+<td>#203</td>
+<td>Korean alcohol deep dive (expanded)</td>
+<td><code>korean-liquor</code></td>
+</tr>
+<tr>
+<td>#362</td>
+<td>Authentic liquor, Soju and Makgeolli (expanded)</td>
+<td><code>traditional-liquor</code></td>
+</tr>
+</tbody></table>
+<h3>🎭 K-content·MZ (10 episodes)</h3>
+<table><thead><tr>
+<th>#</th>
+<th>Title</th>
+<th>slug</th>
+</tr></thead><tbody>
+<tr>
+<td>#387</td>
+<td>K-pop 4 agency deep dive</td>
+<td><code>kpop-agencies</code></td>
+</tr>
+<tr>
+<td>#399</td>
+<td>12 K-pop dance class experiences</td>
+<td><code>kpop-dance-class</code></td>
+</tr>
+<tr>
+<td>#402</td>
+<td>12 K-pop concert tickets</td>
+<td><code>kpop-concert-ticket</code></td>
+</tr>
+<tr>
+<td>#404</td>
+<td>12 Korean Festivals</td>
+<td><code>korea-festivals</code></td>
+</tr>
+<tr>
+<td>#417</td>
+<td>Instagram famous photo spot Matrix</td>
+<td><code>instagram-spots</code></td>
+</tr>
+<tr>
+<td>#438</td>
+<td>12 Korean Movies</td>
+<td><code>korean-cinema</code></td>
+</tr>
+<tr>
+<td>#443</td>
+<td>12 PC Room Game Room VR</td>
+<td><code>pc-room-game-vr</code></td>
+</tr>
+<tr>
+<td>#444</td>
+<td>12 board game cafes</td>
+<td><code>board-game-cafe</code></td>
+</tr>
+<tr>
+<td>#445</td>
+<td>cartoon webtoon deep dive</td>
+<td><code>webtoon-comics</code></td>
+</tr>
+<tr>
+<td>#446</td>
+<td>12 sports enthusiasts</td>
+<td><code>sports-mania</code></td>
+</tr>
+</tbody></table>
+<h3>💆 Wellness·Beauty (Episode 7)</h3>
+<table><thead><tr>
+<th>#</th>
+<th>Title</th>
+<th>slug</th>
+</tr></thead><tbody>
+<tr>
+<td>#389</td>
+<td>12 K-Beauty beauty salons</td>
+<td><code>k-beauty-salon</code></td>
+</tr>
+<tr>
+<td>#390</td>
+<td>12 Korean four-season matrices</td>
+<td><code>four-seasons</code></td>
+</tr>
+<tr>
+<td>#401</td>
+<td>Foreign medical tourism deep dive</td>
+<td><code>medical-tourism-deep</code></td>
+</tr>
+<tr>
+<td>#448</td>
+<td>12 Meditation Yoga Pilates</td>
+<td><code>meditation-yoga</code></td>
+</tr>
+<tr>
+<td>#456</td>
+<td>12 gym fitness boxing tips</td>
+<td><code>gym-fitness-boxing</code></td>
+</tr>
+<tr>
+<td>#508</td>
+<td>12 K-Beauty procedure risk recovery options</td>
+<td><code>kbeauty-risk-recovery</code></td>
+</tr>
+<tr>
+<td>#447</td>
+<td>12 photo studio selfie studios</td>
+<td><code>photo-studio-selfie</code></td>
+</tr>
+</tbody></table>
+<h3>🛍 Shopping·Luxury (Part 3)</h3>
+<table><thead><tr>
+<th>#</th>
+<th>Title</th>
+<th>slug</th>
+</tr></thead><tbody>
+<tr>
+<td>#406</td>
+<td>Duty free shop deep dive</td>
+<td><code>duty-free</code></td>
+</tr>
+<tr>
+<td>#415</td>
+<td>12 casinos for foreigners</td>
+<td><code>casino</code></td>
+</tr>
+<tr>
+<td>#457</td>
+<td>Fashion streetwear MZ 12 selections</td>
+<td><code>fashion-streetwear</code></td>
+</tr>
+</tbody></table>
+<h3>🌙 Night·MZ (Part 4)</h3>
+<table><thead><tr>
+<th>#</th>
+<th>Title</th>
+<th>slug</th>
+</tr></thead><tbody>
+<tr>
+<td>#436</td>
+<td>12 karaoke coin karaoke rooms</td>
+<td><code>noraebang-coin</code></td>
+</tr>
+<tr>
+<td>#437</td>
+<td>12 24-hour late-night stores</td>
+<td><code>24h-nightlife</code></td>
+</tr>
+<tr>
+<td>#454</td>
+<td>12 club night lifestyles</td>
+<td><code>club-nightlife</code></td>
+</tr>
+<tr>
+<td>#455</td>
+<td>12 live music indie</td>
+<td><code>live-music-indie</code></td>
+</tr>
+</tbody></table>
+<h3>🏗 Practical/Essential (11 episodes)</h3>
+<table><thead><tr>
+<th>#</th>
+<th>Title</th>
+<th>slug</th>
+</tr></thead><tbody>
+<tr>
+<td>#392</td>
+<td>1 week 2 week course matrix</td>
+<td><code>week-twoweeks-course</code></td>
+</tr>
+<tr>
+<td>#398</td>
+<td>Arrival Communication Payment Transportation 12 lines</td>
+<td><code>arrival-essentials</code></td>
+</tr>
+<tr>
+<td>#403</td>
+<td>KIIP’s Top 12 Korean Language School Language Training Programs</td>
+<td><code>korean-language-school</code></td>
+</tr>
+<tr>
+<td>#405</td>
+<td>12 emergency hospital safety tips</td>
+<td><code>emergency-hospital</code></td>
+</tr>
+<tr>
+<td>#414</td>
+<td>SIM communication WiFi 12 lines</td>
+<td><code>sim-comm-wifi</code></td>
+</tr>
+<tr>
+<td>#435</td>
+<td>12 Currency Exchange Credit Card ATM Payments</td>
+<td><code>exchange-card-atm</code></td>
+</tr>
+<tr>
+<td>#501</td>
+<td>12 ways to prevent female solo safety fraud</td>
+<td><code>women-solo-safety</code></td>
+</tr>
+<tr>
+<td>#504</td>
+<td>12 part-time jobs for employment</td>
+<td><code>foreigner-jobs</code></td>
+</tr>
+<tr>
+<td>#516</td>
+<td>SNS 12 Korean-style communication methods</td>
+<td><code>korean-sns</code></td>
+</tr>
+<tr>
+<td>#517</td>
+<td>Business Hours and Holidays Matrix</td>
+<td><code>business-hours</code></td>
+</tr>
+<tr>
+<td>#518</td>
+<td>12 monthly weather clothing items to prepare</td>
+<td><code>monthly-weather</code></td>
+</tr>
+</tbody></table>
+<h3>🚗 Outskirts·Nature·Leisure (Part 4)</h3>
+<table><thead><tr>
+<th>#</th>
+<th>Title</th>
+<th>slug</th>
+</tr></thead><tbody>
+<tr>
+<td>#416</td>
+<td>12 wedding photos for newlyweds</td>
+<td><code>wedding-honeymoon</code></td>
+</tr>
+<tr>
+<td>#439</td>
+<td>12 independent driving and rental car trips</td>
+<td><code>rental-car-driving</code></td>
+</tr>
+<tr>
+<td>#440</td>
+<td>12 theme parks</td>
+<td><code>theme-park</code></td>
+</tr>
+<tr>
+<td>#441</td>
+<td>12 best golf tips</td>
+<td><code>golf</code></td>
+</tr>
+<tr>
+<td>#442</td>
+<td>12 animal cafes</td>
+<td><code>animal-cafe</code></td>
+</tr>
+<tr>
+<td>#512</td>
+<td>Gyeonggi-do day-trip matrix</td>
+<td><code>gyeonggi-daytrip</code></td>
+</tr>
+<tr>
+<td>#515</td>
+<td>12 hiking trails in Seoul</td>
+<td><code>hiking-duregil</code></td>
+</tr>
+</tbody></table>
+<hr>
+<h2>🔍 Foreigner Lifecycle 8 Axis × 61 Piece Matrix</h2>
+<table><thead><tr>
+<th>Lifecycle Phase</th>
+<th>Representative content</th>
+<th>pyeonsu</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>① Arrival·Required</strong></td>
+<td>#398·#414·#435·#501·#517·#518</td>
+<td>11</td>
+</tr>
+<tr>
+<td><strong>② Food·Drink</strong></td>
+<td>#380·#381·#391·#400·#502·#505·#510·#521</td>
+<td>10</td>
+</tr>
+<tr>
+<td><strong>③ Culture/Orthodoxy</strong></td>
+<td>#366·#377·#378·#379·#388·#506·#509·#514</td>
+<td>12</td>
+</tr>
+<tr>
+<td><strong>④ K-content·MZ</strong></td>
+<td>#387·#399·#402·#404·#438·#443·#445·#446·#519</td>
+<td>10</td>
+</tr>
+<tr>
+<td><strong>⑤ Wellness·Beauty</strong></td>
+<td>#389·#401·#447·#448·#456·#508</td>
+<td>7</td>
+</tr>
+<tr>
+<td><strong>⑥ Shopping·Luxury</strong></td>
+<td>#406·#415·#457</td>
+<td>3</td>
+</tr>
+<tr>
+<td><strong>⑦ Night·MZ</strong></td>
+<td>#436·#437·#454·#455·#511·#513</td>
+<td>4</td>
+</tr>
+<tr>
+<td><strong>⑧ Outskirts/Leisure</strong></td>
+<td>#416·#439·#440·#441·#442·#512·#515</td>
+<td>7</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td></td>
+<td><strong>Part 61</strong></td>
+</tr>
+</tbody></table>
+<hr>
+<h2>📊Coverage Statistics</h2>
+<ul>
+<li><strong>Total number of episodes</strong>: 61 episodes deep dive (written intensively between 2026-05-24 and 05-27)</li>
+<li><strong>Category</strong>: 8 lifecycle phases × 61-part matrix</li>
+<li><strong>Foreign segment</strong>: All foreign enthusiasts (MZ + authentic + luxury + first visit + residence)</li>
+<li><strong>Language</strong>: KR full story completed, EN translation not in progress (API credit required)</li>
+<li><strong>Sites</strong>: 555+ URLs · 550+ HTML pages</li>
+<li><strong>Full coverage of foreigner lifecycle</strong>: ✓ Arrival → Experience → Enthusiast → Pre-safety stage</li>
+</ul>
+<hr>
+<h2>⚙ 6 FAQs</h2>
+<p>1. <strong>Foreigner’s first visit content</strong>: #398 arrival·#517 business hours·#518 weather·#501 women’s safety·#502 meal·#392 course.</p>
+<p>2. <strong>Foreign food enthusiasts</strong>: #391 Food Index·#400 Friendly Restaurant·#380 Market·#505 Tea·#510 Shaved Ice·#521 Vegan.</p>
+<p>3. <strong>Foreign K-content enthusiasts</strong>: #387 4 agency·#399 dance·#402 concert·#438 movie·#507 webtoon·#519 2026 dance.</p>
+<p>4. <strong>Foreign culture/authentic enthusiasts</strong>: #377 museum·#379hanbok·#388old restaurant·#506holiday·#509temple·#511jazz.</p>
+<p>5. <strong>Foreigner practicality/safety</strong>: #398 arrival·#405 emergency·#414 SIM·#435 currency exchange·#501 safety·#504 employment·#516 SNS.</p>
+<p>6. <strong>Foreign Night·MZ</strong>: #436 Karaoke·#437 24h·#454 Club·#455 Live·#511 Jazz·#513 Night Expansion.</p>
+<hr>
+<h2>🗺 Full set recommended course for foreigners</h2>
+<h3>A. 1 week of first visit as a foreigner (#392 integrated)</h3>
+<ul>
+<li>#398 Arrival → #502 Dining Table → #379 Hanbok → #387 K-pop → #517 Business Hours → #518 Weather → #392 Course</li>
+</ul>
+<h3>B. 1 week of foreign K-content enthusiasts (#387·#399·#519)</h3>
+<ul>
+<li>#387 4 agency → #399 dance → #402 concert → #438 movie → #507 webtoon → #519 2026 dance → #436 karaoke</li>
+</ul>
+<h3>C. One week for foreign culture and wellness enthusiasts (#509·#448·#505)</h3>
+<ul>
+<li>#377 Museum → #379 Hanbok → #509 Temple → #448 Meditation → #505 Tea → #502 Table → #506 Holiday</li>
+</ul>
+<hr>
+<h2>🌸 Season 5</h2>
+<ul>
+<li><strong>Spring March~May</strong>: Cherry blossoms (#385·#518)·Holidays (#506)·Buddha&#x27;s Birthday·No. 1 foreign enthusiasts</li>
+<li><strong>Summer June~August</strong>: Shaved Ice (#510)·Hangang (#06)·Boryeong Mud·Foreign Mania·#385</li>
+<li><strong>Fall September-November</strong>: Autumn leaves (#385·#515)·Chuseok (#506)·MAMA·#404·No. 1 foreign enthusiast</li>
+<li><strong>Winter December~February</strong>: Illumination (#260)·Pyeongchang Snow Festival·Lunar New Year (#506)·#385</li>
+<li><strong>Year-round</strong>: Episode 61 deep dive + No. 1 foreign mania</li>
+</ul>
+<hr>
+<h2>🔗 Related</h2>
+<p>This index is a <strong>meta index</strong> of the 61st deep dive cluster. Check the individual slug pages for details on each content.</p>
+<h2>🏷 Tags</h2>
+<p><code>#키친구DeepDive통합메타인덱스</code> <code>#KeychinguDeepDiveMetaIndex</code> <code>␈MASK197␈편매트릭스</code> <code>␈MASK198␈축lifecycle</code> <code>#도착음식문화K-content wellness쇼핑야간외곽</code> <code>#외국인lifecycle풀cover</code> <code>␈MASK199␈-05-24~05-27집중작성</code> <code>␈MASK200␈URLs550pages</code> <code>#전외국인매니아MZ정통럭셔리첫방문거주</code> <code>#키친구</code></p>
+  </article>
+
+  <div class="share-bar">
+    <span class="share-label">Share</span>
+    <button class="share-btn share-twitter" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent('KeyChinGu Deep Dive Integrated Meta Index') + '&url=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Twitter">𝕏</button>
+    <button class="share-btn share-facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Facebook">f</button>
+    <button class="share-btn share-kakao" onclick="navigator.share ? navigator.share({title: 'KeyChinGu Deep Dive Integrated Meta Index', url: window.location.href}) : navigator.clipboard.writeText(window.location.href).then(function() { alert('Link copied!'); })" aria-label="Kakao/Share">📤</button>
+    <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href).then(function() { this.textContent = '✓'; setTimeout(function() { document.querySelector('.share-copy').textContent = '🔗'; }, 1500); }.bind(this))" aria-label="Copy link">🔗</button>
+  </div>
+
+  <nav class="detail-nav" aria-label="previous-next">
+    <div><a href="vegan-halal-deep.en.html" style="color:var(--red);">&larr; Foreigner Vegan·Halal Restaurant Deep Dive</a></div>
+    <div><a href="kimchi-fermentation.en.html" style="color:var(--red);">Korea Kimchi·Fermentation Deep Dive &rarr;</a></div>
+  </nav>
+</main>
+
+<footer class="site-footer">
+  <p><a href="https://instagram.com/keychingu.korea" target="_blank">@keychingu.korea</a> &mdash; Seoul for MZ FIT Travelers</p>
+</footer>
+</body>
+</html>
