@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Korea Monthly Weather·Clothing·Packing Deep Dive — KeyChinGu</title>
+<meta name="description" content="Korea Monthly Weather, Clothing, and What to Bring Deep Dive — 12 Month Matrix from January to December > Subtitle: 4 seasons, 12 months, weather, clothing, ...">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="192x192" href="../assets/logo/favicon-192.png">
+<link rel="apple-touch-icon" href="../assets/logo/favicon-192.png">
+<link rel="canonical" href="https://mgself414.github.io/keychingu-content-deploy/content/monthly-weather.en.html">
+<link rel="alternate" hreflang="ko" href="https://mgself414.github.io/keychingu-content-deploy/content/monthly-weather.html">
+<link rel="alternate" hreflang="en" href="https://mgself414.github.io/keychingu-content-deploy/content/monthly-weather.en.html">
+<link rel="alternate" hreflang="x-default" href="https://mgself414.github.io/keychingu-content-deploy/content/monthly-weather.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Korea Monthly Weather·Clothing·Packing Deep Dive">
+<meta property="og:description" content="Korea Monthly Weather, Clothing, and What to Bring Deep Dive — 12 Month Matrix from January to December > Subtitle: 4 seasons, 12 months, weather, clothing, ...">
+<meta property="og:url" content="https://mgself414.github.io/keychingu-content-deploy/content/monthly-weather.en.html">
+<meta property="og:image" content="https://mgself414.github.io/keychingu-content-deploy/assets/logo/og-image-1200x630.png">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Korea Monthly Weather·Clothing·Packing Deep Dive">
+<meta name="twitter:description" content="Korea Monthly Weather, Clothing, and What to Bring Deep Dive — 12 Month Matrix from January to December > Subtitle: 4 seasons, 12 months, weather, clothing, ...">
+<meta name="twitter:image" content="https://mgself414.github.io/keychingu-content-deploy/assets/logo/og-image-1200x630.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Korea Monthly Weather·Clothing·Packing Deep Dive","description":"Korea Monthly Weather, Clothing, and What to Bring Deep Dive — 12 Month Matrix from January to December > Subtitle: 4 seasons, 12 months, weather, clothing, ...","datePublished":"2026-05-01","inLanguage":"en","url":"https://mgself414.github.io/keychingu-content-deploy/content/monthly-weather.en.html","image":"https://mgself414.github.io/keychingu-content-deploy/assets/logo/og-image-1200x630.png","publisher":{"@type":"Organization","name":"KeyChinGu","logo":{"@type":"ImageObject","url":"https://mgself414.github.io/keychingu-content-deploy/assets/logo/logo_2-4_color_small.png"}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/main.css">
+<style>
+.detail-wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+}
+.breadcrumb {
+  font-size: 13px;
+  color: var(--text-soft);
+  margin-bottom: 24px;
+}
+.breadcrumb a { color: var(--red); font-weight: 600; }
+.detail-wrap h1 {
+  font-size: 28px; font-weight: 800;
+  color: var(--black); margin-bottom: 8px;
+}
+.detail-wrap h2 {
+  font-size: 22px; font-weight: 700;
+  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--red);
+}
+.detail-wrap h3 {
+  font-size: 17px; font-weight: 600;
+  color: var(--text-mid); margin-top: 20px; margin-bottom: 8px;
+}
+.detail-wrap p {
+  font-size: 15px; line-height: 1.7;
+  color: var(--text-mid); margin-bottom: 12px;
+}
+.detail-wrap ul {
+  padding-left: 20px; margin-bottom: 12px;
+}
+.detail-wrap li {
+  font-size: 14px; line-height: 1.6;
+  color: var(--text-mid); margin-bottom: 6px;
+}
+.detail-wrap table {
+  width: 100%; border-collapse: collapse;
+  margin-bottom: 16px; font-size: 13px;
+}
+.detail-wrap th {
+  background: var(--black); color: #fff;
+  padding: 10px 12px; text-align: left;
+  font-weight: 600; font-size: 11px;
+  text-transform: uppercase; letter-spacing: 0.06em;
+}
+.detail-wrap td {
+  padding: 10px 12px; border-bottom: 1px solid var(--border);
+  color: var(--text-mid);
+}
+.detail-wrap tr:nth-child(even) td { background: rgba(0,0,0,0.02); }
+.detail-wrap hr {
+  border: none; height: 1px;
+  background: var(--border); margin: 24px 0;
+}
+.detail-wrap code {
+  background: rgba(33,140,204,0.08);
+  padding: 2px 6px; border-radius: 4px;
+  font-size: 13px; color: var(--blue);
+}
+.detail-nav {
+  display: flex; justify-content: space-between;
+  margin-top: 48px; padding-top: 20px;
+  border-top: 1px solid var(--border);
+  font-size: 14px; font-weight: 600;
+}
+.share-bar {
+  display: flex; align-items: center; gap: 10px;
+  margin-top: 40px; padding: 16px 20px;
+  background: #f9f9f9; border-radius: 12px;
+  border: 1px solid var(--border);
+}
+.share-label {
+  font-size: 14px; font-weight: 600; color: var(--text-soft);
+  margin-right: 8px;
+}
+.share-btn {
+  width: 40px; height: 40px;
+  border: none; border-radius: 50%;
+  background: #fff; cursor: pointer;
+  font-size: 1.1rem; transition: all 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  display: inline-flex; align-items: center; justify-content: center;
+}
+.share-btn:hover { transform: translateY(-2px); box-shadow: 0 3px 8px rgba(0,0,0,0.15); }
+.share-twitter:hover { background: #000; color: #fff; }
+.share-facebook:hover { background: #1877f2; color: #fff; }
+.share-kakao:hover { background: #fee500; }
+.share-copy:hover { background: #218CCC; color: #fff; }
+/* EN toggle disabled — 영문판 미생성 콘텐츠 (2026-05-16 patch) */
+.lang-switch .lang-disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  text-decoration: line-through;
+  padding: 4px 10px;
+  color: var(--text-soft, #888);
+  font-size: 13px;
+  user-select: none;
+}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <a href="../en/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <div class="lang-switch">
+    <a href="../content/monthly-weather.html" >KR</a>
+    <a href="../content/monthly-weather.en.html" class="active">EN</a>
+  </div>
+</header>
+
+<main class="detail-wrap">
+  <nav class="breadcrumb" aria-label="breadcrumb"><a href="../en/index.html">All Guides</a> &rsaquo; Korea Monthly Weather·Clothing·Packing Deep Dive</nav>
+  <article>
+  <h1>Korea Monthly Weather, Clothing, and What to Bring Deep Dive — 12 Month Matrix from January to December</h1>
+<p>&gt; <strong>Subtitle</strong>: 4 seasons, 12 months, weather, clothing, supplies, #385·#506·#178 follow-up deep dive</p>
+<p>ISSUE 03 · #518 · 2026-05-27</p>
+<hr>
+<h2>🎯 Why deep dive into Korea’s monthly weather, clothing, and preparations</h2>
+<p>Required for foreigners&#x27; first visit #1 = <strong>Monthly weather, clothing, and what to prepare deep dive</strong> (#385 four seasons·#506 holidays·#178 first visit·#398 arrival follow-up). Korea&#x27;s four distinct seasons + monthly average temperature, precipitation, clothing, and full set of foreign enthusiasts.</p>
+<hr>
+<h2>★ 12-month weather and clothing matrix at a glance</h2>
+<table><thead><tr>
+<th>month</th>
+<th>Temperature (Seoul)</th>
+<th>4 axis</th>
+<th>Signature, clothing, supplies</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>January</strong></td>
+<td>-6 ~ 2℃ ★ Choi Han</td>
+<td>Winter (December-February)</td>
+<td>Padding, underwear, gloves, hot pack, Pyeongchang Snow Festival (#385)</td>
+</tr>
+<tr>
+<td><strong>February</strong></td>
+<td>-4 ~ 5℃ + Lunar New Year</td>
+<td>Winter (December-February)</td>
+<td>Padding·#506 Lunar New Year Hanbok + Padding·#385</td>
+</tr>
+<tr>
+<td><strong>March</strong></td>
+<td>2 ~ 11℃ ★ Season change</td>
+<td>Spring (March-May)</td>
+<td>Jacket·Plum·Azalea·#506 March 1st·Yellow Sand Mask</td>
+</tr>
+<tr>
+<td><strong>April</strong></td>
+<td>7 ~ 18℃ ★ Cherry blossoms at their peak</td>
+<td>Spring (March-May)</td>
+<td>Light jacket·<strong>Cherry blossoms in Yunjung-ro (#385)</strong>·Jinhae Gunhangje Festival</td>
+</tr>
+<tr>
+<td><strong>May</strong></td>
+<td>12 ~ 23℃ ★ Optimal season</td>
+<td>Spring (March-May)</td>
+<td>Long sleeve·<strong>Buddha’s Birthday Lotus Lantern (#506)</strong>·Fresh spring greens</td>
+</tr>
+<tr>
+<td><strong>June</strong></td>
+<td>17 ~ 28℃ + Rainy season begins</td>
+<td>Summer (June-August)</td>
+<td>Short sleeves·Umbrella·<strong>Dano (#506 UNESCO Gangneung)</strong></td>
+</tr>
+<tr>
+<td><strong>July</strong></td>
+<td>22 ~ 30℃ + peak of rainy season</td>
+<td>Summer (June-August)</td>
+<td>Short sleeves·Umbrella·<strong>Boryeong Mud Festival (#385 #1)</strong>·Sambok (#506)</td>
+</tr>
+<tr>
+<td><strong>August</strong></td>
+<td>23 ~ 31℃ ★ Highest temperature</td>
+<td>Summer (June-August)</td>
+<td>Short sleeve·<strong>Liberation Day (#506)</strong>·#06 Han River chicken and beer·Haeundae</td>
+</tr>
+<tr>
+<td><strong>September</strong></td>
+<td>18 ~ 27℃ ★ Chuseok</td>
+<td>Fall (September-November)</td>
+<td>Long sleeve·<strong>Chuseok Hanbok (#506 9.24-26)</strong>·Seoul Fireworks Festival</td>
+</tr>
+<tr>
+<td><strong>October</strong></td>
+<td>12 ~ 21℃ ★ Fall foliage begins</td>
+<td>Fall (September-November)</td>
+<td>Jacket·<strong>Autumn leaves of Mt. Seorak (#385·#511)</strong>·#506 National Foundation Day·Hangeul Day</td>
+</tr>
+<tr>
+<td><strong>November</strong></td>
+<td>5 ~ 14℃ ★ Best autumn foliage</td>
+<td>Fall (September-November)</td>
+<td>Jacket·Coat·<strong>Interior·Nami Island Autumn Leaves·#385</strong></td>
+</tr>
+<tr>
+<td><strong>December</strong></td>
+<td>-2 ~ 7℃ + illumination</td>
+<td>Winter (December-February)</td>
+<td>Padding·<strong>DDP Illumination (#172·#260)</strong>·Christmas (#506)</td>
+</tr>
+</tbody></table>
+<p><strong>+ Additional 4</strong>: Yellow dust/fine dust mask for foreigners·Umbrella for foreigners·#421 currency exchange (seasonal exchange rate)·KTO season package for foreigners</p>
+<hr>
+<h2>⚠ 5 common mistakes foreigners make</h2>
+<p>1. <strong>&quot;Korea = only four seasons&quot;</strong>: Korea&#x27;s four seasons = <strong>Spring (March-May plum blossoms, cherry blossoms, azaleas) + Summer (June-August rainy season, Sambok) + Autumn (September-November peak foliage) + Winter (December-February -10℃·Pyeongchang Snow Festival)</strong> + Foreign enthusiast matrix·#385·#506 integrated.</p>
+<p>2. <strong>&quot;Korean winter = warmer than Japan and Europe&quot;</strong>: Korean winter = <strong>January average -6℃·Feels like -15℃·</strong>Padding, underwear, gloves, hot pack required** + Foreign enthusiasts·Pyeongchang Snow Festival·#385·#456 integrated.</p>
+<p>3. <strong>&quot;Korean summer = same as America and Europe&quot;</strong>: Korean summer = <strong>July-August 30-35℃ + humidity 80%+ + rainy season (6.20-7.20) + Sambok health food (#506·#388)</strong> + Foreign mania·#06 Han River chicken and beer.</p>
+<p>4. <strong>&quot;Autumn foliage = November&quot;</strong>: Korean autumn foliage = <strong>Seorak Mountain, mid-October → Naejangsan Mountain and Nami Island, late October → Seoul, early November</strong> + #385·#229·#273 Matrix·No. 1 foreign enthusiast.</p>
+<p>5. <strong>&quot;Yellow dust and fine dust = only spring&quot;</strong>: Yellow dust and fine dust = <strong>Spring (March-May #1)·Winter (December-February #2)·Mask required</strong> + Naver Map fine dust check·KF94 mask·Foreign enthusiasts.</p>
+<hr>
+<h2>① Spring (March-May) (3)</h2>
+<h3>March ★ Season change, plum blossom, azalea</h3>
+<ul>
+<li>Temperature: 2 ~ 11℃</li>
+<li>Clothing: Jacket·#506 March 1st (3.1)</li>
+<li>Signature: Plum blossom (Gwangyang, Sancheong), yellow sand mask, foreign enthusiast</li>
+</ul>
+<h3>April ★ Cherry Blossom Peak</h3>
+<ul>
+<li>Temperature: 7 ~ 18℃</li>
+<li>Clothing: Light jacket</li>
+<li>Signature: <strong>Yunjung-ro Cherry Blossoms (#385 Korea #1)</strong>·Jinhae Gunhangje Festival·No. 1 foreign enthusiasts</li>
+</ul>
+<h3>May ★ Best season</h3>
+<ul>
+<li>Temperature: 12 ~ 23℃</li>
+<li>Clothing: long sleeves, #1 foreign enthusiast</li>
+<li>Signature: <strong>Buddha’s Birthday Lotus Lantern (#506·#509)</strong>·Spring Greens·#506 Children’s Day (5.5)</li>
+</ul>
+<hr>
+<h2>② Summer (June-August) (3)</h2>
+<h3>June + Rainy season begins</h3>
+<ul>
+<li>Temperature: 17 ~ 28℃</li>
+<li>Clothing: short sleeves, umbrella</li>
+<li>Signature: <strong>Dano (#506 6.19 UNESCO Gangneung)</strong>·Gangneung Dano Festival·Foreign Mania</li>
+</ul>
+<h3>July + Peak of the rainy season</h3>
+<ul>
+<li>Temperature: 22 ~ 30℃·Precipitation #1</li>
+<li>Clothing: short sleeves, umbrella</li>
+<li>Signature: <strong>Boryeong Mud Festival (#385 #1)</strong>·#506 Sambok·#06 Han River</li>
+</ul>
+<h3>August ★ Highest temperature</h3>
+<ul>
+<li>Temperature: 23 ~ 31℃, felt like 35℃</li>
+<li>Clothing: short sleeves, sunscreen</li>
+<li>Signature: <strong>Liberation Day (#506 8.15)</strong>·#06 Hangang Chicken and Beer·Haeundae·Foreign Mania</li>
+</ul>
+<hr>
+<h2>③ Fall (September-November) (3)</h2>
+<h3>September ★ Chuseok</h3>
+<ul>
+<li>Temperature: 18 ~ 27℃ · No. 1 foreign enthusiasts</li>
+<li>Clothing: long sleeves</li>
+<li>Signature: <strong>Chuseok Hanbok (#506 9.24-26)</strong>·Seoul International Fireworks Festival·Foreign Mania</li>
+</ul>
+<h3>October ★ Fall foliage begins</h3>
+<ul>
+<li>Temperature: 12 ~ 21℃ · No. 1 foreign enthusiasts</li>
+<li>Clothing: Jacket</li>
+<li>Signature: <strong>Autumn leaves on Mt. Seorak (mid-October #385·#511)</strong>·#506 National Foundation Day (10.3)·Hangeul Day (10.9)</li>
+</ul>
+<h3>November ★ Peak fall foliage</h3>
+<ul>
+<li>Temperature: 5 ~ 14℃</li>
+<li>Clothing: Jacket/Coat</li>
+<li>Signature: <strong>Naejangsan·Nami Island Autumn Leaves·#385·#229·#273</strong> Matrix</li>
+</ul>
+<hr>
+<h2>④ Winter (December-February) + additional 4</h2>
+<h3>December + Illumination</h3>
+<ul>
+<li>Temperature: -2 ~ 7℃</li>
+<li>Clothing: Padding</li>
+<li>Signature: <strong>DDP Illumination (#172·#260)</strong>·Christmas (#506 12.25)·Year-end New Year</li>
+</ul>
+<h3>January ★ Choi Han</h3>
+<ul>
+<li>Temperature: -6 ~ 2℃, felt like -15℃</li>
+<li>Clothes: <strong>Padding, underwear, gloves, hot pack required</strong></li>
+<li>Signature: <strong>Pyeongchang Snow Festival (#385 #1)</strong>·Taebaek Snow Festival·Foreign Mania</li>
+</ul>
+<h3>February + Lunar New Year</h3>
+<ul>
+<li>Temperature: -4 ~ 5℃</li>
+<li>Clothing: Padding</li>
+<li>Signature: <strong>Lunar New Year’s Hanbok (#506 2.16-18)</strong>·#506 New Year’s Day Full Moon·Foreign Mania</li>
+</ul>
+<h3>+ add 4</h3>
+<ul>
+<li><strong>Foreigner Yellow Dust/Fine Dust Mask</strong> — KF94·Check Naver Map·Foreign Mania</li>
+<li><strong>Foreign Umbrella (rainy season June-July)</strong> — Convenience stores, Daiso, foreign enthusiasts</li>
+<li><strong>Foreign Season Currency Exchange (#421)</strong> — Foreign exchange rate·#421·#398 integrated</li>
+<li><strong>Foreign KTO Season Package</strong> — Klook·KKday·KTO Certification·Foreign Mania</li>
+</ul>
+<hr>
+<h2>⚙ 6 FAQs</h2>
+<p>1. <strong>Best season for foreigners</strong>: May (12-23℃) · October (12-21℃ autumn leaves) · No. 1 for foreign enthusiasts.</p>
+<p>2. <strong>Winter clothing for foreigners</strong>: Padding, underwear, gloves, hot pack, -15℃ in January, foreigner mania.</p>
+<p>3. <strong>Foreign Summer Mania</strong>: Boryeong Mud in July (#385)·Liberation Day in August·#06 Han River·Foreign Mania.</p>
+<p>4. <strong>Foreign maple enthusiasts</strong>: Seorak mid-October, Naejang late October, Seoul early November, #385·#229·#273.</p>
+<p>5. <strong>Foreign yellow dust/fine dust</strong>: Spring (March-May #1)·Winter (December-February #2)·KF94 mask·Foreign mania.</p>
+<p>6. <strong>Foreigner Integrated Package</strong>: #385·#506·#178·#398·#421·KTO·Foreign Mania full set.</p>
+<hr>
+<h2>🗺 3 full-day courses for foreigners</h2>
+<h3>A. Best season full day in May for foreigners (#506·#518)</h3>
+<ul>
+<li>09:00 Hanbok + Buddha’s Birthday Lotus Lantern (#506·#509·#379) → 13:00 #502 Korean Food → 15:00 Bomnamul Cafe (#381) → 19:00 Han River Night View (#06·#260)</li>
+</ul>
+<h3>B. Foreigner October Fall Foliage 2 Days 1 Night (#385·#511·#518)</h3>
+<ul>
+<li>Day 1: KTX Seoul → Sokcho → Seorak Mountain autumn leaves (#511·#385) + Jingwansa Temple (#509·#357)</li>
+<li>Day 2: Shilla Hotel (#356)·#506 Hangul Day (10.9) + Foreign Mania</li>
+</ul>
+<h3>C. Foreigner January Winter 1 Night 2 Days (#385·#518)</h3>
+<ul>
+<li>Day 1: Pyeongchang Snow Festival (#385 #1)·Ski + Hotel SPA (#364)</li>
+<li>Day 2: DDP Illumination (#172·#260) + Lunar New Year Hanbok Demonstration (#506·#379)</li>
+</ul>
+<hr>
+<h2>🌸 Season 5</h2>
+<ul>
+<li><strong>Spring March~May</strong>: Plum blossoms, cherry blossoms, azaleas, #506 Buddha’s Birthday, foreign enthusiasts #1</li>
+<li><strong>Summer June~August</strong>: Rainy season, Sambok, Boryeong Mud, #06 Han River, #385, #506</li>
+<li><strong>Fall September~November</strong>: <strong>Best fall foliage·#385·#229·#273·Chuseok·Hangeul Day·No. 1 foreign mania</strong></li>
+<li><strong>Winter December~February</strong>: Pyeongchang Snow Festival·DDP Illumination·#506 Lunar New Year·New Year·#260</li>
+<li><strong>Year-round</strong>: 12-month integration of Matrix·Foreign Mania·#385·#506</li>
+</ul>
+<hr>
+<h2>🔗 Related</h2>
+<ul>
+<li>#06 Han River Chicken and Beer·#172 DDP·#178 Foreigner’s First Visit·#229 Fall Foliage·#260 Night View·#273 Foliage Matrix·#303 Cherry Blossoms chart·#319 Gangwon·#356 Hotel·#357 Temple Food·#364 Hotel SPA·#379 Hanbok·Palace·#385 Four Seasons·#388 Long-established store·#398 Arrival·#421 Currency exchange·#456 Gym·#502 Dining table culture·#506 Holiday calendar·#509 Temple experience·#511 hiking Dulle-gil</li>
+</ul>
+<h2>🏷 Tags</h2>
+<p><code>#한국월별날씨복장준비물deepdive</code> <code>#KoreaMonthlyWeatherClothingPacking</code> <code>␈MASK145␈월-6 2℃최한패딩내복장갑핫팩평창눈축제</code> <code>␈MASK146␈월설날한복패딩-4 5℃</code> <code>␈MASK147␈월환절기매화진달래자켓황사마스크삼일절</code> <code>␈MASK148␈월벚꽃절정7 18℃윤중로진해군항제</code> <code>␈MASK149␈월최적시즌12 23℃부처님오신날연등어린이날</code> <code>␈MASK150␈월장마시작17 28℃반팔우산단오UNESCO강릉</code> <code>␈MASK151␈월장마절정22 30℃보령머드축제삼복</code> <code>␈MASK152␈월최고온23 31℃광복절한강치맥해운대</code> <code>␈MASK153␈월추석한복서울불꽃축제18 27℃</code> <code>␈MASK154␈월단풍시작설악12 21℃개천절한글날</code> <code>␈MASK155␈월단풍절정내장남이섬5 14℃</code> <code>␈MASK156␈월일루미네이션DDP-2 7℃크리스마스</code> <code>#KF94황사미세먼지마스크우산KTO시즌패키지</code> <code>#키친구</code></p>
+  </article>
+
+  <div class="share-bar">
+    <span class="share-label">Share</span>
+    <button class="share-btn share-twitter" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent('Korea Monthly Weather·Clothing·Packing Deep Dive') + '&url=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Twitter">𝕏</button>
+    <button class="share-btn share-facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Facebook">f</button>
+    <button class="share-btn share-kakao" onclick="navigator.share ? navigator.share({title: 'Korea Monthly Weather·Clothing·Packing Deep Dive', url: window.location.href}) : navigator.clipboard.writeText(window.location.href).then(function() { alert('Link copied!'); })" aria-label="Kakao/Share">📤</button>
+    <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href).then(function() { this.textContent = '✓'; setTimeout(function() { document.querySelector('.share-copy').textContent = '🔗'; }, 1500); }.bind(this))" aria-label="Copy link">🔗</button>
+  </div>
+
+  <nav class="detail-nav" aria-label="previous-next">
+    <div><a href="business-hours.en.html" style="color:var(--red);">&larr; Korea Business Hours·Closed Day Matrix Deep Dive</a></div>
+    <div><a href="kpop-dance-2026.en.html" style="color:var(--red);">K-Pop Dance 2026 New Trend Deep Dive &rarr;</a></div>
+  </nav>
+</main>
+
+<footer class="site-footer">
+  <p><a href="https://instagram.com/keychingu.korea" target="_blank">@keychingu.korea</a> &mdash; Seoul for MZ FIT Travelers</p>
+</footer>
+</body>
+</html>

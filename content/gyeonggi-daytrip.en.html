@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Foreigner Gyeonggi Day-Trip Matrix Deep Dive — KeyChinGu</title>
+<meta name="description" content="Foreigner Gyeonggi-do day-trip matrix deep dive — Suwon and Yongin 12 selections > Subtitle: Suburbs of Seoul·KTX·2 days and 1 night·392·430·385 follow-up de...">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="192x192" href="../assets/logo/favicon-192.png">
+<link rel="apple-touch-icon" href="../assets/logo/favicon-192.png">
+<link rel="canonical" href="https://mgself414.github.io/keychingu-content-deploy/content/gyeonggi-daytrip.en.html">
+<link rel="alternate" hreflang="ko" href="https://mgself414.github.io/keychingu-content-deploy/content/gyeonggi-daytrip.html">
+<link rel="alternate" hreflang="en" href="https://mgself414.github.io/keychingu-content-deploy/content/gyeonggi-daytrip.en.html">
+<link rel="alternate" hreflang="x-default" href="https://mgself414.github.io/keychingu-content-deploy/content/gyeonggi-daytrip.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Foreigner Gyeonggi Day-Trip Matrix Deep Dive">
+<meta property="og:description" content="Foreigner Gyeonggi-do day-trip matrix deep dive — Suwon and Yongin 12 selections > Subtitle: Suburbs of Seoul·KTX·2 days and 1 night·392·430·385 follow-up de...">
+<meta property="og:url" content="https://mgself414.github.io/keychingu-content-deploy/content/gyeonggi-daytrip.en.html">
+<meta property="og:image" content="https://mgself414.github.io/keychingu-content-deploy/assets/logo/og-image-1200x630.png">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Foreigner Gyeonggi Day-Trip Matrix Deep Dive">
+<meta name="twitter:description" content="Foreigner Gyeonggi-do day-trip matrix deep dive — Suwon and Yongin 12 selections > Subtitle: Suburbs of Seoul·KTX·2 days and 1 night·392·430·385 follow-up de...">
+<meta name="twitter:image" content="https://mgself414.github.io/keychingu-content-deploy/assets/logo/og-image-1200x630.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Foreigner Gyeonggi Day-Trip Matrix Deep Dive","description":"Foreigner Gyeonggi-do day-trip matrix deep dive — Suwon and Yongin 12 selections > Subtitle: Suburbs of Seoul·KTX·2 days and 1 night·392·430·385 follow-up de...","datePublished":"2026-05-01","inLanguage":"en","url":"https://mgself414.github.io/keychingu-content-deploy/content/gyeonggi-daytrip.en.html","image":"https://mgself414.github.io/keychingu-content-deploy/assets/logo/og-image-1200x630.png","publisher":{"@type":"Organization","name":"KeyChinGu","logo":{"@type":"ImageObject","url":"https://mgself414.github.io/keychingu-content-deploy/assets/logo/logo_2-4_color_small.png"}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/main.css">
+<style>
+.detail-wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+}
+.breadcrumb {
+  font-size: 13px;
+  color: var(--text-soft);
+  margin-bottom: 24px;
+}
+.breadcrumb a { color: var(--red); font-weight: 600; }
+.detail-wrap h1 {
+  font-size: 28px; font-weight: 800;
+  color: var(--black); margin-bottom: 8px;
+}
+.detail-wrap h2 {
+  font-size: 22px; font-weight: 700;
+  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--red);
+}
+.detail-wrap h3 {
+  font-size: 17px; font-weight: 600;
+  color: var(--text-mid); margin-top: 20px; margin-bottom: 8px;
+}
+.detail-wrap p {
+  font-size: 15px; line-height: 1.7;
+  color: var(--text-mid); margin-bottom: 12px;
+}
+.detail-wrap ul {
+  padding-left: 20px; margin-bottom: 12px;
+}
+.detail-wrap li {
+  font-size: 14px; line-height: 1.6;
+  color: var(--text-mid); margin-bottom: 6px;
+}
+.detail-wrap table {
+  width: 100%; border-collapse: collapse;
+  margin-bottom: 16px; font-size: 13px;
+}
+.detail-wrap th {
+  background: var(--black); color: #fff;
+  padding: 10px 12px; text-align: left;
+  font-weight: 600; font-size: 11px;
+  text-transform: uppercase; letter-spacing: 0.06em;
+}
+.detail-wrap td {
+  padding: 10px 12px; border-bottom: 1px solid var(--border);
+  color: var(--text-mid);
+}
+.detail-wrap tr:nth-child(even) td { background: rgba(0,0,0,0.02); }
+.detail-wrap hr {
+  border: none; height: 1px;
+  background: var(--border); margin: 24px 0;
+}
+.detail-wrap code {
+  background: rgba(33,140,204,0.08);
+  padding: 2px 6px; border-radius: 4px;
+  font-size: 13px; color: var(--blue);
+}
+.detail-nav {
+  display: flex; justify-content: space-between;
+  margin-top: 48px; padding-top: 20px;
+  border-top: 1px solid var(--border);
+  font-size: 14px; font-weight: 600;
+}
+.share-bar {
+  display: flex; align-items: center; gap: 10px;
+  margin-top: 40px; padding: 16px 20px;
+  background: #f9f9f9; border-radius: 12px;
+  border: 1px solid var(--border);
+}
+.share-label {
+  font-size: 14px; font-weight: 600; color: var(--text-soft);
+  margin-right: 8px;
+}
+.share-btn {
+  width: 40px; height: 40px;
+  border: none; border-radius: 50%;
+  background: #fff; cursor: pointer;
+  font-size: 1.1rem; transition: all 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  display: inline-flex; align-items: center; justify-content: center;
+}
+.share-btn:hover { transform: translateY(-2px); box-shadow: 0 3px 8px rgba(0,0,0,0.15); }
+.share-twitter:hover { background: #000; color: #fff; }
+.share-facebook:hover { background: #1877f2; color: #fff; }
+.share-kakao:hover { background: #fee500; }
+.share-copy:hover { background: #218CCC; color: #fff; }
+/* EN toggle disabled — 영문판 미생성 콘텐츠 (2026-05-16 patch) */
+.lang-switch .lang-disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  text-decoration: line-through;
+  padding: 4px 10px;
+  color: var(--text-soft, #888);
+  font-size: 13px;
+  user-select: none;
+}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <a href="../en/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <div class="lang-switch">
+    <a href="../content/gyeonggi-daytrip.html" >KR</a>
+    <a href="../content/gyeonggi-daytrip.en.html" class="active">EN</a>
+  </div>
+</header>
+
+<main class="detail-wrap">
+  <nav class="breadcrumb" aria-label="breadcrumb"><a href="../en/index.html">All Guides</a> &rsaquo; Foreigner Gyeonggi Day-Trip Matrix Deep Dive</nav>
+  <article>
+  <h1>Foreigner Gyeonggi-do day-trip matrix deep dive — Suwon and Yongin 12 selections</h1>
+<p>&gt; <strong>Subtitle</strong>: Suburbs of Seoul·KTX·2 days and 1 night·#392·#430·#385 follow-up deep dive</p>
+<p>ISSUE 03 · #512 · 2026-05-27</p>
+<hr>
+<h2>🎯 Why Gyeonggi-do day-trip matrix for foreigners</h2>
+<p>No. 1 foreign travel enthusiast = <strong>Gyeonggi-do day-trip deep dive</strong> (#392 course·#430 rental car·#440 theme park·#385 4 seasons follow-up). 1~2 hours away from Seoul + KTX/subway/rental car + foreigner day-trip 12% demand.</p>
+<hr>
+<h2>★ 12 day-trip matrix at a glance</h2>
+<table><thead><tr>
+<th>#</th>
+<th>Cities/Attractions</th>
+<th>4 axis</th>
+<th>Signature</th>
+</tr></thead><tbody>
+<tr>
+<td>1</td>
+<td><strong>Suwon Hwaseong (UNESCO)</strong> ★ Korea #1 day-trip</td>
+<td>History·UNESCO</td>
+<td>Jeongjo 1796·KTX 30 minutes·#440 integrated</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Suwon Gwanggyo (#503 Woo Young-woo)</strong></td>
+<td>History·UNESCO</td>
+<td>Gwanggyo Hanok·#503 K-drama integration</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Suwon Haenggung-dong·Tongdak Street</strong></td>
+<td>History·UNESCO</td>
+<td>Foreign vlog, whole chicken, #06 integration</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Yongin Everland·Caribbean Bay (#440)</strong> ★</td>
+<td>Theme Park</td>
+<td>Korea #1 Zoo·Summer #1 Water Park</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>Yongin Ho-Am Art Museum·Museum San (#377)</strong></td>
+<td>Theme Park</td>
+<td>Samsung Museum of Art·Foreign art enthusiasts</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>Yongin Korean Folk Village</strong></td>
+<td>Theme Park</td>
+<td>Joseon Dynasty Reenactment/Foreign Mania</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>Goyang Ilsan Lake Park·Lafesta</strong> ★</td>
+<td>Northern outskirts</td>
+<td>KTX/Subway 30 minutes·Foreign enthusiast</td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>Paju Heyri·Imjingak·DMZ</strong></td>
+<td>Northern outskirts</td>
+<td>DMZ Foreign Mania·#377 Museum</td>
+</tr>
+<tr>
+<td>9</td>
+<td><strong>Paju Unification Garden·Pyeonghwa Nuri Park</strong></td>
+<td>Northern outskirts</td>
+<td>Foreign peace enthusiast·#377 integration</td>
+</tr>
+<tr>
+<td>10</td>
+<td><strong>Hwaseong Jebudo·Gungpyeong Port</strong> ★</td>
+<td>West Sea day-trip</td>
+<td>Miracle of Moses (Low Tide)·Foreign Mania</td>
+</tr>
+<tr>
+<td>11</td>
+<td><strong>Yangpyeong·Gapyeong·Nami Island·Icheon Pottery</strong></td>
+<td>Eastern Outskirts</td>
+<td>Nami Island (#378 Goblin)·Icheon Pottery Experience</td>
+</tr>
+<tr>
+<td>12</td>
+<td><strong>Gyeonggi-do day-trip package for foreigners (Klook·KKday·KTO)</strong> ★</td>
+<td>Enthusiast Package</td>
+<td>English OK·KTO certification·#430·#392 integration</td>
+</tr>
+</tbody></table>
+<p><strong>+ Additional 4</strong>: Gyeonggi-do KTX (Suwon, Cheonan), subway extension, express bus, foreigner free travel (#430 rental car), foreigner family (#210)</p>
+<hr>
+<h2>⚠ 5 common mistakes foreigners make</h2>
+<p>1. <strong>&quot;Gyeonggi-do = too far&quot;</strong>: Gyeonggi-do = <strong>Suwon KTX 30 minutes, Goyang Ilsan subway 30 minutes, Yongin 1 hour</strong> + No. 1 free travel for foreigners, #430 rental car, #392 integrated.</p>
+<p>2. <strong>&quot;Suwon Hwaseong = just a castle&quot;</strong>: Suwon Hwaseong = <strong>UNESCO 1997 (Jeongjo 1796) + 4 main gates + Haenggung-dong + #503 Woo Young-woo Gwanggyo</strong> + Foreign Mania No. 1·#440·#377 integrated.</p>
+<p>3. <strong>&quot;Everland = 1 night required&quot;</strong>: Everland·Caribbean Bay = <strong>day-trip OK (Seoul 1 hour) + Foreigner Shuttle (Klook)</strong> + #440 Theme Park·Foreign Family (#210) Mania.</p>
+<p>4. <strong>&quot;DMZ = Danger&quot;</strong>: Paju DMZ = <strong>No. 1 foreign mania·KTO certified·Klook·KKday foreign English guide</strong> + Imjingak·Pyeonghwa Nuri Park·foreign history mania·#377 integrated.</p>
+<p>5. <strong>&quot;Free travel for foreigners = difficult&quot;</strong>: Gyeonggi-do for foreigners = <strong>Rental car (#430) + KTX/subway/express bus + English OK for foreigners + KTO certification</strong> + Full set of foreign mania.</p>
+<hr>
+<h2>① Suwon·History·UNESCO (3)</h2>
+<h3>1. Suwon Hwaseong ★ UNESCO Korea #1 day-trip</h3>
+<ul>
+<li><strong>History</strong>: King Jeongjo 1796 Construction·UNESCO 1997</li>
+<li><strong>Transportation</strong>: KTX Seoul → Suwon 30 minutes, Subway Line 1</li>
+<li><strong>Foreigner ★</strong>: ◎◎ — UNESCO·Korea #1 day-trip enthusiast</li>
+<li><strong>Signature</strong>: 4 Main Gate, Hwaseong Temporary Palace, No. 1 foreign mania, and #440 integrated</li>
+</ul>
+<h3>2. Suwon Gwanggyo (#503 Woo Young-woo)</h3>
+<ul>
+<li><strong>Foreigner ★</strong>: ◎◎ — Gwanggyo Hanok·#503·#378 K-drama integration</li>
+<li><strong>Signature</strong>: Woo Young-woo filming location, foreign global enthusiast, #503·#378 integration</li>
+</ul>
+<h3>3. Suwon Haenggung-dong · Whole Chicken Street</h3>
+<ul>
+<li><strong>Foreigner ★</strong>: ◎◎ — Foreigner vlog, whole chicken, #06 Han River chicken and beer integration</li>
+<li><strong>Signature</strong>: Haenggung-dong Cafe + Fried Chicken Street and Foreign Mania</li>
+</ul>
+<hr>
+<h2>② Yongin·Theme Park (3)</h2>
+<h3>4. Yongin Everland·Caribbean Bay ★ #440</h3>
+<ul>
+<li><strong>Foreigner ★</strong>: ◎◎ — Korea #1 Zoo/Summer #1 Water Park</li>
+<li><strong>Signature</strong>: Foreign family enthusiast·#440·#385 integration</li>
+</ul>
+<h3>5. Yongin Ho-Am Art Museum·Museum San (#377)</h3>
+<ul>
+<li><strong>Foreigners★</strong>: ◎◎ — Samsung Museum of Art, foreign art enthusiasts</li>
+<li><strong>Signature</strong>: Foreign Mania·#377 Integration</li>
+</ul>
+<h3>6. Yongin Korean Folk Village</h3>
+<ul>
+<li><strong>Foreigner★</strong>: ◎◎ — Joseon Dynasty Reenactment/Foreign Mania</li>
+<li><strong>Signature</strong>: Integration of foreign authentic enthusiasts·#379·#506</li>
+</ul>
+<hr>
+<h2>③ Northern Outskirts (3)</h2>
+<h3>7. Goyang Ilsan Lake Park·Lafesta ★</h3>
+<ul>
+<li><strong>Transportation</strong>: KTX/subway 30 minutes, foreign enthusiasts</li>
+<li><strong>Foreigner★</strong>: ◎◎ — Foreign Mania·Lafesta Cafe</li>
+<li><strong>Signature</strong>: Lake Park, La Festa, Foreign Mania</li>
+</ul>
+<h3>8. Paju Heyri, Imjingak, DMZ</h3>
+<ul>
+<li><strong>Foreigners★</strong>: ◎◎ — DMZ No. 1 foreign enthusiasts·#377 integrated</li>
+<li><strong>Signature</strong>: Heyri Village, Imjingak, and foreign history enthusiasts</li>
+</ul>
+<h3>9. Paju Unification Garden and Pyeonghwa Nuri Park</h3>
+<ul>
+<li><strong>Foreigner ★</strong>: ◎◎ — Foreign Peace Mania·#377 Integration</li>
+<li><strong>Signature</strong>: Pyeonghwa Nuri·Foreign Mania·#377 Integration</li>
+</ul>
+<hr>
+<h2>④ West Sea, East Sea, Mania (3 + additional 4)</h2>
+<h3>10. Hwaseong Jebudo·Gungpyeong Port ★</h3>
+<ul>
+<li><strong>Foreigner★</strong>: ◎◎ — Miracle of Moses (low tide)·Foreign Mania</li>
+<li><strong>Signature</strong>: Foreign Mania·#244 Integrated·Outskirts Free Travel</li>
+</ul>
+<h3>11. Yangpyeong, Gapyeong, Nami Island, and Icheon ceramics</h3>
+<ul>
+<li><strong>Foreigner ★</strong>: ◎◎ — Nami Island (#378 Goblin)·Icheon Pottery Experience·#379 Integrated</li>
+<li><strong>Signature</strong>: Foreign Mania·#378·#379 Integration</li>
+</ul>
+<h3>12. Gyeonggi-do day-trip package for foreigners ★ Klook·KKday·KTO</h3>
+<ul>
+<li><strong>Foreigners ★</strong>: ◎◎ — English OK, KTO certification, #430, #392 integrated</li>
+<li><strong>Signature</strong>: Full set for foreign independent travel enthusiasts</li>
+</ul>
+<h3>+ add 4</h3>
+<ul>
+<li><strong>Gyeonggi-do KTX</strong> — Suwon, Cheonan, and foreign enthusiast full set</li>
+<li><strong>Subway extension/express bus</strong> — Independent travel for foreigners (#430·#398 integrated)</li>
+<li><strong>Free travel for foreigners (#430 rental car)</strong> — No. 1 foreign mania</li>
+<li><strong>Foreign Family (#210)</strong> — Foreign Family Mania</li>
+</ul>
+<hr>
+<h2>⚙ 6 FAQs</h2>
+<p>1. <strong>Gyeonggi-do No. 1 for foreigners</strong>: Suwon Hwaseong UNESCO, Yongin Everland, Paju DMZ, Goyang Ilsan, foreign enthusiasts.</p>
+<p>2. <strong>Foreigner day-trip transportation</strong>: KTX 30 minutes, subway 30 minutes, express bus 1 hour, rental car (#430).</p>
+<p>3. <strong>Foreign UNESCO</strong>: Suwon Hwaseong (1997)·Namhansanseong (2014)·Foreign Mania.</p>
+<p>4. <strong>Foreign Family</strong>: Everland, Caribbean Bay, Korean Folk Village, #210, #440 integrated.</p>
+<p>5. <strong>DMZ for foreigners</strong>: Paju Imjingak, Pyeonghwa Nuri, KTO certification, Klook, KKday English for foreigners.</p>
+<p>6. <strong>Foreigner Package</strong>: Klook·KKday·KTO·Foreigner English OK·#430·#392·#440 integrated.</p>
+<hr>
+<h2>🗺 3 foreigner day-trip courses</h2>
+<h3>A. Suwon Hwaseong Full Day for Foreigners (UNESCO #1)</h3>
+<ul>
+<li>09:00 KTX Seoul → Suwon → Suwon Hwaseong 4th Gate → 13:00 Haenggung-dong Whole Chicken·#06 → 16:00 Gwanggyo Hanok (#378·#503) → 19:00 Return to Seoul</li>
+</ul>
+<h3>B. Paju DMZ 2 days and 1 night for foreigners</h3>
+<ul>
+<li>Day 1: Imjingak, Pyeonghwa Nuri, Heyri Village, #377 Museum</li>
+<li>Day 2: Tongil Garden·Pyeonghwa Nuri + KTO Certified Foreign Mania</li>
+</ul>
+<h3>C. Gyeonggi-do full set for foreigners, 2 days and 1 night (Suwon, Yongin)</h3>
+<ul>
+<li>Day 1: Suwon Hwaseong (UNESCO) + Haenggung-dong·#06·#503 Gwanggyo</li>
+<li>Day 2: Yongin Everland (#440)·Ho-Am Art Museum (#377)·Korean Folk Village</li>
+</ul>
+<hr>
+<h2>🌸 Season 5</h2>
+<ul>
+<li><strong>Spring March~May</strong>: Suwon Hwaseong Cherry Blossoms·Foreign Mania·#385·#303·#506</li>
+<li><strong>Summer June~August</strong>: Caribbean Bay #385 #1·Foreign Mania·#06 Han River</li>
+<li><strong>Fall September~November</strong>: No. 1 foreign mania·#385·#229 Autumn leaves·#506</li>
+<li><strong>Winter December~February</strong>: Foreign Mania·Illumination·#260·#506 New Year</li>
+<li><strong>Year-round</strong>: Foreign enthusiasts·#440·#377·#392 integrated</li>
+</ul>
+<hr>
+<h2>🔗 Related</h2>
+<ul>
+<li>#178 Foreigner&#x27;s first visit·#210 Foreigner family·#244 Jagalchi·#260 Night view·#296 Cheongdam·#377 Museum·#378 K-drama filming location·#379 Hanbok·Palace·#385 Four Seasons·#392 Course·#398 Arrival·#430 Rental Car·#440 Theme Park·#447 Photo Studio·#503 2026 New K-Drama·#506 Holiday·#511 Jazz Bar</li>
+</ul>
+<h2>🏷 Tags</h2>
+<p><code>#외국인경기도day-trip매트릭스deepdive</code> <code>#KoreaGyeonggiDayTripMatrix</code> <code>#수원화성UNESCO1997정조1796 KTX30분</code> <code>#수원광교␈MASK111␈우영우한옥</code> <code>#수원행궁동통닭거리</code> <code>#용인에버랜드캐리비안베이␈MASK112␈한국1동물원</code> <code>#용인호암미술관뮤지엄산␈MASK113␈삼성</code> <code>#용인한국민속촌조선시대재현</code> <code>#고양일산호수공원라페스타KTX30분</code> <code>#파주헤이리임진각DMZ외국인매니아</code> <code>#파주통일동산평화누리공원</code> <code>#화성제부도궁평항모세의기적간조</code> <code>#양평가평남이섬␈MASK114␈도깨비이천도자기</code> <code>#KlookKKdayKTO경기도패키지영어OK</code> <code>#KTX지하철고속버스␈MASK115␈렌터카자유여행</code> <code>#키친구</code></p>
+  </article>
+
+  <div class="share-bar">
+    <span class="share-label">Share</span>
+    <button class="share-btn share-twitter" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent('Foreigner Gyeonggi Day-Trip Matrix Deep Dive') + '&url=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Twitter">𝕏</button>
+    <button class="share-btn share-facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Facebook">f</button>
+    <button class="share-btn share-kakao" onclick="navigator.share ? navigator.share({title: 'Foreigner Gyeonggi Day-Trip Matrix Deep Dive', url: window.location.href}) : navigator.clipboard.writeText(window.location.href).then(function() { alert('Link copied!'); })" aria-label="Kakao/Share">📤</button>
+    <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href).then(function() { this.textContent = '✓'; setTimeout(function() { document.querySelector('.share-copy').textContent = '🔗'; }, 1500); }.bind(this))" aria-label="Copy link">🔗</button>
+  </div>
+
+  <nav class="detail-nav" aria-label="previous-next">
+    <div><a href="seoul-jazz-bars.en.html" style="color:var(--red);">&larr; Seoul Jazz Bars·Lounges Deep Dive</a></div>
+    <div><a href="nightlife-deep.en.html" style="color:var(--red);">Foreigner Nightlife Club·Lounge·Bar Deep Dive Expanded &rarr;</a></div>
+  </nav>
+</main>
+
+<footer class="site-footer">
+  <p><a href="https://instagram.com/keychingu.korea" target="_blank">@keychingu.korea</a> &mdash; Seoul for MZ FIT Travelers</p>
+</footer>
+</body>
+</html>

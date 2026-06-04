@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Foreigner SIM·Communication·WiFi Deep Dive — KeyChinGu</title>
+<meta name="description" content="Foreign SIM/Telecommunication/WiFi deep dive — 12 eSIM/rate plans > Subtitle: KT·SKT·LGU+·Klook·Airalo·WiFi lunch box·398 follow-up deep dive ISSUE 03 · 414 ...">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="192x192" href="../assets/logo/favicon-192.png">
+<link rel="apple-touch-icon" href="../assets/logo/favicon-192.png">
+<link rel="canonical" href="https://mgself414.github.io/keychingu-content-deploy/content/sim-comm-wifi.en.html">
+<link rel="alternate" hreflang="ko" href="https://mgself414.github.io/keychingu-content-deploy/content/sim-comm-wifi.html">
+<link rel="alternate" hreflang="en" href="https://mgself414.github.io/keychingu-content-deploy/content/sim-comm-wifi.en.html">
+<link rel="alternate" hreflang="x-default" href="https://mgself414.github.io/keychingu-content-deploy/content/sim-comm-wifi.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Foreigner SIM·Communication·WiFi Deep Dive">
+<meta property="og:description" content="Foreign SIM/Telecommunication/WiFi deep dive — 12 eSIM/rate plans > Subtitle: KT·SKT·LGU+·Klook·Airalo·WiFi lunch box·398 follow-up deep dive ISSUE 03 · 414 ...">
+<meta property="og:url" content="https://mgself414.github.io/keychingu-content-deploy/content/sim-comm-wifi.en.html">
+<meta property="og:image" content="https://mgself414.github.io/keychingu-content-deploy/assets/logo/og-image-1200x630.png">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Foreigner SIM·Communication·WiFi Deep Dive">
+<meta name="twitter:description" content="Foreign SIM/Telecommunication/WiFi deep dive — 12 eSIM/rate plans > Subtitle: KT·SKT·LGU+·Klook·Airalo·WiFi lunch box·398 follow-up deep dive ISSUE 03 · 414 ...">
+<meta name="twitter:image" content="https://mgself414.github.io/keychingu-content-deploy/assets/logo/og-image-1200x630.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Foreigner SIM·Communication·WiFi Deep Dive","description":"Foreign SIM/Telecommunication/WiFi deep dive — 12 eSIM/rate plans > Subtitle: KT·SKT·LGU+·Klook·Airalo·WiFi lunch box·398 follow-up deep dive ISSUE 03 · 414 ...","datePublished":"2026-05-01","inLanguage":"en","url":"https://mgself414.github.io/keychingu-content-deploy/content/sim-comm-wifi.en.html","image":"https://mgself414.github.io/keychingu-content-deploy/assets/logo/og-image-1200x630.png","publisher":{"@type":"Organization","name":"KeyChinGu","logo":{"@type":"ImageObject","url":"https://mgself414.github.io/keychingu-content-deploy/assets/logo/logo_2-4_color_small.png"}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/main.css">
+<style>
+.detail-wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+}
+.breadcrumb {
+  font-size: 13px;
+  color: var(--text-soft);
+  margin-bottom: 24px;
+}
+.breadcrumb a { color: var(--red); font-weight: 600; }
+.detail-wrap h1 {
+  font-size: 28px; font-weight: 800;
+  color: var(--black); margin-bottom: 8px;
+}
+.detail-wrap h2 {
+  font-size: 22px; font-weight: 700;
+  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--red);
+}
+.detail-wrap h3 {
+  font-size: 17px; font-weight: 600;
+  color: var(--text-mid); margin-top: 20px; margin-bottom: 8px;
+}
+.detail-wrap p {
+  font-size: 15px; line-height: 1.7;
+  color: var(--text-mid); margin-bottom: 12px;
+}
+.detail-wrap ul {
+  padding-left: 20px; margin-bottom: 12px;
+}
+.detail-wrap li {
+  font-size: 14px; line-height: 1.6;
+  color: var(--text-mid); margin-bottom: 6px;
+}
+.detail-wrap table {
+  width: 100%; border-collapse: collapse;
+  margin-bottom: 16px; font-size: 13px;
+}
+.detail-wrap th {
+  background: var(--black); color: #fff;
+  padding: 10px 12px; text-align: left;
+  font-weight: 600; font-size: 11px;
+  text-transform: uppercase; letter-spacing: 0.06em;
+}
+.detail-wrap td {
+  padding: 10px 12px; border-bottom: 1px solid var(--border);
+  color: var(--text-mid);
+}
+.detail-wrap tr:nth-child(even) td { background: rgba(0,0,0,0.02); }
+.detail-wrap hr {
+  border: none; height: 1px;
+  background: var(--border); margin: 24px 0;
+}
+.detail-wrap code {
+  background: rgba(33,140,204,0.08);
+  padding: 2px 6px; border-radius: 4px;
+  font-size: 13px; color: var(--blue);
+}
+.detail-nav {
+  display: flex; justify-content: space-between;
+  margin-top: 48px; padding-top: 20px;
+  border-top: 1px solid var(--border);
+  font-size: 14px; font-weight: 600;
+}
+.share-bar {
+  display: flex; align-items: center; gap: 10px;
+  margin-top: 40px; padding: 16px 20px;
+  background: #f9f9f9; border-radius: 12px;
+  border: 1px solid var(--border);
+}
+.share-label {
+  font-size: 14px; font-weight: 600; color: var(--text-soft);
+  margin-right: 8px;
+}
+.share-btn {
+  width: 40px; height: 40px;
+  border: none; border-radius: 50%;
+  background: #fff; cursor: pointer;
+  font-size: 1.1rem; transition: all 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  display: inline-flex; align-items: center; justify-content: center;
+}
+.share-btn:hover { transform: translateY(-2px); box-shadow: 0 3px 8px rgba(0,0,0,0.15); }
+.share-twitter:hover { background: #000; color: #fff; }
+.share-facebook:hover { background: #1877f2; color: #fff; }
+.share-kakao:hover { background: #fee500; }
+.share-copy:hover { background: #218CCC; color: #fff; }
+/* EN toggle disabled — 영문판 미생성 콘텐츠 (2026-05-16 patch) */
+.lang-switch .lang-disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  text-decoration: line-through;
+  padding: 4px 10px;
+  color: var(--text-soft, #888);
+  font-size: 13px;
+  user-select: none;
+}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <a href="../en/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <div class="lang-switch">
+    <a href="../content/sim-comm-wifi.html" >KR</a>
+    <a href="../content/sim-comm-wifi.en.html" class="active">EN</a>
+  </div>
+</header>
+
+<main class="detail-wrap">
+  <nav class="breadcrumb" aria-label="breadcrumb"><a href="../en/index.html">All Guides</a> &rsaquo; Foreigner SIM·Communication·WiFi Deep Dive</nav>
+  <article>
+  <h1>Foreign SIM/Telecommunication/WiFi deep dive — 12 eSIM/rate plans</h1>
+<p>&gt; <strong>Subtitle</strong>: KT·SKT·LGU+·Klook·Airalo·WiFi lunch box·#398 follow-up deep dive</p>
+<p>ISSUE 03 · #414 · 2026-05-26</p>
+<hr>
+<h2>🎯 Why foreign SIM/communication/WiFi?</h2>
+<p>Foreigners&#x27; first visit required #2 = <strong>SIM·communication·WiFi deep dive</strong> (#398 arrival·#178 follow-up on first visit). KT·SKT·LGU+ + eSIM·USIM·WiFi lunch box + Klook·Airalo·English OK for foreigners + rate plan matrix.</p>
+<hr>
+<h2>★ 12 lines at a glance</h2>
+<table><thead><tr>
+<th>#</th>
+<th>SIM·communication</th>
+<th>4 axis</th>
+<th>Signature</th>
+</tr></thead><tbody>
+<tr>
+<td>1</td>
+<td><strong>KT SIM·eSIM (Korea #1 5G)</strong> ★</td>
+<td>Korea&#x27;s top three telecommunication companies</td>
+<td>No. 1 in 5G, No. 1 foreign enthusiast</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>SKT SIM·eSIM (Korea #1 4G)</strong></td>
+<td>Korea&#x27;s top three telecommunication companies</td>
+<td>4G No. 1, Foreign Enthusiast</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>LGU+ SIM·eSIM</strong></td>
+<td>Korea&#x27;s top three telecommunication companies</td>
+<td>Cost-effective/Foreign enthusiasts</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Thrifty phone MVNO (KT M-Mobile·U+Thrifty Mobile)</strong></td>
+<td>Korea&#x27;s top three telecommunication companies</td>
+<td>Cost-effective/Foreign Janggi enthusiasts</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>Klook eSIM (Foreigner English #1)</strong> ★</td>
+<td>Foreign eSIM</td>
+<td>30K for 7 days, 80K for 30 days, foreign enthusiasts</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>Airalo eSIM (Global No. 1)</strong> ★</td>
+<td>Foreign eSIM</td>
+<td>No. 1 global foreign enthusiast</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>KKday eSIM·12go eSIM</strong></td>
+<td>Foreign eSIM</td>
+<td>Foreign Mania Foreign English</td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>WiFi Lunch Box (KT)</strong> ★ Korea #1</td>
+<td>WiFi lunch box</td>
+<td>1 Day 4K~·No. 1 Foreign Mania</td>
+</tr>
+<tr>
+<td>9</td>
+<td><strong>WiFi PoketWiFi·HyMobile</strong></td>
+<td>WiFi lunch box</td>
+<td>Cost-effectiveness for foreign enthusiasts</td>
+</tr>
+<tr>
+<td>10</td>
+<td><strong>Price Plan Matrix (Short-term/Long-term/Foreigner Residence #252)</strong> ★</td>
+<td>Foreign Mania</td>
+<td>7 days, 15 days, 30 days, 90 days, 1 year</td>
+</tr>
+<tr>
+<td>11</td>
+<td><strong>Foreign English communication store (Myeongdong #13·Gangnam #142)</strong></td>
+<td>Foreign Mania</td>
+<td>KT·SKT·LGU+ Foreigner Store</td>
+</tr>
+<tr>
+<td>12</td>
+<td><strong>Foreigner Communication Package (Klook·KKday·KTO)</strong> ★</td>
+<td>Foreign Mania</td>
+<td>SIM + WiFi + English OK for foreigners</td>
+</tr>
+</tbody></table>
+<p><strong>+ Additional 4</strong>: Foreign SIM · Passport registration (foreigner&#x27;s first visit required) · Foreigner&#x27;s unlimited data · Foreigner&#x27;s voice call · Foreigner&#x27;s dual SIM (Korea + home country)</p>
+<hr>
+<h2>⚠ 5 common mistakes foreigners make</h2>
+<p>1. <strong>&quot;Korea&#x27;s 3 companies = too expensive&quot;</strong>: Korean Telecommunications = <strong>Klook eSIM 30K for 7 days + 80K for 30 days + No. 1 cost-effectiveness for foreigners</strong> + 50% cheaper than Japan and the US.</p>
+<p>2. <strong>&quot;eSIM = No&quot;</strong>: eSIM = **iPhone</p>
+<p>3. <strong>&quot;Korean SIM = Koreans only&quot;</strong>: Korean SIM = <strong>Passport registration + credit card for foreigners + English OK store for foreigners (Myeong-dong, Gangnam)</strong> + No. 1 foreign mania · #398 integrated.</p>
+<p>4. <strong>&quot;WiFi lunch box = not borrowed&quot;</strong>: WiFi lunch box = <strong>Klook·KKday reservation 1 day 4K~ + Incheon Airport pickup + No. 1 for foreign enthusiasts</strong> + Unlimited data full set.</p>
+<p>5. <strong>&quot;Foreign organ = too expensive&quot;</strong>: Foreign organ (90 days, 1 year) = <strong>Affordable phone MVNO (KT M Mobile·U+Thrifty Mobile)</strong> + Foreign resident (#252) Mania·#403 integrated.</p>
+<hr>
+<h2>① Korea’s 3 major telecommunication companies (4)</h2>
+<h3>1. KT SIM·eSIM ★ Korea #1 5G</h3>
+<ul>
+<li>Foreigners ★: ◎◎ — 5G No. 1, No. 1 foreign enthusiasts</li>
+<li>Signature: 5G full set, English OK for foreigners</li>
+</ul>
+<h3>2. SKT SIM·eSIM ★ Korea #1 4G</h3>
+<ul>
+<li>Foreigners ★: ◎◎ — No. 1 in 4G, foreign enthusiasts</li>
+<li>Signature: 4G, No. 1 among foreign enthusiasts</li>
+</ul>
+<h3>3. LGU+ SIM/eSIM</h3>
+<ul>
+<li>Foreigners ★: ◎◎ — Cost-effective, foreign enthusiasts</li>
+<li>Signature: Cost-effective, English OK for foreigners</li>
+</ul>
+<h3>4. Budget phone MVNO ★ Cost-effective</h3>
+<ul>
+<li>KT M Mobile, U+ Economical Mobile, SK 7 Mobile</li>
+<li>Foreigner ★: ◎ — Foreigner Jgi enthusiast · #252 Foreigner living</li>
+<li>Signature: No. 1 in cost-effectiveness and foreign enthusiasts</li>
+</ul>
+<hr>
+<h2>② Foreign eSIM (3)</h2>
+<h3>5. Klook eSIM ★ Foreigner English #1</h3>
+<ul>
+<li>Foreigners ★: ◎◎ — 30K for 7 days, 80K for 30 days</li>
+<li>Signature: No. 1 foreign enthusiast, instant activation</li>
+</ul>
+<h3>6. Airalo eSIM ★ Global No. 1</h3>
+<ul>
+<li>Foreigner ★: ◎◎ — No. 1 global foreign mania</li>
+<li>Signature: Foreign global enthusiast·#398·#178</li>
+</ul>
+<h3>7. KKday eSIM·12go eSIM</h3>
+<ul>
+<li>Foreigners ★: ◎◎ — English OK for foreigners</li>
+<li>Signature: Foreign enthusiast, multilingual</li>
+</ul>
+<hr>
+<h2>③ WiFi lunch box (2)</h2>
+<h3>8. WiFi lunch box (KT) ★ Korea #1</h3>
+<ul>
+<li>Foreigners ★: ◎◎ — 4K per day~·No. 1 foreign mania</li>
+<li>Signature: KT, English OK for foreigners, Incheon Airport pickup</li>
+</ul>
+<h3>9. PoketWiFi·HyMobile</h3>
+<ul>
+<li>Foreigner ★: ◎◎ — Foreigner enthusiast cost-effectiveness</li>
+<li>Signature: Foreign enthusiasts, Klook reservations</li>
+</ul>
+<hr>
+<h2>④ Foreign Mania (3 + additional 4)</h2>
+<h3>10. Rate Plan Matrix ★ Short-term/Long-term</h3>
+<ul>
+<li>7-day, 15-day, 30-day, 90-day, 1-year matrix</li>
+<li>Foreigner ★: ◎◎ — No. 1 foreign mania</li>
+<li>Signature: Foreigner&#x27;s first visit·#252 Foreigner&#x27;s residence·#403</li>
+</ul>
+<h3>11. English communication store for foreigners (Myeongdong #13·Gangnam #142)</h3>
+<ul>
+<li>KT·SKT·LGU+ foreigner stores</li>
+<li>Foreigner ★: ◎◎ — Foreigner enthusiast, English OK</li>
+<li>Signature: Full set of English for foreigners</li>
+</ul>
+<h3>12. Foreigner Communication Package ★ Klook·KKday·KTO</h3>
+<ul>
+<li>SIM + WiFi + English OK for foreigners</li>
+<li>Foreigner ★: ◎◎ — Foreigner Mania·#398·#392 integration</li>
+<li>Signature: Full set of English for foreigners</li>
+</ul>
+<h3>+ add 4</h3>
+<ul>
+<li><strong>Foreigner SIM/passport registration</strong> — Foreigner’s first visit required</li>
+<li><strong>Unlimited data for foreigners</strong> — No. 1 foreign enthusiasts</li>
+<li><strong>Foreign voice calls</strong> — Skype·WhatsApp·KakaoTalk</li>
+<li><strong>Foreigner Dual SIM</strong> — Simultaneous use in Korea and home country</li>
+</ul>
+<hr>
+<h2>⚙ 6 FAQs</h2>
+<p>1. <strong>No. 1 SIM for foreigners</strong>: Klook eSIM (English #1)·KT SIM·Airalo eSIM·KT M Mobile.</p>
+<p>2. <strong>Cost-effectiveness for foreigners</strong>: Klook 30K for 7 days, 80K for 30 days, budget phone 100~200K for 1 year.</p>
+<p>3. <strong>Foreigner WiFi Lunchbox</strong>: KT Korea #1·Klook·KKday 1 day 4K~.</p>
+<p>4. <strong>Foreign 5G</strong>: KT 5G Korea #1·No. 1 foreign enthusiast.</p>
+<p>5. <strong>Foreign Janggi Mania</strong>: Economical phone MVNO (KT M-Mobile, U+ Economical)·#252 Foreign resident·#403.</p>
+<p>6. <strong>First visit required for foreigners</strong>: SIM·passport registration·#398 integration·#178 first visit.</p>
+<hr>
+<h2>🗺 3 full-day courses for foreigners</h2>
+<h3>A. First visit by foreigners SIM full day (#178·#398)</h3>
+<ul>
+<li>Before arrival: Klook eSIM reservation/passport registration → After arrival: Incheon Airport → 5-minute activation → English OK store for foreigners (Myeongdong, Gangnam)</li>
+</ul>
+<h3>B. Foreign Mania Communication Package 2 Days &amp; 1 Night</h3>
+<ul>
+<li>Day 1: KT SIM + WiFi lunch box + #398 arrival integration</li>
+<li>Day 2: English communication store for foreigners + #406 duty free + #392 course</li>
+</ul>
+<h3>C. 1 week long-term residence for foreigners (#252·#403)</h3>
+<ul>
+<li>Day 1~2: KT M Mobile budget phone + foreign resident enthusiast</li>
+<li>Day 3~7: Language training (#403) + Foreign Mania Package</li>
+</ul>
+<hr>
+<h2>🌸 Season 5</h2>
+<ul>
+<li><strong>Spring March~May</strong>: First SIM visit season for foreigners, No. 1 among foreign enthusiasts</li>
+<li><strong>Summer June~August</strong>: Combination of foreign enthusiasts and summer vacation</li>
+<li><strong>Fall September~November</strong>: No. 1 foreign enthusiasts·#385 integrated</li>
+<li><strong>Winter December~February</strong>: Foreign Mania·#385 Mania</li>
+<li><strong>Year-round</strong>: KT·SKT·LGU+·Klook·Airalo·Foreign Mania</li>
+</ul>
+<hr>
+<h2>🔗 Related</h2>
+<ul>
+<li>#13 Myeongdong·#142 Gangnam·#178 Foreigner’s first visit·#252 Foreigner residence·#392 Course·#398 Arrival·#403 Korean language school·#406 Duty free shop</li>
+</ul>
+<h2>🏷 Tags</h2>
+<p><code>#외국인SIM통신WiFi deepdive</code> <code>#KoreaSIMCommWiFiDeepDive</code> <code>#KT유심eSIM5G한국1외국인1번지</code> <code>#SKT유심eSIM4G한국1</code> <code>#LGU+유심eSIM가성비</code> <code>#알뜰폰KT M모바일U+알뜰모바일SK7모바일</code> <code>#KlookeSIM영어1 7일30K30일80K</code> <code>#AiraloeSIM글로벌1번지</code> <code>#KKday12go eSIM</code> <code>#WiFi도시락KT한국1 1일4K</code> <code>#PoketWiFi HyMobile</code> <code>#요금제매트릭스7일15일30일90일1년</code> <code>#외국인영어통신매장명동강남</code> <code>#KlookKKdayKTO통신패키지</code> <code>#SIM여권등록무제한데이터음성통화WhatsApp듀얼SIM</code> <code>#키친구</code></p>
+  </article>
+
+  <div class="share-bar">
+    <span class="share-label">Share</span>
+    <button class="share-btn share-twitter" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent('Foreigner SIM·Communication·WiFi Deep Dive') + '&url=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Twitter">𝕏</button>
+    <button class="share-btn share-facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Facebook">f</button>
+    <button class="share-btn share-kakao" onclick="navigator.share ? navigator.share({title: 'Foreigner SIM·Communication·WiFi Deep Dive', url: window.location.href}) : navigator.clipboard.writeText(window.location.href).then(function() { alert('Link copied!'); })" aria-label="Kakao/Share">📤</button>
+    <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href).then(function() { this.textContent = '✓'; setTimeout(function() { document.querySelector('.share-copy').textContent = '🔗'; }, 1500); }.bind(this))" aria-label="Copy link">🔗</button>
+  </div>
+
+  <nav class="detail-nav" aria-label="previous-next">
+    <div><a href="duty-free.en.html" style="color:var(--red);">&larr; Foreigner Duty-Free Shopping Deep Dive</a></div>
+    <div><a href="casino.en.html" style="color:var(--red);">Foreigner Casino Full Guide &rarr;</a></div>
+  </nav>
+</main>
+
+<footer class="site-footer">
+  <p><a href="https://instagram.com/keychingu.korea" target="_blank">@keychingu.korea</a> &mdash; Seoul for MZ FIT Travelers</p>
+</footer>
+</body>
+</html>
