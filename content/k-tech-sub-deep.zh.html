@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>외국인 한국 K-기술·삼성·카카오·네이버 sub 12선 deep dive — KeyChinGu</title>
+<meta name="description" content="外国人韩国K-Technology、三星、Kakao、Naver sub 12深潜 — 世界1半导体、KakaoTalk、Naver > 元：国外生命周期K内容·MZ轴子·IT·科技子集群·12行4轴（三星、Kakao、Naver、国外爱好者）+常见问题6+课程3+季节5+技巧5·狂热653（575·556父子深...">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="192x192" href="../assets/logo/favicon-192.png">
+<link rel="apple-touch-icon" href="../assets/logo/favicon-192.png">
+<link rel="canonical" href="https://mgself414.github.io/keychingu-content-deploy/content/k-tech-sub-deep.html">
+<link rel="alternate" hreflang="ko" href="https://mgself414.github.io/keychingu-content-deploy/content/k-tech-sub-deep.html">
+<link rel="alternate" hreflang="en" href="https://mgself414.github.io/keychingu-content-deploy/content/k-tech-sub-deep.en.html">
+<link rel="alternate" hreflang="x-default" href="https://mgself414.github.io/keychingu-content-deploy/content/k-tech-sub-deep.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="외국인 한국 K-기술·삼성·카카오·네이버 sub 12선 deep dive">
+<meta property="og:description" content="外国人韩国K-Technology、三星、Kakao、Naver sub 12深潜 — 世界1半导体、KakaoTalk、Naver > 元：国外生命周期K内容·MZ轴子·IT·科技子集群·12行4轴（三星、Kakao、Naver、国外爱好者）+常见问题6+课程3+季节5+技巧5·狂热653（575·556父子深...">
+<meta property="og:url" content="https://mgself414.github.io/keychingu-content-deploy/content/k-tech-sub-deep.html">
+<meta property="og:image" content="https://mgself414.github.io/keychingu-content-deploy/assets/logo/og-image-1200x630.png">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="외국인 한국 K-기술·삼성·카카오·네이버 sub 12선 deep dive">
+<meta name="twitter:description" content="外国人韩国K-Technology、三星、Kakao、Naver sub 12深潜 — 世界1半导体、KakaoTalk、Naver > 元：国外生命周期K内容·MZ轴子·IT·科技子集群·12行4轴（三星、Kakao、Naver、国外爱好者）+常见问题6+课程3+季节5+技巧5·狂热653（575·556父子深...">
+<meta name="twitter:image" content="https://mgself414.github.io/keychingu-content-deploy/assets/logo/og-image-1200x630.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"외국인 한국 K-기술·삼성·카카오·네이버 sub 12선 deep dive","description":"外国人韩国K-Technology、三星、Kakao、Naver sub 12深潜 — 世界1半导体、KakaoTalk、Naver > 元：国外生命周期K内容·MZ轴子·IT·科技子集群·12行4轴（三星、Kakao、Naver、国外爱好者）+常见问题6+课程3+季节5+技巧5·狂热653（575·556父子深...","datePublished":"2026-05-01","inLanguage":"ko","url":"https://mgself414.github.io/keychingu-content-deploy/content/k-tech-sub-deep.html","image":"https://mgself414.github.io/keychingu-content-deploy/assets/logo/og-image-1200x630.png","publisher":{"@type":"Organization","name":"KeyChinGu","logo":{"@type":"ImageObject","url":"https://mgself414.github.io/keychingu-content-deploy/assets/logo/logo_2-4_color_small.png"}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/main.css">
+<style>
+.detail-wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+}
+.breadcrumb {
+  font-size: 13px;
+  color: var(--text-soft);
+  margin-bottom: 24px;
+}
+.breadcrumb a { color: var(--red); font-weight: 600; }
+.detail-wrap h1 {
+  font-size: 28px; font-weight: 800;
+  color: var(--black); margin-bottom: 8px;
+}
+.detail-wrap h2 {
+  font-size: 22px; font-weight: 700;
+  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--red);
+}
+.detail-wrap h3 {
+  font-size: 17px; font-weight: 600;
+  color: var(--text-mid); margin-top: 20px; margin-bottom: 8px;
+}
+.detail-wrap p {
+  font-size: 15px; line-height: 1.7;
+  color: var(--text-mid); margin-bottom: 12px;
+}
+.detail-wrap ul {
+  padding-left: 20px; margin-bottom: 12px;
+}
+.detail-wrap li {
+  font-size: 14px; line-height: 1.6;
+  color: var(--text-mid); margin-bottom: 6px;
+}
+.detail-wrap table {
+  width: 100%; border-collapse: collapse;
+  margin-bottom: 16px; font-size: 13px;
+}
+.detail-wrap th {
+  background: var(--black); color: #fff;
+  padding: 10px 12px; text-align: left;
+  font-weight: 600; font-size: 11px;
+  text-transform: uppercase; letter-spacing: 0.06em;
+}
+.detail-wrap td {
+  padding: 10px 12px; border-bottom: 1px solid var(--border);
+  color: var(--text-mid);
+}
+.detail-wrap tr:nth-child(even) td { background: rgba(0,0,0,0.02); }
+.detail-wrap hr {
+  border: none; height: 1px;
+  background: var(--border); margin: 24px 0;
+}
+.detail-wrap code {
+  background: rgba(33,140,204,0.08);
+  padding: 2px 6px; border-radius: 4px;
+  font-size: 13px; color: var(--blue);
+}
+.detail-nav {
+  display: flex; justify-content: space-between;
+  margin-top: 48px; padding-top: 20px;
+  border-top: 1px solid var(--border);
+  font-size: 14px; font-weight: 600;
+}
+.share-bar {
+  display: flex; align-items: center; gap: 10px;
+  margin-top: 40px; padding: 16px 20px;
+  background: #f9f9f9; border-radius: 12px;
+  border: 1px solid var(--border);
+}
+.share-label {
+  font-size: 14px; font-weight: 600; color: var(--text-soft);
+  margin-right: 8px;
+}
+.share-btn {
+  width: 40px; height: 40px;
+  border: none; border-radius: 50%;
+  background: #fff; cursor: pointer;
+  font-size: 1.1rem; transition: all 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  display: inline-flex; align-items: center; justify-content: center;
+}
+.share-btn:hover { transform: translateY(-2px); box-shadow: 0 3px 8px rgba(0,0,0,0.15); }
+.share-twitter:hover { background: #000; color: #fff; }
+.share-facebook:hover { background: #1877f2; color: #fff; }
+.share-kakao:hover { background: #fee500; }
+.share-copy:hover { background: #218CCC; color: #fff; }
+/* EN toggle disabled — 영문판 미생성 콘텐츠 (2026-05-16 patch) */
+.lang-switch .lang-disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  text-decoration: line-through;
+  padding: 4px 10px;
+  color: var(--text-soft, #888);
+  font-size: 13px;
+  user-select: none;
+}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <div class="lang-switch">
+    <a href="../content/k-tech-sub-deep.html" class="active">KR</a>
+    <a href="../content/k-tech-sub-deep.en.html" >EN</a>
+  </div>
+</header>
+
+<main class="detail-wrap">
+  <nav class="breadcrumb" aria-label="breadcrumb"><a href="../index.html">전체 가이드</a> &rsaquo; 외국인 한국 K-기술·삼성·카카오·네이버 sub 12선 deep dive</nav>
+  <article>
+  <p>#外国人韩国K-Technology、三星、Kakao、Naver sub 12深潜 — 世界#1半导体、KakaoTalk、Naver</p>
+<p>&gt; <strong>元</strong>：国外生命周期K内容·MZ轴子·IT·科技子集群·12行4轴（三星、Kakao、Naver、国外爱好者）+常见问题6+课程3+季节5+技巧5·狂热#653（#575·#556父子深）</p>
+<p>&gt;</p>
+<p>&gt; <strong>操作信息验证</strong>：2026-06-02 WebSearch + #575·#556。</p>
+<p>&gt;</p>
+<p>&gt; <strong>系列交叉参考</strong>：#575自制狂热·#556工业旅游·#516SNS通讯·#559网络安全·#629SNS·#561TOPIK·KIIP</p>
+<hr>
+<h2>为什么现在是K-technology sub？ — 世界#1半导体·KakaoTalk 100%·Naver韩国#1</h2>
+<p>K-Technology = <strong>三星世界#1半导体</strong> + <strong>KakaoTalk韩国100% (#516)</strong> + <strong>Naver韩国#1搜索</strong> + <strong>李在镕、金范洙、李海镇、方时赫自制 (#575)</strong> + <strong>初创文化·折腾·裴敏</strong>。</p>
+<hr>
+<h2>12 条线，4 个轴</h2>
+<h3>轴 1：全球 K-tech 公司（第三线）</h3>
+<p>1. <strong>三星</strong> —世界#1半导体·李在镕</p>
+<p>2. <strong>现代汽车</strong> — 全球#3汽车</p>
+<p>3. <strong>LG·SK·POSCO</strong>——全球集群</p>
+<h3>轴 2：IT 平台（3 条线）</h3>
+<p>4. <strong>Kakao</strong> — KakaoTalk 100% · Beomsu Kim</p>
+<p>5. <strong>Naver</strong> — 韩国#1搜索·李海镇</p>
+<p>6. <strong>扔·巴民·Coupang·胡萝卜</strong></p>
+<h3>第三轴：工业旅游/体验（#556 cross）（3条线）</h3>
+<p>7. <strong>三星平泽·瑞草 (#556)</strong></p>
+<p>8. <strong>SK利川·海力士(#556)</strong></p>
+<p>9. <strong>现代蔚山·HD朝鲜 (#556·#633)</strong></p>
+<h3>轴4：国外爱好者（3号线）</h3>
+<p>10. <strong>#575自制十字架·李在容·金范洙·李海珍</strong></p>
+<p>11. <strong>国外K-tech粉丝/创业爱好者</strong></p>
+<p>12. <strong>#575·#556·#516·#629·#653全套</strong></p>
+<hr>
+<h2>⚠️ 准确性验证</h2>
+<p><strong>验证</strong>：三星世界#1半导体（#575）·KakaoTalk 100%（#516）·自制（#575）</p>
+<p><strong>注意</strong>：工业旅游需提前预约（#556）</p>
+<hr>
+<h2>常见问题 6</h2>
+<h3>Q1。第一的？三星 + KakaoTalk + Naver</h3>
+<h3>Q2。价格？免费（应用程序/服务）/工业旅游分开</h3>
+<h3>Q3。英语？折腾·KakaoTalk EN OK</h3>
+<h3>Q4。系列？ #575·#556·#516·#629·#653全套</h3>
+<h3>Q5。工业旅游？ #556 预购</h3>
+<h3>Q6。自制？ ␈面膜43␈</h3>
+<hr>
+<h2>全日制课程 3</h2>
+<p>1. <strong>K-tech全套</strong>：Samsung + Kakao + Naver</p>
+<p>2. <strong>工业旅游（#556 cross）</strong>：三星·SK·现代</p>
+<p>3. <strong>#575自制十字架</strong></p>
+<h2>第 5 季轴心</h2>
+<ul>
+<li>四个季节：K-tech 狂热/工业旅游季节</li>
+</ul>
+<h2>外国狂热 5 个秘诀</h2>
+<p>1. <strong>三星世界#1半导体</strong></p>
+<p>2. <strong>KakaoTalk 100%</strong></p>
+<p>3. <strong>Naver韩国#1</strong></p>
+<p>4. <strong>#575白手起家的男人</strong></p>
+<p>5. <strong>#575·#556·#516·#629·#653全套</strong></p>
+<h2>交叉引用</h2>
+<ul>
+<li>#575·#556·#516·#629（父级）·#559·#561·#581~#652</li>
+</ul>
+<p>&gt; <strong>DOD</strong>：12线4轴+三星#1半导体·KakaoTalk 100%·Naver·自制#575 cross指定✓</p>
+  </article>
+
+  <div class="share-bar">
+    <span class="share-label">공유</span>
+    <button class="share-btn share-twitter" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent('외국인 한국 K-기술·삼성·카카오·네이버 sub 12선 deep dive') + '&url=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Twitter">𝕏</button>
+    <button class="share-btn share-facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Facebook">f</button>
+    <button class="share-btn share-kakao" onclick="navigator.share ? navigator.share({title: '외국인 한국 K-기술·삼성·카카오·네이버 sub 12선 deep dive', url: window.location.href}) : navigator.clipboard.writeText(window.location.href).then(function() { alert('링크 복사됨!'); })" aria-label="Kakao/Share">📤</button>
+    <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href).then(function() { this.textContent = '✓'; setTimeout(function() { document.querySelector('.share-copy').textContent = '🔗'; }, 1500); }.bind(this))" aria-label="Copy link">🔗</button>
+  </div>
+
+  <nav class="detail-nav" aria-label="previous-next">
+    <div><a href="k-comics-sub-deep.html" style="color:var(--red);">&larr; 외국인 한국 K-comics·웹툰·만화 풀세트 sub 12선 deep dive</a></div>
+    <div><a href="k-sports-sub-deep.html" style="color:var(--red);">외국인 한국 K-스포츠·LCK·KBO·K리그 sub 12선 deep dive &rarr;</a></div>
+  </nav>
+</main>
+
+<footer class="site-footer">
+  <p><a href="https://instagram.com/keychingu.korea" target="_blank">@keychingu.korea</a> &mdash; Seoul for MZ FIT Travelers</p>
+</footer>
+</body>
+</html>

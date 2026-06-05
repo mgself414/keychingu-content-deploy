@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>외국인 한국 결제 시스템 deep dive — KeyChinGu</title>
+<meta name="description" content="深入了解韩国针对外国人的支付系统——12卡、支付和汇款 > 副标题：Naver Pay·KakaoPay·Samsung Pay·414·435后续深挖 第03期·527·2026-05-28 --- 🎯 为什么韩国的外国人支付系统很深入 国外No.1实用爱好者=支付系统深潜（414SIM·435货币兑换·398...">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="192x192" href="../assets/logo/favicon-192.png">
+<link rel="apple-touch-icon" href="../assets/logo/favicon-192.png">
+<link rel="canonical" href="https://mgself414.github.io/keychingu-content-deploy/content/payment-system-deep.html">
+<link rel="alternate" hreflang="ko" href="https://mgself414.github.io/keychingu-content-deploy/content/payment-system-deep.html">
+<link rel="alternate" hreflang="en" href="https://mgself414.github.io/keychingu-content-deploy/content/payment-system-deep.en.html">
+<link rel="alternate" hreflang="x-default" href="https://mgself414.github.io/keychingu-content-deploy/content/payment-system-deep.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="외국인 한국 결제 시스템 deep dive">
+<meta property="og:description" content="深入了解韩国针对外国人的支付系统——12卡、支付和汇款 > 副标题：Naver Pay·KakaoPay·Samsung Pay·414·435后续深挖 第03期·527·2026-05-28 --- 🎯 为什么韩国的外国人支付系统很深入 国外No.1实用爱好者=支付系统深潜（414SIM·435货币兑换·398...">
+<meta property="og:url" content="https://mgself414.github.io/keychingu-content-deploy/content/payment-system-deep.html">
+<meta property="og:image" content="https://mgself414.github.io/keychingu-content-deploy/assets/logo/og-image-1200x630.png">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="외국인 한국 결제 시스템 deep dive">
+<meta name="twitter:description" content="深入了解韩国针对外国人的支付系统——12卡、支付和汇款 > 副标题：Naver Pay·KakaoPay·Samsung Pay·414·435后续深挖 第03期·527·2026-05-28 --- 🎯 为什么韩国的外国人支付系统很深入 国外No.1实用爱好者=支付系统深潜（414SIM·435货币兑换·398...">
+<meta name="twitter:image" content="https://mgself414.github.io/keychingu-content-deploy/assets/logo/og-image-1200x630.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"외국인 한국 결제 시스템 deep dive","description":"深入了解韩国针对外国人的支付系统——12卡、支付和汇款 > 副标题：Naver Pay·KakaoPay·Samsung Pay·414·435后续深挖 第03期·527·2026-05-28 --- 🎯 为什么韩国的外国人支付系统很深入 国外No.1实用爱好者=支付系统深潜（414SIM·435货币兑换·398...","datePublished":"2026-05-01","inLanguage":"ko","url":"https://mgself414.github.io/keychingu-content-deploy/content/payment-system-deep.html","image":"https://mgself414.github.io/keychingu-content-deploy/assets/logo/og-image-1200x630.png","publisher":{"@type":"Organization","name":"KeyChinGu","logo":{"@type":"ImageObject","url":"https://mgself414.github.io/keychingu-content-deploy/assets/logo/logo_2-4_color_small.png"}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/main.css">
+<style>
+.detail-wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+}
+.breadcrumb {
+  font-size: 13px;
+  color: var(--text-soft);
+  margin-bottom: 24px;
+}
+.breadcrumb a { color: var(--red); font-weight: 600; }
+.detail-wrap h1 {
+  font-size: 28px; font-weight: 800;
+  color: var(--black); margin-bottom: 8px;
+}
+.detail-wrap h2 {
+  font-size: 22px; font-weight: 700;
+  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--red);
+}
+.detail-wrap h3 {
+  font-size: 17px; font-weight: 600;
+  color: var(--text-mid); margin-top: 20px; margin-bottom: 8px;
+}
+.detail-wrap p {
+  font-size: 15px; line-height: 1.7;
+  color: var(--text-mid); margin-bottom: 12px;
+}
+.detail-wrap ul {
+  padding-left: 20px; margin-bottom: 12px;
+}
+.detail-wrap li {
+  font-size: 14px; line-height: 1.6;
+  color: var(--text-mid); margin-bottom: 6px;
+}
+.detail-wrap table {
+  width: 100%; border-collapse: collapse;
+  margin-bottom: 16px; font-size: 13px;
+}
+.detail-wrap th {
+  background: var(--black); color: #fff;
+  padding: 10px 12px; text-align: left;
+  font-weight: 600; font-size: 11px;
+  text-transform: uppercase; letter-spacing: 0.06em;
+}
+.detail-wrap td {
+  padding: 10px 12px; border-bottom: 1px solid var(--border);
+  color: var(--text-mid);
+}
+.detail-wrap tr:nth-child(even) td { background: rgba(0,0,0,0.02); }
+.detail-wrap hr {
+  border: none; height: 1px;
+  background: var(--border); margin: 24px 0;
+}
+.detail-wrap code {
+  background: rgba(33,140,204,0.08);
+  padding: 2px 6px; border-radius: 4px;
+  font-size: 13px; color: var(--blue);
+}
+.detail-nav {
+  display: flex; justify-content: space-between;
+  margin-top: 48px; padding-top: 20px;
+  border-top: 1px solid var(--border);
+  font-size: 14px; font-weight: 600;
+}
+.share-bar {
+  display: flex; align-items: center; gap: 10px;
+  margin-top: 40px; padding: 16px 20px;
+  background: #f9f9f9; border-radius: 12px;
+  border: 1px solid var(--border);
+}
+.share-label {
+  font-size: 14px; font-weight: 600; color: var(--text-soft);
+  margin-right: 8px;
+}
+.share-btn {
+  width: 40px; height: 40px;
+  border: none; border-radius: 50%;
+  background: #fff; cursor: pointer;
+  font-size: 1.1rem; transition: all 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  display: inline-flex; align-items: center; justify-content: center;
+}
+.share-btn:hover { transform: translateY(-2px); box-shadow: 0 3px 8px rgba(0,0,0,0.15); }
+.share-twitter:hover { background: #000; color: #fff; }
+.share-facebook:hover { background: #1877f2; color: #fff; }
+.share-kakao:hover { background: #fee500; }
+.share-copy:hover { background: #218CCC; color: #fff; }
+/* EN toggle disabled — 영문판 미생성 콘텐츠 (2026-05-16 patch) */
+.lang-switch .lang-disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  text-decoration: line-through;
+  padding: 4px 10px;
+  color: var(--text-soft, #888);
+  font-size: 13px;
+  user-select: none;
+}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <div class="lang-switch">
+    <a href="../content/payment-system-deep.html" class="active">KR</a>
+    <a href="../content/payment-system-deep.en.html" >EN</a>
+  </div>
+</header>
+
+<main class="detail-wrap">
+  <nav class="breadcrumb" aria-label="breadcrumb"><a href="../index.html">전체 가이드</a> &rsaquo; 외국인 한국 결제 시스템 deep dive</nav>
+  <article>
+  <h1>深入了解韩国针对外国人的支付系统——12卡、支付和汇款</h1>
+<p>&gt; <strong>副标题</strong>：Naver Pay·KakaoPay·Samsung Pay·#414·#435后续深挖</p>
+<p>第03期·#527·2026-05-28</p>
+<hr>
+<h2>🎯 为什么韩国的外国人支付系统很深入</h2>
+<p>国外No.1实用爱好者=<strong>支付系统深潜</strong>（#414SIM·#435货币兑换·#398到货后续）。信用卡+Naver Pay+KakaoPay+Samsung Pay+外国人英语OK+WOWPASS全套。</p>
+<hr>
+<p>##★ 12个支付系统矩阵一览</p>
+<table><thead><tr>
+<th>＃</th>
+<th>支付/服务</th>
+<th>4轴</th>
+<th>签名</th>
+</tr></thead><tbody>
+<tr>
+<td>1</td>
+<td><strong>WOWPASS ★ 外国人#1借记卡</strong></td>
+<td>卡簇</td>
+<td>仅限外国人，货币兑换，交通，评分4.9</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Visa·万事达卡·海外信用卡</strong></td>
+<td>卡簇</td>
+<td>洋狂潮·#406·#449百货</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>旅行钱包·游记（国内出版）</strong></td>
+<td>卡簇</td>
+<td>外国人·#252·F-2爱好者</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Naver Pay ★ 韩国#1 Pay</strong></td>
+<td>支付集群</td>
+<td>国外狂热·KakaoTalk Pay·#516</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>KakaoPay（KakaoTalk 集成）</strong></td>
+<td>支付集群</td>
+<td>KakaoTalk 100%·#516·外国狂热</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>三星Pay·Apple Pay·Google Pay</strong></td>
+<td>支付集群</td>
+<td>国外爱好者·Galaxy·iPhone</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>投币支付（汇款/支付/二维码）</strong> ★</td>
+<td>支付集群</td>
+<td>老外英语OK·#516·MZ狂潮</td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>零支付（小企业主的二维码支付）</strong></td>
+<td>二维码集群</td>
+<td>传统市场·#380·国外狂热</td>
+</tr>
+<tr>
+<td>9</td>
+<td><strong>Kakao Bank、Toss Bank、Kookmin、Woori、Shinhan 国外开户</strong></td>
+<td>银行集群</td>
+<td>F-2·F-5·老外英语OK·#252</td>
+</tr>
+<tr>
+<td>10</td>
+<td>10 <strong>Wise·Revolut·Remitly（海外汇款）</strong> ★</td>
+<td>汇款集群</td>
+<td>外国狂热·第一名·英语OK</td>
+</tr>
+<tr>
+<td>11</td>
+<td>11 <strong>现金/ATM（24小时/仅限外国人）</strong></td>
+<td>现金集群</td>
+<td>外国狂热·#435·仁川机场</td>
+</tr>
+<tr>
+<td>12</td>
+<td>12 <strong>外国人支付综合套餐（KTO·Klook·KKday）</strong> ★</td>
+<td>集成集群</td>
+<td>英语OK，KTO认证，外国人第一名</td>
+</tr>
+</tbody></table>
+<p><strong>+附加4</strong>：外国人免税付款（退税#406）·外国人交通费（T-money#398·#414）·外国人送餐付款（Baemin，Yogiyo）·外国人丢失/补发（24小时呼叫中心）</p>
+<hr>
+<h2>⚠ 外国人常犯的5个错误</h2>
+<p>1. <strong>“韩国=只收现金”</strong>：韩国现金使用率=<strong>低于20%（截至2026年）+卡/支付80%+WOWPASS·Naver Pay·KakaoPay第一国外爱好者</strong> +#414集成。</p>
+<p>2. <strong>“外国信用卡=否”</strong>：Visa·Mastercard = <strong>99%商店使用OK + 外国爱好者#1 + 免税店、百货商店、外国人友好餐厅（#400）</strong> + 但在一些老字号商店和传统市场可以现金（#380）。</p>
+<p>3. <strong>“Naver Pay·KakaoPay = 外国人不能使用”</strong>：外国人OK = <strong>WOWPASS链接+外国人帐户（F-2·F-5）+韩国电话号码+1号外国人狂热</strong> + ␈MASK24​​␈·#398集成。</p>
+<p>4. <strong>“汇款=贵”</strong>：Wise·Revolut·Remitly = <strong>手续费0.5~1%（银行的1/5）+洋狂#1+英语OK</strong>+洋狂·#252综合。</p>
+<p>5. <strong>“卡丢失=无人接听”</strong>：24小时呼叫中心= <strong>外国人英语OK呼叫中心（Visa·万事达卡·新韩·国民）+卡立即暂停+1~3天补发</strong>+#405安全集成。</p>
+<hr>
+<h2>① 卡簇（3）</h2>
+<h3>1. WOWPASS ★外国人#1借记卡</h3>
+<ul>
+<li>仅限外国人，货币兑换，交通，评分4.9</li>
+<li>外国人★：◎◎ — 外国人狂热#1·KTO认证·#178</li>
+<li>签名：整合No.1国外爱好者·#398·#435</li>
+</ul>
+<h3>2. Visa·万事达·海外信用卡</h3>
+<ul>
+<li>99%店·国外爱好者·#406·#449</li>
+<li>外国人★：◎◎ — 外国人狂热·#406·#449</li>
+<li>签名：No.1外国爱好者、免税店、百货公司</li>
+</ul>
+<h3>3.旅行钱包·旅行日志（国内发布）</h3>
+<ul>
+<li>F-2、F-5、外国常驻爱好者</li>
+<li>外国人★：◎◎ — 外国人·#252·F-2爱好者</li>
+<li>签名：外籍常驻爱好者·#252整合</li>
+</ul>
+<hr>
+<h2>② 薪酬集群 (4)</h2>
+<h3>4. Naver Pay ★ 韩国#1 Pay</h3>
+<ul>
+<li>国外狂热·KakaoTalk Pay·#516</li>
+<li>外国人★：◎◎ — 外国人狂热·#516整合</li>
+<li>签名：外国狂热·#516·#178整合</li>
+</ul>
+<h3>5.KakaoPay（KakaoTalk 集成）</h3>
+<ul>
+<li>KakaoTalk 100%·#516·国外爱好者</li>
+<li>外国人★：◎◎ — KakaoTalk 100%·#516·外国人狂热</li>
+<li>签名：外国狂热·#516整合</li>
+</ul>
+<h3>6.三星Pay·Apple Pay·Google Pay</h3>
+<ul>
+<li>Galaxy·iPhone·国外爱好者</li>
+<li>外国人★：◎◎ — Galaxy·iPhone·外国狂热</li>
+<li>签名：外国狂热·MZ 1st Street</li>
+</ul>
+<h3>7. Toss Pay ★ 汇款/支付/二维码</h3>
+<ul>
+<li>老外英语OK·#516·MZ Mania</li>
+<li>老外★：◎◎ — 老外英语OK·#516·MZ Mania</li>
+<li>签名：国外MZ爱好者·#516集成</li>
+</ul>
+<hr>
+<h2>③二维码·银行·汇款集群（3）</h2>
+<h3>8. 零支付（小企业主的二维码支付）</h3>
+<ul>
+<li>传统市场·#380·国外狂热</li>
+<li>外国人★：◎◎ — 传统市场·#380·外国人狂热</li>
+<li>签名：外国狂热·#380整合</li>
+</ul>
+<h3>9. 外国银行账户（Kakao、Toss、Kookmin、Woori、Shinhan）</h3>
+<ul>
+<li>F-2·F-5·外国人英语OK·#252</li>
+<li>外国人★：◎◎ — F-2·F-5·外国人英语OK·#252</li>
+<li>签名：外国狂热·#252整合</li>
+</ul>
+<h3>10.Wise·Revolut·Remitly★海外汇款</h3>
+<ul>
+<li>外国爱好者，第一名，英语OK</li>
+<li>外国人★：◎◎ — 外国人爱好者，第一优先，英语OK</li>
+<li>签名：国外第一爱好者与#252的融合</li>
+</ul>
+<hr>
+<h2>④ 现金/综合集群（2 + 额外 4）</h2>
+<h3>11.现金·ATM（24小时·仅限外国人ATM）</h3>
+<ul>
+<li>外国狂热·#435·仁川机场</li>
+<li>外国人★：◎◎ — 外国人狂热·#435·仁川机场</li>
+<li>签名：国外狂潮·#435·#398综合</li>
+</ul>
+<h3>12.国外支付综合套餐★ KTO·Klook·KKday</h3>
+<ul>
+<li>英语OK，KTO认证，外国人第一名</li>
+<li>外国人★：◎◎ — 英语OK，KTO认证，外国人第一优先</li>
+<li>签名：国外狂潮·#178·#406·#449集成</li>
+</ul>
+<h3>+ 添加 4</h3>
+<ul>
+<li><strong>外国人免税付款（退税#406）</strong> — 外国人狂热·#406综合</li>
+<li><strong>国外交通支付（T-money#398·#414）</strong> — 国外狂热·#398·#414</li>
+<li><strong>外国人送餐付款（Baemin、Yogiyo）</strong> — 外国人可以使用英语，#400已集成</li>
+<li><strong>外国人遗失/补发（24小时呼叫中心）</strong> — 外国人英语OK·#405集成</li>
+</ul>
+<hr>
+<h2>⚙ 6 个常见问题解答</h2>
+<p>1. <strong>外国人优先</strong>：WOWPASS·Visa·Mastercard·Naver Pay·KakaoPay全套。</p>
+<p>2. <strong>国外Pay</strong>：5种：Naver Pay、KakaoPay、Samsung Pay、Apple Pay、Toss Pay。</p>
+<p>3. <strong>国外汇款</strong>：Wise·Revolut·Remitly 0.5~1%佣金第一名。</p>
+<p>4. <strong>外国人开户</strong>：F-2·F-5·外国人英语OK·Kakao·Toss·韩语。</p>
+<p>5. <strong>外国人遗失/补发</strong>：24小时呼叫中心，外国人英语OK，立即暂停。</p>
+<p>6. <strong>外国人整合</strong>：WOWPASS + Visa + Naver Pay + KakaoPay + Wise全套。</p>
+<hr>
+<h2>🗺 3门针对外国人的全日制课程</h2>
+<h3>A.全天国外支付介绍（#398·#527）</h3>
+<ul>
+<li>09:00 到达仁川机场 → WOWPASS 发行 → T-money 充值 → 10:00 明洞货币兑换 → 13:00 外国人友好餐厅（签证） → 18:00 免税店付款（#406）</li>
+</ul>
+<h3>B. 开设海外居住1周账户（#252·#527）</h3>
+<ul>
+<li>第1~2天：WOWPASS + 韩国电话号码(#414) + 韩国语学校(#403)</li>
+<li>第3~5天：国外开户（Kakao·Toss）+Naver Pay·KakaoPay联动</li>
+<li>第6~7天：Wise·Revolut汇款设置+国外爱好者</li>
+</ul>
+<h3>C. 外国人全套课程（#398·#414·#435·#527）</h3>
+<ul>
+<li>WOWPASS + Visa + Naver Pay + KakaoPay + Toss Pay + Wise + 老外英语OK呼叫中心全套</li>
+</ul>
+<hr>
+<h2>第五季</h2>
+<ul>
+<li><strong>春季三月~五月</strong>：外国狂热·#385·新学期（#403韩语）</li>
+<li><strong>夏季六月~八月</strong>：国外爱好者全套及暑假付款</li>
+<li><strong>秋季9月~11月</strong>：外国狂热·#385·新学期(#403)</li>
+<li><strong>冬季12月~2月</strong>：国外爱好者，年终结算，年终结算</li>
+<li><strong>全年</strong>：12个支付系统+第一名外国爱好者</li>
+</ul>
+<hr>
+<h2>🔗 相关</h2>
+<ul>
+<li>#178外国人初次来访·#252外国人居住·#380传统市场·#398到达·#400外国人友好餐厅·#403韩国语学校·#405紧急/安全·#406值班免费商店·#414SIM通讯·#435货币兑换·#449购物商城·#516SNS·#522元索引·#526沃霍尔</li>
+</ul>
+<h2>🏷标签</h2>
+<p><code>#외국인한국결제시스템deepdive</code> <code>#KoreaForeignerPaymentSystem</code> <code>#WOWPASS외국인1직불카드환전교통4.9</code> <code>#VisaMastercard99%매장외국인매니아</code> <code>#트래블월렛트래블로그F2F5거주</code> <code>#NaverPay한국1페이외국인매니아</code> <code>#KakaoPayKakaoTalk통합100%</code> <code>#삼성페이ApplePayGooglePay갤럭시iPhone</code> <code>#TossPay송금결제QR영어OKMZ</code> <code>#ZeroPay소상공인QR전통시장␈MASK102␈</code> <code>#외국인은행카카오토스국민우리신한F2F5</code> <code>#WiseRevolutRemitly해외송금수수료1%</code> <code>#현금ATM24h외국인전용인천공항␈MASK103␈</code> <code>#KTOKlookKKday결제패키지영어OK</code> <code>#택스리펀드␈MASK104␈T-money␈MASK105␈␈MASK106␈배민요기요</code> <code>␈MASK107␈h콜센터분실재발급␈MASK108␈</code> <code>#키친구</code></p>
+  </article>
+
+  <div class="share-bar">
+    <span class="share-label">공유</span>
+    <button class="share-btn share-twitter" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent('외국인 한국 결제 시스템 deep dive') + '&url=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Twitter">𝕏</button>
+    <button class="share-btn share-facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Facebook">f</button>
+    <button class="share-btn share-kakao" onclick="navigator.share ? navigator.share({title: '외국인 한국 결제 시스템 deep dive', url: window.location.href}) : navigator.clipboard.writeText(window.location.href).then(function() { alert('링크 복사됨!'); })" aria-label="Kakao/Share">📤</button>
+    <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href).then(function() { this.textContent = '✓'; setTimeout(function() { document.querySelector('.share-copy').textContent = '🔗'; }, 1500); }.bind(this))" aria-label="Copy link">🔗</button>
+  </div>
+
+  <nav class="detail-nav" aria-label="previous-next">
+    <div><a href="working-holiday-deep.html" style="color:var(--red);">&larr; 외국인 워킹홀리데이·H-1 비자 deep dive</a></div>
+    <div><a href="pharmacy-healthcare.html" style="color:var(--red);">외국인 약국·헬스케어 deep dive &rarr;</a></div>
+  </nav>
+</main>
+
+<footer class="site-footer">
+  <p><a href="https://instagram.com/keychingu.korea" target="_blank">@keychingu.korea</a> &mdash; Seoul for MZ FIT Travelers</p>
+</footer>
+</body>
+</html>

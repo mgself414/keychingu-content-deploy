@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>외국인 한국 가을 단풍 카페 cluster 12선 deep dive — KeyChinGu</title>
+<meta name="description" content="外国人韓国秋紅葉カフェ cluster 12選 deep dive — 韓屋カフェ・屋上・ビュー・郊外フルセット > メタ: 外国人 lifecycle シーズン・カフェ軸・秋紅葉カフェ cluster カテゴリ・12選 4軸（韓屋カフェ・屋上カフェ・ビューカフェ・外郭カフェ） > > 運営情報検証：2026-0...">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="192x192" href="../assets/logo/favicon-192.png">
+<link rel="apple-touch-icon" href="../assets/logo/favicon-192.png">
+<link rel="canonical" href="https://mgself414.github.io/keychingu-content-deploy/content/fall-cafe-cluster.html">
+<link rel="alternate" hreflang="ko" href="https://mgself414.github.io/keychingu-content-deploy/content/fall-cafe-cluster.html">
+<link rel="alternate" hreflang="en" href="https://mgself414.github.io/keychingu-content-deploy/content/fall-cafe-cluster.en.html">
+<link rel="alternate" hreflang="x-default" href="https://mgself414.github.io/keychingu-content-deploy/content/fall-cafe-cluster.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="외국인 한국 가을 단풍 카페 cluster 12선 deep dive">
+<meta property="og:description" content="外国人韓国秋紅葉カフェ cluster 12選 deep dive — 韓屋カフェ・屋上・ビュー・郊外フルセット > メタ: 外国人 lifecycle シーズン・カフェ軸・秋紅葉カフェ cluster カテゴリ・12選 4軸（韓屋カフェ・屋上カフェ・ビューカフェ・外郭カフェ） > > 運営情報検証：2026-0...">
+<meta property="og:url" content="https://mgself414.github.io/keychingu-content-deploy/content/fall-cafe-cluster.html">
+<meta property="og:image" content="https://mgself414.github.io/keychingu-content-deploy/assets/logo/og-image-1200x630.png">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="외국인 한국 가을 단풍 카페 cluster 12선 deep dive">
+<meta name="twitter:description" content="外国人韓国秋紅葉カフェ cluster 12選 deep dive — 韓屋カフェ・屋上・ビュー・郊外フルセット > メタ: 外国人 lifecycle シーズン・カフェ軸・秋紅葉カフェ cluster カテゴリ・12選 4軸（韓屋カフェ・屋上カフェ・ビューカフェ・外郭カフェ） > > 運営情報検証：2026-0...">
+<meta name="twitter:image" content="https://mgself414.github.io/keychingu-content-deploy/assets/logo/og-image-1200x630.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"외국인 한국 가을 단풍 카페 cluster 12선 deep dive","description":"外国人韓国秋紅葉カフェ cluster 12選 deep dive — 韓屋カフェ・屋上・ビュー・郊外フルセット > メタ: 外国人 lifecycle シーズン・カフェ軸・秋紅葉カフェ cluster カテゴリ・12選 4軸（韓屋カフェ・屋上カフェ・ビューカフェ・外郭カフェ） > > 運営情報検証：2026-0...","datePublished":"2026-05-01","inLanguage":"ko","url":"https://mgself414.github.io/keychingu-content-deploy/content/fall-cafe-cluster.html","image":"https://mgself414.github.io/keychingu-content-deploy/assets/logo/og-image-1200x630.png","publisher":{"@type":"Organization","name":"KeyChinGu","logo":{"@type":"ImageObject","url":"https://mgself414.github.io/keychingu-content-deploy/assets/logo/logo_2-4_color_small.png"}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/main.css">
+<style>
+.detail-wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+}
+.breadcrumb {
+  font-size: 13px;
+  color: var(--text-soft);
+  margin-bottom: 24px;
+}
+.breadcrumb a { color: var(--red); font-weight: 600; }
+.detail-wrap h1 {
+  font-size: 28px; font-weight: 800;
+  color: var(--black); margin-bottom: 8px;
+}
+.detail-wrap h2 {
+  font-size: 22px; font-weight: 700;
+  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--red);
+}
+.detail-wrap h3 {
+  font-size: 17px; font-weight: 600;
+  color: var(--text-mid); margin-top: 20px; margin-bottom: 8px;
+}
+.detail-wrap p {
+  font-size: 15px; line-height: 1.7;
+  color: var(--text-mid); margin-bottom: 12px;
+}
+.detail-wrap ul {
+  padding-left: 20px; margin-bottom: 12px;
+}
+.detail-wrap li {
+  font-size: 14px; line-height: 1.6;
+  color: var(--text-mid); margin-bottom: 6px;
+}
+.detail-wrap table {
+  width: 100%; border-collapse: collapse;
+  margin-bottom: 16px; font-size: 13px;
+}
+.detail-wrap th {
+  background: var(--black); color: #fff;
+  padding: 10px 12px; text-align: left;
+  font-weight: 600; font-size: 11px;
+  text-transform: uppercase; letter-spacing: 0.06em;
+}
+.detail-wrap td {
+  padding: 10px 12px; border-bottom: 1px solid var(--border);
+  color: var(--text-mid);
+}
+.detail-wrap tr:nth-child(even) td { background: rgba(0,0,0,0.02); }
+.detail-wrap hr {
+  border: none; height: 1px;
+  background: var(--border); margin: 24px 0;
+}
+.detail-wrap code {
+  background: rgba(33,140,204,0.08);
+  padding: 2px 6px; border-radius: 4px;
+  font-size: 13px; color: var(--blue);
+}
+.detail-nav {
+  display: flex; justify-content: space-between;
+  margin-top: 48px; padding-top: 20px;
+  border-top: 1px solid var(--border);
+  font-size: 14px; font-weight: 600;
+}
+.share-bar {
+  display: flex; align-items: center; gap: 10px;
+  margin-top: 40px; padding: 16px 20px;
+  background: #f9f9f9; border-radius: 12px;
+  border: 1px solid var(--border);
+}
+.share-label {
+  font-size: 14px; font-weight: 600; color: var(--text-soft);
+  margin-right: 8px;
+}
+.share-btn {
+  width: 40px; height: 40px;
+  border: none; border-radius: 50%;
+  background: #fff; cursor: pointer;
+  font-size: 1.1rem; transition: all 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  display: inline-flex; align-items: center; justify-content: center;
+}
+.share-btn:hover { transform: translateY(-2px); box-shadow: 0 3px 8px rgba(0,0,0,0.15); }
+.share-twitter:hover { background: #000; color: #fff; }
+.share-facebook:hover { background: #1877f2; color: #fff; }
+.share-kakao:hover { background: #fee500; }
+.share-copy:hover { background: #218CCC; color: #fff; }
+/* EN toggle disabled — 영문판 미생성 콘텐츠 (2026-05-16 patch) */
+.lang-switch .lang-disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  text-decoration: line-through;
+  padding: 4px 10px;
+  color: var(--text-soft, #888);
+  font-size: 13px;
+  user-select: none;
+}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <div class="lang-switch">
+    <a href="../content/fall-cafe-cluster.html" class="active">KR</a>
+    <a href="../content/fall-cafe-cluster.en.html" >EN</a>
+  </div>
+</header>
+
+<main class="detail-wrap">
+  <nav class="breadcrumb" aria-label="breadcrumb"><a href="../index.html">전체 가이드</a> &rsaquo; 외국인 한국 가을 단풍 카페 cluster 12선 deep dive</nav>
+  <article>
+  <h1>外国人韓国秋紅葉カフェ cluster 12選 deep dive — 韓屋カフェ・屋上・ビュー・郊外フルセット</h1>
+<p>&gt; <strong>メタ</strong>: 外国人 lifecycle シーズン・カフェ軸・秋紅葉カフェ cluster カテゴリ・12選 4軸（韓屋カフェ・屋上カフェ・ビューカフェ・外郭カフェ）</p>
+<p>&gt;</p>
+<p>&gt; <strong>運営情報検証</strong>：2026-06-04基準（visitkorea・visitseoul・インスタマニア検証・気象庁）。</p>
+<p>&gt;</p>
+<p>&gt; <strong>シリーズcross-ref</strong>：#225カフェマトリックス・#381カフェストリートマトリックス・#557韓屋カフェdeep・#737南山紅葉・#740ソウル森+聖水・␈MAS</p>
+<hr>
+<p>＃＃なぜ秋の紅葉カフェclusterなのか - 外国人マニアインスタ</p>
+<p>ソウルカフェ+秋の紅葉fusionは<strong>外国人インスタマニア1ランク</strong>・室内+紅葉ビュー+韓屋・屋上・ビューカフェフルセット。都心（#737）・MZ（#740）・漢江（#741）との差別：</p>
+<ul>
+<li><strong>屋内フルセット</strong>：雨+寒さX・外国人マニア安全</li>
+<li><strong>インスタ spot</strong>: 軒+紅葉・屋上+紅葉 panorama・窓+紅葉 layer</li>
+<li><strong>culture + MZ fusion</strong>：韓屋カフェ（#379 cross） + MZカフェ（#740 cross）</li>
+<li><strong>シーズンfit</strong>: 温かい飲み物</li>
+</ul>
+<p>本マトリックスは韓屋カフェ3線+屋上カフェ3線+ビューカフェ3線+外郭デイトリップカフェ3線=12線4軸。</p>
+<hr>
+<p>＃＃12線4軸</p>
+<p>＃＃＃軸1：韓屋カフェ（3選）</p>
+<h4>1. 益善洞 韓屋カフェ cluster — 韓国 #1 韓屋カフェ通り</h4>
+<ul>
+<li><strong>差別</strong>: <strong>益善洞韓屋カフェ街・100+韓屋+カフェfusion・軒+紅葉インスタ1順位</strong>・#557 cross</li>
+<li><strong>紅葉時期</strong>: 10/下旬～11/秒 (都心紅葉+韓屋軒フルセット)</li>
+<li><strong>運営</strong>：カフェ別10:00～22:00・一人当たり10,000ウォン～20,000ウォン</li>
+<li><strong>外国人fit</strong>: ★★★★★ EN・JP・CN MZ + culture マニア 1ランク</li>
+<li><strong>best cafe</strong>: 益善洞1933・中庭韓屋カフェ・清水堂</li>
+<li><strong>交通</strong>：鍾路3街駅（1・3・5号線）6番出口</li>
+</ul>
+<h4>2. 北村韓屋カフェ — 北村韓屋村 + 秋の紅葉</h4>
+<ul>
+<li><strong>差別</strong>: <strong>北村韓屋村(UNESCO) + 韓屋カフェ + 紅葉 fusion</strong>・culture マニア 1位</li>
+<li><strong>紅葉時期</strong>: 10/下旬～11/秒</li>
+<li><strong>bestカフェ</strong>: cha masida・北村カフェ・三清洞韓屋カフェ</li>
+<li><strong>外国人fit</strong>: ★★★★★ EN・JP・CN + 韓服+紅葉マニア 1ランク</li>
+<li><strong>交通</strong>：安国駅（3号線）2番出口</li>
+<li><strong>連携</strong>：景福宮(#379) + 北村韓屋 + カフェフルセット</li>
+</ul>
+<h4>3. 西村韓屋カフェ — 仁王山紅葉 + 韓屋 fusion</h4>
+<ul>
+<li><strong>差別</strong>: <strong>西村+仁王山紅葉+韓屋カフェ・マニア1ランク</strong>・仁王山(338m)散歩+カフェfusion</li>
+<li><strong>紅葉時期</strong>: 10/下旬～11/秒</li>
+<li><strong>best cafe</strong>: 統義洞保安旅館・西村韓屋カフェ・チャンソンドンカフェ</li>
+<li><strong>外国人fit</strong>: ★★★★ MZ + cultureマニア・<strong>約15,000ウォン/人</strong></li>
+<li><strong>交通</strong>：景福宮駅（3号線）1・2番出口</li>
+<li><strong>連携</strong>: 仁王山 hiking (#738 cross) + 西村カフェフルセット</li>
+</ul>
+<p>＃＃＃軸2：屋上カフェ（3選）</p>
+<h4>4. 聖水屋上カフェ — MZマニア 1位 (#740 cross)</h4>
+<ul>
+<li><strong>差別</strong>: <strong>聖水屋上カフェ+秋の紅葉 panorama・MZインスタ1順位</strong>・#740 cross</li>
+<li><strong>紅葉時期</strong>: 10/下旬～11/秒</li>
+<li><strong>best cafe</strong>: Daelim Changgo (倉庫型+屋上)・Tongue・Layer 57</li>
+<li><strong>外国人fit</strong>: ★★★★★ MZ +インスタ1ランク</li>
+<li><strong>インスタ best</strong>: 屋上+紅葉+聖水パロマ(インスタ#1)</li>
+</ul>
+<h4>5.江南・狎鴎亭屋上カフェ — ラグジュアリーマニア</h4>
+<ul>
+<li><strong>差別</strong>: <strong>江南・狎鴎亭屋上カフェ+ラグジュアリービュー+秋の紅葉</strong>・ラグジュアリーマニア1ランク</li>
+<li><strong>紅葉時期</strong>: 10/下旬～11/秒</li>
+<li><strong>bestカフェ</strong>：清潭アルディフ・狎鴎亭カフェ通り・江南ラグジュアリーカフェ</li>
+<li><strong>外国人fit</strong>: ★★★★ MZ + ラグジュアリーマニア・<strong>20,000ウォン～50,000ウォン/人</strong></li>
+<li><strong>交通</strong>：江南駅・狎鴎亭駅フルセット</li>
+</ul>
+<h4>6. 望遠・合井屋上カフェ — 漢江ビュー + 紅葉</h4>
+<ul>
+<li><strong>差別</strong>: <strong>望遠・合井屋上カフェ+漢江ビュー(#741 cross) +紅葉</strong>・MZマニア</li>
+<li><strong>紅葉時期</strong>: 10/下旬～11/秒</li>
+<li><strong>bestカフェ</strong>：望遠洞屋上カフェ・ハプジョンハンガンビューカフェ</li>
+<li><strong>外国人fit</strong>: ★★★★ MZ +漢江マニア</li>
+<li><strong>連携</strong>：望遠漢江公園+屋上カフェフルセット</li>
+</ul>
+<p>＃＃＃軸3：ビューカフェ（3選）</p>
+<h4>7.南山Nソウルタワービューカフェ（#737 cross）</h4>
+<ul>
+<li><strong>差別</strong>: <strong>Nソウルタワーサミットビューカフェ + 360度紅葉 panorama</strong>・外国人マニア1位</li>
+<li><strong>紅葉時期</strong>: 10/下旬～11/秒</li>
+<li><strong>運営</strong>：11:00～22:00・人当たり25,000ウォン～50,000ウォン</li>
+<li><strong>外国人fit</strong>: ★★★★ EN・JP・CN + ラグジュアリーマニア・<strong>有料 30,000ウォン</strong></li>
+<li><strong>連携</strong>：南山紅葉（#737）＋ビューカフェフルセット</li>
+</ul>
+<h4>8.チャムシルロッテタワーSEOULSKYビューカフェ（#710 cross）</h4>
+<ul>
+<li><strong>差別</strong>: <strong>ロッテタワー555m +漢江ビュー+秋の紅葉パノラマ</strong>・ラグジュアリーマニア1ランク</li>
+<li><strong>紅葉時期</strong>: 10/下旬～11/秒</li>
+<li><strong>運営</strong>：09:30～22:00・一人当たり30,000ウォン～80,000ウォン(入場料込み50,000ウォン)</li>
+<li><strong>外国人fit</strong>: ★★★★ ラグジュアリーマニア・<strong>有料50,000ウォン</strong></li>
+<li><strong>連携</strong>：漢江+蚕室+ロッテタワーフルセット</li>
+</ul>
+<h4>9.漢江ビューカフェcluster</h4>
+<ul>
+<li><strong>差別</strong>: <strong>漢江ビューカフェ+紅葉+夜景フルセット</strong>・#741 cross</li>
+<li><strong>bestカフェ</strong>: バンポカフェ・汝矣島カフェ・トゥクソムカフェ</li>
+<li><strong>外国人fit</strong>: ★★★★ MZ +漢江マニア</li>
+<li><strong>連携</strong>：漢江散歩+ビューカフェフルセット</li>
+</ul>
+<p>＃＃＃軸4：アウトラインデイトリップカフェ（3選）</p>
+<h4>10.加平カフェストリート - 北漢江ビュー+紅葉（#739 cross）</h4>
+<ul>
+<li><strong>差別</strong>: <strong>加平カフェ通り・北漢江ビュー+紅葉+外郭1ランク</strong>・外国人マニア1ランク</li>
+<li><strong>紅葉時期</strong>：10/中旬～11/秒（外郭+2～3日早い）</li>
+<li><strong>bestカフェ</strong>：加平カフェ通り・南怡島横カフェ</li>
+<li><strong>外国人fit</strong>: ★★★★★ MZ +家族+マニア</li>
+<li><strong>交通</strong>: 加平駅(ITX・1時間・8,000ウォン)・徒歩10分</li>
+</ul>
+<h4>11. 楊平豆腐カフェ — 霧+紅葉 fusion (#739 cross)</h4>
+<ul>
+<li><strong>差別</strong>: <strong>楊平頭髪霧+紅葉+漢江フルセット</strong>・インスタマニア1ランク</li>
+<li><strong>紅葉時期</strong>: 10/下旬～11/秒</li>
+<li><strong>bestカフェ</strong>: 頭髪カフェ・セミウォン横カフェ</li>
+<li><strong>外国人fit</strong>: ★★★★ MZ +マニア1ランク</li>
+<li><strong>交通</strong>：陽水駅（京義中央線）・徒歩30分</li>
+</ul>
+<h4>12.坡州・ヘイリーカフェ通り — 外国人 walkable + 秋 (#739 cross 郊外)</h4>
+<ul>
+<li><strong>差別</strong>: <strong>坡州・ヘイリーカフェ通り・外国人 walkable + 秋の紅葉 + ギャラリーフルセット</strong></li>
+<li><strong>紅葉時期</strong>: 10/下旬～11/秒</li>
+<li><strong>best cafe</strong>: 平井芸術村カフェ・坡州英語村カフェ</li>
+<li><strong>外国人fit</strong>: ★★★★ MZ + culture +マニア</li>
+<li><strong>交通</strong>：坡州駅（京義中央線・1時間30分）・シャトルフルセット</li>
+</ul>
+<hr>
+<h2>⚠️ 精度検証</h2>
+<p><strong>検証完了</strong>（2026-06-04基準）：</p>
+<ul>
+<li>益善洞・北村・西村韓屋カフェの距離検証（visitkorea・#557 cross）</li>
+<li>聖水屋上カフェフルセット検証（visitseoul・#740 cross）</li>
+<li>Nソウルタワービューカフェ 11:00～22:00 (nseoultower.co.kr)</li>
+<li>チャムシルロッテタワーSEOULSKY 09:30～22:00・50,000ウォン (lwt.co.kr)</li>
+<li>加平・楊平カフェ通り（visitkorea・#739 cross）</li>
+<li>紅葉絶頂10/27～11/2（気象庁平年）</li>
+</ul>
+<p><strong>注意</strong>:</p>
+<ul>
+<li>カフェ運営時間=カフェ別変動・1週間前にインスタ確認推奨</li>
+<li>絶頂週（10/27～11/2）完売早・1時間+待機可能</li>
+<li>外郭カフェ＝平日運営時間短縮（月・火休み多）</li>
+</ul>
+<hr>
+<h2>FAQ 6</h2>
+<h3>Q1.外国人初の紅葉カフェベスト？</h3>
+<ul>
+<li><strong>cultureマニア</strong>：イクソンドン（#1）・北村（#2）・西村（#3）韓屋カフェフルセット</li>
+<li><strong>MZインスタ</strong>：ソンス（#4）屋上カフェ・#740 cross</li>
+<li><strong>ラグジュアリー</strong>：Nソウルタワー（#7）・ロッテタワー（#8）ビューカフェ</li>
+<li><strong>アウトライン</strong>：加平・楊平・坡州（#10・#11・#12）</li>
+</ul>
+<h3>Q2.秋のカフェメニューベスト？</h3>
+<ul>
+<li><strong>外国人マニア1位</strong>: カボチャラテ・サツマイモラテ・夜ラテ・人節味トースト</li>
+<li><strong>伝統マニア</strong>：漢方茶・修正科・食恵・伝統韓課</li>
+<li><strong>ラグジュアリー</strong>: かぼちゃケーキ・焼きクルミラテ・ハニーラテ</li>
+<li><strong>外郭カフェ追加</strong>: 暖かいオオムシ・フナパンフルセット</li>
+</ul>
+<h3>Q3.紅葉絶頂カフェベスト時期？</h3>
+<ul>
+<li><strong>都心</strong>: 10/27～11/2 (1週間・韓屋・屋上・ビューカフェ)</li>
+<li><strong>アウトライン</strong>：10/25～11/5（アウトライン+2～3日早い）</li>
+<li><strong>best 平日</strong>: 10/28 火・10/29 水・10/30 木（インファXカフェプール）</li>
+<li><strong>バックアップ</strong>: 11/3後落葉+カフェ軒フルセット</li>
+</ul>
+<h3>Q4.コストは？ (コース別)</h3>
+<ul>
+<li><strong>低コスト（韓屋カフェ）</strong>：10,000ウォン〜15,000ウォン/人（1杯+デザート）</li>
+<li><strong>MZ屋上カフェ</strong>：15,000ウォン〜25,000ウォン/人</li>
+<li><strong>ビューカフェ（Nソウルタワー・ロッテタワー）</strong>：30,000ウォン〜80,000ウォン/人</li>
+<li><strong>郊外のday-trip +カフェ</strong>: 30,000ウォン～50,000ウォン/人 + 交通</li>
+</ul>
+<h3>Q5.雨の日のベスト？</h3>
+<ul>
+<li><strong>韓屋カフェ（#1・#2・#3）</strong>：軒＋雨＋紅葉インスタ1位</li>
+<li><strong>ビューカフェ（#7・#8）</strong>：屋内+紅葉パノラマ（非Xプール）</li>
+<li><strong>ハチミツチップ</strong>：雨+韓屋カフェ軒=外国人マニアインスタ1位</li>
+</ul>
+<h3>Q6. K-ドラマ・K-popマニアfit?</h3>
+<ul>
+<li><strong>K-ドラマ撮影地カフェ</strong>：トッケビ・イテウォンクラッツ・#743 cross</li>
+<li><strong>イクソンドン</strong>:一部K-ドラマ撮影地・インスタマニア</li>
+<li><strong>ソンス</strong>: NewJeans・BLACKPINKインスタマニア spot</li>
+<li><strong>連携</strong>：#743紅葉K-ドラマ撮影地フルセット</li>
+</ul>
+<hr>
+<p>##フルデーコース3</p>
+<p>＃＃＃コースA - 外国人初心者カフェ（3時間）</p>
+<ul>
+<li><strong>14:00</strong> 鍾路3街駅6番出口 → 益善洞韓屋カフェ (1時間・15,000ウォン)</li>
+<li><strong>15:00</strong>イクソンドン散歩+韓屋軒のインスタ</li>
+<li><strong>16:00</strong> 北村韓屋カフェ（1時間・15,000ウォン）</li>
+<li><strong>17:00</strong>仕上げ</li>
+<li><strong>総費用</strong>：約30,000ウォン/人（〜23 USD）</li>
+</ul>
+<p>＃＃＃コースB - MZマニア（5時間）</p>
+<ul>
+<li><strong>13:00</strong>ソウル森駅4番出口→ソウル森+鹿園（#740・1時間）</li>
+<li><strong>14:00</strong>聖水カフェランチ（1時間・20,000ウォン）</li>
+<li><strong>15:00</strong>聖水屋上カフェ（1時間・20,000ウォン）</li>
+<li><strong>16:00</strong> デミュージアム(1.5時間・18,000ウォン)</li>
+<li><strong>17:30</strong> 仕上げ</li>
+<li><strong>総費用</strong>：約60,000ウォン/人（〜46 USD）</li>
+</ul>
+<p>＃＃＃コースC - ラグジュアリーマニア1泊2日（市内中心部+郊外）</p>
+<ul>
+<li><strong>Day 1午前</strong>: 南山+ Nソウルタワービューカフェ (#7・30,000ウォン)</li>
+<li><strong>Day 1 午後</strong>: 蚕室ロッテタワー SEOULSKY (#8・50,000ウォン)</li>
+<li><strong>Day 1夜</strong>: 漢江ビューカフェ (#9・25,000ウォン)</li>
+<li><strong>Day 1宿泊</strong>：江南の高級ホテル（30万ウォン〜50万ウォン/泊）</li>
+<li><strong>Day 2午前</strong>: 加平1day-trip (#739・ITX 1時間)</li>
+<li><strong>Day 2後半</strong>:加平カフェ通り+ナミ島(#739)</li>
+<li><strong>総費用</strong>：約40〜70万ウォン/人（〜310〜540 USD）</li>
+</ul>
+<hr>
+<p>＃＃シーズン5 - 秋の4週間の段階的な傾向</p>
+<h3>1駐車場 (10/13～10/19) — 紅葉スタート + 秋メニュースタート</h3>
+<ul>
+<li><strong>紅葉</strong>: 10%</li>
+<li><strong>秋メニュー</strong>：カボチャ・サツマイモ・夜ラテ登場</li>
+<li><strong>外国人マニア</strong>: スタート・平日best</li>
+</ul>
+<h3>2週目 (10/20～10/26) — 50% 紅葉</h3>
+<ul>
+<li><strong>紅葉</strong>：50％・韓屋カフェ軒＋紅葉</li>
+<li><strong>外国人マニア</strong>: ↑・屋上カフェ+ビューカフェ</li>
+</ul>
+<h3>3週目 (10/27~11/2) — <strong>紅葉絶頂BEST</strong></h3>
+<ul>
+<li><strong>紅葉</strong>：90％・カフェマニア1ランク</li>
+<li><strong>外国人マニア</strong>：1ランク</li>
+<li><strong>best平日</strong>：10/28火・10/29水・10/30木</li>
+<li><strong>インスタ spot</strong>: イクソンドン軒+紅葉・聖水屋上+紅葉</li>
+</ul>
+<p>＃＃＃4週目（11/3〜11/9） - 紅葉の後半+イチョウの黄金</p>
+<ul>
+<li><strong>紅葉</strong>：70％+落葉</li>
+<li><strong>イチョウの木</strong>：黄金のピーク（#740ソウルフォレストイチョウの道+韓屋カフェ）</li>
+<li><strong>外国人マニア</strong>：雰囲気+落葉インスタ</li>
+</ul>
+<h3>5週目 (11/10~) — 紅葉終了・冬メニュー開始</h3>
+<ul>
+<li><strong>紅葉</strong>：終わり</li>
+<li><strong>冬のメニュー</strong>: 魚墨・焼きパン・暖かいお茶フルセット</li>
+<li><strong>次</strong>: 冬カフェcluster (イルミネーション)</li>
+</ul>
+<hr>
+<h2>Tip 5</h2>
+<h3>Tip 1 — 平日 + 14:00～16:00 (カフェインスタ best)</h3>
+<ul>
+<li><strong>best</strong>：平日14:00～16:00（日光+紅葉+人波X）</li>
+<li><strong>週末回避</strong>：土・日1時間+待機・完売</li>
+<li><strong>ハニーチップ</strong>：平日09:00到着=カフェフルセット</li>
+</ul>
+<h3>Tip 2 — 韓屋カフェ軒＋紅葉インスタ best</h3>
+<ul>
+<li><strong>best spot</strong>: 益善洞 1933軒・北村韓屋カフェ軒</li>
+<li><strong>時間</strong>: 14:00~16:00 (日光+軒の影+紅葉)</li>
+<li><strong>ハチミツチップ</strong>：紅葉1葉+軒=インスタ#1</li>
+</ul>
+<h3>Tip 3 — 秋のメニュー外国人愛好家のおすすめ</h3>
+<ul>
+<li><strong>カボチャラテ</strong>：外国人マニア1ランク（Starbucks PSLと比較）</li>
+<li><strong>サツマイモラテ</strong>：韓国正統・外国人マニア好奇心</li>
+<li><strong>イン絶美トースト</strong>：韓国#1・外国人マニアインスタ1位</li>
+<li><strong>ハニーラテ</strong>: ラグジュアリーマニア・#1</li>
+</ul>
+<h3>Tip 4 — 装い+準備</h3>
+<ul>
+<li><strong>10月下旬平均12°C</strong>：カフェ屋内暖かさ（軽い服）</li>
+<li><strong>アウトラインカフェ</strong>：保温層を追加（ソウル+ 4℃冷たい）</li>
+<li><strong>靴</strong>: カフェ walkable・運動化推奨</li>
+</ul>
+<h3>Tip 5 — 外国人マニアカフェ予約 (Klook・KKday)</h3>
+<ul>
+<li><strong>Nソウルタワー・ロッテタワービューカフェ</strong>：Klook・KKdayパス</li>
+<li><strong>外国人マニア1dayパス</strong>：韓屋カフェ+屋上カフェフルセット</li>
+<li><strong>ハニーチップ</strong>：平日の1週間前の予約・週末完売</li>
+</ul>
+<hr>
+<h2>外部ソース ≥5</h2>
+<p>1. <strong>visitkorea.or.kr</strong> — 韓国カフェマトリックス・外国人マニア1位（検証2026-06-04）</p>
+<p>2. <strong>visitseoul.net</strong> — ソウルカフェcluster +多言語フルカバー</p>
+<p>3. <strong>nseoultower.co.kr</strong> — Nソウルタワービューカフェ 11:00～22:00</p>
+<p>4. <strong>lwt.co.kr</strong> — ロッテタワー SEOULSKY 09:30～22:00・50,000ウォン</p>
+<p>5. <strong>インスタマニア検証</strong> — #557 韓屋カフェ deep cross</p>
+<p>6. <strong>気象庁紅葉平年</strong> — 都心カフェ紅葉絶頂 10/27～11/2</p>
+<hr>
+<p>##外国人フィット</p>
+<ul>
+<li>★★★★★ EN・JP・CN MZ+家族+マニア+インスタ1ランク</li>
+<li><strong>屋内フルセット</strong>：雨+寒さX・安全・外国人マニア1ランク</li>
+<li><strong>インスタマニア</strong>：韓屋軒・屋上パノラマ・ビューカフェ layer</li>
+<li><strong>K-food fusion</strong>: 秋メニュー（かぼちゃ・さつまいも・人節味・蜂蜜）外国人マニア1ランク</li>
+<li><strong>多言語プールカバー</strong>：韓屋・屋上・ビュー・外郭カフェEN・JP・CNプール</li>
+</ul>
+<p>##マニアペルソナフィット</p>
+<ul>
+<li><strong>kpop_mania</strong>: ★★★★ (聖獣 NewJeans・#740 cross)</li>
+<li><strong>kdrama_mania</strong>: ★★★★ (トッケビ・梨泰院クラッツカフェ一部・#743 cross)</li>
+<li><strong>foodie</strong>: ★★★★★（秋メニュー＋デザートフルセット1ランク）</li>
+<li><strong>culture_mania</strong>: ★★★★★ (韓屋カフェ1位・#1・#2・#3)</li>
+<li><strong>mz_traveler</strong>: ★★★★★ (聖水屋上・インスタ1位)</li>
+<li><strong>luxury_traveler</strong>: ★★★★★ (Nソウルタワー・ロッテタワービューカフェ)</li>
+<li><strong>family_traveler</strong>: ★★★★ (アウトライン day-trip カフェ・#10・#11・#12)</li>
+</ul>
+  </article>
+
+  <div class="share-bar">
+    <span class="share-label">공유</span>
+    <button class="share-btn share-twitter" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent('외국인 한국 가을 단풍 카페 cluster 12선 deep dive') + '&url=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Twitter">𝕏</button>
+    <button class="share-btn share-facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Facebook">f</button>
+    <button class="share-btn share-kakao" onclick="navigator.share ? navigator.share({title: '외국인 한국 가을 단풍 카페 cluster 12선 deep dive', url: window.location.href}) : navigator.clipboard.writeText(window.location.href).then(function() { alert('링크 복사됨!'); })" aria-label="Kakao/Share">📤</button>
+    <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href).then(function() { this.textContent = '✓'; setTimeout(function() { document.querySelector('.share-copy').textContent = '🔗'; }, 1500); }.bind(this))" aria-label="Copy link">🔗</button>
+  </div>
+
+  <nav class="detail-nav" aria-label="previous-next">
+    <div><a href="hangang-picnic-fall.html" style="color:var(--red);">&larr; 외국인 한국 한강공원 가을 피크닉 12선 deep dive</a></div>
+    <div><a href="fall-kdrama-locations.html" style="color:var(--red);">외국인 한국 가을 단풍 K-드라마 촬영지 12선 deep dive &rarr;</a></div>
+  </nav>
+</main>
+
+<footer class="site-footer">
+  <p><a href="https://instagram.com/keychingu.korea" target="_blank">@keychingu.korea</a> &mdash; Seoul for MZ FIT Travelers</p>
+</footer>
+</body>
+</html>

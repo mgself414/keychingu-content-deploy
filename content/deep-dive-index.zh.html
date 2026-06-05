@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>키친구 Deep Dive 통합 메타 인덱스 — KeyChinGu</title>
+<meta name="description" content="Key Friend 深入研究综合元索引 — 第 61 部分矩阵 > 副标题：国外生命周期全覆盖/第61部分深潜集群综合索引 第03期·522·2026-05-27 --- 🎯 为什么选择 Keyfriend Deep Dive 综合元索引？ 探索国外内容1 = 第61部分深潜综合索引（创建2026-05-240...">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="192x192" href="../assets/logo/favicon-192.png">
+<link rel="apple-touch-icon" href="../assets/logo/favicon-192.png">
+<link rel="canonical" href="https://mgself414.github.io/keychingu-content-deploy/content/deep-dive-index.html">
+<link rel="alternate" hreflang="ko" href="https://mgself414.github.io/keychingu-content-deploy/content/deep-dive-index.html">
+<link rel="alternate" hreflang="en" href="https://mgself414.github.io/keychingu-content-deploy/content/deep-dive-index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://mgself414.github.io/keychingu-content-deploy/content/deep-dive-index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="키친구 Deep Dive 통합 메타 인덱스">
+<meta property="og:description" content="Key Friend 深入研究综合元索引 — 第 61 部分矩阵 > 副标题：国外生命周期全覆盖/第61部分深潜集群综合索引 第03期·522·2026-05-27 --- 🎯 为什么选择 Keyfriend Deep Dive 综合元索引？ 探索国外内容1 = 第61部分深潜综合索引（创建2026-05-240...">
+<meta property="og:url" content="https://mgself414.github.io/keychingu-content-deploy/content/deep-dive-index.html">
+<meta property="og:image" content="https://mgself414.github.io/keychingu-content-deploy/assets/logo/og-image-1200x630.png">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="키친구 Deep Dive 통합 메타 인덱스">
+<meta name="twitter:description" content="Key Friend 深入研究综合元索引 — 第 61 部分矩阵 > 副标题：国外生命周期全覆盖/第61部分深潜集群综合索引 第03期·522·2026-05-27 --- 🎯 为什么选择 Keyfriend Deep Dive 综合元索引？ 探索国外内容1 = 第61部分深潜综合索引（创建2026-05-240...">
+<meta name="twitter:image" content="https://mgself414.github.io/keychingu-content-deploy/assets/logo/og-image-1200x630.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"키친구 Deep Dive 통합 메타 인덱스","description":"Key Friend 深入研究综合元索引 — 第 61 部分矩阵 > 副标题：国外生命周期全覆盖/第61部分深潜集群综合索引 第03期·522·2026-05-27 --- 🎯 为什么选择 Keyfriend Deep Dive 综合元索引？ 探索国外内容1 = 第61部分深潜综合索引（创建2026-05-240...","datePublished":"2026-05-01","inLanguage":"ko","url":"https://mgself414.github.io/keychingu-content-deploy/content/deep-dive-index.html","image":"https://mgself414.github.io/keychingu-content-deploy/assets/logo/og-image-1200x630.png","publisher":{"@type":"Organization","name":"KeyChinGu","logo":{"@type":"ImageObject","url":"https://mgself414.github.io/keychingu-content-deploy/assets/logo/logo_2-4_color_small.png"}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/main.css">
+<style>
+.detail-wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+}
+.breadcrumb {
+  font-size: 13px;
+  color: var(--text-soft);
+  margin-bottom: 24px;
+}
+.breadcrumb a { color: var(--red); font-weight: 600; }
+.detail-wrap h1 {
+  font-size: 28px; font-weight: 800;
+  color: var(--black); margin-bottom: 8px;
+}
+.detail-wrap h2 {
+  font-size: 22px; font-weight: 700;
+  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--red);
+}
+.detail-wrap h3 {
+  font-size: 17px; font-weight: 600;
+  color: var(--text-mid); margin-top: 20px; margin-bottom: 8px;
+}
+.detail-wrap p {
+  font-size: 15px; line-height: 1.7;
+  color: var(--text-mid); margin-bottom: 12px;
+}
+.detail-wrap ul {
+  padding-left: 20px; margin-bottom: 12px;
+}
+.detail-wrap li {
+  font-size: 14px; line-height: 1.6;
+  color: var(--text-mid); margin-bottom: 6px;
+}
+.detail-wrap table {
+  width: 100%; border-collapse: collapse;
+  margin-bottom: 16px; font-size: 13px;
+}
+.detail-wrap th {
+  background: var(--black); color: #fff;
+  padding: 10px 12px; text-align: left;
+  font-weight: 600; font-size: 11px;
+  text-transform: uppercase; letter-spacing: 0.06em;
+}
+.detail-wrap td {
+  padding: 10px 12px; border-bottom: 1px solid var(--border);
+  color: var(--text-mid);
+}
+.detail-wrap tr:nth-child(even) td { background: rgba(0,0,0,0.02); }
+.detail-wrap hr {
+  border: none; height: 1px;
+  background: var(--border); margin: 24px 0;
+}
+.detail-wrap code {
+  background: rgba(33,140,204,0.08);
+  padding: 2px 6px; border-radius: 4px;
+  font-size: 13px; color: var(--blue);
+}
+.detail-nav {
+  display: flex; justify-content: space-between;
+  margin-top: 48px; padding-top: 20px;
+  border-top: 1px solid var(--border);
+  font-size: 14px; font-weight: 600;
+}
+.share-bar {
+  display: flex; align-items: center; gap: 10px;
+  margin-top: 40px; padding: 16px 20px;
+  background: #f9f9f9; border-radius: 12px;
+  border: 1px solid var(--border);
+}
+.share-label {
+  font-size: 14px; font-weight: 600; color: var(--text-soft);
+  margin-right: 8px;
+}
+.share-btn {
+  width: 40px; height: 40px;
+  border: none; border-radius: 50%;
+  background: #fff; cursor: pointer;
+  font-size: 1.1rem; transition: all 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  display: inline-flex; align-items: center; justify-content: center;
+}
+.share-btn:hover { transform: translateY(-2px); box-shadow: 0 3px 8px rgba(0,0,0,0.15); }
+.share-twitter:hover { background: #000; color: #fff; }
+.share-facebook:hover { background: #1877f2; color: #fff; }
+.share-kakao:hover { background: #fee500; }
+.share-copy:hover { background: #218CCC; color: #fff; }
+/* EN toggle disabled — 영문판 미생성 콘텐츠 (2026-05-16 patch) */
+.lang-switch .lang-disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  text-decoration: line-through;
+  padding: 4px 10px;
+  color: var(--text-soft, #888);
+  font-size: 13px;
+  user-select: none;
+}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <div class="lang-switch">
+    <a href="../content/deep-dive-index.html" class="active">KR</a>
+    <a href="../content/deep-dive-index.en.html" >EN</a>
+  </div>
+</header>
+
+<main class="detail-wrap">
+  <nav class="breadcrumb" aria-label="breadcrumb"><a href="../index.html">전체 가이드</a> &rsaquo; 키친구 Deep Dive 통합 메타 인덱스</nav>
+  <article>
+  <h1>Key Friend 深入研究综合元索引 — 第 61 部分矩阵</h1>
+<p>&gt; <strong>副标题</strong>：国外生命周期全覆盖/第61部分深潜集群综合索引</p>
+<p>第03期·#522·2026-05-27</p>
+<hr>
+<h2>🎯 为什么选择 Keyfriend Deep Dive 综合元索引？</h2>
+<p>探索国外内容#1 = <strong>第61部分深潜综合索引</strong>（创建2026-05-24~05-27）。外国人生命周期8轴（到达、美食、文化、K内容、养生、购物、夜间、实用）×61矩阵单页导航。</p>
+<hr>
+<h2>★ 第 61 部分深入矩阵（按类别）</h2>
+<h3>📍文化/正统（12 集）</h3>
+<table><thead><tr>
+<th>＃</th>
+<th>标题</th>
+<th>蛞蝓</th>
+</tr></thead><tbody>
+<tr>
+<td>␈面膜2␈</td>
+<td>首尔12个综合文化空间</td>
+<td>␈面膜201␈</td>
+</tr>
+<tr>
+<td>␈面膜3␈</td>
+<td>12 家韩国博物馆和美术馆</td>
+<td>␈面膜202␈</td>
+</tr>
+<tr>
+<td>␈面膜4␈</td>
+<td>12 个韩剧电影拍摄地</td>
+<td>␈面膜203␈</td>
+</tr>
+<tr>
+<td>␈面膜5␈</td>
+<td>12 次韩服宫殿体验</td>
+<td>␈面膜204␈</td>
+</tr>
+<tr>
+<td>␈面膜6␈</td>
+<td>12家拥有100年历史的韩国老店</td>
+<td>␈面膜205␈</td>
+</tr>
+<tr>
+<td>␈面膜7␈</td>
+<td>2026 年 12 部新韩剧电影</td>
+<td>␈面膜206␈</td>
+</tr>
+<tr>
+<td>␈面膜8␈</td>
+<td>2026年12韩国节日日历</td>
+<td>␈面膜207␈</td>
+</tr>
+<tr>
+<td>␈面膜9␈</td>
+<td>12个网络漫画的拍摄地</td>
+<td>␈面膜208␈</td>
+</tr>
+<tr>
+<td>␈面膜10␈</td>
+<td>12 间寺庙寄宿</td>
+<td>␈面膜209␈</td>
+</tr>
+<tr>
+<td>␈面膜11␈</td>
+<td>首尔 12 个爵士酒吧酒廊</td>
+<td>␈面膜210␈</td>
+</tr>
+<tr>
+<td>␈面膜12␈</td>
+<td>12 博物馆艺术画廊扩建</td>
+<td>␈面膜211␈</td>
+</tr>
+<tr>
+<td>␈面膜13␈</td>
+<td>2026 年 12 种新的韩国流行舞蹈趋势</td>
+<td><code>kpop-dance-2026</code></td>
+</tr>
+</tbody></table>
+<h3>🍽 食物与饮料（10 集）</h3>
+<table><thead><tr>
+<th>＃</th>
+<th>标题</th>
+<th>蛞蝓</th>
+</tr></thead><tbody>
+<tr>
+<td>␈面膜14␈</td>
+<td>韩国12个传统市场</td>
+<td><code>traditional-market</code></td>
+</tr>
+<tr>
+<td>␈面膜15␈</td>
+<td>12 咖啡街矩阵</td>
+<td><code>cafe-district</code></td>
+</tr>
+<tr>
+<td>␈面膜16␈</td>
+<td>食物矩阵综合指数</td>
+<td>␈面膜215␈</td>
+</tr>
+<tr>
+<td>␈面膜17␈</td>
+<td>12 家适合外国人的餐厅</td>
+<td><code>foreigner-friendly-restaurants</code></td>
+</tr>
+<tr>
+<td>␈面膜18␈</td>
+<td>12 深入探讨韩国餐桌文化</td>
+<td>␈面膜217␈</td>
+</tr>
+<tr>
+<td>␈面膜19␈</td>
+<td>12 种韩国茶道茶馆体验</td>
+<td><code>tea-ceremony-deep</code></td>
+</tr>
+<tr>
+<td>␈面膜20␈</td>
+<td>2026 年夏季精选 12 款征服首尔刨冰</td>
+<td>␈面膜219␈</td>
+</tr>
+<tr>
+<td>␈面膜21␈</td>
+<td>12 家适合外国人的纯素清真餐厅</td>
+<td>␈面膜220␈</td>
+</tr>
+<tr>
+<td>␈面膜22␈</td>
+<td>韩国酒精深度潜水（展开）</td>
+<td>␈面膜221␈</td>
+</tr>
+<tr>
+<td>␈面膜23␈</td>
+<td>正宗烈酒、烧酒和马格利酒（浓缩）</td>
+<td><code>traditional-liquor</code></td>
+</tr>
+</tbody></table>
+<h3>🎭 K内容·MZ（10集）</h3>
+<table><thead><tr>
+<th>＃</th>
+<th>标题</th>
+<th>蛞蝓</th>
+</tr></thead><tbody>
+<tr>
+<td>␈面膜24␈</td>
+<td>K-pop 4 机构深入探讨</td>
+<td><code>kpop-agencies</code></td>
+</tr>
+<tr>
+<td>␈面膜25␈</td>
+<td>12 次韩国流行舞蹈课程体验</td>
+<td><code>kpop-dance-class</code></td>
+</tr>
+<tr>
+<td>␈面膜26␈</td>
+<td>12 张韩流演唱会门票</td>
+<td>␈面膜225␈</td>
+</tr>
+<tr>
+<td>␈面膜27␈</td>
+<td>12个韩国节日</td>
+<td><code>korea-festivals</code></td>
+</tr>
+<tr>
+<td>␈面膜28␈</td>
+<td>Instagram著名拍照点Matrix</td>
+<td><code>instagram-spots</code></td>
+</tr>
+<tr>
+<td>␈面膜29␈</td>
+<td>12 部韩国电影</td>
+<td><code>korean-cinema</code></td>
+</tr>
+<tr>
+<td>␈面膜30␈</td>
+<td>12 电脑房 游戏室 VR</td>
+<td>␈面膜229␈</td>
+</tr>
+<tr>
+<td>␈面膜31␈</td>
+<td>12 家棋盘游戏咖啡馆</td>
+<td>␈面膜230␈</td>
+</tr>
+<tr>
+<td>#445</td>
+<td>卡通网络漫画深入探讨</td>
+<td>␈面膜231␈</td>
+</tr>
+<tr>
+<td>␈面膜33␈</td>
+<td>12 运动爱好者</td>
+<td><code>sports-mania</code></td>
+</tr>
+</tbody></table>
+<h3>💆 健康·美丽（第7集）</h3>
+<table><thead><tr>
+<th>＃</th>
+<th>标题</th>
+<th>蛞蝓</th>
+</tr></thead><tbody>
+<tr>
+<td>#389</td>
+<td>12 K-Beauty 美容院</td>
+<td><code>k-beauty-salon</code></td>
+</tr>
+<tr>
+<td>␈面膜35␈</td>
+<td>12个韩国四季矩阵</td>
+<td><code>four-seasons</code></td>
+</tr>
+<tr>
+<td>␈面膜36␈</td>
+<td>国外医疗旅游深潜</td>
+<td>␈面膜235␈</td>
+</tr>
+<tr>
+<td>␈面膜37␈</td>
+<td>12 冥想瑜伽普拉提</td>
+<td><code>meditation-yoga</code></td>
+</tr>
+<tr>
+<td>␈面膜38␈</td>
+<td>12个健身房健身拳击技巧</td>
+<td><code>gym-fitness-boxing</code></td>
+</tr>
+<tr>
+<td>␈面膜39␈</td>
+<td>12 K-Beauty 手术风险恢复选项</td>
+<td><code>kbeauty-risk-recovery</code></td>
+</tr>
+<tr>
+<td>␈面膜40␈</td>
+<td>12 个照相馆自拍工作室</td>
+<td>␈面膜239␈</td>
+</tr>
+</tbody></table>
+<h3>🛍 购物·奢侈品（第三部分）</h3>
+<table><thead><tr>
+<th>＃</th>
+<th>标题</th>
+<th>蛞蝓</th>
+</tr></thead><tbody>
+<tr>
+<td>#406</td>
+<td>免税店深度探索</td>
+<td>␈面膜240␈</td>
+</tr>
+<tr>
+<td>#415</td>
+<td>12 家外国人赌场␈面膜241␈</td>
+</tr>
+<tr>
+<td>#457</td>
+<td>时尚街头服饰 MZ 12 款精选</td>
+<td>␈MASK24​​2␈</td>
+</tr>
+</tbody></table>
+<h3>🌙 夜·MZ（第四部分）</h3>
+<table><thead><tr>
+<th>＃</th>
+<th>标题</th>
+<th>蛞蝓</th>
+</tr></thead><tbody>
+<tr>
+<td>#436</td>
+<td>12间卡拉OK投币卡拉OK包房</td>
+<td>␈MASK24​​3␈</td>
+</tr>
+<tr>
+<td>␈面膜45␈</td>
+<td>12家24小时营业的深夜店</td>
+<td>␈MASK24​​4␈</td>
+</tr>
+<tr>
+<td>#454</td>
+<td>12 夜俱乐部生活方式</td>
+<td>␈面膜245␈</td>
+</tr>
+<tr>
+<td>#455</td>
+<td>12 现场音乐独立音乐</td>
+<td>␈MASK24​​6␈</td>
+</tr>
+</tbody></table>
+<h3>🏗 实用/必备（11 集）</h3>
+<table><thead><tr>
+<th>＃</th>
+<th>标题</th>
+<th>蛞蝓</th>
+</tr></thead><tbody>
+<tr>
+<td>#392</td>
+<td>1周2周课程矩阵</td>
+<td>␈MASK24​​7␈</td>
+</tr>
+<tr>
+<td>␈面具49␈</td>
+<td>到达 通讯 支付 交通 12条线</td>
+<td>␈MASK24​​8␈</td>
+</tr>
+<tr>
+<td>␈面膜50␈</td>
+<td>KIIP 排名前 12 的韩国语学校语言培训项目</td>
+<td>␈面膜249␈</td>
+</tr>
+<tr>
+<td>␈面膜51␈</td>
+<td>12 条紧急医院安全提示</td>
+<td>␈面膜250␈</td>
+</tr>
+<tr>
+<td>␈面膜52␈</td>
+<td>SIM通讯WiFi 12线</td>
+<td>␈面膜251␈</td>
+</tr>
+<tr>
+<td>␈面膜53␈</td>
+<td>12 种货币兑换信用卡 ATM 付款</td>
+<td>␈面膜252␈</td>
+</tr>
+<tr>
+<td>␈面膜54␈</td>
+<td>防止女性独唱安全诈骗的12个方法</td>
+<td>␈面膜253␈</td>
+</tr>
+<tr>
+<td>␈面膜55␈</td>
+<td>12个兼职工作就业</td>
+<td><code>foreigner-jobs</code></td>
+</tr>
+<tr>
+<td>␈面膜56␈</td>
+<td>SNS 12种韩式沟通方式</td>
+<td>␈面膜255␈</td>
+</tr>
+<tr>
+<td>␈面膜57␈</td>
+<td>营业时间和假期矩阵</td>
+<td>␈面膜256␈</td>
+</tr>
+<tr>
+<td>␈面膜58␈</td>
+<td>12月份天气衣物要准备的物品</td>
+<td>␈面膜257␈</td>
+</tr>
+</tbody></table>
+<h3>🚗郊外·自然·休闲（第四部分）</h3>
+<table><thead><tr>
+<th>＃</th>
+<th>标题</th>
+<th>蛞蝓</th>
+</tr></thead><tbody>
+<tr>
+<td>␈面膜59␈</td>
+<td>12张新婚夫妇的婚纱照</td>
+<td>␈面膜258␈</td>
+</tr>
+<tr>
+<td>␈面膜60␈</td>
+<td>12次独立驾驶和租车旅行</td>
+<td>␈面膜259␈</td>
+</tr>
+<tr>
+<td>␈面膜61␈</td>
+<td>12 个主题公园</td>
+<td>␈面膜260␈</td>
+</tr>
+<tr>
+<td>␈面膜62␈</td>
+<td>12 个最佳高尔夫技巧</td>
+<td>␈面膜261␈</td>
+</tr>
+<tr>
+<td>␈面膜63␈</td>
+<td>12 家动物咖啡馆</td>
+<td><code>animal-cafe</code></td>
+</tr>
+<tr>
+<td>␈面膜64␈</td>
+<td>京畿道一日游矩阵</td>
+<td><code>gyeonggi-daytrip</code></td>
+</tr>
+<tr>
+<td>␈面膜65␈</td>
+<td>首尔 12 条徒步路线</td>
+<td><code>hiking-duregil</code></td>
+</tr>
+</tbody></table>
+<hr>
+<h2>🔍外国人生命周期8轴×61片矩阵</h2>
+<table><thead><tr>
+<th>生命周期阶段</th>
+<th>代表性内容</th>
+<th>平水</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>① 到达·必填</strong></td>
+<td>#398·#414·#435·#501·#517·#518</td>
+<td>11</td>
+</tr>
+<tr>
+<td><strong>② 食物·饮料</strong></td>
+<td>#380·#381·#391·#400·#502·#505·#510·#521</td>
+<td>10</td>
+</tr>
+<tr>
+<td><strong>③ 文化/正统</strong></td>
+<td>#366·#377·#378·#379·#388·#506·#509·#514</td>
+<td>12</td>
+</tr>
+<tr>
+<td><strong>④ K-含量·MZ</strong></td>
+<td>#387·#399·#402·#404·#438·#443·#445·#446·#519</td>
+<td>10</td>
+</tr>
+<tr>
+<td><strong>⑤ 养生·美丽</strong></td>
+<td>#389·#401·#447·#448·#456·#508</td>
+<td>7</td>
+</tr>
+<tr>
+<td><strong>⑥ 购物·奢侈品</strong></td>
+<td>#406·#415·#457</td>
+<td>3</td>
+</tr>
+<tr>
+<td><strong>⑦ 夜·MZ</strong></td>
+<td>#436·#437·#454·#455·#511·#513</td>
+<td>4</td>
+</tr>
+<tr>
+<td><strong>⑧ 郊外/休闲</strong></td>
+<td>#416·#439·#440·#441·#442·#512·#515</td>
+<td>7</td>
+</tr>
+<tr>
+<td><strong>总计</strong></td>
+<td></td>
+<td><strong>第 61 部分</strong></td>
+</tr>
+</tbody></table>
+<hr>
+<h2>📊覆盖率统计</h2>
+<ul>
+<li><strong>总集数</strong>：61集深入探讨（2026年5月24日至5月27日期间集中编写）</li>
+<li><strong>类别</strong>：8 个生命周期阶段 × 61 部分矩阵</li>
+<li><strong>国外部分</strong>：所有国外爱好者（MZ+正宗+豪华+初访+居住）</li>
+<li><strong>语言</strong>：韩语全文已完成，英文翻译尚未进行（需要 API 学分）</li>
+<li><strong>站点</strong>：555+ 个 URL · 550+ 个 HTML 页面</li>
+<li><strong>外国人生命周期全覆盖</strong>：✓ 抵达→体验→爱好者→安全前阶段</li>
+</ul>
+<hr>
+<h2>⚙ 6 个常见问题解答</h2>
+<p>1. <strong>外国人首次来访内容</strong>：#398抵达·#517营业时间·#518天气·#501女性安全·#502用餐·#392课程。</p>
+<p>2. <strong>国外美食爱好者</strong>：#391美食指数·#400友善餐厅·#380市场·#505茶·#510刨冰·#521素食。</p>
+<p>3. <strong>国外K内容爱好者</strong>：#3874社·#399舞蹈·#402演唱会·#438电影·#507网络漫画·#5192026舞蹈。</p>
+<p>4. <strong>外国文化/正宗爱好者</strong>：#377博物馆·#379韩服·#388老餐厅·#506度假·#509寺庙·#511爵士乐。</p>
+<p>5. <strong>外国人实用性/安全性</strong>：#398到达·#405紧急·#414SIM·#435货币兑换·#501安全·#504就业·#516SNS。</p>
+<p>6. <strong>国外之夜·MZ</strong>：#436卡拉OK·#43724小时·#454俱乐部·#455现场·#511爵士乐·#513夜间拓展。</p>
+<hr>
+<h2>🗺 外国人全套推荐课程</h2>
+<h3>A. 外国人首次来访1周（#392综合）</h3>
+<ul>
+<li>#398到达→#502餐桌→#379韩服→#387韩流→#517营业时间→#518天气→#392路线</li>
+</ul>
+<h3>B.国外K内容爱好者1周（#387·#399·#519）</h3>
+<ul>
+<li>#3874社→#399舞蹈→#402演唱会→#438电影→#507网络漫画→#5192026舞蹈→#436卡拉OK</li>
+</ul>
+<h3>C. 外国文化养生爱好者一周（#509·#448·#505）</h3>
+<ul>
+<li>#377博物馆→#379韩服→#509寺庙→#448冥想→#505茶→#502桌子→#506假期</li>
+</ul>
+<hr>
+<h2>第五季</h2>
+<ul>
+<li><strong>春天三月~五月</strong>：樱花(#385·#518)·假期(#506)·佛诞·No. 1 国外爱好者</li>
+<li><strong>夏季六月~八月</strong>：刨冰(#510)·汉江(#06)·保宁泥浆·外国狂热·#385</li>
+<li><strong>秋季9月-11月</strong>：秋叶(#385·#515)·中秋节(#506)·MAMA·#404·No.外国爱好者1名</li>
+<li><strong>冬季12月~2月</strong>：灯饰(#260)·平昌冰雪节·农历新年(#506)·#385</li>
+<li><strong>全年</strong>：第 61 集深入探讨 + 外国狂热第一名</li>
+</ul>
+<hr>
+<h2>🔗 相关</h2>
+<p>该索引是第 61 个深潜集群的<strong>元索引</strong>。检查各个 slug 页面以了解每个内容的详细信息。</p>
+<h2>🏷标签</h2>
+<p><code>#키친구DeepDive통합메타인덱스</code> <code>#KeychinguDeepDiveMetaIndex</code> <code>␈MASK197␈편매트릭스</code> <code>␈MASK198␈축lifecycle</code> <code>#도착음식문화K-content wellness쇼핑야간외곽</code> <code>#외국인lifecycle풀cover</code> <code>␈MASK199␈-05-24~05-27집중작성</code> <code>␈MASK200␈URLs550pages</code> <code>#전외국인매니아MZ정통럭셔리첫방문거주</code> ␈面膜274␈</p>
+  </article>
+
+  <div class="share-bar">
+    <span class="share-label">공유</span>
+    <button class="share-btn share-twitter" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent('키친구 Deep Dive 통합 메타 인덱스') + '&url=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Twitter">𝕏</button>
+    <button class="share-btn share-facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Facebook">f</button>
+    <button class="share-btn share-kakao" onclick="navigator.share ? navigator.share({title: '키친구 Deep Dive 통합 메타 인덱스', url: window.location.href}) : navigator.clipboard.writeText(window.location.href).then(function() { alert('링크 복사됨!'); })" aria-label="Kakao/Share">📤</button>
+    <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href).then(function() { this.textContent = '✓'; setTimeout(function() { document.querySelector('.share-copy').textContent = '🔗'; }, 1500); }.bind(this))" aria-label="Copy link">🔗</button>
+  </div>
+
+  <nav class="detail-nav" aria-label="previous-next">
+    <div><a href="vegan-halal-deep.html" style="color:var(--red);">&larr; 외국인 비건 할랄 식당 deep dive</a></div>
+    <div><a href="kimchi-fermentation.html" style="color:var(--red);">한국 김치·발효음식 deep dive &rarr;</a></div>
+  </nav>
+</main>
+
+<footer class="site-footer">
+  <p><a href="https://instagram.com/keychingu.korea" target="_blank">@keychingu.korea</a> &mdash; Seoul for MZ FIT Travelers</p>
+</footer>
+</body>
+</html>

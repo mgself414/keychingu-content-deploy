@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>외국인 한국 가을 단풍 카페 cluster 12선 deep dive — KeyChinGu</title>
+<meta name="description" content="12家外国人韩式红叶咖啡馆群深潜——韩屋咖啡馆、屋顶、景观、外观全套 > 元：外国人生命周期·咖啡馆轴·秋叶咖啡馆集群类别·12条线4轴（韩屋咖啡馆、屋顶咖啡馆、景观咖啡馆、郊外咖啡馆）+常见问题6+课程3+季节5+提示5·狂热742 > > 运行信息验证：截至2026年6月4日（visitkorea·visit...">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="192x192" href="../assets/logo/favicon-192.png">
+<link rel="apple-touch-icon" href="../assets/logo/favicon-192.png">
+<link rel="canonical" href="https://mgself414.github.io/keychingu-content-deploy/content/fall-cafe-cluster.html">
+<link rel="alternate" hreflang="ko" href="https://mgself414.github.io/keychingu-content-deploy/content/fall-cafe-cluster.html">
+<link rel="alternate" hreflang="en" href="https://mgself414.github.io/keychingu-content-deploy/content/fall-cafe-cluster.en.html">
+<link rel="alternate" hreflang="x-default" href="https://mgself414.github.io/keychingu-content-deploy/content/fall-cafe-cluster.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="외국인 한국 가을 단풍 카페 cluster 12선 deep dive">
+<meta property="og:description" content="12家外国人韩式红叶咖啡馆群深潜——韩屋咖啡馆、屋顶、景观、外观全套 > 元：外国人生命周期·咖啡馆轴·秋叶咖啡馆集群类别·12条线4轴（韩屋咖啡馆、屋顶咖啡馆、景观咖啡馆、郊外咖啡馆）+常见问题6+课程3+季节5+提示5·狂热742 > > 运行信息验证：截至2026年6月4日（visitkorea·visit...">
+<meta property="og:url" content="https://mgself414.github.io/keychingu-content-deploy/content/fall-cafe-cluster.html">
+<meta property="og:image" content="https://mgself414.github.io/keychingu-content-deploy/assets/logo/og-image-1200x630.png">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="외국인 한국 가을 단풍 카페 cluster 12선 deep dive">
+<meta name="twitter:description" content="12家外国人韩式红叶咖啡馆群深潜——韩屋咖啡馆、屋顶、景观、外观全套 > 元：外国人生命周期·咖啡馆轴·秋叶咖啡馆集群类别·12条线4轴（韩屋咖啡馆、屋顶咖啡馆、景观咖啡馆、郊外咖啡馆）+常见问题6+课程3+季节5+提示5·狂热742 > > 运行信息验证：截至2026年6月4日（visitkorea·visit...">
+<meta name="twitter:image" content="https://mgself414.github.io/keychingu-content-deploy/assets/logo/og-image-1200x630.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"외국인 한국 가을 단풍 카페 cluster 12선 deep dive","description":"12家外国人韩式红叶咖啡馆群深潜——韩屋咖啡馆、屋顶、景观、外观全套 > 元：外国人生命周期·咖啡馆轴·秋叶咖啡馆集群类别·12条线4轴（韩屋咖啡馆、屋顶咖啡馆、景观咖啡馆、郊外咖啡馆）+常见问题6+课程3+季节5+提示5·狂热742 > > 运行信息验证：截至2026年6月4日（visitkorea·visit...","datePublished":"2026-05-01","inLanguage":"ko","url":"https://mgself414.github.io/keychingu-content-deploy/content/fall-cafe-cluster.html","image":"https://mgself414.github.io/keychingu-content-deploy/assets/logo/og-image-1200x630.png","publisher":{"@type":"Organization","name":"KeyChinGu","logo":{"@type":"ImageObject","url":"https://mgself414.github.io/keychingu-content-deploy/assets/logo/logo_2-4_color_small.png"}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/main.css">
+<style>
+.detail-wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+}
+.breadcrumb {
+  font-size: 13px;
+  color: var(--text-soft);
+  margin-bottom: 24px;
+}
+.breadcrumb a { color: var(--red); font-weight: 600; }
+.detail-wrap h1 {
+  font-size: 28px; font-weight: 800;
+  color: var(--black); margin-bottom: 8px;
+}
+.detail-wrap h2 {
+  font-size: 22px; font-weight: 700;
+  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--red);
+}
+.detail-wrap h3 {
+  font-size: 17px; font-weight: 600;
+  color: var(--text-mid); margin-top: 20px; margin-bottom: 8px;
+}
+.detail-wrap p {
+  font-size: 15px; line-height: 1.7;
+  color: var(--text-mid); margin-bottom: 12px;
+}
+.detail-wrap ul {
+  padding-left: 20px; margin-bottom: 12px;
+}
+.detail-wrap li {
+  font-size: 14px; line-height: 1.6;
+  color: var(--text-mid); margin-bottom: 6px;
+}
+.detail-wrap table {
+  width: 100%; border-collapse: collapse;
+  margin-bottom: 16px; font-size: 13px;
+}
+.detail-wrap th {
+  background: var(--black); color: #fff;
+  padding: 10px 12px; text-align: left;
+  font-weight: 600; font-size: 11px;
+  text-transform: uppercase; letter-spacing: 0.06em;
+}
+.detail-wrap td {
+  padding: 10px 12px; border-bottom: 1px solid var(--border);
+  color: var(--text-mid);
+}
+.detail-wrap tr:nth-child(even) td { background: rgba(0,0,0,0.02); }
+.detail-wrap hr {
+  border: none; height: 1px;
+  background: var(--border); margin: 24px 0;
+}
+.detail-wrap code {
+  background: rgba(33,140,204,0.08);
+  padding: 2px 6px; border-radius: 4px;
+  font-size: 13px; color: var(--blue);
+}
+.detail-nav {
+  display: flex; justify-content: space-between;
+  margin-top: 48px; padding-top: 20px;
+  border-top: 1px solid var(--border);
+  font-size: 14px; font-weight: 600;
+}
+.share-bar {
+  display: flex; align-items: center; gap: 10px;
+  margin-top: 40px; padding: 16px 20px;
+  background: #f9f9f9; border-radius: 12px;
+  border: 1px solid var(--border);
+}
+.share-label {
+  font-size: 14px; font-weight: 600; color: var(--text-soft);
+  margin-right: 8px;
+}
+.share-btn {
+  width: 40px; height: 40px;
+  border: none; border-radius: 50%;
+  background: #fff; cursor: pointer;
+  font-size: 1.1rem; transition: all 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  display: inline-flex; align-items: center; justify-content: center;
+}
+.share-btn:hover { transform: translateY(-2px); box-shadow: 0 3px 8px rgba(0,0,0,0.15); }
+.share-twitter:hover { background: #000; color: #fff; }
+.share-facebook:hover { background: #1877f2; color: #fff; }
+.share-kakao:hover { background: #fee500; }
+.share-copy:hover { background: #218CCC; color: #fff; }
+/* EN toggle disabled — 영문판 미생성 콘텐츠 (2026-05-16 patch) */
+.lang-switch .lang-disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  text-decoration: line-through;
+  padding: 4px 10px;
+  color: var(--text-soft, #888);
+  font-size: 13px;
+  user-select: none;
+}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <div class="lang-switch">
+    <a href="../content/fall-cafe-cluster.html" class="active">KR</a>
+    <a href="../content/fall-cafe-cluster.en.html" >EN</a>
+  </div>
+</header>
+
+<main class="detail-wrap">
+  <nav class="breadcrumb" aria-label="breadcrumb"><a href="../index.html">전체 가이드</a> &rsaquo; 외국인 한국 가을 단풍 카페 cluster 12선 deep dive</nav>
+  <article>
+  <p>#12家外国人韩式红叶咖啡馆群深潜——韩屋咖啡馆、屋顶、景观、外观全套</p>
+<p>&gt; <strong>元</strong>：外国人生命周期·咖啡馆轴·秋叶咖啡馆集群类别·12条线4轴（韩屋咖啡馆、屋顶咖啡馆、景观咖啡馆、郊外咖啡馆）+常见问题6+课程3+季节5+提示5·狂热#742</p>
+<p>&gt;</p>
+<p>&gt; <strong>运行信息验证</strong>：截至2026年6月4日（visitkorea·visitseoul·Instamania验证·韩国气象厅）。</p>
+<p>&gt;</p>
+<p>&gt; <strong>系列交叉引用</strong>：#225咖啡馆矩阵·#381咖啡馆街矩阵·#557韩屋咖啡馆深·#737南山秋叶·#740首尔森林+圣水·#741汉江秋天</p>
+<hr>
+<h2>为什么是红叶咖啡馆群？ Instagram 上外国爱好者排名第一，室内 + 树叶融合</h2>
+<p>首尔咖啡馆+秋叶融合是<strong>No。国外Instagram爱好者中的第一名</strong>·室内+红叶景观+全套韩屋·屋顶·景观咖啡厅。与市中心（#737）、MZ（#740）和汉江（#741）相比的歧视：</p>
+<ul>
+<li><strong>室内全套</strong>：雨+寒冷</li>
+<li><strong>Insta现场</strong>：屋檐+秋叶·屋顶+秋叶全景·窗户+秋叶层</li>
+<li><strong>文化 + MZ 融合</strong>：韩屋咖啡馆 (#379 cross) + MZ 咖啡馆 (#740 cross)</li>
+<li><strong>季节适合</strong>：热饮（韩国#1秋季菜单，南瓜，红薯，板栗，injeolmi，蜂蜜）</li>
+</ul>
+<p>这个矩阵是3家韩屋咖啡馆+3家屋顶咖啡馆+3家景观咖啡馆+3家外地一日游咖啡馆=12条线和4个轴。</p>
+<hr>
+<h2>12 条线，4 个轴</h2>
+<h3>轴 1：韩屋咖啡馆（3 条线）</h3>
+<h4>1. 益善洞韩屋咖啡馆集群 — 韩国#1韩屋咖啡馆街</h4>
+<ul>
+<li><strong>歧视</strong>：<strong>益善洞韩屋咖啡街·100+韩屋+咖啡馆融合·屋檐+秋叶Instagram#1</strong>·#557 cross</li>
+<li><strong>红叶季节</strong>：10月下旬至11月初（城市红叶+全套韩屋屋檐）</li>
+<li><strong>运营</strong>: 10:00~22:00 每家咖啡馆 10,000韩元~20,000韩元/人</li>
+<li><strong>适合老外</strong>：★★★★★ EN·JP·CN MZ + 第一文化爱好者</li>
+<li><strong>最佳咖啡馆</strong>：益善洞1933·Teul-an Hanok Cafe·Cheongsudang</li>
+<li><strong>交通</strong>：钟路三街站（1、3、5号线）6号出口</li>
+</ul>
+<h4>2. 北村韩屋咖啡馆 — 北村韩屋村 + 秋叶</h4>
+<ul>
+<li><strong>歧视</strong>：<strong>北村韩屋村（联合国教科文组织）+韩屋咖啡馆+秋叶融合</strong>·文化狂热No.1</li>
+<li><strong>秋叶季节</strong>：十月下旬至十一月初</li>
+<li><strong>最佳咖啡馆</strong>：cha masida、Bukchon Cafe、Samcheong-dong Hanok Cafe</li>
+<li><strong>适合外国人</strong>：★★★★★ EN·JP·CN + 韩服 + #1 枫叶爱好者</li>
+<li><strong>交通</strong>：安国站（3号线）2号出口</li>
+<li><strong>连接</strong>：景福宫（#379）+北村韩屋+咖啡厅全套</li>
+</ul>
+<h4>3. 西村韩屋咖啡馆 — 仁王山红叶+韩屋融合</h4>
+<ul>
+<li><strong>区别</strong>：<strong>西村 + 仁王山红叶 + 韩屋咖啡馆·No. 1 爱好者</strong>·仁王山 (338m) 步行 + 咖啡馆融合</li>
+<li><strong>秋叶季节</strong>：十月下旬至十一月初</li>
+<li><strong>最佳咖啡馆</strong>：Tonui-dong Boan Inn、Sechon Hanok Cafe、Changseong-dong Cafe</li>
+<li><strong>外国人适合</strong>：★★★★ MZ+文化爱好者·<strong>约15,000韩元/人</strong></li>
+<li><strong>交通</strong>：景福宫站（3号线）1号和2号出口</li>
+<li><strong>链接</strong>：仁王山徒步（#738 cross）+西村咖啡馆全套</li>
+</ul>
+<h3>2号轴：屋顶咖啡馆（3号线）</h3>
+<h4>4. 圣水屋顶咖啡馆 — MZ Mania No. 1 (#740 cross)</h4>
+<ul>
+<li><strong>歧视</strong>：<strong>圣水屋顶咖啡馆+秋叶全景·MZ Instagram #1</strong>·#740 cross</li>
+<li><strong>秋叶季节</strong>：十月下旬至十一月初</li>
+<li><strong>最佳咖啡馆</strong>：Daelim Changgo（仓库型+屋顶）·Tongue·57层</li>
+<li><strong>适合外国人</strong>：★★★★★ MZ + Instagram 上#1</li>
+<li><strong>Insta最佳</strong>：屋顶+秋叶+圣水全景（Insta#1）</li>
+</ul>
+<h4>5. 江南·狎鸥亭屋顶咖啡馆 — Luxury Mania</h4>
+<ul>
+<li><strong>优异</strong>：<strong>江南·狎鸥亭屋顶咖啡馆+豪华景观+秋叶</strong>·奢华狂热第一名</li>
+<li><strong>秋叶季节</strong>：十月下旬至十一月初</li>
+<li><strong>最佳咖啡馆</strong>：Cheongdam Rdiff、狎鸥亭咖啡馆街、江南豪华咖啡馆</li>
+<li><strong>外国人适合</strong>：★★★★ MZ + Luxury Mania·<strong>20,000韩元~50,000韩元/人</strong></li>
+<li><strong>交通</strong>：全套江南站和狎鸥亭站</li>
+</ul>
+<h4>6.望远·合井屋顶咖啡厅——汉江景观+秋叶</h4>
+<ul>
+<li><strong>歧视</strong>：<strong>望远·合井屋顶咖啡馆+汉江景观（#741 cross）+秋叶</strong>·MZ Mania</li>
+<li><strong>秋叶季节</strong>：十月下旬至十一月初</li>
+<li><strong>最佳咖啡馆</strong>：望远洞屋顶咖啡馆和合井汉江景观咖啡馆</li>
+<li><strong>外国人适合</strong>： ★★★★ MZ + Han River Mania</li>
+<li><strong>连接</strong>：望远汉江公园 + 屋顶咖啡厅全套</li>
+</ul>
+<h3>轴 3：View Cafe（3 条线）</h3>
+<h4>7. 南山N首尔塔景观咖啡厅（#737 cross）</h4>
+<ul>
+<li><strong>优异</strong>：<strong>N首尔塔山顶景观咖啡厅+360度秋叶全景</strong> · 外国爱好者中No.1</li>
+<li><strong>秋叶季节</strong>：十月下旬至十一月初</li>
+<li><strong>运营</strong>：11:00~22:00，每人 25,000 韩元~50,000 韩元</li>
+<li><strong>外国人适合</strong>：★★★★ EN·JP·CN + Luxury Mania·<strong>付费30,000韩元</strong></li>
+<li><strong>链接</strong>：南山秋叶 (#737) + View Cafe 全套</li>
+</ul>
+<h4>8. 蚕室乐天塔SEOULSKY View Cafe (#710 cross)</h4>
+<ul>
+<li><strong>特色</strong>：<strong>乐天塔 555m + 汉江景观 + 秋叶全景</strong> · 奢侈品爱好者第一名</li>
+<li><strong>秋叶季节</strong>：十月下旬至十一月初</li>
+<li><strong>运营</strong>: 09:30~22:00, 30,000韩元~80,000韩元/人 (50,000韩元包含入场费)</li>
+<li><strong>外国人适合</strong>：★★★★ 奢侈品爱好者·<strong>支付50,000韩元</strong></li>
+<li><strong>连接</strong>：汉江 + 蚕室 + 乐天塔全套</li>
+</ul>
+<h4>9. 汉江景观咖啡厅群（盘浦、汝矣岛、纛岛）</h4>
+<ul>
+<li><strong>歧视</strong>：<strong>汉江景观咖啡馆+秋叶+夜景全套</strong>·#741 cross</li>
+<li><strong>最佳咖啡馆</strong>：Banpo Cafe、汝矣岛咖啡馆、纛岛咖啡馆</li>
+<li><strong>外国人适合</strong>： ★★★★ MZ + Han River Mania</li>
+<li><strong>连接</strong>：汉江漫步 + View Cafe全套</li>
+</ul>
+<h3>4轴：郊外一日游咖啡馆（3号线）</h3>
+<h4>10. 加平咖啡街 — 北汉江景观+红叶(#739 cross)</h4>
+<ul>
+<li><strong>歧视</strong>：<strong>加平咖啡街·北汉江景+秋叶+郊区第一名</strong>·外国爱好者第一名</li>
+<li><strong>红叶季节</strong>：10月中旬至10月中旬（郊区提前2-3天）</li>
+<li><strong>最佳咖啡馆</strong>：加平咖啡馆街和南怡岛旁边的咖啡馆</li>
+<li><strong>国外适合</strong>：★★★★★ MZ + 家庭 + 爱好者</li>
+<li><strong>交通</strong>：加平站（ITX，1小时，8,000韩元），步行10分钟</li>
+</ul>
+<h4>11. 杨平 Dumulmeori 咖啡馆 — 雾 + 秋叶融合 (#739 cross)</h4>
+<ul>
+<li><strong>歧视</strong>：<strong>杨平雾+秋叶+汉江全套</strong> · Instagram Mania第一名</li>
+<li><strong>秋叶季节</strong>：十月下旬至十一月初</li>
+<li><strong>最好的咖啡馆</strong>：Dumulmeori Cafe，Semiwon旁边的咖啡馆</li>
+<li><strong>国外适合</strong>： ★★★★ MZ + Mania 第一名</li>
+<li><strong>交通</strong>：阳水站（京义中央线）·步行30分钟</li>
+</ul>
+<h4>12.坡州·Heyri咖啡街——外国人步行+秋天（#739 cross郊外）</h4>
+<ul>
+<li><strong>歧视</strong>：<strong>坡州·Heyri咖啡馆街·外国人步行+秋叶+画廊全套</strong></li>
+<li><strong>秋叶季节</strong>：十月下旬至十一月初</li>
+<li><strong>最佳咖啡馆</strong>：Heyri Art Village Cafe、Paju English Village Cafe</li>
+<li><strong>适合外国人</strong>：★★★★ MZ + 文化 + 狂热</li>
+<li><strong>交通</strong>：坡州站（京义中央线，1小时30分钟）·班车全套</li>
+</ul>
+<hr>
+<h2>⚠️ 准确性验证</h2>
+<p><strong>验证完成</strong>（截至2026年6月4日）：</p>
+<ul>
+<li>益善洞、北村、西村韩屋咖啡馆距离验证（visitkorea·#557 cross）</li>
+<li>圣水屋顶咖啡馆全套验证（visitseoul·#740 cross）</li>
+<li>N首尔塔景观咖啡厅 11:00~22:00 (nseoultower.co.kr)</li>
+<li>蚕室乐天塔 SEOULSKY 09:30~22:00·50,000韩元 (lwt.co.kr)</li>
+<li>加平·杨平咖啡街 (visitkorea·#739 cross)</li>
+<li>红叶高峰期 10/27~11/2 (韩国气象厅平均年份)</li>
+</ul>
+<p><strong>注意</strong>：</p>
+<ul>
+<li>咖啡馆营业时间 = 因咖啡馆而异，建议提前 1 周查看 Instagram</li>
+<li>旺季（10/27~11/2）很快售完，等待时间+1小时</li>
+<li>郊区咖啡馆 = 缩短工作日营业时间（周一和周二更多关门）</li>
+</ul>
+<hr>
+<h2>常见问题 6</h2>
+<h3>Q1。最适合外国人的秋叶咖啡馆？</h3>
+<ul>
+<li><strong>文化爱好者</strong>：益善洞(#1)·北村(#2)·西村(#3)韩屋咖啡馆全套</li>
+<li><strong>MZ Instagram</strong>：圣水 (#4) 屋顶咖啡馆·#740 cross</li>
+<li><strong>豪华</strong>：N首尔塔(#7)·乐天塔(#8)观景咖啡厅</li>
+<li><strong>郊区</strong>：加平·杨平·坡州 (#10·#11·#12)</li>
+</ul>
+<h3>Q2。最好的秋季咖啡馆菜单？</h3>
+<ul>
+<li><strong>不。 1位外国爱好者</strong>：南瓜拿铁、红薯拿铁、栗子拿铁、印加米吐司</li>
+<li><strong>传统狂热</strong>：韩药茶、水精果、锡克耶、韩国传统甜点</li>
+<li><strong>豪华</strong>：甜南瓜蛋糕、烤核桃拿铁、蜂蜜拿铁</li>
+<li><strong>额外的郊区咖啡馆</strong>：全套热鱼饼和bungeoppang</li>
+</ul>
+<h3>Q3。何时是去咖啡馆欣赏最佳秋叶的最佳时间？</h3>
+<ul>
+<li><strong>市中心</strong>：10/27~11/2（1周，韩屋，屋顶，景观咖啡馆）</li>
+<li><strong>郊区</strong>：10/25~11/5（郊区+提前2~3天）</li>
+<li><strong>最佳工作日</strong>：10/28 星期二、10/29 星期三、10/30 星期四（人群较多）</li>
+<li><strong>备份</strong>：11/3后的落叶+全套咖啡馆屋檐</li>
+</ul>
+<h3>Q4。费用是多少？ （按课程）</h3>
+<ul>
+<li><strong>低成本（韩屋咖啡厅）</strong>：KRW 10,000~KRW 15,000/人（1杯饮料+甜点）</li>
+<li><strong>MZ屋顶咖啡厅</strong>：15,000韩元~25,000韩元/人</li>
+<li><strong>View Cafe (N首尔塔·乐天塔)</strong>: 30,000韩元~80,000韩元/人</li>
+<li><strong>郊外一日游+咖啡厅</strong>：30,000韩元~50,000韩元/人+交通</li>
+</ul>
+<h3>Q5。下雨天最好吗？</h3>
+<ul>
+<li><strong>韩屋咖啡馆（#1·#2·#3）</strong>：屋檐+雨+秋叶Instagram上#1</li>
+<li><strong>观景咖啡厅(#7·#8)</strong>：室内+秋叶全景（雨中）</li>
+<li><strong>有用的提示</strong>：Rain + Hanok Cafe Eaves = Instagram 上外国爱好者的第一名</li>
+</ul>
+<h3>Q6。适合韩剧/韩国流行音乐爱好者吗？</h3>
+<ul>
+<li><strong>韩剧拍摄地咖啡馆</strong>：哥布林、梨泰院Class、#743 cross</li>
+<li><strong>益善洞</strong>：一些韩剧拍摄地和Instagram爱好者</li>
+<li><strong>Seongsu</strong>：NewJeans·BLACKPINK Instagram Mania 现货</li>
+<li><strong>链接</strong>：#743秋叶韩剧拍摄场地全套</li>
+</ul>
+<hr>
+<h2>全日制课程 3</h2>
+<h3>A课程 — 适合外国初学者的咖啡馆（3小时）</h3>
+<ul>
+<li><strong>14:00</strong> 钟路三街站6号出口 → 益善洞韩屋咖啡厅 (1小时, 15,000韩元)</li>
+<li><strong>15:00</strong> 漫步益善洞 + 韩屋屋檐 Instagram</li>
+<li><strong>16:00</strong> 北村韩屋咖啡厅（1小时，15,000韩元）</li>
+<li><strong>17:00</strong> 整理</li>
+<li><strong>总费用</strong>：约 30,000 韩元/人（约 23 美元）</li>
+</ul>
+<h3>课程 B — MZ Mania（5 小时）</h3>
+<ul>
+<li><strong>13:00</strong> 首尔林站4号出口 → 首尔林 + 鹿园 (#740·1小时)</li>
+<li><strong>14:00</strong> 圣水咖啡厅午餐 (1小时, 20,000韩元)</li>
+<li><strong>15:00</strong> 圣水屋顶咖啡厅 (1小时, 20,000韩元)</li>
+<li><strong>16:00</strong> D博物馆 (1.5小时·18,000韩元)</li>
+<li><strong>17:30</strong> 结论</li>
+<li><strong>总费用</strong>：约 60,000 韩元/人（约 46 美元）</li>
+</ul>
+<h3>C路线——奢华狂热2天1夜（市中心+郊区）</h3>
+<ul>
+<li><strong>第一天上午</strong>：南山 + N 首尔塔景观咖啡馆 (#7·30,000 韩元)</li>
+<li><strong>下午1点</strong>：蚕室乐天塔SEOULSKY (#8·50,000韩元)</li>
+<li><strong>第一天晚餐</strong>：汉江景观咖啡厅（#9·25,000韩元）</li>
+<li><strong>第一天住宿</strong>：江南豪华酒店（300,000 韩元 - 500,000 韩元/晚）</li>
+<li><strong>第2天上午</strong>：加平一日游（#739·ITX 1小时）</li>
+<li><strong>第二天下半场</strong>：加平咖啡街 + 南怡岛 (#739)</li>
+<li><strong>总费用</strong>：约400,000~700,000韩元/人（~310~540美元）</li>
+</ul>
+<hr>
+<h2>第 5 季 — 秋季 4 周逐步趋势</h2>
+<h3>第 1 周 (10/13~10/19) — 秋叶开始 + 秋季菜单开始</h3>
+<ul>
+<li><strong>秋叶</strong>：10%</li>
+<li><strong>秋季菜单</strong>：出现南瓜、红薯和栗子拿铁</li>
+<li><strong>外国狂热</strong>：最佳开始/工作日</li>
+</ul>
+<h3>第 2 周 (10/20~10/26) — 50% 秋叶</h3>
+<ul>
+<li><strong>秋叶</strong>：50%，韩屋咖啡馆屋檐+秋叶</li>
+<li><strong>外国狂热</strong>：↑·屋顶咖啡馆+景观咖啡馆</li>
+</ul>
+<h3>第三周 (10/27~11/2) — <strong>最佳秋叶观赏</strong></h3>
+<ul>
+<li><strong>秋叶</strong>：90%，咖啡馆爱好者中排名第一</li>
+<li><strong>外国狂热</strong>：第一名</li>
+<li><strong>最佳工作日</strong>：10/28 星期二、10/29 星期三、10/30 星期四</li>
+<li><strong>Insta景点</strong>：益善洞屋檐+秋叶，圣水屋顶+秋叶</li>
+</ul>
+<h3>第4周(11/3~11/9) — 深秋红叶+金色银杏树</h3>
+<ul>
+<li><strong>秋叶</strong>：70% + 落叶</li>
+<li><strong>银杏树</strong>：金峰（#740首尔林银杏树路 + 韩屋咖啡馆）</li>
+<li><strong>外国狂热</strong>：氛围+落叶Instagram</li>
+</ul>
+<h3>第 5 周 (11/10~) — 秋叶结束，冬季菜单开始</h3>
+<ul>
+<li><strong>秋叶</strong>：结束</li>
+<li><strong>冬季菜单</strong>：全套鱼饼、bungeoppang和热茶</li>
+<li><strong>下一个</strong>：冬季咖啡馆群（灯光）</li>
+</ul>
+<hr>
+<h2>技巧 5</h2>
+<h3>秘诀 1 — 平日 + 14:00~16:00 (Cafe Instagram 最佳)</h3>
+<ul>
+<li><strong>最佳</strong>：平日14:00~16:00（阳光+秋叶+人群</li>
+<li><strong>避免周末</strong>：周六/周日 1 小时 + 等待/售完</li>
+<li><strong>提示</strong>：工作日09:00到达=全套咖啡厅套餐</li>
+</ul>
+<h3>秘诀 2 — 韩屋咖啡馆屋檐 + 秋叶 Instagram 最佳</h3>
+<ul>
+<li><strong>最佳地点</strong>：益善洞1933 Eaves·北村韩屋咖啡馆Eaves</li>
+<li><strong>时间</strong>：14:00~16:00（阳光+屋檐影+秋叶）</li>
+<li><strong>有用的提示</strong>：1 片枫叶 + 屋檐 = Instagram #1</li>
+</ul>
+<h3>Tip 3——国外爱好者推荐的秋季菜单</h3>
+<ul>
+<li><strong>南瓜拿铁</strong>：国外爱好者中No.1（与星巴克PSL相比）</li>
+<li><strong>红薯拿铁</strong>：正宗韩国和外国爱好者的好奇心</li>
+<li><strong>印加米吐司</strong>：韩国#1·No. Instagram 海外爱好者中排名第一</li>
+<li><strong>蜂蜜拿铁</strong>：奢华狂热·#1</li>
+</ul>
+<h3>提示 4 — 服装 + 用品</h3>
+<ul>
+<li><strong>十月下旬平均气温 12°C</strong>：咖啡馆室内温暖（浅衣）</li>
+<li><strong>郊外咖啡馆</strong>：添加隔热层（首尔 + 4°C 寒冷）</li>
+<li><strong>鞋子</strong>：适合步行的咖啡馆/建议穿运动鞋</li>
+</ul>
+<p>###小贴士5——外国疯狂咖啡馆预订（Klook客路·KKday）</p>
+<ul>
+<li><strong>N首尔塔·乐天塔景观咖啡厅</strong>：Klook客路·KKday通行证</li>
+<li><strong>Foreign Mania 1日通行证</strong>：韩屋咖啡馆 + 屋顶咖啡馆全套</li>
+<li><strong>温馨提示</strong>：工作日提前1周预订，周末售完</li>
+</ul>
+<hr>
+<h2>外部来源≥5</h2>
+<p>1. <strong>visitkorea.or.kr</strong> — 韩国咖啡馆矩阵，外国爱好者中排名第一（已验证2026-06-04）</p>
+<p>2. <strong>visitseoul.net</strong>——首尔咖啡馆集群+多语言全覆盖</p>
+<p>3. <strong>nseoultower.co.kr</strong> — N首尔塔景观咖啡厅 11:00~22:00</p>
+<p>4. <strong>lwt.co.kr</strong> — 乐天塔 SEOULSKY 09:30~22:00·50,000韩元</p>
+<p>5. <strong>Insta Mania 验证</strong> — #557 Hanok Cafe 深十字</p>
+<p>6. <strong>韩国气象厅的红叶正常年份</strong> — 城市咖啡馆的红叶高峰期 10/27~11/2</p>
+<hr>
+<h2>适合外国人</h2>
+<ul>
+<li>★★★★★ EN·JP·CN MZ + 家庭 + Mania + Instagram 上#1</li>
+<li><strong>室内全套</strong>：雨+寒冷</li>
+<li><strong>Insta Mania</strong>：韩屋屋檐、屋顶全景、景观咖啡厅层</li>
+<li><strong>K-food fusion</strong>：秋季菜单（南瓜、红薯、印加米、蜂蜜）在外国爱好者中排名第一</li>
+<li><strong>多语言泳池盖</strong>：韩屋、屋顶、景观、城外咖啡馆 EN·JP·CN 泳池</li>
+</ul>
+<h2>狂热角色契合度</h2>
+<ul>
+<li><strong>kpop_mania</strong>：★★★★（Seongsu NewJeans·#740 cross）</li>
+<li><strong>kdrama_mania</strong>：★★★★（鬼怪·梨泰院Class Cafe的一部分·#743 cross）</li>
+<li><strong>美食家</strong>：★★★★★（秋季菜单第一名+全套甜品套餐）</li>
+<li><strong>culture_mania</strong>：★★★★★（1号韩屋咖啡厅·#1·#2·#3）</li>
+<li><strong>mz_traveler</strong>：★★★★★（圣水屋顶，Instagram 上排名第一）</li>
+<li><strong>luxury_traveler</strong>：★★★★★（N首尔塔·乐天塔景观咖啡馆）</li>
+<li><strong>family_traveler</strong>：★★★★（一日游咖啡店外·#10·#11·#12）</li>
+</ul>
+  </article>
+
+  <div class="share-bar">
+    <span class="share-label">공유</span>
+    <button class="share-btn share-twitter" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent('외국인 한국 가을 단풍 카페 cluster 12선 deep dive') + '&url=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Twitter">𝕏</button>
+    <button class="share-btn share-facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Facebook">f</button>
+    <button class="share-btn share-kakao" onclick="navigator.share ? navigator.share({title: '외국인 한국 가을 단풍 카페 cluster 12선 deep dive', url: window.location.href}) : navigator.clipboard.writeText(window.location.href).then(function() { alert('링크 복사됨!'); })" aria-label="Kakao/Share">📤</button>
+    <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href).then(function() { this.textContent = '✓'; setTimeout(function() { document.querySelector('.share-copy').textContent = '🔗'; }, 1500); }.bind(this))" aria-label="Copy link">🔗</button>
+  </div>
+
+  <nav class="detail-nav" aria-label="previous-next">
+    <div><a href="hangang-picnic-fall.html" style="color:var(--red);">&larr; 외국인 한국 한강공원 가을 피크닉 12선 deep dive</a></div>
+    <div><a href="fall-kdrama-locations.html" style="color:var(--red);">외국인 한국 가을 단풍 K-드라마 촬영지 12선 deep dive &rarr;</a></div>
+  </nav>
+</main>
+
+<footer class="site-footer">
+  <p><a href="https://instagram.com/keychingu.korea" target="_blank">@keychingu.korea</a> &mdash; Seoul for MZ FIT Travelers</p>
+</footer>
+</body>
+</html>

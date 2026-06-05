@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>서울 hiking 둘레길 매트릭스 deep dive — KeyChinGu</title>
+<meta name="description" content="首尔徒步·Dulegil矩阵深度潜水-北汉山和冠岳山的12个选择 > 字幕：徒步·杜勒吉尔·老外英语OK·148·363·385后续深潜 第03期·515·2026-05-27 --- 🎯 为什么要深入首尔徒步/旅行矩阵？ 外国徒步和自然爱好者第一名=首尔徒步·Dulegil深潜（148徒步·363自行车·Dul...">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="192x192" href="../assets/logo/favicon-192.png">
+<link rel="apple-touch-icon" href="../assets/logo/favicon-192.png">
+<link rel="canonical" href="https://mgself414.github.io/keychingu-content-deploy/content/hiking-duregil.html">
+<link rel="alternate" hreflang="ko" href="https://mgself414.github.io/keychingu-content-deploy/content/hiking-duregil.html">
+<link rel="alternate" hreflang="en" href="https://mgself414.github.io/keychingu-content-deploy/content/hiking-duregil.en.html">
+<link rel="alternate" hreflang="x-default" href="https://mgself414.github.io/keychingu-content-deploy/content/hiking-duregil.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="서울 hiking 둘레길 매트릭스 deep dive">
+<meta property="og:description" content="首尔徒步·Dulegil矩阵深度潜水-北汉山和冠岳山的12个选择 > 字幕：徒步·杜勒吉尔·老外英语OK·148·363·385后续深潜 第03期·515·2026-05-27 --- 🎯 为什么要深入首尔徒步/旅行矩阵？ 外国徒步和自然爱好者第一名=首尔徒步·Dulegil深潜（148徒步·363自行车·Dul...">
+<meta property="og:url" content="https://mgself414.github.io/keychingu-content-deploy/content/hiking-duregil.html">
+<meta property="og:image" content="https://mgself414.github.io/keychingu-content-deploy/assets/logo/og-image-1200x630.png">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="서울 hiking 둘레길 매트릭스 deep dive">
+<meta name="twitter:description" content="首尔徒步·Dulegil矩阵深度潜水-北汉山和冠岳山的12个选择 > 字幕：徒步·杜勒吉尔·老外英语OK·148·363·385后续深潜 第03期·515·2026-05-27 --- 🎯 为什么要深入首尔徒步/旅行矩阵？ 外国徒步和自然爱好者第一名=首尔徒步·Dulegil深潜（148徒步·363自行车·Dul...">
+<meta name="twitter:image" content="https://mgself414.github.io/keychingu-content-deploy/assets/logo/og-image-1200x630.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"서울 hiking 둘레길 매트릭스 deep dive","description":"首尔徒步·Dulegil矩阵深度潜水-北汉山和冠岳山的12个选择 > 字幕：徒步·杜勒吉尔·老外英语OK·148·363·385后续深潜 第03期·515·2026-05-27 --- 🎯 为什么要深入首尔徒步/旅行矩阵？ 外国徒步和自然爱好者第一名=首尔徒步·Dulegil深潜（148徒步·363自行车·Dul...","datePublished":"2026-05-01","inLanguage":"ko","url":"https://mgself414.github.io/keychingu-content-deploy/content/hiking-duregil.html","image":"https://mgself414.github.io/keychingu-content-deploy/assets/logo/og-image-1200x630.png","publisher":{"@type":"Organization","name":"KeyChinGu","logo":{"@type":"ImageObject","url":"https://mgself414.github.io/keychingu-content-deploy/assets/logo/logo_2-4_color_small.png"}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/main.css">
+<style>
+.detail-wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+}
+.breadcrumb {
+  font-size: 13px;
+  color: var(--text-soft);
+  margin-bottom: 24px;
+}
+.breadcrumb a { color: var(--red); font-weight: 600; }
+.detail-wrap h1 {
+  font-size: 28px; font-weight: 800;
+  color: var(--black); margin-bottom: 8px;
+}
+.detail-wrap h2 {
+  font-size: 22px; font-weight: 700;
+  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--red);
+}
+.detail-wrap h3 {
+  font-size: 17px; font-weight: 600;
+  color: var(--text-mid); margin-top: 20px; margin-bottom: 8px;
+}
+.detail-wrap p {
+  font-size: 15px; line-height: 1.7;
+  color: var(--text-mid); margin-bottom: 12px;
+}
+.detail-wrap ul {
+  padding-left: 20px; margin-bottom: 12px;
+}
+.detail-wrap li {
+  font-size: 14px; line-height: 1.6;
+  color: var(--text-mid); margin-bottom: 6px;
+}
+.detail-wrap table {
+  width: 100%; border-collapse: collapse;
+  margin-bottom: 16px; font-size: 13px;
+}
+.detail-wrap th {
+  background: var(--black); color: #fff;
+  padding: 10px 12px; text-align: left;
+  font-weight: 600; font-size: 11px;
+  text-transform: uppercase; letter-spacing: 0.06em;
+}
+.detail-wrap td {
+  padding: 10px 12px; border-bottom: 1px solid var(--border);
+  color: var(--text-mid);
+}
+.detail-wrap tr:nth-child(even) td { background: rgba(0,0,0,0.02); }
+.detail-wrap hr {
+  border: none; height: 1px;
+  background: var(--border); margin: 24px 0;
+}
+.detail-wrap code {
+  background: rgba(33,140,204,0.08);
+  padding: 2px 6px; border-radius: 4px;
+  font-size: 13px; color: var(--blue);
+}
+.detail-nav {
+  display: flex; justify-content: space-between;
+  margin-top: 48px; padding-top: 20px;
+  border-top: 1px solid var(--border);
+  font-size: 14px; font-weight: 600;
+}
+.share-bar {
+  display: flex; align-items: center; gap: 10px;
+  margin-top: 40px; padding: 16px 20px;
+  background: #f9f9f9; border-radius: 12px;
+  border: 1px solid var(--border);
+}
+.share-label {
+  font-size: 14px; font-weight: 600; color: var(--text-soft);
+  margin-right: 8px;
+}
+.share-btn {
+  width: 40px; height: 40px;
+  border: none; border-radius: 50%;
+  background: #fff; cursor: pointer;
+  font-size: 1.1rem; transition: all 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  display: inline-flex; align-items: center; justify-content: center;
+}
+.share-btn:hover { transform: translateY(-2px); box-shadow: 0 3px 8px rgba(0,0,0,0.15); }
+.share-twitter:hover { background: #000; color: #fff; }
+.share-facebook:hover { background: #1877f2; color: #fff; }
+.share-kakao:hover { background: #fee500; }
+.share-copy:hover { background: #218CCC; color: #fff; }
+/* EN toggle disabled — 영문판 미생성 콘텐츠 (2026-05-16 patch) */
+.lang-switch .lang-disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  text-decoration: line-through;
+  padding: 4px 10px;
+  color: var(--text-soft, #888);
+  font-size: 13px;
+  user-select: none;
+}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <div class="lang-switch">
+    <a href="../content/hiking-duregil.html" class="active">KR</a>
+    <a href="../content/hiking-duregil.en.html" >EN</a>
+  </div>
+</header>
+
+<main class="detail-wrap">
+  <nav class="breadcrumb" aria-label="breadcrumb"><a href="../index.html">전체 가이드</a> &rsaquo; 서울 hiking 둘레길 매트릭스 deep dive</nav>
+  <article>
+  <p>#首尔徒步·Dulegil矩阵深度潜水-北汉山和冠岳山的12个选择</p>
+<p>&gt; <strong>字幕</strong>：徒步·杜勒吉尔·老外英语OK·#148·#363·#385后续深潜</p>
+<p>第03期·#515·2026-05-27</p>
+<hr>
+<h2>🎯 为什么要深入首尔徒步/旅行矩阵？</h2>
+<p>外国徒步和自然爱好者第一名=<strong>首尔徒步·Dulegil深潜</strong>（#148徒步·#363自行车·Dulegil·#177Nowon Dullegil·#385第4季后续）。北汉山（韩国#1城市国家公园）+首尔24座山+156公里步道+外国人英语OK·EN/JP爱好者12%。</p>
+<hr>
+<p>##★ 12条徒步·旅行矩阵一览</p>
+<table><thead><tr>
+<th>＃</th>
+<th>山脉和小径</th>
+<th>4轴</th>
+<th>签名</th>
+</tr></thead><tbody>
+<tr>
+<td>1</td>
+<td><strong>北汉山国立公园(836m)</strong> ★韩国#1城市国家公园</td>
+<td>主要酸#1</td>
+<td>外国爱好者排名第一的目的地：百云台等 21 座山峰</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>南山 (262m) + 南山杜勒路 6.6km</strong></td>
+<td>主要酸#1</td>
+<td>N首尔塔·市中心#1·外国人Instagram·#13</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>冠岳山(632m)+舍堂站路线</strong></td>
+<td>主要酸#1</td>
+<td>适合外国人的高性价比徒步·首尔大学(#174)</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>道峰山 (740m) + 道峰杜勒路</strong> ★ #177</td>
+<td>主要酸#1</td>
+<td>紫云峰·道峰步道·#177芦原</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>北岳山(342m) + 青瓦台球场</strong></td>
+<td>城市山</td>
+<td>毗邻青瓦台·#191·国外正品爱好者</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>仁王山(338m) + 社稷坛</strong></td>
+<td>城市山</td>
+<td>市中心·#191·外国狂热·#379</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>应峰山、峨嵯山、龙马山、水岳山、富兰山</strong></td>
+<td>城市山</td>
+<td>汉江景·#260夜景一体化</td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>首尔杜勒吉尔 156 公里（2014 年 8 条路线）</strong> ★ 韩国 #1 城市杜勒吉尔</td>
+<td>杜勒吉尔矩阵</td>
+<td>道峰·苏拉克·布拉姆(1)·龙马·阿查(2)·古德·一子山(3)·大模·乌面(4)·冠岳(5)·安养川(6)·凤山·安峰(7)·北汉山(8)</td>
+</tr>
+<tr>
+<td>9</td>
+<td><strong>北汉山登山道 71.5 公里（21 条路线）</strong></td>
+<td>杜勒吉尔矩阵</td>
+<td>韩国␈MASK24​​␈Dulle-gil·外国狂热</td>
+</tr>
+<tr>
+<td>10</td>
+<td>10 <strong>芦原道峰路线 (#177)</strong> ★</td>
+<td>杜勒吉尔矩阵</td>
+<td>国外狂热·#177·#363整合</td>
+</tr>
+<tr>
+<td>11</td>
+<td>11 <strong>外国人英文徒步指南（Klook·KKday·Seoul Hikers）</strong> ★</td>
+<td>外国狂热</td>
+<td>英语OK·外国爱好者第一名</td>
+</tr>
+<tr>
+<td>12</td>
+<td>12 <strong>外国人徒步套餐（Klook·KKday·KTO·徒步装备租赁）</strong> ★</td>
+<td>外国狂热</td>
+<td>KTO认证/国外发烧友全套</td>
+</tr>
+</tbody></table>
+<p><strong>+附加4</strong>：出国徒步礼仪（垃圾·礼仪）·出国徒步安全（#405·#501合）·出国徒步+寺庙（#509合）·出国徒步+韩服拍照（#379合）</p>
+<hr>
+<h2>⚠ 外国人常犯的5个错误</h2>
+<p>1. <strong>“首尔=只有城市”</strong>：首尔= <strong>北汉山、冠岳山、道峰山24座山+首尔杜勒吉156公里+北汉山杜勒吉71.5公里</strong>+外国自然爱好者第一名·#148·#363综合。</p>
+<p>2. <strong>“北汉山=太难”</strong>：北汉山=<strong>百云台山顶（836m）+外国爱好者+21座难度各异的山峰</strong>+初级义洞道善寺路线·中级百云台·#148综合。</p>
+<p>3. <strong>“登山服=一切所需”</strong>：国外徒步= <strong>运动鞋+1L水+国外爱好者性价比第一</strong>+登山鞋推荐（白云台、北汉山）·外国人穿轻便的衣服就可以了（南山·#13）。</p>
+<p>4. <strong>“首尔Dulle-gil =徒步旅行”</strong>：首尔Dulle-gil 156km = <strong>8条各种路线，市中心，自然，平坦地区</strong> +外国爱好者步行和#363自行车OK +印章旅行KTO认证。</p>
+<p>5. <strong>“外语英语导游=无”</strong>：外语英语导游=<strong>Klook·KKday·Seoul Hikers（外国人俱乐部）</strong> + KTO认证·外语狂热全套。</p>
+<hr>
+<h2>① 主要酸#1 (4)</h2>
+<h3>1.北汉山国立公园★韩国#1城市国立公园</h3>
+<ul>
+<li>836m，21座山峰，首尔东北部（#182恩平，北汉山）</li>
+<li>外国人★：◎◎ — No.1外国人狂热·#148综合</li>
+<li>初级课程：义洞道宣寺（2小时）</li>
+<li>中级课程：百云台峰会（4-5小时）</li>
+<li>签名：Foreign Mania、#177芦原、道峰、#182恩平、#363综合</li>
+</ul>
+<h3>2. 南山 (262m) + 杜勒路 6.6km</h3>
+<ul>
+<li>市中心#1·#13·N首尔塔·No. 1个外国人的Instagram</li>
+<li>老外★：◎◎ — 城市徒步·#13融合</li>
+<li>签名：No.1外国狂热·#260夜景·#417Instagram</li>
+</ul>
+<h3>3.冠岳山(632m)+舍堂站路线</h3>
+<ul>
+<li>外国人★：◎◎ — 对外国人来说性价比高的徒步旅行·#174毗邻首尔大学</li>
+<li>签名：外国狂热·#181动作整合</li>
+</ul>
+<h3>4. 道峰山(740m)+道峰步道★#177</h3>
+<ul>
+<li>紫云峰·道峰路线#177芦原</li>
+<li>外国人★：◎◎ — 外国人狂热·#177整合</li>
+<li>签名：外国狂热·#177·#363集成</li>
+</ul>
+<hr>
+<h2>② 都市山地 (3)</h2>
+<h3>5.北岳山(342m)+青瓦台球场</h3>
+<ul>
+<li>毗邻青瓦台·#191·国外正品爱好者</li>
+<li>外国人★：◎◎ — 市中心·#241青瓦台·#379韩服合一</li>
+<li>签名：外国狂热·#191·#379</li>
+</ul>
+<h3>6.仁王山(338m)+社稷坛</h3>
+<ul>
+<li>市中心·#191·外国狂热·#379</li>
+<li>外国人★：◎◎ — 外国人狂热·#191·#379</li>
+<li>签名：国外正品爱好者</li>
+</ul>
+<h3>7. 鹰峰山、峨嵯山、龙马山、水岳山、富兰山</h3>
+<ul>
+<li>汉江景观·#260夜景一体化</li>
+<li>老外★：◎ — 老外狂热·#260·#308整合</li>
+<li>签名：外国狂热·#260</li>
+</ul>
+<hr>
+<h2>③ 杜勒吉尔矩阵 (3)</h2>
+<h3>8. 首尔杜勒吉尔 156km ★ 韩国 #1 城市杜勒吉尔</h3>
+<ul>
+<li>2014年开业，8门课程</li>
+<li>1: 道峰、水叻、不兰 / 2: 龙马、阿差 / 3: 古德、一子山 / 4: 大模、乌面 / 5: 冠岳 / 6: 安阳川 / 7: 峰山、安峰 / 8: 北汉山</li>
+</ul>
+<p>-外国人★：◎◎——韩国#1No.1市中心步道和外国爱好者</p>
+<ul>
+<li>签名：外国爱好者、KTO认证、印章之旅</li>
+</ul>
+<h3>9. 北汉山杜勒吉尔 71.5km (21条路线)</h3>
+<ul>
+<li>外国人★：◎◎ - 韩国#1杜勒吉尔·外国狂热</li>
+<li>签名：外国狂热·#148·#363集成</li>
+</ul>
+<h3>10.芦原道峰路线 ★ #177</h3>
+<ul>
+<li>外国人★：◎◎ — 外国人狂热·#177整合</li>
+<li>签名：外国狂热·#177·#363集成</li>
+</ul>
+<hr>
+<h2>④ 外国狂热（2 + 额外 4）</h2>
+<h3>11. 外国人英语徒步指南★ Klook·KKday·Seoul Hikers</h3>
+<ul>
+<li>Klook客路·KKday·Seoul Hikers（外国人俱乐部）·KTO认证</li>
+<li>外国人★：◎◎ - 英语OK，外国人狂热No.1</li>
+<li>签名：外国爱好者/KTO认证</li>
+</ul>
+<h3>12.国外徒步套餐★Klook·KKday·KTO·徒步装备租赁</h3>
+<ul>
+<li>外国人★：◎◎ — KTO认证，全套外国爱好者</li>
+<li>签名：外国狂潮·#148·#363·#501·#405集成</li>
+</ul>
+<h3>+ 添加 4</h3>
+<ul>
+<li><strong>国外徒步礼仪</strong>——垃圾袋、礼仪、国外爱好者</li>
+<li><strong>国外徒步安全（#405·#501）</strong> — 徒步意外、女性独行安全</li>
+<li><strong>外国人徒步+寺庙(#509)</strong> — 精完寺、奉恩寺、吉祥寺、#357综合</li>
+<li><strong>外国人徒步+韩服拍照(#379)</strong> — #379·#447 照片整合</li>
+</ul>
+<hr>
+<h2>⚙ 6 个常见问题解答</h2>
+<p>1. <strong>没有。适合外国人的1个徒步目的地</strong>：北汉山（白云台836m）、南山（市中心262m）、冠岳山（632m性价比高）、道峰山（740m）。</p>
+<p>2. <strong>没有。 1 适合外国人的杜勒路</strong>：首尔杜勒路 156 公里（8 条路线）、北汉山杜勒路 71.5 公里、芦原道峰 (#177)。</p>
+<p>3. <strong>国外英文导游</strong>：Klook·KKday·Seoul Hikers·KTO认证·外国狂潮。</p>
+<p>4. <strong>对于外国人来说性价比</strong>：免费，运动鞋还可以，1L水，对于国外爱好者来说1号。</p>
+<p>5. <strong>外国人安全</strong>：推荐登山鞋（北汉山）·#405紧急·#501女独行·外国人爱好者。</p>
+<p>6. <strong>外国人融入</strong>：徒步+寺庙(#357·#509)+韩服(#379)+夜景(#260)+#363自行车。</p>
+<hr>
+<h2>🗺 3个适合外国人的徒步路线</h2>
+<h3>A. 外国人第一次徒步全天（南山·#13）</h3>
+<ul>
+<li>09:00 南山 (262m)·N 首尔塔 (#13) → 12:00 韩国料理 → 14:00 仁王山 (338m·#191) → 17:00 北岳山 (342m·#241 青瓦台)</li>
+</ul>
+<h3>B. 面向外国人的北汉山2天1夜 (#148·#509)</h3>
+<ul>
+<li>第一天：义洞道宣寺路线（初学者2小时）+精完寺1晚（#332·#357·#509）</li>
+<li>第 2 天：百云台峰会（4-5 小时）+ 外国狂热套餐</li>
+</ul>
+<h3>C. 首尔杜勒街 156公里 外国人 1周 (#363·#515)</h3>
+<ul>
+<li>第1~2天：课程1·2（道峰·苏拉克·龙马·阿查）</li>
+<li>第3~4天：课程3·4·5（古德、大毛、冠岳）</li>
+<li>第5~7天：路线6·7·8（安阳川、凤山、北汉山）+ 完成印章之旅</li>
+</ul>
+<hr>
+<h2>第五季</h2>
+<ul>
+<li><strong>春季3月至5月</strong>：杜鹃花，杜鹃花，外国爱好者中的No.1，#385，#506佛诞</li>
+<li><strong>夏季6~8月</strong>：国外爱好者·#06汉江组合·清晨徒步</li>
+<li><strong>秋季九月至十一月</strong>：<strong>秋叶远足·#385·#229·#273矩阵·No. 1 名外国爱好者</strong></li>
+<li><strong>冬季12月~2月</strong>：异域风情·雪景·#385·异域风情</li>
+<li><strong>全年</strong>：北汉山、南山、冠岳、道峰、首尔步道、外国狂热</li>
+</ul>
+<hr>
+<h2>🔗 相关</h2>
+<ul>
+<li>#13南山·#148徒步旅行·#149自行车·#174首尔大学·#176步行首尔·#177芦原·道峰杜勒路·#178外国人的第一个参观·#181铜雀·#182恩平·北汉山·#191西村·城北·#229秋叶·#241青瓦台·#260夜景·#273秋叶Matrix·#308汉江以东·#332寺庙住宿·#357寺庙食品·#363自行车·旅行·#379韩服·宫殿·#385四个季节·#405紧急情况·安全·#447照相馆·#501女独行安全·#506节日日历·#509寺庙体验</li>
+</ul>
+<h2>🏷标签</h2>
+<p><code>#서울hiking둘레길매트릭스deepdive</code> <code>#SeoulHikingDuregilMatrix</code> <code>#북한산국립공원836m한국1도시21개봉우리</code> <code>#남산262m둘레길6.6km도심1␈MASK140␈</code> <code>#관악산632m사당역코스␈MASK141␈</code> <code>#도봉산740m도봉둘레길␈MASK142␈</code> <code>#북악산342m청와대␈MASK143␈</code> <code>#인왕산338m사직단␈MASK144␈</code> <code>#응봉산아차산용마수락불암한강view␈MASK145␈</code> <code>#서울둘레길156km2014 8코스도봉수락용마아차고덕대모관악안양천봉산북한산</code> <code>#북한산둘레길71.5km 21코스</code> <code>#노원도봉둘레길␈MASK146␈</code> <code>#KlookKKdaySeoulHikers영어가이드</code> <code>#KTO인증패키지등산장비렌탈</code> <code>#매너쓰레기안전␈MASK147␈␈MASK148␈사찰␈MASK149␈한복␈MASK150␈</code> <code>#키친구</code></p>
+  </article>
+
+  <div class="share-bar">
+    <span class="share-label">공유</span>
+    <button class="share-btn share-twitter" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent('서울 hiking 둘레길 매트릭스 deep dive') + '&url=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Twitter">𝕏</button>
+    <button class="share-btn share-facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Facebook">f</button>
+    <button class="share-btn share-kakao" onclick="navigator.share ? navigator.share({title: '서울 hiking 둘레길 매트릭스 deep dive', url: window.location.href}) : navigator.clipboard.writeText(window.location.href).then(function() { alert('링크 복사됨!'); })" aria-label="Kakao/Share">📤</button>
+    <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href).then(function() { this.textContent = '✓'; setTimeout(function() { document.querySelector('.share-copy').textContent = '🔗'; }, 1500); }.bind(this))" aria-label="Copy link">🔗</button>
+  </div>
+
+  <nav class="detail-nav" aria-label="previous-next">
+    <div><a href="museum-expanded.html" style="color:var(--red);">&larr; 한국 박물관 미술관 deep dive 확장</a></div>
+    <div><a href="korean-sns.html" style="color:var(--red);">외국인 한국식 SNS 소통법 deep dive &rarr;</a></div>
+  </nav>
+</main>
+
+<footer class="site-footer">
+  <p><a href="https://instagram.com/keychingu.korea" target="_blank">@keychingu.korea</a> &mdash; Seoul for MZ FIT Travelers</p>
+</footer>
+</body>
+</html>

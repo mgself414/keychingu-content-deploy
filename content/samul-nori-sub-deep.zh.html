@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>외국인 한국 사물놀이 단독 sub 12선 deep dive — KeyChinGu</title>
+<meta name="description" content="12 外国人专属的深韩式四物游戏 ID：694 类别：D 文化/正统 子簇：音乐子深度686·693 cross 亲深：686传统音乐·693板索里 图案：12-pick 4 轴矩阵 Hook：四物诺里4种乐器+金德洙+外国人体验 --- 12 韩国四物游戏 1. Samulnori（由 Deoksu Kim 于...">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="192x192" href="../assets/logo/favicon-192.png">
+<link rel="apple-touch-icon" href="../assets/logo/favicon-192.png">
+<link rel="canonical" href="https://mgself414.github.io/keychingu-content-deploy/content/samul-nori-sub-deep.html">
+<link rel="alternate" hreflang="ko" href="https://mgself414.github.io/keychingu-content-deploy/content/samul-nori-sub-deep.html">
+<link rel="alternate" hreflang="en" href="https://mgself414.github.io/keychingu-content-deploy/content/samul-nori-sub-deep.en.html">
+<link rel="alternate" hreflang="x-default" href="https://mgself414.github.io/keychingu-content-deploy/content/samul-nori-sub-deep.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="외국인 한국 사물놀이 단독 sub 12선 deep dive">
+<meta property="og:description" content="12 外国人专属的深韩式四物游戏 ID：694 类别：D 文化/正统 子簇：音乐子深度686·693 cross 亲深：686传统音乐·693板索里 图案：12-pick 4 轴矩阵 Hook：四物诺里4种乐器+金德洙+外国人体验 --- 12 韩国四物游戏 1. Samulnori（由 Deoksu Kim 于...">
+<meta property="og:url" content="https://mgself414.github.io/keychingu-content-deploy/content/samul-nori-sub-deep.html">
+<meta property="og:image" content="https://mgself414.github.io/keychingu-content-deploy/assets/logo/og-image-1200x630.png">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="외국인 한국 사물놀이 단독 sub 12선 deep dive">
+<meta name="twitter:description" content="12 外国人专属的深韩式四物游戏 ID：694 类别：D 文化/正统 子簇：音乐子深度686·693 cross 亲深：686传统音乐·693板索里 图案：12-pick 4 轴矩阵 Hook：四物诺里4种乐器+金德洙+外国人体验 --- 12 韩国四物游戏 1. Samulnori（由 Deoksu Kim 于...">
+<meta name="twitter:image" content="https://mgself414.github.io/keychingu-content-deploy/assets/logo/og-image-1200x630.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"외국인 한국 사물놀이 단독 sub 12선 deep dive","description":"12 外国人专属的深韩式四物游戏 ID：694 类别：D 文化/正统 子簇：音乐子深度686·693 cross 亲深：686传统音乐·693板索里 图案：12-pick 4 轴矩阵 Hook：四物诺里4种乐器+金德洙+外国人体验 --- 12 韩国四物游戏 1. Samulnori（由 Deoksu Kim 于...","datePublished":"2026-05-01","inLanguage":"ko","url":"https://mgself414.github.io/keychingu-content-deploy/content/samul-nori-sub-deep.html","image":"https://mgself414.github.io/keychingu-content-deploy/assets/logo/og-image-1200x630.png","publisher":{"@type":"Organization","name":"KeyChinGu","logo":{"@type":"ImageObject","url":"https://mgself414.github.io/keychingu-content-deploy/assets/logo/logo_2-4_color_small.png"}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/main.css">
+<style>
+.detail-wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+}
+.breadcrumb {
+  font-size: 13px;
+  color: var(--text-soft);
+  margin-bottom: 24px;
+}
+.breadcrumb a { color: var(--red); font-weight: 600; }
+.detail-wrap h1 {
+  font-size: 28px; font-weight: 800;
+  color: var(--black); margin-bottom: 8px;
+}
+.detail-wrap h2 {
+  font-size: 22px; font-weight: 700;
+  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--red);
+}
+.detail-wrap h3 {
+  font-size: 17px; font-weight: 600;
+  color: var(--text-mid); margin-top: 20px; margin-bottom: 8px;
+}
+.detail-wrap p {
+  font-size: 15px; line-height: 1.7;
+  color: var(--text-mid); margin-bottom: 12px;
+}
+.detail-wrap ul {
+  padding-left: 20px; margin-bottom: 12px;
+}
+.detail-wrap li {
+  font-size: 14px; line-height: 1.6;
+  color: var(--text-mid); margin-bottom: 6px;
+}
+.detail-wrap table {
+  width: 100%; border-collapse: collapse;
+  margin-bottom: 16px; font-size: 13px;
+}
+.detail-wrap th {
+  background: var(--black); color: #fff;
+  padding: 10px 12px; text-align: left;
+  font-weight: 600; font-size: 11px;
+  text-transform: uppercase; letter-spacing: 0.06em;
+}
+.detail-wrap td {
+  padding: 10px 12px; border-bottom: 1px solid var(--border);
+  color: var(--text-mid);
+}
+.detail-wrap tr:nth-child(even) td { background: rgba(0,0,0,0.02); }
+.detail-wrap hr {
+  border: none; height: 1px;
+  background: var(--border); margin: 24px 0;
+}
+.detail-wrap code {
+  background: rgba(33,140,204,0.08);
+  padding: 2px 6px; border-radius: 4px;
+  font-size: 13px; color: var(--blue);
+}
+.detail-nav {
+  display: flex; justify-content: space-between;
+  margin-top: 48px; padding-top: 20px;
+  border-top: 1px solid var(--border);
+  font-size: 14px; font-weight: 600;
+}
+.share-bar {
+  display: flex; align-items: center; gap: 10px;
+  margin-top: 40px; padding: 16px 20px;
+  background: #f9f9f9; border-radius: 12px;
+  border: 1px solid var(--border);
+}
+.share-label {
+  font-size: 14px; font-weight: 600; color: var(--text-soft);
+  margin-right: 8px;
+}
+.share-btn {
+  width: 40px; height: 40px;
+  border: none; border-radius: 50%;
+  background: #fff; cursor: pointer;
+  font-size: 1.1rem; transition: all 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  display: inline-flex; align-items: center; justify-content: center;
+}
+.share-btn:hover { transform: translateY(-2px); box-shadow: 0 3px 8px rgba(0,0,0,0.15); }
+.share-twitter:hover { background: #000; color: #fff; }
+.share-facebook:hover { background: #1877f2; color: #fff; }
+.share-kakao:hover { background: #fee500; }
+.share-copy:hover { background: #218CCC; color: #fff; }
+/* EN toggle disabled — 영문판 미생성 콘텐츠 (2026-05-16 patch) */
+.lang-switch .lang-disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  text-decoration: line-through;
+  padding: 4px 10px;
+  color: var(--text-soft, #888);
+  font-size: 13px;
+  user-select: none;
+}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <div class="lang-switch">
+    <a href="../content/samul-nori-sub-deep.html" class="active">KR</a>
+    <a href="../content/samul-nori-sub-deep.en.html" >EN</a>
+  </div>
+</header>
+
+<main class="detail-wrap">
+  <nav class="breadcrumb" aria-label="breadcrumb"><a href="../index.html">전체 가이드</a> &rsaquo; 외국인 한국 사물놀이 단독 sub 12선 deep dive</nav>
+  <article>
+  <p>#12 外国人专属的深韩式四物游戏</p>
+<p><strong>ID</strong>：694</p>
+<p><strong>类别</strong>：D 文化/正统</p>
+<p><strong>子簇</strong>：音乐子深度#686·#693 cross</p>
+<p><strong>亲深</strong>：#686传统音乐·#693板索里</p>
+<p><strong>图案</strong>：12-pick 4 轴矩阵</p>
+<p><strong>Hook</strong>：四物诺里4种乐器+金德洙+外国人体验</p>
+<hr>
+<h2>12 韩国四物游戏</h2>
+<h3>1. Samulnori（由 Deoksu Kim 于 1978 年组建）</h3>
+<ul>
+<li><strong>歧视</strong>：<strong>1978年 Kim Deok-su Samulnori 组建</strong>·<strong>Kkwaenggwari + 锣 + janggu + 鼓 4 种乐器 </strong>·<strong> 全套正宗韩国打击乐 </strong>·<strong>No。全球 1</strong></li>
+<li><strong>外国人适合</strong>：★★★★★ EN·JP·CN Mania #1·<strong>Activity Mania #1</strong></li>
+</ul>
+<h3>2. Gkwaenggwari（Samulnori 领袖乐器）</h3>
+<ul>
+<li><strong>歧视</strong>：<strong>四物诺主乐器·金属打击乐器</strong>·<strong>高音·信号+节拍</strong>·<strong>Sangsoe（主奏）</strong></li>
+<li><strong>外国人适合</strong>：★★★★ EN·JP·CN爱好者·<strong>经验#1</strong></li>
+</ul>
+<h3>3. Jing（四物诺里低音乐器）</h3>
+<ul>
+<li><strong>歧视</strong>：<strong>四物诺低音·金属打击乐</strong>·<strong>低音·柱子+管乐</strong>·<strong>韩国正统</strong></li>
+<li><strong>外国人适合</strong>：★★★ EN·JP·CN爱好者</li>
+</ul>
+<h3>4. Janggu（四物诺沙漏鼓）</h3>
+<ul>
+<li><strong>辨别</strong>：<strong>沙漏形状+双面皮革</strong>·<strong>韩国#1正品鼓</strong>·<strong>男女均可学习</strong></li>
+<li><strong>外国人适合</strong>：★★★★★ EN·JP·CN爱好者·<strong>经验#1</strong></li>
+</ul>
+<h3>5. Buk（四物大鼓）</h3>
+<ul>
+<li><strong>辨别</strong>：<strong>大鼓+小鼓</strong>·<strong>韩国正宗</strong>·<strong>节奏+节拍+强调</strong></li>
+<li><strong>外国人适合</strong>：★★★ EN·JP·CN爱好者</li>
+</ul>
+<h3>6.德水金四物戏团（1978韩国#1）</h3>
+<ul>
+<li><strong>歧视</strong>：<strong>1978年金德洙组建韩国#1</strong>·<strong>韩国经典+全球50+国家演出</strong>·<strong>美国、欧洲、亚洲演出</strong></li>
+<li><strong>外国人适合</strong>：★★★★★ No. 1 EN·JP·CN 狂热</li>
+</ul>
+<h3>7. Nongak（联合国教科文组织 2014 年，正宗风物）</h3>
+<ul>
+<li><strong>歧视</strong>：<strong>2014年联合国教科文组织注册</strong>·<strong>四物诺=室内农乐+舞台改编+1978年金德秀</strong>·<strong>农乐=正宗乡村+户外+全套舞蹈</strong></li>
+<li><strong>外国人适合</strong>：★★★★★ EN·JP·CN Mania·#686 cross</li>
+</ul>
+<h3>8. 四物游戏+农乐表演场（国立国乐院、韩国之家）</h3>
+<ul>
+<li><strong>歧视</strong>：<strong>国立国乐院（首尔总中心）·韩国之家（南山）·首尔艺术中心集群</strong>·<strong>每周变化·EN/JP全套</strong></li>
+<li><strong>外国人适合</strong>：★★★★★ EN·JP·CN Mania #1·#685·#686 cross</li>
+</ul>
+<h3>9. 四物游戏体验+课程（外国狂热）</h3>
+<ul>
+<li><strong>歧视</strong>：<strong>国立国乐中心/私人1-2小时50K-100K</strong>·<strong>EN指南部分</strong>·<strong>Kkwaenggwari/Janggu基础+旋律</strong></li>
+<li><strong>外国人适合</strong>：★★★★★ No.1 EN·JP·CN 狂热·<strong>家庭狂热</strong></li>
+</ul>
+<h3>10. 儿童+家庭 四物游戏狂热</h3>
+<ul>
+<li><strong>歧视</strong>：<strong>没有。 1 适合儿童+家庭爱好者</strong>·<strong>活动+视觉+听觉全套</strong>·<strong>没有。韩国外籍家庭1人</strong></li>
+<li><strong>外国人适合</strong>：★★★★★ EN·JP·CN Family Mania No.1</li>
+</ul>
+<h3>11.韩国之家四物诺里+全套宫廷料理</h3>
+<ul>
+<li><strong>歧视</strong>：<strong>韩国屋正宗表演+宫廷美食全套</strong>·<strong>EN/JP/CN全套</strong>·<strong>100K-300K全套</strong>·<strong>家庭狂热</strong></li>
+<li><strong>外国人适合</strong>：★★★★★ EN·JP·CN Mania #1·#685 cross</li>
+</ul>
+<h3>12. Samulnori + K-fusion（Inalchi·Jambinai）</h3>
+<ul>
+<li><strong>歧视</strong>：<strong>Inalchi·Jambinai Shinminyo融合</strong>·<strong>传统+现代+MZ狂热</strong>·<strong>Mnet Pungryu队长·YouTube</strong></li>
+<li><strong>适合外国人</strong>：★★★★★ EN·JP·CN MZ Mania #1·<strong>YouTube #1</strong></li>
+</ul>
+<hr>
+<h2>常见问题 6</h2>
+<p><strong>Q1。四物戏演出价格？</strong> A. <strong>国立国乐院5K-50K</strong>·<strong>韩国之家全套100K-300K</strong>·<strong>EN/JP字幕全套</strong>。</p>
+<p><strong>第二季度。外国人的第一个四物戏？</strong> A. <strong>国立国乐院</strong>（传统）·<strong>韩国之家</strong>（法庭+表演）·<strong>提前查看EN指南</strong>。</p>
+<p><strong>第三季度。 Samulnori vs. Nongak？</strong> A. <strong>Samulnori = 1978 Deoksu Kim·室内4种乐器</strong>·<strong>Nongak = 正宗的乡村/室外+全套舞蹈</strong>。</p>
+<p><strong>第四季度。体验班？</strong> A. <strong>国立国乐中心·私人1-2小时50K-100K</strong>·<strong>Kkwaenggwari·Janggu基础+旋律</strong>·<strong>家庭爱好者</strong>。</p>
+<p><strong>Q5。德水金四物戏团？</strong> A. <strong>成立于 1978 年韩国 #1</strong>·<strong>在 50 多个国家/地区进行全球演出</strong>·<strong>YouTube + Spotify</strong>。</p>
+<p><strong>Q6。儿童爱好者？</strong> A. <strong>四物游戏=活动+视觉+听觉全套</strong>·<strong>韩国外国家庭的#1选择</strong>。</p>
+<hr>
+<h2>全日制课程 3</h2>
+<h3>A.正宗1天（国立国乐院）</h3>
+<ul>
+<li>13:00 国立国乐院四物表演</li>
+<li>16:00 仁寺洞 + 韩定食</li>
+<li>19:00 韩国之家传统表演（可选）</li>
+</ul>
+<h3>B. 家庭+体验 1 天</h3>
+<ul>
+<li>10:00 私人四物游戏体验（1-2小时·EN）</li>
+<li>13:00 午餐</li>
+<li>15:00 国立国乐院/家庭表演</li>
+<li>18:00 韩国料理+马格利酒</li>
+</ul>
+<h3>C. K-fusion 狂热第一天</h3>
+<ul>
+<li>10:00 私人研讨会</li>
+<li>13:00 午餐</li>
+<li>15:00 伊纳尔奇·贾比奈表演</li>
+<li>19:00 仁寺洞 + 马格利 (#684)</li>
+</ul>
+<hr>
+<h2>第 5 季</h2>
+<ul>
+<li><strong>春季</strong>：四月至五月春季户外表演</li>
+<li><strong>夏季</strong>：<strong>六月至八月农乐 + 四物诺户外节日高峰期</strong></li>
+<li><strong>秋季</strong>：9 月至 10 月秋叶 + Samulnori Mania</li>
+<li><strong>冬季</strong>：12 月至 2 月国家国乐中心新年，韩国之家狂热</li>
+<li><strong>全年</strong>：国立国乐院，一年365天</li>
+</ul>
+<hr>
+<h2>技巧 5</h2>
+<p>1. <strong>四物游戏 1978</strong> Deoksu Kim 韩国 #1</p>
+<p>2. <strong>国立国乐院</strong> 韩国#1演出(#686 cross)</p>
+<p>3. <strong>体验班</strong> 1-2小时50K-100K·家庭爱好者No.1</p>
+<p>4. <strong>韩国之家</strong> 正宗表演+全套宫廷美食</p>
+<p>5. <strong>Inalchi + Jambinai</strong> MZ + YouTube 融合</p>
+<hr>
+<h2>外部来源</h2>
+<ul>
+<li>[金德洙四物诺团队官方](https://www.kimduksoo.com/)</li>
+<li>[农乐联合国教科文组织 2014](https://ich.unesco.org/en/RL/nongak-community-band-music-dance-and-rituals-in-the-republic-of-korea-00717)</li>
+<li>[国立国乐院官方](https://www.gugak.go.kr/)</li>
+<li>[Samul Nori - 维基百科](https://en.wikipedia.org/wiki/Samul_nori)</li>
+</ul>
+<hr>
+<p><strong>交叉参考</strong>： #686·#693·#532·#536·#685·#684·#691·#380·#404·#695</p>
+  </article>
+
+  <div class="share-bar">
+    <span class="share-label">공유</span>
+    <button class="share-btn share-twitter" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent('외국인 한국 사물놀이 단독 sub 12선 deep dive') + '&url=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Twitter">𝕏</button>
+    <button class="share-btn share-facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Facebook">f</button>
+    <button class="share-btn share-kakao" onclick="navigator.share ? navigator.share({title: '외국인 한국 사물놀이 단독 sub 12선 deep dive', url: window.location.href}) : navigator.clipboard.writeText(window.location.href).then(function() { alert('링크 복사됨!'); })" aria-label="Kakao/Share">📤</button>
+    <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href).then(function() { this.textContent = '✓'; setTimeout(function() { document.querySelector('.share-copy').textContent = '🔗'; }, 1500); }.bind(this))" aria-label="Copy link">🔗</button>
+  </div>
+
+  <nav class="detail-nav" aria-label="previous-next">
+    <div><a href="pansori-sub-deep.html" style="color:var(--red);">&larr; 외국인 한국 판소리 단독 sub 12선 deep dive</a></div>
+    <div><a href="gugakwon-sub-deep.html" style="color:var(--red);">외국인 한국 국립국악원 단독 sub 12선 deep dive &rarr;</a></div>
+  </nav>
+</main>
+
+<footer class="site-footer">
+  <p><a href="https://instagram.com/keychingu.korea" target="_blank">@keychingu.korea</a> &mdash; Seoul for MZ FIT Travelers</p>
+</footer>
+</body>
+</html>

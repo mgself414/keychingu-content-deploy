@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>외국인 한국 K-바이오·셀트리온·삼성바이오 sub 12선 deep dive — KeyChinGu</title>
+<meta name="description" content="K-Bio（Celltrion·三星生物）针对外国人的亚深12选 ID：670 类别：D K含量·MZ 子簇：类别子深404·538·549子 亲深：404K-medical·538K-beauty·549K-tech 图案：12-pick 4 轴矩阵 --- K-Bio 12 种选择 1.三星生物制剂（韩国1 ...">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="192x192" href="../assets/logo/favicon-192.png">
+<link rel="apple-touch-icon" href="../assets/logo/favicon-192.png">
+<link rel="canonical" href="https://mgself414.github.io/keychingu-content-deploy/content/k-bio-sub-deep.html">
+<link rel="alternate" hreflang="ko" href="https://mgself414.github.io/keychingu-content-deploy/content/k-bio-sub-deep.html">
+<link rel="alternate" hreflang="en" href="https://mgself414.github.io/keychingu-content-deploy/content/k-bio-sub-deep.en.html">
+<link rel="alternate" hreflang="x-default" href="https://mgself414.github.io/keychingu-content-deploy/content/k-bio-sub-deep.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="외국인 한국 K-바이오·셀트리온·삼성바이오 sub 12선 deep dive">
+<meta property="og:description" content="K-Bio（Celltrion·三星生物）针对外国人的亚深12选 ID：670 类别：D K含量·MZ 子簇：类别子深404·538·549子 亲深：404K-medical·538K-beauty·549K-tech 图案：12-pick 4 轴矩阵 --- K-Bio 12 种选择 1.三星生物制剂（韩国1 ...">
+<meta property="og:url" content="https://mgself414.github.io/keychingu-content-deploy/content/k-bio-sub-deep.html">
+<meta property="og:image" content="https://mgself414.github.io/keychingu-content-deploy/assets/logo/og-image-1200x630.png">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="외국인 한국 K-바이오·셀트리온·삼성바이오 sub 12선 deep dive">
+<meta name="twitter:description" content="K-Bio（Celltrion·三星生物）针对外国人的亚深12选 ID：670 类别：D K含量·MZ 子簇：类别子深404·538·549子 亲深：404K-medical·538K-beauty·549K-tech 图案：12-pick 4 轴矩阵 --- K-Bio 12 种选择 1.三星生物制剂（韩国1 ...">
+<meta name="twitter:image" content="https://mgself414.github.io/keychingu-content-deploy/assets/logo/og-image-1200x630.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"외국인 한국 K-바이오·셀트리온·삼성바이오 sub 12선 deep dive","description":"K-Bio（Celltrion·三星生物）针对外国人的亚深12选 ID：670 类别：D K含量·MZ 子簇：类别子深404·538·549子 亲深：404K-medical·538K-beauty·549K-tech 图案：12-pick 4 轴矩阵 --- K-Bio 12 种选择 1.三星生物制剂（韩国1 ...","datePublished":"2026-05-01","inLanguage":"ko","url":"https://mgself414.github.io/keychingu-content-deploy/content/k-bio-sub-deep.html","image":"https://mgself414.github.io/keychingu-content-deploy/assets/logo/og-image-1200x630.png","publisher":{"@type":"Organization","name":"KeyChinGu","logo":{"@type":"ImageObject","url":"https://mgself414.github.io/keychingu-content-deploy/assets/logo/logo_2-4_color_small.png"}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/main.css">
+<style>
+.detail-wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+}
+.breadcrumb {
+  font-size: 13px;
+  color: var(--text-soft);
+  margin-bottom: 24px;
+}
+.breadcrumb a { color: var(--red); font-weight: 600; }
+.detail-wrap h1 {
+  font-size: 28px; font-weight: 800;
+  color: var(--black); margin-bottom: 8px;
+}
+.detail-wrap h2 {
+  font-size: 22px; font-weight: 700;
+  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--red);
+}
+.detail-wrap h3 {
+  font-size: 17px; font-weight: 600;
+  color: var(--text-mid); margin-top: 20px; margin-bottom: 8px;
+}
+.detail-wrap p {
+  font-size: 15px; line-height: 1.7;
+  color: var(--text-mid); margin-bottom: 12px;
+}
+.detail-wrap ul {
+  padding-left: 20px; margin-bottom: 12px;
+}
+.detail-wrap li {
+  font-size: 14px; line-height: 1.6;
+  color: var(--text-mid); margin-bottom: 6px;
+}
+.detail-wrap table {
+  width: 100%; border-collapse: collapse;
+  margin-bottom: 16px; font-size: 13px;
+}
+.detail-wrap th {
+  background: var(--black); color: #fff;
+  padding: 10px 12px; text-align: left;
+  font-weight: 600; font-size: 11px;
+  text-transform: uppercase; letter-spacing: 0.06em;
+}
+.detail-wrap td {
+  padding: 10px 12px; border-bottom: 1px solid var(--border);
+  color: var(--text-mid);
+}
+.detail-wrap tr:nth-child(even) td { background: rgba(0,0,0,0.02); }
+.detail-wrap hr {
+  border: none; height: 1px;
+  background: var(--border); margin: 24px 0;
+}
+.detail-wrap code {
+  background: rgba(33,140,204,0.08);
+  padding: 2px 6px; border-radius: 4px;
+  font-size: 13px; color: var(--blue);
+}
+.detail-nav {
+  display: flex; justify-content: space-between;
+  margin-top: 48px; padding-top: 20px;
+  border-top: 1px solid var(--border);
+  font-size: 14px; font-weight: 600;
+}
+.share-bar {
+  display: flex; align-items: center; gap: 10px;
+  margin-top: 40px; padding: 16px 20px;
+  background: #f9f9f9; border-radius: 12px;
+  border: 1px solid var(--border);
+}
+.share-label {
+  font-size: 14px; font-weight: 600; color: var(--text-soft);
+  margin-right: 8px;
+}
+.share-btn {
+  width: 40px; height: 40px;
+  border: none; border-radius: 50%;
+  background: #fff; cursor: pointer;
+  font-size: 1.1rem; transition: all 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  display: inline-flex; align-items: center; justify-content: center;
+}
+.share-btn:hover { transform: translateY(-2px); box-shadow: 0 3px 8px rgba(0,0,0,0.15); }
+.share-twitter:hover { background: #000; color: #fff; }
+.share-facebook:hover { background: #1877f2; color: #fff; }
+.share-kakao:hover { background: #fee500; }
+.share-copy:hover { background: #218CCC; color: #fff; }
+/* EN toggle disabled — 영문판 미생성 콘텐츠 (2026-05-16 patch) */
+.lang-switch .lang-disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  text-decoration: line-through;
+  padding: 4px 10px;
+  color: var(--text-soft, #888);
+  font-size: 13px;
+  user-select: none;
+}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <div class="lang-switch">
+    <a href="../content/k-bio-sub-deep.html" class="active">KR</a>
+    <a href="../content/k-bio-sub-deep.en.html" >EN</a>
+  </div>
+</header>
+
+<main class="detail-wrap">
+  <nav class="breadcrumb" aria-label="breadcrumb"><a href="../index.html">전체 가이드</a> &rsaquo; 외국인 한국 K-바이오·셀트리온·삼성바이오 sub 12선 deep dive</nav>
+  <article>
+  <h1>K-Bio（Celltrion·三星生物）针对外国人的亚深12选</h1>
+<p><strong>ID</strong>：670</p>
+<p><strong>类别</strong>：D K含量·MZ</p>
+<p><strong>子簇</strong>：类别子深#404·#538·#549子</p>
+<p><strong>亲深</strong>：#404K-medical·#538K-beauty·#549K-tech</p>
+<p><strong>图案</strong>：12-pick 4 轴矩阵</p>
+<hr>
+<h2>K-Bio 12 种选择</h2>
+<h3>1.三星生物制剂（韩国#1 CDMO）</h3>
+<ul>
+<li><strong>歧视</strong>：<strong>2011年成立，仁川松岛</strong>·<strong>全球#1单一CDMO产能</strong>·<strong>2026年营业利润20692万亿韩元（韩国第一家生物公司）</strong></li>
+<li><strong>2024-2026</strong>：<strong>收购GSK美国工厂</strong> · 美国本土生产</li>
+<li><strong>外国人适合</strong>：★★★★ EN·JP·CN Mania·#549 K-tech cross</li>
+</ul>
+<h3>2. Celltrion（韩国#2生物类似药）</h3>
+<ul>
+<li><strong>歧视</strong>：<strong>成立于2002年·松岛，仁川</strong>·<strong>生物仿制药全球#1</strong>·Remshima·Truxima·Herzuma</li>
+<li><strong>2024-2026</strong>：<strong>收购礼来美国工厂</strong>·<strong>2026年CSID新药蓝图</strong>·有史以来最高业绩</li>
+<li><strong>外国人适合</strong>：★★★★ EN·JP·CN爱好者</li>
+</ul>
+<h3>3. SK Bioscience (疫苗#1)</h3>
+<ul>
+<li><strong>歧视</strong>：<strong>2018年SK分拆</strong>·<strong>韩国#1疫苗CDMO</strong>·<strong>Novavax·AZ疫苗韩国生产</strong></li>
+<li><strong>2024</strong>：韩国#1 mRNA疫苗开发（启动）</li>
+<li><strong>外国人适合</strong>：★★★ EN·JP 爱好者</li>
+</ul>
+<h3>4.韩美制药（研发#1）</h3>
+<ul>
+<li><strong>歧视</strong>：<strong>1973年成立</strong>·<strong>韩国#1研发投入比例</strong>·<strong>2015年赛诺菲5万亿牌照（有史以来最高）</strong></li>
+<li><strong>2024</strong>：多项针对肥胖治疗和抗癌药物的全球临床试验</li>
+<li><strong>外国人适合</strong>：★★★ EN·JP 爱好者</li>
+</ul>
+<h3>5. K-Bio松岛（BT集群）</h3>
+<ul>
+<li><strong>歧视</strong>：<strong>仁川松岛=亚洲#1生物集群</strong>·<strong>生物公司80+</strong>·Samba·Celltrion·SK Bio集群</li>
+<li><strong>2026 年政府</strong>：<strong>K-Bio 十年计划</strong>启动，预算增加 240%</li>
+<li><strong>外国人适合</strong>：★★★ EN·JP Mania·#509 仁川唐人街交叉</li>
+</ul>
+<h3>6.首尔生物中心</h3>
+<ul>
+<li><strong>歧视</strong>：<strong>2017年首尔+洪陵研发中心</strong>·<strong>初创企业孵化</strong>·<strong>Kai Med</strong>·数字健康</li>
+<li><strong>外国人适合</strong>：★★★ EN·JP 爱好者</li>
+</ul>
+<h3>7. K-medical 的全球扩张</h3>
+<ul>
+<li><strong>2024 年进入美国</strong>：收购 Samba 和 Celltrion 美国工厂</li>
+<li><strong>进入欧洲</strong>：Celltrion 获得多项 EMA 批准</li>
+<li><strong>外国人适合</strong>：★★★★ EN·JP 爱好者</li>
+</ul>
+<h3>8. K-Beauty + K-Bio 连接</h3>
+<ul>
+<li><strong>Meditoxin·Hugel·大熊</strong>：<strong>韩国肉毒毒素#3（肉毒杆菌替代品）</strong>·<strong>价格1/3·同样效果</strong></li>
+<li><strong>外国人适合</strong>：★★★★★ JP·CN Mania·#538 K-beauty cross</li>
+</ul>
+<h3>9. K-数字健康</h3>
+<ul>
+<li><strong>Lunit</strong>：人工智能医学影像·<strong>12家FDA批准</strong>·100+全球医院</li>
+<li><strong>Vuno</strong>：人工智能医疗解决方案，在科斯达克上市</li>
+<li><strong>Kakao Health</strong>：Kakao 子公司/数字健康</li>
+<li><strong>外国人适合</strong>：★★★ EN·JP MZ 爱好者</li>
+</ul>
+<h3>10. K-医疗旅游</h3>
+<ul>
+<li><strong>歧视</strong>：<strong>到 2024 年，每年外国患者将达到 600,000 人</strong>·<strong>JP 第一优先，CN 第二优先，EN 第三优先</strong></li>
+<li><strong>热门</strong>：整形、牙科、皮肤、健康检查</li>
+<li><strong>外国人适合</strong>：★★★★★ No.1 JP·CN·EN爱好者·#404K-医疗十字</li>
+</ul>
+<h3>11.韩国生物基础设施</h3>
+<ul>
+<li><strong>临床</strong>：<strong>韩国#1全球临床试验第五名（FDA临床试验数量）</strong>·每年1500+临床试验</li>
+<li><strong>人力</strong>：<strong>韩国药学博士全球排名第五</strong>，KAIST、首尔国立大学、POSTECH</li>
+<li><strong>外国人适合</strong>：★★★ EN·JP Mania·#661 K-math cross</li>
+</ul>
+<h3>12. K-Bio 参观/体验</h3>
+<ul>
+<li><strong>Samba·Celltrion</strong>：外部实地考察</li>
+<li><strong>首尔生物中心</strong>：团体旅游提前预订</li>
+<li><strong>CPHI韩国生物专区2026</strong>：<strong>2026年9月COEX国际生物展</strong></li>
+<li><strong>外国人适合</strong>：★★★★ EN·JP·CN爱好者</li>
+</ul>
+<hr>
+<h2>常见问题 6</h2>
+<p><strong>Q1。 K-Bio #1 公司？</strong> A. <strong>市值␈MASK24​​␈ Samsung BioLogics</strong>·<strong>营业利润#1 Samba（2万亿韩元）</strong>·销售额#1 Celltrion。</p>
+<p><strong>第二季度。韩国生物仿制药全球市场份额？</strong> A. <strong>Celltrion + Samba Global #1</strong>·<strong>欧盟生物仿制药50%+</strong>。</p>
+<p><strong>第三季度。 K-医疗旅游推荐机构？</strong> A. <strong>JCI认证</strong>医院（三星、牙山、Severance+江南整形外科和牙科五大）。</p>
+<p><strong>第四季度。外国人签证K-医疗？</strong> A. <strong>医疗旅游C-3-M签证</strong>·30天·可延期·<strong>可以在监护人陪同下</strong>。</p>
+<p><strong>Q5。 CPHI韩国2026时间安排？</strong> A. <strong>2026年9月COEX</strong>·国际生物展·亚洲#1。</p>
+<p><strong>Q6。 K-Bio + 韩国保险？</strong> A. <strong>外国人可以购买韩国健康保险6个月+</strong>·<strong>家庭保险+韩国信用卡支付</strong>。</p>
+<hr>
+<h2>全日制课程 3</h2>
+<h3>A.K-医疗旅游2天1夜</h3>
+<ul>
+<li>第一天：江南整形外科、皮肤科、牙科（提前预约）</li>
+<li>第2天：明洞/江南购物+恢复→回家</li>
+</ul>
+<h3>B. 松岛生物集群第一天</h3>
+<ul>
+<li>10:00 仁川松岛 + 桑巴/Celltrion 外部游览</li>
+<li>14:00 仁川唐人街 + 午餐 (#509 cross)</li>
+<li>17:00 松岛中央公园 → 返回家</li>
+</ul>
+<h3>C. 生物展览狂热（九月）</h3>
+<ul>
+<li>第一天：CPHI 韩国生物区 (COEX)</li>
+<li>第 2 天：首尔生物中心 + 江南 K-medical</li>
+</ul>
+<hr>
+<h2>第 5 季</h2>
+<ul>
+<li><strong>春季</strong>：4 月至 5 月 K-Bio 会议 + Bio 韩国（5 月）</li>
+<li><strong>夏季</strong>：6月至8月K医疗旅游排名第一（假期/假期）</li>
+<li><strong>秋季</strong>：<strong>9 月 CPHI 韩国 + Frieze 同时举办（COEX）</strong></li>
+<li><strong>冬季</strong>：K-medical 第一轮（长期）12 月至 2 月</li>
+<li><strong>全年</strong>：松岛集群+江南整形外科</li>
+</ul>
+<hr>
+<h2>技巧 5</h2>
+<p>1. <strong>K-医疗旅游</strong> 检查 JCI 认证医院的优先权和翻译服务</p>
+<p>2. <strong>桑巴·Celltrion</strong> 外部巡演X（安全）·<strong>媒体+松岛城市游览替代方案</strong></p>
+<p>3. <strong>CPHI韩国</strong> 2026年9月COEX（Frieze +同期）</p>
+<p>4. <strong>K-Beauty肉毒杆菌</strong> 韩国#3 (Meditoxin·Hugel·大熊)·<strong>价格1/3</strong></p>
+<p>5. <strong>2026 K-Bio</strong> 全球霸主元年 <strong>预算增加240%</strong></p>
+<hr>
+<h2>外部来源</h2>
+<ul>
+<li>[三星生物制剂 - 2026年营业利润2万亿韩元](https://www.samsungbiologics.com/)</li>
+<li>[Celltrion - 2026 CSID 新药蓝图](https://www.celltrion.com/)</li>
+<li>[K-Bio 2026年政府大手术-先驱经济](https://biz.heraldcorp.com/article/10647821)</li>
+<li>[BIO KOREA 2026](https://www.biokorea.org/en/index.do)</li>
+</ul>
+<hr>
+<p><strong>交叉参考</strong>：#404·#538·#549·#509·#661·#662·#667·#668·#669</p>
+  </article>
+
+  <div class="share-bar">
+    <span class="share-label">공유</span>
+    <button class="share-btn share-twitter" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent('외국인 한국 K-바이오·셀트리온·삼성바이오 sub 12선 deep dive') + '&url=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Twitter">𝕏</button>
+    <button class="share-btn share-facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Facebook">f</button>
+    <button class="share-btn share-kakao" onclick="navigator.share ? navigator.share({title: '외국인 한국 K-바이오·셀트리온·삼성바이오 sub 12선 deep dive', url: window.location.href}) : navigator.clipboard.writeText(window.location.href).then(function() { alert('링크 복사됨!'); })" aria-label="Kakao/Share">📤</button>
+    <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href).then(function() { this.textContent = '✓'; setTimeout(function() { document.querySelector('.share-copy').textContent = '🔗'; }, 1500); }.bind(this))" aria-label="Copy link">🔗</button>
+  </div>
+
+  <nav class="detail-nav" aria-label="previous-next">
+    <div><a href="k-space-sub-deep.html" style="color:var(--red);">&larr; 외국인 한국 K-우주·누리호·KARI·KASI sub 12선 deep dive</a></div>
+    <div><a href="mokpo-market-sub-deep.html" style="color:var(--red);">외국인 한국 목포 종합수산시장·홍어·세발낙지 sub 12선 deep dive &rarr;</a></div>
+  </nav>
+</main>
+
+<footer class="site-footer">
+  <p><a href="https://instagram.com/keychingu.korea" target="_blank">@keychingu.korea</a> &mdash; Seoul for MZ FIT Travelers</p>
+</footer>
+</body>
+</html>
