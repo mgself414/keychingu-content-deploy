@@ -14328,7 +14328,7 @@
     ],
     "summary_kr": "강남 고급 중식·일식 레스토랑 30선 — 가격대별·분위기별 완전 분류.",
     "summary_en": "30 top Chinese & Japanese restaurants in Gangnam — tiered by price & vibe.",
-    "en_available": false,
+    "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
     "jp_available": true
@@ -16880,6 +16880,541 @@
     ],
     "summary_kr": "설날 음력 신년 12선·세배·떡국·한복·민속촌·전통놀이·궁궐 행사",
     "summary_en": "Seollal Lunar New Year Top 12·Sebae/Tteokguk/Hanbok/Folk Village/Palace Events",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "753",
+    "slug": "seoul-cherry-blossom",
+    "title_kr": "외국인 한국 서울 벚꽃 봄 12선 deep dive",
+    "title_en": "Foreigner Korea Seoul Cherry Blossom Top 12",
+    "category": "A",
+    "tags": [
+      "foreign",
+      "tourist",
+      "spring",
+      "cherry",
+      "blossom"
+    ],
+    "summary_kr": "서울 벚꽃 12선·여의도·석촌호수·남산·경복궁·진해·3/25~4/10 절정",
+    "summary_en": "Seoul Cherry Blossom Top 12",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "754",
+    "slug": "korea-spring-day-trip",
+    "title_kr": "외국인 한국 봄 day-trip 가평 양평 강진 12선 deep dive",
+    "title_en": "Foreigner Korea Spring Day-Trip Top 12",
+    "category": "A",
+    "tags": [
+      "foreign",
+      "tourist",
+      "spring",
+      "daytrip"
+    ],
+    "summary_kr": "봄 day-trip 12선·가평·양평·강진·진해·경주·전주·외국인 매니아 1순위",
+    "summary_en": "Korea Spring Day-Trip Top 12",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "755",
+    "slug": "seoul-spring-park-picnic",
+    "title_kr": "외국인 한국 서울 봄 공원 피크닉 12선 deep dive",
+    "title_en": "Foreigner Korea Seoul Spring Park Picnic Top 12",
+    "category": "A",
+    "tags": [
+      "foreign",
+      "tourist",
+      "spring",
+      "picnic"
+    ],
+    "summary_kr": "서울 봄 공원 12선·서울숲·올림픽공원·한강·남산·외국인 매니아 1순위",
+    "summary_en": "Seoul Spring Park Picnic Top 12",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "756",
+    "slug": "korea-strawberry-spring",
+    "title_kr": "외국인 한국 딸기 봄 12선 deep dive",
+    "title_en": "Foreigner Korea Strawberry Spring Top 12",
+    "category": "C",
+    "tags": [
+      "foreign",
+      "tourist",
+      "spring",
+      "strawberry"
+    ],
+    "summary_kr": "한국 딸기 12선·논산·담양·딸기 카페·딸기 디저트·외국인 매니아 1순위·2~4월 절정",
+    "summary_en": "Korea Strawberry Spring Top 12",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "757",
+    "slug": "korea-spring-flower-festivals",
+    "title_kr": "외국인 한국 봄 꽃 축제 12선 deep dive",
+    "title_en": "Foreigner Korea Spring Flower Festivals Top 12",
+    "category": "A",
+    "tags": [
+      "foreign",
+      "tourist",
+      "spring",
+      "flowers"
+    ],
+    "summary_kr": "봄 꽃 축제 12선·진해 벚꽃·여의도·고양·태안 튤립·외국인 매니아 1순위",
+    "summary_en": "Korea Spring Flower Festivals Top 12",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "758",
+    "slug": "jeju-spring-yuchae",
+    "title_kr": "외국인 한국 제주 유채꽃 봄 12선 deep dive",
+    "title_en": "Foreigner Korea Jeju Spring Yuchae Top 12",
+    "category": "A",
+    "tags": [
+      "foreign",
+      "tourist",
+      "spring",
+      "jeju"
+    ],
+    "summary_kr": "제주 유채꽃 12선·성산·산방·녹산로·세화·UNESCO 풀세트·4월 절정",
+    "summary_en": "Jeju Spring Yuchae Top 12",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "759",
+    "slug": "korea-spring-tea-festival",
+    "title_kr": "외국인 한국 봄 차 축제 보성 하동 12선 deep dive",
+    "title_en": "Foreigner Korea Spring Tea Festival Top 12",
+    "category": "D",
+    "tags": [
+      "foreign",
+      "tourist",
+      "spring",
+      "tea"
+    ],
+    "summary_kr": "보성 5월 다향제 + 하동 4월 야생차 + 제주 오설록·#676·#677 cross·외국인 매니아 1순위",
+    "summary_en": "Korea Spring Tea Festival Top 12",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "760",
+    "slug": "korea-spring-buddha-birthday",
+    "title_kr": "외국인 한국 부처님오신날 봄 연등 12선 deep dive",
+    "title_en": "Foreigner Korea Spring Buddha Birthday Lantern Top 12",
+    "category": "D",
+    "tags": [
+      "foreign",
+      "tourist",
+      "spring",
+      "buddha"
+    ],
+    "summary_kr": "부처님오신날 5월·연등회·조계사·봉은사·UNESCO 인류무형문화유산·외국인 매니아 1순위",
+    "summary_en": "Korea Buddha Birthday Lantern Top 12",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "761",
+    "slug": "k-medical-overview",
+    "title_kr": "외국인 한국 K-medical 의료관광 풀가이드 12선 deep dive",
+    "title_en": "Foreigner Korea K-Medical Tourism Top 12",
+    "category": "E",
+    "tags": [
+      "foreign",
+      "tourist",
+      "medical",
+      "tourism"
+    ],
+    "summary_kr": "K-medical 의료관광 12선·60만/년·CMC·아산·세브란스·다국어·CPHI 2026",
+    "summary_en": "K-Medical Tourism Top 12",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "762",
+    "slug": "k-medical-plastic-surgery",
+    "title_kr": "외국인 한국 성형외과 K-beauty 의료관광 12선 deep dive",
+    "title_en": "Foreigner Korea Plastic Surgery K-Beauty Top 12",
+    "category": "E",
+    "tags": [
+      "foreign",
+      "tourist",
+      "medical",
+      "plastic"
+    ],
+    "summary_kr": "성형외과 12선·강남·아이디·BK·외국인 매니아 1순위·다국어",
+    "summary_en": "Plastic Surgery K-Beauty Top 12",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "763",
+    "slug": "k-medical-dental",
+    "title_kr": "외국인 한국 치과 K-dental 의료관광 12선 deep dive",
+    "title_en": "Foreigner Korea K-Dental Tourism Top 12",
+    "category": "E",
+    "tags": [
+      "foreign",
+      "tourist",
+      "medical",
+      "dental"
+    ],
+    "summary_kr": "치과 의료관광 12선·임플란트·미백·외국인 매니아·다국어",
+    "summary_en": "K-Dental Tourism Top 12",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "764",
+    "slug": "k-medical-skincare-dermatology",
+    "title_kr": "외국인 한국 피부과 K-skincare 의료관광 12선 deep dive",
+    "title_en": "Foreigner Korea Dermatology K-Skincare Top 12",
+    "category": "E",
+    "tags": [
+      "foreign",
+      "tourist",
+      "medical",
+      "derma"
+    ],
+    "summary_kr": "피부과 + K-skincare 12선·강남·외국인 K-beauty 1순위·다국어",
+    "summary_en": "Dermatology K-Skincare Top 12",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "765",
+    "slug": "k-medical-checkup",
+    "title_kr": "외국인 한국 건강검진 K-checkup 의료관광 12선 deep dive",
+    "title_en": "Foreigner Korea Health Checkup K-Checkup Top 12",
+    "category": "E",
+    "tags": [
+      "foreign",
+      "tourist",
+      "medical",
+      "checkup"
+    ],
+    "summary_kr": "건강검진 12선·CMC·아산·세브란스·외국인 매니아·다국어",
+    "summary_en": "Health Checkup Top 12",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "766",
+    "slug": "k-spa-jjimjilbang-cluster",
+    "title_kr": "외국인 한국 스파 찜질방 cluster 12선 deep dive",
+    "title_en": "Foreigner Korea Spa Jjimjilbang Cluster Top 12",
+    "category": "E",
+    "tags": [
+      "foreign",
+      "tourist",
+      "wellness",
+      "spa"
+    ],
+    "summary_kr": "스파 찜질방 12선·드래곤힐·아쿠아필드·외국인 매니아 1순위",
+    "summary_en": "Spa Jjimjilbang Cluster Top 12",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "767",
+    "slug": "k-yoga-pilates-cluster",
+    "title_kr": "외국인 한국 요가 필라테스 cluster 12선 deep dive",
+    "title_en": "Foreigner Korea Yoga Pilates Cluster Top 12",
+    "category": "E",
+    "tags": [
+      "foreign",
+      "tourist",
+      "wellness",
+      "yoga"
+    ],
+    "summary_kr": "요가 필라테스 12선·강남·홍대·외국인 매니아·EN",
+    "summary_en": "Korea Yoga Pilates Top 12",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "768",
+    "slug": "k-meditation-mindfulness",
+    "title_kr": "외국인 한국 명상 mindfulness 12선 deep dive",
+    "title_en": "Foreigner Korea Meditation Mindfulness Top 12",
+    "category": "E",
+    "tags": [
+      "foreign",
+      "tourist",
+      "wellness",
+      "meditation"
+    ],
+    "summary_kr": "명상 12선·사찰 + 다국어·외국인 매니아 1순위",
+    "summary_en": "Korea Meditation Mindfulness Top 12",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "769",
+    "slug": "k-fitness-gym-cluster",
+    "title_kr": "외국인 한국 피트니스 헬스장 12선 deep dive",
+    "title_en": "Foreigner Korea Fitness Gym Top 12",
+    "category": "E",
+    "tags": [
+      "foreign",
+      "tourist",
+      "wellness",
+      "fitness"
+    ],
+    "summary_kr": "피트니스 12선·외국인 매니아·EN",
+    "summary_en": "Korea Fitness Gym Top 12",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "770",
+    "slug": "k-wellness-retreat-1day",
+    "title_kr": "외국인 한국 wellness 1day retreat 12선 deep dive",
+    "title_en": "Foreigner Korea Wellness 1day Retreat Top 12",
+    "category": "E",
+    "tags": [
+      "foreign",
+      "tourist",
+      "wellness",
+      "retreat"
+    ],
+    "summary_kr": "wellness retreat 12선·사찰 + 스파 + 다도 fusion",
+    "summary_en": "Wellness Retreat Top 12",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "771",
+    "slug": "k-luxury-shopping-gangnam",
+    "title_kr": "외국인 한국 강남 럭셔리 쇼핑 cluster 12선 deep dive",
+    "title_en": "Foreigner Korea Gangnam Luxury Shopping Top 12",
+    "category": "F",
+    "tags": [
+      "foreign",
+      "tourist",
+      "shopping",
+      "luxury"
+    ],
+    "summary_kr": "강남 럭셔리 12선·청담·압구정·LV·Dior·외국인 매니아 1순위",
+    "summary_en": "Gangnam Luxury Shopping Top 12",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "772",
+    "slug": "k-vintage-thrift-cluster",
+    "title_kr": "외국인 한국 빈티지 thrift cluster 12선 deep dive",
+    "title_en": "Foreigner Korea Vintage Thrift Top 12",
+    "category": "F",
+    "tags": [
+      "foreign",
+      "tourist",
+      "shopping",
+      "vintage"
+    ],
+    "summary_kr": "빈티지 12선·홍대·이태원·동묘·MZ 매니아 1순위",
+    "summary_en": "Vintage Thrift Top 12",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "773",
+    "slug": "k-kpop-merchandise-shopping",
+    "title_kr": "외국인 한국 K-pop 굿즈 쇼핑 12선 deep dive",
+    "title_en": "Foreigner Korea K-pop Merchandise Shopping Top 12",
+    "category": "F",
+    "tags": [
+      "foreign",
+      "tourist",
+      "shopping",
+      "kpop",
+      "merch"
+    ],
+    "summary_kr": "K-pop 굿즈 12선·HYBE·SM·JYP·YG·외국인 ARMY 매니아 1순위",
+    "summary_en": "K-pop Merchandise Shopping Top 12",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "774",
+    "slug": "k-traditional-souvenir",
+    "title_kr": "외국인 한국 전통 기념품 쇼핑 12선 deep dive",
+    "title_en": "Foreigner Korea Traditional Souvenir Top 12",
+    "category": "F",
+    "tags": [
+      "foreign",
+      "tourist",
+      "shopping",
+      "souvenir"
+    ],
+    "summary_kr": "전통 기념품 12선·인사동·북촌·외국인 매니아 1순위",
+    "summary_en": "Traditional Souvenir Top 12",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "775",
+    "slug": "k-duty-free-shopping",
+    "title_kr": "외국인 한국 면세 쇼핑 12선 deep dive",
+    "title_en": "Foreigner Korea Duty-Free Shopping Top 12",
+    "category": "F",
+    "tags": [
+      "foreign",
+      "tourist",
+      "shopping",
+      "duty",
+      "free"
+    ],
+    "summary_kr": "면세 쇼핑 12선·롯데·신라·신세계·동대문·외국인 매니아 1순위",
+    "summary_en": "Duty-Free Shopping Top 12",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "776",
+    "slug": "k-night-market-cluster",
+    "title_kr": "외국인 한국 야시장 cluster 12선 deep dive",
+    "title_en": "Foreigner Korea Night Market Cluster Top 12",
+    "category": "G",
+    "tags": [
+      "foreign",
+      "tourist",
+      "nightlife",
+      "market"
+    ],
+    "summary_kr": "야시장 12선·동대문·광장·홍대·외국인 매니아 1순위",
+    "summary_en": "Night Market Cluster Top 12",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "777",
+    "slug": "k-club-edm-cluster",
+    "title_kr": "외국인 한국 클럽 EDM cluster 12선 deep dive",
+    "title_en": "Foreigner Korea Club EDM Cluster Top 12",
+    "category": "G",
+    "tags": [
+      "foreign",
+      "tourist",
+      "nightlife",
+      "club"
+    ],
+    "summary_kr": "클럽 EDM 12선·홍대·강남·이태원·외국인 매니아 1순위",
+    "summary_en": "Club EDM Cluster Top 12",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "778",
+    "slug": "k-rooftop-bar-cluster",
+    "title_kr": "외국인 한국 옥상 바 cluster 12선 deep dive",
+    "title_en": "Foreigner Korea Rooftop Bar Cluster Top 12",
+    "category": "G",
+    "tags": [
+      "foreign",
+      "tourist",
+      "nightlife",
+      "rooftop"
+    ],
+    "summary_kr": "옥상 바 12선·강남·홍대·성수·외국인 매니아 1순위",
+    "summary_en": "Rooftop Bar Cluster Top 12",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "779",
+    "slug": "k-pub-crawl-gangnam",
+    "title_kr": "외국인 한국 강남 펍 crawl 12선 deep dive",
+    "title_en": "Foreigner Korea Gangnam Pub Crawl Top 12",
+    "category": "G",
+    "tags": [
+      "foreign",
+      "tourist",
+      "nightlife",
+      "pub"
+    ],
+    "summary_kr": "강남 펍 12선·외국인 매니아 1순위·다국어",
+    "summary_en": "Gangnam Pub Crawl Top 12",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "780",
+    "slug": "k-late-night-eats-cluster",
+    "title_kr": "외국인 한국 야식 late-night eats 12선 deep dive",
+    "title_en": "Foreigner Korea Late-Night Eats Top 12",
+    "category": "G",
+    "tags": [
+      "foreign",
+      "tourist",
+      "nightlife",
+      "eats"
+    ],
+    "summary_kr": "야식 12선·치킨·곱창·라면·외국인 매니아 1순위",
+    "summary_en": "Late-Night Eats Top 12",
     "en_available": true,
     "cn_available": true,
     "jp_available": true,
