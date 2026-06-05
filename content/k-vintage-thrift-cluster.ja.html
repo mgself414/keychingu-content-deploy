@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>외국인 한국 빈티지 thrift cluster 12선 deep dive — KeyChinGu</title>
-<meta name="description" content="＃外国人韓国ヴィンテージthrift cluster 12線deep dive - 12線4軸+ FAQ 6 +コース3 + Tip 5 > メタ: F軸・772・外国人マニア1ランク > 検証: 2026-06-05 visitkorea・KTO・visitseoul まとめ ヴィンテージ12選・弘大・梨泰院・...">
+<meta name="description" content="外国人韓国ヴィンテージ thrift cluster 12選 deep dive > メタ: 外国人 lifecycle ショッピング軸 · ヴィンテージ · thrift カテゴリ · 12 線 4 軸 弘大・梨泰院・洞窟・インフラ + FAQ 6 + コース 3 + シーズン 5 + tip 5 > 検証: ...">
 <link rel="icon" href="../favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="192x192" href="../assets/logo/favicon-192.png">
 <link rel="apple-touch-icon" href="../assets/logo/favicon-192.png">
@@ -14,15 +14,15 @@
 <link rel="alternate" hreflang="x-default" href="https://mgself414.github.io/keychingu-content-deploy/content/k-vintage-thrift-cluster.html">
 <meta property="og:type" content="article">
 <meta property="og:title" content="외국인 한국 빈티지 thrift cluster 12선 deep dive">
-<meta property="og:description" content="＃外国人韓国ヴィンテージthrift cluster 12線deep dive - 12線4軸+ FAQ 6 +コース3 + Tip 5 > メタ: F軸・772・外国人マニア1ランク > 検証: 2026-06-05 visitkorea・KTO・visitseoul まとめ ヴィンテージ12選・弘大・梨泰院・...">
+<meta property="og:description" content="外国人韓国ヴィンテージ thrift cluster 12選 deep dive > メタ: 外国人 lifecycle ショッピング軸 · ヴィンテージ · thrift カテゴリ · 12 線 4 軸 弘大・梨泰院・洞窟・インフラ + FAQ 6 + コース 3 + シーズン 5 + tip 5 > 検証: ...">
 <meta property="og:url" content="https://mgself414.github.io/keychingu-content-deploy/content/k-vintage-thrift-cluster.html">
 <meta property="og:image" content="https://mgself414.github.io/keychingu-content-deploy/assets/logo/og-image-1200x630.png">
 <meta property="og:locale" content="ko_KR">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="외국인 한국 빈티지 thrift cluster 12선 deep dive">
-<meta name="twitter:description" content="＃外国人韓国ヴィンテージthrift cluster 12線deep dive - 12線4軸+ FAQ 6 +コース3 + Tip 5 > メタ: F軸・772・外国人マニア1ランク > 検証: 2026-06-05 visitkorea・KTO・visitseoul まとめ ヴィンテージ12選・弘大・梨泰院・...">
+<meta name="twitter:description" content="外国人韓国ヴィンテージ thrift cluster 12選 deep dive > メタ: 外国人 lifecycle ショッピング軸 · ヴィンテージ · thrift カテゴリ · 12 線 4 軸 弘大・梨泰院・洞窟・インフラ + FAQ 6 + コース 3 + シーズン 5 + tip 5 > 検証: ...">
 <meta name="twitter:image" content="https://mgself414.github.io/keychingu-content-deploy/assets/logo/og-image-1200x630.png">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"외국인 한국 빈티지 thrift cluster 12선 deep dive","description":"＃外国人韓国ヴィンテージthrift cluster 12線deep dive - 12線4軸+ FAQ 6 +コース3 + Tip 5 > メタ: F軸・772・外国人マニア1ランク > 検証: 2026-06-05 visitkorea・KTO・visitseoul まとめ ヴィンテージ12選・弘大・梨泰院・...","datePublished":"2026-05-01","inLanguage":"ko","url":"https://mgself414.github.io/keychingu-content-deploy/content/k-vintage-thrift-cluster.html","image":"https://mgself414.github.io/keychingu-content-deploy/assets/logo/og-image-1200x630.png","publisher":{"@type":"Organization","name":"KeyChinGu","logo":{"@type":"ImageObject","url":"https://mgself414.github.io/keychingu-content-deploy/assets/logo/logo_2-4_color_small.png"}}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"외국인 한국 빈티지 thrift cluster 12선 deep dive","description":"外国人韓国ヴィンテージ thrift cluster 12選 deep dive > メタ: 外国人 lifecycle ショッピング軸 · ヴィンテージ · thrift カテゴリ · 12 線 4 軸 弘大・梨泰院・洞窟・インフラ + FAQ 6 + コース 3 + シーズン 5 + tip 5 > 検証: ...","datePublished":"2026-05-01","inLanguage":"ko","url":"https://mgself414.github.io/keychingu-content-deploy/content/k-vintage-thrift-cluster.html","image":"https://mgself414.github.io/keychingu-content-deploy/assets/logo/og-image-1200x630.png","publisher":{"@type":"Organization","name":"KeyChinGu","logo":{"@type":"ImageObject","url":"https://mgself414.github.io/keychingu-content-deploy/assets/logo/logo_2-4_color_small.png"}}}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -141,62 +141,61 @@
 <main class="detail-wrap">
   <nav class="breadcrumb" aria-label="breadcrumb"><a href="../index.html">전체 가이드</a> &rsaquo; 외국인 한국 빈티지 thrift cluster 12선 deep dive</nav>
   <article>
-  <p>＃外国人韓国ヴィンテージthrift cluster 12線deep dive - 12線4軸+ FAQ 6 +コース3 + Tip 5</p>
-<p>&gt; <strong>メタ</strong>: F軸・#772・外国人マニア1ランク</p>
-<p>&gt; <strong>検証</strong>: 2026-06-05 (visitkorea・KTO・visitseoul)</p>
-<h2>まとめ</h2>
-<p>ヴィンテージ12選・弘大・梨泰院・洞窟・MZマニア1位</p>
+  <p>#外国人韓国ヴィンテージ thrift cluster 12選 deep dive</p>
+<p>&gt; <strong>メタ</strong>: 外国人 lifecycle ショッピング軸 · ヴィンテージ · thrift カテゴリ · 12 線 4 軸 (弘大・梨泰院・洞窟・インフラ) + FAQ 6 + コース 3 + シーズン 5 + tip 5</p>
+<p>&gt; <strong>検証</strong>: 2026-06-05 (visitkorea・visitseoul・各マーケット・関係者)。</p>
+<p>&gt; <strong>cross-ref</strong>: #138インスタ・#711弘大・#710イテウォン・#771ラグジュアリー・#142合定・望遠</p>
+<hr>
+<h2>なぜ韓国ヴィンテージ・thriftなのか</h2>
+<p>韓国ヴィンテージ・thrift = <strong>MZマニア1順位・弘大・梨泰院・東苑コソンビ1順位・5,000ウォン～50,000ウォン</strong>・インスタマニア・外国人青年マニアフルセット。</p>
 <p>＃＃12線4軸</p>
-<p>＃＃＃軸1：メイン（3線）</p>
-<p>1. <strong>韓国#1マニア1ランク</strong>・外国人インスタ1ランク・多言語フルカバー</p>
-<p>2. <strong>江南・弘大メイン</strong>・外国人マニア1ランク</p>
-<p>3. <strong>外郭・全国フルセット</strong>・外国人マニア</p>
-<p>＃＃＃軸2：カテゴリ別（3線）</p>
-<p>4. <strong>高級・高級</strong>・外国人マニア・100,000ウォン～1,000,000ウォン</p>
-<p>5. <strong>MZ・インスタ</strong>・外国人マニア1ランク</p>
-<p>6. <strong>家族・シニア</strong>・外国人マニア</p>
-<p>＃＃＃軸3：インフラストラクチャ（3線）</p>
-<p>7. <strong>多言語案内</strong> (visitkorea・KTO)・EN/JP/CN フルカバー</p>
-<p>8. <strong>外国人マニアパス（Klook・KKday）</strong>・30,000ウォン～150,000ウォン</p>
-<p>9. <strong>ホテル+食事フルセット</strong></p>
-<h3>軸4：シーズン・イベント（3選）</h3>
-<p>10. <strong>シーズンフルセット</strong>・外国人マニア1ランク</p>
-<p>11. <strong>K-ドラマ・K-popマニア</strong>・#743 cross</p>
-<p>12. <strong>連携cluster</strong>・外国人マニアフルセット</p>
+<h3>軸1：弘大・合政（3選）</h3>
+<p>1. **弘大ヴィンテージcluster</p>
+<p>2. **合唱・望遠ヴィンテージ</p>
+<p>3. <strong>弘大セレクトショップ+ヴィンテージfusion (#711)</strong>・外国人MZ 1ランク</p>
+<h3>軸2: 梨泰院・ハンナム(3選)</h3>
+<p>4. <strong>梨泰院ヴィンテージcluster (#710)</strong>・外国人マニア1ランク・ENガイド・多言語</p>
+<p>5. <strong>ハンナムラグジュアリーヴィンテージ (#710)</strong>・ラグジュアリーヴィンテージ・外国人マニア</p>
+<p>6. <strong>経理短道インディヴィンテージ</strong>・外国人青年マニア</p>
+<h3>軸3: 東名・救済 (3選)</h3>
+<p>7. <strong>東莞救済市場 — 韓国#1ヴィンテージ市場</strong>・外国人マニア1位・1,000ウォン～30,000ウォン・インスタ#1</p>
+<p>8. <strong>広場市場ヴィンテージ (#357)</strong>・外国人マニア + foodie fusion</p>
+<p>9. <strong>黒・金川救済市場</strong>・外国人青年マニア・苛性比1ランク</p>
+<h3>軸4：外国人インフラ・シーズン（3選）</h3>
+<p>10. <strong>多言語案内</strong> (visitkorea・visitseoul・EN/JP/CN)</p>
+<p>11. <strong>外国人マニアヴィンテージ1dayパス(Klook・KKday)</strong>・30,000ウォン～100,000ウォン</p>
+<p>12. <strong>年中+春・秋フルセット</strong>・外国人マニア1ランク</p>
 <h2>⚠️検証</h2>
 <ul>
-<li>visitkorea・KTO多言語フルカバー</li>
-<li>外国人マニア爆症・年間1000万+</li>
+<li>東名救済市場韓国#1ヴィンテージ（visitkorea・#357）</li>
+<li>弘大・梨泰院・合政ヴィンテージcluster (visitseoul)</li>
 </ul>
 <h2>FAQ 6</h2>
-<p>1. first?・#1・#2</p>
-<p>2. 費用？・無料～150,000ウォン</p>
-<p>3. 時間?・1～3時間</p>
-<p>4. 多言語?・EN/JP/CN フルカバー</p>
+<p>1. first?・同名</p>
+<p>2. 多言語?・イテウォン (#4・EN)・弘大 (#1・EN)</p>
+<p>3. 費用？・1,000ウォン～50,000ウォン</p>
+<p>4. インスタ？・東莞+韓服 fusion (#379)</p>
 <p>5. K-ドラマ?・#743 cross</p>
 <p>6. パス？・Klook 30,000ウォン～</p>
-<p>##フルデーコース3</p>
-<p>A初心者：都心（3時間・3万ウォン）</p>
-<p>Bマニア：フルセット（5時間・8万ウォン）</p>
-<p>C 1泊：フルセット+ホテル（30万ウォン）</p>
+<p>##コース3</p>
+<p>A東名（3時間・30,000ウォン）</p>
+<p>B弘大+合定（5時間・100,000ウォン）</p>
+<p>Cフルセット（1day・200,000ウォン）</p>
 <p>##シーズン5</p>
-<p>1駐車開始</p>
-<p>2駐車場フルセット</p>
-<p>3週目<strong>絶頂BEST</strong></p>
-<p>4週目後半</p>
-<p>5週間締め切り</p>
+<p>年中・春・秋BEST</p>
 <h2>Tip 5</h2>
-<p>1. 平日のベスト</p>
-<p>2.インスタ：#379韓服</p>
-<p>3. 装い: layer</p>
-<p>4. 多言語+ Klookパス</p>
-<p>5. 外国人マニアフルセット</p>
+<p>1. 東名平日 09:00 best</p>
+<p>2.弘大土曜日マニアフルセット</p>
+<p>3. 興政OK（韓国語・外国人も可能）</p>
+<p>4. インスタ：ヴィンテージ+韓服(#379)</p>
+<p>5. Klookパス</p>
 <h2>外部ソース ≥5</h2>
-<p>1. visitkorea・KTO・visitseoul・KOCCA・各カテゴリ公式</p>
+<p>1. visitkorea・visitseoul・東名市場・弘大・梨泰院マニアガイド</p>
 <p>##外国人フィット</p>
-<p>★★★★★ EN・JP・CN MZ+家族+マニア・1ランク</p>
+<p>★★★★★ EN・JP・CN MZ + 青年・1ランク・コスパ1ランク</p>
+<p>連携：#138・#711・#710・#142・#357・#771・#774</p>
 <p>##マニアペルソナフィット</p>
-<p>kpop ★★★★ / kdrama ★★★★ / foodie ★★★★ / culture ★★★ / mz ★★★★★ / family ★★★★ / luxury ★★★★</p>
+<p>kpop ★★★★/kdrama ★★★★/foodie ★★★/culture ★★★/mz ★★★★★/luxury ★★/family ★★★/青年★★★★★/インスタ★★★★★</p>
   </article>
 
   <div class="share-bar">
