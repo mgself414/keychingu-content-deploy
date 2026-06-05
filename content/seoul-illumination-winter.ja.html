@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>외국인 한국 서울 일루미네이션 겨울 12선 deep dive — KeyChinGu</title>
+<meta name="description" content="＃外国人韓国ソウルイルミネーション冬12選deep dive > メタ: 外国人 lifecycle シーズン・冬の夜間軸・ソウルイルミネーションカテゴリー・12選 4軸（都心イルミ・テーマパーク・デパート・外郭） > > 運営情報検証：2026-06-05基準（visitkorea・ソウル市・visitseou...">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="192x192" href="../assets/logo/favicon-192.png">
+<link rel="apple-touch-icon" href="../assets/logo/favicon-192.png">
+<link rel="canonical" href="https://mgself414.github.io/keychingu-content-deploy/content/seoul-illumination-winter.html">
+<link rel="alternate" hreflang="ko" href="https://mgself414.github.io/keychingu-content-deploy/content/seoul-illumination-winter.html">
+<link rel="alternate" hreflang="en" href="https://mgself414.github.io/keychingu-content-deploy/content/seoul-illumination-winter.en.html">
+<link rel="alternate" hreflang="x-default" href="https://mgself414.github.io/keychingu-content-deploy/content/seoul-illumination-winter.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="외국인 한국 서울 일루미네이션 겨울 12선 deep dive">
+<meta property="og:description" content="＃外国人韓国ソウルイルミネーション冬12選deep dive > メタ: 外国人 lifecycle シーズン・冬の夜間軸・ソウルイルミネーションカテゴリー・12選 4軸（都心イルミ・テーマパーク・デパート・外郭） > > 運営情報検証：2026-06-05基準（visitkorea・ソウル市・visitseou...">
+<meta property="og:url" content="https://mgself414.github.io/keychingu-content-deploy/content/seoul-illumination-winter.html">
+<meta property="og:image" content="https://mgself414.github.io/keychingu-content-deploy/assets/logo/og-image-1200x630.png">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="외국인 한국 서울 일루미네이션 겨울 12선 deep dive">
+<meta name="twitter:description" content="＃外国人韓国ソウルイルミネーション冬12選deep dive > メタ: 外国人 lifecycle シーズン・冬の夜間軸・ソウルイルミネーションカテゴリー・12選 4軸（都心イルミ・テーマパーク・デパート・外郭） > > 運営情報検証：2026-06-05基準（visitkorea・ソウル市・visitseou...">
+<meta name="twitter:image" content="https://mgself414.github.io/keychingu-content-deploy/assets/logo/og-image-1200x630.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"외국인 한국 서울 일루미네이션 겨울 12선 deep dive","description":"＃外国人韓国ソウルイルミネーション冬12選deep dive > メタ: 外国人 lifecycle シーズン・冬の夜間軸・ソウルイルミネーションカテゴリー・12選 4軸（都心イルミ・テーマパーク・デパート・外郭） > > 運営情報検証：2026-06-05基準（visitkorea・ソウル市・visitseou...","datePublished":"2026-05-01","inLanguage":"ko","url":"https://mgself414.github.io/keychingu-content-deploy/content/seoul-illumination-winter.html","image":"https://mgself414.github.io/keychingu-content-deploy/assets/logo/og-image-1200x630.png","publisher":{"@type":"Organization","name":"KeyChinGu","logo":{"@type":"ImageObject","url":"https://mgself414.github.io/keychingu-content-deploy/assets/logo/logo_2-4_color_small.png"}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/main.css">
+<style>
+.detail-wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+}
+.breadcrumb {
+  font-size: 13px;
+  color: var(--text-soft);
+  margin-bottom: 24px;
+}
+.breadcrumb a { color: var(--red); font-weight: 600; }
+.detail-wrap h1 {
+  font-size: 28px; font-weight: 800;
+  color: var(--black); margin-bottom: 8px;
+}
+.detail-wrap h2 {
+  font-size: 22px; font-weight: 700;
+  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--red);
+}
+.detail-wrap h3 {
+  font-size: 17px; font-weight: 600;
+  color: var(--text-mid); margin-top: 20px; margin-bottom: 8px;
+}
+.detail-wrap p {
+  font-size: 15px; line-height: 1.7;
+  color: var(--text-mid); margin-bottom: 12px;
+}
+.detail-wrap ul {
+  padding-left: 20px; margin-bottom: 12px;
+}
+.detail-wrap li {
+  font-size: 14px; line-height: 1.6;
+  color: var(--text-mid); margin-bottom: 6px;
+}
+.detail-wrap table {
+  width: 100%; border-collapse: collapse;
+  margin-bottom: 16px; font-size: 13px;
+}
+.detail-wrap th {
+  background: var(--black); color: #fff;
+  padding: 10px 12px; text-align: left;
+  font-weight: 600; font-size: 11px;
+  text-transform: uppercase; letter-spacing: 0.06em;
+}
+.detail-wrap td {
+  padding: 10px 12px; border-bottom: 1px solid var(--border);
+  color: var(--text-mid);
+}
+.detail-wrap tr:nth-child(even) td { background: rgba(0,0,0,0.02); }
+.detail-wrap hr {
+  border: none; height: 1px;
+  background: var(--border); margin: 24px 0;
+}
+.detail-wrap code {
+  background: rgba(33,140,204,0.08);
+  padding: 2px 6px; border-radius: 4px;
+  font-size: 13px; color: var(--blue);
+}
+.detail-nav {
+  display: flex; justify-content: space-between;
+  margin-top: 48px; padding-top: 20px;
+  border-top: 1px solid var(--border);
+  font-size: 14px; font-weight: 600;
+}
+.share-bar {
+  display: flex; align-items: center; gap: 10px;
+  margin-top: 40px; padding: 16px 20px;
+  background: #f9f9f9; border-radius: 12px;
+  border: 1px solid var(--border);
+}
+.share-label {
+  font-size: 14px; font-weight: 600; color: var(--text-soft);
+  margin-right: 8px;
+}
+.share-btn {
+  width: 40px; height: 40px;
+  border: none; border-radius: 50%;
+  background: #fff; cursor: pointer;
+  font-size: 1.1rem; transition: all 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  display: inline-flex; align-items: center; justify-content: center;
+}
+.share-btn:hover { transform: translateY(-2px); box-shadow: 0 3px 8px rgba(0,0,0,0.15); }
+.share-twitter:hover { background: #000; color: #fff; }
+.share-facebook:hover { background: #1877f2; color: #fff; }
+.share-kakao:hover { background: #fee500; }
+.share-copy:hover { background: #218CCC; color: #fff; }
+/* EN toggle disabled — 영문판 미생성 콘텐츠 (2026-05-16 patch) */
+.lang-switch .lang-disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  text-decoration: line-through;
+  padding: 4px 10px;
+  color: var(--text-soft, #888);
+  font-size: 13px;
+  user-select: none;
+}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <div class="lang-switch">
+    <a href="../content/seoul-illumination-winter.html" class="active">KR</a>
+    <a href="../content/seoul-illumination-winter.en.html" >EN</a>
+  </div>
+</header>
+
+<main class="detail-wrap">
+  <nav class="breadcrumb" aria-label="breadcrumb"><a href="../index.html">전체 가이드</a> &rsaquo; 외국인 한국 서울 일루미네이션 겨울 12선 deep dive</nav>
+  <article>
+  <p>＃外国人韓国ソウルイルミネーション冬12選deep dive</p>
+<p>&gt; <strong>メタ</strong>: 外国人 lifecycle シーズン・冬の夜間軸・ソウルイルミネーションカテゴリー・12選 4軸（都心イルミ・テーマパーク・デパート・外郭）</p>
+<p>&gt;</p>
+<p>&gt; <strong>運営情報検証</strong>：2026-06-05基準（visitkorea・ソウル市・visitseoul・ロッテワールド・新世界公式）。</p>
+<p>&gt;</p>
+<p>&gt; <strong>シリーズ cross-ref</strong>: #696 清渓川 光提灯 · #744 秋祭り · #404 韓国フェスティバル · #703 漢江夜景 · #710蚕室+ロッテ</p>
+<hr>
+<p>＃＃なぜ冬のイルミネーションなのか？</p>
+<p>ソウル冬シーズン= <strong>イルミネーションフルセット</strong>・汝矣島ライトランキング+江南街路樹+ロッテワールド+新世界+DDP・外国人インスタマニア1位。紅葉シーズン（#737）締め切り→11/15～2/15イルミネーション絶頂・多言語フルカバー。</p>
+<p>秋（#744祭り）との差別：</p>
+<ul>
+<li><strong>シーズン</strong>：11/15～2/15 3ヶ月プール（秋1ヶ月に比べ3倍）</li>
+<li><strong>外国人マニア</strong>: K-ドラマ冬撮影地・インスタナイト1位</li>
+<li><strong>無料フルセット</strong>: 都心イルミ多数無料・テーマパーク入場時のみ有料</li>
+<li><strong>連携</strong>：クリスマスマーケット（#746）＋温かい食べ物（#748）フルセット</li>
+</ul>
+<p>本マトリックスは都心イルミネーション3線+テーマパーク3線+デパート・ショッピングモール3線+外郭・シーズン3線=12線4軸。</p>
+<hr>
+<p>＃＃12線4軸</p>
+<h3>軸1: 都心イルミネーション(3線)</h3>
+<h4>1. 汝矣島光提灯 — 韓国#1冬イルミネーション (#696 cross延長)</h4>
+<ul>
+<li><strong>差別</strong>: <strong>韓国 #1 冬のイルミネーション・汝矣島漢江公園 + 光ちょろんフルセット</strong>・年1,000万+訪問・外国人マニア1位</li>
+<li><strong>運営</strong>: 17:00~23:00 (12/1~2/15予想・毎年変動)・<strong>無料</strong></li>
+<li><strong>外国人fit</strong>: ★★★★★ EN・JP・CN MZ +家族+マニア1ランク・<strong>無料</strong></li>
+<li><strong>交通</strong>：汝矣ナル駅（5号線）2・3番出口</li>
+<li><strong>Instagram best</strong>：日没17:30（光+夜景+紅葉切替）</li>
+</ul>
+<h4>2. 江南街路樹道イルミネーション — ラグジュアリーマニア</h4>
+<ul>
+<li><strong>差別</strong>: <strong>江南カロスギル+清潭洞+狎鴎亭ラグジュアリーマニア1ランク</strong>・高級店舗+イルミフルセット</li>
+<li><strong>運営</strong>: 18:00~24:00 (12/1~2/15)・<strong>無料</strong> (散策)</li>
+<li><strong>外国人fit</strong>: ★★★★ MZ + ラグジュアリーマニア・<strong>無料</strong></li>
+<li><strong>交通</strong>：新社駅・狎鴎亭駅（3号線）</li>
+<li><strong>連携</strong>：#713江南cluster +イルミネーションフルセット</li>
+</ul>
+<h4>3.清渓川+光化門イルミネーション（#696 cross）</h4>
+<ul>
+<li><strong>差別</strong>: <strong>清渓川+光化門+市役所+徳寿宮イルミ市中心フルセット</strong>・外国人マニア1ランク</li>
+<li><strong>運営</strong>：18:00～22:00・<strong>無料</strong></li>
+<li><strong>外国人fit</strong>: ★★★★★ EN・JP・CN MZ +家族1位</li>
+<li><strong>交通</strong>：光化門駅・市役所駅・鐘閣駅（1・5号線）</li>
+<li><strong>連携</strong>：#379景福宮+清渓川+光化門フルセット</li>
+</ul>
+<p>＃＃＃軸2：テーマパークイルミネーション（3線）</p>
+<h4>4. ロッテワールドマジックアイランドイルミネーション</h4>
+<ul>
+<li><strong>差別</strong>: <strong>ロッテワールドマジックアイランド・冬イルミフルセット・室内+屋外フルセット</strong>・外国人マニア1ランク</li>
+<li><strong>運営</strong>: 10:00～22:00 (冬)・入場料 60,000ウォン</li>
+<li><strong>外国人fit</strong>: ★★★★ EN・JP・CN MZ +家族1位・<strong>有料60,000ウォン</strong></li>
+<li><strong>交通</strong>：蚕室駅（2・8号線）・徒歩5分</li>
+</ul>
+<h4>5. エバーランドのクリスマスファンタジー</h4>
+<ul>
+<li><strong>差別</strong>: <strong>エバーランドクリスマスファンタジー・100万などイルミネーション韓国#1テーマパーク</strong>・外国人マニア1ランク</li>
+<li><strong>運営</strong>: 10:00～21:30 (冬シーズン)・入場料 60,000ウォン</li>
+<li><strong>外国人fit</strong>: ★★★★ EN・JP・CN家族+マニア・<strong>有料60,000ウォン</strong></li>
+<li><strong>交通</strong>：江南駅シャトルまたは盆唐線+シャトル</li>
+</ul>
+<h4>6. ソウルランド冬イルミネーション</h4>
+<ul>
+<li><strong>差別</strong>: <strong>ソウルランド+ソウル大公園冬イルミ・苛性雨1位</strong>・果川マニア</li>
+<li><strong>運営</strong>: 10:00～22:00・入場料 39,000ウォン</li>
+<li><strong>外国人fit</strong>: ★★★ MZ +家族・<strong>有料39,000ウォン</strong></li>
+<li><strong>交通</strong>：大公園駅（4号線）</li>
+</ul>
+<h3>軸3：デパート・ショッピングモール（3選）</h3>
+<h4>7.新世界デパート本店メディアファサード</h4>
+<ul>
+<li><strong>差別</strong>: <strong>新世界本店・外部LEDメディアファサードクリスマスツリー・世界#1</strong>・外国人インスタマニア1位</li>
+<li><strong>運営</strong>: 18:00~22:00 (11/15~1/15)・<strong>無料</strong> (外部観覧)</li>
+<li><strong>外国人fit</strong>: ★★★★★ MZ +インスタマニア1ランク</li>
+<li><strong>交通</strong>：明洞駅・会現駅（4号線）</li>
+<li><strong>連携</strong>：明洞+新世界+南大門フルセット</li>
+</ul>
+<h4>8. ロッテワールドモール+ロッテタワーイルミネーション (#710 cross)</h4>
+<ul>
+<li><strong>差別</strong>: <strong>ロッテワールドモール+ロッテタワーSEOULSKY+石村湖イルミフルセット</strong>・外国人マニア1ランク</li>
+<li><strong>運営</strong>: 10:00～22:00・<strong>無料</strong> (モール)・SEOULSKY 50,000ウォン</li>
+<li><strong>外国人fit</strong>: ★★★★ ラグジュアリー+ファミリーマニア</li>
+<li><strong>交通</strong>：チャムシル駅（2・8号線）</li>
+</ul>
+<h4>9. DDP+東大門イルミネーション</h4>
+<ul>
+<li><strong>差別</strong>: <strong>DDP（ジャハ・ハディド）+東大門市場+清渓川フルセット</strong>・外国人マニア1ランク</li>
+<li><strong>運営</strong>: 18:00～24:00・<strong>無料</strong> (外部)</li>
+<li><strong>外国人fit</strong>: ★★★★ MZ +ショッピングマニア・<strong>無料</strong></li>
+<li><strong>交通</strong>：東大門歴史文化公園駅（2・4・5号線）</li>
+</ul>
+<h3>軸4：外郭・シーズン（3選）</h3>
+<h4>10.加平プチフランス冬イルミネーション(#739 cross)</h4>
+<ul>
+<li><strong>差別</strong>: <strong>加平プチフランス+幼い王子+冬イルミフルセット</strong>・外国人マニア1ランク</li>
+<li><strong>運営</strong>：09:00～21:00(冬期延長)・入場料12,000ウォン</li>
+<li><strong>外国人fit</strong>: ★★★★★ MZ +家族+マニア・<strong>有料12,000ウォン</strong></li>
+<li><strong>交通</strong>：清平駅（ITX）+シャトル</li>
+</ul>
+<h4>11. 多言語案内(ソウル市冬フェスティバル)</h4>
+<ul>
+<li><strong>差別</strong>: <strong>ソウル市冬フェスティバル EN/JP/CN 多言語フルカバー</strong>・外国人マニア1ランク</li>
+<li><strong>運営</strong>：11/15～2/15・<strong>無料</strong></li>
+<li><strong>外国人fit</strong>: ★★★★★ 多言語フルカバー</li>
+<li><strong>アプリ</strong>: Visit Seoul·visitseoul.net</li>
+</ul>
+<h4>12. イルミネーション絶頂シーズン（12/15～1/15）</h4>
+<ul>
+<li><strong>差別</strong>: <strong>クリスマス+新年+お正月絶頂・外国人マニア1ランク</strong></li>
+<li><strong>best</strong>: 12/24～25 (クリスマスイブ・当日)・12/31 (新年カウントダウン)・1/29 (お正月)</li>
+<li><strong>外国人fit</strong>: ★★★★★インスタマニア1ランク</li>
+<li><strong>バックアップ</strong>: 11/15～12/14 (早いシーズン・人波X・平日best)</li>
+</ul>
+<hr>
+<h2>⚠️ 精度検証</h2>
+<p><strong>検証完了</strong>（2026-06-05基準）：</p>
+<ul>
+<li>汝矣島の光提灯・年1,000万訪問（visitseoul・ソウル市）</li>
+<li>新世界本店LEDメディアファサード・11/15～1/15（新世界公式）</li>
+<li>ロッテワールド60,000ウォン・エバーランド60,000ウォン（各公式）</li>
+<li>プチフランス12,000ウォン・冬延長 (petitefrance.co.kr)</li>
+</ul>
+<p><strong>注意</strong>:</p>
+<ul>
+<li>毎年日程変動・11月発表・visitseoul.net確認</li>
+<li>12/24～25・12/31 インパフルセット・平日推奨</li>
+<li>外郭（加平・楊平）シャトル運営時間の短縮</li>
+</ul>
+<hr>
+<h2>FAQ 6</h2>
+<h3>Q1.外国人初冬イルミネーションベスト？</h3>
+<ul>
+<li><strong>初心者（3時間）</strong>：汝矣島の光提灯（#1）+新世界（#7）</li>
+<li><strong>中級（5時間）</strong>：清渓川（#3）+光化門+明洞+新世界フルセット</li>
+<li><strong>フルセット（1泊）</strong>：都心+蚕室（#8）または加平（#10）</li>
+</ul>
+<h3>Q2.正確なピーク時期？</h3>
+<ul>
+<li><strong>best</strong>: 12/15~1/15 (クリスマス + 新年)</li>
+<li><strong>best 平日</strong>: 12/26 金・12/30話(人波X)</li>
+<li><strong>Instagram best</strong>：12/24クリスマスイブ+ 12/31カウントダウン</li>
+</ul>
+<h3>Q3.コストは？</h3>
+<ul>
+<li><strong>無料</strong>: 都心イルミネーション (#1・#3・#7・#9) = <strong>0ウォン</strong></li>
+<li><strong>有料フルセット</strong>: ロッテワールド + SEOULSKY + カフェ = <strong>約130,000ウォン/人</strong></li>
+<li><strong>アウトライン</strong>：プチフランス+加平1泊= <strong>約200,000ウォン/人</strong></li>
+</ul>
+<h3>Q4.雨の日？</h3>
+<ul>
+<li><strong>屋内イルミー</strong>：ロッテワールドモール（#8）+新世界（#7）+ DDP（#9）</li>
+<li><strong>バックアップ</strong>: #748 温かい食べ物 + カフェフルセット</li>
+</ul>
+<h3>Q5. K-ドラママニアフィット？</h3>
+<ul>
+<li><strong>汝矣島・江南</strong>：一部K-ドラマ冬の撮影地</li>
+<li><strong>ロッテワールド</strong>：トッケビ+ K-ドラマ一部（#743 cross）</li>
+<li><strong>連携</strong>: #743 K-ドラマ+イルミフルセット</li>
+</ul>
+<h3>Q6.外国人マニア1dayパス？</h3>
+<ul>
+<li><strong>Klook・KKday・Trip.com</strong>：イルミネーション1dayパス30,000ウォン～80,000ウォン</li>
+<li><strong>特典</strong>：シャトル+ ENガイド+入場料</li>
+<li><strong>best</strong>：加平プチ+市内中心部イルミフルセット</li>
+</ul>
+<hr>
+<p>##フルデーコース3</p>
+<p>＃＃＃コースA - 外国人初心者（3時間）</p>
+<ul>
+<li><strong>17:00</strong> 汝矣ナル駅2番出口 → 汝矣島 光ちょろん（1時間）</li>
+<li><strong>18:30</strong> 新世界本店+明洞(1時間)</li>
+<li><strong>20:00</strong> 清渓川の光提灯（1時間）</li>
+<li><strong>総費用</strong>：<strong>0ウォン</strong></li>
+</ul>
+<p>＃＃＃コースB - マニアフルセット（5時間）</p>
+<ul>
+<li><strong>15:00</strong>チャムシル駅→ロッテワールドモール+ SEOULSKY（#8・2時間・50,000ウォン）</li>
+<li><strong>17:00</strong>チャムシル→清渓川+光化門（#3・1.5時間）</li>
+<li><strong>18:30</strong>明洞+新世界+南大門（1.5時間）</li>
+<li><strong>総費用</strong>：約50,000ウォン/人</li>
+</ul>
+<p>＃＃＃コースC - 1泊2日フルセット（加平+市内中心部）</p>
+<ul>
+<li><strong>Day 1午前</strong>: ITX加平→プチフランス（#10・3時間）</li>
+<li><strong>Day 1 午後</strong>: 加平カフェ + ホテル1泊</li>
+<li><strong>Day 2午前</strong>: ソウル復帰→蚕室+ロッテタワー</li>
+<li><strong>Day 2夜</strong>: 清渓川+明洞+新世界</li>
+<li><strong>総費用</strong>：約30〜50万ウォン/人</li>
+</ul>
+<hr>
+<p>＃＃シーズン5 - 冬の4週間のステップバイステップ</p>
+<h3>1駐車場 (11/15～11/30) — イルミネーション開始</h3>
+<ul>
+<li>一部開始（新世界・汝矣島一部）</li>
+<li>外国人マニアX（早い時期・平日ベスト）</li>
+</ul>
+<h3>2週目 (12/1～12/14) — プール開始</h3>
+<ul>
+<li>ダウンタウンイルミ全体を開始</li>
+<li>外国人マニア↑</li>
+</ul>
+<h3>3駐車場 (12/15~1/15) — <strong>絶頂BEST</strong></h3>
+<ul>
+<li>クリスマス+新年のピーク</li>
+<li>外国人マニア1位</li>
+<li><strong>best平日</strong>：12/26金・12/30話</li>
+</ul>
+<p>＃＃＃4週目（1/16〜2/15） - 後半+旧正月</p>
+<ul>
+<li>イルミ後半・お正月（#752）フルセット</li>
+<li>外国人マニアの雰囲気1ランク</li>
+</ul>
+<h3>5週目 (2/16~) — イルミ仕上げ・冬の終わり</h3>
+<ul>
+<li>次のシーズン：春（桜3月～4月）</li>
+</ul>
+<hr>
+<h2>Tip 5</h2>
+<h3>Tip 1 — 平日 + 17:00～19:00 (イルミ best time)</h3>
+<ul>
+<li><strong>best</strong>：平日17:00～19:00（日没+イルミ+人波X）</li>
+<li><strong>週末回避</strong>：12/24土・12/31日・1/1（人波5倍）</li>
+</ul>
+<h3>Tip 2 — インスタ spot 5</h3>
+<ul>
+<li><strong>汝矣島ライトランキング</strong>（漢江+光+日没）</li>
+<li><strong>新世界本店メディアファサード</strong>（クリスマスツリー外）</li>
+<li><strong>清渓川ライトランキング</strong>（都心+光・#696）</li>
+<li><strong>ロッテワールドマジックアイランド</strong>（石村湖反映）</li>
+<li><strong>プチフランス</strong>(加平+幼王子+イルミ)</li>
+</ul>
+<h3>Tip 3 — 装い+準備</h3>
+<ul>
+<li><strong>12月下旬平均-3°C</strong>：保温層+パディング+帽子+手袋必須</li>
+<li><strong>準備物</strong>：カメラ・携帯電話補助バッテリー・温かい飲み物（#748 cross）</li>
+<li><strong>ハニーチップ</strong>：韓服+イルミ（外国人マニア1ランク）</li>
+</ul>
+<h3>Tip 4 — 温かい食べ物 + イルミフルセット (#748 cross)</h3>
+<ul>
+<li><strong>best</strong>: イルミ見に行く途中にパンパン・ホトク・オムク（300ウォン～3,000ウォン）</li>
+<li><strong>外国人マニア1ランク</strong>：イルミ+パンパン=韓国#1冬の思い出</li>
+<li><strong>連携</strong>: #748 冬暖かい食べ物フルセット</li>
+</ul>
+<h3>Tip 5 — 多言語ガイド + パス</h3>
+<ul>
+<li><strong>visitseoul.net</strong>: 多言語EN/JP/CNフルカバー</li>
+<li><strong>Klook・KKday</strong>: イルミ1dayパス 30,000ウォン～</li>
+<li><strong>ハニーチップ</strong>：平日の1週間前の予約（週末完売）</li>
+</ul>
+<hr>
+<h2>外部ソース ≥5</h2>
+<p>1. <strong>visitkorea.or.kr</strong> — ソウル冬イルミネーションマトリックス (検証 2026-06-05)</p>
+<p>2. <strong>visitseoul.net</strong> — ソウル市冬フェスティバル・多言語フルカバー</p>
+<p>3. <strong>新世界公式</strong> — 本店メディアファサード・11/15～1/15</p>
+<p>4. <strong>ロッテワールド公式</strong> — マジックアイランド冬シーズン</p>
+<p>5. <strong>エバーランド公式</strong> — クリスマスファンタジー・100万など</p>
+<p>6. <strong>プチフランス公式</strong> — petitefrance.co.kr・冬の延長</p>
+<hr>
+<p>##外国人フィット</p>
+<ul>
+<li>★★★★★ EN・JP・CN MZ+家族+マニア+インスタ1ランク</li>
+<li><strong>無料フルセット</strong>：都心イルミネーション0ウォン</li>
+<li><strong>シーズンプール</strong>: 11/15～2/15 (3ヶ月)</li>
+<li><strong>K-ドラマfit</strong>: #743 cross</li>
+<li><strong>連携</strong>: #746 クリスマスマーケット・#748 温かい食べ物</li>
+</ul>
+<p>##マニアペルソナフィット</p>
+<ul>
+<li><strong>kpop_mania</strong>: ★★★★ (江南・汝矣島 K-pop マニア)</li>
+<li><strong>kdrama_mania</strong>：★★★★★（#743 crossイルミフルセット）</li>
+<li><strong>foodie</strong>: ★★★★ (#748 温かい食べ物+イルミ)</li>
+<li><strong>culture_mania</strong>: ★★★★ (光化門・清渓川+伝統)</li>
+<li><strong>mz_traveler</strong>: ★★★★★ (新世界インスタ・江南)</li>
+<li><strong>luxury_traveler</strong>: ★★★★★ (江南・ロッテタワー・新世界)</li>
+<li><strong>family_traveler</strong>: ★★★★★ (テーマパークフルセット)</li>
+</ul>
+  </article>
+
+  <div class="share-bar">
+    <span class="share-label">공유</span>
+    <button class="share-btn share-twitter" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent('외국인 한국 서울 일루미네이션 겨울 12선 deep dive') + '&url=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Twitter">𝕏</button>
+    <button class="share-btn share-facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Facebook">f</button>
+    <button class="share-btn share-kakao" onclick="navigator.share ? navigator.share({title: '외국인 한국 서울 일루미네이션 겨울 12선 deep dive', url: window.location.href}) : navigator.clipboard.writeText(window.location.href).then(function() { alert('링크 복사됨!'); })" aria-label="Kakao/Share">📤</button>
+    <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href).then(function() { this.textContent = '✓'; setTimeout(function() { document.querySelector('.share-copy').textContent = '🔗'; }, 1500); }.bind(this))" aria-label="Copy link">🔗</button>
+  </div>
+
+  <nav class="detail-nav" aria-label="previous-next">
+    <div><a href="fall-festivals.html" style="color:var(--red);">&larr; 외국인 한국 가을 축제 빛초롱 남대문 청계 12선 deep dive</a></div>
+    <div><a href="christmas-market-winter.html" style="color:var(--red);">외국인 한국 크리스마스 마켓 겨울 12선 deep dive &rarr;</a></div>
+  </nav>
+</main>
+
+<footer class="site-footer">
+  <p><a href="https://instagram.com/keychingu.korea" target="_blank">@keychingu.korea</a> &mdash; Seoul for MZ FIT Travelers</p>
+</footer>
+</body>
+</html>
