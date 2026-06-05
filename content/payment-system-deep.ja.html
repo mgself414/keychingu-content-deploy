@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>외국인 한국 결제 시스템 deep dive — KeyChinGu</title>
+<meta name="description" content="＃外国人韓国決済システムdeep dive — カード・ペイ・送金12選 > サブ: Naver Pay・KakaoPay・サムスンペイ・414・435 フォローアップ deep dive ISSUE 03・527・2026-05-28 --- 🎯 なぜ外国人韓国決済システム deep diveなのか 外国人実用...">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="192x192" href="../assets/logo/favicon-192.png">
+<link rel="apple-touch-icon" href="../assets/logo/favicon-192.png">
+<link rel="canonical" href="https://mgself414.github.io/keychingu-content-deploy/content/payment-system-deep.html">
+<link rel="alternate" hreflang="ko" href="https://mgself414.github.io/keychingu-content-deploy/content/payment-system-deep.html">
+<link rel="alternate" hreflang="en" href="https://mgself414.github.io/keychingu-content-deploy/content/payment-system-deep.en.html">
+<link rel="alternate" hreflang="x-default" href="https://mgself414.github.io/keychingu-content-deploy/content/payment-system-deep.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="외국인 한국 결제 시스템 deep dive">
+<meta property="og:description" content="＃外国人韓国決済システムdeep dive — カード・ペイ・送金12選 > サブ: Naver Pay・KakaoPay・サムスンペイ・414・435 フォローアップ deep dive ISSUE 03・527・2026-05-28 --- 🎯 なぜ外国人韓国決済システム deep diveなのか 外国人実用...">
+<meta property="og:url" content="https://mgself414.github.io/keychingu-content-deploy/content/payment-system-deep.html">
+<meta property="og:image" content="https://mgself414.github.io/keychingu-content-deploy/assets/logo/og-image-1200x630.png">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="외국인 한국 결제 시스템 deep dive">
+<meta name="twitter:description" content="＃外国人韓国決済システムdeep dive — カード・ペイ・送金12選 > サブ: Naver Pay・KakaoPay・サムスンペイ・414・435 フォローアップ deep dive ISSUE 03・527・2026-05-28 --- 🎯 なぜ外国人韓国決済システム deep diveなのか 外国人実用...">
+<meta name="twitter:image" content="https://mgself414.github.io/keychingu-content-deploy/assets/logo/og-image-1200x630.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"외국인 한국 결제 시스템 deep dive","description":"＃外国人韓国決済システムdeep dive — カード・ペイ・送金12選 > サブ: Naver Pay・KakaoPay・サムスンペイ・414・435 フォローアップ deep dive ISSUE 03・527・2026-05-28 --- 🎯 なぜ外国人韓国決済システム deep diveなのか 外国人実用...","datePublished":"2026-05-01","inLanguage":"ko","url":"https://mgself414.github.io/keychingu-content-deploy/content/payment-system-deep.html","image":"https://mgself414.github.io/keychingu-content-deploy/assets/logo/og-image-1200x630.png","publisher":{"@type":"Organization","name":"KeyChinGu","logo":{"@type":"ImageObject","url":"https://mgself414.github.io/keychingu-content-deploy/assets/logo/logo_2-4_color_small.png"}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/main.css">
+<style>
+.detail-wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+}
+.breadcrumb {
+  font-size: 13px;
+  color: var(--text-soft);
+  margin-bottom: 24px;
+}
+.breadcrumb a { color: var(--red); font-weight: 600; }
+.detail-wrap h1 {
+  font-size: 28px; font-weight: 800;
+  color: var(--black); margin-bottom: 8px;
+}
+.detail-wrap h2 {
+  font-size: 22px; font-weight: 700;
+  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--red);
+}
+.detail-wrap h3 {
+  font-size: 17px; font-weight: 600;
+  color: var(--text-mid); margin-top: 20px; margin-bottom: 8px;
+}
+.detail-wrap p {
+  font-size: 15px; line-height: 1.7;
+  color: var(--text-mid); margin-bottom: 12px;
+}
+.detail-wrap ul {
+  padding-left: 20px; margin-bottom: 12px;
+}
+.detail-wrap li {
+  font-size: 14px; line-height: 1.6;
+  color: var(--text-mid); margin-bottom: 6px;
+}
+.detail-wrap table {
+  width: 100%; border-collapse: collapse;
+  margin-bottom: 16px; font-size: 13px;
+}
+.detail-wrap th {
+  background: var(--black); color: #fff;
+  padding: 10px 12px; text-align: left;
+  font-weight: 600; font-size: 11px;
+  text-transform: uppercase; letter-spacing: 0.06em;
+}
+.detail-wrap td {
+  padding: 10px 12px; border-bottom: 1px solid var(--border);
+  color: var(--text-mid);
+}
+.detail-wrap tr:nth-child(even) td { background: rgba(0,0,0,0.02); }
+.detail-wrap hr {
+  border: none; height: 1px;
+  background: var(--border); margin: 24px 0;
+}
+.detail-wrap code {
+  background: rgba(33,140,204,0.08);
+  padding: 2px 6px; border-radius: 4px;
+  font-size: 13px; color: var(--blue);
+}
+.detail-nav {
+  display: flex; justify-content: space-between;
+  margin-top: 48px; padding-top: 20px;
+  border-top: 1px solid var(--border);
+  font-size: 14px; font-weight: 600;
+}
+.share-bar {
+  display: flex; align-items: center; gap: 10px;
+  margin-top: 40px; padding: 16px 20px;
+  background: #f9f9f9; border-radius: 12px;
+  border: 1px solid var(--border);
+}
+.share-label {
+  font-size: 14px; font-weight: 600; color: var(--text-soft);
+  margin-right: 8px;
+}
+.share-btn {
+  width: 40px; height: 40px;
+  border: none; border-radius: 50%;
+  background: #fff; cursor: pointer;
+  font-size: 1.1rem; transition: all 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  display: inline-flex; align-items: center; justify-content: center;
+}
+.share-btn:hover { transform: translateY(-2px); box-shadow: 0 3px 8px rgba(0,0,0,0.15); }
+.share-twitter:hover { background: #000; color: #fff; }
+.share-facebook:hover { background: #1877f2; color: #fff; }
+.share-kakao:hover { background: #fee500; }
+.share-copy:hover { background: #218CCC; color: #fff; }
+/* EN toggle disabled — 영문판 미생성 콘텐츠 (2026-05-16 patch) */
+.lang-switch .lang-disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  text-decoration: line-through;
+  padding: 4px 10px;
+  color: var(--text-soft, #888);
+  font-size: 13px;
+  user-select: none;
+}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <div class="lang-switch">
+    <a href="../content/payment-system-deep.html" class="active">KR</a>
+    <a href="../content/payment-system-deep.en.html" >EN</a>
+  </div>
+</header>
+
+<main class="detail-wrap">
+  <nav class="breadcrumb" aria-label="breadcrumb"><a href="../index.html">전체 가이드</a> &rsaquo; 외국인 한국 결제 시스템 deep dive</nav>
+  <article>
+  <p>＃外国人韓国決済システムdeep dive — カード・ペイ・送金12選</p>
+<p>&gt; <strong>サブ</strong>: Naver Pay・KakaoPay・サムスンペイ・#414・#435 フォローアップ deep dive</p>
+<p>ISSUE 03・#527・2026-05-28</p>
+<hr>
+<h2>🎯 なぜ外国人韓国決済システム deep diveなのか</h2>
+<p>外国人実用マニア1番地＝<strong>決済システムdeep dive</strong>（#414SIM・#435両替・#398到着後続）。クレジットカード+ Naver Pay + KakaoPay +サムスンペイ+外国人英語OK + WOWPASSフルセット。</p>
+<hr>
+<p>＃＃★一目で12決済システムマトリックス</p>
+<table><thead><tr>
+<th>#</th>
+<th>決済・サービス</th>
+<th>4軸</th>
+</tr></thead><tbody>
+<tr>
+<td>1</td>
+<td><strong>WOWPASS★外国人#1デビットカード</strong></td>
+<td>カードクラスター</td>
+<td>外国人専用・両替・交通・評価4.9</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Visa・Mastercard・海外クレジットカード</strong></td>
+<td>カードクラスター</td>
+<td>外国人マニア・#406・#449デパート</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>トラベルウォレット・トラベルログ（国内用発行）</strong></td>
+<td>カードクラスター</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Naver Pay★韓国#1ペイ</strong></td>
+<td>フェイクラスター</td>
+<td>外国人マニア・カカオトークペイ・#516</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>カカオペイ（カカオトーク統合）</strong></td>
+<td>フェイクラスター</td>
+<td>KakaoTalk 100％・#516・外国人マニア</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>サムスンペイ・Apple Pay・Google Pay</strong></td>
+<td>フェイクラスター</td>
+<td>外国人マニア・ギャラクシー・iPhone</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>Toss Pay（送金・決済・QR）</strong>フェイクラスター</td>
+<td>外国人英語OK・#516・MZマニア</td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>Zero Pay（小商工人QR決済）</strong></td>
+<td>QRクラスター</td>
+<td>伝統市場・#380・外国人マニア</td>
+</tr>
+<tr>
+<td>9</td>
+<td><strong>カカオバンク・トスバンク・国民・私たち・新韓外国人口座開設</strong></td>
+<td>銀行クラスター</td>
+<td>F-2・F-5・外国人英語OK・#252</td>
+</tr>
+<tr>
+<td>10</td>
+<td><strong>Wise・Revolut・Remitly（海外送金）</strong>★</td>
+<td>送金クラスター</td>
+</tr>
+<tr>
+<td>11</td>
+<td><strong>現金・ATM（24h・外国人専用ATM）</strong></td>
+<td>現金クラスター</td>
+<td>外国人マニア・#435・仁川空港</td>
+</tr>
+<tr>
+<td>12</td>
+<td><strong>外国人決済統合パッケージ（KTO・Klook・KKday）</strong>★</td>
+<td>統合クラスター</td>
+</tr>
+</tbody></table>
+<p><strong>+ 追加4</strong>: 外国人免税決済(タックスリファンド#406)・外国人交通決済</p>
+<hr>
+<p>＃＃⚠外国人の頻繁な誤り5つ</p>
+<p>1. <strong>&quot;韓国=現金のみ&quot;</strong>: 韓国現金使用率=<strong>20%未満(2026基準) +カード・ペイ80% + WOWPASS・Naver Pay・KakaoPay外国人マニア1番地</strong> + #414統合。</p>
+<p>2. <strong>「外国クレジットカード＝ダメ」</strong>: Visa・Mastercard = <strong>99% 店舗使用OK + 外国人マニア #1 + 免税店・百貨店・外国人フレンドリーレストラン(#400)</strong> + ただし、一部老舗・伝統市場は現金</p>
+<p>3. <strong>&quot;Naver Pay・KakaoPay = 外国人の釘&quot;</strong>: 外国人OK = <strong>WOWPASS連動 + 外国人口座(F-2・F-5) + 韓国電話番号 + 外国人マニア1番地</strong> + ␈MASK24​​␈・#398</p>
+<p>4. <strong>&quot;送金=高価&quot;</strong>: Wise・Revolut・Remitly = <strong>手数料0.5～1% (銀行対比1/5) + 外国人マニア #1 + 英語OK</strong> + 外国人マニア・#252統合。</p>
+<p>5. <strong>&quot;カード紛失=回答なし&quot;</strong>: 24hコールセンター=<strong>外国人英語OKコールセンター(Visa・Mastercard・新韓・国民)+カード即時停止+再発行1～3日</strong> + #405安全統合。</p>
+<hr>
+<p>＃＃①カードクラスタ（3）</p>
+<h3>1. WOWPASS ★外国人#1デビットカード</h3>
+<ul>
+<li>外国人専用・両替・交通・評価 4.9</li>
+<li>外国人★: ◎◎ — 外国人マニア #1・KTO認証・#178</li>
+<li>シグネチャー：外国人マニア1番地・#398・#435統合</li>
+</ul>
+<h3>2. Visa・Mastercard・海外クレジットカード</h3>
+<ul>
+<li>99% 店舗・外国人マニア・#406・#449</li>
+<li>外国人★: ◎◎ — 外国人マニア・#406・#449</li>
+<li>シグネチャー：外国人マニア・免税店・デパート1番地</li>
+</ul>
+<h3>3. トラベルウォレット・トラベログ（国内用発行）</h3>
+<ul>
+<li>F-2・F-5・外国人居住マニア</li>
+<li>外国人★: ◎◎ — 外国人居住・#252・F-2マニア</li>
+<li>シグネチャー：外国人居住マニア・#252統合</li>
+</ul>
+<hr>
+<p>＃＃②ペイクラスター（4）</p>
+<h3>4. Naver Pay ★韓国#1ペイ</h3>
+<ul>
+<li>外国人マニア・KakaoTalk Pay・#516</li>
+<li>外国人★: ◎◎ — 外国人マニア・#516統合</li>
+<li>シグネチャー：外国人マニア・#516・#178統合</li>
+</ul>
+<h3>5. KakaoPay (KakaoTalk統合)</h3>
+<ul>
+<li>KakaoTalk 100%・#516・外国人マニア</li>
+<li>外国人 ★: ◎◎ — KakaoTalk 100%・#516・外国人マニア</li>
+<li>シグネチャー：外国人マニア・#516統合</li>
+</ul>
+<h3>6. サムスンペイ・Apple Pay・Google Pay</h3>
+<ul>
+<li>ギャラクシー・iPhone・外国人マニア</li>
+<li>外国人★: ◎◎ — ギャラクシー・iPhone・外国人マニア</li>
+<li>シグネチャー：外国人マニア・MZ 1番地</li>
+</ul>
+<h3>7. Toss Pay ★送金・決済・QR</h3>
+<ul>
+<li>外国人英語OK・#516・MZマニア</li>
+<li>外国人 ★: ◎◎ — 外国人英語 OK・#516・MZマニア</li>
+<li>シグネチャー：外国人MZマニア・#516統合</li>
+</ul>
+<hr>
+<h2>③ QR・銀行・送金cluster (3)</h2>
+<h3>8. Zero Pay (小商工人QR決済)</h3>
+<ul>
+<li>伝統市場・#380・外国人マニア</li>
+<li>外国人 ★: ◎◎ — 伝統市場・#380・外国人マニア</li>
+<li>シグネチャー：外国人マニア・#380統合</li>
+</ul>
+<h3>9. 外国人銀行口座（カカオ・トス・国民・私たち・新韓）</h3>
+<ul>
+<li>F-2・F-5・外国人英語OK・#252</li>
+<li>外国人 ★: ◎◎ — F-2・F-5・外国人英語 OK・#252</li>
+<li>シグネチャー：外国人マニア・#252統合</li>
+</ul>
+<h3>10. Wise・Revolut・Remitly ★海外送金</h3>
+<ul>
+<li>外国人マニア・1ランク・英語OK</li>
+<li>外国人★: ◎◎ — 外国人マニア・1ランク・英語OK</li>
+<li>シグネチャー：外国人マニア1番地・#252統合</li>
+</ul>
+<hr>
+<h2>④ 現金・統合cluster (2+追加4)</h2>
+<h3>11. 現金・ATM (24h・外国人専用ATM)</h3>
+<ul>
+<li>外国人マニア・#435・仁川空港</li>
+<li>外国人 ★: ◎◎ — 外国人マニア・#435・仁川空港</li>
+<li>シグネチャー：外国人マニア・#435・#398統合</li>
+</ul>
+<h3>12. 外国人決済統合パッケージ ★ KTO・Klook・KKday</h3>
+<ul>
+<li>英語OK・KTO認証・外国人1位</li>
+<li>外国人★：◎◎ - 英語OK・KTO認証・外国人1位</li>
+<li>シグネチャー：外国人マニア・#178・#406・#449統合</li>
+</ul>
+<h3>+ 追加 4</h3>
+<ul>
+<li><strong>外国人免税決済(タックスリファンド#406)</strong> — 外国人マニア・#406統合</li>
+<li><strong>外国人交通決済 (T-money #398・#414)</strong> — 外国人マニア・#398・#414</li>
+<li><strong>外国人食品配達決済(配民・代々代)</strong> — 外国人英語OK・#400統合</li>
+<li><strong>外国人紛失・再発行（24hコールセンター）</strong> — 外国人英語OK・#405統合</li>
+</ul>
+<hr>
+<h2>⚙ FAQ 6個</h2>
+<p>1. <strong>外国人1位</strong>: WOWPASS・Visa・Mastercard・Naver Pay・KakaoPayフルセット。</p>
+<p>2. <strong>外国人ペイ</strong>: Naver Pay・KakaoPay・サムスンペイ・Apple Pay・Toss Pay 5種。</p>
+<p>3. <strong>外国人送金</strong>: Wise・Revolut・Remitly手数料0.5～1% 1順位。</p>
+<p>4. <strong>外国人口座開設</strong>: F-2・F-5・外国人英語OK・カカオ・トス・国民。</p>
+<p>5. <strong>外国人紛失・再発行</strong>：24hコールセンター・外国人英語OK・即時停止。</p>
+<p>6. <strong>外国人統合</strong>: WOWPASS + Visa + Naver Pay + KakaoPay + Wiseフルセット。</p>
+<hr>
+<p>＃＃🗺外国人フルデーコース3つ</p>
+<h3>A. 外国人決済入門フルデー（#398・#527）</h3>
+<ul>
+<li>09:00仁川空港到着→WOWPASS発行→T-money充電→10:00明洞両替→13:00外国人フレンドリーレストラン(Visa)→18:00免税店決済(#406)</li>
+</ul>
+<h3>B. 外国人居住1週間口座開設 (#252・#527)</h3>
+<ul>
+<li>Day 1～2: WOWPASS + 韓国電話番号 (#414) + 韓国語学院 (#403)</li>
+<li>Day 3～5: 外国人口座開設 (カカオ・トス) + Naver Pay・KakaoPay連動</li>
+<li>Day 6～7: Wise・Revolut 送金設定 + 外国人マニア</li>
+</ul>
+<h3>C. 外国人決済フルセットコース（#398・#414・#435・#527）</h3>
+<ul>
+<li>WOWPASS + Visa + Naver Pay + KakaoPay + Toss Pay + Wise + 外国人英語OKコールセンターフルセット</li>
+</ul>
+<hr>
+<p>##🌸シーズン5</p>
+<ul>
+<li><strong>春3～5月</strong>：外国人マニア・#385・新学期（#403韓国語）</li>
+<li><strong>夏6～8月</strong>：外国人マニア・夏休み決済フルセット</li>
+<li><strong>秋9～11月</strong>：外国人マニア・#385・新学期（#403）</li>
+<li><strong>冬12～2月</strong>：外国人マニア・年末決済・年末精算</li>
+<li><strong>年中</strong>：12決済システム+外国人マニア1番地</li>
+</ul>
+<hr>
+<h2>🔗関連</h2>
+<ul>
+<li>#178外国人初訪問・#252外国人居住・#380伝統市場・#398到着・#400外国人にやさしい食堂・#403韓国語学院・緊急・安全・#406免税店・#414 SIM通信・#435両替・#449ショッピングモール・#516 SNS・#522メタインデックス・␈MASK101</li>
+</ul>
+<p>##🏷タグ</p>
+<p><code>#외국인한국결제시스템deepdive</code> <code>#KoreaForeignerPaymentSystem</code> <code>#WOWPASS외국인1직불카드환전교통4.9</code> <code>#VisaMastercard99%매장외국인매니아</code> <code>#트래블월렛트래블로그F2F5거주</code> <code>#NaverPay한국1페이외국인매니아</code> <code>#KakaoPayKakaoTalk통합100%</code> <code>#삼성페이ApplePayGooglePay갤럭시iPhone</code> <code>#ZeroPay소상공인QR전통시장␈MASK102␈</code> <code>#외국인은행카카오토스국민우리신한F2F5</code> <code>#WiseRevolutRemitly해외송금수수료1%</code> <code>#현금ATM24h외국인전용인천공항␈MASK103␈</code> <code>#KTOKlookKKday결제패키지영어OK</code> <code>#택스리펀드␈MASK104␈T-money␈MASK105␈␈MASK106␈배민요기요</code> <code>␈MASK107␈h콜센터분실재발급␈MASK108␈</code> <code>#키친구</code></p>
+  </article>
+
+  <div class="share-bar">
+    <span class="share-label">공유</span>
+    <button class="share-btn share-twitter" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent('외국인 한국 결제 시스템 deep dive') + '&url=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Twitter">𝕏</button>
+    <button class="share-btn share-facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Facebook">f</button>
+    <button class="share-btn share-kakao" onclick="navigator.share ? navigator.share({title: '외국인 한국 결제 시스템 deep dive', url: window.location.href}) : navigator.clipboard.writeText(window.location.href).then(function() { alert('링크 복사됨!'); })" aria-label="Kakao/Share">📤</button>
+    <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href).then(function() { this.textContent = '✓'; setTimeout(function() { document.querySelector('.share-copy').textContent = '🔗'; }, 1500); }.bind(this))" aria-label="Copy link">🔗</button>
+  </div>
+
+  <nav class="detail-nav" aria-label="previous-next">
+    <div><a href="working-holiday-deep.html" style="color:var(--red);">&larr; 외국인 워킹홀리데이·H-1 비자 deep dive</a></div>
+    <div><a href="pharmacy-healthcare.html" style="color:var(--red);">외국인 약국·헬스케어 deep dive &rarr;</a></div>
+  </nav>
+</main>
+
+<footer class="site-footer">
+  <p><a href="https://instagram.com/keychingu.korea" target="_blank">@keychingu.korea</a> &mdash; Seoul for MZ FIT Travelers</p>
+</footer>
+</body>
+</html>
