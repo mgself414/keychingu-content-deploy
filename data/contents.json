@@ -17419,5 +17419,157 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
+  },
+  {
+    "id": "781",
+    "slug": "korea-monsoon-rainy-season",
+    "title_kr": "외국인 한국 장마 우기 여름 12선 deep dive",
+    "title_en": "Foreigner Korea Monsoon Rainy Season Top 12",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "summer",
+      "deep-dive",
+      "sub-deep"
+    ],
+    "summary_kr": "장마 12선·6/24~7/24·실내 + 카페·외국인 매니아·다국어",
+    "summary_en": "Korea Monsoon Top 12",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "782",
+    "slug": "korea-valley-summer",
+    "title_kr": "외국인 한국 계곡 여름 12선 deep dive",
+    "title_en": "Foreigner Korea Valley Summer Top 12",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "summer",
+      "deep-dive",
+      "sub-deep"
+    ],
+    "summary_kr": "계곡 12선·강원·청도·가평·외국인 매니아·다국어·7~8월 절정",
+    "summary_en": "Korea Valley Summer Top 12",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "783",
+    "slug": "korea-waterpark-summer",
+    "title_kr": "외국인 한국 워터파크 여름 12선 deep dive",
+    "title_en": "Foreigner Korea Waterpark Summer Top 12",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "summer",
+      "deep-dive",
+      "sub-deep"
+    ],
+    "summary_kr": "워터파크 12선·캐리비안 베이·오션월드·외국인 매니아·다국어",
+    "summary_en": "Korea Waterpark Summer Top 12",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "784",
+    "slug": "korea-summer-cold-food",
+    "title_kr": "외국인 한국 여름 시원한 음식 12선 deep dive",
+    "title_en": "Foreigner Korea Summer Cold Food Top 12",
+    "category": "C",
+    "tags": [
+      "foreign-tourist",
+      "summer",
+      "deep-dive",
+      "sub-deep"
+    ],
+    "summary_kr": "여름 음식 12선·냉면·콩국수·팥빙수·외국인 매니아·다국어",
+    "summary_en": "Korea Summer Cold Food Top 12",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "785",
+    "slug": "korea-summer-beach",
+    "title_kr": "외국인 한국 여름 해변 12선 deep dive",
+    "title_en": "Foreigner Korea Summer Beach Top 12",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "summer",
+      "deep-dive",
+      "sub-deep"
+    ],
+    "summary_kr": "해변 12선·해운대·경포·강릉·제주·외국인 매니아·다국어",
+    "summary_en": "Korea Summer Beach Top 12",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "786",
+    "slug": "korea-summer-hangang-night",
+    "title_kr": "외국인 한국 여름 한강 야경 12선 deep dive",
+    "title_en": "Foreigner Korea Summer Hangang Night Top 12",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "summer",
+      "deep-dive",
+      "sub-deep"
+    ],
+    "summary_kr": "여름 한강 야경 12선·반포 무지개분수·치맥·#741 cross",
+    "summary_en": "Summer Hangang Night Top 12",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "787",
+    "slug": "korea-summer-festivals",
+    "title_kr": "외국인 한국 여름 축제 12선 deep dive",
+    "title_en": "Foreigner Korea Summer Festivals Top 12",
+    "category": "D",
+    "tags": [
+      "foreign-tourist",
+      "summer",
+      "deep-dive",
+      "sub-deep"
+    ],
+    "summary_kr": "여름 축제 12선·보령머드·자라섬 재즈·외국인 매니아·다국어",
+    "summary_en": "Summer Festivals Top 12",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "788",
+    "slug": "korea-summer-camping",
+    "title_kr": "외국인 한국 여름 캠핑 글램핑 12선 deep dive",
+    "title_en": "Foreigner Korea Summer Camping Glamping Top 12",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "summer",
+      "deep-dive",
+      "sub-deep"
+    ],
+    "summary_kr": "여름 캠핑·글램핑 12선·강원·가평·#560 cross·외국인 매니아",
+    "summary_en": "Summer Camping Glamping Top 12",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]
