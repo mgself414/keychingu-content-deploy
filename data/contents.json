@@ -17571,5 +17571,25 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
+  },
+  {
+    "id": "789",
+    "slug": "korea-seasonal-sashimi",
+    "title_kr": "한국 제철 회 월별 가이드 — 지금 가면 뭐가 맛있나",
+    "title_en": "Korean Seasonal Sashimi Monthly Guide",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "food",
+      "seasonal",
+      "meta-guide",
+      "sashimi"
+    ],
+    "summary_kr": "12개월 제철 어종 매트릭스 + 시장 Top 5 + 회 vs 사시미 차이·매운탕 코스",
+    "summary_en": "Monthly seasonal fish matrix + Top 5 markets + hoe vs sushi differences",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false
   }
 ]
