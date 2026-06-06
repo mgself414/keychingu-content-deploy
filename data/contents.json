@@ -17591,5 +17591,26 @@
     "cn_available": false,
     "jp_available": false,
     "instagram_posted": false
+  },
+  {
+    "id": "790",
+    "slug": "korea-sashimi-market-workflow",
+    "title_kr": "외국인용 회 시장→상차림 워크플로우 — 시장에서 회 떠서 식당으로",
+    "title_en": "Foreigner Sashimi Market-to-Restaurant Workflow Guide",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "food",
+      "workflow",
+      "meta-guide",
+      "sashimi",
+      "market"
+    ],
+    "summary_kr": "4-step 워크플로우 + 시장 5곳 매장·가격·외국인 친화도 + 회 입문자 가이드",
+    "summary_en": "4-step market-to-restaurant workflow + Top 5 markets pricing + foreigner-friendly tips",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false
   }
 ]
