@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>외국인 한국 자하 하디드 DDP 동대문 cluster 12선 deep dive — KeyChinGu</title>
+<meta name="description" content="외국인 한국 자하 하디드 DDP 동대문 cluster 12선 deep dive — 세계 1 비정형 건축·외국인 매니아 1순위·연 1,000만 > 메타: 외국인 culture·건축 축 · 자하 하디드 DDP 카테고리 · 12선 4축 DDP·동대문·디자인·인프라 + FAQ 6 + 코스...">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="192x192" href="../assets/logo/favicon-192.png">
+<link rel="apple-touch-icon" href="../assets/logo/favicon-192.png">
+<link rel="canonical" href="https://mgself414.github.io/keychingu-content-deploy/content/zaha-hadid-ddp-cluster.html">
+<link rel="alternate" hreflang="ko" href="https://mgself414.github.io/keychingu-content-deploy/content/zaha-hadid-ddp-cluster.html">
+<link rel="alternate" hreflang="en" href="https://mgself414.github.io/keychingu-content-deploy/content/zaha-hadid-ddp-cluster.en.html">
+<link rel="alternate" hreflang="x-default" href="https://mgself414.github.io/keychingu-content-deploy/content/zaha-hadid-ddp-cluster.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="외국인 한국 자하 하디드 DDP 동대문 cluster 12선 deep dive">
+<meta property="og:description" content="외국인 한국 자하 하디드 DDP 동대문 cluster 12선 deep dive — 세계 1 비정형 건축·외국인 매니아 1순위·연 1,000만 > 메타: 외국인 culture·건축 축 · 자하 하디드 DDP 카테고리 · 12선 4축 DDP·동대문·디자인·인프라 + FAQ 6 + 코스...">
+<meta property="og:url" content="https://mgself414.github.io/keychingu-content-deploy/content/zaha-hadid-ddp-cluster.html">
+<meta property="og:image" content="https://mgself414.github.io/keychingu-content-deploy/assets/logo/og-image-1200x630.png">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="외국인 한국 자하 하디드 DDP 동대문 cluster 12선 deep dive">
+<meta name="twitter:description" content="외국인 한국 자하 하디드 DDP 동대문 cluster 12선 deep dive — 세계 1 비정형 건축·외국인 매니아 1순위·연 1,000만 > 메타: 외국인 culture·건축 축 · 자하 하디드 DDP 카테고리 · 12선 4축 DDP·동대문·디자인·인프라 + FAQ 6 + 코스...">
+<meta name="twitter:image" content="https://mgself414.github.io/keychingu-content-deploy/assets/logo/og-image-1200x630.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"외국인 한국 자하 하디드 DDP 동대문 cluster 12선 deep dive","description":"외국인 한국 자하 하디드 DDP 동대문 cluster 12선 deep dive — 세계 1 비정형 건축·외국인 매니아 1순위·연 1,000만 > 메타: 외국인 culture·건축 축 · 자하 하디드 DDP 카테고리 · 12선 4축 DDP·동대문·디자인·인프라 + FAQ 6 + 코스...","datePublished":"2026-05-01","inLanguage":"ko","url":"https://mgself414.github.io/keychingu-content-deploy/content/zaha-hadid-ddp-cluster.html","image":"https://mgself414.github.io/keychingu-content-deploy/assets/logo/og-image-1200x630.png","publisher":{"@type":"Organization","name":"KeyChinGu","logo":{"@type":"ImageObject","url":"https://mgself414.github.io/keychingu-content-deploy/assets/logo/logo_2-4_color_small.png"}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/main.css">
+<style>
+.detail-wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+}
+.breadcrumb {
+  font-size: 13px;
+  color: var(--text-soft);
+  margin-bottom: 24px;
+}
+.breadcrumb a { color: var(--red); font-weight: 600; }
+.detail-wrap h1 {
+  font-size: 28px; font-weight: 800;
+  color: var(--black); margin-bottom: 8px;
+}
+.detail-wrap h2 {
+  font-size: 22px; font-weight: 700;
+  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--red);
+}
+.detail-wrap h3 {
+  font-size: 17px; font-weight: 600;
+  color: var(--text-mid); margin-top: 20px; margin-bottom: 8px;
+}
+.detail-wrap p {
+  font-size: 15px; line-height: 1.7;
+  color: var(--text-mid); margin-bottom: 12px;
+}
+.detail-wrap ul {
+  padding-left: 20px; margin-bottom: 12px;
+}
+.detail-wrap li {
+  font-size: 14px; line-height: 1.6;
+  color: var(--text-mid); margin-bottom: 6px;
+}
+.detail-wrap table {
+  width: 100%; border-collapse: collapse;
+  margin-bottom: 16px; font-size: 13px;
+}
+.detail-wrap th {
+  background: var(--black); color: #fff;
+  padding: 10px 12px; text-align: left;
+  font-weight: 600; font-size: 11px;
+  text-transform: uppercase; letter-spacing: 0.06em;
+}
+.detail-wrap td {
+  padding: 10px 12px; border-bottom: 1px solid var(--border);
+  color: var(--text-mid);
+}
+.detail-wrap tr:nth-child(even) td { background: rgba(0,0,0,0.02); }
+.detail-wrap hr {
+  border: none; height: 1px;
+  background: var(--border); margin: 24px 0;
+}
+.detail-wrap code {
+  background: rgba(33,140,204,0.08);
+  padding: 2px 6px; border-radius: 4px;
+  font-size: 13px; color: var(--blue);
+}
+.detail-nav {
+  display: flex; justify-content: space-between;
+  margin-top: 48px; padding-top: 20px;
+  border-top: 1px solid var(--border);
+  font-size: 14px; font-weight: 600;
+}
+.share-bar {
+  display: flex; align-items: center; gap: 10px;
+  margin-top: 40px; padding: 16px 20px;
+  background: #f9f9f9; border-radius: 12px;
+  border: 1px solid var(--border);
+}
+.share-label {
+  font-size: 14px; font-weight: 600; color: var(--text-soft);
+  margin-right: 8px;
+}
+.share-btn {
+  width: 40px; height: 40px;
+  border: none; border-radius: 50%;
+  background: #fff; cursor: pointer;
+  font-size: 1.1rem; transition: all 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  display: inline-flex; align-items: center; justify-content: center;
+}
+.share-btn:hover { transform: translateY(-2px); box-shadow: 0 3px 8px rgba(0,0,0,0.15); }
+.share-twitter:hover { background: #000; color: #fff; }
+.share-facebook:hover { background: #1877f2; color: #fff; }
+.share-kakao:hover { background: #fee500; }
+.share-copy:hover { background: #218CCC; color: #fff; }
+/* EN toggle disabled — 영문판 미생성 콘텐츠 (2026-05-16 patch) */
+.lang-switch .lang-disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  text-decoration: line-through;
+  padding: 4px 10px;
+  color: var(--text-soft, #888);
+  font-size: 13px;
+  user-select: none;
+}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <div class="lang-switch">
+    <a href="../content/zaha-hadid-ddp-cluster.html" class="active">KR</a>
+    <a href="../content/zaha-hadid-ddp-cluster.en.html" >EN</a>
+  </div>
+</header>
+
+<main class="detail-wrap">
+  <nav class="breadcrumb" aria-label="breadcrumb"><a href="../index.html">전체 가이드</a> &rsaquo; 외국인 한국 자하 하디드 DDP 동대문 cluster 12선 deep dive</nav>
+  <article>
+  <h1>외국인 한국 자하 하디드 DDP 동대문 cluster 12선 deep dive — 세계 #1 비정형 건축·외국인 매니아 1순위·연 1,000만</h1>
+<p>&gt; <strong>메타</strong>: 외국인 culture·건축 축 · 자하 하디드 DDP 카테고리 · 12선 4축 (DDP·동대문·디자인·인프라) + FAQ 6 + 코스 3 + 시즌 5 + tip 5 · #790</p>
+<p>&gt;</p>
+<p>&gt; <strong>검증</strong>: 2026-06-05 (visitkorea·DDP 공식·Seoul Design Festival).</p>
+<p>&gt;</p>
+<p>&gt; <strong>cross-ref</strong>: #789 건축 매트릭스 · #621 K-design · #776 야시장 · #710 이태원 · #743 K-드라마</p>
+<hr>
+<h2>왜 자하 하디드 DDP인가 — 세계 #1 비정형 건축·외국인 인스타 1순위</h2>
+<p>DDP (동대문 디자인 플라자) = <strong>자하 하디드 (영국·이라크)·세계 #1 비정형 건축·2014 개관·연 1,000만+ 방문·외국인 매니아 1순위·인스타 매니아 #1</strong>·#621·#776·#789 cross.</p>
+<p>#789 매트릭스 대비 차별:</p>
+<ul>
+<li><strong>단일 건축물 풀세트</strong>: DDP 1개 풀세트</li>
+<li><strong>연 1,000만+</strong>: 한국 #1 건축 명소</li>
+<li><strong>다국어 풀</strong>: EN/JP/CN/AR 풀 cover</li>
+<li><strong>인스타 매니아 #1</strong>: 비정형 건축 + 인스타</li>
+</ul>
+<p>본 매트릭스는 DDP 본관 3선 + 동대문 연계 3선 + 디자인 페스티벌 3선 + 외국인 인프라·시즌 3선 = 12선 4축.</p>
+<hr>
+<h2>12선 4축</h2>
+<h3>축 1: DDP 본관 (3선)</h3>
+<h4>1. DDP 메인 건물 (자하 하디드 + 삼우건축)</h4>
+<ul>
+<li><strong>차별</strong>: <strong>DDP 메인·자하 하디드·세계 #1 비정형 건축·외국인 매니아 인스타 1순위</strong></li>
+<li><strong>운영</strong>: 24시간 (외부)·외부 무료</li>
+<li><strong>외국인 fit</strong>: ★★★★★·<strong>무료</strong> (외부)</li>
+<li><strong>위치</strong>: 동대문역사문화공원역 (2·4·5호선)</li>
+</ul>
+<h4>2. DDP 디자인 박물관·LED 미디어 파사드</h4>
+<ul>
+<li><strong>차별</strong>: <strong>DDP 디자인 박물관·LED 미디어 파사드·외국인 매니아 1순위·#745 일루미 cross</strong></li>
+<li><strong>운영</strong>: 10:00~20:00·전시 5,000원~25,000원</li>
+<li><strong>외국인 fit</strong>: ★★★★★·<strong>유료</strong></li>
+</ul>
+<h4>3. DDP 옥상·외부 산책로 (인스타 #1)</h4>
+<ul>
+<li><strong>차별</strong>: <strong>DDP 외부 산책로·비정형 곡선·외국인 인스타 매니아 #1</strong></li>
+<li><strong>운영</strong>: 24시간·<strong>무료</strong></li>
+<li><strong>외국인 fit</strong>: ★★★★★ MZ + 인스타 1순위·<strong>무료</strong></li>
+</ul>
+<h3>축 2: 동대문 연계 (3선)</h3>
+<h4>4. 동대문 시장 (#776·24시간·#1)</h4>
+<ul>
+<li><strong>차별</strong>: <strong>동대문 시장·24시간·외국인 매니아 1순위·DDP cross</strong>·#776 cross</li>
+<li><strong>운영</strong>: 24시간·다국어</li>
+<li><strong>외국인 fit</strong>: ★★★★★ EN·JP·CN·1순위</li>
+</ul>
+<h4>5. 평화시장 + 두산타워 (#776·쇼핑·MZ)</h4>
+<ul>
+<li><strong>차별</strong>: <strong>평화시장·두산타워·MZ 쇼핑 매니아·외국인 매니아 1순위</strong></li>
+<li><strong>운영</strong>: 24시간 일부</li>
+<li><strong>외국인 fit</strong>: ★★★★ MZ + 쇼핑</li>
+</ul>
+<h4>6. 동대문 + 청계천 + 광화문 cluster</h4>
+<ul>
+<li><strong>차별</strong>: <strong>동대문·청계천·광화문·외국인 매니아 도심 풀세트</strong>·#710·#744·#737 cross</li>
+<li><strong>운영</strong>: 24시간</li>
+<li><strong>외국인 fit</strong>: ★★★★★·<strong>무료</strong></li>
+</ul>
+<h3>축 3: 디자인 페스티벌 (3선)</h3>
+<h4>7. Seoul Design Festival (9월·DDP·#621)</h4>
+<ul>
+<li><strong>차별</strong>: <strong>Seoul Design Festival·9월·DDP·외국인 매니아 1순위·세계 #1 디자인 페스티벌·#621 cross</strong></li>
+<li><strong>운영</strong>: 9월·1주일·다국어 풀</li>
+<li><strong>외국인 fit</strong>: ★★★★★·<strong>유료</strong></li>
+</ul>
+<h4>8. Frieze Seoul (9월·#789·#9)</h4>
+<ul>
+<li><strong>차별</strong>: <strong>Frieze Seoul·9월·세계 #1 아트 페스티벌·외국인 럭셔리 매니아 1순위</strong>·#789 cross</li>
+<li><strong>운영</strong>: 9월·5일</li>
+<li><strong>외국인 fit</strong>: ★★★★★ 럭셔리·1순위</li>
+</ul>
+<h4>9. K-design 페스티벌 (#621·연중)</h4>
+<ul>
+<li><strong>차별</strong>: <strong>K-design 페스티벌·DDP·외국인 매니아 1순위·#621 cross</strong></li>
+<li><strong>운영</strong>: 연중·이벤트별</li>
+<li><strong>외국인 fit</strong>: ★★★★★ MZ + 매니아·1순위</li>
+</ul>
+<h3>축 4: 외국인 인프라·시즌 (3선)</h3>
+<h4>10. 다국어 안내 (DDP·visitkorea·KOCCA)</h4>
+<ul>
+<li><strong>차별</strong>: <strong>DDP 다국어 EN/JP/CN/AR/RU 풀 cover·외국인 매니아 1순위</strong></li>
+<li><strong>외국인 fit</strong>: ★★★★★</li>
+</ul>
+<h4>11. 외국인 매니아 1day 패스 (Klook·KKday)</h4>
+<ul>
+<li><strong>차별</strong>: <strong>DDP + 동대문 + 디자인 페스티벌 1day 패스</strong>·30,000원~150,000원</li>
+<li><strong>외국인 fit</strong>: ★★★★★</li>
+</ul>
+<h4>12. 9월 BEST·일루미 시즌 (11/15~2/15)</h4>
+<ul>
+<li><strong>차별</strong>: <strong>9월 Frieze + Design Festival·11/15~2/15 일루미·외국인 매니아 1순위</strong>·#745 cross</li>
+<li><strong>외국인 fit</strong>: ★★★★★</li>
+</ul>
+<hr>
+<h2>⚠️ 정확성 검증</h2>
+<p><strong>검증 완료</strong> (2026-06-05 기준):</p>
+<ul>
+<li>DDP·자하 하디드 2014·연 1,000만+ (DDP 공식·visitkorea)</li>
+<li>자하 하디드 (1950-2016·영국 이라크 건축가·Pritzker 2004)</li>
+<li>Seoul Design Festival·Frieze Seoul 9월 (각 공식)</li>
+<li>동대문 24시간 (#776·visitkorea)</li>
+</ul>
+<p><strong>주의</strong>:</p>
+<ul>
+<li>DDP 전시별 운영시간 + 가격 (매월 update)</li>
+<li>9월 절정 1년 전 예약</li>
+<li>미디어 파사드 야간 18:00~</li>
+</ul>
+<hr>
+<h2>FAQ 6</h2>
+<h3>Q1. 외국인 첫 DDP best?</h3>
+<ul>
+<li><strong>초보 (3시간)</strong>: DDP + 동대문 시장 (#1·#4)</li>
+<li><strong>중급 (5시간)</strong>: DDP + 광화문 풀세트</li>
+<li><strong>럭셔리 (1박)</strong>: 9월 Frieze + Design Festival (#7·#8)</li>
+</ul>
+<h3>Q2. 자하 하디드 누구?</h3>
+<ul>
+<li><strong>1950-2016·영국 이라크 건축가·Pritzker 2004 (세계 #1 건축상)</strong></li>
+<li>DDP = 그녀의 한국 #1 작품</li>
+</ul>
+<h3>Q3. 비용?</h3>
+<ul>
+<li><strong>무료</strong>: DDP 외부·동대문 24시간</li>
+<li><strong>중간</strong>: 전시 5,000원~25,000원</li>
+<li><strong>럭셔리</strong>: Frieze + Festival</li>
+</ul>
+<h3>Q4. 9월 페스티벌?</h3>
+<ul>
+<li>Frieze (5일)·Seoul Design Festival (1주일)</li>
+<li>외국인 매니아 1순위·1년 전 예약</li>
+</ul>
+<h3>Q5. 인스타 spot?</h3>
+<ul>
+<li>DDP 외부 (비정형 곡선) + 미디어 파사드</li>
+<li>외국인 매니아 #1</li>
+</ul>
+<h3>Q6. 패스 (Klook)?</h3>
+<ul>
+<li>30,000원~150,000원·1day 풀세트</li>
+</ul>
+<hr>
+<h2>풀데이 코스 3</h2>
+<h3>코스 A — DDP 초보 (3시간)</h3>
+<ul>
+<li>DDP 외부 산책 + 인스타 (#1·#3·1시간)</li>
+<li>디자인 박물관 (#2·1시간·15,000원)</li>
+<li>동대문 시장 (#4·1시간)</li>
+<li>총 비용: 약 30,000원</li>
+</ul>
+<h3>코스 B — 매니아 풀세트 (5시간)</h3>
+<ul>
+<li>DDP 풀세트 (#1·#2·#3·2시간)</li>
+<li>동대문 + 평화시장 (#5·1시간)</li>
+<li>청계천 + 광화문 (#6·1.5시간)</li>
+<li>광장시장 야식 (#776·#357)</li>
+<li>총 비용: 약 80,000원</li>
+</ul>
+<h3>코스 C — 9월 페스티벌 1박</h3>
+<ul>
+<li>Day 1: Frieze (#8·외국인 매니아 1순위)</li>
+<li>Day 1 저녁: 호텔 + 미슐랭</li>
+<li>Day 2: Seoul Design Festival (#7) + DDP</li>
+<li>총 비용: 약 500,000원~</li>
+</ul>
+<hr>
+<h2>시즌 5</h2>
+<h3>1주차 1/1~3/15 겨울·실내 + 일루미 #745</h3>
+<h3>2주차 3/16~6/15 봄·매니아</h3>
+<h3>3주차 6/16~8/31 여름·실내</h3>
+<h3>4주차 9/1~9/30 — <strong>Frieze + Festival BEST</strong></h3>
+<h3>5주차 10/1~12/31 가을·단풍 + 일루미</h3>
+<hr>
+<h2>Tip 5</h2>
+<h3>Tip 1 — 9월 Frieze + Festival BEST</h3>
+<ul>
+<li>1년 전 예약·외국인 매니아 1순위</li>
+</ul>
+<h3>Tip 2 — DDP 야간 미디어 파사드 (#2)</h3>
+<ul>
+<li>18:00~ 외국인 인스타 1순위</li>
+</ul>
+<h3>Tip 3 — 동대문 + DDP 풀세트 (#776)</h3>
+<ul>
+<li>외국인 매니아 1순위</li>
+</ul>
+<h3>Tip 4 — 다국어 EN/JP/CN/AR/RU</h3>
+<ul>
+<li>DDP 풀 cover</li>
+</ul>
+<h3>Tip 5 — Klook 1day 패스</h3>
+<ul>
+<li>30,000원~150,000원</li>
+</ul>
+<hr>
+<h2>외부 source ≥6</h2>
+<p>1. <strong>visitkorea.or.kr</strong> — DDP 매트릭스</p>
+<p>2. <strong>DDP 공식</strong> — dpf.or.kr</p>
+<p>3. <strong>Frieze Seoul·Seoul Design Festival</strong></p>
+<p>4. <strong>자하 하디드 archive</strong> — zaha-hadid.com</p>
+<p>5. <strong>Pritzker Prize</strong> — 2004 자하 하디드</p>
+<p>6. <strong>#789·#621·#776 cross</strong></p>
+<hr>
+<h2>외국인 fit</h2>
+<ul>
+<li>★★★★★ EN·JP·CN·AR MZ + 럭셔리·1순위</li>
+<li>외국인 건축·인스타 매니아 신규 1순위</li>
+<li>연중·9월 BEST·일루미 시즌 fusion</li>
+<li>연계: #789·#621·#776·#710·#737·#744·#745</li>
+</ul>
+<h2>매니아 페르소나 fit</h2>
+<ul>
+<li><strong>kpop_mania</strong>: ★★★ (#387 강남 cross)</li>
+<li><strong>kdrama_mania</strong>: ★★★ (#743 cross)</li>
+<li><strong>foodie</strong>: ★★ (X)</li>
+<li><strong>culture_mania</strong>: ★★★★★ (1순위)</li>
+<li><strong>mz_traveler</strong>: ★★★★★ (DDP·1순위)</li>
+<li><strong>luxury_traveler</strong>: ★★★★★ (Frieze·1순위)</li>
+<li><strong>family_traveler</strong>: ★★★★ (가족 매니아)</li>
+<li><strong>senior_traveler</strong>: ★★★ (시니어 매니아)</li>
+<li><strong>인스타_mania</strong>: ★★★★★ (1순위)</li>
+<li><strong>건축_mania</strong>: ★★★★★ (1순위)</li>
+<li><strong>디자인_mania</strong>: ★★★★★ (1순위)</li>
+</ul>
+  </article>
+
+  <div class="share-bar">
+    <span class="share-label">공유</span>
+    <button class="share-btn share-twitter" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent('외국인 한국 자하 하디드 DDP 동대문 cluster 12선 deep dive') + '&url=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Twitter">𝕏</button>
+    <button class="share-btn share-facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Facebook">f</button>
+    <button class="share-btn share-kakao" onclick="navigator.share ? navigator.share({title: '외국인 한국 자하 하디드 DDP 동대문 cluster 12선 deep dive', url: window.location.href}) : navigator.clipboard.writeText(window.location.href).then(function() { alert('링크 복사됨!'); })" aria-label="Kakao/Share">📤</button>
+    <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href).then(function() { this.textContent = '✓'; setTimeout(function() { document.querySelector('.share-copy').textContent = '🔗'; }, 1500); }.bind(this))" aria-label="Copy link">🔗</button>
+  </div>
+
+  <nav class="detail-nav" aria-label="previous-next">
+    <div><a href="korea-architecture-matrix.html" style="color:var(--red);">&larr; 외국인 한국 건축 매트릭스 12선 deep dive</a></div>
+    <div><a href="korea-modern-architects.html" style="color:var(--red);">외국인 한국 현대 건축가 12선 deep dive &rarr;</a></div>
+  </nav>
+</main>
+
+<footer class="site-footer">
+  <p><a href="https://instagram.com/keychingu.korea" target="_blank">@keychingu.korea</a> &mdash; Seoul for MZ FIT Travelers</p>
+</footer>
+</body>
+</html>
