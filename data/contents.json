@@ -17903,5 +17903,26 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
+  },
+  {
+    "id": "804",
+    "slug": "korea-bbq-cuts-grade-matrix",
+    "title_kr": "한국 BBQ 부위·등급 매트릭스 — 어떤 고기를 시킬까?",
+    "title_en": "Korean BBQ Cuts & Grade Matrix Guide",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "food",
+      "bbq",
+      "meta-guide",
+      "meat",
+      "matrix"
+    ],
+    "summary_kr": "돼지 6 + 소 6 + 닭 3 부위 12선 + 한우 등급 + 외국인 추천 우선순위",
+    "summary_en": "6 pork + 6 beef + 3 chicken cuts matrix + Hanwoo grade + foreigner picks",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false
   }
 ]
