@@ -18211,5 +18211,65 @@
     "cn_available": false,
     "jp_available": false,
     "instagram_posted": false
+  },
+  {
+    "id": "819",
+    "slug": "korea-dessert-6types-matrix",
+    "title_kr": "한국 디저트 6종 매트릭스 — 호떡부터 빙수까지 외국인 인스타 풀세트",
+    "title_en": "Korean Dessert 6 Types Matrix Guide",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "food",
+      "dessert",
+      "matrix",
+      "meta-guide"
+    ],
+    "summary_kr": "호떡·달고나·붕어빵·국화빵·약과·빙수 6종 + 계절별 시그니처",
+    "summary_en": "6 types matrix + seasonal signatures",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false
+  },
+  {
+    "id": "820",
+    "slug": "korea-dessert-workflow",
+    "title_kr": "한국 디저트 주문·페어링 워크플로우",
+    "title_en": "Korean Dessert Order & Pairing Workflow Guide",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "food",
+      "dessert",
+      "workflow",
+      "meta-guide"
+    ],
+    "summary_kr": "5-step + 음료 페어링 + 인스타 촬영 + 영어 발화",
+    "summary_en": "5-step + beverage pairing + instagram tips + English phrases",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false
+  },
+  {
+    "id": "821",
+    "slug": "korea-dessert-channel-comparison",
+    "title_kr": "외국인용 한국 디저트 길거리 vs MZ 카페 vs 호텔 vs 한옥 비교",
+    "title_en": "Korean Dessert Street vs MZ Cafe vs Hotel vs Hanok Comparison",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "food",
+      "dessert",
+      "comparison",
+      "meta-guide"
+    ],
+    "summary_kr": "4채널 비교 매트릭스 + segment 5 + 길거리·MZ·호텔·한옥",
+    "summary_en": "4-channel matrix + 5 segments",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false
   }
 ]
