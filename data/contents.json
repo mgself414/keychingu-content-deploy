@@ -17988,5 +17988,45 @@
     "cn_available": false,
     "jp_available": false,
     "instagram_posted": false
+  },
+  {
+    "id": "808",
+    "slug": "korea-gukbap-workflow",
+    "title_kr": "한국 국밥 주문·먹는 워크플로우 — 자리에서 마지막 한 숟갈까지",
+    "title_en": "Korean Gukbap Order & Eating Workflow Guide",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "food",
+      "gukbap",
+      "workflow",
+      "meta-guide"
+    ],
+    "summary_kr": "6-step 워크플로우 + 종류별 양념 가감 + 영어 발화 + 지역별 패턴",
+    "summary_en": "6-step workflow + seasoning by type + English phrases + regional patterns",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false
+  },
+  {
+    "id": "809",
+    "slug": "korea-gukbap-channel-comparison",
+    "title_kr": "외국인용 국밥 노포 vs 24h vs 시장 비교 — 어디서 국밥 먹을까?",
+    "title_en": "Korean Gukbap Heritage vs 24h vs Market Channel Comparison",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "food",
+      "gukbap",
+      "comparison",
+      "meta-guide"
+    ],
+    "summary_kr": "3채널 비교 매트릭스 + segment 5 + 노포·24h·시장 + decision matrix",
+    "summary_en": "3-channel matrix + 5 segments + heritage·24h·market venues",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false
   }
 ]
