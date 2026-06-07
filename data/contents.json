@@ -17647,9 +17647,9 @@
     ],
     "summary_kr": "한국 건축 12선·DDP·자하·승효상·이순구·UNESCO·외국인 매니아 1순위",
     "summary_en": "Korea Architecture Matrix Top 12",
-    "en_available": false,
-    "cn_available": false,
-    "jp_available": false,
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
     "instagram_posted": false
   },
   {
