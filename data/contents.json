@@ -17945,5 +17945,27 @@
     "cn_available": false,
     "jp_available": false,
     "instagram_posted": false
+  },
+  {
+    "id": "806",
+    "slug": "korea-bbq-channel-comparison",
+    "title_kr": "외국인용 정육식당 vs BBQ 전문점 vs 시장 BBQ 비교 — 어디서 BBQ 먹을까?",
+    "title_en": "Butcher Restaurant vs BBQ Specialty vs Market BBQ Comparison Guide",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "food",
+      "bbq",
+      "comparison",
+      "meta-guide",
+      "meat",
+      "decision"
+    ],
+    "summary_kr": "3채널 비교 매트릭스 + segment 5 1순위 + 매장 추천 + 결정 가이드",
+    "summary_en": "3-channel BBQ comparison matrix + 5 segment top picks + decision guide",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false
   }
 ]
