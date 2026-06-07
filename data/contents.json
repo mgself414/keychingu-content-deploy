@@ -18149,5 +18149,67 @@
     "cn_available": false,
     "jp_available": false,
     "instagram_posted": false
+  },
+  {
+    "id": "816",
+    "slug": "korea-chicken-6types-matrix",
+    "title_kr": "한국 치킨 6종 매트릭스 — K-치킨 글로벌 #2 음식",
+    "title_en": "Korean Chicken 6 Types Matrix Guide",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "food",
+      "chicken",
+      "chimaek",
+      "matrix",
+      "meta-guide"
+    ],
+    "summary_kr": "양념·후라이드·간장·매운·파닭·뿌링클 6종 + 브랜드 + 치맥 문화",
+    "summary_en": "6 types matrix + brand signatures + chimaek culture",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false
+  },
+  {
+    "id": "817",
+    "slug": "korea-chicken-workflow",
+    "title_kr": "한국 치킨 주문·배달 워크플로우 — 배민부터 매장 픽업까지",
+    "title_en": "Korean Chicken Order & Delivery Workflow Guide",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "food",
+      "chicken",
+      "delivery",
+      "workflow",
+      "meta-guide"
+    ],
+    "summary_kr": "5-step + 배달앱 + 호텔 컨시어지 + 치맥 페어링 + 영어 발화",
+    "summary_en": "5-step + delivery apps + hotel concierge + English phrases",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false
+  },
+  {
+    "id": "818",
+    "slug": "korea-chicken-channel-comparison",
+    "title_kr": "외국인용 한국 치킨 체인 vs 치맥집 vs 호프 vs 호텔배달 비교",
+    "title_en": "Korean Chicken Chain vs Chimaek vs Hof vs Hotel Comparison",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "food",
+      "chicken",
+      "comparison",
+      "meta-guide"
+    ],
+    "summary_kr": "4채널 비교 매트릭스 + segment 5 + 체인·치맥집·동네·호텔",
+    "summary_en": "4-channel matrix + 5 segments",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false
   }
 ]
