@@ -17967,5 +17967,26 @@
     "cn_available": false,
     "jp_available": false,
     "instagram_posted": false
+  },
+  {
+    "id": "807",
+    "slug": "korea-gukbap-6types-matrix",
+    "title_kr": "한국 국밥 6종 매트릭스 — 해장의 정수와 서민의 한 그릇",
+    "title_en": "Korean Gukbap 6 Types Matrix Guide",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "food",
+      "gukbap",
+      "soup",
+      "matrix",
+      "meta-guide"
+    ],
+    "summary_kr": "순대·설렁탕·곰탕·돼지국밥·육개장·콩나물국밥 + 지역별 시그니처 + 외국인 입문",
+    "summary_en": "Sundae·Seolleongtang·Gomtang·Dwaeji-gukbap·Yukgaejang·Kongnamul matrix",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false
   }
 ]
