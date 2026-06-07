@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>한국 술 deep dive — KeyChinGu</title>
+<meta name="description" content="＃韓国酒deep dive - マッコリ・焼酎・清酒・伝統酒・ハイボール・手作りビール > サブ: 韓国酒フルセット + 外国人韓国酒文化 deep dive 136 マッコリ・伝統酒後続 ISSUE 03・203・2026-05-19 --- 🎯 なぜ韓国酒 deep dive ガイドなのか 外国人韓国酒文化d...">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="192x192" href="../assets/logo/favicon-192.png">
+<link rel="apple-touch-icon" href="../assets/logo/favicon-192.png">
+<link rel="canonical" href="https://mgself414.github.io/keychingu-content-deploy/content/korean-liquor.html">
+<link rel="alternate" hreflang="ko" href="https://mgself414.github.io/keychingu-content-deploy/content/korean-liquor.html">
+<link rel="alternate" hreflang="en" href="https://mgself414.github.io/keychingu-content-deploy/content/korean-liquor.en.html">
+<link rel="alternate" hreflang="x-default" href="https://mgself414.github.io/keychingu-content-deploy/content/korean-liquor.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="한국 술 deep dive">
+<meta property="og:description" content="＃韓国酒deep dive - マッコリ・焼酎・清酒・伝統酒・ハイボール・手作りビール > サブ: 韓国酒フルセット + 外国人韓国酒文化 deep dive 136 マッコリ・伝統酒後続 ISSUE 03・203・2026-05-19 --- 🎯 なぜ韓国酒 deep dive ガイドなのか 外国人韓国酒文化d...">
+<meta property="og:url" content="https://mgself414.github.io/keychingu-content-deploy/content/korean-liquor.html">
+<meta property="og:image" content="https://mgself414.github.io/keychingu-content-deploy/assets/logo/og-image-1200x630.png">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="한국 술 deep dive">
+<meta name="twitter:description" content="＃韓国酒deep dive - マッコリ・焼酎・清酒・伝統酒・ハイボール・手作りビール > サブ: 韓国酒フルセット + 外国人韓国酒文化 deep dive 136 マッコリ・伝統酒後続 ISSUE 03・203・2026-05-19 --- 🎯 なぜ韓国酒 deep dive ガイドなのか 外国人韓国酒文化d...">
+<meta name="twitter:image" content="https://mgself414.github.io/keychingu-content-deploy/assets/logo/og-image-1200x630.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"한국 술 deep dive","description":"＃韓国酒deep dive - マッコリ・焼酎・清酒・伝統酒・ハイボール・手作りビール > サブ: 韓国酒フルセット + 外国人韓国酒文化 deep dive 136 マッコリ・伝統酒後続 ISSUE 03・203・2026-05-19 --- 🎯 なぜ韓国酒 deep dive ガイドなのか 外国人韓国酒文化d...","datePublished":"2026-05-01","inLanguage":"ko","url":"https://mgself414.github.io/keychingu-content-deploy/content/korean-liquor.html","image":"https://mgself414.github.io/keychingu-content-deploy/assets/logo/og-image-1200x630.png","publisher":{"@type":"Organization","name":"KeyChinGu","logo":{"@type":"ImageObject","url":"https://mgself414.github.io/keychingu-content-deploy/assets/logo/logo_2-4_color_small.png"}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/main.css">
+<style>
+.detail-wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+}
+.breadcrumb {
+  font-size: 13px;
+  color: var(--text-soft);
+  margin-bottom: 24px;
+}
+.breadcrumb a { color: var(--red); font-weight: 600; }
+.detail-wrap h1 {
+  font-size: 28px; font-weight: 800;
+  color: var(--black); margin-bottom: 8px;
+}
+.detail-wrap h2 {
+  font-size: 22px; font-weight: 700;
+  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--red);
+}
+.detail-wrap h3 {
+  font-size: 17px; font-weight: 600;
+  color: var(--text-mid); margin-top: 20px; margin-bottom: 8px;
+}
+.detail-wrap p {
+  font-size: 15px; line-height: 1.7;
+  color: var(--text-mid); margin-bottom: 12px;
+}
+.detail-wrap ul {
+  padding-left: 20px; margin-bottom: 12px;
+}
+.detail-wrap li {
+  font-size: 14px; line-height: 1.6;
+  color: var(--text-mid); margin-bottom: 6px;
+}
+.detail-wrap table {
+  width: 100%; border-collapse: collapse;
+  margin-bottom: 16px; font-size: 13px;
+}
+.detail-wrap th {
+  background: var(--black); color: #fff;
+  padding: 10px 12px; text-align: left;
+  font-weight: 600; font-size: 11px;
+  text-transform: uppercase; letter-spacing: 0.06em;
+}
+.detail-wrap td {
+  padding: 10px 12px; border-bottom: 1px solid var(--border);
+  color: var(--text-mid);
+}
+.detail-wrap tr:nth-child(even) td { background: rgba(0,0,0,0.02); }
+.detail-wrap hr {
+  border: none; height: 1px;
+  background: var(--border); margin: 24px 0;
+}
+.detail-wrap code {
+  background: rgba(33,140,204,0.08);
+  padding: 2px 6px; border-radius: 4px;
+  font-size: 13px; color: var(--blue);
+}
+.detail-nav {
+  display: flex; justify-content: space-between;
+  margin-top: 48px; padding-top: 20px;
+  border-top: 1px solid var(--border);
+  font-size: 14px; font-weight: 600;
+}
+.share-bar {
+  display: flex; align-items: center; gap: 10px;
+  margin-top: 40px; padding: 16px 20px;
+  background: #f9f9f9; border-radius: 12px;
+  border: 1px solid var(--border);
+}
+.share-label {
+  font-size: 14px; font-weight: 600; color: var(--text-soft);
+  margin-right: 8px;
+}
+.share-btn {
+  width: 40px; height: 40px;
+  border: none; border-radius: 50%;
+  background: #fff; cursor: pointer;
+  font-size: 1.1rem; transition: all 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  display: inline-flex; align-items: center; justify-content: center;
+}
+.share-btn:hover { transform: translateY(-2px); box-shadow: 0 3px 8px rgba(0,0,0,0.15); }
+.share-twitter:hover { background: #000; color: #fff; }
+.share-facebook:hover { background: #1877f2; color: #fff; }
+.share-kakao:hover { background: #fee500; }
+.share-copy:hover { background: #218CCC; color: #fff; }
+/* EN toggle disabled — 영문판 미생성 콘텐츠 (2026-05-16 patch) */
+.lang-switch .lang-disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  text-decoration: line-through;
+  padding: 4px 10px;
+  color: var(--text-soft, #888);
+  font-size: 13px;
+  user-select: none;
+}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <div class="lang-switch">
+    <a href="../content/korean-liquor.html" class="active">KR</a>
+    <a href="../content/korean-liquor.en.html" >EN</a>
+  </div>
+</header>
+
+<main class="detail-wrap">
+  <nav class="breadcrumb" aria-label="breadcrumb"><a href="../index.html">전체 가이드</a> &rsaquo; 한국 술 deep dive</nav>
+  <article>
+  <p>＃韓国酒deep dive - マッコリ・焼酎・清酒・伝統酒・ハイボール・手作りビール</p>
+<p>&gt; <strong>サブ</strong>: 韓国酒フルセット + 外国人韓国酒文化 deep dive (#136 マッコリ・伝統酒後続)</p>
+<p>ISSUE 03・#203・2026-05-19</p>
+<hr>
+<h2>🎯 なぜ韓国酒 deep dive ガイドなのか</h2>
+<p>外国人韓国酒文化deep dive 1位 — マッコリ・焼酎・清酒・伝統酒・ハイボール・手作りビール・フルーツ焼酎。 #136マッコリ・伝統酒他 <strong>韓国酒フルセットdeep diveガイド</strong>。</p>
+<hr>
+<p>＃＃★一目で12種類</p>
+<table><thead><tr>
+<th>#</th>
+</tr></thead><tbody>
+<tr>
+<td>1</td>
+<td><strong>マッコリ</strong>（Makgeolli）</td>
+<td>6〜8％</td>
+<td>韓国1番地伝統州</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>焼酎</strong>（Soju）</td>
+<td>16〜20％</td>
+<td>韓国1番地蒸留酒</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>清州</strong>（Cheongju、Sake-like）</td>
+<td>13〜16％</td>
+<td>韓国本物の清州</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>フルーツ焼酎</strong>（フルーツソジュ）</td>
+<td>12〜15％</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>チャミスル・ジンロイズバック</strong>（Jinro）</td>
+<td>16〜17％</td>
+<td>韓国1番地焼酎ブランド</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>カス・テラ</strong>（Beer）</td>
+<td>4〜5％</td>
+<td>韓国1番地ビール</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>手作りビール</strong>（Craft Beer）</td>
+<td>5〜8％</td>
+<td>乙支路・弘大本格</td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>ハイボール</strong>（Highball）</td>
+<td>7〜9％</td>
+</tr>
+<tr>
+<td>9</td>
+<td><strong>マッコリ・ドンドンジュ</strong>（Dongdongju）</td>
+<td>6〜8％</td>
+</tr>
+<tr>
+<td>10</td>
+<td><strong>伝統州</strong>（韓国伝統）</td>
+<td>様々な安東、ムンベ、イファジュ</td>
+</tr>
+<tr>
+<td>11</td>
+<td><strong>小麦</strong>（Somaek、Soju + Beer）</td>
+<td>8〜10％</td>
+<td>韓国1番地の酒座</td>
+</tr>
+<tr>
+<td>12</td>
+<td><strong>爆弾州</strong>（Pokjuju）</td>
+<td>様々な韓国の会社員の酒席</td>
+</tr>
+</tbody></table>
+<hr>
+<p>＃＃⚠外国人の頻繁な間違い3つ</p>
+<p>1. <strong>「マッコリ＝ただ酒」</strong>：マッコリは<strong>韓国1番地発酵酒</strong>（米＋麹） — 6,000年韓国酒歴史1番地。外国人挑戦1位。</p>
+<p>2. <strong>「焼酎＝ウォッカのように」</strong>：焼酎16～20％ — ウォッカ（40％）より弱いが<strong>3～4杯＝ウォッカ1ショット</strong>。外国人挑戦時段階的焼酎杯（50ml）。</p>
+<p>3. <strong>&quot;韓国酒マナー=みんな同じ&quot;</strong>: 韓国酒マナーフルセット — <strong>両手注ぎ・受け取り</strong>・<strong>頭回して飲む</strong>・<strong>大人先</strong>・<strong>1杯空にする</strong> (韓国式)</p>
+<hr>
+<p>＃＃①マッコリ（Makgeolli）</p>
+<ul>
+<li><strong>おすすめ</strong>: 長寿マッコリ・国順党・ソウル長寿</li>
+<li><strong>価格</strong>：4,000〜12,000ウォン/ボトル（750ml）</li>
+<li><strong>外国人 demand</strong>: K-drama・K-vlog 1ランク + 伝統主 deep dive</li>
+</ul>
+<hr>
+<p>＃＃②焼酎（ソジュ）</p>
+<ul>
+<li><strong>おすすめ</strong>: チャミスル・ジンロイズバック・初めてのように・良い日</li>
+<li><strong>価格</strong>：1,500〜4,000ウォン/ボトル</li>
+<li><strong>外国人 demand</strong>: 韓国1番地蒸留酒 + 外国人 vlog 1順位</li>
+</ul>
+<hr>
+<p>＃＃③清州（Cheongju、Sake-like）</p>
+<ul>
+<li><strong>おすすめ</strong>: 百貨修復・清河・ターンジュ</li>
+<li><strong>価格</strong>：5,000〜15,000ウォン/ボトル</li>
+<li><strong>外国人 demand</strong>: 韓国本物の清州 + 日本酒のペア</li>
+</ul>
+<hr>
+<p>＃＃④フルーツ焼酎（Fruit Soju）★外国人MZ 1ランク</p>
+<ul>
+<li><strong>種類</strong>: グレープフルーツ・ピーチ・イチゴ・青ぶどう・プラム</li>
+<li><strong>価格</strong>：1,500〜3,500ウォン/ボトル</li>
+<li><strong>外国人 demand</strong>: 外国人初の韓国酒挑戦1位(甘味+低い度数体感)</li>
+</ul>
+<hr>
+<h2>⑤ チャミスル・ジンロイズバック</h2>
+<ul>
+<li><strong>チャミスルフレッシュ</strong>：一般焼酎</li>
+<li><strong>ジンロイズバック</strong> (Jinro Is Back): 1970s復刻+外国人vlog 1ランク</li>
+<li><strong>価格</strong>：1,500〜2,500ウォン/ボトル</li>
+</ul>
+<hr>
+<h2>⑥ カス・テラ (Beer)</h2>
+<ul>
+<li><strong>カス</strong>：韓国1番地ビール</li>
+<li><strong>テラ</strong>：進路+テラペアリング（小脈）</li>
+<li><strong>価格</strong>：2,500〜5,000ウォン/ボトル</li>
+</ul>
+<hr>
+<p>＃＃⑦自家製ビール（クラフトビール）</p>
+<ul>
+<li><strong>乙支路</strong>: ダブス・ミステリーブローイング</li>
+<li><strong>弘大</strong>：クラフトハンス・カモメブルーイング</li>
+<li><strong>価格</strong>：7,000〜12,000ウォン/カップ</li>
+</ul>
+<hr>
+<p>＃＃⑧ハイボール（Highball）★MZ 1ランク</p>
+<ul>
+<li><strong>おすすめ</strong>：韓国のすべての居酒屋+ダイニング</li>
+<li><strong>価格</strong>：8,000〜15,000ウォン</li>
+<li><strong>外国人 demand</strong>: 日本式ハイボール(ウイスキー+ソーダ)韓国MZ 1ランク</li>
+</ul>
+<hr>
+<p>＃＃⑨東洞（ドンドンジュ）</p>
+<ul>
+<li><strong>シグネチャー</strong>：マッコリ+浮遊米粒</li>
+<li><strong>価格</strong>：6,000〜15,000ウォン/やかん</li>
+<li><strong>外国人 demand</strong>: 韓国正統伝統主義 deep dive</li>
+</ul>
+<hr>
+<h2>⑩ 伝統主義 (Korean Traditional)</h2>
+<ul>
+<li><strong>安東焼酎・ムンバジュ・梨花酒・李江州</strong></li>
+<li><strong>シグネチャー</strong>：韓国地域別正統派+無形文化財</li>
+<li><strong>外国人 demand</strong>: 韓国酒マニア deep dive</li>
+</ul>
+<hr>
+<p>＃＃⑪小麦（ソマク）</p>
+<ul>
+<li><strong>シグネチャー</strong>：焼酎+ビール=韓国1番地の酒場カクテル</li>
+<li><strong>外国人 demand</strong>: 韓国会社員・MZ 1ランク</li>
+<li><strong>作り方</strong>：ビールカップに焼酎1/3+ビール2/3（韓国式）</li>
+</ul>
+<hr>
+<p>＃＃⑫爆弾（ポクジュジュ）</p>
+<ul>
+<li><strong>シグネチャー</strong>：韓国の会社員の会食+飲み会の挑戦</li>
+<li><strong>種類</strong>：小脈爆弾+ウイスキー爆弾</li>
+<li><strong>外国人 demand</strong>: 韓国酒文化 deep dive 1ランク</li>
+</ul>
+<hr>
+<h2>🛒 購入先マトリックス — 4 cluster</h2>
+<table><thead><tr>
+<th>クラスター</th>
+<th>店舗</th>
+<th>価格帯・特徴外国人★</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>コンビニエンスストア（24h）</strong></td>
+<td>CU・GS25・セブンイレブン・イマート24</td>
+<td>焼酎1.4～1.8K・ビール2～3K・マッコリ2～3K ◎◎24h・英語OK・外国人#1アクセシビリティ</td>
+</tr>
+<tr>
+<td><strong>大型マート</strong></td>
+<td>イマート・ホームプラス・ロッテマート・ハナロマート焼酎1.2K〜（大量）・ビールバンドル割引・外国人コスパ◎◎一度にフルセット</td>
+</tr>
+<tr>
+<td><strong>酒類専門店</strong></td>
+<td>ワイン＆モア（イマート）・亜城酒類百貨店・清潭ワイン21・ディーンアンデルカ</td>
+<td>伝統酒・プレミアム（海峡5万+・複純度が12K） ◎外国人マニア1位</td>
+</tr>
+<tr>
+<td><strong>醸造所直販</strong></td>
+<td>安東焼酎（#310）・全州イ・ガンジュ（#255）・海南海昌無形文化財本物+体験+ KTX 1泊2日</td>
+</tr>
+</tbody></table>
+<p><strong>外国人購入のヒント</strong>：満19歳+パスポート（外国人登録証）身分証明書必須・#398統合。コンビニは英語OK・KakaoPay・クレジットカード90%+。免税店（#406）でウイスキー・ハイボール・プレミアムマッコリ別途。</p>
+<hr>
+<h2>💰ブランドマトリックスdeep</h2>
+<p>＃＃＃🍶焼酎</p>
+<table><thead><tr>
+<th>ブランド会社・年</th>
+<th>度数価格（コンビニエンスストア）</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>チャミスルフレッシュ</strong></td>
+<td>ハイトジンロ1924</td>
+<td>16.5％</td>
+<td>1,400〜1,800ウォン</td>
+<td>韓国#1焼酎・外国人vlog#1</td>
+</tr>
+<tr>
+<td><strong>チャミスルオリジナル</strong></td>
+<td>ハイトジンロ</td>
+<td>20.1％</td>
+<td>1,500〜1,900ウォン</td>
+</tr>
+<tr>
+<td><strong>ジンロイズバッグ</strong></td>
+<td>ハイトジンロ2019</td>
+<td>16％ 1,600〜2,000ウォン</td>
+</tr>
+<tr>
+<td><strong>最初のように</strong></td>
+<td>ロッテ（2006〜）</td>
+<td>16.5％</td>
+<td>1,400〜1,800ウォン</td>
+<td>韓国#2・MZマニア</td>
+</tr>
+<tr>
+<td><strong>良い日</strong></td>
+<td>武学（釜山）</td>
+<td>16.9％</td>
+<td>1,500〜1,900ウォン</td>
+<td>釜山#1・#143統合</td>
+</tr>
+<tr>
+<td><strong>葉しぶき</strong></td>
+<td>ボヘ（光州）</td>
+<td>16.9％</td>
+<td>1,500〜1,900ウォン</td>
+<td>光州#1・#318統合</td>
+</tr>
+</tbody></table>
+<h3>🍺ビール（カス・テラ・ハイト・フィライト・自家製ビール）</h3>
+<table><thead><tr>
+<th>ブランド会社・年</th>
+<th>度数価格（コンビニエンスストア）</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>カス（Cass）</strong></td>
+<td>OB 1994</td>
+<td>4.5％</td>
+<td>2,000〜3,500ウォン</td>
+<td>韓国#1ビール・外国人#1</td>
+</tr>
+<tr>
+<td><strong>テラ（Terra）</strong></td>
+<td>ハイトジンロ2019</td>
+<td>4.6％</td>
+<td>2,000〜3,500ウォン</td>
+</tr>
+<tr>
+<td><strong>ハイト</strong></td>
+<td>ハイトジンロ1933</td>
+<td>4.5％</td>
+<td>2,000〜3,000ウォン</td>
+</tr>
+<tr>
+<td><strong>フィライト</strong></td>
+<td>ハイトジンロ2017</td>
+<td>4.5％</td>
+<td>1,200〜1,700ウォン</td>
+</tr>
+<tr>
+<td><strong>手作りビール</strong></td>
+<td>ダブス・ミステリーブルーイング・クラフトハンス・カモメ5〜8％</td>
+<td>7,000〜12,000ウォン/ガラスウルジロ（#11）・弘大（#138・#140）</td>
+</tr>
+<tr>
+<td><strong>クラウド（Kloud）</strong></td>
+<td>ロッテ2014</td>
+<td>5％ 2,500〜3,500ウォン</td>
+<td>プレミアム・満足度␈MASK24​​␈</td>
+</tr>
+</tbody></table>
+<h3>🍶 マッコリ</h3>
+<table><thead><tr>
+<th>ブランド地域・年</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>ソウル長寿</strong></td>
+<td>ソウル1962</td>
+<td>6％ 1,500〜2,000ウォン</td>
+<td>韓国#1マッコリ・外国人#1・コンビニエンスストアフルセット</td>
+</tr>
+<tr>
+<td><strong>国順党白世州</strong></td>
+<td>国順党1992（#362）</td>
+<td>13％ 4,000〜6,000ウォン</td>
+<td>韓国#1清州・薬州・外国人マニア</td>
+</tr>
+<tr>
+<td><strong>複純度が</strong></td>
+<td>蔚山（#362）</td>
+<td>6.5％</td>
+<td>12,000〜15,000ウォン</td>
+<td>韓国#1プレミアム・外国人ラグジュアリー</td>
+</tr>
+<tr>
+<td><strong>ソンミョンソプマッコリ</strong></td>
+<td>全北長寿・海南（#362）</td>
+<td>6％ 5,000〜7,000ウォン</td>
+</tr>
+<tr>
+<td><strong>海峡マッコリ</strong></td>
+<td>全南海南（#362）</td>
+<td>6〜12％</td>
+<td>5,000〜50,000ウォン+</td>
+<td>韓国#1スーパープレミアム・外国人マニア</td>
+</tr>
+<tr>
+<td><strong>ドリコマッコリ</strong></td>
+<td>済州（#253）</td>
+<td>6％ 4,000〜6,000ウォン</td>
+</tr>
+<tr>
+<td><strong>ハニーマッコリ・夜幕ガーリー</strong></td>
+<td>天安・姫6％ 4,000〜6,000ウォン</td>
+<td>MZ甘味マニア</td>
+</tr>
+</tbody></table>
+<p>＃＃＃🍹フルーツ焼酎・ハイボール・清州（MZ外国人#1）</p>
+<table><thead><tr>
+<th>種類おすすめ</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>フルーツ焼酎</strong>（グレープフルーツ、ピーチ、イチゴ）</td>
+<td>初めてのようにグレープフルーツ・ジンロプラム</td>
+<td>1,500〜3,500ウォン</td>
+<td>外国人初挑戦#1・MZ</td>
+</tr>
+<tr>
+<td><strong>ハイボール（ウイスキー+トニック）</strong></td>
+<td>日本サントリー・ジンビン・ジャックダニエル＋トニック8,000〜15,000ウォン/ガラス韓国MZ#1・井坂屋・#140</td>
+</tr>
+<tr>
+<td><strong>清州（本物）</strong></td>
+<td>百貨修復・清河・ターンジュ・#362ペクセジュ</td>
+<td>5,000〜15,000ウォン</td>
+<td>日本酒のペア・#357査察・#143限定式</td>
+</tr>
+<tr>
+<td><strong>小麦</strong></td>
+<td>カス+チャミスル（3：7）</td>
+<td>2K+1.5K</td>
+</tr>
+</tbody></table>
+<hr>
+<p>＃＃🍴ペアリング食品マトリックス</p>
+<table><thead><tr>
+<th>アルコールペアリング食品</th>
+<th>店舗クラスター</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>焼酎</strong></td>
+<td>サムギョプサル、カンチャン、チキン、ヘジャングク#130ゴギ集・#06漢江歯脈・#133クッパ・#388老舗</td>
+</tr>
+<tr>
+<td><strong>ビール</strong></td>
+</tr>
+<tr>
+<td><strong>マッコリ</strong></td>
+<td>破戦・緑豆戦・どんぐり・ボサム#380広場市場・#383・#388老舗・#136マッコリ・伝統酒</td>
+</tr>
+<tr>
+<td><strong>伝統酒</strong>（#362）</td>
+<td>韓国料理、宮中料理、寺院料理</td>
+</tr>
+<tr>
+<td><strong>清州</strong></td>
+<td>会・シーフード・和食・#244チャガルチ</td>
+<td>#143・#206江南日食・#356ホテルダイニング</td>
+</tr>
+<tr>
+<td><strong>ハイボール・居酒屋</strong></td>
+<td>鶏串・天ぷら・刺身#140弘大・#144イテウォン・#142江南</td>
+</tr>
+<tr>
+<td><strong>小脈・爆弾主</strong></td>
+<td>会食コース・サムギョプサル・#130</td>
+<td>#142江南会食・#198松坡・外国人マニア</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>🍷 試飲法・マナー拡張（外国人ミス5つ）</h2>
+<h3>ガラス・温度マトリックス</h3>
+<table><thead><tr>
+<th><strong>焼酎</strong></th>
+<th>焼酎カップ（50ml）</th>
+<th>室温〜少し冷たい（10〜15℃）</th>
+<th>一口（ㅎ-ワンショット・外国人挑戦）</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>ビール</strong></td>
+<td>ビールカップ（350ml）・生ビールホープ冷（4〜6℃）</td>
+<td>泡1/4・ゆっくり</td>
+</tr>
+<tr>
+<td><strong>マッコリ</strong></td>
+</tr>
+<tr>
+<td><strong>清州・伝統酒</strong></td>
+<td>清酒グラス（60ml）・ムンバジュグラス</td>
+<td>暖かく（45℃）・清州はぬるま湯香先・#357査察マニア</td>
+</tr>
+<tr>
+<td><strong>ハイボール</strong></td>
+<td>ハイボールカップ（350ml+氷）</td>
+</tr>
+</tbody></table>
+<p>###韓国飲酒マナー5つ</p>
+<p>1. <strong>両手を注ぐ・受け取る</strong>: 大人・上司の前で両手で寝る・追いつく（本格マニア1番地）</p>
+<p>2. <strong>頭回して飲む</strong>: 大人・上司の前で頭90°回して飲む (外国人ミス #1)</p>
+<p>3. <strong>大人先</strong>: 大人・上司が寝るまで待機・外国人マニア</p>
+<p>4. <strong>1杯空に(ワンショット)</strong>:韓国式1杯空にする・外国人挑戦・焼酎杯50ml推奨</p>
+<p>5. <strong>グラスを空にしたら、再び行かない</strong>: 韓国式マナー — グラスにお酒を残すならもっと従う・外国人マニア学習</p>
+<p>###外国人愛好家追加のヒント</p>
+<ul>
+<li><strong>乾杯</strong>: 「ために!」 /「ワンショット！」 /「織！」 — 外国人マニアフルセット</li>
+<li><strong>2次・3次</strong>: 韓国会食1次(食事+小脈)・2次(カラオケ#436)・3次(砲車・#454クラブ)</li>
+<li><strong>外国人限度</strong>:焼酎1本(16%×360ml =ウォッカ1.4ショット)・外国人初挑戦時に1/3本推奨</li>
+</ul>
+<hr>
+<p>＃＃🗺外国人フルデーコース3つ</p>
+<h3>A.外国人初の韓国酒フルデー（苛性費・コンビニ・漢江）</h3>
+<ul>
+<li>18:00コンビニエンスストア（CU・GS25）小麦フルセット（チャミスル＋カス）→19:00漢江歯脈（#06・汝矣島・#308）→22:00#436コインカラオケ→2 (#423海装局)</li>
+</ul>
+<h3>B. 外国人正統派マニア1泊2日（市場・老舗・伝統主）</h3>
+<ul>
+<li>Day 1: 広場市場 マッコリ・緑豆展 (#380・#383) → ウレオク平壌冷麺 + ムンベジュ (#388・#129) → 鍾路パブ (#163)</li>
+<li>Day 2: 仁寺洞伝統酒ギャラリー (#297) → #362安東焼酎・李江酒試飲 → #357 査察食品+清州</li>
+</ul>
+<h3>C.外国人ラグジュアリーペアリング1泊2日（ホテル・ミシュラン・#356）</h3>
+<ul>
+<li>Day 1: シグニエル BAR 81 ハイボール (#356・#360) → 新羅ホテルラヨン (ミシュラン+伝統酒 #356・#358) → 清潭ワイン21 (#296)</li>
+<li>Day 2: 新羅ザ・ライブラリー(#358)→醸造所直販免税(#406)→仁川空港出国</li>
+</ul>
+<hr>
+<h2>⚙ FAQ 6個</h2>
+<p>1. <strong>外国人初韓国酒お勧め</strong>: フルーツ焼酎(グレープフルーツ・桃1.5K)→マッコリ(長寿1.5K)→カス+チャミスル小脈→チャレンジ時チャミスルオリジナル(20.1%)。</p>
+<p>2. <strong>外国人苛性費1番地</strong>: コンビニ焼酎1.4K・ビール2K・マッコリ1.5K・フィライト（仮性比#1）・小麦3.5K（ボドカ1ショット価格）。</p>
+<p>3. <strong>外国人正統派マニア</strong>：広場市場マッコリ（#380）・ウレオクムンベジュ（#388）・仁寺洞伝統酒ギャラリー（#297）・#362 deep dive。</p>
+<p>4. <strong>外国人ラグジュアリーマニア</strong>：シグニエルBAR 81（#356・#360）・ラヨンミシュラン＋伝統酒（#356・#358）・清潭ワイン21・海峡マッコリ。</p>
+<p>5. <strong>外国人挑戦（チャミスルチャレンジ）</strong>：チャミスルオリジナル（20.1％）1本＝ウォッカ1.4ショット・外国人マニア限度1/3～1/2本推奨。</p>
+<p>6. <strong>外国人醸造所1泊2日</strong>：安東（#310無形文化財安東焼酎）・全州（#255李江州）・海南（海昌）・#362 deep dive統合。</p>
+<hr>
+<h2>🔗関連</h2>
+<ul>
+<li><strong>メインシリーズ</strong>: #362 正統酒deep dive</li>
+<li><strong>隣接</strong>: #04 家脈屋・#06 漢江歯脈・#136 マッコリ・伝統酒・#140 弘大酒場・#163 鍾路川屋・␈パブ・#137夜場10選</li>
+<li><strong>食品のペアリング</strong>: #130 ゴギ集・#133 クッパ・#143 江南韓国料理・#244 チャガルチ・#206江南和食・#357広場市場・#383・#388老舗・#400外国人フレンドリーレストラン</li>
+<li><strong>ホテル・ラグジュアリー</strong>：#356ホテル・#358ホテル朝食・#360ホテルダイニング（ラヨンミシュラン）・#406免税店・#296清潭</li>
+<li><strong>夜間・マニア</strong>: #423 24h・#436カラオケ・#454クラブ・#181 サダン駅砲車</li>
+</ul>
+<p>##🏷タグ</p>
+<p><code>#한국술풀가이드</code> <code>#KoreanLiquorDeepDive</code> <code>#소주참이슬진로처음처럼좋은데이잎새주</code> <code>#맥주카스테라하이트필라이트클라우드</code> <code>#막걸리장수국순당복순도가송명섭해창도리코꿀막걸리</code> <code>#청주과일소주하이볼소맥폭탄주</code> <code>#수제맥주을지로홍대더부스미스터리브로잉</code> <code>#편의점CU GS25세븐일레븐이마트24</code> <code>#편의점CU GS25세븐일레븐이마트24</code> <code>#주류전문점와인앤모어아성청담와인21</code> <code>#양조장직판안동전주해남금산</code> <code>#페어링삼겹살치킨파전녹두전한정식</code> <code>#시음법글래스온도매너두손고개돌려1잔비우기</code> <code>#건배사위하여원샷짠1차2차3차</code> <code>#키친구</code></p>
+  </article>
+
+  <div class="share-bar">
+    <span class="share-label">공유</span>
+    <button class="share-btn share-twitter" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent('한국 술 deep dive') + '&url=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Twitter">𝕏</button>
+    <button class="share-btn share-facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Facebook">f</button>
+    <button class="share-btn share-kakao" onclick="navigator.share ? navigator.share({title: '한국 술 deep dive', url: window.location.href}) : navigator.clipboard.writeText(window.location.href).then(function() { alert('링크 복사됨!'); })" aria-label="Kakao/Share">📤</button>
+    <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href).then(function() { this.textContent = '✓'; setTimeout(function() { document.querySelector('.share-copy').textContent = '🔗'; }, 1500); }.bind(this))" aria-label="Copy link">🔗</button>
+  </div>
+
+  <nav class="detail-nav" aria-label="previous-next">
+    <div><a href="vegan-halal-expand.html" style="color:var(--red);">&larr; 한국 비건·할랄·글루텐 프리 확장</a></div>
+    <div><a href="university-campus.html" style="color:var(--red);">서울 대학 캠퍼스 산책 가이드 &rarr;</a></div>
+  </nav>
+</main>
+
+<footer class="site-footer">
+  <p><a href="https://instagram.com/keychingu.korea" target="_blank">@keychingu.korea</a> &mdash; Seoul for MZ FIT Travelers</p>
+</footer>
+</body>
+</html>
