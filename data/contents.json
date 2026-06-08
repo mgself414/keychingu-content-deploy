@@ -18828,5 +18828,66 @@
     "cn_available": false,
     "jp_available": false,
     "instagram_posted": false
+  },
+  {
+    "id": "849",
+    "slug": "korea-fermentation-6types-matrix",
+    "title_kr": "한국 발효음식 6종 매트릭스 — 된장·고추장부터 청국장까지 한식 시그니처 풀세트",
+    "title_en": "Korean Fermentation 6 Types Matrix Guide",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "food",
+      "fermentation",
+      "paste",
+      "matrix",
+      "meta-guide"
+    ],
+    "summary_kr": "된장·고추장·청국장·간장·식초·젓갈 6종 + 장독대 정통",
+    "summary_en": "6 types matrix + Jangdokdae tradition",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false
+  },
+  {
+    "id": "850",
+    "slug": "korea-fermentation-workflow",
+    "title_kr": "한국 발효음식 주문·한식 조림 워크플로우",
+    "title_en": "Korean Fermentation Order & Cooking Workflow Guide",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "food",
+      "fermentation",
+      "workflow",
+      "meta-guide"
+    ],
+    "summary_kr": "5-step + 된장찌개·비빔밥 고추장 + 면세점 진공 포장 + VAT 환급",
+    "summary_en": "5-step + doenjang stew + duty-free vacuum-packed + VAT refund",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false
+  },
+  {
+    "id": "851",
+    "slug": "korea-fermentation-channel-comparison",
+    "title_kr": "외국인용 한국 발효음식 장독대 vs 장공장 vs 마트 vs 면세점 비교",
+    "title_en": "Korean Fermentation Heritage vs Brand vs Mart vs Duty-Free Comparison",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "food",
+      "fermentation",
+      "comparison",
+      "meta-guide"
+    ],
+    "summary_kr": "4채널 비교 매트릭스 + segment 5 + 장독대·CJ·마트·면세점",
+    "summary_en": "4-channel matrix + 5 segments",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false
   }
 ]
