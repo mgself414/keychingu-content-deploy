@@ -18393,5 +18393,66 @@
     "cn_available": false,
     "jp_available": false,
     "instagram_posted": false
+  },
+  {
+    "id": "828",
+    "slug": "korea-alcohol-6types-matrix",
+    "title_kr": "한국 술 6종 매트릭스 — 소주부터 전통주까지 한국 술 문화 풀세트",
+    "title_en": "Korean Alcohol 6 Types Matrix Guide",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "food",
+      "alcohol",
+      "soju",
+      "matrix",
+      "meta-guide"
+    ],
+    "summary_kr": "소주·맥주·막걸리·청주·전통주·하이볼 6종 + 페어링",
+    "summary_en": "6 types matrix + pairing",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false
+  },
+  {
+    "id": "829",
+    "slug": "korea-alcohol-workflow",
+    "title_kr": "한국 술 주문·페어링 워크플로우",
+    "title_en": "Korean Alcohol Order & Pairing Workflow Guide",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "food",
+      "alcohol",
+      "workflow",
+      "meta-guide"
+    ],
+    "summary_kr": "5-step + 소맥 1:3 + 막걸리 흔들기 + 음주 매너 + 영어 발화",
+    "summary_en": "5-step + somaek 1:3 + makgeolli + drinking manners",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false
+  },
+  {
+    "id": "830",
+    "slug": "korea-alcohol-channel-comparison",
+    "title_kr": "외국인용 한국 술 주점 vs 막걸리원 vs 이자카야 vs 바 비교",
+    "title_en": "Korean Alcohol Pub vs Makgeolli vs Izakaya vs Bar Comparison",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "food",
+      "alcohol",
+      "comparison",
+      "meta-guide"
+    ],
+    "summary_kr": "4채널 비교 매트릭스 + segment 5 + 주점·막걸리·이자카야·MZ 바",
+    "summary_en": "4-channel matrix + 5 segments",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false
   }
 ]
