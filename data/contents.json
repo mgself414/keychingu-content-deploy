@@ -18707,5 +18707,66 @@
     "cn_available": false,
     "jp_available": false,
     "instagram_posted": false
+  },
+  {
+    "id": "843",
+    "slug": "korea-latenight-snacks-6types-matrix",
+    "title_kr": "한국 야식·안주 6종 매트릭스 — 포차 노가리부터 곱창까지 외국인 나이트라이프 vlog",
+    "title_en": "Korean Late-Night Snacks 6 Types Matrix Guide",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "food",
+      "pojangmacha",
+      "pub",
+      "matrix",
+      "meta-guide"
+    ],
+    "summary_kr": "노가리·곱창·꼼장어·닭발·철판·전 6종 + 포차·호프 페어링",
+    "summary_en": "6 types matrix + pojangmacha highlights",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false
+  },
+  {
+    "id": "844",
+    "slug": "korea-pojangmacha-workflow",
+    "title_kr": "한국 포차 주문·술 페어링 워크플로우",
+    "title_en": "Korean Pojangmacha Order & Alcohol Pairing Workflow Guide",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "food",
+      "pojangmacha",
+      "workflow",
+      "meta-guide"
+    ],
+    "summary_kr": "5-step + 안주 술 페어링 + 회식 매너 + 음주운전 0.03% BAC",
+    "summary_en": "5-step + pairing + drinking manners + 0.03 BAC",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false
+  },
+  {
+    "id": "845",
+    "slug": "korea-latenight-channel-comparison",
+    "title_kr": "외국인용 한국 야식·안주 을지로 vs 종로 vs 강남 vs 부산 비교",
+    "title_en": "Korean Late-Night Eulji-ro vs Jongno vs Gangnam vs Busan Comparison",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "food",
+      "pojangmacha",
+      "comparison",
+      "meta-guide"
+    ],
+    "summary_kr": "4채널 비교 매트릭스 + segment 5 + 을지로·종로·강남·부산",
+    "summary_en": "4-channel matrix + 5 segments",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false
   }
 ]
