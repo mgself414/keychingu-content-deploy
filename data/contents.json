@@ -18889,5 +18889,66 @@
     "cn_available": false,
     "jp_available": false,
     "instagram_posted": false
+  },
+  {
+    "id": "852",
+    "slug": "korea-meat-sidedishes-6types-matrix",
+    "title_kr": "한국 고기 반찬류 6종 매트릭스 — 갈비찜부터 잡채까지 한정식 주요리 풀세트",
+    "title_en": "Korean Meat Side Dishes 6 Types Matrix Guide",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "food",
+      "meat",
+      "side-dish",
+      "matrix",
+      "meta-guide"
+    ],
+    "summary_kr": "갈비찜·잡채·제육·불고기·장조림·나물 6종 + 한정식 주요리",
+    "summary_en": "6 types matrix + hanjeongsik main course",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false
+  },
+  {
+    "id": "853",
+    "slug": "korea-meat-sidedishes-workflow",
+    "title_kr": "한국 고기 반찬 주문·식사 워크플로우",
+    "title_en": "Korean Meat Side Dish Order & Dining Workflow Guide",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "food",
+      "meat",
+      "workflow",
+      "meta-guide"
+    ],
+    "summary_kr": "5-step + 반찬 무료 무제한 + 한식 매너 + 영어 발화",
+    "summary_en": "5-step + free unlimited side + manners + English phrases",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false
+  },
+  {
+    "id": "854",
+    "slug": "korea-meat-sidedishes-channel-comparison",
+    "title_kr": "외국인용 한국 고기 반찬 전문점 vs 면안좌 vs 가정식 vs 체인 비교",
+    "title_en": "Korean Meat Side Dish Specialty vs Restaurant vs Home-style vs Chain Comparison",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "food",
+      "meat",
+      "comparison",
+      "meta-guide"
+    ],
+    "summary_kr": "4채널 비교 매트릭스 + segment 5 + 전문점·면안좌·가정식·체인",
+    "summary_en": "4-channel matrix + 5 segments",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false
   }
 ]
