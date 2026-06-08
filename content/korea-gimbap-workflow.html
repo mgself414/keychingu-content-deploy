@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>한국 김밥 주문·포장 워크플로우 — KeyChinGu</title>
+<meta name="description" content="한국 김밥 주문·포장 워크플로우 — 광장시장 마약김밥부터 편의점 픽업까지 > 부제: 외국인 관광객용 5-step 워크플로우 + 김밥 + 라면 클래식 페어 + 결제·포장 팁 ISSUE 03 · 847 · 2026-06-09 --- 🎯 왜 한국 김밥 워크플로우 가이드인가 846 김밥 ...">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="192x192" href="../assets/logo/favicon-192.png">
+<link rel="apple-touch-icon" href="../assets/logo/favicon-192.png">
+<link rel="canonical" href="https://mgself414.github.io/keychingu-content-deploy/content/korea-gimbap-workflow.html">
+<link rel="alternate" hreflang="ko" href="https://mgself414.github.io/keychingu-content-deploy/content/korea-gimbap-workflow.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="한국 김밥 주문·포장 워크플로우">
+<meta property="og:description" content="한국 김밥 주문·포장 워크플로우 — 광장시장 마약김밥부터 편의점 픽업까지 > 부제: 외국인 관광객용 5-step 워크플로우 + 김밥 + 라면 클래식 페어 + 결제·포장 팁 ISSUE 03 · 847 · 2026-06-09 --- 🎯 왜 한국 김밥 워크플로우 가이드인가 846 김밥 ...">
+<meta property="og:url" content="https://mgself414.github.io/keychingu-content-deploy/content/korea-gimbap-workflow.html">
+<meta property="og:image" content="https://mgself414.github.io/keychingu-content-deploy/assets/logo/og-image-1200x630.png">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="한국 김밥 주문·포장 워크플로우">
+<meta name="twitter:description" content="한국 김밥 주문·포장 워크플로우 — 광장시장 마약김밥부터 편의점 픽업까지 > 부제: 외국인 관광객용 5-step 워크플로우 + 김밥 + 라면 클래식 페어 + 결제·포장 팁 ISSUE 03 · 847 · 2026-06-09 --- 🎯 왜 한국 김밥 워크플로우 가이드인가 846 김밥 ...">
+<meta name="twitter:image" content="https://mgself414.github.io/keychingu-content-deploy/assets/logo/og-image-1200x630.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"한국 김밥 주문·포장 워크플로우","description":"한국 김밥 주문·포장 워크플로우 — 광장시장 마약김밥부터 편의점 픽업까지 > 부제: 외국인 관광객용 5-step 워크플로우 + 김밥 + 라면 클래식 페어 + 결제·포장 팁 ISSUE 03 · 847 · 2026-06-09 --- 🎯 왜 한국 김밥 워크플로우 가이드인가 846 김밥 ...","datePublished":"2026-05-01","inLanguage":"ko","url":"https://mgself414.github.io/keychingu-content-deploy/content/korea-gimbap-workflow.html","image":"https://mgself414.github.io/keychingu-content-deploy/assets/logo/og-image-1200x630.png","publisher":{"@type":"Organization","name":"KeyChinGu","logo":{"@type":"ImageObject","url":"https://mgself414.github.io/keychingu-content-deploy/assets/logo/logo_2-4_color_small.png"}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/main.css">
+<style>
+.detail-wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+}
+.breadcrumb {
+  font-size: 13px;
+  color: var(--text-soft);
+  margin-bottom: 24px;
+}
+.breadcrumb a { color: var(--red); font-weight: 600; }
+.detail-wrap h1 {
+  font-size: 28px; font-weight: 800;
+  color: var(--black); margin-bottom: 8px;
+}
+.detail-wrap h2 {
+  font-size: 22px; font-weight: 700;
+  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--red);
+}
+.detail-wrap h3 {
+  font-size: 17px; font-weight: 600;
+  color: var(--text-mid); margin-top: 20px; margin-bottom: 8px;
+}
+.detail-wrap p {
+  font-size: 15px; line-height: 1.7;
+  color: var(--text-mid); margin-bottom: 12px;
+}
+.detail-wrap ul {
+  padding-left: 20px; margin-bottom: 12px;
+}
+.detail-wrap li {
+  font-size: 14px; line-height: 1.6;
+  color: var(--text-mid); margin-bottom: 6px;
+}
+.detail-wrap table {
+  width: 100%; border-collapse: collapse;
+  margin-bottom: 16px; font-size: 13px;
+}
+.detail-wrap th {
+  background: var(--black); color: #fff;
+  padding: 10px 12px; text-align: left;
+  font-weight: 600; font-size: 11px;
+  text-transform: uppercase; letter-spacing: 0.06em;
+}
+.detail-wrap td {
+  padding: 10px 12px; border-bottom: 1px solid var(--border);
+  color: var(--text-mid);
+}
+.detail-wrap tr:nth-child(even) td { background: rgba(0,0,0,0.02); }
+.detail-wrap hr {
+  border: none; height: 1px;
+  background: var(--border); margin: 24px 0;
+}
+.detail-wrap code {
+  background: rgba(33,140,204,0.08);
+  padding: 2px 6px; border-radius: 4px;
+  font-size: 13px; color: var(--blue);
+}
+.detail-nav {
+  display: flex; justify-content: space-between;
+  margin-top: 48px; padding-top: 20px;
+  border-top: 1px solid var(--border);
+  font-size: 14px; font-weight: 600;
+}
+.share-bar {
+  display: flex; align-items: center; gap: 10px;
+  margin-top: 40px; padding: 16px 20px;
+  background: #f9f9f9; border-radius: 12px;
+  border: 1px solid var(--border);
+}
+.share-label {
+  font-size: 14px; font-weight: 600; color: var(--text-soft);
+  margin-right: 8px;
+}
+.share-btn {
+  width: 40px; height: 40px;
+  border: none; border-radius: 50%;
+  background: #fff; cursor: pointer;
+  font-size: 1.1rem; transition: all 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  display: inline-flex; align-items: center; justify-content: center;
+}
+.share-btn:hover { transform: translateY(-2px); box-shadow: 0 3px 8px rgba(0,0,0,0.15); }
+.share-twitter:hover { background: #000; color: #fff; }
+.share-facebook:hover { background: #1877f2; color: #fff; }
+.share-kakao:hover { background: #fee500; }
+.share-copy:hover { background: #218CCC; color: #fff; }
+/* EN toggle disabled — 영문판 미생성 콘텐츠 (2026-05-16 patch) */
+.lang-switch .lang-disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  text-decoration: line-through;
+  padding: 4px 10px;
+  color: var(--text-soft, #888);
+  font-size: 13px;
+  user-select: none;
+}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <div class="lang-switch">
+    <a href="../content/korea-gimbap-workflow.html" class="active">KR</a>
+    <span class="lang-disabled" title="영문판 준비 중">EN</span>
+  </div>
+</header>
+
+<main class="detail-wrap">
+  <nav class="breadcrumb" aria-label="breadcrumb"><a href="../index.html">전체 가이드</a> &rsaquo; 한국 김밥 주문·포장 워크플로우</nav>
+  <article>
+  <h1>한국 김밥 주문·포장 워크플로우 — 광장시장 마약김밥부터 편의점 픽업까지</h1>
+<p>&gt; <strong>부제</strong>: 외국인 관광객용 5-step 워크플로우 + 김밥 + 라면 클래식 페어 + 결제·포장 팁</p>
+<p>ISSUE 03 · #847 · 2026-06-09</p>
+<hr>
+<h2>🎯 왜 한국 김밥 워크플로우 가이드인가</h2>
+<p>[#846 김밥 6종 매트릭스](#846) 알아도 — <strong>주문·포장·페어링</strong>은 별개. 한국 김밥은 (a) <strong>편의점·체인 픽업</strong> (CU·GS25·세븐일레븐·김밥천국·고봉민) (b) <strong>광장시장 walk-in</strong> (마약김밥 즉석 + 인스타) (c) <strong>통영 충무김밥 정통</strong> (세트 메뉴) (d) <strong>MZ 카페</strong> (치즈·돈가스·아보카도). 외국인은 (1) 편의점 김밥 선택 너무 많음 (2) 마약김밥 줄서기·포장 매너 모름 (3) 김밥 + 라면 페어링 모름 (4) 단무지 무료 무제한 모름. 본 가이드는 5-step + 페어링 + 영어 발화.</p>
+<hr>
+<h2>★ 한눈에 5-step 워크플로우</h2>
+<table><thead><tr>
+<th>Step</th>
+<th>동작</th>
+<th>시간</th>
+<th>외국인 핵심 포인트</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>1️⃣ 매장 type 선택</strong></td>
+<td>편의점 / 체인 / 광장시장 / 통영 / MZ 카페</td>
+<td>즉시</td>
+<td>가성비·즉석·인스타·정통·트렌드</td>
+</tr>
+<tr>
+<td><strong>2️⃣ 메뉴 + 페어 주문</strong></td>
+<td>김밥 + 라면 + 단무지</td>
+<td>1~5분</td>
+<td><strong>김밥 + 라면 = 한국 클래식 콤보 #1</strong></td>
+</tr>
+<tr>
+<td><strong>3️⃣ 받기·포장</strong></td>
+<td>즉석 받기 / 픽업 / 포장 (테이크아웃)</td>
+<td>즉시~3분</td>
+<td>광장시장 = 줄서기 5~10분</td>
+</tr>
+<tr>
+<td><strong>4️⃣ 먹기 + 단무지</strong></td>
+<td>테이블 / 길거리 / 도시락</td>
+<td>5~30분</td>
+<td>단무지 = 무료 무제한 / 라면 국물 dunk OK</td>
+</tr>
+<tr>
+<td><strong>5️⃣ 결제</strong></td>
+<td>편의점·체인·MZ = 카드 / 광장시장 = 현금</td>
+<td>1~3분</td>
+<td>카카오페이·삼성페이 OK</td>
+</tr>
+</tbody></table>
+<p>&gt; <strong>총 소요 시간</strong>: 편의점 = 5~10분 / 체인 = 10~20분 / 광장시장 = 20~40분 (줄+먹기) / 통영 충무김밥 = 30~60분</p>
+<hr>
+<h2>🍜 김밥 + 라면 클래식 페어 (한국 #1 콤보)</h2>
+<h3>김밥 + 라면 = 한국 분식 정통 #1</h3>
+<table><thead><tr>
+<th>김밥</th>
+<th>베스트 라면 페어</th>
+<th>외국인 입문</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>참치김밥</strong></td>
+<td>신라면·진라면</td>
+<td>#1 클래식</td>
+</tr>
+<tr>
+<td><strong>마약김밥</strong></td>
+<td>즉석 라면 (광장시장)</td>
+<td>광장시장 정통</td>
+</tr>
+<tr>
+<td><strong>김치김밥</strong></td>
+<td>안성탕면·짜파게티</td>
+<td>매콤 콤보</td>
+</tr>
+<tr>
+<td><strong>제육김밥</strong></td>
+<td>신라면</td>
+<td>매콤 페어</td>
+</tr>
+<tr>
+<td><strong>MZ 트렌드</strong></td>
+<td>컵라면·MZ 라면</td>
+<td>MZ 트렌드</td>
+</tr>
+</tbody></table>
+<h3>클래식 매너</h3>
+<ul>
+<li><strong>김밥 한 조각 → 라면 국물 dunk → 한 입</strong>: 가장 정통한 페어</li>
+<li><strong>단무지</strong> = 입가심·무료 무제한 (요청 시 추가)</li>
+<li><strong>라면 + 김 가루</strong> = MZ 트렌드</li>
+</ul>
+<hr>
+<h2>🌃 매장 type별 워크플로우</h2>
+<h3>Type A — 편의점 (CU·GS25·세븐일레븐·이마트24)</h3>
+<ul>
+<li><strong>시스템</strong>: 픽업·즉석 데우기 (전자레인지 OK)</li>
+<li><strong>메뉴</strong>: 참치·김치·소고기·MZ 트렌드</li>
+<li><strong>가격</strong>: 1,500~3,500원/줄</li>
+<li><strong>시간</strong>: 5~10분 (선택 + 결제)</li>
+<li><strong>외국인 친화도</strong>: ★★★★ (24h·다국어 일부)</li>
+</ul>
+<h3>Type B — 김밥 체인 (김밥천국·고봉민·천하김밥)</h3>
+<ul>
+<li><strong>시스템</strong>: 매장 식사·픽업·배달</li>
+<li><strong>메뉴</strong>: 참치·김치·돈가스·제육·치즈 등 다양</li>
+<li><strong>가격</strong>: 3,500~5,500원/줄</li>
+<li><strong>시간</strong>: 10~20분 (매장 식사 + 라면 페어)</li>
+<li><strong>외국인 친화도</strong>: ★★★★ (영문 메뉴 일부)</li>
+</ul>
+<h3>Type C — 광장시장 마약김밥 (외국인 vlog #1)</h3>
+<ul>
+<li><strong>시스템</strong>: walk-in·매대 줄서기·즉석 만들기</li>
+<li><strong>메뉴</strong>: 마약김밥 (미니) + 만두·꼬마김밥</li>
+<li><strong>가격</strong>: 2,000~3,500원/줄 (미니 5~8조각)</li>
+<li><strong>시간</strong>: 줄 = 5~10분 / 식사 = 10~20분</li>
+<li><strong>외국인 친화도</strong>: ★★★★★ (vlog 1번지·인스타)</li>
+<li><strong>결제</strong>: 현금 권장 (작은 매대 일부)</li>
+</ul>
+<h3>Type D — 통영 충무김밥 (정통)</h3>
+<ul>
+<li><strong>시스템</strong>: 매장 식사·세트 메뉴</li>
+<li><strong>메뉴</strong>: 충무김밥 (간결) + 깍두기 + 오징어무침 풀세트</li>
+<li><strong>가격</strong>: 5,000~10,000원 (세트)</li>
+<li><strong>시간</strong>: 30~60분 (정통 식사)</li>
+<li><strong>외국인 친화도</strong>: ★★★★ (지역 vlog)</li>
+</ul>
+<h3>Type E — MZ 카페 (홍대·강남·성수)</h3>
+<ul>
+<li><strong>시스템</strong>: 키오스크 주문·테이블 식사</li>
+<li><strong>메뉴</strong>: 치즈·돈가스·아보카도·계란말이</li>
+<li><strong>가격</strong>: 5,000~8,000원</li>
+<li><strong>시간</strong>: 30~60분</li>
+<li><strong>외국인 친화도</strong>: ★★★★★ (영문·MZ)</li>
+</ul>
+<hr>
+<h2>🌶 외국인 영어 발화 샘플</h2>
+<ul>
+<li><strong>&quot;참치김밥 하나&quot;</strong> = &quot;One tuna gimbap, please&quot;</li>
+<li><strong>&quot;김밥 + 라면 페어&quot;</strong> = &quot;Gimbap and ramyeon set, please&quot;</li>
+<li><strong>&quot;마약김밥 두 줄&quot;</strong> = &quot;Two Mayak gimbap (mini), please&quot;</li>
+<li><strong>&quot;단무지 더 주세요&quot;</strong> = &quot;More pickled radish, please&quot;</li>
+<li><strong>&quot;포장이요&quot;</strong> = &quot;To go, please&quot;</li>
+<li><strong>&quot;카드 돼요?&quot;</strong> = &quot;Card accepted?&quot;</li>
+</ul>
+<hr>
+<h2>⚠ 외국인 자주 실수 7가지</h2>
+<p>1. <strong>&quot;김밥 = 일본 sushi&quot;</strong>: 김밥 = <strong>한국 정통</strong> (밥+김+야채+고기). 일본 sushi (식초밥+생선) ≠.</p>
+<p>2. <strong>&quot;마약 = 실제 마약&quot;</strong>: 마약 = <strong>별명</strong> (&quot;addictive&quot; 의미). 한국 정부 권고 = &quot;Mayak Gimbap&quot; 음역.</p>
+<p>3. <strong>&quot;단무지 = 1회&quot;</strong>: 단무지 = <strong>무료 무제한 리필</strong> (&quot;더 주세요&quot; 요청).</p>
+<p>4. <strong>&quot;김밥 = 따뜻함&quot;</strong>: 김밥 = <strong>차가운 음식</strong> (즉석 김밥은 미온). 라면 페어로 따뜻함 보강.</p>
+<p>5. <strong>&quot;광장시장 = 비싸기만&quot;</strong>: 광장시장 마약김밥 = 2,000원~. 가성비 ★ + 인스타.</p>
+<p>6. <strong>&quot;편의점 = 맛 없음&quot;</strong>: 편의점 김밥 = <strong>가성비 + 24h + 다양</strong>. 외국인 입문 가능.</p>
+<p>7. <strong>&quot;충무김밥 = 일반 김밥&quot;</strong>: 충무김밥 = <strong>통영 시그니처 세트</strong> (김밥 + 깍두기 + 오징어무침 별도).</p>
+<hr>
+<h2>⚙ FAQ 8개</h2>
+<p>1. <strong>첫 김밥 = 어디</strong>: <strong>편의점</strong> (가성비·24h) 1순위 → <strong>광장시장 마약김밥</strong> (인스타).</p>
+<p>2. <strong>인스타·vlog</strong>: 광장시장 마약김밥 #1·통영 충무김밥·MZ 치즈·돈가스 김밥.</p>
+<p>3. <strong>MZ 트렌드</strong>: 치즈김밥·돈가스김밥·아보카도김밥·계란말이김밥.</p>
+<p>4. <strong>클래식 페어</strong>: 김밥 + 라면 = 한국 #1 콤보.</p>
+<p>5. <strong>가성비</strong>: 편의점 1,500~3,500원·체인 3,500~5,500원·광장 2,000~3,500원.</p>
+<p>6. <strong>알레르기</strong>: 해산물·계란·콩·견과류 사전 고지.</p>
+<p>7. <strong>결제·팁</strong>: 편의점·체인·MZ = 카드 OK / 광장시장 = 현금 / 팁 X.</p>
+<p>8. <strong>VAT 환급</strong>: 식음료 일반 환급 X.</p>
+<hr>
+<h2>⚠ 의료·안전·식이 disclaimer</h2>
+<p>김밥 = 즉석 음식 (당일 섭취 권장). <strong>여름 = 식중독 risk ↑</strong> (마요네즈·생선 빠른 부패). 임신부·면역저하 = 즉석 만든 김밥 권장 (편의점 = 유통기한 확인). 어린이 = 매운 김치·제육 가감. 알레르기 (해산물·계란·콩·견과류) 사전 고지. 식중독 의심 시 ☎ <strong>1339</strong> (의료, 영문). 본 가이드는 일반 정보, 의료 자문이 아님.</p>
+<p><strong>매장·체인 정보 면책</strong>: 김밥 체인·전문점 매장 변동 — 방문 전 NAVER/Kakao map 또는 공식 사이트 확인.</p>
+<p><strong>식이 제한 fallback</strong>:</p>
+<ul>
+<li><strong>할랄·코셔</strong>: 일반 김밥 = 비할랄 (참치 마요·돼지). → 채식 김밥 OR 이태원 일부.</li>
+<li><strong>채식·비건</strong>: 채식 김밥 (계란·고기 X)·아보카도 (비건 OK). 마요네즈 = 비건 X.</li>
+<li><strong>글루텐 free</strong>: 양념 (간장) 多. 사전 매장 확인.</li>
+</ul>
+<hr>
+<h2>💰 Essential Tourist Tips</h2>
+<ul>
+<li><strong>1줄 평균 비용</strong> (2026년 6월 기준):</li>
+<li>편의점 = 1,500~3,500원</li>
+<li>체인 = 3,500~5,500원</li>
+<li>광장시장 마약 = 2,000~3,500원</li>
+<li>통영 충무 (세트) = 5,000~10,000원</li>
+<li>MZ 트렌드 = 5,000~8,000원</li>
+<li><strong>클래식 콤보</strong>: 김밥 + 라면 = 6,000~10,000원</li>
+<li><strong>결제·팁</strong>: 카드 OK 多 / 광장시장 = 현금 권장 / 팁 X</li>
+<li><strong>응급</strong>: ☎ <strong>1339</strong> (의료, 영문) / ☎ <strong>1330</strong> (관광 통역)</li>
+<li><strong>VAT 환급 X</strong>: 식음료 일반</li>
+</ul>
+<hr>
+<h2>🔗 관련</h2>
+<ul>
+<li><strong>#846</strong> 한국 김밥 6종 매트릭스 (선행)</li>
+<li><strong>#810</strong> 분식 cluster (김밥 분식 매트릭스)</li>
+<li><strong>#811</strong> 분식 워크플로우 (김밥 + 라면)</li>
+<li><strong>#813</strong> 면류 cluster (라면 페어)</li>
+</ul>
+<h2>🏷 태그</h2>
+<p><code>#한국김밥워크플로우</code> <code>#KoreanGimbapWorkflow</code> <code>#5step</code> <code>#편의점CUGS25세븐일레븐24h</code> <code>#체인김밥천국고봉민천하</code> <code>#광장시장마약김밥vlog#1현금</code> <code>#통영충무김밥세트정통</code> <code>#MZ카페치즈돈가스아보카도홍대강남성수</code> <code>#김밥+라면#1콤보</code> <code>#단무지무료무제한리필</code> <code>#마약별명중독성정부권고중립화</code> <code>#영어발화샘플</code> <code>#일본인관광객</code> <code>#중국인관광객</code> <code>#키친구</code></p>
+  </article>
+
+  <div class="share-bar">
+    <span class="share-label">공유</span>
+    <button class="share-btn share-twitter" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent('한국 김밥 주문·포장 워크플로우') + '&url=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Twitter">𝕏</button>
+    <button class="share-btn share-facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Facebook">f</button>
+    <button class="share-btn share-kakao" onclick="navigator.share ? navigator.share({title: '한국 김밥 주문·포장 워크플로우', url: window.location.href}) : navigator.clipboard.writeText(window.location.href).then(function() { alert('링크 복사됨!'); })" aria-label="Kakao/Share">📤</button>
+    <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href).then(function() { this.textContent = '✓'; setTimeout(function() { document.querySelector('.share-copy').textContent = '🔗'; }, 1500); }.bind(this))" aria-label="Copy link">🔗</button>
+  </div>
+
+  <nav class="detail-nav" aria-label="previous-next">
+    <div><a href="korea-gimbap-6types-matrix.html" style="color:var(--red);">&larr; 한국 김밥 6종 매트릭스 — 참치부터 충무까지 외국인 한국식 sushi roll 풀세트</a></div>
+    <div><a href="korea-gimbap-channel-comparison.html" style="color:var(--red);">외국인용 한국 김밥 편의점 vs 체인 vs 시장 vs MZ 비교 &rarr;</a></div>
+  </nav>
+</main>
+
+<footer class="site-footer">
+  <p><a href="https://instagram.com/keychingu.korea" target="_blank">@keychingu.korea</a> &mdash; Seoul for MZ FIT Travelers</p>
+</footer>
+</body>
+</html>
