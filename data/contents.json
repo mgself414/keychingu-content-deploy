@@ -18585,5 +18585,66 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
+  },
+  {
+    "id": "837",
+    "slug": "korea-hanjeongsik-6course-matrix",
+    "title_kr": "한국 한정식 6단계 코스 매트릭스 — 궁중·양반 정통 외국인 접대 풀세트",
+    "title_en": "Korean Hanjeongsik 6-Course Matrix Guide",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "food",
+      "hanjeongsik",
+      "course",
+      "matrix",
+      "meta-guide"
+    ],
+    "summary_kr": "죽·전·주요리·탕·밥·후식 6단계 + 궁중 vs 사대부 vs 사찰",
+    "summary_en": "6-course matrix + royal court vs noble vs temple",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false
+  },
+  {
+    "id": "838",
+    "slug": "korea-hanjeongsik-workflow",
+    "title_kr": "한국 한정식 예약·드레스코드·매너 워크플로우",
+    "title_en": "Korean Hanjeongsik Reservation & Manners Workflow Guide",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "food",
+      "hanjeongsik",
+      "workflow",
+      "meta-guide"
+    ],
+    "summary_kr": "5-step + 캐치테이블 예약 + 드레스코드 + 6단계 매너 + 영어 발화",
+    "summary_en": "5-step + CatchTable reservation + dress code + manners",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false
+  },
+  {
+    "id": "839",
+    "slug": "korea-hanjeongsik-channel-comparison",
+    "title_kr": "외국인용 한국 한정식 정통 vs 호텔 vs 사찰 vs 지역 비교",
+    "title_en": "Korean Hanjeongsik Traditional vs Hotel vs Temple vs Regional Comparison",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "food",
+      "hanjeongsik",
+      "comparison",
+      "meta-guide"
+    ],
+    "summary_kr": "4채널 비교 매트릭스 + segment 5 + 정통·호텔·사찰·지역",
+    "summary_en": "4-channel matrix + 5 segments",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false
   }
 ]
