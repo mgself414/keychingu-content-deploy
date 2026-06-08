@@ -18454,5 +18454,136 @@
     "cn_available": false,
     "jp_available": false,
     "instagram_posted": false
+  },
+  {
+    "id": "831",
+    "slug": "korea-kimchi-restaurant-encounter",
+    "title_kr": "외국인 식당 김치 입문 — 입장→반찬→리필→재방문 동선 매트릭스",
+    "title_en": "Restaurant Kimchi Encounter — 4-step Entry-Side-Refill-Revisit Matrix",
+    "category": "C",
+    "tags": [
+      "foreign-tourist",
+      "food",
+      "kimchi",
+      "restaurant",
+      "matrix",
+      "meta-guide"
+    ],
+    "summary_kr": "식당 동선 6+종 김치 매트릭스 + 입장→기본 반찬→무료 리필→재방문 4단계",
+    "summary_en": "Restaurant 6+ kimchi types + 4-step matrix",
+    "en_available": false,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "832",
+    "slug": "korea-kimchi-convenience-store-pb",
+    "title_kr": "편의점 PB 김치 비교 — CU·GS25·세븐일레븐·이마트24·노브랜드 5채널 매트릭스",
+    "title_en": "Convenience Store PB Kimchi Comparison — CU·GS25·7-Eleven·E24·NoBrand 5 Channels",
+    "category": "C",
+    "tags": [
+      "foreign-tourist",
+      "food",
+      "kimchi",
+      "convenience-store",
+      "pb",
+      "matrix",
+      "meta-guide"
+    ],
+    "summary_kr": "CU·GS25·세븐·이마트24·노브랜드 5채널 + 가격·용량·매운맛·외국인 매트릭스",
+    "summary_en": "CU·GS25·7-Eleven·E24·NoBrand 5-channel PB kimchi matrix",
+    "en_available": false,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "833",
+    "slug": "korea-kimchi-ramen-pairing-deep",
+    "title_kr": "한국 김치+라면 페어링 deep — 라면 5종 × 김치 6종 매칭 매트릭스",
+    "title_en": "Korean Kimchi+Ramen Pairing Deep — 5x6 Matching Matrix",
+    "category": "C",
+    "tags": [
+      "foreign-tourist",
+      "food",
+      "kimchi",
+      "ramen",
+      "pairing",
+      "matrix",
+      "meta-guide"
+    ],
+    "summary_kr": "신라면·진라면·삼양·너구리·짜파게티 + 김치 6종 매트릭스",
+    "summary_en": "Shin·Jin·Samyang·Neoguri·Chapagetti × kimchi 6 types",
+    "en_available": false,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "834",
+    "slug": "korea-kimchi-stew-soup-signature",
+    "title_kr": "한국 김치+탕/국 시그니처 12선 — 김치가 음식 맛 결정 요인",
+    "title_en": "Korean Kimchi+Soup/Stew Top 12 — Kimchi as Flavor Determinant",
+    "category": "C",
+    "tags": [
+      "foreign-tourist",
+      "food",
+      "kimchi",
+      "soup",
+      "stew",
+      "matrix",
+      "meta-guide"
+    ],
+    "summary_kr": "해장국·돼지국밥·내장탕·설렁탕·곰탕·삼계탕·갈비탕 12선 + 김치 페어 매트릭스",
+    "summary_en": "Haejang·Dwaeji·Naejang·Seolleong·Gom·Samgye·Galbi-tang Top 12 + kimchi pair matrix",
+    "en_available": false,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "835",
+    "slug": "korea-kimchi-restaurant-top12",
+    "title_kr": "한국 김치 맛집 12선 — 김치가 그날 맛을 좌우하는 노포",
+    "title_en": "Korean Kimchi Signature Restaurants Top 12 — Kimchi Defines the Day",
+    "category": "C",
+    "tags": [
+      "foreign-tourist",
+      "food",
+      "kimchi",
+      "restaurant",
+      "signature",
+      "top12",
+      "meta-guide"
+    ],
+    "summary_kr": "김치찌개·만두·족발·보쌈·말이국수·국밥·전·볶음밥·찜 12선",
+    "summary_en": "Kimchi-jjigae·mandu·jokbal·bossam·mari-guksu·gukbap·jeon·bokkeumbap·jjim Top 12",
+    "en_available": false,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "836",
+    "slug": "korea-kimchi-cluster-index",
+    "title_kr": "한국 김치 cluster 통합 인덱스 — 9편 entry point + 5 segment 동선",
+    "title_en": "Korean Kimchi Cluster Index — 9-piece Entry Point + 5 Segment Routes",
+    "category": "D",
+    "tags": [
+      "foreign-tourist",
+      "food",
+      "kimchi",
+      "cluster",
+      "index",
+      "matrix",
+      "meta-guide"
+    ],
+    "summary_kr": "9편 통합 인덱스 + 혼자·커플·가족·MZ·예산형 5 segment 동선 + 시즌·시간·예산",
+    "summary_en": "9-piece cluster index + 5 segment routes + season·time·budget matrix",
+    "en_available": false,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]

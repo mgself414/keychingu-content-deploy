@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>한국 김치 cluster 통합 인덱스 — 9편 entry point + 5 segment 동선 — KeyChinGu</title>
+<meta name="description" content="외국인용 한국 김치 cluster 통합 인덱스 — 9편 entry point + 5 segment 동선 > 부제: 외국인 관광객용 한국 김치 9편 통합 인덱스 + 혼자·커플·가족·MZ·예산형 5 segment 동선 추천 + 시즌·시간·예산별 매트릭스 ISSUE 03 · 836 · ...">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="192x192" href="../assets/logo/favicon-192.png">
+<link rel="apple-touch-icon" href="../assets/logo/favicon-192.png">
+<link rel="canonical" href="https://mgself414.github.io/keychingu-content-deploy/content/korea-kimchi-cluster-index.html">
+<link rel="alternate" hreflang="ko" href="https://mgself414.github.io/keychingu-content-deploy/content/korea-kimchi-cluster-index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="한국 김치 cluster 통합 인덱스 — 9편 entry point + 5 segment 동선">
+<meta property="og:description" content="외국인용 한국 김치 cluster 통합 인덱스 — 9편 entry point + 5 segment 동선 > 부제: 외국인 관광객용 한국 김치 9편 통합 인덱스 + 혼자·커플·가족·MZ·예산형 5 segment 동선 추천 + 시즌·시간·예산별 매트릭스 ISSUE 03 · 836 · ...">
+<meta property="og:url" content="https://mgself414.github.io/keychingu-content-deploy/content/korea-kimchi-cluster-index.html">
+<meta property="og:image" content="https://mgself414.github.io/keychingu-content-deploy/assets/logo/og-image-1200x630.png">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="한국 김치 cluster 통합 인덱스 — 9편 entry point + 5 segment 동선">
+<meta name="twitter:description" content="외국인용 한국 김치 cluster 통합 인덱스 — 9편 entry point + 5 segment 동선 > 부제: 외국인 관광객용 한국 김치 9편 통합 인덱스 + 혼자·커플·가족·MZ·예산형 5 segment 동선 추천 + 시즌·시간·예산별 매트릭스 ISSUE 03 · 836 · ...">
+<meta name="twitter:image" content="https://mgself414.github.io/keychingu-content-deploy/assets/logo/og-image-1200x630.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"한국 김치 cluster 통합 인덱스 — 9편 entry point + 5 segment 동선","description":"외국인용 한국 김치 cluster 통합 인덱스 — 9편 entry point + 5 segment 동선 > 부제: 외국인 관광객용 한국 김치 9편 통합 인덱스 + 혼자·커플·가족·MZ·예산형 5 segment 동선 추천 + 시즌·시간·예산별 매트릭스 ISSUE 03 · 836 · ...","datePublished":"2026-05-01","inLanguage":"ko","url":"https://mgself414.github.io/keychingu-content-deploy/content/korea-kimchi-cluster-index.html","image":"https://mgself414.github.io/keychingu-content-deploy/assets/logo/og-image-1200x630.png","publisher":{"@type":"Organization","name":"KeyChinGu","logo":{"@type":"ImageObject","url":"https://mgself414.github.io/keychingu-content-deploy/assets/logo/logo_2-4_color_small.png"}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/main.css">
+<style>
+.detail-wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+}
+.breadcrumb {
+  font-size: 13px;
+  color: var(--text-soft);
+  margin-bottom: 24px;
+}
+.breadcrumb a { color: var(--red); font-weight: 600; }
+.detail-wrap h1 {
+  font-size: 28px; font-weight: 800;
+  color: var(--black); margin-bottom: 8px;
+}
+.detail-wrap h2 {
+  font-size: 22px; font-weight: 700;
+  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--red);
+}
+.detail-wrap h3 {
+  font-size: 17px; font-weight: 600;
+  color: var(--text-mid); margin-top: 20px; margin-bottom: 8px;
+}
+.detail-wrap p {
+  font-size: 15px; line-height: 1.7;
+  color: var(--text-mid); margin-bottom: 12px;
+}
+.detail-wrap ul {
+  padding-left: 20px; margin-bottom: 12px;
+}
+.detail-wrap li {
+  font-size: 14px; line-height: 1.6;
+  color: var(--text-mid); margin-bottom: 6px;
+}
+.detail-wrap table {
+  width: 100%; border-collapse: collapse;
+  margin-bottom: 16px; font-size: 13px;
+}
+.detail-wrap th {
+  background: var(--black); color: #fff;
+  padding: 10px 12px; text-align: left;
+  font-weight: 600; font-size: 11px;
+  text-transform: uppercase; letter-spacing: 0.06em;
+}
+.detail-wrap td {
+  padding: 10px 12px; border-bottom: 1px solid var(--border);
+  color: var(--text-mid);
+}
+.detail-wrap tr:nth-child(even) td { background: rgba(0,0,0,0.02); }
+.detail-wrap hr {
+  border: none; height: 1px;
+  background: var(--border); margin: 24px 0;
+}
+.detail-wrap code {
+  background: rgba(33,140,204,0.08);
+  padding: 2px 6px; border-radius: 4px;
+  font-size: 13px; color: var(--blue);
+}
+.detail-nav {
+  display: flex; justify-content: space-between;
+  margin-top: 48px; padding-top: 20px;
+  border-top: 1px solid var(--border);
+  font-size: 14px; font-weight: 600;
+}
+.share-bar {
+  display: flex; align-items: center; gap: 10px;
+  margin-top: 40px; padding: 16px 20px;
+  background: #f9f9f9; border-radius: 12px;
+  border: 1px solid var(--border);
+}
+.share-label {
+  font-size: 14px; font-weight: 600; color: var(--text-soft);
+  margin-right: 8px;
+}
+.share-btn {
+  width: 40px; height: 40px;
+  border: none; border-radius: 50%;
+  background: #fff; cursor: pointer;
+  font-size: 1.1rem; transition: all 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  display: inline-flex; align-items: center; justify-content: center;
+}
+.share-btn:hover { transform: translateY(-2px); box-shadow: 0 3px 8px rgba(0,0,0,0.15); }
+.share-twitter:hover { background: #000; color: #fff; }
+.share-facebook:hover { background: #1877f2; color: #fff; }
+.share-kakao:hover { background: #fee500; }
+.share-copy:hover { background: #218CCC; color: #fff; }
+/* EN toggle disabled — 영문판 미생성 콘텐츠 (2026-05-16 patch) */
+.lang-switch .lang-disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  text-decoration: line-through;
+  padding: 4px 10px;
+  color: var(--text-soft, #888);
+  font-size: 13px;
+  user-select: none;
+}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <div class="lang-switch">
+    <a href="../content/korea-kimchi-cluster-index.html" class="active">KR</a>
+    <span class="lang-disabled" title="영문판 준비 중">EN</span>
+  </div>
+</header>
+
+<main class="detail-wrap">
+  <nav class="breadcrumb" aria-label="breadcrumb"><a href="../index.html">전체 가이드</a> &rsaquo; 한국 김치 cluster 통합 인덱스 — 9편 entry point + 5 segment 동선</nav>
+  <article>
+  <h1>외국인용 한국 김치 cluster 통합 인덱스 — 9편 entry point + 5 segment 동선</h1>
+<p>&gt; <strong>부제</strong>: 외국인 관광객용 한국 김치 9편 통합 인덱스 + 혼자·커플·가족·MZ·예산형 5 segment 동선 추천 + 시즌·시간·예산별 매트릭스</p>
+<p>ISSUE 03 · #836 · 2026-06-08</p>
+<hr>
+<h2>🎯 왜 김치 cluster 통합 인덱스인가</h2>
+<p>외국인 관광객 한국 김치 = <strong>K-food 글로벌 인지도 #1·UNESCO 김장 무형문화유산 2013·관광객 접점 100%</strong>. 키친구 김치 cluster = <strong>9편 통합 (기존 3편 #822/#823/#824 + 신규 6편 #831-#836)</strong>. 외국인 페인포인트 = (a) 9편 어디부터 읽을지 모름 (b) 본인 segment (혼자·커플·가족·MZ·예산형)별 추천 매트릭스 모름 (c) 시즌·시간·예산별 동선 모름.</p>
+<p>본 가이드는 <strong>9편 통합 entry point + 5 segment 동선 + 시즌·시간·예산 매트릭스</strong>.</p>
+<hr>
+<h2>★ 한눈에 김치 cluster 9편 매트릭스</h2>
+<table><thead><tr>
+<th>#</th>
+<th>토픽</th>
+<th>카테고리</th>
+<th>외국인 시급도</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>[#822](#822)</strong></td>
+<td>김치 6종 매트릭스 (배추·깍두기·총각·열무·나박·동치미)</td>
+<td>시그니처</td>
+<td>★★★★★ (입문 #1)</td>
+</tr>
+<tr>
+<td><strong>[#823](#823)</strong></td>
+<td>김치 페어링 워크플로우 (5-step·묵은지 활용)</td>
+<td>워크플로우</td>
+<td>★★★★★</td>
+</tr>
+<tr>
+<td><strong>[#824](#824)</strong></td>
+<td>김치 4채널 비교 (궁중·지역·가정식·상품)</td>
+<td>채널</td>
+<td>★★★★</td>
+</tr>
+<tr>
+<td><strong>[#831](#831)</strong></td>
+<td>식당 김치 입문 동선 (입장→반찬→리필→재방문)</td>
+<td>동선·실전</td>
+<td>★★★★★</td>
+</tr>
+<tr>
+<td><strong>[#832](#832)</strong></td>
+<td>편의점 PB 김치 (CU·GS25·세븐·이마트24·노브랜드)</td>
+<td>편의점·자취</td>
+<td>★★★★</td>
+</tr>
+<tr>
+<td><strong>[#833](#833)</strong></td>
+<td>김치+라면 페어링 deep (라면 5종 × 김치 6종)</td>
+<td>라면·콤보</td>
+<td>★★★★</td>
+</tr>
+<tr>
+<td><strong>[#834](#834)</strong></td>
+<td>김치+탕/국 시그니처 12선 (해장국·국밥·삼계탕 등)</td>
+<td>탕/국</td>
+<td>★★★★★</td>
+</tr>
+<tr>
+<td><strong>[#835](#835)</strong></td>
+<td>김치 맛집 12선 (김치찌개·만두·보쌈·국수·전 등)</td>
+<td>김치 메인</td>
+<td>★★★★★</td>
+</tr>
+<tr>
+<td><strong>[#836](#836)</strong></td>
+<td><strong>김치 cluster 통합 인덱스 (본 가이드)</strong></td>
+<td>인덱스</td>
+<td>★★★★★ (시작점)</td>
+</tr>
+</tbody></table>
+<p>&gt; <strong>신규 6편 (#831~#836)</strong>: 사용자 요청 (편의점·라면·탕/국·맛집) + cluster index</p>
+<p>&gt; <strong>기존 3편 (#822/#823/#824)</strong>: baseline (시그니처·워크플로우·채널)</p>
+<hr>
+<h2>👤 5 Segment 동선 추천</h2>
+<h3>Segment 1 — 혼자 여행객 (Solo Traveler)</h3>
+<p><strong>페르소나</strong>: 백패커·MZ·자유여행·짧은 일정 (3~5박)</p>
+<p><strong>추천 cluster 동선</strong> (읽기 순서):</p>
+<p>1. <strong>[#822 김치 6종 매트릭스](#822)</strong> — 입문 (10분)</p>
+<p>2. <strong>[#831 식당 김치 입문 동선](#831)</strong> — 실전 (10분)</p>
+<p>3. <strong>[#832 편의점 PB 김치](#832)</strong> — 호텔·편의점 콤보 (10분)</p>
+<p>4. <strong>[#833 김치+라면 페어링](#833)</strong> — 자취·호텔 룸 (10분)</p>
+<p>5. <strong>[#835 김치 맛집 12선](#835)</strong> — 외식 (10분)</p>
+<p><strong>여행 추천 동선</strong>:</p>
+<ul>
+<li><strong>Day 1</strong>: 식당 첫 방문 (국밥집·#831) + 깍두기 입문</li>
+<li><strong>Day 2</strong>: 편의점 라면+김치 콤보 (호텔 룸·#832·#833)</li>
+<li><strong>Day 3</strong>: 김치만두 노포 (인사동·#835·#4) + 김치보쌈 (#6)</li>
+<li><strong>Day 4</strong>: 김치찌개 노포 (광장·#835·#1) + 묵은지 매니아</li>
+</ul>
+<p><strong>예산</strong>: 1일 식사 + 김치 = 30,000~60,000원</p>
+<h3>Segment 2 — 커플 (Couple)</h3>
+<p><strong>페르소나</strong>: 신혼·연인·로맨틱 여행</p>
+<p><strong>추천 cluster 동선</strong>:</p>
+<p>1. <strong>[#822 김치 6종 매트릭스](#822)</strong> — 입문</p>
+<p>2. <strong>[#824 김치 4채널 비교](#824)</strong> — 한정식·궁중 (커플 매니아)</p>
+<p>3. <strong>[#834 김치+탕/국 시그니처](#834)</strong> — 삼계탕·갈비탕 (커플)</p>
+<p>4. <strong>[#835 김치 맛집 12선](#835)</strong> — 김치보쌈 (분위기)·김치전+막걸리</p>
+<p><strong>여행 추천 동선</strong>:</p>
+<ul>
+<li><strong>Day 1</strong>: 한정식 풀세트 (인사동·궁중 김치 5종) + 막걸리 페어 ([#824](#824))</li>
+<li><strong>Day 2</strong>: 삼계탕 (토속촌 커플 매니아·#834·#7) + 김치만두 페어</li>
+<li><strong>Day 3</strong>: 김치보쌈 (인사동·#835·#6) + 김치전+막걸리 (광장·#835·#9)</li>
+</ul>
+<p><strong>예산</strong>: 1일 커플 식사 + 김치 = 80,000~150,000원</p>
+<h3>Segment 3 — 가족 (Family with Kids)</h3>
+<p><strong>페르소나</strong>: 부모 + 아이 2명·어린이 안 매움 매니아</p>
+<p><strong>추천 cluster 동선</strong>:</p>
+<p>1. <strong>[#822 김치 6종 매트릭스](#822)</strong> — 안 매움 옵션 (백김치·동치미)</p>
+<p>2. <strong>[#824 김치 4채널 비교](#824)</strong> — 가족 친화 매장</p>
+<p>3. <strong>[#834 김치+탕/국 시그니처](#834)</strong> — 삼계탕·설렁탕·갈비탕 (안 매움)</p>
+<p>4. <strong>[#835 김치 맛집 12선](#835)</strong> — 김치만두·김치보쌈·김치볶음밥 (안 매움)</p>
+<p><strong>여행 추천 동선</strong>:</p>
+<ul>
+<li><strong>Day 1</strong>: 삼계탕 (토속촌·#834·#7) + 동치미·백김치 (안 매움)</li>
+<li><strong>Day 2</strong>: 김치만두 (인사동·#835·#4) + 어린이 안 매움 매트릭스</li>
+<li><strong>Day 3</strong>: 설렁탕 (광장·#834·#1) + 깍두기 (안 매움)</li>
+<li><strong>Day 4</strong>: 김치볶음밥 (이태원·#835·#10) + 어린이 친화</li>
+</ul>
+<p><strong>예산</strong>: 1일 가족 4인 식사 + 김치 = 80,000~150,000원</p>
+<h3>Segment 4 — MZ·매니아 (Millennial/Gen-Z Enthusiast)</h3>
+<p><strong>페르소나</strong>: K-food 매니아·인스타·매콤 매트릭스·체험</p>
+<p><strong>추천 cluster 동선</strong>:</p>
+<p>1. <strong>[#822 김치 6종 매트릭스](#822)</strong> — 묵은지·매콤 매니아</p>
+<p>2. <strong>[#823 김치 페어링 워크플로우](#823)</strong> — 5-step 매니아</p>
+<p>3. <strong>[#833 김치+라면 페어링](#833)</strong> — 짜파구리·신라면+묵은지</p>
+<p>4. <strong>[#834 김치+탕/국 시그니처](#834)</strong> — 돼지국밥·해장국 매콤</p>
+<p>5. <strong>[#835 김치 맛집 12선](#835)</strong> — 김치찌개·김치국밥·김치찜 매콤</p>
+<p><strong>여행 추천 동선</strong>:</p>
+<ul>
+<li><strong>Day 1</strong>: 김치찌개 노포 (광장·#835·#1) + 묵은지 매니아 + 인스타</li>
+<li><strong>Day 2</strong>: 돼지국밥 (부산식 분점·#834·#3) + 매콤 매트릭스</li>
+<li><strong>Day 3</strong>: 짜파구리 매니아 (호텔·#833) + 신라면+묵은지</li>
+<li><strong>Day 4</strong>: 김치찜 (광장·#835·#12) + 묵은지 매니아 정통</li>
+<li><strong>Day 5</strong>: 김치 박물관·김장 체험 (강남·인사동·[#824](#824)·#751 김장)</li>
+</ul>
+<p><strong>예산</strong>: 1일 MZ 매니아 = 50,000~80,000원 + 체험 30,000~80,000원</p>
+<h3>Segment 5 — 예산형 (Budget Traveler)</h3>
+<p><strong>페르소나</strong>: 게스트하우스·자취·1주+ 장기</p>
+<p><strong>추천 cluster 동선</strong>:</p>
+<p>1. <strong>[#822 김치 6종 매트릭스](#822)</strong> — 입문 (식당 무료 김치 표준)</p>
+<p>2. <strong>[#831 식당 김치 입문 동선](#831)</strong> — 무료 무제한 리필 매트릭스</p>
+<p>3. <strong>[#832 편의점 PB 김치](#832)</strong> — <strong>가성비 #1 (노브랜드)</strong></p>
+<p>4. <strong>[#833 김치+라면 페어링](#833)</strong> — 자취 라면+김치 콤보</p>
+<p><strong>여행 추천 동선</strong>:</p>
+<ul>
+<li><strong>Day 1</strong>: 식당 무료 김치 (#831·국밥집 8,000~12,000원)</li>
+<li><strong>Day 2~5</strong>: 게스트하우스 자취 + 노브랜드 김치 1kg (4,500원·5일 분량)</li>
+<li><strong>Day 매일</strong>: 라면+김치 콤보 (1,500원 + 무료 김치 = 1,500원·#833)</li>
+<li><strong>Day 매일</strong>: 식당 외식 (8,000~12,000원·국밥·삼계탕·분식)</li>
+</ul>
+<p><strong>예산</strong>: 1일 예산형 = 15,000~25,000원 (라면+김치 + 식당 1식)</p>
+<hr>
+<h2>🗓 시즌별 김치 매트릭스</h2>
+<table><thead><tr>
+<th>시즌</th>
+<th>시그니처 김치</th>
+<th>김치 메인 음식</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>봄 (3~5월)</strong></td>
+<td>열무김치 시작·봄동 김치</td>
+<td>김치만두·김치찌개</td>
+</tr>
+<tr>
+<td><strong>여름 (6~8월)</strong></td>
+<td>열무·나박·동치미 (시원)</td>
+<td><strong>김치말이국수 #1</strong>·열무국수·삼계탕 (복날)</td>
+</tr>
+<tr>
+<td><strong>가을 (9~11월)</strong></td>
+<td><strong>김장 준비</strong>·총각김치</td>
+<td>김치찌개·김치전 (가을 막걸리 페어)</td>
+</tr>
+<tr>
+<td><strong>겨울 (12~2월)</strong></td>
+<td><strong>김장 본격</strong>·동치미·배추</td>
+<td><strong>김치만둣국</strong>·김치찜·삼계탕 (겨울 보양)</td>
+</tr>
+<tr>
+<td><strong>연중</strong></td>
+<td>배추김치·깍두기</td>
+<td>식당 무료 김치·라면+김치</td>
+</tr>
+</tbody></table>
+<h3>시즌별 추천 cluster 글</h3>
+<ul>
+<li><strong>봄</strong>: #822 (열무 시작) + #834 (삼계탕)</li>
+<li><strong>여름</strong>: #822 (나박·동치미) + #835 (김치말이국수·열무국수)</li>
+<li><strong>가을</strong>: #822 (총각) + #835 (김치전+막걸리)</li>
+<li><strong>겨울</strong>: #822 (김장·동치미) + #835 (김치만둣국·김치찜)</li>
+</ul>
+<hr>
+<h2>⏰ 시간대별 김치 매트릭스</h2>
+<table><thead><tr>
+<th>시간대</th>
+<th>추천 음식</th>
+<th>추천 cluster</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>아침 (6:00~10:00)</strong></td>
+<td>해장국 (24h)·삼계탕·국밥</td>
+<td>#834 (탕/국·해장)</td>
+</tr>
+<tr>
+<td><strong>점심 (11:00~14:00)</strong></td>
+<td>김치찌개·김치만두·설렁탕·돼지국밥</td>
+<td>#834·#835</td>
+</tr>
+<tr>
+<td><strong>저녁 (17:00~21:00)</strong></td>
+<td>김치보쌈·족발·갈비탕·삼겹살 + 김치</td>
+<td>#831 (BBQ)·#835 (보쌈·족발)</td>
+</tr>
+<tr>
+<td><strong>야식·24h (21:00~03:00)</strong></td>
+<td>라면+김치·해장국·짜파게티</td>
+<td>#833 (호텔 라면)·#834 (해장국)</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>💰 예산별 김치 매트릭스</h2>
+<table><thead><tr>
+<th>예산 (1식)</th>
+<th>추천 음식</th>
+<th>추천 cluster</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>0원 (식당 무료)</strong></td>
+<td>식당 자동 김치 (모든 한식당)</td>
+<td>#831 (무료 무제한 리필)</td>
+</tr>
+<tr>
+<td><strong>1,500~3,000원</strong></td>
+<td>편의점 라면+김치 콤보</td>
+<td>#832·#833 (호텔 룸)</td>
+</tr>
+<tr>
+<td><strong>8,000~16,000원</strong></td>
+<td>김치찌개·김치만두·설렁탕·돼지국밥</td>
+<td>#834·#835 (1식)</td>
+</tr>
+<tr>
+<td><strong>25,000~45,000원</strong></td>
+<td>김치보쌈·족발·갈비탕 (2~3인용)</td>
+<td>#835 (커플·가족)</td>
+</tr>
+<tr>
+<td><strong>40,000~80,000원</strong></td>
+<td>한정식 김치 5종 풀세트 (#824 궁중 채널)</td>
+<td>#824 (한정식 코스)</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>🌐 기존 cluster cross-link</h2>
+<p>김치 cluster + 키친구 다른 음식 cluster cross:</p>
+<ul>
+<li><strong>#486 Korea Jjigae Map</strong> — 찌개 5축 (김치찌개·된장·부대·해장·맑은국) sub-deep</li>
+<li><strong>#477 국밥</strong> — 깍두기 페어 #1</li>
+<li><strong>#480 Noodle</strong> — 김치말이국수·열무국수</li>
+<li><strong>#479 BBQ</strong> — 배추김치 익은 페어 (기름 jus)</li>
+<li><strong>#687 Makgeolli</strong> — 김치전+막걸리 미슐랭 페어</li>
+<li><strong>#688 Liquor Pairing</strong> — 막걸리+김치전 시그니처</li>
+<li><strong>#735 K-food Darye Fusion</strong> — K-food + 김치 UNESCO 2013</li>
+<li><strong>#751 김장 김치 체험</strong> — 11월 본격 (가을 시즌)</li>
+<li><strong>#523 발효음식</strong> — 김치 + 발효 메타</li>
+<li><strong>#800 사찰음식</strong> — 채식·할랄 김치 옵션</li>
+</ul>
+<hr>
+<h2>⚠ 외국인 자주 실수 5가지</h2>
+<p>1. <strong>&quot;김치 cluster 어디부터?&quot;</strong>: <strong>#836 본 가이드 → #822 매트릭스 → #831 식당 동선</strong> 순서. segment 정해서 4~5편만 선택.</p>
+<p>2. <strong>&quot;매니아 매트릭스 모름&quot;</strong>: MZ·매콤 매니아 = #835 (김치찌개 노포)·돼지국밥 (#834)·김치찜 (#835·#12)·#833 (신라면+묵은지).</p>
+<p>3. <strong>&quot;가족·어린이 매트릭스 모름&quot;</strong>: 가족 = #834 (삼계탕·설렁탕)·#835 (김치만두·김치보쌈·김치볶음밥) = 안 매움.</p>
+<p>4. <strong>&quot;예산형 매트릭스 모름&quot;</strong>: 예산형 = 식당 무료 김치 (#831) + 편의점 라면+김치 콤보 (#832·#833) = <strong>1일 15,000~25,000원</strong>.</p>
+<p>5. <strong>&quot;시즌·시간 매트릭스 모름&quot;</strong>: 시즌·시간·예산 매트릭스 = 본 가이드 참조. 여름 = 김치말이국수·삼계탕·겨울 = 김치만둣국·김치찜.</p>
+<hr>
+<h2>⚙ FAQ 6개</h2>
+<p>1. <strong>첫 한국 방문·시작 추천</strong>: 본 가이드 → #822 매트릭스 → #831 식당 동선 → segment별 5편 = <strong>총 6편 (1~2시간 읽기)</strong>.</p>
+<p>2. <strong>segment별 시간 투자</strong>: 혼자·MZ = 5~6편 (1~2h) / 커플·가족 = 3~4편 (1h) / 예산형 = 3편 (1h).</p>
+<p>3. <strong>시즌 매니아 1순위</strong>: 여름 = 김치말이국수 (#835·#7)·겨울 = 김치만둣국 (#835·#11)·가을 = 김치전+막걸리 (#835·#9).</p>
+<p>4. <strong>김장 체험 (#751 cross)</strong>: 11월 (가을)·북촌·전주·서울 김치 박물관·30,000~80,000원/인.</p>
+<p>5. <strong>알레르기·식이 제한 풀세트</strong>: #822 + 각 가이드 disclaimer 섹션 참조. 할랄·코셔·채식·글루텐 free fallback 명시.</p>
+<p>6. <strong>김치 cluster 미래 확장</strong>: 김장 deep (#751·계획)·김치 박물관 deep·김치 건강 효과 (발효·#523) = 향후 추가 후보.</p>
+<hr>
+<h2>⚠ 의료·안전·식이 disclaimer</h2>
+<p>김치 = 발효 음식 (염분·매운맛). 라면·찌개·국 = 가공·기름. 합산 염분 = 일 권장 초과 가능. 임신부·고혈압·신장 환자 = 빈도 주의. 알레르기 풀세트: 새우젓·멸치액젓·갑각류·마늘·고춧가루·돼지·소·콩·밀가루 — <strong>포장 라벨 + 식당 사전 고지 필수</strong>. 식중독·복통 시 ☎ <strong>1339</strong>.</p>
+<p><strong>식이 제한 풀세트 fallback</strong>:</p>
+<ul>
+<li><strong>할랄·코셔</strong>: 일반 김치 = 비할랄 (새우젓 표준). → <strong>사찰음식 (#800)</strong> = 채식·할랄·코셔 OK</li>
+<li><strong>채식·비건</strong>: 일반 김치 = 비채식 (액젓). → <strong>사찰음식 (#800)</strong> 또는 <strong>비건 김치</strong> (간장 기반)</li>
+<li><strong>글루텐 free</strong>: 김치 자체 = OK (간장 X)·<strong>김치만두 = 글루텐 함유</strong> (만두피 밀가루)</li>
+</ul>
+<hr>
+<h2>✈️ 외국인 페인포인트 #1 — 귀국 후 김치 매니아 유지</h2>
+<ul>
+<li><strong>귀국 후 김치 구매</strong>: 글로벌 한인마트 (H Mart·우리마트·롯데마트 글로벌)·CJ 종가집·풀무원·CJ 비비고 글로벌 라인</li>
+<li><strong>글로벌 인지도 브랜드</strong>: 종가집·풀무원·CJ 비비고·대상 청정원 = <strong>해외 동포 매장 同 브랜드 표준</strong></li>
+<li><strong>귀국 후 한식당</strong>: 한인타운 (LA·뉴욕·도쿄·런던·시드니) = 김치 풀세트·노포 매니아</li>
+<li><strong>김장 글로벌 체험</strong>: UNESCO 김장 글로벌 (해외 한국 문화원·재외동포재단)·11월 시즌 매니아</li>
+<li><strong>재방문 한국 동기</strong>: 김치 매니아 = <strong>한국 재방문 #1 동기 (음식 매니아)</strong> — 노포 단골·시즌 시그니처 매트릭스</li>
+</ul>
+<hr>
+<h2>💰 Essential Tourist Tips</h2>
+<ul>
+<li><strong>김치 cluster 9편 총 읽기 시간</strong>: 1~2 시간 (segment별 선택)</li>
+<li><strong>여행 1주일 예산 (김치 cluster 풀세트)</strong>:</li>
+<li>예산형: 100,000~175,000원</li>
+<li>표준: 200,000~400,000원</li>
+<li>매니아: 350,000~600,000원</li>
+<li>커플·가족: 500,000~1,000,000원</li>
+<li><strong>결제·팁</strong>: 카드 OK / 노포 = 일부 현금 / <strong>팁 X</strong></li>
+<li><strong>응급</strong>: ☎ <strong>1339</strong> (의료, 영문) / ☎ <strong>1330</strong> (관광 통역) / ☎ <strong>112</strong> (경찰·영문) / ☎ <strong>119</strong> (소방·구급·영문)</li>
+</ul>
+<hr>
+<h2>🌐 외부 SOURCES</h2>
+<ul>
+<li><strong>UNESCO 김장 (Kimjang) 2013</strong>: https://ich.unesco.org/en/RL/kimjang-making-and-sharing-kimchi-in-the-republic-of-korea-00881</li>
+<li><strong>한국관광공사 (VisitKorea)</strong>: https://english.visitkorea.or.kr/</li>
+<li><strong>한식진흥원 (Korean Food Promotion Institute)</strong>: https://www.hansik.or.kr/</li>
+<li><strong>미슐랭 가이드 서울 (Michelin Guide Seoul)</strong>: https://guide.michelin.com/kr/ko</li>
+<li><strong>블루리본 서베이 (Blue Ribbon Survey)</strong>: https://www.bluer.co.kr/</li>
+<li><strong>식약처 식품안전나라</strong>: https://www.foodsafetykorea.go.kr/</li>
+<li><strong>김치 박물관 (Museum Kimchikan, 서울)</strong>: https://www.kimchikan.com/</li>
+</ul>
+<hr>
+<h2>🔗 9편 cluster 풀 인덱스</h2>
+<h3>기존 3편 (baseline)</h3>
+<ul>
+<li><strong>[#822 김치 6종 매트릭스](#822)</strong> — 배추·깍두기·총각·열무·나박·동치미 시그니처</li>
+<li><strong>[#823 김치 페어링 워크플로우](#823)</strong> — 5-step + 묵은지 활용</li>
+<li><strong>[#824 김치 4채널 비교](#824)</strong> — 궁중·지역·가정식·상품</li>
+</ul>
+<h3>신규 6편 (확장)</h3>
+<ul>
+<li><strong>[#831 식당 김치 입문 동선](#831)</strong> — 입장→반찬→리필→재방문</li>
+<li><strong>[#832 편의점 PB 김치](#832)</strong> — CU·GS25·세븐·이마트24·노브랜드</li>
+<li><strong>[#833 김치+라면 페어링](#833)</strong> — 라면 5종 × 김치 6종</li>
+<li><strong>[#834 김치+탕/국 시그니처](#834)</strong> — 해장국·국밥·삼계탕 12선</li>
+<li><strong>[#835 김치 맛집 12선](#835)</strong> — 김치찌개·만두·보쌈·국수·전</li>
+<li><strong>[#836 김치 cluster 통합 인덱스 (본 가이드)](#836)</strong> — 9편 + segment 동선</li>
+</ul>
+<h3>키친구 다른 cluster cross</h3>
+<ul>
+<li><strong>[#486 Korea Jjigae Map](#486)</strong> — 찌개 5축</li>
+<li><strong>[#687 Makgeolli](#687)</strong> — 막걸리+김치전 미슐랭 페어</li>
+<li><strong>[#735 K-food Darye Fusion](#735)</strong> — K-food + 김치 UNESCO</li>
+<li><strong>[#751 김장 김치 체험](#751)</strong> — 11월 본격 (가을 시즌)</li>
+<li><strong>[#800 사찰음식](#800)</strong> — 채식·할랄 김치 옵션</li>
+</ul>
+<h2>🏷 태그</h2>
+<p><code>#김치cluster통합인덱스</code> <code>#KimchiClusterIndex</code> <code>#9편풀세트</code> <code>#기존3편신규6편</code> <code>#5segment동선</code> <code>#혼자커플가족MZ예산형</code> <code>#시즌별여름겨울</code> <code>#시간대별아침저녁야식</code> <code>#예산별무료외식한정식</code> <code>#UNESCO김장2013</code> <code>#K-food글로벌1위김치</code> <code>#귀국후김치매니아유지</code> <code>#H마트글로벌한인마트</code> <code>#일본인관광객</code> <code>#중국인관광객</code> <code>#키친구</code></p>
+  </article>
+
+  <div class="share-bar">
+    <span class="share-label">공유</span>
+    <button class="share-btn share-twitter" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent('한국 김치 cluster 통합 인덱스 — 9편 entry point + 5 segment 동선') + '&url=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Twitter">𝕏</button>
+    <button class="share-btn share-facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Facebook">f</button>
+    <button class="share-btn share-kakao" onclick="navigator.share ? navigator.share({title: '한국 김치 cluster 통합 인덱스 — 9편 entry point + 5 segment 동선', url: window.location.href}) : navigator.clipboard.writeText(window.location.href).then(function() { alert('링크 복사됨!'); })" aria-label="Kakao/Share">📤</button>
+    <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href).then(function() { this.textContent = '✓'; setTimeout(function() { document.querySelector('.share-copy').textContent = '🔗'; }, 1500); }.bind(this))" aria-label="Copy link">🔗</button>
+  </div>
+
+  <nav class="detail-nav" aria-label="previous-next">
+    <div><a href="korea-kimchi-restaurant-top12.html" style="color:var(--red);">&larr; 한국 김치 맛집 12선 — 김치가 그날 맛을 좌우하는 노포</a></div>
+    <div></div>
+  </nav>
+</main>
+
+<footer class="site-footer">
+  <p><a href="https://instagram.com/keychingu.korea" target="_blank">@keychingu.korea</a> &mdash; Seoul for MZ FIT Travelers</p>
+</footer>
+</body>
+</html>
