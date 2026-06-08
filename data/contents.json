@@ -18471,7 +18471,7 @@
     ],
     "summary_kr": "식당 동선 6+종 김치 매트릭스 + 입장→기본 반찬→무료 리필→재방문 4단계",
     "summary_en": "Restaurant 6+ kimchi types + 4-step matrix",
-    "en_available": false,
+    "en_available": true,
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
@@ -18493,7 +18493,7 @@
     ],
     "summary_kr": "CU·GS25·세븐·이마트24·노브랜드 5채널 + 가격·용량·매운맛·외국인 매트릭스",
     "summary_en": "CU·GS25·7-Eleven·E24·NoBrand 5-channel PB kimchi matrix",
-    "en_available": false,
+    "en_available": true,
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
@@ -18515,7 +18515,7 @@
     ],
     "summary_kr": "신라면·진라면·삼양·너구리·짜파게티 + 김치 6종 매트릭스",
     "summary_en": "Shin·Jin·Samyang·Neoguri·Chapagetti × kimchi 6 types",
-    "en_available": false,
+    "en_available": true,
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
@@ -18537,7 +18537,7 @@
     ],
     "summary_kr": "해장국·돼지국밥·내장탕·설렁탕·곰탕·삼계탕·갈비탕 12선 + 김치 페어 매트릭스",
     "summary_en": "Haejang·Dwaeji·Naejang·Seolleong·Gom·Samgye·Galbi-tang Top 12 + kimchi pair matrix",
-    "en_available": false,
+    "en_available": true,
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
@@ -18559,7 +18559,7 @@
     ],
     "summary_kr": "김치찌개·만두·족발·보쌈·말이국수·국밥·전·볶음밥·찜 12선",
     "summary_en": "Kimchi-jjigae·mandu·jokbal·bossam·mari-guksu·gukbap·jeon·bokkeumbap·jjim Top 12",
-    "en_available": false,
+    "en_available": true,
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
@@ -18581,7 +18581,7 @@
     ],
     "summary_kr": "9편 통합 인덱스 + 혼자·커플·가족·MZ·예산형 5 segment 동선 + 시즌·시간·예산",
     "summary_en": "9-piece cluster index + 5 segment routes + season·time·budget matrix",
-    "en_available": false,
+    "en_available": true,
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
