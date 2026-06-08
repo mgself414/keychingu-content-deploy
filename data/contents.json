@@ -18271,5 +18271,66 @@
     "cn_available": false,
     "jp_available": false,
     "instagram_posted": false
+  },
+  {
+    "id": "822",
+    "slug": "korea-kimchi-6types-matrix",
+    "title_kr": "한국 김치 6종 매트릭스 — UNESCO 무형문화유산 한식 #1",
+    "title_en": "Korean Kimchi 6 Types Matrix Guide",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "food",
+      "kimchi",
+      "unesco",
+      "matrix",
+      "meta-guide"
+    ],
+    "summary_kr": "배추·깍두기·총각·열무·나박·동치미 6종 + 김장 UNESCO 2013 + 외국인 입문",
+    "summary_en": "6 types matrix + Kimjang UNESCO 2013",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false
+  },
+  {
+    "id": "823",
+    "slug": "korea-kimchi-workflow",
+    "title_kr": "한국 김치 먹는 법·페어링 워크플로우",
+    "title_en": "Korean Kimchi Eating & Pairing Workflow Guide",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "food",
+      "kimchi",
+      "workflow",
+      "meta-guide"
+    ],
+    "summary_kr": "5-step + 음식별 페어링 + 묵은지 활용 + 영어 발화 + 박물관 체험",
+    "summary_en": "5-step + pairing matrix + aged kimchi recipes + museum",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false
+  },
+  {
+    "id": "824",
+    "slug": "korea-kimchi-channel-comparison",
+    "title_kr": "외국인용 한국 김치 궁중 vs 지역 vs 가정식 vs 상품 비교",
+    "title_en": "Korean Kimchi Royal vs Regional vs Household vs Product Comparison",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "food",
+      "kimchi",
+      "comparison",
+      "meta-guide"
+    ],
+    "summary_kr": "4채널 비교 매트릭스 + segment 5 + 궁중·지역·식당·박물관·체험·면세점",
+    "summary_en": "4-channel matrix + 5 segments",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false
   }
 ]
