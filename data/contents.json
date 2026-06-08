@@ -18332,5 +18332,66 @@
     "cn_available": false,
     "jp_available": false,
     "instagram_posted": false
+  },
+  {
+    "id": "825",
+    "slug": "korea-health-food-6types-matrix",
+    "title_kr": "한국 보양식 6종 매트릭스 — 삼복부터 한방까지",
+    "title_en": "Korean Health Food 6 Types Matrix Guide",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "food",
+      "health-food",
+      "samgyetang",
+      "matrix",
+      "meta-guide"
+    ],
+    "summary_kr": "삼계탕·장어·추어탕·소머리국밥·세조·흑염소 6종 + 삼복 + 한방",
+    "summary_en": "6 types matrix + 3 dog days + herbal traditions",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false
+  },
+  {
+    "id": "826",
+    "slug": "korea-health-food-workflow",
+    "title_kr": "한국 보양식 주문·조리법 워크플로우",
+    "title_en": "Korean Health Food Order & Cooking Workflow Guide",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "food",
+      "health-food",
+      "workflow",
+      "meta-guide"
+    ],
+    "summary_kr": "5-step + 한방 약초 시식 + 삼복 매니아 + 영어 발화",
+    "summary_en": "5-step + herbal tasting + 3 dog days tips + English phrases",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false
+  },
+  {
+    "id": "827",
+    "slug": "korea-health-food-channel-comparison",
+    "title_kr": "외국인용 한국 보양식 전통 vs 호텔 vs 한의원 vs 농장 비교",
+    "title_en": "Korean Health Food Heritage vs Hotel vs Herbal vs Farm Comparison",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "food",
+      "health-food",
+      "comparison",
+      "meta-guide"
+    ],
+    "summary_kr": "4채널 비교 매트릭스 + segment 5 + 전통·호텔·한의원·농장",
+    "summary_en": "4-channel matrix + 5 segments",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false
   }
 ]
