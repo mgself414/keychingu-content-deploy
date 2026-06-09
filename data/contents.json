@@ -19618,5 +19618,221 @@
     "cn_available": false,
     "jp_available": false,
     "instagram_posted": false
+  },
+  {
+    "id": "888",
+    "slug": "korea-breakfast-6types-matrix",
+    "title_kr": "아침 식사 6종 매트릭스",
+    "title_en": "아침 식사 6종 매트릭스",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "food",
+      "meta-guide"
+    ],
+    "summary_kr": "6 types + 호텔·MZ·해장·편의점",
+    "summary_en": "6 types + 호텔·MZ·해장·편의점",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false
+  },
+  {
+    "id": "889",
+    "slug": "korea-breakfast-workflow",
+    "title_kr": "아침 식사 주문·매너 워크플로우",
+    "title_en": "아침 식사 주문·매너 워크플로우",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "food",
+      "meta-guide"
+    ],
+    "summary_kr": "5-step + 4 channels",
+    "summary_en": "5-step + 4 channels",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false
+  },
+  {
+    "id": "890",
+    "slug": "korea-breakfast-channel-comparison",
+    "title_kr": "아침 호텔 vs MZ vs 해장 vs 편의점 비교",
+    "title_en": "아침 호텔 vs MZ vs 해장 vs 편의점 비교",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "food",
+      "meta-guide"
+    ],
+    "summary_kr": "4-channel matrix + segment 5",
+    "summary_en": "4-channel matrix + segment 5",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false
+  },
+  {
+    "id": "891",
+    "slug": "korea-deopbap-6types-matrix",
+    "title_kr": "덮밥 6종 매트릭스",
+    "title_en": "덮밥 6종 매트릭스",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "food",
+      "meta-guide"
+    ],
+    "summary_kr": "제육·고등어·명란·임연수·연어·소고기",
+    "summary_en": "제육·고등어·명란·임연수·연어·소고기",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false
+  },
+  {
+    "id": "892",
+    "slug": "korea-deopbap-workflow",
+    "title_kr": "덮밥 주문·페어 워크플로우",
+    "title_en": "덮밥 주문·페어 워크플로우",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "food",
+      "meta-guide"
+    ],
+    "summary_kr": "5-step + 4 channels",
+    "summary_en": "5-step + 4 channels",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false
+  },
+  {
+    "id": "893",
+    "slug": "korea-deopbap-channel-comparison",
+    "title_kr": "덮밥 체인 vs MZ vs 가정식 vs 한정식 비교",
+    "title_en": "덮밥 체인 vs MZ vs 가정식 vs 한정식 비교",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "food",
+      "meta-guide"
+    ],
+    "summary_kr": "4-channel matrix",
+    "summary_en": "4-channel matrix",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false
+  },
+  {
+    "id": "894",
+    "slug": "korea-jjim-6types-matrix",
+    "title_kr": "찜 6종 매트릭스",
+    "title_en": "찜 6종 매트릭스",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "food",
+      "meta-guide"
+    ],
+    "summary_kr": "안동·갈비·아구·해물·메기·LA갈비",
+    "summary_en": "안동·갈비·아구·해물·메기·LA갈비",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false
+  },
+  {
+    "id": "895",
+    "slug": "korea-jjim-workflow",
+    "title_kr": "찜 주문·매너 워크플로우",
+    "title_en": "찜 주문·매너 워크플로우",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "food",
+      "meta-guide"
+    ],
+    "summary_kr": "5-step + 4 channels",
+    "summary_en": "5-step + 4 channels",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false
+  },
+  {
+    "id": "896",
+    "slug": "korea-jjim-channel-comparison",
+    "title_kr": "찜 안동 vs 한정식 vs 마산 vs 자갈치 비교",
+    "title_en": "찜 안동 vs 한정식 vs 마산 vs 자갈치 비교",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "food",
+      "meta-guide"
+    ],
+    "summary_kr": "4-channel matrix",
+    "summary_en": "4-channel matrix",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false
+  },
+  {
+    "id": "897",
+    "slug": "korea-rice-6types-matrix",
+    "title_kr": "밥 6종 매트릭스",
+    "title_en": "밥 6종 매트릭스",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "food",
+      "meta-guide"
+    ],
+    "summary_kr": "어묵철판·명란·공기·솥·영양·치즈볶음",
+    "summary_en": "어묵철판·명란·공기·솥·영양·치즈볶음",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false
+  },
+  {
+    "id": "898",
+    "slug": "korea-rice-workflow",
+    "title_kr": "밥 주문·매너 워크플로우",
+    "title_en": "밥 주문·매너 워크플로우",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "food",
+      "meta-guide"
+    ],
+    "summary_kr": "5-step + 4 channels",
+    "summary_en": "5-step + 4 channels",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false
+  },
+  {
+    "id": "899",
+    "slug": "korea-rice-channel-comparison",
+    "title_kr": "밥 분식 vs MZ vs 한정식 vs 가정식 비교",
+    "title_en": "밥 분식 vs MZ vs 한정식 vs 가정식 비교",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "food",
+      "meta-guide"
+    ],
+    "summary_kr": "4-channel matrix",
+    "summary_en": "4-channel matrix",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false
   }
 ]
