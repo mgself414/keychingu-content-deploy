@@ -19192,5 +19192,66 @@
     "cn_available": false,
     "jp_available": false,
     "instagram_posted": false
+  },
+  {
+    "id": "867",
+    "slug": "korea-jangajji-6types-matrix",
+    "title_kr": "한국 장아찌 6종 매트릭스 — 오이·무·고추·마늘·깻잎·머위",
+    "title_en": "Korean Jangajji 6 Types Pickle Matrix",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "food",
+      "jangajji",
+      "pickle",
+      "matrix",
+      "meta-guide"
+    ],
+    "summary_kr": "6종 매트릭스 + 한정식 반찬 + 가정식 발효",
+    "summary_en": "6 types pickle + hanjeongsik refill + home-style",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false
+  },
+  {
+    "id": "868",
+    "slug": "korea-jangajji-workflow",
+    "title_kr": "한국 장아찌 발효·주문·페어 워크플로우",
+    "title_en": "Korean Jangajji Order & Pairing Workflow Guide",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "food",
+      "jangajji",
+      "workflow",
+      "meta-guide"
+    ],
+    "summary_kr": "5-step + 4채널 + 페어 + 영어 발화 + 통관",
+    "summary_en": "5-step + 4 channels + pairing + English phrases + customs",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false
+  },
+  {
+    "id": "869",
+    "slug": "korea-jangajji-channel-comparison",
+    "title_kr": "외국인용 한국 장아찌 한정식 vs 가정식 vs 시장 vs 면세점 비교",
+    "title_en": "Korean Jangajji Channel Comparison",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "food",
+      "jangajji",
+      "comparison",
+      "meta-guide"
+    ],
+    "summary_kr": "4채널 비교 매트릭스 + segment 5 + 한정식·가정식·시장·면세점",
+    "summary_en": "4-channel matrix + 5 segments",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false
   }
 ]
