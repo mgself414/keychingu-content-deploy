@@ -19919,5 +19919,32 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
+  },
+  {
+    "id": "904",
+    "slug": "summer-hangang-night-market",
+    "title_kr": "여름 한강 야시장·푸드트럭·야경 12선 — 반포·여의도·뚝섬·잠실 + 치맥·라이브·푸드트럭",
+    "title_en": "Summer Han River Night Market·Food Trucks·Night Views 12 — Banpo·Yeouido·Ttukseom·Jamsil + chimaek·live·food trucks",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "travel",
+      "han-river",
+      "night-market",
+      "food-truck",
+      "summer",
+      "banpo",
+      "yeouido",
+      "ttukseom",
+      "jamsil",
+      "bamdokkaebi",
+      "seasonal"
+    ],
+    "summary_kr": "반포·여의도·뚝섬·잠실 4축 + 밤도깨비야시장 + 푸드트럭·치맥존 + 자판기 라면 — 여름 한강 야간 외국인 vlog 1순위",
+    "summary_en": "Banpo·Yeouido·Ttukseom·Jamsil 4-axis + Bamdokkaebi Night Market + food-truck·chimaek zones + vending ramen — No.1 foreigner vlog summer Han River nights",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]
