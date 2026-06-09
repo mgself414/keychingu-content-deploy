@@ -17609,8 +17609,8 @@
     "summary_kr": "4-step 워크플로우 + 시장 5곳 매장·가격·외국인 친화도 + 회 입문자 가이드",
     "summary_en": "4-step market-to-restaurant workflow + Top 5 markets pricing + foreigner-friendly tips",
     "en_available": false,
-    "cn_available": true,
-    "jp_available": true,
+    "cn_available": false,
+    "jp_available": false,
     "instagram_posted": false
   },
   {
@@ -19127,6 +19127,66 @@
       "meta-guide"
     ],
     "summary_kr": "4채널 비교 매트릭스 + segment 5 + 장수동·광장·포장마차·한정식",
+    "summary_en": "4-channel matrix + 5 segments",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false
+  },
+  {
+    "id": "864",
+    "slug": "korea-sashimi-live-aged-matrix",
+    "title_kr": "한국 회 6종 매트릭스 — 활어 vs 숙성·광어·방어·참치·연어·도미·전어",
+    "title_en": "Korean Sashimi 6 Types Live vs Aged Matrix",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "food",
+      "sashimi",
+      "matrix",
+      "meta-guide"
+    ],
+    "summary_kr": "6종 매트릭스 + 활어 vs 숙성 + 한국 vs 일본 sushi 차이",
+    "summary_en": "6 types matrix + live vs aged + Korean vs Japanese sushi",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false
+  },
+  {
+    "id": "865",
+    "slug": "korea-sashimi-market-workflow",
+    "title_kr": "한국 회 주문·시장·횟집·매운탕 워크플로우",
+    "title_en": "Korean Sashimi Order & Market Workflow Guide",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "food",
+      "sashimi",
+      "workflow",
+      "meta-guide"
+    ],
+    "summary_kr": "5-step + 4채널 + 초장 vs 와사비 + 매운탕 + 영어 발화",
+    "summary_en": "5-step + 4 channels + chojang vs wasabi + spicy stew + English phrases",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false
+  },
+  {
+    "id": "866",
+    "slug": "korea-sashimi-market-channel-comparison",
+    "title_kr": "외국인용 한국 회 노량진 vs 자갈치 vs 통영 vs 소래포구 비교",
+    "title_en": "Korean Sashimi Markets Comparison",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "food",
+      "sashimi",
+      "comparison",
+      "meta-guide"
+    ],
+    "summary_kr": "4채널 비교 매트릭스 + segment 5 + 노량진·자갈치·통영·소래포구",
     "summary_en": "4-channel matrix + 5 segments",
     "en_available": false,
     "cn_available": false,
