@@ -19435,5 +19435,66 @@
     "cn_available": false,
     "jp_available": false,
     "instagram_posted": false
+  },
+  {
+    "id": "879",
+    "slug": "korea-bibimbap-5types-matrix",
+    "title_kr": "한국 비빔밥 5종 매트릭스 — 전주·돌솥·셀프·산채·해물",
+    "title_en": "Korean Bibimbap 5 Types Matrix",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "food",
+      "bibimbap",
+      "unesco",
+      "matrix",
+      "meta-guide"
+    ],
+    "summary_kr": "5종 + 전주 UNESCO + 5색 + 채식·할랄",
+    "summary_en": "5 types + Jeonju UNESCO + 5 colors + vegan·halal",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false
+  },
+  {
+    "id": "880",
+    "slug": "korea-bibimbap-workflow",
+    "title_kr": "한국 비빔밥 주문·비비기·페어 워크플로우",
+    "title_en": "Korean Bibimbap Workflow Guide",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "food",
+      "bibimbap",
+      "workflow",
+      "meta-guide"
+    ],
+    "summary_kr": "5-step + 5채널 + 비비기·고추장 가감 + 영어 발화",
+    "summary_en": "5-step + 5 channels + mixing technique + gochujang adjustment",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false
+  },
+  {
+    "id": "881",
+    "slug": "korea-bibimbap-channel-comparison",
+    "title_kr": "외국인용 한국 비빔밥 전주 vs 돌솥 vs 셀프 vs 산채 비교",
+    "title_en": "Korean Bibimbap Venue Comparison",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "food",
+      "bibimbap",
+      "comparison",
+      "meta-guide"
+    ],
+    "summary_kr": "4채널 비교 매트릭스 + segment 6 (채식 별도)",
+    "summary_en": "4-channel matrix + 6 segments (vegan separate)",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false
   }
 ]
