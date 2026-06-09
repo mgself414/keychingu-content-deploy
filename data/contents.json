@@ -19895,5 +19895,29 @@
     "cn_available": false,
     "jp_available": false,
     "instagram_posted": false
+  },
+  {
+    "id": "903",
+    "slug": "rainy-day-indoor",
+    "title_kr": "장마철 실내 명소 서울 12선 — 성수·홍대·강남 비 와도 즐기는 실내 코스",
+    "title_en": "Monsoon-Season Indoor Spots Seoul 12 — Seongsu·Hongdae·Gangnam rain-proof indoor courses",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "travel",
+      "rainy-day",
+      "indoor",
+      "monsoon",
+      "seongsu",
+      "hongdae",
+      "gangnam",
+      "seasonal"
+    ],
+    "summary_kr": "성수·홍대·강남 실내 명소 12선 4축 + 지하 연결 동선 + 우천 1day 패스 — 비 와도 끊김 없는 실내 코스",
+    "summary_en": "12 indoor spots across Seongsu·Hongdae·Gangnam + underground routes + rainy-day pass — uninterrupted course even in the rain",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]
