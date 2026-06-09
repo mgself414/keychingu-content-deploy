@@ -19496,5 +19496,66 @@
     "cn_available": false,
     "jp_available": false,
     "instagram_posted": false
+  },
+  {
+    "id": "882",
+    "slug": "korea-jeon-6types-matrix",
+    "title_kr": "한국 전 6종 매트릭스 — 녹두빈대떡·파전·해물파전·감자전·김치전·동그랑땡",
+    "title_en": "Korean Jeon (Savory Pancake) 6 Types Matrix",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "food",
+      "jeon",
+      "pancake",
+      "matrix",
+      "meta-guide"
+    ],
+    "summary_kr": "6종 + 광장 vlog #1 + 비 오는 날 막걸리 페어",
+    "summary_en": "6 types + Gwangjang vlog + rainy day makgeolli pairing",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false
+  },
+  {
+    "id": "883",
+    "slug": "korea-jeon-workflow",
+    "title_kr": "한국 전 주문·막걸리 페어 워크플로우",
+    "title_en": "Korean Jeon Workflow Guide",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "food",
+      "jeon",
+      "workflow",
+      "meta-guide"
+    ],
+    "summary_kr": "5-step + 4채널 + 막걸리 6종 + 비 오는 날 정통",
+    "summary_en": "5-step + 4 channels + 6 types of makgeolli + rainy day tradition",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false
+  },
+  {
+    "id": "884",
+    "slug": "korea-jeon-channel-comparison",
+    "title_kr": "외국인용 한국 전 광장 vs 전통주점 vs 포장마차 vs 한정식 비교",
+    "title_en": "Korean Jeon Venue Comparison",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "food",
+      "jeon",
+      "comparison",
+      "meta-guide"
+    ],
+    "summary_kr": "4채널 비교 매트릭스 + segment 5",
+    "summary_en": "4-channel matrix + 5 segments",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false
   }
 ]
