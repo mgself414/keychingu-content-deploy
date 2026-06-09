@@ -19253,5 +19253,66 @@
     "cn_available": false,
     "jp_available": false,
     "instagram_posted": false
+  },
+  {
+    "id": "870",
+    "slug": "korea-postmeal-beverage-matrix",
+    "title_kr": "한국 식사 마무리 음료 6종 매트릭스 — 식혜·식해·수정과·동동주·매실차·해장수",
+    "title_en": "Korean Post-Meal Beverage 6 Types Matrix",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "food",
+      "beverage",
+      "post-meal",
+      "matrix",
+      "meta-guide"
+    ],
+    "summary_kr": "6종 매트릭스 + 한정식 마지막 + 해장 + 전통주",
+    "summary_en": "6 types + hanjeongsik final + hangover + traditional rice wine",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false
+  },
+  {
+    "id": "871",
+    "slug": "korea-postmeal-beverage-workflow",
+    "title_kr": "한국 식사 마무리 음료 주문·페어 워크플로우",
+    "title_en": "Korean Post-Meal Beverage Workflow Guide",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "food",
+      "beverage",
+      "workflow",
+      "meta-guide"
+    ],
+    "summary_kr": "5-step + 4채널 + 온도·시기 + 페어 + 영어 발화",
+    "summary_en": "5-step + 4 channels + temperature·seasonal + pairing + English phrases",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false
+  },
+  {
+    "id": "872",
+    "slug": "korea-postmeal-beverage-channel-comparison",
+    "title_kr": "외국인용 한국 식사 마무리 음료 한정식 vs 가정식 vs MZ 카페 vs 마트 비교",
+    "title_en": "Korean Post-Meal Beverage Venue Comparison",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "food",
+      "beverage",
+      "comparison",
+      "meta-guide"
+    ],
+    "summary_kr": "4채널 비교 매트릭스 + segment 5",
+    "summary_en": "4-channel matrix + 5 segments",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false
   }
 ]
