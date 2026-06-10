@@ -19946,5 +19946,33 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
+  },
+  {
+    "id": "905",
+    "slug": "summer-heatwave-24h-cool",
+    "title_kr": "여름 폭염 24시간 cool 동선 매트릭스 12선 — 새벽·정오·오후·저녁·심야 + 무료·지하·실내·물·야간",
+    "title_en": "Summer Heatwave 24-Hour Cool Route Matrix 12 — Dawn/Noon/Afternoon/Evening/Late-Night + free, underground, indoor, water, night",
+    "category": "B",
+    "tags": [
+      "foreign-tourist",
+      "travel",
+      "summer",
+      "heatwave",
+      "24h",
+      "indoor",
+      "hangang",
+      "hangang-pool",
+      "namsan",
+      "coex",
+      "jjimjilbang",
+      "museum",
+      "seasonal"
+    ],
+    "summary_kr": "5축 12선 (새벽·아침·정오·오후·저녁·심야) + 실수 3 + 24h 코스 3 — 폭염 일 외국인 시간대별 cool 동선 매트릭스 (무료·지하·실내·물·야간)",
+    "summary_en": "5 axes × 12 picks (dawn, morning, noon, afternoon, evening, late-night) + 3 mistakes + 3 sample 24h courses — heatwave-day time-banded cool route matrix for foreigners (free, underground, indoor, water, night)",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]
