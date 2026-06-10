@@ -20003,5 +20003,30 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
+  },
+  {
+    "id": "908",
+    "slug": "bukchon-gallery-hanok-dining",
+    "title_kr": "북촌·삼청·안국 갤러리·한옥 다이닝 12선",
+    "title_en": "Bukchon·Samcheong·Anguk Gallery & Hanok Dining 12 Best",
+    "category": "C",
+    "tags": [
+      "foreign-tourist",
+      "food",
+      "bukchon",
+      "samcheong",
+      "anguk",
+      "gallery",
+      "hanok",
+      "fine-dining",
+      "cafe",
+      "art"
+    ],
+    "summary_kr": "갤러리 다이닝·한옥 카페·한옥 한정식·글로벌 4축 12선 — 테라로사 국현·PKM가든·오설록·어니언 안국·연경당·소선재·런던베이글 + art+food 코스 3 — 북촌 클래식에 갤러리 다이닝 hook을 얹은 미개척 cluster",
+    "summary_en": "Gallery dining·hanok cafes·hanok fine dining·global, 4 axes × 12 — TERAROSA MMCA·PKM Garden·OSULLOC·Onion Anguk·Yeongyeongdang·Soseonjae·London Bagel + 3 art+food courses — a gallery-dining hook on classic Bukchon",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]
