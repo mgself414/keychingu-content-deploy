@@ -20028,5 +20028,30 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
+  },
+  {
+    "id": "909",
+    "slug": "mangwon-hongdae-japanese-dining",
+    "title_kr": "망원·연남·홍대 일식 12선",
+    "title_en": "Mangwon·Yeonnam·Hongdae Japanese Cuisine 12 Best",
+    "category": "C",
+    "tags": [
+      "foreign-tourist",
+      "food",
+      "japanese",
+      "izakaya",
+      "ramen",
+      "sushi",
+      "omakase",
+      "mangwon",
+      "yeonnam",
+      "hongdae"
+    ],
+    "summary_kr": "이자카야·라멘·스시오마카세·일식당 4축 12선 — 카쿠시타·로바타 우직·사루카메·스시벅스 망원시장·로스트비프 산볼 + 일본인도 인정하는 K-일식 노포 — 일본 segment hook",
+    "summary_en": "Izakaya·ramen·sushi-omakase·Japanese diners, 4 axes × 12 — Kakushita·Robata Woojik·Sarukame·Sushi Box Mangwon Market·Roast Beef Sanbol + K-Japanese gems even Japanese travelers approve — Japan segment hook",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]
