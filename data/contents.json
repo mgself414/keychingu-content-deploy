@@ -20053,5 +20053,30 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
+  },
+  {
+    "id": "910",
+    "slug": "ikseondong-insadong-hanok-dessert",
+    "title_kr": "익선동·인사동 한옥 카페 & 전통 디저트 12선",
+    "title_en": "Ikseondong·Insadong Hanok Cafes & Traditional Desserts 12 Best",
+    "category": "C",
+    "tags": [
+      "foreign-tourist",
+      "food",
+      "dessert",
+      "hanok",
+      "cafe",
+      "ikseondong",
+      "insadong",
+      "hangwa",
+      "yakgwa",
+      "traditional"
+    ],
+    "summary_kr": "익선 한옥카페·익선 한옥디저트·인사동 전통한과·동선 4축 12선 — 서울커피 익선·플리퍼스·동백양과점·한과미의식 인사동(8,380)·청수당 + art+sweets 코스 3 — 인사동·한옥 클래식에 한옥 카페·전통 디저트 hook",
+    "summary_en": "Ikseon hanok cafes·hanok desserts·Insadong traditional hangwa·routes, 4 axes × 12 — Seoul Coffee Ikseon·Flipper's·Dongbaek Confectionery·Hangwa Miuisik Insadong (8,380)·Cheongsudang + 3 art+sweets courses — a hanok-cafe·traditional-dessert hook on classic Insadong",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]
