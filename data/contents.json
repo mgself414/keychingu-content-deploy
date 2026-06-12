@@ -3622,7 +3622,9 @@
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
-    "jp_available": true
+    "jp_available": true,
+    "image": "assets/og/spring-cherry-blossom.jpg",
+    "image_credit": "Korea Tourism Organization (공공누리 1유형)"
   },
   {
     "id": "231",
@@ -6972,7 +6974,9 @@
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
-    "jp_available": true
+    "jp_available": true,
+    "image": "assets/og/hanbok-palace.jpg",
+    "image_credit": "Korea Tourism Organization (공공누리 1유형)"
   },
   {
     "id": "380",
@@ -7001,7 +7005,9 @@
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
-    "jp_available": true
+    "jp_available": true,
+    "image": "assets/og/traditional-market.jpg",
+    "image_credit": "Korea Tourism Organization (공공누리 1유형)"
   },
   {
     "id": "381",
@@ -16536,7 +16542,9 @@
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
-    "jp_available": true
+    "jp_available": true,
+    "image": "assets/og/namsan-fall-foliage.jpg",
+    "image_credit": "Korea Tourism Organization (공공누리 1유형)"
   },
   {
     "id": "738",
@@ -17036,7 +17044,9 @@
     "en_available": true,
     "cn_available": true,
     "jp_available": true,
-    "instagram_posted": false
+    "instagram_posted": false,
+    "image": "assets/og/korea-spring-buddha-birthday.jpg",
+    "image_credit": "Korea Tourism Organization (공공누리 1유형)"
   },
   {
     "id": "761",
@@ -17437,7 +17447,9 @@
     "en_available": true,
     "cn_available": true,
     "jp_available": true,
-    "instagram_posted": false
+    "instagram_posted": false,
+    "image": "assets/og/korea-monsoon-rainy-season.jpg",
+    "image_credit": "Korea Tourism Organization (공공누리 1유형)"
   },
   {
     "id": "782",
@@ -17650,7 +17662,9 @@
     "en_available": true,
     "cn_available": true,
     "jp_available": true,
-    "instagram_posted": false
+    "instagram_posted": false,
+    "image": "assets/og/korea-architecture-matrix.jpg",
+    "image_credit": "Korea Tourism Organization (공공누리 1유형)"
   },
   {
     "id": "790",
@@ -17740,7 +17754,9 @@
     "en_available": true,
     "cn_available": true,
     "jp_available": true,
-    "instagram_posted": false
+    "instagram_posted": false,
+    "image": "assets/og/korea-kdrama-2026-2027.jpg",
+    "image_credit": "Korea Tourism Organization (공공누리 1유형)"
   },
   {
     "id": "795",
@@ -17848,7 +17864,9 @@
     "en_available": true,
     "cn_available": true,
     "jp_available": true,
-    "instagram_posted": false
+    "instagram_posted": false,
+    "image": "assets/og/korea-temple-food-jeongtong.jpg",
+    "image_credit": "Korea Tourism Organization (공공누리 1유형)"
   },
   {
     "id": "801",
@@ -17923,7 +17941,9 @@
     "en_available": false,
     "cn_available": true,
     "jp_available": true,
-    "instagram_posted": false
+    "instagram_posted": false,
+    "image": "assets/og/korea-bbq-cuts-grade-matrix.jpg",
+    "image_credit": "Korea Tourism Organization (공공누리 1유형)"
   },
   {
     "id": "805",
@@ -17966,7 +17986,9 @@
     "en_available": false,
     "cn_available": false,
     "jp_available": false,
-    "instagram_posted": false
+    "instagram_posted": false,
+    "image": "assets/og/korea-bbq-channel-comparison.jpg",
+    "image_credit": "Korea Tourism Organization (공공누리 1유형)"
   },
   {
     "id": "807",
@@ -17987,7 +18009,9 @@
     "en_available": false,
     "cn_available": false,
     "jp_available": false,
-    "instagram_posted": false
+    "instagram_posted": false,
+    "image": "assets/og/korea-gukbap-6types-matrix.jpg",
+    "image_credit": "Korea Tourism Organization (공공누리 1유형)"
   },
   {
     "id": "808",
@@ -18027,7 +18051,9 @@
     "en_available": false,
     "cn_available": false,
     "jp_available": false,
-    "instagram_posted": false
+    "instagram_posted": false,
+    "image": "assets/og/korea-gukbap-channel-comparison.jpg",
+    "image_credit": "Korea Tourism Organization (공공누리 1유형)"
   },
   {
     "id": "810",
@@ -18048,7 +18074,9 @@
     "en_available": false,
     "cn_available": false,
     "jp_available": false,
-    "instagram_posted": false
+    "instagram_posted": false,
+    "image": "assets/og/korea-bunsik-8types-matrix.jpg",
+    "image_credit": "Korea Tourism Organization (공공누리 1유형)"
   },
   {
     "id": "811",
@@ -18108,7 +18136,9 @@
     "en_available": false,
     "cn_available": false,
     "jp_available": false,
-    "instagram_posted": false
+    "instagram_posted": false,
+    "image": "assets/og/korea-noodles-6types-matrix.jpg",
+    "image_credit": "Korea Tourism Organization (공공누리 1유형)"
   },
   {
     "id": "814",
@@ -18148,7 +18178,9 @@
     "en_available": false,
     "cn_available": false,
     "jp_available": false,
-    "instagram_posted": false
+    "instagram_posted": false,
+    "image": "assets/og/korea-noodles-channel-comparison.jpg",
+    "image_credit": "Korea Tourism Organization (공공누리 1유형)"
   },
   {
     "id": "816",
@@ -18169,7 +18201,9 @@
     "en_available": false,
     "cn_available": false,
     "jp_available": false,
-    "instagram_posted": false
+    "instagram_posted": false,
+    "image": "assets/og/korea-chicken-6types-matrix.jpg",
+    "image_credit": "Korea Tourism Organization (공공누리 1유형)"
   },
   {
     "id": "817",
@@ -18210,7 +18244,9 @@
     "en_available": false,
     "cn_available": false,
     "jp_available": false,
-    "instagram_posted": false
+    "instagram_posted": false,
+    "image": "assets/og/korea-chicken-channel-comparison.jpg",
+    "image_credit": "Korea Tourism Organization (공공누리 1유형)"
   },
   {
     "id": "819",
@@ -18230,7 +18266,9 @@
     "en_available": false,
     "cn_available": false,
     "jp_available": false,
-    "instagram_posted": false
+    "instagram_posted": false,
+    "image": "assets/og/korea-dessert-6types-matrix.jpg",
+    "image_credit": "Korea Tourism Organization (공공누리 1유형)"
   },
   {
     "id": "820",
@@ -18291,7 +18329,9 @@
     "en_available": false,
     "cn_available": false,
     "jp_available": false,
-    "instagram_posted": false
+    "instagram_posted": false,
+    "image": "assets/og/korea-kimchi-6types-matrix.jpg",
+    "image_credit": "Korea Tourism Organization (공공누리 1유형)"
   },
   {
     "id": "823",
@@ -18311,7 +18351,9 @@
     "en_available": false,
     "cn_available": false,
     "jp_available": false,
-    "instagram_posted": false
+    "instagram_posted": false,
+    "image": "assets/og/korea-kimchi-workflow.jpg",
+    "image_credit": "Korea Tourism Organization (공공누리 1유형)"
   },
   {
     "id": "824",
@@ -18331,7 +18373,9 @@
     "en_available": false,
     "cn_available": false,
     "jp_available": false,
-    "instagram_posted": false
+    "instagram_posted": false,
+    "image": "assets/og/korea-kimchi-channel-comparison.jpg",
+    "image_credit": "Korea Tourism Organization (공공누리 1유형)"
   },
   {
     "id": "825",
@@ -18352,7 +18396,9 @@
     "en_available": false,
     "cn_available": false,
     "jp_available": false,
-    "instagram_posted": false
+    "instagram_posted": false,
+    "image": "assets/og/korea-health-food-6types-matrix.jpg",
+    "image_credit": "Korea Tourism Organization (공공누리 1유형)"
   },
   {
     "id": "826",
@@ -18413,7 +18459,9 @@
     "en_available": false,
     "cn_available": false,
     "jp_available": false,
-    "instagram_posted": false
+    "instagram_posted": false,
+    "image": "assets/og/korea-alcohol-6types-matrix.jpg",
+    "image_credit": "Korea Tourism Organization (공공누리 1유형)"
   },
   {
     "id": "829",
@@ -18474,7 +18522,9 @@
     "en_available": true,
     "cn_available": true,
     "jp_available": true,
-    "instagram_posted": false
+    "instagram_posted": false,
+    "image": "assets/og/korea-kimchi-restaurant-encounter.jpg",
+    "image_credit": "Korea Tourism Organization (공공누리 1유형)"
   },
   {
     "id": "832",
@@ -18496,7 +18546,9 @@
     "en_available": true,
     "cn_available": true,
     "jp_available": true,
-    "instagram_posted": false
+    "instagram_posted": false,
+    "image": "assets/og/korea-kimchi-convenience-store-pb.jpg",
+    "image_credit": "Korea Tourism Organization (공공누리 1유형)"
   },
   {
     "id": "833",
@@ -18518,7 +18570,9 @@
     "en_available": true,
     "cn_available": true,
     "jp_available": true,
-    "instagram_posted": false
+    "instagram_posted": false,
+    "image": "assets/og/korea-kimchi-ramen-pairing-deep.jpg",
+    "image_credit": "Korea Tourism Organization (공공누리 1유형)"
   },
   {
     "id": "834",
@@ -18540,7 +18594,9 @@
     "en_available": true,
     "cn_available": true,
     "jp_available": true,
-    "instagram_posted": false
+    "instagram_posted": false,
+    "image": "assets/og/korea-kimchi-stew-soup-signature.jpg",
+    "image_credit": "Korea Tourism Organization (공공누리 1유형)"
   },
   {
     "id": "835",
@@ -18562,7 +18618,9 @@
     "en_available": true,
     "cn_available": true,
     "jp_available": true,
-    "instagram_posted": false
+    "instagram_posted": false,
+    "image": "assets/og/korea-kimchi-restaurant-top12.jpg",
+    "image_credit": "Korea Tourism Organization (공공누리 1유형)"
   },
   {
     "id": "836",
@@ -18584,7 +18642,9 @@
     "en_available": true,
     "cn_available": true,
     "jp_available": true,
-    "instagram_posted": false
+    "instagram_posted": false,
+    "image": "assets/og/korea-kimchi-cluster-index.jpg",
+    "image_credit": "Korea Tourism Organization (공공누리 1유형)"
   },
   {
     "id": "837",
