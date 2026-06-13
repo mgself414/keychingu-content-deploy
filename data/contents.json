@@ -22020,5 +22020,222 @@
     "instagram_posted": false,
     "image": "",
     "image_credit": ""
+  },
+  {
+    "id": "1081",
+    "slug": "korea-hanok-tea-experience-6",
+    "title_kr": "외국인 한옥 체험 + 다도 6곳",
+    "title_en": "Korea Hanok Experience·Tea Ceremony 6 Foreign Guide",
+    "category": "E",
+    "tags": [
+      "foreign-tourist",
+      "hanok",
+      "tea-ceremony",
+      "experience",
+      "meta-guide"
+    ],
+    "summary_kr": "북촌·익선·인사·서촌·전주·경주 한옥 체험·다도 6선 + etiquette",
+    "summary_en": "Bukchon Ikseon Insadong Seochon Jeonju Gyeongju hanok experience·tea ceremony 6 spots",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false,
+    "image": "",
+    "image_credit": ""
+  },
+  {
+    "id": "1082",
+    "slug": "seoul-gyeongui-park-1day",
+    "title_kr": "외국인 경의선 숲길 1일 체험 코스",
+    "title_en": "Seoul Gyeongui Forest Park 1-Day Course Foreign Guide",
+    "category": "E",
+    "tags": [
+      "foreign-tourist",
+      "park",
+      "cafe",
+      "experience",
+      "meta-guide"
+    ],
+    "summary_kr": "경의선 숲길 1일 7-stop 풀세트 + 카페·공방·산책·야경",
+    "summary_en": "Gyeongui Forest Park 1-day 7-stop + cafe·workshop·walk·night view",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false,
+    "image": "",
+    "image_credit": ""
+  },
+  {
+    "id": "1083",
+    "slug": "korea-ceramic-craft-class-5",
+    "title_kr": "외국인 한국 도자기·공예 클래스 5곳",
+    "title_en": "Korea Ceramic·Craft Class 5 Foreign Guide",
+    "category": "E",
+    "tags": [
+      "foreign-tourist",
+      "ceramic",
+      "craft",
+      "k-content",
+      "meta-guide"
+    ],
+    "summary_kr": "홍대·연남·이태원·경주·이천 도자기·공예 5선",
+    "summary_en": "Hongdae Yeonnam Itaewon Gyeongju Icheon ceramic·craft 5 spots",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false,
+    "image": "",
+    "image_credit": ""
+  },
+  {
+    "id": "1084",
+    "slug": "korea-cooking-class-5",
+    "title_kr": "외국인 한국 요리 클래스 5곳",
+    "title_en": "Korea Cooking Class 5 Foreign Guide",
+    "category": "E",
+    "tags": [
+      "foreign-tourist",
+      "cooking",
+      "k-food",
+      "experience",
+      "meta-guide"
+    ],
+    "summary_kr": "홍대·이태원·종로·전주·부산 한국 요리 클래스 5선",
+    "summary_en": "Hongdae Itaewon Jongno Jeonju Busan Korean cooking class 5 spots",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false,
+    "image": "",
+    "image_credit": ""
+  },
+  {
+    "id": "1085",
+    "slug": "seoul-k-escape-room-7",
+    "title_kr": "외국인 K-방탈출 7곳 + 영어 가능",
+    "title_en": "Seoul K-Escape Room 7 English-Available Foreign Guide",
+    "category": "G",
+    "tags": [
+      "foreign-tourist",
+      "escape-room",
+      "k-drama",
+      "meta-guide"
+    ],
+    "summary_kr": "홍대·강남·신촌·이태원·종로·건대·잠실 K-방탈출 7선",
+    "summary_en": "Hongdae Gangnam Sinchon Itaewon Jongno Konkuk Jamsil K-escape room 7 spots",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false,
+    "image": "",
+    "image_credit": ""
+  },
+  {
+    "id": "1086",
+    "slug": "seoul-colin-b-curator",
+    "title_kr": "외국인 서울 콜린비 핫플 큐레이터 가이드",
+    "title_en": "Seoul Colin·B Foreign Curator Guide",
+    "category": "F",
+    "tags": [
+      "foreign-tourist",
+      "curator",
+      "instagram",
+      "meta-guide"
+    ],
+    "summary_kr": "콜린비 류 영어 인스타 큐레이터 8선 + 시그너 핫플·동선",
+    "summary_en": "Colin·B foreign curator 8 + signature hot spots·routes",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false,
+    "image": "",
+    "image_credit": ""
+  },
+  {
+    "id": "1087",
+    "slug": "korea-indie-bookstore-cafe-5",
+    "title_kr": "외국인 독립서점 + 카페 콤보 5곳",
+    "title_en": "Korea Indie Bookstore·Cafe Combo 5 Foreign Guide",
+    "category": "F",
+    "tags": [
+      "foreign-tourist",
+      "bookstore",
+      "cafe",
+      "meta-guide"
+    ],
+    "summary_kr": "북촌·연남·이태원·전주·부산 독립서점+카페 콤보 5선",
+    "summary_en": "Bukchon Yeonnam Itaewon Jeonju Busan indie bookstore+cafe combo 5",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false,
+    "image": "",
+    "image_credit": ""
+  },
+  {
+    "id": "1088",
+    "slug": "seoul-golmok-select-shop-7",
+    "title_kr": "외국인 안국·익선·연남 골목 편집샵 7곳",
+    "title_en": "Seoul Golmok Select Shop 7 Foreign Guide",
+    "category": "F",
+    "tags": [
+      "foreign-tourist",
+      "select-shop",
+      "design",
+      "fashion",
+      "meta-guide"
+    ],
+    "summary_kr": "안국·익선·연남·삼청·인사·서촌·성수 골목 편집샵 7선",
+    "summary_en": "Anguk Ikseon Yeonnam Samcheong Insa Seochon Seongsu golmok select shop 7",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false,
+    "image": "",
+    "image_credit": ""
+  },
+  {
+    "id": "1089",
+    "slug": "korea-kpop-goods-shopping",
+    "title_kr": "외국인 한국 굿즈 쇼핑 (BTS·NCT·K-content)",
+    "title_en": "Korea K-Goods Shopping (BTS·NCT·K-content) Foreign Guide",
+    "category": "G",
+    "tags": [
+      "foreign-tourist",
+      "k-pop",
+      "bts",
+      "goods",
+      "meta-guide"
+    ],
+    "summary_kr": "한국 굿즈 7선 + BTS·NCT·K-drama·K-beauty·K-stationery",
+    "summary_en": "Korea goods 7 + BTS·NCT·K-drama·K-beauty·K-stationery",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false,
+    "image": "",
+    "image_credit": ""
+  },
+  {
+    "id": "1090",
+    "slug": "korea-bingsu-concept-7",
+    "title_kr": "외국인 컨셉 빙수 도장깨기 7곳",
+    "title_en": "Korea Bingsu Concept Hopping 7 Foreign Guide",
+    "category": "F",
+    "tags": [
+      "foreign-tourist",
+      "bingsu",
+      "dessert",
+      "summer",
+      "meta-guide"
+    ],
+    "summary_kr": "호텔·전통·과일·매니아 빙수 7선 도장깨기",
+    "summary_en": "Hotel·traditional·fruit·maniac bingsu 7 concept hopping",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false,
+    "image": "",
+    "image_credit": ""
   }
 ]
