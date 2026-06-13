@@ -21915,5 +21915,110 @@
     "instagram_posted": false,
     "image": "",
     "image_credit": ""
+  },
+  {
+    "id": "1076",
+    "slug": "korea-hanok-stay-7-route",
+    "title_kr": "외국인 한국 한옥스테이 7곳 + 동선",
+    "title_en": "Korea Hanok Stay 7 Spots + Foreign Route Guide",
+    "category": "I",
+    "tags": [
+      "foreign-tourist",
+      "hanok",
+      "stay",
+      "meta-guide"
+    ],
+    "summary_kr": "한국 한옥스테이 7선 (북촌·전주·경주·안동·하회·양동) + 동선·예약·etiquette",
+    "summary_en": "Korea hanok stay 7 spots (Bukchon Jeonju Gyeongju Andong Hahoe Yangdong) + route·booking·etiquette",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false,
+    "image": "",
+    "image_credit": ""
+  },
+  {
+    "id": "1077",
+    "slug": "seoul-boutique-hotel-7",
+    "title_kr": "외국인 서울 부티크 호텔 7곳",
+    "title_en": "Seoul Boutique Hotel 7 Foreign Guide",
+    "category": "I",
+    "tags": [
+      "foreign-tourist",
+      "boutique-hotel",
+      "seoul",
+      "meta-guide"
+    ],
+    "summary_kr": "서울 부티크 호텔 7선 + 가격대·동네·예약 매트릭스",
+    "summary_en": "Seoul boutique hotel 7 spots + price·neighborhood·booking matrix",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false,
+    "image": "",
+    "image_credit": ""
+  },
+  {
+    "id": "1078",
+    "slug": "korea-regional-food-2d1n",
+    "title_kr": "외국인 지방 미식 1박2일 — 전주·부산·강릉",
+    "title_en": "Korea Regional Cuisine 2D1N — Jeonju·Busan·Gangneung",
+    "category": "C",
+    "tags": [
+      "foreign-tourist",
+      "regional-food",
+      "ktx",
+      "meta-guide"
+    ],
+    "summary_kr": "전주·부산·강릉 1박2일 패키지 + KTX·다이닝·숙박·동선",
+    "summary_en": "Jeonju Busan Gangneung 2D1N package + KTX·dining·lodging·route",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false,
+    "image": "",
+    "image_credit": ""
+  },
+  {
+    "id": "1079",
+    "slug": "seoul-guesthouse-7",
+    "title_kr": "외국인 서울 게스트하우스 7곳",
+    "title_en": "Seoul Guesthouse 7 Foreign Guide",
+    "category": "I",
+    "tags": [
+      "foreign-tourist",
+      "guesthouse",
+      "backpacker",
+      "meta-guide"
+    ],
+    "summary_kr": "서울 게스트하우스 7선 + 예산·시설·예약 매트릭스",
+    "summary_en": "Seoul guesthouse 7 spots + budget·facility·booking matrix",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false,
+    "image": "",
+    "image_credit": ""
+  },
+  {
+    "id": "1080",
+    "slug": "korea-capsule-jjimjilbang",
+    "title_kr": "외국인 한국 캡슐 호텔·찜질방 숙박",
+    "title_en": "Korea Capsule Hotel·Jjimjilbang Stay Foreign Guide",
+    "category": "I",
+    "tags": [
+      "foreign-tourist",
+      "capsule-hotel",
+      "jjimjilbang",
+      "meta-guide"
+    ],
+    "summary_kr": "한국 캡슐 호텔·찜질방 숙박 5선 + 24시간 운영·체험·etiquette",
+    "summary_en": "Korea capsule hotel·jjimjilbang stay 5 spots + 24h operation·experience·etiquette",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false,
+    "image": "",
+    "image_credit": ""
   }
 ]
