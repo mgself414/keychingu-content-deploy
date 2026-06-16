@@ -22554,5 +22554,109 @@
     "cn_available": false,
     "jp_available": false,
     "instagram_posted": false
+  },
+  {
+    "id": "1091",
+    "slug": "itaewon-fried-chicken",
+    "title_kr": "외국인 이태원 치킨 가이드",
+    "title_en": "Itaewon Fried Chicken Guide for Foreigners",
+    "category": "A",
+    "tags": [
+      "itaewon",
+      "fried-chicken",
+      "korean-chicken",
+      "nightlife",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "이태원·한남 외국인 fit 치킨 7곳 - 한국 치킨 입문부터 심야 치맥까지",
+    "summary_en": "Itaewon & Hannam fried chicken 7 picks for foreigners - from intro to late-night chimaek",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false
+  },
+  {
+    "id": "1092",
+    "slug": "gangnam-study-coworking",
+    "title_kr": "외국인 강남 스터디카페·코워킹 가이드",
+    "title_en": "Gangnam Study Cafe & Coworking Guide for Foreigners",
+    "category": "C",
+    "tags": [
+      "gangnam",
+      "study-cafe",
+      "coworking",
+      "digital-nomad",
+      "workation",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "강남·역삼·선릉 외국인 fit 7곳 - 24h·영어·디지털 노마드",
+    "summary_en": "Gangnam study cafe & coworking 7 picks - 24h, English-friendly, digital nomad fit",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false
+  },
+  {
+    "id": "1093",
+    "slug": "hongdae-hapjeong-italian-hidden-8",
+    "title_kr": "외국인 홍대·합정 양식 hidden 8선",
+    "title_en": "Hongdae Hapjeong Hidden Italian & Western 8 Picks",
+    "category": "A",
+    "tags": [
+      "hongdae",
+      "hapjeong",
+      "italian",
+      "western",
+      "hidden",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "홍대·합정·망원 외국인 fit 양식 hidden 8곳",
+    "summary_en": "Hongdae & Hapjeong hidden Italian & Western 8 picks",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false
+  },
+  {
+    "id": "1094",
+    "slug": "itaewon-hannam-chinese-fine-dining",
+    "title_kr": "외국인 이태원·한남 중식 fine dining 가이드",
+    "title_en": "Itaewon Hannam Chinese Fine Dining Guide for Foreigners",
+    "category": "A",
+    "tags": [
+      "itaewon",
+      "hannam",
+      "chinese",
+      "fine-dining",
+      "hotel",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "이태원·한남 중식 fine dining 7곳 - 호텔부터 노포까지",
+    "summary_en": "Itaewon & Hannam Chinese fine dining 7 picks - from hotel to local",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false
+  },
+  {
+    "id": "1095",
+    "slug": "hongdae-traditional-food-7",
+    "title_kr": "외국인 홍대 전통식품·디저트·떡 7곳",
+    "title_en": "Hongdae Traditional Food Dessert & Tteok 7 Picks",
+    "category": "A",
+    "tags": [
+      "hongdae",
+      "traditional",
+      "dessert",
+      "tteok",
+      "korean-snack",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "홍대·합정·망원 전통식품·떡·약과·강정 7곳",
+    "summary_en": "Hongdae traditional food dessert tteok 7 picks",
+    "en_available": false,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false
   }
 ]
