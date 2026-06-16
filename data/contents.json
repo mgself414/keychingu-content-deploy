@@ -22570,9 +22570,9 @@
     ],
     "summary_kr": "이태원·한남 외국인 fit 치킨 7곳 - 한국 치킨 입문부터 심야 치맥까지",
     "summary_en": "Itaewon & Hannam fried chicken 7 picks for foreigners - from intro to late-night chimaek",
-    "en_available": false,
-    "cn_available": false,
-    "jp_available": false,
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
     "instagram_posted": false
   },
   {
@@ -22591,9 +22591,9 @@
     ],
     "summary_kr": "강남·역삼·선릉 외국인 fit 7곳 - 24h·영어·디지털 노마드",
     "summary_en": "Gangnam study cafe & coworking 7 picks - 24h, English-friendly, digital nomad fit",
-    "en_available": false,
-    "cn_available": false,
-    "jp_available": false,
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
     "instagram_posted": false
   },
   {
@@ -22612,9 +22612,9 @@
     ],
     "summary_kr": "홍대·합정·망원 외국인 fit 양식 hidden 8곳",
     "summary_en": "Hongdae & Hapjeong hidden Italian & Western 8 picks",
-    "en_available": false,
-    "cn_available": false,
-    "jp_available": false,
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
     "instagram_posted": false
   },
   {
@@ -22633,9 +22633,9 @@
     ],
     "summary_kr": "이태원·한남 중식 fine dining 7곳 - 호텔부터 노포까지",
     "summary_en": "Itaewon & Hannam Chinese fine dining 7 picks - from hotel to local",
-    "en_available": false,
-    "cn_available": false,
-    "jp_available": false,
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
     "instagram_posted": false
   },
   {
@@ -22654,9 +22654,9 @@
     ],
     "summary_kr": "홍대·합정·망원 전통식품·떡·약과·강정 7곳",
     "summary_en": "Hongdae traditional food dessert tteok 7 picks",
-    "en_available": false,
-    "cn_available": false,
-    "jp_available": false,
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
     "instagram_posted": false
   }
 ]
