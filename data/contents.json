@@ -22785,5 +22785,50 @@
     "instagram_posted": false,
     "image": "",
     "image_credit": ""
+  },
+  {
+    "id": "1102",
+    "slug": "kdrama-regional-locations-busan-jeonju-gangwon",
+    "title_kr": "외국인 K-드라마 촬영지 지방·외곽 deep dive — 부산·전주·강원",
+    "title_en": "K-Drama Regional Filming Locations Deep Dive — Busan·Jeonju·Gangwon",
+    "category": "G",
+    "tags": [
+      "foreign-tourist",
+      "k-drama",
+      "filming-location",
+      "regional",
+      "meta-guide"
+    ],
+    "summary_kr": "부산·전주·강원·인천·경기·제주 K-drama 9선 + KTX 매트릭스",
+    "summary_en": "Busan·Jeonju·Gangwon·Incheon·Gyeonggi·Jeju K-drama 9 spots + KTX matrix",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false,
+    "image": "",
+    "image_credit": ""
+  },
+  {
+    "id": "1103",
+    "slug": "kcontent-full-set-7-index",
+    "title_kr": "외국인 K-content 풀세트 7편 통합 인덱스",
+    "title_en": "K-Content Full Set 7 Guide Integrated Index for Foreigners",
+    "category": "G",
+    "tags": [
+      "foreign-tourist",
+      "k-content",
+      "k-drama",
+      "k-pop",
+      "meta-guide",
+      "index"
+    ],
+    "summary_kr": "K-drama·K-pop MV·웹툰·K-방탈출·K-굿즈 7편 통합 인덱스",
+    "summary_en": "K-drama·K-pop MV·webtoon·K-escape·K-goods 7 guides integrated index",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false,
+    "image": "",
+    "image_credit": ""
   }
 ]
