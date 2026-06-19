@@ -22830,5 +22830,110 @@
     "instagram_posted": false,
     "image": "",
     "image_credit": ""
+  },
+  {
+    "id": "1104",
+    "slug": "long-stay-7day-master-plan",
+    "title_kr": "외국인 장기여행자 7일+ 마스터 플랜",
+    "title_en": "Korea 7+ Day Long Stay Master Plan for Foreign Travelers",
+    "category": "B",
+    "tags": [
+      "long-stay",
+      "7day",
+      "master-plan",
+      "us-eu-tourist",
+      "ktx",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "미국·유럽 7일+ 장기여행자 마스터 — 서울 4일 + KTX 근교 3일 cluster",
+    "summary_en": "7+ day master plan for US/EU long-stay travelers - Seoul 4 days + KTX suburb 3 days",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1105",
+    "slug": "seoul-suburb-daytrip-7",
+    "title_kr": "외국인 서울 근교 day trip 7선",
+    "title_en": "Seoul Suburb Day Trip 7 Picks for Foreign Travelers",
+    "category": "B",
+    "tags": [
+      "seoul-suburb",
+      "daytrip",
+      "dmz",
+      "nami",
+      "suwon",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "장기여행자 서울 근교 1일 동선 7곳 - DMZ·남이섬·수원·강화·양수리",
+    "summary_en": "Seoul suburb day trip 7 picks for long-stay travelers",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1106",
+    "slug": "gangneung-ktx-2day",
+    "title_kr": "외국인 강릉 KTX 1박2일 풀가이드",
+    "title_en": "Gangneung KTX 2-Day Full Guide",
+    "category": "B",
+    "tags": [
+      "gangneung",
+      "ktx",
+      "2day",
+      "coffee",
+      "beach",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "서울 KTX 1.8h 동해 강릉 1박2일 - 정동진·경포·커피거리",
+    "summary_en": "Gangneung KTX 2-day guide - sea, coffee, K-drama spots",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1107",
+    "slug": "jeonju-ktx-2day",
+    "title_kr": "외국인 전주 KTX 1박2일 풀가이드",
+    "title_en": "Jeonju KTX 2-Day Full Guide",
+    "category": "B",
+    "tags": [
+      "jeonju",
+      "ktx",
+      "2day",
+      "hanok",
+      "bibimbap",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "전주 한옥마을 + 비빔밥·콩나물국밥·막걸리 1박2일",
+    "summary_en": "Jeonju KTX 2-day - hanok village, bibimbap, makgeolli",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1108",
+    "slug": "gunsan-ktx-2day",
+    "title_kr": "외국인 군산 KTX 1박2일 풀가이드",
+    "title_en": "Gunsan KTX 2-Day Full Guide",
+    "category": "B",
+    "tags": [
+      "gunsan",
+      "ktx",
+      "2day",
+      "modern-architecture",
+      "history",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "군산 근대건축 + 일제강점기 유산 1박2일 - 전주 combo 권장",
+    "summary_en": "Gunsan KTX 2-day - modern architecture & colonial heritage",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]
