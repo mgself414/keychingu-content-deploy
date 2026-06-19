@@ -22935,5 +22935,48 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
+  },
+  {
+    "id": "1109",
+    "slug": "seoul-michelin-guide-2026",
+    "title_kr": "외국인 서울 미쉐린 가이드 2026",
+    "title_en": "Seoul Michelin Guide 2026 for Foreign Travelers",
+    "category": "A",
+    "tags": [
+      "michelin",
+      "seoul",
+      "fine-dining",
+      "3-star",
+      "2-star",
+      "bib-gourmand",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "미쉐린 서울 2026 - 외국인 fit 15곳 (3star~Bib Gourmand) + 예약·드레스 코드",
+    "summary_en": "Seoul Michelin Guide 2026 - 15 picks for foreign travelers",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1110",
+    "slug": "seochon-hanok-deep-dive",
+    "title_kr": "외국인 서촌 deep dive 가이드",
+    "title_en": "Seochon Deep Dive Guide",
+    "category": "A",
+    "tags": [
+      "seochon",
+      "hanok",
+      "art",
+      "gallery",
+      "tongin-market",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "경복궁 서쪽 hidden gem - 통인시장·박노수미술관·체부동 다이닝 1일 매트릭스",
+    "summary_en": "Seochon hidden gem - Tongin Market, gallery, hanok dining",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]
