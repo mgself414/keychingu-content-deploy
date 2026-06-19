@@ -22999,5 +22999,27 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
+  },
+  {
+    "id": "1112",
+    "slug": "seoul-summer-signature-full",
+    "title_kr": "외국인 서울 여름 시그니처 풀가이드",
+    "title_en": "Seoul Summer Signature Full Guide",
+    "category": "B",
+    "tags": [
+      "summer",
+      "seoul",
+      "hangang",
+      "bingsoo",
+      "naengmyeon",
+      "sukiyaki",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "6-8월 방문 외국인 - 빙수·평양냉면·한강 피크닉·반포 무지개 분수·야시장 풀세트",
+    "summary_en": "Seoul summer signature - hangang picnic, bingsoo, night market",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]
