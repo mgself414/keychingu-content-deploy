@@ -23021,5 +23021,27 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
+  },
+  {
+    "id": "1113",
+    "slug": "yongsan-gu-full-guide",
+    "title_kr": "외국인 용산구 통합 가이드",
+    "title_en": "Yongsan-gu Full Guide",
+    "category": "B",
+    "tags": [
+      "yongsan",
+      "itaewon",
+      "hannam",
+      "haebangchon",
+      "huam",
+      "meta-guide",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "용산구 6동 통합 메타 - 이태원·한남·해방촌·후암·용산공원·동빙고",
+    "summary_en": "Yongsan-gu meta - 6 dong cluster for foreign travelers",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]
