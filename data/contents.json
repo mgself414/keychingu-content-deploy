@@ -23109,5 +23109,69 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
+  },
+  {
+    "id": "1117",
+    "slug": "jongno-bukchon-cafe-deep-dive",
+    "title_kr": "외국인 종로·북촌 카페 deep dive",
+    "title_en": "Jongno Bukchon Cafe Deep Dive",
+    "category": "A",
+    "tags": [
+      "jongno",
+      "bukchon",
+      "cafe",
+      "hanok-cafe",
+      "traditional-tea",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "종로·북촌 카페 15곳 + 베이커리 cluster + 1일 동선 3 패턴",
+    "summary_en": "Jongno Bukchon cafe deep dive - 15 picks",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1118",
+    "slug": "gangnam-cafe-dessert-deep",
+    "title_kr": "외국인 강남 카페·디저트 deep dive",
+    "title_en": "Gangnam Cafe & Dessert Deep Dive",
+    "category": "A",
+    "tags": [
+      "gangnam",
+      "apgujeong",
+      "dosan",
+      "luxury",
+      "dessert",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "압구정·도산·청담 럭셔리 cafe + 디저트 15곳 + 시그니엘 lounge",
+    "summary_en": "Gangnam luxury cafe & dessert - 15 picks",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1119",
+    "slug": "seoul-bakery-meta-guide",
+    "title_kr": "외국인 서울 베이커리 메타 가이드",
+    "title_en": "Seoul Bakery Meta Guide",
+    "category": "A",
+    "tags": [
+      "bakery",
+      "seoul",
+      "sourdough",
+      "french",
+      "isungdang",
+      "meta-guide",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "5권역 × 5유형 + 한국 시그니처 빵 + Top 10 노포·specialty",
+    "summary_en": "Seoul bakery meta - 5 districts × 5 types",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]
