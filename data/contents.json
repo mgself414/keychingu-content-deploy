@@ -23087,5 +23087,27 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
+  },
+  {
+    "id": "1116",
+    "slug": "seoul-cafe-meta-guide",
+    "title_kr": "외국인 서울 카페 메타 가이드",
+    "title_en": "Seoul Cafe Meta Guide",
+    "category": "A",
+    "tags": [
+      "cafe",
+      "seoul",
+      "specialty-coffee",
+      "hanok-cafe",
+      "warehouse",
+      "meta-guide",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "7권역 × 5유형 매트릭스 + Top 10 + cafe hop 4 패턴 (Topic Gap 1순위 신호)",
+    "summary_en": "Seoul cafe meta - 7 districts × 5 types + Top 10 + hop patterns",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]
