@@ -23194,5 +23194,26 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
+  },
+  {
+    "id": "1121",
+    "slug": "itaewon-nightlife-full-guide",
+    "title_kr": "외국인 이태원 nightlife 풀가이드",
+    "title_en": "Itaewon Nightlife Full Guide",
+    "category": "A",
+    "tags": [
+      "itaewon",
+      "nightlife",
+      "whisky-bar",
+      "club",
+      "cocktail",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "외국 hub 5유형 25곳 - 위스키·칵테일·클럽·라이브·한국 unique + 4 패턴",
+    "summary_en": "Itaewon nightlife - whisky, cocktail, club, live, Korean unique",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]
