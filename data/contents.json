@@ -23173,5 +23173,26 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
+  },
+  {
+    "id": "1120",
+    "slug": "jongno-korean-food-deep-dive",
+    "title_kr": "외국인 종로 한식 deep dive",
+    "title_en": "Jongno Korean Food Deep Dive",
+    "category": "A",
+    "tags": [
+      "jongno",
+      "korean-food",
+      "hanjeongsik",
+      "royal-cuisine",
+      "gwangjang-market",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "4권역 한식 매트릭스 - 인사동 한정식·광장시장·을지로 노포·궁중 한식 15곳",
+    "summary_en": "Jongno Korean food deep dive - 15 picks across 4 sub-districts",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]
