@@ -23215,5 +23215,27 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
+  },
+  {
+    "id": "1122",
+    "slug": "korea-market-index",
+    "title_kr": "외국인 한국 시장 인덱스",
+    "title_en": "Korea Market Index",
+    "category": "B",
+    "tags": [
+      "market",
+      "index",
+      "gwangjang",
+      "jagalchi",
+      "tongin",
+      "meta-guide",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "서울 + 지방 도시 한국 시장 풀 인덱스 - 기존 publish 콘텐츠 통합 cross-link",
+    "summary_en": "Korea market index - Seoul + regional, integrated cross-link",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]
