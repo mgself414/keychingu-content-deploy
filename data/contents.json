@@ -23043,5 +23043,49 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
+  },
+  {
+    "id": "1114",
+    "slug": "busan-ktx-3day",
+    "title_kr": "외국인 부산 KTX 2박3일 풀가이드",
+    "title_en": "Busan KTX 3-Day Full Guide",
+    "category": "B",
+    "tags": [
+      "busan",
+      "ktx",
+      "3day",
+      "beach",
+      "haeundae",
+      "jagalchi",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "부산 2박3일 - 해운대·감천문화마을·자갈치·광안리·태종대",
+    "summary_en": "Busan KTX 3-day - beach, market, culture village",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1115",
+    "slug": "gyeongju-ktx-2day",
+    "title_kr": "외국인 경주 KTX 1박2일 풀가이드",
+    "title_en": "Gyeongju KTX 2-Day Full Guide",
+    "category": "B",
+    "tags": [
+      "gyeongju",
+      "ktx",
+      "2day",
+      "unesco",
+      "silla",
+      "bulguksa",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "경주 1박2일 - UNESCO 5건·불국사·석굴암·동궁과 월지·황리단길",
+    "summary_en": "Gyeongju KTX 2-day - UNESCO heritage, Silla 1000-year capital",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]
