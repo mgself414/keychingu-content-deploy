@@ -23217,5 +23217,129 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
+  },
+  {
+    "id": "1123",
+    "slug": "hongdae-shopping-full-guide",
+    "title_kr": "외국인 홍대 쇼핑 풀가이드",
+    "title_en": "Hongdae Shopping Full Guide",
+    "category": "A",
+    "tags": [
+      "hongdae",
+      "shopping",
+      "fashion",
+      "vintage",
+      "meta-guide",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "홍대·상수·합정·연남 쇼핑 4 cluster + K-fashion·빈티지·K-pop·인디 20곳",
+    "summary_en": "Hongdae shopping - K-fashion, vintage, K-pop, indie design",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1124",
+    "slug": "hongdae-bar-nightlife",
+    "title_kr": "외국인 홍대 술집·nightlife",
+    "title_en": "Hongdae Bar & Nightlife",
+    "category": "A",
+    "tags": [
+      "hongdae",
+      "bar",
+      "nightlife",
+      "indie",
+      "live-music",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "홍대 인디·라이브·클럽·로컬 4유형 20곳 + 이태원과 비교",
+    "summary_en": "Hongdae bar & nightlife - indie, live, club, local",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1125",
+    "slug": "hongdae-bakery-deep-dive",
+    "title_kr": "외국인 홍대 베이커리 deep dive",
+    "title_en": "Hongdae Bakery Deep Dive",
+    "category": "A",
+    "tags": [
+      "hongdae",
+      "bakery",
+      "sourdough",
+      "dessert",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "홍대·상수·합정·연남 베이커리 15곳 + 4유형 매트릭스",
+    "summary_en": "Hongdae bakery deep dive - 15 picks",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1126",
+    "slug": "seongsu-bar-nightlife",
+    "title_kr": "외국인 성수 술집·nightlife",
+    "title_en": "Seongsu Bar & Nightlife",
+    "category": "A",
+    "tags": [
+      "seongsu",
+      "bar",
+      "nightlife",
+      "warehouse",
+      "design",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "성수 warehouse·디자인 nightlife 15곳 + 4유형 + 3 패턴",
+    "summary_en": "Seongsu bar & nightlife - warehouse, design",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1127",
+    "slug": "seongsu-brunch-cluster",
+    "title_kr": "외국인 성수 브런치 cluster",
+    "title_en": "Seongsu Brunch Cluster",
+    "category": "A",
+    "tags": [
+      "seongsu",
+      "brunch",
+      "warehouse",
+      "design",
+      "instagram",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "성수 brunch 12곳 + 주말 fit + 4유형 매트릭스",
+    "summary_en": "Seongsu brunch cluster - 12 picks",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1128",
+    "slug": "yeonhui-dong-hidden-gem",
+    "title_kr": "외국인 연희동 hidden gem",
+    "title_en": "Yeonhui-dong Hidden Gem",
+    "category": "B",
+    "tags": [
+      "yeonhui",
+      "hidden-gem",
+      "local",
+      "art",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "연희동 hidden gem 12곳 + 연남·홍대와 비교",
+    "summary_en": "Yeonhui-dong hidden gem - 12 picks",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]
