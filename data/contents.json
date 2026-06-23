@@ -23362,5 +23362,24 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
+  },
+  {
+    "id": "1130",
+    "slug": "naengmyeon-index",
+    "title_kr": "외국인 냉면 인덱스",
+    "title_en": "냉면 Index for Foreign Travelers",
+    "category": "B",
+    "tags": [
+      "냉면",
+      "auto-index",
+      "meta-guide",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "자동 인덱스 - 냉면 키워드 cross-link + saved 신호",
+    "summary_en": "Auto-index for 냉면 - cross-link + saved signals",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]
