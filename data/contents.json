@@ -23341,5 +23341,26 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
+  },
+  {
+    "id": "1129",
+    "slug": "mangwon-dong-index",
+    "title_kr": "외국인 망원동 인덱스",
+    "title_en": "Mangwon-dong Index",
+    "category": "B",
+    "tags": [
+      "mangwon",
+      "mz",
+      "market",
+      "hangang",
+      "index",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "망원동 인덱스 - 망원시장·망리단길·한강·합정·연남 hop + 기존 publish 13 cross-link",
+    "summary_en": "Mangwon-dong index - market, MZ trendy, Hangang, hop",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]
