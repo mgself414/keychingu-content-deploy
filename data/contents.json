@@ -23378,6 +23378,25 @@
     "summary_kr": "자동 인덱스 - 냉면 키워드 cross-link + saved 신호",
     "summary_en": "Auto-index for 냉면 - cross-link + saved signals",
     "en_available": true,
+    "cn_available": false,
+    "jp_available": false,
+    "instagram_posted": false
+  },
+  {
+    "id": "1131",
+    "slug": "mangwon-dong-deep",
+    "title_kr": "외국인 망원동 deep dive",
+    "title_en": "망원동 Deep Guide for Foreign Travelers",
+    "category": "A",
+    "tags": [
+      "망원동",
+      "deep",
+      "gemini-draft",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "망원동 deep 가이드 - Gemini 2.5 Flash 자동 작성 (credit 0)",
+    "summary_en": "망원동 deep guide for foreign travelers",
+    "en_available": true,
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
