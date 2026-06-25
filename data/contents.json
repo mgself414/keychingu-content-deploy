@@ -23615,5 +23615,99 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
+  },
+  {
+    "id": "1141",
+    "slug": "korean-ondol-floor-culture",
+    "title_kr": "한국 온돌·좌식 문화 — 왜 한국 집은 벽이 아니라 '바닥'이 따뜻한가",
+    "title_en": "Korean Ondol & Floor-Sitting Culture — Why Korean Homes Heat the Floor, Not the Air",
+    "category": "D",
+    "series": "korean-culture",
+    "content_type": "culture-explainer",
+    "tags": [
+      "korean-culture",
+      "ondol",
+      "floor-heating",
+      "hanok",
+      "architecture",
+      "culture-explainer",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "왜 한국 집은 벽이 아니라 바닥이 따뜻한가 — 아궁이·고래·굴뚝의 복사난방, 좌식 생활, 두한족열 공간철학",
+    "summary_en": "Why Korean homes heat the floor, not the air — ondol radiant heating, floor-sitting life, and the space philosophy behind it",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1142",
+    "slug": "korean-shamanism-gut-culture",
+    "title_kr": "한국 무속·굿 문화 — IT 강국에 왜 아직 무당과 굿이 살아있나",
+    "title_en": "Korean Shamanism & Gut Culture — Why Mudang and Gut Rituals Still Thrive in a Tech Powerhouse",
+    "category": "D",
+    "series": "korean-culture",
+    "content_type": "culture-explainer",
+    "tags": [
+      "korean-culture",
+      "shamanism",
+      "muism",
+      "gut",
+      "mudang",
+      "culture-explainer",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "IT 강국에 왜 아직 무당·굿이 살아있나 — 무속·굿·신내림의 의미·역사, 그리고 사주(학문)와의 구분",
+    "summary_en": "Why mudang and gut rituals still thrive in a tech powerhouse — Korean shamanism, its meaning and history, and how it differs from saju",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1143",
+    "slug": "korean-ppalli-ppalli-culture",
+    "title_kr": "한국 빨리빨리 문화 — 왜 한국은 이렇게 빠를까 (배달 30분·새벽배송·세계 최고 인터넷)",
+    "title_en": "Korea's Ppalli-Ppalli Speed Culture — Why Is Everything So Fast?",
+    "category": "D",
+    "series": "korean-culture",
+    "content_type": "culture-explainer",
+    "tags": [
+      "korean-culture",
+      "ppalli-ppalli",
+      "speed",
+      "modern-korea",
+      "culture-explainer",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "왜 한국은 이렇게 빠른가 — 압축성장의 역사, 배달·인터넷 속도, 그리고 그늘(안전사고·번아웃)까지 명암",
+    "summary_en": "Why Korea is so fast — the compressed-growth history, delivery and internet speed, and the dark side of haste",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1144",
+    "slug": "korean-rites-of-passage-culture",
+    "title_kr": "한국 통과의례 문화 — 왜 한국은 첫 생일과 환갑을 이렇게 크게 챙길까",
+    "title_en": "Korean Rites of Passage — Why Koreans Make Such a Big Deal of the First Birthday and the 60th",
+    "category": "D",
+    "series": "korean-culture",
+    "content_type": "culture-explainer",
+    "tags": [
+      "korean-culture",
+      "rites-of-passage",
+      "doljanchi",
+      "hwangap",
+      "culture-explainer",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "왜 한국은 첫 생일과 환갑을 크게 챙기나 — 백일·돌·돌잡이·환갑(60갑자)으로 읽는 인생 매듭 의례",
+    "summary_en": "Why Koreans celebrate the first birthday and 60th so big — baengnil, doljanchi, doljabi, and hwangap rites of passage",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]
