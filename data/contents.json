@@ -23895,5 +23895,97 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
+  },
+  {
+    "id": "1153",
+    "slug": "korean-noraebang-culture",
+    "title_kr": "한국 노래방 문화 — 왜 한국인은 모이면 '노래방'에 갈까",
+    "title_en": "Korean Noraebang Culture — Why Koreans Head to a Singing Room When They Gather",
+    "category": "D",
+    "series": "korean-culture",
+    "content_type": "culture-explainer",
+    "tags": [
+      "korean-culture",
+      "noraebang",
+      "karaoke",
+      "nightlife",
+      "culture-explainer",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "왜 한국인은 모이면 노래방에 가나 — 회식 2차·코인노래방의 사교, 프라이빗 룸 노래 문화와 실전 매너",
+    "summary_en": "Why Koreans head to a singing room — the private-room karaoke of after-parties and coin noraebang, plus practical tips",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1154",
+    "slug": "korean-military-service-culture",
+    "title_kr": "한국 군대·병역 문화 — 왜 거의 모든 한국 남성은 약 18개월 군대에 갈까",
+    "title_en": "Korean Military Service Culture — Why Nearly Every Korean Man Spends ~18 Months in the Army",
+    "category": "D",
+    "series": "korean-culture",
+    "content_type": "culture-explainer",
+    "tags": [
+      "korean-culture",
+      "military-service",
+      "conscription",
+      "society",
+      "culture-explainer",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "왜 거의 모든 한국 남성은 약 18개월 군대에 가나 — 분단 안보 배경·사회 영향·형평성 논쟁까지 객관 정리",
+    "summary_en": "Why nearly every Korean man serves ~18 months — the division-era security context, social impact, and the fairness debate",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1155",
+    "slug": "korean-filial-piety-culture",
+    "title_kr": "한국 효·가족주의 문화 — 왜 한국은 부모·가족을 이렇게까지 중시할까",
+    "title_en": "Korean Filial Piety & Familism — Why Family Comes First in Korea",
+    "category": "D",
+    "series": "korean-culture",
+    "content_type": "culture-explainer",
+    "tags": [
+      "korean-culture",
+      "filial-piety",
+      "familism",
+      "confucianism",
+      "culture-explainer",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "왜 한국은 부모·가족을 이렇게 중시하나 — 유교 효의 구체적 실천과 핵가족·노인빈곤 시대의 변화",
+    "summary_en": "Why family comes first in Korea — the concrete practice of Confucian filial piety and how it is changing today",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1156",
+    "slug": "korean-pcbang-gaming-culture",
+    "title_kr": "한국 PC방·게임 문화 — 왜 한국은 'e스포츠 종주국'이 됐나",
+    "title_en": "Korean PC Bang & Gaming Culture — How Korea Became the Birthplace of Esports",
+    "category": "D",
+    "series": "korean-culture",
+    "content_type": "culture-explainer",
+    "tags": [
+      "korean-culture",
+      "pc-bang",
+      "gaming",
+      "esports",
+      "culture-explainer",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "왜 한국은 e스포츠 종주국이 됐나 — PC방·스타크래프트 역사, 인프라, 그리고 과몰입·셧다운제 명암",
+    "summary_en": "How Korea became the birthplace of esports — PC bang and StarCraft history, the infrastructure, and the gaming-addiction debate",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]
