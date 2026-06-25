@@ -23400,5 +23400,29 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
+  },
+  {
+    "id": "1132",
+    "slug": "korean-banchan-culture",
+    "title_kr": "한국 반찬 문화 — 왜 한 끼에 반찬이 이렇게 많을까",
+    "title_en": "Korean Banchan Culture — Why a Korean Meal Comes With So Many Side Dishes",
+    "category": "D",
+    "series": "korean-culture",
+    "content_type": "culture-explainer",
+    "tags": [
+      "korean-culture",
+      "banchan",
+      "hansik",
+      "food-culture",
+      "fermentation",
+      "culture-explainer",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "왜 한 끼에 반찬이 이렇게 많을까 — 한상차림·첩 반상·발효·나눔으로 읽는 한국 밥상 문화 (장소가 아닌 왜)",
+    "summary_en": "Why a Korean meal comes with so many side dishes — a culture explainer on han-sang-charim, cheop bansang, fermentation and sharing",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]
