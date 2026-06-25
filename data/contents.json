@@ -23448,5 +23448,79 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
+  },
+  {
+    "id": "1134",
+    "slug": "korean-jang-fermentation-culture",
+    "title_kr": "한국 발효·장(醬) 문화 — 왜 한국 음식의 맛은 '시간'에서 나올까",
+    "title_en": "Korean Jang & Fermentation Culture — Why Korean Flavor Is Built on Time, Not Spice",
+    "category": "D",
+    "series": "korean-culture",
+    "content_type": "culture-explainer",
+    "tags": [
+      "korean-culture",
+      "fermentation",
+      "jang",
+      "doenjang",
+      "gochujang",
+      "culture-explainer",
+      "unesco",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "왜 한국 음식의 깊은 맛은 향신료가 아니라 '시간'에서 오나 — 된장·간장·고추장·청국장·메주·장독대로 읽는 발효 문화 (UNESCO 장 2024)",
+    "summary_en": "Why Korean flavor comes from time, not spice — doenjang, ganjang, gochujang and the jang-making tradition (UNESCO 2024)",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1135",
+    "slug": "korean-jeong-culture",
+    "title_kr": "한국 '정(情)' 문화 — 왜 처음 본 아저씨가 밥을 사주려 할까",
+    "title_en": "Korean Jeong (情) Culture — Why a Stranger Might Try to Pay for Your Meal",
+    "category": "D",
+    "series": "korean-culture",
+    "content_type": "culture-explainer",
+    "tags": [
+      "korean-culture",
+      "jeong",
+      "emotion",
+      "untranslatable",
+      "culture-explainer",
+      "collectivism",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "왜 처음 본 한국인이 밥을 사주려 하나 — 번역 불가 개념 '정(情)'의 의미·일상·따뜻함과 부담까지",
+    "summary_en": "Why a stranger in Korea might pay for your meal — jeong, the untranslatable Korean bond, and its warm and burdensome sides",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1136",
+    "slug": "korean-holiday-ancestral-culture",
+    "title_kr": "한국 명절·차례·제사 문화 — 왜 온 가족이 모여 음식을 차리고 절을 할까",
+    "title_en": "Korean Holiday & Ancestral Rite Culture — Why Korean Families Gather to Cook, Bow, and Remember",
+    "category": "D",
+    "series": "korean-culture",
+    "content_type": "culture-explainer",
+    "tags": [
+      "korean-culture",
+      "holiday",
+      "chuseok",
+      "seollal",
+      "ancestral-rite",
+      "charye",
+      "culture-explainer",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "왜 명절마다 온 가족이 모여 음식을 차리고 조상에게 절을 하나 — 설·추석·차례·제사·효로 읽는 한국 명절 문화",
+    "summary_en": "Why Korean families gather to cook and bow on holidays — Seollal, Chuseok, and charye/jesa ancestral rites",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]
