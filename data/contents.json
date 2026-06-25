@@ -23522,5 +23522,98 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
+  },
+  {
+    "id": "1137",
+    "slug": "korean-temple-food-culture",
+    "title_kr": "한국 사찰음식 문화 — 왜 한국 절밥은 고기도 마늘도 빼고 이렇게 정갈한가",
+    "title_en": "Korean Temple Food (Sachal Eumsik) — Why Korean Buddhist Cuisine Drops Meat, Garlic & Onion",
+    "category": "D",
+    "series": "korean-culture",
+    "content_type": "culture-explainer",
+    "tags": [
+      "korean-culture",
+      "temple-food",
+      "buddhist",
+      "vegan",
+      "culture-explainer",
+      "mindful-eating",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "왜 한국 절밥은 고기·마늘을 빼고 정갈한가 — 오신채 금지·발우공양·비움의 채식 철학으로 읽는 사찰음식",
+    "summary_en": "Why Korean temple food drops meat and garlic — the five pungent vegetables, barugongyang, and Buddhist vegan philosophy",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1138",
+    "slug": "korean-han-emotion-culture",
+    "title_kr": "한국 '한(恨)' 정서 — K-드라마의 그 깊은 슬픔은 어디서 오나",
+    "title_en": "Korean Han (恨) — Where Does That Deep Sorrow in K-Drama Come From?",
+    "category": "D",
+    "series": "korean-culture",
+    "content_type": "culture-explainer",
+    "tags": [
+      "korean-culture",
+      "han",
+      "emotion",
+      "k-drama",
+      "culture-explainer",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "K-드라마의 그 깊은 슬픔 '한(恨)'은 어디서 오나 — 의미·역사·승화, 그리고 '한=한국인 본질'이라는 통념의 학계 비판까지",
+    "summary_en": "Where the deep sorrow in K-drama comes from — han, its history and sublimation, and the scholarly critique of treating it as Korean essence",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1139",
+    "slug": "korean-superstition-taboo-culture",
+    "title_kr": "한국 미신·금기 문화 — 한국에서 무심코 했다가 분위기 싸해지는 행동들",
+    "title_en": "Korean Superstitions & Taboos — Things That Quietly Make the Room Go Cold in Korea",
+    "category": "D",
+    "series": "korean-culture",
+    "content_type": "culture-explainer",
+    "tags": [
+      "korean-culture",
+      "superstition",
+      "taboo",
+      "etiquette",
+      "culture-explainer",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "한국에서 무심코 했다가 분위기 싸해지는 행동들 — 숫자 4·빨간 이름·선물 금기·두 손 예법, 실수 방지 가이드",
+    "summary_en": "Things that quietly make a room go cold in Korea — number 4, red-ink names, gift taboos, two-handed etiquette, a mistake-prevention guide",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1140",
+    "slug": "korean-hoesik-drinking-culture",
+    "title_kr": "한국 회식·음주 문화 — 왜 한국인은 같이 술을 마시고, 술자리에 예법이 이렇게 많을까",
+    "title_en": "Korean Hoesik & Drinking Culture — Why Koreans Drink Together (and Why There Are So Many Rules)",
+    "category": "D",
+    "series": "korean-culture",
+    "content_type": "culture-explainer",
+    "tags": [
+      "korean-culture",
+      "hoesik",
+      "drinking",
+      "etiquette",
+      "culture-explainer",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "왜 한국인은 같이 술을 마시고 술자리 예법이 많을까 — 회식·1·2·3차·두 손 따르기, 그리고 MZ·52시간이 바꾼 현대 변화",
+    "summary_en": "Why Koreans drink together and why there are so many rules — hoesik, rounds, two-handed pouring, and how MZ and the 52-hour week changed it",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]
