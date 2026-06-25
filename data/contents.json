@@ -23709,5 +23709,99 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
+  },
+  {
+    "id": "1145",
+    "slug": "korean-nunchi-culture",
+    "title_kr": "한국 '눈치' 문화 — 왜 한국인은 말하지 않아도 분위기를 읽을까",
+    "title_en": "Korean Nunchi Culture — How Koreans Read the Room Without a Word Being Said",
+    "category": "D",
+    "series": "korean-culture",
+    "content_type": "culture-explainer",
+    "tags": [
+      "korean-culture",
+      "nunchi",
+      "social-sense",
+      "high-context",
+      "culture-explainer",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "왜 한국인은 말하지 않아도 분위기를 읽나 — 고맥락 사회 감각 '눈치'의 의미·일상·따뜻함과 압박까지",
+    "summary_en": "How Koreans read the room without a word — nunchi, the high-context social sense, and its empathy and pressure sides",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1146",
+    "slug": "korean-jjimjilbang-bath-culture",
+    "title_kr": "한국 찜질방·목욕 문화 — 왜 모르는 사람과 발가벗고 씻고, 찜질방에서 밤을 샐까",
+    "title_en": "Korean Jjimjilbang & Bathhouse Culture — Why Koreans Bathe Naked With Strangers and Spend the Night in a Sauna",
+    "category": "D",
+    "series": "korean-culture",
+    "content_type": "culture-explainer",
+    "tags": [
+      "korean-culture",
+      "jjimjilbang",
+      "bathhouse",
+      "sauna",
+      "ttaemiri",
+      "culture-explainer",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "왜 모르는 사람과 발가벗고 씻고 찜질방에서 밤을 새나 — 때밀이·나체 목욕·찜질방 명물과 외국인 실전 매너",
+    "summary_en": "Why Koreans bathe naked with strangers and sleep in saunas — the body scrub, communal baths, and a foreigner practical guide",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1147",
+    "slug": "korean-obangsaek-color-culture",
+    "title_kr": "한국 오방색(五方色) 문화 — 단청·색동·비빔밥의 그 강렬한 색 조합엔 규칙이 있다",
+    "title_en": "Korean Obangsaek (Five Cardinal Colors) — The Hidden Rule Behind Korea Boldest Color Combinations",
+    "category": "D",
+    "series": "korean-culture",
+    "content_type": "culture-explainer",
+    "tags": [
+      "korean-culture",
+      "obangsaek",
+      "color",
+      "dancheong",
+      "yin-yang-five-elements",
+      "culture-explainer",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "단청·색동·비빔밥의 강렬한 색에 숨은 규칙 — 음양오행에서 나온 다섯 방위 색 오방색",
+    "summary_en": "The rule behind Korea boldest colors — obangsaek, the five cardinal colors born from yin-yang and five elements",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1148",
+    "slug": "korean-hangeul-creation-culture",
+    "title_kr": "한글 창제 이야기 — 세상에서 거의 유일하게 '누가·언제·왜 만들었는지' 아는 문자",
+    "title_en": "The Story of Hangeul — The Only Major Alphabet Where We Know Who Created It, When, and Why",
+    "category": "D",
+    "series": "korean-culture",
+    "content_type": "culture-explainer",
+    "tags": [
+      "korean-culture",
+      "hangeul",
+      "king-sejong",
+      "writing-system",
+      "culture-explainer",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "누가·언제·왜 만들었는지 아는 세계의 드문 문자 — 세종의 한글 창제 배경과 과학적 원리(발음기관·천지인)",
+    "summary_en": "The rare alphabet whose creator, date and purpose are known — King Sejong Hangeul and its scientific design",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]
