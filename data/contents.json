@@ -176,7 +176,7 @@
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
-    "jp_available": false
+    "jp_available": true
   },
   {
     "id": "002",
@@ -23799,6 +23799,98 @@
     ],
     "summary_kr": "누가·언제·왜 만들었는지 아는 세계의 드문 문자 — 세종의 한글 창제 배경과 과학적 원리(발음기관·천지인)",
     "summary_en": "The rare alphabet whose creator, date and purpose are known — King Sejong Hangeul and its scientific design",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1149",
+    "slug": "korean-delivery-culture",
+    "title_kr": "한국 배달 문화 — 왜 한국은 배달 천국인가, 한강 잔디밭까지 치킨이 온다",
+    "title_en": "Korean Delivery Culture — Why Korea Is a Delivery Paradise",
+    "category": "D",
+    "series": "korean-culture",
+    "content_type": "culture-explainer",
+    "tags": [
+      "korean-culture",
+      "delivery",
+      "baemin",
+      "logistics",
+      "culture-explainer",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "왜 한국은 배달 천국인가 — 새벽배송·한강 배달의 인프라(아파트·IT)와 명암(라이더·쓰레기)",
+    "summary_en": "Why Korea is a delivery paradise — the infrastructure behind dawn delivery and Han River chicken, and its dark side",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1150",
+    "slug": "korean-honorific-titles-culture",
+    "title_kr": "한국 호칭 문화 — 왜 한국인은 처음 본 사람도 언니·이모·사장님이라 부를까",
+    "title_en": "Korean Address Terms — Why Koreans Call Strangers Sister, Auntie, or Boss",
+    "category": "D",
+    "series": "korean-culture",
+    "content_type": "culture-explainer",
+    "tags": [
+      "korean-culture",
+      "address-terms",
+      "fictive-kinship",
+      "language",
+      "culture-explainer",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "왜 처음 본 사람도 언니·이모·사장님이라 부르나 — 피 안 섞여도 가족 호칭 쓰는 의제가족 문화",
+    "summary_en": "Why Koreans call strangers sister, auntie or boss — the fictive-kinship logic behind Korean address terms",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1151",
+    "slug": "korean-apartment-culture",
+    "title_kr": "한국 아파트 공화국 — 왜 한국인 다수는 비슷비슷한 고층 아파트에 살까",
+    "title_en": "Korea, the Republic of Apartments — Why Most Koreans Live in Near-Identical High-Rise Blocks",
+    "category": "D",
+    "series": "korean-culture",
+    "content_type": "culture-explainer",
+    "tags": [
+      "korean-culture",
+      "apartment",
+      "housing",
+      "urbanization",
+      "culture-explainer",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "왜 한국인 다수는 비슷한 고층 아파트에 사나 — 줄레조 '아파트 공화국', 압축 도시화·자산화·명암",
+    "summary_en": "Why most Koreans live in near-identical apartments — the Republic of Apartments, compressed urbanization, and its trade-offs",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1152",
+    "slug": "korean-kbeauty-culture",
+    "title_kr": "한국 K-뷰티 문화 — 왜 한국은 '화장'보다 '피부'에 이렇게 진심일까",
+    "title_en": "Korean K-Beauty Culture — Why Korea Cares More About Skin Than Makeup",
+    "category": "D",
+    "series": "korean-culture",
+    "content_type": "culture-explainer",
+    "tags": [
+      "korean-culture",
+      "k-beauty",
+      "skincare",
+      "lookism",
+      "culture-explainer",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "왜 한국은 화장보다 피부에 진심인가 — 다단계 스킨케어·쿠션의 철학과 외모압박·탈코르셋의 그늘",
+    "summary_en": "Why Korea cares more about skin than makeup — the philosophy of K-beauty skincare and the shadow of appearance pressure",
     "en_available": true,
     "cn_available": true,
     "jp_available": true,
