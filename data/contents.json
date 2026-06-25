@@ -23424,5 +23424,29 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
+  },
+  {
+    "id": "1133",
+    "slug": "korean-saju-fortune-culture",
+    "title_kr": "한국 사주·운세 문화 — 왜 한국인은 점이 아니라 사주를 볼까",
+    "title_en": "Korean Saju & Fortune-Telling Culture — Why Koreans Read Their Saju",
+    "category": "D",
+    "series": "korean-culture",
+    "content_type": "culture-explainer",
+    "tags": [
+      "korean-culture",
+      "saju",
+      "fortune-telling",
+      "myeongni",
+      "culture-explainer",
+      "kdrama",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "왜 한국인은 점이 아니라 사주를 볼까 — 사주팔자·음양오행·명리학·사주카페로 읽는 한국 운세 문화 (장소 아닌 왜)",
+    "summary_en": "Why Koreans read their saju — a culture explainer on the four-pillars system, eum-yang-five-elements, myeongni, and modern saju cafes",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]
