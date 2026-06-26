@@ -24587,5 +24587,97 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
+  },
+  {
+    "id": "1183",
+    "slug": "korean-drama-culture",
+    "title_kr": "한국 K-드라마 문화 — 왜 한국 드라마는 세계를 울릴까",
+    "title_en": "Korean Drama Culture — Why K-Dramas Make the World Cry",
+    "category": "D",
+    "series": "korean-culture",
+    "content_type": "culture-explainer",
+    "tags": [
+      "korean-culture",
+      "k-drama",
+      "hallyu",
+      "tv",
+      "culture-explainer",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "16부작 단기완결·작가 중심 감정선·OST·웹툰 IP — 한류를 떠받치는 K-드라마의 구조와 ★제작 노동 명암",
+    "summary_en": "The 16-episode arc, writer-driven emotion, OST and webtoon IP — the structure of K-drama and its production-labor shadow",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1184",
+    "slug": "korean-film-culture",
+    "title_kr": "한국 영화 문화 — 충무로부터 봉준호까지, 천만 영화의 나라",
+    "title_en": "Korean Film Culture — From Chungmuro to Bong Joon-ho",
+    "category": "D",
+    "series": "korean-culture",
+    "content_type": "culture-explainer",
+    "tags": [
+      "korean-culture",
+      "film",
+      "cinema",
+      "chungmuro",
+      "culture-explainer",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "검열을 넘어선 르네상스 — 봉준호 기생충(칸 2019·오스카 2020)·천만 영화·멀티플렉스로 읽는 한국 영화",
+    "summary_en": "From censorship to renaissance — Bong Joon-ho's Parasite (Cannes 2019, Oscars 2020), 10-million-viewer films, and cinema culture",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1185",
+    "slug": "korean-hiking-culture",
+    "title_kr": "한국 등산 문화 — 왜 한국 중년은 산에 진심일까",
+    "title_en": "Korean Hiking Culture — Why Koreans (Especially the Middle-Aged) Love Mountains",
+    "category": "D",
+    "series": "korean-culture",
+    "content_type": "culture-explainer",
+    "tags": [
+      "korean-culture",
+      "hiking",
+      "mountains",
+      "outdoor",
+      "culture-explainer",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "국토 70%가 산 — 북한산·산악회·정상 막걸리·등산복 일상화와 MZ 등산 트렌드로 읽는 한국 등산",
+    "summary_en": "70% mountains — Bukhansan, hiking clubs, summit makgeolli, everyday hiking wear and the new MZ hiking trend",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1186",
+    "slug": "korean-religion-culture",
+    "title_kr": "한국 종교 문화 — 교회·절·점집이 공존하는 다종교 사회",
+    "title_en": "Korean Religion Culture — Churches, Temples and Fortune-Tellers Side by Side",
+    "category": "D",
+    "series": "korean-culture",
+    "content_type": "culture-explainer",
+    "tags": [
+      "korean-culture",
+      "religion",
+      "coexistence",
+      "society",
+      "culture-explainer",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "무종교가 최다인 다종교 사회 — 크리스마스와 석가탄신일이 모두 공휴일인 한국의 종교 자유와 공존(객관·중립)",
+    "summary_en": "A multi-religious society where the non-religious are the largest group — Christmas and Buddha's Birthday both public holidays, and Korea's religious coexistence",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]
