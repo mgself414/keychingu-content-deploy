@@ -24079,5 +24079,99 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
+  },
+  {
+    "id": "1161",
+    "slug": "korean-idol-trainee-culture",
+    "title_kr": "한국 아이돌·연습생 문화 — K-pop은 어떻게 '만들어지나'",
+    "title_en": "K-pop Idol & Trainee Culture — How K-pop Stars Are Actually Made",
+    "category": "D",
+    "series": "korean-culture",
+    "content_type": "culture-explainer",
+    "tags": [
+      "korean-culture",
+      "kpop",
+      "idol",
+      "trainee",
+      "fandom",
+      "culture-explainer",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "K-pop은 어떻게 만들어지나 — 연습생 시스템·기획사·팬덤의 구조와 글로벌 성공, 그리고 그늘(연습생 압박·계약)",
+    "summary_en": "How K-pop stars are made — the trainee system, agencies, fandom and global success, and its dark side",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1162",
+    "slug": "korean-cheering-culture",
+    "title_kr": "한국 응원·떼창 문화 — 왜 한국인은 모이면 다 같이 소리 지를까",
+    "title_en": "Korean Cheering & Singalong Culture — Why a Korean Crowd Roars as One",
+    "category": "D",
+    "series": "korean-culture",
+    "content_type": "culture-explainer",
+    "tags": [
+      "korean-culture",
+      "cheering",
+      "baseball",
+      "singalong",
+      "sports",
+      "culture-explainer",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "왜 한국인은 모이면 다 같이 소리 지르나 — 야구 응원·2002 길거리 응원·콘서트 떼창의 집단 흥",
+    "summary_en": "Why a Korean crowd roars as one — baseball cheering, the 2002 street rallies, and concert singalongs",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1163",
+    "slug": "korean-wedding-culture",
+    "title_kr": "한국 결혼·웨딩 문화 — 왜 한국 결혼식은 1시간 만에 끝나고, 축의금 봉투에 고민할까",
+    "title_en": "Korean Wedding Culture — Why Korean Weddings End in an Hour, and Why That Cash Envelope Feels So Stressful",
+    "category": "D",
+    "series": "korean-culture",
+    "content_type": "culture-explainer",
+    "tags": [
+      "korean-culture",
+      "wedding",
+      "marriage",
+      "gift-money",
+      "culture-explainer",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "왜 한국 결혼식은 1시간에 끝나고 축의금에 고민하나 — 예식장·스드메·폐백과 비혼·스몰웨딩 변화",
+    "summary_en": "Why Korean weddings end in an hour and that cash envelope feels stressful — wedding halls, the sdm package, and the shift toward small weddings",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1164",
+    "slug": "korean-pet-culture",
+    "title_kr": "한국 반려동물 문화 — 반려인 1500만 시대, 한국에서 반려동물은 어떻게 '가족'이 됐나",
+    "title_en": "Korea Pet Culture — How Pets Became Family in a Nation of 15 Million Pet Parents",
+    "category": "D",
+    "series": "korean-culture",
+    "content_type": "culture-explainer",
+    "tags": [
+      "korean-culture",
+      "pet",
+      "companion-animal",
+      "pet-economy",
+      "culture-explainer",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "반려인 1500만 시대, 반려동물은 어떻게 가족이 됐나 — 펫코노미·1인가구 연결과 유기·펫숍의 그늘",
+    "summary_en": "How pets became family in a nation of 15 million pet parents — the pet economy, the single-household link, and the shadow of abandonment",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]
