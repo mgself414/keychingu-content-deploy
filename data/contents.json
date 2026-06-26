@@ -24403,5 +24403,97 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
+  },
+  {
+    "id": "1175",
+    "slug": "korean-webtoon-culture",
+    "title_kr": "한국 웹툰 문화 — 세로 스크롤로 세계를 사로잡은 한국식 만화",
+    "title_en": "Korean Webtoon Culture — The Vertical-Scroll Comics That Conquered the World",
+    "category": "D",
+    "series": "korean-culture",
+    "content_type": "culture-explainer",
+    "tags": [
+      "korean-culture",
+      "webtoon",
+      "comics",
+      "hallyu",
+      "culture-explainer",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "왜 웹툰이 세계를 사로잡았나 — 세로 스크롤·모바일 네이티브·기다리면무료·IP 파워(드라마/영화화)와 ★작가 노동의 그늘",
+    "summary_en": "How webtoons conquered the world — vertical scroll, mobile-native format, wait-to-free, IP power, and the creator-labor shadow",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1176",
+    "slug": "korean-dialect-culture",
+    "title_kr": "한국 사투리·방언 문화 — 같은 한국어, 다른 결",
+    "title_en": "Korean Dialect Culture — Same Korean, Different Flavors",
+    "category": "D",
+    "series": "korean-culture",
+    "content_type": "culture-explainer",
+    "tags": [
+      "korean-culture",
+      "dialect",
+      "language",
+      "jejueo",
+      "culture-explainer",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "표준어와 다른 지역의 결 — 경상도·전라도·충청도 사투리와 ★유네스코 소멸위기 제주어, K-콘텐츠 속 사투리의 매력",
+    "summary_en": "Beyond standard Korean — Gyeongsang, Jeolla, Chungcheong dialects, UNESCO-endangered Jejueo, and dialect charm in K-content",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1177",
+    "slug": "korean-trot-culture",
+    "title_kr": "한국 트로트 문화 — 할머니의 음악에서 전 세대 열풍으로",
+    "title_en": "Korean Trot Culture — From Grandma's Music to an All-Ages Craze",
+    "category": "D",
+    "series": "korean-culture",
+    "content_type": "culture-explainer",
+    "tags": [
+      "korean-culture",
+      "trot",
+      "music",
+      "revival",
+      "culture-explainer",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "한 세기 이어진 트로트 — 꺾기 창법·★엔카 기원 논쟁·미스트롯/미스터트롯 신드롬으로 전 세대가 열광한 부활",
+    "summary_en": "A century of trot — the kkeokgi vocal style, the enka-origin debate, and the Mr/Miss Trot revival that swept all generations",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1178",
+    "slug": "korean-slang-culture",
+    "title_kr": "한국 신조어·줄임말 문화 — 왜 한국어는 이렇게 빨리 변할까",
+    "title_en": "Korean Slang & Abbreviation Culture — Why Korean Changes So Fast",
+    "category": "D",
+    "series": "korean-culture",
+    "content_type": "culture-explainer",
+    "tags": [
+      "korean-culture",
+      "slang",
+      "neologism",
+      "internet-culture",
+      "culture-explainer",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "점메추부터 ㅇㅈ까지 — 줄임말·초성체·야민정음의 원리와 ★세대차, 외국인이 알아두면 좋은 기본기",
+    "summary_en": "From jeommechu to oj — the logic of abbreviations, initialisms and wordplay, the generation gap, and the basics for foreigners",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]
