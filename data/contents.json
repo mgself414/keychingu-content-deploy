@@ -24311,5 +24311,97 @@
     "jp_available": true,
     "instagram_posted": false,
     "series": "korean-culture"
+  },
+  {
+    "id": "1171",
+    "slug": "korean-convenience-store-culture",
+    "title_kr": "한국 편의점 공화국 — 택배·금융·식당·술집까지 되는 만능 편의점",
+    "title_en": "Korea, the Convenience Store Republic — Parcels, Banking, Meals, Even a Bar",
+    "category": "D",
+    "series": "korean-culture",
+    "content_type": "culture-explainer",
+    "tags": [
+      "korean-culture",
+      "convenience-store",
+      "daily-life",
+      "retail",
+      "culture-explainer",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "한국 편의점은 왜 만능인가 — 택배·금융·교통카드 충전·즉석조리·파라솔 음주까지, 1인가구·경쟁이 만든 생활 인프라",
+    "summary_en": "Why Korean convenience stores do everything — parcels, banking, transit top-ups, instant meals, outdoor drinking",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1172",
+    "slug": "korean-24hour-city-culture",
+    "title_kr": "한국 24시간 도시 문화 — 왜 서울은 새벽 3시에도 깨어 있을까",
+    "title_en": "Korea 24-Hour City — Why Seoul Never Sleeps",
+    "category": "D",
+    "series": "korean-culture",
+    "content_type": "culture-explainer",
+    "tags": [
+      "korean-culture",
+      "24-hour",
+      "nightlife",
+      "infrastructure",
+      "culture-explainer",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "왜 서울은 잠들지 않나 — 심야 편의점·식당·올빼미버스·찜질방의 24시간 인프라와 ★명암(수면부족·과로)",
+    "summary_en": "Why Seoul never sleeps — the 24-hour infrastructure of late-night stores, owl buses and saunas, and its dark side",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1173",
+    "slug": "korean-pojangmacha-culture",
+    "title_kr": "한국 포장마차(포차) 문화 — 왜 빨간 천막에서 소주를 마실까",
+    "title_en": "Korean Pojangmacha Culture — Why Koreans Drink Under a Red Tent",
+    "category": "D",
+    "series": "korean-culture",
+    "content_type": "culture-explainer",
+    "tags": [
+      "korean-culture",
+      "pojangmacha",
+      "street-food",
+      "drinking",
+      "culture-explainer",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "드라마 속 빨간 천막 — 길거리/실내 포차·우동·닭발·소주의 서민 정서와 ★변화(단속 감소 vs MZ 레트로 재유행)",
+    "summary_en": "The red tent from K-dramas — street vs indoor pojangmacha, the working-class jeong, and its decline and retro revival",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1174",
+    "slug": "korean-theme-cafe-culture",
+    "title_kr": "한국 이색 테마카페 문화 — 방탈출부터 동물카페까지, 왜 별별 카페가 다 있을까",
+    "title_en": "Korean Theme Cafe Culture — From Escape Rooms to Animal Cafes",
+    "category": "D",
+    "series": "korean-culture",
+    "content_type": "culture-explainer",
+    "tags": [
+      "korean-culture",
+      "theme-cafe",
+      "escape-room",
+      "animal-cafe",
+      "culture-explainer",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "한국 카페가 놀이·체험 공간이 된 이유 — 방탈출·보드게임·만화·동물·생일카페와 ★동물복지 논란",
+    "summary_en": "Why Korean cafes became play and experience spaces — escape rooms, board game, manhwa, animal and birthday cafes, and the animal-welfare debate",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]
