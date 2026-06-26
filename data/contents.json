@@ -24495,5 +24495,97 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
+  },
+  {
+    "id": "1179",
+    "slug": "korean-traditional-market-culture",
+    "title_kr": "한국 전통시장·흥정 문화 — 정과 흥정이 오가는 시장의 결",
+    "title_en": "Korean Traditional Market Culture — Jeong, Haggling, and the Soul of the Market",
+    "category": "D",
+    "series": "korean-culture",
+    "content_type": "culture-explainer",
+    "tags": [
+      "korean-culture",
+      "traditional-market",
+      "haggling",
+      "jeong",
+      "culture-explainer",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "광장시장·통인시장의 먹거리와 흥정·덤·정 — 정찰제로 줄어든 흥정과 위기 속 청년몰·관광 부활까지",
+    "summary_en": "Food, haggling and jeong at Gwangjang and Tongin markets — fading haggling, and revival via youth malls and tourism",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1180",
+    "slug": "korean-hair-salon-culture",
+    "title_kr": "한국 미용실·헤어 문화 — 왜 한국 미용실은 다를까",
+    "title_en": "Korean Hair Salon Culture — Why a Korean Salon Visit Is Different",
+    "category": "D",
+    "series": "korean-culture",
+    "content_type": "culture-explainer",
+    "tags": [
+      "korean-culture",
+      "hair-salon",
+      "beauty",
+      "k-hair",
+      "culture-explainer",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "디테일한 스타일링과 서비스 — 셋팅펌·매직·헤드스파·디자이너 지명, K-헤어 한류와 외국인 미용실 실전",
+    "summary_en": "Detailed styling and service — setting perms, magic straightening, head spa, naming your stylist, and K-hair tourism",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1181",
+    "slug": "korean-character-emoticon-culture",
+    "title_kr": "한국 캐릭터·이모티콘 문화 — 어른도 캐릭터를 사랑하는 나라",
+    "title_en": "Korean Character & Emoticon Culture — Where Adults Love Characters Too",
+    "category": "D",
+    "series": "korean-culture",
+    "content_type": "culture-explainer",
+    "tags": [
+      "korean-culture",
+      "character",
+      "emoticon",
+      "kidult",
+      "culture-explainer",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "카카오프렌즈·잔망루피부터 카카오톡 이모티콘까지 — 키덜트·이모티콘 소통·콜라보로 읽는 한국 캐릭터 사랑",
+    "summary_en": "From Kakao Friends and Zanmang Loopy to KakaoTalk emoticons — kidult culture, emoji communication and collabs",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1182",
+    "slug": "korean-variety-show-culture",
+    "title_kr": "한국 예능·리얼리티 문화 — 왜 자막이 많고 리액션이 클까",
+    "title_en": "Korean Variety Show Culture — Why So Many Captions and Big Reactions",
+    "category": "D",
+    "series": "korean-culture",
+    "content_type": "culture-explainer",
+    "tags": [
+      "korean-culture",
+      "variety-show",
+      "entertainment",
+      "hallyu",
+      "culture-explainer",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "런닝맨·관찰예능·연애 리얼리티 — 자막 편집 미학·리액션·케미로 한류를 떠받치는 K-예능",
+    "summary_en": "Running Man, observational and dating reality — the caption-editing aesthetic, reactions and chemistry of K-variety",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]
