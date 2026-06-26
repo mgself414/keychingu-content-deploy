@@ -1,0 +1,7 @@
+{
+  "tool_name": "Read",
+  "tool_input_preview": "{\"file_path\":\"c:\\\\Users\\\\USER\\\\OneDrive\\\\최근작업파일\\\\daiso00\\\\keychingu-content-deploy\\\\.playwright-mcp\\\\culture-live-verify.png\"}",
+  "error": "File does not exist. Note: your current working directory is C:\\Users\\USER\\OneDrive\\최근작업파일\\daiso00\\keychingu-content-deploy.",
+  "timestamp": "2026-06-25T06:27:37.824Z",
+  "retry_count": 1
+}
