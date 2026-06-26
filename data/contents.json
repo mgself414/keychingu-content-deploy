@@ -24173,5 +24173,143 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
+  },
+  {
+    "id": "1165",
+    "slug": "korean-cocktail-bar-culture",
+    "title_kr": "한국 칵테일 바 문화 — 왜 서울이 아시아의 '칵테일 수도'가 됐을까",
+    "title_en": "Korean Cocktail Bar Culture — How Seoul Became Asia's Cocktail Capital",
+    "category": "D",
+    "content_type": "culture-explainer",
+    "tags": [
+      "korean-culture",
+      "cocktail",
+      "bar",
+      "mixology",
+      "traditional-liquor",
+      "culture-explainer",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "소주·맥주의 나라 서울이 어떻게 아시아 칵테일 수도가 됐나 — 전통주 칵테일·한옥 바·제로웨이스트·아시아 50 베스트로 읽는 한국 칵테일 바 문화",
+    "summary_en": "How Seoul became Asia cocktail capital — Korean-spirit cocktails, hanok bars, zero-waste, and the Asia 50 Best scene",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false,
+    "series": "korean-culture"
+  },
+  {
+    "id": "1166",
+    "slug": "seoul-cocktail-bars-guide",
+    "title_kr": "서울 크래프트 칵테일 바 가이드 — 아시아 50 베스트급 미식 칵테일 바",
+    "title_en": "Seoul Craft Cocktail Bar Guide — Asia 50 Best-Level Mixology Bars",
+    "category": "I",
+    "content_type": "place-guide",
+    "tags": [
+      "foreign-tourist",
+      "cocktail",
+      "bar",
+      "nightlife",
+      "craft-cocktail",
+      "asia-50-best"
+    ],
+    "summary_kr": "세계가 인정한 서울 미식 칵테일 바 큐레이션 — Zest·Bar Cham·Le Chamber 등 아시아 50 베스트급 바 동네별 가이드",
+    "summary_en": "A curated guide to Seoul world-class craft cocktail bars — Zest, Bar Cham, Le Chamber and more, by neighborhood",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1167",
+    "slug": "korean-safety-culture",
+    "title_kr": "한국 안전·치안 문화 — 왜 카페에 노트북 두고 화장실 가도 안전할까",
+    "title_en": "Korean Safety Culture — Why You Can Leave Your Laptop at a Cafe",
+    "category": "D",
+    "content_type": "culture-explainer",
+    "tags": [
+      "korean-culture",
+      "safety",
+      "security",
+      "public-order",
+      "culture-explainer",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "왜 한국은 노트북 두고 자리 비워도 안전한가 — CCTV·시민의식·유실물 회수와 감시사회 trade-off까지",
+    "summary_en": "Why Korea feels so safe — CCTV, civic trust, lost-and-found returns, and the surveillance trade-off",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false,
+    "series": "korean-culture"
+  },
+  {
+    "id": "1168",
+    "slug": "korean-restaurant-system-culture",
+    "title_kr": "한국 식당 시스템 문화 — 호출벨부터 수저 서랍까지 '테이블 위 과학'",
+    "title_en": "Korean Restaurant System Culture — Call Bells, Cutlery Drawers & Free Refills",
+    "category": "D",
+    "content_type": "culture-explainer",
+    "tags": [
+      "korean-culture",
+      "restaurant",
+      "dining-system",
+      "call-bell",
+      "culture-explainer",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "한국 식당의 숨은 편의 시스템 — 호출벨·수저 서랍·반찬 무한리필·불판 교체를 빨리빨리×정으로 읽기",
+    "summary_en": "Korea hidden restaurant conveniences — call bells, cutlery drawers, free banchan refills, grill swaps",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false,
+    "series": "korean-culture"
+  },
+  {
+    "id": "1169",
+    "slug": "korean-transit-etiquette-culture",
+    "title_kr": "한국 대중교통 매너 문화 — 지하철에서 '빌런' 안 되는 법",
+    "title_en": "Korean Transit Etiquette — How Not to Be the Subway Villain",
+    "category": "D",
+    "content_type": "culture-explainer",
+    "tags": [
+      "korean-culture",
+      "transit",
+      "subway",
+      "etiquette",
+      "culture-explainer",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "한국 지하철·버스 에티켓 — 배려석·통화·백팩·에스컬레이터·T-money를 눈치·공중도덕으로 읽기",
+    "summary_en": "Korean subway and bus etiquette — priority seats, quiet calls, backpacks, escalators, and T-money",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false,
+    "series": "korean-culture"
+  },
+  {
+    "id": "1170",
+    "slug": "korean-photobooth-culture",
+    "title_kr": "한국 네컷사진(셀프 포토부스) 문화 — 왜 골목마다 셀프 사진관일까",
+    "title_en": "Korean Photo Booth Culture — Why Self Photo Studios Are Everywhere",
+    "category": "D",
+    "content_type": "culture-explainer",
+    "tags": [
+      "korean-culture",
+      "photobooth",
+      "insaeng-necut",
+      "mz",
+      "culture-explainer",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "인생네컷 열풍 — 셀프 포토부스·소품·QR로 읽는 MZ 추억·SNS·K-pop 팬덤 문화",
+    "summary_en": "The insaeng-necut craze — self photo booths, props, QR files, and MZ memory, SNS and K-pop fandom",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false,
+    "series": "korean-culture"
   }
 ]
