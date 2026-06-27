@@ -24887,5 +24887,97 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
+  },
+  {
+    "id": "1195",
+    "slug": "korean-kimchi-culture",
+    "title_kr": "한국 김치 문화 — 왜 한국인은 김치를 매 끼니에 먹을까",
+    "title_en": "Korean Kimchi Culture — Why Kimchi Is at Every Korean Meal",
+    "category": "D",
+    "series": "korean-culture",
+    "content_type": "culture-explainer",
+    "tags": [
+      "korean-culture",
+      "kimchi",
+      "fermentation",
+      "gimjang",
+      "culture-explainer",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "배추김치부터 물김치까지 200여 종·발효·김장(UNESCO 2013) — 매 끼니의 김치와 종주국 이야기를 객관으로",
+    "summary_en": "From baechu to mul-kimchi — 200+ types, fermentation, UNESCO gimjang, and the origin story told straight",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1196",
+    "slug": "korean-tteok-culture",
+    "title_kr": "한국 떡 문화 — 백설기·송편·인절미, 인생 매듭마다 등장하는 떡",
+    "title_en": "Korean Tteok (Rice Cake) Culture — The Rice Cakes of Life's Milestones",
+    "category": "D",
+    "series": "korean-culture",
+    "content_type": "culture-explainer",
+    "tags": [
+      "korean-culture",
+      "tteok",
+      "rice-cake",
+      "rite-of-passage",
+      "culture-explainer",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "쌀로 만든 떡(빵 아님) — 백설기·송편·인절미·떡국으로 읽는 통과의례·명절·나눔의 떡 문화",
+    "summary_en": "Rice cakes, not bread — baekseolgi, songpyeon, injeolmi and tteokguk in rites of passage, holidays and sharing",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1197",
+    "slug": "korean-hanok-culture",
+    "title_kr": "한국 한옥 문화 — 마당·대청·온돌, 자연을 들인 한국식 집",
+    "title_en": "Korean Hanok Culture — Courtyards, Wooden Halls and the House That Lets Nature In",
+    "category": "D",
+    "series": "korean-culture",
+    "content_type": "culture-explainer",
+    "tags": [
+      "korean-culture",
+      "hanok",
+      "architecture",
+      "traditional-house",
+      "culture-explainer",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "마당·대청마루·사랑채·처마·온돌+마루·배산임수 — 자연을 들인 한국 전통 가옥과 현대 한옥 부활",
+    "summary_en": "Madang, daecheong-maru, eaves, ondol-plus-maru and baesan-imsu — the nature-embracing hanok and its modern revival",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1198",
+    "slug": "korean-ginseng-culture",
+    "title_kr": "한국 인삼·홍삼 문화 — 왜 한국인은 인삼에 진심일까",
+    "title_en": "Korean Ginseng & Red Ginseng Culture — Why Koreans Swear by Ginseng",
+    "category": "D",
+    "series": "korean-culture",
+    "content_type": "culture-explainer",
+    "tags": [
+      "korean-culture",
+      "ginseng",
+      "red-ginseng",
+      "health-tonic",
+      "culture-explainer",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "고려인삼·홍삼(6년근)·사포닌·약식동원·정관장 — 보양과 선물로 읽는 한국 인삼 문화(효능은 정직 표기)",
+    "summary_en": "Korea ginseng and red ginseng, saponins and the food-as-medicine idea — ginseng as tonic and gift, with honest health framing",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]
