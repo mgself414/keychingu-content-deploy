@@ -24795,5 +24795,97 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
+  },
+  {
+    "id": "1191",
+    "slug": "korean-zodiac-culture",
+    "title_kr": "한국 띠·십이지 문화 — \"무슨 띠세요?\" 태어난 해의 동물에 담긴 의미",
+    "title_en": "Korean Zodiac Culture — \"What's Your Tti?\"",
+    "category": "D",
+    "series": "korean-culture",
+    "content_type": "culture-explainer",
+    "tags": [
+      "korean-culture",
+      "zodiac",
+      "tti",
+      "folk-belief",
+      "culture-explainer",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "12동물 띠로 나이 가늠·띠 궁합·삼재 — 출생연도만 보는 띠와 연월일시를 보는 사주(#1133)의 구분까지",
+    "summary_en": "Guessing age by the 12 zodiac animals, compatibility and samjae — and how tti (birth year) differs from saju",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1192",
+    "slug": "korean-tea-drink-culture",
+    "title_kr": "한국 전통차·음료 문화 — 식혜·수정과·대추차, 한국의 무알콜 전통 음료",
+    "title_en": "Korean Traditional Tea & Drink Culture — Sikhye, Sujeonggwa and Herbal Teas",
+    "category": "D",
+    "series": "korean-culture",
+    "content_type": "culture-explainer",
+    "tags": [
+      "korean-culture",
+      "traditional-tea",
+      "drink",
+      "non-alcoholic",
+      "culture-explainer",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "식혜·수정과부터 쌍화차·보리차까지 — 술이 아닌 한국의 무알콜 전통 음료와 한방차 문화",
+    "summary_en": "From sikhye and sujeonggwa to herbal and grain teas — Korea's non-alcoholic traditional drinks",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1193",
+    "slug": "korean-gift-culture",
+    "title_kr": "한국 선물 문화 — 왜 집들이엔 휴지·세제일까",
+    "title_en": "Korean Gift Culture — Why Toilet Paper and Detergent for a Housewarming",
+    "category": "D",
+    "series": "korean-culture",
+    "content_type": "culture-explainer",
+    "tags": [
+      "korean-culture",
+      "gift",
+      "etiquette",
+      "housewarming",
+      "culture-explainer",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "집들이 휴지·세제의 의미·명절 선물세트·경조사 + ★선물 금기(시계·신발)로 읽는 한국 선물 문화",
+    "summary_en": "The meaning of housewarming toilet paper and detergent, holiday gift sets, and gift taboos like clocks and shoes",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1194",
+    "slug": "korean-four-seasons-culture",
+    "title_kr": "한국 사계절 문화 — 뚜렷한 사계절·장마·황사·단풍이 만든 일상",
+    "title_en": "Korean Four Seasons Culture — Monsoon, Yellow Dust, Foliage and Daily Life",
+    "category": "D",
+    "series": "korean-culture",
+    "content_type": "culture-explainer",
+    "tags": [
+      "korean-culture",
+      "four-seasons",
+      "climate",
+      "weather",
+      "culture-explainer",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "봄 벚꽃·황사, 여름 장마·복날, 가을 단풍, 겨울 김장 — 뚜렷한 사계절이 만든 한국의 음식·활동·관광 타이밍",
+    "summary_en": "Spring blossoms and yellow dust, summer monsoon, autumn foliage, winter kimjang — how four seasons shape Korean life",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]
