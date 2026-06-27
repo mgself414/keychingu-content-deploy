@@ -24771,5 +24771,29 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
+  },
+  {
+    "id": "1191",
+    "slug": "locals-eat-jongno",
+    "title_kr": "현지인·공무원이 진짜 가는 종로·광화문 맛집 — 관광객은 모르는 데이터 검증 노포",
+    "title_en": "Where Locals (and Civil Servants) Actually Eat in Jongno & Gwanghwamun — Data-Verified Spots Tourists Miss",
+    "category": "C",
+    "content_type": "food-guide",
+    "tags": [
+      "jongno",
+      "gwanghwamun",
+      "local-food",
+      "authentic",
+      "nopo",
+      "civil-servant",
+      "budget",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "광화문 정부청사·종로 오피스가 공무원·직장인 점심 단골을 방문수 데이터로 검증. 곰탕·추어탕·백반 노포 + 동선·팁.",
+    "summary_en": "Authentic local restaurants where Jongno/Gwanghwamun civil servants and office workers actually eat — verified by visit-count data.",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]
