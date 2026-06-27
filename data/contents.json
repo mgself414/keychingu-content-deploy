@@ -24679,5 +24679,97 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
+  },
+  {
+    "id": "1187",
+    "slug": "korean-street-food-culture",
+    "title_kr": "한국 길거리 음식 문화 — 붕어빵·호떡·떡볶이, 노점 간식의 계절과 정",
+    "title_en": "Korean Street Food Culture — Bungeoppang, Hotteok, Tteokbokki",
+    "category": "D",
+    "series": "korean-culture",
+    "content_type": "culture-explainer",
+    "tags": [
+      "korean-culture",
+      "street-food",
+      "snack",
+      "winter-food",
+      "culture-explainer",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "사계절 분식과 겨울 간식(붕어빵·호떡·군고구마) — 노점·붕세권·계절로 읽는 한국 길거리 간식과 정",
+    "summary_en": "Four-season snacks and winter treats — street stalls, the bungsegwon meme, and the jeong of Korean street food",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1188",
+    "slug": "korean-workplace-culture",
+    "title_kr": "한국 직장 문화 — 야근·점심·커피, 한국 회사 생활의 결",
+    "title_en": "Korean Workplace Culture — Overtime, Lunch, Coffee and Hierarchy",
+    "category": "D",
+    "series": "korean-culture",
+    "content_type": "culture-explainer",
+    "tags": [
+      "korean-culture",
+      "workplace",
+      "office",
+      "work-life",
+      "culture-explainer",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "위계·야근·점심·커피로 읽는 한국 회사 생활 + ★변화(주52시간·MZ·워라밸·수평화)",
+    "summary_en": "Hierarchy, overtime, shared lunches and coffee — Korean office life and its shift toward the 52-hour week, MZ values and work-life balance",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1189",
+    "slug": "korean-hanbok-culture",
+    "title_kr": "한국 한복 문화 — 왜 한복을 입고 궁에 갈까, 전통 의상의 의미와 부활",
+    "title_en": "Korean Hanbok Culture — Why People Wear Hanbok to Palaces",
+    "category": "D",
+    "series": "korean-culture",
+    "content_type": "culture-explainer",
+    "tags": [
+      "korean-culture",
+      "hanbok",
+      "traditional-dress",
+      "heritage",
+      "culture-explainer",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "저고리·치마·고름의 구조와 명절·결혼 착용 — 궁 무료입장·대여 열풍·생활한복·한류로 부활한 한복",
+    "summary_en": "The structure of jeogori, chima and goreum and when it is worn — and hanbok's revival via free palace entry, rentals and hallyu",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1190",
+    "slug": "korean-fashion-style-culture",
+    "title_kr": "한국 패션·스타일 문화 — 왜 한국은 꾸밈에 진심일까",
+    "title_en": "Korean Fashion & Style Culture — Why Koreans Take Looks So Seriously",
+    "category": "D",
+    "series": "korean-culture",
+    "content_type": "culture-explainer",
+    "tags": [
+      "korean-culture",
+      "fashion",
+      "style",
+      "k-fashion",
+      "culture-explainer",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "깔끔·꾸안꾸·빠른 트렌드·커플룩·무신사/동대문으로 읽는 한국 스타일 + ★그늘(또래·외모 압박)",
+    "summary_en": "Clean looks, effortless-chic, fast trends, couple outfits and MUSINSA/Dongdaemun — Korean style and the shadow of appearance pressure",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]
