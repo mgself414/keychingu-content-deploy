@@ -24979,5 +24979,97 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
+  },
+  {
+    "id": "1199",
+    "slug": "korean-taekwondo-culture",
+    "title_kr": "한국 태권도 문화 — 세계가 배우는 한국의 국기",
+    "title_en": "Korean Taekwondo Culture — Korea's National Martial Art the World Practices",
+    "category": "D",
+    "series": "korean-culture",
+    "content_type": "culture-explainer",
+    "tags": [
+      "korean-culture",
+      "taekwondo",
+      "martial-art",
+      "sport",
+      "culture-explainer",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "발차기·품새·격파·띠 체계·올림픽·도장 — 가라테와 다른 한국 국기 태권도와 5대 정신(예의·극기·백절불굴)",
+    "summary_en": "Kicks, forms, breaking, belt ranks and the Olympics — Korea's national martial art and its five tenets",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1200",
+    "slug": "korean-folk-games-culture",
+    "title_kr": "한국 전통 놀이 문화 — 윷놀이·제기·연날리기, 명절을 채우는 놀이",
+    "title_en": "Korean Folk Games — Yunnori, Jegi, Kite Flying and the Games of the Holidays",
+    "category": "D",
+    "series": "korean-culture",
+    "content_type": "culture-explainer",
+    "tags": [
+      "korean-culture",
+      "folk-games",
+      "tradition",
+      "squid-game",
+      "culture-explainer",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "윷놀이·제기차기·연날리기·강강술래·씨름 — 명절 세시풍속의 놀이와 오징어게임으로 세계화된 전통 놀이",
+    "summary_en": "Yunnori, jegichagi, kite flying, ganggangsullae and ssireum — holiday folk games, now global via Squid Game",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1201",
+    "slug": "korean-ceramics-culture",
+    "title_kr": "한국 도자기·공예 문화 — 고려청자·달항아리, 흙으로 빚은 한국의 미",
+    "title_en": "Korean Ceramics & Craft Culture — Goryeo Celadon, Moon Jars and the Beauty of Clay",
+    "category": "D",
+    "series": "korean-culture",
+    "content_type": "culture-explainer",
+    "tags": [
+      "korean-culture",
+      "ceramics",
+      "craft",
+      "celadon",
+      "culture-explainer",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "고려청자(비색·상감)·조선백자·달항아리·분청사기와 나전칠기 — 흙과 손으로 빚은 절제·여백의 한국 미학",
+    "summary_en": "Goryeo celadon, Joseon white porcelain, moon jars and mother-of-pearl lacquer — the restrained, negative-space aesthetic of Korean craft",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1202",
+    "slug": "korean-hanji-culture",
+    "title_kr": "한국 한지 문화 — 천 년을 가는 한국 종이",
+    "title_en": "Korean Hanji Culture — The Korean Paper That Lasts a Thousand Years",
+    "category": "D",
+    "series": "korean-culture",
+    "content_type": "culture-explainer",
+    "tags": [
+      "korean-culture",
+      "hanji",
+      "paper",
+      "craft",
+      "culture-explainer",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "닥나무·외발뜨기·천년 보존성(무구정광경)·창호지·한지공예 — 문화재 복원으로 세계가 찾는 한국 종이",
+    "summary_en": "Paper mulberry, single-sheet papermaking, millennium-long durability, window paper and crafts — the Korean paper sought for heritage restoration",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]
