@@ -25071,5 +25071,97 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
+  },
+  {
+    "id": "1203",
+    "slug": "korean-gugak-culture",
+    "title_kr": "한국 국악 문화 — 판소리·사물놀이·아리랑, 한국의 소리",
+    "title_en": "Korean Gugak — Pansori, Samulnori and the Sound of Korea",
+    "category": "D",
+    "series": "korean-culture",
+    "content_type": "culture-explainer",
+    "tags": [
+      "korean-culture",
+      "gugak",
+      "traditional-music",
+      "pansori",
+      "culture-explainer",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "판소리·사물놀이·아리랑·가야금으로 읽는 한국 전통음악 — 정악·민속악과 현대 국악 한류까지",
+    "summary_en": "Pansori, samulnori, Arirang and the gayageum — Korean traditional music from court to folk to modern gugak",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1204",
+    "slug": "korean-traditional-dance-culture",
+    "title_kr": "한국 전통 무용 문화 — 부채춤·승무·탈춤, 몸으로 그리는 한국의 선",
+    "title_en": "Korean Traditional Dance — Fan Dance, Seungmu and the Lines Drawn by the Body",
+    "category": "D",
+    "series": "korean-culture",
+    "content_type": "culture-explainer",
+    "tags": [
+      "korean-culture",
+      "traditional-dance",
+      "buchaechum",
+      "talchum",
+      "culture-explainer",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "부채춤·승무·살풀이·탈춤·궁중정재 — 한삼·곡선·정중동으로 읽는 한국 전통 무용의 미학",
+    "summary_en": "Buchaechum, seungmu, salpuri and talchum — the aesthetics of long sleeves, curves and stillness-in-motion",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1205",
+    "slug": "korean-garden-culture",
+    "title_kr": "한국 정원 문화 — 창덕궁 후원·차경, 자연을 빌려 쓰는 정원",
+    "title_en": "Korean Garden Culture — Changdeokgung's Rear Garden and the Art of Borrowed Scenery",
+    "category": "D",
+    "series": "korean-culture",
+    "content_type": "culture-explainer",
+    "tags": [
+      "korean-culture",
+      "garden",
+      "landscape",
+      "borrowed-scenery",
+      "culture-explainer",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "차경(借景)·자연 순응 철학 — 창덕궁 후원·소쇄원으로 읽는 한국 정원과 한중일 정원의 차이",
+    "summary_en": "The philosophy of borrowed scenery and following nature — Changdeokgung's huwon, Soswaewon, and how Korean gardens differ from Chinese and Japanese ones",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1206",
+    "slug": "korean-traditional-medicine-culture",
+    "title_kr": "한국 한방·한약 문화 — 보약·침·뜸, 몸을 다스리는 한국식 의학",
+    "title_en": "Korean Traditional Medicine — Tonic Herbs, Acupuncture and Moxibustion",
+    "category": "D",
+    "series": "korean-culture",
+    "content_type": "culture-explainer",
+    "tags": [
+      "korean-culture",
+      "traditional-medicine",
+      "hanbang",
+      "acupuncture",
+      "culture-explainer",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "한의원·침·뜸·부항·보약·사상체질·동의보감 — 양의학과 병행하는 한국 전통의학(효능은 정직 표기)",
+    "summary_en": "Clinics, acupuncture, moxibustion, cupping, tonic herbs and four-constitution medicine — Korean traditional medicine alongside Western medicine, with honest framing",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]
