@@ -25163,5 +25163,116 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
+  },
+  {
+    "id": "1207",
+    "slug": "korean-culture-modern-history",
+    "title_kr": "한국문화 역사·근대 explainer",
+    "title_en": "Korean Modern History Explainer",
+    "category": "D",
+    "tags": [
+      "history",
+      "culture",
+      "explainer",
+      "modern",
+      "korean-culture",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "조선·일제·해방·전쟁·분단 5시대 + 외국인 fit 중립 서술",
+    "summary_en": "Korean modern history - 5 eras + FAQ + persona",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false,
+    "series": "korean-culture"
+  },
+  {
+    "id": "1208",
+    "slug": "korean-culture-religion-spirituality",
+    "title_kr": "한국문화 종교·영성 explainer",
+    "title_en": "Korean Religion & Spirituality Explainer",
+    "category": "D",
+    "tags": [
+      "religion",
+      "spirituality",
+      "temple",
+      "korean-culture",
+      "explainer",
+      "foreigner-friendly"
+    ],
+    "summary_kr": "불교·천주교·개신교·무속·유교 5 cluster + 사찰·성지 매트릭스",
+    "summary_en": "Korean religion 5 cluster + temples + sanctuaries",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false,
+    "series": "korean-culture"
+  },
+  {
+    "id": "1209",
+    "slug": "korean-culture-traditional-crafts",
+    "title_kr": "한국문화 전통 공예 explainer",
+    "title_en": "Korean Traditional Crafts Explainer",
+    "category": "D",
+    "tags": [
+      "crafts",
+      "ceramics",
+      "hanji",
+      "calligraphy",
+      "korean-culture",
+      "explainer"
+    ],
+    "summary_kr": "도자·한지·서예·매듭·자수 5 분야 + 체험·구매·박물관",
+    "summary_en": "Korean traditional crafts 5 fields",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false,
+    "series": "korean-culture"
+  },
+  {
+    "id": "1210",
+    "slug": "korean-culture-aesthetics-space",
+    "title_kr": "한국문화 미학·공간 explainer",
+    "title_en": "Korean Aesthetics & Space Explainer",
+    "category": "D",
+    "tags": [
+      "aesthetics",
+      "space",
+      "hanok",
+      "minimalism",
+      "korean-culture",
+      "explainer"
+    ],
+    "summary_kr": "오방색·여백·비대칭·정중동·한옥 5 원리",
+    "summary_en": "Korean aesthetics 5 principles",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false,
+    "series": "korean-culture"
+  },
+  {
+    "id": "1211",
+    "slug": "kcontent-tradition-fusion",
+    "title_kr": "K-content × 전통 fusion explainer",
+    "title_en": "K-Content × Traditional Fusion Explainer",
+    "category": "D",
+    "tags": [
+      "kcontent",
+      "fusion",
+      "kpop",
+      "kdrama",
+      "tradition",
+      "korean-culture",
+      "explainer"
+    ],
+    "summary_kr": "K-pop·K-drama·웹툰 × 한복·한옥·신화 6 fusion cluster",
+    "summary_en": "K-content × tradition 6 fusion cluster",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false,
+    "series": "korean-culture"
   }
 ]
