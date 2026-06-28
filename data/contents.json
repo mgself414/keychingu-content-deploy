@@ -1876,8 +1876,8 @@
   {
     "id": "141",
     "slug": "jongno",
-    "title_kr": "종로 가이드",
-    "title_en": "Jongno Guide",
+    "title_kr": "종로·광장시장 가이드",
+    "title_en": "Jongno & Gwangjang Market Guide",
     "category": "C",
     "tags": [
       "area",
@@ -1886,10 +1886,11 @@
       "gwanghwamun",
       "insadong",
       "ikseondong",
-      "bukchon"
+      "bukchon",
+      "gwangjang"
     ],
-    "summary_kr": "광화문+인사동+익선동+북촌·종각 4 sub-area 8선 — T6.5 Phase 5 jongno mining + Reddit demand 1위 동률 활용",
-    "summary_en": "Gwanghwamun + Insadong + Ikseondong + Bukchon/Jonggak 4 sub-areas 8-pick — T6.5 Phase 5 jongno mining + Reddit tied #1 area demand",
+    "summary_kr": "광장시장(빈대떡·마약김밥·육회)+광화문+인사동+익선동+한옥 — SERP 종합 가이드",
+    "summary_en": "Gwangjang Market (Bindaetteok·Mayak Gimbap·Yukhoe) + Gwanghwamun + Insadong + Ikseondong + Hanok — complete Jongno guide",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
