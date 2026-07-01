@@ -1,0 +1,107 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1782656751170,
+  "projectRoot": "C:\\Users\\USER\\OneDrive\\최근작업파일\\daiso00\\keychingu-content-deploy",
+  "techStack": {
+    "languages": [],
+    "frameworks": [],
+    "packageManager": null,
+    "runtime": null
+  },
+  "build": {
+    "buildCommand": null,
+    "testCommand": null,
+    "lintCommand": null,
+    "devCommand": null,
+    "scripts": {}
+  },
+  "conventions": {
+    "namingStyle": null,
+    "importStyle": null,
+    "testPattern": null,
+    "fileOrganization": null
+  },
+  "structure": {
+    "isMonorepo": false,
+    "workspaces": [],
+    "mainDirectories": [
+      "assets"
+    ],
+    "gitBranches": {
+      "defaultBranch": "main",
+      "branchingStrategy": null
+    }
+  },
+  "customNotes": [],
+  "directoryMap": {
+    "areas": {
+      "path": "areas",
+      "purpose": null,
+      "fileCount": 28,
+      "lastAccessed": 1782656751099,
+      "keyFiles": [
+        "ddp.html",
+        "dongjak.html",
+        "euljiro.html",
+        "eunpyeong.html",
+        "gangbuk.html"
+      ]
+    },
+    "assets": {
+      "path": "assets",
+      "purpose": "Static assets",
+      "fileCount": 0,
+      "lastAccessed": 1782656751101,
+      "keyFiles": []
+    },
+    "content": {
+      "path": "content",
+      "purpose": null,
+      "fileCount": 3918,
+      "lastAccessed": 1782656751115,
+      "keyFiles": [
+        "24h-nightlife.en.html",
+        "24h-nightlife.html",
+        "24h-nightlife.ja.html",
+        "24h-nightlife.zh.html",
+        "24h-shopping.en.html"
+      ]
+    },
+    "data": {
+      "path": "data",
+      "purpose": "Data files",
+      "fileCount": 2,
+      "lastAccessed": 1782656751116,
+      "keyFiles": [
+        "areas.json",
+        "contents.json"
+      ]
+    },
+    "en": {
+      "path": "en",
+      "purpose": null,
+      "fileCount": 3,
+      "lastAccessed": 1782656751118,
+      "keyFiles": [
+        "culture.html",
+        "index.html",
+        "meta-guides.html"
+      ]
+    },
+    "og": {
+      "path": "og",
+      "purpose": null,
+      "fileCount": 1078,
+      "lastAccessed": 1782656751124,
+      "keyFiles": [
+        "24h-nightlife.png",
+        "24h-shopping.png",
+        "24hr-food.png",
+        "63-building-sub-deep.png",
+        "africa-tourist-essentials.png"
+      ]
+    }
+  },
+  "hotPaths": [],
+  "userDirectives": []
+}
