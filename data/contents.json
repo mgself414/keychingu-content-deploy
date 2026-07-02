@@ -25274,5 +25274,25 @@
     "jp_available": true,
     "instagram_posted": false,
     "series": "korean-culture"
+  },
+  {
+    "id": "1212",
+    "slug": "korea-jeju-no-car",
+    "title_kr": "외국인 제주 뚜벅이 (렌터카 없이 버스)",
+    "title_en": "Car-Free Jeju by Bus",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "province",
+      "jeju",
+      "transport",
+      "budget"
+    ],
+    "summary_kr": "제주 뚜벅이 · 렌터카 없이 버스·순환810/820·카카오T · 3박4일 12선",
+    "summary_en": "Car-Free Jeju · buses, loop 810/820, KakaoT · 3N4D 12 picks",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]
