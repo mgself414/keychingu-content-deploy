@@ -25634,5 +25634,65 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
+  },
+  {
+    "id": "1230",
+    "slug": "korea-essential-apps",
+    "title_kr": "외국인 한국여행 필수 앱 가이드 — 네이버지도·카카오T·파파고 도착 전 설치",
+    "title_en": "Korea Travel Essential Apps (Naver Map·Kakao T·Papago)",
+    "category": "H",
+    "tags": [
+      "foreign-tourist",
+      "apps",
+      "naver-map",
+      "kakao-t",
+      "practical"
+    ],
+    "summary_kr": "구글맵이 안 통하는 한국의 필수 앱 셋업 · 네이버지도·카카오T·파파고·지하철·코레일톡 · 도착 전 설치·해외카드",
+    "summary_en": "Essential apps for a country where Google Maps fails · Naver Map·Kakao T·Papago·subway·Korail · pre-arrival setup",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1231",
+    "slug": "korea-tax-refund",
+    "title_kr": "외국인 택스리펀 가이드 — 즉시환급·공항 환급·키오스크 부가세 환급",
+    "title_en": "Korea Tax Refund (Immediate·Airport·Kiosk VAT)",
+    "category": "H",
+    "tags": [
+      "foreign-tourist",
+      "tax-refund",
+      "vat",
+      "shopping",
+      "practical"
+    ],
+    "summary_kr": "쇼핑 부가세 10% 환급 전략 · 즉시환급vs사후환급·최소금액·여권·세관 확인 · 공항 키오스크·시내 환급",
+    "summary_en": "Reclaim the 10% VAT · immediate vs post-purchase·minimum·passport·customs · airport kiosk·downtown refund",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1232",
+    "slug": "korea-luggage-storage",
+    "title_kr": "외국인 짐보관·짐배송 가이드 — 코인락커·공항 짐배송·호텔 간 배송",
+    "title_en": "Korea Luggage Storage·Delivery (Coin Locker·Airport·Hotel-to-Hotel)",
+    "category": "H",
+    "tags": [
+      "foreign-tourist",
+      "luggage",
+      "coin-locker",
+      "delivery",
+      "practical"
+    ],
+    "summary_kr": "체크아웃 후 짐 안 끌기 · 코인락커·짐보관 앱·공항/호텔 간 짐배송 · 크기·요금·예약·손 가볍게",
+    "summary_en": "Go hands-free after checkout · coin lockers·storage apps·airport/hotel-to-hotel delivery · size·fee·booking",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]
