@@ -25314,5 +25314,25 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
+  },
+  {
+    "id": "1214",
+    "slug": "korea-chinese-food",
+    "title_kr": "외국인 한국식 중화요리 (짜장·짬뽕·탕수육)",
+    "title_en": "Korean-Chinese Food Guide",
+    "category": "C",
+    "tags": [
+      "foreign-tourist",
+      "food",
+      "chinese-korean",
+      "jjajangmyeon",
+      "incheon"
+    ],
+    "summary_kr": "한국식 중화요리 가이드 · 짜장면/짬뽕/탕수육 · 중국과 다른 한국 진화 · 부먹찍먹 · 인천 차이나타운 발상지",
+    "summary_en": "Korean-Chinese food guide · jjajangmyeon/jjamppong/tangsuyuk · evolved in Korea · bu-meok/jjik-meok · Incheon origin",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]
