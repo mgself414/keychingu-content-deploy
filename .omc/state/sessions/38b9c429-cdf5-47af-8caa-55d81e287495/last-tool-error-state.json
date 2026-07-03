@@ -1,0 +1,7 @@
+{
+  "tool_name": "Bash",
+  "tool_input_preview": "{\"command\":\"cd \\\"C:/Users/USER/OneDrive/최근작업파일/daiso00/keychingu-content-deploy\\\"\\necho \\\"=== 주요 서빙 디렉토리 용량 (1GB 한계 확인) ===\\\"\\nfor d in content assets en og; do\\n  [ -d \\\"$d\\\" ] && echo \\\"  $d/: $(du ...",
+  "error": "Exit code 143\nCommand timed out after 2m 0s\n=== 주요 서빙 디렉토리 용량 (1GB 한계 확인) ===",
+  "timestamp": "2026-07-02T17:06:59.394Z",
+  "retry_count": 1
+}
