@@ -25294,5 +25294,25 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
+  },
+  {
+    "id": "1213",
+    "slug": "korea-bulgogi",
+    "title_kr": "외국인 불고기 (서울·언양·광양 3대 스타일)",
+    "title_en": "Bulgogi Guide (3 Regional Styles)",
+    "category": "C",
+    "tags": [
+      "foreign-tourist",
+      "food",
+      "beef",
+      "bulgogi",
+      "nofo"
+    ],
+    "summary_kr": "불고기 외국인 가이드 · 양념 소고기(BBQ와 별개) · 서울 물/언양 석쇠/광양 숯불 3대 스타일 12선",
+    "summary_en": "Bulgogi guide · marinated beef (not BBQ) · Seoul soupy/Eonyang gridiron/Gwangyang charcoal 3 styles",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]
