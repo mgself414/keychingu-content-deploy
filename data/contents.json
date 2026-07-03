@@ -25334,5 +25334,85 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
+  },
+  {
+    "id": "1215",
+    "slug": "korea-budget-stay",
+    "title_kr": "외국인 저예산 숙소 (게하·호스텔·캡슐·찜질방)",
+    "title_en": "Korea Budget Stay Guide",
+    "category": "PG",
+    "tags": [
+      "foreign-tourist",
+      "budget",
+      "accommodation",
+      "hostel",
+      "jjimjilbang"
+    ],
+    "summary_kr": "저예산 숙소 가이드 · 찜질방숙박 최저가 · 도미토리 · 캡슐 · 게하 · 모텔 · 위치 전략",
+    "summary_en": "Budget stay guide · jjimjilbang sleepover · dorm · capsule · guesthouse · location strategy",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1216",
+    "slug": "korea-hanbok-studio",
+    "title_kr": "외국인 한복 스튜디오 촬영 (스냅·궁 야외)",
+    "title_en": "Korea Hanbok Studio Photoshoot",
+    "category": "CL",
+    "tags": [
+      "foreign-tourist",
+      "hanbok",
+      "photoshoot",
+      "palace",
+      "experience"
+    ],
+    "summary_kr": "한복 스냅 촬영 가이드 · 대여와 차별 · 궁 야외 · 헤어메이크업 · 경복궁 무료입장",
+    "summary_en": "Hanbok studio photoshoot · beyond rental · palace outdoor · hair & makeup · free palace entry",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1217",
+    "slug": "korea-unique-cafes",
+    "title_kr": "외국인 특이 카페 (테마·룸·만화·동물)",
+    "title_en": "Korea Unique Cafes Guide",
+    "category": "FD",
+    "tags": [
+      "foreign-tourist",
+      "cafe",
+      "themed",
+      "animal-cafe",
+      "experience"
+    ],
+    "summary_kr": "이색 체험형 카페 · 동물 · 만화 · 룸 · 테마 · 보드게임 · 일반 카페와 별축",
+    "summary_en": "Unique experience cafes · animal · manhwa · room · themed · board game",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1218",
+    "slug": "korea-trendy-snacks",
+    "title_kr": "외국인 트렌디 K-간식 (탕후루·달고나·회오리감자)",
+    "title_en": "Korea Trendy K-Snacks Guide",
+    "category": "FD",
+    "tags": [
+      "foreign-tourist",
+      "street-food",
+      "tanghulu",
+      "dalgona",
+      "viral"
+    ],
+    "summary_kr": "신흥 바이럴 길거리 간식 · 오징어게임 달고나 · 탕후루 · 기존 분식과 신흥축 차별",
+    "summary_en": "Trendy viral street snacks · Squid Game dalgona · tanghulu · new-wave beyond classic bunsik",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]
