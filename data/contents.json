@@ -25414,5 +25414,45 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
+  },
+  {
+    "id": "1219",
+    "slug": "korea-unmanned-store",
+    "title_kr": "외국인 무인점포·자판기 문화 (무인카페·인생네컷)",
+    "title_en": "Korea Unmanned Store·Vending Guide",
+    "category": "SP",
+    "tags": [
+      "foreign-tourist",
+      "unmanned",
+      "vending",
+      "self-photo",
+      "retail"
+    ],
+    "summary_kr": "무인 자동화 리테일 · 무인카페 · 무인사진관 · 이색 자판기 · 신뢰 셀프문화",
+    "summary_en": "Unmanned automated retail · self cafe · photo booth · quirky vending · trust self-culture",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1220",
+    "slug": "korea-underground-mall",
+    "title_kr": "외국인 지하상가 쇼핑 가이드 — 고투몰·부평·강남터미널 저가 패션",
+    "title_en": "Underground Mall Shopping (GOTO Mall·Bupyeong·Gangnam)",
+    "category": "SP",
+    "tags": [
+      "foreign-tourist",
+      "shopping",
+      "underground-mall",
+      "goto-mall",
+      "cheap-fashion"
+    ],
+    "summary_kr": "지하철 직결 초저가 미로형 지하상가 · 고투몰·부평·명동 지하 · 흥정·현금·저가 패션",
+    "summary_en": "Ultra-cheap subway-linked underground malls · GOTO Mall·Bupyeong·Myeongdong · bargaining·cheap fashion",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]
