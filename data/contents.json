@@ -25454,5 +25454,65 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
+  },
+  {
+    "id": "1221",
+    "slug": "korea-kpop-music-show-taping",
+    "title_kr": "외국인 K-pop 음악방송 방청 가이드 — 인기가요·엠카·뮤뱅 사전녹화",
+    "title_en": "K-pop Music Show Taping (Inkigayo·M Countdown·Music Bank)",
+    "category": "D",
+    "tags": [
+      "foreign-tourist",
+      "kpop",
+      "music-show",
+      "inkigayo",
+      "taping"
+    ],
+    "summary_kr": "인기가요·엠카·뮤뱅 6대 음악방송 방청 · 사녹vs공방 · 팬클럽·음반 응모 · 응원봉·상암/여의도/일산",
+    "summary_en": "Attend 6 major music shows · sanok vs gongbang · fanclub·album entry · lightstick·Sangam/Yeouido/Ilsan",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1222",
+    "slug": "korea-idol-birthday-cafe",
+    "title_kr": "외국인 아이돌 생일카페 가이드 — 생카·컵슬리브·서포트",
+    "title_en": "Idol Birthday Cafe (Saengka·Cup Sleeve·Support)",
+    "category": "D",
+    "tags": [
+      "foreign-tourist",
+      "kpop",
+      "birthday-cafe",
+      "cup-sleeve",
+      "fandom"
+    ],
+    "summary_kr": "팬이 여는 생일카페(생카) · 컵슬리브·특전·포토존 · X 검색 · 홍대·연남·성수·강남",
+    "summary_en": "Fan-hosted birthday cafes (saengka) · cup sleeve·freebies·photo zone · X search · Hongdae·Seongsu·Gangnam",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1223",
+    "slug": "korea-kpop-fansign-videocall",
+    "title_kr": "외국인 K-pop 팬사인회·영상통화 응모 가이드 — 음반 응모·영통",
+    "title_en": "K-pop Fansign·Video Call (Album Entry·Yeongtong)",
+    "category": "D",
+    "tags": [
+      "foreign-tourist",
+      "kpop",
+      "fansign",
+      "video-call",
+      "album-entry"
+    ],
+    "summary_kr": "음반 구매 응모로 최애 1:1 · 팬싸·영통·미니팬미팅 · 확률·플랫폼·에티켓 · 해외 팬 영통 최적",
+    "summary_en": "Meet your bias 1:1 via album entry · fansign·video call·mini fan meeting · odds·platform·etiquette",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]
