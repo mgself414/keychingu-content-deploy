@@ -20730,8 +20730,8 @@
     "summary_kr": "대전 성심당 베이커리 · 외국인 가이드 · 4축 12 시그니처",
     "summary_en": "Daejeon Sungsimdang Bakery · foreign tourist 4-axis 12-signature",
     "en_available": true,
-    "cn_available": false,
-    "jp_available": false,
+    "cn_available": true,
+    "jp_available": true,
     "instagram_posted": false,
     "image": "assets/og/korea-daejeon-sungsimdang-bakery.jpg",
     "image_credit": "Korea Tourism Organization (공공누리 1유형)"
@@ -20836,8 +20836,8 @@
     "summary_kr": "인천 차이나타운 + 공화춘 · 외국인 가이드 · 4축 12 시그니처",
     "summary_en": "Incheon Chinatown + Gonghwachun · foreign tourist 4-axis 12-signature",
     "en_available": true,
-    "cn_available": false,
-    "jp_available": false,
+    "cn_available": true,
+    "jp_available": true,
     "instagram_posted": false,
     "image": "assets/og/korea-incheon-chinatown-gonghwachun.jpg",
     "image_credit": "Korea Tourism Organization (공공누리 1유형)"
@@ -20984,8 +20984,8 @@
     "summary_kr": "울산 간절곶 일출 · 외국인 가이드 · 4축 12 시그니처",
     "summary_en": "Ulsan Ganjeolgot Sunrise · foreign tourist 4-axis 12-signature",
     "en_available": true,
-    "cn_available": false,
-    "jp_available": false,
+    "cn_available": true,
+    "jp_available": true,
     "instagram_posted": false,
     "image": "assets/og/korea-ulsan-ganjeolgot-sunrise.jpg",
     "image_credit": "Korea Tourism Organization (공공누리 1유형)"
@@ -21160,8 +21160,8 @@
     "summary_kr": "광주 ACC (국립아시아문화전당) · 외국인 가이드 · 4축 12 시그니처",
     "summary_en": "Gwangju ACC Asia Culture Center · foreign tourist 4-axis 12-signature",
     "en_available": true,
-    "cn_available": false,
-    "jp_available": false,
+    "cn_available": true,
+    "jp_available": true,
     "instagram_posted": false,
     "image": "assets/og/korea-gwangju-acc-asia-culture.jpg",
     "image_credit": "Korea Tourism Organization (공공누리 1유형)"
