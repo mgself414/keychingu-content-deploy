@@ -25574,5 +25574,65 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
+  },
+  {
+    "id": "1227",
+    "slug": "korea-geoje",
+    "title_kr": "외국인 거제 여행 가이드 — 외도 보타니아·바람의언덕·매물도 경남 섬",
+    "title_en": "Geoje Travel (Oedo Botania·Windy Hill·Maemuldo)",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "geoje",
+      "gyeongnam",
+      "island",
+      "regional-city"
+    ],
+    "summary_kr": "경남 남해 섬 절경 · 외도 보타니아·바람의언덕·신선대·매물도 · 유람선·거가대교·겨울 굴",
+    "summary_en": "South-sea island scenery · Oedo Botania·Windy Hill·Sinseondae·Maemuldo · cruise·Geoga Bridge·winter oyster",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1228",
+    "slug": "korea-danyang",
+    "title_kr": "외국인 단양 여행 가이드 — 도담삼봉·고수동굴·패러글라이딩 충북 내륙",
+    "title_en": "Danyang Travel (Dodamsambong·Gosu Cave·Paragliding)",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "danyang",
+      "chungbuk",
+      "paragliding",
+      "regional-city"
+    ],
+    "summary_kr": "충북 내륙 강·절벽·동굴 액티비티 · 도담삼봉·만천하스카이워크·고수동굴·패러글라이딩 · 마늘·소백산",
+    "summary_en": "Inland river·cliff·cave activities · Dodamsambong·Mancheonha Skywalk·Gosu Cave·paragliding · garlic·Sobaeksan",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1229",
+    "slug": "korea-mungyeong",
+    "title_kr": "외국인 문경 여행 가이드 — 문경새재·레일바이크·도자기 경북 산악",
+    "title_en": "Mungyeong Travel (Saejae·Rail Bike·Ceramics)",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "mungyeong",
+      "gyeongbuk",
+      "rail-bike",
+      "regional-city"
+    ],
+    "summary_kr": "경북 산악 옛 고갯길 · 문경새재·레일바이크·사극 오픈세트장·도자기·단산 모노레일 · 오미자·약돌한우",
+    "summary_en": "Mountain old-pass town · Mungyeong Saejae·rail bike·drama open set·ceramics·monorail · omija·herb-fed beef",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]
