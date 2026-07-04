@@ -459,6 +459,35 @@
     <div><a href="korea-gyeonggi-1day-essential.html" style="color:var(--red);">&larr; 외국인 경기도 1일 메타</a></div>
     <div><a href="korea-gyeonggi-gapyeong-yangpyeong-nami.html" style="color:var(--red);">경기도 가평·양평·남이섬 &rarr;</a></div>
   </nav>
+
+  <section id="kc-related" style="display:none;margin:2.2rem 0 0.5rem;">
+    <h2 style="font-size:1.1rem;margin-bottom:0.8rem;">관련 가이드</h2>
+    <div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"></div>
+  </section>
+  <script>
+  // related guides — 같은 카테고리 최신 6편 (contents.json fetch·언어 suffix 자동, 2026-07-04)
+  (function() {
+    var m = location.pathname.match(/\/content\/(.+?)(\.en|\.zh|\.ja)?\.html$/);
+    if (!m) return;
+    var slug = m[1], suf = m[2] || '';
+    fetch('../data/contents.json').then(function(r) { return r.json(); }).then(function(items) {
+      var me = null;
+      for (var i = 0; i < items.length; i++) { if (items[i].slug === slug) { me = items[i]; break; } }
+      if (!me) return;
+      var pool = items.filter(function(x) { return x.slug !== slug && x.category === me.category; });
+      pool.sort(function(a, b) { return (parseInt(b.id, 10) || 0) - (parseInt(a.id, 10) || 0); });
+      var picks = pool.slice(0, 6);
+      if (!picks.length) return;
+      document.getElementById('kc-related-grid').innerHTML = picks.map(function(x) {
+        var t = suf ? (x.title_en || x.title_kr) : (x.title_kr || x.title_en);
+        var ok = suf === '' || (suf === '.en' ? x.en_available : (suf === '.zh' ? x.cn_available : x.jp_available));
+        var href = x.slug + (ok ? suf : '') + '.html';
+        return '<a href="' + href + '" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">' + t + '</a>';
+      }).join('');
+      document.getElementById('kc-related').style.display = 'block';
+    }).catch(function() {});
+  })();
+  </script>
 </main>
 
 <footer class="site-footer">
