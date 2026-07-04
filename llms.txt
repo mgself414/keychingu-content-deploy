@@ -1,16 +1,16 @@
 # KeyChinGu — Korea Travel Guides for Foreign Tourists
 
-> Comprehensive curated Korea travel guides for foreign MZ travelers, covering 250+ topics across 60+ cities (Seoul·Busan·Jeju·Gyeongju·Andong·Jeonju·etc), 4 languages (KR·EN·CN·JP), 8-axis content matrix (food·culture·K-content·shopping·seasonal·transport·sports·foreigner essentials), and 5 traveler segments (solo·couple·family·MZ·budget). Updated 2026-06-14.
+> Comprehensive curated Korea travel guides for foreign MZ travelers, covering 250+ topics across 60+ cities (Seoul·Busan·Jeju·Gyeongju·Andong·Jeonju·etc), 4 languages (KR·EN·CN·JP), 8-axis content matrix (food·culture·K-content·shopping·seasonal·transport·sports·foreigner essentials), and 5 traveler segments (solo·couple·family·MZ·budget). Updated 2026-07-04.
 
-> Total guides: **1060** | EN: 897 | CN: 917 | JP: 927 | og:image: 250+ | sitemap URLs: 3396
+> Total guides: **1098** | EN: 936 | CN: 1060 | JP: 1067 | og:image: 250+ | sitemap URLs: 3396
 
 
-## A (348)
+## A (354)
 
 - [Gangnam Cafe Phase 2 Guide](https://mgself414.github.io/keychingu-content-deploy/content/gangnam-cafe-phase2.en.html): Gangnam Phase 2 cafes — specialty coffee, desserts & atmosphere. (Korean: https://mgself414.github.io/keychingu-content-deploy/content/gangnam-cafe-phase2.html)
 - [Seongsu Pop-Up Deep Dive](https://mgself414.github.io/keychingu-content-deploy/content/seongsu.en.html): MZ hotspot Seongsu — cafes, pop-ups & select shops (Korean: https://mgself414.github.io/keychingu-content-deploy/content/seongsu.html)
 - [Euljiro Retro Hipster Tour](https://mgself414.github.io/keychingu-content-deploy/content/euljiro.en.html): Hidden bars & cafes among old ironworks (Korean: https://mgself414.github.io/keychingu-content-deploy/content/euljiro.html)
-- [Bukchon Hanok & Samcheong-dong](https://mgself414.github.io/keychingu-content-deploy/content/bukchon.en.html): Traditional meets modern with hanbok experience (Korean: https://mgself414.github.io/keychingu-content-deploy/content/bukchon.html)
+- [Bukchon Guide — 8 Photo Spots · Hanbok Free Entry · Etiquette](https://mgself414.github.io/keychingu-content-deploy/content/bukchon.en.html): Bukchon 8 photo spots (Gahoe-dong 11 viewpoint) + hanbok free palace entry + resident etiquette + 4h route (Korean: https://mgself414.github.io/keychingu-content-deploy/content/bukchon.html)
 - [Dongmyo Vintage + Yajang](https://mgself414.github.io/keychingu-content-deploy/content/dongmyo.en.html): Time-frozen alley with frozen prices — vintage digging + ₩1,000 toast + Jongno 3-ga yajang combo (Korean: https://mgself414.github.io/keychingu-content-deploy/content/dongmyo.html)
 - [Gwangjang Vintage Arcade](https://mgself414.github.io/keychingu-content-deploy/content/gwangjang-vintage.en.html): 2F above the food market — patterned dresses & retro coats hidden vintage arcade (Korean: https://mgself414.github.io/keychingu-content-deploy/content/gwangjang-vintage.html)
 - [Jamsil 1-Day Full Guide](https://mgself414.github.io/keychingu-content-deploy/content/jamsil.en.html): Jamsil 1-Day Full Guide — ISSUE 02 series (Korean: https://mgself414.github.io/keychingu-content-deploy/content/jamsil.html)
@@ -37,9 +37,9 @@
 - [Seocho Seorae Maeul Guide](https://mgself414.github.io/keychingu-content-deploy/content/seocho-seorae.en.html): Seorae Maeul (Korea's largest French community) + MAILLET (#1 French bakery in Korea) + Pyongyang naengmyeon·Korean BBQ (Gyodae·Beopjo) + ba (Korean: https://mgself414.github.io/keychingu-content-deploy/content/seocho-seorae.html)
 - [SNU Sharosu-gil Guide](https://mgself414.github.io/keychingu-content-deploy/content/snu-sharosu.en.html): SNU (Korea's #1 national university, 1946) + Sharosu-gil (1.5km MZ instagram hotspot) + Korean BBQ·meat + cafe·dessert + yajang·izakaya 4-ax (Korean: https://mgself414.github.io/keychingu-content-deploy/content/snu-sharosu.html)
 - [Magok Gimpo Airport Guide](https://mgself414.github.io/keychingu-content-deploy/content/magok-gimpo.en.html): Gimpo Airport (Korea's #1 airport, 1958) + Lotte Mall duty-free + Seoul Botanic Park (Korea's largest botanical garden, 2019) + LG Science P (Korean: https://mgself414.github.io/keychingu-content-deploy/content/magok-gimpo.html)
-  - ... and 318 more
+  - ... and 324 more
 
-## D (227)
+## D (256)
 
 - [Korea 7-Day Complete Guide for Foreigners](https://mgself414.github.io/keychingu-content-deploy/content/seoul-7day-guide.en.html): Optimal 7-day Korea itinerary for first-time foreign visitors. (Korean: https://mgself414.github.io/keychingu-content-deploy/content/seoul-7day-guide.html)
 - [K-pop Fan 1-Day Complete Itinerary Guide](https://mgself414.github.io/keychingu-content-deploy/content/kpop-fan-day-tour.en.html): Perfect 1-day K-pop fan itinerary — label districts, shrines & merch shops. (Korean: https://mgself414.github.io/keychingu-content-deploy/content/kpop-fan-day-tour.html)
@@ -49,7 +49,6 @@
 - [Noraebang Guide](https://mgself414.github.io/keychingu-content-deploy/content/noraebang.en.html): Coin, standard & luxury karaoke styles (Korean: https://mgself414.github.io/keychingu-content-deploy/content/noraebang.html)
 - [Modern Hanbok Experience Guide](https://mgself414.github.io/keychingu-content-deploy/content/hanbok.en.html): Gyeongbokgung & Changdeokgung hanbok rental — modern hanbok styles, free palace entry, instagram photo spots (Korean: https://mgself414.github.io/keychingu-content-deploy/content/hanbok.html)
 - [Korean Spa & Massage Guide](https://mgself414.github.io/keychingu-content-deploy/content/spa-massage.en.html): Korean spa & massage best spots — jjimjilbang, body scrub, full-body massage, foot massage, skin care 4-axis (Korean: https://mgself414.github.io/keychingu-content-deploy/content/spa-massage.html)
-- [Hanbok Experience (Modern)](https://mgself414.github.io/keychingu-content-deploy/content/hanbok.en.html): Fusion hanbok rentals & free palace entry (Korean: https://mgself414.github.io/keychingu-content-deploy/content/hanbok.html)
 - [Seoul University Campus Walk Guide](https://mgself414.github.io/keychingu-content-deploy/content/university-campus.en.html): Korea's top 12 university campuses for cherry blossom·autumn foliage·walking — Kyung Hee (Korea's #1 most beautiful campus·neo-European arch (Korean: https://mgself414.github.io/keychingu-content-deploy/content/university-campus.html)
 - [Korea Temples & Heritage Architecture](https://mgself414.github.io/keychingu-content-deploy/content/temple-heritage.en.html): Korea's traditional architecture deep dive — 3 major temples (Jinkwansa 1018/Bongeunsa 794/Gilsangsa 1997) + 3 urban temples (Jogyesa·Cheong (Korean: https://mgself414.github.io/keychingu-content-deploy/content/temple-heritage.html)
 - [Korea Hanok Deep Dive](https://mgself414.github.io/keychingu-content-deploy/content/hanok-deep-dive.en.html): Korea hanok 12-pick — Bukchon Hanok Village (Korea's #1 foreigner spot) + Eunpyeong Hanok Village (Korea's #1 newly-built 2007) + Ikseondong (Korean: https://mgself414.github.io/keychingu-content-deploy/content/hanok-deep-dive.html)
@@ -71,9 +70,10 @@
 - [K-pop Concerts·Tickets·Festivals Foreigner Full Guide](https://mgself414.github.io/keychingu-content-deploy/content/kpop-concert-ticket.en.html): K-pop Concerts·Tickets·Festivals 12-pick (extends #19·#207·#387·#399) — KSPO Dome (Jamsil 15K seats, Korea's #1) + Gocheok Sky Dome (Guro 25 (Korean: https://mgself414.github.io/keychingu-content-deploy/content/kpop-concert-ticket.html)
 - [Korea Festivals Foreigner Full Guide](https://mgself414.github.io/keychingu-content-deploy/content/korea-festivals.en.html): Korea Festivals 12-pick (extends #19·#385·#402) — KCON KOREA (LA/Tokyo/Seoul, K-pop global #1) + MAMA Awards (Nov-Dec Korea's #1) + MMA·SBS· (Korean: https://mgself414.github.io/keychingu-content-deploy/content/korea-festivals.html)
 - [Foreigner Casino Full Guide](https://mgself414.github.io/keychingu-content-deploy/content/casino.en.html): Foreigner Casino 12-pick (extends #369·#401·#406) — Walker Hill Casino (since 1968 Korea's #1 foreigner-only, Gwangjin) + Paradise City (Inc (Korean: https://mgself414.github.io/keychingu-content-deploy/content/casino.html)
-  - ... and 197 more
+- [Foreigner Instagram Photo Spots Matrix](https://mgself414.github.io/keychingu-content-deploy/content/instagram-spots.en.html): Foreigner Instagram Photo Spots Matrix 12-pick (extends #260·#366·#377·#381) — DDP Dongdaemun (Zaha Hadid 45,000 LED, foreigner Instagram #1 (Korean: https://mgself414.github.io/keychingu-content-deploy/content/instagram-spots.html)
+  - ... and 226 more
 
-## C (143)
+## C (144)
 
 - [Hongdae Select Shops Guide](https://mgself414.github.io/keychingu-content-deploy/content/hongdae-select-shops.en.html): 20+ select shops in Hongdae & Sangsu — fashion, beauty & goods. (Korean: https://mgself414.github.io/keychingu-content-deploy/content/hongdae-select-shops.html)
 - [Korea Dessert Category Meta Guide](https://mgself414.github.io/keychingu-content-deploy/content/korea-dessert-meta.en.html): All Korean dessert categories — bingsu, tteok, cakes & traditional sweets. (Korean: https://mgself414.github.io/keychingu-content-deploy/content/korea-dessert-meta.html)
@@ -84,8 +84,6 @@
 - [Hangang Chimaek Picnic](https://mgself414.github.io/keychingu-content-deploy/content/chimaek.en.html): Fried chicken & beer by the river (Korean: https://mgself414.github.io/keychingu-content-deploy/content/chimaek.html)
 - [Korean Food Essentials TOP10](https://mgself414.github.io/keychingu-content-deploy/content/korean-food.en.html): Must-try Korean foods for first-time foreigner visitors — KBBQ, samgyetang, bibimbap, kimchi jjigae, tteokbokki and more (Korean: https://mgself414.github.io/keychingu-content-deploy/content/korean-food.html)
 - [Street Food Mecca Guide](https://mgself414.github.io/keychingu-content-deploy/content/street-food.en.html): Myeongdong, Gwangjang Market & Hongdae street food best spots — value-focused with foreigner-friendly vendors (Korean: https://mgself414.github.io/keychingu-content-deploy/content/street-food.html)
-- [Korean Food Essentials TOP 10](https://mgself414.github.io/keychingu-content-deploy/content/korean-food.en.html): 10 dishes you must try on your first trip (Korean: https://mgself414.github.io/keychingu-content-deploy/content/korean-food.html)
-- [Street Food Mecca](https://mgself414.github.io/keychingu-content-deploy/content/street-food.en.html): Mangwon, Gwangjang & Jongno street food (Korean: https://mgself414.github.io/keychingu-content-deploy/content/street-food.html)
 - [Seoul Naengmyeon Guide](https://mgself414.github.io/keychingu-content-deploy/content/naengmyeon.en.html): Pyeongyang vs Hamheung — 8 main shops + 17 quick picks, 4-axis balance + four-season guide (Korean: https://mgself414.github.io/keychingu-content-deploy/content/naengmyeon.html)
 - [Seoul Korean BBQ Guide](https://mgself414.github.io/keychingu-content-deploy/content/korean-bbq.en.html): Hanwoo, Heuk-doeji, samgyeopsal, galbi-tang 8-pick — 4-axis balance (nopo/MZ/premium/chain) (Korean: https://mgself414.github.io/keychingu-content-deploy/content/korean-bbq.html)
 - [Seoul Dakgalbi Guide](https://mgself414.github.io/keychingu-content-deploy/content/dakgalbi.en.html): Chuncheon-style origin + Seoul MZ trendy 8-pick — connects to K-drama/K-pop culture (Korean: https://mgself414.github.io/keychingu-content-deploy/content/dakgalbi.html)
@@ -96,7 +94,7 @@
 - [Seoul Hongdae Guide](https://mgself414.github.io/keychingu-content-deploy/content/hongdae.en.html): Arrival route, busking, shopping (Kakao Friends), Gyeongui Line park, K-indie music, food & experiences — comprehensive 'things to do in Hon (Korean: https://mgself414.github.io/keychingu-content-deploy/content/hongdae.html)
 - [Hongdae Cafe Guide](https://mgself414.github.io/keychingu-content-deploy/content/hongdae-cafe.en.html): Specialty roastery + bakery + brunch + Insta-theme 4-axis 8-pick — built on T6.5 Phase 4 demand-driven signal (gap_score #1) (Korean: https://mgself414.github.io/keychingu-content-deploy/content/hongdae-cafe.html)
 - [Hongdae Bar & Drink Guide](https://mgself414.github.io/keychingu-content-deploy/content/hongdae-bar.en.html): Rooftop & view + Korean traditional + foreigner-friendly pubs + solo-drink scene 4-axis 8-pick — gap_score #2, 100% uncovered (Korean: https://mgself414.github.io/keychingu-content-deploy/content/hongdae-bar.html)
-- [Jongno Guide](https://mgself414.github.io/keychingu-content-deploy/content/jongno.en.html): Gwanghwamun + Insadong + Ikseondong + Bukchon/Jonggak 4 sub-areas 8-pick — T6.5 Phase 5 jongno mining + Reddit tied #1 area demand (Korean: https://mgself414.github.io/keychingu-content-deploy/content/jongno.html)
+- [Jongno & Gwangjang Market Guide](https://mgself414.github.io/keychingu-content-deploy/content/jongno.en.html): Gwangjang Market (Bindaetteok·Mayak Gimbap·Yukhoe) + Gwanghwamun + Insadong + Ikseondong + Hanok — complete Jongno guide (Korean: https://mgself414.github.io/keychingu-content-deploy/content/jongno.html)
 - [Gangnam Cafe Guide](https://mgself414.github.io/keychingu-content-deploy/content/gangnam-cafe.en.html): Bakery + specialty coffee + brunch + trendy 4-axis 8-pick — built on T6.5 Phase 5 demand-driven signal (gap_score #2) (Korean: https://mgself414.github.io/keychingu-content-deploy/content/gangnam-cafe.html)
 - [Gangnam Korean Food Guide](https://mgself414.github.io/keychingu-content-deploy/content/gangnam-korean.en.html): Michelin + hotel + heritage + modern Korean 4-axis 8-pick — built on gap_score #3 (Korean: https://mgself414.github.io/keychingu-content-deploy/content/gangnam-korean.html)
 - [Itaewon & Hannam Guide](https://mgself414.github.io/keychingu-content-deploy/content/itaewon.en.html): Arrival route, world cuisine, Seoul Central Mosque, Leeum Museum, shopping, Michelin & nightlife — comprehensive 'things to do in Itaewon' g (Korean: https://mgself414.github.io/keychingu-content-deploy/content/itaewon.html)
@@ -105,9 +103,11 @@
 - [Hongdae Western Food Guide](https://mgself414.github.io/keychingu-content-deploy/content/hongdae-western.en.html): Italian·pasta + modern western + signature + brunch 4-axis 8-pick — ISSUE 03 Hongdae western food deep dive (western cluster 0% covered) (Korean: https://mgself414.github.io/keychingu-content-deploy/content/hongdae-western.html)
 - [Hongdae Western Food Phase 2 Guide](https://mgself414.github.io/keychingu-content-deploy/content/hongdae-western-phase2.en.html): Hidden gems 8-pick after #153 ★rating-verified 12 — foreign reviews 8+ signal threshold. Cluster cov 25%→50%. (Korean: https://mgself414.github.io/keychingu-content-deploy/content/hongdae-western-phase2.html)
 - [Gangnam Bar Guide](https://mgself414.github.io/keychingu-content-deploy/content/gangnam-bar.en.html): Brewery + winebar + pocha + speakeasy 4-axis 8-pick — Gangnam bar cluster gap 387, 0% covered (ISSUE 03 Gangnam series #3) (Korean: https://mgself414.github.io/keychingu-content-deploy/content/gangnam-bar.html)
-  - ... and 113 more
+- [Seoul Jongno Brunch Guide](https://mgself414.github.io/keychingu-content-deploy/content/jongno-brunch.en.html): Hanok brunch + modern + bagel + instagram 4-axis 8-pick — T6.5 demand No.1 Jongno brunch guide (Korean: https://mgself414.github.io/keychingu-content-deploy/content/jongno-brunch.html)
+- [Seoul Hongdae Brunch Guide](https://mgself414.github.io/keychingu-content-deploy/content/hongdae-brunch.en.html): Yeonnam signature + Hapjeong modern + pancake/bagel + Mangwon local 4-axis 12-pick — T6.5 cycle 11 Hongdae brunch guide (Korean: https://mgself414.github.io/keychingu-content-deploy/content/hongdae-brunch.html)
+  - ... and 114 more
 
-## H (84)
+## H (88)
 
 - [Transport & Navigation Guide](https://mgself414.github.io/keychingu-content-deploy/content/transport.en.html): Subway, bus, taxi & apps — all you need (Korean: https://mgself414.github.io/keychingu-content-deploy/content/transport.html)
 - [Seoul Running Course Guide](https://mgself414.github.io/keychingu-content-deploy/content/running-course.en.html): Han River + downtown + park + niche 4-axis 8-pick — Activity category debut (series #1 general, #147 night running coming) (Korean: https://mgself414.github.io/keychingu-content-deploy/content/running-course.html)
@@ -139,13 +139,12 @@
 - [Seoul Digital Nomad Full Guide](https://mgself414.github.io/keychingu-content-deploy/content/digital-nomad.en.html): Seoul Digital Nomad 12-pick — WeWork (Gangnam/City Hall/Samseong-dong) + Fastfive (Korea's #1) + Sparkplus + 24h cafes (Starbucks The series (Korean: https://mgself414.github.io/keychingu-content-deploy/content/digital-nomad.html)
 - [Korean Holidays Full Guide](https://mgself414.github.io/keychingu-content-deploy/content/korean-holidays.en.html): Korean Holidays 12-pick — Seollal Lunar New Year (tteokguk + sebae + hanbok + minsok-nori) + Chuseok harvest festival (songpyeon + charye +  (Korean: https://mgself414.github.io/keychingu-content-deploy/content/korean-holidays.html)
 - [Seoul Rainy Day Indoor Full Guide](https://mgself414.github.io/keychingu-content-deploy/content/rainy-day.en.html): Seoul Rainy Day 12-pick — NMK (Korea's #1 free) + Hangul Museum free + DDP night LED + 63 Aqua Planet + Lotte World Aquarium + COEX Aquarium (Korean: https://mgself414.github.io/keychingu-content-deploy/content/rainy-day.html)
-  - ... and 54 more
+  - ... and 58 more
 
-## B (79)
+## B (78)
 
 - [Free Night View Spots TOP 10](https://mgself414.github.io/keychingu-content-deploy/content/night-views.en.html): Best Seoul night views without spending a won (Korean: https://mgself414.github.io/keychingu-content-deploy/content/night-views.html)
 - [Namsan Trail & Night View](https://mgself414.github.io/keychingu-content-deploy/content/namsan.en.html): Namsan Trail walking + N Seoul Tower night view — foreigner 1st-priority night course with Myeongdong/Itaewon access (Korean: https://mgself414.github.io/keychingu-content-deploy/content/namsan.html)
-- [Namsan Trail & Night Views](https://mgself414.github.io/keychingu-content-deploy/content/namsan.en.html): Walk the trails around N Seoul Tower at sunset (Korean: https://mgself414.github.io/keychingu-content-deploy/content/namsan.html)
 - [Eungbongsan Pavilion Night View](https://mgself414.github.io/keychingu-content-deploy/content/eungbongsan.en.html): 15-min climb, ₩0, Dongho Bridge + N Seoul Tower in one frame (Korean: https://mgself414.github.io/keychingu-content-deploy/content/eungbongsan.html)
 - [Seoul Parks Full Guide](https://mgself414.github.io/keychingu-content-deploy/content/seoul-parks.en.html): Korea's #1 park city deep dive — 11 Hangang Parks (Yeouido/Banpo/Ttukseom) + 5 urban parks (Seoul Forest/Olympic 1988/Children's Grand 1973  (Korean: https://mgself414.github.io/keychingu-content-deploy/content/seoul-parks.html)
 - [Korea Night View Full Guide](https://mgself414.github.io/keychingu-content-deploy/content/night-view-full.en.html): Korea night view 12-pick — N Seoul Tower 1969·Lotte Tower Seoul Sky 555m·63 Building·Banpo Moonlight Rainbow Fountain (Guinness world's long (Korean: https://mgself414.github.io/keychingu-content-deploy/content/night-view-full.html)
@@ -173,7 +172,8 @@
 - [Wando Travel Map](https://mgself414.github.io/keychingu-content-deploy/content/wando-travel-map.en.html): Jeollanam-do Wando matrix — Cheongsando (Slow City #1·UNESCO Slow City)·Dadohae Marine National Park·Wando abalone (Korea #1 origin)·seaweed (Korean: https://mgself414.github.io/keychingu-content-deploy/content/wando-travel-map.html)
 - [Jindo Travel Map](https://mgself414.github.io/keychingu-content-deploy/content/jindo-travel-map.en.html): Jeollanam-do Jindo matrix — Jindo Miracle Sea Road (Moses parting 1~2/yr·foreigner buzz)·Jindo Dog (Natural Monument #53·Jindo Dog theme par (Korean: https://mgself414.github.io/keychingu-content-deploy/content/jindo-travel-map.html)
 - [Goseong Travel Map](https://mgself414.github.io/keychingu-content-deploy/content/goseong-travel-map.en.html): Gangwon Goseong matrix — Unification Observatory (Korea #1 North view·foreigner buzz)·DMZ Museum·Goseong Korean War Experience Center + Song (Korean: https://mgself414.github.io/keychingu-content-deploy/content/goseong-travel-map.html)
-  - ... and 49 more
+- [Korea Transport Map](https://mgself414.github.io/keychingu-content-deploy/content/korea-transport-map.en.html): Korea inbound transport matrix — Climate Card 30day 65,000KRW (#176 walkable_seoul #1) + Subway 1~9·KTX·SRT·Incheon·Gimpo + T-money·K-Pass + (Korean: https://mgself414.github.io/keychingu-content-deploy/content/korea-transport-map.html)
+  - ... and 48 more
 
 ## F (71)
 
@@ -243,10 +243,9 @@
 - [Foreigner K-pop Music Video Locations Deep Dive](https://mgself414.github.io/keychingu-content-deploy/content/kpop-mv-locations.en.html): Foreigner K-pop Music Video Locations Deep Dive 12 Matrix (extends #378·#387·#519) — BTS Spring Day Gangneung Jeongdongjin (World #1 #534 4. (Korean: https://mgself414.github.io/keychingu-content-deploy/content/kpop-mv-locations.html)
   - ... and 16 more
 
-## E (45)
+## E (44)
 
 - [Personal Color & Beauty Consulting](https://mgself414.github.io/keychingu-content-deploy/content/personal-color.en.html): Color analysis shops, pricing & booking (Korean: https://mgself414.github.io/keychingu-content-deploy/content/personal-color.html)
-- [Korean Spa & Massage](https://mgself414.github.io/keychingu-content-deploy/content/spa-massage.en.html): Full-body, sports & aroma — the complete guide (Korean: https://mgself414.github.io/keychingu-content-deploy/content/spa-massage.html)
 - [Korea K-beauty Spa Full Guide](https://mgself414.github.io/keychingu-content-deploy/content/kbeauty-spa-full.en.html): K-beauty·spa·beauty 12-pick — Myeongdong cosmetics street (Korea's #1) + Olive Young flagship + Amorepacific HQ (David Chipperfield) + Innis (Korean: https://mgself414.github.io/keychingu-content-deploy/content/kbeauty-spa-full.html)
 - [Korea Medical Tourism Full Guide](https://mgself414.github.io/keychingu-content-deploy/content/medical-tourism.en.html): Korea Medical Tourism 12-pick — Gangnam plastic surgery street (Apgujeong/Sinsa/Cheongdam #1) + JK Plastic Surgery + BK Plastic Surgery + Ew (Korean: https://mgself414.github.io/keychingu-content-deploy/content/medical-tourism.html)
 - [Seoul Yoga Pilates Meditation](https://mgself414.github.io/keychingu-content-deploy/content/yoga-pilates.en.html): Seoul Yoga Pilates Meditation 12-pick — YogaTribe Itaewon (foreigner #1, English) + YogaJang Hannam + Itaewon/Hannam English-friendly yoga + (Korean: https://mgself414.github.io/keychingu-content-deploy/content/yoga-pilates.html)
@@ -275,7 +274,8 @@
 - [Foreigner Korea Hiking Trekking Top 12 Deep Dive](https://mgself414.github.io/keychingu-content-deploy/content/hiking-trekking-deep.en.html): Foreigner Korea Hiking Trekking 12 Matrix (extends #148·#149·#363·#511·#176·#586·#205·#550·#589) — Major mountains 3 (Bukhansan Baekundae 83 (Korean: https://mgself414.github.io/keychingu-content-deploy/content/hiking-trekking-deep.html)
 - [Foreigner Korea Golf Round Top 12 Deep Dive](https://mgself414.github.io/keychingu-content-deploy/content/golf-round-deep.en.html): Foreigner Korea Golf Round 12 Matrix (extends #542·#577·#576·#190·#325·#594) — Public 9-hole 3 (Korea Public CC Yongin + Hwaseong Golf + 9-h (Korean: https://mgself414.github.io/keychingu-content-deploy/content/golf-round-deep.html)
 - [Foreigner Korea Winter Jjimjilbang Hot Spring Top 12](https://mgself414.github.io/keychingu-content-deploy/content/jjimjilbang-winter.en.html): Winter Jjimjilbang Hot Spring Top 12·Dragon Hill/Aqua Field/Termeden/Onyang/Icheon (Korean: https://mgself414.github.io/keychingu-content-deploy/content/jjimjilbang-winter.html)
-  - ... and 15 more
+- [Foreigner Korea K-Medical Tourism Top 12](https://mgself414.github.io/keychingu-content-deploy/content/k-medical-overview.en.html): K-Medical Tourism Top 12 (Korean: https://mgself414.github.io/keychingu-content-deploy/content/k-medical-overview.html)
+  - ... and 14 more
 
 ## I (17)
 
@@ -300,7 +300,7 @@
 
 ## Metadata
 
-- **Coverage**: 1060 curated guides as of 2026-06-14
+- **Coverage**: 1098 curated guides as of 2026-07-04
 - **Languages**: KR (full), EN (full), CN (full), JP (full)
 - **Update frequency**: Weekly
 - **Data sources**: Korea Tourism Organization (VisitKorea), Seoul Tourism Foundation (Visit Seoul), Cultural Heritage Administration, UNESCO World Heritage, Korea Open Government License (KOGL), Naver Maps, Reddit r/koreatravel + user curation

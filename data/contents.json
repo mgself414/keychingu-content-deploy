@@ -606,29 +606,6 @@
     "jp_available": true
   },
   {
-    "id": "025",
-    "slug": "namsan",
-    "title_kr": "남산 둘레길 & 야경",
-    "title_en": "Namsan Trail & Night Views",
-    "category": "B",
-    "tags": [
-      "outdoor",
-      "free",
-      "photo",
-      "namsan",
-      "n-seoul-tower",
-      "night-view",
-      "trail",
-      "must-try"
-    ],
-    "summary_kr": "남산 둘레길·N서울타워 야경 — 일몰부터 야경까지 도보 코스 완벽 풀가이드 (#13 남산 + #14 + #224).",
-    "summary_en": "Walk the trails around N Seoul Tower at sunset",
-    "en_available": true,
-    "instagram_posted": false,
-    "cn_available": true,
-    "jp_available": true
-  },
-  {
     "id": "25",
     "slug": "mangwon-market-food",
     "title_kr": "25_망원시장 먹거리",
@@ -773,28 +750,6 @@
     "jp_available": true
   },
   {
-    "id": "033",
-    "slug": "korean-food",
-    "title_kr": "한식 필수 체험 TOP 10",
-    "title_en": "Korean Food Essentials TOP 10",
-    "category": "C",
-    "tags": [
-      "foodie",
-      "culture",
-      "must-try",
-      "korean-food",
-      "first-visit",
-      "essentials",
-      "foreigner-friendly"
-    ],
-    "summary_kr": "한국 음식 essentials TOP 10 — 처음 한국인을 위한 필수 한식 풀세트 외국인 매니아 1순위 (#15 + #234).",
-    "summary_en": "10 dishes you must try on your first trip",
-    "en_available": true,
-    "instagram_posted": false,
-    "cn_available": true,
-    "jp_available": true
-  },
-  {
     "id": "33",
     "slug": "hanbok-guide",
     "title_kr": "33_한복 체험 - 경복궁 완전 가이드",
@@ -846,28 +801,6 @@
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
-    "jp_available": true
-  },
-  {
-    "id": "036",
-    "slug": "street-food",
-    "title_kr": "길거리 음식 성지",
-    "title_en": "Street Food Mecca",
-    "category": "C",
-    "tags": [
-      "foodie",
-      "market",
-      "budget",
-      "street-food",
-      "gwangjang",
-      "mangwon",
-      "korean-food"
-    ],
-    "summary_kr": "한국 길거리 음식 — 망원·광장·종로 스트리트 푸드 외국인 매니아 풀가이드 (#16 + #208).",
-    "summary_en": "Mangwon, Gwangjang & Jongno street food",
-    "en_available": true,
-    "instagram_posted": false,
-    "cn_available": false,
     "jp_available": true
   },
   {
@@ -955,27 +888,6 @@
     ],
     "summary_kr": "40_남산 + 명동 야경 투어 — ISSUE 02 quick guide (~2K chars)",
     "summary_en": "40_Namsan + Myeongdong Night Tour — ISSUE 02 quick guide (~2K chars)",
-    "en_available": true,
-    "instagram_posted": false,
-    "cn_available": true,
-    "jp_available": true
-  },
-  {
-    "id": "041",
-    "slug": "hanbok",
-    "title_kr": "한복 체험 (모던)",
-    "title_en": "Hanbok Experience (Modern)",
-    "category": "D",
-    "tags": [
-      "culture",
-      "photo",
-      "hanbok",
-      "palace",
-      "tradition",
-      "bukchon"
-    ],
-    "summary_kr": "한복 체험 모던 — 퓨전 한복·경복궁 무료 입장·인사동 한복 사진관 (#17 + #207 + #261).",
-    "summary_en": "Fusion hanbok rentals & free palace entry",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
@@ -1160,27 +1072,6 @@
   },
   {
     "id": "050",
-    "slug": "spa-massage",
-    "title_kr": "한국 스파 & 마사지",
-    "title_en": "Korean Spa & Massage",
-    "category": "E",
-    "tags": [
-      "beauty",
-      "wellness",
-      "spa",
-      "massage",
-      "k-beauty",
-      "luxury"
-    ],
-    "summary_kr": "한국 스파·마사지 — 전신·스포츠·아로마·호텔 스파 완벽 풀가이드 (#17 + #292).",
-    "summary_en": "Full-body, sports & aroma — the complete guide",
-    "en_available": true,
-    "instagram_posted": false,
-    "cn_available": false,
-    "jp_available": true
-  },
-  {
-    "id": "050",
     "slug": "gwangjang-vintage",
     "title_kr": "광장시장 구제상가",
     "title_en": "Gwangjang Vintage Arcade",
@@ -1320,28 +1211,6 @@
     ],
     "summary_kr": "서울 재즈바·재즈카페 가이드 — ISSUE 02 시리즈",
     "summary_en": "Seoul Jazz Bars & Lounges Guide for Foreigners — ISSUE 02 series",
-    "en_available": true,
-    "instagram_posted": false,
-    "cn_available": true,
-    "jp_available": true
-  },
-  {
-    "id": "061",
-    "slug": "shopping-day",
-    "title_kr": "서울 쇼핑 지역 1일 공략",
-    "title_en": "Seoul Shopping Day Plan",
-    "category": "F",
-    "tags": [
-      "shopping",
-      "mz",
-      "cafe",
-      "chain",
-      "myeongdong",
-      "hongdae",
-      "seongsu"
-    ],
-    "summary_kr": "한국 카페 체인 — 명동·홍대·강남·성수 4 area 카페 체인 가이드 (#225 카페 deep dive + #138·#142·#13).",
-    "summary_en": "Myeongdong, Hongdae, Gangnam & Seongsu in one day",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
@@ -3610,51 +3479,6 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
-  },
-  {
-    "id": "210",
-    "slug": "spicy-challenge",
-    "title_kr": "한식 매운음식 챌린지",
-    "title_en": "Korean Spicy Food Challenge",
-    "category": "C",
-    "tags": [
-      "foreigner",
-      "food",
-      "spicy",
-      "challenge",
-      "buldak",
-      "tteokbokki",
-      "scoville"
-    ],
-    "summary_kr": "한식 매운음식 챌린지 12선 — 불닭볶음면·신라면·매운 떡볶이·낙지볶음·쭈꾸미 등 외국인 스코빌 도전",
-    "summary_en": "Korean spicy food challenge 12-pick — buldak ramen, shin ramen, spicy tteokbokki, nakji bokkeum, jukkumi and more for foreigner Scoville challenges",
-    "en_available": true,
-    "instagram_posted": false,
-    "cn_available": true,
-    "jp_available": true
-  },
-  {
-    "id": "211",
-    "slug": "vegan-halal-expand",
-    "title_kr": "한국 비건·할랄 확장 가이드",
-    "title_en": "Korea Vegan & Halal Extended Guide",
-    "category": "C",
-    "tags": [
-      "foreigner",
-      "food",
-      "vegan",
-      "halal",
-      "dietary",
-      "muslim-friendly",
-      "plant-based",
-      "itaewon"
-    ],
-    "summary_kr": "한국 비건·할랄 확장편 (#69 후속) — 이태원·홍대·강남 vegan·halal 신규 매장 + 인증 확인법",
-    "summary_en": "Korea vegan & halal extended guide (extends #69) — Itaewon, Hongdae, Gangnam new vegan·halal venues + certification verification",
-    "en_available": true,
-    "instagram_posted": false,
-    "cn_available": true,
-    "jp_available": true
   },
   {
     "id": "212",
@@ -10732,7 +10556,8 @@
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
-    "jp_available": true
+    "jp_available": true,
+    "series": "korean-culture"
   },
   {
     "id": "503",
@@ -19625,27 +19450,6 @@
     "image": "assets/og/korea-sashimi-live-aged-matrix.jpg"
   },
   {
-    "id": "865",
-    "slug": "korea-sashimi-market-workflow",
-    "title_kr": "한국 회 주문·시장·횟집·매운탕 워크플로우",
-    "title_en": "Korean Sashimi Order & Market Workflow Guide",
-    "category": "A",
-    "tags": [
-      "foreign-tourist",
-      "food",
-      "sashimi",
-      "workflow",
-      "meta-guide"
-    ],
-    "summary_kr": "5-step + 4채널 + 초장 vs 와사비 + 매운탕 + 영어 발화",
-    "summary_en": "5-step + 4 channels + chojang vs wasabi + spicy stew + English phrases",
-    "en_available": false,
-    "cn_available": false,
-    "jp_available": false,
-    "instagram_posted": false,
-    "image": "assets/og/korea-sashimi-market-workflow.jpg"
-  },
-  {
     "id": "866",
     "slug": "korea-sashimi-market-channel-comparison",
     "title_kr": "외국인용 한국 회 노량진 vs 자갈치 vs 통영 vs 소래포구 비교",
@@ -25340,7 +25144,7 @@
     "slug": "korea-budget-stay",
     "title_kr": "외국인 저예산 숙소 (게하·호스텔·캡슐·찜질방)",
     "title_en": "Korea Budget Stay Guide",
-    "category": "PG",
+    "category": "H",
     "tags": [
       "foreign-tourist",
       "budget",
@@ -25360,7 +25164,7 @@
     "slug": "korea-hanbok-studio",
     "title_kr": "외국인 한복 스튜디오 촬영 (스냅·궁 야외)",
     "title_en": "Korea Hanbok Studio Photoshoot",
-    "category": "CL",
+    "category": "D",
     "tags": [
       "foreign-tourist",
       "hanbok",
@@ -25380,7 +25184,7 @@
     "slug": "korea-unique-cafes",
     "title_kr": "외국인 특이 카페 (테마·룸·만화·동물)",
     "title_en": "Korea Unique Cafes Guide",
-    "category": "FD",
+    "category": "C",
     "tags": [
       "foreign-tourist",
       "cafe",
@@ -25400,7 +25204,7 @@
     "slug": "korea-trendy-snacks",
     "title_kr": "외국인 트렌디 K-간식 (탕후루·달고나·회오리감자)",
     "title_en": "Korea Trendy K-Snacks Guide",
-    "category": "FD",
+    "category": "C",
     "tags": [
       "foreign-tourist",
       "street-food",
@@ -25420,7 +25224,7 @@
     "slug": "korea-unmanned-store",
     "title_kr": "외국인 무인점포·자판기 문화 (무인카페·인생네컷)",
     "title_en": "Korea Unmanned Store·Vending Guide",
-    "category": "SP",
+    "category": "D",
     "tags": [
       "foreign-tourist",
       "unmanned",
@@ -25440,7 +25244,7 @@
     "slug": "korea-underground-mall",
     "title_kr": "외국인 지하상가 쇼핑 가이드 — 고투몰·부평·강남터미널 저가 패션",
     "title_en": "Underground Mall Shopping (GOTO Mall·Bupyeong·Gangnam)",
-    "category": "SP",
+    "category": "F",
     "tags": [
       "foreign-tourist",
       "shopping",
