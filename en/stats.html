@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KeyChinGu Stats — Full-Stack Content Visualization</title>
+  <meta name="description" content="Full-stack stats dashboard for KeyChinGu's 617+ pieces of content — Deep Dive cluster + 103 meta guides + category, area, persona, season, and tag distributions.">
+  <link rel="canonical" href="https://mgself414.github.io/keychingu-content-deploy/en/stats.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <style>
+    .stats-container { max-width: 1100px; margin: 2rem auto; padding: 0 1.5rem; }
+    .stats-hero { text-align: center; margin-bottom: 2.5rem; }
+    .stats-hero h1 { font-size: 2.2rem; margin-bottom: 0.5rem; }
+    .stats-hero p { color: #666; font-size: 1.05rem; }
+    .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 2.5rem; }
+    .stat-card { background: #fff; border: 1px solid #eee; border-radius: 12px; padding: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
+    .stat-card h3 { margin-top: 0; font-size: 1.1rem; color: #333; }
+    .stat-big { font-size: 3rem; font-weight: 800; color: #D94C53; line-height: 1; margin: 0.5rem 0; }
+    .stat-sub { color: #888; font-size: 0.9rem; }
+    .bar-chart { margin-top: 1rem; }
+    .bar-row { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.5rem; font-size: 0.9rem; }
+    .bar-label { min-width: 100px; color: #555; }
+    .bar-track { flex: 1; height: 22px; background: #f0f0f0; border-radius: 4px; overflow: hidden; position: relative; }
+    .bar-fill { height: 100%; background: linear-gradient(90deg, #D94C53, #f5717a); border-radius: 4px; transition: width 0.6s ease; }
+    .bar-value { min-width: 50px; text-align: right; color: #333; font-weight: 600; }
+    .tag-cloud { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem; }
+    .tag-cloud span { padding: 0.3rem 0.7rem; background: #f5f5f5; border-radius: 20px; font-size: 0.85rem; color: #555; }
+    .tag-cloud span.big { font-size: 1.05rem; background: #ffe5e7; color: #c63b40; font-weight: 600; }
+    .tag-cloud span.mid { font-size: 0.95rem; background: #fff5e6; }
+    .updated { text-align: center; color: #999; font-size: 0.85rem; margin-top: 2rem; }
+    .stat-card.span-2 { grid-column: span 2; }
+    @media (max-width: 768px) { .stat-card.span-2 { grid-column: span 1; } }
+  </style>
+<link rel="icon" href="../favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="192x192" href="../assets/logo/favicon-192.png">
+  <link rel="apple-touch-icon" href="../assets/logo/favicon-192.png">
+  </head>
+<body>
+
+<header class="site-header">
+  <a href="index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <nav class="site-nav">
+    <a href="index.html">Home</a>
+    <a href="meta-guides.html">📚 Meta</a>
+    <a href="deep-dives.html">🔍 Deep Dives</a>
+    <a href="culture.html">🎭 Culture</a>
+    <a href="about.html">About</a>
+    <a href="faq.html">FAQ</a>
+    <a href="stats.html" class="active">📊 Stats</a>
+  </nav>
+  <div class="lang-switch">
+    <a href="../stats.html">KR</a>
+    <a href="stats.html" class="active">EN</a>
+  </div>
+</header>
+
+<div class="stats-container">
+
+  <div class="stats-hero">
+    <h1>📊 KeyChinGu Stats Dashboard</h1>
+    <p>Full-stack visualization of KeyChinGu content — Deep Dives 65 + Metas 103 + category, persona, season, and tag distributions</p>
+  </div>
+
+  <div class="stats-grid">
+    <div class="stat-card">
+      <h3>📚 Total Content</h3>
+      <div class="stat-big" id="stat-total">—</div>
+      <div class="stat-sub">Korean travel curation guides (617 HTML pages)</div>
+    </div>
+    <div class="stat-card">
+      <h3>🔍 Deep Dive Cluster 🎉</h3>
+      <div class="stat-big" style="color:#1E88B0;">753 🎉</div>
+      <div class="stat-sub">🎉 100+ milestone · 8-axis lifecycle × 12-pick, 4-axis pattern</div>
+    </div>
+    <div class="stat-card">
+      <h3>📚 Meta Guides 🎉</h3>
+      <div class="stat-big" style="color:#FAAD19;">103</div>
+      <div class="stat-sub">100+ milestone · 18 segments + 48 categories + 24 cities</div>
+    </div>
+  </div>
+
+  <div class="stats-grid">
+    <div class="stat-card">
+      <h3>🌐 Multilingual Coverage</h3>
+      <div class="stat-big" id="stat-langs">KR + EN</div>
+      <div class="stat-sub">CN·JP partial via PDF (translation in progress)</div>
+    </div>
+    <div class="stat-card">
+      <h3>📍 Area Coverage</h3>
+      <div class="stat-big" style="font-size: 2rem;">Seoul 25 + Busan 10 + Outskirts 16</div>
+      <div class="stat-sub">Full-stack coverage of Korean cities</div>
+    </div>
+    <div class="stat-card">
+      <h3>🗺 Sitemap URLs</h3>
+      <div class="stat-big">634</div>
+      <div class="stat-sub">SEO priority tier (deep dive 0.9 · landing 0.95)</div>
+    </div>
+  </div>
+
+  <div class="stats-grid">
+    <div class="stat-card span-2">
+      <h3>🔍 Deep Dive 8-Axis Lifecycle Distribution (286 🎉, 100+ milestone)</h3>
+      <div class="bar-chart">
+        <div class="bar-row"><span class="bar-label">🛬 Arrival &amp; Essentials</span><div class="bar-track"><div class="bar-fill" style="width: 100%; background: linear-gradient(90deg, #4A90E2, #1E88B0);"></div></div><span class="bar-value">22</span></div>
+        <div class="bar-row"><span class="bar-label">🍽 Food &amp; Drink</span><div class="bar-track"><div class="bar-fill" style="width: 70%; background: linear-gradient(90deg, #E94560, #FAAD19);"></div></div><span class="bar-value">14</span></div>
+        <div class="bar-row"><span class="bar-label">🎭 Culture &amp; Tradition</span><div class="bar-track"><div class="bar-fill" style="width: 100%; background: linear-gradient(90deg, #6B4E2E, #C19A5A);"></div></div><span class="bar-value">753 🎉</span></div>
+        <div class="bar-row"><span class="bar-label">🎤 K-content &amp; MZ</span><div class="bar-track"><div class="bar-fill" style="width: 100%; background: linear-gradient(90deg, #E91E63, #9C27B0);"></div></div><span class="bar-value">47</span></div>
+        <div class="bar-row"><span class="bar-label">💆 Wellness &amp; Beauty</span><div class="bar-track"><div class="bar-fill" style="width: 65%; background: linear-gradient(90deg, #00BFA5, #4CAF50);"></div></div><span class="bar-value">13</span></div>
+        <div class="bar-row"><span class="bar-label">🛍 Shopping &amp; Luxury</span><div class="bar-track"><div class="bar-fill" style="width: 37%; background: linear-gradient(90deg, #C2185B, #FAAD19);"></div></div><span class="bar-value">7</span></div>
+        <div class="bar-row"><span class="bar-label">🌙 Nightlife &amp; MZ</span><div class="bar-track"><div class="bar-fill" style="width: 31%; background: linear-gradient(90deg, #1A237E, #7B1FA2);"></div></div><span class="bar-value">5</span></div>
+        <div class="bar-row"><span class="bar-label">🚗 Outskirts &amp; Nature</span><div class="bar-track"><div class="bar-fill" style="width: 100%; background: linear-gradient(90deg, #2E7D32, #8BC34A);"></div></div><span class="bar-value">753 🎉</span></div>
+      </div>
+    </div>
+    <div class="stat-card">
+      <h3>🎯 8-Axis Ratio (% of 753 Deep Dives 🎉)</h3>
+      <div class="tag-cloud">
+        <span class="big">🛬 Arrival 18%</span>
+        <span class="big">🎭 Culture 18%</span>
+        <span class="big">🚗 Outskirts 16%</span>
+        <span class="mid">🎤 K-content 15%</span>
+        <span class="mid">🍽 Food 12%</span>
+        <span class="mid">💆 Wellness 11%</span>
+        <span>🌙 Nightlife 6%</span>
+        <span>🛍 Shopping 4%</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="stats-grid">
+    <div class="stat-card span-2">
+      <h3>🏷 Category Distribution</h3>
+      <div class="bar-chart" id="chart-category"></div>
+    </div>
+    <div class="stat-card">
+      <h3>🌍 Foreigner Personas</h3>
+      <div class="bar-chart">
+        <div class="bar-row"><span class="bar-label">English-speaking</span><div class="bar-track"><div class="bar-fill" style="width: 100%;"></div></div><span class="bar-value">#322</span></div>
+        <div class="bar-row"><span class="bar-label">SE Asia 6</span><div class="bar-track"><div class="bar-fill" style="width: 100%;"></div></div><span class="bar-value">#323</span></div>
+        <div class="bar-row"><span class="bar-label">Europe 6</span><div class="bar-track"><div class="bar-fill" style="width: 100%;"></div></div><span class="bar-value">#324</span></div>
+        <div class="bar-row"><span class="bar-label">Middle East 6</span><div class="bar-track"><div class="bar-fill" style="width: 100%;"></div></div><span class="bar-value">#325</span></div>
+        <div class="bar-row"><span class="bar-label">South Asia 5</span><div class="bar-track"><div class="bar-fill" style="width: 100%;"></div></div><span class="bar-value">#326</span></div>
+        <div class="bar-row"><span class="bar-label">Japan·China</span><div class="bar-track"><div class="bar-fill" style="width: 100%;"></div></div><span class="bar-value">#190·191</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="stats-grid">
+    <div class="stat-card span-2">
+      <h3>🌸 Seasonal &amp; Timing Content</h3>
+      <div class="bar-chart">
+        <div class="bar-row"><span class="bar-label">🌸 Spring Cherry Blossoms</span><div class="bar-track"><div class="bar-fill" style="width: 100%;"></div></div><span class="bar-value">#230·#303</span></div>
+        <div class="bar-row"><span class="bar-label">☀️ Summer Han River</span><div class="bar-track"><div class="bar-fill" style="width: 100%;"></div></div><span class="bar-value">#06·#305~#308</span></div>
+        <div class="bar-row"><span class="bar-label">🍁 Fall Foliage</span><div class="bar-track"><div class="bar-fill" style="width: 100%;"></div></div><span class="bar-value">#229·#273</span></div>
+        <div class="bar-row"><span class="bar-label">❄️ Winter Illuminations</span><div class="bar-track"><div class="bar-fill" style="width: 100%;"></div></div><span class="bar-value">#90·#231</span></div>
+        <div class="bar-row"><span class="bar-label">📆 Monthly Matrix</span><div class="bar-track"><div class="bar-fill" style="width: 100%;"></div></div><span class="bar-value">#259</span></div>
+        <div class="bar-row"><span class="bar-label">🎉 Korean Holidays</span><div class="bar-track"><div class="bar-fill" style="width: 100%;"></div></div><span class="bar-value">#279</span></div>
+      </div>
+    </div>
+    <div class="stat-card">
+      <h3>📅 Foreigner Duration Variants</h3>
+      <div class="bar-chart">
+        <div class="bar-row"><span class="bar-label">⚡ 3-Day Short</span><div class="bar-track"><div class="bar-fill" style="width: 40%;"></div></div><span class="bar-value">#264</span></div>
+        <div class="bar-row"><span class="bar-label">🌟 5-Day</span><div class="bar-track"><div class="bar-fill" style="width: 60%;"></div></div><span class="bar-value">#265</span></div>
+        <div class="bar-row"><span class="bar-label">🎯 7-Day</span><div class="bar-track"><div class="bar-fill" style="width: 80%;"></div></div><span class="bar-value">#228</span></div>
+        <div class="bar-row"><span class="bar-label">🗺️ 10-Day</span><div class="bar-track"><div class="bar-fill" style="width: 100%;"></div></div><span class="bar-value">#266</span></div>
+        <div class="bar-row"><span class="bar-label">🌏 2-Week</span><div class="bar-track"><div class="bar-fill" style="width: 100%;"></div></div><span class="bar-value">#267</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="stats-grid">
+    <div class="stat-card span-2">
+      <h3>📍 Area Distribution — Seoul 25 districts + Busan 10 sub-areas + Outskirts 16 cities</h3>
+      <div class="bar-chart" id="chart-area"></div>
+    </div>
+    <div class="stat-card">
+      <h3>🏷 Popular Tag Cloud</h3>
+      <div class="tag-cloud" id="tag-cloud"></div>
+    </div>
+  </div>
+
+  <div class="updated" id="last-updated">Loading...</div>
+</div>
+
+<script>
+fetch('../data/contents.json')
+  .then(function(r) { return r.json(); })
+  .then(function(contents) {
+    const total = contents.length;
+    document.getElementById('stat-total').textContent = total + '+';
+
+    // Category distribution
+    const catLabels = { A: 'A Neighborhoods', B: 'B Nature', C: 'C Food', D: 'D Culture', E: 'E Beauty', F: 'F Shopping', G: 'G K-content', H: 'H Practical' };
+    const catCount = {};
+    contents.forEach(function(c) { catCount[c.category] = (catCount[c.category] || 0) + 1; });
+    const maxCat = Math.max.apply(null, Object.values(catCount));
+    const catHtml = ['A','B','C','D','E','F','G','H'].map(function(k) {
+      const v = catCount[k] || 0;
+      const pct = (v / maxCat) * 100;
+      return '<div class="bar-row"><span class="bar-label">' + (catLabels[k] || k) + '</span><div class="bar-track"><div class="bar-fill" style="width: ' + pct + '%;"></div></div><span class="bar-value">' + v + '</span></div>';
+    }).join('');
+    document.getElementById('chart-category').innerHTML = catHtml;
+
+    // Area distribution (tag-based — Seoul 25 districts + Busan sub-areas)
+    const areaList = [
+      { label: 'Hongdae·Yeonnam·Hapjeong', tag: 'hongdae' },
+      { label: 'Gangnam·Dosan·Apgujeong', tag: 'gangnam' },
+      { label: 'Itaewon·Hannam·Haebangchon', tag: 'itaewon' },
+      { label: 'Jongno·Ikseon·Bukchon', tag: 'jongno' },
+      { label: 'Seongsu-dong', tag: 'seongsu' },
+      { label: 'Jamsil·Songpa·Olympic', tag: 'jamsil' },
+      { label: 'Yeonhui·Seodaemun', tag: 'yeonhui' },
+      { label: 'Yeouido·Yeongdeungpo', tag: 'yeouido' },
+      { label: 'Yongsan·Ichon·Samgakji', tag: 'yongsan' },
+      { label: 'Mapo·Gongdeok·Sangam', tag: 'mapo' },
+      { label: 'Busan (all)', tag: 'busan' }
+    ];
+    const areaCount = {};
+    contents.forEach(function(c) {
+      areaList.forEach(function(a) {
+        if (c.tags && c.tags.indexOf(a.tag) !== -1) {
+          areaCount[a.tag] = (areaCount[a.tag] || 0) + 1;
+        }
+      });
+    });
+    const maxArea = Math.max.apply(null, Object.values(areaCount).concat([1]));
+    const areaHtml = areaList.map(function(a) {
+      const v = areaCount[a.tag] || 0;
+      const pct = (v / maxArea) * 100;
+      return '<div class="bar-row"><span class="bar-label">' + a.label + '</span><div class="bar-track"><div class="bar-fill" style="width: ' + pct + '%;"></div></div><span class="bar-value">' + v + '</span></div>';
+    }).join('');
+    document.getElementById('chart-area').innerHTML = areaHtml;
+
+    // Tag cloud (top 25)
+    const tagCount = {};
+    contents.forEach(function(c) {
+      (c.tags || []).forEach(function(t) {
+        tagCount[t] = (tagCount[t] || 0) + 1;
+      });
+    });
+    const sortedTags = Object.entries(tagCount).sort(function(a, b) { return b[1] - a[1]; }).slice(0, 25);
+    const maxTag = sortedTags[0] ? sortedTags[0][1] : 1;
+    const tagHtml = sortedTags.map(function(pair) {
+      const t = pair[0], v = pair[1];
+      let cls = '';
+      if (v >= maxTag * 0.6) cls = 'big';
+      else if (v >= maxTag * 0.3) cls = 'mid';
+      return '<span class="' + cls + '">' + t + ' ' + v + '</span>';
+    }).join('');
+    document.getElementById('tag-cloud').innerHTML = tagHtml;
+
+    // Last updated
+    const today = new Date().toISOString().slice(0, 10);
+    document.getElementById('last-updated').textContent = 'Last updated: ' + today + ' · ' + total + ' pieces analyzed';
+  })
+  .catch(function(err) {
+    document.getElementById('last-updated').textContent = 'Data load failed: ' + err.message;
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KeyChinGu Deep Dive Matrix — KeyChinGu Deep Dives</title>
+  <meta name="description" content="KeyChinGu Deep Dive full matrix — foreigner lifecycle across 8 axes (arrival·food·culture·K-content·wellness·shopping·nightlife·outskirts) × 286 deep dives. The &#x27;12-pick, 4-axis&#x27; pattern (6 FAQs + 3 full-day courses + 5 seasons).">
+  <link rel="canonical" href="https://mgself414.github.io/keychingu-content-deploy/en/deep-dives.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <style>
+    .meta-section { margin: 48px auto; max-width: 1280px; padding: 0 24px; }
+    .meta-section h2 { font-family: 'Noto Serif KR', serif; font-size: 28px; font-weight: 900; margin-bottom: 8px; padding-bottom: 12px; border-bottom: 3px solid var(--kc-black, #020304); }
+    .meta-section .section-meta { font-size: 13px; color: #666; margin-bottom: 24px; }
+    .meta-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+    .meta-card { background: #fff; border: 1px solid #e8e8e8; border-radius: 12px; padding: 20px; text-decoration: none; color: #020304; transition: all 0.2s; display: block; }
+    .meta-card:hover { border-color: #1E88B0; transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0,0,0,0.08); }
+    .meta-card .num { font-family: 'Poppins', sans-serif; font-size: 12px; font-weight: 700; color: #1E88B0; letter-spacing: 0.05em; margin-bottom: 8px; display: inline-block; }
+    .meta-card h3 { font-size: 16px; font-weight: 700; margin-bottom: 8px; line-height: 1.4; }
+    .meta-card p { font-size: 13px; color: #555; line-height: 1.5; margin: 0; }
+    .matrix-hero { background: linear-gradient(135deg, #1E88B0 0%, #FAAD19 100%); color: #fff; padding: 60px 24px; text-align: center; }
+    .matrix-hero h1 { font-family: 'Noto Serif KR', serif; font-size: 40px; font-weight: 900; margin-bottom: 12px; }
+    .matrix-hero p { font-size: 16px; opacity: 0.95; max-width: 720px; margin: 0 auto 24px; }
+    .matrix-stats { display: flex; justify-content: center; gap: 32px; flex-wrap: wrap; margin-top: 24px; }
+    .matrix-stats .stat { background: rgba(255,255,255,0.18); padding: 12px 20px; border-radius: 8px; backdrop-filter: blur(8px); }
+    .matrix-stats .stat b { font-family: 'Poppins', sans-serif; font-size: 24px; font-weight: 800; display: block; }
+    .matrix-stats .stat span { font-size: 12px; opacity: 0.85; }
+    .toc-bar { background: #f5f3ee; padding: 16px 24px; margin: 0 0 24px; position: sticky; top: 0; z-index: 10; border-bottom: 1px solid #e0d8c8; }
+    .toc-bar-inner { max-width: 1280px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 8px; }
+    .toc-bar a { font-size: 13px; padding: 6px 14px; background: #fff; border-radius: 20px; text-decoration: none; color: #555; border: 1px solid #ddd; transition: all 0.2s; }
+    .toc-bar a:hover { border-color: #1E88B0; color: #1E88B0; }
+    .search-bar { max-width: 720px; margin: 24px auto 0; padding: 0 24px; }
+    .search-bar input { width: 100%; padding: 14px 18px; font-size: 15px; border: 2px solid #ddd; border-radius: 30px; outline: none; transition: border 0.2s; box-sizing: border-box; font-family: inherit; }
+    .search-bar input:focus { border-color: #1E88B0; }
+    .search-stat { text-align: center; font-size: 13px; color: #888; margin-top: 8px; }
+    .hide { display: none !important; }
+    @media (max-width: 768px) {
+      .matrix-hero h1 { font-size: 28px; }
+      .matrix-hero p { font-size: 14px; }
+      .meta-section h2 { font-size: 22px; }
+      .meta-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+<link rel="icon" href="../favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="192x192" href="../assets/logo/favicon-192.png">
+  <link rel="apple-touch-icon" href="../assets/logo/favicon-192.png">
+  </head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+  <a href="index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <nav class="site-nav">
+    <a href="index.html">Home</a>
+    <a href="meta-guides.html">Meta Guides</a>
+    <a href="deep-dives.html" class="active">Deep Dives</a>
+    <a href="culture.html">🎭 Culture</a>
+    <a href="about.html">About</a>
+    <a href="faq.html">FAQ</a>
+  </nav>
+  <div class="lang-switch">
+    <a href="../deep-dives.html">KR</a>
+    <a href="deep-dives.html" class="active">EN</a>
+  </div>
+</header>
+<!-- curation notice (2026-07-04 audit) -->
+<div style="max-width:1100px;margin:14px auto 0;padding:12px 20px;background:#fff8ef;border:1px solid #ffd9a8;border-radius:10px;font-size:14px;color:#7a5218;">
+  📌 This page is a <b>curated selection</b> — to search or browse all <b>1,000+ pieces</b> by latest, visit the <a href="index.html" style="color:#c63b40;font-weight:700;">home catalog</a> (auto-updated on publish)
+</div>
+<!-- latest strip (2026-07-04, contents.json fetch — auto on publish) -->
+<div style="max-width:1100px;margin:18px auto 0;padding:0 20px;">
+  <div style="font-size:14px;font-weight:700;color:#c63b40;margin-bottom:10px;">🆕 Latest 12 published <span style="font-weight:400;color:#999;font-size:12px;">(auto-updated)</span></div>
+  <div id="kc-latest" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:10px;"></div>
+</div>
+<script>
+(function(){
+  fetch('../data/contents.json').then(function(r){return r.json();}).then(function(items){
+    items.sort(function(a,b){return (parseInt(b.id,10)||0)-(parseInt(a.id,10)||0);});
+    document.getElementById('kc-latest').innerHTML=items.slice(0,12).map(function(x){
+      return '<a href="../content/'+x.slug+'.en.html" style="display:block;padding:10px 13px;border:1px solid rgba(128,128,128,.3);border-radius:9px;text-decoration:none;color:inherit;font-size:0.85rem;line-height:1.4;"><span style="color:#c63b40;font-weight:700;font-size:0.75rem;">#'+x.id+'</span><br>'+(x.title_en||x.title_kr)+'</a>';
+    }).join('');
+  }).catch(function(){});
+})();
+</script>
+
+<!-- HERO -->
+<section class="matrix-hero">
+  <h1>KeyChinGu Deep Dive Matrix — Curated</h1>
+  <p>Foreigner lifecycle across 8 axes (arrival·food·culture·K-content·wellness·shopping·nightlife·outskirts) × 286 deep dives, fully covered. The standard 12-pick, 4-axis pattern — 6 FAQs + 3 full-day courses + 5 seasonal axes. The #1 spot for foreign enthusiasts.</p>
+  <div class="search-bar">
+    <input id="search" type="text" placeholder="🔍 Search — title·tags·category (e.g. kimchi, K-pop, working holiday, IT, gallery, F-2)">
+    <div class="search-stat" id="search-stat">286 deep dives 🎉 shown</div>
+  </div>
+  <div class="matrix-stats" style="margin-top: 32px;">
+    <div class="stat"><b>286</b><span>Deep Dives 🎉</span></div>
+    <div class="stat"><b>8</b><span>Lifecycle Axes</span></div>
+    <div class="stat"><b>12</b><span>-pick × 4-axis</span></div>
+    <div class="stat"><b>3</b><span>Full-Day Courses</span></div>
+    <div class="stat"><b>5</b><span>Season Matrix</span></div>
+  </div>
+</section>
+
+<!-- TOC NAV -->
+<div class="toc-bar">
+  <div class="toc-bar-inner">
+    <a href="#arrival">🛬 Arrival & Essentials (83)</a>
+    <a href="#food">🍽 Food & Drink (124)</a>
+    <a href="#culture">🎭 Culture & Tradition (141 🎉)</a>
+    <a href="#kcontent">🎤 K-content & MZ (8)</a>
+    <a href="#wellness">💆 Wellness & Beauty (40)</a>
+    <a href="#shopping">🛍 Shopping & Luxury (67)</a>
+    <a href="#nightlife">🌙 Nightlife & MZ (41)</a>
+    <a href="#outskirts">🚗 Outskirts & Nature (249 🎉)</a>
+    <a href="../content/deep-dive-index.en.html" style="background:#1E88B0; color:#fff;">📊 Meta Index</a>
+  </div>
+</div>
+
+<!-- 8-AXIS LANDING BANNER -->
+<section class="meta-section" style="margin-top: 24px; margin-bottom: 0;">
+  <h2 style="font-size: 20px;">📍 Category pages by 8-axis lifecycle</h2>
+  <div class="section-meta">A dedicated landing per axis — full course + every deep-dive grid</div>
+  <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 12px;">
+    <a href="deep-dives-arrival.html" style="flex: 1 1 200px; padding: 10px 14px; background: linear-gradient(135deg, #4A90E2, #1E88B0); color: #fff; text-decoration: none; border-radius: 8px; font-size: 14px; font-weight: 600;">🛬 Arrival & Essentials 22 →</a>
+    <a href="deep-dives-food.html" style="flex: 1 1 200px; padding: 10px 14px; background: linear-gradient(135deg, #E94560, #FAAD19); color: #fff; text-decoration: none; border-radius: 8px; font-size: 14px; font-weight: 600;">🍽 Food & Drink 45 →</a>
+    <a href="deep-dives-culture.html" style="flex: 1 1 200px; padding: 10px 14px; background: linear-gradient(135deg, #6B4E2E, #C19A5A); color: #fff; text-decoration: none; border-radius: 8px; font-size: 14px; font-weight: 600;">🎭 Culture & Tradition 64 🎉 →</a>
+    <a href="deep-dives-kcontent.html" style="flex: 1 1 200px; padding: 10px 14px; background: linear-gradient(135deg, #E91E63, #9C27B0); color: #fff; text-decoration: none; border-radius: 8px; font-size: 14px; font-weight: 600;">🎤 K-content & MZ 47 →</a>
+    <a href="deep-dives-wellness.html" style="flex: 1 1 200px; padding: 10px 14px; background: linear-gradient(135deg, #00BFA5, #4CAF50); color: #fff; text-decoration: none; border-radius: 8px; font-size: 14px; font-weight: 600;">💆 Wellness & Beauty 16 →</a>
+    <a href="deep-dives-shopping.html" style="flex: 1 1 200px; padding: 10px 14px; background: linear-gradient(135deg, #C2185B, #FAAD19); color: #fff; text-decoration: none; border-radius: 8px; font-size: 14px; font-weight: 600;">🛍 Shopping & Luxury 11 →</a>
+    <a href="deep-dives-nightlife.html" style="flex: 1 1 200px; padding: 10px 14px; background: linear-gradient(135deg, #1A237E, #7B1FA2); color: #fff; text-decoration: none; border-radius: 8px; font-size: 14px; font-weight: 600;">🌙 Nightlife & MZ 10 →</a>
+    <a href="deep-dives-outskirts.html" style="flex: 1 1 200px; padding: 10px 14px; background: linear-gradient(135deg, #2E7D32, #8BC34A); color: #fff; text-decoration: none; border-radius: 8px; font-size: 14px; font-weight: 600;">🚗 Outskirts & Nature 63 🎉 →</a>
+  </div>
+</section>
+
+
+<section class="meta-section" id="arrival" data-cat="arrival">
+  <h2>🛬 Arrival & Essentials (22)</h2>
+  <div class="section-meta">Foreigners' first visit·essentials·safety — the lifecycle's first gateway</div>
+  <div class="meta-grid">
+    <a href="../content/arrival-essentials.en.html" class="meta-card" data-keywords="foreigner arrival·comm·pay·transport full guide"><span class="num">#398</span><h3>Foreigner Arrival·Comm·Pay·Transport Full Guide</h3></a>
+    <a href="../content/korean-language-school.en.html" class="meta-card" data-keywords="korean language school·kiip·topik foreigner full guide"><span class="num">#403</span><h3>Korean Language School·KIIP·TOPIK Foreigner Full Guide</h3></a>
+    <a href="../content/emergency-hospital.en.html" class="meta-card" data-keywords="foreigner emergency·hospital·safety full guide"><span class="num">#405</span><h3>Foreigner Emergency·Hospital·Safety Full Guide</h3></a>
+    <a href="../content/sim-comm-wifi.en.html" class="meta-card" data-keywords="foreigner sim·communication·wifi deep dive"><span class="num">#414</span><h3>Foreigner SIM·Communication·WiFi Deep Dive</h3></a>
+    <a href="../content/exchange-card-atm.en.html" class="meta-card" data-keywords="foreigner exchange·credit card·atm·payment deep dive"><span class="num">#435</span><h3>Foreigner Exchange·Credit Card·ATM·Payment Deep Dive</h3></a>
+    <a href="../content/women-solo-safety.en.html" class="meta-card" data-keywords="foreigner women solo safety·scam prevention full guide"><span class="num">#501</span><h3>Foreigner Women Solo Safety·Scam Prevention Full Guide</h3></a>
+    <a href="../content/foreigner-jobs.en.html" class="meta-card" data-keywords="foreigner jobs·employment·part-time·internship full guide"><span class="num">#504</span><h3>Foreigner Jobs·Employment·Part-time·Internship Full Guide</h3></a>
+    <a href="../content/korean-sns.en.html" class="meta-card" data-keywords="foreigner korean-style sns·communication deep dive"><span class="num">#516</span><h3>Foreigner Korean-Style SNS·Communication Deep Dive</h3></a>
+    <a href="../content/business-hours.en.html" class="meta-card" data-keywords="korea business hours·closed day matrix deep dive"><span class="num">#517</span><h3>Korea Business Hours·Closed Day Matrix Deep Dive</h3></a>
+    <a href="../content/monthly-weather.en.html" class="meta-card" data-keywords="korea monthly weather·clothing·packing deep dive"><span class="num">#518</span><h3>Korea Monthly Weather·Clothing·Packing Deep Dive</h3></a>
+    <a href="../content/working-holiday-deep.en.html" class="meta-card" data-keywords="foreigner working holiday·h-1 visa deep dive"><span class="num">#526</span><h3>Foreigner Working Holiday·H-1 Visa Deep Dive</h3></a>
+    <a href="../content/payment-system-deep.en.html" class="meta-card" data-keywords="foreigner korea payment system deep dive"><span class="num">#527</span><h3>Foreigner Korea Payment System Deep Dive</h3></a>
+    <a href="../content/volunteer-exchange.en.html" class="meta-card" data-keywords="foreigner volunteer·cultural exchange deep dive"><span class="num">#529</span><h3>Foreigner Volunteer·Cultural Exchange Deep Dive</h3></a>
+    <a href="../content/it-startup-deep.en.html" class="meta-card" data-keywords="foreigner korea it·startup deep dive"><span class="num">#535</span><h3>Foreigner Korea IT·Startup Deep Dive</h3></a>
+    <a href="../content/korean-conversation.en.html" class="meta-card" data-keywords="foreigner korean conversation practical deep dive"><span class="num">#537</span><h3>Foreigner Korean Conversation Practical Deep Dive</h3></a>
+    <a href="../content/long-term-residence.en.html" class="meta-card" data-keywords="foreigner long-term residence deep dive"><span class="num">#538</span><h3>Foreigner Long-term Residence Deep Dive</h3></a>
+    <a href="../content/expo-mice-deep.en.html" class="meta-card" data-keywords="foreigner korea expo·mice deep dive"><span class="num">#554</span><h3>Foreigner Korea Expo·MICE Deep Dive</h3></a>
+    <a href="../content/cybersecurity-deep.en.html" class="meta-card" data-keywords="foreigner korea cybersecurity deep dive"><span class="num">#559</span><h3>Foreigner Korea Cybersecurity Deep Dive</h3></a>
+    <a href="../content/topik-kiip-exam.en.html" class="meta-card" data-keywords="foreigner korea topik·kiip exam full guide deep dive"><span class="num">#561</span><h3>Foreigner Korea TOPIK·KIIP Exam Full Guide Deep Dive</h3></a>
+    <a href="../content/self-made-mania-deep.en.html" class="meta-card" data-keywords="foreigner korea self-made mania deep dive"><span class="num">#575</span><h3>Foreigner Korea Self-Made Mania Deep Dive</h3></a>
+    <a href="../content/sns-platform-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea sns instagram tiktok sub-deep top 12"><span class="num">#629</span><h3>Foreigner Korea SNS Instagram TikTok Sub-Deep Top 12</h3></a>
+    <a href="../content/k-tech-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea k-tech samsung kakao naver sub-deep top 12"><span class="num">#653</span><h3>Foreigner Korea K-Tech Samsung Kakao Naver Sub-Deep Top 12</h3></a>
+  </div>
+</section>
+
+
+<section class="meta-section" id="food" data-cat="food">
+  <h2>🍽 Food & Drink (45)</h2>
+  <div class="section-meta">Full coverage for foreign Korean-food enthusiasts</div>
+  <div class="meta-grid">
+    <a href="../content/korean-liquor.en.html" class="meta-card" data-keywords="korean liquor deep dive"><span class="num">#203</span><h3>Korean Liquor Deep Dive</h3></a>
+    <a href="../content/traditional-liquor.en.html" class="meta-card" data-keywords="korea traditional liquor·soju·makgeolli full guide"><span class="num">#362</span><h3>Korea Traditional Liquor·Soju·Makgeolli Full Guide</h3></a>
+    <a href="../content/traditional-market.en.html" class="meta-card" data-keywords="korea traditional markets full guide"><span class="num">#380</span><h3>Korea Traditional Markets Full Guide</h3></a>
+    <a href="../content/cafe-district.en.html" class="meta-card" data-keywords="korea cafe district matrix full guide"><span class="num">#381</span><h3>Korea Cafe District Matrix Full Guide</h3></a>
+    <a href="../content/food-matrix-index.en.html" class="meta-card" data-keywords="korea food matrix integrated index"><span class="num">#391</span><h3>Korea Food Matrix Integrated Index</h3></a>
+    <a href="../content/foreigner-friendly-restaurants.en.html" class="meta-card" data-keywords="foreigner-friendly restaurants full guide"><span class="num">#400</span><h3>Foreigner-Friendly Restaurants Full Guide</h3></a>
+    <a href="../content/korean-meal-culture.en.html" class="meta-card" data-keywords="korean meal culture deep dive"><span class="num">#502</span><h3>Korean Meal Culture Deep Dive</h3></a>
+    <a href="../content/tea-ceremony-deep.en.html" class="meta-card" data-keywords="korea tea·tea ceremony·teahouse experience deep dive"><span class="num">#505</span><h3>Korea Tea·Tea Ceremony·Teahouse Experience Deep Dive</h3></a>
+    <a href="../content/seoul-bingsu-2026.en.html" class="meta-card" data-keywords="seoul bingsu crawl 2026 summer deep dive"><span class="num">#510</span><h3>Seoul Bingsu Crawl 2026 Summer Deep Dive</h3></a>
+    <a href="../content/vegan-halal-deep.en.html" class="meta-card" data-keywords="foreigner vegan·halal restaurant deep dive"><span class="num">#521</span><h3>Foreigner Vegan·Halal Restaurant Deep Dive</h3></a>
+    <a href="../content/kimchi-fermentation.en.html" class="meta-card" data-keywords="korea kimchi·fermentation deep dive"><span class="num">#523</span><h3>Korea Kimchi·Fermentation Deep Dive</h3></a>
+    <a href="../content/kongguksu-summer-deep.en.html" class="meta-card" data-keywords="foreigner korea kongguksu·summer tonic deep dive"><span class="num">#551</span><h3>Foreigner Korea Kongguksu·Summer Tonic Deep Dive</h3></a>
+    <a href="../content/dessert-specialty-deep.en.html" class="meta-card" data-keywords="foreigner korea dessert specialty deep dive"><span class="num">#567</span><h3>Foreigner Korea Dessert Specialty Deep Dive</h3></a>
+    <a href="../content/wine-deep.en.html" class="meta-card" data-keywords="foreigner korea wine deep dive"><span class="num">#574</span><h3>Foreigner Korea Wine Deep Dive</h3></a>
+    <a href="../content/seoul-scone-deep.en.html" class="meta-card" data-keywords="foreigner seoul scone top 12 deep dive"><span class="num">#580</span><h3>Foreigner Seoul Scone Top 12 Deep Dive</h3></a>
+    <a href="../content/namdaemun-nopo-deep.en.html" class="meta-card" data-keywords="foreigner namdaemun market heritage restaurants top 12 deep dive"><span class="num">#581</span><h3>Foreigner Namdaemun Market Heritage Restaurants Top 12 Deep Dive</h3></a>
+    <a href="../content/gwangjang-nopo-deep.en.html" class="meta-card" data-keywords="foreigner gwangjang market heritage restaurants top 12 deep dive"><span class="num">#582</span><h3>Foreigner Gwangjang Market Heritage Restaurants Top 12 Deep Dive</h3></a>
+    <a href="../content/tongin-market-deep.en.html" class="meta-card" data-keywords="foreigner tongin market brass coin dosirak top 12 deep dive"><span class="num">#589</span><h3>Foreigner Tongin Market Brass Coin Dosirak Top 12 Deep Dive</h3></a>
+    <a href="../content/jagalchi-market-deep.en.html" class="meta-card" data-keywords="foreigner jagalchi market top 12 deep dive"><span class="num">#590</span><h3>Foreigner Jagalchi Market Top 12 Deep Dive</h3></a>
+    <a href="../content/majang-market-deep.en.html" class="meta-card" data-keywords="foreigner majang livestock market top 12 deep dive"><span class="num">#592</span><h3>Foreigner Majang Livestock Market Top 12 Deep Dive</h3></a>
+    <a href="../content/mangwon-market-deep.en.html" class="meta-card" data-keywords="foreigner mangwon market top 12 deep dive"><span class="num">#596</span><h3>Foreigner Mangwon Market Top 12 Deep Dive</h3></a>
+    <a href="../content/jungbu-market-deep.en.html" class="meta-card" data-keywords="foreigner jungbu market dried seafood top 12 deep dive"><span class="num">#597</span><h3>Foreigner Jungbu Market Dried Seafood Top 12 Deep Dive</h3></a>
+    <a href="../content/yangnyeongsi-deep.en.html" class="meta-card" data-keywords="foreigner korea yangnyeongsi cheongnyangni top 12 deep dive"><span class="num">#598</span><h3>Foreigner Korea Yangnyeongsi Cheongnyangni Top 12 Deep Dive</h3></a>
+    <a href="../content/guri-market-deep.en.html" class="meta-card" data-keywords="foreigner korea guri wholesale market top 12 deep dive"><span class="num">#599</span><h3>Foreigner Korea Guri Wholesale Market Top 12 Deep Dive</h3></a>
+    <a href="../content/namdaemun-galchi-sub-deep.en.html" class="meta-card" data-keywords="foreigner namdaemun galchi alley sub-deep top 12"><span class="num">#603</span><h3>Foreigner Namdaemun Galchi Alley Sub-Deep Top 12</h3></a>
+    <a href="../content/market-beginner-deep.en.html" class="meta-card" data-keywords="foreigner korea traditional markets beginner guide top 12"><span class="num">#604</span><h3>Foreigner Korea Traditional Markets Beginner Guide Top 12</h3></a>
+    <a href="../content/euljiro-newtro-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea euljiro heritage newtro sub-deep top 12"><span class="num">#608</span><h3>Foreigner Korea Euljiro Heritage Newtro Sub-Deep Top 12</h3></a>
+    <a href="../content/cheongnyangni-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea cheongnyangni general market sub-deep top 12"><span class="num">#609</span><h3>Foreigner Korea Cheongnyangni General Market Sub-Deep Top 12</h3></a>
+    <a href="../content/yangjae-flower-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea yangjae flower market sub-deep top 12"><span class="num">#615</span><h3>Foreigner Korea Yangjae Flower Market Sub-Deep Top 12</h3></a>
+    <a href="../content/garak-market-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea garak market standalone sub-deep top 12"><span class="num">#616</span><h3>Foreigner Korea Garak Market Standalone Sub-Deep Top 12</h3></a>
+    <a href="../content/nowon-market-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea nowon market lifestyle sub-deep top 12"><span class="num">#617</span><h3>Foreigner Korea Nowon Market Lifestyle Sub-Deep Top 12</h3></a>
+    <a href="../content/regional-markets-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea regional traditional markets sub-deep top 12"><span class="num">#618</span><h3>Foreigner Korea Regional Traditional Markets Sub-Deep Top 12</h3></a>
+    <a href="../content/cooking-class-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea hansik cooking class sub-deep top 12"><span class="num">#622</span><h3>Foreigner Korea Hansik Cooking Class Sub-Deep Top 12</h3></a>
+    <a href="../content/incheon-sinpo-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea incheon sinpo international market sub-deep top 12"><span class="num">#623</span><h3>Foreigner Korea Incheon Sinpo International Market Sub-Deep Top 12</h3></a>
+    <a href="../content/suwon-yeongdong-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea suwon yeongdong market paldalmun sub-deep top 12"><span class="num">#624</span><h3>Foreigner Korea Suwon Yeongdong Market Paldalmun Sub-Deep Top 12</h3></a>
+    <a href="../content/cheongju-market-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea cheongju yukgeori market sub-deep top 12"><span class="num">#625</span><h3>Foreigner Korea Cheongju Yukgeori Market Sub-Deep Top 12</h3></a>
+    <a href="../content/changwon-market-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea changwon market gyeongnam sub-deep top 12"><span class="num">#626</span><h3>Foreigner Korea Changwon Market Gyeongnam Sub-Deep Top 12</h3></a>
+    <a href="../content/daejeon-jungang-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea daejeon jungang market sub-deep top 12"><span class="num">#632</span><h3>Foreigner Korea Daejeon Jungang Market Sub-Deep Top 12</h3></a>
+    <a href="../content/ulsan-market-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea ulsan market gyeongnam sub-deep top 12"><span class="num">#633</span><h3>Foreigner Korea Ulsan Market Gyeongnam Sub-Deep Top 12</h3></a>
+    <a href="../content/daegu-seomun-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea daegu seomun night market sub-deep top 12"><span class="num">#641</span><h3>Foreigner Korea Daegu Seomun Night Market Sub-Deep Top 12</h3></a>
+    <a href="../content/jeonju-nambu-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea jeonju nambu market youth mall sub-deep top 12"><span class="num">#642</span><h3>Foreigner Korea Jeonju Nambu Market Youth Mall Sub-Deep Top 12</h3></a>
+    <a href="../content/gwangju-yangdong-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea gwangju yangdong market honam sub-deep top 12"><span class="num">#643</span><h3>Foreigner Korea Gwangju Yangdong Market Honam Sub-Deep Top 12</h3></a>
+    <a href="../content/suwon-paldalmun-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea suwon paldalmun market sub-deep top 12"><span class="num">#648</span><h3>Foreigner Korea Suwon Paldalmun Market Sub-Deep Top 12</h3></a>
+    <a href="../content/incheon-donginchen-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea incheon donginchen singi market sub-deep top 12"><span class="num">#649</span><h3>Foreigner Korea Incheon Donginchen Singi Market Sub-Deep Top 12</h3></a>
+    <a href="../content/cheongju-nopo-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea cheongju heritage market standalone sub-deep top 12"><span class="num">#650</span><h3>Foreigner Korea Cheongju Heritage Market Standalone Sub-Deep Top 12</h3></a>
+  </div>
+</section>
+
+
+<section class="meta-section" id="culture" data-cat="culture">
+  <h2>🎭 Culture & Tradition (50 🎉)</h2>
+  <div class="section-meta">Full coverage for foreign tradition enthusiasts</div>
+  <div class="meta-grid">
+    <a href="../content/cultural-complex.en.html" class="meta-card" data-keywords="seoul cultural complex spaces full guide"><span class="num">#366</span><h3>Seoul Cultural Complex Spaces Full Guide</h3></a>
+    <a href="../content/museum-art.en.html" class="meta-card" data-keywords="korea museum &amp; art gallery full guide"><span class="num">#377</span><h3>Korea Museum &amp; Art Gallery Full Guide</h3></a>
+    <a href="../content/kdrama-filming.en.html" class="meta-card" data-keywords="korea k-drama &amp; movie filming locations full guide"><span class="num">#378</span><h3>Korea K-Drama &amp; Movie Filming Locations Full Guide</h3></a>
+    <a href="../content/hanbok-palace.en.html" class="meta-card" data-keywords="korea hanbok &amp; palace experience full guide"><span class="num">#379</span><h3>Korea Hanbok &amp; Palace Experience Full Guide</h3></a>
+    <a href="../content/century-restaurants.en.html" class="meta-card" data-keywords="korea century-old restaurants full guide"><span class="num">#388</span><h3>Korea Century-Old Restaurants Full Guide</h3></a>
+    <a href="../content/new-kdrama-2026.en.html" class="meta-card" data-keywords="2026 new k-drama·movie filming locations full guide"><span class="num">#503</span><h3>2026 New K-Drama·Movie Filming Locations Full Guide</h3></a>
+    <a href="../content/holiday-calendar-2026.en.html" class="meta-card" data-keywords="korea holiday·festival calendar 2026 deep dive"><span class="num">#506</span><h3>Korea Holiday·Festival Calendar 2026 Deep Dive</h3></a>
+    <a href="../content/webtoon-locations.en.html" class="meta-card" data-keywords="foreigner webtoon·webdrama locations deep dive"><span class="num">#507</span><h3>Foreigner Webtoon·Webdrama Locations Deep Dive</h3></a>
+    <a href="../content/temple-experience-deep.en.html" class="meta-card" data-keywords="foreigner temple experience·templestay deep dive"><span class="num">#509</span><h3>Foreigner Temple Experience·Templestay Deep Dive</h3></a>
+    <a href="../content/seoul-jazz-bars.en.html" class="meta-card" data-keywords="seoul jazz bars·lounges deep dive"><span class="num">#511</span><h3>Seoul Jazz Bars·Lounges Deep Dive</h3></a>
+    <a href="../content/museum-expanded.en.html" class="meta-card" data-keywords="korea museum·art gallery deep dive expanded"><span class="num">#514</span><h3>Korea Museum·Art Gallery Deep Dive Expanded</h3></a>
+    <a href="../content/kpop-dance-2026.en.html" class="meta-card" data-keywords="k-pop dance 2026 new trend deep dive"><span class="num">#519</span><h3>K-Pop Dance 2026 New Trend Deep Dive</h3></a>
+    <a href="../content/traditional-crafts.en.html" class="meta-card" data-keywords="korea traditional crafts deep dive"><span class="num">#524</span><h3>Korea Traditional Crafts Deep Dive</h3></a>
+    <a href="../content/art-gallery-deep.en.html" class="meta-card" data-keywords="foreigner korea art·gallery deep dive"><span class="num">#536</span><h3>Foreigner Korea Art·Gallery Deep Dive</h3></a>
+    <a href="../content/religion-temple-deep.en.html" class="meta-card" data-keywords="foreigner korea religion·temple deep dive"><span class="num">#540</span><h3>Foreigner Korea Religion·Temple Deep Dive</h3></a>
+    <a href="../content/bookstore-indie-deep.en.html" class="meta-card" data-keywords="foreigner korea bookstore·independent bookshop deep dive"><span class="num">#541</span><h3>Foreigner Korea Bookstore·Independent Bookshop Deep Dive</h3></a>
+    <a href="../content/calligraphy-deep.en.html" class="meta-card" data-keywords="foreigner korea calligraphy deep dive"><span class="num">#579</span><h3>Foreigner Korea Calligraphy Deep Dive</h3></a>
+    <a href="../content/ceramics-deep.en.html" class="meta-card" data-keywords="foreigner korea ceramics pottery top 12 deep dive"><span class="num">#600</span><h3>Foreigner Korea Ceramics Pottery Top 12 Deep Dive</h3></a>
+    <a href="../content/hanji-deep.en.html" class="meta-card" data-keywords="foreigner korea hanji paper craft top 12 deep dive"><span class="num">#601</span><h3>Foreigner Korea Hanji Paper Craft Top 12 Deep Dive</h3></a>
+    <a href="../content/seoye-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea calligraphy sub-deep top 12 deep dive"><span class="num">#602</span><h3>Foreigner Korea Calligraphy Sub-Deep Top 12 Deep Dive</h3></a>
+    <a href="../content/k-design-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea k-design seoul design festival sub-deep top 12"><span class="num">#621</span><h3>Foreigner Korea K-Design Seoul Design Festival Sub-Deep Top 12</h3></a>
+    <a href="../content/k-literature-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea k-literature han kang nobel prize sub-deep top 12"><span class="num">#659</span><h3>Foreigner Korea K-Literature Han Kang Nobel Prize Sub-Deep Top 12</h3></a>
+    <a href="../content/k-architecture-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea k-architecture ddp hanok unesco sub-deep top 12"><span class="num">#667</span><h3>Foreigner Korea K-Architecture DDP Hanok UNESCO Sub-Deep Top 12</h3></a>
+    <a href="../content/k-art-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea k-art frieze leeum mmca sub-deep top 12"><span class="num">#668</span><h3>Foreigner Korea K-Art Frieze Leeum MMCA Sub-Deep Top 12</h3></a>
+    <a href="../content/traditional-tea-deep.en.html" class="meta-card" data-keywords="foreigner korea traditional tea darye foreign-friendly teahouse top 12"><span class="num">#675</span><h3>Foreigner Korea Traditional Tea Darye Foreign-Friendly Teahouse Top 12</h3></a>
+    <a href="../content/seoul-foreign-teahouse-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea seoul foreign-friendly teahouse darye standalone sub-deep top 12"><span class="num">#680</span><h3>Foreigner Korea Seoul Foreign-Friendly Teahouse Darye Standalone Sub-Deep Top 12</h3></a>
+    <a href="../content/hanbang-tea-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea hanbang tea yangnyeong market korea hanbang center sub-deep top 12"><span class="num">#681</span><h3>Foreigner Korea Hanbang Tea Yangnyeong Market Korea Hanbang Center Sub-Deep Top 12</h3></a>
+    <a href="../content/medicinal-tea-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea medicinal tea ssanghwa omija yuja sub-deep top 12"><span class="num">#682</span><h3>Foreigner Korea Medicinal Tea Ssanghwa Omija Yuja Sub-Deep Top 12</h3></a>
+    <a href="../content/tea-tools-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea tea tools dagwan chatjan sukwoo sub-deep top 12"><span class="num">#683</span><h3>Foreigner Korea Tea Tools Dagwan Chatjan Sukwoo Sub-Deep Top 12</h3></a>
+    <a href="../content/traditional-liquor-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea traditional liquor makgeolli soju sub-deep top 12"><span class="num">#684</span><h3>Foreigner Korea Traditional Liquor Makgeolli Soju Sub-Deep Top 12</h3></a>
+    <a href="../content/royal-cuisine-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea royal court cuisine surasang sinseollo sub-deep top 12"><span class="num">#685</span><h3>Foreigner Korea Royal Court Cuisine Surasang Sinseollo Sub-Deep Top 12</h3></a>
+    <a href="../content/traditional-music-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea traditional music gugak pansori samul sub-deep top 12"><span class="num">#686</span><h3>Foreigner Korea Traditional Music Gugak Pansori Samul Sub-Deep Top 12</h3></a>
+    <a href="../content/makgeolli-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea makgeolli standalone sub-deep top 12"><span class="num">#687</span><h3>Foreigner Korea Makgeolli Standalone Sub-Deep Top 12</h3></a>
+    <a href="../content/liquor-pairing-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea traditional liquor pairing standalone sub-deep top 12"><span class="num">#688</span><h3>Foreigner Korea Traditional Liquor Pairing Standalone Sub-Deep Top 12</h3></a>
+    <a href="../content/brewery-tour-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea brewery tour standalone sub-deep top 12"><span class="num">#689</span><h3>Foreigner Korea Brewery Tour Standalone Sub-Deep Top 12</h3></a>
+    <a href="../content/surasang-restaurant-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea surasang restaurant standalone sub-deep top 12"><span class="num">#690</span><h3>Foreigner Korea Surasang Restaurant Standalone Sub-Deep Top 12</h3></a>
+    <a href="../content/royal-dessert-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea royal tteok dasik traditional dessert sub-deep top 12"><span class="num">#691</span><h3>Foreigner Korea Royal Tteok Dasik Traditional Dessert Sub-Deep Top 12</h3></a>
+    <a href="../content/hanbok-traditional-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea traditional hanbok standalone sub-deep top 12"><span class="num">#692</span><h3>Foreigner Korea Traditional Hanbok Standalone Sub-Deep Top 12</h3></a>
+    <a href="../content/pansori-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea pansori standalone sub-deep top 12"><span class="num">#693</span><h3>Foreigner Korea Pansori Standalone Sub-Deep Top 12</h3></a>
+    <a href="../content/samul-nori-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea samul nori standalone sub-deep top 12"><span class="num">#694</span><h3>Foreigner Korea Samul Nori Standalone Sub-Deep Top 12</h3></a>
+    <a href="../content/gugakwon-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea gugakwon national gugak center standalone sub-deep top 12"><span class="num">#695</span><h3>Foreigner Korea Gugakwon National Gugak Center Standalone Sub-Deep Top 12</h3></a>
+    <a href="../content/hanji-tradition-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea hanji tradition standalone korean paper unesco sub-deep top 12"><span class="num">#717</span><h3>Foreigner Korea Hanji Tradition Standalone Korean Paper UNESCO Sub-Deep Top 12</h3></a>
+    <a href="../content/pottery-tradition-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea pottery tradition standalone icheon yeoju celadon baekja sub-deep top 12"><span class="num">#718</span><h3>Foreigner Korea Pottery Tradition Standalone Icheon Yeoju Celadon Baekja Sub-Deep Top 12</h3></a>
+    <a href="../content/calligraphy-tradition-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea calligraphy tradition standalone hangul hanja k-pop calligraphy sub-deep top 12"><span class="num">#719</span><h3>Foreigner Korea Calligraphy Tradition Standalone Hangul Hanja K-pop Calligraphy Sub-Deep Top 12</h3></a>
+    <a href="../content/religion-tradition-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea religion tradition standalone temple cathedral mosque sub-deep top 12"><span class="num">#720</span><h3>Foreigner Korea Religion Tradition Standalone Temple Cathedral Mosque Sub-Deep Top 12</h3></a>
+    <a href="../content/traditional-dance-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea traditional dance standalone sungmu salpuri ganggangsullae geomu sub-deep top 12"><span class="num">#721</span><h3>Foreigner Korea Traditional Dance Standalone Sungmu Salpuri Ganggangsullae Geomu Sub-Deep Top 12</h3></a>
+    <a href="../content/taekwondo-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea taekwondo standalone kukkiwon olympic unesco sub-deep top 12"><span class="num">#722</span><h3>Foreigner Korea Taekwondo Standalone Kukkiwon Olympic UNESCO Sub-Deep Top 12</h3></a>
+    <a href="../content/jeonju-hanji-village-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea jeonju hanji village hanok village standalone sub-deep top 12"><span class="num">#723</span><h3>Foreigner Korea Jeonju Hanji Village Hanok Village Standalone Sub-Deep Top 12</h3></a>
+    <a href="../content/icheon-saghyu-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea icheon saghyu pottery village unesco creative city sub-deep top 12"><span class="num">#724</span><h3>Foreigner Korea Icheon Saghyu Pottery Village UNESCO Creative City Sub-Deep Top 12</h3></a>
+    <a href="../content/tradition-2day-package-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea #1 tradition 2-day package calligraphy hanji pottery tea hanbok royal sub-deep top 12"><span class="num">#725</span><h3>Foreigner Korea #1 Tradition 2-Day Package Calligraphy Hanji Pottery Tea Hanbok Royal Sub-Deep Top 12</h3></a>
+    <a href="../content/bts-calligraphy-fusion-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea bts calligraphy k-pop calligraphy fusion mz tradition sub-deep top 12"><span class="num">#726</span><h3>Foreigner Korea BTS Calligraphy K-pop Calligraphy Fusion MZ Tradition Sub-Deep Top 12</h3></a>
+    <a href="../content/kdrama-hanbok-fusion-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea k-drama hanbok filming locations tradition fusion sub-deep top 12"><span class="num">#727</span><h3>Foreigner Korea K-Drama Hanbok Filming Locations Tradition Fusion Sub-Deep Top 12</h3></a>
+    <a href="../content/kpop-tradition-fusion-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea k-pop hanji pottery darye fusion tradition mz sub-deep top 12"><span class="num">#728</span><h3>Foreigner Korea K-pop Hanji Pottery Darye Fusion Tradition MZ Sub-Deep Top 12</h3></a>
+    <a href="../content/kbeauty-hanbok-fusion-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea k-beauty hanbok fusion tradition modern sub-deep top 12"><span class="num">#729</span><h3>Foreigner Korea K-beauty Hanbok Fusion Tradition Modern Sub-Deep Top 12</h3></a>
+    <a href="../content/kpop-temple-fusion-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea k-pop temple templestay fusion tradition meditation sub-deep top 12"><span class="num">#730</span><h3>Foreigner Korea K-pop Temple Templestay Fusion Tradition Meditation Sub-Deep Top 12</h3></a>
+    <a href="../content/kdrama-hansik-fusion-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea k-drama hansik filming locations restaurants fusion sub-deep top 12"><span class="num">#731</span><h3>Foreigner Korea K-Drama Hansik Filming Locations Restaurants Fusion Sub-Deep Top 12</h3></a>
+    <a href="../content/kcontent-2day-package-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea #1 k-content 2-day package bts newjeans hybe sm jyp yg sub-deep top 12"><span class="num">#732</span><h3>Foreigner Korea #1 K-content 2-Day Package BTS NewJeans HYBE SM JYP YG Sub-Deep Top 12</h3></a>
+    <a href="../content/kgame-tradition-fusion-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea k-game tradition fusion mmorpg mobile e-sports sub-deep top 12"><span class="num">#733</span><h3>Foreigner Korea K-game Tradition Fusion MMORPG Mobile E-sports Sub-Deep Top 12</h3></a>
+    <a href="../content/kwebtoon-hanbok-fusion-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea k-webtoon hanbok fusion tower of god solo leveling mz sub-deep top 12"><span class="num">#734</span><h3>Foreigner Korea K-webtoon Hanbok Fusion Tower of God Solo Leveling MZ Sub-Deep Top 12</h3></a>
+    <a href="../content/kfood-darye-fusion-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea k-food darye temple food fusion tradition modern sub-deep top 12"><span class="num">#735</span><h3>Foreigner Korea K-food Darye Temple Food Fusion Tradition Modern Sub-Deep Top 12</h3></a>
+    <a href="../content/kcontent-5day-package-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea #1 k-content 4-day 5-night package bts newjeans concert agency tradition national sub-deep top 12"><span class="num">#736</span><h3>Foreigner Korea #1 K-content 4-Day 5-Night Package BTS NewJeans Concert Agency Tradition National Sub-Deep Top 12</h3></a>
+    <a href="../content/namsan-fall-foliage.en.html" class="meta-card" data-keywords="foreigner korea namsan fall foliage trail top 12"><span class="num">#737</span><h3>Foreigner Korea Namsan Fall Foliage Trail Top 12</h3></a>
+    <a href="../content/seoul-hiking-fall.en.html" class="meta-card" data-keywords="foreigner korea seoul mountain fall hiking cheonggye gwanak top 12"><span class="num">#738</span><h3>Foreigner Korea Seoul Mountain Fall Hiking Cheonggye Gwanak Top 12</h3></a>
+    <a href="../content/outskirts-day-trip-fall.en.html" class="meta-card" data-keywords="foreigner korea outskirts fall day-trip gapyeong yangpyeong top 12"><span class="num">#739</span><h3>Foreigner Korea Outskirts Fall Day-Trip Gapyeong Yangpyeong Top 12</h3></a>
+    <a href="../content/seoul-forest-fall.en.html" class="meta-card" data-keywords="foreigner korea seoul forest seongsu fall foliage top 12"><span class="num">#740</span><h3>Foreigner Korea Seoul Forest Seongsu Fall Foliage Top 12</h3></a>
+    <a href="../content/hangang-picnic-fall.en.html" class="meta-card" data-keywords="foreigner korea han river park fall picnic top 12"><span class="num">#741</span><h3>Foreigner Korea Han River Park Fall Picnic Top 12</h3></a>
+    <a href="../content/fall-cafe-cluster.en.html" class="meta-card" data-keywords="foreigner korea fall foliage cafe cluster top 12"><span class="num">#742</span><h3>Foreigner Korea Fall Foliage Cafe Cluster Top 12</h3></a>
+    <a href="../content/fall-kdrama-locations.en.html" class="meta-card" data-keywords="foreigner korea fall foliage k-drama filming locations top 12"><span class="num">#743</span><h3>Foreigner Korea Fall Foliage K-Drama Filming Locations Top 12</h3></a>
+    <a href="../content/fall-festivals.en.html" class="meta-card" data-keywords="foreigner korea fall festivals lantern namdaemun cheonggye top 12"><span class="num">#744</span><h3>Foreigner Korea Fall Festivals Lantern Namdaemun Cheonggye Top 12</h3></a>
+    <a href="../content/seoul-illumination-winter.en.html" class="meta-card" data-keywords="foreigner korea seoul winter illumination top 12"><span class="num">#745</span><h3>Foreigner Korea Seoul Winter Illumination Top 12</h3></a>
+    <a href="../content/christmas-market-winter.en.html" class="meta-card" data-keywords="foreigner korea winter christmas market top 12"><span class="num">#746</span><h3>Foreigner Korea Winter Christmas Market Top 12</h3></a>
+    <a href="../content/korea-snow-winter.en.html" class="meta-card" data-keywords="foreigner korea winter snow spots top 12"><span class="num">#747</span><h3>Foreigner Korea Winter Snow Spots Top 12</h3></a>
+    <a href="../content/korea-winter-food.en.html" class="meta-card" data-keywords="foreigner korea winter warm food top 12"><span class="num">#748</span><h3>Foreigner Korea Winter Warm Food Top 12</h3></a>
+    <a href="../content/jjimjilbang-winter.en.html" class="meta-card" data-keywords="foreigner korea winter jjimjilbang hot spring top 12"><span class="num">#749</span><h3>Foreigner Korea Winter Jjimjilbang Hot Spring Top 12</h3></a>
+    <a href="../content/korea-new-year-sunrise.en.html" class="meta-card" data-keywords="foreigner korea new year sunrise top 12"><span class="num">#750</span><h3>Foreigner Korea New Year Sunrise Top 12</h3></a>
+    <a href="../content/korea-kimjang-winter.en.html" class="meta-card" data-keywords="foreigner korea kimjang kimchi experience top 12"><span class="num">#751</span><h3>Foreigner Korea Kimjang Kimchi Experience Top 12</h3></a>
+    <a href="../content/korea-seollal-lunar-new-year.en.html" class="meta-card" data-keywords="foreigner korea seollal lunar new year top 12"><span class="num">#752</span><h3>Foreigner Korea Seollal Lunar New Year Top 12</h3></a>
+  </div>
+</section>
+
+<!-- ④ K-content·MZ -->
+<section class="meta-section" id="kcontent" data-cat="kcontent">
+  <h2>🎤 K-content & MZ (47)</h2>
+  <div class="section-meta">Full coverage for foreign K-pop & MZ fans</div>
+  <div class="meta-grid">
+    <a href="../content/kpop-agencies.en.html" class="meta-card" data-keywords="k-pop 4 agencies deep dive"><span class="num">#387</span><h3>K-pop 4 Agencies Deep Dive</h3></a>
+    <a href="../content/kpop-dance-class.en.html" class="meta-card" data-keywords="k-pop dance class foreigner experience deep dive"><span class="num">#399</span><h3>K-Pop Dance Class Foreigner Experience Deep Dive</h3></a>
+    <a href="../content/kpop-concert-ticket.en.html" class="meta-card" data-keywords="k-pop concerts·tickets·festivals foreigner full guide"><span class="num">#402</span><h3>K-pop Concerts·Tickets·Festivals Foreigner Full Guide</h3></a>
+    <a href="../content/korea-festivals.en.html" class="meta-card" data-keywords="korea festivals foreigner full guide"><span class="num">#404</span><h3>Korea Festivals Foreigner Full Guide</h3></a>
+    <a href="../content/instagram-spots.en.html" class="meta-card" data-keywords="foreigner instagram photo spots matrix"><span class="num">#417</span><h3>Foreigner Instagram Photo Spots Matrix</h3></a>
+    <a href="../content/korean-cinema.en.html" class="meta-card" data-keywords="korean cinema foreigner full guide"><span class="num">#438</span><h3>Korean Cinema Foreigner Full Guide</h3></a>
+    <a href="../content/pc-room-game-vr.en.html" class="meta-card" data-keywords="foreigner pc room·game room·vr deep dive"><span class="num">#443</span><h3>Foreigner PC Room·Game Room·VR Deep Dive</h3></a>
+    <a href="../content/board-game-cafe.en.html" class="meta-card" data-keywords="foreigner board game cafe deep dive"><span class="num">#444</span><h3>Foreigner Board Game Cafe Deep Dive</h3></a>
+    <a href="../content/webtoon-comics.en.html" class="meta-card" data-keywords="foreigner webtoon·comics deep dive"><span class="num">#445</span><h3>Foreigner Webtoon·Comics Deep Dive</h3></a>
+    <a href="../content/sports-mania.en.html" class="meta-card" data-keywords="foreigner sports mania deep dive"><span class="num">#446</span><h3>Foreigner Sports Mania Deep Dive</h3></a>
+    <a href="../content/korean-cinema-deep.en.html" class="meta-card" data-keywords="foreigner korean cinema mania deep dive"><span class="num">#530</span><h3>Foreigner Korean Cinema Mania Deep Dive</h3></a>
+    <a href="../content/music-mania-deep.en.html" class="meta-card" data-keywords="korea music mania deep dive"><span class="num">#532</span><h3>Korea Music Mania Deep Dive</h3></a>
+    <a href="../content/film-festival-vr.en.html" class="meta-card" data-keywords="foreigner korea film festival·vr experience deep dive"><span class="num">#548</span><h3>Foreigner Korea Film Festival·VR Experience Deep Dive</h3></a>
+    <a href="../content/kpop-dance-academy.en.html" class="meta-card" data-keywords="foreigner k-pop dance academy deep dive"><span class="num">#552</span><h3>Foreigner K-pop Dance Academy Deep Dive</h3></a>
+    <a href="../content/brand-collab-deep.en.html" class="meta-card" data-keywords="foreigner korea brand collaboration deep dive"><span class="num">#557</span><h3>Foreigner Korea Brand Collaboration Deep Dive</h3></a>
+    <a href="../content/esports-lck-deep.en.html" class="meta-card" data-keywords="foreigner korea game·esports·lck deep dive"><span class="num">#562</span><h3>Foreigner Korea Game·Esports·LCK Deep Dive</h3></a>
+    <a href="../content/kpop-mv-locations.en.html" class="meta-card" data-keywords="foreigner k-pop music video locations deep dive"><span class="num">#565</span><h3>Foreigner K-pop Music Video Locations Deep Dive</h3></a>
+    <a href="../content/kcontent-ott-deep.en.html" class="meta-card" data-keywords="foreigner korea k-content ott deep dive"><span class="num">#572</span><h3>Foreigner Korea K-content OTT Deep Dive</h3></a>
+    <a href="../content/sports-tourism-deep.en.html" class="meta-card" data-keywords="foreigner korea sports tourism deep dive"><span class="num">#578</span><h3>Foreigner Korea Sports Tourism Deep Dive</h3></a>
+    <a href="../content/jazz-blues-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea jazz blues live sub-deep top 12"><span class="num">#605</span><h3>Foreigner Korea Jazz Blues Live Sub-Deep Top 12</h3></a>
+    <a href="../content/musical-ai-subtitle-deep.en.html" class="meta-card" data-keywords="foreigner korea musicals daehakro ai subtitle top 12"><span class="num">#606</span><h3>Foreigner Korea Musicals Daehakro AI Subtitle Top 12</h3></a>
+    <a href="../content/kpop-fanevent-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea k-pop fan event sub-deep top 12"><span class="num">#607</span><h3>Foreigner Korea K-pop Fan Event Sub-Deep Top 12</h3></a>
+    <a href="../content/film-festival-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea film festivals sub-deep top 12"><span class="num">#611</span><h3>Foreigner Korea Film Festivals Sub-Deep Top 12</h3></a>
+    <a href="../content/webtoon-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea webtoon sub-deep top 12"><span class="num">#612</span><h3>Foreigner Korea Webtoon Sub-Deep Top 12</h3></a>
+    <a href="../content/game-esports-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea game esports sub-deep top 12"><span class="num">#613</span><h3>Foreigner Korea Game Esports Sub-Deep Top 12</h3></a>
+    <a href="../content/indie-dance-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea indie dance street sub-deep top 12"><span class="num">#614</span><h3>Foreigner Korea Indie Dance Street Sub-Deep Top 12</h3></a>
+    <a href="../content/k-ad-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea advertising k-ad sub-deep top 12"><span class="num">#619</span><h3>Foreigner Korea Advertising K-AD Sub-Deep Top 12</h3></a>
+    <a href="../content/k-tv-variety-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea k-tv variety show sub-deep top 12"><span class="num">#627</span><h3>Foreigner Korea K-TV Variety Show Sub-Deep Top 12</h3></a>
+    <a href="../content/comics-bookstore-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea comics manhwa bookstore sub-deep top 12"><span class="num">#628</span><h3>Foreigner Korea Comics Manhwa Bookstore Sub-Deep Top 12</h3></a>
+    <a href="../content/k-influencer-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea k-influencer sub-deep top 12"><span class="num">#630</span><h3>Foreigner Korea K-Influencer Sub-Deep Top 12</h3></a>
+    <a href="../content/kdrama-viewing-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea k-drama viewing culture sub-deep top 12"><span class="num">#631</span><h3>Foreigner Korea K-drama Viewing Culture Sub-Deep Top 12</h3></a>
+    <a href="../content/k-anime-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea k-anime sub-deep top 12"><span class="num">#636</span><h3>Foreigner Korea K-Anime Sub-Deep Top 12</h3></a>
+    <a href="../content/k-radio-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea radio sub-deep top 12"><span class="num">#637</span><h3>Foreigner Korea Radio Sub-Deep Top 12</h3></a>
+    <a href="../content/k-podcast-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea podcast sub-deep top 12"><span class="num">#638</span><h3>Foreigner Korea Podcast Sub-Deep Top 12</h3></a>
+    <a href="../content/k-news-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea news broadcasting sub-deep top 12"><span class="num">#639</span><h3>Foreigner Korea News Broadcasting Sub-Deep Top 12</h3></a>
+    <a href="../content/k-documentary-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea documentary sub-deep top 12"><span class="num">#640</span><h3>Foreigner Korea Documentary Sub-Deep Top 12</h3></a>
+    <a href="../content/food-ott-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea food ott cooking programs sub-deep top 12"><span class="num">#644</span><h3>Foreigner Korea Food OTT Cooking Programs Sub-Deep Top 12</h3></a>
+    <a href="../content/k-food-culture-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea k-food culture global sub-deep top 12"><span class="num">#645</span><h3>Foreigner Korea K-Food Culture Global Sub-Deep Top 12</h3></a>
+    <a href="../content/cooking-bj-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea cooking bj paik jong-won sub-deep top 12"><span class="num">#646</span><h3>Foreigner Korea Cooking BJ Paik Jong-won Sub-Deep Top 12</h3></a>
+    <a href="../content/mukbang-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea mukbang sub-deep top 12"><span class="num">#647</span><h3>Foreigner Korea Mukbang Sub-Deep Top 12</h3></a>
+    <a href="../content/k-fandom-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea k-fandom culture sub-deep top 12"><span class="num">#651</span><h3>Foreigner Korea K-Fandom Culture Sub-Deep Top 12</h3></a>
+    <a href="../content/k-comics-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea k-comics webtoon manhwa sub-deep top 12"><span class="num">#652</span><h3>Foreigner Korea K-Comics Webtoon Manhwa Sub-Deep Top 12</h3></a>
+    <a href="../content/k-sports-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea k-sports lck kbo k-league sub-deep top 12"><span class="num">#654</span><h3>Foreigner Korea K-Sports LCK KBO K-League Sub-Deep Top 12</h3></a>
+    <a href="../content/k-math-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea k-math olympiad sub-deep top 12"><span class="num">#661</span><h3>Foreigner Korea K-Math Olympiad Sub-Deep Top 12</h3></a>
+    <a href="../content/k-science-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea k-science nuri kaist kari sub-deep top 12"><span class="num">#662</span><h3>Foreigner Korea K-Science Nuri KAIST KARI Sub-Deep Top 12</h3></a>
+    <a href="../content/k-space-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea k-space nuri kari kasi sub-deep top 12"><span class="num">#669</span><h3>Foreigner Korea K-Space Nuri KARI KASI Sub-Deep Top 12</h3></a>
+    <a href="../content/k-bio-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea k-bio celltrion samsung biologics sub-deep top 12"><span class="num">#670</span><h3>Foreigner Korea K-Bio Celltrion Samsung Biologics Sub-Deep Top 12</h3></a>
+  </div>
+</section>
+
+
+<section class="meta-section" id="wellness" data-cat="wellness">
+  <h2>💆 Wellness & Beauty (16)</h2>
+  <div class="section-meta">Full coverage for foreign K-Beauty & medical tourism</div>
+  <div class="meta-grid">
+    <a href="../content/k-beauty-salon.en.html" class="meta-card" data-keywords="k-beauty hair salon full guide"><span class="num">#389</span><h3>K-Beauty Hair Salon Full Guide</h3></a>
+    <a href="../content/four-seasons.en.html" class="meta-card" data-keywords="korea 4 seasons matrix full guide"><span class="num">#390</span><h3>Korea 4 Seasons Matrix Full Guide</h3></a>
+    <a href="../content/medical-tourism-deep.en.html" class="meta-card" data-keywords="foreigner medical tourism deep dive"><span class="num">#401</span><h3>Foreigner Medical Tourism Deep Dive</h3></a>
+    <a href="../content/photo-studio-selfie.en.html" class="meta-card" data-keywords="foreigner photo studio·selfie·visa photo deep dive"><span class="num">#447</span><h3>Foreigner Photo Studio·Selfie·Visa Photo Deep Dive</h3></a>
+    <a href="../content/meditation-yoga.en.html" class="meta-card" data-keywords="foreigner meditation·yoga·pilates deep dive"><span class="num">#448</span><h3>Foreigner Meditation·Yoga·Pilates Deep Dive</h3></a>
+    <a href="../content/gym-fitness-boxing.en.html" class="meta-card" data-keywords="foreigner gym·fitness·boxing deep dive"><span class="num">#456</span><h3>Foreigner Gym·Fitness·Boxing Deep Dive</h3></a>
+    <a href="../content/kbeauty-risk-recovery.en.html" class="meta-card" data-keywords="foreigner k-beauty procedure·risk·recovery full guide"><span class="num">#508</span><h3>Foreigner K-Beauty Procedure·Risk·Recovery Full Guide</h3></a>
+    <a href="../content/pharmacy-healthcare.en.html" class="meta-card" data-keywords="foreigner pharmacy·healthcare deep dive"><span class="num">#528</span><h3>Foreigner Pharmacy·Healthcare Deep Dive</h3></a>
+    <a href="../content/oriental-medicine-deep.en.html" class="meta-card" data-keywords="foreigner korea oriental·traditional medicine deep dive"><span class="num">#546</span><h3>Foreigner Korea Oriental·Traditional Medicine Deep Dive</h3></a>
+    <a href="../content/taekwondo-martial-arts.en.html" class="meta-card" data-keywords="foreigner korea taekwondo·martial arts deep dive"><span class="num">#547</span><h3>Foreigner Korea Taekwondo·Martial Arts Deep Dive</h3></a>
+    <a href="../content/meditation-retreat-deep.en.html" class="meta-card" data-keywords="foreigner korea meditation center·yoga retreat deep dive"><span class="num">#555</span><h3>Foreigner Korea Meditation Center·Yoga Retreat Deep Dive</h3></a>
+    <a href="../content/medical-tourism-full.en.html" class="meta-card" data-keywords="foreigner korea medical tourism full set deep dive"><span class="num">#563</span><h3>Foreigner Korea Medical Tourism Full Set Deep Dive</h3></a>
+    <a href="../content/perfume-deep.en.html" class="meta-card" data-keywords="foreigner korea perfume deep dive"><span class="num">#573</span><h3>Foreigner Korea Perfume Deep Dive</h3></a>
+    <a href="../content/hanbang-clinic-deep.en.html" class="meta-card" data-keywords="foreigner korea hanbang korean medicine top 12 deep dive"><span class="num">#593</span><h3>Foreigner Korea Hanbang Korean Medicine Top 12 Deep Dive</h3></a>
+    <a href="../content/hiking-trekking-deep.en.html" class="meta-card" data-keywords="foreigner korea hiking trekking top 12 deep dive"><span class="num">#594</span><h3>Foreigner Korea Hiking Trekking Top 12 Deep Dive</h3></a>
+    <a href="../content/golf-round-deep.en.html" class="meta-card" data-keywords="foreigner korea golf round top 12 deep dive"><span class="num">#595</span><h3>Foreigner Korea Golf Round Top 12 Deep Dive</h3></a>
+  </div>
+</section>
+
+
+<section class="meta-section" id="shopping" data-cat="shopping">
+  <h2>🛍 Shopping & Luxury (11)</h2>
+  <div class="section-meta">Foreign duty-free·luxury·MZ-fashion enthusiasts</div>
+  <div class="meta-grid">
+    <a href="../content/duty-free.en.html" class="meta-card" data-keywords="foreigner duty-free shopping deep dive"><span class="num">#406</span><h3>Foreigner Duty-Free Shopping Deep Dive</h3></a>
+    <a href="../content/casino.en.html" class="meta-card" data-keywords="foreigner casino full guide"><span class="num">#415</span><h3>Foreigner Casino Full Guide</h3></a>
+    <a href="../content/fashion-streetwear.en.html" class="meta-card" data-keywords="foreigner fashion·streetwear·mz deep dive"><span class="num">#457</span><h3>Foreigner Fashion·Streetwear·MZ Deep Dive</h3></a>
+    <a href="../content/fashion-mz-deep.en.html" class="meta-card" data-keywords="foreigner fashion·streetwear mz deep dive"><span class="num">#531</span><h3>Foreigner Fashion·Streetwear MZ Deep Dive</h3></a>
+    <a href="../content/luxury-watch-deep.en.html" class="meta-card" data-keywords="foreigner korea luxury watch deep dive"><span class="num">#566</span><h3>Foreigner Korea Luxury Watch Deep Dive</h3></a>
+    <a href="../content/luxury-car-deep.en.html" class="meta-card" data-keywords="foreigner korea luxury car deep dive"><span class="num">#576</span><h3>Foreigner Korea Luxury Car Deep Dive</h3></a>
+    <a href="../content/dongdaemun-shopping-deep.en.html" class="meta-card" data-keywords="foreigner dongdaemun market shopping fashion top 12 deep dive"><span class="num">#583</span><h3>Foreigner Dongdaemun Market Shopping Fashion Top 12 Deep Dive</h3></a>
+    <a href="../content/k-eyewear-deep.en.html" class="meta-card" data-keywords="foreigner korea optical eyewear sunglasses top 12 deep dive"><span class="num">#588</span><h3>Foreigner Korea Optical Eyewear Sunglasses Top 12 Deep Dive</h3></a>
+    <a href="../content/dongmyo-market-deep.en.html" class="meta-card" data-keywords="foreigner dongmyo flea market vintage top 12 deep dive"><span class="num">#591</span><h3>Foreigner Dongmyo Flea Market Vintage Top 12 Deep Dive</h3></a>
+    <a href="../content/fashion-week-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea seoul fashion week sub-deep top 12"><span class="num">#620</span><h3>Foreigner Korea Seoul Fashion Week Sub-Deep Top 12</h3></a>
+    <a href="../content/k-fashion-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea k-fashion culture sub-deep top 12"><span class="num">#660</span><h3>Foreigner Korea K-Fashion Culture Sub-Deep Top 12</h3></a>
+  </div>
+</section>
+
+
+<section class="meta-section" id="nightlife" data-cat="nightlife">
+  <h2>🌙 Nightlife & MZ (10)</h2>
+  <div class="section-meta">Full coverage for foreign nightlife enthusiasts</div>
+  <div class="meta-grid">
+    <a href="../content/noraebang-coin.en.html" class="meta-card" data-keywords="foreigner noraebang·coin karaoke deep dive"><span class="num">#436</span><h3>Foreigner Noraebang·Coin Karaoke Deep Dive</h3></a>
+    <a href="../content/24h-nightlife.en.html" class="meta-card" data-keywords="foreigner 24-hour·late-night venues deep dive"><span class="num">#437</span><h3>Foreigner 24-Hour·Late-Night Venues Deep Dive</h3></a>
+    <a href="../content/club-nightlife.en.html" class="meta-card" data-keywords="foreigner club·nightlife deep dive"><span class="num">#454</span><h3>Foreigner Club·Nightlife Deep Dive</h3></a>
+    <a href="../content/live-music-indie.en.html" class="meta-card" data-keywords="foreigner live music·indie deep dive"><span class="num">#455</span><h3>Foreigner Live Music·Indie Deep Dive</h3></a>
+    <a href="../content/night-market-deep.en.html" class="meta-card" data-keywords="foreigner korea night market deep dive"><span class="num">#544</span><h3>Foreigner Korea Night Market Deep Dive</h3></a>
+    <a href="../content/edm-festival-deep.en.html" class="meta-card" data-keywords="foreigner korea edm festival deep dive"><span class="num">#558</span><h3>Foreigner Korea EDM Festival Deep Dive</h3></a>
+    <a href="../content/festival-365-deep.en.html" class="meta-card" data-keywords="foreigner korea festival 365 days deep dive"><span class="num">#564</span><h3>Foreigner Korea Festival 365 Days Deep Dive</h3></a>
+    <a href="../content/jongno3ga-pocha-deep.en.html" class="meta-card" data-keywords="foreigner jongno 3-ga pocha yajang street top 12 deep dive"><span class="num">#585</span><h3>Foreigner Jongno 3-ga Pocha Yajang Street Top 12 Deep Dive</h3></a>
+    <a href="../content/hangang-night-deep.en.html" class="meta-card" data-keywords="foreigner korea 24h han river night top 12 deep dive"><span class="num">#586</span><h3>Foreigner Korea 24h Han River Night Top 12 Deep Dive</h3></a>
+    <a href="../content/dawn-market-deep.en.html" class="meta-card" data-keywords="foreigner korea dawn wholesale market top 12 deep dive"><span class="num">#587</span><h3>Foreigner Korea Dawn Wholesale Market Top 12 Deep Dive</h3></a>
+  </div>
+</section>
+
+
+<section class="meta-section" id="outskirts" data-cat="outskirts">
+  <h2>🚗 Outskirts & Nature (58 🎉)</h2>
+  <div class="section-meta">Full coverage for foreign family & leisure enthusiasts</div>
+  <div class="meta-grid">
+    <a href="../content/wedding-honeymoon.en.html" class="meta-card" data-keywords="foreigner wedding·wedding photo·honeymoon full guide"><span class="num">#416</span><h3>Foreigner Wedding·Wedding Photo·Honeymoon Full Guide</h3></a>
+    <a href="../content/rental-car-driving.en.html" class="meta-card" data-keywords="foreigner driving·rental car·freedom travel deep dive"><span class="num">#439</span><h3>Foreigner Driving·Rental Car·Freedom Travel Deep Dive</h3></a>
+    <a href="../content/theme-park.en.html" class="meta-card" data-keywords="korea theme park foreigner full guide"><span class="num">#440</span><h3>Korea Theme Park Foreigner Full Guide</h3></a>
+    <a href="../content/golf.en.html" class="meta-card" data-keywords="korea golf foreigner full guide"><span class="num">#441</span><h3>Korea Golf Foreigner Full Guide</h3></a>
+    <a href="../content/animal-cafe.en.html" class="meta-card" data-keywords="korea animal cafe foreigner full guide"><span class="num">#442</span><h3>Korea Animal Cafe Foreigner Full Guide</h3></a>
+    <a href="../content/gyeonggi-daytrip.en.html" class="meta-card" data-keywords="foreigner gyeonggi day-trip matrix deep dive"><span class="num">#512</span><h3>Foreigner Gyeonggi Day-Trip Matrix Deep Dive</h3></a>
+    <a href="../content/pet-friendly-travel.en.html" class="meta-card" data-keywords="foreigner pet-friendly travel deep dive"><span class="num">#525</span><h3>Foreigner Pet-friendly Travel Deep Dive</h3></a>
+    <a href="../content/national-cities-deep.en.html" class="meta-card" data-keywords="foreigner national cities deep dive"><span class="num">#534</span><h3>Foreigner National Cities Deep Dive</h3></a>
+    <a href="../content/nature-national-park.en.html" class="meta-card" data-keywords="foreigner korea nature·national park deep dive"><span class="num">#539</span><h3>Foreigner Korea Nature·National Park Deep Dive</h3></a>
+    <a href="../content/luxury-golf-deep.en.html" class="meta-card" data-keywords="foreigner korea luxury golf mania deep dive"><span class="num">#542</span><h3>Foreigner Korea Luxury Golf Mania Deep Dive</h3></a>
+    <a href="../content/rural-traditional-village.en.html" class="meta-card" data-keywords="foreigner korea rural·traditional village deep dive"><span class="num">#543</span><h3>Foreigner Korea Rural·Traditional Village Deep Dive</h3></a>
+    <a href="../content/wedding-deep.en.html" class="meta-card" data-keywords="foreigner korea wedding·marriage deep dive"><span class="num">#545</span><h3>Foreigner Korea Wedding·Marriage Deep Dive</h3></a>
+    <a href="../content/observatory-space.en.html" class="meta-card" data-keywords="foreigner korea observatory·space deep dive"><span class="num">#549</span><h3>Foreigner Korea Observatory·Space Deep Dive</h3></a>
+    <a href="../content/cycling-bike-deep.en.html" class="meta-card" data-keywords="foreigner korea cycling·bike riding deep dive"><span class="num">#550</span><h3>Foreigner Korea Cycling·Bike Riding Deep Dive</h3></a>
+    <a href="../content/zoo-aquarium-deep.en.html" class="meta-card" data-keywords="foreigner korea zoo·aquarium deep dive"><span class="num">#553</span><h3>Foreigner Korea Zoo·Aquarium Deep Dive</h3></a>
+    <a href="../content/industrial-tourism-deep.en.html" class="meta-card" data-keywords="foreigner korea industrial tourism·factory tour deep dive"><span class="num">#556</span><h3>Foreigner Korea Industrial Tourism·Factory Tour Deep Dive</h3></a>
+    <a href="../content/camping-glamping-deep.en.html" class="meta-card" data-keywords="foreigner korea camping·glamping full set deep dive"><span class="num">#560</span><h3>Foreigner Korea Camping·Glamping Full Set Deep Dive</h3></a>
+    <a href="../content/luxury-hotel-deep.en.html" class="meta-card" data-keywords="foreigner korea luxury hotel deep dive"><span class="num">#577</span><h3>Foreigner Korea Luxury Hotel Deep Dive</h3></a>
+    <a href="../content/busan-cluster-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea busan gukje biff yongdusan cluster sub-deep top 12"><span class="num">#610</span><h3>Foreigner Korea Busan Gukje BIFF Yongdusan Cluster Sub-Deep Top 12</h3></a>
+    <a href="../content/jeju-dongmun-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea jeju dongmun market sub-deep top 12"><span class="num">#634</span><h3>Foreigner Korea Jeju Dongmun Market Sub-Deep Top 12</h3></a>
+    <a href="../content/gangneung-jungang-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea gangneung jungang market sub-deep top 12"><span class="num">#635</span><h3>Foreigner Korea Gangneung Jungang Market Sub-Deep Top 12</h3></a>
+    <a href="../content/pohang-jukdo-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea pohang jukdo market gyeongbuk sub-deep top 12"><span class="num">#655</span><h3>Foreigner Korea Pohang Jukdo Market Gyeongbuk Sub-Deep Top 12</h3></a>
+    <a href="../content/ulleung-market-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea ulleungdo dodong market sub-deep top 12"><span class="num">#656</span><h3>Foreigner Korea Ulleungdo Dodong Market Sub-Deep Top 12</h3></a>
+    <a href="../content/gangjin-celadon-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea gangjin market goryeo celadon sub-deep top 12"><span class="num">#657</span><h3>Foreigner Korea Gangjin Market Goryeo Celadon Sub-Deep Top 12</h3></a>
+    <a href="../content/yeosu-market-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea yeosu fish market night view sub-deep top 12"><span class="num">#658</span><h3>Foreigner Korea Yeosu Fish Market Night View Sub-Deep Top 12</h3></a>
+    <a href="../content/andong-market-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea andong old market hahoe village sub-deep top 12"><span class="num">#663</span><h3>Foreigner Korea Andong Old Market Hahoe Village Sub-Deep Top 12</h3></a>
+    <a href="../content/gyeongju-market-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea gyeongju market silla sub-deep top 12"><span class="num">#664</span><h3>Foreigner Korea Gyeongju Market Silla Sub-Deep Top 12</h3></a>
+    <a href="../content/jinju-market-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea jinju market namgang sub-deep top 12"><span class="num">#665</span><h3>Foreigner Korea Jinju Market Namgang Sub-Deep Top 12</h3></a>
+    <a href="../content/seosan-market-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea seosan east market west sea sub-deep top 12"><span class="num">#666</span><h3>Foreigner Korea Seosan East Market West Sea Sub-Deep Top 12</h3></a>
+    <a href="../content/seoul-downtown-streams-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea seoul downtown streams cheonggyecheon seongbukcheon sub-deep top 12"><span class="num">#696</span><h3>Foreigner Korea Seoul Downtown Streams Cheonggyecheon Seongbukcheon Sub-Deep Top 12</h3></a>
+    <a href="../content/gangnam-nature-streams-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea seoul gangnam nature streams yangjaecheon tancheon sub-deep top 12"><span class="num">#697</span><h3>Foreigner Korea Seoul Gangnam Nature Streams Yangjaecheon Tancheon Sub-Deep Top 12</h3></a>
+    <a href="../content/seoul-northwest-streams-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea seoul northwest hidden streams hongjecheon bulgwangcheon sub-deep top 12"><span class="num">#698</span><h3>Foreigner Korea Seoul Northwest Hidden Streams Hongjecheon Bulgwangcheon Sub-Deep Top 12</h3></a>
+    <a href="../content/seoul-outskirts-streams-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea seoul outskirts eco streams jungnangcheon anyangcheon dorimcheon sub-deep top 12"><span class="num">#699</span><h3>Foreigner Korea Seoul Outskirts Eco Streams Jungnangcheon Anyangcheon Dorimcheon Sub-Deep Top 12</h3></a>
+    <a href="../content/hangang-standalone-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea han river standalone 11 parks sub-deep top 12"><span class="num">#700</span><h3>Foreigner Korea Han River Standalone 11 Parks Sub-Deep Top 12</h3></a>
+    <a href="../content/seoul-forest-seongsu-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea seoul forest seongsu cluster sub-deep top 12"><span class="num">#701</span><h3>Foreigner Korea Seoul Forest Seongsu Cluster Sub-Deep Top 12</h3></a>
+    <a href="../content/banpo-rainbow-fountain-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea banpo bridge moonlight rainbow fountain world #1 guinness sub-deep top 12"><span class="num">#702</span><h3>Foreigner Korea Banpo Bridge Moonlight Rainbow Fountain World #1 Guinness Sub-Deep Top 12</h3></a>
+    <a href="../content/hangang-night-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea han river night standalone 11 bridges led sub-deep top 12"><span class="num">#703</span><h3>Foreigner Korea Han River Night Standalone 11 Bridges LED Sub-Deep Top 12</h3></a>
+    <a href="../content/hangang-cruise-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea han river cruise e.land dinner cruise sub-deep top 12"><span class="num">#704</span><h3>Foreigner Korea Han River Cruise E.Land Dinner Cruise Sub-Deep Top 12</h3></a>
+    <a href="../content/63-building-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea 63 building yeouido cluster aquarium observatory sub-deep top 12"><span class="num">#705</span><h3>Foreigner Korea 63 Building Yeouido Cluster Aquarium Observatory Sub-Deep Top 12</h3></a>
+    <a href="../content/hangang-parks-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea han river parks standalone 11 parks full set sub-deep top 12"><span class="num">#706</span><h3>Foreigner Korea Han River Parks Standalone 11 Parks Full Set Sub-Deep Top 12</h3></a>
+    <a href="../content/jamsil-cluster-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea jamsil cluster lotte world 555m olympic park sub-deep top 12"><span class="num">#707</span><h3>Foreigner Korea Jamsil Cluster Lotte World 555m Olympic Park Sub-Deep Top 12</h3></a>
+    <a href="../content/mini-hangang-parks-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea mini han river parks mangwon yanghwa nanji gwangnaru sub-deep top 12"><span class="num">#708</span><h3>Foreigner Korea Mini Han River Parks Mangwon Yanghwa Nanji Gwangnaru Sub-Deep Top 12</h3></a>
+    <a href="../content/seongsu-ddukseom-cluster-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea seongsu ddukseom han river cluster mz nature sub-deep top 12"><span class="num">#709</span><h3>Foreigner Korea Seongsu Ddukseom Han River Cluster MZ Nature Sub-Deep Top 12</h3></a>
+    <a href="../content/itaewon-ichon-cluster-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea itaewon ichon han river yongsan international sub-deep top 12"><span class="num">#710</span><h3>Foreigner Korea Itaewon Ichon Han River Yongsan International Sub-Deep Top 12</h3></a>
+    <a href="../content/hongdae-yanghwa-cluster-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea hongdae yanghwa han river hapjeong mz indie cluster sub-deep top 12"><span class="num">#711</span><h3>Foreigner Korea Hongdae Yanghwa Han River Hapjeong MZ Indie Cluster Sub-Deep Top 12</h3></a>
+    <a href="../content/banpo-seorae-cluster-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea banpo seorae han river cluster luxury night sub-deep top 12"><span class="num">#712</span><h3>Foreigner Korea Banpo Seorae Han River Cluster Luxury Night Sub-Deep Top 12</h3></a>
+    <a href="../content/gangnam-apgujeong-cluster-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea gangnam apgujeong jamwon han river cluster luxury sub-deep top 12"><span class="num">#713</span><h3>Foreigner Korea Gangnam Apgujeong Jamwon Han River Cluster Luxury Sub-Deep Top 12</h3></a>
+    <a href="../content/jamsil-songpa-cluster-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea jamsil songpa seokchon han river cluster neighborhood day-trip sub-deep top 12"><span class="num">#714</span><h3>Foreigner Korea Jamsil Songpa Seokchon Han River Cluster Neighborhood Day-Trip Sub-Deep Top 12</h3></a>
+    <a href="../content/east-seoul-cluster-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea guui cheonho gwangnaru han east seoul cluster sub-deep top 12"><span class="num">#715</span><h3>Foreigner Korea Guui Cheonho Gwangnaru Han East Seoul Cluster Sub-Deep Top 12</h3></a>
+    <a href="../content/west-seoul-cluster-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea mapo yeouido west han river cluster sub-deep top 12"><span class="num">#716</span><h3>Foreigner Korea Mapo Yeouido West Han River Cluster Sub-Deep Top 12</h3></a>
+    <a href="../content/mokpo-market-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea mokpo seafood market skate octopus sub-deep top 12"><span class="num">#671</span><h3>Foreigner Korea Mokpo Seafood Market Skate Octopus Sub-Deep Top 12</h3></a>
+    <a href="../content/yeoju-market-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea yeoju hangeul market sejong royal tomb sub-deep top 12"><span class="num">#672</span><h3>Foreigner Korea Yeoju Hangeul Market Sejong Royal Tomb Sub-Deep Top 12</h3></a>
+    <a href="../content/icheon-market-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea icheon market unesco creative city ceramics sub-deep top 12"><span class="num">#673</span><h3>Foreigner Korea Icheon Market UNESCO Creative City Ceramics Sub-Deep Top 12</h3></a>
+    <a href="../content/hongseong-market-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea hongseong market naepo hanwoo sub-deep top 12"><span class="num">#674</span><h3>Foreigner Korea Hongseong Market Naepo Hanwoo Sub-Deep Top 12</h3></a>
+    <a href="../content/boseong-tea-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea boseong daehan dawon green tea field sub-deep top 12"><span class="num">#676</span><h3>Foreigner Korea Boseong Daehan Dawon Green Tea Field Sub-Deep Top 12</h3></a>
+    <a href="../content/hadong-tea-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea hadong hwagae wild tea museum 1200y birthplace sub-deep top 12"><span class="num">#677</span><h3>Foreigner Korea Hadong Hwagae Wild Tea Museum 1200y Birthplace Sub-Deep Top 12</h3></a>
+    <a href="../content/osulloc-jeju-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea jeju osulloc tea museum tea stone sub-deep top 12"><span class="num">#678</span><h3>Foreigner Korea Jeju Osulloc Tea Museum Tea Stone Sub-Deep Top 12</h3></a>
+    <a href="../content/icheon-pottery-tea-sub-deep.en.html" class="meta-card" data-keywords="foreigner korea icheon pottery tea cluster sub-deep top 12"><span class="num">#679</span><h3>Foreigner Korea Icheon Pottery Tea Cluster Sub-Deep Top 12</h3></a>
+  </div>
+</section>
+
+
+<section class="meta-section" id="bonus" data-cat="bonus">
+  <h2>🌟 Extra Cluster (5)</h2>
+  <div class="section-meta">Course matrix·hiking·friends·family·unified index</div>
+  <div class="meta-grid">
+    <a href="../content/week-twoweeks-course.en.html" class="meta-card" data-keywords="foreigner 7-days &amp; 14-days complete course matrix"><span class="num">#392</span><h3>Foreigner 7-Days &amp; 14-Days Complete Course Matrix</h3></a>
+    <a href="../content/hiking-duregil.en.html" class="meta-card" data-keywords="seoul hiking·duregil trail matrix deep dive"><span class="num">#515</span><h3>Seoul Hiking·Duregil Trail Matrix Deep Dive</h3></a>
+    <a href="../content/friend-making.en.html" class="meta-card" data-keywords="foreigner making korean friends deep dive"><span class="num">#520</span><h3>Foreigner Making Korean Friends Deep Dive</h3></a>
+    <a href="../content/family-children-travel.en.html" class="meta-card" data-keywords="foreigner family·children travel deep dive"><span class="num">#533</span><h3>Foreigner Family·Children Travel Deep Dive</h3></a>
+    <a href="../content/deep-dive-index.en.html" class="meta-card" data-keywords="keychingu deep dive integrated meta index"><span class="num">#522</span><h3>KeyChinGu Deep Dive Integrated Meta Index</h3></a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <p style="text-align: center; padding: 24px; color: #888; font-size: 13px;">
+    © 2026 KeyChinGu · <a href="about.html" style="color:#1E88B0;">About</a> · <a href="meta-guides.html" style="color:#1E88B0;">Meta Guides</a> · <a href="faq.html" style="color:#1E88B0;">FAQ</a> · <a href="links.html" style="color:#1E88B0;">Links</a>
+  </p>
+</footer>
+
+<script>
+// Simple client-side search
+(function() {
+  const input = document.getElementById('search');
+  const stat = document.getElementById('search-stat');
+  const cards = Array.from(document.querySelectorAll('.meta-card'));
+  const sections = Array.from(document.querySelectorAll('.meta-section'));
+  if (!input) return;
+  input.addEventListener('input', function() {
+    const q = this.value.trim().toLowerCase();
+    let visible = 0;
+    cards.forEach(card => {
+      const txt = (card.textContent + ' ' + (card.dataset.keywords || '')).toLowerCase();
+      const hit = !q || txt.includes(q);
+      card.classList.toggle('hide', !hit);
+      if (hit) visible++;
+    });
+    sections.forEach(sec => {
+      const has = sec.querySelectorAll('.meta-card:not(.hide)').length > 0;
+      sec.classList.toggle('hide', !has);
+    });
+    stat.textContent = q ? `"${q}" — ${visible} shown` : `${cards.length} shown`;
+  });
+})();
+</script>
+</body>
+</html>

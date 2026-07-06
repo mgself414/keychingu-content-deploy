@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="KeyChinGu — Curated Korean travel guides for foreigners. Quick links to the most popular guides.">
+<meta name="robots" content="index, follow">
+<title>KeyChinGu — Links</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.min.css">
+<style>
+:root {
+  --bi-red: #D94C53;
+  --bi-yellow: #FAAD19;
+  --bi-blue: #218CCC;
+  --bi-black: #020304;
+  --bg: #FAFAF7;
+  --card: #FFFFFF;
+  --muted: #6B6B6B;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body {
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", sans-serif;
+  background: var(--bg);
+  color: var(--bi-black);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+.container {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 32px 20px 60px;
+}
+.brand {
+  text-align: center;
+  margin-bottom: 32px;
+}
+.brand-logo {
+  display: inline-block;
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  color: var(--bi-black);
+  margin-bottom: 6px;
+}
+.brand-logo .accent { color: var(--bi-red); }
+.brand-tagline {
+  font-size: 13px;
+  color: var(--muted);
+  font-weight: 500;
+}
+.brand-bar {
+  display: flex;
+  width: 60px;
+  height: 4px;
+  margin: 14px auto 0;
+  border-radius: 2px;
+  overflow: hidden;
+}
+.brand-bar span { flex: 1; }
+.brand-bar .b1 { background: var(--bi-red); }
+.brand-bar .b2 { background: var(--bi-yellow); }
+.brand-bar .b3 { background: var(--bi-blue); }
+.brand-bar .b4 { background: var(--bi-black); }
+
+.intro {
+  text-align: center;
+  font-size: 14px;
+  color: var(--muted);
+  margin-bottom: 28px;
+  line-height: 1.6;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.link-card {
+  display: block;
+  background: var(--card);
+  border: 1.5px solid var(--bi-black);
+  border-radius: 12px;
+  padding: 16px 18px;
+  text-decoration: none;
+  color: var(--bi-black);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  position: relative;
+}
+.link-card:hover, .link-card:active {
+  transform: translateY(-2px);
+  box-shadow: 4px 4px 0 var(--bi-black);
+}
+.link-card .tag {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+.link-card.cat-food .tag { background: var(--bi-red); color: #fff; }
+.link-card.cat-area .tag { background: var(--bi-blue); color: #fff; }
+.link-card.cat-experience .tag { background: var(--bi-yellow); color: var(--bi-black); }
+.link-card.cat-itinerary .tag { background: var(--bi-black); color: #fff; }
+.link-card.cat-shopping .tag { background: var(--bi-red); color: #fff; }
+.link-card .title {
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 4px;
+  line-height: 1.3;
+}
+.link-card .desc {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.45;
+}
+.link-card .arrow {
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: var(--bi-black);
+  opacity: 0.4;
+}
+
+.main-site {
+  text-align: center;
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid #E5E5E0;
+}
+.main-site a {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--bi-blue);
+  text-decoration: none;
+  border-bottom: 1px solid var(--bi-blue);
+  padding-bottom: 1px;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 24px;
+  font-size: 11px;
+  color: var(--muted);
+}
+.footer a { color: var(--muted); text-decoration: none; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header class="brand">
+  <div class="brand-logo">Key<span class="accent">Chin</span>Gu</div>
+  <div class="brand-tagline">Curated Korean travel guides for foreigners</div>
+  <div class="brand-bar"><span class="b1"></span><span class="b2"></span><span class="b3"></span><span class="b4"></span></div>
+</header>
+
+<p class="intro">
+  Pick a guide below.<br>
+  More than 400 detailed guides available on the main site.
+</p>
+
+<div class="links">
+
+  <a class="link-card cat-food" href="/keychingu-content-deploy/content/korea-dessert-meta.html?utm_source=instagram&utm_medium=links_page&utm_campaign=c_pattern_v1&utm_content=korea-dessert-meta">
+    <span class="tag">Food</span>
+    <div class="title">Korea Dessert Category Meta Guide</div>
+    <div class="desc">All Korean dessert categories — bingsu, tteok, cakes & traditional sweets.</div>
+    <span class="arrow">›</span>
+  </a>
+
+  <a class="link-card cat-area" href="/keychingu-content-deploy/content/hapjeong.html?utm_source=instagram&utm_medium=links_page&utm_campaign=c_pattern_v1&utm_content=hapjeong">
+    <span class="tag">Area</span>
+    <div class="title">Hapjeong Guide</div>
+    <div class="desc">Hapjeong — cafes, bars, select shops & galleries.</div>
+    <span class="arrow">›</span>
+  </a>
+
+  <a class="link-card cat-experience" href="/keychingu-content-deploy/content/kpop-fan-day-tour.html?utm_source=instagram&utm_medium=links_page&utm_campaign=c_pattern_v1&utm_content=kpop-fan-day-tour">
+    <span class="tag">Experience</span>
+    <div class="title">K-pop Fan 1-Day Complete Itinerary Guide</div>
+    <div class="desc">Perfect 1-day K-pop fan itinerary — label districts, shrines & merch shops.</div>
+    <span class="arrow">›</span>
+  </a>
+
+  <a class="link-card cat-itinerary" href="/keychingu-content-deploy/content/seoul-7day-guide.html?utm_source=instagram&utm_medium=links_page&utm_campaign=c_pattern_v1&utm_content=seoul-7day-guide">
+    <span class="tag">Itinerary</span>
+    <div class="title">Korea 7-Day Complete Guide for Foreigners</div>
+    <div class="desc">Optimal 7-day Korea itinerary for first-time foreign visitors.</div>
+    <span class="arrow">›</span>
+  </a>
+
+  <a class="link-card cat-shopping" href="/keychingu-content-deploy/content/hongdae-select-shops.html?utm_source=instagram&utm_medium=links_page&utm_campaign=c_pattern_v1&utm_content=hongdae-select-shops">
+    <span class="tag">Shopping</span>
+    <div class="title">Hongdae Select Shops Guide</div>
+    <div class="desc">20+ select shops in Hongdae & Sangsu — fashion, beauty & goods.</div>
+    <span class="arrow">›</span>
+  </a>
+
+  <a class="link-card cat-experience" href="/keychingu-content-deploy/content/namsan-fall-foliage.html?utm_source=instagram&utm_medium=links_page&utm_campaign=c_pattern_v1&utm_content=namsan-fall-foliage">
+    <span class="tag">Fall · Downtown</span>
+    <div class="title">Namsan Fall Foliage Trail Top 12</div>
+    <div class="desc">7.5km loop + N Seoul Tower + Hanok Village · Peak Oct 27–Nov 2 · Downtown #1.</div>
+    <span class="arrow">›</span>
+  </a>
+
+  <a class="link-card cat-experience" href="/keychingu-content-deploy/content/seoul-hiking-fall.html?utm_source=instagram&utm_medium=links_page&utm_campaign=c_pattern_v1&utm_content=seoul-hiking-fall">
+    <span class="tag">Fall · Hiking</span>
+    <div class="title">Cheonggye·Gwanak Fall Hiking Top 12</div>
+    <div class="desc">Cheonggye 618m + Gwanak 629m + Dobong 740m · Multilingual hiking center & gear rental.</div>
+    <span class="arrow">›</span>
+  </a>
+
+  <a class="link-card cat-itinerary" href="/keychingu-content-deploy/content/outskirts-day-trip-fall.html?utm_source=instagram&utm_medium=links_page&utm_campaign=c_pattern_v1&utm_content=outskirts-day-trip-fall">
+    <span class="tag">Fall · Day-trip</span>
+    <div class="title">Gapyeong·Yangpyeong Fall Day-trip Top 12</div>
+    <div class="desc">Nami Island + Petite France + Dumulmeori + Yongmunsa 1100yr Ginkgo · ITX 1hr from Seoul.</div>
+    <span class="arrow">›</span>
+  </a>
+
+  <a class="link-card cat-experience" href="/keychingu-content-deploy/content/seoul-forest-fall.html?utm_source=instagram&utm_medium=links_page&utm_campaign=c_pattern_v1&utm_content=seoul-forest-fall">
+    <span class="tag">Fall · MZ</span>
+    <div class="title">Seoul Forest + Seongsu Fall Top 12</div>
+    <div class="desc">430k pyeong park + deer park + D Museum + Ginkgo road peak Nov 3–9 · MZ #1.</div>
+    <span class="arrow">›</span>
+  </a>
+
+  <a class="link-card cat-experience" href="/keychingu-content-deploy/content/hangang-picnic-fall.html?utm_source=instagram&utm_medium=links_page&utm_campaign=c_pattern_v1&utm_content=hangang-picnic-fall">
+    <span class="tag">Fall · Han River</span>
+    <div class="title">Han River Fall Picnic Top 12</div>
+    <div class="desc">11 parks + Banpo Rainbow Fountain + Yeouido reeds + Chimaek + bike + cruise.</div>
+    <span class="arrow">›</span>
+  </a>
+
+  <a class="link-card cat-area" href="/keychingu-content-deploy/content/fall-cafe-cluster.html?utm_source=instagram&utm_medium=links_page&utm_campaign=c_pattern_v1&utm_content=fall-cafe-cluster">
+    <span class="tag">Fall · Cafe</span>
+    <div class="title">Fall Foliage Cafe Cluster Top 12</div>
+    <div class="desc">Hanok cafes (Ikseondong/Bukchon) + rooftops (Seongsu) + view cafes (N Tower/Lotte) + outskirts.</div>
+    <span class="arrow">›</span>
+  </a>
+
+  <a class="link-card cat-experience" href="/keychingu-content-deploy/content/fall-kdrama-locations.html?utm_source=instagram&utm_medium=links_page&utm_campaign=c_pattern_v1&utm_content=fall-kdrama-locations">
+    <span class="tag">Fall · K-Drama</span>
+    <div class="title">Fall K-Drama Filming Locations Top 12</div>
+    <div class="desc">Goblin (Yeongjong/Jeongdongjin) + Mr. Sunshine (Songdo) + Moonlight + Parasite + Itaewon Class + Winter Sonata.</div>
+    <span class="arrow">›</span>
+  </a>
+
+  <a class="link-card cat-itinerary" href="/keychingu-content-deploy/content/fall-festivals.html?utm_source=instagram&utm_medium=links_page&utm_campaign=c_pattern_v1&utm_content=fall-festivals">
+    <span class="tag">Fall · Festival</span>
+    <div class="title">Fall Festivals: Lantern·Namdaemun·Cheonggye Top 12</div>
+    <div class="desc">Cheonggyecheon Lantern Festival (Oct 30–Nov 16) + Namdaemun + Jongno + Nakseongdae + Han River + Jeonju Hanji.</div>
+    <span class="arrow">›</span>
+  </a>
+
+</div>
+
+<div class="main-site">
+  <a href="/keychingu-content-deploy/">Browse all 400+ guides →</a>
+</div>
+
+<footer class="footer">
+  <p>© KeyChinGu · <a href="https://www.instagram.com/keychingu.korea/">@keychingu.korea</a></p>
+</footer>
+
+</div>
+</body>
+</html>
