@@ -12516,10 +12516,10 @@
     ],
     "summary_kr": "외국인 한국 산업관광·공장 견학 12 매트릭스 (#535·#534·#554 후속) — 삼성전자 반도체 평택(세계 #1 #143 4.9)·SK하이닉스 이천 청주(DRAM #1 #534)·삼성 LG 디스플레이 파주(OLED 세계 #1) + 현대자동차 울산 아산 전주(세계 5위 #534)·기아 광주 화성 소하리(#143)·HD 현대 조선소 울산 거제(세계 #1 조선)·POSCO 포항 광양(세계 #2 철강) + 삼양 CJ 식품 공장(#502 #551)·롯데 신세계 화학 바이오·HYBE SM YG K-pop 본사(#387 #552)·KOTRA 영어 가이드·Klook KKday KTO 패키지·산업박물관 호텔 비즈니스 가족",
     "summary_en": "Foreigner Korea Industrial Tourism Factory Tour Deep Dive 12 Matrix (extends #535·#534·#554) — Samsung Electronics Semiconductor Pyeongtaek (World #1 #143 4.9) + SK Hynix Icheon/Cheongju (DRAM #1 #534) + Samsung/LG Display Paju (OLED World #1) + Hyundai Motors Ulsan/Asan/Jeonju (World #5 #534) + Kia Gwangju/Hwaseong/Sohari (#143) + HD Hyundai Shipyard Ulsan/Geoje (World #1 shipbuilding) + POSCO Pohang/Gwangyang (World #2 steel) + Samyang/CJ Food factories (#502/#551) + Lotte/Shinsegae Chemical Bio + HYBE/SM/YG K-pop HQ tours (#387/#552) + KOTRA English guides + Klook/KKday/KTO packages + Industrial museums Hotels Business Family",
-    "en_available": false,
+    "en_available": true,
     "instagram_posted": false,
-    "cn_available": false,
-    "jp_available": false,
+    "cn_available": true,
+    "jp_available": true,
     "date_published": "2026-05-30"
   },
   {
@@ -12675,10 +12675,10 @@
     ],
     "summary_kr": "외국인 한국 사이버 시큐리티·보안 12 매트릭스 (#527·#516·#535 후속) — KISA 한국인터넷진흥원(한국 #1 영어 OK 4.8)·개인정보보호위원회 PIPC + 디지털 노마드 보안(D-10 F-2 #535 #526)·안랩 이스트시큐리티(세계 #1 보안 #535)·비밀번호 2FA 인증(Naver Kakao #516 #527) + VPN 프록시 익명(#516)·피싱 사기 예방(#501 #527 #405)·결제 보안(#527 WOWPASS #406)·SNS 보안(KakaoTalk Naver #516 #520)·CODEGATE SECUINSIDE 해커 컨퍼런스(#404 #554 KISA)·KISA 영어 가이드·Klook KKday KTO 패키지·교육 책 가족 응급",
     "summary_en": "Foreigner Korea Cybersecurity Deep Dive 12 Matrix (extends #527·#516·#535) — KISA Korea Internet & Security Agency (Korea #1 English OK 4.8) + Personal Information Protection Commission PIPC + Digital nomad security (D-10/F-2 #535/#526) + AhnLab/EstSecurity (World #1 security #535) + Password/2FA/Authentication (Naver/Kakao #516/#527) + VPN/Proxy/Anonymous (#516) + Phishing/Scam prevention (#501/#527/#405) + Payment security (#527 WOWPASS/#406) + SNS security (KakaoTalk/Naver #516/#520) + CODEGATE/SECUINSIDE hacker conferences (#404/#554 KISA) + KISA English guides + Klook/KKday/KTO packages + Education/Books/Family/Emergency",
-    "en_available": false,
+    "en_available": true,
     "instagram_posted": false,
-    "cn_available": false,
-    "jp_available": false,
+    "cn_available": true,
+    "jp_available": true,
     "date_published": "2026-05-30"
   },
   {
@@ -18570,9 +18570,9 @@
     ],
     "summary_kr": "4-step 워크플로우 + 시장 5곳 매장·가격·외국인 친화도 + 회 입문자 가이드",
     "summary_en": "4-step market-to-restaurant workflow + Top 5 markets pricing + foreigner-friendly tips",
-    "en_available": false,
-    "cn_available": false,
-    "jp_available": false,
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
     "instagram_posted": false,
     "image": "assets/og/korea-sashimi-market-workflow.jpg",
     "date_published": "2026-06-07"
@@ -18612,9 +18612,9 @@
     ],
     "summary_kr": "3채널 비교 매트릭스 + segment별 1순위 (솔로·커플·가족·비즈니스·예산형) + 결정 가이드",
     "summary_en": "3-channel comparison matrix + segment-specific top picks + decision guide",
-    "en_available": false,
-    "cn_available": false,
-    "jp_available": false,
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
     "instagram_posted": false,
     "image": "assets/og/korea-hoe-channel-comparison.jpg",
     "date_published": "2026-06-07"
