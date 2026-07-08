@@ -1,4 +1,4 @@
+# 내부 보강 기간 — 검색엔진·크롤러 전체 차단 (2026-07-08)
+# 재개 절차: 아래 2줄을 Allow:/ + Sitemap 라인으로 복원 → GSC sitemap 재제출
 User-agent: *
-Allow: /
-
-Sitemap: https://mgself414.github.io/keychingu-content-deploy/sitemap.xml
+Disallow: /
