@@ -387,6 +387,44 @@
     <div><a href="korea-porridge-workflow.html" style="color:var(--red);">&larr; 한국 죽 주문·해장 워크플로우</a></div>
     <div><a href="korea-pubfood-6types-matrix.html" style="color:var(--red);">한국 면안주 6종 매트릭스 — 수육·족발·보쌈·골뱅이무침·홍어삼합·제육볶음 &rarr;</a></div>
   </nav>
+  <!-- kc-comments -->
+  <section id="kc-comments" style="margin:2.5rem 0 0.5rem;">
+    <h2>댓글</h2>
+    <div id="cusdis_thread"
+      data-host="https://cusdis.com"
+      data-app-id="f8670fe3-8091-4c5b-8d82-e13d6ee7fe82"
+      data-page-id="korea-porridge-channel-comparison"
+      data-page-url="https://mgself414.github.io/keychingu-content-deploy/content/korea-porridge-channel-comparison.html"
+      data-page-title="외국인용 한국 죽 호텔 vs 24h 본죽 vs 한정식 vs 제주 비교"></div>
+  </section>
+  <script>
+  (function() {
+    var loaded = false;
+    function loadMain() {
+      var s = document.createElement('script');
+      s.src = 'https://cusdis.com/js/cusdis.es.js';
+      s.async = true;
+      document.body.appendChild(s);
+    }
+    function loadCusdis() {
+      if (loaded) return; loaded = true;
+      var lang = 'ko';
+      if (lang) {
+        var l = document.createElement('script');
+        l.src = 'https://cusdis.com/js/widget/lang/' + lang + '.js';
+        l.onload = loadMain; l.onerror = loadMain;
+        document.body.appendChild(l);
+      } else { loadMain(); }
+    }
+    var el = document.getElementById('kc-comments');
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function(es) {
+        if (es[0].isIntersecting) { io.disconnect(); loadCusdis(); }
+      }, { rootMargin: '400px' });
+      io.observe(el);
+    } else { loadCusdis(); }
+  })();
+  </script>
 </main>
 
 <footer class="site-footer">

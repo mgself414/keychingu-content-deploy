@@ -518,6 +518,44 @@
     }).catch(function() {});
   })();
   </script>
+  <!-- kc-comments -->
+  <section id="kc-comments" style="margin:2.5rem 0 0.5rem;">
+    <h2>コメント</h2>
+    <div id="cusdis_thread"
+      data-host="https://cusdis.com"
+      data-app-id="f8670fe3-8091-4c5b-8d82-e13d6ee7fe82"
+      data-page-id="korea-jeju-1day-essential"
+      data-page-url="https://mgself414.github.io/keychingu-content-deploy/content/korea-jeju-1day-essential.html"
+      data-page-title="외국인 제주도 1일 메타"></div>
+  </section>
+  <script>
+  (function() {
+    var loaded = false;
+    function loadMain() {
+      var s = document.createElement('script');
+      s.src = 'https://cusdis.com/js/cusdis.es.js';
+      s.async = true;
+      document.body.appendChild(s);
+    }
+    function loadCusdis() {
+      if (loaded) return; loaded = true;
+      var lang = 'ja';
+      if (lang) {
+        var l = document.createElement('script');
+        l.src = 'https://cusdis.com/js/widget/lang/' + lang + '.js';
+        l.onload = loadMain; l.onerror = loadMain;
+        document.body.appendChild(l);
+      } else { loadMain(); }
+    }
+    var el = document.getElementById('kc-comments');
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function(es) {
+        if (es[0].isIntersecting) { io.disconnect(); loadCusdis(); }
+      }, { rootMargin: '400px' });
+      io.observe(el);
+    } else { loadCusdis(); }
+  })();
+  </script>
 </main>
 
 <footer class="site-footer">
