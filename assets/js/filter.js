@@ -138,7 +138,7 @@
         '<a href="' + detailHref + '" class="card" data-category="' + item.category + '" data-tags="' + item.tags.join(',') + '">' +
         '<div class="card-cover" style="background:linear-gradient(135deg,' + color + ' 0%,' + color + 'cc 100%);">' +
         '<span class="cat-badge" style="background:rgba(0,0,0,0.25);">' + catLabel + '</span>' +
-        '<span class="card-num">#' + item.id + '</span>' +
+        '<span class="card-num">#' + (String(item.id).match(/^\d+/) || [String(item.id)])[0] + '</span>' +
         '</div>' +
         '<div class="card-body">' +
         '<h3>' + title + '</h3>' +
