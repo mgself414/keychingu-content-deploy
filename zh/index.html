@@ -347,7 +347,7 @@
         '<div class="card-cover" style="background:linear-gradient(135deg,'+color+' 0%,'+color+'cc 100%);">' +
         '<span class="cat-badge" style="background:rgba(0,0,0,0.25);">'+catLabel+'</span>' +
         '<span class="card-num">#'+item.id+'</span></div>' +
-        '<div class="card-body"><h3>'+item.title_en+'</h3><p>'+item.summary_en+'</p>' +
+        '<div class="card-body"><h3>'+(item.title_zh||item.title_en)+'</h3><p>'+item.summary_en+'</p>' +
         '<div class="card-tags">'+item.tags.map(t=>'<span>'+t+'</span>').join('')+'</div></div></a>';
     }).join('');
   }
@@ -361,6 +361,7 @@
       f = f.filter(item => {
         const haystack = [
           (item.title_en||'').toLowerCase(),
+          (item.title_zh||'').toLowerCase(),
           (item.title_kr||'').toLowerCase(),
           (item.summary_en||'').toLowerCase(),
           (item.summary_kr||'').toLowerCase(),
