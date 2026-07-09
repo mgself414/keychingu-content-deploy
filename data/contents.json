@@ -26680,5 +26680,29 @@
     "jp_available": true,
     "instagram_posted": false,
     "date_published": "2026-07-08"
+  },
+  {
+    "id": "1234",
+    "slug": "seoul-night-out-planner",
+    "title_kr": "서울 나이트아웃 플래너 — 혼자·데이트·친구들 상황별 저녁~새벽 코스",
+    "title_en": "Seoul Night-Out Planner — Solo, Date & Friends Itineraries from Sunset to Sunrise",
+    "category": "I",
+    "tags": [
+      "foreign-tourist",
+      "nightlife",
+      "night-course",
+      "late-night-cafe",
+      "pocha",
+      "han-river",
+      "noraebang",
+      "seoul-wide"
+    ],
+    "summary_kr": "상황별 밤 코스 3종(혼자/데이트/친구) × 저녁 6시→새벽 타임라인 + 심야 카페·포차·놀거리·야경 앵커 + 심야 교통(N버스)·안전·결제 실용 — 나열이 아닌 코스 플래너",
+    "summary_en": "Three situational night courses (solo / date / friends) with 6PM-to-dawn timelines + late-night cafe, pocha, activity and night-view anchors + night bus, safety and payment tips — an itinerary planner, not a listicle",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false,
+    "date_published": "2026-07-09"
   }
 ]
