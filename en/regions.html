@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🗺️ Beyond Seoul — Regional Korea &amp; Citywide Guides — KeyChinGu</title>
+  <meta name="description" content="Korea beyond Seoul — Jeju, Busan, Jeonju, Yeosu, Gwangju, Mungyeong regional city guides + Seoul-wide theme guides (cafes, dates, cherry blossoms, night patios). For foreign travelers.">
+  <link rel="canonical" href="https://mgself414.github.io/keychingu-content-deploy/en/regions.html">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <style>
+    .axis-hero { background: linear-gradient(135deg, #00838F 0%, #4DD0E1 100%); color: #fff; padding: 60px 24px; text-align: center; }
+    .axis-hero h1 { font-family: 'Noto Serif KR', serif; font-size: 38px; font-weight: 900; margin-bottom: 12px; }
+    .axis-hero p { font-size: 15px; opacity: 0.95; max-width: 720px; margin: 0 auto; }
+    .axis-section { max-width: 1280px; margin: 48px auto; padding: 0 24px; }
+    .axis-section h2 { font-size: 22px; margin-bottom: 16px; }
+    .meta-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+    .meta-card { background: #fff; border: 1px solid #e8e8e8; border-radius: 12px; padding: 20px; text-decoration: none; color: #020304; transition: all 0.2s; display: block; }
+    .meta-card:hover { border-color: #00838F; transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0,0,0,0.08); }
+    .meta-card .num { font-family: 'Poppins', sans-serif; font-size: 12px; font-weight: 700; color: #00838F; margin-bottom: 8px; display: inline-block; }
+    .meta-card h3 { font-size: 16px; font-weight: 700; margin-bottom: 8px; line-height: 1.4; }
+    .meta-card p { font-size: 13px; color: #555; line-height: 1.5; margin: 0; }
+  </style>
+  <link rel="icon" href="../favicon.ico" sizes="any">
+</head>
+<body>
+
+<header class="site-header">
+  <a href="index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <nav class="site-nav">
+    <a href="index.html">Home</a>
+    <a href="meta-guides.html">📚 Meta</a>
+    <a href="deep-dives.html">🔍 Deep Dives</a>
+    <a href="culture.html">🎭 Culture</a>
+    <a href="about.html">About</a>
+    <a href="faq.html">FAQ</a>
+  </nav>
+</header>
+
+<section class="axis-hero">
+  <h1>🗺️ Beyond Seoul — Regional Korea</h1>
+  <p>Korea outside Seoul — full guides to Jeju, Busan, Jeonju, Yeosu, Gwangju, Mungyeong and more + Seoul-wide theme guides (cafes, date courses, cherry blossoms, night patios)</p>
+</section>
+
+<section class="axis-section">
+  <h2>🚄 Regional City Guides <span style="font-size:12px;opacity:.55" id="regional-count"></span></h2>
+  <div class="meta-grid" id="regional-grid"></div>
+</section>
+
+<section class="axis-section">
+  <h2>🌆 Seoul-wide Theme Guides <span style="font-size:12px;opacity:.55" id="seoulwide-count"></span></h2>
+  <div class="meta-grid" id="seoulwide-grid"></div>
+</section>
+
+<footer class="site-footer">
+  <p style="text-align: center; padding: 24px; color: #888; font-size: 13px;">
+    © 2026 KeyChinGu · <a href="deep-dives.html" style="color:#00838F;">All Deep Dives</a> · <a href="meta-guides.html" style="color:#00838F;">Meta Guides</a>
+  </p>
+</footer>
+
+<script>
+// Dynamic render from contents.json (2026-07-09 — EN mirror, regional/seoul-wide tags)
+(function() {
+  function render(gridId, countId, tag) {
+    var grid = document.getElementById(gridId);
+    if (!grid) return;
+    fetch('../data/contents.json')
+      .then(function(r) { return r.json(); })
+      .then(function(items) {
+        var picks = items.filter(function(x) {
+          return x && x.slug && Array.isArray(x.tags) && x.tags.indexOf(tag) !== -1 &&
+                 String(x.en_available).toLowerCase() === 'true';
+        });
+        picks.sort(function(a, b) { return String(a.id).localeCompare(String(b.id)); });
+        grid.innerHTML = picks.map(function(x) {
+          var title = x.title_en || x.slug;
+          var desc = (x.summary_en || '');
+          return '<a href="../content/' + x.slug + '.en.html" class="meta-card">' +
+                 '<span class="num">#' + (String(x.id).match(/^\d+/) || [''])[0] + '</span>' +
+                 '<h3>' + title + '</h3><p>' + desc + '</p></a>';
+        }).join('');
+        var c = document.getElementById(countId);
+        if (c) c.textContent = '(' + picks.length + ' guides · auto list)';
+      })
+      .catch(function() {});
+  }
+  render('regional-grid', 'regional-count', 'regional');
+  render('seoulwide-grid', 'seoulwide-count', 'seoul-wide');
+})();
+</script>
+
+</body>
+</html>

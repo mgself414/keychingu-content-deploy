@@ -1534,7 +1534,8 @@
     "category": "A",
     "tags": [
       "foreigner",
-      "seoul"
+      "seoul",
+      "regional"
     ],
     "summary_kr": "가을 단풍 명소 TOP 8 + 시기별 단풍 캘린더 — ISSUE 02 시리즈",
     "summary_en": "Fall Foliage TOP 8 Spots + Season-by-Season Foliage Calendar — ISSUE 02 series",
@@ -1552,7 +1553,8 @@
     "category": "A",
     "tags": [
       "foreigner",
-      "seoul"
+      "seoul",
+      "regional"
     ],
     "summary_kr": "겨울 일루미네이션·트리·연말 카운트다운 풀가이드 — ISSUE 02 시리즈",
     "summary_en": "Seoul Winter Illuminations, Christmas Trees & New Year's Eve Countdown — ISSUE 02 series",
@@ -1732,7 +1734,8 @@
     "category": "A",
     "tags": [
       "foreigner",
-      "seoul"
+      "seoul",
+      "seoul-wide"
     ],
     "summary_kr": "서울 막걸리·전통주 입문 — ISSUE 02 시리즈",
     "summary_en": "Seoul Makgeolli (막걸리) & Traditional Liquor Intro — ISSUE 02 series",
@@ -1750,7 +1753,8 @@
     "category": "A",
     "tags": [
       "foreigner",
-      "seoul"
+      "seoul",
+      "seoul-wide"
     ],
     "summary_kr": "서울 야장 culture 10선 — ISSUE 02 시리즈",
     "summary_en": "Seoul Yajang (야장) Culture Top 10 — ISSUE 02 series",
@@ -3630,7 +3634,8 @@
       "summer",
       "foreigner",
       "picnic",
-      "nightlife"
+      "nightlife",
+      "seoul-wide"
     ],
     "summary_kr": "외국인 여름 한강 풀가이드 — 공원·치맥·피크닉·동선.",
     "summary_en": "Foreign Summer Han River Master Guide — curated picks.",
@@ -3650,7 +3655,8 @@
       "seoul",
       "cafe",
       "dessert",
-      "specialty"
+      "specialty",
+      "seoul-wide"
     ],
     "summary_kr": "서울 카페 8선 — 스페셜티·뷰·디저트 anchor.",
     "summary_en": "Seoul Cafe 8 Picks — curated picks.",
@@ -3691,7 +3697,8 @@
       "food",
       "stories",
       "culture",
-      "heritage"
+      "heritage",
+      "seoul-wide"
     ],
     "summary_kr": "서울 음식 스토리 deep dive — 노포·역사·문화 매트릭스.",
     "summary_en": "Seoul Food Stories Pilot — curated picks.",
@@ -3712,7 +3719,8 @@
       "yajang",
       "outdoor",
       "restaurants",
-      "summer"
+      "summer",
+      "seoul-wide"
     ],
     "summary_kr": "서울 야장(野場) 맛집 — 동대문·중구·노원 야외 식당.",
     "summary_en": "Seoul Open-Air Restaurants — curated picks.",
@@ -5840,7 +5848,8 @@
       "galleria",
       "k-wedding",
       "mingles",
-      "michelin"
+      "michelin",
+      "regional"
     ],
     "summary_kr": "청담동 12선 — 갤러리아 명품관·명품 거리(루이비통·샤넬·구찌)·면세점·K-Wedding·K-Beauty·청담 성형·밍글스 미슐랭 3별·권숙수·와인바·부띠끄 카페·럭셔리 호텔",
     "summary_en": "Cheongdam-dong Luxury 12-pick (extends #142 Gangnam sub-area) — Galleria Department Store luxury hall + Cheongdam luxury street (LV/Chanel/Gucci) + Lotte/Shilla Duty-Free + K-Wedding studios (Korea's #1) + K-Beauty Cheongdam + Cheongdam plastic surgery (#242) + Mingles (Michelin 3-star) + Kwonsooksoo + Corin + Cheongdam wine bars + Boutique cafes + InterContinental",
@@ -5865,7 +5874,8 @@
       "hanbok",
       "tea-cafe",
       "sancheon",
-      "balwoo-gongyang"
+      "balwoo-gongyang",
+      "regional"
     ],
     "summary_kr": "쌈지길(층별 공예·루프탑)+전통찻집(수희찻집·귀천)+한지공예 쇼핑 — 안국역 도보 5분",
     "summary_en": "Ssamziegil spiral craft mall + traditional tea houses + hanji crafts shopping — 5-min walk from Anguk Station",
@@ -7316,7 +7326,8 @@
       "cheongsan",
       "maemul",
       "udo",
-      "seasonal-closure"
+      "seasonal-closure",
+      "regional"
     ],
     "summary_kr": "한국 외곽 ferry·섬 12선 (#253·#257 후속) — 울릉도(포항·강릉·후포 ferry 3.5~10시간)·독도(울릉→1.5시간 동쪽 끝)·홍도(목포 2시간 30분 붉은 절벽)·흑산·완도(전남 ferry hub)·청산도(우체통 돌담 50분)·보길·소안·진도 보화·외도(거제→25분 정원섬)·매물·소매물(통영 등대)·우도(제주 15분)·인천 강화·덕적·자월",
     "summary_en": "Korea Outskirts Ferry & Islands 12-pick (extends #253 Jeju + #257 Tongyeong-Yeosu) — Ulleung Island (Pohang 10h/Gangneung 3.5h/Hupo 3h) + Dokdo (Ulleung→1.5h, Korea's easternmost) + Hongdo (Mokpo 2h30m, red cliff instagram #1) + Heuksan + Wando (Jeollanam ferry hub) + Cheongsan (Wando→50min) + Bogil/Soan + Jindo-Bohwa + Oedo (Geoje→25min, Korea's #1 garden island) + Maemul/Somaemul + Udo (Jeju→15min) + Incheon ferries (Ganghwa/Deokjeok/Jawol) + Seasonal closure warnings",
@@ -7418,7 +7429,8 @@
       "seoul",
       "temple-food",
       "vegan",
-      "traditional"
+      "traditional",
+      "seoul-wide"
     ],
     "summary_kr": "서울 사찰음식 전문점 — 정관 스님·인사동·강남 라인.",
     "summary_en": "Seoul Buddhist Temple Cuisine Guide — curated picks.",
@@ -7514,7 +7526,8 @@
       "beach",
       "daytrip",
       "summer",
-      "family"
+      "family",
+      "regional"
     ],
     "summary_kr": "워터파크·해변 1일 코스 — 캐리비안 베이·오션월드·강원 동해.",
     "summary_en": "Korea Water Park & Beach Day Trip — curated picks.",
@@ -7614,7 +7627,8 @@
       "korea",
       "bakery",
       "dessert",
-      "patisserie"
+      "patisserie",
+      "regional"
     ],
     "summary_kr": "한국 베이커리·디저트 풀가이드 — 노포·MZ·트렌디 라인.",
     "summary_en": "Korea Bakery & Dessert Full Guide — curated picks.",
@@ -7665,7 +7679,8 @@
       "sool",
       "soju",
       "makgeolli",
-      "traditional"
+      "traditional",
+      "regional"
     ],
     "summary_kr": "한국 정통주 — 소주·막걸리·약주·증류주 전문점 풀가이드.",
     "summary_en": "Korea Traditional Sool Guide — curated picks.",
@@ -7714,7 +7729,8 @@
       "bike",
       "trail",
       "outdoor",
-      "cycling"
+      "cycling",
+      "regional"
     ],
     "summary_kr": "한국 자전거 길·둘레길 풀가이드 — 4대강·제주·동해.",
     "summary_en": "Korea Bicycle Trail Guide — curated picks.",
@@ -17784,7 +17800,8 @@
       "tourist",
       "spring",
       "cherry",
-      "blossom"
+      "blossom",
+      "seoul-wide"
     ],
     "summary_kr": "서울 벚꽃 12선·여의도·석촌호수·남산·경복궁·진해·3/25~4/10 절정",
     "summary_en": "Seoul Cherry Blossom Top 12",
@@ -17804,7 +17821,8 @@
       "foreign",
       "tourist",
       "spring",
-      "daytrip"
+      "daytrip",
+      "regional"
     ],
     "summary_kr": "봄 day-trip 12선·가평·양평·강진·진해·경주·전주·외국인 매니아 1순위",
     "summary_en": "Korea Spring Day-Trip Top 12",
@@ -17825,7 +17843,8 @@
       "foreign",
       "tourist",
       "spring",
-      "picnic"
+      "picnic",
+      "seoul-wide"
     ],
     "summary_kr": "서울 봄 공원 12선·서울숲·올림픽공원·한강·남산·외국인 매니아 1순위",
     "summary_en": "Seoul Spring Park Picnic Top 12",
@@ -17866,7 +17885,8 @@
       "foreign",
       "tourist",
       "spring",
-      "flowers"
+      "flowers",
+      "regional"
     ],
     "summary_kr": "봄 꽃 축제 12선·진해 벚꽃·여의도·고양·태안 튤립·외국인 매니아 1순위",
     "summary_en": "Korea Spring Flower Festivals Top 12",
@@ -17887,7 +17907,8 @@
       "foreign",
       "tourist",
       "spring",
-      "jeju"
+      "jeju",
+      "regional"
     ],
     "summary_kr": "제주 유채꽃 12선·성산·산방·녹산로·세화·UNESCO 풀세트·4월 절정",
     "summary_en": "Jeju Spring Yuchae Top 12",
@@ -18352,7 +18373,8 @@
       "foreign-tourist",
       "summer",
       "deep-dive",
-      "sub-deep"
+      "sub-deep",
+      "regional"
     ],
     "summary_kr": "장마 12선·6/24~7/24·실내 + 카페·외국인 매니아·다국어",
     "summary_en": "Korea Monsoon Top 12",
@@ -18374,7 +18396,8 @@
       "foreign-tourist",
       "summer",
       "deep-dive",
-      "sub-deep"
+      "sub-deep",
+      "regional"
     ],
     "summary_kr": "계곡 12선·강원·청도·가평·외국인 매니아·다국어·7~8월 절정",
     "summary_en": "Korea Valley Summer Top 12",
@@ -18395,7 +18418,8 @@
       "foreign-tourist",
       "summer",
       "deep-dive",
-      "sub-deep"
+      "sub-deep",
+      "regional"
     ],
     "summary_kr": "워터파크 12선·캐리비안 베이·오션월드·외국인 매니아·다국어",
     "summary_en": "Korea Waterpark Summer Top 12",
@@ -18437,7 +18461,8 @@
       "foreign-tourist",
       "summer",
       "deep-dive",
-      "sub-deep"
+      "sub-deep",
+      "regional"
     ],
     "summary_kr": "해변 12선·해운대·경포·강릉·제주·외국인 매니아·다국어",
     "summary_en": "Korea Summer Beach Top 12",
@@ -18458,7 +18483,8 @@
       "foreign-tourist",
       "summer",
       "deep-dive",
-      "sub-deep"
+      "sub-deep",
+      "seoul-wide"
     ],
     "summary_kr": "여름 한강 야경 12선·반포 무지개분수·치맥·#741 cross",
     "summary_en": "Summer Hangang Night Top 12",
@@ -18500,7 +18526,8 @@
       "foreign-tourist",
       "summer",
       "deep-dive",
-      "sub-deep"
+      "sub-deep",
+      "regional"
     ],
     "summary_kr": "여름 캠핑·글램핑 12선·강원·가평·#560 cross·외국인 매니아",
     "summary_en": "Summer Camping Glamping Top 12",
@@ -21265,7 +21292,8 @@
       "foreign-tourist",
       "city",
       "daegu",
-      "meta-guide"
+      "meta-guide",
+      "regional"
     ],
     "summary_kr": "외국인 대구 1일 메타 · 외국인 가이드 · 4축 12 시그니처",
     "summary_en": "Daegu 1-Day Essential · foreign tourist 4-axis 12-signature",
@@ -21378,7 +21406,8 @@
       "foreign-tourist",
       "city",
       "daejeon",
-      "meta-guide"
+      "meta-guide",
+      "regional"
     ],
     "summary_kr": "외국인 대전 1일 메타 · 외국인 가이드 · 4축 12 시그니처",
     "summary_en": "Daejeon 1-Day Essential · foreign tourist 4-axis 12-signature",
@@ -21489,7 +21518,8 @@
       "foreign-tourist",
       "city",
       "incheon",
-      "meta-guide"
+      "meta-guide",
+      "regional"
     ],
     "summary_kr": "외국인 인천 1일 메타 · 외국인 가이드 · 4축 12 시그니처",
     "summary_en": "Incheon 1-Day Essential · foreign tourist 4-axis 12-signature",
@@ -21533,7 +21563,8 @@
       "foreign-tourist",
       "city",
       "incheon",
-      "songdo"
+      "songdo",
+      "regional"
     ],
     "summary_kr": "인천 송도 IBD · 외국인 가이드 · 4축 12 시그니처",
     "summary_en": "Incheon Songdo IBD · foreign tourist 4-axis 12-signature",
@@ -21555,7 +21586,8 @@
       "foreign-tourist",
       "city",
       "incheon",
-      "seafood"
+      "seafood",
+      "regional"
     ],
     "summary_kr": "인천 월미도 + 소래포구 · 외국인 가이드 · 4축 12 시그니처",
     "summary_en": "Incheon Wolmido + Soraepogu · foreign tourist 4-axis 12-signature",
@@ -21599,7 +21631,8 @@
       "foreign-tourist",
       "city",
       "ulsan",
-      "meta-guide"
+      "meta-guide",
+      "regional"
     ],
     "summary_kr": "외국인 울산 1일 메타 · 외국인 가이드 · 4축 12 시그니처",
     "summary_en": "Ulsan 1-Day Essential · foreign tourist 4-axis 12-signature",
@@ -21711,7 +21744,8 @@
       "foreign-tourist",
       "city",
       "busan",
-      "meta-guide"
+      "meta-guide",
+      "regional"
     ],
     "summary_kr": "외국인 부산 1일 메타 · 외국인 가이드 · 4축 12 시그니처",
     "summary_en": "Busan 1-Day Essential · foreign tourist 4-axis 12-signature",
@@ -21759,7 +21793,8 @@
       "busan",
       "haeundae",
       "beach",
-      "mz"
+      "mz",
+      "regional"
     ],
     "summary_kr": "부산 해운대 + 광안리 · 외국인 가이드 · 4축 12 시그니처",
     "summary_en": "Busan Haeundae + Gwangalli · foreign tourist 4-axis 12-signature",
@@ -21827,7 +21862,8 @@
       "foreign-tourist",
       "city",
       "gwangju",
-      "meta-guide"
+      "meta-guide",
+      "regional"
     ],
     "summary_kr": "외국인 광주 1일 메타 · 외국인 가이드 · 4축 12 시그니처",
     "summary_en": "Gwangju 1-Day Essential · foreign tourist 4-axis 12-signature",
@@ -21942,7 +21978,8 @@
       "foreign-tourist",
       "city",
       "gyeonggi",
-      "meta-guide"
+      "meta-guide",
+      "regional"
     ],
     "summary_kr": "외국인 경기도 1일 메타 · 외국인 가이드 · 4축 12 시그니처",
     "summary_en": "Gyeonggi 1-Day Essential · foreign tourist 4-axis 12-signature",
@@ -22036,7 +22073,8 @@
       "city",
       "gyeonggi",
       "everland",
-      "theme-park"
+      "theme-park",
+      "regional"
     ],
     "summary_kr": "경기도 에버랜드 + 캐리비안베이 · 외국인 가이드 · 4축 12 시그니처",
     "summary_en": "Gyeonggi Everland + Caribbean Bay · foreign tourist 4-axis 12-signature",
@@ -22058,7 +22096,8 @@
       "foreign-tourist",
       "city",
       "gangwon",
-      "meta-guide"
+      "meta-guide",
+      "regional"
     ],
     "summary_kr": "외국인 강원도 1일 메타 · 외국인 가이드 · 4축 12 시그니처",
     "summary_en": "Gangwon 1-Day Essential · foreign tourist 4-axis 12-signature",
@@ -22154,7 +22193,8 @@
       "gangwon",
       "donghae",
       "samcheok",
-      "culture"
+      "culture",
+      "regional"
     ],
     "summary_kr": "강원도 동해 + 삼척 + 죽서루 · 외국인 가이드 · 4축 12 시그니처",
     "summary_en": "Gangwon Donghae + Samcheok + Jukseoru · foreign tourist 4-axis 12-signature",
@@ -22175,7 +22215,8 @@
     "tags": [
       "foreign-tourist",
       "province",
-      "chungcheong"
+      "chungcheong",
+      "regional"
     ],
     "summary_kr": "외국인 충청도 1일 메타 · 외국인 가이드 · 시그니처 매트릭스",
     "summary_en": "Chungcheong 1-Day Essential · foreign tourist signature matrix",
@@ -22197,7 +22238,8 @@
       "foreign-tourist",
       "province",
       "chungcheong",
-      "cheongju"
+      "cheongju",
+      "regional"
     ],
     "summary_kr": "청주 수암골+청남대 · 외국인 가이드 · 시그니처 매트릭스",
     "summary_en": "Cheongju Suamgol + Cheongnamdae · foreign tourist signature matrix",
@@ -22286,7 +22328,8 @@
     "tags": [
       "foreign-tourist",
       "province",
-      "jeolla"
+      "jeolla",
+      "regional"
     ],
     "summary_kr": "외국인 전라도 1일 메타 · 외국인 가이드 · 시그니처 매트릭스",
     "summary_en": "Jeolla 1-Day Essential · foreign tourist signature matrix",
@@ -22331,7 +22374,8 @@
       "foreign-tourist",
       "province",
       "jeolla",
-      "yeosu"
+      "yeosu",
+      "regional"
     ],
     "summary_kr": "여수 해상케이블카+밤바다 · 외국인 가이드 · 시그니처 매트릭스",
     "summary_en": "Yeosu Cable Car + Night Sea · foreign tourist signature matrix",
@@ -22376,7 +22420,8 @@
       "foreign-tourist",
       "province",
       "jeolla",
-      "mokpo"
+      "mokpo",
+      "regional"
     ],
     "summary_kr": "목포 유달산+홍어 · 외국인 가이드 · 시그니처 매트릭스",
     "summary_en": "Mokpo Yudalsan + Hongeo · foreign tourist signature matrix",
@@ -22397,7 +22442,8 @@
     "tags": [
       "foreign-tourist",
       "province",
-      "gyeongsang"
+      "gyeongsang",
+      "regional"
     ],
     "summary_kr": "외국인 경상도 1일 메타 · 외국인 가이드 · 시그니처 매트릭스",
     "summary_en": "Gyeongsang 1-Day Essential · foreign tourist signature matrix",
@@ -22465,7 +22511,8 @@
       "foreign-tourist",
       "province",
       "gyeongsang",
-      "tongyeong"
+      "tongyeong",
+      "regional"
     ],
     "summary_kr": "통영 한산도+이순신 · 외국인 가이드 · 시그니처 매트릭스",
     "summary_en": "Tongyeong Hansando + Lee Sun-sin · foreign tourist signature matrix",
@@ -22508,7 +22555,8 @@
     "tags": [
       "foreign-tourist",
       "province",
-      "jeju"
+      "jeju",
+      "regional"
     ],
     "summary_kr": "외국인 제주도 1일 메타 · 외국인 가이드 · 시그니처 매트릭스",
     "summary_en": "Jeju 1-Day Essential · foreign tourist signature matrix",
@@ -22577,7 +22625,8 @@
       "province",
       "jeju",
       "beach",
-      "mz"
+      "mz",
+      "regional"
     ],
     "summary_kr": "제주 해변 (협재·함덕·중문) · 외국인 가이드 · 시그니처 매트릭스",
     "summary_en": "Jeju Beaches · foreign tourist signature matrix",
@@ -23706,7 +23755,8 @@
       "3-star",
       "2-star",
       "bib-gourmand",
-      "foreigner-friendly"
+      "foreigner-friendly",
+      "seoul-wide"
     ],
     "summary_kr": "미쉐린 서울 2026 - 외국인 fit 15곳 (3star~Bib Gourmand) + 예약·드레스 코드",
     "summary_en": "Seoul Michelin Guide 2026 - 15 picks for foreign travelers",
@@ -23750,7 +23800,8 @@
       "couple",
       "honeymoon",
       "meta-guide",
-      "foreigner-friendly"
+      "foreigner-friendly",
+      "seoul-wide"
     ],
     "summary_kr": "7권역 × 시간대 × 페르소나 데이트 매트릭스 - 한남·합정·성수·연남·서촌·압구정·한강",
     "summary_en": "Seoul date course meta - 7 districts × time × persona matrix",
@@ -23865,7 +23916,8 @@
       "hanok-cafe",
       "warehouse",
       "meta-guide",
-      "foreigner-friendly"
+      "foreigner-friendly",
+      "seoul-wide"
     ],
     "summary_kr": "7권역 × 5유형 매트릭스 + Top 10 + cafe hop 4 패턴 (Topic Gap 1순위 신호)",
     "summary_en": "Seoul cafe meta - 7 districts × 5 types + Top 10 + hop patterns",
@@ -23932,7 +23984,8 @@
       "french",
       "isungdang",
       "meta-guide",
-      "foreigner-friendly"
+      "foreigner-friendly",
+      "seoul-wide"
     ],
     "summary_kr": "5권역 × 5유형 + 한국 시그니처 빵 + Top 10 노포·specialty",
     "summary_en": "Seoul bakery meta - 5 districts × 5 types",
@@ -24191,7 +24244,8 @@
       "망원동",
       "deep",
       "gemini-draft",
-      "foreigner-friendly"
+      "foreigner-friendly",
+      "regional"
     ],
     "summary_kr": "망원동 deep 가이드 - Gemini 2.5 Flash 자동 작성 (credit 0)",
     "summary_en": "망원동 deep guide for foreign travelers",
@@ -26167,7 +26221,8 @@
       "province",
       "jeju",
       "transport",
-      "budget"
+      "budget",
+      "regional"
     ],
     "summary_kr": "제주 뚜벅이 · 렌터카 없이 버스·순환810/820·카카오T · 3박4일 12선",
     "summary_en": "Car-Free Jeju · buses, loop 810/820, KakaoT · 3N4D 12 picks",
@@ -26419,7 +26474,8 @@
       "namhae",
       "gyeongnam",
       "german-village",
-      "regional-city"
+      "regional-city",
+      "regional"
     ],
     "summary_kr": "경남 남해안 섬 전원 힐링 · 독일마을·가천 다랭이논·보리암·상주비치 · 멸치·유자·렌터카 드라이브",
     "summary_en": "Rural island healing on the south coast · German Village·Darangi terraces·Boriam · anchovy·yuja·rental drive",
@@ -26440,7 +26496,8 @@
       "damyang",
       "jeonnam",
       "bamboo-forest",
-      "regional-city"
+      "regional-city",
+      "regional"
     ],
     "summary_kr": "전남 담양 대숲 힐링 슬로시티 · 죽녹원·메타세쿼이아길·관방제림·소쇄원 · 떡갈비·광주 당일",
     "summary_en": "Bamboo-forest healing slow city in Jeonnam · Juknokwon·metasequoia road·Soswaewon · tteokgalbi·Gwangju day trip",
@@ -26461,7 +26518,8 @@
       "yangyang",
       "gangwon",
       "surfing",
-      "regional-city"
+      "regional-city",
+      "regional"
     ],
     "summary_kr": "강원 동해안 서핑 성지 · 서피비치·죽도해변·낙산사·하조대 · 서핑 강습·서프 타운·동해 회",
     "summary_en": "Surfing mecca on the East Coast · Surfyy Beach·Jukdo·Naksansa·Hajodae · surf lessons·surf town·sashimi",
@@ -26482,7 +26540,8 @@
       "geoje",
       "gyeongnam",
       "island",
-      "regional-city"
+      "regional-city",
+      "regional"
     ],
     "summary_kr": "경남 남해 섬 절경 · 외도 보타니아·바람의언덕·신선대·매물도 · 유람선·거가대교·겨울 굴",
     "summary_en": "South-sea island scenery · Oedo Botania·Windy Hill·Sinseondae·Maemuldo · cruise·Geoga Bridge·winter oyster",
@@ -26503,7 +26562,8 @@
       "danyang",
       "chungbuk",
       "paragliding",
-      "regional-city"
+      "regional-city",
+      "regional"
     ],
     "summary_kr": "충북 내륙 강·절벽·동굴 액티비티 · 도담삼봉·만천하스카이워크·고수동굴·패러글라이딩 · 마늘·소백산",
     "summary_en": "Inland river·cliff·cave activities · Dodamsambong·Mancheonha Skywalk·Gosu Cave·paragliding · garlic·Sobaeksan",
@@ -26524,7 +26584,8 @@
       "mungyeong",
       "gyeongbuk",
       "rail-bike",
-      "regional-city"
+      "regional-city",
+      "regional"
     ],
     "summary_kr": "경북 산악 옛 고갯길 · 문경새재·레일바이크·사극 오픈세트장·도자기·단산 모노레일 · 오미자·약돌한우",
     "summary_en": "Mountain old-pass town · Mungyeong Saejae·rail bike·drama open set·ceramics·monorail · omija·herb-fed beef",

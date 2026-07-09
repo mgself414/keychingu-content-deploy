@@ -177,5 +177,41 @@
 })();
 </script>
 
+
+<!-- auto-category-section (2026-07-09 T8.4: EN mirror of KR dynamic hub sections) -->
+<section class="axis-section" id="auto-cat-section" style="display:none">
+  <h2>&#128218; All Culture Guides <span style="font-size:12px;opacity:.55">(auto list &middot; beyond the curated picks above)</span></h2>
+  <div class="meta-grid" id="auto-cat-grid"></div>
+</section>
+<script>
+(function() {
+  var grid = document.getElementById('auto-cat-grid');
+  if (!grid) return;
+  var seen = {};
+  Array.prototype.forEach.call(document.querySelectorAll('a[href^="../content/"]'), function(a) {
+    var m = a.getAttribute('href').match(/^\.\.\/content\/([^.]+)\.en\.html/);
+    if (m) seen[m[1]] = true;
+  });
+  fetch('../data/contents.json')
+    .then(function(r) { return r.json(); })
+    .then(function(items) {
+      var picks = items.filter(function(x) {
+        return x && x.category === 'D' && x.slug && !seen[x.slug] &&
+               String(x.en_available).toLowerCase() === 'true';
+      });
+      if (!picks.length) return;
+      picks.sort(function(a, b) { return String(a.id).localeCompare(String(b.id)); });
+      grid.innerHTML = picks.map(function(x) {
+        var title = x.title_en || x.slug;
+        var desc = (x.summary_en || '');
+        return '<a href="../content/' + x.slug + '.en.html" class="meta-card">' +
+               '<span class="num">#' + (String(x.id).match(/^\d+/) || [''])[0] + '</span>' +
+               '<h3>' + title + '</h3><p>' + desc + '</p></a>';
+      }).join('');
+      document.getElementById('auto-cat-section').style.display = '';
+    })
+    .catch(function() {});
+})();
+</script>
 </body>
 </html>
