@@ -870,17 +870,21 @@ img {
 /* === v6 AREA LANDING NAV (index 메인) === */
 .area-landing-nav {
   max-width: 1200px;
-  margin: 16px auto 24px;
-  padding: 16px 32px;
-  border-top: 1px solid var(--border);
+  margin: 12px auto;
+  padding: 16px 24px;
+  background: #F7F5F2;                          /* 뉴트럴 존 통일 (2026-07-10) */
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent, var(--blue));   /* 브랜드 액센트 바 */
+  border-radius: var(--radius);
 }
 .area-landing-label {
-  font-size: 13px;
-  font-weight: 600;
-  color: var(--text-soft);
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--accent-text, var(--text));      /* AA-safe 딥 톤 (인라인 var) */
   margin-bottom: 10px;
   text-align: center;
 }
+[data-theme="dark"] .area-landing-nav { background: #171b21; border-color: #2a3038; }
 .area-landing-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
