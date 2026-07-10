@@ -5,7 +5,7 @@
 (function () {
   'use strict';
 
-  let activeCategory = null;
+  let activeCategories = [];   // 다중선택 (2026-07-10 P2) — facet 내 OR, facet 간 AND
   let activeTag = null;
   let activeArea = null;
   let searchQuery = '';
@@ -72,19 +72,61 @@
   const IS_EN = /\/en\//.test(window.location.pathname);
   const DATA_PATH = IS_EN ? '../data/contents.json' : 'data/contents.json';
 
+  // URL 파라미터 동기화 (?cat=A,C&tag=&area=&q=) — 공유·SEO·뒤로가기 (2026-07-10 P2)
+  function syncURL() {
+    var p = new URLSearchParams();
+    if (activeCategories.length) p.set('cat', activeCategories.join(','));
+    if (activeTag) p.set('tag', activeTag);
+    if (activeArea) p.set('area', activeArea);
+    if (searchQuery) p.set('q', searchQuery);
+    var qs = p.toString();
+    try { history.replaceState(null, '', qs ? ('?' + qs) : location.pathname); } catch (e) {}
+  }
+  function readURL() {
+    var p = new URLSearchParams(location.search);
+    if (p.get('cat')) activeCategories = p.get('cat').split(',').filter(Boolean);
+    if (p.get('tag')) activeTag = p.get('tag');
+    if (p.get('area')) activeArea = p.get('area');
+    if (p.get('q')) searchQuery = p.get('q');
+  }
+  function restoreActiveButtons() {
+    activeCategories.forEach(function(c) {
+      var b = document.querySelector('.filter-btn[data-category="' + c + '"]');
+      if (b) { b.classList.add('active'); b.setAttribute('aria-pressed', 'true'); }
+    });
+    if (activeTag) { var t = document.querySelector('.tag-btn[data-tag="' + activeTag + '"]'); if (t) t.classList.add('active'); }
+    if (activeArea) { var a = document.querySelector('.area-btn[data-area="' + activeArea + '"]'); if (a) a.classList.add('active'); }
+    if (searchQuery) { var s = document.getElementById('search-input'); if (s) s.value = searchQuery; }
+  }
+
   function init() {
     fetch(DATA_PATH)
       .then(r => r.json())
       .then(data => {
         window.__contents = data;
-        applyFilters(data);
+        readURL();
         bindFilters(data);
         bindSearch(data);
         bindFavToggle(data);
+        bindFilterToggle();
         populateSearchSuggestions(data);
+        restoreActiveButtons();
+        applyFilters(data);
         updateFavCount();
       })
       .catch(err => console.error('[filter.js] failed to load', DATA_PATH, err));
+  }
+
+  // 접이식 필터 패널 토글 (태그·지역 70버튼 과밀 해소 — 기본 접힘)
+  function bindFilterToggle() {
+    var toggle = document.getElementById('filter-toggle');
+    var panel = document.getElementById('filter-collapse');
+    if (!toggle || !panel) return;
+    toggle.addEventListener('click', function() {
+      var open = panel.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      toggle.classList.toggle('active', open);
+    });
   }
 
   function populateSearchSuggestions(data) {
@@ -227,8 +269,8 @@
 
   function applyFilters(data) {
     let filtered = data;
-    if (activeCategory) {
-      filtered = filtered.filter(function(item) { return item.category === activeCategory; });
+    if (activeCategories.length) {
+      filtered = filtered.filter(function(item) { return activeCategories.indexOf(item.category) !== -1; });
     }
     if (activeTag) {
       filtered = filtered.filter(function(item) { return item.tags.indexOf(activeTag) !== -1; });
@@ -287,7 +329,7 @@
     // 검색 또는 정렬 active 시 중간 nav 숨기고 card-grid 바로 노출
     var midSections = document.querySelectorAll('.area-bar, .area-landing-nav');
     var sortBy = (document.getElementById('sort-select') || {}).value;
-    var isActive = !!searchQuery || !!sortBy || !!activeCategory || !!activeTag || !!activeArea || showFavoritesOnly;
+    var isActive = !!searchQuery || !!sortBy || activeCategories.length || !!activeTag || !!activeArea || showFavoritesOnly;
     midSections.forEach(function(el) {
       el.style.display = isActive ? 'none' : '';
     });
@@ -297,15 +339,12 @@
     document.querySelectorAll('.filter-btn').forEach(function(btn) {
       btn.addEventListener('click', function () {
         var cat = this.dataset.category;
-        if (activeCategory === cat) {
-          activeCategory = null;
-          this.classList.remove('active');
-        } else {
-          activeCategory = cat;
-          document.querySelectorAll('.filter-btn').forEach(function(b) { b.classList.remove('active'); });
-          this.classList.add('active');
-        }
+        var idx = activeCategories.indexOf(cat);
+        if (idx !== -1) { activeCategories.splice(idx, 1); this.classList.remove('active'); }
+        else { activeCategories.push(cat); this.classList.add('active'); }
+        this.setAttribute('aria-pressed', idx === -1 ? 'true' : 'false');
         currentPage = 1;
+        syncURL();
         applyFilters(data);
       });
     });
@@ -321,6 +360,7 @@
           this.classList.add('active');
         }
         currentPage = 1;
+        syncURL();
         applyFilters(data);
       });
     });
@@ -336,6 +376,7 @@
           this.classList.add('active');
         }
         currentPage = 1;
+        syncURL();
         applyFilters(data);
       });
     });
@@ -350,6 +391,7 @@
       debounce = setTimeout(function () {
         searchQuery = input.value.trim();
         currentPage = 1;
+        syncURL();
         applyFilters(data);
       }, 150);
     });

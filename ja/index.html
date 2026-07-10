@@ -296,7 +296,7 @@
 // EN version: adjust data path since we're in /en/
 (function () {
   'use strict';
-  let activeCategory = null;
+  let activeCategories = [];   // 다중선택 (2026-07-10 P2)
   let activeTag = null;
   let searchQuery = '';
   const CAT_COLORS = {A:'#218CCC',B:'#2E8B57',C:'#D94C53',D:'#FAAD19',E:'#E79397',F:'#6AB2DC',G:'#9B59B6',H:'#34495E',I:'#5C6BC0'};
@@ -319,9 +319,9 @@
     renderCards(data);
     document.querySelectorAll('.filter-btn').forEach(btn=>{
       btn.addEventListener('click',function(){
-        var cat=this.dataset.category;
-        if(activeCategory===cat){activeCategory=null;this.classList.remove('active');}
-        else{activeCategory=cat;document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));this.classList.add('active');}
+        var cat=this.dataset.category, i=activeCategories.indexOf(cat);
+        if(i!==-1){activeCategories.splice(i,1);this.classList.remove('active');this.setAttribute('aria-pressed','false');}
+        else{activeCategories.push(cat);this.classList.add('active');this.setAttribute('aria-pressed','true');}
         applyFilters(data);
       });
     });
@@ -364,7 +364,7 @@
 
   function applyFilters(data){
     let f=data;
-    if(activeCategory) f=f.filter(i=>i.category===activeCategory);
+    if(activeCategories.length) f=f.filter(i=>activeCategories.indexOf(i.category)!==-1);
     if(activeTag) f=f.filter(i=>i.tags.indexOf(activeTag)!==-1);
     if(searchQuery){
       const tokens = searchQuery.split(/[\s+]+/).filter(Boolean);
@@ -383,7 +383,7 @@
     renderCards(f);
     // 검색·정렬·필터 active 시 중간 nav 숨기고 card-grid 바로 노출
     var midSections = document.querySelectorAll('.area-landing-nav');
-    var isActive = !!searchQuery || !!activeCategory || !!activeTag;
+    var isActive = !!searchQuery || activeCategories.length || !!activeTag;
     midSections.forEach(function(el){ el.style.display = isActive ? 'none' : ''; });
   }
 })();
