@@ -146,6 +146,32 @@ a { color: inherit; text-decoration: none; }
 .tag-btn:hover { border-color: var(--blue); color: var(--blue); }
 .tag-btn.active { background: var(--blue); border-color: var(--blue); color: #fff; }
 
+/* ── VIEW TOGGLE (그리드/섹션, 2026-07-10 P3) ── */
+.view-toggle { display: inline-flex; gap: 0; border: 1.5px solid var(--border); border-radius: var(--radius-pill); overflow: hidden; flex: 0 0 auto; }
+.view-toggle button {
+  padding: 0.5rem 0.7rem; background: #fff; border: none; cursor: pointer;
+  font-size: 1rem; line-height: 1; color: var(--text-soft); font-family: inherit; transition: all 0.15s;
+}
+.view-toggle button.active { background: var(--blue); color: #fff; }
+[data-theme="dark"] .view-toggle button { background: #1a1f26; color: var(--text-soft); }
+[data-theme="dark"] .view-toggle button.active { background: var(--blue); color: #fff; }
+
+/* ── CATEGORY SECTION VIEW ── */
+.card-grid.as-sections { display: block; grid-template-columns: none; max-width: none; padding: 0 0 48px; }
+.cat-section { max-width: 1200px; margin: 0 auto 8px; padding: 0 32px; }
+.cat-section-h {
+  font-family: var(--serif);
+  display: flex; align-items: center; gap: 10px;
+  font-size: 1.25rem; font-weight: 700; color: var(--black);
+  margin: 28px 0 14px; padding-bottom: 10px; border-bottom: 1px solid var(--border);
+}
+.cat-section-h .cat-dot { width: 12px; height: 12px; border-radius: 50%; flex: 0 0 auto; }
+.cat-section-h .cat-section-n { font-family: 'Poppins', sans-serif; font-size: 0.85rem; font-weight: 600; color: var(--text-soft); }
+.cat-section-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+.cat-section-grid .card-wrap { min-width: 0; }
+@media (max-width: 900px) { .cat-section-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .cat-section { padding: 0 16px; } .cat-section-grid { grid-template-columns: 1fr; } }
+
 /* ── CARD GRID ── */
 .card-grid {
   display: grid;

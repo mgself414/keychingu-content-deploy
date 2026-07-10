@@ -12,6 +12,7 @@
   let showFavoritesOnly = false;
   let currentPage = 1;
   const PAGE_SIZE = 24;
+  let viewMode = (function(){ try { return localStorage.getItem('kc_view') || 'grid'; } catch(e){ return 'grid'; } })();  // grid|section (2026-07-10 P3)
 
   const CAT_COLORS = {
     A: '#218CCC', B: '#2E8B57', C: '#D94C53', D: '#FAAD19',
@@ -170,6 +171,7 @@
         bindSearch(data);
         bindFavToggle(data);
         bindFilterToggle();
+        bindViewToggle(data);
         decorateFilterButtons();
         populateSearchSuggestions(data);
         restoreActiveButtons();
@@ -189,6 +191,31 @@
       btn.innerHTML = '<svg class="qm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="' +
         (CAT_ICONS[cat] || CAT_ICONS.H) + '"/></svg><span>' + label + '</span>';
       btn.setAttribute('aria-pressed', 'false');
+    });
+  }
+
+  // 뷰 토글(그리드/섹션) 주입 — HTML 수정 없이 검색바에 (2026-07-10 P3)
+  function bindViewToggle(data) {
+    var bar = document.querySelector('.search-bar');
+    if (!bar || document.getElementById('view-toggle')) return;
+    var lang = getLang();
+    var wrap = document.createElement('div');
+    wrap.id = 'view-toggle'; wrap.className = 'view-toggle';
+    wrap.innerHTML =
+      '<button data-view="grid" title="' + (lang === 'en' ? 'Grid view' : '그리드 보기') + '" aria-label="grid">▦</button>' +
+      '<button data-view="section" title="' + (lang === 'en' ? 'Group by category' : '카테고리별 보기') + '" aria-label="section">☰</button>';
+    var stats = bar.querySelector('.stats-link');
+    if (stats) bar.insertBefore(wrap, stats); else bar.appendChild(wrap);
+    function sync() {
+      wrap.querySelectorAll('button').forEach(function(b) { b.classList.toggle('active', b.dataset.view === viewMode); });
+    }
+    sync();
+    wrap.querySelectorAll('button').forEach(function(b) {
+      b.addEventListener('click', function() {
+        viewMode = this.dataset.view;
+        try { localStorage.setItem('kc_view', viewMode); } catch (e) {}
+        currentPage = 1; sync(); applyFilters(data);
+      });
     });
   }
 
@@ -237,6 +264,60 @@
     }
   }
 
+  function catLabelFor(cat, lang) {
+    var L = {
+      A: lang === 'en' ? 'Neighborhood' : '동네', B: lang === 'en' ? 'Nature' : '자연',
+      C: lang === 'en' ? 'Food' : '먹거리', D: lang === 'en' ? 'Culture' : '문화',
+      E: lang === 'en' ? 'Beauty' : '뷰티', F: lang === 'en' ? 'Shopping' : '쇼핑',
+      G: lang === 'en' ? 'K-Content' : 'K-콘텐츠', H: lang === 'en' ? 'Practical' : '실용',
+      I: lang === 'en' ? 'Nightlife' : '나이트'
+    };
+    return L[cat] || cat;
+  }
+  function cardHTML(item, lang) {
+    var title = lang === 'en' ? item.title_en : item.title_kr;
+    var summary = lang === 'en' ? item.summary_en : item.summary_kr;
+    var color = CAT_COLORS[item.category] || '#D94C53';
+    var detailHref = 'content/' + item.slug + (lang === 'en' ? '.en' : '') + '.html';
+    var favClass = isFavorite(item.id) ? 'fav-btn active' : 'fav-btn';
+    var newBadge = isNew(item) ? '<span class="new-badge">NEW</span>' : '';
+    var tagsHtml = item.tags.slice(0, 3).map(function(t) { return '<span>' + t + '</span>'; }).join('');
+    return '<div class="card-wrap">' +
+      '<button class="' + favClass + '" data-id="' + item.id + '" aria-label="favorite" title="' + (lang === 'en' ? 'Toggle favorite' : '즐겨찾기') + '">★</button>' +
+      '<a href="' + detailHref + '" class="card" data-category="' + item.category + '" data-tags="' + item.tags.join(',') + '">' +
+      '<div class="card-cover" style="background:linear-gradient(135deg,' + color + ' 0%,' + color + 'cc 100%);">' +
+      '<span class="cat-badge">' + catLabelFor(item.category, lang) + '</span>' + newBadge +
+      catIconSVG(item.category) + '</div>' +
+      '<div class="card-body"><h3>' + title + '</h3><p>' + summary + '</p>' +
+      '<div class="card-tags">' + tagsHtml + '</div></div></a></div>';
+  }
+  function bindFavButtons() {
+    document.getElementById('card-grid').querySelectorAll('.fav-btn').forEach(function(btn) {
+      btn.addEventListener('click', function(e) {
+        e.preventDefault(); e.stopPropagation();
+        toggleFavorite(this.dataset.id); this.classList.toggle('active');
+      });
+    });
+  }
+  var CAT_ORDER = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I'];
+  function renderSectioned(items, lang) {
+    var grid = document.getElementById('card-grid');
+    var byCat = {};
+    items.forEach(function(it) { (byCat[it.category] = byCat[it.category] || []).push(it); });
+    var html = '';
+    CAT_ORDER.forEach(function(cat) {
+      var list = byCat[cat]; if (!list || !list.length) return;
+      html += '<section class="cat-section"><h2 class="cat-section-h">' +
+        '<span class="cat-dot" style="background:' + (CAT_COLORS[cat] || '#D94C53') + '"></span>' +
+        catLabelFor(cat, lang) + ' <span class="cat-section-n">' + list.length + '</span></h2>' +
+        '<div class="cat-section-grid">' + list.map(function(it){ return cardHTML(it, lang); }).join('') + '</div></section>';
+    });
+    grid.classList.add('as-sections');   // 컨테이너 3열 그리드 해제 (섹션이 grid item 되는 것 방지)
+    grid.innerHTML = html;
+    bindFavButtons();
+    renderPagination(0, 1);   // 섹션뷰는 페이지네이션 없음(전체 그룹 표시)
+  }
+
   function renderCards(items) {
     const grid = document.getElementById('card-grid');
     const lang = getLang();
@@ -259,53 +340,17 @@
       return;
     }
 
+    // 섹션 뷰: 카테고리별 그룹(페이지네이션 없음). 검색 중엔 관련도순 유지 위해 그리드.
+    if (viewMode === 'section' && !searchQuery) {
+      renderSectioned(items, lang);
+      return;
+    }
+
+    grid.classList.remove('as-sections');   // 그리드 모드 복귀
     const startIdx = (currentPage - 1) * PAGE_SIZE;
     const pageItems = items.slice(startIdx, startIdx + PAGE_SIZE);
-
-    grid.innerHTML = pageItems.map(item => {
-      const title = lang === 'en' ? item.title_en : item.title_kr;
-      const summary = lang === 'en' ? item.summary_en : item.summary_kr;
-      const color = CAT_COLORS[item.category] || '#D94C53';
-      const catLabels = {
-        A: lang === 'en' ? 'Neighborhood' : '동네',
-        B: lang === 'en' ? 'Nature' : '자연',
-        C: lang === 'en' ? 'Food' : '먹거리',
-        D: lang === 'en' ? 'Culture' : '문화',
-        E: lang === 'en' ? 'Beauty' : '뷰티',
-        F: lang === 'en' ? 'Shopping' : '쇼핑',
-        G: lang === 'en' ? 'K-Content' : 'K-콘텐츠',
-        H: lang === 'en' ? 'Practical' : '실용',
-        I: lang === 'en' ? 'Nightlife' : '나이트'
-      };
-      const catLabel = catLabels[item.category] || item.category;
-      const detailHref = 'content/' + item.slug + (lang === 'en' ? '.en' : '') + '.html';
-      const favClass = isFavorite(item.id) ? 'fav-btn active' : 'fav-btn';
-      const newBadge = isNew(item) ? '<span class="new-badge">NEW</span>' : '';
-      const tagsHtml = item.tags.slice(0, 3).map(function(t) { return '<span>' + t + '</span>'; }).join('');
-      return '<div class="card-wrap">' +
-        '<button class="' + favClass + '" data-id="' + item.id + '" aria-label="favorite" title="' + (lang === 'en' ? 'Toggle favorite' : '즐겨찾기') + '">★</button>' +
-        '<a href="' + detailHref + '" class="card" data-category="' + item.category + '" data-tags="' + item.tags.join(',') + '">' +
-        '<div class="card-cover" style="background:linear-gradient(135deg,' + color + ' 0%,' + color + 'cc 100%);">' +
-        '<span class="cat-badge">' + catLabel + '</span>' + newBadge +
-        catIconSVG(item.category) +
-        '</div>' +
-        '<div class="card-body">' +
-        '<h3>' + title + '</h3>' +
-        '<p>' + summary + '</p>' +
-        '<div class="card-tags">' + tagsHtml + '</div>' +
-        '</div></a></div>';
-    }).join('');
-
-    // Bind fav buttons
-    grid.querySelectorAll('.fav-btn').forEach(function(btn) {
-      btn.addEventListener('click', function(e) {
-        e.preventDefault();
-        e.stopPropagation();
-        const id = this.dataset.id;
-        toggleFavorite(id);
-        this.classList.toggle('active');
-      });
-    });
+    grid.innerHTML = pageItems.map(function(item) { return cardHTML(item, lang); }).join('');
+    bindFavButtons();
 
     renderPagination(totalItems, totalPages);
   }

@@ -299,6 +299,8 @@
   let activeCategories = [];   // 다중선택 (2026-07-10 P2)
   let activeTag = null;
   let searchQuery = '';
+  var viewMode = (function(){ try { return localStorage.getItem('kc_view') || 'grid'; } catch(e){ return 'grid'; } })();  // grid|section (P3)
+  var CAT_ORDER = ['A','B','C','D','E','F','G','H','I'];
   const CAT_COLORS = {A:'#218CCC',B:'#2E8B57',C:'#D94C53',D:'#FAAD19',E:'#E79397',F:'#6AB2DC',G:'#9B59B6',H:'#34495E',I:'#5C6BC0'};
   const CAT_LABELS = {A:'Neighborhood',B:'Nature',C:'Food',D:'Culture',E:'Beauty',F:'Shopping',G:'K-Content',H:'Practical',I:'Nightlife'};
   const CAT_ICONS = {
@@ -327,6 +329,7 @@
     window.__contents=data;
     renderCards(data);
     decorateFilterButtons();
+    bindViewToggle();
     document.querySelectorAll('.filter-btn').forEach(btn=>{
       btn.addEventListener('click',function(){
         var cat=this.dataset.category, i=activeCategories.indexOf(cat);
@@ -359,19 +362,39 @@
     }
   });
 
+  function cardHTML(item){
+    var color=CAT_COLORS[item.category]||'#D94C53';
+    var catLabel=CAT_LABELS[item.category]||item.category;
+    return '<a href="../content/'+item.slug+'.zh.html" class="card" data-category="'+item.category+'" data-tags="'+item.tags.join(',')+'">' +
+      '<div class="card-cover" style="background:linear-gradient(135deg,'+color+' 0%,'+color+'cc 100%);">' +
+      '<span class="cat-badge">'+catLabel+'</span>'+(isNew(item)?'<span class="new-badge">NEW</span>':'') +
+      catIconSVG(item.category)+'</div>' +
+      '<div class="card-body"><h3>'+(item.title_zh||item.title_en)+'</h3><p>'+(item.summary_zh||item.summary_en)+'</p>' +
+      '<div class="card-tags">'+item.tags.slice(0,3).map(t=>'<span>'+t+'</span>').join('')+'</div></div></a>';
+  }
+  function bindViewToggle(){
+    var bar=document.querySelector('.search-bar');
+    if(!bar||document.getElementById('view-toggle'))return;
+    var wrap=document.createElement('div');wrap.id='view-toggle';wrap.className='view-toggle';
+    wrap.innerHTML='<button data-view="grid" title="Grid view" aria-label="grid">▦</button><button data-view="section" title="Group by category" aria-label="section">☰</button>';
+    var stats=bar.querySelector('.stats-link');if(stats)bar.insertBefore(wrap,stats);else bar.appendChild(wrap);
+    function sync(){wrap.querySelectorAll('button').forEach(function(b){b.classList.toggle('active',b.dataset.view===viewMode);});}
+    sync();
+    wrap.querySelectorAll('button').forEach(function(b){b.addEventListener('click',function(){viewMode=this.dataset.view;try{localStorage.setItem('kc_view',viewMode);}catch(e){}sync();applyFilters(window.__contents.filter(function(i){return i.en_available!==false;}));});});
+  }
   function renderCards(items){
     const grid=document.getElementById('card-grid');
     if(!items.length){grid.innerHTML='<div class="no-results">没有符合条件的内容。</div>';return;}
-    grid.innerHTML=items.map(item=>{
-      const color=CAT_COLORS[item.category]||'#D94C53';
-      const catLabel=CAT_LABELS[item.category]||item.category;
-      return '<a href="../content/'+item.slug+'.zh.html" class="card" data-category="'+item.category+'" data-tags="'+item.tags.join(',')+'">' +
-        '<div class="card-cover" style="background:linear-gradient(135deg,'+color+' 0%,'+color+'cc 100%);">' +
-        '<span class="cat-badge">'+catLabel+'</span>'+(isNew(item)?'<span class="new-badge">NEW</span>':'') +
-        catIconSVG(item.category)+'</div>' +
-        '<div class="card-body"><h3>'+(item.title_zh||item.title_en)+'</h3><p>'+(item.summary_zh||item.summary_en)+'</p>' +
-        '<div class="card-tags">'+item.tags.slice(0,3).map(t=>'<span>'+t+'</span>').join('')+'</div></div></a>';
-    }).join('');
+    if(viewMode==='section'&&!searchQuery){
+      grid.classList.add('as-sections');
+      var byCat={};items.forEach(function(it){(byCat[it.category]=byCat[it.category]||[]).push(it);});
+      var catLbl=function(cat){var b=document.querySelector('.filter-btn[data-category="'+cat+'"]');var t=b?b.textContent.trim():'';return t||CAT_LABELS[cat]||cat;};  // 현지화된 필터 라벨 사용
+      grid.innerHTML=CAT_ORDER.map(function(cat){var list=byCat[cat];if(!list||!list.length)return '';
+        return '<section class="cat-section"><h2 class="cat-section-h"><span class="cat-dot" style="background:'+(CAT_COLORS[cat]||'#D94C53')+'"></span>'+catLbl(cat)+' <span class="cat-section-n">'+list.length+'</span></h2><div class="cat-section-grid">'+list.map(cardHTML).join('')+'</div></section>';}).join('');
+      return;
+    }
+    grid.classList.remove('as-sections');
+    grid.innerHTML=items.map(cardHTML).join('');
   }
 
   function applyFilters(data){
