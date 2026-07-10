@@ -1,9 +1,27 @@
 /**
- * KeyChinGu Content Catalog — Filter Logic (v3 — search + area + pagination + favorites)
- * Vanilla JS, no dependencies.
+ * KeyChinGu Content Catalog — Filter Logic (v4 — 4-language single engine)
+ * Vanilla JS, no dependencies. KR·EN·JA·ZH 허브 공용 (html lang 으로 자동 분기).
  */
 (function () {
   'use strict';
+
+  // 언어 분기 — html lang="ko|en|ja|zh-CN" 기준. 허브별 인라인 복제(구 3벌) 대체.
+  var LANG = (document.documentElement.lang || 'ko').split('-')[0].toLowerCase();
+  if (LANG === 'ko') LANG = 'kr';
+  var LANG_SUFFIX = { kr: '', en: '.en', ja: '.ja', zh: '.zh' }[LANG] || '';
+  var AVAIL_FLAG = { en: 'en_available', ja: 'jp_available', zh: 'cn_available' }[LANG] || null;
+  var STR = {
+    guides:  { kr: '개 가이드', en: ' guides', ja: '件のガイド', zh: '条指南' },
+    noMatch: { kr: '필터 조건에 맞는 콘텐츠가 없습니다.', en: 'No content matches your filters.',
+               ja: '該当するコンテンツがありません。', zh: '没有符合条件的内容。' },
+    noResult:{ kr: '검색 결과 없음: ', en: 'No results for: ', ja: '検索結果なし: ', zh: '无搜索结果: ' },
+    hint:    { kr: '더 넓은 키워드로 검색하거나 필터를 초기화해 보세요.', en: 'Try broader keywords or clear filters.',
+               ja: 'より広いキーワードで検索するか、フィルターをリセットしてください。', zh: '请尝试更宽泛的关键词或清除筛选。' },
+    fav:     { kr: '즐겨찾기', en: 'Toggle favorite', ja: 'お気に入り', zh: '收藏' },
+    vGrid:   { kr: '그리드 보기', en: 'Grid view', ja: 'グリッド表示', zh: '网格视图' },
+    vSection:{ kr: '카테고리별 보기', en: 'Group by category', ja: 'カテゴリ別表示', zh: '按分类查看' }
+  };
+  function T(key) { return STR[key][LANG] || STR[key].en; }
 
   let activeCategories = [];   // 다중선택 (2026-07-10 P2) — facet 내 OR, facet 간 AND
   let activeTag = null;
@@ -69,10 +87,11 @@
     }
   }
 
-  // 페이지 위치에 따라 contents.json 경로 자동 결정 (KR / EN 호환)
-  const IS_EN = /\/(en|ja|zh)\//.test(window.location.pathname);
-  const DATA_PATH = IS_EN ? '../data/contents.json' : 'data/contents.json';
-  const INDEX_PATH = IS_EN ? '../data/search-index.json' : 'data/search-index.json';
+  // 페이지 위치에 따라 경로 자동 결정 (KR 루트 / en·ja·zh 서브디렉터리)
+  const IS_SUBDIR = /\/(en|ja|zh)\//.test(window.location.pathname);
+  const DATA_PATH = IS_SUBDIR ? '../data/contents.json' : 'data/contents.json';
+  const INDEX_PATH = IS_SUBDIR ? '../data/search-index.json' : 'data/search-index.json';
+  const CONTENT_PREFIX = IS_SUBDIR ? '../content/' : 'content/';
 
   // ── 검색 강화 (2026-07-10): 본문 색인 + 동의어 + 필드가중 랭킹 ──
   // 동의어 그룹 (한국 여행 도메인) — 한 단어 검색이 유의어까지 매칭. '밤'은 과광범위라 제외.
@@ -165,6 +184,8 @@
     fetch(DATA_PATH)
       .then(r => r.json())
       .then(data => {
+        // 언어판 부재 콘텐츠는 해당 허브에서 숨김 (broken link 방지)
+        if (AVAIL_FLAG) data = data.filter(function(it) { return it[AVAIL_FLAG] !== false; });
         window.__contents = data;
         readURL();
         bindFilters(data);
@@ -198,12 +219,11 @@
   function bindViewToggle(data) {
     var bar = document.querySelector('.search-bar');
     if (!bar || document.getElementById('view-toggle')) return;
-    var lang = getLang();
     var wrap = document.createElement('div');
     wrap.id = 'view-toggle'; wrap.className = 'view-toggle';
     wrap.innerHTML =
-      '<button data-view="grid" title="' + (lang === 'en' ? 'Grid view' : '그리드 보기') + '" aria-label="grid">▦</button>' +
-      '<button data-view="section" title="' + (lang === 'en' ? 'Group by category' : '카테고리별 보기') + '" aria-label="section">☰</button>';
+      '<button data-view="grid" title="' + T('vGrid') + '" aria-label="grid">▦</button>' +
+      '<button data-view="section" title="' + T('vSection') + '" aria-label="section">☰</button>';
     var stats = bar.querySelector('.stats-link');
     if (stats) bar.insertBefore(wrap, stats); else bar.appendChild(wrap);
     function sync() {
@@ -248,45 +268,49 @@
   }
 
   function getLang() {
-    return document.documentElement.lang === 'en' ? 'en' : 'kr';
+    return LANG;
   }
 
   function updateCount(filtered, total) {
     const el = document.getElementById('result-count');
     if (!el) return;
-    const lang = getLang();
     if (filtered === total) {
-      el.textContent = lang === 'en' ? total + ' guides' : total + '개 가이드';
+      el.textContent = total + T('guides');
     } else {
-      el.textContent = lang === 'en'
-        ? filtered + ' / ' + total + ' guides'
-        : filtered + ' / ' + total + '개 일치';
+      el.textContent = filtered + ' / ' + total + T('guides');
     }
   }
 
-  function catLabelFor(cat, lang) {
-    var L = {
-      A: lang === 'en' ? 'Neighborhood' : '동네', B: lang === 'en' ? 'Nature' : '자연',
-      C: lang === 'en' ? 'Food' : '먹거리', D: lang === 'en' ? 'Culture' : '문화',
-      E: lang === 'en' ? 'Beauty' : '뷰티', F: lang === 'en' ? 'Shopping' : '쇼핑',
-      G: lang === 'en' ? 'K-Content' : 'K-콘텐츠', H: lang === 'en' ? 'Practical' : '실용',
-      I: lang === 'en' ? 'Nightlife' : '나이트'
-    };
-    return L[cat] || cat;
+  // 카테고리 라벨: 허브의 현지화된 필터 버튼 텍스트를 재사용 (라벨 SoT = 마크업 1곳)
+  var CAT_LABEL_FALLBACK = {
+    A: 'Neighborhood', B: 'Nature', C: 'Food', D: 'Culture', E: 'Beauty',
+    F: 'Shopping', G: 'K-Content', H: 'Practical', I: 'Nightlife'
+  };
+  var CAT_LABEL_KR = {
+    A: '동네', B: '자연', C: '먹거리', D: '문화', E: '뷰티',
+    F: '쇼핑', G: 'K-콘텐츠', H: '실용', I: '나이트'
+  };
+  function catLabelFor(cat) {
+    var b = document.querySelector('.filter-btn[data-category="' + cat + '"]');
+    if (b && b.textContent.trim()) return b.textContent.trim();
+    return (LANG === 'kr' ? CAT_LABEL_KR : CAT_LABEL_FALLBACK)[cat] || cat;
   }
-  function cardHTML(item, lang) {
-    var title = lang === 'en' ? item.title_en : item.title_kr;
-    var summary = lang === 'en' ? item.summary_en : item.summary_kr;
+  function pickField(item, base) {
+    return item[base + '_' + LANG] || item[base + '_en'] || item[base + '_kr'] || '';
+  }
+  function cardHTML(item) {
+    var title = pickField(item, 'title');
+    var summary = pickField(item, 'summary');
     var color = CAT_COLORS[item.category] || '#D94C53';
-    var detailHref = 'content/' + item.slug + (lang === 'en' ? '.en' : '') + '.html';
+    var detailHref = CONTENT_PREFIX + item.slug + LANG_SUFFIX + '.html';
     var favClass = isFavorite(item.id) ? 'fav-btn active' : 'fav-btn';
     var newBadge = isNew(item) ? '<span class="new-badge">NEW</span>' : '';
     var tagsHtml = item.tags.slice(0, 3).map(function(t) { return '<span>' + t + '</span>'; }).join('');
     return '<div class="card-wrap">' +
-      '<button class="' + favClass + '" data-id="' + item.id + '" aria-label="favorite" title="' + (lang === 'en' ? 'Toggle favorite' : '즐겨찾기') + '">★</button>' +
+      '<button class="' + favClass + '" data-id="' + item.id + '" aria-label="favorite" title="' + T('fav') + '">★</button>' +
       '<a href="' + detailHref + '" class="card" data-category="' + item.category + '" data-tags="' + item.tags.join(',') + '">' +
       '<div class="card-cover" style="background:linear-gradient(135deg,' + color + ' 0%,' + color + 'cc 100%);">' +
-      '<span class="cat-badge">' + catLabelFor(item.category, lang) + '</span>' + newBadge +
+      '<span class="cat-badge">' + catLabelFor(item.category) + '</span>' + newBadge +
       catIconSVG(item.category) + '</div>' +
       '<div class="card-body"><h3>' + title + '</h3><p>' + summary + '</p>' +
       '<div class="card-tags">' + tagsHtml + '</div></div></a></div>';
@@ -300,7 +324,7 @@
     });
   }
   var CAT_ORDER = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I'];
-  function renderSectioned(items, lang) {
+  function renderSectioned(items) {
     var grid = document.getElementById('card-grid');
     var byCat = {};
     items.forEach(function(it) { (byCat[it.category] = byCat[it.category] || []).push(it); });
@@ -309,8 +333,8 @@
       var list = byCat[cat]; if (!list || !list.length) return;
       html += '<section class="cat-section"><h2 class="cat-section-h">' +
         '<span class="cat-dot" style="background:' + (CAT_COLORS[cat] || '#D94C53') + '"></span>' +
-        catLabelFor(cat, lang) + ' <span class="cat-section-n">' + list.length + '</span></h2>' +
-        '<div class="cat-section-grid">' + list.map(function(it){ return cardHTML(it, lang); }).join('') + '</div></section>';
+        catLabelFor(cat) + ' <span class="cat-section-n">' + list.length + '</span></h2>' +
+        '<div class="cat-section-grid">' + list.map(cardHTML).join('') + '</div></section>';
     });
     grid.classList.add('as-sections');   // 컨테이너 3열 그리드 해제 (섹션이 grid item 되는 것 방지)
     grid.innerHTML = html;
@@ -320,7 +344,6 @@
 
   function renderCards(items) {
     const grid = document.getElementById('card-grid');
-    const lang = getLang();
     const totalItems = items.length;
     const totalPages = Math.max(1, Math.ceil(totalItems / PAGE_SIZE));
     if (currentPage > totalPages) currentPage = 1;
@@ -329,11 +352,10 @@
       var q = (searchQuery || '').replace(/</g, '&lt;');
       var msg;
       if (searchQuery) {
-        var head = (lang === 'en' ? 'No results for: ' : '검색 결과 없음: ') + '"<b>' + q + '</b>"';
-        var hint = lang === 'en' ? 'Try broader keywords or clear filters.' : '더 넓은 키워드로 검색하거나 필터를 초기화해 보세요.';
-        msg = head + '<br><span style="font-size:.9em;color:var(--text-soft)">' + hint + '</span>';
+        msg = T('noResult') + '"<b>' + q + '</b>"' +
+          '<br><span style="font-size:.9em;color:var(--text-soft)">' + T('hint') + '</span>';
       } else {
-        msg = lang === 'en' ? 'No content matches your filters.' : '필터 조건에 맞는 콘텐츠가 없습니다.';
+        msg = T('noMatch');
       }
       grid.innerHTML = '<div class="no-results">' + msg + '</div>';
       renderPagination(0, 1);
@@ -342,14 +364,14 @@
 
     // 섹션 뷰: 카테고리별 그룹(페이지네이션 없음). 검색 중엔 관련도순 유지 위해 그리드.
     if (viewMode === 'section' && !searchQuery) {
-      renderSectioned(items, lang);
+      renderSectioned(items);
       return;
     }
 
     grid.classList.remove('as-sections');   // 그리드 모드 복귀
     const startIdx = (currentPage - 1) * PAGE_SIZE;
     const pageItems = items.slice(startIdx, startIdx + PAGE_SIZE);
-    grid.innerHTML = pageItems.map(function(item) { return cardHTML(item, lang); }).join('');
+    grid.innerHTML = pageItems.map(cardHTML).join('');
     bindFavButtons();
 
     renderPagination(totalItems, totalPages);
@@ -362,7 +384,6 @@
       el.innerHTML = '';
       return;
     }
-    const lang = getLang();
     let html = '<button class="page-btn" data-page="prev"' + (currentPage === 1 ? ' disabled' : '') + '>←</button>';
     // Show all pages if ≤7, else first·current±1·last with ellipsis
     const pages = [];
