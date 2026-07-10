@@ -69,8 +69,69 @@
   }
 
   // 페이지 위치에 따라 contents.json 경로 자동 결정 (KR / EN 호환)
-  const IS_EN = /\/en\//.test(window.location.pathname);
+  const IS_EN = /\/(en|ja|zh)\//.test(window.location.pathname);
   const DATA_PATH = IS_EN ? '../data/contents.json' : 'data/contents.json';
+  const INDEX_PATH = IS_EN ? '../data/search-index.json' : 'data/search-index.json';
+
+  // ── 검색 강화 (2026-07-10): 본문 색인 + 동의어 + 필드가중 랭킹 ──
+  // 동의어 그룹 (한국 여행 도메인) — 한 단어 검색이 유의어까지 매칭. '밤'은 과광범위라 제외.
+  const SYN_GROUPS = [
+    ['야간','심야','늦은','자정','24시','24시간','밤샘','night','nighttime','late-night','midnight','evening'],
+    ['카페','cafe','coffee','커피','로스터리','roastery','coffeeshop'],
+    ['맛집','먹거리','음식','food','restaurant','eat','dining','cuisine','gourmet'],
+    ['술집','바','pub','bar','포차','포장마차','술','drink','izakaya'],
+    ['쇼핑','shopping','mall','백화점','아울렛','store','shop'],
+    ['시장','market','재래시장','전통시장'],
+    ['숙소','호텔','hotel','stay','게스트하우스','guesthouse','hostel','숙박','accommodation'],
+    ['명소','관광지','랜드마크','attraction','landmark','spot','sightseeing'],
+    ['자연','공원','park','산','mountain','강','river','hiking','트레킹','trek'],
+    ['한복','hanbok','전통','traditional','문화','culture'],
+    ['화장품','뷰티','beauty','kbeauty','cosmetic','스킨케어','makeup','메이크업'],
+    ['kpop','k-pop','아이돌','idol','콘서트','concert'],
+    ['드라마','k-drama','kdrama','촬영지','filming'],
+    ['디저트','dessert','베이커리','bakery','빵','케이크','cake','빙수','bingsu'],
+    ['가족','family','아이','kids','children','어린이'],
+    ['커플','couple','데이트','date','romantic','로맨틱'],
+    ['가성비','budget','저렴','cheap','value','실속'],
+    ['럭셔리','luxury','고급','premium','미쉐린','michelin'],
+    ['교통','transport','지하철','subway','버스','bus','ktx','택시','taxi'],
+    ['사진','photo','인생샷','인스타','instagram','포토','snapshot'],
+    ['비건','vegan','채식','vegetarian','할랄','halal'],
+    ['온천','스파','spa','찜질방','jjimjilbang','사우나','sauna','massage','마사지','웰니스','wellness']
+  ];
+  var SYN_MAP = {};
+  SYN_GROUPS.forEach(function(g) { g.forEach(function(w) { SYN_MAP[w] = g; }); });
+  function expandSyn(tok) { return SYN_MAP[tok] || [tok]; }
+  var SEARCH_INDEX = null, SEARCH_BY_ID = {}, indexLoading = false;
+  function loadSearchIndex() {
+    if (SEARCH_INDEX || indexLoading) return;
+    indexLoading = true;
+    fetch(INDEX_PATH).then(function(r) { return r.json(); }).then(function(d) {
+      SEARCH_INDEX = d;
+      d.forEach(function(e) { SEARCH_BY_ID[e.i] = e; });
+      // 인덱스 로드 후 현재 검색어 있으면 재적용
+      if (searchQuery) applyFilters(window.__contents);
+    }).catch(function() { indexLoading = false; });
+  }
+  // 필드가중 스코어 (본문색인+동의어). rawQuery 구절이 제목/요약에 통째면 보너스.
+  function scoreEntry(entry, tokens, rawQuery) {
+    var W = { ti: 12, tg: 6, su: 4, bo: 1 }, total = 0;
+    for (var i = 0; i < tokens.length; i++) {
+      var syns = expandSyn(tokens[i]), best = 0;
+      ['ti', 'tg', 'su', 'bo'].forEach(function(f) {
+        for (var j = 0; j < syns.length; j++) {
+          if (entry[f].indexOf(syns[j]) !== -1) { if (W[f] > best) best = W[f]; break; }
+        }
+      });
+      if (best === 0) return 0;  // AND: 모든 토큰이 어딘가엔 있어야
+      total += best;
+    }
+    if (rawQuery.length > 1) {
+      if (entry.ti.indexOf(rawQuery) !== -1) total += 20;       // 제목에 구절 통째
+      else if (entry.su.indexOf(rawQuery) !== -1) total += 10;  // 요약에 구절 통째
+    }
+    return total;
+  }
 
   // URL 파라미터 동기화 (?cat=A,C&tag=&area=&q=) — 공유·SEO·뒤로가기 (2026-07-10 P2)
   function syncURL() {
@@ -114,6 +175,7 @@
         restoreActiveButtons();
         applyFilters(data);
         updateFavCount();
+        if (searchQuery) loadSearchIndex();   // ?q= 진입 시 본문 색인 로드
       })
       .catch(err => console.error('[filter.js] failed to load', DATA_PATH, err));
   }
@@ -296,34 +358,36 @@
       filtered = filtered.filter(function(item) { return favs.indexOf(String(item.id)) !== -1; });
     }
     if (searchQuery) {
-      // 멀티 키워드 분리 (공백 또는 +)
-      const tokens = searchQuery.toLowerCase().split(/[\s+]+/).filter(Boolean);
-      filtered = filtered.map(function(item) {
-        // ranking score: title 매치 = 10, tags 매치 = 5, summary 매치 = 2, slug/id = 1
-        var score = 0;
-        const titleKr = (item.title_kr || '').toLowerCase();
-        const titleEn = (item.title_en || '').toLowerCase();
-        const tagsLow = (item.tags || []).join(' ').toLowerCase();
-        const summaryKr = (item.summary_kr || '').toLowerCase();
-        const summaryEn = (item.summary_en || '').toLowerCase();
-        const slug = (item.slug || '').toLowerCase();
-        const idStr = '#' + item.id;
-        var allMatch = true;
-        tokens.forEach(function(t) {
-          var matched = false;
-          if (titleKr.indexOf(t) !== -1) { score += 10; matched = true; }
-          if (titleEn.indexOf(t) !== -1) { score += 10; matched = true; }
-          if (tagsLow.indexOf(t) !== -1) { score += 5; matched = true; }
-          if (summaryKr.indexOf(t) !== -1) { score += 2; matched = true; }
-          if (summaryEn.indexOf(t) !== -1) { score += 2; matched = true; }
-          if (slug.indexOf(t) !== -1) { score += 1; matched = true; }
-          if (idStr.indexOf(t) !== -1) { score += 1; matched = true; }
-          if (!matched) allMatch = false;
-        });
-        return { item: item, score: allMatch ? score : 0 };
-      }).filter(function(r) { return r.score > 0; })
-        .sort(function(a, b) { return b.score - a.score; })
-        .map(function(r) { return r.item; });
+      var rawQuery = searchQuery.toLowerCase().trim();
+      var tokens = rawQuery.split(/[\s+]+/).filter(Boolean);
+      var floor = tokens.length * 2;   // 관련도 하한 (순수 본문-우연매칭 배제)
+      if (SEARCH_INDEX) {
+        // 본문 색인 + 동의어 + 필드가중 (2026-07-10 강화)
+        filtered = filtered.map(function(item) {
+          var entry = SEARCH_BY_ID[item.id];
+          var sc = entry ? scoreEntry(entry, tokens, rawQuery) : 0;
+          return { item: item, score: sc };
+        }).filter(function(r) { return r.score >= floor; })
+          .sort(function(a, b) { return b.score - a.score; })
+          .map(function(r) { return r.item; });
+      } else {
+        // 인덱스 로드 전 폴백: 제목/요약/태그만 (동의어 적용)
+        filtered = filtered.map(function(item) {
+          var hay = ((item.title_kr || '') + ' ' + (item.title_en || '') + ' ' +
+            (item.title_ja || '') + ' ' + (item.title_zh || '') + ' ' + (item.tags || []).join(' ') + ' ' +
+            (item.summary_kr || '') + ' ' + (item.summary_en || '') + ' ' +
+            (item.summary_ja || '') + ' ' + (item.summary_zh || '')).toLowerCase();
+          var ok = true, score = 0;
+          tokens.forEach(function(t) {
+            var syns = expandSyn(t), m = false;
+            for (var j = 0; j < syns.length; j++) { if (hay.indexOf(syns[j]) !== -1) { m = true; break; } }
+            if (!m) ok = false; else score += 1;
+          });
+          return { item: item, score: ok ? score : 0 };
+        }).filter(function(r) { return r.score > 0; })
+          .sort(function(a, b) { return b.score - a.score; })
+          .map(function(r) { return r.item; });
+      }
     } else {
       // 검색 없을 때 정렬 옵션 적용
       const sortBy = (document.getElementById('sort-select') || {}).value;
@@ -398,8 +462,11 @@
   function bindSearch(data) {
     const input = document.getElementById('search-input');
     if (!input) return;
+    // 검색창 포커스/입력 시 본문 색인 지연로드 (첫 검색 1회)
+    input.addEventListener('focus', loadSearchIndex);
     let debounce;
     input.addEventListener('input', function () {
+      loadSearchIndex();
       clearTimeout(debounce);
       debounce = setTimeout(function () {
         searchQuery = input.value.trim();
