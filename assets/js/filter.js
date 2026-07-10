@@ -15,8 +15,30 @@
 
   const CAT_COLORS = {
     A: '#218CCC', B: '#2E8B57', C: '#D94C53', D: '#FAAD19',
-    E: '#E79397', F: '#6AB2DC', G: '#9B59B6', H: '#34495E'
+    E: '#E79397', F: '#6AB2DC', G: '#9B59B6', H: '#34495E', I: '#5C6BC0'
   };
+  // 카테고리 아이콘 (숫자 워터마크 대체, 흰 stroke 24x24) — 단순 기하 심볼(이모지 지양, 브랜드룰)
+  const CAT_ICONS = {
+    A: 'M4 21V7l5-3 5 3v14M14 21v-9l6-3v12M3 21h18M7.5 10h.5M7.5 14h.5M11 10h.5M11 14h.5',
+    B: 'M3 20l6-9 3 4 3-6 6 11z',
+    C: 'M5 11h14a7 7 0 0 1-14 0zM8 11V7M12 11V6M16 11V7M5 21h14',
+    D: 'M3 21h18M5 21V10l7-5 7 5v11M10 21v-6h4v6',
+    E: 'M12 3l1.9 5.6L19.5 10l-5.6 1.4L12 17l-1.9-5.6L4.5 10l5.6-1.4z',
+    F: 'M6 8h12l-1 12H7zM9 8V6a3 3 0 0 1 6 0v2',
+    G: 'M9 18V5l11-2v13M9 18a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM20 16a3 3 0 1 1-6 0 3 3 0 0 1 6 0z',
+    H: 'M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20zM15.5 8.5l-2 5-5 2 2-5z',
+    I: 'M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z'
+  };
+  var NOW_MS = new Date().getTime();
+  function catIconSVG(cat) {
+    return '<svg class="cat-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="' +
+      (CAT_ICONS[cat] || CAT_ICONS.H) + '"/></svg>';
+  }
+  function isNew(item) {   // 최근 30일 발행 = NEW
+    if (!item.date_published) return false;
+    var t = new Date(item.date_published).getTime();
+    return !isNaN(t) && (NOW_MS - t) < 30 * 864e5;
+  }
 
   // Favorites — localStorage backed
   function getFavorites() {
@@ -128,22 +150,25 @@
         E: lang === 'en' ? 'Beauty' : '뷰티',
         F: lang === 'en' ? 'Shopping' : '쇼핑',
         G: lang === 'en' ? 'K-Content' : 'K-콘텐츠',
-        H: lang === 'en' ? 'Practical' : '실용'
+        H: lang === 'en' ? 'Practical' : '실용',
+        I: lang === 'en' ? 'Nightlife' : '나이트'
       };
       const catLabel = catLabels[item.category] || item.category;
       const detailHref = 'content/' + item.slug + (lang === 'en' ? '.en' : '') + '.html';
       const favClass = isFavorite(item.id) ? 'fav-btn active' : 'fav-btn';
+      const newBadge = isNew(item) ? '<span class="new-badge">NEW</span>' : '';
+      const tagsHtml = item.tags.slice(0, 3).map(function(t) { return '<span>' + t + '</span>'; }).join('');
       return '<div class="card-wrap">' +
         '<button class="' + favClass + '" data-id="' + item.id + '" aria-label="favorite" title="' + (lang === 'en' ? 'Toggle favorite' : '즐겨찾기') + '">★</button>' +
         '<a href="' + detailHref + '" class="card" data-category="' + item.category + '" data-tags="' + item.tags.join(',') + '">' +
         '<div class="card-cover" style="background:linear-gradient(135deg,' + color + ' 0%,' + color + 'cc 100%);">' +
-        '<span class="cat-badge" style="background:rgba(0,0,0,0.25);">' + catLabel + '</span>' +
-        '<span class="card-num">#' + (String(item.id).match(/^\d+/) || [String(item.id)])[0] + '</span>' +
+        '<span class="cat-badge">' + catLabel + '</span>' + newBadge +
+        catIconSVG(item.category) +
         '</div>' +
         '<div class="card-body">' +
         '<h3>' + title + '</h3>' +
         '<p>' + summary + '</p>' +
-        '<div class="card-tags">' + item.tags.map(function(t) { return '<span>' + t + '</span>'; }).join('') + '</div>' +
+        '<div class="card-tags">' + tagsHtml + '</div>' +
         '</div></a></div>';
     }).join('');
 

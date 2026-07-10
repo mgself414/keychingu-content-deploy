@@ -299,8 +299,18 @@
   let activeCategory = null;
   let activeTag = null;
   let searchQuery = '';
-  const CAT_COLORS = {A:'#218CCC',B:'#2E8B57',C:'#D94C53',D:'#FAAD19',E:'#E79397',F:'#6AB2DC',G:'#9B59B6',H:'#34495E'};
-  const CAT_LABELS = {A:'Neighborhood',B:'Nature',C:'Food',D:'Culture',E:'Beauty',F:'Shopping',G:'K-Content',H:'Practical'};
+  const CAT_COLORS = {A:'#218CCC',B:'#2E8B57',C:'#D94C53',D:'#FAAD19',E:'#E79397',F:'#6AB2DC',G:'#9B59B6',H:'#34495E',I:'#5C6BC0'};
+  const CAT_LABELS = {A:'Neighborhood',B:'Nature',C:'Food',D:'Culture',E:'Beauty',F:'Shopping',G:'K-Content',H:'Practical',I:'Nightlife'};
+  const CAT_ICONS = {
+    A:'M4 21V7l5-3 5 3v14M14 21v-9l6-3v12M3 21h18M7.5 10h.5M7.5 14h.5M11 10h.5M11 14h.5',
+    B:'M3 20l6-9 3 4 3-6 6 11z', C:'M5 11h14a7 7 0 0 1-14 0zM8 11V7M12 11V6M16 11V7M5 21h14',
+    D:'M3 21h18M5 21V10l7-5 7 5v11M10 21v-6h4v6', E:'M12 3l1.9 5.6L19.5 10l-5.6 1.4L12 17l-1.9-5.6L4.5 10l5.6-1.4z',
+    F:'M6 8h12l-1 12H7zM9 8V6a3 3 0 0 1 6 0v2', G:'M9 18V5l11-2v13M9 18a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM20 16a3 3 0 1 1-6 0 3 3 0 0 1 6 0z',
+    H:'M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20zM15.5 8.5l-2 5-5 2 2-5z', I:'M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z'
+  };
+  const NOW_MS = new Date().getTime();
+  function catIconSVG(c){return '<svg class="cat-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="'+(CAT_ICONS[c]||CAT_ICONS.H)+'"/></svg>';}
+  function isNew(it){if(!it.date_published)return false;var t=new Date(it.date_published).getTime();return !isNaN(t)&&(NOW_MS-t)<30*864e5;}
 
   fetch('../data/contents.json').then(r=>r.json()).then(data=>{
     // KR-only 콘텐츠는 EN index에서 hide (broken link 방지, 2026-05-16 patch)
@@ -345,10 +355,10 @@
       const catLabel=CAT_LABELS[item.category]||item.category;
       return '<a href="../content/'+item.slug+'.ja.html" class="card" data-category="'+item.category+'" data-tags="'+item.tags.join(',')+'">' +
         '<div class="card-cover" style="background:linear-gradient(135deg,'+color+' 0%,'+color+'cc 100%);">' +
-        '<span class="cat-badge" style="background:rgba(0,0,0,0.25);">'+catLabel+'</span>' +
-        '<span class="card-num">#'+item.id+'</span></div>' +
+        '<span class="cat-badge">'+catLabel+'</span>'+(isNew(item)?'<span class="new-badge">NEW</span>':'') +
+        catIconSVG(item.category)+'</div>' +
         '<div class="card-body"><h3>'+(item.title_ja||item.title_en)+'</h3><p>'+(item.summary_ja||item.summary_en)+'</p>' +
-        '<div class="card-tags">'+item.tags.map(t=>'<span>'+t+'</span>').join('')+'</div></div></a>';
+        '<div class="card-tags">'+item.tags.slice(0,3).map(t=>'<span>'+t+'</span>').join('')+'</div></div></a>';
     }).join('');
   }
 
