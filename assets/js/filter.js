@@ -109,12 +109,25 @@
         bindSearch(data);
         bindFavToggle(data);
         bindFilterToggle();
+        decorateFilterButtons();
         populateSearchSuggestions(data);
         restoreActiveButtons();
         applyFilters(data);
         updateFavCount();
       })
       .catch(err => console.error('[filter.js] failed to load', DATA_PATH, err));
+  }
+
+  // 카테고리 필터를 아이콘 퀵메뉴로 장식 (2026-07-10 P3, 보험사 아이콘 카드형)
+  function decorateFilterButtons() {
+    document.querySelectorAll('.filter-btn[data-category]').forEach(function(btn) {
+      if (btn.querySelector('.qm-icon')) return;
+      var cat = btn.dataset.category;
+      var label = btn.textContent.trim();
+      btn.innerHTML = '<svg class="qm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="' +
+        (CAT_ICONS[cat] || CAT_ICONS.H) + '"/></svg><span>' + label + '</span>';
+      btn.setAttribute('aria-pressed', 'false');
+    });
   }
 
   // 접이식 필터 패널 토글 (태그·지역 70버튼 과밀 해소 — 기본 접힘)

@@ -310,6 +310,7 @@
   };
   const NOW_MS = new Date().getTime();
   function catIconSVG(c){return '<svg class="cat-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="'+(CAT_ICONS[c]||CAT_ICONS.H)+'"/></svg>';}
+  function decorateFilterButtons(){document.querySelectorAll('.filter-btn[data-category]').forEach(function(b){if(b.querySelector('.qm-icon'))return;var c=b.dataset.category,l=b.textContent.trim();b.innerHTML='<svg class="qm-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="'+(CAT_ICONS[c]||CAT_ICONS.H)+'"/></svg><span>'+l+'</span>';b.setAttribute('aria-pressed','false');});}
   function isNew(it){if(!it.date_published)return false;var t=new Date(it.date_published).getTime();return !isNaN(t)&&(NOW_MS-t)<30*864e5;}
 
   fetch('../data/contents.json').then(r=>r.json()).then(data=>{
@@ -317,6 +318,7 @@
     data = data.filter(item => item.jp_available !== false);
     window.__contents=data;
     renderCards(data);
+    decorateFilterButtons();
     document.querySelectorAll('.filter-btn').forEach(btn=>{
       btn.addEventListener('click',function(){
         var cat=this.dataset.category, i=activeCategories.indexOf(cat);
