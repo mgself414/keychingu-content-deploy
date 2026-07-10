@@ -1146,3 +1146,18 @@ img {
     grid-template-columns: 1fr;
   }
 }
+
+/* ── meta-card 리스트 허브 컴포넌트 (2026-07-11 통일 — 구 12변종 인라인 CSS 승격) ──
+   deep-dives*·meta-guides·regions·culture 공용. 페이지별 액센트는
+   <body style="--meta-accent:...;--meta-accent-text:..."> 로 카테고리 색만 주입. */
+.meta-section { margin: 48px auto; max-width: 1280px; padding: 0 24px; }
+.meta-section h2 { font-family: var(--serif, 'Noto Serif KR'), serif; font-size: 28px; font-weight: 900; margin-bottom: 8px; padding-bottom: 12px; border-bottom: 3px solid var(--black, #020304); }
+.meta-section .section-meta { font-size: 13px; color: var(--text-soft); margin-bottom: 24px; }
+.meta-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+.meta-card { background: var(--card-bg, #fff); border: 1px solid var(--border, #e8e8e8); border-radius: var(--radius, 12px); padding: 20px; text-decoration: none; color: var(--text, #020304); transition: all 0.2s; display: block; }
+.meta-card:hover { border-color: var(--meta-accent, var(--blue)); transform: translateY(-2px); box-shadow: var(--shadow-lg, 0 8px 20px rgba(0,0,0,0.08)); }
+.meta-card .num { font-family: 'Poppins', sans-serif; font-size: 12px; font-weight: 700; color: var(--meta-accent-text, var(--blue)); margin-bottom: 8px; display: inline-block; }
+.meta-card h3 { font-family: var(--serif, 'Noto Serif KR'), serif; font-size: 16px; font-weight: 700; margin: 0 0 6px; line-height: 1.4; }
+.meta-card p { font-size: 13px; color: var(--text-mid, #555); margin: 0; line-height: 1.5; }
+[data-theme="dark"] .meta-card { background: #1a1f26; }
+[data-theme="dark"] .meta-card:hover { box-shadow: 0 8px 20px rgba(0,0,0,0.4); }
