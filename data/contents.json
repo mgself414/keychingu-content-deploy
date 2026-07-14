@@ -31198,5 +31198,29 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
+  },
+  {
+    "id": "1239",
+    "slug": "seoul-history-eras",
+    "title_kr": "서울 600년 시간여행 — 시대별로 걷는 역사 탐험 코스",
+    "title_en": "600 Years of Seoul: A Time-Travel Walking Course Through the Eras",
+    "category": "C",
+    "tags": [
+      "foreign-tourist",
+      "history",
+      "walking-tour",
+      "joseon",
+      "hanok",
+      "palace",
+      "jeongdong",
+      "euljiro",
+      "gwanghwamun"
+    ],
+    "summary_kr": "서울 600년을 시대순으로 걷는 역사 탐험 — 조선(북촌 양반·서촌 예술가·경복궁)→개화기(정동·덕수궁 석조전=영국 하딩)→근대상업(명동·미쓰코시 1930→신세계)→산업 아날로그(을지로→힙지로)→글로벌(광화문). 도심 밀집이라 하루 워킹으로 시간여행.",
+    "summary_en": "Walk 600 years of Seoul in chronological order — Joseon (Bukchon aristocrats, Seochon artists, Gyeongbokgung), the enlightenment era (Jeong-dong, Deoksugung, Seokjojeon by British architect Harding), the modern age (Myeong-dong, Mitsukoshi 1930 to Shinsegae), industrial Euljiro turned Hipjiro, and global Gwanghwamun. All packed downtown for a one-day time-travel walk.",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]

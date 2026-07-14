@@ -1,8 +1,8 @@
 # KeyChinGu — Korea Travel Guides for Foreign Tourists
 
-> Comprehensive curated Korea travel guides for foreign MZ travelers, covering 250+ topics across 60+ cities (Seoul·Busan·Jeju·Gyeongju·Andong·Jeonju·etc), 4 languages (KR·EN·CN·JP), 8-axis content matrix (food·culture·K-content·shopping·seasonal·transport·sports·foreigner essentials), and 5 traveler segments (solo·couple·family·MZ·budget). Updated 2026-07-14.
+> Comprehensive curated Korea travel guides for foreign MZ travelers, covering 250+ topics across 60+ cities (Seoul·Busan·Jeju·Gyeongju·Andong·Jeonju·etc), 4 languages (KR·EN·CN·JP), 8-axis content matrix (food·culture·K-content·shopping·seasonal·transport·sports·foreigner essentials), and 5 traveler segments (solo·couple·family·MZ·budget). Updated 2026-07-15.
 
-> Total guides: **1104** | EN: 1085 | CN: 1085 | JP: 1085 | og:image: 250+ | sitemap URLs: 3396
+> Total guides: **1105** | EN: 1086 | CN: 1086 | JP: 1086 | og:image: 250+ | sitemap URLs: 3396
 
 
 ## A (356)
@@ -73,7 +73,7 @@
 - [Foreigner Instagram Photo Spots Matrix](https://mgself414.github.io/keychingu-content-deploy/content/instagram-spots.en.html): Foreigner Instagram Photo Spots Matrix 12-pick (extends #260·#366·#377·#381) — DDP Dongdaemun (Zaha Hadid 45,000 LED, foreigner Instagram #1 (Korean: https://mgself414.github.io/keychingu-content-deploy/content/instagram-spots.html)
   - ... and 226 more
 
-## C (145)
+## C (146)
 
 - [Hongdae Select Shops Guide](https://mgself414.github.io/keychingu-content-deploy/content/hongdae-select-shops.en.html): 20+ select shops in Hongdae & Sangsu — fashion, beauty & goods. (Korean: https://mgself414.github.io/keychingu-content-deploy/content/hongdae-select-shops.html)
 - [Korea Dessert Category Meta Guide](https://mgself414.github.io/keychingu-content-deploy/content/korea-dessert-meta.en.html): All Korean dessert categories — bingsu, tteok, cakes & traditional sweets. (Korean: https://mgself414.github.io/keychingu-content-deploy/content/korea-dessert-meta.html)
@@ -105,7 +105,7 @@
 - [Gangnam Bar Guide](https://mgself414.github.io/keychingu-content-deploy/content/gangnam-bar.en.html): Brewery + winebar + pocha + speakeasy 4-axis 8-pick — Gangnam bar cluster gap 387, 0% covered (ISSUE 03 Gangnam series #3) (Korean: https://mgself414.github.io/keychingu-content-deploy/content/gangnam-bar.html)
 - [Seoul Jongno Brunch Guide](https://mgself414.github.io/keychingu-content-deploy/content/jongno-brunch.en.html): Hanok brunch + modern + bagel + instagram 4-axis 8-pick — T6.5 demand No.1 Jongno brunch guide (Korean: https://mgself414.github.io/keychingu-content-deploy/content/jongno-brunch.html)
 - [Seoul Hongdae Brunch Guide](https://mgself414.github.io/keychingu-content-deploy/content/hongdae-brunch.en.html): Yeonnam signature + Hapjeong modern + pancake/bagel + Mangwon local 4-axis 12-pick — T6.5 cycle 11 Hongdae brunch guide (Korean: https://mgself414.github.io/keychingu-content-deploy/content/hongdae-brunch.html)
-  - ... and 115 more
+  - ... and 116 more
 
 ## H (88)
 
@@ -303,7 +303,7 @@
 
 ## Metadata
 
-- **Coverage**: 1104 curated guides as of 2026-07-14
+- **Coverage**: 1105 curated guides as of 2026-07-15
 - **Languages**: KR (full), EN (full), CN (full), JP (full)
 - **Update frequency**: Weekly
 - **Data sources**: Korea Tourism Organization (VisitKorea), Seoul Tourism Foundation (Visit Seoul), Cultural Heritage Administration, UNESCO World Heritage, Korea Open Government License (KOGL), Naver Maps, Reddit r/koreatravel + user curation
