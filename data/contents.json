@@ -31151,5 +31151,52 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
+  },
+  {
+    "id": "1237",
+    "slug": "summer-water-festivals",
+    "title_kr": "여름 물 페스티벌 완전정복 — 워터밤·S2O·흠뻑쇼 외국인 가이드",
+    "title_en": "Korea Summer Water Festivals: WATERBOMB, S2O & Soaked Show — A Foreigner's Guide",
+    "category": "I",
+    "tags": [
+      "foreign-tourist",
+      "festival",
+      "waterbomb",
+      "summer",
+      "kpop",
+      "edm",
+      "water-festival",
+      "event"
+    ],
+    "summary_kr": "여름 3대 물 페스티벌 가이드 — 워터밤(K-pop 물총 배틀)·S2O(순수 EDM)·PSY 흠뻑쇼(드레스코드 BLUE 싱어롱). 외국인 전용 티켓·여권·나이 제한·준비물·정확한 위치(KINTEX·서울랜드). 일정은 매년 변동하니 공식 확인 필수.",
+    "summary_en": "A guide to Korea's three summer water festivals — WATERBOMB (K-pop water-gun battles), S2O (pure EDM) and PSY's Soaked Show (blue sing-along). Foreigner tickets, passport and age rules, packing list and venues. Dates change yearly, so confirm officially.",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1238",
+    "slug": "seoul-romantic-views",
+    "title_kr": "낭만적인 서울 야경 데이트 — 전망대·루프탑·한강 뷰 12선",
+    "title_en": "Romantic Seoul Views: 12 Night-View Date Spots",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "night-view",
+      "romantic",
+      "date-spot",
+      "observatory",
+      "namsan",
+      "han-river",
+      "rooftop",
+      "seoul-wide"
+    ],
+    "summary_kr": "서울 야경 데이트 큐레이션 — N서울타워·서울스카이·63아트 전망대, 노들섬·낙산성곽·한강공원 무료 야경, Oriole·Griffin 루프탑, 남산 케이블카·한강 크루즈. 유료 전망대 입장료·무료 대안(6곳)·일몰 타이밍을 정직하게 안내.",
+    "summary_en": "A Seoul night-view date curation — observatories (N Seoul Tower, Seoul Sky, 63 Art), free views (Nodeul Island, Naksan city wall, Han River parks), rooftops (Oriole, Griffin) and experiences (Namsan cable car, Han River cruise). Ticket prices, six free alternatives and sunset timing.",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]
