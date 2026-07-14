@@ -31127,5 +31127,29 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
+  },
+  {
+    "id": "1236",
+    "slug": "summer-terrace-bars",
+    "title_kr": "여름밤 서울 야장 — 루프탑·테라스·내추럴 와인바 12선",
+    "title_en": "Seoul Summer Nights: 12 Rooftop, Terrace & Natural Wine Bars",
+    "category": "I",
+    "tags": [
+      "foreign-tourist",
+      "nightlife",
+      "rooftop-bar",
+      "natural-wine",
+      "terrace-dining",
+      "summer",
+      "cocktail",
+      "itaewon",
+      "seongsu"
+    ],
+    "summary_kr": "여름밤 서울 바 큐레이션 — KLOUD·Southside Parlor 루프탑, MXL·Domix 내추럴 와인바, Bangbang 해방촌 테라스, Bar Cham 한옥 전통주 칵테일. 여름 야외 타이밍(저녁 8시 이후)·예약·가격대(칵테일 ₩18,000~35,000)를 정직하게 안내.",
+    "summary_en": "A summer-night bar curation across Seoul — rooftop views (KLOUD, Southside Parlor), natural wine alleys (MXL, Domix), outdoor terraces (Bangbang) and a 100-year hanok cocktail bar (Bar Cham). Honest guidance on summer timing (after 8PM), reservations and prices.",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]
