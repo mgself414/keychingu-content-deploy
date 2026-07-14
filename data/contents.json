@@ -31104,5 +31104,28 @@
     "title_zh": "首尔夜生活攻略",
     "summary_ja": "一人旅、デート、友達と、状況別ナイトコース3種を夕方6時から夜明けまでのタイムラインで提案。深夜カフェ、ポチャ、遊び、夜景スポット、深夜交通（Nバス）、安全、支払いに関する実用情報も網羅したコースプランナー。",
     "summary_zh": "提供三种情境（独自、约会、朋友）的夜间行程规划，涵盖傍晚6点至凌晨的时间线，包含深夜咖啡馆、路边摊、娱乐活动和夜景地标，并提供深夜交通（N巴士）、安全和支付实用信息。"
+  },
+  {
+    "id": "1235",
+    "slug": "quiet-seoul",
+    "title_kr": "사람 없는 서울 — 붐빔을 피하는 한적한 명소 12선",
+    "title_en": "Quiet Places in Seoul: 12 Underrated Escapes to Skip the Crowds",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "hidden-gems",
+      "anti-crowd",
+      "quiet-places",
+      "off-the-beaten-path",
+      "palace",
+      "neighborhood",
+      "seoul-wide"
+    ],
+    "summary_kr": "오버투어리즘 회피 큐레이션 — 창경궁·부암동·선유도공원·익선동·문래·은평한옥 등 궁·언덕동네·강공원·예술골목 12선. 붐비는 명소→조용 대안 페어링(경복궁→창경궁)·왜 안 붐비는지·평일 시간대 팁.",
+    "summary_en": "An anti-crowd curation of 12 quiet Seoul spots across palaces, hillside villages, riverside parks and art alleys — Changgyeonggung, Buam-dong, Seonyudo Park, Ikseon-dong, Mullae and more. Crowd-hotspot alternatives are paired, with why each spot stays quiet and the best weekday timing.",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]
