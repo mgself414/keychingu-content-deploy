@@ -31293,5 +31293,29 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
+  },
+  {
+    "id": "1243",
+    "slug": "subway-line4",
+    "title_kr": "서울 지하철 4호선 완전정복 — 명동·남대문·동대문 쇼핑과 입국 관문",
+    "title_en": "Seoul Subway Line 4: Shopping, Markets & the Gateway to Seoul",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "subway",
+      "line-4",
+      "transit-guide",
+      "shopping",
+      "myeongdong",
+      "dongdaemun",
+      "seoul-station",
+      "series"
+    ],
+    "summary_kr": "지하철 노선별 시리즈 ③ — 4호선(쇼핑·시장·입국 관문 라인) 관광 핵심 8역(명동·회현·서울역·삼각지·이촌·동대문·동대문역사문화공원·혜화) 역별 맛집·명소·환승. 명동·남대문·동대문 쇼핑 삼대장 + 서울역 입국 관문 + 무료 박물관(전쟁기념관·국립중앙·한글). coords 최근접 매핑.",
+    "summary_en": "Subway-line series #3 — Line 4, the shopping-markets-gateway line, and its eight key stops (Myeongdong, Hoehyeon, Seoul Station, Samgakji, Ichon, Dongdaemun, DDP, Hyehwa) with per-station eats, sights and transfers. Myeongdong-Namdaemun-Dongdaemun shopping plus the Seoul Station arrival gateway and free museums, mapped by nearest-station coords.",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]
