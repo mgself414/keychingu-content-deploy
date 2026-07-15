@@ -31269,5 +31269,29 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
+  },
+  {
+    "id": "1242",
+    "slug": "subway-line3",
+    "title_kr": "서울 지하철 3호선 완전정복 — 궁·한옥·전통을 잇는 오렌지 라인",
+    "title_en": "Seoul Subway Line 3: Palaces, Hanok & Tradition on the Orange Line",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "subway",
+      "line-3",
+      "transit-guide",
+      "palace",
+      "hanok",
+      "bukchon",
+      "apgujeong",
+      "series"
+    ],
+    "summary_kr": "지하철 노선별 시리즈 ② — 3호선(궁·한옥·전통 라인) 관광 핵심 8역(경복궁·안국·종로3가·충무로·동대입구·고속터미널·압구정·신사) 역별 맛집·명소·환승. 경복궁·북촌·익선동·종묘 전통 + 강남 압구정·신사 럭셔리. coords 최근접 매핑으로 역별 검증 장소 + 기존 deep dive 연계.",
+    "summary_en": "Subway-line series #2 — Line 3, the palaces-hanok-tradition line, and its eight key tourist stops (Gyeongbokgung, Anguk, Jongno 3-ga, Chungmuro, Dongguk Univ., Express Bus Terminal, Apgujeong, Sinsa) with per-station eats, sights and transfers. Joseon tradition (Gyeongbokgung, Bukchon, Ikseon-dong, Jongmyo) meets Gangnam luxury, mapped by nearest-station coords.",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]
