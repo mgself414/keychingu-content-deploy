@@ -31317,5 +31317,74 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
+  },
+  {
+    "id": "1244",
+    "slug": "subway-line5",
+    "title_kr": "서울 지하철 5호선 완전정복 — 광화문·여의도·서울식물원, 광장과 한강의 라인",
+    "title_en": "Seoul Subway Line 5: Plazas, the Han River & Seoul Botanic Park",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "subway",
+      "line-5",
+      "transit-guide",
+      "hangang",
+      "gwanghwamun",
+      "yeouido",
+      "series"
+    ],
+    "summary_kr": "지하철 노선별 시리즈 ④ — 5호선(광장·한강·녹지 라인) 관광 핵심 8역(광화문·여의도·여의나루·마곡·김포공항·공덕·오목교·천호) 역별 맛집·명소·환승. 광화문광장·여의도 한강·서울식물원 + 김포공항 관문. coords 최근접 반자동.",
+    "summary_en": "Subway-line series #4 — Line 5, the plazas-Han River-greenery line, with eight key stops (Gwanghwamun, Yeouido, Yeouinaru, Magok, Gimpo Airport, Gongdeok, Omokgyo, Cheonho). Gwanghwamun Square, the Yeouido Han River and Seoul Botanic Park, plus the Gimpo Airport gateway, mapped by nearest-station coords.",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1245",
+    "slug": "subway-line6",
+    "title_kr": "서울 지하철 6호선 완전정복 — 이태원·망원·해방촌, 글로벌과 힙스터의 라인",
+    "title_en": "Seoul Subway Line 6: Itaewon, Mangwon & the Global-Hipster Line",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "subway",
+      "line-6",
+      "transit-guide",
+      "itaewon",
+      "mangwon",
+      "hongdae",
+      "series"
+    ],
+    "summary_kr": "지하철 노선별 시리즈 ⑤ — 6호선(글로벌·힙스터 라인) 관광 핵심 8역(이태원·녹사평·한강진·망원·상수·합정·신당·동묘앞) 역별 맛집·명소·환승. 이태원 다국적·경리단·해방촌·망리단길 힙 + 리움미술관·동묘 구제시장. coords 최근접 반자동.",
+    "summary_en": "Subway-line series #5 — Line 6, the global-hipster line, with eight key stops (Itaewon, Noksapyeong, Hangangjin, Mangwon, Sangsu, Hapjeong, Sindang, Dongmyo). Itaewon's international scene, Gyeongnidan and Haebangchon, Mangnidan-gil hipster cafes, plus the Leeum museum and Dongmyo flea market, mapped by nearest-station coords.",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1246",
+    "slug": "subway-line7",
+    "title_kr": "서울 지하철 7호선 완전정복 — 건대·청담·강남, MZ와 명품과 자연의 라인",
+    "title_en": "Seoul Subway Line 7: Konkuk, Cheongdam & the MZ-Luxury-Nature Line",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "subway",
+      "line-7",
+      "transit-guide",
+      "konkuk",
+      "cheongdam",
+      "gangnam",
+      "series"
+    ],
+    "summary_kr": "지하철 노선별 시리즈 ⑥ — 7호선(MZ·명품·자연 종단 라인) 관광 핵심 8역(건대입구·어린이대공원·청담·강남구청·학동·고속터미널·반포·도봉산) 역별 맛집·명소·환승. 건대 MZ·청담 명품·K-star·반포 한강·도봉산 등산. 2~7호선 시리즈 완주.",
+    "summary_en": "Subway-line series #6 — Line 7, the MZ-luxury-nature line, with eight key stops (Konkuk Univ., Children's Grand Park, Cheongdam, Gangnam-gu Office, Hakdong, Express Bus Terminal, Banpo, Dobongsan). Konkuk's MZ scene, Cheongdam luxury and K-star road, Banpo Han River and Dobongsan hiking. Completes the Line 2-7 series.",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]
