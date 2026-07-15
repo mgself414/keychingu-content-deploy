@@ -2,10 +2,10 @@
 
 > Comprehensive curated Korea travel guides for foreign MZ travelers, covering 250+ topics across 60+ cities (Seoul·Busan·Jeju·Gyeongju·Andong·Jeonju·etc), 4 languages (KR·EN·CN·JP), 8-axis content matrix (food·culture·K-content·shopping·seasonal·transport·sports·foreigner essentials), and 5 traveler segments (solo·couple·family·MZ·budget). Updated 2026-07-15.
 
-> Total guides: **1105** | EN: 1086 | CN: 1086 | JP: 1086 | og:image: 250+ | sitemap URLs: 3396
+> Total guides: **1106** | EN: 1087 | CN: 1087 | JP: 1087 | og:image: 250+ | sitemap URLs: 3396
 
 
-## A (356)
+## A (357)
 
 - [Gangnam Cafe Phase 2 Guide](https://mgself414.github.io/keychingu-content-deploy/content/gangnam-cafe-phase2.en.html): Gangnam Phase 2 cafes — specialty coffee, desserts & atmosphere. (Korean: https://mgself414.github.io/keychingu-content-deploy/content/gangnam-cafe-phase2.html)
 - [Seongsu Pop-Up Deep Dive](https://mgself414.github.io/keychingu-content-deploy/content/seongsu.en.html): MZ hotspot Seongsu — cafes, pop-ups & select shops (Korean: https://mgself414.github.io/keychingu-content-deploy/content/seongsu.html)
@@ -37,7 +37,7 @@
 - [Seocho Seorae Maeul Guide](https://mgself414.github.io/keychingu-content-deploy/content/seocho-seorae.en.html): Seorae Maeul (Korea's largest French community) + MAILLET (#1 French bakery in Korea) + Pyongyang naengmyeon·Korean BBQ (Gyodae·Beopjo) + ba (Korean: https://mgself414.github.io/keychingu-content-deploy/content/seocho-seorae.html)
 - [SNU Sharosu-gil Guide](https://mgself414.github.io/keychingu-content-deploy/content/snu-sharosu.en.html): SNU (Korea's #1 national university, 1946) + Sharosu-gil (1.5km MZ instagram hotspot) + Korean BBQ·meat + cafe·dessert + yajang·izakaya 4-ax (Korean: https://mgself414.github.io/keychingu-content-deploy/content/snu-sharosu.html)
 - [Magok Gimpo Airport Guide](https://mgself414.github.io/keychingu-content-deploy/content/magok-gimpo.en.html): Gimpo Airport (Korea's #1 airport, 1958) + Lotte Mall duty-free + Seoul Botanic Park (Korea's largest botanical garden, 2019) + LG Science P (Korean: https://mgself414.github.io/keychingu-content-deploy/content/magok-gimpo.html)
-  - ... and 326 more
+  - ... and 327 more
 
 ## D (256)
 
@@ -303,7 +303,7 @@
 
 ## Metadata
 
-- **Coverage**: 1105 curated guides as of 2026-07-15
+- **Coverage**: 1106 curated guides as of 2026-07-15
 - **Languages**: KR (full), EN (full), CN (full), JP (full)
 - **Update frequency**: Weekly
 - **Data sources**: Korea Tourism Organization (VisitKorea), Seoul Tourism Foundation (Visit Seoul), Cultural Heritage Administration, UNESCO World Heritage, Korea Open Government License (KOGL), Naver Maps, Reddit r/koreatravel + user curation

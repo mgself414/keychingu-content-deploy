@@ -31222,5 +31222,28 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
+  },
+  {
+    "id": "1240",
+    "slug": "seoul-indoor-family",
+    "title_kr": "비 오는 날 서울 가족 나들이 — 아이와 가기 좋은 실내 명소 12선",
+    "title_en": "Rainy-Day Seoul with Kids: 12 Best Indoor Family Spots",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "family",
+      "kids",
+      "indoor",
+      "rainy-day",
+      "aquarium",
+      "museum",
+      "children"
+    ],
+    "summary_kr": "비·더위·미세먼지 날 아이와 갈 서울 실내 명소 12선 — COEX·롯데월드 아쿠아리움, 서울상상나라·국립 어린이박물관(무료), 롯데월드·트릭아이·키즈카페, 별마당도서관·한글박물관(무료). 연령대·입장료·무료 옵션·유아차 편의를 표시한 가족 실내 큐레이션.",
+    "summary_en": "12 indoor spots for a rainy, hot, or dusty day with kids in Seoul — COEX and Lotte World aquariums, Seoul Children's Museum and free national children's museums, Lotte World, Trickeye and kids cafes, plus the free Starfield Library and Hangeul Museum. Tagged by age range, admission, free options and stroller access.",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]
