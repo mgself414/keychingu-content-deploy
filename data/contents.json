@@ -31245,5 +31245,29 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
+  },
+  {
+    "id": "1241",
+    "slug": "subway-line2",
+    "title_kr": "서울 지하철 2호선 완전정복 — 역마다 내려서 먹고 즐기는 곳",
+    "title_en": "Seoul Subway Line 2: Where to Eat & Explore at Every Stop",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "subway",
+      "line-2",
+      "transit-guide",
+      "food",
+      "hongdae",
+      "gangnam",
+      "seongsu",
+      "series"
+    ],
+    "summary_kr": "지하철 노선별 시리즈 ① — 2호선 관광 핵심 8역(홍대입구·합정·강남·삼성 코엑스·성수·건대입구·잠실·을지로입구) 역별 맛집·카페·명소·환승·출구. 축적 장소 4,642곳을 교통 축으로 재조직. 이용법이 아닌 '내려서 뭐하지' 큐레이션 + 기존 동네 deep dive 연계.",
+    "summary_en": "Subway-line series #1 — Line 2's eight key tourist stops (Hongik Univ., Hapjeong, Gangnam, Samseong/COEX, Seongsu, Konkuk Univ., Jamsil, Euljiro 1-ga) with per-station eats, cafes, sights, transfers and exits. Our 4,642-place dataset reorganized by transit — not a how-to, but a what-to-do-when-you-get-off guide.",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]
