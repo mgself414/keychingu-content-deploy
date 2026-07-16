@@ -31386,5 +31386,28 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
+  },
+  {
+    "id": "1247",
+    "slug": "subway-line9",
+    "title_kr": "서울 지하철 9호선 완전정복 — 김포공항에서 강남까지, 급행으로 잇는 골드 라인",
+    "title_en": "Seoul Subway Line 9: The Express Gold Line from Gimpo Airport to Gangnam",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "subway",
+      "line-9",
+      "transit-guide",
+      "express",
+      "gimpo-airport",
+      "noryangjin",
+      "series"
+    ],
+    "summary_kr": "지하철 노선별 시리즈 ⑦ — 9호선(급행 골드 라인) 관광 핵심 8역(김포공항·여의도·노량진·흑석·고속터미널·신논현·봉은사·석촌고분/송파나루) 역별 맛집·명소·환승. 김포공항 급행으로 여의도·강남·잠실 빠른 이동 + 노량진 수산시장·봉은사·석촌호수. 9호선 역 좌표 신규 확보.",
+    "summary_en": "Subway-line series #7 — Line 9, the express gold line, with eight key stops (Gimpo Airport, Yeouido, Noryangjin, Heukseok, Express Bus Terminal, Sinnonhyeon, Bongeunsa, Seokchon). Express trains link the airport to Yeouido, Gangnam and Jamsil fast, plus Noryangjin Fish Market, Bongeunsa temple and Seokchon Lake. Line 9 station coords newly added.",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]
