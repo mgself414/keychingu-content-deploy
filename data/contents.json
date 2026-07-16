@@ -31409,5 +31409,51 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
+  },
+  {
+    "id": "1248",
+    "slug": "gyeongui-jungang",
+    "title_kr": "서울 경의중앙선 완전정복 — 한강을 따라 달리는 강변 라인",
+    "title_en": "Seoul Gyeongui-Jungang Line: The Riverside Line Along the Han",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "subway",
+      "gyeongui-jungang",
+      "transit-guide",
+      "han-river",
+      "riverside",
+      "yongsan",
+      "series"
+    ],
+    "summary_kr": "지하철 노선별 시리즈 ⑧ — 경의중앙선(강변 라인) 관광 핵심 8역(홍대입구·공덕·용산·이촌·한남·옥수·응봉·왕십리) 역별 맛집·명소·환승. 용산~왕십리 지상 구간 차창 한강뷰 + 경의선숲길·국립중앙박물관·응봉산 야경·왕십리 곱창. 경의중앙 좌표 신규 확보(37역).",
+    "summary_en": "Subway series #8 — the Gyeongui-Jungang riverside line with eight key stops (Hongik Univ., Gongdeok, Yongsan, Ichon, Hannam, Oksu, Eungbong, Wangsimni). Han River views from the train between Yongsan and Wangsimni, plus the Gyeongui Line Forest Park, national museums, Eungbongsan night views and Wangsimni gopchang alley.",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1249",
+    "slug": "airport-railroad",
+    "title_kr": "서울 공항철도(AREX) 완전정복 — 인천공항에서 서울까지, 입국 첫날 동선 가이드",
+    "title_en": "Seoul AREX Airport Railroad: Your First-Day Arrival Route Guide",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "subway",
+      "arex",
+      "airport-railroad",
+      "arrival",
+      "incheon-airport",
+      "first-day",
+      "series"
+    ],
+    "summary_kr": "지하철 노선별 시리즈 ⑨(입국 특화) — 공항철도 직통/일반 비교 + 7역 하차 가이드(인천공항 T1/T2·김포공항·마곡나루·DMC·홍대입구·공덕·서울역) + 숙소 위치별 시나리오 3(홍대=일반·도심=직통·강남=김포공항 9호선 급행) + 유심·T-money·짐배송 입국 실무. 공항철도 좌표 신규 확보(14역).",
+    "summary_en": "Subway series #9, arrival special — AREX express vs all-stop compared, a seven-stop alighting guide (Incheon Airport T1/T2, Gimpo Airport, Magongnaru, DMC, Hongik Univ., Gongdeok, Seoul Station), three lodging scenarios (Hongdae=all-stop, downtown=express, Gangnam=Line 9 express transfer), plus SIM, T-money and luggage-delivery arrival essentials.",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]
