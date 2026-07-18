@@ -62,6 +62,9 @@
   <div class="section-label">🚇 The Subway-Line Series</div>
   <div class="meta-grid" id="subway-grid"></div>
 
+  <div class="section-label" id="hub-label" style="margin-top:48px; color:#8E44AD; display:none;">🔀 Transfer Hubs — One Station, Many Lines</div>
+  <div class="meta-grid" id="hub-grid"></div>
+
   <div class="section-label" style="margin-top:48px;">🎫 Basics — Start Here If You're New</div>
   <div class="meta-grid">
     <a href="../content/seoul-subway.en.html" class="basic-card"><span class="num">#237 · How-to</span><h3>Seoul Subway Full Guide</h3><p>Fares, T-money, apps and transfers — everything about riding the subway</p></a>
@@ -90,7 +93,16 @@
     'gyeongui-jungang':  ['#77C4A3', 'Gyeongui-Jungang'],
     'airport-railroad':  ['#0090D2', 'AREX']
   };
+  // Transfer-hub editions (slug prefix 'hub-') are orthogonal to line editions — separate section.
+  var HUB = {
+    'hub-wangsimni': 'Wangsimni · Lines 2·5·Gyeongui·Suin-Bundang',
+    'hub-gongdeok':  'Gongdeok · Lines 5·6·Gyeongui·AREX',
+    'hub-ddp':       'DDP · Lines 2·4·5'
+  };
+  var HUB_COLOR = '#8E44AD';
   var grid = document.getElementById('subway-grid');
+  var hubGrid = document.getElementById('hub-grid');
+  var hubLabel = document.getElementById('hub-label');
   var dots = document.getElementById('line-dots');
   if (!grid) return;
   fetch('../data/contents.json')
@@ -99,7 +111,10 @@
       var picks = items.filter(function(x) { return x && x.tags && x.tags.indexOf('transit-guide') >= 0; });
       if (!picks.length) return;
       picks.sort(function(a, b) { return (parseInt(a.id,10) || 0) - (parseInt(b.id,10) || 0); });
-      grid.innerHTML = picks.map(function(x) {
+      var isHub = function(x) { return x.slug && x.slug.indexOf('hub-') === 0; };
+      var lineItems = picks.filter(function(x) { return !isHub(x); });
+      var hubItems = picks.filter(isHub);
+      grid.innerHTML = lineItems.map(function(x) {
         var lc = LINE[x.slug] || ['#00A84D', ''];
         var title = x.title_en || x.title_kr || x.slug;
         var desc = x.summary_en || '';
@@ -108,8 +123,20 @@
                '<h3>' + title + '</h3>' +
                '<p>' + desc + '</p></a>';
       }).join('');
+      if (hubGrid && hubItems.length) {
+        if (hubLabel) hubLabel.style.display = '';
+        hubGrid.innerHTML = hubItems.map(function(x) {
+          var label = HUB[x.slug] || 'Transfer Hub';
+          var title = x.title_en || x.title_kr || x.slug;
+          var desc = x.summary_en || '';
+          return '<a href="../content/' + x.slug + '.en.html" class="meta-card" style="border-left:5px solid ' + HUB_COLOR + '">' +
+                 '<span class="num" style="color:' + HUB_COLOR + '">🔀 ' + label + ' · #' + (x.id || '') + '</span>' +
+                 '<h3>' + title + '</h3>' +
+                 '<p>' + desc + '</p></a>';
+        }).join('');
+      }
       if (dots) {
-        dots.innerHTML = picks.map(function(x) {
+        dots.innerHTML = lineItems.map(function(x) {
           var lc = LINE[x.slug] || ['#00A84D', x.slug];
           return '<span style="background:' + lc[0] + '">' + lc[1] + '</span>';
         }).join('');

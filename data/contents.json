@@ -31479,5 +31479,53 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
+  },
+  {
+    "id": "1251",
+    "slug": "hub-gongdeok",
+    "title_kr": "서울 공덕 환승 허브 완전정복 — 4개 노선이 만나는 마포·입국 관문",
+    "title_en": "Gongdeok Transfer Hub: Where Four Lines Meet — Seoul's Mapo Arrival Gateway",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "subway",
+      "transfer-hub",
+      "gongdeok",
+      "transit-guide",
+      "mapo",
+      "yeouido",
+      "itaewon",
+      "series"
+    ],
+    "summary_kr": "지하철 코스 시리즈(Phase 2·환승 허브) ② — 공덕 쿼드 환승(5·6·경의중앙·공항철도)에서 4방면 방사형 코스. 5호선(여의도·한강)·6호선(이태원·망원)·경의중앙(홍대·경의선숲길)·공항철도(인천공항 직결) + 공덕 먹자골목. 노선별과 직교하는 입국 관문형 허브.",
+    "summary_en": "Subway course series (Phase 2, transfer hubs) #2 — a radial route from the Gongdeok quad transfer (Lines 5, 6, Gyeongui-Jungang, Airport Railroad/AREX). Line 5 (Yeouido, Han River), Line 6 (Itaewon, Mangwon), Gyeongui-Jungang (Hongdae, Gyeongui Line Forest Park) and AREX (direct to Incheon Airport), plus Gongdeok food alley. An arrival-gateway hub orthogonal to the line-by-line series.",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1252",
+    "slug": "hub-ddp",
+    "title_kr": "서울 동대문(DDP) 환승 허브 완전정복 — 쇼핑·심야의 3개 노선 교차점",
+    "title_en": "Dongdaemun (DDP) Transfer Hub: The 3-Line Intersection of Shopping and Late Nights",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "subway",
+      "transfer-hub",
+      "dongdaemun",
+      "transit-guide",
+      "ddp",
+      "myeongdong",
+      "euljiro",
+      "series"
+    ],
+    "summary_kr": "지하철 코스 시리즈(Phase 2·환승 허브) ③ — 동대문역사문화공원 트리플 환승(2·4·5)에서 3방면 방사형 코스. 2호선(을지로 힙지로·신당 떡볶이)·4호선(명동 쇼핑·혜화 대학로)·5호선(광화문 도심·청계천) + DDP·동대문 심야 쇼핑·흥인지문. 쇼핑·심야형 허브.",
+    "summary_en": "Subway course series (Phase 2, transfer hubs) #3 — a radial route from the Dongdaemun History & Culture Park triple transfer (Lines 2, 4, 5). Line 2 (Euljiro/Hipjiro, Sindang tteokbokki), Line 4 (Myeongdong shopping, Hyehwa theater district), Line 5 (Gwanghwamun, Cheonggyecheon), plus DDP, Dongdaemun late-night shopping and Heunginjimun. A shopping and late-night hub.",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]

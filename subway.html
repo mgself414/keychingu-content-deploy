@@ -62,6 +62,9 @@
   <div class="section-label">🚇 노선별 시리즈</div>
   <div class="meta-grid" id="subway-grid"></div>
 
+  <div class="section-label" id="hub-label" style="margin-top:48px; color:#8E44AD; display:none;">🔀 환승 허브 — 한 역에서 여러 노선으로</div>
+  <div class="meta-grid" id="hub-grid"></div>
+
   <div class="section-label" style="margin-top:48px;">🎫 기초편 — 처음이라면 여기부터</div>
   <div class="meta-grid">
     <a href="content/seoul-subway.html" class="basic-card"><span class="num">#237 · 이용법</span><h3>서울 지하철 풀가이드</h3><p>요금·T-money·앱·환승 — 지하철 타는 법의 모든 것</p></a>
@@ -90,7 +93,16 @@
     'gyeongui-jungang':  ['#77C4A3', '경의중앙'],
     'airport-railroad':  ['#0090D2', '공항철도']
   };
+  // 환승 허브편(slug prefix 'hub-')은 노선별과 성격이 직교 — 별도 섹션. 라벨은 HUB 맵, 미등록 허브도 fallback 렌더
+  var HUB = {
+    'hub-wangsimni': '왕십리 · 2·5·경의중앙·수인분당',
+    'hub-gongdeok':  '공덕 · 5·6·경의중앙·공항',
+    'hub-ddp':       'DDP · 2·4·5호선'
+  };
+  var HUB_COLOR = '#8E44AD';
   var grid = document.getElementById('subway-grid');
+  var hubGrid = document.getElementById('hub-grid');
+  var hubLabel = document.getElementById('hub-label');
   var dots = document.getElementById('line-dots');
   if (!grid) return;
   fetch('data/contents.json')
@@ -99,7 +111,10 @@
       var picks = items.filter(function(x) { return x && x.tags && x.tags.indexOf('transit-guide') >= 0; });
       if (!picks.length) return;
       picks.sort(function(a, b) { return (parseInt(a.id,10) || 0) - (parseInt(b.id,10) || 0); });
-      grid.innerHTML = picks.map(function(x) {
+      var isHub = function(x) { return x.slug && x.slug.indexOf('hub-') === 0; };
+      var lineItems = picks.filter(function(x) { return !isHub(x); });
+      var hubItems = picks.filter(isHub);
+      grid.innerHTML = lineItems.map(function(x) {
         var lc = LINE[x.slug] || ['#00A84D', ''];
         var title = x.title_kr || x.title_en || x.slug;
         var desc = x.summary_kr || '';
@@ -108,8 +123,20 @@
                '<h3>' + title + '</h3>' +
                '<p>' + desc + '</p></a>';
       }).join('');
+      if (hubGrid && hubItems.length) {
+        if (hubLabel) hubLabel.style.display = '';
+        hubGrid.innerHTML = hubItems.map(function(x) {
+          var label = HUB[x.slug] || '환승 허브';
+          var title = x.title_kr || x.title_en || x.slug;
+          var desc = x.summary_kr || '';
+          return '<a href="content/' + x.slug + '.html" class="meta-card" style="border-left:5px solid ' + HUB_COLOR + '">' +
+                 '<span class="num" style="color:' + HUB_COLOR + '">🔀 ' + label + ' · #' + (x.id || '') + '</span>' +
+                 '<h3>' + title + '</h3>' +
+                 '<p>' + desc + '</p></a>';
+        }).join('');
+      }
       if (dots) {
-        dots.innerHTML = picks.map(function(x) {
+        dots.innerHTML = lineItems.map(function(x) {
           var lc = LINE[x.slug] || ['#00A84D', x.slug];
           return '<span style="background:' + lc[0] + '">' + lc[1] + '</span>';
         }).join('');
