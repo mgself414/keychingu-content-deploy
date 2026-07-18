@@ -31573,5 +31573,27 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
+  },
+  {
+    "id": "1255",
+    "slug": "theme-palaces",
+    "title_kr": "지하철로 잇는 서울 5대궁 완전정복 — 한 장의 T-money로 조선 왕조 하루 종주",
+    "title_en": "Seoul's Five Grand Palaces by Subway: A One-Day Joseon Dynasty Loop on a Single T-money",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "subway",
+      "transit-guide",
+      "theme-journey",
+      "palace",
+      "hanok",
+      "series"
+    ],
+    "summary_kr": "지하철 코스 시리즈(Phase 2·테마 여정) ① — 노선별·허브편과 직교하는 제3의 축. 5대궁(경복궁·창덕궁·창경궁·덕수궁·경희궁)을 3호선 축으로 잇는 하루 종주 동선. 궁별 지하철 접근·통합관람권·한복 무료입장·수문장 교대식 팁 + 종주 코스 3. 여러 노선을 넘나드는 테마 여정.",
+    "summary_en": "Subway course series (Phase 2, theme journeys) #1 — a third axis orthogonal to the line-by-line and hub editions. A one-day loop connecting the Five Grand Palaces (Gyeongbokgung, Changdeokgung, Changgyeonggung, Deoksugung, Gyeonghuigung) along the Line 3 spine. Per-palace subway access, the integrated palace pass, free hanbok entry and the changing-of-the-guard, plus three loop courses. A theme journey woven across multiple lines.",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]

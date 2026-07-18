@@ -65,6 +65,9 @@
   <div class="section-label" id="hub-label" style="margin-top:48px; color:#8E44AD; display:none;">🔀 Transfer Hubs — One Station, Many Lines</div>
   <div class="meta-grid" id="hub-grid"></div>
 
+  <div class="section-label" id="theme-label" style="margin-top:48px; color:#B7791F; display:none;">🗺️ Theme Journeys — Themed Routes Across Multiple Lines</div>
+  <div class="meta-grid" id="theme-grid"></div>
+
   <div class="section-label" style="margin-top:48px;">🎫 Basics — Start Here If You're New</div>
   <div class="meta-grid">
     <a href="../content/seoul-subway.en.html" class="basic-card"><span class="num">#237 · How-to</span><h3>Seoul Subway Full Guide</h3><p>Fares, T-money, apps and transfers — everything about riding the subway</p></a>
@@ -102,9 +105,16 @@
     'hub-jongno3ga': 'Jongno 3-ga · Lines 1·3·5'
   };
   var HUB_COLOR = '#8E44AD';
+  // Theme-journey editions (slug prefix 'theme-') weave a theme across multiple lines — separate section
+  var THEME = {
+    'theme-palaces': 'Five Grand Palaces'
+  };
+  var THEME_COLOR = '#B7791F';
   var grid = document.getElementById('subway-grid');
   var hubGrid = document.getElementById('hub-grid');
   var hubLabel = document.getElementById('hub-label');
+  var themeGrid = document.getElementById('theme-grid');
+  var themeLabel = document.getElementById('theme-label');
   var dots = document.getElementById('line-dots');
   if (!grid) return;
   fetch('../data/contents.json')
@@ -114,8 +124,10 @@
       if (!picks.length) return;
       picks.sort(function(a, b) { return (parseInt(a.id,10) || 0) - (parseInt(b.id,10) || 0); });
       var isHub = function(x) { return x.slug && x.slug.indexOf('hub-') === 0; };
-      var lineItems = picks.filter(function(x) { return !isHub(x); });
+      var isTheme = function(x) { return x.slug && x.slug.indexOf('theme-') === 0; };
+      var lineItems = picks.filter(function(x) { return !isHub(x) && !isTheme(x); });
       var hubItems = picks.filter(isHub);
+      var themeItems = picks.filter(isTheme);
       grid.innerHTML = lineItems.map(function(x) {
         var lc = LINE[x.slug] || ['#00A84D', ''];
         var title = x.title_en || x.title_kr || x.slug;
@@ -133,6 +145,18 @@
           var desc = x.summary_en || '';
           return '<a href="../content/' + x.slug + '.en.html" class="meta-card" style="border-left:5px solid ' + HUB_COLOR + '">' +
                  '<span class="num" style="color:' + HUB_COLOR + '">🔀 ' + label + ' · #' + (x.id || '') + '</span>' +
+                 '<h3>' + title + '</h3>' +
+                 '<p>' + desc + '</p></a>';
+        }).join('');
+      }
+      if (themeGrid && themeItems.length) {
+        if (themeLabel) themeLabel.style.display = '';
+        themeGrid.innerHTML = themeItems.map(function(x) {
+          var label = THEME[x.slug] || 'Theme Journey';
+          var title = x.title_en || x.title_kr || x.slug;
+          var desc = x.summary_en || '';
+          return '<a href="../content/' + x.slug + '.en.html" class="meta-card" style="border-left:5px solid ' + THEME_COLOR + '">' +
+                 '<span class="num" style="color:' + THEME_COLOR + '">🗺️ ' + label + ' · #' + (x.id || '') + '</span>' +
                  '<h3>' + title + '</h3>' +
                  '<p>' + desc + '</p></a>';
         }).join('');
