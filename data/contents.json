@@ -31456,5 +31456,28 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
+  },
+  {
+    "id": "1250",
+    "slug": "hub-wangsimni",
+    "title_kr": "서울 왕십리 환승 허브 완전정복 — 4개 노선이 만나는 여행 거점",
+    "title_en": "Wangsimni Transfer Hub: Where Four Lines Meet — A Radial Seoul Journey",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "subway",
+      "transfer-hub",
+      "wangsimni",
+      "transit-guide",
+      "seongsu",
+      "seoul-forest",
+      "series"
+    ],
+    "summary_kr": "지하철 코스 시리즈(Phase 2·환승 허브) ① — 왕십리 쿼드 환승(2·5·경의중앙·수인분당)에서 4방면 방사형 코스. 2호선(성수·건대·서울숲)·5호선(마장동 축산시장)·경의중앙(응봉산·박물관·한강)·수인분당(서울숲·압구정) + 왕십리 곱창·민자역사. 노선별과 직교하는 새 축.",
+    "summary_en": "Subway course series (Phase 2, transfer hubs) #1 — a radial route from the Wangsimni quad transfer (Lines 2, 5, Gyeongui-Jungang, Suin-Bundang). Line 2 (Seongsu, Konkuk, Seoul Forest), Line 5 (Majang livestock market), Gyeongui-Jungang (Eungbongsan, museums, Han River) and Suin-Bundang (Seoul Forest, Apgujeong), plus Wangsimni gopchang alley. A new axis orthogonal to the line-by-line series.",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]
