@@ -31595,5 +31595,115 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
+  },
+  {
+    "id": "1256",
+    "slug": "theme-hangang",
+    "title_kr": "지하철로 잇는 서울 한강 라인 완전정복 — 5개 한강공원을 한 장의 T-money로",
+    "title_en": "Seoul's Hangang Line by Subway: Five River Parks on a Single T-money",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "subway",
+      "transit-guide",
+      "theme-journey",
+      "hangang",
+      "picnic",
+      "series"
+    ],
+    "summary_kr": "지하철 코스 시리즈(Phase 2·테마 여정) ② — 한강공원 5곳(여의도·반포·뚝섬·망원·잠실)을 6개 노선 지하철 동선으로 잇는 하루 종주. 공원별 접근역·한강라면·피크닉·달빛무지개분수·노을 타이밍 + 종주 코스 3. 여러 노선을 넘나드는 테마 여정.",
+    "summary_en": "Subway course series (Phase 2, theme journeys) #2 — a one-day loop connecting five Hangang parks (Yeouido, Banpo, Ttukseom, Mangwon, Jamsil) across six subway lines. Per-park access stations, Hangang ramyeon, picnics, the Moonlight Rainbow Fountain and sunset timing, plus three loop courses.",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1257",
+    "slug": "theme-markets",
+    "title_kr": "지하철로 잇는 서울 전통시장 완전정복 — 먹거리 시장 6곳을 한 장의 T-money로",
+    "title_en": "Seoul's Traditional Markets by Subway: Six Food Markets on a Single T-money",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "subway",
+      "transit-guide",
+      "theme-journey",
+      "market",
+      "street-food",
+      "series"
+    ],
+    "summary_kr": "지하철 코스 시리즈(Phase 2·테마 여정) ③ — 전통시장 6곳(광장·남대문·통인·망원·신당 서울중앙·노량진수산)을 6개 노선 지하철 동선으로 잇는 먹거리 종주. 시장별 시그니처(빈대떡·갈치조림·엽전도시락·고로케·떡볶이·회)·현금 팁·휴무 주의 + 종주 코스 3.",
+    "summary_en": "Subway course series (Phase 2, theme journeys) #3 — a food crawl connecting six traditional markets (Gwangjang, Namdaemun, Tongin, Mangwon, Sindang Seoul Central, Noryangjin Fisheries) across six subway lines. Per-market signatures (bindaetteok, braised cutlassfish, yeopjeon lunchbox, croquettes, tteokbokki, raw fish), cash tips and closure-day cautions, plus three crawl courses.",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1258",
+    "slug": "theme-museums",
+    "title_kr": "지하철로 잇는 서울 미술관·박물관 라인 완전정복 — 아트 스팟 6곳을 한 장의 T-money로",
+    "title_en": "Seoul's Museum Line by Subway: Six Art Spots on a Single T-money",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "subway",
+      "transit-guide",
+      "theme-journey",
+      "museum",
+      "art",
+      "series"
+    ],
+    "summary_kr": "지하철 코스 시리즈(Phase 2·테마 여정) ④ — 미술관·박물관 6곳(리움·국립현대 서울관·국립중앙박물관·서울시립·아모레퍼시픽·DDP)을 7개 노선 지하철 동선으로 잇는 아트 투어. 무료관·월요일 휴관·예약제 팁 + 권역별 종주 코스 3.",
+    "summary_en": "Subway course series (Phase 2, theme journeys) #4 — an art tour connecting six museums (Leeum, MMCA Seoul, the National Museum of Korea, SeMA, APMA, DDP) across seven subway lines. Free-admission picks, Monday-closure and reservation tips, plus three district-based courses.",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1259",
+    "slug": "theme-nightviews",
+    "title_kr": "지하철로 잇는 서울 야경 스팟 완전정복 — 밤 뷰 6곳을 막차 전에 도는 동선",
+    "title_en": "Seoul Night Views by Subway: Six Evening Spots Before the Last Train",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "subway",
+      "transit-guide",
+      "theme-journey",
+      "night-view",
+      "sunset",
+      "series"
+    ],
+    "summary_kr": "지하철 코스 시리즈(Phase 2·테마 여정) ⑤ — 야경 스팟 6곳(N서울타워·서울스카이·낙산·응봉산·여의도·반포분수)을 일몰 역산·막차 역산으로 도는 실무 동선편. #1238 낭만뷰(큐레이션)의 짝 콘텐츠 — 하루 2스팟 전략·무료 스팟 4곳 + 종주 코스 3.",
+    "summary_en": "Subway course series (Phase 2, theme journeys) #5 — a practical night-route companion covering six view spots (N Seoul Tower, Seoul Sky, Naksan, Eungbongsan, Yeouido, the Banpo fountain), planned backwards from sunset and the last train. Pairs with the romantic-views curation: a two-spots-per-night strategy, four free spots and three loop courses.",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1260",
+    "slug": "theme-kpop",
+    "title_kr": "지하철로 잇는 서울 K-pop 성지 완전정복 — 팬 순례 6곳을 한 장의 T-money로",
+    "title_en": "Seoul K-pop Pilgrimage by Subway: Six Fan Spots on a Single T-money",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "subway",
+      "transit-guide",
+      "theme-journey",
+      "kpop",
+      "goods",
+      "series"
+    ],
+    "summary_kr": "지하철 코스 시리즈(Phase 2·테마 여정) ⑥ — K-pop 성지 6곳(HYBE 방면·서울숲 SM권·K-star Road·홍대·명동·고터 지하상가)을 강북/강남 권역으로 나눠 잇는 팬 순례 동선. 팝업 확인·사옥 매너·포토카드 시세 팁 + 순례 코스 3. #207 코스 본편의 지하철 실무편.",
+    "summary_en": "Subway course series (Phase 2, theme journeys) #6 — a fan pilgrimage route linking six K-pop spots (the HYBE area, Seoul Forest SM district, K-star Road, Hongdae, Myeongdong, the Express Terminal underground mall) split into north and south circuits. Pop-up checking, company-building etiquette and photocard price tips, plus three pilgrimage courses.",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]
