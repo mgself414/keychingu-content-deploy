@@ -31749,5 +31749,28 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
+  },
+  {
+    "id": "1263",
+    "slug": "theme-valleys",
+    "title_kr": "지하철로 가는 서울 도심 계곡 완전정복 — 한여름 오아시스 6곳을 뚜벅이로",
+    "title_en": "Seoul's City Valleys by Subway: Six Midsummer Oases Without a Car",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "subway",
+      "transit-guide",
+      "theme-journey",
+      "valley",
+      "summer",
+      "nature",
+      "series"
+    ],
+    "summary_kr": "지하철 코스 시리즈(Phase 2·테마 여정) ⑦ 여름 시즌편 — 도심 계곡·물가 6곳(수성동·백사실·우이동·도봉산·용마폭포·관악산)을 5개 노선 뚜벅이로 잇는 반나절 피서. 물놀이 규칙(수영 금지·탁족·평상 문화·호우 대피)과 가족 물놀이(용마폭포) + 코스 3. #782 전국 계곡 총람의 서울 도심 짝편.",
+    "summary_en": "Subway course series (Phase 2, theme journeys) #7, the summer edition — a half-day cool-down linking six city valleys and waterfalls (Suseongdong, Baeksasil, Ui-dong, Dobongsan, Yongma Falls, Gwanaksan) across five subway lines, no car needed. Covers valley etiquette (no-swim rules, foot-dipping, pyeongsang platform dining, heavy-rain safety) and the one family splash zone, plus three courses. Pairs with the nationwide valley roundup.",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]
