@@ -31705,5 +31705,49 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
+  },
+  {
+    "id": "1261",
+    "slug": "convenience-big4",
+    "title_kr": "한국 편의점 4사 완전 비교 — CU·GS25·세븐일레븐·이마트24, 어느 문으로 들어갈까",
+    "title_en": "Korea's Big 4 Convenience Stores Compared: CU vs GS25 vs 7-Eleven vs emart24",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "convenience-store",
+      "shopping",
+      "brand-compare",
+      "cu",
+      "gs25",
+      "series"
+    ],
+    "summary_kr": "편의점 클러스터 확장 — 4사 프로필(트렌드 디저트의 CU·콜라보 강자 GS25·글로벌 친숙 세븐일레븐·가성비 이마트24) × 강점 카테고리·PB 라인·앱·1+1 행사 문화 + 상황별 선택 가이드 3. #832 PB 김치 비교의 전 카테고리 확장, 짝 콘텐츠 #1262(무엇을 사나)와 세트.",
+    "summary_en": "An expansion of the convenience-store cluster — profiles of the Big 4 (CU for trendy desserts, GS25 for collabs, 7-Eleven for global familiarity, emart24 for value) across signature categories, private-brand lines, apps and the 1+1 promotion culture, plus three pick-by-situation guides. Pairs with the what-to-buy edition.",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1262",
+    "slug": "convenience-food-master",
+    "title_kr": "한국 편의점 음식 총정리 — 과자·음료·라면·디저트, 카테고리별 뭘 살까",
+    "title_en": "The Master Guide to Korean Convenience Store Food: Snacks, Drinks, Ramyeon and Desserts by Category",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "convenience-store",
+      "snack",
+      "drink",
+      "food-guide",
+      "trend",
+      "series"
+    ],
+    "summary_kr": "편의점 먹거리 9개 카테고리 총정리(김밥/도시락·라면·과자·디저트·아이스크림·유제품·커피/차·탄산/조합·핫푸드) — 클래식 아이콘(바나나우유·메로나·허니버터칩)과 2026 트렌드 계열(두바이 초콜릿 파생·하이퍼리얼 디저트·콜라보 칩·조합 음료)을 한 지도로. #26 입문 18선의 확장판, 짝 콘텐츠 #1261(어느 브랜드)과 세트.",
+    "summary_en": "A nine-category master map of Korean convenience-store food (gimbap and dosirak, ramyeon, snacks, desserts, ice cream, dairy, coffee and tea, sodas and mix drinks, hot food) — classic icons like banana milk, Melona and Honey Butter Chips alongside 2026 trend families such as Dubai-chocolate spin-offs, hyper-realism desserts, collab chips and DIY mix drinks. Pairs with the which-brand edition.",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]
