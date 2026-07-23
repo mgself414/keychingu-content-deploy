@@ -31772,5 +31772,74 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
+  },
+  {
+    "id": "1264",
+    "slug": "korea-burger-chains",
+    "title_kr": "한국 햄버거 체인 풀가이드 — 맘스터치·롯데리아·노브랜드버거, 어느 버거가 진짜 K-버거일까",
+    "title_en": "Korean Burger Chains: The Complete Guide to Mom's Touch, Lotteria & More",
+    "category": "F",
+    "tags": [
+      "foreign-tourist",
+      "food",
+      "burger",
+      "franchise",
+      "brand-compare",
+      "moms-touch",
+      "lotteria",
+      "series"
+    ],
+    "summary_kr": "ISSUE 02 체인 시리즈 햄버거 편 — 4사 프로필(매장수 1위 맘스터치·K-버거 원조 롯데리아·가성비 노브랜드버거·신흥 프랭크버거) + 글로벌 체인 한국 한정 메뉴 × 키오스크 실전·세트 문화 + 상황별 선택 3 + FAQ 6. 체인 시리즈(#61 카페·#65 치킨·#66 떡볶이·#71 베이커리) 완결편.",
+    "summary_en": "The burger chapter of the Korean chain series — Mom's Touch (No.1 by store count), Lotteria's original K-burgers, No Brand Burger's value play, plus Korea-only menus at global chains, with kiosk tips, set-menu culture, and FAQs.",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1265",
+    "slug": "korea-icecream-chains",
+    "title_kr": "한국 아이스크림 체인 풀가이드 — 배스킨라빈스가 다른 나라가 되는 곳",
+    "title_en": "Korean Ice Cream Chains: Why Baskin Robbins Korea Is a Different World",
+    "category": "F",
+    "tags": [
+      "foreign-tourist",
+      "food",
+      "dessert",
+      "ice-cream",
+      "franchise",
+      "brand-compare",
+      "baskin-robbins",
+      "series"
+    ],
+    "summary_kr": "ISSUE 02 체인 시리즈 아이스크림 편 — 브랜드 축 4사(한국 한정 플레이버의 배스킨라빈스·벌집꿀 소프트리·우유 본연 백미당·어른 맛 나뚜루) + 편의점 채널 × 사이즈·시식·드라이아이스 팁 + 상황별 선택 3 + FAQ 6. 빙수·설빙은 #510 담당(브랜드 축 분리).",
+    "summary_en": "The ice cream chapter of the Korean chain series — Baskin Robbins' Korea-only flavors, Softree's honeycomb soft serve, Baekmidang's pure-milk cones, and Natuur's Korean-flavor scoops, plus convenience-store channels, sizing tips, and FAQs.",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1266",
+    "slug": "korea-bubbletea-drink-chains",
+    "title_kr": "한국 버블티·음료 체인 풀가이드 — 커피 말고 마실 것",
+    "title_en": "Bubble Tea & Drink Chains in Korea: What to Sip Besides Coffee",
+    "category": "F",
+    "tags": [
+      "foreign-tourist",
+      "food",
+      "drink",
+      "bubble-tea",
+      "franchise",
+      "brand-compare",
+      "gong-cha",
+      "series"
+    ],
+    "summary_kr": "ISSUE 02 체인 시리즈 논커피 음료 편 — 5사 프로필(역수출 스토리 공차·가성비 아마스빈·티 품질 팔공티·저가 생과일 쥬씨·건강 축 스무디킹) × 당도·얼음 커스텀 주문법 + 상황별 선택 3 + FAQ 6. #61 카페(커피 축)와 역할 분리.",
+    "summary_en": "The non-coffee drink chapter of the Korean chain series — Gong Cha's reverse-export story, Amasvin's value bubble tea, Palgong Tea's milk tea, Juicy's budget fresh juice, and Smoothie King, with sugar/ice customization tips and FAQs.",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]
