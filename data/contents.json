@@ -31841,5 +31841,48 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
+  },
+  {
+    "id": "1268",
+    "slug": "korea-snack-brands",
+    "title_kr": "한국 과자 브랜드 열전 — 농심·오리온·롯데·해태·크라운, 브랜드로 읽는 K-스낵",
+    "title_en": "Korean Snack Brands 101: Nongshim, Orion, Lotte, Haitai and Crown — Reading K-Snacks by Maker",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "snack",
+      "brand-compare",
+      "convenience-store",
+      "souvenir",
+      "food-guide",
+      "series"
+    ],
+    "summary_kr": "편의점·마트 과자 매대를 과점한 5대 제과 브랜드(농심·오리온·롯데웰푸드·해태·크라운)를 브랜드 축으로 읽는 큐레이션 — 브랜드별 시그니처 3종×5=15선과 뜬 이유(새우깡 원조 서사·초코파이 情·꼬북칩 역주행·빼빼로데이·허니버터칩 신드롬), 2026 트렌드(두바이 초콜릿 파생·콜라보칩)와 실구매 동선(마트·다이소·편의점 가격 비교)까지. 편의점 클러스터(#26·#1261·#1262)의 채널 축과 짝을 이루는 제조사 축 편.",
+    "summary_en": "A brand-first curation of the five confectionery giants that dominate Korean snack shelves — Nongshim, Orion, Lotte Wellfood, Haitai and Crown — with 15 signature snacks and the stories behind them: Saeukkang the original, Choco Pie's jeong marketing, Turtle Chips' overseas comeback, Pepero Day and the Honey Butter Chip craze, plus 2026 trends and where to buy cheapest.",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1269",
+    "slug": "cvs-drinks-map",
+    "title_kr": "한국 편의점 음료 완전 지도 — 바나나우유부터 숙취해소까지 9카테고리",
+    "title_en": "The Complete Map of Korean Convenience Store Drinks: From Banana Milk to Hangover Cures",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "convenience-store",
+      "drink",
+      "food-guide",
+      "trend",
+      "series"
+    ],
+    "summary_kr": "편의점 음료 냉장고 한 벽면을 9카테고리 18선으로 단독 심화 — 유제품(바나나맛우유)·커피·차(옥수수수염차)·탄산(칠성사이다·밀키스·맥콜)·이온·에너지(박카스)·숙취해소(컨디션·상쾌환)·제로/헬스·아이스컵 믹솔로지·겨울 온장고까지. #1262 음식 총정리가 3칸으로 스친 음료를 정면으로 다루는 짝 편 — 숙취해소·아이스컵·온장고가 외국인 미지 3대 훅.",
+    "summary_en": "A dedicated nine-category deep dive into the Korean convenience store drink wall — banana milk, canned coffee, corn-silk tea, Chilsung Cider, Milkis and McCol, isotonic drinks, Bacchus, hangover cures like Condition and Sang Kwae Hwan, the zero-sugar wave, DIY ice-cup mixology and the winter hot-drink warmer cabinet.",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]
