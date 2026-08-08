@@ -29121,6 +29121,35 @@
     "instagram_posted": false
   },
   {
+    "id": "1267",
+    "slug": "seoul-architecture-eras",
+    "title_kr": "서울 건축 시대 산책 — 전통·근대·현대 15선 + 건축 감상 렌즈",
+    "title_en": "Seoul Architecture Time Walk — Traditional, Modern & Contemporary: 15 Picks + An Architectural Appreciation Lens",
+    "category": "D",
+    "tags": [
+      "foreigner",
+      "heritage",
+      "hanok",
+      "palace",
+      "ddp",
+      "gyeongbokgung",
+      "modern",
+      "deep-dive",
+      "seoul"
+    ],
+    "summary_kr": "경복궁 목조 가구식 → 명동성당·문화역서울284 근대 벽돌·석조 → DDP·롯데월드타워 현대 마천루 — 서울 건축 600년을 시대순으로 읽는 deep dive. 궁궐 답사(#207)·박물관(#206)·DDP 야간(#172)이 아닌 \"건축 그 자체\"를 보는 최초의 시대 렌즈.",
+    "summary_en": "From Gyeongbokgung's wooden post-and-beam construction to the modern brick and stone of Myeongdong Cathedral and Culture Station Seoul 284, then the contemporary skyscrapers of DDP and Lotte World Tower — a deep dive that reads 600 years of Seoul architecture in chronological order. Not another palace tour, museum guide or DDP night guide: the first time lens that looks at architecture itself.",
+    "en_available": true,
+    "instagram_posted": false,
+    "cn_available": true,
+    "jp_available": true,
+    "date_published": "2026-07-23",
+    "title_ja": "ソウル建築時代散策 — 伝統・近代・現代15選 + 建築鑑賞レンズ",
+    "title_zh": "首尔建筑时代漫步 — 传统·近代·现代15选 + 建筑鉴赏视角",
+    "summary_ja": "景福宮の木造軸組 → 明洞聖堂・文化駅ソウル284の近代煉瓦・石造 → DDP・ロッテワールドタワーの現代摩天楼 — ソウル建築600年を時代順に読み解くdeep dive。宮殿探訪・博物館・DDPナイトではない、「建築そのもの」を見る初めての時代レンズ。",
+    "summary_zh": "景福宫木造架构式 → 明洞圣堂·文化站首尔284近代砖石建筑 → DDP东大门设计广场·乐天世界大厦现代摩天大楼 — 按时代顺序解读首尔建筑600年的深度指南。不同于宫殿古迹漫步·博物馆·DDP夜景，而是首次聚焦\"建筑本身\"的时代视角。"
+  },
+  {
     "id": "1268",
     "slug": "korea-snack-brands",
     "title_kr": "한국 과자 브랜드 열전 — 농심·오리온·롯데·해태·크라운, 브랜드로 읽는 K-스낵",
