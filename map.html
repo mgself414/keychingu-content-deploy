@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>서울 전체 지도 — KeyChinGu</title>
+  <meta name="description" content="키친구가 수집·검증한 서울 전역 맛집·카페·바·샵·명소를 한 지도에서 — 핀을 누르면 Google Maps 길찾기.">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="서울 전체 지도 — KeyChinGu">
+  <meta property="og:description" content="키친구가 수집·검증한 서울 전역 스팟을 한 지도에서 — 핀을 누르면 Google Maps 길찾기.">
+  <meta property="og:url" content="https://mgself414.github.io/keychingu-content-deploy/map.html">
+  <meta property="og:image" content="https://mgself414.github.io/keychingu-content-deploy/assets/logo/logo_2-4_color_small.png">
+  <meta property="og:locale" content="ko_KR">
+  <link rel="canonical" href="https://mgself414.github.io/keychingu-content-deploy/map.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/vendor/leaflet/leaflet.css">
+  <link rel="stylesheet" href="assets/vendor/leaflet/markercluster.css">
+  <link rel="stylesheet" href="assets/vendor/leaflet/markercluster.default.css">
+  <style>
+    #global-map { height: calc(100vh - 220px); min-height: 480px; border-radius: 12px; overflow: hidden; }
+    .map-toolbar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 12px 0; }
+    .map-cat-toggle { font-size: 12px; font-weight: 600; padding: 5px 12px; border-radius: 999px;
+      border: 1.5px solid currentColor; background: transparent; cursor: pointer; opacity: 1; }
+    .map-cat-toggle.off { opacity: 0.35; }
+    .map-count { font-size: 12px; color: #888; margin-left: auto; }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <a href="index.html"><img src="assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <nav class="site-nav">
+    <a href="index.html">홈</a>
+    <a href="about.html">About</a>
+    <a href="faq.html">FAQ</a>
+  </nav>
+  <div class="lang-switch">
+    <a href="map.html" class="active">KR</a>
+    <a href="en/map.html">EN</a>
+    <a href="ja/map.html">JP</a>
+    <a href="zh/map.html">CN</a>
+  </div>
+</header>
+
+<main class="content-page">
+  <h1 style="margin:16px 0 4px;">🗺️ 서울 전체 지도</h1>
+  <p style="color:#777;font-size:14px;margin:0 0 4px;">키친구가 수집·검증한 스팟 전체 — 핀을 누르면 Google Maps 길찾기 링크. 동네별 상세는 각 <a href="index.html#areas">동네 가이드</a>에서.</p>
+
+  <div class="map-toolbar" id="map-toolbar">
+    <button class="map-cat-toggle" data-cat="restaurant" style="color:#D94C53">● 맛집</button>
+    <button class="map-cat-toggle" data-cat="cafe" style="color:#C98A2D">● 카페</button>
+    <button class="map-cat-toggle" data-cat="bar" style="color:#7B5CB8">● 바·술집</button>
+    <button class="map-cat-toggle" data-cat="shop" style="color:#2D8A6E">● 샵</button>
+    <button class="map-cat-toggle" data-cat="attraction" style="color:#3A7BD5">● 명소</button>
+    <button class="map-cat-toggle" data-cat="etc" style="color:#8A8A8A">● 기타</button>
+    <span class="map-count" id="map-count"></span>
+  </div>
+
+  <div id="global-map"></div>
+</main>
+
+<footer class="site-footer">
+  <nav class="footer-nav">
+    <a href="about.html">About</a>
+    <a href="faq.html">FAQ</a>
+    <a href="https://instagram.com/keychingu.korea" target="_blank">Instagram</a>
+    <a href="llms.txt">llms.txt</a>
+  </nav>
+  <p><a href="https://instagram.com/keychingu.korea" target="_blank">@keychingu.korea</a> &mdash; Seoul for MZ FIT Travelers</p>
+</footer>
+
+<button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme" title="Toggle dark mode">🌙</button>
+<script>
+(function() {
+  const root = document.documentElement;
+  const btn = document.getElementById('theme-toggle');
+  const saved = localStorage.getItem('kc_theme');
+  if (saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    root.setAttribute('data-theme', 'dark'); btn.textContent = '☀';
+  }
+  btn.addEventListener('click', function() {
+    const isDark = root.getAttribute('data-theme') === 'dark';
+    if (isDark) { root.removeAttribute('data-theme'); btn.textContent = '🌙'; localStorage.setItem('kc_theme', 'light'); }
+    else { root.setAttribute('data-theme', 'dark'); btn.textContent = '☀'; localStorage.setItem('kc_theme', 'dark'); }
+  });
+})();
+</script>
+
+<script src="assets/vendor/leaflet/leaflet.js"></script>
+<script src="assets/vendor/leaflet/markercluster.js"></script>
+<script>
+(function() {
+  var el = document.getElementById('global-map');
+  if (!el || typeof L === 'undefined') return;
+  var COLORS = {restaurant:'#D94C53',cafe:'#C98A2D',bar:'#7B5CB8',shop:'#2D8A6E',attraction:'#3A7BD5',etc:'#8A8A8A'};
+  var map = L.map('global-map').setView([37.5665, 126.9780], 12);
+  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19, attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+  }).addTo(map);
+
+  var groups = {};   // cat → markerClusterGroup
+  var counts = {};
+  Object.keys(COLORS).forEach(function(cat) {
+    groups[cat] = L.markerClusterGroup({ maxClusterRadius: 46, disableClusteringAtZoom: 17 });
+    counts[cat] = 0;
+  });
+
+  fetch('data/places/_all.json').then(function(r){ return r.json(); }).then(function(pts) {
+    pts.forEach(function(p) {
+      var cat = COLORS[p.t] ? p.t : 'etc';
+      var gmap = 'https://www.google.com/maps?q=' + p.c[0] + ',' + p.c[1];
+      var html = '<strong>' + p.n + '</strong>'
+        + (p.a ? '<br><span style="font-size:11px;color:#777">' + p.a + '</span>' : '')
+        + '<br><a href="' + gmap + '" target="_blank" rel="noopener">Google Maps ↗</a>'
+        + (p.u ? ' · <a href="' + p.u + '" target="_blank" rel="noopener">Naver ↗</a>' : '');
+      var m = L.circleMarker(p.c, {radius: 6, color: COLORS[cat], weight: 1.5, fillOpacity: 0.75});
+      m.bindPopup(html);
+      groups[cat].addLayer(m);
+      counts[cat]++;
+    });
+    Object.keys(groups).forEach(function(cat) { map.addLayer(groups[cat]); });
+    document.getElementById('map-count').textContent = pts.length.toLocaleString() + '곳';
+
+    document.querySelectorAll('.map-cat-toggle').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var cat = btn.dataset.cat;
+        if (btn.classList.toggle('off')) map.removeLayer(groups[cat]);
+        else map.addLayer(groups[cat]);
+      });
+    });
+  }).catch(function() { el.innerHTML = '<p style="padding:24px">지도 데이터를 불러오지 못했습니다.</p>'; });
+})();
+</script>
+
+</body>
+</html>
