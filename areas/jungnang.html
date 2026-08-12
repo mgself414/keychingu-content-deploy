@@ -19,6 +19,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/vendor/leaflet/leaflet.css">
 </head>
 <body>
 
@@ -69,6 +70,20 @@
     </div>
   </section>
 
+
+  <section class="content-section">
+    <h2>🗺️ 동네 지도 (37곳)</h2>
+    <div id="area-map" style="height:440px;border-radius:12px;overflow:hidden;"></div>
+    <p class="map-legend" style="font-size:12px;margin-top:8px;">
+      <span style="color:#D94C53">●</span> 맛집&nbsp;
+      <span style="color:#C98A2D">●</span> 카페&nbsp;
+      <span style="color:#7B5CB8">●</span> 바·술집&nbsp;
+      <span style="color:#2D8A6E">●</span> 샵&nbsp;
+      <span style="color:#3A7BD5">●</span> 명소&nbsp;
+      <span style="color:#8A8A8A">●</span> 기타 — 핀을 누르면 Google Maps 길찾기 링크
+    </p>
+  </section>
+
   <section class="content-section">
     <h2>📍 추천 매장 (상위 12곳)</h2>
     <ul class="place-list">
@@ -113,6 +128,34 @@
       localStorage.setItem('kc_theme', 'dark');
     }
   });
+})();
+</script>
+
+<script src="../assets/vendor/leaflet/leaflet.js"></script>
+<script>
+(function() {
+  var el = document.getElementById('area-map');
+  if (!el || typeof L === 'undefined') return;
+  var COLORS = {restaurant:'#D94C53',cafe:'#C98A2D',bar:'#7B5CB8',shop:'#2D8A6E',attraction:'#3A7BD5',etc:'#8A8A8A'};
+  fetch('../data/places/jungnang.json').then(function(r){return r.json();}).then(function(pts){
+    if (!pts.length) { el.style.display='none'; return; }
+    var map = L.map('area-map', {scrollWheelZoom: false});
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19, attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
+    var bounds = [];
+    pts.forEach(function(p) {
+      var ll = p.c; bounds.push(ll);
+      var gmap = 'https://www.google.com/maps?q=' + ll[0] + ',' + ll[1];
+      var html = '<strong>' + p.n + '</strong>' + (p.e ? '<br>' + p.e : '')
+        + (p.a ? '<br><span style="font-size:11px;color:#777">' + p.a + '</span>' : '')
+        + '<br><a href="' + gmap + '" target="_blank" rel="noopener">Google Maps ↗</a>'
+        + (p.u ? ' · <a href="' + p.u + '" target="_blank" rel="noopener">Naver ↗</a>' : '');
+      L.circleMarker(ll, {radius: 6, color: COLORS[p.t] || COLORS.etc,
+        weight: 1.5, fillOpacity: 0.75}).addTo(map).bindPopup(html);
+    });
+    map.fitBounds(bounds, {padding: [24, 24], maxZoom: 16});
+  }).catch(function(){ el.style.display='none'; });
 })();
 </script>
 
