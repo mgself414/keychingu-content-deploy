@@ -29225,5 +29225,31 @@
     "jp_available": true,
     "instagram_posted": false,
     "date_published": "2026-07-24"
+  },
+  {
+    "id": "1270",
+    "slug": "restaurant-kiosk-guide",
+    "series": "korea-first-timer",
+    "content_type": "howto-manual",
+    "title_ja": "韓国のキオスク注文、パニックゼロマニュアル — 画面そのまま真似するだけ",
+    "title_zh": "韩国自助点餐机零慌张手册 — 照着屏幕操作",
+    "summary_ja": "キオスク3タイプの見分け方・共通6ステップ画面フロー・韓国語オンリー画面のサバイバル単語15・海外カード拒否への対処・マクドナルド/ロッテリア/メガコーヒー実戦ウォークスルー",
+    "summary_zh": "自助点餐机3种类型 · 通用6步屏幕流程 · 韩语界面生存单词15个 · 海外银行卡被拒对策 · 麦当劳/乐天利/MEGA咖啡实战操作演示",
+    "title_kr": "한국 키오스크 주문, 당황 제로 매뉴얼 — 화면 그대로 따라하기",
+    "title_en": "How to Use a Kiosk in Korea: The No-Panic Screen-by-Screen Manual",
+    "category": "H",
+    "tags": [
+      "foreign-tourist",
+      "first-timer",
+      "howto",
+      "kiosk",
+      "payment"
+    ],
+    "summary_kr": "키오스크 3유형 구분 · 공통 6단계 화면 플로우 · 한국어-only 화면 생존 단어 15 · 해외카드 거절 대응 · 맥도날드/롯데리아/메가커피 실전 워크스루",
+    "summary_en": "Three kiosk types, the universal 6-step screen flow, 15 survival words for Korean-only screens, what to do when your foreign card is declined, and chain-by-chain walkthroughs.",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]
