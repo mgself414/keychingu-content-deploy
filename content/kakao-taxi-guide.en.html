@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kakao T Taxi for Foreigners: When Card Registration Fails, Pay the Driver Directly — KeyChinGu</title>
+<meta name="description" content="Signing up with a foreign number, the foreign-card registration trap and the pay-the-driver workaround, the calling flow, K-RIDE vs Kakao T, and night surcha...">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="192x192" href="../assets/logo/favicon-192.png">
+<link rel="apple-touch-icon" href="../assets/logo/favicon-192.png">
+<link rel="canonical" href="https://mgself414.github.io/keychingu-content-deploy/content/kakao-taxi-guide.en.html">
+<link rel="alternate" hreflang="ko" href="https://mgself414.github.io/keychingu-content-deploy/content/kakao-taxi-guide.html">
+<link rel="alternate" hreflang="en" href="https://mgself414.github.io/keychingu-content-deploy/content/kakao-taxi-guide.en.html">
+<link rel="alternate" hreflang="ja" href="https://mgself414.github.io/keychingu-content-deploy/content/kakao-taxi-guide.ja.html">
+<link rel="alternate" hreflang="zh-CN" href="https://mgself414.github.io/keychingu-content-deploy/content/kakao-taxi-guide.zh.html">
+<link rel="alternate" hreflang="x-default" href="https://mgself414.github.io/keychingu-content-deploy/content/kakao-taxi-guide.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Kakao T Taxi for Foreigners: When Card Registration Fails, Pay the Driver Directly">
+<meta property="og:description" content="Signing up with a foreign number, the foreign-card registration trap and the pay-the-driver workaround, the calling flow, K-RIDE vs Kakao T, and night surcha...">
+<meta property="og:url" content="https://mgself414.github.io/keychingu-content-deploy/content/kakao-taxi-guide.en.html">
+<meta property="og:image" content="https://mgself414.github.io/keychingu-content-deploy/og/kakao-taxi-guide.png">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Kakao T Taxi for Foreigners: When Card Registration Fails, Pay the Driver Directly">
+<meta name="twitter:description" content="Signing up with a foreign number, the foreign-card registration trap and the pay-the-driver workaround, the calling flow, K-RIDE vs Kakao T, and night surcha...">
+<meta name="twitter:image" content="https://mgself414.github.io/keychingu-content-deploy/assets/logo/og-image-1200x630.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Kakao T Taxi for Foreigners: When Card Registration Fails, Pay the Driver Directly","description":"Signing up with a foreign number, the foreign-card registration trap and the pay-the-driver workaround, the calling flow, K-RIDE vs Kakao T, and night surcha...","datePublished":"2026-05-01","dateModified":"2026-06-14","inLanguage":"en","url":"https://mgself414.github.io/keychingu-content-deploy/content/kakao-taxi-guide.en.html","image":"https://mgself414.github.io/keychingu-content-deploy/assets/logo/og-image-1200x630.png","author":{"@type":"Organization","name":"KeyChinGu","url":"https://mgself414.github.io/keychingu-content-deploy/"},"publisher":{"@type":"Organization","name":"KeyChinGu","logo":{"@type":"ImageObject","url":"https://mgself414.github.io/keychingu-content-deploy/assets/logo/logo_2-4_color_small.png"}},"speakable":{"@type":"SpeakableSpecification","cssSelector":["h1","h2","p"]}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"KeyChinGu","item":"https://mgself414.github.io/keychingu-content-deploy/"},{"@type":"ListItem","position":2,"name":"Deep Dives","item":"https://mgself414.github.io/keychingu-content-deploy/deep-dives.html"},{"@type":"ListItem","position":3,"name":"Kakao T Taxi for Foreigners: When Card Registration Fails, Pay the Driver Directly","item":"https://mgself414.github.io/keychingu-content-deploy/content/kakao-taxi-guide.en.html"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"KeyChinGu","alternateName":["키친구","KeyChinGu Korea"],"url":"https://mgself414.github.io/keychingu-content-deploy/","logo":"https://mgself414.github.io/keychingu-content-deploy/assets/logo/logo_2-4_color_small.png","description":"외국인 관광객 대상 한국 큐레이션 가이드 — 939+ 토픽·60+ 도시·4언어 (KR·EN·CN·JP)·8축 콘텐츠 매트릭스·5 traveler segments","foundingDate":"2024","areaServed":{"@type":"Country","name":"South Korea"},"audience":{"@type":"Audience","audienceType":"Foreign tourists visiting Korea (foreign MZ travelers·solo·couple·family·budget)"},"sameAs":["https://www.instagram.com/keychingu.korea/","https://github.com/mgself414/keychingu-content-deploy","https://mgself414.github.io/keychingu-content-deploy/llms.txt","https://mgself414.github.io/keychingu-content-deploy/llms-full.txt"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"KeyChinGu — Korea Travel Guides for Foreign Tourists","url":"https://mgself414.github.io/keychingu-content-deploy/","inLanguage":["ko","en","zh","ja"],"potentialAction":{"@type":"SearchAction","target":"https://mgself414.github.io/keychingu-content-deploy/?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/main.css">
+<style>
+.detail-wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+}
+.breadcrumb {
+  font-size: 13px;
+  color: var(--text-soft);
+  margin-bottom: 24px;
+}
+.breadcrumb a { color: var(--red); font-weight: 600; }
+.detail-wrap h1 {
+  font-size: 28px; font-weight: 800;
+  color: var(--black); margin-bottom: 8px;
+}
+.detail-wrap h2 {
+  font-size: 22px; font-weight: 700;
+  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--red);
+}
+.detail-wrap h3 {
+  font-size: 17px; font-weight: 600;
+  color: var(--text-mid); margin-top: 20px; margin-bottom: 8px;
+}
+.detail-wrap p {
+  font-size: 15px; line-height: 1.7;
+  color: var(--text-mid); margin-bottom: 12px;
+}
+.detail-wrap ul {
+  padding-left: 20px; margin-bottom: 12px;
+}
+.detail-wrap li {
+  font-size: 14px; line-height: 1.6;
+  color: var(--text-mid); margin-bottom: 6px;
+}
+.detail-wrap table {
+  width: 100%; border-collapse: collapse;
+  margin-bottom: 16px; font-size: 13px;
+}
+.detail-wrap th {
+  background: var(--black); color: #fff;
+  padding: 10px 12px; text-align: left;
+  font-weight: 600; font-size: 11px;
+  text-transform: uppercase; letter-spacing: 0.06em;
+}
+.detail-wrap td {
+  padding: 10px 12px; border-bottom: 1px solid var(--border);
+  color: var(--text-mid);
+}
+.detail-wrap tr:nth-child(even) td { background: rgba(0,0,0,0.02); }
+.detail-wrap hr {
+  border: none; height: 1px;
+  background: var(--border); margin: 24px 0;
+}
+.detail-wrap code {
+  background: rgba(33,140,204,0.08);
+  padding: 2px 6px; border-radius: 4px;
+  font-size: 13px; color: var(--blue);
+}
+.detail-nav {
+  display: flex; justify-content: space-between;
+  margin-top: 48px; padding-top: 20px;
+  border-top: 1px solid var(--border);
+  font-size: 14px; font-weight: 600;
+}
+.share-bar {
+  display: flex; align-items: center; gap: 10px;
+  margin-top: 40px; padding: 16px 20px;
+  background: #f9f9f9; border-radius: 12px;
+  border: 1px solid var(--border);
+}
+.share-label {
+  font-size: 14px; font-weight: 600; color: var(--text-soft);
+  margin-right: 8px;
+}
+.share-btn {
+  width: 40px; height: 40px;
+  border: none; border-radius: 50%;
+  background: #fff; cursor: pointer;
+  font-size: 1.1rem; transition: all 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  display: inline-flex; align-items: center; justify-content: center;
+}
+.share-btn:hover { transform: translateY(-2px); box-shadow: 0 3px 8px rgba(0,0,0,0.15); }
+.share-twitter:hover { background: #000; color: #fff; }
+.share-facebook:hover { background: #1877f2; color: #fff; }
+.share-kakao:hover { background: #fee500; }
+.share-copy:hover { background: #218CCC; color: #fff; }
+/* EN toggle disabled — 영문판 미생성 콘텐츠 (2026-05-16 patch) */
+.lang-switch .lang-disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  text-decoration: line-through;
+  padding: 4px 10px;
+  color: var(--text-soft, #888);
+  font-size: 13px;
+  user-select: none;
+}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <a href="../en/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <div class="lang-switch">
+    <a href="../content/kakao-taxi-guide.html">KR</a>
+    <a href="../content/kakao-taxi-guide.en.html" class="active">EN</a>
+    <a href="../content/kakao-taxi-guide.ja.html">JP</a>
+    <a href="../content/kakao-taxi-guide.zh.html">CN</a>
+  </div>
+</header>
+
+<main class="detail-wrap">
+  <nav class="breadcrumb" aria-label="breadcrumb"><a href="../en/index.html">All Guides</a> &rsaquo; Kakao T Taxi for Foreigners: When Card Registration Fails, Pay the Driver Directly</nav>
+  <article>
+  <h1>Kakao T Taxi, the Real-World Guide — How to Ride Without Saying a Word</h1>
+<p>&gt; <strong>Subtitle</strong>: Signing up with an overseas number · confronting the &quot;card won&#x27;t register&quot; trap head-on · the ride-request master flow · how to choose between K-RIDE and Kakao T · car types, late-night surcharges, and 15 survival words · getting off without exchanging a word with the driver</p>
+<p>ISSUE 04 · #1273 · 2026-08-15 · korea-first-timer series ④</p>
+<hr>
+<h2>🎯 How to Read This Guide — Screen Notation Rules</h2>
+<p>The pseudo-screen notation follows the series SoT (#1270).</p>
+<ul>
+<li>Buttons on screen appear in brackets: <code>[ Request Ride (호출하기) ]</code></li>
+<li>Screen titles and prompts appear in quotes: &quot;Register payment method (결제수단 등록)&quot;</li>
+<li>Actions you do by hand are <strong>bold</strong>: &quot;<strong>Switch</strong> to your home country&#x27;s number in the country-code list&quot;</li>
+</ul>
+<hr>
+<h2>① Why Kakao T Is the Default</h2>
+<p>In Korea&#x27;s big cities, flagging down an empty taxi on the street is fading fast, and ride-hailing apps have become the standard. Kakao T has by far the largest user base and vehicle pool among Koreans, so it gets you matched the fastest. The problem is payment — the whole structure is built around Korean phone numbers and Korean-issued cards, so foreign tourists can usually sign up fine but <strong>often get stuck at card registration.</strong> The core of this edition is confronting that exact point head-on.</p>
+<hr>
+<h2>② Prep — Signing Up with an Overseas Number</h2>
+<table><thead><tr>
+<th>Step</th>
+<th>Screen</th>
+<th>What to do</th>
+<th>Trap/Tip</th>
+</tr></thead><tbody>
+<tr>
+<td>1</td>
+<td>App Store search for &quot;Kakao T&quot;</td>
+<td>Install</td>
+<td>No Korean App Store account needed — installs fine with your home account</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Enter your phone number on &quot;Sign up (회원가입)&quot;</td>
+<td>Open the country code list</td>
+<td>Choose <strong>your home country code</strong> (<code>+1</code>, <code>+81</code>, <code>+86</code>, etc.) instead of <code>+82</code> (Korea)</td>
+</tr>
+<tr>
+<td>3</td>
+<td>SMS verification</td>
+<td>Enter the code sent to your home number</td>
+<td>Your roaming or local SIM needs to be able to receive SMS — see #1230, the essential-apps edition, for SIM/eSIM setup</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Terms of service</td>
+<td>Agree to all, then next</td>
+<td>—</td>
+</tr>
+<tr>
+<td>5</td>
+<td>&quot;Register payment method (결제수단 등록)&quot;</td>
+<td><strong>This is where most people get stuck</strong> → see ③ below</td>
+<td>Don&#x27;t keep forcing card attempts — tap <code>[ Later (나중에) ]</code> / <code>[ Skip (건너뛰기) ]</code></td>
+</tr>
+</tbody></table>
+<hr>
+<h2>③ The Real Trap — &quot;My Card Won&#x27;t Register&quot; → Pay the Driver Directly</h2>
+<p>Kakao T&#x27;s default payment method is auto-pay: the card you registered in the app is <strong>automatically charged</strong> when you get off. To register auto-pay, the payment screen requires <strong>another round of identity verification (SMS)</strong>, and as of April 2026 that verification is designed around numbers activated in Korea. Even if you succeeded in signing up with an overseas number back in ②, getting stuck here again is completely normal — it&#x27;s not your card&#x27;s fault, and you didn&#x27;t do anything wrong.</p>
+<p><strong>The standard workaround: pay the driver directly (on-site payment)</strong></p>
+<ul>
+<li>On the &quot;Register payment method (결제수단 등록)&quot; screen, don&#x27;t keep trying to add a card — move on by tapping <code>[ Later (나중에) ]</code>.</li>
+<li>If you leave the account with zero cards registered, requesting a ride automatically switches to <strong>&quot;pay the driver directly&quot;</strong> mode.</li>
+<li>When you get off, pay directly on the driver&#x27;s card terminal or pay cash — terminal payment is covered in ⑥.</li>
+<li>Some reviews mention getting a card to register by linking an overseas Kakao Pay account, but this isn&#x27;t reliably reproducible. This guide recommends not wasting time on retries and instead treating <strong>direct payment as the standard path</strong>.</li>
+</ul>
+<hr>
+<h2>④ Ride-Request Master Flow — From the Pickup Pin to Matching</h2>
+<table><thead><tr>
+<th>Step</th>
+<th>Screen</th>
+<th>What to do</th>
+<th>Trap</th>
+</tr></thead><tbody>
+<tr>
+<td>1</td>
+<td>Map + pickup pin</td>
+<td>Check whether the pin matches your actual location; if not, <strong>drag the map with your finger</strong> to adjust</td>
+<td>GPS error can drop the pin on the opposite side of the building</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Destination search box</td>
+<td>Enter a place name (in English) or an address → select from the results</td>
+<td>Most places turn up with an English search even if you don&#x27;t know the Korean name; if not, drop the pin yourself on the map</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Car type selection</td>
+<td>Choose from Regular/Blue/Black/Venti — the screen shows an estimated fare</td>
+<td>It&#x27;s an estimate, not a fixed fare (varies with traffic)</td>
+</tr>
+<tr>
+<td>4</td>
+<td><code>[ Request Ride (호출하기) ]</code></td>
+<td>Tap the big button</td>
+<td>Matching starts the moment you tap — canceling afterward can incur a cancellation fee depending on the situation</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Driver-assigned screen</td>
+<td>Shows the driver&#x27;s photo, license plate, car type, and estimated arrival</td>
+<td>Before boarding, <strong>check the license plate against the screen</strong> — a basic safety rule</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>⑤ K-RIDE vs. Kakao T — Which One Should You Install</h2>
+<table><thead><tr>
+<th>Criteria</th>
+<th>Kakao T</th>
+<th>K-RIDE</th>
+</tr></thead><tbody>
+<tr>
+<td>Character</td>
+<td>The standard app Koreans use too, largest vehicle pool</td>
+<td>A <strong>foreigner-only app</strong> made by Kakao Mobility</td>
+</tr>
+<tr>
+<td>Language</td>
+<td>Korean by default</td>
+<td>Designed foreign-language-first, including English</td>
+</tr>
+<tr>
+<td>Payment</td>
+<td>Auto-pay assumes a Korean number → the workaround in ③ is needed</td>
+<td>Built for foreign users, so the overseas-card flow is relatively smooth</td>
+</tr>
+<tr>
+<td>Coverage/speed</td>
+<td>Nationwide, fastest matching</td>
+<td>May be centered on airports and major tourist areas — varies by region, so check the latest service area in the app store before you leave home</td>
+</tr>
+<tr>
+<td>Best for</td>
+<td>Anyone who&#x27;s already done the ③ workaround, or prioritizes fast matching</td>
+<td>Anyone who wants to avoid the card-registration issue entirely, or a first-time visitor who prefers an English UI</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>⑥ Payment on Arrival, Car Types, and Late-Night Surcharges</h2>
+<p><strong>Overseas cards at the terminal</strong></p>
+<ul>
+<li>Most taxi card terminals accept overseas cards like Visa and Mastercard — outright card rejection is rare.</li>
+<li>Overseas-issued cards usually have a usage cap: around <strong>500,000 won per month and 200,000 won per transaction</strong> (varies by issuer and product). Long-distance fares like airport-to-downtown can get close to that per-transaction cap, so checking your card issuer&#x27;s limits before you leave is a safe move.</li>
+<li>If a card is declined: retry with a different card → if that still fails, pay cash.</li>
+</ul>
+<p><strong>Car types</strong></p>
+<table><thead><tr>
+<th>Car type</th>
+<th>Character</th>
+</tr></thead><tbody>
+<tr>
+<td>Regular</td>
+<td>Standard mid-size taxi</td>
+</tr>
+<tr>
+<td>Blue</td>
+<td>Mid-size, Kakao-affiliated, higher matching priority</td>
+</tr>
+<tr>
+<td>Black</td>
+<td>Large premium sedan</td>
+</tr>
+<tr>
+<td>Venti</td>
+<td>Large van — for lots of luggage or passengers</td>
+</tr>
+</tbody></table>
+<p>&gt; The exact fare multiplier changes by time period and region. Trusting the estimated fare shown on screen as-is is the safest bet.</p>
+<p><strong>Late-night surcharge</strong>: A surcharge is automatically added during late-night hours (the exact time window and surcharge rate can be adjusted by municipality and time period). It&#x27;s already factored into the estimated fare shown in the app, so you don&#x27;t need to calculate it yourself — the number on screen is what you&#x27;ll actually pay.</p>
+<hr>
+<h2>⑦ How to Get There Without Saying a Word</h2>
+<p>Your destination was already sent to the driver&#x27;s screen through the app during the ④ request step. You don&#x27;t need to say it again after boarding.</p>
+<ul>
+<li>One greeting when you board (&quot;annyeonghaseyo (안녕하세요)&quot; — hello) is enough — the driver&#x27;s navigation handles the rest.</li>
+<li>If you need to confirm something, showing a screenshot can stand in for speaking.</li>
+<li>You can watch the route in real time on the app&#x27;s map, so you can check it without a word.</li>
+</ul>
+<hr>
+<h2>⑧ 15 Survival Words — See This on Screen, It Means This</h2>
+<table><thead><tr>
+<th>On-screen Korean</th>
+<th>Meaning</th>
+</tr></thead><tbody>
+<tr>
+<td>hochulhagi (호출하기)</td>
+<td>Request ride — the ride-request button</td>
+</tr>
+<tr>
+<td>chulbalji (출발지)</td>
+<td>Pickup location</td>
+</tr>
+<tr>
+<td>mokjeokji (목적지)</td>
+<td>Destination</td>
+</tr>
+<tr>
+<td>yesang yogeum (예상 요금)</td>
+<td>Estimated fare</td>
+</tr>
+<tr>
+<td>baecha wanryo (배차 완료)</td>
+<td>Driver assigned</td>
+</tr>
+<tr>
+<td>gisanim (기사님)</td>
+<td>Driver (honorific)</td>
+</tr>
+<tr>
+<td>dochak yejeong (도착 예정)</td>
+<td>Estimated arrival</td>
+</tr>
+<tr>
+<td>tapseung (탑승)</td>
+<td>Boarding</td>
+</tr>
+<tr>
+<td>hacha (하차)</td>
+<td>Drop-off</td>
+</tr>
+<tr>
+<td>gyeolje sudan (결제 수단)</td>
+<td>Payment method</td>
+</tr>
+<tr>
+<td>hyeongeum gyeolje (현금 결제)</td>
+<td>Cash payment</td>
+</tr>
+<tr>
+<td>kadeu gyeolje (카드 결제)</td>
+<td>Card payment</td>
+</tr>
+<tr>
+<td>chwiso (취소)</td>
+<td>Cancel</td>
+</tr>
+<tr>
+<td>jeulgyeochatgi (즐겨찾기)</td>
+<td>Saved places</td>
+</tr>
+<tr>
+<td>byeoljeom (별점)</td>
+<td>Rating</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>⑨ 2 Panic Scenarios — What Actually Happens, and How to Cope</h2>
+<p>1. <strong>No driver gets matched, no matter how long you wait</strong> — Try switching the car type from Regular to Blue, move the pickup pin to a bigger road, or if it&#x27;s peak time (commute hours, late night) wait a few minutes and retry. If that still doesn&#x27;t work, switch to Plan B in ⑩.</p>
+<p>2. <strong>It feels like the route is taking a strange detour</strong> — The real-time route is shown right there on the app&#x27;s map, so you can just quietly check it. If the driver is clearly about to drop you somewhere else, point at the destination on screen and say &quot;here,&quot; or file a report through the app&#x27;s inquiry/report feature after you get off.</p>
+<hr>
+<h2>⑩ Plan B — When the App Just Doesn&#x27;t Work</h2>
+<ul>
+<li><strong>Empty taxis on the street</strong>: If the roof light is on (the color varies by car type and region), it&#x27;s empty. You can flag it down by raising your hand — write your destination on paper or show it on a translation app screen.</li>
+<li><strong>International taxi</strong>: Major airports like Incheon have an international taxi service built around advance booking and English-speaking drivers. A good option when you want something reliably arranged in advance, like an airport transfer.</li>
+</ul>
+<hr>
+<h2>🔗 Related</h2>
+<ul>
+<li><strong>korea-first-timer series</strong>: ① #1270 Kiosk ordering · ② City buses · ③ #1272 Using delivery apps · ④ (this edition) Kakao T taxis · (coming) Waitlist apps</li>
+<li><strong>The right-after-landing set</strong>: #1230 12 essential apps — SIM/eSIM setup is the prerequisite for the SMS verification in ②</li>
+<li><strong>Transit overview</strong>: #080 Transportation</li>
+<li><strong>Payment deep-dive</strong>: #527 Korea&#x27;s payment system, deep dive · #435 Currency exchange, cards, and ATMs</li>
+</ul>
+<h2>🏷 Tags</h2>
+<p><code>#KakaoT</code> <code>#KoreaTaxi</code> <code>#KRIDE</code> <code>#KoreaFirstTimer</code> <code>#NoPanicKorea</code> <code>#OverseasCardPayment</code> <code>#KeyChinGu</code></p>
+<hr>
+<h3>📚 Internal Reference Data (for the main writer)</h3>
+<ul>
+<li>SERP reverse-engineering source: 콘텐츠_기획/serp/1273_kakao-taxi-guide.md — many competing articles stop at &quot;card registration failure.&quot; Differentiation: placing the &quot;pay the driver directly&quot; workaround front and center in the body</li>
+<li>Fact anchors (SERP brief): SMS signup with an overseas number (+ country code) is possible / in-app overseas-card auto-pay registration isn&#x27;t (requires a Korean-number SMS) / taxi terminals have a high overseas-card acceptance rate, with caps of 500,000 won/month and 200,000 won/transaction / K-RIDE (Kakao Mobility&#x27;s foreigner-only app) exists</li>
+<li>Series convention: the 3 pseudo-screen notations — #1270 is the SoT; this edition only reuses it</li>
+</ul>
+<h2>🌐 EXTERNAL SOURCES</h2>
+<ul>
+<li><strong>Korea JoongAng Daily</strong>: https://koreajoongangdaily.joins.com/ (coverage of overseas-card and digital-barrier issues)</li>
+<li><strong>VisitKorea</strong>: https://english.visitkorea.or.kr/</li>
+<li><strong>Kakao Mobility</strong>: https://www.kakaomobility.com/ (for service overview reference)</li>
+</ul>
+  </article>
+
+  <div class="share-bar">
+    <span class="share-label">Share</span>
+    <button class="share-btn share-twitter" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent('Kakao T Taxi for Foreigners: When Card Registration Fails, Pay the Driver Directly') + '&url=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Twitter">𝕏</button>
+    <button class="share-btn share-facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Facebook">f</button>
+    <button class="share-btn share-kakao" onclick="navigator.share ? navigator.share({title: 'Kakao T Taxi for Foreigners: When Card Registration Fails, Pay the Driver Directly', url: window.location.href}) : navigator.clipboard.writeText(window.location.href).then(function() { alert('Link copied!'); })" aria-label="Kakao/Share">📤</button>
+    <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href).then(function() { this.textContent = '✓'; setTimeout(function() { document.querySelector('.share-copy').textContent = '🔗'; }, 1500); }.bind(this))" aria-label="Copy link">🔗</button>
+  </div>
+
+  <nav class="detail-nav" aria-label="previous-next">
+    <div><a href="delivery-app-guide.html" style="color:var(--red);">&larr; Food Delivery Apps in Korea: Baemin and Coupang Eats, From Address Input to Doorstep Pickup</a></div>
+    <div><a href="waiting-app-guide.html" style="color:var(--red);">Waitlists and Reservations in Korea: No Phone Call Needed &rarr;</a></div>
+  </nav>
+
+  <section id="kc-related" style="display:none;margin:2.2rem 0 0.5rem;">
+    <h2 style="font-size:1.1rem;margin-bottom:0.8rem;">Related Guides</h2>
+    <div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"></div>
+  </section>
+  <script>
+  // related guides — 같은 카테고리 최신 6편 (contents.json fetch·언어 suffix 자동, 2026-07-04)
+  (function() {
+    var m = location.pathname.match(/\/content\/(.+?)(\.en|\.zh|\.ja)?\.html$/);
+    if (!m) return;
+    var slug = m[1], suf = m[2] || '';
+    fetch('../data/contents.json').then(function(r) { return r.json(); }).then(function(items) {
+      var me = null;
+      for (var i = 0; i < items.length; i++) { if (items[i].slug === slug) { me = items[i]; break; } }
+      if (!me) return;
+      var pool = items.filter(function(x) { return x.slug !== slug && x.category === me.category; });
+      pool.sort(function(a, b) { return (parseInt(b.id, 10) || 0) - (parseInt(a.id, 10) || 0); });
+      var picks = pool.slice(0, 6);
+      if (!picks.length) return;
+      document.getElementById('kc-related-grid').innerHTML = picks.map(function(x) {
+        var t = suf ? (x.title_en || x.title_kr) : (x.title_kr || x.title_en);
+        var ok = suf === '' || (suf === '.en' ? x.en_available : (suf === '.zh' ? x.cn_available : x.jp_available));
+        var href = x.slug + (ok ? suf : '') + '.html';
+        return '<a href="' + href + '" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">' + t + '</a>';
+      }).join('');
+      document.getElementById('kc-related').style.display = 'block';
+    }).catch(function() {});
+  })();
+  </script>
+  <!-- kc-comments -->
+  <section id="kc-comments" style="margin:2.5rem 0 0.5rem;">
+    <h2>Comments</h2>
+    <div id="cusdis_thread"
+      data-host="https://cusdis.com"
+      data-app-id="f8670fe3-8091-4c5b-8d82-e13d6ee7fe82"
+      data-page-id="kakao-taxi-guide"
+      data-page-url="https://mgself414.github.io/keychingu-content-deploy/content/kakao-taxi-guide.html"
+      data-page-title="Kakao T Taxi for Foreigners: When Card Registration Fails, Pay the Driver Directly"></div>
+  </section>
+  <script>
+  (function() {
+    var loaded = false;
+    function loadMain() {
+      var s = document.createElement('script');
+      s.src = 'https://cusdis.com/js/cusdis.es.js';
+      s.async = true;
+      document.body.appendChild(s);
+    }
+    function loadCusdis() {
+      if (loaded) return; loaded = true;
+      var lang = '';
+      if (lang) {
+        var l = document.createElement('script');
+        l.src = 'https://cusdis.com/js/widget/lang/' + lang + '.js';
+        l.onload = loadMain; l.onerror = loadMain;
+        document.body.appendChild(l);
+      } else { loadMain(); }
+    }
+    var el = document.getElementById('kc-comments');
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function(es) {
+        if (es[0].isIntersecting) { io.disconnect(); loadCusdis(); }
+      }, { rootMargin: '400px' });
+      io.observe(el);
+    } else { loadCusdis(); }
+  })();
+  </script>
+</main>
+
+<footer class="site-footer">
+  <p><a href="https://instagram.com/keychingu.korea" target="_blank">@keychingu.korea</a> &mdash; Seoul for MZ FIT Travelers</p>
+</footer>
+</body>
+</html>
