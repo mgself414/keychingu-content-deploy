@@ -29459,5 +29459,57 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
+  },
+  {
+    "id": "1279",
+    "slug": "power-outlet-guide",
+    "series": "korea-first-timer",
+    "content_type": "howto-manual",
+    "title_ja": "韓国のコンセント・電圧・充電、パニックゼロマニュアル — ラベル一枚で判別完了",
+    "title_zh": "韩国插座电压充电零慌张手册 — 一张标签看懂一切",
+    "summary_ja": "220V・Type C/Fの基本・充電器ラベル(INPUT 100-240V)の読み方で自分の機器を30秒判別・110V専用の危険機器・アダプター購入先の優先順位(ダイソー→空港)・カフェのコンセント文化",
+    "summary_zh": "220V·Type C/F基础 · 看充电器标签(INPUT 100-240V)30秒判别自己的设备 · 110V专用危险设备 · 转换插头购买地优先级(大创→机场) · 咖啡店插座文化",
+    "title_kr": "한국 콘센트·전압·충전, 당황 제로 매뉴얼 — 내 충전기가 되는지 30초 판별",
+    "title_en": "Outlets, Voltage & Charging in Korea: The No-Panic Manual — a 30-Second Device Check",
+    "category": "H",
+    "tags": [
+      "foreign-tourist",
+      "first-timer",
+      "howto",
+      "charging",
+      "packing"
+    ],
+    "summary_kr": "220V·Type C/F 기본 · 충전기 라벨(INPUT 100-240V) 읽기로 내 기기 판별 · 110V 전용 위험 기기 · 어댑터 구매처 우선순위(다이소→공항) · 카페 콘센트 문화",
+    "summary_en": "Korea's 220V Type C/F basics, how to read your charger label (INPUT 100-240V) in 30 seconds, which 110V-only devices are at risk, where to buy adapters cheapest, and cafe outlet culture.",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1280",
+    "slug": "coin-laundry-guide",
+    "series": "korea-first-timer",
+    "content_type": "howto-manual",
+    "title_ja": "韓国のコインランドリー、パニックゼロマニュアル — 洗濯機の画面をそのまま真似する",
+    "title_zh": "韩国投币洗衣店零慌张手册 — 洗衣机屏幕照着做",
+    "summary_ja": "ウォッシュエンジョイ(無人セルフ)vsクリントピア(預ける)の区別・洗濯機5ステップフロー(洗剤自動投入)・乾燥機10分単位の追加・料金感覚・荷物を減らす戦略",
+    "summary_zh": "Wash N Joy(无人自助)vs Cleantopia(送洗)区分 · 洗衣机5步流程(洗衣液自动投放) · 烘干机10分钟单位追加 · 价格感觉 · 减少行李战略",
+    "title_kr": "한국 코인빨래방, 당황 제로 매뉴얼 — 기계 화면 그대로 따라하기",
+    "title_en": "Coin Laundry in Korea: The No-Panic Manual — Follow the Machine Screen",
+    "category": "H",
+    "tags": [
+      "foreign-tourist",
+      "first-timer",
+      "howto",
+      "laundry",
+      "long-stay"
+    ],
+    "summary_kr": "워시엔조이(무인 셀프) vs 크린토피아(맡김) 구분 · 세탁기 5단계 플로우(세제 자동 투입) · 건조기 10분 단위 추가 · 요금 감각 · 짐 줄이기 전략",
+    "summary_en": "Washenjoy (self-serve) vs Cleantopia (drop-off), the 5-step washer flow with auto-dispensed detergent, dryer top-ups by 10 minutes, price ranges, and the pack-light strategy.",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]
