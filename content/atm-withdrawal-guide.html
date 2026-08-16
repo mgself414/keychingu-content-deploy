@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>한국 ATM 현금 인출, 당황 제로 매뉴얼 — DCC 화면에서 KRW를 눌러라 — KeyChinGu</title>
+<meta name="description" content="Global ATM 판별(로고 스티커) · 편의점 vs 은행 수수료 표 · 인출 화면 플로우 · DCC 함정(자국 통화 선택 = 숨은 환율 손해) · 수수료 2중 구조 · 실패 시 대처">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="192x192" href="../assets/logo/favicon-192.png">
+<link rel="apple-touch-icon" href="../assets/logo/favicon-192.png">
+<link rel="canonical" href="https://mgself414.github.io/keychingu-content-deploy/content/atm-withdrawal-guide.html">
+<link rel="alternate" hreflang="ko" href="https://mgself414.github.io/keychingu-content-deploy/content/atm-withdrawal-guide.html">
+<link rel="alternate" hreflang="en" href="https://mgself414.github.io/keychingu-content-deploy/content/atm-withdrawal-guide.en.html">
+<link rel="alternate" hreflang="ja" href="https://mgself414.github.io/keychingu-content-deploy/content/atm-withdrawal-guide.ja.html">
+<link rel="alternate" hreflang="zh-CN" href="https://mgself414.github.io/keychingu-content-deploy/content/atm-withdrawal-guide.zh.html">
+<link rel="alternate" hreflang="x-default" href="https://mgself414.github.io/keychingu-content-deploy/content/atm-withdrawal-guide.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="한국 ATM 현금 인출, 당황 제로 매뉴얼 — DCC 화면에서 KRW를 눌러라">
+<meta property="og:description" content="Global ATM 판별(로고 스티커) · 편의점 vs 은행 수수료 표 · 인출 화면 플로우 · DCC 함정(자국 통화 선택 = 숨은 환율 손해) · 수수료 2중 구조 · 실패 시 대처">
+<meta property="og:url" content="https://mgself414.github.io/keychingu-content-deploy/content/atm-withdrawal-guide.html">
+<meta property="og:image" content="https://mgself414.github.io/keychingu-content-deploy/og/atm-withdrawal-guide.png">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="한국 ATM 현금 인출, 당황 제로 매뉴얼 — DCC 화면에서 KRW를 눌러라">
+<meta name="twitter:description" content="Global ATM 판별(로고 스티커) · 편의점 vs 은행 수수료 표 · 인출 화면 플로우 · DCC 함정(자국 통화 선택 = 숨은 환율 손해) · 수수료 2중 구조 · 실패 시 대처">
+<meta name="twitter:image" content="https://mgself414.github.io/keychingu-content-deploy/assets/logo/og-image-1200x630.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"한국 ATM 현금 인출, 당황 제로 매뉴얼 — DCC 화면에서 KRW를 눌러라","description":"Global ATM 판별(로고 스티커) · 편의점 vs 은행 수수료 표 · 인출 화면 플로우 · DCC 함정(자국 통화 선택 = 숨은 환율 손해) · 수수료 2중 구조 · 실패 시 대처","datePublished":"2026-05-01","dateModified":"2026-06-14","inLanguage":"ko","url":"https://mgself414.github.io/keychingu-content-deploy/content/atm-withdrawal-guide.html","image":"https://mgself414.github.io/keychingu-content-deploy/assets/logo/og-image-1200x630.png","author":{"@type":"Organization","name":"KeyChinGu","url":"https://mgself414.github.io/keychingu-content-deploy/"},"publisher":{"@type":"Organization","name":"KeyChinGu","logo":{"@type":"ImageObject","url":"https://mgself414.github.io/keychingu-content-deploy/assets/logo/logo_2-4_color_small.png"}},"speakable":{"@type":"SpeakableSpecification","cssSelector":["h1","h2","p"]}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"KeyChinGu","item":"https://mgself414.github.io/keychingu-content-deploy/"},{"@type":"ListItem","position":2,"name":"딥다이브","item":"https://mgself414.github.io/keychingu-content-deploy/deep-dives.html"},{"@type":"ListItem","position":3,"name":"한국 ATM 현금 인출, 당황 제로 매뉴얼 — DCC 화면에서 KRW를 눌러라","item":"https://mgself414.github.io/keychingu-content-deploy/content/atm-withdrawal-guide.html"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"KeyChinGu","alternateName":["키친구","KeyChinGu Korea"],"url":"https://mgself414.github.io/keychingu-content-deploy/","logo":"https://mgself414.github.io/keychingu-content-deploy/assets/logo/logo_2-4_color_small.png","description":"외국인 관광객 대상 한국 큐레이션 가이드 — 939+ 토픽·60+ 도시·4언어 (KR·EN·CN·JP)·8축 콘텐츠 매트릭스·5 traveler segments","foundingDate":"2024","areaServed":{"@type":"Country","name":"South Korea"},"audience":{"@type":"Audience","audienceType":"Foreign tourists visiting Korea (foreign MZ travelers·solo·couple·family·budget)"},"sameAs":["https://www.instagram.com/keychingu.korea/","https://github.com/mgself414/keychingu-content-deploy","https://mgself414.github.io/keychingu-content-deploy/llms.txt","https://mgself414.github.io/keychingu-content-deploy/llms-full.txt"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"KeyChinGu — Korea Travel Guides for Foreign Tourists","url":"https://mgself414.github.io/keychingu-content-deploy/","inLanguage":["ko","en","zh","ja"],"potentialAction":{"@type":"SearchAction","target":"https://mgself414.github.io/keychingu-content-deploy/?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/main.css">
+<style>
+.detail-wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+}
+.breadcrumb {
+  font-size: 13px;
+  color: var(--text-soft);
+  margin-bottom: 24px;
+}
+.breadcrumb a { color: var(--red); font-weight: 600; }
+.detail-wrap h1 {
+  font-size: 28px; font-weight: 800;
+  color: var(--black); margin-bottom: 8px;
+}
+.detail-wrap h2 {
+  font-size: 22px; font-weight: 700;
+  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--red);
+}
+.detail-wrap h3 {
+  font-size: 17px; font-weight: 600;
+  color: var(--text-mid); margin-top: 20px; margin-bottom: 8px;
+}
+.detail-wrap p {
+  font-size: 15px; line-height: 1.7;
+  color: var(--text-mid); margin-bottom: 12px;
+}
+.detail-wrap ul {
+  padding-left: 20px; margin-bottom: 12px;
+}
+.detail-wrap li {
+  font-size: 14px; line-height: 1.6;
+  color: var(--text-mid); margin-bottom: 6px;
+}
+.detail-wrap table {
+  width: 100%; border-collapse: collapse;
+  margin-bottom: 16px; font-size: 13px;
+}
+.detail-wrap th {
+  background: var(--black); color: #fff;
+  padding: 10px 12px; text-align: left;
+  font-weight: 600; font-size: 11px;
+  text-transform: uppercase; letter-spacing: 0.06em;
+}
+.detail-wrap td {
+  padding: 10px 12px; border-bottom: 1px solid var(--border);
+  color: var(--text-mid);
+}
+.detail-wrap tr:nth-child(even) td { background: rgba(0,0,0,0.02); }
+.detail-wrap hr {
+  border: none; height: 1px;
+  background: var(--border); margin: 24px 0;
+}
+.detail-wrap code {
+  background: rgba(33,140,204,0.08);
+  padding: 2px 6px; border-radius: 4px;
+  font-size: 13px; color: var(--blue);
+}
+.detail-nav {
+  display: flex; justify-content: space-between;
+  margin-top: 48px; padding-top: 20px;
+  border-top: 1px solid var(--border);
+  font-size: 14px; font-weight: 600;
+}
+.share-bar {
+  display: flex; align-items: center; gap: 10px;
+  margin-top: 40px; padding: 16px 20px;
+  background: #f9f9f9; border-radius: 12px;
+  border: 1px solid var(--border);
+}
+.share-label {
+  font-size: 14px; font-weight: 600; color: var(--text-soft);
+  margin-right: 8px;
+}
+.share-btn {
+  width: 40px; height: 40px;
+  border: none; border-radius: 50%;
+  background: #fff; cursor: pointer;
+  font-size: 1.1rem; transition: all 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  display: inline-flex; align-items: center; justify-content: center;
+}
+.share-btn:hover { transform: translateY(-2px); box-shadow: 0 3px 8px rgba(0,0,0,0.15); }
+.share-twitter:hover { background: #000; color: #fff; }
+.share-facebook:hover { background: #1877f2; color: #fff; }
+.share-kakao:hover { background: #fee500; }
+.share-copy:hover { background: #218CCC; color: #fff; }
+/* EN toggle disabled — 영문판 미생성 콘텐츠 (2026-05-16 patch) */
+.lang-switch .lang-disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  text-decoration: line-through;
+  padding: 4px 10px;
+  color: var(--text-soft, #888);
+  font-size: 13px;
+  user-select: none;
+}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <div class="lang-switch">
+    <a href="../content/atm-withdrawal-guide.html" class="active">KR</a>
+    <a href="../content/atm-withdrawal-guide.en.html">EN</a>
+    <a href="../content/atm-withdrawal-guide.ja.html">JP</a>
+    <a href="../content/atm-withdrawal-guide.zh.html">CN</a>
+  </div>
+</header>
+
+<main class="detail-wrap">
+  <nav class="breadcrumb" aria-label="breadcrumb"><a href="../index.html">전체 가이드</a> &rsaquo; 한국 ATM 현금 인출, 당황 제로 매뉴얼 — DCC 화면에서 KRW를 눌러라</nav>
+  <article>
+  <h1>한국 ATM 현금 인출, 당황 제로 매뉴얼 — 화면 그대로 따라하기</h1>
+<p>&gt; <strong>부제</strong>: 해외카드로 한국 ATM에서 현금 뽑기 완전정복 — Global ATM 판별법 · 편의점·은행 위치별 수수료 · 인출 마스터 플로우 · DCC 최대 함정(&quot;자국통화로 낼까요?&quot; 화면) · 수수료 2중 구조 · 생존 단어 10 · 카드 거절·먹힘 대응</p>
+<p>ISSUE 04 · #1286 · 2026-08-16 · korea-first-timer 시리즈 ⑰</p>
+<hr>
+<h2>🎯 이 매뉴얼을 읽는 법 — 화면 표기 규약</h2>
+<p>화면 표기 규약(대괄호 버튼·낫표 화면·굵게 동작)은 #1270 키오스크 편이 SoT다. 이 글도 그대로 따른다.</p>
+<ul>
+<li>화면 속 버튼은 대괄호로: <code>[ KRW ]</code></li>
+<li>화면 제목·안내 문구는 낫표로: 「Select Amount」</li>
+<li>손으로 하는 동작은 <strong>굵게</strong>: &quot;카드를 IC칩 위쪽으로 <strong>끝까지</strong> 삽입&quot;</li>
+</ul>
+<p>&gt; <strong>범위 안내</strong>: 이 편은 ATM 기계 화면 앞에서 실제로 현금을 뽑는 절차만 다룬다. 환전소·카드사 선택 등 결제수단 전체 그림은 #435 환전·카드·ATM 개요, 한국 결제망(VAN/EMV) 구조는 #527 결제 심층편을 먼저 보면 이 편이 더 잘 이해된다.</p>
+<hr>
+<h2>① Global ATM 판별법 — 아무 ATM이나 되는 게 아니다</h2>
+<p>한국 ATM은 대부분 국내 카드 전용이다. 해외 발급 카드가 되는 기계는 따로 표시가 있다.</p>
+<ul>
+<li>기계 화면이나 옆면에 <strong>Visa · Mastercard · UnionPay · JCB 로고 스티커</strong>가 붙어 있는지 먼저 본다.</li>
+<li><strong>&quot;Global ATM&quot;</strong> 또는 &quot;Foreign Card&quot;라는 문구가 기계에 붙어 있으면 확실하다.</li>
+<li>로고 스티커가 하나도 없는 기계는 카드를 넣어도 거절될 확률이 높다 — 시도 전에 다른 기계를 찾는 편이 빠르다.</li>
+</ul>
+<hr>
+<h2>② 어디에 있나 — 편의점 vs 은행</h2>
+<table><thead><tr>
+<th>위치</th>
+<th>브랜드</th>
+<th>접근성</th>
+<th>수수료(대략)</th>
+</tr></thead><tbody>
+<tr>
+<td>편의점</td>
+<td>CU · GS25 · 세븐일레븐</td>
+<td>24시간, 어디서나 가장 흔함</td>
+<td>약 3,000~3,600원대</td>
+</tr>
+<tr>
+<td>은행 ATM</td>
+<td>우리은행 · KB국민 · 하나은행 · 신한은행</td>
+<td>영업시간 위주, 해외카드 커버리지 넓음</td>
+<td>우리은행 약 2,000~3,000원대</td>
+</tr>
+</tbody></table>
+<ul>
+<li>급할 땐 편의점, 수수료를 아끼고 싶으면 은행 ATM — 다만 은행 ATM은 영업시간 외엔 부스가 잠겨 접근이 안 되는 지점도 있다.</li>
+<li>공항·주요 역 안 ATM은 Global ATM 비율이 특히 높다.</li>
+</ul>
+<hr>
+<h2>③ 인출 마스터 플로우 — 화면 그대로 7단계</h2>
+<table><thead><tr>
+<th>단계</th>
+<th>화면에 보이는 것</th>
+<th>할 일</th>
+<th>함정</th>
+</tr></thead><tbody>
+<tr>
+<td>1</td>
+<td>초기 화면</td>
+<td><code>[ Foreign Card ]</code> / <code>[ Overseas Card ]</code> / <code>[ Global Service ]</code> 터치</td>
+<td>이 버튼을 안 누르고 일반 메뉴로 들어가면 카드 자체가 안 읽힌다</td>
+</tr>
+<tr>
+<td>2</td>
+<td>언어 선택</td>
+<td><code>[ English ]</code></td>
+<td>Global ATM은 언어선택 화면부터 영어를 지원</td>
+</tr>
+<tr>
+<td>3</td>
+<td>카드 삽입 안내</td>
+<td>카드를 IC칩 위쪽으로 <strong>끝까지 삽입</strong></td>
+<td>탭(컨택리스) 전용 카드는 일부 기계에서 인식이 안 될 수 있다</td>
+</tr>
+<tr>
+<td>4</td>
+<td>「Enter PIN」</td>
+<td>비밀번호 4자리 입력 → <code>[ Enter ]</code></td>
+<td>키패드를 손이나 다른 손으로 <strong>가리고</strong> 입력</td>
+</tr>
+<tr>
+<td>5</td>
+<td>「Select Amount」</td>
+<td>금액 터치 또는 <code>[ Other Amount ]</code>로 KRW 단위 직접 입력</td>
+<td>1회 최대 인출 한도는 카드사·기계마다 다르다</td>
+</tr>
+<tr>
+<td>6</td>
+<td>「Confirm Fee / Currency」</td>
+<td>수수료·통화 확인 후 <code>[ Confirm ]</code></td>
+<td><strong>이 화면이 이 매뉴얼의 핵심 — 아래 ④ 먼저 읽고 오기</strong></td>
+</tr>
+<tr>
+<td>7</td>
+<td>「Dispensing...」</td>
+<td>현금 → 카드 → 명세표 순서로 나옴</td>
+<td>현금만 챙기고 <strong>카드를 두고 가는 실수</strong>가 가장 흔하다</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>④ DCC 최대 함정 — &quot;자국통화로 낼까요?&quot; 화면, 무조건 KRW</h2>
+<p>6단계 직후 또는 금액 확인 화면에서 이런 팝업이 뜨는 기계가 많다. 이게 이 매뉴얼에서 가장 중요한 화면이다.</p>
+<p>```</p>
+<p>「Currency Selection」</p>
+<p>Charge in:</p>
+<p>[ USD   $50.00  ]   ← 절대 누르지 않는다</p>
+<p>[ KRW   ₩68,000 ]   ← 반드시 이걸 누른다</p>
+<p>```</p>
+<ul>
+<li>이 팝업은 <strong>DCC(Dynamic Currency Conversion·현지 통화 임의 환산)</strong> 라는 장치다. USD·EUR 등 자국 통화로 청구되도록 ATM 운영사가 <strong>자체적으로 정한 환율</strong>을 적용한다.</li>
+<li>자국 통화(USD 등)를 선택하면 카드사가 나중에 적용하는 정상 환율보다 불리한 <strong>숨은 환율 마진</strong>이 그 자리에서 얹힌다. 화면엔 &quot;친절하게&quot; 내 나라 통화로 보여주는 것처럼 보이지만 실제로는 더 비싸게 뽑히는 함정이다.</li>
+<li>결론은 하나: <strong>화면에 어떤 문구가 뜨든 KRW(현지 통화)를 선택</strong>한다. 환율 계산은 내 카드사가 하게 두는 게 항상 유리하다.</li>
+</ul>
+<hr>
+<h2>⑤ 수수료 2중 구조 — 화면에 뜨는 것과 안 뜨는 것</h2>
+<table><thead><tr>
+<th>종류</th>
+<th>화면에 보이나</th>
+<th>내용</th>
+</tr></thead><tbody>
+<tr>
+<td>ATM 인출 수수료</td>
+<td><strong>보인다</strong> — 6단계 확인 화면에 표시됨</td>
+<td>편의점 약 3,000~3,600원대 / 은행(우리) 약 2,000~3,000원대</td>
+</tr>
+<tr>
+<td>자국 은행 해외 인출 수수료</td>
+<td><strong>안 보인다</strong> — ATM 화면 어디에도 안 뜬다</td>
+<td>카드 발급 은행이 나중에 명세서로 별도 청구. 출국 전 자국 은행 앱·고객센터에서 &quot;해외 ATM 인출 수수료&quot; 조건을 미리 확인해 두면 귀국 후 명세서를 보고 놀라지 않는다</td>
+</tr>
+</tbody></table>
+<p>즉 ATM 화면에서 확인한 금액이 전부가 아니다 — <strong>눈에 보이는 수수료 + 안 보이는 자국 은행 수수료</strong>, 두 겹이라는 것만 기억하면 된다.</p>
+<hr>
+<h2>⑥ 생존 단어 10 — 화면에서 실제로 보이는 글자</h2>
+<table><thead><tr>
+<th>화면 영어/한국어</th>
+<th>읽기</th>
+<th>뜻</th>
+</tr></thead><tbody>
+<tr>
+<td>Withdrawal / 출금</td>
+<td>chulgeum</td>
+<td>인출 — 이 버튼 누르면 시작</td>
+</tr>
+<tr>
+<td>Balance Inquiry / 잔액조회</td>
+<td>jan-aek johoe</td>
+<td>잔액 확인 (인출과 헷갈리지 않게)</td>
+</tr>
+<tr>
+<td>Fee / 수수료</td>
+<td>susu-ryo</td>
+<td>Fee — 6단계 확인 화면 핵심 단어</td>
+</tr>
+<tr>
+<td>Confirm / 확인</td>
+<td>hwagin</td>
+<td><strong>Confirm — 다음으로 진행</strong></td>
+</tr>
+<tr>
+<td>Cancel / 취소</td>
+<td>chwiso</td>
+<td><strong>Cancel — 잘못 눌렀을 때 전체 취소</strong></td>
+</tr>
+<tr>
+<td>PIN / 비밀번호</td>
+<td>bimil beonho</td>
+<td>카드 비밀번호 4자리</td>
+</tr>
+<tr>
+<td>Enter Amount / 금액입력</td>
+<td>geumaek ipryeok</td>
+<td>인출할 금액 직접 입력</td>
+</tr>
+<tr>
+<td>Receipt / 명세표</td>
+<td>myeongsepyo</td>
+<td>영수증 — 수수료·환율 기록됨</td>
+</tr>
+<tr>
+<td>Take Card / 카드받기</td>
+<td>kadeu batgi</td>
+<td><strong>카드 회수 — 절대 놓치지 말 것</strong></td>
+</tr>
+<tr>
+<td>Transaction Cancelled / 거래중단</td>
+<td>georae jungdan</td>
+<td>거래가 중단됐다는 뜻 — 다시 시도</td>
+</tr>
+</tbody></table>
+<p>&gt; 팁: 10개 다 외울 필요 없다. <strong><code>Confirm</code>(진행) · <code>Cancel</code>(탈출) · <code>Take Card</code>(카드 회수)</strong> 세 개만 챙기면 실전에서 헤매지 않는다.</p>
+<hr>
+<h2>⑦ 당황 시나리오 3</h2>
+<p>1. <strong>카드가 거절됐다</strong> — 로고 스티커가 있는 기계였는데도 거절되면 카드 문제가 아니라 그 기계·은행망 궁합 문제일 확률이 높다. <strong>다른 은행 ATM</strong>(가급적 다른 브랜드)으로 옮겨 재시도한다.</p>
+<p>2. <strong>카드가 기계에 먹혔다</strong> — 그 자리에서 억지로 빼려 하지 않는다. 은행 ATM이라면 부스에 붙은 <strong>은행 영업시간 내 고객센터 번호</strong>로 전화해 회수 절차를 확인한다. 편의점 ATM이면 화면의 고객센터 안내(대개 ATM 운영사 콜센터)를 따른다.</p>
+<p>3. <strong>한도 초과로 안 뽑힌다</strong> — 1회 인출 한도(기계 자체) 또는 카드사가 설정한 해외 인출 한도, 둘 중 하나에 걸린 것이다. 금액을 낮춰 재시도하거나, 하루 시간을 두고 다른 기계에서 다시 시도한다.</p>
+<hr>
+<h2>⑧ 플랜B — ATM이 정 안 되면</h2>
+<ul>
+<li><strong>WOWPASS</strong>: 외국인 전용 선불카드. 공항·주요 역 발급기에서 여권으로 즉시 발급, 현금 충전 후 국내 카드처럼 사용 가능 — ATM 인출 자체가 부담스러우면 이쪽이 대안이다.</li>
+<li><strong>환전소</strong>: 명동 등 사설 환전소는 환율이 ATM보다 유리한 경우도 있다. 두 방식의 비교와 선택 기준은 #435 환전·카드·ATM 개요에서 다룬다.</li>
+</ul>
+<hr>
+<h2>🔗 Related</h2>
+<ul>
+<li><strong>결제수단 전체 그림</strong>: #435 한국 환전·카드·ATM 개요 — DCC·WOWPASS 상세 비교는 여기서</li>
+<li><strong>결제 심층</strong>: #527 한국 결제 시스템 deep dive — 카드가 거절되는 VAN/EMV 구조</li>
+<li><strong>같은 시리즈</strong>: #1275 한국 팁·계산 매너 가이드 — ATM에서 뽑은 현금을 쓰는 다음 단계</li>
+<li><strong>korea-first-timer 시리즈</strong>: #1270 키오스크 주문 가이드 (화면 표기 규약 SoT)</li>
+</ul>
+<h2>🏷 Tags</h2>
+<p><code>#한국ATM</code> <code>#KoreaATM</code> <code>#해외카드출금</code> <code>#GlobalATM</code> <code>#DCC함정</code> <code>#환율마진</code> <code>#한국여행초보</code> <code>#KoreaFirstTimer</code> <code>#당황제로</code> <code>#NoPanicKorea</code> <code>#키친구</code></p>
+<hr>
+<h3>📚 내부 참고 데이터 (메인 작성자 참고)</h3>
+<ul>
+<li>SERP 역설계: <code>콘텐츠_기획/serp/1286_atm-withdrawal-guide.md</code> — 경쟁 글(sdboard·seoulnotes·korealocally)은 수수료·위치 커버, 화면 단계별 절차는 부분적</li>
+<li>팩트 anchor: Global ATM 판별=로고 스티커(Visa/MC/UnionPay/JCB) / 편의점(CU·GS25·세븐일레븐) 24시간·수수료 약 3,000~3,600원대 / 은행(우리·KB·하나·신한) 커버리지 넓음·우리 약 2,000~3,000원대 / 절차=Foreign·Overseas·Global 메뉴→English→PIN→금액(KRW)→수수료 확인 / DCC=반드시 KRW 선택</li>
+<li>각도: #435(환전·카드 개요)와 분리 — ATM 화면 절차 전용. DCC를 최대 함정으로 전용 섹션화, 수수료 2중 구조(ATM 수수료+화면에 안 보이는 자국 은행 수수료) 별도 표기</li>
+<li>PAA 커버: &quot;Should I choose KRW or my home currency?&quot; → ④장에서 정면 응답</li>
+<li>표기 규약은 #1270이 SoT — 이 편은 재사용만</li>
+</ul>
+  </article>
+
+  <div class="share-bar">
+    <span class="share-label">공유</span>
+    <button class="share-btn share-twitter" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent('한국 ATM 현금 인출, 당황 제로 매뉴얼 — DCC 화면에서 KRW를 눌러라') + '&url=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Twitter">𝕏</button>
+    <button class="share-btn share-facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Facebook">f</button>
+    <button class="share-btn share-kakao" onclick="navigator.share ? navigator.share({title: '한국 ATM 현금 인출, 당황 제로 매뉴얼 — DCC 화면에서 KRW를 눌러라', url: window.location.href}) : navigator.clipboard.writeText(window.location.href).then(function() { alert('링크 복사됨!'); })" aria-label="Kakao/Share">📤</button>
+    <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href).then(function() { this.textContent = '✓'; setTimeout(function() { document.querySelector('.share-copy').textContent = '🔗'; }, 1500); }.bind(this))" aria-label="Copy link">🔗</button>
+  </div>
+
+  <nav class="detail-nav" aria-label="previous-next">
+    <div><a href="airport-to-city-guide.html" style="color:var(--red);">&larr; 인천공항에서 시내까지, 당황 제로 매뉴얼 — 직통이냐 일반이냐부터</a></div>
+    <div><a href="ktx-first-ride-guide.html" style="color:var(--red);">KTX 처음 타기, 당황 제로 매뉴얼 — 개찰구가 없어도 당황하지 마세요 &rarr;</a></div>
+  </nav>
+
+  <section id="kc-related" style="display:none;margin:2.2rem 0 0.5rem;">
+    <h2 style="font-size:1.1rem;margin-bottom:0.8rem;">관련 가이드</h2>
+    <div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"></div>
+  </section>
+  <script>
+  // related guides — 같은 카테고리 최신 6편 (contents.json fetch·언어 suffix 자동, 2026-07-04)
+  (function() {
+    var m = location.pathname.match(/\/content\/(.+?)(\.en|\.zh|\.ja)?\.html$/);
+    if (!m) return;
+    var slug = m[1], suf = m[2] || '';
+    fetch('../data/contents.json').then(function(r) { return r.json(); }).then(function(items) {
+      var me = null;
+      for (var i = 0; i < items.length; i++) { if (items[i].slug === slug) { me = items[i]; break; } }
+      if (!me) return;
+      var pool = items.filter(function(x) { return x.slug !== slug && x.category === me.category; });
+      pool.sort(function(a, b) { return (parseInt(b.id, 10) || 0) - (parseInt(a.id, 10) || 0); });
+      var picks = pool.slice(0, 6);
+      if (!picks.length) return;
+      document.getElementById('kc-related-grid').innerHTML = picks.map(function(x) {
+        var t = suf ? (x.title_en || x.title_kr) : (x.title_kr || x.title_en);
+        var ok = suf === '' || (suf === '.en' ? x.en_available : (suf === '.zh' ? x.cn_available : x.jp_available));
+        var href = x.slug + (ok ? suf : '') + '.html';
+        return '<a href="' + href + '" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">' + t + '</a>';
+      }).join('');
+      document.getElementById('kc-related').style.display = 'block';
+    }).catch(function() {});
+  })();
+  </script>
+  <!-- kc-comments -->
+  <section id="kc-comments" style="margin:2.5rem 0 0.5rem;">
+    <h2>댓글</h2>
+    <div id="cusdis_thread"
+      data-host="https://cusdis.com"
+      data-app-id="f8670fe3-8091-4c5b-8d82-e13d6ee7fe82"
+      data-page-id="atm-withdrawal-guide"
+      data-page-url="https://mgself414.github.io/keychingu-content-deploy/content/atm-withdrawal-guide.html"
+      data-page-title="한국 ATM 현금 인출, 당황 제로 매뉴얼 — DCC 화면에서 KRW를 눌러라"></div>
+  </section>
+  <script>
+  (function() {
+    var loaded = false;
+    function loadMain() {
+      var s = document.createElement('script');
+      s.src = 'https://cusdis.com/js/cusdis.es.js';
+      s.async = true;
+      document.body.appendChild(s);
+    }
+    function loadCusdis() {
+      if (loaded) return; loaded = true;
+      var lang = 'ko';
+      if (lang) {
+        var l = document.createElement('script');
+        l.src = 'https://cusdis.com/js/widget/lang/' + lang + '.js';
+        l.onload = loadMain; l.onerror = loadMain;
+        document.body.appendChild(l);
+      } else { loadMain(); }
+    }
+    var el = document.getElementById('kc-comments');
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function(es) {
+        if (es[0].isIntersecting) { io.disconnect(); loadCusdis(); }
+      }, { rootMargin: '400px' });
+      io.observe(el);
+    } else { loadCusdis(); }
+  })();
+  </script>
+</main>
+
+<footer class="site-footer">
+  <p><a href="https://instagram.com/keychingu.korea" target="_blank">@keychingu.korea</a> &mdash; Seoul for MZ FIT Travelers</p>
+</footer>
+</body>
+</html>
