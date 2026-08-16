@@ -1161,3 +1161,53 @@ img {
 .meta-card p { font-size: 13px; color: var(--text-mid, #555); margin: 0; line-height: 1.5; }
 [data-theme="dark"] .meta-card { background: #1a1f26; }
 [data-theme="dark"] .meta-card:hover { box-shadow: 0 8px 20px rgba(0,0,0,0.4); }
+
+/* ── FILTER FOLD (B5, 2026-08-16) — area·tag 접기, FAQ details 패턴 재사용 ── */
+.filter-fold {
+  max-width: 1200px;
+  margin: 8px auto 0;
+  padding: 0 1rem;
+}
+.filter-fold summary {
+  display: inline-block;
+  padding: 7px 16px;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--text);
+  cursor: pointer;
+  list-style: none;
+  border: 1px solid var(--border-mid, #ddd);
+  border-radius: 999px;
+  background: #fff;
+  user-select: none;
+}
+.filter-fold summary::-webkit-details-marker { display: none; }
+.filter-fold summary::after { content: " ▾"; color: #999; font-size: 11px; }
+.filter-fold[open] summary::after { content: " ▴"; }
+.filter-fold summary:hover { background: rgba(33,140,204,0.06); }
+.filter-fold .fold-n { color: #999; font-weight: 400; }
+/* fold 안에서는 가로 스크롤 대신 전부 펼침 (모바일 탐색성) */
+.filter-fold .area-bar,
+.filter-fold .tag-bar {
+  flex-wrap: wrap;
+  overflow-x: visible;
+  white-space: normal;
+  margin-top: 8px;
+}
+
+/* ── LOAD MORE (B4, 2026-08-16) — 페이지네이션 대체 ── */
+.load-more-btn {
+  display: block;
+  margin: 8px auto 24px;
+  padding: 12px 36px;
+  font-size: 14.5px;
+  font-weight: 700;
+  color: var(--text);
+  background: #fff;
+  border: 1.5px solid var(--border-mid, #ddd);
+  border-radius: 999px;
+  cursor: pointer;
+  transition: border-color .15s, background .15s;
+}
+.load-more-btn:hover { border-color: #218CCC; background: rgba(33,140,204,0.05); }
+.load-more-btn .load-more-n { font-weight: 400; color: #999; font-size: 12.5px; }

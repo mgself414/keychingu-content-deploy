@@ -19,7 +19,9 @@
                ja: 'より広いキーワードで検索するか、フィルターをリセットしてください。', zh: '请尝试更宽泛的关键词或清除筛选。' },
     fav:     { kr: '즐겨찾기', en: 'Toggle favorite', ja: 'お気に入り', zh: '收藏' },
     vGrid:   { kr: '그리드 보기', en: 'Grid view', ja: 'グリッド表示', zh: '网格视图' },
-    vSection:{ kr: '카테고리별 보기', en: 'Group by category', ja: 'カテゴリ別表示', zh: '按分类查看' }
+    vSection:{ kr: '카테고리별 보기', en: 'Group by category', ja: 'カテゴリ別表示', zh: '按分类查看' },
+    loadMore:{ kr: '더보기', en: 'Load more', ja: 'もっと見る', zh: '加载更多' },
+    remaining:{ kr: '편 남음', en: ' more', ja: '件', zh: '条' }
   };
   function T(key) { return STR[key][LANG] || STR[key].en; }
 
@@ -191,11 +193,11 @@
         bindFilters(data);
         bindSearch(data);
         bindFavToggle(data);
-        bindFilterToggle();
         bindViewToggle(data);
         decorateFilterButtons();
         populateSearchSuggestions(data);
         restoreActiveButtons();
+        bindFilterToggle();   // restoreActiveButtons 이후 — active 복원된 fold 자동 열기
         applyFilters(data);
         updateFavCount();
         if (searchQuery) loadSearchIndex();   // ?q= 진입 시 본문 색인 로드
@@ -239,16 +241,14 @@
     });
   }
 
-  // 접이식 필터 패널 토글 (태그·지역 70버튼 과밀 해소 — 기본 접힘)
+  // 접이식 필터 (B5, 2026-08-16): 네이티브 <details class="filter-fold"> 사용 — JS 불필요.
+  // area 필터가 접힘 상태에서 활성일 때 details를 자동으로 열어 현재 상태를 보이게만 보조.
   function bindFilterToggle() {
-    var toggle = document.getElementById('filter-toggle');
-    var panel = document.getElementById('filter-collapse');
-    if (!toggle || !panel) return;
-    toggle.addEventListener('click', function() {
-      var open = panel.classList.toggle('open');
-      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-      toggle.classList.toggle('active', open);
-    });
+    if (activeArea || activeTag) {
+      document.querySelectorAll('details.filter-fold').forEach(function(d) {
+        if (d.querySelector('.area-btn.active, .tag-btn.active')) d.open = true;
+      });
+    }
   }
 
   function populateSearchSuggestions(data) {
@@ -339,7 +339,7 @@
     grid.classList.add('as-sections');   // 컨테이너 3열 그리드 해제 (섹션이 grid item 되는 것 방지)
     grid.innerHTML = html;
     bindFavButtons();
-    renderPagination(0, 1);   // 섹션뷰는 페이지네이션 없음(전체 그룹 표시)
+    renderLoadMore(0);   // 섹션뷰는 더보기 없음(전체 그룹 표시)
   }
 
   function renderCards(items) {
@@ -358,61 +358,49 @@
         msg = T('noMatch');
       }
       grid.innerHTML = '<div class="no-results">' + msg + '</div>';
-      renderPagination(0, 1);
+      renderLoadMore(0);
       return;
     }
 
-    // 섹션 뷰: 카테고리별 그룹(페이지네이션 없음). 검색 중엔 관련도순 유지 위해 그리드.
+    // 섹션 뷰: 카테고리별 그룹(더보기 없음). 검색 중엔 관련도순 유지 위해 그리드.
     if (viewMode === 'section' && !searchQuery) {
       renderSectioned(items);
       return;
     }
 
     grid.classList.remove('as-sections');   // 그리드 모드 복귀
-    const startIdx = (currentPage - 1) * PAGE_SIZE;
-    const pageItems = items.slice(startIdx, startIdx + PAGE_SIZE);
+    // 더보기 방식(B4, 2026-08-16): 1페이지부터 현재 페이지까지 누적 표시 — 통째 재렌더가 가장 단순
+    const pageItems = items.slice(0, currentPage * PAGE_SIZE);
     grid.innerHTML = pageItems.map(cardHTML).join('');
     bindFavButtons();
 
-    renderPagination(totalItems, totalPages);
+    renderLoadMore(totalItems);
   }
 
-  function renderPagination(totalItems, totalPages) {
+  // B4 (2026-08-16): 페이지네이션 → "더보기 + 뷰포트 진입 시 자동 로드" (footer 도달 보장형 무한스크롤)
+  function renderLoadMore(totalItems) {
     const el = document.getElementById('pagination');
     if (!el) return;
-    if (totalPages <= 1) {
+    const shown = Math.min(currentPage * PAGE_SIZE, totalItems);
+    if (!totalItems || shown >= totalItems) {
       el.innerHTML = '';
       return;
     }
-    let html = '<button class="page-btn" data-page="prev"' + (currentPage === 1 ? ' disabled' : '') + '>←</button>';
-    // Show all pages if ≤7, else first·current±1·last with ellipsis
-    const pages = [];
-    if (totalPages <= 7) {
-      for (let i = 1; i <= totalPages; i++) pages.push(i);
-    } else {
-      pages.push(1);
-      if (currentPage > 3) pages.push('...');
-      for (let i = Math.max(2, currentPage - 1); i <= Math.min(totalPages - 1, currentPage + 1); i++) pages.push(i);
-      if (currentPage < totalPages - 2) pages.push('...');
-      pages.push(totalPages);
+    el.innerHTML = '<button class="load-more-btn" id="load-more">' + T('loadMore') +
+      ' <span class="load-more-n">(+' + Math.min(PAGE_SIZE, totalItems - shown) + ' / ' +
+      (totalItems - shown) + T('remaining') + ')</span></button>';
+    var btn = document.getElementById('load-more');
+    btn.addEventListener('click', function() {
+      currentPage++;
+      applyFilters(window.__contents);   // 스크롤 위치 유지(누적 렌더라 그리드가 아래로만 자람)
+    });
+    // 버튼이 뷰포트에 들어오면 자동 로드 — 로드마다 새 버튼·새 observer라 폭주 없음
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function(entries) {
+        if (entries[0].isIntersecting) { io.disconnect(); btn.click(); }
+      }, { rootMargin: '300px' });
+      io.observe(btn);
     }
-    pages.forEach(function(p) {
-      if (p === '...') html += '<span class="page-ellipsis">…</span>';
-      else html += '<button class="page-btn' + (p === currentPage ? ' active' : '') + '" data-page="' + p + '">' + p + '</button>';
-    });
-    html += '<button class="page-btn" data-page="next"' + (currentPage === totalPages ? ' disabled' : '') + '>→</button>';
-    el.innerHTML = html;
-
-    el.querySelectorAll('.page-btn').forEach(function(btn) {
-      btn.addEventListener('click', function() {
-        const p = this.dataset.page;
-        if (p === 'prev' && currentPage > 1) currentPage--;
-        else if (p === 'next' && currentPage < totalPages) currentPage++;
-        else if (!isNaN(parseInt(p))) currentPage = parseInt(p);
-        applyFilters(window.__contents);
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      });
-    });
   }
 
   function applyFilters(data) {
@@ -476,8 +464,9 @@
     renderCards(filtered);
     updateCount(filtered.length, data.length);
 
-    // 검색 또는 정렬 active 시 중간 nav 숨기고 card-grid 바로 노출
-    var midSections = document.querySelectorAll('.area-bar, .area-landing-nav');
+    // 검색 또는 정렬 active 시 중간 랜딩 nav 숨기고 card-grid 바로 노출
+    // (B5 수정 2026-08-16: .area-bar는 제외 — 접기 패널 안으로 이동, 숨기면 area 필터 해제 불가 버그)
+    var midSections = document.querySelectorAll('.area-landing-nav');
     var sortBy = (document.getElementById('sort-select') || {}).value;
     var isActive = !!searchQuery || !!sortBy || activeCategories.length || !!activeTag || !!activeArea || showFavoritesOnly;
     midSections.forEach(function(el) {

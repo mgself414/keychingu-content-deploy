@@ -55,7 +55,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/main.css?v=1786851027">
 <link rel="icon" href="./favicon.ico" sizes="any">
   <link rel="icon" type="image/png" sizes="192x192" href="./assets/logo/favicon-192.png">
   <link rel="apple-touch-icon" href="./assets/logo/favicon-192.png">
@@ -132,7 +132,22 @@
   <a href="stats.html" class="stats-link" title="콘텐츠 통계 대시보드">📊 통계</a>
 </div>
 
-<!-- AREA FILTER -->
+
+<!-- CATEGORY FILTER (상시 노출) -->
+<div class="filter-bar">
+  <button class="filter-btn" data-category="A">동네 탐방</button>
+  <button class="filter-btn" data-category="B">자연 & 산책</button>
+  <button class="filter-btn" data-category="C">먹거리</button>
+  <button class="filter-btn" data-category="D">문화 체험</button>
+  <button class="filter-btn" data-category="E">뷰티 & 웰니스</button>
+  <button class="filter-btn" data-category="F">쇼핑</button>
+  <button class="filter-btn" data-category="G">K-콘텐츠</button>
+  <button class="filter-btn" data-category="H">실용 가이드</button>
+  <button class="filter-btn" data-category="I">나이트라이프</button>
+</div>
+
+<details class="filter-fold" id="fold-area">
+  <summary>📍 동네로 찾기 <span class="fold-n">(28)</span></summary>
 <div class="area-bar">
   <button class="area-btn" data-area="hongdae">홍대·연남·합정·망원</button>
   <button class="area-btn" data-area="jongno">종로·익선동·북촌</button>
@@ -163,7 +178,62 @@
   <button class="area-btn" data-area="yangcheon">양천·목동</button>
   <button class="area-btn" data-area="guro">구로·금천</button>
 </div>
+</details>
 
+<details class="filter-fold" id="fold-tag">
+  <summary>🏷 태그로 찾기 <span class="fold-n">(49)</span></summary>
+<div class="tag-bar">
+  <button class="tag-btn" data-tag="foodie">foodie</button>
+  <button class="tag-btn" data-tag="free">free</button>
+  <button class="tag-btn" data-tag="nightlife">nightlife</button>
+  <button class="tag-btn" data-tag="culture">culture</button>
+  <button class="tag-btn" data-tag="shopping">shopping</button>
+  <button class="tag-btn" data-tag="photo">photo</button>
+  <button class="tag-btn" data-tag="beauty">beauty</button>
+  <button class="tag-btn" data-tag="outdoor">outdoor</button>
+  <button class="tag-btn" data-tag="practical">practical</button>
+  <button class="tag-btn" data-tag="mz">mz</button>
+  <button class="tag-btn" data-tag="must-try">must-try</button>
+  <button class="tag-btn" data-tag="cafe">cafe</button>
+  <button class="tag-btn" data-tag="market">market</button>
+  <button class="tag-btn" data-tag="beer">beer</button>
+  <button class="tag-btn" data-tag="latenight">latenight</button>
+  <button class="tag-btn" data-tag="retro">retro</button>
+  <button class="tag-btn" data-tag="hanbok">hanbok</button>
+  <button class="tag-btn" data-tag="kdrama">kdrama</button>
+  <button class="tag-btn" data-tag="kpop">kpop</button>
+  <button class="tag-btn" data-tag="wellness">wellness</button>
+  <button class="tag-btn" data-tag="fun">fun</button>
+  <button class="tag-btn" data-tag="budget">budget</button>
+  <button class="tag-btn" data-tag="transport">transport</button>
+  <button class="tag-btn" data-tag="popup">popup</button>
+  <button class="tag-btn" data-tag="busan">busan</button>
+  <button class="tag-btn" data-tag="baseball">baseball</button>
+  <button class="tag-btn" data-tag="esports">esports</button>
+  <button class="tag-btn" data-tag="medical-tourism">medical-tourism</button>
+  <button class="tag-btn" data-tag="autumn-foliage">autumn-foliage</button>
+  <button class="tag-btn" data-tag="cherry-blossom">cherry-blossom</button>
+  <button class="tag-btn" data-tag="winter">winter</button>
+  <button class="tag-btn" data-tag="family-kids">family-kids</button>
+  <button class="tag-btn" data-tag="first-visit">first-visit</button>
+  <button class="tag-btn" data-tag="unesco">unesco</button>
+  <button class="tag-btn" data-tag="luxury">luxury</button>
+  <button class="tag-btn" data-tag="summer">summer</button>
+  <button class="tag-btn" data-tag="subway">subway</button>
+  <button class="tag-btn" data-tag="hanok">hanok</button>
+  <button class="tag-btn" data-tag="jeju">jeju</button>
+  <button class="tag-btn" data-tag="han-river">han-river</button>
+  <button class="tag-btn" data-tag="dessert">dessert</button>
+  <button class="tag-btn" data-tag="palace">palace</button>
+  <button class="tag-btn" data-tag="festival">festival</button>
+  <button class="tag-btn" data-tag="kimchi">kimchi</button>
+  <button class="tag-btn" data-tag="bar">bar</button>
+  <button class="tag-btn" data-tag="museum">museum</button>
+  <button class="tag-btn" data-tag="heritage">heritage</button>
+  <button class="tag-btn" data-tag="michelin">michelin</button>
+  <button class="tag-btn" data-tag="bakery">bakery</button>
+</div>
+</details>
 <!-- AREA DEEP DIVE LANDING (Phase B) -->
 <div class="area-landing-nav" style="--accent:#218CCC;--accent-text:#1B7AB3">
   <p class="area-landing-label">📍 25개 구 area별 상세 페이지 (deep dive) · <a href="map.html" style="font-weight:700">🗺️ 서울 전체 지도 ↗</a></p>
@@ -380,72 +450,7 @@
   </div>
 </div>
 
-<!-- CATEGORY FILTER -->
-<div class="filter-bar">
-  <button class="filter-btn" data-category="A">동네 탐방</button>
-  <button class="filter-btn" data-category="B">자연 & 산책</button>
-  <button class="filter-btn" data-category="C">먹거리</button>
-  <button class="filter-btn" data-category="D">문화 체험</button>
-  <button class="filter-btn" data-category="E">뷰티 & 웰니스</button>
-  <button class="filter-btn" data-category="F">쇼핑</button>
-  <button class="filter-btn" data-category="G">K-콘텐츠</button>
-  <button class="filter-btn" data-category="H">실용 가이드</button>
-  <button class="filter-btn" data-category="I">나이트라이프</button>
-</div>
-
 <!-- TAG FILTER -->
-<div class="tag-bar">
-  <button class="tag-btn" data-tag="foodie">foodie</button>
-  <button class="tag-btn" data-tag="free">free</button>
-  <button class="tag-btn" data-tag="nightlife">nightlife</button>
-  <button class="tag-btn" data-tag="culture">culture</button>
-  <button class="tag-btn" data-tag="shopping">shopping</button>
-  <button class="tag-btn" data-tag="photo">photo</button>
-  <button class="tag-btn" data-tag="beauty">beauty</button>
-  <button class="tag-btn" data-tag="outdoor">outdoor</button>
-  <button class="tag-btn" data-tag="practical">practical</button>
-  <button class="tag-btn" data-tag="mz">mz</button>
-  <button class="tag-btn" data-tag="must-try">must-try</button>
-  <button class="tag-btn" data-tag="cafe">cafe</button>
-  <button class="tag-btn" data-tag="market">market</button>
-  <button class="tag-btn" data-tag="beer">beer</button>
-  <button class="tag-btn" data-tag="latenight">latenight</button>
-  <button class="tag-btn" data-tag="retro">retro</button>
-  <button class="tag-btn" data-tag="hanbok">hanbok</button>
-  <button class="tag-btn" data-tag="kdrama">kdrama</button>
-  <button class="tag-btn" data-tag="kpop">kpop</button>
-  <button class="tag-btn" data-tag="wellness">wellness</button>
-  <button class="tag-btn" data-tag="fun">fun</button>
-  <button class="tag-btn" data-tag="budget">budget</button>
-  <button class="tag-btn" data-tag="transport">transport</button>
-  <button class="tag-btn" data-tag="popup">popup</button>
-  <button class="tag-btn" data-tag="busan">busan</button>
-  <button class="tag-btn" data-tag="baseball">baseball</button>
-  <button class="tag-btn" data-tag="esports">esports</button>
-  <button class="tag-btn" data-tag="medical-tourism">medical-tourism</button>
-  <button class="tag-btn" data-tag="autumn-foliage">autumn-foliage</button>
-  <button class="tag-btn" data-tag="cherry-blossom">cherry-blossom</button>
-  <button class="tag-btn" data-tag="winter">winter</button>
-  <button class="tag-btn" data-tag="family-kids">family-kids</button>
-  <button class="tag-btn" data-tag="first-visit">first-visit</button>
-  <button class="tag-btn" data-tag="unesco">unesco</button>
-  <button class="tag-btn" data-tag="luxury">luxury</button>
-  <button class="tag-btn" data-tag="summer">summer</button>
-  <button class="tag-btn" data-tag="subway">subway</button>
-  <button class="tag-btn" data-tag="hanok">hanok</button>
-  <button class="tag-btn" data-tag="jeju">jeju</button>
-  <button class="tag-btn" data-tag="han-river">han-river</button>
-  <button class="tag-btn" data-tag="dessert">dessert</button>
-  <button class="tag-btn" data-tag="palace">palace</button>
-  <button class="tag-btn" data-tag="festival">festival</button>
-  <button class="tag-btn" data-tag="kimchi">kimchi</button>
-  <button class="tag-btn" data-tag="bar">bar</button>
-  <button class="tag-btn" data-tag="museum">museum</button>
-  <button class="tag-btn" data-tag="heritage">heritage</button>
-  <button class="tag-btn" data-tag="michelin">michelin</button>
-  <button class="tag-btn" data-tag="bakery">bakery</button>
-</div>
-
 <!-- CARD GRID -->
 <div class="card-grid" id="card-grid">
   <!-- JS renders cards here -->
@@ -503,7 +508,7 @@
   });
 })();
 </script>
-<script src="assets/js/filter.js?v=1786155364"></script>
+<script src="assets/js/filter.js?v=1786851027"></script>
 <script>(function(){var s=document.getElementById('search-input');if(s&&window.matchMedia('(max-width:520px)').matches){s.placeholder='🔍 검색';}})();</script>
 <script>
 // hero 총 편수 동적 주입 (contents.json 기준 — 발행 즉시 자동 갱신)
