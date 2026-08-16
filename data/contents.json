@@ -29719,5 +29719,31 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
+  },
+  {
+    "id": "1289",
+    "slug": "e-arrival-card-guide",
+    "series": "korea-first-timer",
+    "content_type": "howto-manual",
+    "title_ja": "韓国入国 e-Arrivalカード、パニックゼロ手順ガイド — ポータル画面どおりに進める",
+    "title_zh": "韩国入境e-Arrival卡，零慌张流程手册 — 跟着门户网站画面走",
+    "summary_ja": "2026年義務化の電子入国申告 — K-ETAとe-Arrivalの区別表・公式ポータル提出フロー(滞在先住所は予約確認書から)・QRの保管法・入国審査の動線・規定変動に備えた公式確認案内",
+    "summary_zh": "2026年起强制的电子入境申报 — K-ETA与e-Arrival区别表 · 官方门户提交流程(住址从预订确认单复制) · QR保存方法 · 入境审查动线 · 规定可能变动请以官网为准",
+    "title_kr": "한국 입국 e-Arrival 카드, 당황 제로 매뉴얼 — 출발 72시간 전에 끝내는 입국 신고",
+    "title_en": "Korea's e-Arrival Card: The No-Panic Manual — File Your Entry Form 72 Hours Before You Fly",
+    "category": "H",
+    "tags": [
+      "foreign-tourist",
+      "first-timer",
+      "howto",
+      "immigration",
+      "arrival"
+    ],
+    "summary_kr": "2026년 의무화된 전자 입국신고 — K-ETA vs e-Arrival 구분표 · 공식 포털 제출 화면 플로우(체류지 주소는 예약 확인서에서) · QR 보관법 · 심사대 동선 · 규정 변동 대비 공식 확인 안내",
+    "summary_en": "Korea's now-mandatory electronic arrival declaration: K-ETA vs e-Arrival explained, the official portal submission flow (copy your hotel address from the booking), keeping your QR safe, the immigration desk routine, and where to verify the latest rules.",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]
