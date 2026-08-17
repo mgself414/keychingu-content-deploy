@@ -30197,5 +30197,32 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
+  },
+  {
+    "id": "1306",
+    "slug": "self-checkout-guide",
+    "series": "korea-first-timer",
+    "content_type": "howto-manual",
+    "title_kr": "한국 셀프계산대·야간 무인 편의점, 당황 제로 절차판 — 카드 태그부터 결제까지",
+    "title_en": "Self-Checkout and Night Unmanned Stores in Korea: The No-Panic Manual — From Door Tap to Payment",
+    "title_ja": "韓国セルフレジ・夜間無人コンビニ、パニックゼロの手順書 — カードタグから決済まで",
+    "title_zh": "韩国自助结账·夜间无人便利店零慌张流程图 — 从刷卡认证到结账全程",
+    "summary_ja": "夜間無人に切り替わる店の入口カードタグ認証 · セルフレジ4ステップ(スキャン→袋の選択→決済→退店) · 海外カード3段階対応(タッチ→挿入→有人カウンター) · 酒・タバコの年齢確認ブロック対応 · 画面サバイバル単語 — 無人店舗・自販機の文化紹介は#1219",
+    "summary_zh": "夜间转无人门店的入口刷卡认证 · 自助结账4步(扫码→选购物袋→支付→离店) · 境外卡3级应对(感应→插卡→人工柜台) · 酒类香烟年龄确认拦截应对 · 屏幕生存词 — 无人店铺·自助贩卖机文化介绍见#1219",
+    "category": "H",
+    "tags": [
+      "foreign-tourist",
+      "first-timer",
+      "howto",
+      "convenience-store",
+      "payment"
+    ],
+    "summary_kr": "야간 무인 전환 매장 입구 카드 태그 인증 · 셀프계산 4단계(스캔→봉투 선택→결제→퇴장) · 해외카드 3단 대응(태그→삽입→유인 카운터) · 술·담배 연령 확인 차단 대응 · 화면 생존 단어 — 무인점포·자판기 문화 소개는 #1219",
+    "summary_en": "Tapping your card at the door of a store that goes unmanned at night, the four self-checkout steps (scan, choose a bag, pay, leave), the three-step foreign-card fallback (tap, insert, then the staffed counter), and what to do when alcohol or tobacco stops the screen for an age check. Unmanned-store culture lives in #1219.",
+    "date_published": "2026-08-17",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]
