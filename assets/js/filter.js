@@ -315,8 +315,8 @@
       '<div class="card-body"><h3>' + title + '</h3><p>' + summary + '</p>' +
       '<div class="card-tags">' + tagsHtml + '</div></div></a></div>';
   }
-  function bindFavButtons() {
-    document.getElementById('card-grid').querySelectorAll('.fav-btn').forEach(function(btn) {
+  function bindFavButtons(root) {
+    (root || document.getElementById('card-grid')).querySelectorAll('.fav-btn').forEach(function(btn) {
       btn.addEventListener('click', function(e) {
         e.preventDefault(); e.stopPropagation();
         toggleFavorite(this.dataset.id); this.classList.toggle('active');
@@ -328,17 +328,43 @@
     var grid = document.getElementById('card-grid');
     var byCat = {};
     items.forEach(function(it) { (byCat[it.category] = byCat[it.category] || []).push(it); });
-    var html = '';
+    grid.classList.add('as-sections');   // 컨테이너 3열 그리드 해제 (섹션이 grid item 되는 것 방지)
+    grid.innerHTML = '';
+    // 섹션별 지연 렌더 (2026-08-17 점검): 1,169장 통 DOM 렌더 → 뷰포트 접근 섹션만 카드 채움
+    var sections = [];
     CAT_ORDER.forEach(function(cat) {
       var list = byCat[cat]; if (!list || !list.length) return;
-      html += '<section class="cat-section"><h2 class="cat-section-h">' +
+      var sec = document.createElement('section');
+      sec.className = 'cat-section';
+      sec.innerHTML = '<h2 class="cat-section-h">' +
         '<span class="cat-dot" style="background:' + (CAT_COLORS[cat] || '#D94C53') + '"></span>' +
         catLabelFor(cat) + ' <span class="cat-section-n">' + list.length + '</span></h2>' +
-        '<div class="cat-section-grid">' + list.map(cardHTML).join('') + '</div></section>';
+        '<div class="cat-section-grid"></div>';
+      grid.appendChild(sec);
+      sections.push({ el: sec, list: list, done: false });
     });
-    grid.classList.add('as-sections');   // 컨테이너 3열 그리드 해제 (섹션이 grid item 되는 것 방지)
-    grid.innerHTML = html;
-    bindFavButtons();
+    function fill(s) {
+      if (s.done) return;
+      s.done = true;
+      var g = s.el.querySelector('.cat-section-grid');
+      g.innerHTML = s.list.map(cardHTML).join('');
+      bindFavButtons(g);
+    }
+    if ('IntersectionObserver' in window && sections.length > 1) {
+      fill(sections[0]);
+      var sio = new IntersectionObserver(function(entries) {
+        entries.forEach(function(en) {
+          if (!en.isIntersecting) return;
+          sio.unobserve(en.target);
+          for (var i = 0; i < sections.length; i++) {
+            if (sections[i].el === en.target) { fill(sections[i]); break; }
+          }
+        });
+      }, { rootMargin: '600px' });
+      sections.slice(1).forEach(function(s) { sio.observe(s.el); });
+    } else {
+      sections.forEach(fill);
+    }
     renderLoadMore(0);   // 섹션뷰는 더보기 없음(전체 그룹 표시)
   }
 
@@ -357,6 +383,7 @@
       } else {
         msg = T('noMatch');
       }
+      grid.classList.remove('as-sections');   // 섹션뷰에서 0건 진입 시 잔존 클래스 제거 (2026-08-17)
       grid.innerHTML = '<div class="no-results">' + msg + '</div>';
       renderLoadMore(0);
       return;
@@ -378,9 +405,11 @@
   }
 
   // B4 (2026-08-16): 페이지네이션 → "더보기 + 뷰포트 진입 시 자동 로드" (footer 도달 보장형 무한스크롤)
+  var loadMoreIO = null;   // 재렌더 시 이전 observer 해제용 (2026-08-17 누수 수정)
   function renderLoadMore(totalItems) {
     const el = document.getElementById('pagination');
     if (!el) return;
+    if (loadMoreIO) { loadMoreIO.disconnect(); loadMoreIO = null; }
     const shown = Math.min(currentPage * PAGE_SIZE, totalItems);
     if (!totalItems || shown >= totalItems) {
       el.innerHTML = '';
@@ -394,12 +423,12 @@
       currentPage++;
       applyFilters(window.__contents);   // 스크롤 위치 유지(누적 렌더라 그리드가 아래로만 자람)
     });
-    // 버튼이 뷰포트에 들어오면 자동 로드 — 로드마다 새 버튼·새 observer라 폭주 없음
+    // 버튼이 뷰포트에 들어오면 자동 로드 — 재렌더 시 상단에서 이전 observer disconnect
     if ('IntersectionObserver' in window) {
-      var io = new IntersectionObserver(function(entries) {
-        if (entries[0].isIntersecting) { io.disconnect(); btn.click(); }
+      loadMoreIO = new IntersectionObserver(function(entries) {
+        if (entries[0].isIntersecting) { loadMoreIO.disconnect(); loadMoreIO = null; btn.click(); }
       }, { rootMargin: '300px' });
-      io.observe(btn);
+      loadMoreIO.observe(btn);
     }
   }
 
