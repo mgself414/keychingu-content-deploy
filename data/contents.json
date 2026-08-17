@@ -30143,5 +30143,59 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
+  },
+  {
+    "id": "1304",
+    "slug": "tax-refund-kiosk-guide",
+    "series": "korea-first-timer",
+    "content_type": "howto-manual",
+    "title_kr": "한국 택스리펀 공항 키오스크, 당황 제로 절차판 — 스캔 순서 그대로 따라하기",
+    "title_en": "Korea Tax Refund at the Airport Kiosk: The No-Panic Manual — Scan Before You Check Your Bag",
+    "title_ja": "韓国タックスリファンド空港キオスク、パニックゼロの手順書 — スキャン順序をそのまま辿るだけ",
+    "title_zh": "韩国退税机场自助机零慌张流程图 — 按屏幕扫描顺序照做",
+    "summary_ja": "店頭即時還付の瞬間(1回100万・累計500万ウォン上限) · 空港キオスク6ステップ(パスポート→レシートスキャン、預け入れ前が原則) · 「税関確認対象」分岐対応 · T1/T2受取動線(Gate 28/249) — 条件・戦略全般は#1231",
+    "summary_zh": "店内即时退税瞬间(单笔100万·累计500万韩元上限) · 机场自助机6步(护照→小票扫描，托运行李前办理) · 「海关查验对象」分支应对 · T1/T2领取动线(Gate 28/249) — 条件·攻略见#1231",
+    "category": "H",
+    "tags": [
+      "foreign-tourist",
+      "first-timer",
+      "howto",
+      "tax-refund",
+      "shopping"
+    ],
+    "summary_kr": "매장 즉시환급 순간(한도 1회 100만·누적 500만) · 공항 키오스크 6단계(여권→전표 스캔, 위탁수하물 부치기 전 원칙) · 「세관 확인 대상」 분기 대응 · T1/T2 수령 동선(Gate 28/249) — 조건·환급률·전략 전반은 #1231",
+    "summary_en": "The in-store instant refund moment (₩1M per purchase, ₩5M per trip), the six airport kiosk steps (passport first, then receipts — before you check your bag), the customs-check branch, and T1/T2 collection routes (Gate 28/249). Conditions and strategy live in #1231.",
+    "date_published": "2026-08-17",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1305",
+    "slug": "subway-locker-guide",
+    "series": "korea-first-timer",
+    "content_type": "howto-manual",
+    "title_kr": "한국 지하철 물품보관함(T-Locker), 당황 제로 절차판 — 터치스크린 그대로 따라하기",
+    "title_en": "Seoul Subway Lockers (T-Locker): The No-Panic Manual — Touchscreen, Step by Step",
+    "title_ja": "韓国地下鉄ロッカー(T-Locker)、パニックゼロの手順書 — タッチスクリーンの通りに進めるだけ",
+    "title_zh": "韩国地铁储物柜(T-Locker)零慌张流程图 — 照着触屏操作就对了",
+    "summary_ja": "サイズ・料金表(小2,200/中3,300/大4,400ウォン・4時間基準) · タッチスクリーン保管6ステップ(アプリ不要、カード・T-money決済) · 取り出し3ステップ・超過精算 · 暗証番号紛失対応 · 画面サバイバル単語13 — 保管・配送比較は#1232",
+    "summary_zh": "尺寸·费用表(小2,200/中3,300/大4,400韩元·4小时基准) · 触屏寄存6步(无需App，银行卡·T-money支付) · 取件3步·超时结算 · 忘记密码应对 · 屏幕生存词13 — 寄存vs配送对比见#1232",
+    "category": "H",
+    "tags": [
+      "foreign-tourist",
+      "first-timer",
+      "howto",
+      "luggage",
+      "subway"
+    ],
+    "summary_kr": "사이즈·요금표(소 2,200/중 3,300/대 4,400·4시간 기준) · 터치스크린 보관 6단계(앱 불필요, 카드·티머니 결제) · 찾기 3단계·초과 정산 · 비밀번호 분실 대응 · 화면 생존 단어 13 — 보관·배송 옵션 비교는 #1232",
+    "summary_en": "Sizes and rates (S ₩2,200 / M ₩3,300 / L ₩4,400 per 4 hours), the six touchscreen storage steps (no app needed — card or T-money), the three pickup steps with overage settlement, lost-password recovery, and 13 screen survival words. Storage-vs-delivery comparison lives in #1232.",
+    "date_published": "2026-08-17",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]
