@@ -1,1 +1,3 @@
 content/.omc/
+.omc/
+data/contents.json.bak_*
