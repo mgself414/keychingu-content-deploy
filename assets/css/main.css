@@ -1211,3 +1211,13 @@ img {
 }
 .load-more-btn:hover { border-color: #218CCC; background: rgba(33,140,204,0.05); }
 .load-more-btn .load-more-n { font-weight: 400; color: #999; font-size: 12.5px; }
+
+/* ── BLOCKQUOTE — 부제·팁·📌 참고 렌더 (2026-08-17 점검 H2) ── */
+article blockquote {
+  margin: 14px 0;
+  padding: 10px 16px;
+  border-left: 4px solid #218CCC;
+  background: rgba(33,140,204,0.06);
+  border-radius: 0 8px 8px 0;
+}
+article blockquote p { margin: 0; }
