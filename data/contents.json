@@ -30057,5 +30057,57 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
+  },
+  {
+    "id": "1302",
+    "slug": "public-wifi-guide",
+    "series": "korea-first-timer",
+    "content_type": "howto-manual",
+    "title_ja": "韓国公共Wi-Fi接続、迷わない方法 — 「Secure」が付いた方を選べ",
+    "title_zh": "韩国公共WiFi连接不迷路手册 — 选带\"Secure\"字样的那个",
+    "summary_ja": "SSID2種の分岐(SEOUL vs SEOUL_Secure — ID・PWとも「seoul」・自動再接続)・接続フロー・バスWi-Fi・セキュリティ3か条(バンキングはデータ通信で)・カフェWi-Fiパスワード文化",
+    "summary_zh": "SSID两种分支(SEOUL vs SEOUL_Secure — 账号密码都是\"seoul\"·自动重连) · 连接流程 · 公交WiFi · 安全3条(网银用流量) · 咖啡厅WiFi密码文化",
+    "title_kr": "서울 공공 와이파이 접속, 당황 제로 매뉴얼 — 비밀번호는 seoul입니다",
+    "title_en": "Connecting to Seoul's Free WiFi: The No-Panic Manual — the Password Is Just \"seoul\"",
+    "category": "H",
+    "tags": [
+      "foreign-tourist",
+      "first-timer",
+      "howto",
+      "wifi",
+      "connectivity"
+    ],
+    "summary_kr": "SSID 2종 분기(SEOUL vs SEOUL_Secure — ID·PW 모두 seoul·자동 재연결) · 접속 플로우 · 버스 와이파이 · 보안 수칙 3줄(뱅킹은 데이터로) · 카페 와이파이 비번 문화",
+    "summary_en": "The two SSIDs (SEOUL vs SEOUL_Secure — ID and password are both \"seoul\", auto-reconnects), the connection flow, bus WiFi, three security rules (banking goes on mobile data), and cafe WiFi password culture.",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1303",
+    "slug": "esim-activation-guide",
+    "series": "korea-first-timer",
+    "content_type": "howto-manual",
+    "title_ja": "韓国eSIM開通、パニックゼロの手順書 — インストールは出国前、アクティベーションは到着後",
+    "title_zh": "韩国eSIM开通零慌张流程图 — 安装在出国前，激活在抵达后",
+    "summary_ja": "タイミング原則(空港でQRを読むにはWi-Fiが要る逆説)・iPhone/Androidインストールフロー・到着直後チェックリスト(データ回線指定→ローミングON)・3段トラブルシューティング・自国回線の料金爆弾防止",
+    "summary_zh": "时机原则(在机场扫QR反而需要WiFi的悖论) · iPhone/Android安装流程 · 抵达后清单(指定数据线路→漫游开启) · 3步排障 · 防止本国号码天价账单",
+    "title_kr": "한국 eSIM 개통, 당황 제로 매뉴얼 — 설치는 집에서, 활성화는 도착해서",
+    "title_en": "Activating Your Korea eSIM: The No-Panic Manual — Install at Home, Activate on Arrival",
+    "category": "H",
+    "tags": [
+      "foreign-tourist",
+      "first-timer",
+      "howto",
+      "esim",
+      "connectivity"
+    ],
+    "summary_kr": "타이밍 원칙(공항에서 QR 스캔하려면 와이파이가 필요한 역설) · iPhone/Android 설치 플로우 · 도착 직후 체크리스트(데이터 지정→로밍 ON) · 안 될 때 3단 트러블슈팅 · 홈 회선 요금 폭탄 방지",
+    "summary_en": "The timing rule (you need WiFi to scan a QR at the airport — install before you fly), iPhone and Android install flows, the arrival checklist (set data line, roaming on), three-step troubleshooting, and avoiding home-line bill shock.",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]
