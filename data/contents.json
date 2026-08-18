@@ -30224,5 +30224,26 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
+  },
+  {
+    "id": "1307",
+    "slug": "clinic-visit-guide",
+    "title_kr": "한국 병원 진료, 당황 제로 절차판 — 여권 하나로 접수부터 약국까지",
+    "title_en": "Seeing a Doctor in Korea: The No-Panic Manual — From Reception to Pharmacy with Just Your Passport",
+    "category": "H",
+    "tags": [
+      "foreign-tourist",
+      "first-timer",
+      "howto",
+      "healthcare",
+      "pharmacy"
+    ],
+    "summary_kr": "의원·병원·응급실 구분 · 접수→진료→수납→처방전→약국 6단계 · 여권만으로 되는 접수 · 처방전 사용기간 확인 · 비보험 실제 부담(₩30,000~80,000) · 1339·의료통역 — 응급은 #405, 약국 안 절차는 #1278",
+    "summary_en": "Telling clinics, hospitals and the ER apart; the six steps from reception through consultation, payment and prescription to the pharmacy; registering with nothing but a passport; checking the expiry printed on the prescription; what an uninsured visit actually costs; and the 1339 hotline and medical interpretation. Emergencies live in #405, the pharmacy itself in #1278.",
+    "date_published": "2026-08-18",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]
