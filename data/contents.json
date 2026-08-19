@@ -30245,5 +30245,49 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
+  },
+  {
+    "id": "1308",
+    "slug": "seoul-sunset-spots",
+    "title_kr": "서울 노을 명소 12선 — 해 지기 전 45분, 골든아워 스팟 가이드",
+    "title_en": "Seoul Sunset Spots: 12 Golden-Hour Places Worth Arriving 45 Minutes Early For",
+    "category": "B",
+    "tags": [
+      "foreign-tourist",
+      "sunset",
+      "night-view",
+      "han-river",
+      "park",
+      "nature"
+    ],
+    "summary_kr": "노을은 야경과 다른 게임 — 일몰 45분 전 도착 공식 · 한강 수면반사/언덕 파노라마/성곽 실루엣/퇴근길 가성비 4유형 12곳 · 월별 일몰 시각표 · 노을→야경 연결 동선 (전 스팟 무료)",
+    "summary_en": "Sunset is a different game from night views: arrive 45 minutes before sundown. Twelve free spots in four types — river reflections, hilltop panoramas, fortress-wall silhouettes and easy after-work picks — plus a month-by-month sunset table and routes that roll straight into the night-view guides.",
+    "date_published": "2026-08-20",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1309",
+    "slug": "myeongdong-euljiro-evening-walk",
+    "title_kr": "명동→을지로 이브닝 워킹 코스 — 2시간에 서울의 여섯 얼굴, 야장 맥주로 피니시",
+    "title_en": "Myeongdong to Euljiro Evening Walk: Six Faces of Seoul in Two Hours, Ending with Yajang Beer",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "myeongdong",
+      "euljiro",
+      "yajang",
+      "night",
+      "itinerary"
+    ],
+    "summary_kr": "19시 명동역 출발 4km 6스팟 — 쇼핑(명동길)→역사 건축(명동대성당)→산업유산(인쇄골목)→근대 건축(세운상가)→청계천→노가리골목 야장 피니시 · 21시 야장 피크 도착 설계 · 변형 코스 4종 (8/11 실측 기반)",
+    "summary_en": "A 4km, six-stop walk from Myeongdong Station at 7pm: K-beauty streets, Korea's first Gothic cathedral, the working print alleys of Euljiro, the 1968 Sewoon megastructure and Cheonggyecheon stream, timed to land in the Nogari Alley yajang (open-air beer tables) right at its 9pm peak. Four variations included.",
+    "date_published": "2026-08-20",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]
