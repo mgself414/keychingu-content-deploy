@@ -30289,5 +30289,48 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
+  },
+  {
+    "id": "1310",
+    "slug": "seoul-overrated-underrated",
+    "title_kr": "Overrated vs Underrated Seoul — 외국인 리뷰가 말하는 시간 배분 재조정 가이드",
+    "title_en": "Overrated vs Underrated Seoul: Reallocating Your Time by What Foreign Reviews Actually Say",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "itinerary",
+      "hidden-gems",
+      "seoul-wide",
+      "comparison"
+    ],
+    "summary_kr": "\"가지 마라\"가 아니라 \"시간을 다시 나누라\" — 과대평가 6곳(살리는 조건 포함)+저평가 8곳+시간대만 바꾸면 살아나는 조건부 5곳. 각 항목에 같은 니즈의 대체지 병기 · 3~4일 일정 예시 포함",
+    "summary_en": "Not a skip-list but a time-budget rebalance: six overrated spots (with the conditions that redeem them), eight underrated ones foreign reviews keep calling hidden, five conditionals that come alive with the right hour or a reservation — each paired with an alternative that serves the same need, plus a 3-4 day sample itinerary.",
+    "date_published": "2026-08-20",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1311",
+    "slug": "sindang-guide",
+    "title_kr": "신당동 — \"다음 성수\"로 불리기 시작한 동네, 시장·힙 바·떡볶이의 3층 구조",
+    "title_en": "Sindang-dong: The Neighborhood Being Called the Next Seongsu — Market, Hip Bars and Original Tteokbokki in Three Layers",
+    "category": "A",
+    "tags": [
+      "foreign-tourist",
+      "sindang",
+      "markets",
+      "tteokbokki",
+      "cocktail",
+      "local"
+    ],
+    "summary_kr": "낮의 서울중앙시장(1911·호객 없는 로컬 시장) → 밤의 싸전거리 바 골목(주신당 등) → 원조 즉석 떡볶이 타운 3축 · 을지로·동대문 도보 15분권 · 반나절/저녁 압축 동선 2종 · 숙박 관점 포함",
+    "summary_en": "Three layers of Sindang: Seoul Jungang Market by day (a 1911 locals' market with no tourist hustle), the Ssajeon-geori bar alley by night (Jushindang and its neighbors in old rice-shop storefronts), and the original simmer-at-the-table tteokbokki town — all a 15-minute walk from Euljiro and Dongdaemun, with two ready-made routes and a word on staying here.",
+    "date_published": "2026-08-20",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]
