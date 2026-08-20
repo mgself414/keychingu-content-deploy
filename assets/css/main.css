@@ -11,12 +11,13 @@
   --blue-light: #6AB2DC;
   --blue-pale: #BDDDF0;
   --red-deep: #C43840;      /* AA 본문용 빨강 (2026-07-10 디자인 개선) */
+  --blue-deep: #1A76AE;     /* AA 본문용 파랑 (2026-08-20 P4) — --blue #218CCC는 소형 텍스트 3.4~4.3 미달 */
   --bg: #FAFAF8;
   --bg-zone: #F4F2EF;       /* 존 구분 연회색 (대시보드 섹션 배경) */
   --card-bg: #FFFFFF;
   --text: #020304;
   --text-mid: #3C3C3C;
-  --text-soft: #7A7A7A;
+  --text-soft: #6E6E6E;   /* AA 4.5 확보 (2026-08-20 P4): 구 #7A7A7A는 흰 배경 4.29로 미달 */
   --border: rgba(2,3,4,0.08);
   --border-mid: rgba(2,3,4,0.14);
   /* spacing scale */
@@ -42,7 +43,7 @@ a { color: inherit; text-decoration: none; }
 .site-header {
   display: flex; align-items: center; justify-content: space-between;
   padding: 16px 32px;
-  background: #fff;
+  background: var(--card-bg);   /* 다크 대응 (2026-08-20 P4): #fff 하드코딩 시 다크에서 헤더만 흰색 잔류 */
   border-bottom: 1px solid var(--border);
   position: sticky; top: 0; z-index: 100;
 }
@@ -55,7 +56,7 @@ a { color: inherit; text-decoration: none; }
   font-size: 13px; font-weight: 600;
   border-radius: 6px;
   color: var(--text-soft);
-  transition: all 0.2s;
+  transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
 }
 .lang-switch a.active {
   background: var(--red);
@@ -70,12 +71,13 @@ a { color: inherit; text-decoration: none; }
 .hero {
   text-align: center;
   padding: 64px 32px 48px;
-  background: linear-gradient(180deg, #fff 0%, var(--bg) 100%);
+  background: linear-gradient(180deg, var(--card-bg) 0%, var(--bg) 100%);
 }
 .hero-logo { height: 80px; margin-bottom: 20px; }
 .hero h1 {
   font-family: var(--serif);
-  font-size: 34px; font-weight: 900; color: var(--black);
+  /* --text (테마 인지) — --black은 밝은 면 위 전용(cat-badge·new-badge). 2026-08-20 P4 */
+  font-size: 34px; font-weight: 900; color: var(--text);
   margin-bottom: 8px; letter-spacing: -0.01em;
 }
 .hero h1 em { font-style: normal; color: var(--red); }
@@ -99,7 +101,7 @@ a { color: inherit; text-decoration: none; }
   background: #fff;
   color: var(--text-mid);
   cursor: pointer;
-  transition: all 0.18s ease;
+  transition: border-color 0.18s, transform 0.18s, box-shadow 0.18s;
   font-family: inherit;
 }
 .filter-btn .qm-icon {
@@ -140,7 +142,7 @@ a { color: inherit; text-decoration: none; }
   cursor: pointer;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  transition: all 0.2s;
+  transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
   font-family: inherit;
 }
 .tag-btn:hover { border-color: var(--blue); color: var(--blue); }
@@ -150,7 +152,7 @@ a { color: inherit; text-decoration: none; }
 .view-toggle { display: inline-flex; gap: 0; border: 1.5px solid var(--border); border-radius: var(--radius-pill); overflow: hidden; flex: 0 0 auto; }
 .view-toggle button {
   padding: 0.5rem 0.7rem; background: #fff; border: none; cursor: pointer;
-  font-size: 1rem; line-height: 1; color: var(--text-soft); font-family: inherit; transition: all 0.15s;
+  font-size: 1rem; line-height: 1; color: var(--text-soft); font-family: inherit; transition: border-color 0.15s, transform 0.15s, box-shadow 0.15s;
 }
 .view-toggle button.active { background: var(--blue); color: #fff; }
 [data-theme="dark"] .view-toggle button { background: #1a1f26; color: var(--text-soft); }
@@ -162,7 +164,7 @@ a { color: inherit; text-decoration: none; }
 .cat-section-h {
   font-family: var(--serif);
   display: flex; align-items: center; gap: 10px;
-  font-size: 1.25rem; font-weight: 700; color: var(--black);
+  font-size: 1.25rem; font-weight: 700; color: var(--text);
   margin: 28px 0 14px; padding-bottom: 10px; border-bottom: 1px solid var(--border);
 }
 .cat-section-h .cat-dot { width: 12px; height: 12px; border-radius: 50%; flex: 0 0 auto; }
@@ -236,7 +238,7 @@ a { color: inherit; text-decoration: none; }
 }
 .card-body h3 {
   font-family: var(--serif);
-  font-size: 16.5px; font-weight: 700; color: var(--black);
+  font-size: 16.5px; font-weight: 700; color: var(--text);
   margin-bottom: 7px; line-height: 1.32;
   display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
 }
@@ -254,7 +256,7 @@ a { color: inherit; text-decoration: none; }
   padding: 3px 9px;
   border-radius: var(--radius-pill);
   background: rgba(33,140,204,0.09);
-  color: var(--blue);
+  color: var(--blue-deep);
   letter-spacing: 0.02em;
 }
 
@@ -265,7 +267,8 @@ a { color: inherit; text-decoration: none; }
   border-top: 1px solid var(--border);
   font-size: 12px; color: var(--text-soft);
 }
-.site-footer a { color: var(--red); font-weight: 600; }
+.site-footer a { color: var(--red-deep); font-weight: 600; }
+[data-theme="dark"] .site-footer a { color: var(--red-light); }   /* 딥톤은 어두운 배경서 2.8 (2026-08-20 P4) */
 
 /* ── NO RESULTS ── */
 .no-results {
@@ -302,7 +305,7 @@ a { color: inherit; text-decoration: none; }
 }
 #result-count {
   font-size: 0.9rem;
-  color: #666;
+  color: var(--text-mid);
   white-space: nowrap;
   font-weight: 500;
 }
@@ -332,7 +335,7 @@ a { color: inherit; text-decoration: none; }
   font-family: inherit;
   font-size: 0.85rem;
   cursor: pointer;
-  transition: all 0.2s;
+  transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
   color: #555;
 }
 .area-btn:hover {
@@ -365,9 +368,9 @@ a { color: inherit; text-decoration: none; }
   font-size: 0.9rem;
   font-weight: 500;
   cursor: pointer;
-  color: #d94c53;
+  color: var(--red-deep);
   white-space: nowrap;
-  transition: all 0.2s;
+  transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
 }
 .fav-toggle:hover {
   background: #ffe0e0;
@@ -390,10 +393,10 @@ a { color: inherit; text-decoration: none; }
   border: none;
   border-radius: 50%;
   font-size: 1.2rem;
-  color: #ccc;
+  color: #6E6E6E;   /* 배경이 항상 흰 원이라 테마 변수 금지 — --text-soft는 다크에서 밝아져 3.25 (2026-08-20 P4) */
   cursor: pointer;
   z-index: 10;
-  transition: all 0.2s;
+  transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -444,7 +447,9 @@ a { color: inherit; text-decoration: none; }
 [data-theme="dark"] .fav-toggle {
   background: #2a1f1f;
   border-color: #4a2828;
+  color: var(--red-light);   /* --red-deep는 다크 미재정의 → 어두운 배경 위 3.03. 2026-08-20 P4 */
 }
+[data-theme="dark"] .card-tags span { color: var(--blue-light); }   /* 동일 사유 (--blue-deep 3.35) */
 
 /* Theme toggle button */
 .theme-toggle {
@@ -461,7 +466,7 @@ a { color: inherit; text-decoration: none; }
   font-size: 1.4rem;
   box-shadow: var(--shadow);
   z-index: 1000;
-  transition: all 0.2s;
+  transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
 }
 .theme-toggle:hover {
   transform: scale(1.1);
@@ -544,7 +549,7 @@ img {
   font-weight: 600;
   border-radius: 6px;
   color: var(--text-soft);
-  transition: all 0.2s;
+  transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
 }
 .site-nav a:hover {
   background: rgba(33,140,204,0.08);
@@ -794,7 +799,7 @@ img {
   font-size: 14px;
   border-radius: 10px;
   border: 1px solid var(--border);
-  transition: all 0.2s;
+  transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
 }
 .error-btn:hover {
   border-color: var(--blue);
@@ -913,7 +918,7 @@ img {
   font-size: 13px;
   font-weight: 500;
   text-align: center;
-  transition: all 0.2s;
+  transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
 }
 .area-landing-grid a:hover {
   background: var(--blue);
@@ -1116,7 +1121,7 @@ img {
 .meta-section h2 { font-family: var(--serif, 'Noto Serif KR'), serif; font-size: 28px; font-weight: 900; margin-bottom: 8px; padding-bottom: 12px; border-bottom: 3px solid var(--black, #020304); }
 .meta-section .section-meta { font-size: 13px; color: var(--text-soft); margin-bottom: 24px; }
 .meta-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
-.meta-card { background: var(--card-bg, #fff); border: 1px solid var(--border, #e8e8e8); border-radius: var(--radius, 12px); padding: 20px; text-decoration: none; color: var(--text, #020304); transition: all 0.2s; display: block; }
+.meta-card { background: var(--card-bg, #fff); border: 1px solid var(--border, #e8e8e8); border-radius: var(--radius, 12px); padding: 20px; text-decoration: none; color: var(--text, #020304); transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s; display: block; }
 .meta-card:hover { border-color: var(--meta-accent, var(--blue)); transform: translateY(-2px); box-shadow: var(--shadow-lg, 0 8px 20px rgba(0,0,0,0.08)); }
 .meta-card .num { font-family: 'Poppins', sans-serif; font-size: 12px; font-weight: 700; color: var(--meta-accent-text, var(--blue)); margin-bottom: 8px; display: inline-block; }
 .meta-card h3 { font-family: var(--serif, 'Noto Serif KR'), serif; font-size: 16px; font-weight: 700; margin: 0 0 6px; line-height: 1.4; }
@@ -1140,14 +1145,14 @@ img {
   list-style: none;
   border: 1px solid var(--border-mid, #ddd);
   border-radius: 999px;
-  background: #fff;
+  background: var(--card-bg);
   user-select: none;
 }
 .filter-fold summary::-webkit-details-marker { display: none; }
-.filter-fold summary::after { content: " ▾"; color: #999; font-size: 11px; }
+.filter-fold summary::after { content: " ▾"; color: var(--text-soft); font-size: 11px; }
 .filter-fold[open] summary::after { content: " ▴"; }
 .filter-fold summary:hover { background: rgba(33,140,204,0.06); }
-.filter-fold .fold-n { color: #999; font-weight: 400; }
+.filter-fold .fold-n { color: var(--text-soft); font-weight: 400; }
 /* fold 안에서는 가로 스크롤 대신 전부 펼침 (모바일 탐색성) */
 .filter-fold .area-bar,
 .filter-fold .tag-bar {
@@ -1165,14 +1170,16 @@ img {
   font-size: 14.5px;
   font-weight: 700;
   color: var(--text);
-  background: #fff;
+  background: var(--card-bg);
   border: 1.5px solid var(--border-mid, #ddd);
   border-radius: 999px;
   cursor: pointer;
-  transition: border-color .15s, background .15s;
+  /* background는 전환 대상에서 제외 — var(--card-bg)가 테마 토글로 바뀔 때
+     전환이 재실행되지 않아 흰 배경이 잔류하는 Chrome 동작 회피 (2026-08-20 P4) */
+  transition: border-color .15s;
 }
 .load-more-btn:hover { border-color: #218CCC; background: rgba(33,140,204,0.05); }
-.load-more-btn .load-more-n { font-weight: 400; color: #999; font-size: 12.5px; }
+.load-more-btn .load-more-n { font-weight: 400; color: var(--text-soft); font-size: 12.5px; }
 
 /* ── BLOCKQUOTE — 부제·팁·📌 참고 렌더 (2026-08-17 점검 H2) ── */
 article blockquote {
