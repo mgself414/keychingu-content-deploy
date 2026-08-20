@@ -26,8 +26,8 @@
   function T(key) { return STR[key][LANG] || STR[key].en; }
 
   let activeCategories = [];   // 다중선택 (2026-07-10 P2) — facet 내 OR, facet 간 AND
-  let activeTag = null;
-  let activeArea = null;
+  let activeTags = [];    // 다중선택 (2026-08-20 P4) — facet 내 OR, facet 간 AND
+  let activeAreas = [];   // 〃
   let searchQuery = '';
   let showFavoritesOnly = false;
   let currentPage = 1;
@@ -159,8 +159,8 @@
   function syncURL() {
     var p = new URLSearchParams();
     if (activeCategories.length) p.set('cat', activeCategories.join(','));
-    if (activeTag) p.set('tag', activeTag);
-    if (activeArea) p.set('area', activeArea);
+    if (activeTags.length) p.set('tag', activeTags.join(','));
+    if (activeAreas.length) p.set('area', activeAreas.join(','));
     if (searchQuery) p.set('q', searchQuery);
     var qs = p.toString();
     try { history.replaceState(null, '', qs ? ('?' + qs) : location.pathname); } catch (e) {}
@@ -168,8 +168,8 @@
   function readURL() {
     var p = new URLSearchParams(location.search);
     if (p.get('cat')) activeCategories = p.get('cat').split(',').filter(Boolean);
-    if (p.get('tag')) activeTag = p.get('tag');
-    if (p.get('area')) activeArea = p.get('area');
+    if (p.get('tag')) activeTags = p.get('tag').split(',').filter(Boolean);
+    if (p.get('area')) activeAreas = p.get('area').split(',').filter(Boolean);
     if (p.get('q')) searchQuery = p.get('q');
   }
   function restoreActiveButtons() {
@@ -177,8 +177,8 @@
       var b = document.querySelector('.filter-btn[data-category="' + c + '"]');
       if (b) { b.classList.add('active'); b.setAttribute('aria-pressed', 'true'); }
     });
-    if (activeTag) { var t = document.querySelector('.tag-btn[data-tag="' + activeTag + '"]'); if (t) t.classList.add('active'); }
-    if (activeArea) { var a = document.querySelector('.area-btn[data-area="' + activeArea + '"]'); if (a) a.classList.add('active'); }
+    activeTags.forEach(function(tg) { var t = document.querySelector('.tag-btn[data-tag="' + tg + '"]'); if (t) t.classList.add('active'); });
+    activeAreas.forEach(function(ar) { var a = document.querySelector('.area-btn[data-area="' + ar + '"]'); if (a) a.classList.add('active'); });
     if (searchQuery) { var s = document.getElementById('search-input'); if (s) s.value = searchQuery; }
   }
 
@@ -244,7 +244,7 @@
   // 접이식 필터 (B5, 2026-08-16): 네이티브 <details class="filter-fold"> 사용 — JS 불필요.
   // area 필터가 접힘 상태에서 활성일 때 details를 자동으로 열어 현재 상태를 보이게만 보조.
   function bindFilterToggle() {
-    if (activeArea || activeTag) {
+    if (activeAreas.length || activeTags.length) {
       document.querySelectorAll('details.filter-fold').forEach(function(d) {
         if (d.querySelector('.area-btn.active, .tag-btn.active')) d.open = true;
       });
@@ -437,11 +437,15 @@
     if (activeCategories.length) {
       filtered = filtered.filter(function(item) { return activeCategories.indexOf(item.category) !== -1; });
     }
-    if (activeTag) {
-      filtered = filtered.filter(function(item) { return item.tags.indexOf(activeTag) !== -1; });
+    if (activeTags.length) {
+      filtered = filtered.filter(function(item) {
+        return activeTags.some(function(t) { return item.tags.indexOf(t) !== -1; });
+      });
     }
-    if (activeArea) {
-      filtered = filtered.filter(function(item) { return item.tags.indexOf(activeArea) !== -1; });
+    if (activeAreas.length) {
+      filtered = filtered.filter(function(item) {
+        return activeAreas.some(function(a) { return item.tags.indexOf(a) !== -1; });
+      });
     }
     if (showFavoritesOnly) {
       const favs = getFavorites();
@@ -495,9 +499,9 @@
 
     // 검색 또는 정렬 active 시 중간 랜딩 nav 숨기고 card-grid 바로 노출
     // (B5 수정 2026-08-16: .area-bar는 제외 — 접기 패널 안으로 이동, 숨기면 area 필터 해제 불가 버그)
-    var midSections = document.querySelectorAll('.area-landing-nav');
+    var midSections = document.querySelectorAll('.area-landing-nav, .series-fold');
     var sortBy = (document.getElementById('sort-select') || {}).value;
-    var isActive = !!searchQuery || !!sortBy || activeCategories.length || !!activeTag || !!activeArea || showFavoritesOnly;
+    var isActive = !!searchQuery || !!sortBy || activeCategories.length || activeTags.length || activeAreas.length || showFavoritesOnly;
     midSections.forEach(function(el) {
       el.style.display = isActive ? 'none' : '';
     });
@@ -519,14 +523,10 @@
     document.querySelectorAll('.tag-btn').forEach(function(btn) {
       btn.addEventListener('click', function () {
         var tag = this.dataset.tag;
-        if (activeTag === tag) {
-          activeTag = null;
-          this.classList.remove('active');
-        } else {
-          activeTag = tag;
-          document.querySelectorAll('.tag-btn').forEach(function(b) { b.classList.remove('active'); });
-          this.classList.add('active');
-        }
+        var ti = activeTags.indexOf(tag);
+        if (ti !== -1) { activeTags.splice(ti, 1); this.classList.remove('active'); }
+        else { activeTags.push(tag); this.classList.add('active'); }
+        this.setAttribute('aria-pressed', ti === -1 ? 'true' : 'false');
         currentPage = 1;
         syncURL();
         applyFilters(data);
@@ -535,14 +535,10 @@
     document.querySelectorAll('.area-btn').forEach(function(btn) {
       btn.addEventListener('click', function () {
         var area = this.dataset.area;
-        if (activeArea === area) {
-          activeArea = null;
-          this.classList.remove('active');
-        } else {
-          activeArea = area;
-          document.querySelectorAll('.area-btn').forEach(function(b) { b.classList.remove('active'); });
-          this.classList.add('active');
-        }
+        var ai = activeAreas.indexOf(area);
+        if (ai !== -1) { activeAreas.splice(ai, 1); this.classList.remove('active'); }
+        else { activeAreas.push(area); this.classList.add('active'); }
+        this.setAttribute('aria-pressed', ai === -1 ? 'true' : 'false');
         currentPage = 1;
         syncURL();
         applyFilters(data);

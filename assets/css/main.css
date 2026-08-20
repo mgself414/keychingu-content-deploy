@@ -1162,6 +1162,28 @@ img {
   margin-top: 8px;
 }
 
+/* ── SERIES FOLD (2026-08-20 P4) — 시리즈 내비 블록(10~14개·61~119링크)을 접어
+   카드 그리드를 첫 화면으로 끌어올린다. .filter-fold 와 동일한 네이티브 details 패턴. ── */
+.series-fold { max-width: 1200px; margin: 16px auto 8px; padding: 0 1rem; }
+.series-fold summary {
+  display: inline-block;
+  padding: 9px 18px;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--text);
+  cursor: pointer;
+  list-style: none;
+  border: 1px solid var(--border-mid, #ddd);
+  border-radius: 999px;
+  background: var(--card-bg);
+  user-select: none;
+}
+.series-fold summary::-webkit-details-marker { display: none; }
+.series-fold summary::after { content: " ▾"; color: var(--text-soft); font-size: 11px; }
+.series-fold[open] summary::after { content: " ▴"; }
+.series-fold summary:hover { border-color: var(--blue); }
+.series-fold .fold-n { color: var(--text-soft); font-weight: 400; }
+
 /* ── LOAD MORE (B4, 2026-08-16) — 페이지네이션 대체 ── */
 .load-more-btn {
   display: block;
