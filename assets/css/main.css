@@ -223,7 +223,8 @@ a { color: inherit; text-decoration: none; }
   backdrop-filter: blur(2px);
 }
 .card-cover .new-badge {    /* 최근 발행 NEW (date_published 기반) */
-  position: absolute; top: 10px; right: 10px;
+  /* right=54px: .fav-btn(36px @ right 9.6px)이 right 45.6px까지 덮어 NEW가 가려지던 것을 비켜 배치 (2026-08-20) */
+  position: absolute; top: 10px; right: 54px;
   padding: 3px 8px;
   font-size: 9px; font-weight: 800; letter-spacing: 0.08em;
   border-radius: var(--radius-pill);
