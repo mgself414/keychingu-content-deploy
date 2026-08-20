@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🍂 Korea by Season — Plan Ahead, Arrive Ready | KeyChinGu</title>
+  <meta name="description" content="Korea's seasonal windows are short — two weeks of cherry blossoms, three weeks of silver grass, two months of autumn delicacies. See what's in season now and what's coming next, and prepare before you land.">
+  <link rel="canonical" href="https://mgself414.github.io/keychingu-content-deploy/en/seasons.html">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <style>
+    .axis-hero { background: linear-gradient(135deg, #D94C53 0%, #FAAD19 100%); color: #fff; padding: 60px 24px; text-align: center; }
+    .axis-hero h1 { font-family: 'Poppins', sans-serif; font-size: 36px; font-weight: 800; margin-bottom: 12px; }
+    .axis-hero p { font-size: 15px; opacity: 0.97; max-width: 760px; margin: 0 auto; line-height: 1.6; }
+    .axis-section { max-width: 1100px; margin: 48px auto; padding: 0 24px; }
+    .section-label { font-size: 14px; font-weight: 800; color: #A9720A; letter-spacing: 1px; margin: 40px 0 16px; }
+    .section-label.now { font-size: 17px; color: #D94C53; }
+    .now-badge { display: inline-block; background: #D94C53; color: #fff; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 999px; margin-left: 8px; vertical-align: 2px; }
+    .soon-badge { display: inline-block; background: #218CCC; color: #fff; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 999px; margin-left: 8px; vertical-align: 2px; }
+    .intro-box { background: #fdf8ef; border-left: 4px solid #FAAD19; padding: 20px 24px; border-radius: 8px; margin-bottom: 8px; }
+    .intro-box p { font-size: 14px; color: #444; line-height: 1.7; margin: 0; }
+    .empty-season { font-size: 13.5px; color: #999; padding: 12px 4px; }
+  </style>
+  <link rel="icon" href="../favicon.ico" sizes="any">
+</head>
+<body style="--meta-accent:#FAAD19;--meta-accent-text:#A9720A">
+
+<header class="site-header">
+  <a href="index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <nav class="site-nav">
+    <a href="index.html">Home</a>
+    <a href="meta-guides.html">📚 Meta Guides</a>
+    <a href="culture.html">🎭 Culture</a>
+    <a href="seasons.html" class="active">🍂 Seasons</a>
+    <a href="howto.html">🧭 First Time</a>
+    <a href="about.html">About</a>
+    <a href="faq.html">FAQ</a>
+  </nav>
+  <div class="lang-switch">
+    <a href="../seasons.html">KR</a>
+    <a href="seasons.html" class="active">EN</a>
+    <a href="../ja/index.html">JP</a>
+    <a href="../zh/index.html">CN</a>
+  </div>
+</header>
+
+<section class="axis-hero">
+  <h1>🍂 Korea by Season</h1>
+  <p>Korea's seasonal windows are <b>short</b> — two weeks of cherry blossoms, three weeks of silver grass, two months of autumn delicacies. This hub shows <b>what's in season now</b> and <b>what's coming next</b>, so you can read ahead and arrive ready.</p>
+</section>
+
+<section class="axis-section">
+  <div class="intro-box">
+    <p>🧳 <b>How to prepare</b> — every seasonal guide includes a <b>pre-trip checklist</b> and a timing calendar. For season-limited spots and foods, <b>which week you arrive</b> decides what you get.</p>
+  </div>
+
+  <div id="season-sections"><!-- rendered by JS from contents.json seasonal tags --></div>
+</section>
+
+<footer class="site-footer">
+  <p style="text-align: center; padding: 24px; color: #888; font-size: 13px;">
+    © 2026 KeyChinGu · <a href="index.html" style="color:#A9720A;">Home</a> · <a href="culture.html" style="color:#A9720A;">Culture</a>
+  </p>
+</footer>
+
+<script>
+(function() {
+  var root = document.getElementById('season-sections');
+  if (!root) return;
+  var SEASONS = [
+    { key: 'spring', label: '🌸 Spring (Mar–May)', months: [2, 3, 4] },
+    { key: 'summer', label: '🌊 Summer (Jun–Aug)', months: [5, 6, 7] },
+    { key: 'fall',   label: '🍂 Autumn (Sep–Nov)', months: [8, 9, 10] },
+    { key: 'winter', label: '❄️ Winter (Dec–Feb)', months: [11, 0, 1] }
+  ];
+  var m = new Date().getMonth();
+  var nowIdx = 0;
+  SEASONS.forEach(function(s, i) { if (s.months.indexOf(m) >= 0) nowIdx = i; });
+  var order = [];
+  for (var i = 0; i < 4; i++) order.push(SEASONS[(nowIdx + i) % 4]);
+
+  fetch('../data/contents.json')
+    .then(function(r) { return r.json(); })
+    .then(function(items) {
+      items = items.filter(function(x) { return x.en_available; });
+      function cards(picks) {
+        return picks.map(function(x) {
+          var title = x.title_en || x.slug;
+          var desc = (x.summary_en || '').slice(0, 110);
+          return '<a href="../content/' + x.slug + '.en.html" class="meta-card">' +
+                 '<h3>' + title + '</h3><p>' + desc + '</p></a>';
+        }).join('');
+      }
+      function pick(tag) {
+        return items.filter(function(x) {
+          var t = x.tags || [];
+          return t.indexOf(tag) >= 0 && t.indexOf('seasonal') < 0;
+        }).sort(function(a, b) { return (parseInt(b.id) || 0) - (parseInt(a.id) || 0); });
+      }
+      var html = '';
+      order.forEach(function(s, i) {
+        var picks = pick(s.key);
+        var badge = i === 0 ? '<span class="now-badge">IN SEASON NOW</span>'
+                  : i === 1 ? '<span class="soon-badge">UP NEXT — PLAN AHEAD</span>' : '';
+        html += '<div class="section-label' + (i === 0 ? ' now' : '') + '">' + s.label + badge + '</div>';
+        html += picks.length
+          ? '<div class="meta-grid">' + cards(picks) + '</div>'
+          : '<div class="empty-season">Guides for this season are on the way.</div>';
+      });
+      var meta = items.filter(function(x) { return (x.tags || []).indexOf('seasonal') >= 0; })
+                      .sort(function(a, b) { return (parseInt(b.id) || 0) - (parseInt(a.id) || 0); });
+      if (meta.length) {
+        html += '<div class="section-label">🗓 All Seasons · Calendars</div><div class="meta-grid">' + cards(meta) + '</div>';
+      }
+      root.innerHTML = html;
+    });
+})();
+</script>
+
+</body>
+</html>

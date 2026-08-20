@@ -30258,7 +30258,8 @@
       "night-view",
       "han-river",
       "park",
-      "nature"
+      "nature",
+      "fall"
     ],
     "summary_kr": "노을은 야경과 다른 게임 — 일몰 45분 전 도착 공식 · 한강 수면반사/언덕 파노라마/성곽 실루엣/퇴근길 가성비 4유형 12곳 · 월별 일몰 시각표 · 노을→야경 연결 동선 (전 스팟 무료)",
     "summary_en": "Sunset is a different game from night views: arrive 45 minutes before sundown. Twelve free spots in four types — river reflections, hilltop panoramas, fortress-wall silhouettes and easy after-work picks — plus a month-by-month sunset table and routes that roll straight into the night-view guides.",
@@ -30327,6 +30328,71 @@
     ],
     "summary_kr": "낮의 서울중앙시장(1911·호객 없는 로컬 시장) → 밤의 싸전거리 바 골목(주신당 등) → 원조 즉석 떡볶이 타운 3축 · 을지로·동대문 도보 15분권 · 반나절/저녁 압축 동선 2종 · 숙박 관점 포함",
     "summary_en": "Three layers of Sindang: Seoul Jungang Market by day (a 1911 locals' market with no tourist hustle), the Ssajeon-geori bar alley by night (Jushindang and its neighbors in old rice-shop storefronts), and the original simmer-at-the-table tteokbokki town — all a 15-minute walk from Euljiro and Dongdaemun, with two ready-made routes and a word on staying here.",
+    "date_published": "2026-08-20",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1312",
+    "slug": "autumn-food-calendar",
+    "title_kr": "가을 제철 미식 캘린더 — 전어·대하·꽃게·송이·홍시, 9~11월에만 열리는 한국의 맛",
+    "title_en": "Korea Autumn Food Calendar: Jeoneo, King Prawns, Crab, Pine Mushrooms and Persimmons — Open September to November Only",
+    "category": "C",
+    "tags": [
+      "foreign-tourist",
+      "fall",
+      "seafood",
+      "markets",
+      "food-guide",
+      "kfood"
+    ],
+    "summary_kr": "한국인이 가을을 기다리는 진짜 이유 — 전어·대하·꽃게(수게)·송이·홍시·햇밤 6종 제철 매트릭스 + 월별 캘린더 + 시장/야장/한정식 동선 3패턴 + 여행 전 미리 준비 체크리스트",
+    "summary_en": "Why Koreans wait for autumn: a six-item peak-season matrix (jeoneo herring, king prawns grilled on rock salt, meaty male crab, wild pine mushrooms, soft persimmons, roasted chestnuts) with a month-by-month calendar, three ways to eat them (market, open-air yajang, hanjeongsik) and a pre-trip checklist.",
+    "date_published": "2026-08-20",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1313",
+    "slug": "seoul-grass-season",
+    "title_kr": "서울 억새·핑크뮬리 — 벚꽃의 가을 버전, 그라스 시즌 완전 가이드",
+    "title_en": "Seoul Silver Grass and Pink Muhly: Autumn Answer to Cherry Blossoms — The Grass Season Guide",
+    "category": "B",
+    "tags": [
+      "foreign-tourist",
+      "fall",
+      "park",
+      "nature",
+      "festival",
+      "sunset"
+    ],
+    "summary_kr": "은빛 억새(하늘공원)와 분홍 핑크뮬리(올림픽공원)의 9월 말~11월 초 시즌 — 스팟 5곳+피크 주간 캘린더+노을 연계 동선(#1308)+미리 준비 체크리스트. 두 시즌이 겹치는 10월 초·중순이 절정",
+    "summary_en": "Seoul autumn has two more colors beyond red foliage: silver grass at Haneul Park and pink muhly at Olympic Park, peaking late September to early November. Five spots, a week-by-week calendar, a sunset-combo route and a pre-trip checklist — the two seasons overlap in early-to-mid October.",
+    "date_published": "2026-08-20",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1314",
+    "slug": "seoul-ginkgo-walk",
+    "title_kr": "노란 서울 — 은행나무 길 산책 가이드, 단풍과는 다른 11월의 색",
+    "title_en": "Yellow Seoul: The Ginkgo Walk Guide — A Different November from Red Foliage",
+    "category": "B",
+    "tags": [
+      "foreign-tourist",
+      "fall",
+      "history",
+      "itinerary",
+      "nature"
+    ],
+    "summary_kr": "붉은 단풍이 산의 것이라면 노란 은행은 도시의 것 — 400년 성균관 은행나무·덕수궁 돌담길·가로수길 등 6곳 + 피크 예측법(비 한 번에 끝난다) + 냄새·낙엽 실전 팁 + 미리 준비 체크리스트",
+    "summary_en": "Red foliage belongs to the mountains; yellow ginkgo belongs to the city. Six all-flat walks — the 400-year Sungkyunkwan ginkgo, Deoksugung stone-wall road, Garosu-gil and more — plus how to predict the short peak (one rain ends it), smell-and-leaf field tips and a pre-trip checklist.",
     "date_published": "2026-08-20",
     "en_available": true,
     "cn_available": true,
