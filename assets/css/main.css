@@ -441,6 +441,7 @@ a { color: inherit; text-decoration: none; }
   border-color: #2a3038;
   color: #b8bcc4;
 }
+[data-theme="dark"] .filter-btn:hover { color: var(--red-light); }   /* 딥톤은 어두운 배경서 저대비 (2026-08-21) */
 [data-theme="dark"] .area-btn:hover {
   background: #2a3038;
 }
