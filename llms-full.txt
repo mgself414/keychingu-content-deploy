@@ -1,6 +1,6 @@
-# KeyChinGu — Full Content Catalog (2026-08-21)
+# KeyChinGu — Full Content Catalog (2026-08-22)
 
-> Full content catalog of 939 Korea travel guides for foreign tourists. Curated by KeyChinGu (@keychingu.korea). Languages: KR (full) + EN/CN/JP (published). Coverage: 60+ cities, 8-axis content matrix, 5 traveler segments. Updated 2026-08-21.
+> Full content catalog of 939 Korea travel guides for foreign tourists. Curated by KeyChinGu (@keychingu.korea). Languages: KR (full) + EN/CN/JP (published). Coverage: 60+ cities, 8-axis content matrix, 5 traveler segments. Updated 2026-08-22.
 
 ---
 
@@ -19384,6 +19384,23 @@ ISSUE 04 · #1215 · 2026-07-03
 - 시그니처: 개인실·심야 무인 체크인·넓은 방·러브모텔 계열이나 청결 관리
 - 외국인 친화도: ★★★☆☆ (영어 제한적·현금 선호 일부)
 - 팁: ₩40,000~70,000·역세권·커플·심야 도착
+
+---
+
+## 🔍 예약 전 "러브모텔" 판별법 — 사진에서 보이는 단서 4가지
+
+먼저 오해부터: 러브모텔은 나쁜 숙소라는 뜻이 아니다. 깨끗하고 넓고 가성비 좋은 곳이 많다. 차이는 품질이 아니라 고객층과 이용 방식이다. 상당수가 커플 대상이며 대실(daesil) — 몇 시간 단위 이용 — 을 함께 운영한다. 한국에서는 완전히 일반적인 영업 형태지만, 부모님·아이와 함께이거나 평범한 관광호텔 경험을 원한다면 원하는 그림이 아닐 수 있다.
+
+문제는 예약 사이트에서 구분이 잘 안 된다는 것이다. 영문 상호에 "Hotel"을 쓰고, 인테리어는 현대적이며, 리뷰 평점도 좋은 경우가 많다. 사진을 볼 때 아래 단서를 확인하면 대체로 걸러진다.
+
+| # | 단서 | 무엇을 보는가 |
+|---|---|---|
+| 1 | 거울 위치 | 욕실·화장대의 일반 거울이 아니라 침대를 마주 보는 대형 거울, 침대 바로 옆 거울, 드물게 천장 거울 |
+| 2 | PC 2대 나란히 | 객실에 게이밍 PC가 두 대 나란히 있으면 가능성 높음 — 대실 이용객이 영화·게임·배달을 함께 즐기는 구성 |
+| 3 | 주차장 입구 가림막 | 주차장 입구에 커튼·가림막을 둬 드나드는 차가 길에서 보이지 않게 한 구조 (가장 한국적인 단서) |
+| 4 | 체크인 시간이 비정상 | 일반 호텔의 15~16시가 아니라 21~22시 등 늦은 체크인이면 그 전까지 대실로 돌린다는 신호 |
+
+> 정리: 러브모텔을 피하는 게 목적이 아니라 내가 원하는 종류의 숙소인지 알고 예약하는 것이 목적이다. 위 단서가 보이더라도 가격·위치·청결이 맞으면 좋은 선택일 수 있다. 다만 가족 동반이라면 한 번 더 확인하자.
 
 ---
 
