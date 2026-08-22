@@ -1,8 +1,8 @@
 # KeyChinGu — Korea Travel Guides for Foreign Tourists
 
-> Comprehensive curated Korea travel guides for foreign MZ travelers, covering 250+ topics across 60+ cities (Seoul·Busan·Jeju·Gyeongju·Andong·Jeonju·etc), 4 languages (KR·EN·CN·JP), 8-axis content matrix (food·culture·K-content·shopping·seasonal·transport·sports·foreigner essentials), and 5 traveler segments (solo·couple·family·MZ·budget). Updated 2026-08-22.
+> Comprehensive curated Korea travel guides for foreign MZ travelers, covering 250+ topics across 60+ cities (Seoul·Busan·Jeju·Gyeongju·Andong·Jeonju·etc), 4 languages (KR·EN·CN·JP), 8-axis content matrix (food·culture·K-content·shopping·seasonal·transport·sports·foreigner essentials), and 5 traveler segments (solo·couple·family·MZ·budget). Updated 2026-08-23.
 
-> Total guides: **1183** | EN: 1183 | CN: 1183 | JP: 1183 | og:image: 250+ | sitemap URLs: 3396
+> Total guides: **1185** | EN: 1185 | CN: 1185 | JP: 1185 | og:image: 250+ | sitemap URLs: 3396
 
 
 ## A (385)
@@ -107,7 +107,7 @@
 - [Seoul Hongdae Brunch Guide](https://mgself414.github.io/keychingu-content-deploy/content/hongdae-brunch.en.html): Yeonnam signature + Hapjeong modern + pancake/bagel + Mangwon local 4-axis 12-pick — T6.5 cycle 11 Hongdae brunch guide (Korean: https://mgself414.github.io/keychingu-content-deploy/content/hongdae-brunch.html)
   - ... and 117 more
 
-## H (126)
+## H (127)
 
 - [Transport & Navigation Guide](https://mgself414.github.io/keychingu-content-deploy/content/transport.en.html): Subway, bus, taxi & apps — all you need (Korean: https://mgself414.github.io/keychingu-content-deploy/content/transport.html)
 - [Seoul Running Course Guide](https://mgself414.github.io/keychingu-content-deploy/content/running-course.en.html): Han River + downtown + park + niche 4-axis 8-pick — Activity category debut (series #1 general, #147 night running coming) (Korean: https://mgself414.github.io/keychingu-content-deploy/content/running-course.html)
@@ -139,9 +139,9 @@
 - [Seoul Digital Nomad Full Guide](https://mgself414.github.io/keychingu-content-deploy/content/digital-nomad.en.html): Seoul Digital Nomad 12-pick — WeWork (Gangnam/City Hall/Samseong-dong) + Fastfive (Korea's #1) + Sparkplus + 24h cafes (Starbucks The series (Korean: https://mgself414.github.io/keychingu-content-deploy/content/digital-nomad.html)
 - [Korean Holidays Full Guide](https://mgself414.github.io/keychingu-content-deploy/content/korean-holidays.en.html): Korean Holidays 12-pick — Seollal Lunar New Year (tteokguk + sebae + hanbok + minsok-nori) + Chuseok harvest festival (songpyeon + charye +  (Korean: https://mgself414.github.io/keychingu-content-deploy/content/korean-holidays.html)
 - [Seoul Rainy Day Indoor Full Guide](https://mgself414.github.io/keychingu-content-deploy/content/rainy-day.en.html): Seoul Rainy Day 12-pick — NMK (Korea's #1 free) + Hangul Museum free + DDP night LED + 63 Aqua Planet + Lotte World Aquarium + COEX Aquarium (Korean: https://mgself414.github.io/keychingu-content-deploy/content/rainy-day.html)
-  - ... and 96 more
+  - ... and 97 more
 
-## B (81)
+## B (82)
 
 - [Free Night View Spots TOP 10](https://mgself414.github.io/keychingu-content-deploy/content/night-views.en.html): Best Seoul night views without spending a won (Korean: https://mgself414.github.io/keychingu-content-deploy/content/night-views.html)
 - [Namsan Trail & Night View](https://mgself414.github.io/keychingu-content-deploy/content/namsan.en.html): Namsan Trail walking + N Seoul Tower night view — foreigner 1st-priority night course with Myeongdong/Itaewon access (Korean: https://mgself414.github.io/keychingu-content-deploy/content/namsan.html)
@@ -173,7 +173,7 @@
 - [Jindo Travel Map](https://mgself414.github.io/keychingu-content-deploy/content/jindo-travel-map.en.html): Jeollanam-do Jindo matrix — Jindo Miracle Sea Road (Moses parting 1~2/yr·foreigner buzz)·Jindo Dog (Natural Monument #53·Jindo Dog theme par (Korean: https://mgself414.github.io/keychingu-content-deploy/content/jindo-travel-map.html)
 - [Goseong Travel Map](https://mgself414.github.io/keychingu-content-deploy/content/goseong-travel-map.en.html): Gangwon Goseong matrix — Unification Observatory (Korea #1 North view·foreigner buzz)·DMZ Museum·Goseong Korean War Experience Center + Song (Korean: https://mgself414.github.io/keychingu-content-deploy/content/goseong-travel-map.html)
 - [Korea Transport Map](https://mgself414.github.io/keychingu-content-deploy/content/korea-transport-map.en.html): Korea inbound transport matrix — Climate Card 30day 65,000KRW (#176 walkable_seoul #1) + Subway 1~9·KTX·SRT·Incheon·Gimpo + T-money·K-Pass + (Korean: https://mgself414.github.io/keychingu-content-deploy/content/korea-transport-map.html)
-  - ... and 51 more
+  - ... and 52 more
 
 ## F (74)
 
@@ -303,7 +303,7 @@
 
 ## Metadata
 
-- **Coverage**: 1183 curated guides as of 2026-08-22
+- **Coverage**: 1185 curated guides as of 2026-08-23
 - **Languages**: KR (full), EN (full), CN (full), JP (full)
 - **Update frequency**: Weekly
 - **Data sources**: Korea Tourism Organization (VisitKorea), Seoul Tourism Foundation (Visit Seoul), Cultural Heritage Administration, UNESCO World Heritage, Korea Open Government License (KOGL), Naver Maps, Reddit r/koreatravel + user curation
