@@ -499,7 +499,7 @@
 
     // 검색 또는 정렬 active 시 중간 랜딩 nav 숨기고 card-grid 바로 노출
     // (B5 수정 2026-08-16: .area-bar는 제외 — 접기 패널 안으로 이동, 숨기면 area 필터 해제 불가 버그)
-    var midSections = document.querySelectorAll('.area-landing-nav, .series-fold');
+    var midSections = document.querySelectorAll('.area-landing-nav, .series-fold, .kc-routes, .kc-season');
     var sortBy = (document.getElementById('sort-select') || {}).value;
     var isActive = !!searchQuery || !!sortBy || activeCategories.length || activeTags.length || activeAreas.length || showFavoritesOnly;
     midSections.forEach(function(el) {

@@ -55,7 +55,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/main.css?v=1787330000">
+  <link rel="stylesheet" href="assets/css/main.css?v=1787340000">
 <link rel="icon" href="./favicon.ico" sizes="any">
   <link rel="icon" type="image/png" sizes="192x192" href="./assets/logo/favicon-192.png">
   <link rel="apple-touch-icon" href="./assets/logo/favicon-192.png">
@@ -117,6 +117,44 @@
   <h1>Korea <em>for</em> You</h1>
   <p>한국을 방문하는 외국인 여행자를 위한 큐레이션 가이드 <strong id="kc-total">1,000+편</strong> — 서울 25개 구 + 부산·지방 소도시 + K-content·교통·시즌·실무 풀세트 (4개 언어)</p>
 </section>
+
+<!-- ENTRY ROUTES (2026-08-22 P4) — 목적별 4갈래 진입 -->
+<div class="kc-routes">
+  <a class="kc-route" href="howto.html" style="border-top:4px solid #D94C53">
+    <svg viewBox="0 0 24 24" style="stroke:#C43840"><path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20z"></path><path d="M15.5 8.5l-2 5-5 2 2-5z"></path></svg>
+    <h3>한국이 처음이에요</h3>
+    <p>도착 첫 72시간 — K-ETA·유심·교통카드·환전</p>
+    <span class="go">당황 제로 시리즈 · 실용 가이드 126편 →</span>
+  </a>
+  <a class="kc-route" href="map.html" style="border-top:4px solid #218CCC">
+    <svg viewBox="0 0 24 24" style="stroke:#1A76AE"><path d="M4 21V7l5-3 5 3v14M14 21v-9l6-3v12M3 21h18M7.5 10h.5M7.5 14h.5M11 10h.5M11 14h.5"></path></svg>
+    <h3>동네를 걷고 싶어요</h3>
+    <p>서울 28개 동네 + 지방 16개 도시, 걷는 순서대로</p>
+    <span class="go">동네 탐방 385편 · 서울 지도 →</span>
+  </a>
+  <a class="kc-route" href="seasons.html" style="border-top:4px solid #FAAD19">
+    <svg viewBox="0 0 24 24" style="stroke:#986709"><path d="M5 19c0-8 6-14 14-14 0 8-6 14-14 14z"></path><path d="M5 19l7-7"></path></svg>
+    <h3>지금 이 계절</h3>
+    <p>그 시기에만 열리는 것들 — 축제·자연·시즌 미식</p>
+    <span class="go">시즌 허브 →</span>
+  </a>
+  <a class="kc-route" href="index.html?cat=C" style="border-top:4px solid #2E8B57">
+    <svg viewBox="0 0 24 24" style="stroke:#1B5E20"><path d="M5 11h14a7 7 0 0 1-14 0zM8 11V7M12 11V6M16 11V7M5 21h14"></path></svg>
+    <h3>먹으러 왔어요</h3>
+    <p>노포부터 미쉐린까지 · 카페·디저트·정통주</p>
+    <span class="go">먹거리 147편 →</span>
+  </a>
+</div>
+
+<!-- SEASON STRIP — 라벨·건수는 JS가 현재 월에서 자동 산출 (하드코딩 날짜 없음) -->
+<div class="kc-season" id="kc-season" hidden>
+  <span class="kc-season-label">
+    <svg viewBox="0 0 24 24"><path d="M5 19c0-8 6-14 14-14 0 8-6 14-14 14z"></path><path d="M5 19l7-7"></path></svg>
+    <span id="kc-season-name">지금 시즌</span>
+  </span>
+  <span class="kc-season-n" id="kc-season-count"></span>
+  <a class="kc-season-cta" href="seasons.html">시즌 허브 열기</a>
+</div>
 
 <!-- SEARCH BAR -->
 <div class="search-bar">
@@ -513,13 +551,26 @@
   });
 })();
 </script>
-<script src="assets/js/filter.js?v=1787330000"></script>
+<script src="assets/js/filter.js?v=1787340000"></script>
 <script>(function(){var s=document.getElementById('search-input');if(s&&window.matchMedia('(max-width:520px)').matches){s.placeholder='🔍 검색';}})();</script>
 <script>
 // hero 총 편수 동적 주입 (contents.json 기준 — 발행 즉시 자동 갱신)
 fetch('data/contents.json').then(function(r){return r.json();}).then(function(d){
   var el=document.getElementById('kc-total');
   if(el&&d.length)el.textContent=d.length.toLocaleString()+'편';
+
+  // 시즌 스트립 — 현재 월에서 계절 자동 판정 (seasons.html 과 동일 패턴).
+  // 날짜·행사명을 하드코딩하지 않으므로 해가 바뀌어도 썩지 않는다.
+  var SEASONS=[{k:'spring',n:'봄'},{k:'summer',n:'여름'},{k:'fall',n:'가을'},{k:'winter',n:'겨울'}];
+  var MONTH_MAP={2:0,3:0,4:0,5:1,6:1,7:1,8:2,9:2,10:2,11:3,0:3,1:3};
+  var cur=SEASONS[MONTH_MAP[new Date().getMonth()]];
+  var n=d.filter(function(x){return (x.tags||[]).indexOf(cur.k)!==-1;}).length;
+  var box=document.getElementById('kc-season');
+  if(box&&n>0){
+    document.getElementById('kc-season-name').textContent='지금은 '+cur.n;
+    document.getElementById('kc-season-count').textContent=cur.n+' 가이드 '+n+'편 — 그 시기에만 열리는 것들';
+    box.hidden=false;
+  }
 });
 </script>
 </body>

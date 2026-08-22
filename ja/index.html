@@ -24,7 +24,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/css/main.css?v=1787330000">
+  <link rel="stylesheet" href="../assets/css/main.css?v=1787340000">
 <link rel="icon" href="../favicon.ico" sizes="any">
   <link rel="icon" type="image/png" sizes="192x192" href="../assets/logo/favicon-192.png">
   <link rel="apple-touch-icon" href="../assets/logo/favicon-192.png">
@@ -85,6 +85,35 @@
   <h1>Korea <em>for</em> You</h1>
   <p>外国人MZ FIT旅行者のためのキュレーションガイド — ソウル25区・釜山・地方都市・K-コンテンツ・実用情報 (記事タイトルは英語表記)</p>
 </section>
+
+<!-- ENTRY ROUTES (2026-08-22 P4) -->
+<div class="kc-routes">
+  <a class="kc-route" href="howto.html" style="border-top:4px solid #D94C53">
+    <svg viewBox="0 0 24 24" style="stroke:#C43840"><path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20z"></path><path d="M15.5 8.5l-2 5-5 2 2-5z"></path></svg>
+    <h3>韓国が初めてです</h3><p>到着後72時間 — K-ETA・SIM・交通カード・両替</p><span class="go">慌てないシリーズ · 実務ガイド126編 →</span>
+  </a>
+  <a class="kc-route" href="map.html" style="border-top:4px solid #218CCC">
+    <svg viewBox="0 0 24 24" style="stroke:#1A76AE"><path d="M4 21V7l5-3 5 3v14M14 21v-9l6-3v12M3 21h18M7.5 10h.5M7.5 14h.5M11 10h.5M11 14h.5"></path></svg>
+    <h3>街を歩きたい</h3><p>ソウル28エリア + 地方16都市を、歩く順に</p><span class="go">街歩き385編 · ソウル地図 →</span>
+  </a>
+  <a class="kc-route" href="seasons.html" style="border-top:4px solid #FAAD19">
+    <svg viewBox="0 0 24 24" style="stroke:#986709"><path d="M5 19c0-8 6-14 14-14 0 8-6 14-14 14z"></path><path d="M5 19l7-7"></path></svg>
+    <h3>いまの季節</h3><p>その時期にだけ開くもの — 祭り・自然・季節の味</p><span class="go">シーズンハブ →</span>
+  </a>
+  <a class="kc-route" href="index.html?cat=C" style="border-top:4px solid #2E8B57">
+    <svg viewBox="0 0 24 24" style="stroke:#1B5E20"><path d="M5 11h14a7 7 0 0 1-14 0zM8 11V7M12 11V6M16 11V7M5 21h14"></path></svg>
+    <h3>食べに来ました</h3><p>老舗からミシュランまで · カフェ・デザート・伝統酒</p><span class="go">グルメ147編 →</span>
+  </a>
+</div>
+
+<div class="kc-season" id="kc-season" hidden>
+  <span class="kc-season-label">
+    <svg viewBox="0 0 24 24"><path d="M5 19c0-8 6-14 14-14 0 8-6 14-14 14z"></path><path d="M5 19l7-7"></path></svg>
+    <span id="kc-season-name"></span>
+  </span>
+  <span class="kc-season-n" id="kc-season-count"></span>
+  <a class="kc-season-cta" href="seasons.html">シーズンハブを開く</a>
+</div>
 
 <!-- SEARCH BAR -->
 <div class="search-bar">
@@ -328,7 +357,23 @@
   <p><a href="https://instagram.com/keychingu.korea" target="_blank">@keychingu.korea</a> &mdash; Seoul for MZ FIT Travelers</p>
 </footer>
 
-<script src="../assets/js/filter.js?v=1787330000"></script>
+<script src="../assets/js/filter.js?v=1787340000"></script>
 <script>(function(){var s=document.getElementById('search-input');if(s&&window.matchMedia('(max-width:520px)').matches){s.placeholder='🔍 Search';}})();</script>
+<script>
+// 시즌 스트립 — 현재 월에서 계절 자동 판정 (하드코딩 날짜 없음)
+fetch('../data/contents.json').then(function(r){return r.json();}).then(function(d){
+  var NAMES='春,夏,秋,冬'.split(',');
+  var KEYS=['spring','summer','fall','winter'];
+  var MAP={2:0,3:0,4:0,5:1,6:1,7:1,8:2,9:2,10:2,11:3,0:3,1:3};
+  var i=MAP[new Date().getMonth()];
+  var n=d.filter(function(x){return (x.tags||[]).indexOf(KEYS[i])!==-1;}).length;
+  var box=document.getElementById('kc-season');
+  if(box&&n>0){
+    document.getElementById('kc-season-name').textContent='いまは@S'.replace('@S',NAMES[i]);
+    document.getElementById('kc-season-count').textContent='@Sガイド@N編 — その時期だけの楽しみ'.replace('@N',n).replace('@S',NAMES[i]);
+    box.hidden=false;
+  }
+});
+</script>
 </body>
 </html>
