@@ -30466,6 +30466,54 @@
     "en_available": true,
     "cn_available": true,
     "jp_available": true,
+    "instagram_posted": false,
+    "title_ja": "Netflixで見たあのシェフの店 — 黒白料理人 ソウル巡礼ガイド",
+    "title_zh": "在网飞看到的那位主厨的餐厅 — 黑白厨师首尔巡礼指南",
+    "summary_ja": "Netflix『黒白料理人』S1・S2出演シェフのソウル店巡り — 優勝者のベスビオから聖水・島山クラスターまで。Catch Table予約戦争・ドリンクポリシー・撮影ルール解説+予算マトリックス",
+    "summary_zh": "网飞《黑白厨师》S1·S2主厨餐厅首尔巡礼 — 从冠军的维苏威到圣水·岛山美食集群。Catch Table预订攻略·酒水政策·拍摄规则+预算矩阵"
+  },
+  {
+    "id": "1318",
+    "slug": "seoul-cold-snap-survival",
+    "title_kr": "서울 한파 생존 가이드 — 영하 10도의 하루를 버티는 법",
+    "title_en": "Surviving a Seoul Cold Snap: How to Get Through a Day at Minus Ten",
+    "category": "H",
+    "tags": [
+      "foreign-tourist",
+      "winter",
+      "howto",
+      "first-timer",
+      "weather",
+      "practical"
+    ],
+    "summary_kr": "영하를 겪어본 적 없는 여행자용 실전판 — 레이어링 3층 공식 · 편의점 방한템 5종(핫팩·발열내의 등) · 30분마다 실내로 도피하는 동선 설계(지하상가 활용) · 건조·미세먼지 대응 · 여행 전 짐 체크리스트",
+    "summary_en": "A field manual for travelers who have never felt minus ten: the three-layer formula, five cold-weather items you can buy at any convenience store, a route design that ducks indoors every thirty minutes (Seoul's underground malls are your friend), dry-air and fine-dust countermeasures, and a packing checklist.",
+    "date_published": "2026-08-22",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1319",
+    "slug": "seoul-snow-ice-rink",
+    "title_kr": "눈 내린 궁궐 — 도심 설경 스팟 8곳 + 겨울 아이스링크, 눈 예보를 기다리는 법",
+    "title_en": "Snow on the Palaces: Eight City Snowscape Spots and Winter Ice Rinks — How to Wait for a Snow Forecast",
+    "category": "B",
+    "tags": [
+      "foreign-tourist",
+      "winter",
+      "gyeongbokgung",
+      "bukchon",
+      "nature",
+      "activity"
+    ],
+    "summary_kr": "서울 도심 적설은 연 3~5회·오전이면 사라진다 — 설경은 계획이 아니라 대기. 궁궐·북촌·남산 등 설경 8곳 + 눈 예보 읽는 법(적설량 1cm 기준) + 눈 안 와도 확실한 플랜B 아이스링크(서울광장·롯데월드) + 빙판 안전·사진 팁",
+    "summary_en": "Snow settles on central Seoul only a few times a winter and is usually gone by noon, so a snowscape is something you wait for, not something you schedule. Eight spots from the palaces to Bukchon and Namsan, how to read a snow forecast, ice rinks as a guaranteed plan B, and the ice-safety and camera tips that matter.",
+    "date_published": "2026-08-22",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
     "instagram_posted": false
   }
 ]
