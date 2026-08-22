@@ -30442,5 +30442,30 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
+  },
+  {
+    "id": "1317",
+    "slug": "culinary-class-wars-restaurants",
+    "title_kr": "넷플릭스에서 본 그 셰프의 식당 — 흑백요리사 서울 순례 가이드",
+    "title_en": "Eat What You Watched — A Culinary Class Wars Restaurant Pilgrimage in Seoul",
+    "category": "G",
+    "tags": [
+      "foreign-tourist",
+      "kcontent",
+      "netflix",
+      "foodie",
+      "fine-dining",
+      "seongsu",
+      "gangnam",
+      "must-try",
+      "reservation"
+    ],
+    "summary_kr": "〈흑백요리사〉 시즌1·2 셰프 식당 서울 순례 — 우승자 나폴리 맛피아의 베수비오부터 성수·도산 클러스터 동선까지. 캐치테이블 예약 전쟁·주류 정책·촬영 룰 해설 + 예산 매트릭스 + 강릉·부산 연계",
+    "summary_en": "A Seoul pilgrimage to the chef restaurants of Netflix's Culinary Class Wars S1-S2 — from winner Napoli Matfia's Vesuvio to the Seongsu and Dosan clusters. Catch Table reservation-war guide, drink policies, filming rules, budget matrix.",
+    "date_published": "2026-08-22",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]
