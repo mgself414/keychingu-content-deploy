@@ -30843,5 +30843,35 @@
     "title_zh": "釜山夜景总论 — 海、山、巷的三种夜色",
     "summary_ja": "海の大橋、山からのパノラマ、路地に灯る暮らしの明かり — 釜山夜景の三つの構図。日没から夜景への流れと、住宅街で守るマナーまで一本で整理した。",
     "summary_zh": "海上的大桥、山顶的全景、山腰巷弄的灯火 — 釜山夜景的三种构图。再加上从日落到夜景的顺序安排，以及居民区夜景的礼仪，一次讲清。"
+  },
+  {
+    "id": "1327",
+    "slug": "busan-shopping-guide",
+    "title_kr": "부산 쇼핑 가이드 — 세계 최대 백화점과 피란 골목시장 사이",
+    "title_en": "Busan Shopping Guide — Between the World's Largest Department Store and a Wartime Alley Market",
+    "category": "F",
+    "tags": [
+      "foreign-tourist",
+      "busan",
+      "shopping",
+      "centum",
+      "market",
+      "jeonpo",
+      "souvenir",
+      "taxrefund",
+      "kretro",
+      "workflow"
+    ],
+    "summary_kr": "기네스 인증 세계 최대 백화점(센텀시티)과 피란민의 골목시장(국제시장)이 지하철로 이어진 도시. 메가·시장·소품샵 세 축과 스파랜드 조합, 전포 K-레트로 문구, 택스 리펀 실전까지 — 부산 쇼핑 문법.",
+    "summary_en": "The Guinness-certified world's largest department store and a market born from wartime refugees, linked by subway. Mega, market, and select-shop axes, the Spa Land combo, Jeonpo's K-retro stationery, and tax refund tactics — Busan shopping grammar.",
+    "date_published": "2026-08-24",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false,
+    "title_ja": "釜山ショッピングガイド — 世界最大の百貨店と避難民路地市場のあいだ",
+    "title_zh": "釜山购物指南 — 世界最大百货与避难小巷市场之间",
+    "summary_ja": "ギネス認定・世界最大百貨店と避難民市場が地下鉄一本でつながる街。メガ軸・市場軸・雑貨店軸とタックスリファンド実践ガイド。",
+    "summary_zh": "从吉尼斯认证的世界最大百货，到战乱难民摊位起家的小巷市场，地铁一线相连。购物、市场、文创小店三轴，外加实用退税攻略。"
   }
 ]

@@ -2,7 +2,7 @@
 
 > Comprehensive curated Korea travel guides for foreign MZ travelers, covering 250+ topics across 60+ cities (Seoul·Busan·Jeju·Gyeongju·Andong·Jeonju·etc), 4 languages (KR·EN·CN·JP), 8-axis content matrix (food·culture·K-content·shopping·seasonal·transport·sports·foreigner essentials), and 5 traveler segments (solo·couple·family·MZ·budget). Updated 2026-08-24.
 
-> Total guides: **1192** | EN: 1192 | CN: 1192 | JP: 1192 | og:image: 250+ | sitemap URLs: 3396
+> Total guides: **1193** | EN: 1193 | CN: 1193 | JP: 1193 | og:image: 250+ | sitemap URLs: 3396
 
 
 ## A (385)
@@ -175,7 +175,7 @@
 - [Korea Transport Map](https://mgself414.github.io/keychingu-content-deploy/content/korea-transport-map.en.html): Korea inbound transport matrix — Climate Card 30day 65,000KRW (#176 walkable_seoul #1) + Subway 1~9·KTX·SRT·Incheon·Gimpo + T-money·K-Pass + (Korean: https://mgself414.github.io/keychingu-content-deploy/content/korea-transport-map.html)
   - ... and 53 more
 
-## F (74)
+## F (75)
 
 - [Seoul Shopping Day Itinerary](https://mgself414.github.io/keychingu-content-deploy/content/shopping-day.en.html): Seoul shopping 1-day itinerary — Myeongdong, Gangnam, Hongdae, Dongdaemun 4-area route + duty-free & tax refund guide (Korean: https://mgself414.github.io/keychingu-content-deploy/content/shopping-day.html)
 - [22 – Gangnam (강남) Fine Dining: Top 5 Picks](https://mgself414.github.io/keychingu-content-deploy/content/gangnam-finedine.en.html): 22 – Gangnam (강남) Fine Dining: Top 5 Picks — ISSUE 02 quick guide (~2K chars) (Korean: https://mgself414.github.io/keychingu-content-deploy/content/gangnam-finedine.html)
@@ -207,7 +207,7 @@
 - [48 · Korea Essential Buys TOP 20](https://mgself414.github.io/keychingu-content-deploy/content/essentials-top20.en.html): 48 · Korea Essential Buys TOP 20 — ISSUE 02 series (Korean: https://mgself414.github.io/keychingu-content-deploy/content/essentials-top20.html)
 - [Where to Buy Korean Souvenirs](https://mgself414.github.io/keychingu-content-deploy/content/souvenir-destinations.en.html): 8 destinations foreigners actually go + category-to-shop matrix + tax-refund tips (Korean: https://mgself414.github.io/keychingu-content-deploy/content/souvenir-destinations.html)
 - [Seoul Stationery Destinations](https://mgself414.github.io/keychingu-content-deploy/content/stationery-destinations.en.html): 8 destinations across 5 axes (bookstores · design select · pens · wholesale · characters) for MZ tourists & students (Korean: https://mgself414.github.io/keychingu-content-deploy/content/stationery-destinations.html)
-  - ... and 44 more
+  - ... and 45 more
 
 ## G (49)
 
@@ -303,7 +303,7 @@
 
 ## Metadata
 
-- **Coverage**: 1192 curated guides as of 2026-08-24
+- **Coverage**: 1193 curated guides as of 2026-08-24
 - **Languages**: KR (full), EN (full), CN (full), JP (full)
 - **Update frequency**: Weekly
 - **Data sources**: Korea Tourism Organization (VisitKorea), Seoul Tourism Foundation (Visit Seoul), Cultural Heritage Administration, UNESCO World Heritage, Korea Open Government License (KOGL), Naver Maps, Reddit r/koreatravel + user curation
