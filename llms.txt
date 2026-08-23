@@ -2,7 +2,7 @@
 
 > Comprehensive curated Korea travel guides for foreign MZ travelers, covering 250+ topics across 60+ cities (Seoul·Busan·Jeju·Gyeongju·Andong·Jeonju·etc), 4 languages (KR·EN·CN·JP), 8-axis content matrix (food·culture·K-content·shopping·seasonal·transport·sports·foreigner essentials), and 5 traveler segments (solo·couple·family·MZ·budget). Updated 2026-08-23.
 
-> Total guides: **1187** | EN: 1187 | CN: 1187 | JP: 1187 | og:image: 250+ | sitemap URLs: 3396
+> Total guides: **1188** | EN: 1188 | CN: 1188 | JP: 1188 | og:image: 250+ | sitemap URLs: 3396
 
 
 ## A (385)
@@ -209,7 +209,7 @@
 - [Seoul Stationery Destinations](https://mgself414.github.io/keychingu-content-deploy/content/stationery-destinations.en.html): 8 destinations across 5 axes (bookstores · design select · pens · wholesale · characters) for MZ tourists & students (Korean: https://mgself414.github.io/keychingu-content-deploy/content/stationery-destinations.html)
   - ... and 44 more
 
-## G (47)
+## G (48)
 
 - [K-Drama Filming Spots Tour](https://mgself414.github.io/keychingu-content-deploy/content/kdrama.en.html): Visit where your favorite K-dramas were filmed (Korean: https://mgself414.github.io/keychingu-content-deploy/content/kdrama.html)
 - [K-POP Fan Ultimate Guide](https://mgself414.github.io/keychingu-content-deploy/content/kpop-fan.en.html): Agency HQs, merch shops, fan cafes & music shows (Korean: https://mgself414.github.io/keychingu-content-deploy/content/kpop-fan.html)
@@ -241,7 +241,7 @@
 - [Korea EDM Festivals](https://mgself414.github.io/keychingu-content-deploy/content/korea-edm-festivals.en.html): Foreigner Korea EDM Festivals matrix — 5 axes (Korea #1·global·signature·DJ·venue) — **World DJ Festival Korea #1 (May-Jun·120k+ attendees)* (Korean: https://mgself414.github.io/keychingu-content-deploy/content/korea-edm-festivals.html)
 - [Foreigner Korea Game·Esports·LCK Deep Dive](https://mgself414.github.io/keychingu-content-deploy/content/esports-lck-deep.en.html): Foreigner Korea Game Esports LCK Deep Dive 12 Matrix (extends #443·#548·#554) — LoL Park Jongno (World #1 LCK home base #13 4.9) + T1/Gen.G/ (Korean: https://mgself414.github.io/keychingu-content-deploy/content/esports-lck-deep.html)
 - [Foreigner K-pop Music Video Locations Deep Dive](https://mgself414.github.io/keychingu-content-deploy/content/kpop-mv-locations.en.html): Foreigner K-pop Music Video Locations Deep Dive 12 Matrix (extends #378·#387·#519) — BTS Spring Day Gangneung Jeongdongjin (World #1 #534 4. (Korean: https://mgself414.github.io/keychingu-content-deploy/content/kpop-mv-locations.html)
-  - ... and 17 more
+  - ... and 18 more
 
 ## E (44)
 
@@ -303,7 +303,7 @@
 
 ## Metadata
 
-- **Coverage**: 1187 curated guides as of 2026-08-23
+- **Coverage**: 1188 curated guides as of 2026-08-23
 - **Languages**: KR (full), EN (full), CN (full), JP (full)
 - **Update frequency**: Weekly
 - **Data sources**: Korea Tourism Organization (VisitKorea), Seoul Tourism Foundation (Visit Seoul), Cultural Heritage Administration, UNESCO World Heritage, Korea Open Government License (KOGL), Naver Maps, Reddit r/koreatravel + user curation
