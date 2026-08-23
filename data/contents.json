@@ -30813,5 +30813,35 @@
     "title_zh": "釜山大众交通语法 — 只需读懂两条线的城市",
     "summary_ja": "釜山の地下鉄路線図はソウルよりずっとシンプルだ——**南北に走る1号線、海岸をなぞる2号線**、この二本の線が観光動線の90%をカバーする。問題は最初の関門:金海空港には空港鉄道がない。軽電鉄の乗り換え一つで解ける空港アクセスから、交通でありながら観光でもある海辺列車、サンボクドロ のバス文法まで——釜山で移動に戸惑わないコツ。",
     "summary_zh": "釜山地铁线路图远比首尔单纯——**南北纵贯的1号线、沿海岸线运行的2号线**,这两条线覆盖了游客动线的90%。问题出在第一关:金海机场 没有机场铁路。从只需掌握一次轻轨换乘就能解决的机场进城,到本身就是观光项目的海边列车,再到山腰路 一带的公交语法——这是在釜山移动不慌乱的方法。"
+  },
+  {
+    "id": "1326",
+    "slug": "busan-night-view",
+    "title_kr": "부산 야경 총론 — 바다, 산, 골목의 세 가지 밤",
+    "title_en": "Busan Night Views — Three Kinds of Night: Sea, Mountain, Alley",
+    "category": "B",
+    "tags": [
+      "foreign-tourist",
+      "busan",
+      "nightview",
+      "gwangan",
+      "hwangnyeongsan",
+      "sanbokdoro",
+      "sunset",
+      "yeongdo",
+      "etiquette",
+      "workflow"
+    ],
+    "summary_kr": "광안대교 바다 야경, 황령산 파노라마, 산복도로 골목 불빛 — 부산 야경의 세 구도와 일몰→야경 시퀀스 짜는 법, 주거지 야경 매너까지. 밤 일정 3일 배분표 포함.",
+    "summary_en": "Gwangan Bridge over the sea, the Hwangnyeongsan panorama, and the living lights of hillside alleys — Busan's three night compositions, how to sequence sunset into night view, and the etiquette residential nightscapes demand.",
+    "date_published": "2026-08-23",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false,
+    "title_ja": "釜山夜景総論 — 海、山、路地の三つの夜",
+    "title_zh": "釜山夜景总论 — 海、山、巷的三种夜色",
+    "summary_ja": "海の大橋、山からのパノラマ、路地に灯る暮らしの明かり — 釜山夜景の三つの構図。日没から夜景への流れと、住宅街で守るマナーまで一本で整理した。",
+    "summary_zh": "海上的大桥、山顶的全景、山腰巷弄的灯火 — 釜山夜景的三种构图。再加上从日落到夜景的顺序安排，以及居民区夜景的礼仪，一次讲清。"
   }
 ]
