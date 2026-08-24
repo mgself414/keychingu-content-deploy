@@ -31026,5 +31026,35 @@
     "title_zh": "免税品要在机场领取，零慌张手册 — 提货柜台领取流程",
     "summary_ja": "市内・オンライン免税店で買った品物は出国当日、空港の引渡所で受け取る。交換券の意味、引渡所の探し方、キオスクの整理券手順、時間計算、液体の密封袋ルールまで — 免税ショッピング最後の関門の手順書。",
     "summary_zh": "在市内·线上免税店购买的商品要在出境当天到机场提货柜台领取。交换券的含义、提货柜台位置、自助机取号流程、时间计算、液体密封袋规则 — 免税购物最后一关的流程手册。"
+  },
+  {
+    "id": "1333",
+    "slug": "china-payment-survival",
+    "title_kr": "중화권 여행자 한국 결제 생존 매뉴얼 — 알리페이는 되고, 위챗은 안 되고, 은련은 준비가 필요하다",
+    "title_en": "Korea Payment Survival Manual for Chinese-Speaking Travelers — Alipay Works, WeChat Doesn't, UnionPay Needs Prep First",
+    "category": "H",
+    "tags": [
+      "foreign-tourist",
+      "chinese-tourist",
+      "payment",
+      "alipay",
+      "unionpay",
+      "practical",
+      "survival",
+      "segment",
+      "matrix",
+      "workflow"
+    ],
+    "summary_kr": "알리페이가 되는 곳과 안 되는 곳, 출발 전 은련 카드 해외사용 활성화, 위챗페이에 기대면 안 되는 이유, ATM 인출과 현금 비상선까지 — 중화권 여행자의 상황별 결제 사다리 한 장.",
+    "summary_en": "Where Alipay works and where it doesn't, activating your UnionPay card for overseas use before departure, why WeChat Pay can't be your main plan, ATM withdrawals and the cash safety net — one payment ladder for every situation.",
+    "date_published": "2026-08-24",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false,
+    "title_ja": "中華圏旅行者のための韓国決済サバイバルマニュアル — アリペイは使えて、ウィーチャットは使えず、銀聯は事前準備が必要",
+    "title_zh": "中华圈游客韩国支付生存手册 — 支付宝能用，微信不能用，银联要提前准备",
+    "summary_ja": "アリペイが使える場所と使えない場所、出発前の銀聯カード海外利用の有効化、ウィーチャットペイに頼ってはいけない理由、ATM引き出しと現金の安全網まで — 状況別の決済ラダー一枚。",
+    "summary_zh": "支付宝能用和不能用的地方、出发前开通银联卡境外用卡服务、为什么不能指望微信支付、ATM取现与现金保底 — 中华圈游客的分场景支付阶梯一张表。"
   }
 ]
