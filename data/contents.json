@@ -30995,5 +30995,36 @@
     "title_zh": "数据甄选韩国伴手礼 — 按送礼对象·预算划分的矩阵",
     "summary_ja": "オフライン28・オンライン24・SNS26ソースを交差検証し、「本当に買われている」みやげだけを相手別・文化圏別・予算別マトリックスに再整理。",
     "summary_zh": "交叉核对线下28家·线上24个平台·社媒26个来源，只留下“真正有人买”的伴手礼，按送礼对象·文化圈·预算重排成决策矩阵。"
+  },
+  {
+    "id": "1332",
+    "slug": "duty-free-pickup-guide",
+    "title_kr": "면세품은 공항에서 받는다, 당황 제로 매뉴얼 — 인도장 수령 절차",
+    "title_en": "You Get Your Duty-Free Items at the Airport — The Zero-Panic Manual for the Pickup Counter",
+    "category": "H",
+    "tags": [
+      "foreign-tourist",
+      "first-timer",
+      "howto",
+      "dutyfree",
+      "airport",
+      "pickup",
+      "procedure",
+      "shopping",
+      "survival",
+      "manual",
+      "workflow"
+    ],
+    "summary_kr": "시내·온라인 면세점에서 산 물건은 출국 당일 공항 인도장에서 받는다. 교환권의 의미·인도장 찾기·키오스크 대기표 절차·시간 계산법·액체류 밀봉백 규칙까지, 면세 쇼핑의 마지막 관문 절차판.",
+    "summary_en": "What you buy at downtown or online duty-free shops is handed over at the airport pickup counter on departure day. Vouchers, finding the counter, the kiosk queue, timing math, and the sealed-bag rule — the last gate of duty-free shopping, step by step.",
+    "date_published": "2026-08-24",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false,
+    "title_ja": "免税品は空港で受け取る、パニックゼロマニュアル — 引渡所での受領手続き",
+    "title_zh": "免税品要在机场领取，零慌张手册 — 提货柜台领取流程",
+    "summary_ja": "市内・オンライン免税店で買った品物は出国当日、空港の引渡所で受け取る。交換券の意味、引渡所の探し方、キオスクの整理券手順、時間計算、液体の密封袋ルールまで — 免税ショッピング最後の関門の手順書。",
+    "summary_zh": "在市内·线上免税店购买的商品要在出境当天到机场提货柜台领取。交换券的含义、提货柜台位置、自助机取号流程、时间计算、液体密封袋规则 — 免税购物最后一关的流程手册。"
   }
 ]
