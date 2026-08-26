@@ -31062,5 +31062,35 @@
     "title_zh": "中华圈游客韩国支付生存手册 — 支付宝能用，微信不能用，银联要提前准备",
     "summary_ja": "アリペイが使える場所と使えない場所、出発前の銀聯カード海外利用の有効化、ウィーチャットペイに頼ってはいけない理由、ATM引き出しと現金の安全網まで — 状況別の決済ラダー一枚。",
     "summary_zh": "支付宝能用和不能用的地方、出发前开通银联卡境外用卡服务、为什么不能指望微信支付、ATM取现与现金保底 — 中华圈游客的分场景支付阶梯一张表。"
+  },
+  {
+    "id": "1334",
+    "slug": "solo-female-safety-checklist",
+    "title_kr": "여성 혼자 한국 여행 — 겁주기 없는 안전 체크리스트",
+    "title_en": "Solo Female Travel in Korea — A No-Fear Safety Checklist",
+    "category": "H",
+    "tags": [
+      "foreign-tourist",
+      "solo-female",
+      "safety",
+      "checklist",
+      "practical",
+      "night",
+      "segment",
+      "japan-signal",
+      "survival",
+      "workflow"
+    ],
+    "summary_kr": "한국은 안전한 여행지다 — 그리고 안전한 곳에서도 기본 수칙은 같다. 숙소 기준·밤 이동 규칙·음료 관리·온라인 만남의 선·긴급 번호 세 개까지, 불안 대신 체크리스트로 정리한 여성 솔로 매뉴얼.",
+    "summary_en": "Korea is one of the safer places to travel — and the basics still apply. Accommodation criteria, night-movement rules, drink habits, online-meetup boundaries, and the three numbers to save: a checklist instead of anxiety.",
+    "date_published": "2026-08-26",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false,
+    "title_ja": "女性一人旅の韓国 — 不安を煽らない安全チェックリスト",
+    "title_zh": "女性独自韩国旅行 — 不吓人的安全清单",
+    "summary_ja": "韓国は安全な旅行先 — それでも基本のルールは同じ。宿の選び方、夜の移動ルール、ドリンク管理、オンラインで会う時の線引き、保存すべき3つの番号まで。不安の代わりにチェックリストを。",
+    "summary_zh": "韩国是安全的旅行目的地 — 但基本守则在哪都一样。住宿标准、夜间出行规则、饮品管理、线上见面的界限、要存的3个号码 — 用清单代替焦虑。"
   }
 ]
