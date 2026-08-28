@@ -210,7 +210,10 @@ a { color: inherit; text-decoration: none; }
 }
 .card-cover img {           /* 실사진 보유 콘텐츠(249편) */
   width: 100%; height: 100%; object-fit: cover; display: block;
+  position: absolute; inset: 0; z-index: 0;
 }
+.card-cover img ~ .cat-icon { display: none; }  /* 사진 위 아이콘 중첩 방지 — onerror로 img 제거되면 아이콘 fallback 복귀 */
+.card-cover .cat-badge, .card-cover .new-badge { z-index: 1; }
 .card-cover .cat-icon {     /* 카테고리 아이콘 (그라디언트 커버 중앙, 숫자 워터마크 대체) */
   width: 44px; height: 44px; opacity: 0.92;
   stroke: #fff; stroke-width: 1.7; fill: none;
@@ -572,13 +575,20 @@ img {
     order: 3;
     width: 100%;
     margin-left: 0;
-    justify-content: center;
+    justify-content: flex-start;
     flex: none;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
   }
+  .site-nav::-webkit-scrollbar { display: none; }
   .site-nav a {
     padding: 4px 10px;
     font-size: 12px;
+    white-space: nowrap;
+    flex: 0 0 auto;
   }
+  .lang-switch a { white-space: nowrap; }
 }
 
 /* Static page container */
@@ -1275,3 +1285,10 @@ article blockquote p { margin: 0; }
 
 /* ── 섹션뷰 지연 렌더 placeholder (2026-08-17) — 미충전 섹션이 전부 뷰포트 판정되는 것 방지 ── */
 .cat-section-grid:empty { min-height: 60vh; }
+
+/* 본문 내부 참조 링크 (재점검 §7 D6, 2026-08-28) */
+.article-body a.xref, .content-article a.xref, a.xref {
+  color: var(--blue, #218CCC); font-weight: 600; text-decoration: none;
+  border-bottom: 1px dotted var(--blue, #218CCC);
+}
+a.xref:hover { border-bottom-style: solid; }

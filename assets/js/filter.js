@@ -298,9 +298,34 @@
   function pickField(item, base) {
     return item[base + '_' + LANG] || item[base + '_en'] || item[base + '_kr'] || '';
   }
+  var ASSET_PREFIX = IS_SUBDIR ? '../' : '';
+  function coverInnerHTML(item) {
+    // 실사진(image 보유 249편) 우선, 실패 시 그라디언트 fallback 유지 (재점검 §7 D2)
+    if (!item.image) return '';
+    return '<img src="' + ASSET_PREFIX + item.image + '" alt="" loading="lazy" ' +
+      'onerror="this.remove()">';
+  }
+  function coverGradient(item, color) {
+    // 동일 카테고리 연속 시 커버 변별력 확보 — id 해시로 각도·톤 미세 변주 (재점검 §7 D3)
+    var h = 0, s = String(item.id);
+    for (var i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) % 997;
+    var angle = 105 + (h % 71);                       // 105~175deg
+    var alpha = ['b3', 'c4', 'd5', 'e6'][h % 4];      // 두 번째 스톱 톤
+    return 'linear-gradient(' + angle + 'deg,' + color + ' 0%,' + color + alpha + ' 100%)';
+  }
+  function cleanSummary(title, summary) {
+    // 구형 summary "제목 — ISSUE NN 시리즈" 중복 노출 완화 폴백 (재점검 §7 D4)
+    if (!summary) return '';
+    if (summary.indexOf(title) === 0) {
+      var rest = summary.slice(title.length).replace(/^[\s—–-]+/, '');
+      if (rest.length < 12 || /^ISSUE\s*\d+/i.test(rest)) return '';
+      return rest;
+    }
+    return summary;
+  }
   function cardHTML(item) {
     var title = pickField(item, 'title');
-    var summary = pickField(item, 'summary');
+    var summary = cleanSummary(title, pickField(item, 'summary'));
     var color = CAT_COLORS[item.category] || '#D94C53';
     var detailHref = CONTENT_PREFIX + item.slug + LANG_SUFFIX + '.html';
     var favClass = isFavorite(item.id) ? 'fav-btn active' : 'fav-btn';
@@ -309,7 +334,8 @@
     return '<div class="card-wrap">' +
       '<button class="' + favClass + '" data-id="' + item.id + '" aria-label="favorite" title="' + T('fav') + '">★</button>' +
       '<a href="' + detailHref + '" class="card" data-category="' + item.category + '" data-tags="' + item.tags.join(',') + '">' +
-      '<div class="card-cover" style="background:linear-gradient(135deg,' + color + ' 0%,' + color + 'cc 100%);">' +
+      '<div class="card-cover" style="background:' + coverGradient(item, color) + ';">' +
+      coverInnerHTML(item) +
       '<span class="cat-badge">' + catLabelFor(item.category) + '</span>' + newBadge +
       catIconSVG(item.category) + '</div>' +
       '<div class="card-body"><h3>' + title + '</h3><p>' + summary + '</p>' +

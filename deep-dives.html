@@ -3,28 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>키친구 Deep Dive 753편 🎉 매트릭스 — KeyChinGu Deep Dives</title>
-  <meta name="description" content="키친구 Deep Dive 753편 🎉 풀 매트릭스 — 외국인 lifecycle 8축 (도착·음식·문화·K-content·wellness·쇼핑·야간·외곽) × 286편 🎉 매트릭스. 12선 4축 패턴 (FAQ 6개 + 풀데이 코스 3개 + 시즌 5).">
+  <title>키친구 Deep Dive 753편 매트릭스 — KeyChinGu Deep Dives</title>
+  <meta name="description" content="키친구 Deep Dive 753편 풀 매트릭스 — 외국인 lifecycle 8축 (도착·음식·문화·K-content·wellness·쇼핑·야간·외곽) × 286편 매트릭스. 12선 4축 패턴 (FAQ 6개 + 풀데이 코스 3개 + 시즌 5).">
   <link rel="canonical" href="https://mgself414.github.io/keychingu-content-deploy/deep-dives.html">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/main.css">
   <style>
-    .matrix-hero { background: linear-gradient(135deg, #1E88B0 0%, #FAAD19 100%); color: #fff; padding: 60px 24px; text-align: center; }
+    .matrix-hero { background: var(--bg, #FAF9F6); color: var(--text, #020304); padding: 56px 24px 40px; text-align: center; border-bottom: 1px solid var(--border, #e8e8e8); }
     .matrix-hero h1 { font-family: 'Noto Serif KR', serif; font-size: 40px; font-weight: 900; margin-bottom: 12px; }
-    .matrix-hero p { font-size: 16px; opacity: 0.95; max-width: 720px; margin: 0 auto 24px; }
+    .matrix-hero p { font-size: 16px; color: var(--text-mid, #555); max-width: 720px; margin: 0 auto 24px; }
     .matrix-stats { display: flex; justify-content: center; gap: 32px; flex-wrap: wrap; margin-top: 24px; }
-    .matrix-stats .stat { background: rgba(255,255,255,0.18); padding: 12px 20px; border-radius: 8px; backdrop-filter: blur(8px); }
-    .matrix-stats .stat b { font-family: 'Poppins', sans-serif; font-size: 24px; font-weight: 800; display: block; }
-    .matrix-stats .stat span { font-size: 12px; opacity: 0.85; }
+    .matrix-stats .stat { background: var(--card-bg, #fff); border: 1px solid var(--border, #e8e8e8); padding: 12px 20px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
+    .matrix-stats .stat b { font-family: 'Poppins', sans-serif; font-size: 24px; font-weight: 800; display: block; color: var(--red, #D94C53); }
+    .matrix-stats .stat span { font-size: 12px; color: var(--text-soft, #888); }
     .toc-bar { background: #f5f3ee; padding: 16px 24px; margin: 0 0 24px; position: sticky; top: 0; z-index: 10; border-bottom: 1px solid #e0d8c8; }
     .toc-bar-inner { max-width: 1280px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 8px; }
     .toc-bar a { font-size: 13px; padding: 6px 14px; background: #fff; border-radius: 20px; text-decoration: none; color: #555; border: 1px solid #ddd; transition: all 0.2s; }
-    .toc-bar a:hover { border-color: #1E88B0; color: #1E88B0; }
+    .toc-bar a:hover { border-color: #218CCC; color: #218CCC; }
     .search-bar { max-width: 720px; margin: 24px auto 0; padding: 0 24px; }
     .search-bar input { width: 100%; padding: 14px 18px; font-size: 15px; border: 2px solid #ddd; border-radius: 30px; outline: none; transition: border 0.2s; box-sizing: border-box; font-family: inherit; }
-    .search-bar input:focus { border-color: #1E88B0; }
+    .search-bar input:focus { border-color: #218CCC; }
     .search-stat { text-align: center; font-size: 13px; color: #888; margin-top: 8px; }
     .hide { display: none !important; }
     @media (max-width: 768px) {
@@ -82,13 +82,13 @@
 <!-- HERO -->
 <section class="matrix-hero">
   <h1>키친구 Deep Dive 매트릭스 — 큐레이션</h1>
-  <p>외국인 lifecycle 8축 (도착·음식·문화·K-content·wellness·쇼핑·야간·외곽) × 286편 🎉 풀 cover. 표준 12선 4축 패턴 — FAQ 6개 + 풀데이 코스 3개 + 시즌 5축. 외국인 매니아 1번지.</p>
+  <p>외국인 lifecycle 8축 (도착·음식·문화·K-content·wellness·쇼핑·야간·외곽) × 286편 풀 cover. 표준 12선 4축 패턴 — FAQ 6개 + 풀데이 코스 3개 + 시즌 5축. 외국인 매니아 1번지.</p>
   <div class="search-bar">
     <input id="search" type="text" placeholder="🔍 검색 — 제목·태그·카테고리 (예: 김치, K-pop, 워홀, IT, 갤러리, 한국어, F-2)">
-    <div class="search-stat" id="search-stat">286편 🎉 표시 중</div>
+    <div class="search-stat" id="search-stat">286편 표시 중</div>
   </div>
   <div class="matrix-stats" style="margin-top: 32px;">
-    <div class="stat"><b>286</b><span>Deep Dive 🎉</span></div>
+    <div class="stat"><b>286</b><span>Deep Dive</span></div>
     <div class="stat"><b>8</b><span>Lifecycle 축</span></div>
     <div class="stat"><b>12</b><span>선 × 4축 패턴</span></div>
     <div class="stat"><b>3</b><span>풀데이 코스</span></div>
@@ -101,13 +101,13 @@
   <div class="toc-bar-inner">
     <a href="#arrival">🛬 도착·실용 (83)</a>
     <a href="#food">🍽 음식·음료 (124)</a>
-    <a href="#culture">🎭 문화·정통 (141 🎉)</a>
+    <a href="#culture">🎭 문화·정통 (141)</a>
     <a href="#kcontent">🎤 K-content·MZ (8)</a>
     <a href="#wellness">💆 Wellness·뷰티 (40)</a>
     <a href="#shopping">🛍 쇼핑·럭셔리 (67)</a>
     <a href="#nightlife">🌙 야간·MZ (41)</a>
-    <a href="#outskirts">🚗 외곽·자연 (249 🎉)</a>
-    <a href="content/deep-dive-index.html" style="background:#1E88B0; color:#fff;">📊 메타 인덱스</a>
+    <a href="#outskirts">🚗 외곽·자연 (249)</a>
+    <a href="content/deep-dive-index.html" style="background:#218CCC; color:#fff;">📊 메타 인덱스</a>
   </div>
 </div>
 
@@ -116,14 +116,14 @@
   <h2 style="font-size: 20px;">📍 8축 lifecycle 별 카테고리 페이지</h2>
   <div class="section-meta">각 축별 dedicated landing — 풀 코스 + 모든 deep dive 그리드</div>
   <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 12px;">
-    <a href="deep-dives-arrival.html" style="flex: 1 1 200px; padding: 10px 14px; background: linear-gradient(135deg, #4A90E2, #1E88B0); color: #fff; text-decoration: none; border-radius: 8px; font-size: 14px; font-weight: 600;">🛬 도착·실용 22편 →</a>
+    <a href="deep-dives-arrival.html" style="flex: 1 1 200px; padding: 10px 14px; background: linear-gradient(135deg, #4A90E2, #218CCC); color: #fff; text-decoration: none; border-radius: 8px; font-size: 14px; font-weight: 600;">🛬 도착·실용 22편 →</a>
     <a href="deep-dives-food.html" style="flex: 1 1 200px; padding: 10px 14px; background: linear-gradient(135deg, #E94560, #FAAD19); color: #fff; text-decoration: none; border-radius: 8px; font-size: 14px; font-weight: 600;">🍽 음식·음료 45편 →</a>
-    <a href="deep-dives-culture.html" style="flex: 1 1 200px; padding: 10px 14px; background: linear-gradient(135deg, #6B4E2E, #C19A5A); color: #fff; text-decoration: none; border-radius: 8px; font-size: 14px; font-weight: 600;">🎭 문화·정통 64편 🎉 →</a>
+    <a href="deep-dives-culture.html" style="flex: 1 1 200px; padding: 10px 14px; background: linear-gradient(135deg, #6B4E2E, #C19A5A); color: #fff; text-decoration: none; border-radius: 8px; font-size: 14px; font-weight: 600;">🎭 문화·정통 64편 →</a>
     <a href="deep-dives-kcontent.html" style="flex: 1 1 200px; padding: 10px 14px; background: linear-gradient(135deg, #E91E63, #9C27B0); color: #fff; text-decoration: none; border-radius: 8px; font-size: 14px; font-weight: 600;">🎤 K-content·MZ 47편 →</a>
     <a href="deep-dives-wellness.html" style="flex: 1 1 200px; padding: 10px 14px; background: linear-gradient(135deg, #00BFA5, #4CAF50); color: #fff; text-decoration: none; border-radius: 8px; font-size: 14px; font-weight: 600;">💆 Wellness·뷰티 16편 →</a>
     <a href="deep-dives-shopping.html" style="flex: 1 1 200px; padding: 10px 14px; background: linear-gradient(135deg, #C2185B, #FAAD19); color: #fff; text-decoration: none; border-radius: 8px; font-size: 14px; font-weight: 600;">🛍 쇼핑·럭셔리 11편 →</a>
     <a href="deep-dives-nightlife.html" style="flex: 1 1 200px; padding: 10px 14px; background: linear-gradient(135deg, #1A237E, #7B1FA2); color: #fff; text-decoration: none; border-radius: 8px; font-size: 14px; font-weight: 600;">🌙 야간·MZ 10편 →</a>
-    <a href="deep-dives-outskirts.html" style="flex: 1 1 200px; padding: 10px 14px; background: linear-gradient(135deg, #2E7D32, #8BC34A); color: #fff; text-decoration: none; border-radius: 8px; font-size: 14px; font-weight: 600;">🚗 외곽·자연 63편 🎉 →</a>
+    <a href="deep-dives-outskirts.html" style="flex: 1 1 200px; padding: 10px 14px; background: linear-gradient(135deg, #2E7D32, #8BC34A); color: #fff; text-decoration: none; border-radius: 8px; font-size: 14px; font-weight: 600;">🚗 외곽·자연 63편 →</a>
   </div>
 </section>
 
@@ -212,7 +212,7 @@
 
 <!-- ③ 문화·정통 (19편 추가: #667 #668 #675 #680~#695) -->
 <section class="meta-section" id="culture" data-cat="culture">
-  <h2>🎭 문화·정통 (50편 🎉)</h2>
+  <h2>🎭 문화·정통 (50편)</h2>
   <div class="section-meta">외국인 정통 매니아 풀 cover</div>
   <div class="meta-grid">
     <a href="content/cultural-complex.html" class="meta-card" data-keywords="문화공간 복합 DDP 예술의전당"><span class="num">#366</span><h3>서울 복합 문화공간 12선</h3><p>DDP·예술의전당·세종문화회관·외국인 매니아</p></a>
@@ -413,7 +413,7 @@
 
 <!-- ⑧ 외곽·자연 -->
 <section class="meta-section" id="outskirts" data-cat="outskirts">
-  <h2>🚗 외곽·자연·레저 (58편 🎉)</h2>
+  <h2>🚗 외곽·자연·레저 (58편)</h2>
   <div class="section-meta">외국인 가족·레저 매니아 풀 cover</div>
   <div class="meta-grid">
     <a href="content/wedding-honeymoon.html" class="meta-card" data-keywords="결혼식 웨딩 신혼 wedding honeymoon"><span class="num">#416</span><h3>결혼식 웨딩촬영 신혼 12선</h3><p>외국인 매니아·#379 한복·국제 커플</p></a>
@@ -486,14 +486,14 @@
     <a href="content/hiking-duregil.html" class="meta-card" data-keywords="hiking 등산 둘레길 hiking"><span class="num">#515</span><h3>서울 hiking 둘레길 12선</h3><p>북한산·도봉산·관악산·서울둘레길</p></a>
     <a href="content/friend-making.html" class="meta-card" data-keywords="외국인 한국 친구 friends"><span class="num">#520</span><h3>외국인 한국 친구 만들기 deep</h3><p>Hi Korea·Meetup·HelloTalk·Seoul Runners</p></a>
     <a href="content/family-children-travel.html" class="meta-card" data-keywords="가족 아동 어린이 키즈 family children"><span class="num">#533</span><h3>외국인 가족·아동 여행 deep</h3><p>에버랜드·롯데월드·키자니아·N서울타워·Park Hyatt</p></a>
-    <a href="content/deep-dive-index.html" class="meta-card" data-keywords="메타 인덱스 deep dive index"><span class="num">#522</span><h3>키친구 Deep Dive 통합 메타 인덱스</h3><p>286편 🎉 풀 cover 인덱스·8축 lifecycle 매트릭스</p></a>
+    <a href="content/deep-dive-index.html" class="meta-card" data-keywords="메타 인덱스 deep dive index"><span class="num">#522</span><h3>키친구 Deep Dive 통합 메타 인덱스</h3><p>286편 풀 cover 인덱스·8축 lifecycle 매트릭스</p></a>
   </div>
 </section>
 
 <!-- FOOTER -->
 <footer class="site-footer">
   <p style="text-align: center; padding: 24px; color: #888; font-size: 13px;">
-    © 2026 KeyChinGu · <a href="about.html" style="color:#1E88B0;">About</a> · <a href="meta-guides.html" style="color:#1E88B0;">메타 가이드</a> · <a href="faq.html" style="color:#1E88B0;">FAQ</a> · <a href="links.html" style="color:#1E88B0;">Links</a>
+    © 2026 KeyChinGu · <a href="about.html" style="color:#218CCC;">About</a> · <a href="meta-guides.html" style="color:#218CCC;">메타 가이드</a> · <a href="faq.html" style="color:#218CCC;">FAQ</a> · <a href="links.html" style="color:#218CCC;">Links</a>
   </p>
 </footer>
 
