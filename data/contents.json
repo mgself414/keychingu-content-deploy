@@ -86,7 +86,6 @@
     "instagram_posted": false,
     "cn_available": true,
     "jp_available": true,
-    "image": "assets/og/korea-dessert-meta.jpg",
     "date_published": "2026-05-24",
     "title_ja": "韓国スイーツ カテゴリーメタガイド",
     "title_zh": "韩国甜点类别元攻略",
@@ -669,8 +668,8 @@
       "seoul",
       "quick-guide"
     ],
-    "summary_kr": "22_강남 파인다이닝 5선 — ISSUE 02 quick guide (~2K chars)",
-    "summary_en": "22 – Gangnam (강남) Fine Dining: Top 5 Picks — ISSUE 02 quick guide (~2K chars)",
+    "summary_kr": "도산·청담 일대 미슐랭 1~3스타 한식당 8곳을 오마카세·모던 한식 등 4가지 결로 비교하고 예약·드레스코드 팁을 담았다.",
+    "summary_en": "A guide to 8 Michelin-starred restaurants in Gangnam's Dosan and Cheongdam, from hanjeongsik omakase to modern Korean tasting menus, with reservation and dress-code tips.",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
@@ -692,8 +691,8 @@
       "seoul",
       "quick-guide"
     ],
-    "summary_kr": "23_이태원 세계음식 투어 — ISSUE 02 quick guide (~2K chars)",
-    "summary_en": "23_Itaewon World Food Tour — ISSUE 02 quick guide (~2K chars)",
+    "summary_kr": "이태원·우사단·해방촌 일대 할랄·인도·멕시칸·퓨전 등 세계음식점 12곳을 지역별로 비교하고 할랄 인증 확인법을 알려준다.",
+    "summary_en": "A guide to 12 international restaurants across Itaewon, Usadan-ro, and Haebangchon, covering halal, Indian, Mexican-American, and fusion food, with halal-certification tips.",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
@@ -715,8 +714,8 @@
       "seoul",
       "quick-guide"
     ],
-    "summary_kr": "24_광장시장 완전 공략 — ISSUE 02 quick guide (~2K chars)",
-    "summary_en": "24_Gwangjang Market (광장시장) Complete Guide — ISSUE 02 quick guide (~2K chars)",
+    "summary_kr": "1905년 개장한 서울 최고(最古) 광장시장의 빈대떡·마약김밥·육회 등 8개 먹거리 코너를 소개하고 현금 결제·위생 팁을 담았다.",
+    "summary_en": "A guide to Seoul's oldest market, established 1905, covering 8 food stalls from bindaetteok pancakes to mayak gimbap and beef tartare, with cash-payment and hygiene tips.",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
@@ -738,8 +737,8 @@
       "seoul",
       "quick-guide"
     ],
-    "summary_kr": "25_망원시장 먹거리 — ISSUE 02 quick guide (~2K chars)",
-    "summary_en": "25_Mangwon Market Food Guide (망원시장 먹거리) — ISSUE 02 quick guide (~2K chars)",
+    "summary_kr": "관광지 광장시장과 달리 바가지 없는 현지인 동네시장 망원시장의 먹거리 8곳을 소개하고 망리단길·한강공원 결합 코스를 제안한다.",
+    "summary_en": "Unlike touristy Gwangjang Market, Mangwon is a low-key market locals actually shop at, with 8 food stalls and a route through nearby Mangridan-gil cafes and Han River park.",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
@@ -761,8 +760,8 @@
       "seoul",
       "quick-guide"
     ],
-    "summary_kr": "26_편의점 간식 추천 (외국인용) — ISSUE 02 quick guide (~2K chars)",
-    "summary_en": "26_Convenience Store Snack Guide (For Tourists) — ISSUE 02 quick guide (~2K chars)",
+    "summary_kr": "GS25·CU 등 한국 편의점에서 꼭 사봐야 할 삼각김밥·즉석떡볶이 등 18가지 아이템과 봉투·전자레인지 이용 팁을 정리했다.",
+    "summary_en": "A guide to 18 must-try Korean convenience store items, from samgak gimbap to instant tteokbokki across GS25, CU, and Emart24, plus tips on paid bags and free microwave use.",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
@@ -784,8 +783,8 @@
       "seoul",
       "quick-guide"
     ],
-    "summary_kr": "27_스트릿푸드 Top 20 — ISSUE 02 quick guide (~2K chars)",
-    "summary_en": "27_Street Food Top 20 — ISSUE 02 quick guide (~2K chars)",
+    "summary_kr": "떡볶이·호떡·닭꼬치 등 한국 길거리 음식 20가지를 4개 카테고리로 나누고 광장시장·명동 등 명소 5곳을 함께 소개한다.",
+    "summary_en": "A roundup of 20 Korean street foods, from tteokbokki to hotteok and grilled skewers, sorted into 4 categories with the top 5 neighborhoods to find them, including Gwangjang Market.",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
@@ -807,8 +806,8 @@
       "seoul",
       "quick-guide"
     ],
-    "summary_kr": "28_한국식 치킨집 가이드 — ISSUE 02 quick guide (~2K chars)",
-    "summary_en": "28_Korean Fried Chicken Restaurant Guide — ISSUE 02 quick guide (~2K chars)",
+    "summary_kr": "후라이드·양념·간장 치킨 등 한국 치킨 8종을 소개하고 BHC·교촌 등 5대 체인 비교와 한강 치맥 결합 팁을 담았다.",
+    "summary_en": "An overview of 8 styles of Korean fried chicken, from original fried to soy-garlic, comparing 5 major chains like BHC and Kyochon, with tips for pairing chicken with beer.",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
@@ -830,8 +829,8 @@
       "seoul",
       "quick-guide"
     ],
-    "summary_kr": "29_성수동 편집샵 완전 정복 — ISSUE 02 quick guide (~2K chars)",
-    "summary_en": "29_Seongsu-dong Select Shop Complete Guide — ISSUE 02 quick guide (~2K chars)",
+    "summary_kr": "빨간 벽돌 골목으로 유명한 성수동의 편집샵·빈티지·카페·팝업스토어 8개 카테고리를 소개하는 MZ 트렌디 동네 쇼핑 가이드다.",
+    "summary_en": "A shopping guide to Seongsu-dong, Seoul's trendiest neighborhood, covering 8 categories from designer boutiques to vintage shops, cafes, and pop-ups amid its red-brick alleys.",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
@@ -853,8 +852,8 @@
       "seoul",
       "quick-guide"
     ],
-    "summary_kr": "30_가로수길 쇼핑 1일 코스 — ISSUE 02 quick guide (~2K chars)",
-    "summary_en": "30 — ISSUE 02 quick guide (~2K chars)",
+    "summary_kr": "신사동 가로수길·세로수길과 도산공원을 잇는 K뷰티·디자이너 편집샵·럭셔리 플래그십 등 8개 카테고리 쇼핑 코스를 제안한다.",
+    "summary_en": "A one-day shopping route through Sinsa's Garosu-gil and Serosu-gil to Dosan Park, covering K-beauty flagships, designer boutiques, and luxury stores across 8 categories.",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
@@ -876,8 +875,8 @@
       "seoul",
       "quick-guide"
     ],
-    "summary_kr": "31_동대문 심야 쇼핑 — ISSUE 02 quick guide (~2K chars)",
-    "summary_en": "31_Dongdaemun Late-Night Shopping — ISSUE 02 quick guide (~2K chars)",
+    "summary_kr": "두타·밀리오레 등 밤 10시부터 새벽까지 문 여는 동대문 쇼핑몰과 평화시장 도매·DDP까지 심야 쇼핑 8개 카테고리를 정리했다.",
+    "summary_en": "A guide to Dongdaemun's overnight shopping, from malls like Doota and Migliore open until dawn to the Pyeonghwa wholesale market and DDP, across 8 categories for night owls.",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
@@ -899,8 +898,8 @@
       "seoul",
       "quick-guide"
     ],
-    "summary_kr": "32_홍대 빈티지 샵 투어 — ISSUE 02 quick guide (~2K chars)",
-    "summary_en": "32 Hongdae (홍대) Vintage Shop Tour — ISSUE 02 quick guide (~2K chars)",
+    "summary_kr": "연남 동진시장부터 합정·망원까지 홍대권 빈티지·구제 매장 8개 카테고리를 소개하고 가격대별 추천 코스를 담았다.",
+    "summary_en": "A guide to vintage and secondhand shopping across Hongdae, Yeonnam, Hapjeong, and Mangwon, spanning 8 categories from boutiques to flea-market finds, with price-based routes.",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
@@ -922,8 +921,8 @@
       "seoul",
       "quick-guide"
     ],
-    "summary_kr": "33_한복 체험 - 경복궁 완전 가이드 — ISSUE 02 quick guide (~2K chars)",
-    "summary_en": "33_Hanbok Experience – Complete Guide to Gyeongbokgung (경복궁) — ISSUE 02 quick guide (~2K chars)",
+    "summary_kr": "한복을 입으면 무료 입장 가능한 경복궁·창덕궁 등 궁궐과 한복 대여점을 묶어 소개하고 수문장 교대식 등 사진 명소를 담았다.",
+    "summary_en": "A guide pairing hanbok rental shops with palaces like Gyeongbokgung and Changdeokgung, which offer free entry to hanbok wearers, plus photo spots and the guard-changing ceremony.",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
@@ -945,8 +944,8 @@
       "seoul",
       "quick-guide"
     ],
-    "summary_kr": "34_찜질방 에티켓 (외국인 전용) — ISSUE 02 quick guide (~2K chars)",
-    "summary_en": "34_Jjimjilbang Etiquette (For Foreign Visitors) — ISSUE 02 quick guide (~2K chars)",
+    "summary_kr": "목욕탕·한증막·식혜로 이어지는 한국 찜질방 이용 순서와 나체 목욕·타투 출입 등 외국인이 헷갈리는 에티켓을 정리했다.",
+    "summary_en": "A guide to Korean jjimjilbang bathhouses, from the nude bathing area to sauna rooms and sikhye snacks, covering etiquette foreigners often get wrong, like tattoo restrictions.",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
@@ -968,8 +967,8 @@
       "seoul",
       "quick-guide"
     ],
-    "summary_kr": "35_K팝 댄스 클래스 — ISSUE 02 quick guide (~2K chars)",
-    "summary_en": "35_K-pop Dance Class — ISSUE 02 quick guide (~2K chars)",
+    "summary_kr": "1Million·Just Jerk 등 K팝 댄스 스튜디오 8곳을 소개하고 BTS·블랙핑크 안무 클래스 예약법과 초보자 팁을 담았다.",
+    "summary_en": "A guide to 8 K-pop dance studios like 1Million and Just Jerk offering BTS and BLACKPINK classes, with booking tips and advice for total beginners with no dance background.",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
@@ -991,8 +990,8 @@
       "seoul",
       "quick-guide"
     ],
-    "summary_kr": "36_템플스테이 초보 가이드 — ISSUE 02 quick guide (~2K chars)",
-    "summary_en": "36_Templestay Beginner's Guide — ISSUE 02 quick guide (~2K chars)",
+    "summary_kr": "조계사·봉은사 등 외국인 친화 사찰 8곳의 1박2일 템플스테이 프로그램을 소개하고 새벽 예불·발우공양 에티켓을 정리했다.",
+    "summary_en": "A guide to overnight templestay programs at 8 foreigner-friendly temples like Jogyesa and Bongeunsa, covering dawn prayer, vegetarian meals, and monastery etiquette for newcomers.",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
@@ -1037,8 +1036,8 @@
       "seoul",
       "quick-guide"
     ],
-    "summary_kr": "38_북촌한옥마을 + 삼청동 1일 — ISSUE 02 quick guide (~2K chars)",
-    "summary_en": "38_Bukchon Hanok Village + Samcheong-dong 1-Day Guide — ISSUE 02 quick guide (~2K chars)",
+    "summary_kr": "북촌한옥마을 8경과 삼청동 갤러리·카페 골목을 경복궁·익선동과 엮은 1일 코스로, 거주민 배려 에티켓도 함께 안내한다.",
+    "summary_en": "A one-day route through Bukchon Hanok Village's 8 scenic spots and Samcheong-dong's gallery-cafe alleys, linked with Gyeongbokgung and Ikseon-dong, plus residential-area etiquette.",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
@@ -1060,8 +1059,8 @@
       "seoul",
       "quick-guide"
     ],
-    "summary_kr": "39_홍대 + 연남동 + 망원 하루 — ISSUE 02 quick guide (~2K chars)",
-    "summary_en": "39_Hongdae + Yeonnam-dong + Mangwon: One Full Day — ISSUE 02 quick guide (~2K chars)",
+    "summary_kr": "홍대입구역에서 출발해 연남·합정·망원을 잇는 카페·쇼핑·한강 피크닉까지 8개 스톱으로 짠 하루 동선을 제안한다.",
+    "summary_en": "A one-day itinerary starting at Hongik Univ. Station and looping through Yeonnam, Hapjeong, and Mangwon, hitting 8 stops for cafes, shopping, and a Han River picnic finish.",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
@@ -1083,8 +1082,8 @@
       "seoul",
       "quick-guide"
     ],
-    "summary_kr": "40_남산 + 명동 야경 투어 — ISSUE 02 quick guide (~2K chars)",
-    "summary_en": "40_Namsan + Myeongdong Night Tour — ISSUE 02 quick guide (~2K chars)",
+    "summary_kr": "명동 쇼핑과 명동성당을 거쳐 케이블카로 오르는 N서울타워 야경까지 이어지는 8개 스톱의 저녁 코스를 소개한다.",
+    "summary_en": "An evening route from Myeongdong's shopping streets and cathedral up the cable car to N Seoul Tower's night view, mapped across 8 stops with cable car and dinner tips.",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
@@ -1106,8 +1105,8 @@
       "seoul",
       "guide"
     ],
-    "summary_kr": "41 · 24시간 쇼핑 스팟 지도 — ISSUE 02 시리즈",
-    "summary_en": "41 · Seoul's 24-Hour Shopping Map — ISSUE 02 series",
+    "summary_kr": "동대문·편의점·공항 면세점 3개 축으로 서울에서 밤새 쇼핑 가능한 곳을 시간대별로 정리한 심야 쇼핑 지도다.",
+    "summary_en": "A map of Seoul's round-the-clock shopping options across three hubs, Dongdaemun malls, 24-hour convenience stores, and Incheon Airport duty-free, organized by time of night.",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
@@ -1133,7 +1132,7 @@
       "must-try"
     ],
     "summary_kr": "서울 떡 맛집 — 종로·낙원·낙성대 정통 떡집 외국인 매니아 가이드. 가래떡·송편·인절미·꿀떡 풀세트 (#15 한식 + #279 명절).",
-    "summary_en": "Seoul Tteok Shops (떡집) — ISSUE 02 series",
+    "summary_en": "A guide to 20 traditional rice cake shops across Seoul organized by neighborhood, introducing types like injeolmi and songpyeon plus gift-wrapping and freshness tips.",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
@@ -1158,7 +1157,7 @@
       "hidden-gem"
     ],
     "summary_kr": "양재천 산책·맛집 — 서초·강남 hidden 산책로·맛집 풀가이드 (#173 서초·서래 + #205 공원).",
-    "summary_en": "Yangjaecheon (양재천) Walk & Eats — ISSUE 02 series",
+    "summary_en": "A guide to Yangjaecheon, a quiet riverside path in Gangnam lined with 18 bakeries, brunch spots, and fine-dining restaurants, offering a European-cafe feel away from crowds.",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
@@ -1185,7 +1184,7 @@
       "camping"
     ],
     "summary_kr": "한강 여름 가이드 — 7~8월 한강 치맥·캠핑·자전거·수영장 외국인 매니아 풀세트 (#06 + #149 + #151).",
-    "summary_en": "Han River (한강) Summer Guide — ISSUE 02 series",
+    "summary_en": "A summer guide to Seoul's 11 Han River parks, ranking the top 10 night-view spots like Banpo's Rainbow Fountain, plus picnic logistics, night markets, and water activities.",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
@@ -1207,8 +1206,8 @@
       "seoul",
       "guide"
     ],
-    "summary_kr": "45 · 서울 코인빨래방 완전 가이드 — ISSUE 02 시리즈",
-    "summary_en": "45 · Seoul Coin Laundry Complete Guide — ISSUE 02 series",
+    "summary_kr": "24시간 무인으로 운영되는 서울 코인빨래방 4대 체인과 지역별 추천 매장을 소개하고 카드·교통카드 결제 이용법을 안내한다.",
+    "summary_en": "A guide to Seoul's 24-hour, unmanned coin laundromats, comparing 4 major chains and listing recommended locations by neighborhood, with a step-by-step guide to card payment.",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
@@ -1230,8 +1229,8 @@
       "seoul",
       "guide"
     ],
-    "summary_kr": "46 · 한국 유심·이심·로밍 완전 가이드 — ISSUE 02 시리즈",
-    "summary_en": "46 · Korea SIM · eSIM · Roaming Complete Guide — ISSUE 02 series",
+    "summary_kr": "이심·유심·포켓와이파이·로밍 4가지 데이터 옵션을 가격·활성화 시간 기준으로 비교하고 여행 기간별 최적 선택을 제안한다.",
+    "summary_en": "A comparison of 4 mobile data options for Korea, eSIM, physical SIM, pocket wifi, and roaming, by price and setup speed, with picks tailored to trip length and group size.",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
@@ -1253,8 +1252,8 @@
       "seoul",
       "guide"
     ],
-    "summary_kr": "47 · 올리브영 실구매 완전 가이드 — ISSUE 02 시리즈",
-    "summary_en": "47 · Olive Young Real Buying Guide — ISSUE 02 series",
+    "summary_kr": "명동·강남 등 올리브영 매장 5곳을 외국어 응대 수준으로 비교하고 세일 시기와 면세 즉시환급 활용법까지 정리한 쇼핑 가이드다.",
+    "summary_en": "A K-beauty guide comparing 5 top Olive Young locations in Myeongdong and Gangnam by foreign-language service, plus the monthly sale calendar and instant tax refunds.",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
@@ -1276,8 +1275,8 @@
       "seoul",
       "guide"
     ],
-    "summary_kr": "48 · 한국 필수구매 TOP 20 — ISSUE 02 시리즈",
-    "summary_en": "48 · Korea Essential Buys TOP 20 — ISSUE 02 series",
+    "summary_kr": "본국에 없거나 훨씬 비싼 한국산 아이템 20종을 K뷰티·K푸드 등 5개 카테고리로 정리하고 국가별 구매 우선순위를 제안한다.",
+    "summary_en": "A curated list of 20 items worth buying only in Korea because they're unavailable or far pricier abroad, spanning K-beauty to ginseng, with shopping priorities by nationality.",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
@@ -1437,7 +1436,7 @@
       "must-try"
     ],
     "summary_kr": "광장시장 맛집·체험·주의사항 — 빈대떡·마약김밥·외국인 vlog 1번지 풀가이드 (#208 + #50 광장 빈티지).",
-    "summary_en": "Gwangjang Market (광장시장) Full Guide for Foreigners — ISSUE 02 series",
+    "summary_en": "A deep dive into Gwangjang Market comparing its three most-debated bindaetteok stalls, plus 8 food picks, 5 non-food experiences, and 10 tips to dodge common tourist mistakes.",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
@@ -1458,8 +1457,8 @@
       "foreigner",
       "seoul"
     ],
-    "summary_kr": "서울 김밥 맛집 가이드 — ISSUE 02 시리즈",
-    "summary_en": "Seoul Gimbap Guide for Foreigners — ISSUE 02 series",
+    "summary_kr": "시장 마약김밥부터 편의점까지 서울 김밥 8종을 소개하고 바르다김선생·리김밥·로봇김밥 프리미엄 체인 3곳을 심층 비교한다.",
+    "summary_en": "A guide to 8 styles of Korean gimbap, from street-market mayak gimbap to convenience-store rolls, comparing 3 premium chains: Barda Kim Seonsaeng, Lee Gimbap, and Robot Gimbap.",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
@@ -1480,8 +1479,8 @@
       "foreigner",
       "seoul"
     ],
-    "summary_kr": "서울 재즈바·재즈카페 가이드 — ISSUE 02 시리즈",
-    "summary_en": "Seoul Jazz Bars & Lounges Guide for Foreigners — ISSUE 02 series",
+    "summary_kr": "서울 재즈바·라운지 10곳을 소개하고 야누스·천년동안도·올댓재즈 등 한국 3대 노포 재즈클럽을 심층 비교한다.",
+    "summary_en": "A guide to 10 Seoul jazz venues, spotlighting a comparison of Korea's three oldest jazz clubs, Janus, Chunnyundoando, and All That Jazz, with tips on reservations and etiquette.",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
@@ -1502,13 +1501,12 @@
       "foreigner",
       "seoul"
     ],
-    "summary_kr": "한국 카페 체인 풀가이드 — ISSUE 02 시리즈",
-    "summary_en": "The Complete Guide to Korean Café Chains — ISSUE 02 series",
+    "summary_kr": "한국 카페 체인 8곳을 가격대별로 소개하고 이디야·메가커피·빽다방 저가 3대장을 아메리카노 가격·시그니처 메뉴로 비교한다.",
+    "summary_en": "A guide to 8 Korean cafe chains by price tier, with a head-to-head comparison of the low-cost 'big three,' Ediya, Mega Coffee, and Paik's Coffee, on pricing and signature drinks.",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
     "jp_available": true,
-    "image": "assets/og/korea-cafe.jpg",
     "date_published": "2026-05-14",
     "title_ja": "韓国カフェチェーン完全ガイド",
     "title_zh": "韩国咖啡连锁店完全指南",
@@ -1525,8 +1523,8 @@
       "foreigner",
       "seoul"
     ],
-    "summary_kr": "한국 닭 요리 풀가이드 — ISSUE 02 시리즈",
-    "summary_en": "Korean Chicken Dishes Full Guide — ISSUE 02 series",
+    "summary_kr": "닭갈비·삼계탕·닭한마리 등 한국 닭 요리 8종을 매운맛 강도로 나누고 춘천닭갈비·유가네·새마을식당 3대장을 비교한다.",
+    "summary_en": "A guide to 8 Korean chicken dishes ranging from spicy dakgalbi to mild samgyetang, comparing 3 major dakgalbi chains: Chuncheon Dakgalbi, Yoogane, and Saemaeul Sikdang.",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
@@ -1570,8 +1568,8 @@
       "foreigner",
       "seoul"
     ],
-    "summary_kr": "한국 치킨 체인 풀가이드 — ISSUE 02 시리즈",
-    "summary_en": "Complete Guide to Korean Fried Chicken Chains — ISSUE 02 series",
+    "summary_kr": "한국 치킨 체인 8곳을 소개하고 BHC·교촌·BBQ 3대장을 시그니처 메뉴·매운맛·가격으로 비교한 치맥 입문 가이드다.",
+    "summary_en": "A fried-chicken guide comparing 8 Korean chains, anchored by a deep dive into the 'big three,' BHC, Kyochon, and BBQ, on flavors, spice level, and price for chimaek beginners.",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
@@ -1593,8 +1591,8 @@
       "foreigner",
       "seoul"
     ],
-    "summary_kr": "한국 떡볶이 체인 풀가이드 — ISSUE 02 시리즈",
-    "summary_en": "Korea Tteokbokki (떡볶이) Chain Complete Guide — ISSUE 02 series",
+    "summary_kr": "한국 떡볶이 체인 8곳을 매운맛 기준으로 소개하고 엽기·죠스·신전떡볶이 3대장을 단계별 맵기와 세트 메뉴로 비교한다.",
+    "summary_en": "A guide to 8 Korean tteokbokki chains ranked by spice level, comparing the 'big three,' Yupdduk, Jaws, and Sinjeon, on heat settings and combo-set options for beginners.",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
@@ -1642,8 +1640,8 @@
       "foreigner",
       "seoul"
     ],
-    "summary_kr": "한국 비건·할랄·종교 식이 가이드 — ISSUE 02 시리즈",
-    "summary_en": "Korea's Vegan, Halal & Religious Diet Guide for Foreigners — ISSUE 02 series",
+    "summary_kr": "비건·할랄·코셔·글루텐프리 등 종교·식이 제한이 있는 외국인을 위해 이태원을 중심으로 인증 매장과 확인 방법을 정리했다.",
+    "summary_en": "A dietary-restriction guide for vegan, halal, kosher, and gluten-free travelers centered on Itaewon's diverse food scene, with tips on verifying certification and useful phrases.",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
@@ -1664,8 +1662,8 @@
       "foreigner",
       "seoul"
     ],
-    "summary_kr": "한국 베이커리 체인 풀가이드 — ISSUE 02 시리즈",
-    "summary_en": "Korea Bakery Chain Full Guide — ISSUE 02 series",
+    "summary_kr": "한국 베이커리 체인 8곳을 소개하고 파리바게뜨·뚜레쥬르·아우어베이커리 3대장을 가격·케이크·매장 분위기로 비교한다.",
+    "summary_en": "A guide to 8 Korean bakery chains, comparing the 'big three,' Paris Baguette, Tous Les Jours, and OUR Bakery, on pricing, cake selection, and cafe atmosphere for a quick stop.",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
@@ -1687,8 +1685,8 @@
       "foreigner",
       "seoul"
     ],
-    "summary_kr": "명동 코스메틱 풀가이드 — ISSUE 02 시리즈",
-    "summary_en": "Myeongdong (명동) Cosmetics Full Guide — ISSUE 02 series",
+    "summary_kr": "명동 K뷰티 매장 8곳을 소개하고 올리브영 명동중앙점을 집중 공략하며 외국인 즉시 세금환급 받는 법을 안내한다.",
+    "summary_en": "A K-beauty shopping guide to 8 stores in Myeongdong, with an in-depth focus on the flagship Olive Young branch, plus steps for claiming an instant tax refund at checkout.",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
@@ -1709,8 +1707,8 @@
       "foreigner",
       "seoul"
     ],
-    "summary_kr": "이태원·한남·해방촌 1일 풀공략 — ISSUE 02 시리즈",
-    "summary_en": "Itaewon (이태원) · Hannam (한남) · Haebangchon (해방촌) Full 1-Day Guide — ISSUE 02 series",
+    "summary_kr": "다국적 이태원, 럭셔리 갤러리의 한남, 언덕 위 MZ 골목 해방촌을 비교하며 하루 동선으로 엮은 코스 가이드다.",
+    "summary_en": "A guide comparing three neighborhoods near Itaewon Station, nightlife-heavy Itaewon, upscale gallery-filled Hannam, and hilltop Haebangchon, with a one-day route through all three.",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
@@ -1756,8 +1754,8 @@
       "foreigner",
       "seoul"
     ],
-    "summary_kr": "잠실 1일 풀공략 — ISSUE 02 시리즈",
-    "summary_en": "Jamsil 1-Day Full Guide — ISSUE 02 series",
+    "summary_kr": "롯데월드·롯데타워·석촌호수를 하루에 도는 잠실 풀세트 코스를 소개하고 잠실새내·송리단길 맛집 12곳도 함께 담았다.",
+    "summary_en": "A full-day Jamsil itinerary covering Lotte World theme park, Lotte Tower's Seoul Sky observatory, and free Seokchon Lake, plus 12 recommended restaurants nearby in Songridan-gil.",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
@@ -1778,8 +1776,8 @@
       "foreigner",
       "seoul"
     ],
-    "summary_kr": "인천공항 입국·도심 이동 풀가이드 — ISSUE 02 시리즈",
-    "summary_en": "Incheon Airport Arrival & City Transfer Complete Guide — ISSUE 02 series",
+    "summary_kr": "인천공항 도착부터 도심 숙소까지 AREX·공항버스·택시 이동법을 가격·시간으로 비교하고, 환전·SIM·택시 사기 예방 팁까지 담은 첫날 동선 가이드.",
+    "summary_en": "Compares Incheon Airport's AREX, airport bus, and taxi options by price and time, plus exchange, SIM, and taxi-scam tips for a first-day arrival route.",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
@@ -1801,8 +1799,8 @@
       "seoul",
       "regional"
     ],
-    "summary_kr": "가을 단풍 명소 TOP 8 + 시기별 단풍 캘린더 — ISSUE 02 시리즈",
-    "summary_en": "Fall Foliage TOP 8 Spots + Season-by-Season Foliage Calendar — ISSUE 02 series",
+    "summary_kr": "서울·근교 단풍 명소 8곳을 절정 시기·난이도·혼잡도로 비교하고, 9월 말~11월 중순 시기별 캘린더와 평일 오전 방문 팁을 담았다.",
+    "summary_en": "Ranks 8 Seoul-area foliage spots by peak timing and crowd levels, with a late-Sep-to-mid-Nov calendar and tips for beating weekend crowds.",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
@@ -1824,8 +1822,8 @@
       "seoul",
       "regional"
     ],
-    "summary_kr": "겨울 일루미네이션·트리·연말 카운트다운 풀가이드 — ISSUE 02 시리즈",
-    "summary_en": "Seoul Winter Illuminations, Christmas Trees & New Year's Eve Countdown — ISSUE 02 series",
+    "summary_kr": "서울 겨울 일루미네이션·트리 명소 8곳을 점등 시기·입장료로 비교하고, 일몰 후 골든타임과 무료·유료 구분 등 방문 팁을 담았다.",
+    "summary_en": "Compares 8 Seoul winter illumination spots by season and fee, with post-sunset timing tips and free-vs-paid guidance to avoid common visitor mistakes.",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
@@ -2027,8 +2025,8 @@
       "seoul",
       "seoul-wide"
     ],
-    "summary_kr": "서울 막걸리·전통주 입문 — ISSUE 02 시리즈",
-    "summary_en": "Seoul Makgeolli (막걸리) & Traditional Liquor Intro — ISSUE 02 series",
+    "summary_kr": "막걸리·약주·청주·소주 등 한국 전통주를 도수와 특징으로 정리하고, 양조장·전통주 갤러리부터 외국인 친화 바까지 체험 매장 8곳을 소개한다.",
+    "summary_en": "Explains Korea's traditional liquors — makgeolli, yakju, cheongju, soju — by strength and flavor, then picks 8 breweries and bars for tasting them.",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
@@ -2050,8 +2048,8 @@
       "seoul",
       "seoul-wide"
     ],
-    "summary_kr": "서울 야장 culture 10선 — ISSUE 02 시리즈",
-    "summary_en": "Seoul Yajang (야장) Culture Top 10 — ISSUE 02 series",
+    "summary_kr": "야외 좌석에 새벽까지 여는 서울 '야장' 문화를 소개하며, 갈비·곱창 노포부터 포차·크래프트 맥주까지 10곳을 지역·시간대별로 정리했다.",
+    "summary_en": "Introduces Seoul's 'yajang' outdoor late-night dining scene — not a night market — with 10 picks from old-school rib grills to craft beer bars open till dawn.",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
@@ -8078,7 +8076,7 @@
       "cycling",
       "regional"
     ],
-    "summary_kr": "한국 자전거 길·둘레길 풀가이드 — 4대강·제주·동해.",
+    "summary_kr": "한강 자전거길·서울둘레길부터 4대강 1853km·제주 환상길까지 한국 자전거·둘레길 12선을 난이도와 특징별로 정리한 가이드.",
     "summary_en": "Korea Bicycle Trail Guide — curated picks.",
     "en_available": true,
     "cn_available": true,
@@ -9744,7 +9742,6 @@
     "instagram_posted": false,
     "cn_available": true,
     "jp_available": true,
-    "image": "assets/og/korea-winter-map.jpg",
     "date_published": "2026-05-26",
     "title_ja": "韓国冬マップ",
     "title_zh": "韩国冬季地图",
@@ -9923,7 +9920,6 @@
     "instagram_posted": false,
     "cn_available": true,
     "jp_available": true,
-    "image": "assets/og/korea-payment-sim-map.jpg",
     "date_published": "2026-05-26",
     "title_ja": "韓国決済・SIMマップ",
     "title_zh": "韩国支付·SIM卡地图",
@@ -10645,7 +10641,6 @@
     "instagram_posted": false,
     "cn_available": true,
     "jp_available": true,
-    "image": "assets/og/korea-workation-map.jpg",
     "date_published": "2026-05-26",
     "title_ja": "韓国ワーケーションマップ",
     "title_zh": "韩国旅居办公地图",
@@ -11181,7 +11176,6 @@
     "instagram_posted": false,
     "cn_available": true,
     "jp_available": true,
-    "image": "assets/og/korea-noodle-map.jpg",
     "date_published": "2026-05-29",
     "title_ja": "韓国麺マップ",
     "title_zh": "韩国面食地图",
@@ -12984,7 +12978,6 @@
     "instagram_posted": false,
     "cn_available": true,
     "jp_available": true,
-    "image": "assets/og/korea-collab-cluster.jpg",
     "date_published": "2026-05-30",
     "title_zh": "外国人韩国联名全攻略12大特色",
     "title_ja": "外国人向け韓国コラボ 徹底ガイド12選",
@@ -13038,7 +13031,6 @@
     "instagram_posted": false,
     "cn_available": true,
     "jp_available": true,
-    "image": "assets/og/korea-edm-festivals.jpg",
     "date_published": "2026-05-30",
     "title_zh": "外国人韩国EDM音乐节全攻略12大特色",
     "title_ja": "外国人向け韓国EDMフェスティバル 徹底ガイド12選",
@@ -13086,7 +13078,6 @@
     "instagram_posted": false,
     "cn_available": true,
     "jp_available": true,
-    "image": "assets/og/korea-cyber-security.jpg",
     "date_published": "2026-05-30",
     "title_zh": "外国人韩国网络安全全攻略12大特色",
     "title_ja": "外国人向け韓国サイバーセキュリティ 徹底ガイド12選",
@@ -13357,7 +13348,6 @@
     "instagram_posted": false,
     "cn_available": true,
     "jp_available": true,
-    "image": "assets/og/korea-volunteer-ngo.jpg",
     "date_published": "2026-05-30",
     "title_zh": "外国人韩国志愿·NGO全攻略12大特色",
     "title_ja": "外国人向け韓国ボランティア・NGO",
@@ -13383,7 +13373,6 @@
     "instagram_posted": false,
     "cn_available": true,
     "jp_available": true,
-    "image": "assets/og/korea-immigration-visa.jpg",
     "date_published": "2026-05-30",
     "title_zh": "外国人韩国移民·居留全攻略12大特色",
     "title_ja": "外国人向け韓国移住・滞在",
@@ -18112,7 +18101,6 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false,
-    "image": "assets/og/korea-snow-winter.jpg",
     "date_published": "2026-06-05",
     "title_ja": "冬の雪見スポット12選",
     "title_zh": "韩国冬季赏雪地12选",
@@ -18222,7 +18210,6 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false,
-    "image": "assets/og/korea-kimjang-winter.jpg",
     "date_published": "2026-06-05",
     "title_ja": "冬のキムジャン体験12選",
     "title_zh": "韩国冬季腌泡菜体验12选",
@@ -18372,7 +18359,6 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false,
-    "image": "assets/og/korea-spring-flower-festivals.jpg",
     "date_published": "2026-06-06",
     "title_ja": "春の花祭り12選",
     "title_zh": "韩国春季花卉庆典12选",
@@ -18422,7 +18408,6 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false,
-    "image": "assets/og/korea-spring-tea-festival.jpg",
     "date_published": "2026-06-06",
     "title_ja": "春のお茶祭り 宝城・河東12選",
     "title_zh": "韩国春季茶节12选",
@@ -18446,7 +18431,6 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false,
-    "image": "assets/og/korea-spring-buddha-birthday.jpg",
     "image_credit": "Korea Tourism Organization (공공누리 1유형)",
     "date_published": "2026-06-06",
     "title_ja": "仏誕祭 春の提灯12選",
@@ -19024,7 +19008,6 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false,
-    "image": "assets/og/korea-summer-cold-food.jpg",
     "date_published": "2026-06-07",
     "title_ja": "外国人向け韓国夏に食べたいひんやりグルメ厳選12選",
     "title_zh": "韩国夏季清凉美食12精选",
@@ -19050,7 +19033,6 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false,
-    "image": "assets/og/korea-summer-beach.jpg",
     "date_published": "2026-06-07",
     "title_ja": "外国人向け韓国夏のビーチ厳選12選",
     "title_zh": "韩国夏季海滩12精选",
@@ -19101,7 +19083,6 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false,
-    "image": "assets/og/korea-summer-festivals.jpg",
     "date_published": "2026-06-07",
     "title_ja": "外国人向け韓国夏のフェスティバル厳選12選",
     "title_zh": "韩国夏季庆典12大精选",
@@ -19127,7 +19108,6 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false,
-    "image": "assets/og/korea-summer-camping.jpg",
     "date_published": "2026-06-07",
     "title_ja": "外国人向け韓国夏のキャンプ・グランピング厳選12選",
     "title_zh": "韩国夏季露营与豪华露营12大精选",
@@ -19153,7 +19133,6 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false,
-    "image": "assets/og/korea-seasonal-sashimi.jpg",
     "date_published": "2026-06-07",
     "title_ja": "韓国旬の刺身月別ガイド",
     "title_zh": "韩国时令生鱼片月度指南",
@@ -19278,7 +19257,6 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false,
-    "image": "assets/og/korea-modern-architects.jpg",
     "date_published": "2026-06-07",
     "title_ja": "外国人向け韓国現代建築家厳選12選",
     "title_zh": "韩国现代建筑师12大精选",
@@ -19302,7 +19280,6 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false,
-    "image": "assets/og/korea-traditional-architecture-unesco.jpg",
     "date_published": "2026-06-07",
     "title_ja": "外国人向け韓国ユネスコ伝統建築厳選12選",
     "title_zh": "韩国UNESCO传统建筑12大精选",
@@ -19350,7 +19327,6 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false,
-    "image": "assets/og/korea-kdrama-2026-2027.jpg",
     "image_credit": "Korea Tourism Organization (공공누리 1유형)",
     "date_published": "2026-06-07",
     "title_ja": "外国人向け韓国2026・2027年K-ドラマ新作厳選12選",
@@ -19520,7 +19496,6 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false,
-    "image": "assets/og/korea-vegan-cafe-restaurant-seoul.jpg",
     "date_published": "2026-06-07",
     "title_ja": "ソウル ヴィーガンカフェ・レストラン集ベスト12",
     "title_zh": "韩国首尔纯素咖啡馆与餐厅聚集地12大精选",
@@ -19972,7 +19947,6 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false,
-    "image": "assets/og/korea-chicken-channel-comparison.jpg",
     "image_credit": "Korea Tourism Organization (공공누리 1유형)",
     "date_published": "2026-06-08",
     "title_zh": "外国人炸鸡店对比：连锁店、炸鸡啤酒店、啤酒屋、酒店外卖",
@@ -20026,7 +20000,6 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false,
-    "image": "assets/og/korea-dessert-workflow.jpg",
     "date_published": "2026-06-08",
     "title_zh": "韩国甜点点餐搭配流程",
     "title_ja": "韓国デザート 注文・ペアリングワークフロー",
@@ -20052,7 +20025,6 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false,
-    "image": "assets/og/korea-dessert-channel-comparison.jpg",
     "date_published": "2026-06-08",
     "title_zh": "外国人甜点店对比：街头、MZ咖啡馆、酒店、韩屋",
     "title_ja": "外国人向け韓国デザート比較",
@@ -20267,7 +20239,6 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false,
-    "image": "assets/og/korea-alcohol-workflow.jpg",
     "date_published": "2026-06-08",
     "title_zh": "韩国酒类点餐搭配流程",
     "title_ja": "韓国酒 注文・ペアリングワークフロー",
@@ -20320,7 +20291,6 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false,
-    "image": "assets/og/korea-kimchi-restaurant-encounter.jpg",
     "image_credit": "Korea Tourism Organization (공공누리 1유형)",
     "date_published": "2026-06-08",
     "title_zh": "外国人餐厅泡菜入门：入座、小菜、续添、再访矩阵",
@@ -20348,7 +20318,6 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false,
-    "image": "assets/og/korea-kimchi-convenience-store-pb.jpg",
     "image_credit": "Korea Tourism Organization (공공누리 1유형)",
     "date_published": "2026-06-08",
     "title_zh": "便利店PB泡菜对比：CU、GS25、7-11、E-Mart24、No Brand 5渠道矩阵",
@@ -20565,7 +20534,6 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false,
-    "image": "assets/og/korea-traditional-drinks-6types-matrix.jpg",
     "date_published": "2026-06-09",
     "title_zh": "韩国茶饮与传统饮料6种类型矩阵",
     "title_ja": "韓国茶・伝統飲料：6種マトリックス",
@@ -21034,7 +21002,6 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false,
-    "image": "assets/og/korea-porridge-6types-matrix.jpg",
     "date_published": "2026-06-09",
     "title_ja": "韓国粥 6種マトリックス",
     "title_zh": "韩国粥品6种矩阵",
@@ -21189,7 +21156,6 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false,
-    "image": "assets/og/korea-sashimi-live-aged-matrix.jpg",
     "date_published": "2026-06-09",
     "title_ja": "韓国刺身 6種マトリックス",
     "title_zh": "韩国生鱼片6种矩阵：活鱼vs熟成",
@@ -21215,7 +21181,6 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false,
-    "image": "assets/og/korea-sashimi-market-channel-comparison.jpg",
     "date_published": "2026-06-09",
     "title_ja": "外国人向け韓国刺身 鷺梁津・チャガルチ・統営・蘇来浦口 比較",
     "title_zh": "外国人韩国生鱼片市场比较",
@@ -21344,7 +21309,6 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false,
-    "image": "assets/og/korea-postmeal-beverage-workflow.jpg",
     "date_published": "2026-06-09",
     "title_ja": "韓国食後飲料 注文・ペアリングワークフロー",
     "title_zh": "韩国餐后饮品点餐搭配流程",
@@ -21606,7 +21570,6 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false,
-    "image": "assets/og/korea-bibimbap-channel-comparison.jpg",
     "date_published": "2026-06-09",
     "title_ja": "外国人向け 韓国ビビンバ 全州・石焼・セルフ・山菜比較",
     "title_zh": "外国人韩国拌饭场所比较",
@@ -21632,7 +21595,6 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false,
-    "image": "assets/og/korea-jeon-6types-matrix.jpg",
     "date_published": "2026-06-09",
     "title_ja": "韓国チヂミ6種マトリックス 緑豆・ネギ・海鮮ネギ・ジャガイモ・キムチ・ドングランテン",
     "title_zh": "韩国煎饼6种矩阵",
@@ -21684,7 +21646,6 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false,
-    "image": "assets/og/korea-jeon-channel-comparison.jpg",
     "date_published": "2026-06-09",
     "title_ja": "外国人向け 韓国チヂミ 広場・伝統酒場・ポジャンマチャ・韓定食比較",
     "title_zh": "外国人韩国煎饼场所比较",
@@ -21811,7 +21772,6 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false,
-    "image": "assets/og/korea-breakfast-workflow.jpg",
     "date_published": "2026-06-09",
     "title_zh": "早餐点餐礼仪流程",
     "title_ja": "朝食 注文・マナーワークフロー",
@@ -21835,7 +21795,6 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false,
-    "image": "assets/og/korea-breakfast-channel-comparison.jpg",
     "date_published": "2026-06-09",
     "title_zh": "早餐对比：酒店、MZ、解酒餐、便利店",
     "title_ja": "朝食 ホテル・MZ・ヘジャン・コンビニ比較",
@@ -22102,7 +22061,6 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false,
-    "image": "assets/og/korea-mz-premium-workflow.jpg",
     "date_published": "2026-06-09",
     "title_zh": "韩国MZ高端韩餐点餐预约礼仪流程",
     "title_ja": "韓国MZプレミアム韓食 注文・予約・マナーワークフロー",
@@ -22128,7 +22086,6 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false,
-    "image": "assets/og/korea-mz-premium-channel-comparison.jpg",
     "date_published": "2026-06-09",
     "title_zh": "韩国MZ高端韩餐4渠道对比",
     "title_ja": "外国人向け 韓国MZプレミアム韓食4チャンネル比較",
@@ -22440,7 +22397,6 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false,
-    "image": "assets/og/korea-daegu-seomun-night-market.jpg",
     "image_credit": "Korea Tourism Organization (공공누리 1유형)",
     "date_published": "2026-06-12",
     "title_zh": "大邱西门市场夜市",
@@ -22676,7 +22632,6 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false,
-    "image": "assets/og/korea-incheon-songdo-ibd.jpg",
     "image_credit": "Korea Tourism Organization (공공누리 1유형)",
     "date_published": "2026-06-12",
     "title_zh": "仁川松岛IBD",
@@ -22703,7 +22658,6 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false,
-    "image": "assets/og/korea-incheon-wolmido-soraepogu.jpg",
     "image_credit": "Korea Tourism Organization (공공누리 1유형)",
     "date_published": "2026-06-12",
     "title_zh": "仁川月尾岛与苏莱浦口",
@@ -22862,7 +22816,6 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false,
-    "image": "assets/og/korea-ulsan-industrial-tourism.jpg",
     "image_credit": "Korea Tourism Organization (공공누리 1유형)",
     "date_published": "2026-06-12",
     "title_zh": "蔚山产业观光",
@@ -22946,7 +22899,6 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false,
-    "image": "assets/og/korea-busan-haeundae-gwangalli.jpg",
     "image_credit": "Korea Tourism Organization (공공누리 1유형)",
     "date_published": "2026-06-12",
     "title_zh": "釜山海云台+广安里",
@@ -22971,7 +22923,6 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false,
-    "image": "assets/og/korea-busan-gamcheon-bosudong.jpg",
     "image_credit": "Korea Tourism Organization (공공누리 1유형)",
     "date_published": "2026-06-12",
     "title_zh": "釜山甘川文化村+宝水洞",
@@ -23186,7 +23137,6 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false,
-    "image": "assets/og/korea-gyeonggi-suwon-hwaseong-unesco.jpg",
     "image_credit": "Korea Tourism Organization (공공누리 1유형)",
     "date_published": "2026-06-12",
     "title_ja": "京畿道 水原華城 UNESCO",
@@ -23240,7 +23190,6 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false,
-    "image": "assets/og/korea-gyeonggi-dmz-panmunjom.jpg",
     "image_credit": "Korea Tourism Organization (공공누리 1유형)",
     "date_published": "2026-06-12",
     "title_ja": "京畿道 DMZ・板門店・臨津閣",
@@ -23351,7 +23300,6 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false,
-    "image": "assets/og/korea-gangwon-sokcho-seoraksan.jpg",
     "image_credit": "Korea Tourism Organization (공공누리 1유형)",
     "date_published": "2026-06-12",
     "title_ja": "江原道 束草・雪嶽山",
@@ -23510,7 +23458,6 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false,
-    "image": "assets/og/korea-chungcheong-buyeo-unesco-baekje.jpg",
     "image_credit": "Korea Tourism Organization (공공누리 1유형)",
     "date_published": "2026-06-12",
     "title_ja": "扶余 UNESCO 百済",
@@ -23615,7 +23562,6 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false,
-    "image": "assets/og/korea-jeolla-yeosu-cable-car-night.jpg",
     "image_credit": "Korea Tourism Organization (공공누리 1유형)",
     "date_published": "2026-06-12",
     "title_ja": "麗水 海上ケーブルカー・夜の海",
@@ -23853,7 +23799,6 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false,
-    "image": "assets/og/korea-jeju-hallasan-unesco.jpg",
     "image_credit": "Korea Tourism Organization (공공누리 1유형)",
     "date_published": "2026-06-12",
     "title_ja": "済州 漢拏山 UNESCO",
@@ -23959,7 +23904,6 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false,
-    "image": "assets/og/korea-yeon-deung-hoe-unesco-2020.jpg",
     "image_credit": "Korea Tourism Organization (공공누리 1유형)",
     "date_published": "2026-06-13",
     "title_ja": "燃灯会 UNESCO 2020 春祭り",
@@ -24115,7 +24059,6 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false,
-    "image": "assets/og/korea-jinju-lantern-festival.jpg",
     "image_credit": "Korea Tourism Organization (공공누리 1유형)",
     "date_published": "2026-06-13",
     "title_ja": "晋州 儒燈祭り 秋",
@@ -24167,7 +24110,6 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false,
-    "image": "assets/og/korea-gangwon-icefish-winter.jpg",
     "image_credit": "Korea Tourism Organization (공공누리 1유형)",
     "date_published": "2026-06-13",
     "title_ja": "江原ワカサギ・マス祭り 冬",
@@ -28442,7 +28384,9 @@
     "instagram_posted": false,
     "date_published": "2026-07-14",
     "title_ja": "人のいないソウル — 混雑を避ける静かな名所12選 deep dive",
-    "title_zh": "没有人潮的首尔 — 避开拥挤的12处静谧景点 deep dive"
+    "title_zh": "没有人潮的首尔 — 避开拥挤的12处静谧景点 deep dive",
+    "summary_ja": "混雑する定番の代わりに、静かな丘の町・河川・宮殿・路地裏アートまで12か所を4軸で紹介。穴場の理由と訪れる時間帯も解説。",
+    "summary_zh": "以安静的山丘街区、河流山林、清幽宫韩屋、隐藏艺术小巷等12处替代拥挤热门景点，并说明为何清静及最佳到访时段。"
   },
   {
     "id": "1236",
@@ -28466,7 +28410,9 @@
     "instagram_posted": false,
     "date_published": "2026-07-14",
     "title_ja": "夏の夜のソウル野外酒場 — ルーフトップ・テラス・ナチュラルワインバー12選 deep dive",
-    "title_zh": "夏夜首尔露天酒场 — 屋顶·露台·自然派葡萄酒吧 12选 deep dive"
+    "title_zh": "夏夜首尔露天酒场 — 屋顶·露台·自然派葡萄酒吧 12选 deep dive",
+    "summary_ja": "屋上バー、ナチュラルワイン横丁、屋外テラス料理店まで夏の夜を彩る12か所を4分野で紹介。猛暑を避ける日没後の楽しみ方も解説する。",
+    "summary_zh": "精选屋顶酒吧、自然酒小巷、露天露台餐厅等12处避暑夜生活好去处，并说明日落后出门以避开酷热的最佳时段。"
   },
   {
     "id": "1237",
@@ -28489,7 +28435,9 @@
     "instagram_posted": false,
     "date_published": "2026-07-14",
     "title_ja": "夏の水フェス完全攻略 — WATERBOMB (워터밤)・S2O・Heumppeok Show (흠뻑쇼) 外国人ガイド deep dive",
-    "title_zh": "夏季水上音乐节全攻略 — 水弹音乐节·S2O·湿身秀外国人指南 deep dive"
+    "title_zh": "夏季水上音乐节全攻略 — 水弹音乐节·S2O·湿身秀外国人指南 deep dive",
+    "summary_ja": "ウォーターボム・S2O・スックドショーなど韓国夏の三大ウォーターフェスの違いを解説し、外国人向けチケット購入やパスポート携帯、持ち物まで案内。",
+    "summary_zh": "解析WATERBOMB、S2O、湿透秀等三大夏日水战音乐节的风格差异，并说明外国游客购票、护照携带及装备准备等实用信息。"
   },
   {
     "id": "1238",
@@ -28514,7 +28462,9 @@
     "instagram_posted": false,
     "date_published": "2026-07-14",
     "title_ja": "ロマンチックなソウルの夜景デート — 展望台・ルーフトップ・漢江ビュー12選 deep dive",
-    "title_zh": "浪漫首尔夜景约会 — 观景台·屋顶·汉江景致12选 deep dive"
+    "title_zh": "浪漫首尔夜景约会 — 观景台·屋顶·汉江景致12选 deep dive",
+    "summary_ja": "展望タワーや屋上、漢江沿いなどロマンチックな夜景スポット12か所を紹介。入場料と営業時間に加え、無料で楽しめる代替スポットも併記する。",
+    "summary_zh": "精选展望塔、屋顶酒吧、汉江沿岸等12处浪漫夜景约会地点，标注门票与营业时间，并附赠免费也能欣赏夜景的替代去处。"
   },
   {
     "id": "1239",
@@ -28538,7 +28488,9 @@
     "instagram_posted": false,
     "date_published": "2026-07-15",
     "title_ja": "ソウル600年タイムトラベル — 時代別に歩く歴史探検コース deep dive",
-    "title_zh": "首尔600年时光之旅 — 按时代行走的历史探险路线 deep dive"
+    "title_zh": "首尔600年时光之旅 — 按时代行走的历史探险路线 deep dive",
+    "summary_ja": "朝鮮王朝から開化期、近代商業、産業化、グローバル都市まで5つの時代を歩いて巡るソウル史跡コース。史実に基づき一日で600年をたどる。",
+    "summary_zh": "串联朝鲜王朝、开化期、近代商业、工业化到国际都市五个时代的徒步历史路线，以准确史实为基础，一日之内走完六百年变迁。"
   },
   {
     "id": "1240",
@@ -28564,7 +28516,9 @@
     "instagram_posted": false,
     "date_published": "2026-07-15",
     "title_ja": "雨の日のソウル家族おでかけ — 子どもと行きやすい室内名所12選 deep dive",
-    "title_zh": "雨天首尔亲子出游 — 适合带娃的室内景点12选 deep dive"
+    "title_zh": "雨天首尔亲子出游 — 适合带娃的室内景点12选 deep dive",
+    "summary_ja": "水族館や子ども博物館、屋内遊び場など雨の日でも楽しめる家族向けスポット12か所を年齢別・料金別に紹介。ベビーカーや授乳室情報も掲載。",
+    "summary_zh": "精选水族馆、儿童博物馆、室内游乐场等12处雨天亲子好去处，按年龄段与票价分类，并标注婴儿车通道与哺乳室等设施信息。"
   },
   {
     "id": "1241",
@@ -28590,7 +28544,9 @@
     "instagram_posted": false,
     "date_published": "2026-07-15",
     "title_ja": "ソウル地下鉄2号線 完全攻略 — 駅ごとに降りて食べて楽しむ場所 deep dive",
-    "title_zh": "首尔地铁2号线完全攻略 — 每站下车吃喝玩乐 deep dive"
+    "title_zh": "首尔地铁2号线完全攻略 — 每站下车吃喝玩乐 deep dive",
+    "summary_ja": "地下鉄2号線の主要8駅ごとに、その駅で何を食べて何を見るべきかを案内。弘大や江南、聖水などソウルの人気エリアを環状線でつなぐ実用ガイド。",
+    "summary_zh": "介绍首尔地铁2号线8个核心站点各自的美食与景点，串联弘大、江南、圣水等热门街区，是沿环状线下车游玩的实用指南。"
   },
   {
     "id": "1242",
@@ -28616,7 +28572,9 @@
     "instagram_posted": false,
     "date_published": "2026-07-16",
     "title_ja": "ソウル地下鉄3号線 完全攻略 — 宮・韓屋・伝統をつなぐオレンジライン deep dive",
-    "title_zh": "首尔地铁3号线完全攻略 — 串联宫阙·韩屋·传统的橙色线 deep dive"
+    "title_zh": "首尔地铁3号线完全攻略 — 串联宫阙·韩屋·传统的橙色线 deep dive",
+    "summary_ja": "地下鉄3号線の主要8駅を案内。景福宮や北村、益善洞など伝統・韓屋エリアから漢江を渡った狎鴎亭・新沙のトレンド街まで見どころを紹介。",
+    "summary_zh": "介绍首尔地铁3号线8个站点，从景福宫、北村、益善洞等传统韩屋区，到过江后的狎鸥亭、新沙潮流商圈，逐站出行走玩法。"
   },
   {
     "id": "1243",
@@ -28641,7 +28599,9 @@
     "instagram_posted": false,
     "date_published": "2026-07-16",
     "title_ja": "ソウル地下鉄4号線 完全攻略 — 明洞·南大門·東大門ショッピングと入国の玄関口 deep dive",
-    "title_zh": "首尔地铁4号线完全攻略 — 明洞·南大门·东大门购物与入境门户 deep dive"
+    "title_zh": "首尔地铁4号线完全攻略 — 明洞·南大门·东大门购物与入境门户 deep dive",
+    "summary_ja": "地下鉄4号線の主要8駅を案内。明洞・南大門市場・東大門のショッピング街から入国玄関口ソウル駅、国立中央博物館まで楽しみ方を紹介。",
+    "summary_zh": "介绍首尔地铁4号线8个站点，涵盖明洞、南大门市场、东大门等购物区，以及入境门户首尔站与国立中央博物馆等逐站重点。"
   },
   {
     "id": "1244",
@@ -28666,7 +28626,9 @@
     "instagram_posted": false,
     "date_published": "2026-07-16",
     "title_ja": "ソウル地下鉄5号線完全攻略 — Gwanghwamun (광화문)・Yeouido (여의도)・Seoul Botanic Park (서울식물원)、広場と漢江のライン deep dive",
-    "title_zh": "首尔地铁5号线完全攻略 — 光化门·汝矣岛·首尔植物园，广场与汉江之线 deep dive"
+    "title_zh": "首尔地铁5号线完全攻略 — 光化门·汝矣岛·首尔植物园，广场与汉江之线 deep dive",
+    "summary_ja": "地下鉄5号線の主要8駅を案内。光化門広場や汝矣島、ソウル植物園まで、広場と漢江沿いを結ぶ路線の見どころをまとめる。",
+    "summary_zh": "介绍首尔地铁5号线8个站点，涵盖光化门广场、汝矣岛、首尔植物园等，串联广场与汉江沿岸景点的逐站指南。"
   },
   {
     "id": "1245",
@@ -28691,7 +28653,9 @@
     "instagram_posted": false,
     "date_published": "2026-07-16",
     "title_ja": "ソウル地下鉄6号線 完全攻略 — 梨泰院・望遠・ヘバンチョン、グローバルとヒップスターのライン deep dive",
-    "title_zh": "首尔地铁6号线完全攻略 — 梨泰院·望远·解放村，全球与潮人的线路 deep dive"
+    "title_zh": "首尔地铁6号线完全攻略 — 梨泰院·望远·解放村，全球与潮人的线路 deep dive",
+    "summary_ja": "地下鉄6号線の主要8駅を案内。梨泰院の多国籍な雰囲気や解放村、望里団街など外国人に人気のグローバル・タウンを駅ごとに紹介。",
+    "summary_zh": "介绍首尔地铁6号线8个站点，涵盖梨泰院的多元文化氛围、解放村、望里团街等外国人钟爱的潮流街区逐站玩法。"
   },
   {
     "id": "1246",
@@ -28716,7 +28680,9 @@
     "instagram_posted": false,
     "date_published": "2026-07-16",
     "title_ja": "ソウル地下鉄7号線 完全攻略 — 建大·清潭·江南、MZと高級ブランドと自然のライン deep dive",
-    "title_zh": "首尔地铁7号线完全攻略 — 建大·清潭·江南，MZ与名品与自然之线 deep dive"
+    "title_zh": "首尔地铁7号线完全攻略 — 建大·清潭·江南，MZ与名品与自然之线 deep dive",
+    "summary_ja": "地下鉄7号線の主要8駅を案内。道峰山の登山口から建大のMZ商圏、清潭洞の高級ストリートまで、自然と若者文化を結ぶ路線を紹介。",
+    "summary_zh": "介绍首尔地铁7号线8个站点，从道峰山登山口到建大商圈、清潭洞高级街区，串联自然、年轻文化与奢华氛围的逐站指南。"
   },
   {
     "id": "1247",
@@ -28739,7 +28705,9 @@
     "instagram_posted": false,
     "date_published": "2026-07-16",
     "title_ja": "ソウル地下鉄9号線完全攻略 — 金浦空港 (김포공항)から江南 (강남)まで、急行でつなぐゴールドライン deep dive",
-    "title_zh": "首尔地铁9号线完全攻略 — 从金浦机场到江南，用急行串联的黄金线路 deep dive"
+    "title_zh": "首尔地铁9号线完全攻略 — 从金浦机场到江南，用急行串联的黄金线路 deep dive",
+    "summary_ja": "地下鉄9号線の主要8駅を案内。金浦空港から急行で江南・蚕室まで結ぶ路線で、鷺梁津水産市場や奉恩寺など沿線ならではの見どころも紹介。",
+    "summary_zh": "介绍首尔地铁9号线8个站点，急行列车从金浦机场直达江南、蚕室，沿线还有鹭梁津水产市场、奉恩寺等特色景点。"
   },
   {
     "id": "1248",
@@ -28764,7 +28732,9 @@
     "instagram_posted": false,
     "date_published": "2026-07-17",
     "title_ja": "ソウル京義中央線 (경의중앙선) 完全攻略 — 漢江 (한강) に沿って走るリバーサイド路線 deep dive",
-    "title_zh": "首尔 (Seoul / 서울) 京义中央线 (Gyeongui-Jungang Line / 경의중앙선) 完全攻略 — 沿汉江 (Hangang / 한강) 而行的江边线路 deep dive"
+    "title_zh": "首尔 (Seoul / 서울) 京义中央线 (Gyeongui-Jungang Line / 경의중앙선) 完全攻略 — 沿汉江 (Hangang / 한강) 而行的江边线路 deep dive",
+    "summary_ja": "漢江の北岸を地上区間で走る京義中央線の主要8駅を案内。弘大や孔徳から梨村・漢南・鷹峰まで、車窓に川が流れる路線の見どころを紹介。",
+    "summary_zh": "介绍沿汉江北岸地面行驶的京义中央线8个站点，从弘大、孔德到梨村、汉南、鹰峰，车窗外江景相伴的沿线特色景点一览。"
   },
   {
     "id": "1249",
@@ -28788,7 +28758,9 @@
     "instagram_posted": false,
     "date_published": "2026-07-17",
     "title_ja": "ソウル空港鉄道（AREX）完全攻略 — 仁川空港 (인천공항) からソウルまで、入国初日の動線ガイド deep dive",
-    "title_zh": "首尔 (Seoul / 서울) 机场铁路 (AREX / 공항철도) 完全攻略 — 从仁川机场 (Incheon Airport / 인천공항) 到首尔，入境第一天动线指南 deep dive"
+    "title_zh": "首尔 (Seoul / 서울) 机场铁路 (AREX / 공항철도) 完全攻略 — 从仁川机场 (Incheon Airport / 인천공항) 到首尔，入境第一天动线指南 deep dive",
+    "summary_ja": "仁川空港からソウルへ向かう空港鉄道(AREX)を宿泊先別に案内。直通・一般列車の選び方からT-moneyやSIM購入まで到着初日の移動を一本化。",
+    "summary_zh": "按住宿地点分区讲解仁川机场铁道(AREX)出行方案，涵盖直达/普通列车选择、交通卡与SIM卡购买等入境首日全流程动线安排。"
   },
   {
     "id": "1250",
@@ -28814,7 +28786,9 @@
     "instagram_posted": false,
     "date_published": "2026-07-18",
     "title_ja": "ソウル往十里 (왕십리) 乗換ハブ完全攻略 — 4路線が交わる旅行拠点 deep dive",
-    "title_zh": "首尔往十里 (Wangsimni / 왕십리) 换乘枢纽完全攻略 — 4条线路交汇的旅行据点 deep dive"
+    "title_zh": "首尔往十里 (Wangsimni / 왕십리) 换乘枢纽完全攻略 — 4条线路交汇的旅行据点 deep dive",
+    "summary_ja": "4路線が交わる王十里駅を拠点に、そこから四方に広がる日帰りコースを紹介。ホルモン横丁やマジャン畜産市場など駅周辺の名物も網羅。",
+    "summary_zh": "以四线交汇的往十里站为据点，介绍由此辐射四个方向的一日游路线，并涵盖牛肠胡同、马场畜产市场等站点周边特色美食。"
   },
   {
     "id": "1251",
@@ -28841,7 +28815,9 @@
     "instagram_posted": false,
     "date_published": "2026-07-18",
     "title_ja": "ソウル・Gongdeok (공덕) 乗り換えハブ完全攻略 — 4路線が交わるMapo (마포)・入国ゲートウェイ deep dive",
-    "title_zh": "首尔孔德换乘枢纽完全攻略 —— 四条线路交汇的麻浦·入境门户 deep dive"
+    "title_zh": "首尔孔德换乘枢纽完全攻略 —— 四条线路交汇的麻浦·入境门户 deep dive",
+    "summary_ja": "空港鉄道も通る4路線交差駅・孔徳を拠点に、麻浦や汝矣島、梨泰院、弘大へ広がる放射状コースを紹介。空港からの入国動線としても使える。",
+    "summary_zh": "以连通机场铁道的四线交汇站孔德为据点，介绍辐射麻浦、汝矣岛、梨泰院、弘大的放射状路线，亦可作为入境后的交通动线参考。"
   },
   {
     "id": "1252",
@@ -28868,7 +28844,9 @@
     "instagram_posted": false,
     "date_published": "2026-07-18",
     "title_ja": "ソウル東大門(동대문)(DDP)乗り換えハブ完全攻略 — ショッピング・深夜の3路線交差点 deep dive",
-    "title_zh": "首尔东大门 (DDP) 换乘枢纽完全攻略 — 购物·深夜的3条线路交叉点 deep dive"
+    "title_zh": "首尔东大门 (DDP) 换乘枢纽完全攻略 — 购物·深夜的3条线路交叉点 deep dive",
+    "summary_ja": "3路線が交わる東大門歴史文化公園駅を拠点に、DDPと深夜まで開く東大門ファッション街を軸に乙支路・明洞方面へ広がるコースを紹介。",
+    "summary_zh": "以三线交汇的东大门历史文化公园站为据点，围绕DDP与营业至深夜的东大门时装商圈，介绍辐射乙支路、明洞方向的路线安排。"
   },
   {
     "id": "1253",
@@ -28894,7 +28872,9 @@
     "instagram_posted": false,
     "date_published": "2026-07-18",
     "title_ja": "ソウル Hongdae Ipgu (홍대입구) 乗り換えハブ完全攻略 — 外国人宿泊エリアNo.1、3路線ナイトライフの玄関口 deep dive",
-    "title_zh": "首尔弘大入口换乘枢纽完全攻略 —— 外国人住宿第一街区, 3条线路夜生活门户 deep dive"
+    "title_zh": "首尔弘大入口换乘枢纽完全攻略 —— 外国人住宿第一街区, 3条线路夜生活门户 deep dive",
+    "summary_ja": "空港鉄道も通る弘大入口駅を拠点に、外国人旅行者の宿が集まるナイトライフの中心地を紹介。延南洞の散策から弘大クラブ街まで一日で楽しめる。",
+    "summary_zh": "以连通机场铁道的弘大入口站为据点，介绍外国游客住宿最集中的夜生活中心，从延南洞悠闲漫步到弘大夜店街的一日玩法。"
   },
   {
     "id": "1254",
@@ -28920,7 +28900,9 @@
     "instagram_posted": false,
     "date_published": "2026-07-18",
     "title_ja": "ソウル・鍾路3街 (종로3가) 乗換ハブ完全攻略 — 益善洞 (익선동)・韓屋・伝統市場が交わる3路線の交差点 deep dive",
-    "title_zh": "首尔钟路3街换乘枢纽完全攻略 — 益善洞·韩屋·传统市场的3条线路交叉点 deep dive"
+    "title_zh": "首尔钟路3街换乘枢纽完全攻略 — 益善洞·韩屋·传统市场的3条线路交叉点 deep dive",
+    "summary_ja": "3路線が交わる鍾路3街駅を拠点に、益善洞の韓屋街や仁寺洞、広蔵市場を軸に北村・景福宮方面へ広がる伝統色の濃いコースを紹介。",
+    "summary_zh": "以三线交汇的钟路三街站为据点，围绕益善洞韩屋街、仁寺洞、广藏市场，介绍辐射北村、景福宫方向的传统文化路线。"
   },
   {
     "id": "1255",
@@ -28945,7 +28927,9 @@
     "instagram_posted": false,
     "date_published": "2026-07-18",
     "title_ja": "地下鉄でつなぐソウル5大宮 完全攻略 — 一枚のT-moneyで朝鮮王朝を一日縦走 deep dive",
-    "title_zh": "地铁串联首尔五大宫完全攻略 — 一张T-money一日纵游朝鲜王朝 deep dive"
+    "title_zh": "地铁串联首尔五大宫完全攻略 — 一张T-money一日纵游朝鲜王朝 deep dive",
+    "summary_ja": "景福宮・昌徳宮・昌慶宮・徳寿宮・慶熙宮の五大宮を地下鉄でつなぎ、一日で回るコースを紹介。統合観覧券や韓服無料入場のコツも解説する。",
+    "summary_zh": "以地铁串联景福宫、昌德宫、昌庆宫、德寿宫、庆熙宫五大王宫，介绍一日走完的路线，并说明联票及穿韩服免费入场等实用技巧。"
   },
   {
     "id": "1256",
@@ -28970,7 +28954,9 @@
     "instagram_posted": false,
     "date_published": "2026-07-20",
     "title_ja": "地下鉄でつなぐソウル漢江ライン完全攻略 — 5つの漢江公園を一枚のT-moneyで deep dive",
-    "title_zh": "地铁串联首尔汉江线完全攻略 — 一张T-money玩遍5座汉江公园 deep dive"
+    "title_zh": "地铁串联首尔汉江线完全攻略 — 一张T-money玩遍5座汉江公园 deep dive",
+    "summary_ja": "汝矣島・盤浦・纛島・望遠・蚕室の漢江公園5か所を地下鉄でつなぎ、一日で巡るコースを紹介。噴水の稼働時間やピクニック、遊覧船情報も網羅。",
+    "summary_zh": "以地铁串联汝矣岛、盘浦、纛岛、望远、蚕室五处汉江公园，介绍一日走完的路线，并涵盖喷泉开放时间、野餐及游船等实用信息。"
   },
   {
     "id": "1257",
@@ -28995,7 +28981,9 @@
     "instagram_posted": false,
     "date_published": "2026-07-20",
     "title_ja": "地下鉄でつなぐソウル伝統市場完全制覇 — グルメ市場6ヶ所を1枚のT-moneyでdeep dive",
-    "title_zh": "地铁串联首尔传统市场全攻略 — 一张T-money深度吃遍6大美食市场 deep dive"
+    "title_zh": "地铁串联首尔传统市场全攻略 — 一张T-money深度吃遍6大美食市场 deep dive",
+    "summary_ja": "広蔵市場・南大門市場・通仁市場など6つの伝統市場を地下鉄でつなぎ、食べ歩きで一日を巡るコースを紹介。市場でのマナーや現金準備も助言。",
+    "summary_zh": "以地铁串联广藏市场、南大门市场、通仁市场等六处传统市场，介绍以美食为主线的一日游路线，并附市场礼仪与现金准备等提醒。"
   },
   {
     "id": "1258",
@@ -29020,7 +29008,9 @@
     "instagram_posted": false,
     "date_published": "2026-07-20",
     "title_ja": "地下鉄でつなぐソウル美術館・博物館ライン完全攻略 — アートスポット6ヶ所を1枚のT-moneyで deep dive",
-    "title_zh": "地铁串联首尔美术馆·博物馆线完全攻略 — 一张T-money深度直达6大艺术地标 deep dive"
+    "title_zh": "地铁串联首尔美术馆·博物馆线完全攻略 — 一张T-money深度直达6大艺术地标 deep dive",
+    "summary_ja": "リウム美術館や国立現代美術館、国立中央博物館など6つのアートスポットを地下鉄でつなぎ、一日で巡るアート旅のコースを紹介する。",
+    "summary_zh": "以地铁串联Leeum美术馆、国立现代美术馆、国立中央博物馆等六处艺术场馆，介绍一日走完的艺术之旅路线安排。"
   },
   {
     "id": "1259",
@@ -29044,7 +29034,9 @@
     "instagram_posted": false,
     "date_published": "2026-07-20",
     "title_ja": "地下鉄でつなぐソウル夜景スポット完全攻略 — 夜のビュー6ヶ所を終電前に巡るdeep dive",
-    "title_zh": "地铁串联的首尔夜景景点完全攻略 — 末班车前巡游6处夜景的 deep dive"
+    "title_zh": "地铁串联的首尔夜景景点完全攻略 — 末班车前巡游6处夜景的 deep dive",
+    "summary_ja": "南山やロッテワールドタワー展望台など夜景スポット6か所を地下鉄でどう巡るかを解説。日没時刻からの逆算と終電を意識した実践ガイド。",
+    "summary_zh": "讲解如何乘地铁走完南山、乐天世界塔观景台等六处夜景热点，从日落时间反推行程，并兼顾末班车时间的实用动线指南。"
   },
   {
     "id": "1260",
@@ -29068,7 +29060,9 @@
     "instagram_posted": false,
     "date_published": "2026-07-20",
     "title_ja": "地下鉄でつなぐソウルK-pop聖地完全制覇 — ファン巡礼6スポットをT-money一枚でdeep dive",
-    "title_zh": "用地铁串联首尔K-pop圣地全攻略 — 一张T-money深度巡礼6处粉丝朝圣地 deep dive"
+    "title_zh": "用地铁串联首尔K-pop圣地全攻略 — 一张T-money深度巡礼6处粉丝朝圣地 deep dive",
+    "summary_ja": "HYBE本社周辺や聖水のSM圏、Kスターロードなど6か所のKポップ聖地を地下鉄でつなぐ巡礼コースを紹介。フォトカード購入のコツも解説。",
+    "summary_zh": "以地铁串联HYBE总部周边、圣水SM商圈、K-star Road等六处K-pop圣地，介绍粉丝巡礼路线，并说明购买photocard等周边的实用技巧。"
   },
   {
     "id": "1261",
@@ -29093,7 +29087,9 @@
     "instagram_posted": false,
     "date_published": "2026-07-21",
     "title_ja": "韓国コンビニ4社完全比較 — CU・GS25・セブンイレブン・emart24、どのドアから入るか deep dive",
-    "title_zh": "韩国便利店四大品牌全面对比 — CU·GS25·7-Eleven·emart24，该走进哪家门 deep dive"
+    "title_zh": "韩国便利店四大品牌全面对比 — CU·GS25·7-Eleven·emart24，该走进哪家门 deep dive",
+    "summary_ja": "CU・GS25・セブンイレブン・イマート24、韓国コンビニ4社の強みを比較。トレンドスイーツやコラボ商品など目的別にどの店に入るかを解説。",
+    "summary_zh": "比较CU、GS25、7-Eleven、emart24四大便利店各自的强项，从潮流甜品到联名商品，教你根据需求选对该走进哪一家。"
   },
   {
     "id": "1262",
@@ -29118,7 +29114,9 @@
     "instagram_posted": false,
     "date_published": "2026-07-21",
     "title_ja": "韓国コンビニフード総まとめ — お菓子・ドリンク・ラーメン・デザート、カテゴリー別に何を買う? deep dive",
-    "title_zh": "韩国便利店美食全攻略 — 零食·饮料·拉面·甜点，每个类别买什么 deep dive"
+    "title_zh": "韩国便利店美食全攻略 — 零食·饮料·拉面·甜点，每个类别买什么 deep dive",
+    "summary_ja": "おにぎりやスナック、飲料、ラーメンなどコンビニ食品を9カテゴリーで整理。定番の名品と2026年の最新トレンド商品を一目で把握できる。",
+    "summary_zh": "将便利店食品分为饭团零食、饮料、拉面、甜品等九大类别，整理经典必买款与2026年最新流行单品，方便按类挑选。"
   },
   {
     "id": "1263",
@@ -29143,7 +29141,9 @@
     "instagram_posted": false,
     "date_published": "2026-07-21",
     "title_ja": "地下鉄で行くソウル都心渓谷完全攻略 — 真夏のオアシス6か所を徒歩派で deep dive",
-    "title_zh": "乘地铁直达的首尔市中心溪谷完全攻略 — 盛夏绿洲6处无车徒步 deep dive"
+    "title_zh": "乘地铁直达的首尔市中心溪谷完全攻略 — 盛夏绿洲6处无车徒步 deep dive",
+    "summary_ja": "水声洞渓谷や白沙室渓谷など、地下鉄とバスだけで行ける都心の渓谷6か所を紹介。真夏の避暑スポットとして遊泳ルールも合わせて解説する。",
+    "summary_zh": "介绍水声洞溪谷、白沙室溪谷等六处仅靠地铁与巴士即可到达的市区溪谷，作为盛夏避暑好去处，并说明戏水相关规定。"
   },
   {
     "id": "1264",
@@ -29166,7 +29166,9 @@
     "instagram_posted": false,
     "date_published": "2026-07-23",
     "title_ja": "韓国ハンバーガーチェーン完全ガイド — マムズタッチ (맘스터치)・ロッテリア (롯데리아)・ノーブランドバーガー (노브랜드버거)、どのバーガーが本物のK-バーガーなのか deep dive",
-    "title_zh": "韩国汉堡连锁完全指南 — 妈妈手·乐天利·无品牌汉堡，哪家才是真正的K-汉堡 deep dive"
+    "title_zh": "韩国汉堡连锁完全指南 — 妈妈手·乐天利·无品牌汉堡，哪家才是真正的K-汉堡 deep dive",
+    "summary_ja": "店舗数でマクドナルドを上回るマムズタッチや、プルコギバーガーで知られるロッテリアなど韓国ハンバーガーチェーンを比較。限定メニューも紹介。",
+    "summary_zh": "比较门店数超越麦当劳的Mom's Touch、以韩式烤肉汉堡闻名的乐天利等韩国汉堡连锁品牌，并介绍各家的韩国限定菜单。"
   },
   {
     "id": "1265",
@@ -29190,7 +29192,9 @@
     "instagram_posted": false,
     "date_published": "2026-07-23",
     "title_ja": "韓国アイスクリームチェーン完全ガイド — バスキンロビンス (배스킨라빈스) が別の国になる場所 deep dive",
-    "title_zh": "韩国冰淇淋连锁完全指南 — 芭斯罗缤变成另一个国家的地方 deep dive"
+    "title_zh": "韩国冰淇淋连锁完全指南 — 芭斯罗缤变成另一个国家的地方 deep dive",
+    "summary_ja": "韓国オリジナル味が人気のバスキンラビンスや、プレミアム系ソフトクリームのソフトリー・ペンミダンなどアイスクリームチェーンを比較紹介する。",
+    "summary_zh": "比较因原创口味走红的Baskin Robbins韩国分部，以及Softree、白美堂等韩式高端软冰淇淋品牌的特色与选择方法。"
   },
   {
     "id": "1266",
@@ -29214,7 +29218,9 @@
     "instagram_posted": false,
     "date_published": "2026-07-23",
     "title_ja": "韓国バブルティー・ドリンクチェーン完全ガイド — コーヒー以外の飲み物 deep dive",
-    "title_zh": "韩国珍珠奶茶·饮品连锁全指南 — 咖啡之外喝什么 deep dive"
+    "title_zh": "韩国珍珠奶茶·饮品连锁全指南 — 咖啡之外喝什么 deep dive",
+    "summary_ja": "コンチャなどのタピオカティーや格安フレッシュジュース店など、コーヒー以外の飲み物チェーンを比較。糖度や氷の量のカスタム注文法も解説する。",
+    "summary_zh": "比较Gong Cha等奶茶品牌与平价鲜榨果汁连锁店等非咖啡类饮品品牌，并说明调整甜度、冰量等自定义点单方法。"
   },
   {
     "id": "1267",
