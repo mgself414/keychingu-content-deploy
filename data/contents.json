@@ -31098,5 +31098,35 @@
     "title_zh": "女性独自韩国旅行 — 不吓人的安全清单",
     "summary_ja": "韓国は安全な旅行先 — それでも基本のルールは同じ。宿の選び方、夜の移動ルール、ドリンク管理、オンラインで会う時の線引き、保存すべき3つの番号まで。不安の代わりにチェックリストを。",
     "summary_zh": "韩国是安全的旅行目的地 — 但基本守则在哪都一样。住宿标准、夜间出行规则、饮品管理、线上见面的界限、要存的3个号码 — 用清单代替焦虑。"
+  },
+  {
+    "id": "1335",
+    "slug": "kbeauty-ingredient-rules",
+    "title_kr": "같은 브랜드, 다른 처방 — 한·일 화장품 규제 문법과 성분표 읽는 법",
+    "title_en": "Same Brand, Different Formula — Korea-Japan Cosmetic Regulation Grammar and How to Read Ingredient Labels",
+    "category": "E",
+    "tags": [
+      "foreign-tourist",
+      "kbeauty",
+      "ingredients",
+      "regulation",
+      "shopping",
+      "oliveyoung",
+      "japan-signal",
+      "segment",
+      "literacy",
+      "workflow"
+    ],
+    "summary_kr": "일본판과 한국판 성분이 다른 건 제도 차이다. 의약부외품 승인제 vs 기능성화장품 고시제, 매대에서 확인하는 3단계와 생존 단어 5개까지 — K-뷰티 쇼핑의 성분 리터러시.",
+    "summary_en": "Why the Korean version of your usual product may be formulated differently: Japan's quasi-drug approval system vs Korea's functional-cosmetics notification system, plus a 3-step shelf check and 5 survival words for smarter K-beauty shopping.",
+    "date_published": "2026-08-29",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false,
+    "title_ja": "同じブランド、違う処方 — 韓日化粧品規制の文法と成分表の読み方",
+    "title_zh": "同一品牌，不同配方 — 韩日化妆品法规逻辑与成分表读法",
+    "summary_ja": "日本版と韓国版で成分が違うのは制度の違い。医薬部外品の承認制と韓国の機能性化粧品告示制、売り場での3ステップ確認法とサバイバル単語5つまで — K-ビューティー買い物の成分リテラシー。",
+    "summary_zh": "日版和韩版成分不同，是制度差异。日本医药部外品审批制 vs 韩国功能性化妆品告示制，货架确认3步骤与5个生存单词 — K-beauty购物的成分素养课。"
   }
 ]

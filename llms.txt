@@ -1,8 +1,8 @@
 # KeyChinGu — Korea Travel Guides for Foreign Tourists
 
-> Comprehensive curated Korea travel guides for foreign MZ travelers, covering 250+ topics across 60+ cities (Seoul·Busan·Jeju·Gyeongju·Andong·Jeonju·etc), 4 languages (KR·EN·CN·JP), 8-axis content matrix (food·culture·K-content·shopping·seasonal·transport·sports·foreigner essentials), and 5 traveler segments (solo·couple·family·MZ·budget). Updated 2026-08-28.
+> Comprehensive curated Korea travel guides for foreign MZ travelers, covering 250+ topics across 60+ cities (Seoul·Busan·Jeju·Gyeongju·Andong·Jeonju·etc), 4 languages (KR·EN·CN·JP), 8-axis content matrix (food·culture·K-content·shopping·seasonal·transport·sports·foreigner essentials), and 5 traveler segments (solo·couple·family·MZ·budget). Updated 2026-08-29.
 
-> Total guides: **1200** | EN: 1200 | CN: 1200 | JP: 1200 | og:image: 250+ | sitemap URLs: 3396
+> Total guides: **1201** | EN: 1201 | CN: 1201 | JP: 1201 | og:image: 250+ | sitemap URLs: 3396
 
 
 ## A (386)
@@ -243,7 +243,7 @@
 - [Foreigner K-pop Music Video Locations Deep Dive](https://mgself414.github.io/keychingu-content-deploy/content/kpop-mv-locations.en.html): Foreigner K-pop Music Video Locations Deep Dive 12 Matrix (extends #378·#387·#519) — BTS Spring Day Gangneung Jeongdongjin (World #1 #534 4. (Korean: https://mgself414.github.io/keychingu-content-deploy/content/kpop-mv-locations.html)
   - ... and 19 more
 
-## E (44)
+## E (45)
 
 - [Personal Color & Beauty Consulting](https://mgself414.github.io/keychingu-content-deploy/content/personal-color.en.html): Color analysis shops, pricing & booking (Korean: https://mgself414.github.io/keychingu-content-deploy/content/personal-color.html)
 - [Korea K-beauty Spa Full Guide](https://mgself414.github.io/keychingu-content-deploy/content/kbeauty-spa-full.en.html): K-beauty·spa·beauty 12-pick — Myeongdong cosmetics street (Korea's #1) + Olive Young flagship + Amorepacific HQ (David Chipperfield) + Innis (Korean: https://mgself414.github.io/keychingu-content-deploy/content/kbeauty-spa-full.html)
@@ -275,7 +275,7 @@
 - [Foreigner Korea Golf Round Top 12 Deep Dive](https://mgself414.github.io/keychingu-content-deploy/content/golf-round-deep.en.html): Foreigner Korea Golf Round 12 Matrix (extends #542·#577·#576·#190·#325·#594) — Public 9-hole 3 (Korea Public CC Yongin + Hwaseong Golf + 9-h (Korean: https://mgself414.github.io/keychingu-content-deploy/content/golf-round-deep.html)
 - [Foreigner Korea Winter Jjimjilbang Hot Spring Top 12](https://mgself414.github.io/keychingu-content-deploy/content/jjimjilbang-winter.en.html): Winter Jjimjilbang Hot Spring Top 12·Dragon Hill/Aqua Field/Termeden/Onyang/Icheon (Korean: https://mgself414.github.io/keychingu-content-deploy/content/jjimjilbang-winter.html)
 - [Foreigner Korea K-Medical Tourism Top 12](https://mgself414.github.io/keychingu-content-deploy/content/k-medical-overview.en.html): K-Medical Tourism Top 12 (Korean: https://mgself414.github.io/keychingu-content-deploy/content/k-medical-overview.html)
-  - ... and 14 more
+  - ... and 15 more
 
 ## I (20)
 
@@ -303,7 +303,7 @@
 
 ## Metadata
 
-- **Coverage**: 1200 curated guides as of 2026-08-28
+- **Coverage**: 1201 curated guides as of 2026-08-29
 - **Languages**: KR (full), EN (full), CN (full), JP (full)
 - **Update frequency**: Weekly
 - **Data sources**: Korea Tourism Organization (VisitKorea), Seoul Tourism Foundation (Visit Seoul), Cultural Heritage Administration, UNESCO World Heritage, Korea Open Government License (KOGL), Naver Maps, Reddit r/koreatravel + user curation
