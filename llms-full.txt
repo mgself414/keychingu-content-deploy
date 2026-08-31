@@ -38545,7 +38545,7 @@ date: 2026-06-23
 
 - 한국관광공사 (VisitKorea): https://english.visitkorea.or.kr/
 - 서울특별시 관광 (Seoul Tourism): https://english.visitseoul.net/
-- 마포구청 영문: https://english.mapo.go.kr/
+- 마포구청 영문: https://mapo.go.kr/
 - 한강사업본부 영문: https://hangang.seoul.go.kr/eng/
 - CNN Travel Seoul: https://www.cnn.com/travel/asia
 - Visit Seoul - Mangwon: https://english.visitseoul.net/
@@ -42475,7 +42475,7 @@ date: 2026-06-20
 
 - 한국관광공사 부산: https://english.visitkorea.or.kr/enu/ATR/SIEN3111.jsp?cid=264263
 - 부산광역시 공식 영문: https://www.busan.go.kr/eng/
-- Visit Busan: https://english.visitbusan.net/
+- Visit Busan: https://visitbusan.net/
 - Korail KTX 경부선: http://www.letskorail.com/
 - 부산국제영화제: https://www.biff.kr/eng/
 - CNN Travel Busan: https://www.cnn.com/travel/asia
@@ -44537,7 +44537,7 @@ date: 2026-06-19
 - 서울특별시 관광 (Seoul Tourism): https://english.visitseoul.net/
 - DMZ 통일관광 영문: https://www.dmz.go.kr/eng
 - 남이섬 영문: https://namisum.com/en/
-- 수원시 공식 영문: https://english.suwon.go.kr/
+- 수원시 공식 영문: https://suwon.go.kr/
 - Klook DMZ: https://www.klook.com/en/activity/2096-dmz-tour-from-seoul/
 - Korail (수도권 전철 영문): http://www.letskorail.com/
 
@@ -48408,7 +48408,7 @@ ISSUE 04 · #1075 · 2026-06-13
 - 한국관광공사 (VisitKorea): https://english.visitkorea.or.kr/
 - 서울시 한강본부: https://hangang.seoul.go.kr/
 - 종로구청 한옥마을: https://english.jongno.go.kr/
-- 용산구청 (Yongsan): https://english.yongsan.go.kr/
+- 용산구청 (Yongsan): https://yongsan.go.kr/
 - 공공누리 (Korea Open License): https://www.kogl.or.kr/
 
 ## 🏷 태그
@@ -48507,7 +48507,7 @@ ISSUE 04 · #1074 · 2026-06-13
 - 한국관광공사 (VisitKorea): https://english.visitkorea.or.kr/
 - 서울시 한강본부: https://hangang.seoul.go.kr/
 - 종로구청 한옥마을: https://english.jongno.go.kr/
-- 용산구청 (Yongsan): https://english.yongsan.go.kr/
+- 용산구청 (Yongsan): https://yongsan.go.kr/
 - 공공누리 (Korea Open License): https://www.kogl.or.kr/
 
 ## 🏷 태그
@@ -48608,7 +48608,7 @@ ISSUE 04 · #1073 · 2026-06-13
 - 한국관광공사 (VisitKorea): https://english.visitkorea.or.kr/
 - 서울시 한강본부: https://hangang.seoul.go.kr/
 - 종로구청 한옥마을: https://english.jongno.go.kr/
-- 용산구청 (Yongsan): https://english.yongsan.go.kr/
+- 용산구청 (Yongsan): https://yongsan.go.kr/
 - 공공누리 (Korea Open License): https://www.kogl.or.kr/
 
 ## 🏷 태그
@@ -48714,7 +48714,7 @@ ISSUE 04 · #1072 · 2026-06-13
 - 한국관광공사 (VisitKorea): https://english.visitkorea.or.kr/
 - 서울시 한강본부: https://hangang.seoul.go.kr/
 - 종로구청 한옥마을: https://english.jongno.go.kr/
-- 용산구청 (Yongsan): https://english.yongsan.go.kr/
+- 용산구청 (Yongsan): https://yongsan.go.kr/
 - 공공누리 (Korea Open License): https://www.kogl.or.kr/
 
 ---
@@ -48902,7 +48902,7 @@ ISSUE 04 · #1071 · 2026-06-13
 - 한국관광공사 (VisitKorea): https://english.visitkorea.or.kr/
 - 서울시 한강본부: https://hangang.seoul.go.kr/
 - 종로구청 한옥마을: https://english.jongno.go.kr/
-- 용산구청 (Yongsan): https://english.yongsan.go.kr/
+- 용산구청 (Yongsan): https://yongsan.go.kr/
 - 공공누리 (Korea Open License): https://www.kogl.or.kr/
 
 ## 🏷 태그
@@ -49334,10 +49334,10 @@ ISSUE 04 · #1069 · 2026-06-13
 
 ## 🌐 외부 SOURCES
 
-- 화천 산천어 축제 (CNN 7대 2011): https://english.narafestival.com/
+- 화천 산천어 축제 (CNN 7대 2011): https://www.narafestival.com/
 - 인제 빙어 축제 (Inje Icefish): https://english.injegun.go.kr/festival
-- 평창 송어 축제 (Pyeongchang Trout): https://english.happy700.or.kr/festival
-- 강원관광공사 (Gangwon Tourism): https://english.gangwon.to/
+- 평창 송어 축제 (Pyeongchang Trout): https://happy700.or.kr/
+- 강원관광공사 (Gangwon Tourism): https://gangwon.to/
 - 한국관광공사 (VisitKorea Gangwon): https://english.visitkorea.or.kr/svc/whatToDo/areaCodeList.do?areaCode=32
 - CNN 7 Wonders of Winter (2011): https://www.cnn.com/travel/asia
 
@@ -49549,11 +49549,11 @@ ISSUE 04 · #1068 · 2026-06-13
 
 ## 🌐 외부 SOURCES
 
-- 백제문화제 (Baekje Cultural Festival): https://english.baekje.kr/
+- 백제문화제 (Baekje Cultural Festival): https://baekje.kr/
 - 공주시 (Gongju): https://english.gongju.go.kr/tour
-- 부여군 (Buyeo): https://english.buyeo.go.kr/tour
+- 부여군 (Buyeo): https://buyeo.go.kr/
 - UNESCO 백제역사유적지구 (Baekje Historic Areas 2015): https://whc.unesco.org/en/list/1477/
-- 백제문화단지 (Baekje Cultural Land): https://english.bhm.or.kr/
+- 백제문화단지 (Baekje Cultural Land): https://bhm.or.kr/
 - 충청남도 (Chungnam Tourism): https://english.chungnam.go.kr/tour
 - 한국관광공사 (VisitKorea Chungnam): https://english.visitkorea.or.kr/svc/whatToDo/areaCodeList.do?areaCode=34
 
@@ -49761,10 +49761,10 @@ ISSUE 04 · #1067 · 2026-06-13
 
 ## 🌐 외부 SOURCES
 
-- 진주 유등축제 (Jinju Lantern Festival): https://english.yudeung.com/
+- 진주 유등축제 (Jinju Lantern Festival): https://yudeung.com/
 - 진주시 (Jinju): https://english.jinju.go.kr/tour
 - 촉석루 + 진주성 (Chokseokru·Jinju Fortress): https://english.jinju.go.kr/tour/chokseokru
-- 경상남도 (Gyeongnam Tourism): https://english.gyeongnam.go.kr/tour
+- 경상남도 (Gyeongnam Tourism): https://gyeongnam.go.kr/
 - 한국관광공사 (VisitKorea Gyeongnam): https://english.visitkorea.or.kr/svc/whatToDo/areaCodeList.do?areaCode=36
 
 ---
@@ -49980,9 +49980,9 @@ BIFF = 안전·외국인 친화 매트릭스. 야간 매트릭스 = 10월 시원
 ## 🌐 외부 SOURCES
 
 - BIFF (Busan International Film Festival): https://www.biff.kr/eng/
-- 영화의전당 (Busan Cinema Center): https://english.dureraum.org/
+- 영화의전당 (Busan Cinema Center): https://dureraum.org/
 - 부산광역시 (Busan Tourism): https://english.busan.go.kr/tour
-- KOFIC (Korean Film Council): https://english.kofic.or.kr/
+- KOFIC (Korean Film Council): https://kofic.or.kr/
 - 한국관광공사 (VisitKorea Busan): https://english.visitkorea.or.kr/svc/whatToDo/areaCodeList.do?areaCode=6
 - 칸·베니스·베를린 영화제 (Global Film Festivals): https://www.festival-cannes.com/
 
@@ -50192,9 +50192,9 @@ ISSUE 04 · #1065 · 2026-06-13
 ## 🌐 외부 SOURCES
 
 - 강릉 단오제 (Gangneung Danoje·UNESCO 2005): https://ich.unesco.org/en/RL/gangneung-danoje-festival-00114
-- 강릉시 (Gangneung): https://english.gn.go.kr/tour
-- 강릉 단오제 공식 (Gangneung Danoje Festival): https://english.gn.go.kr/tour/danoje
-- 강원관광공사 (Gangwon Tourism): https://english.gangwon.to/
+- 강릉시 (Gangneung): https://gn.go.kr/
+- 강릉 단오제 공식 (Gangneung Danoje Festival): https://gn.go.kr/
+- 강원관광공사 (Gangwon Tourism): https://gangwon.to/
 - 한국관광공사 (VisitKorea Gangwon): https://english.visitkorea.or.kr/svc/whatToDo/areaCodeList.do?areaCode=32
 - UNESCO Korea Heritage: https://en.unesco.org/countries/republic-korea
 
@@ -50393,7 +50393,7 @@ ISSUE 04 · #1064 · 2026-06-13
 ## 🌐 외부 SOURCES
 
 - 보령시 (Boryeong): https://english.boryeong.go.kr/
-- 보령 머드축제 (Boryeong Mud Festival): https://english.mudfestival.or.kr/
+- 보령 머드축제 (Boryeong Mud Festival): https://mudfestival.or.kr/
 - 대천해수욕장 (Daecheon Beach): https://english.boryeong.go.kr/tour
 - 충청남도 (Chungnam Tourism): https://english.chungnam.go.kr/tour
 - 한국관광공사 (VisitKorea Boryeong): https://english.visitkorea.or.kr/svc/whatToDo/areaCodeList.do?areaCode=34
@@ -50593,11 +50593,11 @@ ISSUE 04 · #1063 · 2026-06-13
 
 ## 🌐 외부 SOURCES
 
-- 함평군 (Hampyeong): https://english.hampyeong.go.kr/tour
-- 함평 나비축제 (Hampyeong Butterfly Festival): https://english.hampyeong.go.kr/festival
+- 함평군 (Hampyeong): https://hampyeong.go.kr/
+- 함평 나비축제 (Hampyeong Butterfly Festival): https://hampyeong.go.kr/
 - 전라남도 (Jeonnam Tourism): https://english.jeonnam.go.kr/tour
 - 한국관광공사 (VisitKorea Jeonnam): https://english.visitkorea.or.kr/svc/whatToDo/areaCodeList.do?areaCode=38
-- 함평 엑스포 (Hampyeong Expo Park): https://english.hampyeong.go.kr/expo
+- 함평 엑스포 (Hampyeong Expo Park): https://hampyeong.go.kr/
 
 ---
 
@@ -50807,12 +50807,12 @@ ISSUE 04 · #1062 · 2026-06-13
 
 ## 🌐 외부 SOURCES
 
-- 창원시 (Changwon): https://english.changwon.go.kr/
-- 진해 군항제 (Jinhae Gunhangje): https://english.changwon.go.kr/cgcg/
+- 창원시 (Changwon): https://changwon.go.kr/
+- 진해 군항제 (Jinhae Gunhangje): https://changwon.go.kr/
 - 한국관광공사 (VisitKorea Changwon): https://english.visitkorea.or.kr/svc/whatToDo/areaCodeList.do?areaCode=36
-- 해군사관학교 (Korean Naval Academy): https://english.navy.mil.kr/
-- 경상남도 (Gyeongnam Tourism): https://english.gyeongnam.go.kr/tour
-- 기상청 벚꽃 개화 (KMA Cherry Blossom): https://english.kma.go.kr/
+- 해군사관학교 (Korean Naval Academy): https://navy.mil.kr/
+- 경상남도 (Gyeongnam Tourism): https://gyeongnam.go.kr/
+- 기상청 벚꽃 개화 (KMA Cherry Blossom): https://www.kma.go.kr/
 
 ---
 
@@ -51028,7 +51028,7 @@ ISSUE 04 · #1061 · 2026-06-13
 ## 🌐 외부 SOURCES
 
 - 연등회 (Yeon Deung Hoe·UNESCO 2020): https://ich.unesco.org/en/RL/yeondeunghoe-lantern-lighting-festival-in-the-republic-of-korea-01187
-- 조계사 (Jogyesa Temple): https://english.jogyesa.kr/
+- 조계사 (Jogyesa Temple): https://jogyesa.kr/
 - 봉은사 (Bongeunsa Temple): https://english.bongeunsa.org/
 - 한국관광공사 (VisitKorea Lotus Lantern): https://english.visitkorea.or.kr/
 - 사찰음식 (Korean Temple Food): https://www.hansik.or.kr/
@@ -51229,11 +51229,11 @@ ISSUE 04 · #1060 · 2026-06-08
 
 ## 🌐 외부 SOURCES
 
-- 제주특별자치도 (Jeju Tourism): https://english.jeju.go.kr/
-- 제주 흑돼지 (Jeju Black Pork): https://english.jeju.go.kr/food/blackpork
-- 해녀 박물관 (Haenyeo Museum): https://english.jeju.go.kr/tour/haenyeo
+- 제주특별자치도 (Jeju Tourism): https://jeju.go.kr/
+- 제주 흑돼지 (Jeju Black Pork): https://jeju.go.kr/
+- 해녀 박물관 (Haenyeo Museum): https://jeju.go.kr/
 - UNESCO Haenyeo (2016 무형문화유산): https://ich.unesco.org/en/RL/culture-of-jeju-haenyeo-women-divers-01068
-- 제주 갈치 (Jeju Hairtail): https://english.jeju.go.kr/food
+- 제주 갈치 (Jeju Hairtail): https://jeju.go.kr/
 - 한국관광공사 (VisitKorea Jeju): https://english.visitkorea.or.kr/svc/whatToDo/areaCodeList.do?areaCode=39
 
 ---
@@ -51462,11 +51462,11 @@ ISSUE 04 · #1059 · 2026-06-08
 
 ## 🌐 외부 SOURCES
 
-- 제주특별자치도 (Jeju Tourism): https://english.jeju.go.kr/
-- 협재 해변 (Hyeopjae Beach): https://english.jeju.go.kr/tour/hyeopjae
-- 함덕 해변 (Hamdeok Beach): https://english.jeju.go.kr/tour/hamdeok
-- 중문 해변 (Jungmun Beach): https://english.jeju.go.kr/tour/jungmun
-- 이호테우 해변 (Iho Tewoo Beach): https://english.jeju.go.kr/tour/iho
+- 제주특별자치도 (Jeju Tourism): https://jeju.go.kr/
+- 협재 해변 (Hyeopjae Beach): https://jeju.go.kr/
+- 함덕 해변 (Hamdeok Beach): https://jeju.go.kr/
+- 중문 해변 (Jungmun Beach): https://jeju.go.kr/
+- 이호테우 해변 (Iho Tewoo Beach): https://jeju.go.kr/
 - 한국관광공사 (VisitKorea Jeju): https://english.visitkorea.or.kr/svc/whatToDo/areaCodeList.do?areaCode=39
 
 ---
@@ -51692,12 +51692,12 @@ ISSUE 04 · #1058 · 2026-06-08
 
 ## 🌐 외부 SOURCES
 
-- 성산일출봉 (Seongsan Ilchulbong): https://english.jeju.go.kr/tour/seongsan
-- 우도 (Udo): https://english.jeju.go.kr/tour/udo
-- 해녀 (Haenyeo·UNESCO 2016): https://english.jeju.go.kr/tour/haenyeo
+- 성산일출봉 (Seongsan Ilchulbong): https://jeju.go.kr/
+- 우도 (Udo): https://jeju.go.kr/
+- 해녀 (Haenyeo·UNESCO 2016): https://jeju.go.kr/
 - UNESCO Jeju Volcanic Island (2007): https://whc.unesco.org/en/list/1264/
 - UNESCO Haenyeo (2016): https://ich.unesco.org/en/RL/culture-of-jeju-haenyeo-women-divers-01068
-- 제주특별자치도 (Jeju Tourism): https://english.jeju.go.kr/
+- 제주특별자치도 (Jeju Tourism): https://jeju.go.kr/
 - 한국관광공사 (VisitKorea Jeju): https://english.visitkorea.or.kr/svc/whatToDo/areaCodeList.do?areaCode=39
 
 ---
@@ -51950,7 +51950,7 @@ ISSUE 04 · #1057 · 2026-06-08
 ## 🌐 외부 SOURCES
 
 - 한라산 국립공원 (Hallasan National Park): https://english.knps.or.kr/Knp/Hallasan
-- 제주특별자치도 (Jeju Tourism): https://english.jeju.go.kr/
+- 제주특별자치도 (Jeju Tourism): https://jeju.go.kr/
 - UNESCO Jeju Volcanic Island (2007): https://whc.unesco.org/en/list/1264/
 - 세계지질공원 제주 (Jeju Global Geopark): https://geopark.jeju.go.kr/eng/
 - 한국관광공사 (VisitKorea Jeju): https://english.visitkorea.or.kr/svc/whatToDo/areaCodeList.do?areaCode=39
@@ -52264,12 +52264,12 @@ ISSUE 04 · #1056 · 2026-06-08
 
 ## 🌐 외부 SOURCES
 
-- 제주특별자치도 (Jeju Tourism): https://english.jeju.go.kr/
+- 제주특별자치도 (Jeju Tourism): https://jeju.go.kr/
 - 한라산 국립공원 (Hallasan National Park): https://english.knps.or.kr/Knp/Hallasan
-- 성산일출봉 (Seongsan Ilchulbong): https://english.jeju.go.kr/tour/seongsan
+- 성산일출봉 (Seongsan Ilchulbong): https://jeju.go.kr/
 - UNESCO Jeju Volcanic Island (2007): https://whc.unesco.org/en/list/1264/
 - 세계지질공원 제주 (Jeju Global Geopark): https://geopark.jeju.go.kr/eng/
-- 제주 흑돼지 (Jeju Black Pork): https://english.jeju.go.kr/food
+- 제주 흑돼지 (Jeju Black Pork): https://jeju.go.kr/
 - 한국관광공사 (VisitKorea Jeju): https://english.visitkorea.or.kr/svc/whatToDo/areaCodeList.do?areaCode=39
 
 ---
@@ -52452,8 +52452,8 @@ ISSUE 04 · #1055 · 2026-06-08
 - 진주시 (Jinju): https://english.jinju.go.kr/tour
 - 촉석루 (Chokseokru): https://english.jinju.go.kr/tour/chokseokru
 - 진주성 (Jinju Fortress): https://english.jinju.go.kr/tour/jinjufortress
-- 유등축제 (Jinju Lantern Festival·10월): https://english.yudeung.com/
-- 경상남도 (Gyeongnam Tourism): https://english.gyeongnam.go.kr/tour
+- 유등축제 (Jinju Lantern Festival·10월): https://yudeung.com/
+- 경상남도 (Gyeongnam Tourism): https://gyeongnam.go.kr/
 - 한국관광공사 (VisitKorea Gyeongnam): https://english.visitkorea.or.kr/svc/whatToDo/areaCodeList.do?areaCode=36
 
 ---
@@ -52682,12 +52682,12 @@ ISSUE 04 · #1054 · 2026-06-08
 
 ## 🌐 외부 SOURCES
 
-- 통영시 (Tongyeong): https://english.tongyeong.go.kr/tour
-- 한산도 (Hansando): https://english.tongyeong.go.kr/tour/hansando
+- 통영시 (Tongyeong): https://tongyeong.go.kr/
+- 한산도 (Hansando): https://tongyeong.go.kr/
 - 해상국립공원 (Hallyeohaesang National Park): https://english.knps.or.kr/Knp/Hallyeohaesang
-- 동피랑 (Dongpirang): https://english.tongyeong.go.kr/tour/dongpirang
-- 이순신 (Yi Sun-sin): https://english.tongyeong.go.kr/tour/leesunshin
-- 경상남도 (Gyeongnam Tourism): https://english.gyeongnam.go.kr/tour
+- 동피랑 (Dongpirang): https://tongyeong.go.kr/
+- 이순신 (Yi Sun-sin): https://tongyeong.go.kr/
+- 경상남도 (Gyeongnam Tourism): https://gyeongnam.go.kr/
 - 한국관광공사 (VisitKorea Gyeongnam): https://english.visitkorea.or.kr/svc/whatToDo/areaCodeList.do?areaCode=36
 
 ---
@@ -52914,13 +52914,13 @@ ISSUE 04 · #1053 · 2026-06-08
 
 ## 🌐 외부 SOURCES
 
-- 안동시 (Andong): https://english.andong.go.kr/tour
+- 안동시 (Andong): https://andong.go.kr/
 - 하회마을 (Hahoe Village): https://english.hahoe.or.kr/
 - 도산서원 (Dosan Seowon): https://english.dosanseowon.com/
 - 양동마을 (Yangdong Village): https://english.yangdong.invil.org/
 - UNESCO Hahoe + Yangdong (2010): https://whc.unesco.org/en/list/1324/
 - 하회별신굿탈놀이 (Hahoe Mask Dance·1980): https://english.hahoe.or.kr/maskdance
-- 경상북도 (Gyeongbuk Tourism): https://english.gb.go.kr/tour
+- 경상북도 (Gyeongbuk Tourism): https://gb.go.kr/
 - 한국관광공사 (VisitKorea Gyeongbuk): https://english.visitkorea.or.kr/svc/whatToDo/areaCodeList.do?areaCode=35
 
 ---
@@ -53151,12 +53151,12 @@ ISSUE 04 · #1052 · 2026-06-08
 
 ## 🌐 외부 SOURCES
 
-- 경주시 (Gyeongju): https://english.gyeongju.go.kr/tour
+- 경주시 (Gyeongju): https://gyeongju.go.kr/
 - 불국사 (Bulguksa): https://english.bulguksa.or.kr/
-- 석굴암 (Seokguram): https://english.gyeongju.go.kr/tour/seokguram
-- 국립경주박물관 (Gyeongju National Museum): https://english.gyeongju.museum.go.kr/
+- 석굴암 (Seokguram): https://gyeongju.go.kr/
+- 국립경주박물관 (Gyeongju National Museum): https://gyeongju.museum.go.kr/
 - UNESCO Gyeongju (1995): https://whc.unesco.org/en/list/736/
-- 경상북도 (Gyeongbuk Tourism): https://english.gb.go.kr/tour
+- 경상북도 (Gyeongbuk Tourism): https://gb.go.kr/
 - 한국관광공사 (VisitKorea Gyeongbuk): https://english.visitkorea.or.kr/svc/whatToDo/areaCodeList.do?areaCode=35
 
 ---
@@ -53469,10 +53469,10 @@ ISSUE 04 · #1051 · 2026-06-08
 
 ## 🌐 외부 SOURCES
 
-- 경상북도 (Gyeongbuk Tourism): https://english.gb.go.kr/tour
-- 경상남도 (Gyeongnam Tourism): https://english.gyeongnam.go.kr/tour
-- 경주시 (Gyeongju): https://english.gyeongju.go.kr/tour
-- 안동시 (Andong): https://english.andong.go.kr/tour
+- 경상북도 (Gyeongbuk Tourism): https://gb.go.kr/
+- 경상남도 (Gyeongnam Tourism): https://gyeongnam.go.kr/
+- 경주시 (Gyeongju): https://gyeongju.go.kr/
+- 안동시 (Andong): https://andong.go.kr/
 - UNESCO Gyeongju (1995): https://whc.unesco.org/en/list/736/
 - UNESCO Hahoe + Yangdong (2010): https://whc.unesco.org/en/list/1324/
 - 한국관광공사 (VisitKorea Gyeongsang): https://english.visitkorea.or.kr/
@@ -53649,11 +53649,11 @@ ISSUE 04 · #1050 · 2026-06-08
 
 ## 🌐 외부 SOURCES
 
-- 목포시 (Mokpo): https://english.mokpo.go.kr/tour
-- 유달산 (Yudalsan): https://english.mokpo.go.kr/tour/yudalsan
-- 목포 근대문화거리 (Mokpo Modern Culture Street): https://english.mokpo.go.kr/tour/modern
+- 목포시 (Mokpo): https://mokpo.go.kr/
+- 유달산 (Yudalsan): https://mokpo.go.kr/
+- 목포 근대문화거리 (Mokpo Modern Culture Street): https://mokpo.go.kr/
 - 전라남도 (Jeonnam Tourism): https://english.jeonnam.go.kr/tour
-- 흑산도·홍도 (Heuksando·Hongdo): https://english.shinan.go.kr/
+- 흑산도·홍도 (Heuksando·Hongdo): https://www.shinan.go.kr/
 - 한국관광공사 (VisitKorea Jeonnam): https://english.visitkorea.or.kr/svc/whatToDo/areaCodeList.do?areaCode=38
 
 ---
@@ -53877,10 +53877,10 @@ ISSUE 04 · #1049 · 2026-06-08
 
 ## 🌐 외부 SOURCES
 
-- 순천시 (Suncheon): https://english.suncheon.go.kr/tour
+- 순천시 (Suncheon): https://suncheon.go.kr/
 - 순천만 국가정원 (Suncheon Bay National Garden): https://english.scbay.kr/
 - 순천만 습지 (Suncheon Bay Wetland): https://english.suncheonbay.go.kr/
-- 낙안읍성 (Nagan Eupseong): https://english.suncheon.go.kr/tour/nagan
+- 낙안읍성 (Nagan Eupseong): https://suncheon.go.kr/
 - 전라남도 (Jeonnam Tourism): https://english.jeonnam.go.kr/tour
 - 한국관광공사 (VisitKorea Jeonnam): https://english.visitkorea.or.kr/svc/whatToDo/areaCodeList.do?areaCode=38
 
@@ -54104,9 +54104,9 @@ ISSUE 04 · #1048 · 2026-06-08
 
 ## 🌐 외부 SOURCES
 
-- 여수시 (Yeosu): https://english.yeosu.go.kr/tour
+- 여수시 (Yeosu): https://yeosu.go.kr/
 - 여수 해상케이블카 (Yeosu Maritime Cable Car): https://english.yeosucablecar.com/
-- 향일암 (Hyangiram): https://english.yeosu.go.kr/tour/hyangiram
+- 향일암 (Hyangiram): https://yeosu.go.kr/
 - 전라남도 (Jeonnam Tourism): https://english.jeonnam.go.kr/tour
 - 한국관광공사 (VisitKorea Jeonnam): https://english.visitkorea.or.kr/svc/whatToDo/areaCodeList.do?areaCode=38
 
@@ -54352,12 +54352,12 @@ ISSUE 04 · #1047 · 2026-06-08
 
 ## 🌐 외부 SOURCES
 
-- 전주시 (Jeonju): https://english.jeonju.go.kr/tour
-- 전주 한옥마을 (Jeonju Hanok Village): https://english.jeonju.go.kr/tour/hanok
-- 전주 비빔밥 (Jeonju Bibimbap): https://english.jeonju.go.kr/food
-- 풍남문 (Pungnammun Gate): https://english.jeonju.go.kr/tour/pungnammun
-- 경기전 (Gyeonggijeon Shrine·1410): https://english.jeonju.go.kr/tour/gyeonggijeon
-- 전라북도 (Jeonbuk Tourism): https://english.jeonbuk.go.kr/tour
+- 전주시 (Jeonju): https://jeonju.go.kr/
+- 전주 한옥마을 (Jeonju Hanok Village): https://jeonju.go.kr/
+- 전주 비빔밥 (Jeonju Bibimbap): https://jeonju.go.kr/
+- 풍남문 (Pungnammun Gate): https://jeonju.go.kr/
+- 경기전 (Gyeonggijeon Shrine·1410): https://jeonju.go.kr/
+- 전라북도 (Jeonbuk Tourism): https://jeonbuk.go.kr/
 - 한국관광공사 (VisitKorea Jeonbuk): https://english.visitkorea.or.kr/svc/whatToDo/areaCodeList.do?areaCode=37
 
 ---
@@ -54670,12 +54670,12 @@ ISSUE 04 · #1046 · 2026-06-08
 
 ## 🌐 외부 SOURCES
 
-- 전라북도 (Jeonbuk Tourism): https://english.jeonbuk.go.kr/tour
+- 전라북도 (Jeonbuk Tourism): https://jeonbuk.go.kr/
 - 전라남도 (Jeonnam Tourism): https://english.jeonnam.go.kr/tour
-- 전주시 (Jeonju): https://english.jeonju.go.kr/tour
-- 여수시 (Yeosu): https://english.yeosu.go.kr/tour
+- 전주시 (Jeonju): https://jeonju.go.kr/
+- 여수시 (Yeosu): https://yeosu.go.kr/
 - 순천만 국가정원 (Suncheon Bay National Garden): https://english.scbay.kr/
-- 목포시 (Mokpo): https://english.mokpo.go.kr/tour
+- 목포시 (Mokpo): https://mokpo.go.kr/
 - 한국관광공사 (VisitKorea Jeolla): https://english.visitkorea.or.kr/
 
 ---
@@ -54850,9 +54850,9 @@ ISSUE 04 · #1045 · 2026-06-08
 
 ## 🌐 외부 SOURCES
 
-- 서산시 (Seosan): https://english.seosan.go.kr/tour
-- 간월암 (Ganwolam): https://english.seosan.go.kr/tour/ganwolam
-- 해미읍성 (Haemi Eupseong): https://english.seosan.go.kr/tour/haemi
+- 서산시 (Seosan): https://seosan.go.kr/
+- 간월암 (Ganwolam): https://seosan.go.kr/
+- 해미읍성 (Haemi Eupseong): https://seosan.go.kr/
 - 충청남도 (Chungnam Tourism): https://english.chungnam.go.kr/tour
 - 천주교 순교지 (Catholic Martyr Site): https://english.cbck.or.kr/
 - 한국관광공사 (VisitKorea Chungnam): https://english.visitkorea.or.kr/svc/whatToDo/areaCodeList.do?areaCode=34
@@ -55076,12 +55076,12 @@ ISSUE 04 · #1044 · 2026-06-08
 
 ## 🌐 외부 SOURCES
 
-- 부여군 (Buyeo): https://english.buyeo.go.kr/tour
-- 정림사지 (Jeongnimsaji): https://english.buyeo.go.kr/tour/jeongnimsaji
-- 부소산성·낙화암 (Busosanseong·Nakhwa-am): https://english.buyeo.go.kr/tour/busosanseong
-- 백제문화단지 (Baekje Cultural Land): https://english.bhm.or.kr/
+- 부여군 (Buyeo): https://buyeo.go.kr/
+- 정림사지 (Jeongnimsaji): https://buyeo.go.kr/
+- 부소산성·낙화암 (Busosanseong·Nakhwa-am): https://buyeo.go.kr/
+- 백제문화단지 (Baekje Cultural Land): https://bhm.or.kr/
 - UNESCO 백제역사유적지구 (Baekje Historic Areas 2015): https://whc.unesco.org/en/list/1477/
-- 백제문화제 (Baekje Cultural Festival): https://english.baekje.kr/
+- 백제문화제 (Baekje Cultural Festival): https://baekje.kr/
 - 충청남도 (Chungnam Tourism): https://english.chungnam.go.kr/tour
 - 한국관광공사 (VisitKorea Chungnam): https://english.visitkorea.or.kr/svc/whatToDo/areaCodeList.do?areaCode=34
 
@@ -55310,7 +55310,7 @@ ISSUE 04 · #1043 · 2026-06-08
 - 무령왕릉 (Muryeong King's Tomb): https://english.gongju.go.kr/tour/muryeong
 - 공산성 (Gongsanseong Fortress): https://english.gongju.go.kr/tour/gongsanseong
 - UNESCO 백제역사유적지구 (Baekje Historic Areas 2015): https://whc.unesco.org/en/list/1477/
-- 백제문화제 (Baekje Cultural Festival·10월): https://english.baekje.kr/
+- 백제문화제 (Baekje Cultural Festival·10월): https://baekje.kr/
 - 충청남도 (Chungnam Tourism): https://english.chungnam.go.kr/tour
 - 한국관광공사 (VisitKorea Chungnam): https://english.visitkorea.or.kr/svc/whatToDo/areaCodeList.do?areaCode=34
 
@@ -55537,11 +55537,11 @@ ISSUE 04 · #1042 · 2026-06-08
 
 ## 🌐 외부 SOURCES
 
-- 청주시 (Cheongju): https://english.cheongju.go.kr/tour
-- 수암골 (Suamgol): https://english.cheongju.go.kr/tour/suamgol
+- 청주시 (Cheongju): https://cheongju.go.kr/
+- 수암골 (Suamgol): https://cheongju.go.kr/
 - 청남대 (Cheongnamdae): https://english.cheongnamdae.go.kr/
 - 청주국제공항 (Cheongju International Airport): https://www.airport.co.kr/cheongju/
-- 충청북도 (Chungbuk Tourism): https://english.chungbuk.go.kr/tour
+- 충청북도 (Chungbuk Tourism): https://www.chungbuk.go.kr/
 - 한국관광공사 (VisitKorea Chungbuk): https://english.visitkorea.or.kr/svc/whatToDo/areaCodeList.do?areaCode=33
 
 ---
@@ -55852,10 +55852,10 @@ ISSUE 04 · #1041 · 2026-06-08
 
 ## 🌐 외부 SOURCES
 
-- 충청북도 (Chungbuk Tourism): https://english.chungbuk.go.kr/tour
+- 충청북도 (Chungbuk Tourism): https://www.chungbuk.go.kr/
 - 충청남도 (Chungnam Tourism): https://english.chungnam.go.kr/tour
 - 공주시 (Gongju): https://english.gongju.go.kr/tour
-- 부여군 (Buyeo): https://english.buyeo.go.kr/tour
+- 부여군 (Buyeo): https://buyeo.go.kr/
 - UNESCO 백제역사유적지구 (Baekje Historic Areas): https://whc.unesco.org/en/list/1477/
 - 무령왕릉 (Muryeong King's Tomb): https://english.gongju.go.kr/tour/muryeong
 - 한국관광공사 (VisitKorea Chungcheong): https://english.visitkorea.or.kr/
@@ -56034,12 +56034,12 @@ ISSUE 04 · #1040 · 2026-06-08
 
 ## 🌐 외부 SOURCES
 
-- 삼척시 (Samcheok): https://english.samcheok.go.kr/tour
-- 동해시 (Donghae): https://english.dh.go.kr/tour
-- 죽서루 (Jukseoru): https://english.samcheok.go.kr/tour/jukseoru
-- 삼척 해상금광 (Samcheok Sea Gold Mine): https://english.samcheok.go.kr/tour/goldmine
-- 환선굴·대금굴 (Hwanseongul·Daegeumgul Caves): https://english.samcheok.go.kr/tour/caves
-- 강원관광공사 (Gangwon Tourism): https://english.gangwon.to/
+- 삼척시 (Samcheok): https://samcheok.go.kr/
+- 동해시 (Donghae): https://www.dh.go.kr/
+- 죽서루 (Jukseoru): https://samcheok.go.kr/
+- 삼척 해상금광 (Samcheok Sea Gold Mine): https://samcheok.go.kr/
+- 환선굴·대금굴 (Hwanseongul·Daegeumgul Caves): https://samcheok.go.kr/
+- 강원관광공사 (Gangwon Tourism): https://gangwon.to/
 - 한국관광공사 (VisitKorea Gangwon): https://english.visitkorea.or.kr/svc/whatToDo/areaCodeList.do?areaCode=32
 
 ---
@@ -56269,13 +56269,13 @@ ISSUE 04 · #1039 · 2026-06-08
 
 ## 🌐 외부 SOURCES
 
-- 평창군 (Pyeongchang Tourism): https://english.happy700.or.kr/
+- 평창군 (Pyeongchang Tourism): https://happy700.or.kr/
 - 2018 평창 동계 올림픽 (2018 PyeongChang Winter Olympics): https://en.olympic.kr/pyeongchang2018
-- 대관령 양떼목장 (Daegwallyeong Sheep Farm): https://english.happy700.or.kr/tour/sheep
-- 용평 리조트 (YongPyong Resort): https://english.yongpyong.co.kr/
-- 휘닉스 평창 (Phoenix Pyeongchang): https://english.phoenixhnr.co.kr/
+- 대관령 양떼목장 (Daegwallyeong Sheep Farm): https://happy700.or.kr/
+- 용평 리조트 (YongPyong Resort): https://yongpyong.co.kr/
+- 휘닉스 평창 (Phoenix Pyeongchang): https://phoenixhnr.co.kr/
 - 알펜시아 (Alpensia): https://english.alpensiaresort.co.kr/
-- 강원관광공사 (Gangwon Tourism): https://english.gangwon.to/
+- 강원관광공사 (Gangwon Tourism): https://gangwon.to/
 - 한국관광공사 (VisitKorea Gangwon): https://english.visitkorea.or.kr/svc/whatToDo/areaCodeList.do?areaCode=32
 
 ---
@@ -56509,9 +56509,9 @@ ISSUE 04 · #1038 · 2026-06-08
 ## 🌐 외부 SOURCES
 
 - 설악산 국립공원 (Seoraksan National Park): https://english.knps.or.kr/Knp/Seoraksan
-- 속초시 (Sokcho): https://english.sokchotour.com/
-- 신흥사 (Sinheungsa): https://english.sinheungsa.kr/
-- 강원관광공사 (Gangwon Tourism): https://english.gangwon.to/
+- 속초시 (Sokcho): https://www.sokchotour.com/
+- 신흥사 (Sinheungsa): https://sinheungsa.kr/
+- 강원관광공사 (Gangwon Tourism): https://gangwon.to/
 - 한국관광공사 (VisitKorea Gangwon): https://english.visitkorea.or.kr/svc/whatToDo/areaCodeList.do?areaCode=32
 - UNESCO Tentative List (Seoraksan 1982): https://whc.unesco.org/en/tentativelists/
 
@@ -56754,12 +56754,12 @@ ISSUE 04 · #1037 · 2026-06-08
 
 ## 🌐 외부 SOURCES
 
-- 강릉시 (Gangneung): https://english.gn.go.kr/tour
-- 안목해변 (Anmok Beach Coffee Street): https://english.gn.go.kr/tour/anmok
-- 경포대 (Gyeongpodae): https://english.gn.go.kr/tour/gyeongpodae
-- 정동진 (Jeongdongjin): https://english.gn.go.kr/tour/jeongdongjin
+- 강릉시 (Gangneung): https://gn.go.kr/
+- 안목해변 (Anmok Beach Coffee Street): https://gn.go.kr/
+- 경포대 (Gyeongpodae): https://gn.go.kr/
+- 정동진 (Jeongdongjin): https://gn.go.kr/
 - 단오제 (Gangneung Danoje UNESCO 2005): https://en.unesco.org/news/gangneung-danoje-festival
-- 강원관광공사 (Gangwon Tourism): https://english.gangwon.to/
+- 강원관광공사 (Gangwon Tourism): https://gangwon.to/
 - 한국관광공사 (VisitKorea Gangwon): https://english.visitkorea.or.kr/svc/whatToDo/areaCodeList.do?areaCode=32
 
 ---
@@ -57075,11 +57075,11 @@ ISSUE 04 · #1036 · 2026-06-08
 
 ## 🌐 외부 SOURCES
 
-- 강원관광공사 (Gangwon Tourism): https://english.gangwon.to/
-- 강릉시 (Gangneung): https://english.gn.go.kr/tour
+- 강원관광공사 (Gangwon Tourism): https://gangwon.to/
+- 강릉시 (Gangneung): https://gn.go.kr/
 - 속초시 (Sokcho) + 설악산 국립공원: https://english.knps.or.kr/Knp/Seoraksan
-- 평창군 (Pyeongchang): https://english.happy700.or.kr/
-- 삼척시 (Samcheok): https://english.samcheok.go.kr/tour
+- 평창군 (Pyeongchang): https://happy700.or.kr/
+- 삼척시 (Samcheok): https://samcheok.go.kr/
 - 한국관광공사 (VisitKorea Gangwon): https://english.visitkorea.or.kr/svc/whatToDo/areaCodeList.do?areaCode=32
 
 ---
@@ -57488,10 +57488,10 @@ DMZ = 안전·KTO 인증 투어·여권 필수. 매니아 = 사전 교육 + 의�
 
 ## 🌐 외부 SOURCES
 
-- DMZ 투어 (DMZ Tour): https://english.tourdmz.com/
-- 임진각 평화누리공원 (Imjingak Peace Park): https://english.tourdmz.com/imjingak
-- 도라산 전망대 (Dorasan Observatory): https://english.tourdmz.com/dorasan
-- 제3땅굴 (3rd Tunnel): https://english.tourdmz.com/3rdtunnel
+- DMZ 투어 (DMZ Tour): https://tourdmz.com/
+- 임진각 평화누리공원 (Imjingak Peace Park): https://tourdmz.com/
+- 도라산 전망대 (Dorasan Observatory): https://tourdmz.com/
+- 제3땅굴 (3rd Tunnel): https://tourdmz.com/
 - 한국관광공사 (VisitKorea DMZ): https://english.visitkorea.or.kr/svc/whatToDo/dmzTour.do
 - 경기관광공사 (Gyeonggi Tourism): https://english.gto.or.kr/
 
@@ -57721,10 +57721,10 @@ ISSUE 04 · #1033 · 2026-06-08
 
 ## 🌐 외부 SOURCES
 
-- 남이섬 (Nami Island): https://english.namisum.com/
+- 남이섬 (Nami Island): https://namisum.com/
 - 아침고요수목원 (Garden of Morning Calm): https://english.morningcalm.co.kr/
 - 양평군 (Yangpyeong Tourism): https://english.yp21.go.kr/tour
-- 가평군 (Gapyeong Tourism): https://english.gp.go.kr/tour
+- 가평군 (Gapyeong Tourism): https://gp.go.kr/
 - 경기관광공사 (Gyeonggi Tourism): https://english.gto.or.kr/
 - 한국관광공사 (VisitKorea Gyeonggi): https://english.visitkorea.or.kr/svc/whatToDo/areaCodeList.do?areaCode=31
 
@@ -57951,7 +57951,7 @@ ISSUE 04 · #1032 · 2026-06-08
 
 - 수원 화성 (Suwon Hwaseong): https://english.swcf.or.kr/
 - UNESCO World Heritage (Hwaseong 1997): https://whc.unesco.org/en/list/817/
-- 수원시 (Suwon City): https://english.suwon.go.kr/
+- 수원시 (Suwon City): https://suwon.go.kr/
 - 경기관광공사 (Gyeonggi Tourism): https://english.gto.or.kr/
 - 한국관광공사 (VisitKorea Gyeonggi): https://english.visitkorea.or.kr/svc/whatToDo/areaCodeList.do?areaCode=31
 
@@ -58271,8 +58271,8 @@ ISSUE 04 · #1031 · 2026-06-08
 - 경기관광공사 (Gyeonggi Tourism): https://english.gto.or.kr/
 - 수원 화성 (Suwon Hwaseong UNESCO 1997): https://english.swcf.or.kr/
 - 에버랜드 (Everland): https://www.everland.com/en/main.html
-- 남이섬 (Nami Island): https://english.namisum.com/
-- DMZ 투어 (DMZ Tour): https://english.tourdmz.com/
+- 남이섬 (Nami Island): https://namisum.com/
+- DMZ 투어 (DMZ Tour): https://tourdmz.com/
 - 한국관광공사 (VisitKorea Gyeonggi): https://english.visitkorea.or.kr/svc/whatToDo/areaCodeList.do?areaCode=31
 
 ---
@@ -58467,11 +58467,11 @@ ISSUE 04 · #1030 · 2026-06-08
 
 ## 🌐 외부 SOURCES
 
-- 광주광역시 (Gwangju Tourism): https://english.gwangju.go.kr/tour
-- 광주 한정식 (Gwangju Hanjeongsik): https://english.gwangju.go.kr/food
-- 송정역시장 (Songjeong Market): https://english.gwangju.go.kr/tour/songjeong
-- 양림동 (Yangrim-dong): https://english.gwangju.go.kr/tour/yangrim
-- 펭귄마을 (Penguin Village): https://english.gwangju.go.kr/tour/penguin
+- 광주광역시 (Gwangju Tourism): https://gwangju.go.kr/
+- 광주 한정식 (Gwangju Hanjeongsik): https://gwangju.go.kr/
+- 송정역시장 (Songjeong Market): https://gwangju.go.kr/
+- 양림동 (Yangrim-dong): https://gwangju.go.kr/
+- 펭귄마을 (Penguin Village): https://gwangju.go.kr/
 - 한국관광공사 (VisitKorea Gwangju): https://english.visitkorea.or.kr/svc/whatToDo/areaCodeList.do?areaCode=5
 
 ---
@@ -58700,7 +58700,7 @@ ISSUE 04 · #1029 · 2026-06-08
 - 5·18 민주화운동 기록관 (May 18 Archives): https://english.5·18archives.go.kr/
 - 국립 5·18 민주묘지 (5·18 National Cemetery): https://english.5·18cemetery.go.kr/
 - UNESCO Memory of the World: https://en.unesco.org/programme/mow (2011 5·18 등록)
-- 광주광역시 (Gwangju Tourism): https://english.gwangju.go.kr/tour
+- 광주광역시 (Gwangju Tourism): https://gwangju.go.kr/
 - 한국관광공사 (VisitKorea Gwangju): https://english.visitkorea.or.kr/svc/whatToDo/areaCodeList.do?areaCode=5
 
 ---
@@ -58920,8 +58920,8 @@ ISSUE 04 · #1028 · 2026-06-08
 ## 🌐 외부 SOURCES
 
 - 무등산 국립공원 (Mudeungsan National Park): https://english.knps.or.kr/Knp/Mudeungsan
-- 광주광역시 (Gwangju Tourism): https://english.gwangju.go.kr/tour
-- 증심사 (Jeungsimsa): https://english.gwangju.go.kr/tour/jeungsimsa
+- 광주광역시 (Gwangju Tourism): https://gwangju.go.kr/
+- 증심사 (Jeungsimsa): https://gwangju.go.kr/
 - 한국관광공사 (VisitKorea Gwangju): https://english.visitkorea.or.kr/svc/whatToDo/areaCodeList.do?areaCode=5
 - 천연기념물 (Natural Monuments): https://english.cha.go.kr/
 
@@ -59146,11 +59146,11 @@ ACC = 안전·평지·실내·외국인 친화 매트릭스. 응급 ☎ 1339·13
 
 ## 🌐 외부 SOURCES
 
-- ACC (Asia Culture Center): https://english.acc.go.kr/
+- ACC (Asia Culture Center): https://acc.go.kr/
 - 5·18 민주화 기념재단 (May 18 Memorial Foundation): https://english.518.org/
-- 광주광역시 (Gwangju Tourism): https://english.gwangju.go.kr/tour
+- 광주광역시 (Gwangju Tourism): https://gwangju.go.kr/
 - 한국관광공사 (VisitKorea Gwangju): https://english.visitkorea.or.kr/svc/whatToDo/areaCodeList.do?areaCode=5
-- 국립아시아문화전당 (National Asia Culture Center): https://english.acc.go.kr/
+- 국립아시아문화전당 (National Asia Culture Center): https://acc.go.kr/
 
 ---
 
@@ -59480,12 +59480,12 @@ ACC + 5·18 = 안전·평지·외국인 친화. 무등산 = 등산 + 가파른 �
 
 ## 🌐 외부 SOURCES
 
-- 광주광역시 (Gwangju Tourism): https://english.gwangju.go.kr/tour
-- ACC (Asia Culture Center): https://english.acc.go.kr/
+- 광주광역시 (Gwangju Tourism): https://gwangju.go.kr/
+- ACC (Asia Culture Center): https://acc.go.kr/
 - 5·18 민주화 기념재단 (May 18 Memorial Foundation): https://english.518.org/
 - 무등산 국립공원 (Mudeungsan National Park): https://english.knps.or.kr/Knp/Mudeungsan
 - 한국관광공사 (VisitKorea Gwangju): https://english.visitkorea.or.kr/svc/whatToDo/areaCodeList.do?areaCode=5
-- 광주 한정식 (Gwangju Hanjeongsik): https://english.gwangju.go.kr/food
+- 광주 한정식 (Gwangju Hanjeongsik): https://gwangju.go.kr/
 
 ---
 
@@ -59894,7 +59894,7 @@ ISSUE 04 · #1024 · 2026-06-08
 
 ## 🌐 외부 SOURCES
 
-- 감천문화마을 (Gamcheon Culture Village): https://english.gamcheon.or.kr/
+- 감천문화마을 (Gamcheon Culture Village): https://gamcheon.or.kr/
 - 보수동 책방골목 (Bosudong Book Street): https://english.busan.go.kr/tour/bosudong
 - 부산광역시 (Busan Tourism): https://english.busan.go.kr/tour
 - CNN 2012 Travel "Santorini of Korea": https://www.cnn.com/travel/article/asia/gamcheon-village/index.html
@@ -60371,7 +60371,7 @@ ISSUE 04 · #1022 · 2026-06-08
 - BIFF (Busan International Film Festival): https://www.biff.kr/eng/
 - 부산광역시 (Busan Tourism): https://english.busan.go.kr/tour
 - 한국관광공사 (VisitKorea Busan): https://english.visitkorea.or.kr/svc/whatToDo/areaCodeList.do?areaCode=6
-- 수협 (National Fisheries Cooperatives): https://english.suhyup.co.kr/ (수산물 신선도)
+- 수협 (National Fisheries Cooperatives): https://suhyup.co.kr/ (수산물 신선도)
 
 ---
 
@@ -60692,7 +60692,7 @@ ISSUE 04 · #1021 · 2026-06-08
 - 부산광역시 (Busan Tourism): https://english.busan.go.kr/tour
 - 자갈치 시장 (Jagalchi Market): https://english.busan.go.kr/tour/jagalchi
 - 해운대 (Haeundae Beach): https://english.busan.go.kr/tour/haeundae
-- 감천문화마을 (Gamcheon Culture Village): https://english.gamcheon.or.kr/
+- 감천문화마을 (Gamcheon Culture Village): https://gamcheon.or.kr/
 - 해동용궁사 (Haedong Yonggungsa): https://english.busan.go.kr/tour/yonggungsa
 - BIFF (Busan International Film Festival): https://www.biff.kr/eng/
 - 한국관광공사 (VisitKorea Busan): https://english.visitkorea.or.kr/svc/whatToDo/areaCodeList.do?areaCode=6
@@ -60884,9 +60884,9 @@ ISSUE 04 · #1020 · 2026-06-08
 
 ## 🌐 외부 SOURCES
 
-- 울산광역시 (Ulsan Tourism): https://english.ulsan.go.kr/tour
-- 울산 산업관광 (Ulsan Industrial Tourism): https://english.ulsan.go.kr/tour/industrial
-- 현대중공업 (Hyundai Heavy Industries): https://english.hhi.co.kr/
+- 울산광역시 (Ulsan Tourism): https://ulsan.go.kr/
+- 울산 산업관광 (Ulsan Industrial Tourism): https://ulsan.go.kr/
+- 현대중공업 (Hyundai Heavy Industries): https://hhi.co.kr/
 - 현대자동차 (Hyundai Motor): https://www.hyundai.com/worldwide/en/
 - 현대자동차 박물관 (Hyundai Motor Studio Ulsan): https://www.hyundai.com/
 - 한국관광공사 (VisitKorea Ulsan): https://english.visitkorea.or.kr/svc/whatToDo/areaCodeList.do?areaCode=7
@@ -61149,11 +61149,11 @@ ISSUE 04 · #1019 · 2026-06-08
 
 ## 🌐 외부 SOURCES
 
-- 간절곶 (Ganjeolgot): https://english.ulsan.go.kr/tour/ganjeolgot
-- 울산광역시 (Ulsan Tourism): https://english.ulsan.go.kr/tour
+- 간절곶 (Ganjeolgot): https://ulsan.go.kr/
+- 울산광역시 (Ulsan Tourism): https://ulsan.go.kr/
 - 간절곶 등대 (Ganjeolgot Lighthouse): 1920년·100년+ 등대
 - 한국관광공사 (VisitKorea Ulsan): https://english.visitkorea.or.kr/svc/whatToDo/areaCodeList.do?areaCode=7
-- 한국 일출 시간 (Sunrise Times Korea): https://english.kma.go.kr/ (기상청)
+- 한국 일출 시간 (Sunrise Times Korea): https://www.kma.go.kr/ (기상청)
 
 ---
 
@@ -61170,9 +61170,9 @@ ISSUE 04 · #1019 · 2026-06-08
 
 - 한국관광공사 (VisitKorea): https://english.visitkorea.or.kr/
 - 국립공원공단 (Korea National Park Service): https://english.knps.or.kr/
-- 기상청 (KMA Korea Meteorological Administration): https://english.kma.go.kr/
+- 기상청 (KMA Korea Meteorological Administration): https://www.kma.go.kr/
 - 산림청 (Korea Forest Service): https://english.forest.go.kr/
-- 한국 자연환경 (Korea Environment Institute): https://english.kei.re.kr/
+- 한국 자연환경 (Korea Environment Institute): https://www.kei.re.kr/
 - 세계자연유산 (UNESCO World Natural Heritage): https://whc.unesco.org/en/list/
 
 ---
@@ -61405,9 +61405,9 @@ ISSUE 04 · #1018 · 2026-06-08
 ## 🌐 외부 SOURCES
 
 - 장생포 고래 박물관 (Jangsaengpo Whale Museum): https://www.whalemuseum.go.kr/eng/
-- 반구대 암각화 (Bangudae Petroglyphs): https://en.ulsan.go.kr/tour/bangudae
+- 반구대 암각화 (Bangudae Petroglyphs): https://ulsan.go.kr/
 - UNESCO 잠정 목록 (Tentative List): https://whc.unesco.org/en/tentativelists/ (반구대 2010 등록)
-- 울산광역시 (Ulsan Tourism): https://english.ulsan.go.kr/tour
+- 울산광역시 (Ulsan Tourism): https://ulsan.go.kr/
 - IWC (International Whaling Commission): https://iwc.int/ (1986 모라토리엄)
 - 한국관광공사 (VisitKorea Ulsan): https://english.visitkorea.or.kr/svc/whatToDo/areaCodeList.do?areaCode=7
 
@@ -61638,8 +61638,8 @@ ISSUE 04 · #1017 · 2026-06-08
 ## 🌐 외부 SOURCES
 
 - 태화강 국가정원 (Taehwa River National Garden): https://www.taehwariver.kr/eng/
-- 울산광역시 (Ulsan Tourism): https://english.ulsan.go.kr/tour
-- 울산 시립박물관 (Ulsan Museum): https://english.ulsan.go.kr/museum/
+- 울산광역시 (Ulsan Tourism): https://ulsan.go.kr/
+- 울산 시립박물관 (Ulsan Museum): https://ulsan.go.kr/
 - 한국관광공사 (VisitKorea Ulsan): https://english.visitkorea.or.kr/svc/whatToDo/areaCodeList.do?areaCode=7
 - 순천만 국가정원 (Suncheon Bay National Garden·한국 #1 비교): https://english.scbay.kr/
 
@@ -61968,11 +61968,11 @@ ISSUE 04 · #1016 · 2026-06-08
 
 ## 🌐 외부 SOURCES
 
-- 울산광역시 (Ulsan Tourism): https://english.ulsan.go.kr/tour
+- 울산광역시 (Ulsan Tourism): https://ulsan.go.kr/
 - 태화강 국가정원 (Taehwa River National Garden): https://www.taehwariver.kr/eng/
 - 장생포 고래 박물관 (Jangsaengpo Whale Museum): https://www.whalemuseum.go.kr/eng/
-- 반구대 암각화 (Bangudae Petroglyphs): https://en.ulsan.go.kr/tour/bangudae
-- 간절곶 (Ganjeolgot): https://english.ulsan.go.kr/tour/ganjeolgot
+- 반구대 암각화 (Bangudae Petroglyphs): https://ulsan.go.kr/
+- 간절곶 (Ganjeolgot): https://ulsan.go.kr/
 - 한국관광공사 (VisitKorea Ulsan): https://english.visitkorea.or.kr/svc/whatToDo/areaCodeList.do?areaCode=7
 
 ---
@@ -62189,7 +62189,7 @@ ISSUE 04 · #1015 · 2026-06-08
 
 - 인천국제공항 (Incheon Airport): https://www.airport.kr/ap/en/index.do
 - 공항철도 (Airport Railroad): https://www.arex.or.kr/main.do?lang=en
-- 인천관광공사 (Incheon Tourism): https://english.incheon.go.kr/
+- 인천관광공사 (Incheon Tourism): https://incheon.go.kr/
 - 롯데 면세점 (Lotte Duty Free): https://www.lottedfs.com/
 - 신라 면세점 (Shilla Duty Free): https://www.shilladfs.com/
 - 신세계 면세점 (Shinsegae Duty Free): https://www.ssgdfm.com/
@@ -62439,11 +62439,11 @@ ISSUE 04 · #1014 · 2026-06-08
 
 ## 🌐 외부 SOURCES
 
-- 인천관광공사 (Incheon Tourism): https://english.incheon.go.kr/
-- 월미바다열차 (Wolmi Sea Train): https://english.icjg.go.kr/wolmido/
+- 인천관광공사 (Incheon Tourism): https://incheon.go.kr/
+- 월미바다열차 (Wolmi Sea Train): https://icjg.go.kr/
 - 소래포구 (Soraepogu): https://english.namdong.incheon.kr/sorae/
 - 한국관광공사 (VisitKorea Incheon): https://english.visitkorea.or.kr/svc/whatToDo/areaCodeList.do?areaCode=2
-- 수협 (National Federation of Fisheries Cooperatives): https://english.suhyup.co.kr/ (수산물 신선도·위생)
+- 수협 (National Federation of Fisheries Cooperatives): https://suhyup.co.kr/ (수산물 신선도·위생)
 - 식약처 (Food Safety Korea): https://www.foodsafetykorea.go.kr/ (회 위생·알레르기)
 
 ---
@@ -62670,10 +62670,10 @@ ISSUE 04 · #1013 · 2026-06-08
 ## 🌐 외부 SOURCES
 
 - 송도 IBD (Songdo IBD): https://english.songdoibd.com/
-- 인천관광공사 (Incheon Tourism): https://english.incheon.go.kr/
+- 인천관광공사 (Incheon Tourism): https://incheon.go.kr/
 - 인천대교 (Incheon Bridge): https://english.icbridge.co.kr/
 - G타워 (G-Tower): https://english.gtower.kr/ (33층 전망대)
-- 송도 센트럴파크 (Songdo Central Park): https://english.incheon.go.kr/
+- 송도 센트럴파크 (Songdo Central Park): https://incheon.go.kr/
 - UN 사무소 (UN Office): https://un.incheon.kr/
 
 ---
@@ -62927,10 +62927,10 @@ ISSUE 04 · #1012 · 2026-06-08
 
 ## 🌐 외부 SOURCES
 
-- 인천관광공사 (Incheon Tourism): https://english.incheon.go.kr/
+- 인천관광공사 (Incheon Tourism): https://incheon.go.kr/
 - 인천 차이나타운 (Incheon Chinatown): https://www.icjg.go.kr/chinatown/
 - 공화춘 박물관 (Gonghwachun Museum): https://english.visitkorea.or.kr/svc/whatToDo/areaCodeList.do?areaCode=2
-- 인천개항박물관 (Incheon Open Port Museum): https://english.icjg.go.kr/museum/
+- 인천개항박물관 (Incheon Open Port Museum): https://icjg.go.kr/
 - 자유공원 (Jayugongwon Park): 1888년·한국 #1 근대 공원
 - 한국관광공사 (VisitKorea Incheon): https://english.visitkorea.or.kr/svc/whatToDo/areaCodeList.do?areaCode=2
 
@@ -63154,7 +63154,7 @@ ISSUE 04 · #1011 · 2026-06-08
 
 ## 🌐 외부 SOURCES
 
-- 인천관광공사 (Incheon Tourism): https://english.incheon.go.kr/
+- 인천관광공사 (Incheon Tourism): https://incheon.go.kr/
 - 인천공항 (Incheon Airport): https://www.airport.kr/ap/en/index.do
 - 차이나타운 (Incheon Chinatown): https://www.icjg.go.kr/chinatown/
 - 공화춘 박물관 (Gonghwachun Museum): https://english.visitkorea.or.kr/svc/whatToDo/areaCodeList.do?areaCode=2
@@ -63383,7 +63383,7 @@ ISSUE 04 · #1010 · 2026-06-08
 
 ## 🌐 외부 SOURCES
 
-- 대전광역시 (Daejeon Tourism): https://english.daejeon.go.kr/tour
+- 대전광역시 (Daejeon Tourism): https://daejeon.go.kr/
 - 한국관광공사 (VisitKorea Daejeon): https://english.visitkorea.or.kr/svc/whatToDo/areaCodeList.do?areaCode=3
 - 한식진흥원 (Korean Food Promotion Institute): https://www.hansik.or.kr/
 - 미슐랭 가이드 서울 (Michelin Guide): https://guide.michelin.com/kr/ko (대전 노포 일부)
@@ -63571,9 +63571,9 @@ ISSUE 04 · #1009 · 2026-06-08
 ## 🌐 외부 SOURCES
 
 - KAIST (한국과학기술원): https://www.kaist.ac.kr/en/
-- 국립중앙과학관 (National Science Museum): https://english.science.go.kr/
-- 대덕연구단지 (Daedeok Innopolis): https://english.daejeon.go.kr/tour
-- 엑스포 시민광장 (Expo Citizen Square): https://english.daejeon.go.kr/tour
+- 국립중앙과학관 (National Science Museum): https://science.go.kr/
+- 대덕연구단지 (Daedeok Innopolis): https://daejeon.go.kr/
+- 엑스포 시민광장 (Expo Citizen Square): https://daejeon.go.kr/
 - 한빛탑 (Hanbit Tower): 1993 엑스포 상징·99m
 - ETRI (한국전자통신연구원): https://www.etri.re.kr/eng/
 - 한국관광공사 (VisitKorea Daejeon): https://english.visitkorea.or.kr/svc/whatToDo/areaCodeList.do?areaCode=3
@@ -63828,11 +63828,11 @@ ISSUE 04 · #1008 · 2026-06-08
 
 ## 🌐 외부 SOURCES
 
-- 유성 온천 (Yuseong Hot Springs): https://english.daejeon.go.kr/tour/yuseong
-- 유성구청 (Yuseong-gu): https://english.yuseong.go.kr/
+- 유성 온천 (Yuseong Hot Springs): https://daejeon.go.kr/
+- 유성구청 (Yuseong-gu): https://yuseong.go.kr/
 - 유성 호텔 (Yuseong Hotel): https://www.yuseonghotel.com/
-- 유성 온천 축제 (Yuseong Hot Springs Festival): 매년 5월·https://english.daejeon.go.kr/tour/yuseong
-- 대전광역시 (Daejeon Tourism): https://english.daejeon.go.kr/tour
+- 유성 온천 축제 (Yuseong Hot Springs Festival): 매년 5월·https://daejeon.go.kr/
+- 대전광역시 (Daejeon Tourism): https://daejeon.go.kr/
 - 한국관광공사 (VisitKorea): https://english.visitkorea.or.kr/svc/whatToDo/areaCodeList.do?areaCode=3
 
 ---
@@ -64092,7 +64092,7 @@ ISSUE 04 · #1007 · 2026-06-08
 - 성심당 (Sungsimdang): https://www.sungsimdang.co.kr/
 - 성심당 본점 (Daejeon Main Branch): 대전 동구 대종로 480번길 15
 - 성심당 박물관: 매장 내·1956년~ 70년 역사 cover
-- 대전광역시 (Daejeon Tourism): https://english.daejeon.go.kr/tour
+- 대전광역시 (Daejeon Tourism): https://daejeon.go.kr/
 - 한국관광공사 (VisitKorea Daejeon): https://english.visitkorea.or.kr/svc/whatToDo/areaCodeList.do?areaCode=3
 - 식약처 (Food Safety Korea): https://www.foodsafetykorea.go.kr/ (알레르기·반입 제한)
 
@@ -64371,10 +64371,10 @@ ISSUE 04 · #1006 · 2026-06-08
 
 ## 🌐 외부 SOURCES
 
-- 대전광역시 공식 관광 (Daejeon Tourism): https://english.daejeon.go.kr/tour
+- 대전광역시 공식 관광 (Daejeon Tourism): https://daejeon.go.kr/
 - 성심당 (Sungsimdang): https://www.sungsimdang.co.kr/
-- 유성 온천 (Yuseong Hot Springs): https://english.daejeon.go.kr/tour/yuseong
-- 국립중앙과학관 (National Science Museum): https://english.science.go.kr/
+- 유성 온천 (Yuseong Hot Springs): https://daejeon.go.kr/
+- 국립중앙과학관 (National Science Museum): https://science.go.kr/
 - KAIST (한국과학기술원): https://www.kaist.ac.kr/en/
 - 한국관광공사 (VisitKorea Daejeon): https://english.visitkorea.or.kr/svc/whatToDo/areaCodeList.do?areaCode=3
 
@@ -68491,9 +68491,9 @@ A. 119 = 영어 OK·한국 응급 의료 = 외국인 무료 응급실 운영 (�
 
 - 한국관광공사 (VisitKorea): https://english.visitkorea.or.kr/
 - 국립공원공단 (Korea National Park Service): https://english.knps.or.kr/
-- 기상청 (KMA Korea Meteorological Administration): https://english.kma.go.kr/
+- 기상청 (KMA Korea Meteorological Administration): https://www.kma.go.kr/
 - 산림청 (Korea Forest Service): https://english.forest.go.kr/
-- 한국 자연환경 (Korea Environment Institute): https://english.kei.re.kr/
+- 한국 자연환경 (Korea Environment Institute): https://www.kei.re.kr/
 - 세계자연유산 (UNESCO World Natural Heritage): https://whc.unesco.org/en/list/
 
 ---
