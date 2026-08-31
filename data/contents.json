@@ -660,7 +660,7 @@
   {
     "id": "22",
     "slug": "gangnam-finedine",
-    "title_kr": "22_강남 파인다이닝 5선",
+    "title_kr": "강남 파인다이닝 5선",
     "title_en": "22 – Gangnam (강남) Fine Dining: Top 5 Picks",
     "category": "F",
     "tags": [
@@ -675,16 +675,16 @@
     "cn_available": true,
     "jp_available": true,
     "date_published": "2026-05-14",
-    "title_ja": "22_江南ファインダイニング5選",
-    "title_zh": "22_江南高级餐厅5选",
+    "title_ja": "江南ファインダイニング5選",
+    "title_zh": "江南高级餐厅5选",
     "summary_ja": "22_江南ファインダイニング5選 — ISSUE 02クイックガイド（約2K文字）",
     "summary_zh": "22_江南精品餐饮5选 — ISSUE 02 快速指南 (~2K字)"
   },
   {
     "id": "23",
     "slug": "itaewon-world-food",
-    "title_kr": "23_이태원 세계음식 투어",
-    "title_en": "23_Itaewon World Food Tour",
+    "title_kr": "이태원 세계음식 투어",
+    "title_en": "Itaewon World Food Tour",
     "category": "F",
     "tags": [
       "foreigner",
@@ -698,16 +698,16 @@
     "cn_available": true,
     "jp_available": true,
     "date_published": "2026-05-14",
-    "title_ja": "23_梨泰院世界グルメツアー",
-    "title_zh": "23_梨泰院世界美食探访",
+    "title_ja": "梨泰院世界グルメツアー",
+    "title_zh": "梨泰院世界美食探访",
     "summary_ja": "23_梨泰院世界グルメツアー — ISSUE 02クイックガイド（約2K文字）",
     "summary_zh": "23_梨泰院世界美食之旅 — ISSUE 02 快速指南 (~2K字)"
   },
   {
     "id": "24",
     "slug": "gwangjang-market",
-    "title_kr": "24_광장시장 완전 공략",
-    "title_en": "24_Gwangjang Market (광장시장) Complete Guide",
+    "title_kr": "광장시장 완전 공략",
+    "title_en": "Gwangjang Market (광장시장) Complete Guide",
     "category": "F",
     "tags": [
       "foreigner",
@@ -721,16 +721,16 @@
     "cn_available": true,
     "jp_available": true,
     "date_published": "2026-05-14",
-    "title_ja": "24_広蔵市場徹底攻略",
-    "title_zh": "24_广藏市场完整攻略",
+    "title_ja": "広蔵市場徹底攻略",
+    "title_zh": "广藏市场完整攻略",
     "summary_ja": "24_広蔵市場徹底攻略 — ISSUE 02クイックガイド（約2K文字）",
     "summary_zh": "24_广藏市场完全攻略 — ISSUE 02 快速指南 (~2K字)"
   },
   {
     "id": "25",
     "slug": "mangwon-market-food",
-    "title_kr": "25_망원시장 먹거리",
-    "title_en": "25_Mangwon Market Food Guide (망원시장 먹거리)",
+    "title_kr": "망원시장 먹거리",
+    "title_en": "Mangwon Market Food Guide (망원시장 먹거리)",
     "category": "F",
     "tags": [
       "foreigner",
@@ -744,16 +744,16 @@
     "cn_available": true,
     "jp_available": true,
     "date_published": "2026-05-14",
-    "title_ja": "25_望遠市場グルメ",
-    "title_zh": "25_望远市场美食",
+    "title_ja": "望遠市場グルメ",
+    "title_zh": "望远市场美食",
     "summary_ja": "25_望遠市場グルメ — ISSUE 02クイックガイド（約2K文字）",
     "summary_zh": "25_望远市场美食 — ISSUE 02 快速指南 (~2K字)"
   },
   {
     "id": "26",
     "slug": "convenience-snack",
-    "title_kr": "26_편의점 간식 추천 (외국인용)",
-    "title_en": "26_Convenience Store Snack Guide (For Tourists)",
+    "title_kr": "편의점 간식 추천 (외국인용)",
+    "title_en": "Convenience Store Snack Guide (For Tourists)",
     "category": "F",
     "tags": [
       "foreigner",
@@ -767,16 +767,16 @@
     "cn_available": true,
     "jp_available": true,
     "date_published": "2026-05-14",
-    "title_ja": "26_コンビニおやつおすすめ",
-    "title_zh": "26_外国人便利店零食推荐",
+    "title_ja": "コンビニおやつおすすめ",
+    "title_zh": "外国人便利店零食推荐",
     "summary_ja": "26_コンビニおやつおすすめ（外国人向け） — ISSUE 02クイックガイド（約2K文字）",
     "summary_zh": "26_便利店零食推荐（外国人用）— ISSUE 02 快速指南 (~2K字)"
   },
   {
     "id": "27",
     "slug": "street-food-top20",
-    "title_kr": "27_스트릿푸드 Top 20",
-    "title_en": "27_Street Food Top 20",
+    "title_kr": "스트릿푸드 Top 20",
+    "title_en": "Street Food Top 20",
     "category": "F",
     "tags": [
       "foreigner",
@@ -790,16 +790,16 @@
     "cn_available": true,
     "jp_available": true,
     "date_published": "2026-05-14",
-    "title_ja": "27_ストリートフードTop 20",
-    "title_zh": "27_街头美食Top 20",
+    "title_ja": "ストリートフードTop 20",
+    "title_zh": "街头美食Top 20",
     "summary_ja": "27_ストリートフードTop 20 — ISSUE 02クイックガイド（約2K文字）",
     "summary_zh": "27_街头美食Top 20 — ISSUE 02 快速指南 (~2K字)"
   },
   {
     "id": "28",
     "slug": "chicken-guide",
-    "title_kr": "28_한국식 치킨집 가이드",
-    "title_en": "28_Korean Fried Chicken Restaurant Guide",
+    "title_kr": "한국식 치킨집 가이드",
+    "title_en": "Korean Fried Chicken Restaurant Guide",
     "category": "F",
     "tags": [
       "foreigner",
@@ -813,16 +813,16 @@
     "cn_available": true,
     "jp_available": true,
     "date_published": "2026-05-14",
-    "title_ja": "28_韓国チキン店ガイド",
-    "title_zh": "28_韩式炸鸡店攻略",
+    "title_ja": "韓国チキン店ガイド",
+    "title_zh": "韩式炸鸡店攻略",
     "summary_ja": "28_韓国式チキン店ガイド — ISSUE 02 クイックガイド",
     "summary_zh": "韩国炸鸡店指南"
   },
   {
     "id": "29",
     "slug": "seongsu-select",
-    "title_kr": "29_성수동 편집샵 완전 정복",
-    "title_en": "29_Seongsu-dong Select Shop Complete Guide",
+    "title_kr": "성수동 편집샵 완전 정복",
+    "title_en": "Seongsu-dong Select Shop Complete Guide",
     "category": "F",
     "tags": [
       "foreigner",
@@ -836,15 +836,15 @@
     "cn_available": true,
     "jp_available": true,
     "date_published": "2026-05-14",
-    "title_ja": "29_聖水洞セレクトショップ徹底攻略",
-    "title_zh": "29_圣水洞买手店完整攻略",
+    "title_ja": "聖水洞セレクトショップ徹底攻略",
+    "title_zh": "圣水洞买手店完整攻略",
     "summary_ja": "29_聖水洞セレクトショップ完全攻略 — ISSUE 02 クイックガイド",
     "summary_zh": "圣水洞买手店完全攻略"
   },
   {
     "id": "30",
     "slug": "garosu-shopping",
-    "title_kr": "30_가로수길 쇼핑 1일 코스",
+    "title_kr": "가로수길 쇼핑 1일 코스",
     "title_en": "30",
     "category": "F",
     "tags": [
@@ -859,16 +859,16 @@
     "cn_available": true,
     "jp_available": true,
     "date_published": "2026-05-14",
-    "title_ja": "30_街路樹通りショッピング1日コース",
-    "title_zh": "30_林荫道购物1日路线",
+    "title_ja": "街路樹通りショッピング1日コース",
+    "title_zh": "林荫道购物1日路线",
     "summary_ja": "30_カロスキル ショッピング1日コース — ISSUE 02 クイックガイド",
     "summary_zh": "林荫道购物一日游路线"
   },
   {
     "id": "31",
     "slug": "dongdaemun-night-shopping",
-    "title_kr": "31_동대문 심야 쇼핑",
-    "title_en": "31_Dongdaemun Late-Night Shopping",
+    "title_kr": "동대문 심야 쇼핑",
+    "title_en": "Dongdaemun Late-Night Shopping",
     "category": "F",
     "tags": [
       "foreigner",
@@ -882,15 +882,15 @@
     "cn_available": true,
     "jp_available": true,
     "date_published": "2026-05-14",
-    "title_ja": "31_東大門深夜ショッピング",
-    "title_zh": "31_东大门深夜购物",
+    "title_ja": "東大門深夜ショッピング",
+    "title_zh": "东大门深夜购物",
     "summary_ja": "31_東大門 深夜ショッピング — ISSUE 02 クイックガイド",
     "summary_zh": "东大门深夜购物"
   },
   {
     "id": "32",
     "slug": "hongdae-vintage",
-    "title_kr": "32_홍대 빈티지 샵 투어",
+    "title_kr": "홍대 빈티지 샵 투어",
     "title_en": "32 Hongdae (홍대) Vintage Shop Tour",
     "category": "F",
     "tags": [
@@ -905,16 +905,16 @@
     "cn_available": true,
     "jp_available": true,
     "date_published": "2026-05-14",
-    "title_ja": "32_弘大ヴィンテージショップツアー",
-    "title_zh": "32_弘大复古店探访",
+    "title_ja": "弘大ヴィンテージショップツアー",
+    "title_zh": "弘大复古店探访",
     "summary_ja": "32_弘大 ヴィンテージショップツアー — ISSUE 02 クイックガイド",
     "summary_zh": "弘大复古店探店之旅"
   },
   {
     "id": "33",
     "slug": "hanbok-guide",
-    "title_kr": "33_한복 체험 - 경복궁 완전 가이드",
-    "title_en": "33_Hanbok Experience – Complete Guide to Gyeongbokgung (경복궁)",
+    "title_kr": "한복 체험 - 경복궁 완전 가이드",
+    "title_en": "Hanbok Experience – Complete Guide to Gyeongbokgung (경복궁)",
     "category": "F",
     "tags": [
       "foreigner",
@@ -928,16 +928,16 @@
     "cn_available": true,
     "jp_available": true,
     "date_published": "2026-05-14",
-    "title_ja": "33_韓服体験景福宮徹底ガイド",
-    "title_zh": "33_韩服体验景福宫完整攻略",
+    "title_ja": "韓服体験景福宮徹底ガイド",
+    "title_zh": "韩服体验景福宫完整攻略",
     "summary_ja": "33_韓服体験 - 景福宮完全ガイド — ISSUE 02 クイックガイド",
     "summary_zh": "韩服体验 - 景福宫完全攻略"
   },
   {
     "id": "34",
     "slug": "jjimjilbang-etiquette",
-    "title_kr": "34_찜질방 에티켓 (외국인 전용)",
-    "title_en": "34_Jjimjilbang Etiquette (For Foreign Visitors)",
+    "title_kr": "찜질방 에티켓 (외국인 전용)",
+    "title_en": "Jjimjilbang Etiquette (For Foreign Visitors)",
     "category": "F",
     "tags": [
       "foreigner",
@@ -951,16 +951,16 @@
     "cn_available": true,
     "jp_available": true,
     "date_published": "2026-05-14",
-    "title_ja": "34_チムジルバンエチケット",
-    "title_zh": "34_汗蒸房外国人礼仪",
+    "title_ja": "チムジルバンエチケット",
+    "title_zh": "汗蒸房外国人礼仪",
     "summary_ja": "34_チムジルバン エチケット (外国人専用) — ISSUE 02 クイックガイド",
     "summary_zh": "汗蒸房礼仪 (外国人专用)"
   },
   {
     "id": "35",
     "slug": "kpop-dance",
-    "title_kr": "35_K팝 댄스 클래스",
-    "title_en": "35_K-pop Dance Class",
+    "title_kr": "K팝 댄스 클래스",
+    "title_en": "K-pop Dance Class",
     "category": "F",
     "tags": [
       "foreigner",
@@ -974,16 +974,16 @@
     "cn_available": true,
     "jp_available": true,
     "date_published": "2026-05-14",
-    "title_ja": "35_K-POPダンスクラス",
-    "title_zh": "35_K-pop舞蹈课",
+    "title_ja": "K-POPダンスクラス",
+    "title_zh": "K-pop舞蹈课",
     "summary_ja": "35_K-POP ダンスクラス — ISSUE 02 クイックガイド",
     "summary_zh": "K-pop舞蹈课"
   },
   {
     "id": "36",
     "slug": "templestay",
-    "title_kr": "36_템플스테이 초보 가이드",
-    "title_en": "36_Templestay Beginner's Guide",
+    "title_kr": "템플스테이 초보 가이드",
+    "title_en": "Templestay Beginner's Guide",
     "category": "F",
     "tags": [
       "foreigner",
@@ -997,7 +997,7 @@
     "cn_available": true,
     "jp_available": true,
     "date_published": "2026-05-14",
-    "title_ja": "36_テンプルステイ初心者ガイド",
+    "title_ja": "テンプルステイ初心者ガイド",
     "title_zh": "寺庙寄宿新手指南",
     "summary_ja": "36_テンプルステイ初心者ガイド — ISSUE 02 クイックガイド（約2K文字）",
     "summary_zh": "36_寺庙寄宿新手指南 — ISSUE 02 快速指南"
@@ -1028,8 +1028,8 @@
   {
     "id": "38",
     "slug": "bukchon-samcheong-1day",
-    "title_kr": "38_북촌한옥마을 + 삼청동 1일",
-    "title_en": "38_Bukchon Hanok Village + Samcheong-dong 1-Day Guide",
+    "title_kr": "북촌한옥마을 + 삼청동 1일",
+    "title_en": "Bukchon Hanok Village + Samcheong-dong 1-Day Guide",
     "category": "F",
     "tags": [
       "foreigner",
@@ -1043,7 +1043,7 @@
     "cn_available": true,
     "jp_available": true,
     "date_published": "2026-05-14",
-    "title_ja": "38_北村韓屋村＋三清洞1日",
+    "title_ja": "北村韓屋村＋三清洞1日",
     "title_zh": "北村韩屋村+三清洞一日",
     "summary_ja": "38_北村韓屋村 + 三清洞 1日 — ISSUE 02 クイックガイド (~2K文字)",
     "summary_zh": "38_北村韩屋村 + 三清洞一日 — ISSUE 02 快速指南"
@@ -1051,8 +1051,8 @@
   {
     "id": "39",
     "slug": "hongdae-yeonnam-mangwon",
-    "title_kr": "39_홍대 + 연남동 + 망원 하루",
-    "title_en": "39_Hongdae + Yeonnam-dong + Mangwon: One Full Day",
+    "title_kr": "홍대 + 연남동 + 망원 하루",
+    "title_en": "Hongdae + Yeonnam-dong + Mangwon: One Full Day",
     "category": "F",
     "tags": [
       "foreigner",
@@ -1066,7 +1066,7 @@
     "cn_available": true,
     "jp_available": true,
     "date_published": "2026-05-14",
-    "title_ja": "39_弘大＋延南洞＋望遠1日",
+    "title_ja": "弘大＋延南洞＋望遠1日",
     "title_zh": "弘大+延南洞+望远一日",
     "summary_ja": "39_弘大 + 延南洞 + 望遠 1日 — ISSUE 02 クイックガイド (~2K文字)",
     "summary_zh": "39_弘大 + 延南洞 + 望远一日 — ISSUE 02 快速指南"
@@ -1074,8 +1074,8 @@
   {
     "id": "40",
     "slug": "namsan-myeongdong",
-    "title_kr": "40_남산 + 명동 야경 투어",
-    "title_en": "40_Namsan + Myeongdong Night Tour",
+    "title_kr": "남산 + 명동 야경 투어",
+    "title_en": "Namsan + Myeongdong Night Tour",
     "category": "F",
     "tags": [
       "foreigner",
@@ -1089,7 +1089,7 @@
     "cn_available": true,
     "jp_available": true,
     "date_published": "2026-05-14",
-    "title_ja": "40_南山＋明洞夜景ツアー",
+    "title_ja": "南山＋明洞夜景ツアー",
     "title_zh": "南山+明洞夜景之旅",
     "summary_ja": "40_南山 + 明洞 夜景ツアー — ISSUE 02 クイックガイド (~2K文字)",
     "summary_zh": "40_南山 + 明洞夜景之旅 — ISSUE 02 快速指南"
