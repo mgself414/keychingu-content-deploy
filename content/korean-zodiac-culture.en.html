@@ -34,7 +34,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/main.css">
 <style>
 .detail-wrap {
@@ -50,11 +50,11 @@
 .breadcrumb a { color: var(--red); font-weight: 600; }
 .detail-wrap h1 {
   font-size: 28px; font-weight: 800;
-  color: var(--black); margin-bottom: 8px;
+  color: var(--text); margin-bottom: 8px;
 }
 .detail-wrap h2 {
   font-size: 22px; font-weight: 700;
-  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  color: var(--text); margin-top: 32px; margin-bottom: 12px;
   padding-bottom: 6px;
   border-bottom: 2px solid var(--red);
 }
@@ -73,10 +73,19 @@
   font-size: 14px; line-height: 1.6;
   color: var(--text-mid); margin-bottom: 6px;
 }
+/* 표는 자기 컨테이너 안에서만 가로 스크롤한다 — 이게 없으면 min-content 폭이
+   뷰포트를 넘는 순간 페이지 전체가 가로로 밀렸다 (2026-08-31 점검 M2).
+   table 자체는 table 로 남겨 행·열 관계를 보존한다(display:block 으로 해결하지 않는 이유). */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 16px;
+}
 .detail-wrap table {
   width: 100%; border-collapse: collapse;
   margin-bottom: 16px; font-size: 13px;
 }
+.table-scroll > table { margin-bottom: 0; }
 .detail-wrap th {
   background: var(--black); color: #fff;
   padding: 10px 12px; text-align: left;
@@ -137,10 +146,30 @@
   user-select: none;
 }
 </style>
+<script>
+/* 테마 부트스트랩 — 2026-08-31 점검 M3.
+   기사 4,804p 에 이게 없어서, OS 다크 사용자가 홈(다크)에서 기사를 열면
+   라이트로 번쩍였다. main.css 의 다크 규칙은 전부 [data-theme="dark"] 스코프이고
+   prefers-color-scheme 미디어쿼리는 CSS 에 없으므로, 속성을 여기서 달아줘야 한다.
+   <head> 안에서 동기 실행 — paint 전에 끝나야 깜빡임이 없다.
+   허브와 달리 기사엔 토글 버튼이 없다. 저장된 선택(kc_theme)과 OS 설정만 따른다. */
+(function () {
+  try {
+    var s = localStorage.getItem('kc_theme');
+    if (s === 'dark' || (!s && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  } catch (e) {}
+})();
+</script>
 </head>
 <body>
+<a class="skip-link" href="#kc-main">Skip to content</a>
 <header class="site-header">
-  <a href="../en/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <!-- width/height = 고유 크기(400x149). CSS 가 height:36px 로 줄이지만 브라우저는
+       이 비율로 자리를 미리 잡아 레이아웃 이동(CLS)을 막는다. 헤더 로고는 첫 화면에
+       보이므로 lazy 가 아니라 eager. -->
+  <a href="../en/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo" width="400" height="149" loading="eager" decoding="async"></a>
   <div class="lang-switch">
     <a href="../content/korean-zodiac-culture.html">KR</a>
     <a href="../content/korean-zodiac-culture.en.html" class="active">EN</a>
@@ -149,7 +178,7 @@
   </div>
 </header>
 
-<main class="detail-wrap">
+<main class="detail-wrap" id="kc-main" tabindex="-1">
   <nav class="breadcrumb" aria-label="breadcrumb"><a href="../en/index.html">All Guides</a> &rsaquo; Korean Zodiac Culture — "What's Your Tti?"</nav>
   <article>
   <h1>What zodiac sign do you have? — Meaning of the animal of the year of birth</h1>
@@ -158,7 +187,7 @@
 <hr>
 <h2>★ At a Glance — 12 Zodiac Signs and Approximate Year of Birth</h2>
 <p>The Chinese zodiac sign rotates once every 12 years. The same zodiac signs are 12 years apart (or 24·36·48···years apart). Below are representative birth years (★The exact zodiac sign may vary for those born at the beginning of the year due to the &#x27;zodiac change standard&#x27; — ⑥ below).</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>order</th>
 <th>Zodiac sign (Chinese character)</th>
 <th>animals</th>
@@ -249,7 +278,7 @@
 <td>Pig</td>
 <td>1983 · 1995 · 2007 · 2019</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <blockquote><p><strong>Tips for memorizing the order</strong>: Rat - Cow - Tiger - Rabbit - Dragon - Snake - Horse - Sheep - Monkey - Chicken - Dog - Pig. In Korea, it is memorized with 12 letters (jiji) as <strong>Jachukinmyojinsaomishinyusulhae (子丑寅卯辰巳午未申酉戌亥)</strong>. 2026 is <strong>the year of the horse</strong>.</p></blockquote>
 <hr>
 <h2>⚠️ 3 things foreigners often misunderstand</h2>
@@ -287,7 +316,7 @@
 <hr>
 <h2>⑤ ★사주(四柱) vs 띠 — 가장 중요한 구분</h2>
 <p>외국인이 가장 헷갈리는 지점이자, 이 글에서 꼭 가져갈 한 가지. <strong>띠와 사주는 같은 게 아니다.</strong></p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th></th>
 <th><strong>띠 (ddi)</strong></th>
 <th><strong>사주 (saju)</strong></th>
@@ -317,7 +346,7 @@
 <td>이름표 한 글자</td>
 <td>네 줄짜리 프로필</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <ul>
 <li>핵심: <strong>띠는 사주의 한 조각</strong>이다. 사주의 &#x27;연(年) 기둥&#x27; 지지가 곧 그 사람의 띠다. 그래서 &quot;같은 띠&quot;여도 월·일·시가 다르면 사주는 완전히 다르다.</li>
 <li>그래서 명리 상담가들은 <strong>&quot;운세는 띠만으로 보기엔 너무 거칠다&quot;</strong> 고 한다. 띠는 12분의 1로 사람을 나누지만, 사주는 연·월·일·시를 곱해 훨씬 세밀하게 본다. 현대 명리에선 띠(연)보다 <strong>태어난 &#x27;날&#x27;(일간日干)</strong> 을 더 중요하게 보는 흐름도 있다.</li>
@@ -334,7 +363,7 @@
 <hr>
 <h2>⑦ Comparison of Asian Zodiac Signs — 12 animals that look the same but are different</h2>
 <p>The Chinese zodiac sign is not unique to Korea but is a common culture in East Asia and Southeast Asia. However, one or two species of animals are different in each country.</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>digit</th>
 <th>Korea</th>
 <th>China</th>
@@ -362,7 +391,7 @@
 <td>sheep</td>
 <td>Goat</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <ul>
 <li><strong>Vietnamese Year of the Cat</strong> is the most famous chai. There is also a theory that the pronunciation of &#x27;myo&#x27;, which means rabbit, was changed because it is similar to cat (mèo) in Vietnamese, and a cultural explanation that cats that catch mice were more familiar in rice farming countries. So, when you say “I’m a Rabbit,” your Vietnamese friend may reply, “We are cats!”</li>
 <li>Japan has the same animal composition as Korea and China, but it has a strong tendency to enjoy the Chinese zodiac sign as <strong>New Year&#x27;s card/zodiac notation</strong>.</li>
@@ -414,34 +443,7 @@
     <div><a href="korean-tea-drink-culture.en.html" style="color:var(--red);">Korean Traditional Tea & Drink Culture — Sikhye, Sujeonggwa and Herbal Teas &rarr;</a></div>
   </nav>
 
-  <section id="kc-related" style="display:none;margin:2.2rem 0 0.5rem;">
-    <h2 style="font-size:1.1rem;margin-bottom:0.8rem;">Related Guides</h2>
-    <div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"></div>
-  </section>
-  <script>
-  // related guides — 같은 카테고리 최신 6편 (contents.json fetch·언어 suffix 자동, 2026-07-04)
-  (function() {
-    var m = location.pathname.match(/\/content\/(.+?)(\.en|\.zh|\.ja)?\.html$/);
-    if (!m) return;
-    var slug = m[1], suf = m[2] || '';
-    fetch('../data/contents.json').then(function(r) { return r.json(); }).then(function(items) {
-      var me = null;
-      for (var i = 0; i < items.length; i++) { if (items[i].slug === slug) { me = items[i]; break; } }
-      if (!me) return;
-      var pool = items.filter(function(x) { return x.slug !== slug && x.category === me.category; });
-      pool.sort(function(a, b) { return (parseInt(b.id, 10) || 0) - (parseInt(a.id, 10) || 0); });
-      var picks = pool.slice(0, 6);
-      if (!picks.length) return;
-      document.getElementById('kc-related-grid').innerHTML = picks.map(function(x) {
-        var t = suf ? (x.title_en || x.title_kr) : (x.title_kr || x.title_en);
-        var ok = suf === '' || (suf === '.en' ? x.en_available : (suf === '.zh' ? x.cn_available : x.jp_available));
-        var href = x.slug + (ok ? suf : '') + '.html';
-        return '<a href="' + href + '" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">' + t + '</a>';
-      }).join('');
-      document.getElementById('kc-related').style.display = 'block';
-    }).catch(function() {});
-  })();
-  </script>
+  <section id="kc-related" style="margin:2.2rem 0 0.5rem;"><h2 style="font-size:1.1rem;margin-bottom:0.8rem;">Related Guides</h2><div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"><a href="royal-palace-autumn-nights.en.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Royal Palaces After Dark: Starlight Tours, Moonlight Walks and the Royal Culture Festival — the Reservation-Only Side of Autumn Seoul</a><a href="seoul-fireworks-festival.en.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Seoul International Fireworks Festival 2026: September 5 at Yeouido — How to Claim a Spot Among a Million People</a><a href="seoul-architecture-eras.en.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Seoul Architecture Time Walk — Traditional, Modern &amp; Contemporary: 15 Picks + An Architectural Appreciation Lens</a><a href="korea-kpop-fansign-videocall.en.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">K-pop Fansign·Video Call (Album Entry·Yeongtong)</a><a href="korea-idol-birthday-cafe.en.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Idol Birthday Cafe (Saengka·Cup Sleeve·Support)</a><a href="korea-kpop-music-show-taping.en.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">K-pop Music Show Taping (Inkigayo·M Countdown·Music Bank)</a></div></section>
   <!-- kc-comments -->
   <section id="kc-comments" style="margin:2.5rem 0 0.5rem;">
     <h2>Comments</h2>

@@ -34,7 +34,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/main.css">
 <style>
 .detail-wrap {
@@ -50,11 +50,11 @@
 .breadcrumb a { color: var(--red); font-weight: 600; }
 .detail-wrap h1 {
   font-size: 28px; font-weight: 800;
-  color: var(--black); margin-bottom: 8px;
+  color: var(--text); margin-bottom: 8px;
 }
 .detail-wrap h2 {
   font-size: 22px; font-weight: 700;
-  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  color: var(--text); margin-top: 32px; margin-bottom: 12px;
   padding-bottom: 6px;
   border-bottom: 2px solid var(--red);
 }
@@ -73,10 +73,19 @@
   font-size: 14px; line-height: 1.6;
   color: var(--text-mid); margin-bottom: 6px;
 }
+/* 표는 자기 컨테이너 안에서만 가로 스크롤한다 — 이게 없으면 min-content 폭이
+   뷰포트를 넘는 순간 페이지 전체가 가로로 밀렸다 (2026-08-31 점검 M2).
+   table 자체는 table 로 남겨 행·열 관계를 보존한다(display:block 으로 해결하지 않는 이유). */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 16px;
+}
 .detail-wrap table {
   width: 100%; border-collapse: collapse;
   margin-bottom: 16px; font-size: 13px;
 }
+.table-scroll > table { margin-bottom: 0; }
 .detail-wrap th {
   background: var(--black); color: #fff;
   padding: 10px 12px; text-align: left;
@@ -137,10 +146,30 @@
   user-select: none;
 }
 </style>
+<script>
+/* 테마 부트스트랩 — 2026-08-31 점검 M3.
+   기사 4,804p 에 이게 없어서, OS 다크 사용자가 홈(다크)에서 기사를 열면
+   라이트로 번쩍였다. main.css 의 다크 규칙은 전부 [data-theme="dark"] 스코프이고
+   prefers-color-scheme 미디어쿼리는 CSS 에 없으므로, 속성을 여기서 달아줘야 한다.
+   <head> 안에서 동기 실행 — paint 전에 끝나야 깜빡임이 없다.
+   허브와 달리 기사엔 토글 버튼이 없다. 저장된 선택(kc_theme)과 OS 설정만 따른다. */
+(function () {
+  try {
+    var s = localStorage.getItem('kc_theme');
+    if (s === 'dark' || (!s && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  } catch (e) {}
+})();
+</script>
 </head>
 <body>
+<a class="skip-link" href="#kc-main">본문 바로가기</a>
 <header class="site-header">
-  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <!-- width/height = 고유 크기(400x149). CSS 가 height:36px 로 줄이지만 브라우저는
+       이 비율로 자리를 미리 잡아 레이아웃 이동(CLS)을 막는다. 헤더 로고는 첫 화면에
+       보이므로 lazy 가 아니라 eager. -->
+  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo" width="400" height="149" loading="eager" decoding="async"></a>
   <div class="lang-switch">
     <a href="../content/korean-honbap-solo-culture.html" class="active">KR</a>
     <a href="../content/korean-honbap-solo-culture.en.html">EN</a>
@@ -149,7 +178,7 @@
   </div>
 </header>
 
-<main class="detail-wrap">
+<main class="detail-wrap" id="kc-main" tabindex="-1">
   <nav class="breadcrumb" aria-label="breadcrumb"><a href="../index.html">전체 가이드</a> &rsaquo; 한국 혼밥·혼술 문화 — 같이 먹는 게 미덕이던 나라에서, 왜 이제 혼자 먹을까</nav>
   <article>
   <h1>한국 혼밥·혼술 문화 — 같이 먹는 게 미덕이던 나라에서, 왜 이제 혼자 먹을까</h1>
@@ -157,7 +186,7 @@
 <p>한국 드라마와 예능을 보면 두 종류의 식사 장면이 번갈아 나온다. 하나는 온 가족·동료가 둥근 식탁에 둘러앉아 반찬을 나누고, &quot;많이 먹어&quot;를 외치며 소주잔을 부딪치는 <strong>&#x27;같이 먹기&#x27;</strong> 장면이다. 다른 하나는 요즘 부쩍 늘었다 — 주인공이 혼자 편의점 도시락을 까먹거나, 1인 고깃집에서 묵묵히 고기를 굽거나, 침대에 앉아 맥주 한 캔을 따며 <em>&quot;혼술이 최고지&quot;</em> 하는 장면. 외국인 눈에는 이게 그저 &quot;한국 사람도 혼자 먹는구나&quot; 정도로 보이지만, 한국인에게 이 변화는 훨씬 더 큰 이야기다. <strong>같이 먹는 것이 정(情)이자 미덕</strong>이었고, 혼자 먹는 사람에게 안쓰러운 눈길을 보내던 나라에서, 불과 10여 년 만에 <strong>혼밥·혼술</strong>이 당당한 라이프스타일이 됐기 때문이다. 이 글은 &quot;혼자 먹을 식당 추천&quot;(→ 맛집 가이드)이 아니라, <strong>이 변화가 왜 일어났는지·전통과 어떻게 충돌하는지·그리고 그 빛과 그림자</strong>를 외국인 눈높이로 풀어준다. 한국 문화 explainer 시리즈 <strong>28편</strong>.</p>
 <hr>
 <h2>★ 한눈에 보기 — &#x27;혼OO&#x27; 문화 6갈래</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>혼OO</th>
 <th>뜻</th>
 <th>한 줄</th>
@@ -192,7 +221,7 @@
 <td>혼자 + 족(族)</td>
 <td>위 활동을 즐기는 사람·문화를 통칭</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <blockquote><p><strong>핵심</strong>: 한국어는 <em>&#x27;혼자(honja)&#x27;</em> 의 &#x27;혼&#x27;을 앞에 붙여 <strong>무한 조합</strong>을 만든다. &#x27;혼밥&#x27;이 길을 열자 혼술·혼영·혼행·혼공·혼쇼(쇼핑)까지 줄줄이 생겼다. 이 조어 자체가 <em>&quot;혼자 하는 것을 더 이상 숨기지 않는다&quot;</em> 는 사회 변화의 신호다.</p></blockquote>
 <hr>
 <h2>⚠️ 외국인이 자주 오해하는 3가지</h2>
@@ -231,7 +260,7 @@
 <p>혼밥 문화가 퍼지자, 한국 사회는 빠르게 <strong>혼자 먹기 좋은 인프라</strong>를 갖췄다.</p>
 <p><strong>혼밥 레벨 (혼밥 난이도 농담)</strong></p>
 <p>한국 인터넷에는 <em>&quot;당신의 혼밥 레벨은?&quot;</em> 이라는 유명한 <strong>9단계 난이도 표</strong>가 있다. 혼자 먹기 가장 쉬운 곳에서 가장 어려운(=용기 필요한) 곳 순서다.</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>레벨</th>
 <th>장소</th>
 <th>체감 난이도</th>
@@ -261,7 +290,7 @@
 <td><strong>혼술 (술집에서 혼자)</strong></td>
 <td>최고수</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <blockquote><p>이 표는 농담이지만, <em>&quot;혼밥에도 단계가 있다&quot;</em> 는 인식 자체가 1인 문화의 확산을 보여준다.</p></blockquote>
 <p><strong>실제 인프라</strong></p>
 <ul>
@@ -274,7 +303,7 @@
 <hr>
 <h2>⑤ ★ 양면 — 자유의 빛과 고립의 그림자</h2>
 <p>혼밥·혼술 문화는 <strong>미화할 일도, 비관할 일도 아니다.</strong> 두 얼굴을 함께 봐야 정확하다.</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th></th>
 <th>☀️ 밝은 면 (자유·자기돌봄)</th>
 <th>🌑 어두운 면 (고립·외로움)</th>
@@ -299,7 +328,7 @@
 <td>개인 존중·다양성</td>
 <td><strong>사회적 고립·고독사</strong> 우려</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p><strong>밝은 면</strong> — 혼밥은 <em>결핍의 표시</em> 에서 <strong>자유·자기돌봄의 상징</strong>으로 바뀌었다. 남 눈치 안 보고 내가 원하는 걸 내 속도로 먹는 즐거움, 관계의 피로에서 벗어나 오롯이 나를 위한 시간을 갖는 회복. &#x27;나혼자산다&#x27;·&#x27;혼술남녀&#x27; 같은 방송이 이 즐거움을 정상적이고 멋진 것으로 그려내며 인식을 바꿨다.</p>
 <p><strong>어두운 면</strong> — 동시에, 1인 가구 급증은 <strong>사회적 고립</strong>이라는 그늘을 동반한다. 한국에서 <em>도움이 필요해도 의지할 곳이 없는 사회적 고립</em> 상태인 성인이 약 <strong>3명 중 1명</strong>이라는 조사가 있고(복지부, <em>확인 권장</em>), <strong>고독사</strong>(혼자 살다 홀로 맞는 죽음)는 2024년 약 <strong>3,924명</strong>으로 완만하지만 증가세다(<em>확인 권장</em>). 혼밥의 자유로움과 1인 가구의 외로움은 <strong>같은 동전의 양면</strong>이다.</p>
 <blockquote><p><strong>균형</strong>: 혼밥이 곧 외로움은 아니다. 많은 혼족은 자발적·만족스럽게 혼자를 즐긴다. 동시에 1인화가 만든 고립 위험도 실재한다. 한국 사회는 지금 <em>&quot;자유는 누리되 연결은 잃지 않기&quot;</em> 라는 숙제를 함께 풀고 있다.</p></blockquote>
@@ -359,34 +388,7 @@
     <div><a href="korean-chemyeon-face-culture.html" style="color:var(--red);">한국 '체면' 문화 — 왜 한국인은 남의 눈을 이렇게 의식할까 &rarr;</a></div>
   </nav>
 
-  <section id="kc-related" style="display:none;margin:2.2rem 0 0.5rem;">
-    <h2 style="font-size:1.1rem;margin-bottom:0.8rem;">관련 가이드</h2>
-    <div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"></div>
-  </section>
-  <script>
-  // related guides — 같은 카테고리 최신 6편 (contents.json fetch·언어 suffix 자동, 2026-07-04)
-  (function() {
-    var m = location.pathname.match(/\/content\/(.+?)(\.en|\.zh|\.ja)?\.html$/);
-    if (!m) return;
-    var slug = m[1], suf = m[2] || '';
-    fetch('../data/contents.json').then(function(r) { return r.json(); }).then(function(items) {
-      var me = null;
-      for (var i = 0; i < items.length; i++) { if (items[i].slug === slug) { me = items[i]; break; } }
-      if (!me) return;
-      var pool = items.filter(function(x) { return x.slug !== slug && x.category === me.category; });
-      pool.sort(function(a, b) { return (parseInt(b.id, 10) || 0) - (parseInt(a.id, 10) || 0); });
-      var picks = pool.slice(0, 6);
-      if (!picks.length) return;
-      document.getElementById('kc-related-grid').innerHTML = picks.map(function(x) {
-        var t = suf ? (x.title_en || x.title_kr) : (x.title_kr || x.title_en);
-        var ok = suf === '' || (suf === '.en' ? x.en_available : (suf === '.zh' ? x.cn_available : x.jp_available));
-        var href = x.slug + (ok ? suf : '') + '.html';
-        return '<a href="' + href + '" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">' + t + '</a>';
-      }).join('');
-      document.getElementById('kc-related').style.display = 'block';
-    }).catch(function() {});
-  })();
-  </script>
+  <section id="kc-related" style="margin:2.2rem 0 0.5rem;"><h2 style="font-size:1.1rem;margin-bottom:0.8rem;">관련 가이드</h2><div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"><a href="royal-palace-autumn-nights.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">궁궐의 가을밤 — 별빛야행·달빛기행·궁중문화축전, 예약 없이는 못 들어가는 프로그램 총정리</a><a href="seoul-fireworks-festival.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">서울세계불꽃축제 2026 — 9월 5일 여의도, 100만 인파 속에서 명당 잡는 법</a><a href="seoul-architecture-eras.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">서울 건축 시대 산책 — 전통·근대·현대 15선 + 건축 감상 렌즈</a><a href="korea-kpop-fansign-videocall.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">외국인 K-pop 팬사인회·영상통화 응모 가이드 — 음반 응모·영통</a><a href="korea-idol-birthday-cafe.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">외국인 아이돌 생일카페 가이드 — 생카·컵슬리브·서포트</a><a href="korea-kpop-music-show-taping.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">외국인 K-pop 음악방송 방청 가이드 — 인기가요·엠카·뮤뱅 사전녹화</a></div></section>
   <!-- kc-comments -->
   <section id="kc-comments" style="margin:2.5rem 0 0.5rem;">
     <h2>댓글</h2>

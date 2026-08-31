@@ -34,7 +34,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/main.css">
 <style>
 .detail-wrap {
@@ -50,11 +50,11 @@
 .breadcrumb a { color: var(--red); font-weight: 600; }
 .detail-wrap h1 {
   font-size: 28px; font-weight: 800;
-  color: var(--black); margin-bottom: 8px;
+  color: var(--text); margin-bottom: 8px;
 }
 .detail-wrap h2 {
   font-size: 22px; font-weight: 700;
-  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  color: var(--text); margin-top: 32px; margin-bottom: 12px;
   padding-bottom: 6px;
   border-bottom: 2px solid var(--red);
 }
@@ -73,10 +73,19 @@
   font-size: 14px; line-height: 1.6;
   color: var(--text-mid); margin-bottom: 6px;
 }
+/* 표는 자기 컨테이너 안에서만 가로 스크롤한다 — 이게 없으면 min-content 폭이
+   뷰포트를 넘는 순간 페이지 전체가 가로로 밀렸다 (2026-08-31 점검 M2).
+   table 자체는 table 로 남겨 행·열 관계를 보존한다(display:block 으로 해결하지 않는 이유). */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 16px;
+}
 .detail-wrap table {
   width: 100%; border-collapse: collapse;
   margin-bottom: 16px; font-size: 13px;
 }
+.table-scroll > table { margin-bottom: 0; }
 .detail-wrap th {
   background: var(--black); color: #fff;
   padding: 10px 12px; text-align: left;
@@ -137,11 +146,31 @@
   user-select: none;
 }
 </style>
+<script>
+/* 테마 부트스트랩 — 2026-08-31 점검 M3.
+   기사 4,804p 에 이게 없어서, OS 다크 사용자가 홈(다크)에서 기사를 열면
+   라이트로 번쩍였다. main.css 의 다크 규칙은 전부 [data-theme="dark"] 스코프이고
+   prefers-color-scheme 미디어쿼리는 CSS 에 없으므로, 속성을 여기서 달아줘야 한다.
+   <head> 안에서 동기 실행 — paint 전에 끝나야 깜빡임이 없다.
+   허브와 달리 기사엔 토글 버튼이 없다. 저장된 선택(kc_theme)과 OS 설정만 따른다. */
+(function () {
+  try {
+    var s = localStorage.getItem('kc_theme');
+    if (s === 'dark' || (!s && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  } catch (e) {}
+})();
+</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "TouristAttraction", "name": "서울 hiking 둘레길 매트릭스 deep dive", "url": "https://mgself414.github.io/keychingu-content-deploy/content/hiking-duregil.html", "image": "https://mgself414.github.io/keychingu-content-deploy/og/hiking-duregil.png", "address": {"@type": "PostalAddress", "addressLocality": "Seoul", "addressCountry": "KR"}, "touristType": "Foreigner-friendly tourism"}</script>
 </head>
 <body>
+<a class="skip-link" href="#kc-main">跳到正文</a>
 <header class="site-header">
-  <a href="../zh/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <!-- width/height = 고유 크기(400x149). CSS 가 height:36px 로 줄이지만 브라우저는
+       이 비율로 자리를 미리 잡아 레이아웃 이동(CLS)을 막는다. 헤더 로고는 첫 화면에
+       보이므로 lazy 가 아니라 eager. -->
+  <a href="../zh/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo" width="400" height="149" loading="eager" decoding="async"></a>
   <div class="lang-switch">
     <a href="../content/hiking-duregil.html">KR</a>
     <a href="../content/hiking-duregil.en.html">EN</a>
@@ -150,7 +179,7 @@
   </div>
 </header>
 
-<main class="detail-wrap">
+<main class="detail-wrap" id="kc-main" tabindex="-1">
   <nav class="breadcrumb" aria-label="breadcrumb"><a href="../zh/index.html">全部指南</a> &rsaquo; 首尔徒步环山路路线深度探索</nav>
   <article>
   <h1>首尔徒步·Dulegil矩阵深度潜水-北汉山和冠岳山的12个选择</h1>
@@ -161,7 +190,7 @@
 <p>外国徒步和自然爱好者第一名=<strong>首尔徒步·Dulegil深潜</strong>（<a href="hiking.zh.html" class="xref">#148</a>徒步·<a href="cycling-dulegil.zh.html" class="xref">#363</a>自行车·Dulegil·<a href="nowon-dobong-hiking.zh.html" class="xref">#177</a>Nowon Dullegil·<a href="gangneung-sokcho-travel-map.zh.html" class="xref">#385</a>第4季后续）。北汉山（韩国#1城市国家公园）+首尔24座山+156公里步道+外国人英语OK·EN/JP爱好者12%。</p>
 <hr>
 <h2>★ 12条徒步·旅行矩阵一览</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>＃</th>
 <th>山脉和小径</th>
 <th>4轴</th>
@@ -239,7 +268,7 @@
 <td>外国狂热</td>
 <td>KTO认证/国外发烧友全套</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p><strong>+附加4</strong>：出国徒步礼仪（垃圾·礼仪）·出国徒步安全（<a href="emergency-hospital.zh.html" class="xref">#405</a>·<a href="women-solo-safety.zh.html" class="xref">#501</a>合）·出国徒步+寺庙（<a href="temple-experience-deep.zh.html" class="xref">#509</a>合）·出国徒步+韩服拍照（<a href="hanbok-palace.zh.html" class="xref">#379</a>合）</p>
 <hr>
 <h2>⚠ 外国人常犯的5个错误</h2>
@@ -385,7 +414,7 @@
 <hr>
 <h2>📊 外国狂热数字矩阵</h2>
 <p>韩国外国游客=<strong>每年1750万人次（2024年）</strong>·MZ（20-39岁）<strong>58%</strong>·平均停留<strong>6.4天</strong>·平均消费<strong>1,605美元/人</strong>·回头率<strong>23%</strong>（韩国旅游发展局2024年统计）。</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>项目</th>
 <th>数字</th>
 <th>来源</th>
@@ -425,7 +454,7 @@
 <td><strong>春季（樱花，四月）·秋季（秋叶，十月至十一月）</strong></td>
 <td>旅游组织季节分析</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <blockquote><p><strong>数值解读</strong>：英文全套65%·付费80%·季节矩阵春季·秋季#1·1339紧急24小时英文=老外初入安全·狂热矩阵契合。</p></blockquote>
 <h2>🏷标签</h2>
 <p><code>#서울hiking둘레길매트릭스deepdive</code> <code>#SeoulHikingDuregilMatrix</code> <code>#북한산국립공원836m한국1도시21개봉우리</code> <code>#남산262m둘레길6.6km도심1#13</code> <code>#관악산632m사당역코스#174</code> <code>#도봉산740m도봉둘레길#177</code> <code>#북악산342m청와대#241</code> <code>#인왕산338m사직단#191</code> <code>#응봉산아차산용마수락불암한강view#260</code> <code>#서울둘레길156km2014 8코스도봉수락용마아차고덕대모관악안양천봉산북한산</code> <code>#북한산둘레길71.5km 21코스</code> <code>#노원도봉둘레길#177</code> <code>#KlookKKdaySeoulHikers영어가이드</code> <code>#KTO인증패키지등산장비렌탈</code> <code>#매너쓰레기안전#405#501사찰#509한복#379</code> <code>#키친구</code></p>
@@ -452,34 +481,7 @@
     <div><a href="korean-sns.zh.html" style="color:var(--red);">外国人韩式社交媒体沟通法深度探索 &rarr;</a></div>
   </nav>
 
-  <section id="kc-related" style="display:none;margin:2.2rem 0 0.5rem;">
-    <h2 style="font-size:1.1rem;margin-bottom:0.8rem;">相关指南</h2>
-    <div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"></div>
-  </section>
-  <script>
-  // related guides — 같은 카테고리 최신 6편 (contents.json fetch·언어 suffix 자동, 2026-07-04)
-  (function() {
-    var m = location.pathname.match(/\/content\/(.+?)(\.en|\.zh|\.ja)?\.html$/);
-    if (!m) return;
-    var slug = m[1], suf = m[2] || '';
-    fetch('../data/contents.json').then(function(r) { return r.json(); }).then(function(items) {
-      var me = null;
-      for (var i = 0; i < items.length; i++) { if (items[i].slug === slug) { me = items[i]; break; } }
-      if (!me) return;
-      var pool = items.filter(function(x) { return x.slug !== slug && x.category === me.category; });
-      pool.sort(function(a, b) { return (parseInt(b.id, 10) || 0) - (parseInt(a.id, 10) || 0); });
-      var picks = pool.slice(0, 6);
-      if (!picks.length) return;
-      document.getElementById('kc-related-grid').innerHTML = picks.map(function(x) {
-        var t = suf ? (x.title_en || x.title_kr) : (x.title_kr || x.title_en);
-        var ok = suf === '' || (suf === '.en' ? x.en_available : (suf === '.zh' ? x.cn_available : x.jp_available));
-        var href = x.slug + (ok ? suf : '') + '.html';
-        return '<a href="' + href + '" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">' + t + '</a>';
-      }).join('');
-      document.getElementById('kc-related').style.display = 'block';
-    }).catch(function() {});
-  })();
-  </script>
+  <section id="kc-related" style="margin:2.2rem 0 0.5rem;"><h2 style="font-size:1.1rem;margin-bottom:0.8rem;">相关指南</h2><div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"><a href="busan-night-view.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Busan Night Views — Three Kinds of Night: Sea, Mountain, Alley</a><a href="seoul-snow-ice-rink.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Snow on the Palaces: Eight City Snowscape Spots and Winter Ice Rinks — How to Wait for a Snow Forecast</a><a href="seoul-ginkgo-walk.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Yellow Seoul: The Ginkgo Walk Guide — A Different November from Red Foliage</a><a href="seoul-grass-season.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Seoul Silver Grass and Pink Muhly: Autumn Answer to Cherry Blossoms — The Grass Season Guide</a><a href="seoul-sunset-spots.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Seoul Sunset Spots: 12 Golden-Hour Places Worth Arriving 45 Minutes Early For</a><a href="naengmyeon-index.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">냉면 Index for Foreign Travelers</a></div></section>
   <!-- kc-comments -->
   <section id="kc-comments" style="margin:2.5rem 0 0.5rem;">
     <h2>评论</h2>

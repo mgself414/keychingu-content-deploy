@@ -34,7 +34,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/main.css">
 <style>
 .detail-wrap {
@@ -50,11 +50,11 @@
 .breadcrumb a { color: var(--red); font-weight: 600; }
 .detail-wrap h1 {
   font-size: 28px; font-weight: 800;
-  color: var(--black); margin-bottom: 8px;
+  color: var(--text); margin-bottom: 8px;
 }
 .detail-wrap h2 {
   font-size: 22px; font-weight: 700;
-  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  color: var(--text); margin-top: 32px; margin-bottom: 12px;
   padding-bottom: 6px;
   border-bottom: 2px solid var(--red);
 }
@@ -73,10 +73,19 @@
   font-size: 14px; line-height: 1.6;
   color: var(--text-mid); margin-bottom: 6px;
 }
+/* 표는 자기 컨테이너 안에서만 가로 스크롤한다 — 이게 없으면 min-content 폭이
+   뷰포트를 넘는 순간 페이지 전체가 가로로 밀렸다 (2026-08-31 점검 M2).
+   table 자체는 table 로 남겨 행·열 관계를 보존한다(display:block 으로 해결하지 않는 이유). */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 16px;
+}
 .detail-wrap table {
   width: 100%; border-collapse: collapse;
   margin-bottom: 16px; font-size: 13px;
 }
+.table-scroll > table { margin-bottom: 0; }
 .detail-wrap th {
   background: var(--black); color: #fff;
   padding: 10px 12px; text-align: left;
@@ -137,11 +146,31 @@
   user-select: none;
 }
 </style>
+<script>
+/* 테마 부트스트랩 — 2026-08-31 점검 M3.
+   기사 4,804p 에 이게 없어서, OS 다크 사용자가 홈(다크)에서 기사를 열면
+   라이트로 번쩍였다. main.css 의 다크 규칙은 전부 [data-theme="dark"] 스코프이고
+   prefers-color-scheme 미디어쿼리는 CSS 에 없으므로, 속성을 여기서 달아줘야 한다.
+   <head> 안에서 동기 실행 — paint 전에 끝나야 깜빡임이 없다.
+   허브와 달리 기사엔 토글 버튼이 없다. 저장된 선택(kc_theme)과 OS 설정만 따른다. */
+(function () {
+  try {
+    var s = localStorage.getItem('kc_theme');
+    if (s === 'dark' || (!s && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  } catch (e) {}
+})();
+</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "CafeOrCoffeeShop", "name": "43 · 양재천 산책과 맛집", "url": "https://mgself414.github.io/keychingu-content-deploy/content/yangjaecheon-guide.html", "image": "https://mgself414.github.io/keychingu-content-deploy/og/yangjaecheon-guide.png", "address": {"@type": "PostalAddress", "addressLocality": "Seoul", "addressCountry": "KR"}}</script>
 </head>
 <body>
+<a class="skip-link" href="#kc-main">跳到正文</a>
 <header class="site-header">
-  <a href="../zh/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <!-- width/height = 고유 크기(400x149). CSS 가 height:36px 로 줄이지만 브라우저는
+       이 비율로 자리를 미리 잡아 레이아웃 이동(CLS)을 막는다. 헤더 로고는 첫 화면에
+       보이므로 lazy 가 아니라 eager. -->
+  <a href="../zh/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo" width="400" height="149" loading="eager" decoding="async"></a>
   <div class="lang-switch">
     <a href="../content/yangjaecheon-guide.html">KR</a>
     <a href="../content/yangjaecheon-guide.en.html">EN</a>
@@ -150,7 +179,7 @@
   </div>
 </header>
 
-<main class="detail-wrap">
+<main class="detail-wrap" id="kc-main" tabindex="-1">
   <nav class="breadcrumb" aria-label="breadcrumb"><a href="../zh/index.html">全部指南</a> &rsaquo; 良才川散步与美食</nav>
   <article>
   <h1>43 · 良才川 (Yangjaecheon / 양재천) 散步与美食 — 首尔最具格调的滨水咖啡街</h1>
@@ -174,7 +203,7 @@
 <p>良才川 (Yangjaecheon / 양재천) 发源于果川 (Gwacheon / 과천)，向东穿过首尔 (Seoul / 서울) 瑞草区 (Seocho-gu / 서초구) 和江南区 (Gangnam-gu / 강남구) 南部，最终汇入炭川 (Tancheon / 탄천)。首尔 (Seoul / 서울) 段约9公里长的自行车道和散步路设施完善，两岸地势平坦缓和，无论是谁，只要穿着运动鞋都能轻松漫步。</p>
 <p>良才川 (Yangjaecheon / 양재천) 的魅力在于它不仅仅是一条简单的散步路，更是<strong>两岸咖啡馆、烘焙店、餐厅如小巷 (golmok / 골목) 般林立的“滨水商业区”</strong>。特别是瑞草区 (Seocho-gu / 서초구) 一侧的良才川路29街 (Yangjaecheon-ro 29-gil / 양재천로29길) 一带，被称为“良才川咖啡街 (Yangjaecheon Cafe Street / 양재천 카페거리)”，即使在平日也吸引着当地居民络绎不绝。</p>
 <h3>1-2. 季节亮点</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>季节</th>
 <th>特点</th>
 </tr></thead><tbody>
@@ -194,7 +223,7 @@
 <td><strong>冬 (12~2月)</strong></td>
 <td>较为清净。适合在咖啡馆里温暖度过，感受街区氛围。</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h3>1-3. 推荐散步路线 (2条)</h3>
 <p><strong>[A] 良才市民之林 (Yangjae Citizen&#x27;s Forest / 양재시민의숲) → 咖啡街 (Cafe Street / 카페거리) 路线 (约2公里，30~40分钟)</strong></p>
 <ul>
@@ -221,7 +250,7 @@
 <h2>2. 各区域美食店18家</h2>
 <h3>2-1. 瑞草区 (Seocho-gu / 서초구) 良才川 (Yangjaecheon / 양재천) 边 (7家)</h3>
 <p>良才川 (Yangjaecheon / 양재천) 的西侧·南侧河岸，也是“良才川咖啡街 (Yangjaecheon Cafe Street / 양재천 카페거리)”的核心区域。以良才川路29街 (Yangjaecheon-ro 29-gil / 양재천로29길) 为中心，烘焙店密度在首尔 (Seoul / 서울) 居高不下。结束城市观光后，如果入住附近酒店 (JW Marriott / JW메리어트 · Ritz-Carlton / 리츠칼튼)，这里是晚餐时段的首选区域。</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>店铺名称</th>
 <th>位置</th>
 <th>类别</th>
@@ -269,10 +298,10 @@
 <td>烘焙</td>
 <td>小街区面包店的温馨感。价格区间 ₩4,400 (~$3 / ~23 RMB / ~460 JPY) ~ ₩5,400 (~$4 / ~28 RMB / ~570 JPY)。</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h3>2-2. 江南区 (Gangnam-gu / 강남구) 良才川 (Yangjaecheon / 양재천) 北侧·道谷 (Dogok / 도곡) (7家)</h3>
 <p>良才川 (Yangjaecheon / 양재천) 北侧河岸的道谷洞 (Dogok-dong / 도곡동)·驿三洞 (Yeoksam-dong / 역삼동) 一带。法式、早午餐、葡萄酒吧较多，晚餐需求量大。从江南站 (Gangnam Station / 강남역)·良才站 (Yangjae Station / 양재역) 交通便利。</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>店铺名称</th>
 <th>位置</th>
 <th>类别</th>
@@ -320,10 +349,10 @@
 <td>韩餐 (套餐)</td>
 <td>₩50,000 (~$37 / ~265 RMB / ~5,270 JPY) ~ ₩75,000 (~$55 / ~397 RMB / ~7,900 JPY) 级别。适合体验韩式高级餐厅。</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h3>2-3. 江南区 (Gangnam-gu / 강남구) 开浦 (Gaepo / 개포)·大峙 (Daechi / 대치) (4家)</h3>
 <p>良才川 (Yangjaecheon / 양재천) 东侧区域。公寓小区之间有许多安静的街区咖啡馆。适合与汉堤站 (Hanti Station / 한티역)·大峙站 (Daechi Station / 대치역) 为起点的散步路线结合。</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>店铺名称</th>
 <th>位置</th>
 <th>类别</th>
@@ -353,7 +382,7 @@
 <td>甜甜圈烘焙</td>
 <td>甜甜圈专营。₩3,500 (~$3 / ~18 RMB / ~370 JPY) ~ ₩12,900 (~$9 / ~68 RMB / ~1,360 JPY)。</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>3. 按时间段推荐流程</h2>
 <h3>3-1. 早餐·早午餐 (10:00~13:00)</h3>
@@ -458,34 +487,7 @@
     <div><a href="hangang-summer.zh.html" style="color:var(--red);">汉江夏季指南 &rarr;</a></div>
   </nav>
 
-  <section id="kc-related" style="display:none;margin:2.2rem 0 0.5rem;">
-    <h2 style="font-size:1.1rem;margin-bottom:0.8rem;">相关指南</h2>
-    <div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"></div>
-  </section>
-  <script>
-  // related guides — 같은 카테고리 최신 6편 (contents.json fetch·언어 suffix 자동, 2026-07-04)
-  (function() {
-    var m = location.pathname.match(/\/content\/(.+?)(\.en|\.zh|\.ja)?\.html$/);
-    if (!m) return;
-    var slug = m[1], suf = m[2] || '';
-    fetch('../data/contents.json').then(function(r) { return r.json(); }).then(function(items) {
-      var me = null;
-      for (var i = 0; i < items.length; i++) { if (items[i].slug === slug) { me = items[i]; break; } }
-      if (!me) return;
-      var pool = items.filter(function(x) { return x.slug !== slug && x.category === me.category; });
-      pool.sort(function(a, b) { return (parseInt(b.id, 10) || 0) - (parseInt(a.id, 10) || 0); });
-      var picks = pool.slice(0, 6);
-      if (!picks.length) return;
-      document.getElementById('kc-related-grid').innerHTML = picks.map(function(x) {
-        var t = suf ? (x.title_en || x.title_kr) : (x.title_kr || x.title_en);
-        var ok = suf === '' || (suf === '.en' ? x.en_available : (suf === '.zh' ? x.cn_available : x.jp_available));
-        var href = x.slug + (ok ? suf : '') + '.html';
-        return '<a href="' + href + '" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">' + t + '</a>';
-      }).join('');
-      document.getElementById('kc-related').style.display = 'block';
-    }).catch(function() {});
-  })();
-  </script>
+  <section id="kc-related" style="margin:2.2rem 0 0.5rem;"><h2 style="font-size:1.1rem;margin-bottom:0.8rem;">相关指南</h2><div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"><a href="korea-souvenir-data-guide.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Korean Souvenirs, Chosen by Data — A Matrix by Recipient and Budget</a><a href="busan-shopping-guide.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Busan Shopping Guide — Between the World&#x27;s Largest Department Store and a Wartime Alley Market</a><a href="korea-bubbletea-drink-chains.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Bubble Tea &amp; Drink Chains in Korea: What to Sip Besides Coffee</a><a href="korea-icecream-chains.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Korean Ice Cream Chains: Why Baskin Robbins Korea Is a Different World</a><a href="korea-burger-chains.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Korean Burger Chains: The Complete Guide to Mom&#x27;s Touch, Lotteria &amp; More</a><a href="korea-underground-mall.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Underground Mall Shopping (GOTO Mall·Bupyeong·Gangnam)</a></div></section>
   <!-- kc-comments -->
   <section id="kc-comments" style="margin:2.5rem 0 0.5rem;">
     <h2>评论</h2>

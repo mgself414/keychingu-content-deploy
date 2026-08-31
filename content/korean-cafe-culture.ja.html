@@ -34,7 +34,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/main.css">
 <style>
 .detail-wrap {
@@ -50,11 +50,11 @@
 .breadcrumb a { color: var(--red); font-weight: 600; }
 .detail-wrap h1 {
   font-size: 28px; font-weight: 800;
-  color: var(--black); margin-bottom: 8px;
+  color: var(--text); margin-bottom: 8px;
 }
 .detail-wrap h2 {
   font-size: 22px; font-weight: 700;
-  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  color: var(--text); margin-top: 32px; margin-bottom: 12px;
   padding-bottom: 6px;
   border-bottom: 2px solid var(--red);
 }
@@ -73,10 +73,19 @@
   font-size: 14px; line-height: 1.6;
   color: var(--text-mid); margin-bottom: 6px;
 }
+/* 표는 자기 컨테이너 안에서만 가로 스크롤한다 — 이게 없으면 min-content 폭이
+   뷰포트를 넘는 순간 페이지 전체가 가로로 밀렸다 (2026-08-31 점검 M2).
+   table 자체는 table 로 남겨 행·열 관계를 보존한다(display:block 으로 해결하지 않는 이유). */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 16px;
+}
 .detail-wrap table {
   width: 100%; border-collapse: collapse;
   margin-bottom: 16px; font-size: 13px;
 }
+.table-scroll > table { margin-bottom: 0; }
 .detail-wrap th {
   background: var(--black); color: #fff;
   padding: 10px 12px; text-align: left;
@@ -137,11 +146,31 @@
   user-select: none;
 }
 </style>
+<script>
+/* 테마 부트스트랩 — 2026-08-31 점검 M3.
+   기사 4,804p 에 이게 없어서, OS 다크 사용자가 홈(다크)에서 기사를 열면
+   라이트로 번쩍였다. main.css 의 다크 규칙은 전부 [data-theme="dark"] 스코프이고
+   prefers-color-scheme 미디어쿼리는 CSS 에 없으므로, 속성을 여기서 달아줘야 한다.
+   <head> 안에서 동기 실행 — paint 전에 끝나야 깜빡임이 없다.
+   허브와 달리 기사엔 토글 버튼이 없다. 저장된 선택(kc_theme)과 OS 설정만 따른다. */
+(function () {
+  try {
+    var s = localStorage.getItem('kc_theme');
+    if (s === 'dark' || (!s && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  } catch (e) {}
+})();
+</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "CafeOrCoffeeShop", "name": "한국 카페 공화국 — 왜 골목마다 카페인가, 세계 최고 카페 밀도의 비밀", "url": "https://mgself414.github.io/keychingu-content-deploy/content/korean-cafe-culture.html", "image": "https://mgself414.github.io/keychingu-content-deploy/og/korean-cafe-culture.png", "address": {"@type": "PostalAddress", "addressLocality": "Seoul", "addressCountry": "KR"}}</script>
 </head>
 <body>
+<a class="skip-link" href="#kc-main">本文へスキップ</a>
 <header class="site-header">
-  <a href="../ja/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <!-- width/height = 고유 크기(400x149). CSS 가 height:36px 로 줄이지만 브라우저는
+       이 비율로 자리를 미리 잡아 레이아웃 이동(CLS)을 막는다. 헤더 로고는 첫 화면에
+       보이므로 lazy 가 아니라 eager. -->
+  <a href="../ja/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo" width="400" height="149" loading="eager" decoding="async"></a>
   <div class="lang-switch">
     <a href="../content/korean-cafe-culture.html">KR</a>
     <a href="../content/korean-cafe-culture.en.html">EN</a>
@@ -150,7 +179,7 @@
   </div>
 </header>
 
-<main class="detail-wrap">
+<main class="detail-wrap" id="kc-main" tabindex="-1">
   <nav class="breadcrumb" aria-label="breadcrumb"><a href="../ja/index.html">ガイド一覧</a> &rsaquo; 韓国のカフェ事情</nav>
   <article>
   <h1>韓国カフェ共和国 - なぜ路地ごとにカフェなのか、世界最高のカフェ密度の秘密</h1>
@@ -158,7 +187,7 @@
 <p>ソウルに到着した外国人がほとんど例外なく投げる質問がある。 <strong>「なぜこんなにカフェが多いの？」</strong> 1ブロックにカフェが4つ、同じ建物1階と3階に別のカフェ、路地を回ればまたカフェ。スターバックスの向こうにまたスターバックスがあるという冗談がジンダムのように通じる。実際、韓国は<strong>人口比カフェ数が世界最高水準</strong>に選ばれ、ソウルはニューヨーク・東京・シアトルに先んじたカフェ密度を持っていると報告される（統計はソース別に差がある — 下SOURCES、確認推奨）。外国人はこれを普通「韓国人がコーヒーをすごく好きなみたい」ほどに解釈するが、本当の理由は<strong>コーヒーの味ではない。この記事は「どのカフェに行く」（→場所ガイド）ではなく、</strong>なぜ韓国が「カフェ共和国」になり、韓国人はカフェをどのように使うのか<strong>を外国人の目の高さに解いてくれる。韓国文化explainerシリーズ</strong>27編**。</p>
 <hr>
 <p>＃＃★一目で見る - 韓国カフェ5タイプ</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>タイプ</th>
 <th>何</th>
 <th>一行</th>
@@ -188,7 +217,7 @@
 <td>漢江ビュー・山中・倉庫型大型カフェカフェはすぐに「出かけ先」</td>
 <td>★★★（ビュー・デート）</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <blockquote><p><strong>核心</strong>: 韓国カフェは「コーヒー売り場」ではなく、<strong>勉強室・会議室・デート場所・展示場・出張先</strong>まで兼ねる多機能空間だ。だからこんなに多い。</p></blockquote>
 <hr>
 <p>＃＃⚠️外国人がよく誤解する3つのこと</p>
@@ -244,7 +273,7 @@
 <hr>
 <h2>⑥ 시장 구조 — 저가·프랜차이즈·개인 3층</h2>
 <p>외국인이 알아두면 좋은 한국 카페 시장의 <strong>3개 층</strong>.</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>フロア</th>
 <th>代表</th>
 <th>価格帯（アメリカーノ）</th>
@@ -265,7 +294,7 @@
 <td>近所独立カフェ・ローステリー￥4,000～7,000+</td>
 <td>空間・豆・デザートで差別化。インスタスポット</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <ul>
 <li><strong>低価格コーヒーの負傷</strong> - 2020年代に入って<strong>メガコーヒー・コンポーズ・パンダバン</strong>のような低価格ブランドが店舗数を爆発的に増やした。アメリカーノ一杯1,500ウォン台で「コーヒーの日常化」を導いた。</li>
 <li><strong>飽和と海外進出</strong> - 国内が飽和状態で主要ブランドが<strong>海外出店</strong>に目を向けるほど市場が密集している。</li>
@@ -343,34 +372,7 @@
     <div><a href="korean-honbap-solo-culture.ja.html" style="color:var(--red);">韓国ソロ飯・ソロ酒文化 &rarr;</a></div>
   </nav>
 
-  <section id="kc-related" style="display:none;margin:2.2rem 0 0.5rem;">
-    <h2 style="font-size:1.1rem;margin-bottom:0.8rem;">関連ガイド</h2>
-    <div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"></div>
-  </section>
-  <script>
-  // related guides — 같은 카테고리 최신 6편 (contents.json fetch·언어 suffix 자동, 2026-07-04)
-  (function() {
-    var m = location.pathname.match(/\/content\/(.+?)(\.en|\.zh|\.ja)?\.html$/);
-    if (!m) return;
-    var slug = m[1], suf = m[2] || '';
-    fetch('../data/contents.json').then(function(r) { return r.json(); }).then(function(items) {
-      var me = null;
-      for (var i = 0; i < items.length; i++) { if (items[i].slug === slug) { me = items[i]; break; } }
-      if (!me) return;
-      var pool = items.filter(function(x) { return x.slug !== slug && x.category === me.category; });
-      pool.sort(function(a, b) { return (parseInt(b.id, 10) || 0) - (parseInt(a.id, 10) || 0); });
-      var picks = pool.slice(0, 6);
-      if (!picks.length) return;
-      document.getElementById('kc-related-grid').innerHTML = picks.map(function(x) {
-        var t = suf ? (x.title_en || x.title_kr) : (x.title_kr || x.title_en);
-        var ok = suf === '' || (suf === '.en' ? x.en_available : (suf === '.zh' ? x.cn_available : x.jp_available));
-        var href = x.slug + (ok ? suf : '') + '.html';
-        return '<a href="' + href + '" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">' + t + '</a>';
-      }).join('');
-      document.getElementById('kc-related').style.display = 'block';
-    }).catch(function() {});
-  })();
-  </script>
+  <section id="kc-related" style="margin:2.2rem 0 0.5rem;"><h2 style="font-size:1.1rem;margin-bottom:0.8rem;">関連ガイド</h2><div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"><a href="royal-palace-autumn-nights.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Royal Palaces After Dark: Starlight Tours, Moonlight Walks and the Royal Culture Festival — the Reservation-Only Side of Autumn Seoul</a><a href="seoul-fireworks-festival.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Seoul International Fireworks Festival 2026: September 5 at Yeouido — How to Claim a Spot Among a Million People</a><a href="seoul-architecture-eras.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Seoul Architecture Time Walk — Traditional, Modern &amp; Contemporary: 15 Picks + An Architectural Appreciation Lens</a><a href="korea-kpop-fansign-videocall.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">K-pop Fansign·Video Call (Album Entry·Yeongtong)</a><a href="korea-idol-birthday-cafe.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Idol Birthday Cafe (Saengka·Cup Sleeve·Support)</a><a href="korea-kpop-music-show-taping.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">K-pop Music Show Taping (Inkigayo·M Countdown·Music Bank)</a></div></section>
   <!-- kc-comments -->
   <section id="kc-comments" style="margin:2.5rem 0 0.5rem;">
     <h2>コメント</h2>

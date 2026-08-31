@@ -34,7 +34,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/main.css">
 <style>
 .detail-wrap {
@@ -50,11 +50,11 @@
 .breadcrumb a { color: var(--red); font-weight: 600; }
 .detail-wrap h1 {
   font-size: 28px; font-weight: 800;
-  color: var(--black); margin-bottom: 8px;
+  color: var(--text); margin-bottom: 8px;
 }
 .detail-wrap h2 {
   font-size: 22px; font-weight: 700;
-  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  color: var(--text); margin-top: 32px; margin-bottom: 12px;
   padding-bottom: 6px;
   border-bottom: 2px solid var(--red);
 }
@@ -73,10 +73,19 @@
   font-size: 14px; line-height: 1.6;
   color: var(--text-mid); margin-bottom: 6px;
 }
+/* 표는 자기 컨테이너 안에서만 가로 스크롤한다 — 이게 없으면 min-content 폭이
+   뷰포트를 넘는 순간 페이지 전체가 가로로 밀렸다 (2026-08-31 점검 M2).
+   table 자체는 table 로 남겨 행·열 관계를 보존한다(display:block 으로 해결하지 않는 이유). */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 16px;
+}
 .detail-wrap table {
   width: 100%; border-collapse: collapse;
   margin-bottom: 16px; font-size: 13px;
 }
+.table-scroll > table { margin-bottom: 0; }
 .detail-wrap th {
   background: var(--black); color: #fff;
   padding: 10px 12px; text-align: left;
@@ -137,10 +146,30 @@
   user-select: none;
 }
 </style>
+<script>
+/* 테마 부트스트랩 — 2026-08-31 점검 M3.
+   기사 4,804p 에 이게 없어서, OS 다크 사용자가 홈(다크)에서 기사를 열면
+   라이트로 번쩍였다. main.css 의 다크 규칙은 전부 [data-theme="dark"] 스코프이고
+   prefers-color-scheme 미디어쿼리는 CSS 에 없으므로, 속성을 여기서 달아줘야 한다.
+   <head> 안에서 동기 실행 — paint 전에 끝나야 깜빡임이 없다.
+   허브와 달리 기사엔 토글 버튼이 없다. 저장된 선택(kc_theme)과 OS 설정만 따른다. */
+(function () {
+  try {
+    var s = localStorage.getItem('kc_theme');
+    if (s === 'dark' || (!s && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  } catch (e) {}
+})();
+</script>
 </head>
 <body>
+<a class="skip-link" href="#kc-main">Skip to content</a>
 <header class="site-header">
-  <a href="../en/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <!-- width/height = 고유 크기(400x149). CSS 가 height:36px 로 줄이지만 브라우저는
+       이 비율로 자리를 미리 잡아 레이아웃 이동(CLS)을 막는다. 헤더 로고는 첫 화면에
+       보이므로 lazy 가 아니라 eager. -->
+  <a href="../en/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo" width="400" height="149" loading="eager" decoding="async"></a>
   <div class="lang-switch">
     <a href="../content/hanok-deep-dive.html">KR</a>
     <a href="../content/hanok-deep-dive.en.html" class="active">EN</a>
@@ -149,7 +178,7 @@
   </div>
 </header>
 
-<main class="detail-wrap">
+<main class="detail-wrap" id="kc-main" tabindex="-1">
   <nav class="breadcrumb" aria-label="breadcrumb"><a href="../en/index.html">All Guides</a> &rsaquo; Korea Hanok Deep Dive</nav>
   <article>
   <h1>Korea Hanok Deep Dive — 12 Hanok Villages, Palaces, Cafes, and Experiences</h1>
@@ -160,7 +189,7 @@
 <p>Korea&#x27;s premier traditional architecture is the <code>hanok</code> (traditional Korean house). It&#x27;s the top choice for foreign Instagrammers, K-drama fans, and those seeking a traditional deep dive. This guide integrates previously scattered information from <a href="euljiro.en.html" class="xref">#12</a> Bukchon (북촌), <a href="hanbok.en.html" class="xref">#16</a> Hanbok (한복), <a href="eunpyeong-bukhansan.en.html" class="xref">#182</a> Eunpyeong Hanok Village (은평 한옥마을), and <a href="temple-heritage.en.html" class="xref">#207</a> Temples &amp; Traditional Architecture (사찰·전통 건축) into one comprehensive guide.</p>
 <hr>
 <h2>★ 12 Top Picks at a Glance</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>#</th>
 <th>Hanok Spot</th>
 <th>Category</th>
@@ -238,7 +267,7 @@
 <td>Hanok Experience · Cafe</td>
 <td>Rakkojae (락고재) · Han Palace (한팰리스) · Traditional <code>hanok</code> (traditional Korean house) experience</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p><strong>+ 4 Additional Outlying Hanok (한옥) Villages</strong>: Jeonju Hanok Village (전주 한옥마을) · Andong Hahoe Folk Village (안동 하회마을) · Gyeongju Yangdong Folk Village (경주 양동마을) · Gangwon-do Jeongseon Ararichon (강원도 정선 아라리촌)</p>
 <hr>
 <h2>⚠ 3 Common Mistakes by Foreigners</h2>
@@ -345,7 +374,7 @@
 </ul>
 <hr>
 <h2>📅 Season Matrix (Foreign Enthusiasts)</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>Season</th>
 <th>Signature Activity</th>
 <th>Foreign Enthusiast Urgency</th>
@@ -370,7 +399,7 @@
 <td>New Year · Sunrise · Skiing · Indoor Matrix</td>
 <td>★★★★</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>👥 Foreigner 5 Segment Matrix</h2>
 <ul>
@@ -382,7 +411,7 @@
 </ul>
 <hr>
 <h2>⏱ Recommended Itinerary by Time Slot</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>Time Slot</th>
 <th>Recommended Activity</th>
 </tr></thead><tbody>
@@ -402,7 +431,7 @@
 <td><strong>Night (9:00 PM~12:00 AM)</strong></td>
 <td>Night views · Cafes · 24h Matrix · MZ (Millennials and Gen Z) + Instagram <a href="seongsu.en.html" class="xref">#1</a></td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>✈️ Foreign Enthusiast Matrix</h2>
 <ul>
@@ -422,7 +451,7 @@
 <hr>
 <h2>📊 Foreign Enthusiast Metric Matrix</h2>
 <p>Foreign tourists to Korea = <strong>17.5 million per year (2024)</strong> · MZ (Millennials and Gen Z) (20-39 years old) <strong>58%</strong> · Average stay <strong>6.4 days</strong> · Average spending <strong>1,605 USD/person</strong> · Revisit rate <strong>23%</strong> (Korea Tourism Organization 2024 statistics).</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>Item</th>
 <th>Metric</th>
 <th>Source</th>
@@ -462,7 +491,7 @@
 <td><strong>Spring (Cherry Blossoms · April) · Autumn (Autumn Leaves · Oct-Nov)</strong></td>
 <td>KTO Season Analysis</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <blockquote><p><strong>Metric Interpretation</strong>: 65% full English set · 80% payment by card · Spring/Autumn <a href="seongsu.en.html" class="xref">#1</a> season matrix · 1339 emergency 24h English = safe for first-time foreign visitors · fits enthusiast matrix.</p></blockquote>
 <h2>🏷 Tags</h2>
 <p><code>#KoreaHanok</code> <code>#KoreaHanok</code> <code>#BukchonHanokVillage</code> <code>#EunpyeongHanokVillage</code> <code>#IkseondongHanokAlley</code> <code>#Seochon</code> <code>#NamsanHanokVillage</code> <code>#Gyeongbokgung</code> <code>#ChangdeokgungUNESCO</code> <code>#HanbokFreeEntry</code> <code>#HanokCafe</code> <code>#HanokStay</code> <code>#JeonjuHanokVillage</code> <code>#AndongHahoeFolkVillage</code> <code>#KeyChinGu</code></p>
@@ -489,34 +518,7 @@
     <div><a href="kbeauty-spa-full.en.html" style="color:var(--red);">Korea K-beauty Spa Full Guide &rarr;</a></div>
   </nav>
 
-  <section id="kc-related" style="display:none;margin:2.2rem 0 0.5rem;">
-    <h2 style="font-size:1.1rem;margin-bottom:0.8rem;">Related Guides</h2>
-    <div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"></div>
-  </section>
-  <script>
-  // related guides — 같은 카테고리 최신 6편 (contents.json fetch·언어 suffix 자동, 2026-07-04)
-  (function() {
-    var m = location.pathname.match(/\/content\/(.+?)(\.en|\.zh|\.ja)?\.html$/);
-    if (!m) return;
-    var slug = m[1], suf = m[2] || '';
-    fetch('../data/contents.json').then(function(r) { return r.json(); }).then(function(items) {
-      var me = null;
-      for (var i = 0; i < items.length; i++) { if (items[i].slug === slug) { me = items[i]; break; } }
-      if (!me) return;
-      var pool = items.filter(function(x) { return x.slug !== slug && x.category === me.category; });
-      pool.sort(function(a, b) { return (parseInt(b.id, 10) || 0) - (parseInt(a.id, 10) || 0); });
-      var picks = pool.slice(0, 6);
-      if (!picks.length) return;
-      document.getElementById('kc-related-grid').innerHTML = picks.map(function(x) {
-        var t = suf ? (x.title_en || x.title_kr) : (x.title_kr || x.title_en);
-        var ok = suf === '' || (suf === '.en' ? x.en_available : (suf === '.zh' ? x.cn_available : x.jp_available));
-        var href = x.slug + (ok ? suf : '') + '.html';
-        return '<a href="' + href + '" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">' + t + '</a>';
-      }).join('');
-      document.getElementById('kc-related').style.display = 'block';
-    }).catch(function() {});
-  })();
-  </script>
+  <section id="kc-related" style="margin:2.2rem 0 0.5rem;"><h2 style="font-size:1.1rem;margin-bottom:0.8rem;">Related Guides</h2><div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"><a href="royal-palace-autumn-nights.en.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Royal Palaces After Dark: Starlight Tours, Moonlight Walks and the Royal Culture Festival — the Reservation-Only Side of Autumn Seoul</a><a href="seoul-fireworks-festival.en.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Seoul International Fireworks Festival 2026: September 5 at Yeouido — How to Claim a Spot Among a Million People</a><a href="seoul-architecture-eras.en.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Seoul Architecture Time Walk — Traditional, Modern &amp; Contemporary: 15 Picks + An Architectural Appreciation Lens</a><a href="korea-kpop-fansign-videocall.en.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">K-pop Fansign·Video Call (Album Entry·Yeongtong)</a><a href="korea-idol-birthday-cafe.en.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Idol Birthday Cafe (Saengka·Cup Sleeve·Support)</a><a href="korea-kpop-music-show-taping.en.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">K-pop Music Show Taping (Inkigayo·M Countdown·Music Bank)</a></div></section>
   <!-- kc-comments -->
   <section id="kc-comments" style="margin:2.5rem 0 0.5rem;">
     <h2>Comments</h2>

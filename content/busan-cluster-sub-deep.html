@@ -34,7 +34,7 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Event","name":"외국인 한국 부산 국제·BIFF·용두산 cluster sub 12선 deep dive","description":"외국인 부산 국제·BIFF·용두산 cluster sub 12 매트릭스 (#590·#244 parent sub) — 국제시장 3(1948 한국 #1 정통·거리 음식·cluster) + BIFF·영화 3(부산국제영화제 10월 아시아 최대·BIFF Street·박물관) + 용두산·부산타...","image":"https://mgself414.github.io/keychingu-content-deploy/og/busan-cluster-sub-deep.png","url":"https://mgself414.github.io/keychingu-content-deploy/content/busan-cluster-sub-deep.html","eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode","eventStatus":"https://schema.org/EventScheduled","location":{"@type":"Place","name":"South Korea","address":{"@type":"PostalAddress","addressCountry":"KR"}},"organizer":{"@type":"Organization","name":"KeyChinGu","url":"https://mgself414.github.io/keychingu-content-deploy/"},"audience":{"@type":"Audience","audienceType":"Foreign tourists visiting Korea"},"inLanguage":["ko","en","zh","ja"]}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/main.css">
 <style>
 .detail-wrap {
@@ -50,11 +50,11 @@
 .breadcrumb a { color: var(--red); font-weight: 600; }
 .detail-wrap h1 {
   font-size: 28px; font-weight: 800;
-  color: var(--black); margin-bottom: 8px;
+  color: var(--text); margin-bottom: 8px;
 }
 .detail-wrap h2 {
   font-size: 22px; font-weight: 700;
-  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  color: var(--text); margin-top: 32px; margin-bottom: 12px;
   padding-bottom: 6px;
   border-bottom: 2px solid var(--red);
 }
@@ -73,10 +73,19 @@
   font-size: 14px; line-height: 1.6;
   color: var(--text-mid); margin-bottom: 6px;
 }
+/* 표는 자기 컨테이너 안에서만 가로 스크롤한다 — 이게 없으면 min-content 폭이
+   뷰포트를 넘는 순간 페이지 전체가 가로로 밀렸다 (2026-08-31 점검 M2).
+   table 자체는 table 로 남겨 행·열 관계를 보존한다(display:block 으로 해결하지 않는 이유). */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 16px;
+}
 .detail-wrap table {
   width: 100%; border-collapse: collapse;
   margin-bottom: 16px; font-size: 13px;
 }
+.table-scroll > table { margin-bottom: 0; }
 .detail-wrap th {
   background: var(--black); color: #fff;
   padding: 10px 12px; text-align: left;
@@ -137,11 +146,31 @@
   user-select: none;
 }
 </style>
+<script>
+/* 테마 부트스트랩 — 2026-08-31 점검 M3.
+   기사 4,804p 에 이게 없어서, OS 다크 사용자가 홈(다크)에서 기사를 열면
+   라이트로 번쩍였다. main.css 의 다크 규칙은 전부 [data-theme="dark"] 스코프이고
+   prefers-color-scheme 미디어쿼리는 CSS 에 없으므로, 속성을 여기서 달아줘야 한다.
+   <head> 안에서 동기 실행 — paint 전에 끝나야 깜빡임이 없다.
+   허브와 달리 기사엔 토글 버튼이 없다. 저장된 선택(kc_theme)과 OS 설정만 따른다. */
+(function () {
+  try {
+    var s = localStorage.getItem('kc_theme');
+    if (s === 'dark' || (!s && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  } catch (e) {}
+})();
+</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "TouristAttraction", "name": "외국인 한국 부산 국제·BIFF·용두산 cluster sub 12선 deep dive", "url": "https://mgself414.github.io/keychingu-content-deploy/content/busan-cluster-sub-deep.html", "image": "https://mgself414.github.io/keychingu-content-deploy/og/busan-cluster-sub-deep.png", "address": {"@type": "PostalAddress", "addressLocality": "Seoul", "addressCountry": "KR"}, "touristType": "Foreigner-friendly tourism"}</script>
 </head>
 <body>
+<a class="skip-link" href="#kc-main">본문 바로가기</a>
 <header class="site-header">
-  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <!-- width/height = 고유 크기(400x149). CSS 가 height:36px 로 줄이지만 브라우저는
+       이 비율로 자리를 미리 잡아 레이아웃 이동(CLS)을 막는다. 헤더 로고는 첫 화면에
+       보이므로 lazy 가 아니라 eager. -->
+  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo" width="400" height="149" loading="eager" decoding="async"></a>
   <div class="lang-switch">
     <a href="../content/busan-cluster-sub-deep.html" class="active">KR</a>
     <a href="../content/busan-cluster-sub-deep.en.html">EN</a>
@@ -150,7 +179,7 @@
   </div>
 </header>
 
-<main class="detail-wrap">
+<main class="detail-wrap" id="kc-main" tabindex="-1">
   <nav class="breadcrumb" aria-label="breadcrumb"><a href="../index.html">전체 가이드</a> &rsaquo; 외국인 한국 부산 국제·BIFF·용두산 cluster sub 12선 deep dive</nav>
   <article>
   <h1>외국인 한국 부산 국제·BIFF·용두산 cluster sub 12선 deep dive — <a href="jagalchi-market-deep.html" class="xref">#590</a>·<a href="busan-jagalchi.html" class="xref">#244</a> sub·남포동 cluster</h1>
@@ -165,7 +194,7 @@
 <p>본 매트릭스는 국제시장 3선 + BIFF·영화 3선 + 용두산·부산타워 3선 + 인근 cross 3선 = 12선 4축.</p>
 <hr>
 <h2>한눈에 보기</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>#</th>
 <th>장소</th>
 <th>무료/유료</th>
@@ -269,7 +298,7 @@
 <td>야외 24h</td>
 <td>도보·버스 20분</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>⚠️ 외국인이 자주 하는 실수 3</h2>
 <p><strong>실수 1 — BIFF 시즌과 BIFF 광장을 혼동</strong></p>
@@ -418,7 +447,7 @@
 <p>Day 1 오전: 자갈치 → 국제시장 → BIFF 광장 → 용두산 야경. Day 2 오전: 영도 흰여울문화마을 (<a href="euljiro.html" class="xref">#12</a>) → 영도대교 도개 이벤트 (#11) → 오후 해운대·광안리 (<a href="busan-haeundae.html" class="xref">#243</a> cross) 또는 감천문화마을 (<a href="busan-gamcheon.html" class="xref">#245</a> cross).</p>
 <hr>
 <h2>시즌 가이드</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>시즌</th>
 <th>핵심 활동</th>
 <th>주의</th>
@@ -448,7 +477,7 @@
 <td>국제시장 따뜻한 어묵·핫초코·실내</td>
 <td>영도 바람 강함</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>외국인 실용 5 tip</h2>
 <p>1. <strong>자갈치역 7번 또는 남포역 5·6·7번 출구</strong> — 남포동 cluster 베이스캠프 두 개.</p>
@@ -480,7 +509,7 @@
 </ul>
 <hr>
 <h2>📅 시즌 매트릭스 (외국인 매니아)</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>시즌</th>
 <th>시그니처 활동</th>
 <th>외국인 매니아 시급도</th>
@@ -505,7 +534,7 @@
 <td>따뜻한 어묵·실내 국제시장·새해</td>
 <td>★★★★</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>👥 외국인 5 Segment</h2>
 <ul>
@@ -556,34 +585,7 @@
     <div><a href="film-festival-sub-deep.html" style="color:var(--red);">외국인 한국 영화제 sub 12선 deep dive &rarr;</a></div>
   </nav>
 
-  <section id="kc-related" style="display:none;margin:2.2rem 0 0.5rem;">
-    <h2 style="font-size:1.1rem;margin-bottom:0.8rem;">관련 가이드</h2>
-    <div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"></div>
-  </section>
-  <script>
-  // related guides — 같은 카테고리 최신 6편 (contents.json fetch·언어 suffix 자동, 2026-07-04)
-  (function() {
-    var m = location.pathname.match(/\/content\/(.+?)(\.en|\.zh|\.ja)?\.html$/);
-    if (!m) return;
-    var slug = m[1], suf = m[2] || '';
-    fetch('../data/contents.json').then(function(r) { return r.json(); }).then(function(items) {
-      var me = null;
-      for (var i = 0; i < items.length; i++) { if (items[i].slug === slug) { me = items[i]; break; } }
-      if (!me) return;
-      var pool = items.filter(function(x) { return x.slug !== slug && x.category === me.category; });
-      pool.sort(function(a, b) { return (parseInt(b.id, 10) || 0) - (parseInt(a.id, 10) || 0); });
-      var picks = pool.slice(0, 6);
-      if (!picks.length) return;
-      document.getElementById('kc-related-grid').innerHTML = picks.map(function(x) {
-        var t = suf ? (x.title_en || x.title_kr) : (x.title_kr || x.title_en);
-        var ok = suf === '' || (suf === '.en' ? x.en_available : (suf === '.zh' ? x.cn_available : x.jp_available));
-        var href = x.slug + (ok ? suf : '') + '.html';
-        return '<a href="' + href + '" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">' + t + '</a>';
-      }).join('');
-      document.getElementById('kc-related').style.display = 'block';
-    }).catch(function() {});
-  })();
-  </script>
+  <section id="kc-related" style="margin:2.2rem 0 0.5rem;"><h2 style="font-size:1.1rem;margin-bottom:0.8rem;">관련 가이드</h2><div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"><a href="busan-suyeong-dongnae.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">부산의 원점, 수영·동래 — 광안리 뒤편과 조선의 부산</a><a href="sindang-guide.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">신당동 — &quot;다음 성수&quot;로 불리기 시작한 동네, 시장·힙 바·떡볶이의 3층 구조</a><a href="seoul-overrated-underrated.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Overrated vs Underrated Seoul — 외국인 리뷰가 말하는 시간 배분 재조정 가이드</a><a href="myeongdong-euljiro-evening-walk.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">명동→을지로 이브닝 워킹 코스 — 2시간에 서울의 여섯 얼굴, 야장 맥주로 피니시</a><a href="cvs-drinks-map.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">한국 편의점 음료 완전 지도 — 바나나우유부터 숙취해소까지 9카테고리</a><a href="korea-snack-brands.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">한국 과자 브랜드 열전 — 농심·오리온·롯데·해태·크라운, 브랜드로 읽는 K-스낵</a></div></section>
   <!-- kc-comments -->
   <section id="kc-comments" style="margin:2.5rem 0 0.5rem;">
     <h2>댓글</h2>

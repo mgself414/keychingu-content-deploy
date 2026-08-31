@@ -34,7 +34,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/main.css">
 <style>
 .detail-wrap {
@@ -50,11 +50,11 @@
 .breadcrumb a { color: var(--red); font-weight: 600; }
 .detail-wrap h1 {
   font-size: 28px; font-weight: 800;
-  color: var(--black); margin-bottom: 8px;
+  color: var(--text); margin-bottom: 8px;
 }
 .detail-wrap h2 {
   font-size: 22px; font-weight: 700;
-  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  color: var(--text); margin-top: 32px; margin-bottom: 12px;
   padding-bottom: 6px;
   border-bottom: 2px solid var(--red);
 }
@@ -73,10 +73,19 @@
   font-size: 14px; line-height: 1.6;
   color: var(--text-mid); margin-bottom: 6px;
 }
+/* 표는 자기 컨테이너 안에서만 가로 스크롤한다 — 이게 없으면 min-content 폭이
+   뷰포트를 넘는 순간 페이지 전체가 가로로 밀렸다 (2026-08-31 점검 M2).
+   table 자체는 table 로 남겨 행·열 관계를 보존한다(display:block 으로 해결하지 않는 이유). */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 16px;
+}
 .detail-wrap table {
   width: 100%; border-collapse: collapse;
   margin-bottom: 16px; font-size: 13px;
 }
+.table-scroll > table { margin-bottom: 0; }
 .detail-wrap th {
   background: var(--black); color: #fff;
   padding: 10px 12px; text-align: left;
@@ -137,11 +146,31 @@
   user-select: none;
 }
 </style>
+<script>
+/* 테마 부트스트랩 — 2026-08-31 점검 M3.
+   기사 4,804p 에 이게 없어서, OS 다크 사용자가 홈(다크)에서 기사를 열면
+   라이트로 번쩍였다. main.css 의 다크 규칙은 전부 [data-theme="dark"] 스코프이고
+   prefers-color-scheme 미디어쿼리는 CSS 에 없으므로, 속성을 여기서 달아줘야 한다.
+   <head> 안에서 동기 실행 — paint 전에 끝나야 깜빡임이 없다.
+   허브와 달리 기사엔 토글 버튼이 없다. 저장된 선택(kc_theme)과 OS 설정만 따른다. */
+(function () {
+  try {
+    var s = localStorage.getItem('kc_theme');
+    if (s === 'dark' || (!s && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  } catch (e) {}
+})();
+</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "TouristAttraction", "name": "인천공항 입국·도심 이동 풀가이드", "url": "https://mgself414.github.io/keychingu-content-deploy/content/incheon-airport.html", "image": "https://mgself414.github.io/keychingu-content-deploy/og/incheon-airport.png", "address": {"@type": "PostalAddress", "addressLocality": "Seoul", "addressCountry": "KR"}, "touristType": "Foreigner-friendly tourism"}</script>
 </head>
 <body>
+<a class="skip-link" href="#kc-main">본문 바로가기</a>
 <header class="site-header">
-  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <!-- width/height = 고유 크기(400x149). CSS 가 height:36px 로 줄이지만 브라우저는
+       이 비율로 자리를 미리 잡아 레이아웃 이동(CLS)을 막는다. 헤더 로고는 첫 화면에
+       보이므로 lazy 가 아니라 eager. -->
+  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo" width="400" height="149" loading="eager" decoding="async"></a>
   <div class="lang-switch">
     <a href="../content/incheon-airport.html" class="active">KR</a>
     <a href="../content/incheon-airport.en.html">EN</a>
@@ -150,12 +179,12 @@
   </div>
 </header>
 
-<main class="detail-wrap">
+<main class="detail-wrap" id="kc-main" tabindex="-1">
   <nav class="breadcrumb" aria-label="breadcrumb"><a href="../index.html">전체 가이드</a> &rsaquo; 인천공항 입국·도심 이동 풀가이드</nav>
   <article>
   <h1>인천공항 입국·도심 이동 풀가이드 — 외국인을 위한 첫 6시간 + AREX·공항버스·택시 비교</h1>
 <h2>한눈에 보기</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>항목</th>
 <th>내용</th>
 </tr></thead><tbody>
@@ -195,7 +224,7 @@
 <td><strong>가격 갱신 주기</strong></td>
 <td>시즌별 (이 가이드는 2026-04~05 기준)</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>외국인이 자주 하는 실수 5가지</h2>
 <h3>1. T1과 T2 공항을 헷갈리는 것</h3>
@@ -212,7 +241,7 @@
 <p>공항 출구 호객 택시 = <strong>불법</strong> (정식 택시는 줄 서서 픽업). 일반 택시는 <strong>미터기 켜는지 확인</strong> + 영수증 받기. 카카오T 영문 앱이 안전.</p>
 <hr>
 <h2>도심 이동 4대 옵션 비교 한눈에</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>옵션</th>
 <th>가격</th>
 <th>시간</th>
@@ -252,7 +281,7 @@
 <td>★★★★★</td>
 <td>그룹 / 늦은 시간</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>★ 인천공항 첫 6시간 풀가이드</h2>
 <h3>Step 1: 비행기 도착 → 입국 심사 (15~30분)</h3>
@@ -351,7 +380,7 @@
 <p><strong>한 줄</strong>: &quot;그룹·새벽·도어투도어 = 카카오T 정답&quot;</p>
 <hr>
 <h2>4대 옵션 비교표 (10축)</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>비교 축</th>
 <th>AREX 직통</th>
 <th>AREX 일반</th>
@@ -428,9 +457,9 @@
 <td>가족·캐리어</td>
 <td>그룹·새벽</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h3>의사결정 한 줄 가이드</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>상황</th>
 <th>추천</th>
 </tr></thead><tbody>
@@ -454,7 +483,7 @@
 <td><strong>시간 압박 + 비용 무관</strong></td>
 <td>카카오T 택시 + 도어투도어</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p><strong>키친구 결론</strong>: 평일 낮 1인 = <strong>AREX 직통</strong>. 새벽 + 가성비 = <strong>AREX 일반</strong>. 가족·캐리어 = <strong>공항버스</strong>. 그룹·새벽 = <strong>카카오T</strong>.</p>
 <hr>
 <h2>인천공항 활용 정보</h2>
@@ -514,7 +543,7 @@
 <hr>
 <h2>키친구 추천 코스 — 첫날 6시간 풀공략</h2>
 <p><strong>예산</strong>: ₩30,000~80,000 (도심 이동 옵션에 따라)</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>시간</th>
 <th>활동</th>
 <th>비용</th>
@@ -569,7 +598,7 @@
 <td>호텔 복귀 + 첫날 마무리</td>
 <td>-</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>시즌별</h2>
 <h3>봄 (3~5월)</h3>
@@ -648,34 +677,7 @@
     <div><a href="autumn-foliage.html" style="color:var(--red);">가을 단풍 명소 TOP 8 + 시기별 단풍 캘린더 &rarr;</a></div>
   </nav>
 
-  <section id="kc-related" style="display:none;margin:2.2rem 0 0.5rem;">
-    <h2 style="font-size:1.1rem;margin-bottom:0.8rem;">관련 가이드</h2>
-    <div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"></div>
-  </section>
-  <script>
-  // related guides — 같은 카테고리 최신 6편 (contents.json fetch·언어 suffix 자동, 2026-07-04)
-  (function() {
-    var m = location.pathname.match(/\/content\/(.+?)(\.en|\.zh|\.ja)?\.html$/);
-    if (!m) return;
-    var slug = m[1], suf = m[2] || '';
-    fetch('../data/contents.json').then(function(r) { return r.json(); }).then(function(items) {
-      var me = null;
-      for (var i = 0; i < items.length; i++) { if (items[i].slug === slug) { me = items[i]; break; } }
-      if (!me) return;
-      var pool = items.filter(function(x) { return x.slug !== slug && x.category === me.category; });
-      pool.sort(function(a, b) { return (parseInt(b.id, 10) || 0) - (parseInt(a.id, 10) || 0); });
-      var picks = pool.slice(0, 6);
-      if (!picks.length) return;
-      document.getElementById('kc-related-grid').innerHTML = picks.map(function(x) {
-        var t = suf ? (x.title_en || x.title_kr) : (x.title_kr || x.title_en);
-        var ok = suf === '' || (suf === '.en' ? x.en_available : (suf === '.zh' ? x.cn_available : x.jp_available));
-        var href = x.slug + (ok ? suf : '') + '.html';
-        return '<a href="' + href + '" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">' + t + '</a>';
-      }).join('');
-      document.getElementById('kc-related').style.display = 'block';
-    }).catch(function() {});
-  })();
-  </script>
+  <section id="kc-related" style="margin:2.2rem 0 0.5rem;"><h2 style="font-size:1.1rem;margin-bottom:0.8rem;">관련 가이드</h2><div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"><a href="busan-suyeong-dongnae.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">부산의 원점, 수영·동래 — 광안리 뒤편과 조선의 부산</a><a href="sindang-guide.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">신당동 — &quot;다음 성수&quot;로 불리기 시작한 동네, 시장·힙 바·떡볶이의 3층 구조</a><a href="seoul-overrated-underrated.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Overrated vs Underrated Seoul — 외국인 리뷰가 말하는 시간 배분 재조정 가이드</a><a href="myeongdong-euljiro-evening-walk.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">명동→을지로 이브닝 워킹 코스 — 2시간에 서울의 여섯 얼굴, 야장 맥주로 피니시</a><a href="cvs-drinks-map.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">한국 편의점 음료 완전 지도 — 바나나우유부터 숙취해소까지 9카테고리</a><a href="korea-snack-brands.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">한국 과자 브랜드 열전 — 농심·오리온·롯데·해태·크라운, 브랜드로 읽는 K-스낵</a></div></section>
   <!-- kc-comments -->
   <section id="kc-comments" style="margin:2.5rem 0 0.5rem;">
     <h2>댓글</h2>

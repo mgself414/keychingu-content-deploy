@@ -30,7 +30,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/main.css">
 <style>
 .detail-wrap {
@@ -46,11 +46,11 @@
 .breadcrumb a { color: var(--red); font-weight: 600; }
 .detail-wrap h1 {
   font-size: 28px; font-weight: 800;
-  color: var(--black); margin-bottom: 8px;
+  color: var(--text); margin-bottom: 8px;
 }
 .detail-wrap h2 {
   font-size: 22px; font-weight: 700;
-  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  color: var(--text); margin-top: 32px; margin-bottom: 12px;
   padding-bottom: 6px;
   border-bottom: 2px solid var(--red);
 }
@@ -69,10 +69,19 @@
   font-size: 14px; line-height: 1.6;
   color: var(--text-mid); margin-bottom: 6px;
 }
+/* 표는 자기 컨테이너 안에서만 가로 스크롤한다 — 이게 없으면 min-content 폭이
+   뷰포트를 넘는 순간 페이지 전체가 가로로 밀렸다 (2026-08-31 점검 M2).
+   table 자체는 table 로 남겨 행·열 관계를 보존한다(display:block 으로 해결하지 않는 이유). */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 16px;
+}
 .detail-wrap table {
   width: 100%; border-collapse: collapse;
   margin-bottom: 16px; font-size: 13px;
 }
+.table-scroll > table { margin-bottom: 0; }
 .detail-wrap th {
   background: var(--black); color: #fff;
   padding: 10px 12px; text-align: left;
@@ -133,11 +142,31 @@
   user-select: none;
 }
 </style>
+<script>
+/* 테마 부트스트랩 — 2026-08-31 점검 M3.
+   기사 4,804p 에 이게 없어서, OS 다크 사용자가 홈(다크)에서 기사를 열면
+   라이트로 번쩍였다. main.css 의 다크 규칙은 전부 [data-theme="dark"] 스코프이고
+   prefers-color-scheme 미디어쿼리는 CSS 에 없으므로, 속성을 여기서 달아줘야 한다.
+   <head> 안에서 동기 실행 — paint 전에 끝나야 깜빡임이 없다.
+   허브와 달리 기사엔 토글 버튼이 없다. 저장된 선택(kc_theme)과 OS 설정만 따른다. */
+(function () {
+  try {
+    var s = localStorage.getItem('kc_theme');
+    if (s === 'dark' || (!s && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  } catch (e) {}
+})();
+</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "CafeOrCoffeeShop", "name": "한국 카페 진동벨, 당황 제로 매뉴얼 — 주문하고 나서 뭘 해야 하나", "url": "https://mgself414.github.io/keychingu-content-deploy/content/cafe-pickup-guide.html", "image": "https://mgself414.github.io/keychingu-content-deploy/og/cafe-pickup-guide.png", "address": {"@type": "PostalAddress", "addressLocality": "Seoul", "addressCountry": "KR"}}</script>
 </head>
 <body>
+<a class="skip-link" href="#kc-main">跳到正文</a>
 <header class="site-header">
-  <a href="../zh/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <!-- width/height = 고유 크기(400x149). CSS 가 height:36px 로 줄이지만 브라우저는
+       이 비율로 자리를 미리 잡아 레이아웃 이동(CLS)을 막는다. 헤더 로고는 첫 화면에
+       보이므로 lazy 가 아니라 eager. -->
+  <a href="../zh/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo" width="400" height="149" loading="eager" decoding="async"></a>
   <div class="lang-switch">
     <a href="../content/cafe-pickup-guide.html">KR</a>
     <a href="../content/cafe-pickup-guide.en.html">EN</a>
@@ -146,7 +175,7 @@
   </div>
 </header>
 
-<main class="detail-wrap">
+<main class="detail-wrap" id="kc-main" tabindex="-1">
   <nav class="breadcrumb" aria-label="breadcrumb"><a href="../zh/index.html">全部指南</a> &rsaquo; 韩国咖啡厅震动叫号器流程，零慌张手册 — 点完餐之后该做什么</nav>
   <article>
   <h1>韩国咖啡厅震动叫号器流程，零慌张手册 — 点完餐之后该做什么</h1>
@@ -168,7 +197,7 @@
 <hr>
 <h2>② 点餐后操作全流程 — 拟态画面</h2>
 <p>不管是哪个品牌，都逃不出下面这6个步骤。</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>步骤</th>
 <th>情况</th>
 <th>该做的事</th>
@@ -210,7 +239,7 @@
 <td>在归还台按流程处理(参考⑥)</td>
 <td>别整个塞进去，要按顺序——详情见下方链接</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <blockquote><p>核心在于：&quot;去领取、去归还、去清理&quot;这3个动作全都是客人自己的事。只要把这3个动作练熟，去哪家咖啡厅都通用。</p></blockquote>
 <hr>
 <h2>③ 如果是没有震动叫号器的门店 — 昵称·点单号叫号分支</h2>
@@ -237,7 +266,7 @@
 <p>托盘·杯子·吸管不能整个塞进归还台。要按<strong>倒空 → 分类 → 放入</strong>的顺序处理——先倒掉冰块·剩液，吸管·杯盖要和杯子分开放。完整流程以及没有归还台时的替代路径，<strong><a href="trash-cup-return-guide.zh.html" class="xref">#1276</a>垃圾·杯子归还攻略</strong>里已经用拟态画面整理好了，可以一起看。</p>
 <hr>
 <h2>⑦ 生存词12个 — 咖啡厅指示牌·画面上实际会看到的字</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>中文 (roman 한글)</th>
 <th>含义 = 该做的事</th>
 </tr></thead><tbody>
@@ -289,7 +318,7 @@
 <td>剩液/剩冰 (janban 잔반)</td>
 <td>Leftover liquid/ice——归还前先倒空的东西</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <blockquote><p>小贴士：12个里只记<strong><code>震动叫号器</code>(진동벨，等待)·<code>取餐</code>(픽업，领取)·<code>归还</code>(반납，收尾)</strong>这3个，整个流程也能通。</p></blockquote>
 <hr>
 <h2>⑧ 慌张场景3种 — 实际会发生的事与应对</h2>
@@ -335,34 +364,7 @@
     <div><a href="e-arrival-card-guide.zh.html" style="color:var(--red);">韩国入境e-Arrival卡，零慌张流程手册 — 跟着门户网站画面走 &rarr;</a></div>
   </nav>
 
-  <section id="kc-related" style="display:none;margin:2.2rem 0 0.5rem;">
-    <h2 style="font-size:1.1rem;margin-bottom:0.8rem;">相关指南</h2>
-    <div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"></div>
-  </section>
-  <script>
-  // related guides — 같은 카테고리 최신 6편 (contents.json fetch·언어 suffix 자동, 2026-07-04)
-  (function() {
-    var m = location.pathname.match(/\/content\/(.+?)(\.en|\.zh|\.ja)?\.html$/);
-    if (!m) return;
-    var slug = m[1], suf = m[2] || '';
-    fetch('../data/contents.json').then(function(r) { return r.json(); }).then(function(items) {
-      var me = null;
-      for (var i = 0; i < items.length; i++) { if (items[i].slug === slug) { me = items[i]; break; } }
-      if (!me) return;
-      var pool = items.filter(function(x) { return x.slug !== slug && x.category === me.category; });
-      pool.sort(function(a, b) { return (parseInt(b.id, 10) || 0) - (parseInt(a.id, 10) || 0); });
-      var picks = pool.slice(0, 6);
-      if (!picks.length) return;
-      document.getElementById('kc-related-grid').innerHTML = picks.map(function(x) {
-        var t = suf ? (x.title_en || x.title_kr) : (x.title_kr || x.title_en);
-        var ok = suf === '' || (suf === '.en' ? x.en_available : (suf === '.zh' ? x.cn_available : x.jp_available));
-        var href = x.slug + (ok ? suf : '') + '.html';
-        return '<a href="' + href + '" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">' + t + '</a>';
-      }).join('');
-      document.getElementById('kc-related').style.display = 'block';
-    }).catch(function() {});
-  })();
-  </script>
+  <section id="kc-related" style="margin:2.2rem 0 0.5rem;"><h2 style="font-size:1.1rem;margin-bottom:0.8rem;">相关指南</h2><div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"><a href="solo-female-safety-checklist.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Solo Female Travel in Korea — A No-Fear Safety Checklist</a><a href="china-payment-survival.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Korea Payment Survival Manual for Chinese-Speaking Travelers — Alipay Works, WeChat Doesn&#x27;t, UnionPay Needs Prep First</a><a href="duty-free-pickup-guide.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">You Get Your Duty-Free Items at the Airport — The Zero-Panic Manual for the Pickup Counter</a><a href="korea-smoking-guide.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Finding a Place to Smoke in Korea, the Zero-Panic Manual — How Not to Get Fined</a><a href="busan-transit-guide.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Busan Transit Grammar — A City You Can Read with Just Two Lines</a><a href="seoul-cold-snap-survival.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Surviving a Seoul Cold Snap: How to Get Through a Day at Minus Ten</a></div></section>
   <!-- kc-comments -->
   <section id="kc-comments" style="margin:2.5rem 0 0.5rem;">
     <h2>评论</h2>

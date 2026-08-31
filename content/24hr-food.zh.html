@@ -34,7 +34,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/main.css">
 <style>
 .detail-wrap {
@@ -50,11 +50,11 @@
 .breadcrumb a { color: var(--red); font-weight: 600; }
 .detail-wrap h1 {
   font-size: 28px; font-weight: 800;
-  color: var(--black); margin-bottom: 8px;
+  color: var(--text); margin-bottom: 8px;
 }
 .detail-wrap h2 {
   font-size: 22px; font-weight: 700;
-  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  color: var(--text); margin-top: 32px; margin-bottom: 12px;
   padding-bottom: 6px;
   border-bottom: 2px solid var(--red);
 }
@@ -73,10 +73,19 @@
   font-size: 14px; line-height: 1.6;
   color: var(--text-mid); margin-bottom: 6px;
 }
+/* 표는 자기 컨테이너 안에서만 가로 스크롤한다 — 이게 없으면 min-content 폭이
+   뷰포트를 넘는 순간 페이지 전체가 가로로 밀렸다 (2026-08-31 점검 M2).
+   table 자체는 table 로 남겨 행·열 관계를 보존한다(display:block 으로 해결하지 않는 이유). */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 16px;
+}
 .detail-wrap table {
   width: 100%; border-collapse: collapse;
   margin-bottom: 16px; font-size: 13px;
 }
+.table-scroll > table { margin-bottom: 0; }
 .detail-wrap th {
   background: var(--black); color: #fff;
   padding: 10px 12px; text-align: left;
@@ -137,10 +146,30 @@
   user-select: none;
 }
 </style>
+<script>
+/* 테마 부트스트랩 — 2026-08-31 점검 M3.
+   기사 4,804p 에 이게 없어서, OS 다크 사용자가 홈(다크)에서 기사를 열면
+   라이트로 번쩍였다. main.css 의 다크 규칙은 전부 [data-theme="dark"] 스코프이고
+   prefers-color-scheme 미디어쿼리는 CSS 에 없으므로, 속성을 여기서 달아줘야 한다.
+   <head> 안에서 동기 실행 — paint 전에 끝나야 깜빡임이 없다.
+   허브와 달리 기사엔 토글 버튼이 없다. 저장된 선택(kc_theme)과 OS 설정만 따른다. */
+(function () {
+  try {
+    var s = localStorage.getItem('kc_theme');
+    if (s === 'dark' || (!s && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  } catch (e) {}
+})();
+</script>
 </head>
 <body>
+<a class="skip-link" href="#kc-main">跳到正文</a>
 <header class="site-header">
-  <a href="../zh/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <!-- width/height = 고유 크기(400x149). CSS 가 height:36px 로 줄이지만 브라우저는
+       이 비율로 자리를 미리 잡아 레이아웃 이동(CLS)을 막는다. 헤더 로고는 첫 화면에
+       보이므로 lazy 가 아니라 eager. -->
+  <a href="../zh/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo" width="400" height="149" loading="eager" decoding="async"></a>
   <div class="lang-switch">
     <a href="../content/24hr-food.html">KR</a>
     <a href="../content/24hr-food.en.html">EN</a>
@@ -149,7 +178,7 @@
   </div>
 </header>
 
-<main class="detail-wrap">
+<main class="detail-wrap" id="kc-main" tabindex="-1">
   <nav class="breadcrumb" aria-label="breadcrumb"><a href="../zh/index.html">全部指南</a> &rsaquo; 24小时美食店攻略</nav>
   <article>
   <h1>首尔24小时美食指南 — 凌晨3点饿了也别怕</h1>
@@ -166,7 +195,7 @@
 <li>深夜的汤底最为醇厚清澈 (整夜慢熬所致)</li>
 </ul>
 <p><strong>指南推荐雪浓汤/骨汤连锁店</strong> (大部分在首尔全市拥有多家门店)</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>店名</th>
 <th>价格区间</th>
 <th>特色</th>
@@ -196,7 +225,7 @@
 <td>雪浓汤 + 炖菜风格</td>
 <td>东大门、江南</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p><strong>凌晨3点小贴士</strong>：</p>
 <ul>
 <li>最安全的选择，保证和白天一样的味道。</li>
@@ -211,7 +240,7 @@
 </ul>
 <blockquote><p>💡 <strong>골목 (Golmok / 골목)</strong> = 小巷、胡同。首尔的藏在小巷里的土豆汤店，往往是老街坊最爱的宝藏店，类似中国的&quot;苍蝇馆子&quot;。</p></blockquote>
 <p><strong>推荐连锁店 &amp; 小巷土豆汤店</strong></p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>店名</th>
 <th>价格区间</th>
 <th>特色</th>
@@ -241,7 +270,7 @@
 <td>店名各异 / 口味大同小异</td>
 <td>大部分 ✓</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p><strong>点餐小贴士</strong>：</p>
 <ul>
 <li>韩语：&quot;감자탕 한 그릇 주세요 (Gamja-tang han geureu juseyo)&quot;</li>
@@ -251,7 +280,7 @@
 <hr>
 <h4>🍛 国饭 (Gukbap / 국밥) — &quot;没忘记辣炒年糕？来尝尝国饭的味道&quot;</h4>
 <p><strong>按种类划分的选择</strong></p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>种类</th>
 <th>价格</th>
 <th>适合什么时候吃</th>
@@ -275,7 +304,7 @@
 <td>想要浓烈口感时 / 解酒神器</td>
 <td>江南、江北全域</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p><strong>在首尔最容易找到的方法</strong>：</p>
 <ul>
 <li>&quot;国饭街&quot;集中在 <strong>东大门站 (Dongdaemun Station / 동대문역) 2号出口</strong> 周边，汇聚30~50家店</li>
@@ -286,7 +315,7 @@
 <h4>🍖 24小时烤肉店 — &quot;想烤五花肉的时候&quot;</h4>
 <p><strong>规律</strong>：韩国烤肉店大多晚上22:00或23:00打烊，但部分&quot;台式烧烤吧&quot;形式的宵夜烤肉店24小时营业。</p>
 <blockquote><p>💡 <strong>야장 (Yajang / 야장)</strong> = 户外夜间摊位/露天营业，类似中国的夜市或户外烧烤摊，氛围轻松热闹。</p></blockquote>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>店名</th>
 <th>地区</th>
 <th>价格</th>
@@ -310,7 +339,7 @@
 <td>₩9,000~16,000</td>
 <td>上班族加班食堂</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p><strong>凌晨3点烤肉须知</strong>：</p>
 <ul>
 <li>务必确认&quot;24小时营业&quot;标识再前往。非餐厅街的单独门店随意前往可能扑空。</li>
@@ -318,7 +347,7 @@
 </ul>
 <hr>
 <h4>🍜 刀切面 &amp; 面疙瘩 (Kalguksu &amp; Sujebi / 칼국수 &amp; 수제비) — &quot;热汤面食的正统选择&quot;</h4>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>菜单</th>
 <th>价格</th>
 <th>特色</th>
@@ -342,7 +371,7 @@
 <td>日式风格 / 部分24小时门店</td>
 <td>全域</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p><strong>深夜0:00后的知名面食店</strong></p>
 <ul>
 <li><strong>奶奶刀切面 (Halmoni Kalguksu / 할머니 칼국수) (乙支路)</strong> — 40年传统</li>
@@ -354,7 +383,7 @@
 <blockquote><p>💡 <strong>편의점 (Pyeonuijeom / 편의점)</strong> = 便利店。韩国便利店密度极高，类似中国的全家/7-11，但韩国便利店的即食食品种类和品质更为突出，是深夜解饿的重要选择。</p></blockquote>
 <p><strong>最后的备选方案</strong>：便利店辣炒年糕、紫菜卷饭当然不错，但<strong>真正小吃的味道</strong>在24小时小吃店里。</p>
 <blockquote><p>💡 <strong>분식 (Bunsik / 분식)</strong> = 小吃，泛指辣炒年糕、紫菜卷饭、血肠炸物等韩式街头快食，类似中国的小吃摊，但以室内堂食为主。</p></blockquote>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>菜单</th>
 <th>便利店价格</th>
 <th>小吃店价格</th>
@@ -384,7 +413,7 @@
 <td>₩1,500~2,500</td>
 <td>价格更实惠</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p><strong>寻找方法</strong>：</p>
 <ul>
 <li>搜索&quot;钟路 (Jongno / 종로) 분식 (Jongno Bunsik)&quot;或&quot;乙支路 (Euljiro / 을지로) 분식 (Euljiro Bunsik)&quot;</li>
@@ -454,7 +483,7 @@
 <p><strong>情况3：想尝本地食物但时间有限</strong></p>
 <p>→ 便利店即食辣炒年糕 + 紫菜卷饭 + 鸡蛋炒杂碎</p>
 <h3>便利店即食食品 BEST 5</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>商品</th>
 <th>价格</th>
 <th>加热时间</th>
@@ -490,7 +519,7 @@
 <td>开水泡3分钟</td>
 <td>应急食品 (最简单)</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h3>微波炉使用贴士</h3>
 <p><strong>韩国便利店布局</strong></p>
 <ul>
@@ -525,7 +554,7 @@
 <li>直接展示给店员看</li>
 </ul>
 <h3>基础点餐用语 (韩语)</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>表达</th>
 <th>意思</th>
 <th>示例</th>
@@ -555,7 +584,7 @@
 <td>小菜也要</td>
 <td>(通常自动附赠)</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h3>点餐后须知 (参考)</h3>
 <p>韩国餐厅文化：</p>
 <ul>
@@ -586,7 +615,7 @@
 <hr>
 <h2>🎯 凌晨3点紧急指南 — 最终检查清单</h2>
 <h3>按情况划分的最强选择</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>情况</th>
 <th>推荐食物</th>
 <th>价格</th>
@@ -616,7 +645,7 @@
 <td>₩15,000~20,000 (~107~143 RMB)</td>
 <td>10分钟</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h3>按地区划分的最强组合</h3>
 <p><strong>明洞/乙支路</strong>：新鲜雪浓汤 → 刀切面 → 小吃</p>
 <p><strong>弘大</strong>：国饭街 → 外带国饭 → 汉江散步</p>
@@ -668,34 +697,7 @@
     <div><a href="chimaek.zh.html" style="color:var(--red);">汉江炸鸡啤酒野餐攻略 &rarr;</a></div>
   </nav>
 
-  <section id="kc-related" style="display:none;margin:2.2rem 0 0.5rem;">
-    <h2 style="font-size:1.1rem;margin-bottom:0.8rem;">相关指南</h2>
-    <div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"></div>
-  </section>
-  <script>
-  // related guides — 같은 카테고리 최신 6편 (contents.json fetch·언어 suffix 자동, 2026-07-04)
-  (function() {
-    var m = location.pathname.match(/\/content\/(.+?)(\.en|\.zh|\.ja)?\.html$/);
-    if (!m) return;
-    var slug = m[1], suf = m[2] || '';
-    fetch('../data/contents.json').then(function(r) { return r.json(); }).then(function(items) {
-      var me = null;
-      for (var i = 0; i < items.length; i++) { if (items[i].slug === slug) { me = items[i]; break; } }
-      if (!me) return;
-      var pool = items.filter(function(x) { return x.slug !== slug && x.category === me.category; });
-      pool.sort(function(a, b) { return (parseInt(b.id, 10) || 0) - (parseInt(a.id, 10) || 0); });
-      var picks = pool.slice(0, 6);
-      if (!picks.length) return;
-      document.getElementById('kc-related-grid').innerHTML = picks.map(function(x) {
-        var t = suf ? (x.title_en || x.title_kr) : (x.title_kr || x.title_en);
-        var ok = suf === '' || (suf === '.en' ? x.en_available : (suf === '.zh' ? x.cn_available : x.jp_available));
-        var href = x.slug + (ok ? suf : '') + '.html';
-        return '<a href="' + href + '" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">' + t + '</a>';
-      }).join('');
-      document.getElementById('kc-related').style.display = 'block';
-    }).catch(function() {});
-  })();
-  </script>
+  <section id="kc-related" style="margin:2.2rem 0 0.5rem;"><h2 style="font-size:1.1rem;margin-bottom:0.8rem;">相关指南</h2><div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"><a href="dongdaemun-market-eats.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">The Merchants&#x27; Diners of Dongdaemun Market — 40-Year-Old Eateries in the Fabric Alley</a><a href="busan-dessert-road.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Busan Dessert Road — From the City of Red Bean to Gelato</a><a href="busan-coffee-road.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Busan Coffee Road — How to Drink Coffee in the City of a World Champion</a><a href="busan-signature-food.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Three Things You Only Eat in Busan — Dwaeji-gukbap, Milmyeon, Hoe, and How to Order Them</a><a href="autumn-food-calendar.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Korea Autumn Food Calendar: Jeoneo, King Prawns, Crab, Pine Mushrooms and Persimmons — Open September to November Only</a><a href="seoul-history-eras.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">600 Years of Seoul: A Time-Travel Walking Course Through the Eras</a></div></section>
   <!-- kc-comments -->
   <section id="kc-comments" style="margin:2.5rem 0 0.5rem;">
     <h2>评论</h2>

@@ -34,7 +34,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/main.css">
 <style>
 .detail-wrap {
@@ -50,11 +50,11 @@
 .breadcrumb a { color: var(--red); font-weight: 600; }
 .detail-wrap h1 {
   font-size: 28px; font-weight: 800;
-  color: var(--black); margin-bottom: 8px;
+  color: var(--text); margin-bottom: 8px;
 }
 .detail-wrap h2 {
   font-size: 22px; font-weight: 700;
-  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  color: var(--text); margin-top: 32px; margin-bottom: 12px;
   padding-bottom: 6px;
   border-bottom: 2px solid var(--red);
 }
@@ -73,10 +73,19 @@
   font-size: 14px; line-height: 1.6;
   color: var(--text-mid); margin-bottom: 6px;
 }
+/* 표는 자기 컨테이너 안에서만 가로 스크롤한다 — 이게 없으면 min-content 폭이
+   뷰포트를 넘는 순간 페이지 전체가 가로로 밀렸다 (2026-08-31 점검 M2).
+   table 자체는 table 로 남겨 행·열 관계를 보존한다(display:block 으로 해결하지 않는 이유). */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 16px;
+}
 .detail-wrap table {
   width: 100%; border-collapse: collapse;
   margin-bottom: 16px; font-size: 13px;
 }
+.table-scroll > table { margin-bottom: 0; }
 .detail-wrap th {
   background: var(--black); color: #fff;
   padding: 10px 12px; text-align: left;
@@ -137,10 +146,30 @@
   user-select: none;
 }
 </style>
+<script>
+/* 테마 부트스트랩 — 2026-08-31 점검 M3.
+   기사 4,804p 에 이게 없어서, OS 다크 사용자가 홈(다크)에서 기사를 열면
+   라이트로 번쩍였다. main.css 의 다크 규칙은 전부 [data-theme="dark"] 스코프이고
+   prefers-color-scheme 미디어쿼리는 CSS 에 없으므로, 속성을 여기서 달아줘야 한다.
+   <head> 안에서 동기 실행 — paint 전에 끝나야 깜빡임이 없다.
+   허브와 달리 기사엔 토글 버튼이 없다. 저장된 선택(kc_theme)과 OS 설정만 따른다. */
+(function () {
+  try {
+    var s = localStorage.getItem('kc_theme');
+    if (s === 'dark' || (!s && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  } catch (e) {}
+})();
+</script>
 </head>
 <body>
+<a class="skip-link" href="#kc-main">跳到正文</a>
 <header class="site-header">
-  <a href="../zh/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <!-- width/height = 고유 크기(400x149). CSS 가 height:36px 로 줄이지만 브라우저는
+       이 비율로 자리를 미리 잡아 레이아웃 이동(CLS)을 막는다. 헤더 로고는 첫 화면에
+       보이므로 lazy 가 아니라 eager. -->
+  <a href="../zh/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo" width="400" height="149" loading="eager" decoding="async"></a>
   <div class="lang-switch">
     <a href="../content/templestay-deep.html">KR</a>
     <a href="../content/templestay-deep.en.html">EN</a>
@@ -149,7 +178,7 @@
   </div>
 </header>
 
-<main class="detail-wrap">
+<main class="detail-wrap" id="kc-main" tabindex="-1">
   <nav class="breadcrumb" aria-label="breadcrumb"><a href="../zh/index.html">全部指南</a> &rsaquo; 寺庙寄宿深度体验全套</nav>
   <article>
   <h1>寺庙·寺院寄宿深度体验全套 — 外国游客康养·文化爱好者</h1>
@@ -161,7 +190,7 @@
 <hr>
 <h2>★ 12大精选一览</h2>
 <h3>联合国教科文组织7大山寺 (2018) — 韩国 (Hanguk / 한국) 首屈一指</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>#</th>
 <th>寺庙景点</th>
 <th>4个核心</th>
@@ -209,9 +238,9 @@
 <td>联合国教科文组织7大</td>
 <td>外国游客挚爱</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h3>首尔 (Seoul / 서울)·郊外名刹</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>#</th>
 <th>寺庙景点</th>
 <th>4个核心</th>
@@ -247,7 +276,7 @@
 <td>郊外名刹</td>
 <td>韩国 (Hanguk / 한국) 三宝寺刹·僧宝宗刹·外国游客挚爱</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p><strong>+ 额外4处</strong>: 宁越 (Yeongwol / 영월) 法兴寺 (Beopheungsa / 법흥사)·梁山 (Yangsan / 양산) 通度寺 (Tongdosa / 통도사) 外国游客友好型英文寺院寄宿 (Templestay / 템플스테이)·东鹤寺 (Donghaksa / 동학사) (鸡龙山 (Gyeryongsan / 계룡산))·梵鱼寺 (Beomeosa / 범어사) (釜山 (Busan / 부산))</p>
 <hr>
 <h2>⚠ 外国游客常犯3大错误</h2>
@@ -276,7 +305,7 @@
 </ul>
 <hr>
 <h2>📅 季节矩阵 (外国游客挚爱)</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>季节</th>
 <th>标志性活动</th>
 <th>外国游客挚爱紧急度</th>
@@ -301,7 +330,7 @@
 <td>新年·日出·滑雪·室内矩阵</td>
 <td>★★★★</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>👥 外国游客5大群体矩阵</h2>
 <ul>
@@ -313,7 +342,7 @@
 </ul>
 <hr>
 <h2>⏱ 按时间段推荐行程</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>时间段</th>
 <th>推荐活动</th>
 </tr></thead><tbody>
@@ -333,7 +362,7 @@
 <td><strong>夜间 (21:00~24:00)</strong></td>
 <td>夜景·咖啡馆·24小时矩阵·MZ + Instagram <a href="seongsu.zh.html" class="xref">#1</a></td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>✈️ 外国游客挚爱矩阵</h2>
 <ul>
@@ -353,7 +382,7 @@
 <hr>
 <h2>📊 外国游客挚爱数据矩阵</h2>
 <p>外国游客韩国 (Hanguk / 한국) 游客 = <strong>年1,750万人 (2024)</strong>·MZ (20-39岁) <strong>58%</strong>·平均停留 <strong>6.4天</strong>·平均支出 <strong>1,605 USD/人</strong>·回头率 <strong>23%</strong> (韩国旅游发展局2024统计)。</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>项目</th>
 <th>数值</th>
 <th>来源</th>
@@ -393,7 +422,7 @@
 <td><strong>春 (樱花·4月)·秋 (红叶·10-11月)</strong></td>
 <td>旅游发展局季节分析</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <blockquote><p><strong>数据解读</strong>: 英文全套65%·支付80%·季节矩阵春·秋 <a href="seongsu.zh.html" class="xref">#1</a>·1339紧急服务24小时英文 = 外国游客首次入境安全·挚爱矩阵契合。</p></blockquote>
 <h2>🏷 标签</h2>
 <p><code>#寺庙寺院寄宿深度体验</code> <code>#KoreaTempleStay</code> <code>#UNESCO7大山寺2018</code> <code>#通度寺浮石寺凤停寺法住寺麻谷寺仙岩寺大兴寺</code> <code>#韩国3宝寺刹通度海印松广</code> <code>#津宽寺1018首尔#1寺院寄宿</code> <code>#奉恩寺江南</code> <code>#曹溪寺钟路</code> <code>#海印寺八万大藏经UNESCO1995</code> <code>#松广寺僧宝宗刹</code> <code>#KeyChinGu</code></p>
@@ -465,7 +494,7 @@
 <li>[ ] 选择适合季节的店铺 (樱花·夏季·红叶·冬季)</li>
 </ul>
 <h2>7天+ 长期旅行者系列内安排</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>天数</th>
 <th>区域</th>
 <th>活动</th>
@@ -485,7 +514,7 @@
 <td>KTX 近郊</td>
 <td><a href="gangneung-ktx-2day.zh.html" class="xref">#1106</a>·1107·1108·1114·1115</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h2>额外交叉链接</h2>
 <ul>
 <li>外国游客7日大师级首尔 (Seoul / 서울) 攻略</li>
@@ -521,34 +550,7 @@
     <div><a href="jungnang-meokgol-life.zh.html" style="color:var(--red);">中浪墨谷面牧上凤生活方式深度探索 &rarr;</a></div>
   </nav>
 
-  <section id="kc-related" style="display:none;margin:2.2rem 0 0.5rem;">
-    <h2 style="font-size:1.1rem;margin-bottom:0.8rem;">相关指南</h2>
-    <div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"></div>
-  </section>
-  <script>
-  // related guides — 같은 카테고리 최신 6편 (contents.json fetch·언어 suffix 자동, 2026-07-04)
-  (function() {
-    var m = location.pathname.match(/\/content\/(.+?)(\.en|\.zh|\.ja)?\.html$/);
-    if (!m) return;
-    var slug = m[1], suf = m[2] || '';
-    fetch('../data/contents.json').then(function(r) { return r.json(); }).then(function(items) {
-      var me = null;
-      for (var i = 0; i < items.length; i++) { if (items[i].slug === slug) { me = items[i]; break; } }
-      if (!me) return;
-      var pool = items.filter(function(x) { return x.slug !== slug && x.category === me.category; });
-      pool.sort(function(a, b) { return (parseInt(b.id, 10) || 0) - (parseInt(a.id, 10) || 0); });
-      var picks = pool.slice(0, 6);
-      if (!picks.length) return;
-      document.getElementById('kc-related-grid').innerHTML = picks.map(function(x) {
-        var t = suf ? (x.title_en || x.title_kr) : (x.title_kr || x.title_en);
-        var ok = suf === '' || (suf === '.en' ? x.en_available : (suf === '.zh' ? x.cn_available : x.jp_available));
-        var href = x.slug + (ok ? suf : '') + '.html';
-        return '<a href="' + href + '" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">' + t + '</a>';
-      }).join('');
-      document.getElementById('kc-related').style.display = 'block';
-    }).catch(function() {});
-  })();
-  </script>
+  <section id="kc-related" style="margin:2.2rem 0 0.5rem;"><h2 style="font-size:1.1rem;margin-bottom:0.8rem;">相关指南</h2><div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"><a href="royal-palace-autumn-nights.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Royal Palaces After Dark: Starlight Tours, Moonlight Walks and the Royal Culture Festival — the Reservation-Only Side of Autumn Seoul</a><a href="seoul-fireworks-festival.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Seoul International Fireworks Festival 2026: September 5 at Yeouido — How to Claim a Spot Among a Million People</a><a href="seoul-architecture-eras.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Seoul Architecture Time Walk — Traditional, Modern &amp; Contemporary: 15 Picks + An Architectural Appreciation Lens</a><a href="korea-kpop-fansign-videocall.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">K-pop Fansign·Video Call (Album Entry·Yeongtong)</a><a href="korea-idol-birthday-cafe.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Idol Birthday Cafe (Saengka·Cup Sleeve·Support)</a><a href="korea-kpop-music-show-taping.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">K-pop Music Show Taping (Inkigayo·M Countdown·Music Bank)</a></div></section>
   <!-- kc-comments -->
   <section id="kc-comments" style="margin:2.5rem 0 0.5rem;">
     <h2>评论</h2>

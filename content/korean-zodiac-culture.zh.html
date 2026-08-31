@@ -34,7 +34,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/main.css">
 <style>
 .detail-wrap {
@@ -50,11 +50,11 @@
 .breadcrumb a { color: var(--red); font-weight: 600; }
 .detail-wrap h1 {
   font-size: 28px; font-weight: 800;
-  color: var(--black); margin-bottom: 8px;
+  color: var(--text); margin-bottom: 8px;
 }
 .detail-wrap h2 {
   font-size: 22px; font-weight: 700;
-  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  color: var(--text); margin-top: 32px; margin-bottom: 12px;
   padding-bottom: 6px;
   border-bottom: 2px solid var(--red);
 }
@@ -73,10 +73,19 @@
   font-size: 14px; line-height: 1.6;
   color: var(--text-mid); margin-bottom: 6px;
 }
+/* 표는 자기 컨테이너 안에서만 가로 스크롤한다 — 이게 없으면 min-content 폭이
+   뷰포트를 넘는 순간 페이지 전체가 가로로 밀렸다 (2026-08-31 점검 M2).
+   table 자체는 table 로 남겨 행·열 관계를 보존한다(display:block 으로 해결하지 않는 이유). */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 16px;
+}
 .detail-wrap table {
   width: 100%; border-collapse: collapse;
   margin-bottom: 16px; font-size: 13px;
 }
+.table-scroll > table { margin-bottom: 0; }
 .detail-wrap th {
   background: var(--black); color: #fff;
   padding: 10px 12px; text-align: left;
@@ -137,10 +146,30 @@
   user-select: none;
 }
 </style>
+<script>
+/* 테마 부트스트랩 — 2026-08-31 점검 M3.
+   기사 4,804p 에 이게 없어서, OS 다크 사용자가 홈(다크)에서 기사를 열면
+   라이트로 번쩍였다. main.css 의 다크 규칙은 전부 [data-theme="dark"] 스코프이고
+   prefers-color-scheme 미디어쿼리는 CSS 에 없으므로, 속성을 여기서 달아줘야 한다.
+   <head> 안에서 동기 실행 — paint 전에 끝나야 깜빡임이 없다.
+   허브와 달리 기사엔 토글 버튼이 없다. 저장된 선택(kc_theme)과 OS 설정만 따른다. */
+(function () {
+  try {
+    var s = localStorage.getItem('kc_theme');
+    if (s === 'dark' || (!s && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  } catch (e) {}
+})();
+</script>
 </head>
 <body>
+<a class="skip-link" href="#kc-main">跳到正文</a>
 <header class="site-header">
-  <a href="../zh/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <!-- width/height = 고유 크기(400x149). CSS 가 height:36px 로 줄이지만 브라우저는
+       이 비율로 자리를 미리 잡아 레이아웃 이동(CLS)을 막는다. 헤더 로고는 첫 화면에
+       보이므로 lazy 가 아니라 eager. -->
+  <a href="../zh/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo" width="400" height="149" loading="eager" decoding="async"></a>
   <div class="lang-switch">
     <a href="../content/korean-zodiac-culture.html">KR</a>
     <a href="../content/korean-zodiac-culture.en.html">EN</a>
@@ -149,7 +178,7 @@
   </div>
 </header>
 
-<main class="detail-wrap">
+<main class="detail-wrap" id="kc-main" tabindex="-1">
   <nav class="breadcrumb" aria-label="breadcrumb"><a href="../zh/index.html">全部指南</a> &rsaquo; 韩国生肖文化</nav>
   <article>
   <h1>你是什么星座？ — 出生年份动物的含义</h1>
@@ -158,7 +187,7 @@
 <hr>
 <h2>★ 概览 — 12 生肖和大致出生年份</h2>
 <p>中国的十二生肖每12年轮换一次。相同的星座相差12岁（或相差24·36·48·岁）。以下是具有代表性的出生年份（★由于“生肖变化标准”——下文⑥，年初出生的人的确切生肖可能会有所不同）。</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>订单</th>
 <th>十二生肖（汉字）</th>
 <th>动物</th>
@@ -249,7 +278,7 @@
 <td>猪</td>
 <td>1983年·1995年·2007年·2019年</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <blockquote><p><strong>记忆顺序的技巧</strong>：鼠-牛-虎-兔-龙-蛇-马-羊-猴-鸡-狗-猪。在韩国，用12个字母（jiji）来记忆<strong>Jachukinmyojinsaomishinyusulhae（子丑寅卯辰巳午未申酉戌）</strong>。 2026年是<strong>马年</strong>。</p></blockquote>
 <hr>
 <h2>⚠️外国人常误解的3件事</h2>
@@ -287,7 +316,7 @@
 <hr>
 <h2>⑤ ★사주(四柱) vs 띠 — 가장 중요한 구분</h2>
 <p>외국인이 가장 헷갈리는 지점이자, 이 글에서 꼭 가져갈 한 가지. <strong>띠와 사주는 같은 게 아니다.</strong></p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th></th>
 <th><strong>띠 (ddi)</strong></th>
 <th><strong>사주 (saju)</strong></th>
@@ -317,7 +346,7 @@
 <td>이름표 한 글자</td>
 <td>네 줄짜리 프로필</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <ul>
 <li>핵심: <strong>띠는 사주의 한 조각</strong>이다. 사주의 &#x27;연(年) 기둥&#x27; 지지가 곧 그 사람의 띠다. 그래서 &quot;같은 띠&quot;여도 월·일·시가 다르면 사주는 완전히 다르다.</li>
 <li>그래서 명리 상담가들은 <strong>&quot;운세는 띠만으로 보기엔 너무 거칠다&quot;</strong> 고 한다. 띠는 12분의 1로 사람을 나누지만, 사주는 연·월·일·시를 곱해 훨씬 세밀하게 본다. 현대 명리에선 띠(연)보다 <strong>태어난 &#x27;날&#x27;(일간日干)</strong> 을 더 중요하게 보는 흐름도 있다.</li>
@@ -334,7 +363,7 @@
 <hr>
 <h2>⑦ 亚洲十二生肖比较——12种看似相同但又不同的动物</h2>
 <p>十二生肖并非韩国独有，而是东亚和东南亚的共同文化。然而，每个国家都有一两种不同的动物。</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>数字</th>
 <th>韩国</th>
 <th>中国</th>
@@ -362,7 +391,7 @@
 <td>羊</td>
 <td>山羊</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <ul>
 <li><strong>越南猫年</strong>是最著名的柴。还有一种理论认为，“myo”（意思是兔子）的发音被改变了，因为它与越南语中的猫（mèo）相似，还有一种文化解释是，捕捉老鼠的猫在稻作国家更为常见。所以，当你说“我是兔子”时，你的越南朋友可能会回答：“我们是猫！”</li>
 <li>日本与韩国和中国具有相同的动物成分，但它有很强的倾向将中国的十二生肖视为<strong>新年贺卡/十二生肖符号</strong>。</li>
@@ -414,34 +443,7 @@
     <div><a href="korean-tea-drink-culture.zh.html" style="color:var(--red);">韩国传统茶饮文化 &rarr;</a></div>
   </nav>
 
-  <section id="kc-related" style="display:none;margin:2.2rem 0 0.5rem;">
-    <h2 style="font-size:1.1rem;margin-bottom:0.8rem;">相关指南</h2>
-    <div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"></div>
-  </section>
-  <script>
-  // related guides — 같은 카테고리 최신 6편 (contents.json fetch·언어 suffix 자동, 2026-07-04)
-  (function() {
-    var m = location.pathname.match(/\/content\/(.+?)(\.en|\.zh|\.ja)?\.html$/);
-    if (!m) return;
-    var slug = m[1], suf = m[2] || '';
-    fetch('../data/contents.json').then(function(r) { return r.json(); }).then(function(items) {
-      var me = null;
-      for (var i = 0; i < items.length; i++) { if (items[i].slug === slug) { me = items[i]; break; } }
-      if (!me) return;
-      var pool = items.filter(function(x) { return x.slug !== slug && x.category === me.category; });
-      pool.sort(function(a, b) { return (parseInt(b.id, 10) || 0) - (parseInt(a.id, 10) || 0); });
-      var picks = pool.slice(0, 6);
-      if (!picks.length) return;
-      document.getElementById('kc-related-grid').innerHTML = picks.map(function(x) {
-        var t = suf ? (x.title_en || x.title_kr) : (x.title_kr || x.title_en);
-        var ok = suf === '' || (suf === '.en' ? x.en_available : (suf === '.zh' ? x.cn_available : x.jp_available));
-        var href = x.slug + (ok ? suf : '') + '.html';
-        return '<a href="' + href + '" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">' + t + '</a>';
-      }).join('');
-      document.getElementById('kc-related').style.display = 'block';
-    }).catch(function() {});
-  })();
-  </script>
+  <section id="kc-related" style="margin:2.2rem 0 0.5rem;"><h2 style="font-size:1.1rem;margin-bottom:0.8rem;">相关指南</h2><div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"><a href="royal-palace-autumn-nights.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Royal Palaces After Dark: Starlight Tours, Moonlight Walks and the Royal Culture Festival — the Reservation-Only Side of Autumn Seoul</a><a href="seoul-fireworks-festival.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Seoul International Fireworks Festival 2026: September 5 at Yeouido — How to Claim a Spot Among a Million People</a><a href="seoul-architecture-eras.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Seoul Architecture Time Walk — Traditional, Modern &amp; Contemporary: 15 Picks + An Architectural Appreciation Lens</a><a href="korea-kpop-fansign-videocall.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">K-pop Fansign·Video Call (Album Entry·Yeongtong)</a><a href="korea-idol-birthday-cafe.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Idol Birthday Cafe (Saengka·Cup Sleeve·Support)</a><a href="korea-kpop-music-show-taping.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">K-pop Music Show Taping (Inkigayo·M Countdown·Music Bank)</a></div></section>
   <!-- kc-comments -->
   <section id="kc-comments" style="margin:2.5rem 0 0.5rem;">
     <h2>评论</h2>

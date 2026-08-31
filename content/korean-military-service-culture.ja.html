@@ -34,7 +34,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/main.css">
 <style>
 .detail-wrap {
@@ -50,11 +50,11 @@
 .breadcrumb a { color: var(--red); font-weight: 600; }
 .detail-wrap h1 {
   font-size: 28px; font-weight: 800;
-  color: var(--black); margin-bottom: 8px;
+  color: var(--text); margin-bottom: 8px;
 }
 .detail-wrap h2 {
   font-size: 22px; font-weight: 700;
-  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  color: var(--text); margin-top: 32px; margin-bottom: 12px;
   padding-bottom: 6px;
   border-bottom: 2px solid var(--red);
 }
@@ -73,10 +73,19 @@
   font-size: 14px; line-height: 1.6;
   color: var(--text-mid); margin-bottom: 6px;
 }
+/* 표는 자기 컨테이너 안에서만 가로 스크롤한다 — 이게 없으면 min-content 폭이
+   뷰포트를 넘는 순간 페이지 전체가 가로로 밀렸다 (2026-08-31 점검 M2).
+   table 자체는 table 로 남겨 행·열 관계를 보존한다(display:block 으로 해결하지 않는 이유). */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 16px;
+}
 .detail-wrap table {
   width: 100%; border-collapse: collapse;
   margin-bottom: 16px; font-size: 13px;
 }
+.table-scroll > table { margin-bottom: 0; }
 .detail-wrap th {
   background: var(--black); color: #fff;
   padding: 10px 12px; text-align: left;
@@ -137,10 +146,30 @@
   user-select: none;
 }
 </style>
+<script>
+/* 테마 부트스트랩 — 2026-08-31 점검 M3.
+   기사 4,804p 에 이게 없어서, OS 다크 사용자가 홈(다크)에서 기사를 열면
+   라이트로 번쩍였다. main.css 의 다크 규칙은 전부 [data-theme="dark"] 스코프이고
+   prefers-color-scheme 미디어쿼리는 CSS 에 없으므로, 속성을 여기서 달아줘야 한다.
+   <head> 안에서 동기 실행 — paint 전에 끝나야 깜빡임이 없다.
+   허브와 달리 기사엔 토글 버튼이 없다. 저장된 선택(kc_theme)과 OS 설정만 따른다. */
+(function () {
+  try {
+    var s = localStorage.getItem('kc_theme');
+    if (s === 'dark' || (!s && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  } catch (e) {}
+})();
+</script>
 </head>
 <body>
+<a class="skip-link" href="#kc-main">本文へスキップ</a>
 <header class="site-header">
-  <a href="../ja/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <!-- width/height = 고유 크기(400x149). CSS 가 height:36px 로 줄이지만 브라우저는
+       이 비율로 자리를 미리 잡아 레이아웃 이동(CLS)을 막는다. 헤더 로고는 첫 화면에
+       보이므로 lazy 가 아니라 eager. -->
+  <a href="../ja/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo" width="400" height="149" loading="eager" decoding="async"></a>
   <div class="lang-switch">
     <a href="../content/korean-military-service-culture.html">KR</a>
     <a href="../content/korean-military-service-culture.en.html">EN</a>
@@ -149,7 +178,7 @@
   </div>
 </header>
 
-<main class="detail-wrap">
+<main class="detail-wrap" id="kc-main" tabindex="-1">
   <nav class="breadcrumb" aria-label="breadcrumb"><a href="../ja/index.html">ガイド一覧</a> &rsaquo; 韓国の兵役文化</nav>
   <article>
   <h1>韓国の軍隊・兵役文化 — なぜほとんど全ての韓国人男性が約18ヶ月間、軍隊に行くのか</h1>
@@ -157,7 +186,7 @@
 <p>好きなK-POP (ケーポップ) アイドルの活動がある日、止まる。人気絶頂の俳優が「行ってきます」の一言を残し、髪を短く刈る。初めて見る外国人ファンは衝撃を受ける — <em>なぜ世界的なスターが1年半以上も姿を消すのか？</em> 答えは一つ。韓国は<strong>徴兵制 (ジンビョンジェ) (強制兵役制度) 国家</strong>であり、身体の健康な男性はほとんどが<strong>軍服務義務</strong>を負う。BTS (ビーティーエス) のメンバー7人全員が入隊し、順に服務を終えたこと (除隊時期はメンバーによって異なる — おおむね2024年～2025年) は、この原則を全世界に刻み込んだ。外国人の目には「なぜ自由な国で強制的に軍隊に行かせるのか」と映るかもしれないが、韓国人にとっては<strong>分断・休戦という安全保障上の現実</strong>から始まった長年の制度であり、同時に<strong>軍畢 (グンピル) (兵役を終えた者)/未畢 (ミピル) (兵役を終えていない者)・序列・キャリア断絶</strong>といった社会文化を生み出した巨大な変数だ。この文章は「軍隊に行くな/行け」ではなく、<strong>なぜこの制度があり、社会をどう変えるのか</strong>を外国人の視点で — 安全保障であれ公平性であれ<strong>どちらか一方に断定することなく</strong> — 客観的かつバランス良く解説する。韓国文化解説シリーズ<strong>23編</strong>。</p>
 <hr>
 <h2>★ 一目でわかる — 韓国の兵役、8つの核心</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>項目</th>
 <th>内容</th>
 <th>一言</th>
@@ -202,7 +231,7 @@
 <td>公平性・人口・ジェンダー</td>
 <td>免除基準・女性徴兵・募兵制など議論中</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <blockquote><p>*服務期間は<strong>陸軍/海兵隊 18ヶ月、海軍 20ヶ月、空軍 21ヶ月</strong>が広く知られている基準ですが、制度は時期によって調整されてきました — <strong>正確な最新期間は兵務庁 (ビョンムチョン) など公式チャンネルで確認を推奨</strong>。</p></blockquote>
 <hr>
 <h2>⚠️ 外国人がよく誤解する3つのこと</h2>
@@ -230,7 +259,7 @@
 <hr>
 <h2>③ 服務過程 — 入営から予備軍 (イェビグン)・民防衛 (ミンバンウィ) まで</h2>
 <p>兵役は入営一度で終わるのではなく<strong>複数の段階からなる長い流れ</strong>だ。</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>段階</th>
 <th>内容</th>
 </tr></thead><tbody>
@@ -258,7 +287,7 @@
 <td><strong>民防衛 (ミンバンウィ)</strong></td>
 <td>予備軍 (イェビグン) 以降、さらに高い年齢層まで非常事態備えの組織に編成</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <blockquote><p>*服務期間は過去より長かったが段階的に短縮され現在の基準に至った。<strong>詳細・最新の数値は兵務庁 (ビョンムチョン) (mma.go.kr) など公式チャンネルでの確認を推奨。</strong></p></blockquote>
 <p>この構造のため、韓国人男性にとって「軍隊」は<strong>20代前半の1～2年 + その後数年間の予備軍 (イェビグン) 訓練</strong>までを含む、人生のかなり長い期間となる。</p>
 <hr>
@@ -353,34 +382,7 @@
     <div><a href="korean-filial-piety-culture.ja.html" style="color:var(--red);">韓国の孝・家族主義 &rarr;</a></div>
   </nav>
 
-  <section id="kc-related" style="display:none;margin:2.2rem 0 0.5rem;">
-    <h2 style="font-size:1.1rem;margin-bottom:0.8rem;">関連ガイド</h2>
-    <div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"></div>
-  </section>
-  <script>
-  // related guides — 같은 카테고리 최신 6편 (contents.json fetch·언어 suffix 자동, 2026-07-04)
-  (function() {
-    var m = location.pathname.match(/\/content\/(.+?)(\.en|\.zh|\.ja)?\.html$/);
-    if (!m) return;
-    var slug = m[1], suf = m[2] || '';
-    fetch('../data/contents.json').then(function(r) { return r.json(); }).then(function(items) {
-      var me = null;
-      for (var i = 0; i < items.length; i++) { if (items[i].slug === slug) { me = items[i]; break; } }
-      if (!me) return;
-      var pool = items.filter(function(x) { return x.slug !== slug && x.category === me.category; });
-      pool.sort(function(a, b) { return (parseInt(b.id, 10) || 0) - (parseInt(a.id, 10) || 0); });
-      var picks = pool.slice(0, 6);
-      if (!picks.length) return;
-      document.getElementById('kc-related-grid').innerHTML = picks.map(function(x) {
-        var t = suf ? (x.title_en || x.title_kr) : (x.title_kr || x.title_en);
-        var ok = suf === '' || (suf === '.en' ? x.en_available : (suf === '.zh' ? x.cn_available : x.jp_available));
-        var href = x.slug + (ok ? suf : '') + '.html';
-        return '<a href="' + href + '" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">' + t + '</a>';
-      }).join('');
-      document.getElementById('kc-related').style.display = 'block';
-    }).catch(function() {});
-  })();
-  </script>
+  <section id="kc-related" style="margin:2.2rem 0 0.5rem;"><h2 style="font-size:1.1rem;margin-bottom:0.8rem;">関連ガイド</h2><div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"><a href="royal-palace-autumn-nights.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Royal Palaces After Dark: Starlight Tours, Moonlight Walks and the Royal Culture Festival — the Reservation-Only Side of Autumn Seoul</a><a href="seoul-fireworks-festival.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Seoul International Fireworks Festival 2026: September 5 at Yeouido — How to Claim a Spot Among a Million People</a><a href="seoul-architecture-eras.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Seoul Architecture Time Walk — Traditional, Modern &amp; Contemporary: 15 Picks + An Architectural Appreciation Lens</a><a href="korea-kpop-fansign-videocall.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">K-pop Fansign·Video Call (Album Entry·Yeongtong)</a><a href="korea-idol-birthday-cafe.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Idol Birthday Cafe (Saengka·Cup Sleeve·Support)</a><a href="korea-kpop-music-show-taping.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">K-pop Music Show Taping (Inkigayo·M Countdown·Music Bank)</a></div></section>
   <!-- kc-comments -->
   <section id="kc-comments" style="margin:2.5rem 0 0.5rem;">
     <h2>コメント</h2>

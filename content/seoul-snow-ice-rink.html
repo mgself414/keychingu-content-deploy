@@ -34,7 +34,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/main.css">
 <style>
 .detail-wrap {
@@ -50,11 +50,11 @@
 .breadcrumb a { color: var(--red); font-weight: 600; }
 .detail-wrap h1 {
   font-size: 28px; font-weight: 800;
-  color: var(--black); margin-bottom: 8px;
+  color: var(--text); margin-bottom: 8px;
 }
 .detail-wrap h2 {
   font-size: 22px; font-weight: 700;
-  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  color: var(--text); margin-top: 32px; margin-bottom: 12px;
   padding-bottom: 6px;
   border-bottom: 2px solid var(--red);
 }
@@ -73,10 +73,19 @@
   font-size: 14px; line-height: 1.6;
   color: var(--text-mid); margin-bottom: 6px;
 }
+/* 표는 자기 컨테이너 안에서만 가로 스크롤한다 — 이게 없으면 min-content 폭이
+   뷰포트를 넘는 순간 페이지 전체가 가로로 밀렸다 (2026-08-31 점검 M2).
+   table 자체는 table 로 남겨 행·열 관계를 보존한다(display:block 으로 해결하지 않는 이유). */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 16px;
+}
 .detail-wrap table {
   width: 100%; border-collapse: collapse;
   margin-bottom: 16px; font-size: 13px;
 }
+.table-scroll > table { margin-bottom: 0; }
 .detail-wrap th {
   background: var(--black); color: #fff;
   padding: 10px 12px; text-align: left;
@@ -137,11 +146,31 @@
   user-select: none;
 }
 </style>
+<script>
+/* 테마 부트스트랩 — 2026-08-31 점검 M3.
+   기사 4,804p 에 이게 없어서, OS 다크 사용자가 홈(다크)에서 기사를 열면
+   라이트로 번쩍였다. main.css 의 다크 규칙은 전부 [data-theme="dark"] 스코프이고
+   prefers-color-scheme 미디어쿼리는 CSS 에 없으므로, 속성을 여기서 달아줘야 한다.
+   <head> 안에서 동기 실행 — paint 전에 끝나야 깜빡임이 없다.
+   허브와 달리 기사엔 토글 버튼이 없다. 저장된 선택(kc_theme)과 OS 설정만 따른다. */
+(function () {
+  try {
+    var s = localStorage.getItem('kc_theme');
+    if (s === 'dark' || (!s && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  } catch (e) {}
+})();
+</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "TouristAttraction", "name": "눈 내린 궁궐 — 도심 설경 스팟 8곳 + 겨울 아이스링크, 눈 예보를 기다리는 법", "url": "https://mgself414.github.io/keychingu-content-deploy/content/seoul-snow-ice-rink.html", "image": "https://mgself414.github.io/keychingu-content-deploy/og/seoul-snow-ice-rink.png", "address": {"@type": "PostalAddress", "addressLocality": "Seoul", "addressCountry": "KR"}, "touristType": "Foreigner-friendly tourism"}</script>
 </head>
 <body>
+<a class="skip-link" href="#kc-main">본문 바로가기</a>
 <header class="site-header">
-  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <!-- width/height = 고유 크기(400x149). CSS 가 height:36px 로 줄이지만 브라우저는
+       이 비율로 자리를 미리 잡아 레이아웃 이동(CLS)을 막는다. 헤더 로고는 첫 화면에
+       보이므로 lazy 가 아니라 eager. -->
+  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo" width="400" height="149" loading="eager" decoding="async"></a>
   <div class="lang-switch">
     <a href="../content/seoul-snow-ice-rink.html" class="active">KR</a>
     <a href="../content/seoul-snow-ice-rink.en.html">EN</a>
@@ -150,7 +179,7 @@
   </div>
 </header>
 
-<main class="detail-wrap">
+<main class="detail-wrap" id="kc-main" tabindex="-1">
   <nav class="breadcrumb" aria-label="breadcrumb"><a href="../index.html">전체 가이드</a> &rsaquo; <a href="../seasons.html">🍂 시즌</a> &rsaquo; 눈 내린 궁궐 — 도심 설경 스팟 8곳 + 겨울 아이스링크, 눈 예보를 기다리는 법</nav>
   <article>
   <h1>눈 내린 궁궐 — 도심 설경 스팟 8곳 + 겨울 아이스링크, 눈 예보를 기다리는 법</h1>
@@ -159,7 +188,7 @@
 <hr>
 <h2>🎯 서울 설경은 &quot;계획&quot;이 아니라 &quot;대기&quot;다</h2>
 <p>서울에 눈이 쌓이는 날은 겨울 한 철에 <strong>손에 꼽는다</strong>. 내려도 도심은 제설이 빨라 오후면 사라진다. 그래서 설경은 일정표에 넣는 것이 아니라, <strong>예보를 보고 그날 아침 즉시 움직이는 방식</strong>으로만 잡힌다.</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>구분</th>
 <th>설경 (이 편 ①)</th>
 <th>아이스링크 (이 편 ③)</th>
@@ -183,7 +212,7 @@
 <td>1~2시간</td>
 <td>하루</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <blockquote><p>💡 <strong>골든타임은 눈 그친 직후 ~ 오전 중</strong>이다. 정오가 지나면 도심 눈은 녹거나 치워진다. &quot;내일 눈&quot;이라는 예보를 봤다면, 다음 날 일정을 비우는 것이 이 편의 핵심 전략이다.</p></blockquote>
 <hr>
 <h2>① 도심 설경 스팟 8곳</h2>
@@ -207,7 +236,7 @@
 </ul>
 <hr>
 <h2>③ 아이스링크 — 눈이 안 와도 확실한 겨울</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>링크</th>
 <th>성격</th>
 <th>특징</th>
@@ -227,7 +256,7 @@
 <td>팝업</td>
 <td>연말 시즌 한정으로 열리는 소규모 링크들 — 매년 운영지가 바뀌므로 당해 공지 확인</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <ul>
 <li>서울광장 링크는 <strong>회차제 운영</strong>(입장 시간대별 교대)이 관례다. 주말 오후는 대기가 길다 — 평일 오전·이른 오후 권장.</li>
 <li>장비(스케이트·헬멧)는 현장 대여가 기본이라 맨몸으로 가도 된다. <strong>장갑은 필수</strong>(대부분 착용 의무).</li>
@@ -286,34 +315,7 @@
     <div><a href="busan-signature-food.html" style="color:var(--red);">부산에서만 먹는 세 가지 — 돼지국밥·밀면·회, 주문하는 법까지 &rarr;</a></div>
   </nav>
 
-  <section id="kc-related" style="display:none;margin:2.2rem 0 0.5rem;">
-    <h2 style="font-size:1.1rem;margin-bottom:0.8rem;">관련 가이드</h2>
-    <div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"></div>
-  </section>
-  <script>
-  // related guides — 같은 카테고리 최신 6편 (contents.json fetch·언어 suffix 자동, 2026-07-04)
-  (function() {
-    var m = location.pathname.match(/\/content\/(.+?)(\.en|\.zh|\.ja)?\.html$/);
-    if (!m) return;
-    var slug = m[1], suf = m[2] || '';
-    fetch('../data/contents.json').then(function(r) { return r.json(); }).then(function(items) {
-      var me = null;
-      for (var i = 0; i < items.length; i++) { if (items[i].slug === slug) { me = items[i]; break; } }
-      if (!me) return;
-      var pool = items.filter(function(x) { return x.slug !== slug && x.category === me.category; });
-      pool.sort(function(a, b) { return (parseInt(b.id, 10) || 0) - (parseInt(a.id, 10) || 0); });
-      var picks = pool.slice(0, 6);
-      if (!picks.length) return;
-      document.getElementById('kc-related-grid').innerHTML = picks.map(function(x) {
-        var t = suf ? (x.title_en || x.title_kr) : (x.title_kr || x.title_en);
-        var ok = suf === '' || (suf === '.en' ? x.en_available : (suf === '.zh' ? x.cn_available : x.jp_available));
-        var href = x.slug + (ok ? suf : '') + '.html';
-        return '<a href="' + href + '" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">' + t + '</a>';
-      }).join('');
-      document.getElementById('kc-related').style.display = 'block';
-    }).catch(function() {});
-  })();
-  </script>
+  <section id="kc-related" style="margin:2.2rem 0 0.5rem;"><h2 style="font-size:1.1rem;margin-bottom:0.8rem;">관련 가이드</h2><div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"><a href="busan-night-view.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">부산 야경 총론 — 바다, 산, 골목의 세 가지 밤</a><a href="seoul-ginkgo-walk.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">노란 서울 — 은행나무 길 산책 가이드, 단풍과는 다른 11월의 색</a><a href="seoul-grass-season.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">서울 억새·핑크뮬리 — 벚꽃의 가을 버전, 그라스 시즌 완전 가이드</a><a href="seoul-sunset-spots.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">서울 노을 명소 12선 — 해 지기 전 45분, 골든아워 스팟 가이드</a><a href="naengmyeon-index.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">외국인 냉면 인덱스</a><a href="mangwon-dong-index.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">외국인 망원동 인덱스</a></div></section>
   <!-- kc-comments -->
   <section id="kc-comments" style="margin:2.5rem 0 0.5rem;">
     <h2>댓글</h2>

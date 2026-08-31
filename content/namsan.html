@@ -34,7 +34,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/main.css">
 <style>
 .detail-wrap {
@@ -50,11 +50,11 @@
 .breadcrumb a { color: var(--red); font-weight: 600; }
 .detail-wrap h1 {
   font-size: 28px; font-weight: 800;
-  color: var(--black); margin-bottom: 8px;
+  color: var(--text); margin-bottom: 8px;
 }
 .detail-wrap h2 {
   font-size: 22px; font-weight: 700;
-  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  color: var(--text); margin-top: 32px; margin-bottom: 12px;
   padding-bottom: 6px;
   border-bottom: 2px solid var(--red);
 }
@@ -73,10 +73,19 @@
   font-size: 14px; line-height: 1.6;
   color: var(--text-mid); margin-bottom: 6px;
 }
+/* 표는 자기 컨테이너 안에서만 가로 스크롤한다 — 이게 없으면 min-content 폭이
+   뷰포트를 넘는 순간 페이지 전체가 가로로 밀렸다 (2026-08-31 점검 M2).
+   table 자체는 table 로 남겨 행·열 관계를 보존한다(display:block 으로 해결하지 않는 이유). */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 16px;
+}
 .detail-wrap table {
   width: 100%; border-collapse: collapse;
   margin-bottom: 16px; font-size: 13px;
 }
+.table-scroll > table { margin-bottom: 0; }
 .detail-wrap th {
   background: var(--black); color: #fff;
   padding: 10px 12px; text-align: left;
@@ -137,11 +146,31 @@
   user-select: none;
 }
 </style>
+<script>
+/* 테마 부트스트랩 — 2026-08-31 점검 M3.
+   기사 4,804p 에 이게 없어서, OS 다크 사용자가 홈(다크)에서 기사를 열면
+   라이트로 번쩍였다. main.css 의 다크 규칙은 전부 [data-theme="dark"] 스코프이고
+   prefers-color-scheme 미디어쿼리는 CSS 에 없으므로, 속성을 여기서 달아줘야 한다.
+   <head> 안에서 동기 실행 — paint 전에 끝나야 깜빡임이 없다.
+   허브와 달리 기사엔 토글 버튼이 없다. 저장된 선택(kc_theme)과 OS 설정만 따른다. */
+(function () {
+  try {
+    var s = localStorage.getItem('kc_theme');
+    if (s === 'dark' || (!s && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  } catch (e) {}
+})();
+</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "TouristAttraction", "name": "남산 둘레길 & 야경", "url": "https://mgself414.github.io/keychingu-content-deploy/content/namsan.html", "image": "https://mgself414.github.io/keychingu-content-deploy/og/namsan.png", "address": {"@type": "PostalAddress", "addressLocality": "Seoul", "addressCountry": "KR"}, "touristType": "Foreigner-friendly tourism"}</script>
 </head>
 <body>
+<a class="skip-link" href="#kc-main">본문 바로가기</a>
 <header class="site-header">
-  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <!-- width/height = 고유 크기(400x149). CSS 가 height:36px 로 줄이지만 브라우저는
+       이 비율로 자리를 미리 잡아 레이아웃 이동(CLS)을 막는다. 헤더 로고는 첫 화면에
+       보이므로 lazy 가 아니라 eager. -->
+  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo" width="400" height="149" loading="eager" decoding="async"></a>
   <div class="lang-switch">
     <a href="../content/namsan.html" class="active">KR</a>
     <a href="../content/namsan.en.html">EN</a>
@@ -150,7 +179,7 @@
   </div>
 </header>
 
-<main class="detail-wrap">
+<main class="detail-wrap" id="kc-main" tabindex="-1">
   <nav class="breadcrumb" aria-label="breadcrumb"><a href="../index.html">전체 가이드</a> &rsaquo; 남산 둘레길 & 야경</nav>
   <article>
   <h1>남산 가이드 — N서울타워·케이블카·사랑의 자물쇠·야경 완전 공략</h1>
@@ -158,7 +187,7 @@
 <p>ISSUE 01 · #13 · 마지막 업데이트: 2026-06-28 (SERP-align: N서울타워·케이블카·사랑의 자물쇠 섹션화)</p>
 <hr>
 <h2>한눈에 남산</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>항목</th>
 <th>내용</th>
 </tr></thead><tbody>
@@ -186,12 +215,12 @@
 <td><strong>운영</strong></td>
 <td>케이블카 10:00~23:00 · N서울타워 10:00~23:00</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>🗼 N서울타워 (N Seoul Tower) — 서울 대표 랜드마크</h2>
 <p>남산 정상(해발 243m)에 위치한 236m 전망 타워. 서울에서 가장 높은 전망 지점.</p>
 <h3>전망대 관람 정보</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>구분</th>
 <th>내용</th>
 </tr></thead><tbody>
@@ -207,9 +236,9 @@
 <td><strong>공식 사이트</strong></td>
 <td><a href="https://www.nseoultower.co.kr/" rel="noopener">nseoultower.co.kr</a></td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h3>전망대 vs 외부 산책로 — 뭘 선택할까?</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th></th>
 <th>전망대 (유료)</th>
 <th>외부 산책로 (무료)</th>
@@ -234,12 +263,12 @@
 <td>날씨 나쁠 때 · 상세 도시 지도 보고 싶을 때</td>
 <td>날씨 맑을 때 · 예산 절약 시</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p><strong>외국인 의견</strong>: 맑은 날은 외부 산책로만으로 충분히 만족 — 무료 야경 품질이 높음.</p>
 <hr>
 <h2>🚡 케이블카 (Cable Car) — 남산 오르는 핵심 방법</h2>
 <p><strong>남산 케이블카</strong>는 케이블카 하부 정류장(명동역 도보 15분)에서 상부 정류장(N서울타워 근처)까지 8분 운행.</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>구분</th>
 <th>금액</th>
 </tr></thead><tbody>
@@ -255,7 +284,7 @@
 <td><strong>운영시간</strong></td>
 <td>10:00~23:00 (계절·날씨에 따라 변동)</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h3>케이블카 이용 팁</h3>
 <ul>
 <li><strong>저녁 5~8시 대기</strong>: 15~30분 예상 — 여유 시간 계획</li>
@@ -267,7 +296,7 @@
 <h2>💝 사랑의 자물쇠 (Love Locks) — N서울타워 명물</h2>
 <p>N서울타워 2층 외부 펜스에 수만 개의 자물쇠가 걸려 있습니다. 커플들이 자물쇠를 잠그고 열쇠를 버리는 전통 — 서울 커플 여행 필수 코스.</p>
 <h3>자물쇠 이용 방법</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>단계</th>
 <th>내용</th>
 </tr></thead><tbody>
@@ -287,7 +316,7 @@
 <td><strong>열쇠 버리기</strong></td>
 <td>근처 &quot;열쇠 박스&quot;에 투입 (전통적 방식)</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h3>포토스팟</h3>
 <ul>
 <li><strong>자물쇠 펜스 전경</strong>: 타워 남쪽 외벽 — 자물쇠 색상이 다채로워 사진 배경으로 인기</li>
@@ -296,7 +325,7 @@
 <hr>
 <h2>🌆 야경 황금 타이밍</h2>
 <p>남산 야경은 <strong>석양에서 야경으로 전환되는 시간대</strong>가 가장 아름답습니다.</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>시간</th>
 <th>풍경</th>
 <th>추천 활동</th>
@@ -326,11 +355,11 @@
 <td>완전 야경</td>
 <td>타워 주변 360도 야경 산책</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p><strong>사진 팁</strong>: 17:45~18:15 사이 — 하늘 그라데이션과 도시 조명이 동시에 나오는 &quot;블루 아워&quot;.</p>
 <hr>
 <h2>📍 가는 법</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>방법</th>
 <th>경로</th>
 <th>소요</th>
@@ -360,7 +389,7 @@
 <td>15분</td>
 <td>₩12,000~18,000</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>🗺 추천 코스 (2.5시간)</h2>
 <p>```</p>
@@ -435,34 +464,7 @@
     <div><a href="korean-food.html" style="color:var(--red);">한식 필수 체험 TOP10 &rarr;</a></div>
   </nav>
 
-  <section id="kc-related" style="display:none;margin:2.2rem 0 0.5rem;">
-    <h2 style="font-size:1.1rem;margin-bottom:0.8rem;">관련 가이드</h2>
-    <div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"></div>
-  </section>
-  <script>
-  // related guides — 같은 카테고리 최신 6편 (contents.json fetch·언어 suffix 자동, 2026-07-04)
-  (function() {
-    var m = location.pathname.match(/\/content\/(.+?)(\.en|\.zh|\.ja)?\.html$/);
-    if (!m) return;
-    var slug = m[1], suf = m[2] || '';
-    fetch('../data/contents.json').then(function(r) { return r.json(); }).then(function(items) {
-      var me = null;
-      for (var i = 0; i < items.length; i++) { if (items[i].slug === slug) { me = items[i]; break; } }
-      if (!me) return;
-      var pool = items.filter(function(x) { return x.slug !== slug && x.category === me.category; });
-      pool.sort(function(a, b) { return (parseInt(b.id, 10) || 0) - (parseInt(a.id, 10) || 0); });
-      var picks = pool.slice(0, 6);
-      if (!picks.length) return;
-      document.getElementById('kc-related-grid').innerHTML = picks.map(function(x) {
-        var t = suf ? (x.title_en || x.title_kr) : (x.title_kr || x.title_en);
-        var ok = suf === '' || (suf === '.en' ? x.en_available : (suf === '.zh' ? x.cn_available : x.jp_available));
-        var href = x.slug + (ok ? suf : '') + '.html';
-        return '<a href="' + href + '" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">' + t + '</a>';
-      }).join('');
-      document.getElementById('kc-related').style.display = 'block';
-    }).catch(function() {});
-  })();
-  </script>
+  <section id="kc-related" style="margin:2.2rem 0 0.5rem;"><h2 style="font-size:1.1rem;margin-bottom:0.8rem;">관련 가이드</h2><div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"><a href="busan-night-view.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">부산 야경 총론 — 바다, 산, 골목의 세 가지 밤</a><a href="seoul-snow-ice-rink.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">눈 내린 궁궐 — 도심 설경 스팟 8곳 + 겨울 아이스링크, 눈 예보를 기다리는 법</a><a href="seoul-ginkgo-walk.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">노란 서울 — 은행나무 길 산책 가이드, 단풍과는 다른 11월의 색</a><a href="seoul-grass-season.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">서울 억새·핑크뮬리 — 벚꽃의 가을 버전, 그라스 시즌 완전 가이드</a><a href="seoul-sunset-spots.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">서울 노을 명소 12선 — 해 지기 전 45분, 골든아워 스팟 가이드</a><a href="naengmyeon-index.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">외국인 냉면 인덱스</a></div></section>
   <!-- kc-comments -->
   <section id="kc-comments" style="margin:2.5rem 0 0.5rem;">
     <h2>댓글</h2>

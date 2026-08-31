@@ -34,7 +34,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/main.css">
 <style>
 .detail-wrap {
@@ -50,11 +50,11 @@
 .breadcrumb a { color: var(--red); font-weight: 600; }
 .detail-wrap h1 {
   font-size: 28px; font-weight: 800;
-  color: var(--black); margin-bottom: 8px;
+  color: var(--text); margin-bottom: 8px;
 }
 .detail-wrap h2 {
   font-size: 22px; font-weight: 700;
-  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  color: var(--text); margin-top: 32px; margin-bottom: 12px;
   padding-bottom: 6px;
   border-bottom: 2px solid var(--red);
 }
@@ -73,10 +73,19 @@
   font-size: 14px; line-height: 1.6;
   color: var(--text-mid); margin-bottom: 6px;
 }
+/* 표는 자기 컨테이너 안에서만 가로 스크롤한다 — 이게 없으면 min-content 폭이
+   뷰포트를 넘는 순간 페이지 전체가 가로로 밀렸다 (2026-08-31 점검 M2).
+   table 자체는 table 로 남겨 행·열 관계를 보존한다(display:block 으로 해결하지 않는 이유). */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 16px;
+}
 .detail-wrap table {
   width: 100%; border-collapse: collapse;
   margin-bottom: 16px; font-size: 13px;
 }
+.table-scroll > table { margin-bottom: 0; }
 .detail-wrap th {
   background: var(--black); color: #fff;
   padding: 10px 12px; text-align: left;
@@ -137,10 +146,30 @@
   user-select: none;
 }
 </style>
+<script>
+/* 테마 부트스트랩 — 2026-08-31 점검 M3.
+   기사 4,804p 에 이게 없어서, OS 다크 사용자가 홈(다크)에서 기사를 열면
+   라이트로 번쩍였다. main.css 의 다크 규칙은 전부 [data-theme="dark"] 스코프이고
+   prefers-color-scheme 미디어쿼리는 CSS 에 없으므로, 속성을 여기서 달아줘야 한다.
+   <head> 안에서 동기 실행 — paint 전에 끝나야 깜빡임이 없다.
+   허브와 달리 기사엔 토글 버튼이 없다. 저장된 선택(kc_theme)과 OS 설정만 따른다. */
+(function () {
+  try {
+    var s = localStorage.getItem('kc_theme');
+    if (s === 'dark' || (!s && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  } catch (e) {}
+})();
+</script>
 </head>
 <body>
+<a class="skip-link" href="#kc-main">本文へスキップ</a>
 <header class="site-header">
-  <a href="../ja/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <!-- width/height = 고유 크기(400x149). CSS 가 height:36px 로 줄이지만 브라우저는
+       이 비율로 자리를 미리 잡아 레이아웃 이동(CLS)을 막는다. 헤더 로고는 첫 화면에
+       보이므로 lazy 가 아니라 eager. -->
+  <a href="../ja/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo" width="400" height="149" loading="eager" decoding="async"></a>
   <div class="lang-switch">
     <a href="../content/shopping-day.html">KR</a>
     <a href="../content/shopping-day.en.html">EN</a>
@@ -149,14 +178,14 @@
   </div>
 </header>
 
-<main class="detail-wrap">
+<main class="detail-wrap" id="kc-main" tabindex="-1">
   <nav class="breadcrumb" aria-label="breadcrumb"><a href="../ja/index.html">ガイド一覧</a> &rsaquo; ソウルショッピング1日攻略</nav>
   <article>
   <h1>ソウル・ショッピングエリア1日完全攻略 — ミョンドン・ホンデ・カンナム・ソンス ルート</h1>
 <blockquote><p>時間がなくてもソウルのすべてのショッピングを体験する方法。4大ショッピングエリアを1日で制覇</p></blockquote>
 <hr>
 <h2>一目でわかる</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>項目</th>
 <th>情報</th>
 </tr></thead><tbody>
@@ -184,11 +213,11 @@
 <td><strong>ショッピング費用</strong></td>
 <td>₩100,000~₩500,000+ (~¥10,000~¥50,000+、個人差大)</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>ソウル4大ショッピングエリア比較</h2>
 <p>ソウルのショッピングはエリアごとに性格がまったく異なります。</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>エリア</th>
 <th>特徴</th>
 <th>ターゲット</th>
@@ -223,7 +252,7 @@
 <td>ストリートショッピング+カルチャー</td>
 <td>10~30代</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>最適ルート分析: どの順番で回る?</h2>
 <h3>ルートA: ミョンドン → カンナム → ソンス → ホンデ (推奨 ⭐⭐⭐⭐⭐)</h3>
@@ -273,7 +302,7 @@
 <h3>1. ミョンドン (Myeongdong, ミョンドン駅 1号線周辺)</h3>
 <p><strong>特徴:</strong> ソウル最高の観光ショッピングエリア。ブランド品、免税店、韓国の大衆ブランドがすべて集まっている。</p>
 <h4>ミョンドン ショッピングマップ</h4>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>ストリート</th>
 <th>特徴</th>
 <th>主な店舗</th>
@@ -298,7 +327,7 @@
 <td>低価格+混雑</td>
 <td>衣類/シューズ各種</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h4>推奨ショッピング順序 (2時間)</h4>
 <p>```</p>
 <p>10:00-10:15 - オリーブヤング ミョンドン店 (Olive Young, Kビューティーショッピング ※最も混む時間帯に注意)</p>
@@ -308,7 +337,7 @@
 <p>11:45-12:00 - お土産/アクセサリー (ミョンドン新宿通り)</p>
 <p>```</p>
 <h4>ミョンドン ショッピング TIP</h4>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>ヒント</th>
 <th>説明</th>
 </tr></thead><tbody>
@@ -332,9 +361,9 @@
 <td><strong>無料サンプル</strong></td>
 <td>オリーブヤング、イニスフリー、ザ・フェイスショップすべてサンプル無料 (旅行者に最適)</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h4>ミョンドン 推奨グルメ (ショッピングの合間に)</h4>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>料理</th>
 <th>推奨店</th>
 <th>価格</th>
@@ -364,12 +393,12 @@
 <td>テグクタン (Taegukdang、韓国定番食堂)</td>
 <td>₩8,000~₩12,000</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h3>2. カンナム (Gangnam, カンナム駅 2号線)</h3>
 <p><strong>特徴:</strong> ラグジュアリーで落ち着いたショッピング。韓国富裕層が訪れるブランドショッピングエリア。</p>
 <h4>カンナム ショッピングマップ</h4>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>ストリート</th>
 <th>特徴</th>
 <th>主な店舗</th>
@@ -399,7 +428,7 @@
 <td>中~高級</td>
 <td>ダブルユーコンセプト (W Concept)、感性セレクトショップ</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h4>推奨ショッピング順序 (2.5時間)</h4>
 <p>```</p>
 <p>13:00-13:15 - カンナム駅地下商街散策 (市場調査+ブランド見学)</p>
@@ -410,7 +439,7 @@
 <p>15:15-15:30 - 最終ショッピングまたは荷物整理</p>
 <p>```</p>
 <h4>カンナム ショッピング TIP</h4>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>ヒント</th>
 <th>説明</th>
 </tr></thead><tbody>
@@ -434,9 +463,9 @@
 <td><strong>韓国ブランド</strong></td>
 <td>韓国発デザイナーブランドのショッピングも可能</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h4>カンナム 推奨グルメ</h4>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>料理</th>
 <th>推奨店</th>
 <th>価格</th>
@@ -461,12 +490,12 @@
 <td>ベーカリーまたはデザート</td>
 <td>₩5,000~₩10,000</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h3>3. ソンス (Seongsu, ソンス駅 2号線)</h3>
 <p><strong>特徴:</strong> ポップアップ、感性、トレンド。MZ世代 (韓国版ミレニアル+Z世代、日本の「おしゃれ若者」に相当) のホットスポット。インスタグラムで話題の場所が集中。</p>
 <h4>ソンス ショッピングマップ</h4>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>エリア</th>
 <th>特徴</th>
 <th>見どころ</th>
@@ -491,7 +520,7 @@
 <td>限定品+トレンド</td>
 <td>週替わりポップアップ (カレンダー変動あり)</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h4>推奨ショッピング順序 (2時間)</h4>
 <p>```</p>
 <p>16:00-16:15 - ソンス ポップアップ情報収集 (インスタグラムまたは現地で「何が開いてるか」確認)</p>
@@ -501,7 +530,7 @@
 <p>17:45-18:00 - カフェで休憩+荷物整理</p>
 <p>```</p>
 <h4>ソンス ショッピング TIP</h4>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>ヒント</th>
 <th>説明</th>
 </tr></thead><tbody>
@@ -525,9 +554,9 @@
 <td><strong>トレンド</strong></td>
 <td>毎週ポップアップが変わる。リピートの魅力あり</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h4>ソンス 推奨グルメ</h4>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>料理</th>
 <th>推奨店</th>
 <th>価格</th>
@@ -552,12 +581,12 @@
 <td>ソンス 粉食 (プンシク、軽食) (夜間)</td>
 <td>₩5,000~₩10,000</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h3>4. ホンデ (Hongdae, ホンデ入口駅 2号線)</h3>
 <p><strong>特徴:</strong> 若くて、リーズナブルで、活気にあふれている。カルチャーとショッピングが共存するエリア。</p>
 <h4>ホンデ ショッピングマップ</h4>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>エリア</th>
 <th>特徴</th>
 <th>主な店舗</th>
@@ -587,7 +616,7 @@
 <td>若者向けブランチカフェ</td>
 <td>ブランチ、感性カフェ</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h4>推奨ショッピング順序 (2.5時間)</h4>
 <p>```</p>
 <p>18:30-18:45 - ホンデ入口駅地下商街 (SPAブランド、シューズ)</p>
@@ -598,7 +627,7 @@
 <p>20:45-21:00 - 荷物整理+ナイトライフへ移行 (バー/パブ)</p>
 <p>```</p>
 <h4>ホンデ ショッピング TIP</h4>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>ヒント</th>
 <th>説明</th>
 </tr></thead><tbody>
@@ -622,9 +651,9 @@
 <td><strong>夜の文化</strong></td>
 <td>ショッピング後、パブ/バー/ライブカフェへ自然につながる</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h4>ホンデ 推奨グルメ</h4>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>料理</th>
 <th>推奨店</th>
 <th>価格</th>
@@ -649,11 +678,11 @@
 <td>ホンデ パブ/バー (夜)</td>
 <td>₩10,000~₩20,000 (ドリンク)</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>1日ショッピング完全持ち物リスト</h2>
 <h3>必須準備</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>項目</th>
 <th>理由</th>
 </tr></thead><tbody>
@@ -681,9 +710,9 @@
 <td><strong>スマホバッテリー</strong></td>
 <td>マップ活用、写真、決済に必要</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h3>推奨パッキング</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>項目</th>
 <th>ヒント</th>
 </tr></thead><tbody>
@@ -707,10 +736,10 @@
 <td><strong>サングラス</strong></td>
 <td>昼間の日差し対策</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>エリア別所要時間&amp;費用まとめ</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>エリア</th>
 <th>移動時間</th>
 <th>推奨滞在</th>
@@ -752,7 +781,7 @@
 <td>₩400,000~₩1,250,000</td>
 <td>₩75,000</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>タックスリファンド&amp;免税 完全ガイド</h2>
 <h3>タックスリファンド (Tax Refund)</h3>
@@ -763,7 +792,7 @@
 <p>3. <strong>レシート保管</strong>: 必ず保管すること</p>
 <p>4. <strong>還付窓口訪問</strong>: 空港または ミョンドン (명동) の還付窓口</p>
 <h4>タックスリファンド対応場所 (1日ショッピングコース上)</h4>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>場所</th>
 <th>営業時間</th>
 <th>備考</th>
@@ -783,7 +812,7 @@
 <td>24時間</td>
 <td>出国直前 (行列あり)</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p><strong>ヒント:</strong></p>
 <ul>
 <li>手数料: 還付額の3~5%</li>
@@ -806,7 +835,7 @@
 <p>```</p>
 <hr>
 <h2>参考リンク</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>分野</th>
 <th>リンク</th>
 <th>説明</th>
@@ -841,7 +870,7 @@
 <td>@keychingu.korea</td>
 <td>キーチング (키친구) ショッピングコンテンツ</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <p><em>このガイドは2026年4月時点の情報をもとに作成されています。営業時間、価格、店舗は変更される場合がありますので、事前にご確認ください。</em></p>
 <h2>🌐 外部ソース</h2>
@@ -868,34 +897,7 @@
     <div><a href="gangnam-finedine.ja.html" style="color:var(--red);">22_江南ファインダイニング5選 &rarr;</a></div>
   </nav>
 
-  <section id="kc-related" style="display:none;margin:2.2rem 0 0.5rem;">
-    <h2 style="font-size:1.1rem;margin-bottom:0.8rem;">関連ガイド</h2>
-    <div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"></div>
-  </section>
-  <script>
-  // related guides — 같은 카테고리 최신 6편 (contents.json fetch·언어 suffix 자동, 2026-07-04)
-  (function() {
-    var m = location.pathname.match(/\/content\/(.+?)(\.en|\.zh|\.ja)?\.html$/);
-    if (!m) return;
-    var slug = m[1], suf = m[2] || '';
-    fetch('../data/contents.json').then(function(r) { return r.json(); }).then(function(items) {
-      var me = null;
-      for (var i = 0; i < items.length; i++) { if (items[i].slug === slug) { me = items[i]; break; } }
-      if (!me) return;
-      var pool = items.filter(function(x) { return x.slug !== slug && x.category === me.category; });
-      pool.sort(function(a, b) { return (parseInt(b.id, 10) || 0) - (parseInt(a.id, 10) || 0); });
-      var picks = pool.slice(0, 6);
-      if (!picks.length) return;
-      document.getElementById('kc-related-grid').innerHTML = picks.map(function(x) {
-        var t = suf ? (x.title_en || x.title_kr) : (x.title_kr || x.title_en);
-        var ok = suf === '' || (suf === '.en' ? x.en_available : (suf === '.zh' ? x.cn_available : x.jp_available));
-        var href = x.slug + (ok ? suf : '') + '.html';
-        return '<a href="' + href + '" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">' + t + '</a>';
-      }).join('');
-      document.getElementById('kc-related').style.display = 'block';
-    }).catch(function() {});
-  })();
-  </script>
+  <section id="kc-related" style="margin:2.2rem 0 0.5rem;"><h2 style="font-size:1.1rem;margin-bottom:0.8rem;">関連ガイド</h2><div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"><a href="korea-souvenir-data-guide.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Korean Souvenirs, Chosen by Data — A Matrix by Recipient and Budget</a><a href="busan-shopping-guide.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Busan Shopping Guide — Between the World&#x27;s Largest Department Store and a Wartime Alley Market</a><a href="korea-bubbletea-drink-chains.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Bubble Tea &amp; Drink Chains in Korea: What to Sip Besides Coffee</a><a href="korea-icecream-chains.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Korean Ice Cream Chains: Why Baskin Robbins Korea Is a Different World</a><a href="korea-burger-chains.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Korean Burger Chains: The Complete Guide to Mom&#x27;s Touch, Lotteria &amp; More</a><a href="korea-underground-mall.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Underground Mall Shopping (GOTO Mall·Bupyeong·Gangnam)</a></div></section>
   <!-- kc-comments -->
   <section id="kc-comments" style="margin:2.5rem 0 0.5rem;">
     <h2>コメント</h2>

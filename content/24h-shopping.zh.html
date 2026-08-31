@@ -34,7 +34,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/main.css">
 <style>
 .detail-wrap {
@@ -50,11 +50,11 @@
 .breadcrumb a { color: var(--red); font-weight: 600; }
 .detail-wrap h1 {
   font-size: 28px; font-weight: 800;
-  color: var(--black); margin-bottom: 8px;
+  color: var(--text); margin-bottom: 8px;
 }
 .detail-wrap h2 {
   font-size: 22px; font-weight: 700;
-  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  color: var(--text); margin-top: 32px; margin-bottom: 12px;
   padding-bottom: 6px;
   border-bottom: 2px solid var(--red);
 }
@@ -73,10 +73,19 @@
   font-size: 14px; line-height: 1.6;
   color: var(--text-mid); margin-bottom: 6px;
 }
+/* 표는 자기 컨테이너 안에서만 가로 스크롤한다 — 이게 없으면 min-content 폭이
+   뷰포트를 넘는 순간 페이지 전체가 가로로 밀렸다 (2026-08-31 점검 M2).
+   table 자체는 table 로 남겨 행·열 관계를 보존한다(display:block 으로 해결하지 않는 이유). */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 16px;
+}
 .detail-wrap table {
   width: 100%; border-collapse: collapse;
   margin-bottom: 16px; font-size: 13px;
 }
+.table-scroll > table { margin-bottom: 0; }
 .detail-wrap th {
   background: var(--black); color: #fff;
   padding: 10px 12px; text-align: left;
@@ -137,10 +146,30 @@
   user-select: none;
 }
 </style>
+<script>
+/* 테마 부트스트랩 — 2026-08-31 점검 M3.
+   기사 4,804p 에 이게 없어서, OS 다크 사용자가 홈(다크)에서 기사를 열면
+   라이트로 번쩍였다. main.css 의 다크 규칙은 전부 [data-theme="dark"] 스코프이고
+   prefers-color-scheme 미디어쿼리는 CSS 에 없으므로, 속성을 여기서 달아줘야 한다.
+   <head> 안에서 동기 실행 — paint 전에 끝나야 깜빡임이 없다.
+   허브와 달리 기사엔 토글 버튼이 없다. 저장된 선택(kc_theme)과 OS 설정만 따른다. */
+(function () {
+  try {
+    var s = localStorage.getItem('kc_theme');
+    if (s === 'dark' || (!s && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  } catch (e) {}
+})();
+</script>
 </head>
 <body>
+<a class="skip-link" href="#kc-main">跳到正文</a>
 <header class="site-header">
-  <a href="../zh/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <!-- width/height = 고유 크기(400x149). CSS 가 height:36px 로 줄이지만 브라우저는
+       이 비율로 자리를 미리 잡아 레이아웃 이동(CLS)을 막는다. 헤더 로고는 첫 화면에
+       보이므로 lazy 가 아니라 eager. -->
+  <a href="../zh/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo" width="400" height="149" loading="eager" decoding="async"></a>
   <div class="lang-switch">
     <a href="../content/24h-shopping.html">KR</a>
     <a href="../content/24h-shopping.en.html">EN</a>
@@ -149,7 +178,7 @@
   </div>
 </header>
 
-<main class="detail-wrap">
+<main class="detail-wrap" id="kc-main" tabindex="-1">
   <nav class="breadcrumb" aria-label="breadcrumb"><a href="../zh/index.html">全部指南</a> &rsaquo; 24小时购物地图</nav>
   <article>
   <h1>41 · 24小时购物地图 — 首尔夜晚购物不间断的秘密</h1>
@@ -169,7 +198,7 @@
 </ul>
 <hr>
 <h2>1. 首尔24小时购物三大支柱</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>支柱</th>
 <th>代表区域</th>
 <th>核心时段</th>
@@ -197,13 +226,13 @@
 <td>免税K-Beauty、酒类、烟草</td>
 <td>§4</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p>韩国一般零售门店标准营业时间为 <strong>10:00~22:00</strong>。除三大支柱外，几乎所有门店均在22:00关门。换言之，22:00之后&quot;去购物&quot;，意味着前往这三大支柱之一。</p>
 <hr>
 <h2>2. 东大门 (Dongdaemun / 동대문) — 首尔夜间时尚心脏</h2>
 <p><strong>深度指南</strong>: 参见 <code>31_dongdaemun_night_shopping.md</code> (本地图仅作摘要·导航用)</p>
 <h3>2-1. 核心门店一览</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>门店</th>
 <th>地址</th>
 <th>营业时间</th>
@@ -239,7 +268,7 @@
 <td>外观全天开放</td>
 <td>扎哈·哈迪德设计，夜景打卡圣地</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h3>2-2. 东大门凌晨路线 (23:00 → 04:00)</h3>
 <p>1. <strong>23:00</strong> — 地铁2号线 东大门历史文化公园站 (Dongdaemun History &amp; Culture Park Station / 동대문역사문화공원역) 14号出口，步行3分钟至斗塔免税店 (Doota! Mall / 두타면세점)</p>
 <p>2. <strong>23:30</strong> — 从斗塔8楼向下逛 (5楼女装·4楼男装·3楼杂货)</p>
@@ -258,7 +287,7 @@
 <h2>3. 便利店 (Pyeonuijeom / 편의점) — 遍布首尔的24小时迷你超市</h2>
 <blockquote><p>💡 <strong>便利店 (Pyeonuijeom / 편의점)</strong> — 与中国便利店类似，但韩国三大品牌 <strong>CU · GS25 · Emart24</strong> 的门店99%全天24小时营业，是游客深夜购物最触手可及的选择。</p></blockquote>
 <h3>3-1. 便利店必买伴手礼 (实用赠礼推荐)</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>商品</th>
 <th>价格</th>
 <th>受欢迎原因</th>
@@ -294,10 +323,10 @@
 <td>日本·中国MZ青年必买</td>
 <td>明洞·弘大</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <blockquote><p>💡 <strong>MZ</strong> — 韩国对&quot;千禧世代+Z世代&quot; (20~35岁)年轻消费者的统称，类似中国说的&quot;Z世代&quot;。</p></blockquote>
 <h3>3-2. 深夜便利店打卡地</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>门店</th>
 <th>地址</th>
 <th>特点</th>
@@ -322,7 +351,7 @@
 <td>仁川广域市 中区 机场路 272 (Incheon Jung-gu Gonghang-ro 272 / 공항로 272)</td>
 <td>登机前最后一刻零食补给</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h3>3-3. 便利店购物贴士</h3>
 <ul>
 <li><strong>7-Eleven (7-Eleven / 세븐일레븐) 部分门店非24小时</strong>，建议优先选择 CU / GS25 规划动线</li>
@@ -337,7 +366,7 @@
 <h2>4. 仁川机场 (Incheon Airport / 인천공항) — 韩国唯一真正意义的24小时免税</h2>
 <h3>4-1. 出境前 vs 入境后分开了解</h3>
 <p>韩国机场免税店在结构上严格区分出境厅与入境厅。</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>类型</th>
 <th>位置</th>
 <th>营业时间</th>
@@ -361,9 +390,9 @@
 <td><strong>24小时</strong></td>
 <td>不限</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h3>4-2. 24小时运营主要门店</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>门店</th>
 <th>航站楼</th>
 <th>备注</th>
@@ -383,7 +412,7 @@
 <td>T1</td>
 <td>夜间低价纪念品·00:00~05:00 限时运营</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <ul>
 <li><strong>乐天·新罗·新世界免税店营业时间为 05:30~22:30</strong>。深夜中转旅客唯一选择为入境厅 + 便利店</li>
 <li>机场免税烟草·酒类需要<strong>出境护照扫描</strong> (入境厅购买亦受限：限额 1L / 200支)</li>
@@ -483,34 +512,7 @@
     <div><a href="tteok-guide.zh.html" style="color:var(--red);">首尔年糕美食店 &rarr;</a></div>
   </nav>
 
-  <section id="kc-related" style="display:none;margin:2.2rem 0 0.5rem;">
-    <h2 style="font-size:1.1rem;margin-bottom:0.8rem;">相关指南</h2>
-    <div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"></div>
-  </section>
-  <script>
-  // related guides — 같은 카테고리 최신 6편 (contents.json fetch·언어 suffix 자동, 2026-07-04)
-  (function() {
-    var m = location.pathname.match(/\/content\/(.+?)(\.en|\.zh|\.ja)?\.html$/);
-    if (!m) return;
-    var slug = m[1], suf = m[2] || '';
-    fetch('../data/contents.json').then(function(r) { return r.json(); }).then(function(items) {
-      var me = null;
-      for (var i = 0; i < items.length; i++) { if (items[i].slug === slug) { me = items[i]; break; } }
-      if (!me) return;
-      var pool = items.filter(function(x) { return x.slug !== slug && x.category === me.category; });
-      pool.sort(function(a, b) { return (parseInt(b.id, 10) || 0) - (parseInt(a.id, 10) || 0); });
-      var picks = pool.slice(0, 6);
-      if (!picks.length) return;
-      document.getElementById('kc-related-grid').innerHTML = picks.map(function(x) {
-        var t = suf ? (x.title_en || x.title_kr) : (x.title_kr || x.title_en);
-        var ok = suf === '' || (suf === '.en' ? x.en_available : (suf === '.zh' ? x.cn_available : x.jp_available));
-        var href = x.slug + (ok ? suf : '') + '.html';
-        return '<a href="' + href + '" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">' + t + '</a>';
-      }).join('');
-      document.getElementById('kc-related').style.display = 'block';
-    }).catch(function() {});
-  })();
-  </script>
+  <section id="kc-related" style="margin:2.2rem 0 0.5rem;"><h2 style="font-size:1.1rem;margin-bottom:0.8rem;">相关指南</h2><div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"><a href="korea-souvenir-data-guide.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Korean Souvenirs, Chosen by Data — A Matrix by Recipient and Budget</a><a href="busan-shopping-guide.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Busan Shopping Guide — Between the World&#x27;s Largest Department Store and a Wartime Alley Market</a><a href="korea-bubbletea-drink-chains.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Bubble Tea &amp; Drink Chains in Korea: What to Sip Besides Coffee</a><a href="korea-icecream-chains.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Korean Ice Cream Chains: Why Baskin Robbins Korea Is a Different World</a><a href="korea-burger-chains.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Korean Burger Chains: The Complete Guide to Mom&#x27;s Touch, Lotteria &amp; More</a><a href="korea-underground-mall.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Underground Mall Shopping (GOTO Mall·Bupyeong·Gangnam)</a></div></section>
   <!-- kc-comments -->
   <section id="kc-comments" style="margin:2.5rem 0 0.5rem;">
     <h2>评论</h2>

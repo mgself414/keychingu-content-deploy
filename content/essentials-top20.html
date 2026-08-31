@@ -34,7 +34,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/main.css">
 <style>
 .detail-wrap {
@@ -50,11 +50,11 @@
 .breadcrumb a { color: var(--red); font-weight: 600; }
 .detail-wrap h1 {
   font-size: 28px; font-weight: 800;
-  color: var(--black); margin-bottom: 8px;
+  color: var(--text); margin-bottom: 8px;
 }
 .detail-wrap h2 {
   font-size: 22px; font-weight: 700;
-  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  color: var(--text); margin-top: 32px; margin-bottom: 12px;
   padding-bottom: 6px;
   border-bottom: 2px solid var(--red);
 }
@@ -73,10 +73,19 @@
   font-size: 14px; line-height: 1.6;
   color: var(--text-mid); margin-bottom: 6px;
 }
+/* 표는 자기 컨테이너 안에서만 가로 스크롤한다 — 이게 없으면 min-content 폭이
+   뷰포트를 넘는 순간 페이지 전체가 가로로 밀렸다 (2026-08-31 점검 M2).
+   table 자체는 table 로 남겨 행·열 관계를 보존한다(display:block 으로 해결하지 않는 이유). */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 16px;
+}
 .detail-wrap table {
   width: 100%; border-collapse: collapse;
   margin-bottom: 16px; font-size: 13px;
 }
+.table-scroll > table { margin-bottom: 0; }
 .detail-wrap th {
   background: var(--black); color: #fff;
   padding: 10px 12px; text-align: left;
@@ -137,10 +146,30 @@
   user-select: none;
 }
 </style>
+<script>
+/* 테마 부트스트랩 — 2026-08-31 점검 M3.
+   기사 4,804p 에 이게 없어서, OS 다크 사용자가 홈(다크)에서 기사를 열면
+   라이트로 번쩍였다. main.css 의 다크 규칙은 전부 [data-theme="dark"] 스코프이고
+   prefers-color-scheme 미디어쿼리는 CSS 에 없으므로, 속성을 여기서 달아줘야 한다.
+   <head> 안에서 동기 실행 — paint 전에 끝나야 깜빡임이 없다.
+   허브와 달리 기사엔 토글 버튼이 없다. 저장된 선택(kc_theme)과 OS 설정만 따른다. */
+(function () {
+  try {
+    var s = localStorage.getItem('kc_theme');
+    if (s === 'dark' || (!s && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  } catch (e) {}
+})();
+</script>
 </head>
 <body>
+<a class="skip-link" href="#kc-main">본문 바로가기</a>
 <header class="site-header">
-  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <!-- width/height = 고유 크기(400x149). CSS 가 height:36px 로 줄이지만 브라우저는
+       이 비율로 자리를 미리 잡아 레이아웃 이동(CLS)을 막는다. 헤더 로고는 첫 화면에
+       보이므로 lazy 가 아니라 eager. -->
+  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo" width="400" height="149" loading="eager" decoding="async"></a>
   <div class="lang-switch">
     <a href="../content/essentials-top20.html" class="active">KR</a>
     <a href="../content/essentials-top20.en.html">EN</a>
@@ -149,7 +178,7 @@
   </div>
 </header>
 
-<main class="detail-wrap">
+<main class="detail-wrap" id="kc-main" tabindex="-1">
   <nav class="breadcrumb" aria-label="breadcrumb"><a href="../index.html">전체 가이드</a> &rsaquo; 48 · 한국 필수구매 TOP 20</nav>
   <article>
   <h1>48 · 한국 필수구매 TOP 20 — 외국인이 한국에서만 살 수 있는, 본국에 없거나 비싼 것</h1>
@@ -172,7 +201,7 @@
 </ul>
 <hr>
 <h2>1. TOP 20 한눈에 (요약 표)</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>순위</th>
 <th>카테고리</th>
 <th>대표 제품</th>
@@ -340,14 +369,14 @@
 <td>△</td>
 <td>스타벅스 코리아</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p><strong>범례</strong>: 면세 환급 ● = 단일 영수증 ₩30,000+ 즉시환급 정책 적용 강함 / △ = 마트·편의점은 일부 면세 카운터 한정 / 모든 외국인 단기 체류자는 여권 + ₩30,000+ 영수증 기준 즉시환급 가능 (2026-04 정책 기준).</p>
 <p><strong>카테고리 분포</strong>: K-뷰티 7 + K-푸드 5 + 헬스 2 + 패션·잡화 2 + 캐릭터/굿즈 2 + 키친웨어 1 + 전통공예 1 = <strong>20개 + 보너스 2개(섹션 2 말미)</strong>.</p>
 <hr>
 <h2>2. 카테고리별 상세 — 어디서, 왜, 얼마</h2>
 <h3>2-1. K-뷰티 (TOP 1~7) — 한국이 발명한 카테고리</h3>
 <p><strong>외국인이 사는 이유</strong>: 본국 대비 30~50% 저렴 + Reddit r/AsianBeauty·샤오홍수·TikTok #oliveyoung(149.8K posts) 검증 + 한국 발명 제형(쿠션·달팽이 뮤신·시트마스크)이 글로벌 표준화. KTO 2024 외국인 쇼핑 카테고리 1위(32%, Korea Herald). 올리브영 외국인 매출 2024년 연 1조원, 전년비 +53%(헤럴드경제).</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>#</th>
 <th>제품</th>
 <th>본국 대비</th>
@@ -395,10 +424,10 @@
 <td>본국 매장 미판매(직구만)</td>
 <td>올리브영 베스트 <strong>1·9·15·16위 동시 진입</strong>(2026-04-16) — 트리플 베스트셀러</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h3>2-2. K-푸드 (TOP 8~12) — 본국에 비싸거나 한국 한정 맛</h3>
 <p><strong>외국인이 사는 이유</strong>: 본국 단가 대비 30~60% 절약 + 한정 맛 본국 미판매. 인천공항 면세점 포장식품 매출 2024년 1,524억 원(7%, 약업신문).</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>#</th>
 <th>제품</th>
 <th>본국 대비</th>
@@ -434,10 +463,10 @@
 <td>Amazon $50+ → <strong>30% 절약</strong>. 감귤·동백·메밀 본국 미판매</td>
 <td>OSULLOC 티하우스 6개 + 제주 티뮤지엄 + 면세 + 인천공항. <strong>CN ₩50K~120K 선물세트</strong> 부모·거래처 1순위</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h3>2-3. 헬스·건강식품 (TOP 13~14) — CN 주력</h3>
 <p><strong>외국인이 사는 이유</strong>: 면세 매출 CN 비중 35%(약업신문 2024), 정관장 홍삼이 국산 브랜드 단일 매출 3위(607억). 샤오홍수 &quot;高丽人参&quot; 웰니스 최상위.</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>#</th>
 <th>제품</th>
 <th>본국 대비</th>
@@ -455,9 +484,9 @@
 <td>본국 $80+ → <strong>45% 절약</strong></td>
 <td>올리브영 글로벌 베스트 8위(2026-04-16). 30% 세일 ₩42K. <strong>CN 25~35대 자기관리 선물</strong></td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h3>2-4. 패션·잡화 + 키친웨어 + 캐릭터 + 컬렉터블 (TOP 15~18·20)</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>#</th>
 <th>제품</th>
 <th>가격</th>
@@ -493,9 +522,9 @@
 <td>₩34,000</td>
 <td>스타벅스 광화문·명동·홍대·성수 시즌 한정. <strong>EN 컬렉터 리셀가 ₩60K~100K</strong>(Seoul Skyline·한글 디자인 본국 미판매)</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h3>2-5. 전통공예 (TOP 19) — EN 핸드메이드 서사 1순위</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>#</th>
 <th>제품</th>
 <th>가격</th>
@@ -507,7 +536,7 @@
 <td>₩18,000~30,000</td>
 <td>자개 상감 공예 1,300년 전통, 무형문화재. Seoul My Soul Shop &gt; 인사동 한국공예관 &gt; Etsy 귀국 후 $20~80. <strong>r/koreatravel &quot;authentic experience&quot; 반복 시그널 — EN 프리미엄 정당화 1순위</strong></td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h3>보너스 2종 (P2 추가)</h3>
 <ul>
 <li><strong>B1. VT Reedle Shot 100/300/700</strong> (₩3,000~9,000) — 다이소 명동 12층 플래그십 단독 한정 K-뷰티 초저가. TikTok 바이럴. 일반 다이소 미판매.</li>
@@ -515,7 +544,7 @@
 </ul>
 <hr>
 <h2>3. 어디서 사는 게 가장 싼가 — 5대 채널 비교</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>채널</th>
 <th>K-뷰티</th>
 <th>K-푸드</th>
@@ -563,7 +592,7 @@
 <td>-</td>
 <td>이니스프리·미샤·라네즈 단독 라인. 올리브영 대비 가격 동등 또는 비쌈. 브랜드 매장 한정 시즌은 이쪽</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p><strong>결론 요약</strong>:</p>
 <ul>
 <li><strong>K-뷰티 일반 라인</strong>: 올리브영 + 면세 즉시환급 = 면세점 가격보다 <strong>유리하거나 동등</strong>.</li>
@@ -586,7 +615,7 @@
 <hr>
 <h2>5. 국가별 추천 우선순위</h2>
 <h3>CN(중국) — <strong>이 가이드의 주력 타겟</strong></h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>우선순위</th>
 <th>카테고리</th>
 <th>대표 제품</th>
@@ -622,10 +651,10 @@
 <td>분유·유아 영양제·기저귀 (대형 마트)</td>
 <td>₩100,000~250,000</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p><strong>CN 객단가 평균</strong>: 면세점 1인 약 ₩900,000~1,500,000(2024 면세 매출 비중 35% 기준 추정). <strong>샤오홍수 &quot;韩国必买伴手礼&quot; 검색 → 위시리스트 확정 → 한국 도착 후 픽업</strong> 패턴이 표준.</p>
 <h3>JP(일본)</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>우선순위</th>
 <th>카테고리</th>
 <th>대표 제품</th>
@@ -661,10 +690,10 @@
 <td>Tamburins 핸드크림 (Jennie 앰버서더)</td>
 <td>₩30,000~80,000</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p><strong>JP 결정 기준</strong>: &quot;配りやすい(나눠주기 좋은)&quot; + &quot;可愛い&quot; 동시 충족이 절대 조건. <strong>개별 포장 단위로 분리되지 않는 상품은 후보에서 탈락</strong>.</p>
 <h3>EN(서구권 — 미국·유럽·호주)</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>우선순위</th>
 <th>카테고리</th>
 <th>대표 제품</th>
@@ -700,7 +729,7 @@
 <td>진로 참이슬 + 전통잔 4종 세트</td>
 <td>₩25,000</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p><strong>EN 결정 기준</strong>: &quot;authentic + community-verified&quot;. r/AsianBeauty / r/koreatravel / Reddit AMA 인증템 우선. <strong>광고 없는 인디·핸드메이드 서사</strong>가 럭셔리 선호의 본질.</p>
 <hr>
 <h2>6. 짐 무게 / 액체 / 식품 반입 규제</h2>
@@ -815,34 +844,7 @@
     <div><a href="dongmyo.html" style="color:var(--red);">동묘 구제시장 + 종로3가 야장 &rarr;</a></div>
   </nav>
 
-  <section id="kc-related" style="display:none;margin:2.2rem 0 0.5rem;">
-    <h2 style="font-size:1.1rem;margin-bottom:0.8rem;">관련 가이드</h2>
-    <div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"></div>
-  </section>
-  <script>
-  // related guides — 같은 카테고리 최신 6편 (contents.json fetch·언어 suffix 자동, 2026-07-04)
-  (function() {
-    var m = location.pathname.match(/\/content\/(.+?)(\.en|\.zh|\.ja)?\.html$/);
-    if (!m) return;
-    var slug = m[1], suf = m[2] || '';
-    fetch('../data/contents.json').then(function(r) { return r.json(); }).then(function(items) {
-      var me = null;
-      for (var i = 0; i < items.length; i++) { if (items[i].slug === slug) { me = items[i]; break; } }
-      if (!me) return;
-      var pool = items.filter(function(x) { return x.slug !== slug && x.category === me.category; });
-      pool.sort(function(a, b) { return (parseInt(b.id, 10) || 0) - (parseInt(a.id, 10) || 0); });
-      var picks = pool.slice(0, 6);
-      if (!picks.length) return;
-      document.getElementById('kc-related-grid').innerHTML = picks.map(function(x) {
-        var t = suf ? (x.title_en || x.title_kr) : (x.title_kr || x.title_en);
-        var ok = suf === '' || (suf === '.en' ? x.en_available : (suf === '.zh' ? x.cn_available : x.jp_available));
-        var href = x.slug + (ok ? suf : '') + '.html';
-        return '<a href="' + href + '" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">' + t + '</a>';
-      }).join('');
-      document.getElementById('kc-related').style.display = 'block';
-    }).catch(function() {});
-  })();
-  </script>
+  <section id="kc-related" style="margin:2.2rem 0 0.5rem;"><h2 style="font-size:1.1rem;margin-bottom:0.8rem;">관련 가이드</h2><div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"><a href="korea-souvenir-data-guide.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">데이터로 고른 한국 기념품 — 받는 사람별·예산별 매트릭스</a><a href="busan-shopping-guide.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">부산 쇼핑 가이드 — 세계 최대 백화점과 피란 골목시장 사이</a><a href="korea-bubbletea-drink-chains.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">한국 버블티·음료 체인 풀가이드 — 커피 말고 마실 것</a><a href="korea-icecream-chains.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">한국 아이스크림 체인 풀가이드 — 배스킨라빈스가 다른 나라가 되는 곳</a><a href="korea-burger-chains.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">한국 햄버거 체인 풀가이드 — 맘스터치·롯데리아·노브랜드버거, 어느 버거가 진짜 K-버거일까</a><a href="korea-underground-mall.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">외국인 지하상가 쇼핑 가이드 — 고투몰·부평·강남터미널 저가 패션</a></div></section>
   <!-- kc-comments -->
   <section id="kc-comments" style="margin:2.5rem 0 0.5rem;">
     <h2>댓글</h2>

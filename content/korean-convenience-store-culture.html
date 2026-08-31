@@ -34,7 +34,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/main.css">
 <style>
 .detail-wrap {
@@ -50,11 +50,11 @@
 .breadcrumb a { color: var(--red); font-weight: 600; }
 .detail-wrap h1 {
   font-size: 28px; font-weight: 800;
-  color: var(--black); margin-bottom: 8px;
+  color: var(--text); margin-bottom: 8px;
 }
 .detail-wrap h2 {
   font-size: 22px; font-weight: 700;
-  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  color: var(--text); margin-top: 32px; margin-bottom: 12px;
   padding-bottom: 6px;
   border-bottom: 2px solid var(--red);
 }
@@ -73,10 +73,19 @@
   font-size: 14px; line-height: 1.6;
   color: var(--text-mid); margin-bottom: 6px;
 }
+/* 표는 자기 컨테이너 안에서만 가로 스크롤한다 — 이게 없으면 min-content 폭이
+   뷰포트를 넘는 순간 페이지 전체가 가로로 밀렸다 (2026-08-31 점검 M2).
+   table 자체는 table 로 남겨 행·열 관계를 보존한다(display:block 으로 해결하지 않는 이유). */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 16px;
+}
 .detail-wrap table {
   width: 100%; border-collapse: collapse;
   margin-bottom: 16px; font-size: 13px;
 }
+.table-scroll > table { margin-bottom: 0; }
 .detail-wrap th {
   background: var(--black); color: #fff;
   padding: 10px 12px; text-align: left;
@@ -137,10 +146,30 @@
   user-select: none;
 }
 </style>
+<script>
+/* 테마 부트스트랩 — 2026-08-31 점검 M3.
+   기사 4,804p 에 이게 없어서, OS 다크 사용자가 홈(다크)에서 기사를 열면
+   라이트로 번쩍였다. main.css 의 다크 규칙은 전부 [data-theme="dark"] 스코프이고
+   prefers-color-scheme 미디어쿼리는 CSS 에 없으므로, 속성을 여기서 달아줘야 한다.
+   <head> 안에서 동기 실행 — paint 전에 끝나야 깜빡임이 없다.
+   허브와 달리 기사엔 토글 버튼이 없다. 저장된 선택(kc_theme)과 OS 설정만 따른다. */
+(function () {
+  try {
+    var s = localStorage.getItem('kc_theme');
+    if (s === 'dark' || (!s && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  } catch (e) {}
+})();
+</script>
 </head>
 <body>
+<a class="skip-link" href="#kc-main">본문 바로가기</a>
 <header class="site-header">
-  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <!-- width/height = 고유 크기(400x149). CSS 가 height:36px 로 줄이지만 브라우저는
+       이 비율로 자리를 미리 잡아 레이아웃 이동(CLS)을 막는다. 헤더 로고는 첫 화면에
+       보이므로 lazy 가 아니라 eager. -->
+  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo" width="400" height="149" loading="eager" decoding="async"></a>
   <div class="lang-switch">
     <a href="../content/korean-convenience-store-culture.html" class="active">KR</a>
     <a href="../content/korean-convenience-store-culture.en.html">EN</a>
@@ -149,7 +178,7 @@
   </div>
 </header>
 
-<main class="detail-wrap">
+<main class="detail-wrap" id="kc-main" tabindex="-1">
   <nav class="breadcrumb" aria-label="breadcrumb"><a href="../index.html">전체 가이드</a> &rsaquo; 한국 편의점 공화국 — 택배·금융·식당·술집까지 되는 만능 편의점</nav>
   <article>
   <h1>편의점 공화국 — 한국 편의점은 왜 만능인가</h1>
@@ -157,7 +186,7 @@
 <p>서울에 도착한 외국인이 가장 먼저, 그리고 가장 자주 들어가는 한국 공간은 경복궁도 명동도 아니다. <strong>편의점</strong>이다. 골목마다, 때로는 한 블록에 두세 개씩 박혀 있는 GS25·CU의 간판. 외국인은 처음엔 이걸 그냥 &quot;한국판 7-Eleven, 24시간 잡화점&quot;으로 본다. 그런데 며칠 지나면 깨닫는다 — 여기서 <strong>밥을 먹고</strong>(즉석 라면·도시락), <strong>택배를 받고</strong>, <strong>교통카드를 충전하고</strong>, <strong>공과금을 내고</strong>, 밤엔 <strong>파라솔에 앉아 맥주를 마신다</strong>. 식당·은행·우체국·술집이 한 평짜리 가게 안에 다 들어 있다. 한국인이 농담처럼 &quot;편의점 공화국&quot;이라 부르는 이유다. 이 글은 &quot;어느 편의점이 좋다&quot;(→ 장소 가이드 아님)가 아니라, <strong>왜 한국 편의점만 이렇게 만능이 됐고, 외국인이 그걸 어떻게 써먹는가</strong>를 풀어준다. 한국 문화 explainer 시리즈 <strong>39편</strong>.</p>
 <hr>
 <h2>★ 한눈에 보기 — 편의점에서 되는 것들</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>분류</th>
 <th>무엇이 되나</th>
 <th>외국인 한 줄</th>
@@ -192,7 +221,7 @@
 <td>수입맥주 4캔 ₩만원 + <strong>파라솔 야외 음주</strong></td>
 <td>합법적으로 가게 앞에서 한잔</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <blockquote><p><strong>핵심</strong>: 외국인이 &quot;마트&quot;로 아는 곳이 한국에선 <strong>식당+은행+우체국+술집의 압축판</strong>이다. 아래 본문에서 하나씩 푼다.</p></blockquote>
 <hr>
 <h2>⚠️ 외국인이 자주 오해하는 3가지</h2>
@@ -211,7 +240,7 @@
 <hr>
 <h2>② 4대 체인 — 누가 어떤 색인가</h2>
 <p>외국인이 길에서 마주치는 간판은 사실상 네 개로 정리된다. <strong>상품은 대동소이</strong>하니 가까운 곳에 들어가면 된다.</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>체인</th>
 <th>색·로고</th>
 <th>메모</th>
@@ -236,7 +265,7 @@
 <td>노랑</td>
 <td>후발 주자, 일부 매장 주류 특화</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <blockquote><p><strong>PB(자체 브랜드)가 핵심 재미</strong>: 네 체인 모두 자체 개발 도시락·과자·음료를 밀고 있고(GS25·CU는 PB가 매출의 약 30%까지), <strong>여기서만 파는 한정판</strong>이 많다. 외국인 사이에서 &quot;한국 편의점 PB 신상&quot;은 그 자체로 콘텐츠다.</p></blockquote>
 <hr>
 <h2>③ 만능 서비스 — 택배·금융·충전이 다 된다</h2>
@@ -343,34 +372,7 @@
     <div><a href="korean-24hour-city-culture.html" style="color:var(--red);">한국 24시간 도시 문화 — 왜 서울은 새벽 3시에도 깨어 있을까 &rarr;</a></div>
   </nav>
 
-  <section id="kc-related" style="display:none;margin:2.2rem 0 0.5rem;">
-    <h2 style="font-size:1.1rem;margin-bottom:0.8rem;">관련 가이드</h2>
-    <div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"></div>
-  </section>
-  <script>
-  // related guides — 같은 카테고리 최신 6편 (contents.json fetch·언어 suffix 자동, 2026-07-04)
-  (function() {
-    var m = location.pathname.match(/\/content\/(.+?)(\.en|\.zh|\.ja)?\.html$/);
-    if (!m) return;
-    var slug = m[1], suf = m[2] || '';
-    fetch('../data/contents.json').then(function(r) { return r.json(); }).then(function(items) {
-      var me = null;
-      for (var i = 0; i < items.length; i++) { if (items[i].slug === slug) { me = items[i]; break; } }
-      if (!me) return;
-      var pool = items.filter(function(x) { return x.slug !== slug && x.category === me.category; });
-      pool.sort(function(a, b) { return (parseInt(b.id, 10) || 0) - (parseInt(a.id, 10) || 0); });
-      var picks = pool.slice(0, 6);
-      if (!picks.length) return;
-      document.getElementById('kc-related-grid').innerHTML = picks.map(function(x) {
-        var t = suf ? (x.title_en || x.title_kr) : (x.title_kr || x.title_en);
-        var ok = suf === '' || (suf === '.en' ? x.en_available : (suf === '.zh' ? x.cn_available : x.jp_available));
-        var href = x.slug + (ok ? suf : '') + '.html';
-        return '<a href="' + href + '" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">' + t + '</a>';
-      }).join('');
-      document.getElementById('kc-related').style.display = 'block';
-    }).catch(function() {});
-  })();
-  </script>
+  <section id="kc-related" style="margin:2.2rem 0 0.5rem;"><h2 style="font-size:1.1rem;margin-bottom:0.8rem;">관련 가이드</h2><div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"><a href="royal-palace-autumn-nights.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">궁궐의 가을밤 — 별빛야행·달빛기행·궁중문화축전, 예약 없이는 못 들어가는 프로그램 총정리</a><a href="seoul-fireworks-festival.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">서울세계불꽃축제 2026 — 9월 5일 여의도, 100만 인파 속에서 명당 잡는 법</a><a href="seoul-architecture-eras.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">서울 건축 시대 산책 — 전통·근대·현대 15선 + 건축 감상 렌즈</a><a href="korea-kpop-fansign-videocall.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">외국인 K-pop 팬사인회·영상통화 응모 가이드 — 음반 응모·영통</a><a href="korea-idol-birthday-cafe.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">외국인 아이돌 생일카페 가이드 — 생카·컵슬리브·서포트</a><a href="korea-kpop-music-show-taping.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">외국인 K-pop 음악방송 방청 가이드 — 인기가요·엠카·뮤뱅 사전녹화</a></div></section>
   <!-- kc-comments -->
   <section id="kc-comments" style="margin:2.5rem 0 0.5rem;">
     <h2>댓글</h2>

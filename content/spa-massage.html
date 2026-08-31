@@ -34,7 +34,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/main.css">
 <style>
 .detail-wrap {
@@ -50,11 +50,11 @@
 .breadcrumb a { color: var(--red); font-weight: 600; }
 .detail-wrap h1 {
   font-size: 28px; font-weight: 800;
-  color: var(--black); margin-bottom: 8px;
+  color: var(--text); margin-bottom: 8px;
 }
 .detail-wrap h2 {
   font-size: 22px; font-weight: 700;
-  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  color: var(--text); margin-top: 32px; margin-bottom: 12px;
   padding-bottom: 6px;
   border-bottom: 2px solid var(--red);
 }
@@ -73,10 +73,19 @@
   font-size: 14px; line-height: 1.6;
   color: var(--text-mid); margin-bottom: 6px;
 }
+/* 표는 자기 컨테이너 안에서만 가로 스크롤한다 — 이게 없으면 min-content 폭이
+   뷰포트를 넘는 순간 페이지 전체가 가로로 밀렸다 (2026-08-31 점검 M2).
+   table 자체는 table 로 남겨 행·열 관계를 보존한다(display:block 으로 해결하지 않는 이유). */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 16px;
+}
 .detail-wrap table {
   width: 100%; border-collapse: collapse;
   margin-bottom: 16px; font-size: 13px;
 }
+.table-scroll > table { margin-bottom: 0; }
 .detail-wrap th {
   background: var(--black); color: #fff;
   padding: 10px 12px; text-align: left;
@@ -137,10 +146,30 @@
   user-select: none;
 }
 </style>
+<script>
+/* 테마 부트스트랩 — 2026-08-31 점검 M3.
+   기사 4,804p 에 이게 없어서, OS 다크 사용자가 홈(다크)에서 기사를 열면
+   라이트로 번쩍였다. main.css 의 다크 규칙은 전부 [data-theme="dark"] 스코프이고
+   prefers-color-scheme 미디어쿼리는 CSS 에 없으므로, 속성을 여기서 달아줘야 한다.
+   <head> 안에서 동기 실행 — paint 전에 끝나야 깜빡임이 없다.
+   허브와 달리 기사엔 토글 버튼이 없다. 저장된 선택(kc_theme)과 OS 설정만 따른다. */
+(function () {
+  try {
+    var s = localStorage.getItem('kc_theme');
+    if (s === 'dark' || (!s && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  } catch (e) {}
+})();
+</script>
 </head>
 <body>
+<a class="skip-link" href="#kc-main">본문 바로가기</a>
 <header class="site-header">
-  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <!-- width/height = 고유 크기(400x149). CSS 가 height:36px 로 줄이지만 브라우저는
+       이 비율로 자리를 미리 잡아 레이아웃 이동(CLS)을 막는다. 헤더 로고는 첫 화면에
+       보이므로 lazy 가 아니라 eager. -->
+  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo" width="400" height="149" loading="eager" decoding="async"></a>
   <div class="lang-switch">
     <a href="../content/spa-massage.html" class="active">KR</a>
     <a href="../content/spa-massage.en.html">EN</a>
@@ -149,14 +178,14 @@
   </div>
 </header>
 
-<main class="detail-wrap">
+<main class="detail-wrap" id="kc-main" tabindex="-1">
   <nav class="breadcrumb" aria-label="breadcrumb"><a href="../index.html">전체 가이드</a> &rsaquo; 한국 스파 & 마사지 가이드</nav>
   <article>
   <h1>한국 스파 &amp; 마사지 체험 — 전신·스포츠·아로마 완벽 가이드</h1>
 <blockquote><p>한국식 웰니스를 경험하세요. 찜질방과 다른, 마사지와 스파의 세계</p></blockquote>
 <hr>
 <h2>한눈에 보기</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>항목</th>
 <th>정보</th>
 </tr></thead><tbody>
@@ -184,11 +213,11 @@
 <td><strong>비용</strong></td>
 <td>30,000~100,000원+ (타입별·시술별 상이)</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>스파 vs 마사지 vs 찜질방, 뭐가 다른가?</h2>
 <p><strong>한국 여행객이 자주 헷갈리는 부분입니다. 명확히 구분하세요.</strong></p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>구분</th>
 <th>찜질방</th>
 <th>마사지샵</th>
@@ -230,7 +259,7 @@
 <td>시술복으로 변경</td>
 <td>시술복 또는 수영복</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p><strong>당신은 뭘 원하나요?</strong></p>
 <ul>
 <li>&quot;빠르게 어깨 풀고 가&quot;: 마사지샵</li>
@@ -242,7 +271,7 @@
 <h3>종류별 마사지 비교</h3>
 <h4>1. 일반 마사지 (Traditional Korean Massage)</h4>
 <p><strong>뭘 하나:</strong> 손으로 근육을 풀고, 혈 자리를 자극하는 한국식 마사지. 옷을 입은 상태에서 시술.</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>항목</th>
 <th>설명</th>
 </tr></thead><tbody>
@@ -270,7 +299,7 @@
 <td><strong>부위</strong></td>
 <td>목/어깨/등/다리 선택 가능</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p><strong>느낌:</strong></p>
 <ul>
 <li>처음엔 아플 수 있음 (한국식 마사지는 깊은 압력)</li>
@@ -286,7 +315,7 @@
 <hr>
 <h4>2. 스포츠 마사지 (Sports Massage)</h4>
 <p><strong>뭘 하나:</strong> 운동선수나 활동적인 사람 대상의 깊은 근육 마사지. 어깨, 다리, 발 등 집중.</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>항목</th>
 <th>설명</th>
 </tr></thead><tbody>
@@ -314,7 +343,7 @@
 <td><strong>도구</strong></td>
 <td>손 + 팔꿈치 + 특수 도구 사용</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p><strong>느낌:</strong></p>
 <ul>
 <li>일반 마사지보다 훨씬 강함</li>
@@ -330,7 +359,7 @@
 <hr>
 <h4>3. 핫스톤 마사지 (Hot Stone Massage)</h4>
 <p><strong>뭘 하나:</strong> 뜨거운 돌을 피부에 얹어서 이완하고, 손 마사지 병행.</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>항목</th>
 <th>설명</th>
 </tr></thead><tbody>
@@ -358,7 +387,7 @@
 <td><strong>도구</strong></td>
 <td>뜨거운 돌 (현무암)</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p><strong>느낌:</strong></p>
 <ul>
 <li>따뜻한 돌의 온기가 근심을 녹임</li>
@@ -375,7 +404,7 @@
 <hr>
 <h4>4. 아로마테라피 마사지 (Aromatherapy Massage)</h4>
 <p><strong>뭘 하나:</strong> 에센셜 오일을 사용한 부드러운 마사지.</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>항목</th>
 <th>설명</th>
 </tr></thead><tbody>
@@ -407,7 +436,7 @@
 <td><strong>도구</strong></td>
 <td>오일 + 손</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p><strong>느낌:</strong></p>
 <ul>
 <li>가장 럭셔리한 기분</li>
@@ -424,7 +453,7 @@
 <hr>
 <h3>마사지샵 선택 팁</h3>
 <h4>외국인 친화 vs 로컬 샵</h4>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>타입</th>
 <th>특징</th>
 <th>가격</th>
@@ -448,9 +477,9 @@
 <td>100,000원+</td>
 <td>⭐⭐⭐⭐⭐</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h4>서울 추천 마사지샵 (외국인 OK)</h4>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>샵 이름</th>
 <th>지역</th>
 <th>특징</th>
@@ -492,7 +521,7 @@
 <td>55,000~75,000원</td>
 <td>⭐⭐⭐⭐</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>스파 — 프리미엄 웰니스 경험</h2>
 <h3>스파 vs 마사지, 언제 스파를 가야 할까?</h3>
@@ -517,7 +546,7 @@
 <p>4. <strong>프라이빗성</strong>: 개인 시술실 (찜질방과 달리 공개 공간 X)</p>
 <p>5. <strong>시간 제약 없음</strong>: 정해진 시간 동안 자유 이용</p>
 <h3>서울 추천 스파</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>스파 이름</th>
 <th>지역</th>
 <th>특징</th>
@@ -559,7 +588,7 @@
 <td>70,000~100,000원</td>
 <td>⭐⭐⭐⭐</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>마사지 &amp; 스파 이용 완전 가이드</h2>
 <h3>Step 1: 사전 예약</h3>
@@ -603,7 +632,7 @@
 <p>7. <strong>사후관리</strong>: 로션/크림 케어 (대부분 제공)</p>
 <hr>
 <h3>Step 4: 효과 극대화 팁</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>시술 후</th>
 <th>추천</th>
 <th>주의</th>
@@ -628,7 +657,7 @@
 <td>피부 진정 팩 (효과 증진)</td>
 <td>과도한 세정 피하기</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>찜질방 vs 마사지 vs 스파 완전 비교</h2>
 <p>당신의 상황에 맞는 최적 선택:</p>
@@ -673,7 +702,7 @@
 </ul>
 <hr>
 <h2>마사지 &amp; 스파 비용 정리</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>서비스</th>
 <th>최저</th>
 <th>평균</th>
@@ -715,7 +744,7 @@
 <td>150,000원+</td>
 <td>2~3시간</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>실용 팁</h2>
 <h3>언어 장벽 극복</h3>
@@ -739,7 +768,7 @@
 </ul>
 <hr>
 <h2>참고 링크</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>분야</th>
 <th>링크</th>
 <th>설명</th>
@@ -764,7 +793,7 @@
 <td>@keychingu.korea</td>
 <td>키친구 웰니스 콘텐츠</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <p><em>이 가이드는 2026년 4월 기준으로 작성되었습니다. 가격과 시설은 변할 수 있으므로, 방문 전 사전 확인을 권장합니다.</em></p>
 <h2>🌐 외부 SOURCES</h2>
@@ -791,34 +820,7 @@
     <div><a href="bukchon.html" style="color:var(--red);">북촌 가이드 — 북촌 8경·한복 무료입장·에티켓 &rarr;</a></div>
   </nav>
 
-  <section id="kc-related" style="display:none;margin:2.2rem 0 0.5rem;">
-    <h2 style="font-size:1.1rem;margin-bottom:0.8rem;">관련 가이드</h2>
-    <div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"></div>
-  </section>
-  <script>
-  // related guides — 같은 카테고리 최신 6편 (contents.json fetch·언어 suffix 자동, 2026-07-04)
-  (function() {
-    var m = location.pathname.match(/\/content\/(.+?)(\.en|\.zh|\.ja)?\.html$/);
-    if (!m) return;
-    var slug = m[1], suf = m[2] || '';
-    fetch('../data/contents.json').then(function(r) { return r.json(); }).then(function(items) {
-      var me = null;
-      for (var i = 0; i < items.length; i++) { if (items[i].slug === slug) { me = items[i]; break; } }
-      if (!me) return;
-      var pool = items.filter(function(x) { return x.slug !== slug && x.category === me.category; });
-      pool.sort(function(a, b) { return (parseInt(b.id, 10) || 0) - (parseInt(a.id, 10) || 0); });
-      var picks = pool.slice(0, 6);
-      if (!picks.length) return;
-      document.getElementById('kc-related-grid').innerHTML = picks.map(function(x) {
-        var t = suf ? (x.title_en || x.title_kr) : (x.title_kr || x.title_en);
-        var ok = suf === '' || (suf === '.en' ? x.en_available : (suf === '.zh' ? x.cn_available : x.jp_available));
-        var href = x.slug + (ok ? suf : '') + '.html';
-        return '<a href="' + href + '" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">' + t + '</a>';
-      }).join('');
-      document.getElementById('kc-related').style.display = 'block';
-    }).catch(function() {});
-  })();
-  </script>
+  <section id="kc-related" style="margin:2.2rem 0 0.5rem;"><h2 style="font-size:1.1rem;margin-bottom:0.8rem;">관련 가이드</h2><div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"><a href="royal-palace-autumn-nights.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">궁궐의 가을밤 — 별빛야행·달빛기행·궁중문화축전, 예약 없이는 못 들어가는 프로그램 총정리</a><a href="seoul-fireworks-festival.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">서울세계불꽃축제 2026 — 9월 5일 여의도, 100만 인파 속에서 명당 잡는 법</a><a href="seoul-architecture-eras.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">서울 건축 시대 산책 — 전통·근대·현대 15선 + 건축 감상 렌즈</a><a href="korea-kpop-fansign-videocall.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">외국인 K-pop 팬사인회·영상통화 응모 가이드 — 음반 응모·영통</a><a href="korea-idol-birthday-cafe.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">외국인 아이돌 생일카페 가이드 — 생카·컵슬리브·서포트</a><a href="korea-kpop-music-show-taping.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">외국인 K-pop 음악방송 방청 가이드 — 인기가요·엠카·뮤뱅 사전녹화</a></div></section>
   <!-- kc-comments -->
   <section id="kc-comments" style="margin:2.5rem 0 0.5rem;">
     <h2>댓글</h2>

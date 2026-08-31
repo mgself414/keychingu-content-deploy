@@ -34,7 +34,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/main.css">
 <style>
 .detail-wrap {
@@ -50,11 +50,11 @@
 .breadcrumb a { color: var(--red); font-weight: 600; }
 .detail-wrap h1 {
   font-size: 28px; font-weight: 800;
-  color: var(--black); margin-bottom: 8px;
+  color: var(--text); margin-bottom: 8px;
 }
 .detail-wrap h2 {
   font-size: 22px; font-weight: 700;
-  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  color: var(--text); margin-top: 32px; margin-bottom: 12px;
   padding-bottom: 6px;
   border-bottom: 2px solid var(--red);
 }
@@ -73,10 +73,19 @@
   font-size: 14px; line-height: 1.6;
   color: var(--text-mid); margin-bottom: 6px;
 }
+/* 표는 자기 컨테이너 안에서만 가로 스크롤한다 — 이게 없으면 min-content 폭이
+   뷰포트를 넘는 순간 페이지 전체가 가로로 밀렸다 (2026-08-31 점검 M2).
+   table 자체는 table 로 남겨 행·열 관계를 보존한다(display:block 으로 해결하지 않는 이유). */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 16px;
+}
 .detail-wrap table {
   width: 100%; border-collapse: collapse;
   margin-bottom: 16px; font-size: 13px;
 }
+.table-scroll > table { margin-bottom: 0; }
 .detail-wrap th {
   background: var(--black); color: #fff;
   padding: 10px 12px; text-align: left;
@@ -137,11 +146,31 @@
   user-select: none;
 }
 </style>
+<script>
+/* 테마 부트스트랩 — 2026-08-31 점검 M3.
+   기사 4,804p 에 이게 없어서, OS 다크 사용자가 홈(다크)에서 기사를 열면
+   라이트로 번쩍였다. main.css 의 다크 규칙은 전부 [data-theme="dark"] 스코프이고
+   prefers-color-scheme 미디어쿼리는 CSS 에 없으므로, 속성을 여기서 달아줘야 한다.
+   <head> 안에서 동기 실행 — paint 전에 끝나야 깜빡임이 없다.
+   허브와 달리 기사엔 토글 버튼이 없다. 저장된 선택(kc_theme)과 OS 설정만 따른다. */
+(function () {
+  try {
+    var s = localStorage.getItem('kc_theme');
+    if (s === 'dark' || (!s && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  } catch (e) {}
+})();
+</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "CafeOrCoffeeShop", "name": "을지로 레트로 힙스터 투어", "url": "https://mgself414.github.io/keychingu-content-deploy/content/euljiro.html", "image": "https://mgself414.github.io/keychingu-content-deploy/og/euljiro.png", "address": {"@type": "PostalAddress", "addressLocality": "Seoul", "addressCountry": "KR"}}</script>
 </head>
 <body>
+<a class="skip-link" href="#kc-main">本文へスキップ</a>
 <header class="site-header">
-  <a href="../ja/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <!-- width/height = 고유 크기(400x149). CSS 가 height:36px 로 줄이지만 브라우저는
+       이 비율로 자리를 미리 잡아 레이아웃 이동(CLS)을 막는다. 헤더 로고는 첫 화면에
+       보이므로 lazy 가 아니라 eager. -->
+  <a href="../ja/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo" width="400" height="149" loading="eager" decoding="async"></a>
   <div class="lang-switch">
     <a href="../content/euljiro.html">KR</a>
     <a href="../content/euljiro.en.html">EN</a>
@@ -150,12 +179,12 @@
   </div>
 </header>
 
-<main class="detail-wrap">
+<main class="detail-wrap" id="kc-main" tabindex="-1">
   <nav class="breadcrumb" aria-label="breadcrumb"><a href="../ja/index.html">ガイド一覧</a> &rsaquo; 乙支路レトロヒップスターツアー</nav>
   <article>
   <h1>Euljiro (을지로) — レトロヒップスターツアー: 古い鉄工所の裏に潜む感性バー</h1>
 <h2>ひと目でわかる</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>項目</th>
 <th>内容</th>
 </tr></thead><tbody>
@@ -183,7 +212,7 @@
 <td><strong>費用目安</strong></td>
 <td>ドリンク ₩4,000〜₩8,000 (~430〜860 JPY) / 食事 ₩10,000〜₩30,000 (~1,080〜3,240 JPY) / お酒 ₩20,000〜₩50,000 (~2,160〜5,400 JPY)</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>Euljiro (을지로)、なぜ行くべきか?</h2>
 <h3>「過去と現在が重なる、リアルなソウル」</h3>
@@ -200,7 +229,7 @@
 <h3>昼 (10:00〜15:00 / AM 10:00〜PM 3:00) — 働くソウル</h3>
 <p><strong>この時間は観光客が避けるべき時間ではなく、必ず見ておくべき時間です。</strong></p>
 <p>Euljiro (을지로) の本来の顔を見られる唯一の機会です。</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>見られるもの</th>
 <th>特徴</th>
 </tr></thead><tbody>
@@ -224,11 +253,11 @@
 <td><strong>職人たち</strong></td>
 <td>実際に働いている様子を目にする確率が高い</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p><strong>ヒント</strong>: カメラを向けず、ただ歩きながら観察しましょう。許可なく撮影されることを好まない方が多いです。</p>
 <h3>夕方 (16:00〜21:00 / PM 4:00〜PM 9:00) — 変貌する通り</h3>
 <p><strong>Euljiro (을지로) が「ホットスポット」として注目されるようになった時間帯</strong>です。퇴근길 (テグンギル) — 仕事帰り (日本の「帰宅ラッシュ時間帯」に相当) のオフィスワーカーと観光客が混ざり合います。</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>時間</th>
 <th>雰囲気</th>
 <th>おすすめの過ごし方</th>
@@ -248,7 +277,7 @@
 <td>本格的な夜の通り</td>
 <td>お酒の文化が本格化、混雑増加</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h3>夜 (21:00〜深夜0:00 / PM 9:00〜midnight) — Euljiro (을지로) の真の顔</h3>
 <p><strong>Euljiro (을지로) だけの夜景</strong>: 古い建物に刻まれた昔ながらのネオンサイン、倉庫の灯り、人々で溢れる골목 (ゴルモク/路地)。</p>
 <p>もはや「見るべき」通りではなく、<strong>「体験する」通り</strong>へと変わります。</p>
@@ -395,7 +424,7 @@
 <hr>
 <h2>実用ヒント</h2>
 <h3>1. Euljiro (을지로) 独自のエチケット</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>状況</th>
 <th>エチケット</th>
 </tr></thead><tbody>
@@ -415,9 +444,9 @@
 <td><strong>21:00以降</strong></td>
 <td>酔った人が増えます。注意し、貴重品は必ず管理すること</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h3>2. 最適訪問時間</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>時間帯</th>
 <th>おすすめ度</th>
 <th>理由</th>
@@ -447,11 +476,11 @@
 <td>⭐⭐</td>
 <td>クラブ・노래방 (ノレバン — カラオケボックス) 文化へと変わる</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p><strong>推奨</strong>: 外国人旅行者 → <strong>17:00〜20:00</strong> 訪問 (昼と夜を両方体験できる)</p>
 <h3>3. 交通アクセス</h3>
 <h4>行き方</h4>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>手段</th>
 <th>方法</th>
 <th>所要時間</th>
@@ -466,7 +495,7 @@
 <td>&quot;Euljiro 3-ga (을지로3가)&quot; または &quot;印刷路地&quot; と伝える</td>
 <td>₩20,000〜₩25,000 (~2,160〜2,700 JPY)</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h4>帰り方</h4>
 <ul>
 <li><strong>地下鉄</strong>: Euljiro 3-ga Station (을지로3가역)・Euljiro 4-ga Station (을지로4가역)・Euljiro Ipgu Station (을지로입구역) (いずれも2号線)</li>
@@ -474,7 +503,7 @@
 <li><strong>徒歩</strong>: Euljiro Ipgu Station (을지로입구역) まで約15分</li>
 </ul>
 <h3>4. 荷物と服装</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>項目</th>
 <th>理由</th>
 </tr></thead><tbody>
@@ -498,9 +527,9 @@
 <td><strong>バッグは最小限</strong></td>
 <td>移動が多いため、軽いものを推奨</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h3>5. 予算ガイド</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>項目</th>
 <th>費用</th>
 <th>備考</th>
@@ -530,7 +559,7 @@
 <td><strong>₩37,000〜₩70,000 (~4,000〜7,560 JPY)</strong></td>
 <td>2〜3時間ゆっくり滞在の場合</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>Euljiro (을지로) 訪問後のおすすめスポット</h2>
 <h3><strong>近隣名所 (徒歩5分以内)</strong></h3>
@@ -590,7 +619,7 @@
 </ul>
 <h3>Q4: 昼と夜、どちらがよいですか?</h3>
 <p><strong>A</strong>: 目的によって異なります。</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>目的</th>
 <th>おすすめ時間</th>
 </tr></thead><tbody>
@@ -610,9 +639,9 @@
 <td><strong>夜景撮影</strong></td>
 <td>夜 (19:00〜20:00)</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h3>Q5: Euljiro (을지로) と Myeongdong (명동) の違いは?</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>項目</th>
 <th>Euljiro (을지로)</th>
 <th>Myeongdong (명동)</th>
@@ -637,7 +666,7 @@
 <td>本物のソウルを知りたいとき</td>
 <td>ショッピング、写真撮影</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>Euljiro (을지로) の未来</h2>
 <p>Euljiro (을지로) は現在、<strong>ジェントリフィケーションの危機に直面</strong>しています。</p>
@@ -689,34 +718,7 @@
     <div><a href="namsan.ja.html" style="color:var(--red);">南山周遊路＆夜景 &rarr;</a></div>
   </nav>
 
-  <section id="kc-related" style="display:none;margin:2.2rem 0 0.5rem;">
-    <h2 style="font-size:1.1rem;margin-bottom:0.8rem;">関連ガイド</h2>
-    <div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"></div>
-  </section>
-  <script>
-  // related guides — 같은 카테고리 최신 6편 (contents.json fetch·언어 suffix 자동, 2026-07-04)
-  (function() {
-    var m = location.pathname.match(/\/content\/(.+?)(\.en|\.zh|\.ja)?\.html$/);
-    if (!m) return;
-    var slug = m[1], suf = m[2] || '';
-    fetch('../data/contents.json').then(function(r) { return r.json(); }).then(function(items) {
-      var me = null;
-      for (var i = 0; i < items.length; i++) { if (items[i].slug === slug) { me = items[i]; break; } }
-      if (!me) return;
-      var pool = items.filter(function(x) { return x.slug !== slug && x.category === me.category; });
-      pool.sort(function(a, b) { return (parseInt(b.id, 10) || 0) - (parseInt(a.id, 10) || 0); });
-      var picks = pool.slice(0, 6);
-      if (!picks.length) return;
-      document.getElementById('kc-related-grid').innerHTML = picks.map(function(x) {
-        var t = suf ? (x.title_en || x.title_kr) : (x.title_kr || x.title_en);
-        var ok = suf === '' || (suf === '.en' ? x.en_available : (suf === '.zh' ? x.cn_available : x.jp_available));
-        var href = x.slug + (ok ? suf : '') + '.html';
-        return '<a href="' + href + '" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">' + t + '</a>';
-      }).join('');
-      document.getElementById('kc-related').style.display = 'block';
-    }).catch(function() {});
-  })();
-  </script>
+  <section id="kc-related" style="margin:2.2rem 0 0.5rem;"><h2 style="font-size:1.1rem;margin-bottom:0.8rem;">関連ガイド</h2><div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"><a href="busan-suyeong-dongnae.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Busan&#x27;s Point of Origin — Suyeong and Dongnae, Behind Gwangalli and Joseon-Era Busan</a><a href="sindang-guide.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Sindang-dong: The Neighborhood Being Called the Next Seongsu — Market, Hip Bars and Original Tteokbokki in Three Layers</a><a href="seoul-overrated-underrated.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Overrated vs Underrated Seoul: Reallocating Your Time by What Foreign Reviews Actually Say</a><a href="myeongdong-euljiro-evening-walk.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Myeongdong to Euljiro Evening Walk: Six Faces of Seoul in Two Hours, Ending with Yajang Beer</a><a href="cvs-drinks-map.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">The Complete Map of Korean Convenience Store Drinks: From Banana Milk to Hangover Cures</a><a href="korea-snack-brands.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Korean Snack Brands 101: Nongshim, Orion, Lotte, Haitai and Crown — Reading K-Snacks by Maker</a></div></section>
   <!-- kc-comments -->
   <section id="kc-comments" style="margin:2.5rem 0 0.5rem;">
     <h2>コメント</h2>

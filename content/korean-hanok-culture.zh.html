@@ -34,7 +34,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/main.css">
 <style>
 .detail-wrap {
@@ -50,11 +50,11 @@
 .breadcrumb a { color: var(--red); font-weight: 600; }
 .detail-wrap h1 {
   font-size: 28px; font-weight: 800;
-  color: var(--black); margin-bottom: 8px;
+  color: var(--text); margin-bottom: 8px;
 }
 .detail-wrap h2 {
   font-size: 22px; font-weight: 700;
-  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  color: var(--text); margin-top: 32px; margin-bottom: 12px;
   padding-bottom: 6px;
   border-bottom: 2px solid var(--red);
 }
@@ -73,10 +73,19 @@
   font-size: 14px; line-height: 1.6;
   color: var(--text-mid); margin-bottom: 6px;
 }
+/* 표는 자기 컨테이너 안에서만 가로 스크롤한다 — 이게 없으면 min-content 폭이
+   뷰포트를 넘는 순간 페이지 전체가 가로로 밀렸다 (2026-08-31 점검 M2).
+   table 자체는 table 로 남겨 행·열 관계를 보존한다(display:block 으로 해결하지 않는 이유). */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 16px;
+}
 .detail-wrap table {
   width: 100%; border-collapse: collapse;
   margin-bottom: 16px; font-size: 13px;
 }
+.table-scroll > table { margin-bottom: 0; }
 .detail-wrap th {
   background: var(--black); color: #fff;
   padding: 10px 12px; text-align: left;
@@ -137,10 +146,30 @@
   user-select: none;
 }
 </style>
+<script>
+/* 테마 부트스트랩 — 2026-08-31 점검 M3.
+   기사 4,804p 에 이게 없어서, OS 다크 사용자가 홈(다크)에서 기사를 열면
+   라이트로 번쩍였다. main.css 의 다크 규칙은 전부 [data-theme="dark"] 스코프이고
+   prefers-color-scheme 미디어쿼리는 CSS 에 없으므로, 속성을 여기서 달아줘야 한다.
+   <head> 안에서 동기 실행 — paint 전에 끝나야 깜빡임이 없다.
+   허브와 달리 기사엔 토글 버튼이 없다. 저장된 선택(kc_theme)과 OS 설정만 따른다. */
+(function () {
+  try {
+    var s = localStorage.getItem('kc_theme');
+    if (s === 'dark' || (!s && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  } catch (e) {}
+})();
+</script>
 </head>
 <body>
+<a class="skip-link" href="#kc-main">跳到正文</a>
 <header class="site-header">
-  <a href="../zh/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <!-- width/height = 고유 크기(400x149). CSS 가 height:36px 로 줄이지만 브라우저는
+       이 비율로 자리를 미리 잡아 레이아웃 이동(CLS)을 막는다. 헤더 로고는 첫 화면에
+       보이므로 lazy 가 아니라 eager. -->
+  <a href="../zh/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo" width="400" height="149" loading="eager" decoding="async"></a>
   <div class="lang-switch">
     <a href="../content/korean-hanok-culture.html">KR</a>
     <a href="../content/korean-hanok-culture.en.html">EN</a>
@@ -149,7 +178,7 @@
   </div>
 </header>
 
-<main class="detail-wrap">
+<main class="detail-wrap" id="kc-main" tabindex="-1">
   <nav class="breadcrumb" aria-label="breadcrumb"><a href="../zh/index.html">全部指南</a> &rsaquo; 韩国韩屋文化</nav>
   <article>
   <h1>韩国韩屋文化 —— 庭院、大厅、温突，引自然入室的韩式住宅</h1>
@@ -159,7 +188,7 @@
 <blockquote><p><strong>与温突（<a href="korean-ondol-floor-culture.zh.html" class="xref">#1141</a>）的区别</strong>：温突 (Ondol / 온돌) 只讲一件事 —— &quot;把地板加热的取暖技术&quot;。而韩屋讲的是容纳这个温突的<strong>整座房子、空间与建筑</strong> —— 庭院、大厅、舍廊房、屋檐乃至风水。二者是部分与整体的关系。</p></blockquote>
 <hr>
 <h2>★ 一目了然 —— 韩屋 (Hanok / 한옥) 的构成</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>空间</th>
 <th>汉字 / 含义</th>
 <th>是什么地方</th>
@@ -219,7 +248,7 @@
 <td>糊上韩纸 (Hanji / 한지) 的门窗</td>
 <td>同时实现隔热·换气·采光</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <blockquote><p><strong>核心</strong>：韩屋的身份不是&quot;瓦屋顶&quot;，而是<strong>&quot;庭院 (Madang / 마당，留空的中心) + 地板 (Maru / 마루，夏季) + 温突 (Ondol / 온돌，冬季) + 屋檐 (Cheoma / 처마，调光)&quot;</strong>的组合。正是这四者，让一座房子撑过半岛的四季（见下文 ②③④）。</p></blockquote>
 <hr>
 <h2>⚠️ 外国人常误解的3件事</h2>
@@ -258,7 +287,7 @@
 <hr>
 <h2>④ 温突 + 地板 —— 冬与夏共处一屋</h2>
 <p>理解韩屋最重要的钥匙，是<strong>一座房中另设&quot;冬季空间&quot;与&quot;夏季空间&quot;</strong>这一点。</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th></th>
 <th><strong>温突房 (Ondol-bang / 온돌방)</strong>（冬）</th>
 <th><strong>大厅地板 (Daecheong-maru / 대청마루)</strong>（夏）</th>
@@ -283,7 +312,7 @@
 <td>从脚开始暖</td>
 <td>从脚底开始凉</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <ul>
 <li><strong>温突 (溫突 / Ondol / 온돌)</strong>：让火的热气从地板下穿过以<strong>加热地板</strong>的韩国固有辐射取暖。是抵御冬季严寒的装置。（作动原理·历史·席地生活 → 参见 <strong><a href="korean-ondol-floor-culture.zh.html" class="xref">#1141</a> 温突文化</strong>）</li>
 <li><strong>大厅地板 (大廳 / Daecheong-maru / 대청마루)</strong>：架离地面建造的木地板，地板下有风穿过，因此<strong>夏天凉爽</strong>。暑气一来，家人的生活便从温突房移到大厅。</li>
@@ -305,7 +334,7 @@
 <hr>
 <h2>⑥ 地域差异与现代韩屋 —— 从北村到韩屋住宿</h2>
 <p><strong>① 形态因地域而异。</strong> 朝鲜半岛南北气候差异大，因此韩屋的<strong>平面（从上方看的形状）</strong>也因地而异。</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>地域</th>
 <th>平面形态</th>
 <th>特征</th>
@@ -325,7 +354,7 @@
 <td><strong>ㅁ（米音）字形</strong></td>
 <td>建筑从四面环绕庭院。挡住寒风、<strong>保存暖气</strong></td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <blockquote><p>越往暖和的南方越是<strong>敞开的一字形</strong>，越往寒冷的北方越是<strong>封闭的ㅁ字形</strong>。即便是同样的韩屋，也会<strong>随气候舒展或蜷缩</strong>——形态顺应自然而变。</p></blockquote>
 <p><strong>② 现代里，韩屋正重新焕发生机。</strong> 韩屋不是博物馆里的文物。</p>
 <ul>
@@ -394,34 +423,7 @@
     <div><a href="korean-ginseng-culture.zh.html" style="color:var(--red);">韩国人参与红参文化 &rarr;</a></div>
   </nav>
 
-  <section id="kc-related" style="display:none;margin:2.2rem 0 0.5rem;">
-    <h2 style="font-size:1.1rem;margin-bottom:0.8rem;">相关指南</h2>
-    <div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"></div>
-  </section>
-  <script>
-  // related guides — 같은 카테고리 최신 6편 (contents.json fetch·언어 suffix 자동, 2026-07-04)
-  (function() {
-    var m = location.pathname.match(/\/content\/(.+?)(\.en|\.zh|\.ja)?\.html$/);
-    if (!m) return;
-    var slug = m[1], suf = m[2] || '';
-    fetch('../data/contents.json').then(function(r) { return r.json(); }).then(function(items) {
-      var me = null;
-      for (var i = 0; i < items.length; i++) { if (items[i].slug === slug) { me = items[i]; break; } }
-      if (!me) return;
-      var pool = items.filter(function(x) { return x.slug !== slug && x.category === me.category; });
-      pool.sort(function(a, b) { return (parseInt(b.id, 10) || 0) - (parseInt(a.id, 10) || 0); });
-      var picks = pool.slice(0, 6);
-      if (!picks.length) return;
-      document.getElementById('kc-related-grid').innerHTML = picks.map(function(x) {
-        var t = suf ? (x.title_en || x.title_kr) : (x.title_kr || x.title_en);
-        var ok = suf === '' || (suf === '.en' ? x.en_available : (suf === '.zh' ? x.cn_available : x.jp_available));
-        var href = x.slug + (ok ? suf : '') + '.html';
-        return '<a href="' + href + '" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">' + t + '</a>';
-      }).join('');
-      document.getElementById('kc-related').style.display = 'block';
-    }).catch(function() {});
-  })();
-  </script>
+  <section id="kc-related" style="margin:2.2rem 0 0.5rem;"><h2 style="font-size:1.1rem;margin-bottom:0.8rem;">相关指南</h2><div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"><a href="royal-palace-autumn-nights.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Royal Palaces After Dark: Starlight Tours, Moonlight Walks and the Royal Culture Festival — the Reservation-Only Side of Autumn Seoul</a><a href="seoul-fireworks-festival.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Seoul International Fireworks Festival 2026: September 5 at Yeouido — How to Claim a Spot Among a Million People</a><a href="seoul-architecture-eras.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Seoul Architecture Time Walk — Traditional, Modern &amp; Contemporary: 15 Picks + An Architectural Appreciation Lens</a><a href="korea-kpop-fansign-videocall.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">K-pop Fansign·Video Call (Album Entry·Yeongtong)</a><a href="korea-idol-birthday-cafe.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Idol Birthday Cafe (Saengka·Cup Sleeve·Support)</a><a href="korea-kpop-music-show-taping.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">K-pop Music Show Taping (Inkigayo·M Countdown·Music Bank)</a></div></section>
   <!-- kc-comments -->
   <section id="kc-comments" style="margin:2.5rem 0 0.5rem;">
     <h2>评论</h2>

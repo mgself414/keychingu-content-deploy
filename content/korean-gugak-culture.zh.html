@@ -34,7 +34,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/main.css">
 <style>
 .detail-wrap {
@@ -50,11 +50,11 @@
 .breadcrumb a { color: var(--red); font-weight: 600; }
 .detail-wrap h1 {
   font-size: 28px; font-weight: 800;
-  color: var(--black); margin-bottom: 8px;
+  color: var(--text); margin-bottom: 8px;
 }
 .detail-wrap h2 {
   font-size: 22px; font-weight: 700;
-  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  color: var(--text); margin-top: 32px; margin-bottom: 12px;
   padding-bottom: 6px;
   border-bottom: 2px solid var(--red);
 }
@@ -73,10 +73,19 @@
   font-size: 14px; line-height: 1.6;
   color: var(--text-mid); margin-bottom: 6px;
 }
+/* 표는 자기 컨테이너 안에서만 가로 스크롤한다 — 이게 없으면 min-content 폭이
+   뷰포트를 넘는 순간 페이지 전체가 가로로 밀렸다 (2026-08-31 점검 M2).
+   table 자체는 table 로 남겨 행·열 관계를 보존한다(display:block 으로 해결하지 않는 이유). */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 16px;
+}
 .detail-wrap table {
   width: 100%; border-collapse: collapse;
   margin-bottom: 16px; font-size: 13px;
 }
+.table-scroll > table { margin-bottom: 0; }
 .detail-wrap th {
   background: var(--black); color: #fff;
   padding: 10px 12px; text-align: left;
@@ -137,10 +146,30 @@
   user-select: none;
 }
 </style>
+<script>
+/* 테마 부트스트랩 — 2026-08-31 점검 M3.
+   기사 4,804p 에 이게 없어서, OS 다크 사용자가 홈(다크)에서 기사를 열면
+   라이트로 번쩍였다. main.css 의 다크 규칙은 전부 [data-theme="dark"] 스코프이고
+   prefers-color-scheme 미디어쿼리는 CSS 에 없으므로, 속성을 여기서 달아줘야 한다.
+   <head> 안에서 동기 실행 — paint 전에 끝나야 깜빡임이 없다.
+   허브와 달리 기사엔 토글 버튼이 없다. 저장된 선택(kc_theme)과 OS 설정만 따른다. */
+(function () {
+  try {
+    var s = localStorage.getItem('kc_theme');
+    if (s === 'dark' || (!s && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  } catch (e) {}
+})();
+</script>
 </head>
 <body>
+<a class="skip-link" href="#kc-main">跳到正文</a>
 <header class="site-header">
-  <a href="../zh/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <!-- width/height = 고유 크기(400x149). CSS 가 height:36px 로 줄이지만 브라우저는
+       이 비율로 자리를 미리 잡아 레이아웃 이동(CLS)을 막는다. 헤더 로고는 첫 화면에
+       보이므로 lazy 가 아니라 eager. -->
+  <a href="../zh/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo" width="400" height="149" loading="eager" decoding="async"></a>
   <div class="lang-switch">
     <a href="../content/korean-gugak-culture.html">KR</a>
     <a href="../content/korean-gugak-culture.en.html">EN</a>
@@ -149,7 +178,7 @@
   </div>
 </header>
 
-<main class="detail-wrap">
+<main class="detail-wrap" id="kc-main" tabindex="-1">
   <nav class="breadcrumb" aria-label="breadcrumb"><a href="../zh/index.html">全部指南</a> &rsaquo; 韩国国乐文化</nav>
   <article>
   <h1>国乐 — 盘索里·四物游戏·阿里郎，韩国之声</h1>
@@ -158,7 +187,7 @@
 <p>本文不是讲“哪个演出场好”（→ 场所指南），而是讲解<strong>国乐是什么、分成哪些支系、韩国人用这种声音表达什么</strong>。同样是“传统音乐”，宫廷庄严的<strong>正乐 (Jeongak / 정악)</strong> 与庶民鲜活的<strong>民俗乐 (Minsogak / 민속악)</strong> 是完全不同的音乐。这是韩国文化解读系列<strong>第71篇</strong>。</p>
 <hr>
 <h2>★ 一目了然 — 国乐 (Gugak / 국악) 支系一览</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>支系</th>
 <th>是什么</th>
 <th>氛围</th>
@@ -207,7 +236,7 @@
 <td>李娜耳赤《虎下山》·乐团光七</td>
 <td>借K-文化逆袭走红</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <blockquote><p>国乐 (Gugak / 국악) 大致分为<strong>正乐 (Jeongak / 정악, 宫廷·上流)</strong> 与<strong>民俗乐 (Minsogak / 민속악, 庶民)</strong> 两大主干。盘索里 (Pansori / 판소리)·四物游戏 (Samulnori / 사물놀이)·阿里郎 (Arirang / 아리랑)·散调 (Sanjo / 산조) 都属于<strong>民俗乐</strong>系。</p></blockquote>
 <hr>
 <h2>⚠️ 外国人常误解的3点</h2>
@@ -230,7 +259,7 @@
 <li><strong>鼓手 (Gosu / 고수, 打鼓的人):</strong> 席地而坐，用<strong>一面鼓 (Buk / 북)</strong> 把握节奏，并不时以<em>“哎嗦！”“好啊！”</em>的<strong>助兴喝彩 (Chuimsae / 추임새)</strong> 来添兴。观众也一起喊助兴 — 这是观众参与演奏的音乐。</li>
 </ul>
 <p><strong>盘索里五场 (五马当)</strong> (今日传下的五篇):</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>马当</th>
 <th>故事</th>
 </tr></thead><tbody>
@@ -254,14 +283,14 @@
 <td><strong>赤壁歌 (Jeokbyeokga / 적벽가)</strong></td>
 <td>把《三国志》赤壁之战谱成歌的英雄叙事</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p>把盘索里的情绪压缩成一句话就是<strong>恨 (Han / 한, 恨)</strong>。它用凄切的嗓音倾吐被压抑的悲伤·思念·郁结，而其中又<strong>混合着诙谐与兴</strong>。唱者为了刻意造出<strong>沙哑粗粝的嗓音 (Suriseong / 수리성)</strong>，常年在瀑布前磨练嗓子 — 不是顺滑的美声，而是<strong>带着人生重量的浊声</strong>才是盘索里的美德 (→ 恨的情绪参见 <a href="korean-han-emotion-culture.zh.html" class="xref">#1138</a>)。</p>
 <blockquote><p><strong>UNESCO</strong>: 盘索里于<strong>2003年</strong>被选定为联合国教科文组织人类口头及非物质遗产代表作 (其后于2008年编入代表名录)。</p></blockquote>
 <hr>
 <h2>③ 四物游戏·风物 — 四件乐器造出的神明</h2>
 <p>如果说盘索里是“恨”，那四物游戏就是恰恰相反的<strong>神明 (兴)</strong>。</p>
 <p><strong>四物游戏 (Samulnori / 사물놀이)</strong> 字面意思即<em>“用四样 (四物) 来玩 (놀이)”</em>的音乐。四件打击乐器合在一起，叠出爆发性的节奏。</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>乐器</th>
 <th>是什么</th>
 <th>象征</th>
@@ -286,7 +315,7 @@
 <td>圆木双面鼓，低音</td>
 <td>云</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p>这些乐器原本来自<strong>风物 (Pungmul / 풍물, 农乐)</strong>。风物是在农村<strong>祈求丰年、驱除村中灾厄</strong>、众人一同敲打起舞的<strong>共同体音乐</strong>。把这在田野间露天铺展的农乐，由金德洙等人于<strong>1978年</strong>重构为舞台上四人坐奏，便是<strong>四物游戏</strong>。也就是说，四物游戏是<em>从传统 (风物) 诞生的现代舞台样式</em>。</p>
 <p>四物游戏的魅力在于<strong>越来越快的长短 (Jangdan / 장단)</strong>。从舒缓起步，经自进莫里 (Jajinmori / 자진모리)·挥莫里 (Hwimori / 휘모리) 加速，瞬间把观众席推向兴奋。即便不懂歌词，外国人也能<strong>用全身去享受</strong>，是最直观的国乐。</p>
 <hr>
@@ -382,34 +411,7 @@
     <div><a href="korean-traditional-dance-culture.zh.html" style="color:var(--red);">韩国传统舞蹈文化 &rarr;</a></div>
   </nav>
 
-  <section id="kc-related" style="display:none;margin:2.2rem 0 0.5rem;">
-    <h2 style="font-size:1.1rem;margin-bottom:0.8rem;">相关指南</h2>
-    <div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"></div>
-  </section>
-  <script>
-  // related guides — 같은 카테고리 최신 6편 (contents.json fetch·언어 suffix 자동, 2026-07-04)
-  (function() {
-    var m = location.pathname.match(/\/content\/(.+?)(\.en|\.zh|\.ja)?\.html$/);
-    if (!m) return;
-    var slug = m[1], suf = m[2] || '';
-    fetch('../data/contents.json').then(function(r) { return r.json(); }).then(function(items) {
-      var me = null;
-      for (var i = 0; i < items.length; i++) { if (items[i].slug === slug) { me = items[i]; break; } }
-      if (!me) return;
-      var pool = items.filter(function(x) { return x.slug !== slug && x.category === me.category; });
-      pool.sort(function(a, b) { return (parseInt(b.id, 10) || 0) - (parseInt(a.id, 10) || 0); });
-      var picks = pool.slice(0, 6);
-      if (!picks.length) return;
-      document.getElementById('kc-related-grid').innerHTML = picks.map(function(x) {
-        var t = suf ? (x.title_en || x.title_kr) : (x.title_kr || x.title_en);
-        var ok = suf === '' || (suf === '.en' ? x.en_available : (suf === '.zh' ? x.cn_available : x.jp_available));
-        var href = x.slug + (ok ? suf : '') + '.html';
-        return '<a href="' + href + '" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">' + t + '</a>';
-      }).join('');
-      document.getElementById('kc-related').style.display = 'block';
-    }).catch(function() {});
-  })();
-  </script>
+  <section id="kc-related" style="margin:2.2rem 0 0.5rem;"><h2 style="font-size:1.1rem;margin-bottom:0.8rem;">相关指南</h2><div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"><a href="royal-palace-autumn-nights.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Royal Palaces After Dark: Starlight Tours, Moonlight Walks and the Royal Culture Festival — the Reservation-Only Side of Autumn Seoul</a><a href="seoul-fireworks-festival.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Seoul International Fireworks Festival 2026: September 5 at Yeouido — How to Claim a Spot Among a Million People</a><a href="seoul-architecture-eras.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Seoul Architecture Time Walk — Traditional, Modern &amp; Contemporary: 15 Picks + An Architectural Appreciation Lens</a><a href="korea-kpop-fansign-videocall.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">K-pop Fansign·Video Call (Album Entry·Yeongtong)</a><a href="korea-idol-birthday-cafe.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Idol Birthday Cafe (Saengka·Cup Sleeve·Support)</a><a href="korea-kpop-music-show-taping.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">K-pop Music Show Taping (Inkigayo·M Countdown·Music Bank)</a></div></section>
   <!-- kc-comments -->
   <section id="kc-comments" style="margin:2.5rem 0 0.5rem;">
     <h2>评论</h2>

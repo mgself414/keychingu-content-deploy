@@ -34,7 +34,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/main.css">
 <style>
 .detail-wrap {
@@ -50,11 +50,11 @@
 .breadcrumb a { color: var(--red); font-weight: 600; }
 .detail-wrap h1 {
   font-size: 28px; font-weight: 800;
-  color: var(--black); margin-bottom: 8px;
+  color: var(--text); margin-bottom: 8px;
 }
 .detail-wrap h2 {
   font-size: 22px; font-weight: 700;
-  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  color: var(--text); margin-top: 32px; margin-bottom: 12px;
   padding-bottom: 6px;
   border-bottom: 2px solid var(--red);
 }
@@ -73,10 +73,19 @@
   font-size: 14px; line-height: 1.6;
   color: var(--text-mid); margin-bottom: 6px;
 }
+/* 표는 자기 컨테이너 안에서만 가로 스크롤한다 — 이게 없으면 min-content 폭이
+   뷰포트를 넘는 순간 페이지 전체가 가로로 밀렸다 (2026-08-31 점검 M2).
+   table 자체는 table 로 남겨 행·열 관계를 보존한다(display:block 으로 해결하지 않는 이유). */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 16px;
+}
 .detail-wrap table {
   width: 100%; border-collapse: collapse;
   margin-bottom: 16px; font-size: 13px;
 }
+.table-scroll > table { margin-bottom: 0; }
 .detail-wrap th {
   background: var(--black); color: #fff;
   padding: 10px 12px; text-align: left;
@@ -137,10 +146,30 @@
   user-select: none;
 }
 </style>
+<script>
+/* 테마 부트스트랩 — 2026-08-31 점검 M3.
+   기사 4,804p 에 이게 없어서, OS 다크 사용자가 홈(다크)에서 기사를 열면
+   라이트로 번쩍였다. main.css 의 다크 규칙은 전부 [data-theme="dark"] 스코프이고
+   prefers-color-scheme 미디어쿼리는 CSS 에 없으므로, 속성을 여기서 달아줘야 한다.
+   <head> 안에서 동기 실행 — paint 전에 끝나야 깜빡임이 없다.
+   허브와 달리 기사엔 토글 버튼이 없다. 저장된 선택(kc_theme)과 OS 설정만 따른다. */
+(function () {
+  try {
+    var s = localStorage.getItem('kc_theme');
+    if (s === 'dark' || (!s && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  } catch (e) {}
+})();
+</script>
 </head>
 <body>
+<a class="skip-link" href="#kc-main">본문 바로가기</a>
 <header class="site-header">
-  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <!-- width/height = 고유 크기(400x149). CSS 가 height:36px 로 줄이지만 브라우저는
+       이 비율로 자리를 미리 잡아 레이아웃 이동(CLS)을 막는다. 헤더 로고는 첫 화면에
+       보이므로 lazy 가 아니라 eager. -->
+  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo" width="400" height="149" loading="eager" decoding="async"></a>
   <div class="lang-switch">
     <a href="../content/korean-hangeul-creation-culture.html" class="active">KR</a>
     <a href="../content/korean-hangeul-creation-culture.en.html">EN</a>
@@ -149,7 +178,7 @@
   </div>
 </header>
 
-<main class="detail-wrap">
+<main class="detail-wrap" id="kc-main" tabindex="-1">
   <nav class="breadcrumb" aria-label="breadcrumb"><a href="../index.html">전체 가이드</a> &rsaquo; 한글 창제 이야기 — 세상에서 거의 유일하게 '누가·언제·왜 만들었는지' 아는 문자</nav>
   <article>
   <h1>한글 창제 이야기 — 세상에서 거의 유일하게 &#x27;누가·언제·왜 만들었는지&#x27; 아는 문자</h1>
@@ -157,7 +186,7 @@
 <p>세계의 거의 모든 문자에는 한 가지 공통점이 있다 — <strong>누가 만들었는지 아무도 모른다</strong>. 알파벳도, 한자도, 아랍 문자도 수천 년에 걸쳐 누가 언제 시작했는지 모르게 서서히 굳어졌다. 그런데 한국의 문자 <strong>한글</strong>은 다르다. <strong>누가(세종대왕), 언제(1443년 창제·1446년 반포), 왜(글을 모르는 백성을 위해), 어떤 원리로(발음기관과 천지인을 본떠서)</strong> 만들었는지가 책 한 권에 또박또박 기록돼 있다. 그래서 한글은 흔히 &quot;세계에서 거의 유일하게 창제 기록이 남은 문자&quot;로 불린다. 외국인은 보통 한국 글자를 &quot;복잡해 보이는 동그라미·네모&quot;쯤으로 여기지만, 한글은 사실 <strong>인류 문자사에서 손꼽히게 의도적으로·과학적으로 설계된 글자</strong>다. 이 글은 &quot;한글이 뭐냐&quot;가 아니라, <strong>왜 만들어졌고 왜 그렇게 똑똑한 글자인지</strong> 를 외국인 눈높이로 풀어준다. 한국 문화 explainer 시리즈 <strong>17편</strong>.</p>
 <hr>
 <h2>★ 한눈에 보기 — 한글 핵심 6가지</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>항목</th>
 <th>내용</th>
 <th>한 줄</th>
@@ -192,7 +221,7 @@
 <td>훈민정음 해례본</td>
 <td><strong>국보 + 유네스코 세계기록유산(1997)</strong></td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <blockquote><p><strong>핵심</strong>: 한글의 진짜 놀라움은 모양이 아니라 <strong>&#x27;설계 철학이 통째로 기록됐다&#x27;</strong> 는 점이다. 그 기록이 바로 아래의 <em>해례본</em>이다.</p></blockquote>
 <hr>
 <h2>⚠️ 외국인이 자주 오해하는 3가지</h2>
@@ -220,7 +249,7 @@
 <h2>③ ★ 과학적 원리 (1) — 자음은 &#x27;발음기관&#x27;을 본떴다</h2>
 <p>여기서부터가 한글이 &quot;과학적&quot;이라 불리는 진짜 이유다. 한글의 <strong>자음</strong>은 그 소리를 낼 때 <strong>입·혀·목 등 발음기관이 어떤 모양이 되는지를 본떠</strong> 만들어졌다(훈민정음 해례본에 그 원리가 직접 적혀 있다).</p>
 <p>기본 자음 5개의 원리는 이렇다.</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>자음</th>
 <th>본뜬 발음기관</th>
 <th>설명</th>
@@ -250,7 +279,7 @@
 <td>목구멍(목)의 모양</td>
 <td>목구멍에서 나는 소리</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p>그리고 천재적인 부분은 <strong>같은 자리에서 나는 더 센 소리는 기본 글자에 획을 더해</strong> 만든 것이다. 예: ㄱ → ㅋ, ㄴ → ㄷ → ㅌ, ㅁ → ㅂ → ㅍ. <strong>글자 모양이 곧 발음 위치와 세기를 알려주는</strong> 구조라, 모양만 봐도 어떻게 소리 내는지 짐작할 수 있다. 세계 어떤 알파벳도 글자 모양과 발음기관을 이렇게 직접 연결하지 않았다.</p>
 <hr>
 <h2>④ ★ 과학적 원리 (2) — 모음은 &#x27;하늘·땅·사람(천지인)&#x27;</h2>
@@ -355,34 +384,7 @@
     <div><a href="korean-delivery-culture.html" style="color:var(--red);">한국 배달 문화 — 왜 한국은 배달 천국인가, 한강 잔디밭까지 치킨이 온다 &rarr;</a></div>
   </nav>
 
-  <section id="kc-related" style="display:none;margin:2.2rem 0 0.5rem;">
-    <h2 style="font-size:1.1rem;margin-bottom:0.8rem;">관련 가이드</h2>
-    <div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"></div>
-  </section>
-  <script>
-  // related guides — 같은 카테고리 최신 6편 (contents.json fetch·언어 suffix 자동, 2026-07-04)
-  (function() {
-    var m = location.pathname.match(/\/content\/(.+?)(\.en|\.zh|\.ja)?\.html$/);
-    if (!m) return;
-    var slug = m[1], suf = m[2] || '';
-    fetch('../data/contents.json').then(function(r) { return r.json(); }).then(function(items) {
-      var me = null;
-      for (var i = 0; i < items.length; i++) { if (items[i].slug === slug) { me = items[i]; break; } }
-      if (!me) return;
-      var pool = items.filter(function(x) { return x.slug !== slug && x.category === me.category; });
-      pool.sort(function(a, b) { return (parseInt(b.id, 10) || 0) - (parseInt(a.id, 10) || 0); });
-      var picks = pool.slice(0, 6);
-      if (!picks.length) return;
-      document.getElementById('kc-related-grid').innerHTML = picks.map(function(x) {
-        var t = suf ? (x.title_en || x.title_kr) : (x.title_kr || x.title_en);
-        var ok = suf === '' || (suf === '.en' ? x.en_available : (suf === '.zh' ? x.cn_available : x.jp_available));
-        var href = x.slug + (ok ? suf : '') + '.html';
-        return '<a href="' + href + '" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">' + t + '</a>';
-      }).join('');
-      document.getElementById('kc-related').style.display = 'block';
-    }).catch(function() {});
-  })();
-  </script>
+  <section id="kc-related" style="margin:2.2rem 0 0.5rem;"><h2 style="font-size:1.1rem;margin-bottom:0.8rem;">관련 가이드</h2><div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"><a href="royal-palace-autumn-nights.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">궁궐의 가을밤 — 별빛야행·달빛기행·궁중문화축전, 예약 없이는 못 들어가는 프로그램 총정리</a><a href="seoul-fireworks-festival.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">서울세계불꽃축제 2026 — 9월 5일 여의도, 100만 인파 속에서 명당 잡는 법</a><a href="seoul-architecture-eras.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">서울 건축 시대 산책 — 전통·근대·현대 15선 + 건축 감상 렌즈</a><a href="korea-kpop-fansign-videocall.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">외국인 K-pop 팬사인회·영상통화 응모 가이드 — 음반 응모·영통</a><a href="korea-idol-birthday-cafe.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">외국인 아이돌 생일카페 가이드 — 생카·컵슬리브·서포트</a><a href="korea-kpop-music-show-taping.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">외국인 K-pop 음악방송 방청 가이드 — 인기가요·엠카·뮤뱅 사전녹화</a></div></section>
   <!-- kc-comments -->
   <section id="kc-comments" style="margin:2.5rem 0 0.5rem;">
     <h2>댓글</h2>

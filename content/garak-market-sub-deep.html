@@ -34,7 +34,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/main.css">
 <style>
 .detail-wrap {
@@ -50,11 +50,11 @@
 .breadcrumb a { color: var(--red); font-weight: 600; }
 .detail-wrap h1 {
   font-size: 28px; font-weight: 800;
-  color: var(--black); margin-bottom: 8px;
+  color: var(--text); margin-bottom: 8px;
 }
 .detail-wrap h2 {
   font-size: 22px; font-weight: 700;
-  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  color: var(--text); margin-top: 32px; margin-bottom: 12px;
   padding-bottom: 6px;
   border-bottom: 2px solid var(--red);
 }
@@ -73,10 +73,19 @@
   font-size: 14px; line-height: 1.6;
   color: var(--text-mid); margin-bottom: 6px;
 }
+/* 표는 자기 컨테이너 안에서만 가로 스크롤한다 — 이게 없으면 min-content 폭이
+   뷰포트를 넘는 순간 페이지 전체가 가로로 밀렸다 (2026-08-31 점검 M2).
+   table 자체는 table 로 남겨 행·열 관계를 보존한다(display:block 으로 해결하지 않는 이유). */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 16px;
+}
 .detail-wrap table {
   width: 100%; border-collapse: collapse;
   margin-bottom: 16px; font-size: 13px;
 }
+.table-scroll > table { margin-bottom: 0; }
 .detail-wrap th {
   background: var(--black); color: #fff;
   padding: 10px 12px; text-align: left;
@@ -137,10 +146,30 @@
   user-select: none;
 }
 </style>
+<script>
+/* 테마 부트스트랩 — 2026-08-31 점검 M3.
+   기사 4,804p 에 이게 없어서, OS 다크 사용자가 홈(다크)에서 기사를 열면
+   라이트로 번쩍였다. main.css 의 다크 규칙은 전부 [data-theme="dark"] 스코프이고
+   prefers-color-scheme 미디어쿼리는 CSS 에 없으므로, 속성을 여기서 달아줘야 한다.
+   <head> 안에서 동기 실행 — paint 전에 끝나야 깜빡임이 없다.
+   허브와 달리 기사엔 토글 버튼이 없다. 저장된 선택(kc_theme)과 OS 설정만 따른다. */
+(function () {
+  try {
+    var s = localStorage.getItem('kc_theme');
+    if (s === 'dark' || (!s && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  } catch (e) {}
+})();
+</script>
 </head>
 <body>
+<a class="skip-link" href="#kc-main">본문 바로가기</a>
 <header class="site-header">
-  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <!-- width/height = 고유 크기(400x149). CSS 가 height:36px 로 줄이지만 브라우저는
+       이 비율로 자리를 미리 잡아 레이아웃 이동(CLS)을 막는다. 헤더 로고는 첫 화면에
+       보이므로 lazy 가 아니라 eager. -->
+  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo" width="400" height="149" loading="eager" decoding="async"></a>
   <div class="lang-switch">
     <a href="../content/garak-market-sub-deep.html" class="active">KR</a>
     <a href="../content/garak-market-sub-deep.en.html">EN</a>
@@ -149,7 +178,7 @@
   </div>
 </header>
 
-<main class="detail-wrap">
+<main class="detail-wrap" id="kc-main" tabindex="-1">
   <nav class="breadcrumb" aria-label="breadcrumb"><a href="../index.html">전체 가이드</a> &rsaquo; 외국인 한국 가락 시장 단독 sub 12선 deep dive</nav>
   <article>
   <h1>외국인 한국 가락 시장 단독 sub 12선 deep dive — <a href="dawn-market-deep.html" class="xref">#587</a> sub·서울 <a href="seongsu.html" class="xref">#1</a> 도매·국내 최대 농수산물</h1>
@@ -160,7 +189,7 @@
 <blockquote><p><strong>시리즈 cross-ref</strong>: <a href="dawn-market-deep.html" class="xref">#587</a> 새벽 시장 (parent) · <a href="traditional-market.html" class="xref">#380</a> 한국 전통시장 · <a href="guri-market-deep.html" class="xref">#599</a> 구리 (<a href="night-views.html" class="xref">#2</a> 도매) · <a href="namdaemun-nopo-deep.html" class="xref">#581</a>~<a href="indie-dance-sub-deep.html" class="xref">#614</a> 시장 시리즈 · <a href="luxury-hotel-deep.html" class="xref">#577</a> 럭셔리 호텔 · <a href="majang-market-deep.html" class="xref">#592</a> 마장 한우</p></blockquote>
 <hr>
 <h2>한눈에 보기</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>항목</th>
 <th>내용</th>
 </tr></thead><tbody>
@@ -200,7 +229,7 @@
 <td><strong>가격 갱신</strong></td>
 <td>2026 기준. 수산물 시세는 일별 변동</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>외국인이 자주 하는 실수 3가지</h2>
 <h3>1. &quot;도매시장 = 일반 재래시장&quot;으로 오해하고 오전 10시에 방문</h3>
@@ -215,7 +244,7 @@
 <p>1985년 개장한 가락시장은 연 거래액 약 3조 원 규모의 <strong>국내 최대 농수산물 종합 도매시장</strong>이다 (가락몰 garak.co.kr 기준). 서울 송파구 양재대로 932, 면적 54만 4천 제곱미터에 수산물·청과·축산·건어물 도매 구역이 집중되어 있다. 전국 수산물의 약 35%, 서울 도매 청과의 약 40%가 이곳을 거친다.</p>
 <p>외국인 입장에서 가락시장의 가치는 두 가지다. 첫째, 새벽 도매 경매를 실제로 목격할 수 있는 드문 장소다. 둘째, 시내에서 접근이 어려운 수산·청과 종류를 한 자리에서 볼 수 있다. 노량진 수산시장(<a href="dawn-market-deep.html" class="xref">#587</a>)이 수산에 특화된 반면, 가락은 수산·청과·축산 3축을 모두 갖춘 종합형이다.</p>
 <h3>구역 구조 — 외국인 동선 기준</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>구역</th>
 <th>내용</th>
 <th>외국인 접근</th>
@@ -255,7 +284,7 @@
 <td>08:00~15:00. 회덮밥·해장국·순대국밥</td>
 <td>★★★★★</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>12선 4축 — 구역별 심화 가이드</h2>
 <h3>축 1: 수산 도매 (3선)</h3>
@@ -364,7 +393,7 @@
 <hr>
 <h2>외국인 실용 정보</h2>
 <h3>교통</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>방법</th>
 <th>내용</th>
 </tr></thead><tbody>
@@ -380,9 +409,9 @@
 <td><strong>주차</strong></td>
 <td>자가용 방문 시 가락시장 내 유료 주차. 새벽 피크 시 혼잡</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h3>운영 시간 (2026 기준)</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>구역</th>
 <th>새벽 경매</th>
 <th>소매·직판</th>
@@ -418,7 +447,7 @@
 <td>~15:00</td>
 <td>매장별 상이</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <blockquote><p>일요일은 도매 구역 대부분 휴무. 소매 구역 일부는 영업하나 물량 대폭 감소. 일요일 방문은 피하거나 사전 확인 필수.</p></blockquote>
 <h3>결제</h3>
 <ul>
@@ -459,7 +488,7 @@
 <blockquote><p>서울 도매시장 3곳을 하루에 묶는 매니아 코스. 체력 소모 크고 이동 동선 사전 준비 필수.</p></blockquote>
 <hr>
 <h2>시즌 매트릭스</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>시즌</th>
 <th>가락 시그니처</th>
 <th>추천 시급도</th>
@@ -489,7 +518,7 @@
 <td>실내 구역 위주 (청과·건어물·가락몰 식당가)</td>
 <td>★★★</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <blockquote><p>가을(9~11월)이 수산과 청과 모두 피크. 새벽 경매 방문 1순위 시즌.</p></blockquote>
 <hr>
 <h2>외국인 매니아 5 tip</h2>
@@ -506,7 +535,7 @@
 <hr>
 <h2>외국인 실용 수치</h2>
 <p>외국인 한국 관광객 = <strong>연 1,750만 명 (2024)</strong>·MZ (20-39세) <strong>58%</strong>·평균 체류 <strong>6.4일</strong>·평균 지출 <strong>1,605 USD/인</strong>·재방문율 <strong>23%</strong> (한국관광공사 2024 통계).</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>항목</th>
 <th>수치</th>
 <th>출처</th>
@@ -531,7 +560,7 @@
 <td><strong>1330</strong> (한국어·영어·중국어·일본어)</td>
 <td>한국관광공사</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>🌐 외부 SOURCES</h2>
 <ul>
@@ -545,7 +574,7 @@
 </ul>
 <hr>
 <h2>📅 시즌 매트릭스 (외국인 매니아)</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>시즌</th>
 <th>시그니처 활동</th>
 <th>외국인 매니아 시급도</th>
@@ -570,7 +599,7 @@
 <td>감귤·한라봉 + 굴·홍합·건어물 선물</td>
 <td>★★★★</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>🔗 관련 deep dives</h2>
 <ul>
@@ -604,34 +633,7 @@
     <div><a href="nowon-market-sub-deep.html" style="color:var(--red);">외국인 한국 노원 시장·라이프스타일 sub 12선 deep dive &rarr;</a></div>
   </nav>
 
-  <section id="kc-related" style="display:none;margin:2.2rem 0 0.5rem;">
-    <h2 style="font-size:1.1rem;margin-bottom:0.8rem;">관련 가이드</h2>
-    <div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"></div>
-  </section>
-  <script>
-  // related guides — 같은 카테고리 최신 6편 (contents.json fetch·언어 suffix 자동, 2026-07-04)
-  (function() {
-    var m = location.pathname.match(/\/content\/(.+?)(\.en|\.zh|\.ja)?\.html$/);
-    if (!m) return;
-    var slug = m[1], suf = m[2] || '';
-    fetch('../data/contents.json').then(function(r) { return r.json(); }).then(function(items) {
-      var me = null;
-      for (var i = 0; i < items.length; i++) { if (items[i].slug === slug) { me = items[i]; break; } }
-      if (!me) return;
-      var pool = items.filter(function(x) { return x.slug !== slug && x.category === me.category; });
-      pool.sort(function(a, b) { return (parseInt(b.id, 10) || 0) - (parseInt(a.id, 10) || 0); });
-      var picks = pool.slice(0, 6);
-      if (!picks.length) return;
-      document.getElementById('kc-related-grid').innerHTML = picks.map(function(x) {
-        var t = suf ? (x.title_en || x.title_kr) : (x.title_kr || x.title_en);
-        var ok = suf === '' || (suf === '.en' ? x.en_available : (suf === '.zh' ? x.cn_available : x.jp_available));
-        var href = x.slug + (ok ? suf : '') + '.html';
-        return '<a href="' + href + '" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">' + t + '</a>';
-      }).join('');
-      document.getElementById('kc-related').style.display = 'block';
-    }).catch(function() {});
-  })();
-  </script>
+  <section id="kc-related" style="margin:2.2rem 0 0.5rem;"><h2 style="font-size:1.1rem;margin-bottom:0.8rem;">관련 가이드</h2><div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"><a href="dongdaemun-market-eats.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">동대문 종합시장 상인 밥집 — 원단 골목의 40년 노포들</a><a href="busan-dessert-road.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">부산 디저트 로드 — 팥의 도시에서 젤라또까지</a><a href="busan-coffee-road.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">부산 커피 로드 — 월드 챔피언의 도시에서 커피 마시는 법</a><a href="busan-signature-food.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">부산에서만 먹는 세 가지 — 돼지국밥·밀면·회, 주문하는 법까지</a><a href="autumn-food-calendar.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">가을 제철 미식 캘린더 — 전어·대하·꽃게·송이·홍시, 9~11월에만 열리는 한국의 맛</a><a href="seoul-history-eras.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">서울 600년 시간여행 — 시대별로 걷는 역사 탐험 코스</a></div></section>
   <!-- kc-comments -->
   <section id="kc-comments" style="margin:2.5rem 0 0.5rem;">
     <h2>댓글</h2>

@@ -34,7 +34,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/main.css">
 <style>
 .detail-wrap {
@@ -50,11 +50,11 @@
 .breadcrumb a { color: var(--red); font-weight: 600; }
 .detail-wrap h1 {
   font-size: 28px; font-weight: 800;
-  color: var(--black); margin-bottom: 8px;
+  color: var(--text); margin-bottom: 8px;
 }
 .detail-wrap h2 {
   font-size: 22px; font-weight: 700;
-  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  color: var(--text); margin-top: 32px; margin-bottom: 12px;
   padding-bottom: 6px;
   border-bottom: 2px solid var(--red);
 }
@@ -73,10 +73,19 @@
   font-size: 14px; line-height: 1.6;
   color: var(--text-mid); margin-bottom: 6px;
 }
+/* 표는 자기 컨테이너 안에서만 가로 스크롤한다 — 이게 없으면 min-content 폭이
+   뷰포트를 넘는 순간 페이지 전체가 가로로 밀렸다 (2026-08-31 점검 M2).
+   table 자체는 table 로 남겨 행·열 관계를 보존한다(display:block 으로 해결하지 않는 이유). */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 16px;
+}
 .detail-wrap table {
   width: 100%; border-collapse: collapse;
   margin-bottom: 16px; font-size: 13px;
 }
+.table-scroll > table { margin-bottom: 0; }
 .detail-wrap th {
   background: var(--black); color: #fff;
   padding: 10px 12px; text-align: left;
@@ -137,10 +146,30 @@
   user-select: none;
 }
 </style>
+<script>
+/* 테마 부트스트랩 — 2026-08-31 점검 M3.
+   기사 4,804p 에 이게 없어서, OS 다크 사용자가 홈(다크)에서 기사를 열면
+   라이트로 번쩍였다. main.css 의 다크 규칙은 전부 [data-theme="dark"] 스코프이고
+   prefers-color-scheme 미디어쿼리는 CSS 에 없으므로, 속성을 여기서 달아줘야 한다.
+   <head> 안에서 동기 실행 — paint 전에 끝나야 깜빡임이 없다.
+   허브와 달리 기사엔 토글 버튼이 없다. 저장된 선택(kc_theme)과 OS 설정만 따른다. */
+(function () {
+  try {
+    var s = localStorage.getItem('kc_theme');
+    if (s === 'dark' || (!s && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  } catch (e) {}
+})();
+</script>
 </head>
 <body>
+<a class="skip-link" href="#kc-main">본문 바로가기</a>
 <header class="site-header">
-  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <!-- width/height = 고유 크기(400x149). CSS 가 height:36px 로 줄이지만 브라우저는
+       이 비율로 자리를 미리 잡아 레이아웃 이동(CLS)을 막는다. 헤더 로고는 첫 화면에
+       보이므로 lazy 가 아니라 eager. -->
+  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo" width="400" height="149" loading="eager" decoding="async"></a>
   <div class="lang-switch">
     <a href="../content/tteok-guide.html" class="active">KR</a>
     <a href="../content/tteok-guide.en.html">EN</a>
@@ -149,7 +178,7 @@
   </div>
 </header>
 
-<main class="detail-wrap">
+<main class="detail-wrap" id="kc-main" tabindex="-1">
   <nav class="breadcrumb" aria-label="breadcrumb"><a href="../index.html">전체 가이드</a> &rsaquo; 42 · 서울 떡 맛집</nav>
   <article>
   <h1>42 · 서울 떡 맛집 — 한국인도 줄 서는 찹쌀의 미학</h1>
@@ -172,7 +201,7 @@
 <p>떡(Tteok)은 찹쌀이나 멥쌀을 쪄서 반죽하거나 빚어 만드는 한국의 전통 식품이다. 빵과 달리 밀가루를 쓰지 않고, 기본적으로 글루텐 프리다. 쫄깃하고 부드러운 식감이 특징이며, 달콤한 것부터 고소하고 담백한 것까지 종류가 다양하다.</p>
 <p>명절(설·추석)이나 생일·이사 같은 특별한 날에 나누어 먹는 문화가 있어, 선물 포장 세트 형태로도 폭넓게 판매된다. 최근에는 카페형 떡집이 늘면서 커피와 함께 즐기는 현대적인 소비 방식도 자리잡았다.</p>
 <h3>1-2. 꼭 알아야 할 주요 종류</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>이름</th>
 <th>특징</th>
 </tr></thead><tbody>
@@ -208,12 +237,12 @@
 <td><strong>쑥떡</strong></td>
 <td>쑥을 넣어 초록빛을 띠는 떡. 향긋한 쑥 향이 특징</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>2. 지역별 맛집 20곳</h2>
 <h3>2-1. 도심권(종로·중구) — 관광 동선 직결 (7곳)</h3>
 <p>관광지 밀집 지역인 종로·인사동·을지로 동선에서 자연스럽게 들를 수 있는 곳들이다. 전통 노포부터 떡카페까지 분위기가 다양하다.</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>가게명</th>
 <th>위치</th>
 <th>카테고리</th>
@@ -253,7 +282,7 @@
 <td>중구 중림로 45 1층</td>
 <td>떡카페</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p><strong>종로떡집·낙원떡집</strong> — 낙원상가 바로 앞, 길 하나를 사이에 두고 마주보는 두 가게는 이 일대에서 수십 년을 지켜온 노포다. 격식 없이 현지인들이 일상적으로 들르는 동네 떡집 분위기로, 종로를 걷다 들르기에 좋다.</p>
 <p><strong>동병상련</strong> — 1층은 카페, 지하 1층은 떡 제작실로 구성된 이색 공간이다. 떡을 즐기면서 만드는 과정을 간접적으로 볼 수 있어 체험 지향 여행자에게 어울린다. 익선동·창덕궁 동선과 연결된다.</p>
 <p><strong>아진당 떡상점</strong> — 익선동 골목에 자리한 인스타그램 감성의 떡카페다. 정갈한 공간 연출과 계절 메뉴로 젊은 층에게도 친숙하게 다가간다.</p>
@@ -263,7 +292,7 @@
 <hr>
 <h3>2-2. 강남·송파·강동 — 프리미엄·백화점 권역 (6곳)</h3>
 <p>강남 고급 주거지와 잠실 대형 상권에 위치한 곳들로, 선물 세트·프리미엄 포장에 강점이 있는 매장이 많다.</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>가게명</th>
 <th>위치</th>
 <th>카테고리</th>
@@ -298,7 +327,7 @@
 <td>강동구 양재대로81길 32</td>
 <td>프리미엄 선물세트</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p><strong>압구정공주떡</strong> — 압구정 로데오 인근에 위치한 전통 떡집이다. 강남 고급 주거지에서 꾸준히 영업 중인 지역 밀착형 가게다.</p>
 <p><strong>도수향</strong> — 선릉·삼성 역세권 인근의 전통 떡·한과 매장이다. 강남 직장인 밀집 지역에 자리해 단체 선물 수요가 있는 곳이다.</p>
 <p><strong>청담이북인절미</strong> — 이름에서 알 수 있듯 인절미를 주력으로 다루는 곳이다. 청담동 골목에 위치해 명품 거리 쇼핑과 함께 들르기 좋다.</p>
@@ -308,7 +337,7 @@
 <hr>
 <h3>2-3. 한강 북부(성동·성북·용산·마포) — 로컬과 지역 동선 (5곳)</h3>
 <p>성수·홍대·공덕 등 젊은 감성의 지역과 성북의 조용한 동네 떡집이 함께 포함된 권역이다.</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>가게명</th>
 <th>위치</th>
 <th>카테고리</th>
@@ -338,7 +367,7 @@
 <td>마포구 만리재옛길 14</td>
 <td>전통 브랜드</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p><strong>오복떡집</strong> — 성수동 성덕정길에 자리한 로컬 떡집이다. 성수 카페·편집숍 투어 동선과 함께 들르기 좋은 동네 가게로, 꾸준한 현지 단골을 보유한 곳이다.</p>
 <p><strong>대흥떡집</strong> — 성북구 중앙로의 전통 떡집이다. 온라인 예약 시스템 없이 운영되는 동네 가게 스타일로, 성북구 일대 산책 동선에서 들를 수 있다.</p>
 <p><strong>행복한떡집</strong> — 용산구 청파동 주택가에 위치한 떡 제조 전문 가게다. 이태원·한강 용산 동선과 연계 가능하다.</p>
@@ -426,34 +455,7 @@
     <div><a href="yangjaecheon-guide.html" style="color:var(--red);">43 · 양재천 산책과 맛집 &rarr;</a></div>
   </nav>
 
-  <section id="kc-related" style="display:none;margin:2.2rem 0 0.5rem;">
-    <h2 style="font-size:1.1rem;margin-bottom:0.8rem;">관련 가이드</h2>
-    <div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"></div>
-  </section>
-  <script>
-  // related guides — 같은 카테고리 최신 6편 (contents.json fetch·언어 suffix 자동, 2026-07-04)
-  (function() {
-    var m = location.pathname.match(/\/content\/(.+?)(\.en|\.zh|\.ja)?\.html$/);
-    if (!m) return;
-    var slug = m[1], suf = m[2] || '';
-    fetch('../data/contents.json').then(function(r) { return r.json(); }).then(function(items) {
-      var me = null;
-      for (var i = 0; i < items.length; i++) { if (items[i].slug === slug) { me = items[i]; break; } }
-      if (!me) return;
-      var pool = items.filter(function(x) { return x.slug !== slug && x.category === me.category; });
-      pool.sort(function(a, b) { return (parseInt(b.id, 10) || 0) - (parseInt(a.id, 10) || 0); });
-      var picks = pool.slice(0, 6);
-      if (!picks.length) return;
-      document.getElementById('kc-related-grid').innerHTML = picks.map(function(x) {
-        var t = suf ? (x.title_en || x.title_kr) : (x.title_kr || x.title_en);
-        var ok = suf === '' || (suf === '.en' ? x.en_available : (suf === '.zh' ? x.cn_available : x.jp_available));
-        var href = x.slug + (ok ? suf : '') + '.html';
-        return '<a href="' + href + '" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">' + t + '</a>';
-      }).join('');
-      document.getElementById('kc-related').style.display = 'block';
-    }).catch(function() {});
-  })();
-  </script>
+  <section id="kc-related" style="margin:2.2rem 0 0.5rem;"><h2 style="font-size:1.1rem;margin-bottom:0.8rem;">관련 가이드</h2><div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"><a href="korea-souvenir-data-guide.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">데이터로 고른 한국 기념품 — 받는 사람별·예산별 매트릭스</a><a href="busan-shopping-guide.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">부산 쇼핑 가이드 — 세계 최대 백화점과 피란 골목시장 사이</a><a href="korea-bubbletea-drink-chains.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">한국 버블티·음료 체인 풀가이드 — 커피 말고 마실 것</a><a href="korea-icecream-chains.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">한국 아이스크림 체인 풀가이드 — 배스킨라빈스가 다른 나라가 되는 곳</a><a href="korea-burger-chains.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">한국 햄버거 체인 풀가이드 — 맘스터치·롯데리아·노브랜드버거, 어느 버거가 진짜 K-버거일까</a><a href="korea-underground-mall.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">외국인 지하상가 쇼핑 가이드 — 고투몰·부평·강남터미널 저가 패션</a></div></section>
   <!-- kc-comments -->
   <section id="kc-comments" style="margin:2.5rem 0 0.5rem;">
     <h2>댓글</h2>

@@ -34,7 +34,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/main.css">
 <style>
 .detail-wrap {
@@ -50,11 +50,11 @@
 .breadcrumb a { color: var(--red); font-weight: 600; }
 .detail-wrap h1 {
   font-size: 28px; font-weight: 800;
-  color: var(--black); margin-bottom: 8px;
+  color: var(--text); margin-bottom: 8px;
 }
 .detail-wrap h2 {
   font-size: 22px; font-weight: 700;
-  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  color: var(--text); margin-top: 32px; margin-bottom: 12px;
   padding-bottom: 6px;
   border-bottom: 2px solid var(--red);
 }
@@ -73,10 +73,19 @@
   font-size: 14px; line-height: 1.6;
   color: var(--text-mid); margin-bottom: 6px;
 }
+/* 표는 자기 컨테이너 안에서만 가로 스크롤한다 — 이게 없으면 min-content 폭이
+   뷰포트를 넘는 순간 페이지 전체가 가로로 밀렸다 (2026-08-31 점검 M2).
+   table 자체는 table 로 남겨 행·열 관계를 보존한다(display:block 으로 해결하지 않는 이유). */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 16px;
+}
 .detail-wrap table {
   width: 100%; border-collapse: collapse;
   margin-bottom: 16px; font-size: 13px;
 }
+.table-scroll > table { margin-bottom: 0; }
 .detail-wrap th {
   background: var(--black); color: #fff;
   padding: 10px 12px; text-align: left;
@@ -137,10 +146,30 @@
   user-select: none;
 }
 </style>
+<script>
+/* 테마 부트스트랩 — 2026-08-31 점검 M3.
+   기사 4,804p 에 이게 없어서, OS 다크 사용자가 홈(다크)에서 기사를 열면
+   라이트로 번쩍였다. main.css 의 다크 규칙은 전부 [data-theme="dark"] 스코프이고
+   prefers-color-scheme 미디어쿼리는 CSS 에 없으므로, 속성을 여기서 달아줘야 한다.
+   <head> 안에서 동기 실행 — paint 전에 끝나야 깜빡임이 없다.
+   허브와 달리 기사엔 토글 버튼이 없다. 저장된 선택(kc_theme)과 OS 설정만 따른다. */
+(function () {
+  try {
+    var s = localStorage.getItem('kc_theme');
+    if (s === 'dark' || (!s && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  } catch (e) {}
+})();
+</script>
 </head>
 <body>
+<a class="skip-link" href="#kc-main">본문 바로가기</a>
 <header class="site-header">
-  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <!-- width/height = 고유 크기(400x149). CSS 가 height:36px 로 줄이지만 브라우저는
+       이 비율로 자리를 미리 잡아 레이아웃 이동(CLS)을 막는다. 헤더 로고는 첫 화면에
+       보이므로 lazy 가 아니라 eager. -->
+  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo" width="400" height="149" loading="eager" decoding="async"></a>
   <div class="lang-switch">
     <a href="../content/korean-street-food-culture.html" class="active">KR</a>
     <a href="../content/korean-street-food-culture.en.html">EN</a>
@@ -149,7 +178,7 @@
   </div>
 </header>
 
-<main class="detail-wrap">
+<main class="detail-wrap" id="kc-main" tabindex="-1">
   <nav class="breadcrumb" aria-label="breadcrumb"><a href="../index.html">전체 가이드</a> &rsaquo; 한국 길거리 음식 문화 — 붕어빵·호떡·떡볶이, 노점 간식의 계절과 정</nav>
   <article>
   <h1>붕어빵·호떡·떡볶이 — 한국 노점 간식의 계절과 정</h1>
@@ -157,7 +186,7 @@
 <p>겨울 저녁, 한국의 어느 지하철역 출구. 찬 바람을 맞으며 걷다 보면 어디선가 달큰한 냄새가 코를 찌른다. 작은 손수레 앞에 사람들이 줄을 서 있고, 철판 위에서는 물고기 모양 빵이 노릇하게 익어간다. <strong>붕어빵</strong> 한 봉지에 2,000~3,000원, 손에 쥐면 따뜻하고, 한 입 베어 물면 안에서 뜨거운 팥이 흘러나온다. 외국인은 이 풍경을 그냥 &quot;street food(길거리 음식)&quot;라고 부르지만, 한국인에게 노점 간식은 단순한 끼니가 아니다. <strong>계절을 알리는 풍경</strong>이고, 추운 날 손을 녹여주는 <strong>작은 위로</strong>이며, 학교 앞·시장 골목·퇴근길에 켜켜이 쌓인 <strong>추억과 정(情)</strong> 이다. 봄·여름·가을·겨울마다 노점에 오르는 간식이 바뀌고, 심지어 <em>&quot;우리 동네에 붕어빵 파는 데가 있나&quot;</em> 를 따지는 <strong>붕세권</strong>이라는 말까지 생겼다. 이 글은 &quot;어느 집이 맛있나&quot;(→ 장소 가이드)가 아니라, <strong>그 손수레 뒤에 담긴 계절·종류·정서</strong>를 외국인 눈높이로 풀어준다. 한국 문화 explainer 시리즈 <strong>55편</strong>.</p>
 <hr>
 <h2>★ 한눈에 보기 — 한국 노점 간식 9선</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>간식</th>
 <th>무엇</th>
 <th>계절</th>
@@ -217,7 +246,7 @@
 <td>사계절</td>
 <td>짭짤·쫀득</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <blockquote><p><strong>핵심 한 줄</strong>: 한국 노점 간식은 <strong>사계절 분식(떡·순대·튀김·어묵)</strong> 과 <strong>겨울 단짠 간식(붕어빵·호떡·군고구마)</strong> 으로 나뉜다. 가격은 대개 <strong>1,000~5,000원</strong> 안팎의 소액 현금 간식이다(가격은 매장·시기별 상이 — 확인 권장).</p></blockquote>
 <hr>
 <h2>⚠️ 외국인이 자주 오해하는 3가지</h2>
@@ -341,34 +370,7 @@
     <div><a href="korean-workplace-culture.html" style="color:var(--red);">한국 직장 문화 — 야근·점심·커피, 한국 회사 생활의 결 &rarr;</a></div>
   </nav>
 
-  <section id="kc-related" style="display:none;margin:2.2rem 0 0.5rem;">
-    <h2 style="font-size:1.1rem;margin-bottom:0.8rem;">관련 가이드</h2>
-    <div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"></div>
-  </section>
-  <script>
-  // related guides — 같은 카테고리 최신 6편 (contents.json fetch·언어 suffix 자동, 2026-07-04)
-  (function() {
-    var m = location.pathname.match(/\/content\/(.+?)(\.en|\.zh|\.ja)?\.html$/);
-    if (!m) return;
-    var slug = m[1], suf = m[2] || '';
-    fetch('../data/contents.json').then(function(r) { return r.json(); }).then(function(items) {
-      var me = null;
-      for (var i = 0; i < items.length; i++) { if (items[i].slug === slug) { me = items[i]; break; } }
-      if (!me) return;
-      var pool = items.filter(function(x) { return x.slug !== slug && x.category === me.category; });
-      pool.sort(function(a, b) { return (parseInt(b.id, 10) || 0) - (parseInt(a.id, 10) || 0); });
-      var picks = pool.slice(0, 6);
-      if (!picks.length) return;
-      document.getElementById('kc-related-grid').innerHTML = picks.map(function(x) {
-        var t = suf ? (x.title_en || x.title_kr) : (x.title_kr || x.title_en);
-        var ok = suf === '' || (suf === '.en' ? x.en_available : (suf === '.zh' ? x.cn_available : x.jp_available));
-        var href = x.slug + (ok ? suf : '') + '.html';
-        return '<a href="' + href + '" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">' + t + '</a>';
-      }).join('');
-      document.getElementById('kc-related').style.display = 'block';
-    }).catch(function() {});
-  })();
-  </script>
+  <section id="kc-related" style="margin:2.2rem 0 0.5rem;"><h2 style="font-size:1.1rem;margin-bottom:0.8rem;">관련 가이드</h2><div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"><a href="royal-palace-autumn-nights.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">궁궐의 가을밤 — 별빛야행·달빛기행·궁중문화축전, 예약 없이는 못 들어가는 프로그램 총정리</a><a href="seoul-fireworks-festival.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">서울세계불꽃축제 2026 — 9월 5일 여의도, 100만 인파 속에서 명당 잡는 법</a><a href="seoul-architecture-eras.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">서울 건축 시대 산책 — 전통·근대·현대 15선 + 건축 감상 렌즈</a><a href="korea-kpop-fansign-videocall.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">외국인 K-pop 팬사인회·영상통화 응모 가이드 — 음반 응모·영통</a><a href="korea-idol-birthday-cafe.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">외국인 아이돌 생일카페 가이드 — 생카·컵슬리브·서포트</a><a href="korea-kpop-music-show-taping.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">외국인 K-pop 음악방송 방청 가이드 — 인기가요·엠카·뮤뱅 사전녹화</a></div></section>
   <!-- kc-comments -->
   <section id="kc-comments" style="margin:2.5rem 0 0.5rem;">
     <h2>댓글</h2>

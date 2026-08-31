@@ -34,7 +34,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/main.css">
 <style>
 .detail-wrap {
@@ -50,11 +50,11 @@
 .breadcrumb a { color: var(--red); font-weight: 600; }
 .detail-wrap h1 {
   font-size: 28px; font-weight: 800;
-  color: var(--black); margin-bottom: 8px;
+  color: var(--text); margin-bottom: 8px;
 }
 .detail-wrap h2 {
   font-size: 22px; font-weight: 700;
-  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  color: var(--text); margin-top: 32px; margin-bottom: 12px;
   padding-bottom: 6px;
   border-bottom: 2px solid var(--red);
 }
@@ -73,10 +73,19 @@
   font-size: 14px; line-height: 1.6;
   color: var(--text-mid); margin-bottom: 6px;
 }
+/* 표는 자기 컨테이너 안에서만 가로 스크롤한다 — 이게 없으면 min-content 폭이
+   뷰포트를 넘는 순간 페이지 전체가 가로로 밀렸다 (2026-08-31 점검 M2).
+   table 자체는 table 로 남겨 행·열 관계를 보존한다(display:block 으로 해결하지 않는 이유). */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 16px;
+}
 .detail-wrap table {
   width: 100%; border-collapse: collapse;
   margin-bottom: 16px; font-size: 13px;
 }
+.table-scroll > table { margin-bottom: 0; }
 .detail-wrap th {
   background: var(--black); color: #fff;
   padding: 10px 12px; text-align: left;
@@ -137,11 +146,31 @@
   user-select: none;
 }
 </style>
+<script>
+/* 테마 부트스트랩 — 2026-08-31 점검 M3.
+   기사 4,804p 에 이게 없어서, OS 다크 사용자가 홈(다크)에서 기사를 열면
+   라이트로 번쩍였다. main.css 의 다크 규칙은 전부 [data-theme="dark"] 스코프이고
+   prefers-color-scheme 미디어쿼리는 CSS 에 없으므로, 속성을 여기서 달아줘야 한다.
+   <head> 안에서 동기 실행 — paint 전에 끝나야 깜빡임이 없다.
+   허브와 달리 기사엔 토글 버튼이 없다. 저장된 선택(kc_theme)과 OS 설정만 따른다. */
+(function () {
+  try {
+    var s = localStorage.getItem('kc_theme');
+    if (s === 'dark' || (!s && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  } catch (e) {}
+})();
+</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "TouristAttraction", "name": "서울 지하철 7호선 완전정복 — 건대·청담·강남, MZ와 명품과 자연의 라인", "url": "https://mgself414.github.io/keychingu-content-deploy/content/subway-line7.html", "image": "https://mgself414.github.io/keychingu-content-deploy/og/subway-line7.png", "address": {"@type": "PostalAddress", "addressLocality": "Seoul", "addressCountry": "KR"}, "touristType": "Foreigner-friendly tourism"}</script>
 </head>
 <body>
+<a class="skip-link" href="#kc-main">本文へスキップ</a>
 <header class="site-header">
-  <a href="../ja/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <!-- width/height = 고유 크기(400x149). CSS 가 height:36px 로 줄이지만 브라우저는
+       이 비율로 자리를 미리 잡아 레이아웃 이동(CLS)을 막는다. 헤더 로고는 첫 화면에
+       보이므로 lazy 가 아니라 eager. -->
+  <a href="../ja/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo" width="400" height="149" loading="eager" decoding="async"></a>
   <div class="lang-switch">
     <a href="../content/subway-line7.html">KR</a>
     <a href="../content/subway-line7.en.html">EN</a>
@@ -150,7 +179,7 @@
   </div>
 </header>
 
-<main class="detail-wrap">
+<main class="detail-wrap" id="kc-main" tabindex="-1">
   <nav class="breadcrumb" aria-label="breadcrumb"><a href="../ja/index.html">ガイド一覧</a> &rsaquo; ソウル地下鉄7号線 完全攻略 — 建大·清潭·江南、MZと高級ブランドと自然のライン deep dive</nav>
   <article>
   <h1>ソウル地下鉄7号線 完全攻略 — 建大·清潭·江南、MZと高級ブランドと自然のライン deep dive</h1>
@@ -176,7 +205,7 @@
 <li><strong>cross-ref</strong>: <a href="subway-line2.ja.html" class="xref">#1241</a> 2号線(建大) · <a href="hangang-night-deep.ja.html" class="xref">#586</a> 漢江(トゥクソム)</li>
 </ul>
 <p><strong>📍 駅からすぐ — 徒歩動線</strong></p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>スポット</th>
 <th>徒歩</th>
 <th>地図</th>
@@ -201,7 +230,7 @@
 <td>4分</td>
 <td><a href="https://www.google.com/maps?q=37.542510,127.070741" rel="noopener">Map</a></td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h3>🫒 <a href="night-views.ja.html" class="xref">#2</a>. オリニ大公園駅 (어린이대공원역 / Children&#x27;s Grand Park Station) — ファミリー·動物園</h3>
 <ul>
 <li><strong>🚪 出口</strong>: オリニ大公園 (어린이대공원)正門方面</li>
@@ -211,7 +240,7 @@
 <li><strong>cross-ref</strong>: <a href="seoul-indoor-family.ja.html" class="xref">#1240</a> 屋内ファミリー(ソウルサンサンナラ) · <a href="family-kids-full.ja.html" class="xref">#232</a> ファミリー·子ども</li>
 </ul>
 <p><strong>📍 駅からすぐ — 徒歩動線</strong></p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>スポット</th>
 <th>徒歩</th>
 <th>地図</th>
@@ -236,7 +265,7 @@
 <td>4分</td>
 <td><a href="https://www.google.com/maps?q=37.548109,127.072347" rel="noopener">Map</a></td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h3>🫒 <a href="market.ja.html" class="xref">#3</a>. 清潭駅 (청담역 / Cheongdam Station) — 高級ブランド·K-star</h3>
 <ul>
 <li><strong>🚪 出口</strong>: 清潭洞の高級ブランド通り · ギャラリア (갤러리아)方面</li>
@@ -246,7 +275,7 @@
 <li><strong>cross-ref</strong>: <a href="kpop-agencies.ja.html" class="xref">#387</a> K-pop事務所 · <a href="luxury-watch-deep.ja.html" class="xref">#566</a> 高級腕時計</li>
 </ul>
 <p><strong>📍 駅からすぐ — 徒歩動線</strong></p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>スポット</th>
 <th>徒歩</th>
 <th>地図</th>
@@ -271,7 +300,7 @@
 <td>5分</td>
 <td><a href="https://www.google.com/maps?q=37.519391,127.050816" rel="noopener">Map</a></td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h3>🫒 <a href="gamaekjip.ja.html" class="xref">#4</a>. 江南区庁駅 (강남구청역 / Gangnam-gu Office Station) — 美食·狎鴎亭 (압구정) 近隣</h3>
 <ul>
 <li><strong>🚪 出口</strong>: 狎鴎亭方面 · 鶴洞路 (학동로)方面</li>
@@ -281,7 +310,7 @@
 <li><strong>cross-ref</strong>: <a href="subway-line3.ja.html" class="xref">#1242</a> 3号線(狎鴎亭) · <a href="summer-terrace-bars.ja.html" class="xref">#1236</a> 夏の野外屋台(狎鴎亭)</li>
 </ul>
 <p><strong>📍 駅からすぐ — 徒歩動線</strong></p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>スポット</th>
 <th>徒歩</th>
 <th>地図</th>
@@ -306,7 +335,7 @@
 <td>7分</td>
 <td><a href="https://www.google.com/maps?q=37.516646,127.036994" rel="noopener">Map</a></td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h3>🫒 <a href="24hr-food.ja.html" class="xref">#5</a>. 鶴洞駅 (학동역 / Hakdong Station) — 論峴家具通り·グルメ横丁</h3>
 <ul>
 <li><strong>🚪 出口</strong>: 論峴家具通り (논현 가구거리) · 鶴洞のグルメ横丁方面</li>
@@ -316,7 +345,7 @@
 <li><strong>cross-ref</strong>: <a href="fashion-streetwear.ja.html" class="xref">#457</a> 江南の商圏</li>
 </ul>
 <p><strong>📍 駅からすぐ — 徒歩動線</strong></p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>スポット</th>
 <th>徒歩</th>
 <th>地図</th>
@@ -341,7 +370,7 @@
 <td>3分</td>
 <td><a href="https://www.google.com/maps?q=37.515461,127.032390" rel="noopener">Map</a></td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h3>🫒 <a href="chimaek.ja.html" class="xref">#6</a>. 高速ターミナル駅 (고속터미널역 / Express Bus Terminal Station) — ショッピング·漢江(7号線の観点)</h3>
 <ul>
 <li><strong>🚪 出口</strong>: セントラルシティ (센트럴시티) · 新世界 (신세계) · 盤浦漢江方面</li>
@@ -351,7 +380,7 @@
 <li><strong>cross-ref</strong>: <a href="subway-line3.ja.html" class="xref">#1242</a> 3号線(高速ターミナル) · <a href="hangang-night-deep.ja.html" class="xref">#586</a> 漢江(盤浦)</li>
 </ul>
 <p><strong>📍 駅からすぐ — 徒歩動線</strong></p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>スポット</th>
 <th>徒歩</th>
 <th>地図</th>
@@ -376,7 +405,7 @@
 <td>1分</td>
 <td><a href="https://www.google.com/maps?q=37.503249,127.005048" rel="noopener">Map</a></td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h3>🫒 <a href="jjimjilbang.ja.html" class="xref">#7</a>. 盤浦駅 (반포역 / Banpo Station) — ソレ村 (서래마을)·漢江</h3>
 <ul>
 <li><strong>🚪 出口</strong>: ソレ村 · 盤浦漢江方面</li>
@@ -386,7 +415,7 @@
 <li><strong>cross-ref</strong>: <a href="hangang-night-deep.ja.html" class="xref">#586</a> 漢江(盤浦 月光レインボー噴水) · <a href="summer-terrace-bars.ja.html" class="xref">#1236</a> 夏の野外屋台</li>
 </ul>
 <p><strong>📍 駅からすぐ — 徒歩動線</strong></p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>スポット</th>
 <th>徒歩</th>
 <th>地図</th>
@@ -411,7 +440,7 @@
 <td>6分</td>
 <td><a href="https://www.google.com/maps?q=37.508522,127.008082" rel="noopener">Map</a></td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h3>🫒 <a href="noraebang.ja.html" class="xref">#8</a>. 道峰山駅 (도봉산역 / Dobongsan Station) — 登山·自然</h3>
 <ul>
 <li><strong>🚪 出口</strong>: 道峰山の登山路方面</li>
@@ -422,7 +451,7 @@
 </ul>
 <hr>
 <p><strong>📍 駅からすぐ — 徒歩動線</strong></p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>スポット</th>
 <th>徒歩</th>
 <th>地図</th>
@@ -447,7 +476,7 @@
 <td>7分</td>
 <td><a href="https://www.google.com/maps?q=37.688848,127.042638" rel="noopener">Map</a></td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h2>7号線 1日コース3 — オリーブラインに乗って</h2>
 <h3>コース1. MZ·ファミリー(東北)</h3>
 <ul>
@@ -538,7 +567,7 @@
 <hr>
 <h2>📊 外国人マニア数値マトリックス</h2>
 <p>外国人の韓国観光客 = <strong>年1,750万人(2024)</strong> · MZ(20〜39歳) <strong>58%</strong> · 平均滞在 <strong>6.4日</strong>(韓国観光公社 2024)。7号線はMZ·高級ブランド·自然を縦断する路線だ。</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>項目</th>
 <th>数値</th>
 <th>出典</th>
@@ -573,7 +602,7 @@
 <td><strong>24h 多言語</strong></td>
 <td>韓国観光公社</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <blockquote><p><strong>数値の解釈</strong>: 7号線は建大のMZ + 清潭の高級ブランド·K-エンタメ + 盤浦漢江 + 道峰山の登山を縦断する。目的別(ファミリー·高級ブランド·漢江·登山)の区間選択が核心。これにより地下鉄シリーズの2〜7号線6路線をカバーした。</p></blockquote>
 <hr>
   </article>
@@ -591,34 +620,7 @@
     <div><a href="subway-line9.ja.html" style="color:var(--red);">ソウル地下鉄9号線完全攻略 — 金浦空港 (김포공항)から江南 (강남)まで、急行でつなぐゴールドライン deep dive &rarr;</a></div>
   </nav>
 
-  <section id="kc-related" style="display:none;margin:2.2rem 0 0.5rem;">
-    <h2 style="font-size:1.1rem;margin-bottom:0.8rem;">関連ガイド</h2>
-    <div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"></div>
-  </section>
-  <script>
-  // related guides — 같은 카테고리 최신 6편 (contents.json fetch·언어 suffix 자동, 2026-07-04)
-  (function() {
-    var m = location.pathname.match(/\/content\/(.+?)(\.en|\.zh|\.ja)?\.html$/);
-    if (!m) return;
-    var slug = m[1], suf = m[2] || '';
-    fetch('../data/contents.json').then(function(r) { return r.json(); }).then(function(items) {
-      var me = null;
-      for (var i = 0; i < items.length; i++) { if (items[i].slug === slug) { me = items[i]; break; } }
-      if (!me) return;
-      var pool = items.filter(function(x) { return x.slug !== slug && x.category === me.category; });
-      pool.sort(function(a, b) { return (parseInt(b.id, 10) || 0) - (parseInt(a.id, 10) || 0); });
-      var picks = pool.slice(0, 6);
-      if (!picks.length) return;
-      document.getElementById('kc-related-grid').innerHTML = picks.map(function(x) {
-        var t = suf ? (x.title_en || x.title_kr) : (x.title_kr || x.title_en);
-        var ok = suf === '' || (suf === '.en' ? x.en_available : (suf === '.zh' ? x.cn_available : x.jp_available));
-        var href = x.slug + (ok ? suf : '') + '.html';
-        return '<a href="' + href + '" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">' + t + '</a>';
-      }).join('');
-      document.getElementById('kc-related').style.display = 'block';
-    }).catch(function() {});
-  })();
-  </script>
+  <section id="kc-related" style="margin:2.2rem 0 0.5rem;"><h2 style="font-size:1.1rem;margin-bottom:0.8rem;">関連ガイド</h2><div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"><a href="busan-suyeong-dongnae.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Busan&#x27;s Point of Origin — Suyeong and Dongnae, Behind Gwangalli and Joseon-Era Busan</a><a href="sindang-guide.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Sindang-dong: The Neighborhood Being Called the Next Seongsu — Market, Hip Bars and Original Tteokbokki in Three Layers</a><a href="seoul-overrated-underrated.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Overrated vs Underrated Seoul: Reallocating Your Time by What Foreign Reviews Actually Say</a><a href="myeongdong-euljiro-evening-walk.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Myeongdong to Euljiro Evening Walk: Six Faces of Seoul in Two Hours, Ending with Yajang Beer</a><a href="cvs-drinks-map.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">The Complete Map of Korean Convenience Store Drinks: From Banana Milk to Hangover Cures</a><a href="korea-snack-brands.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Korean Snack Brands 101: Nongshim, Orion, Lotte, Haitai and Crown — Reading K-Snacks by Maker</a></div></section>
   <!-- kc-comments -->
   <section id="kc-comments" style="margin:2.5rem 0 0.5rem;">
     <h2>コメント</h2>

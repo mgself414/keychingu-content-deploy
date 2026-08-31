@@ -34,7 +34,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/main.css">
 <style>
 .detail-wrap {
@@ -50,11 +50,11 @@
 .breadcrumb a { color: var(--red); font-weight: 600; }
 .detail-wrap h1 {
   font-size: 28px; font-weight: 800;
-  color: var(--black); margin-bottom: 8px;
+  color: var(--text); margin-bottom: 8px;
 }
 .detail-wrap h2 {
   font-size: 22px; font-weight: 700;
-  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  color: var(--text); margin-top: 32px; margin-bottom: 12px;
   padding-bottom: 6px;
   border-bottom: 2px solid var(--red);
 }
@@ -73,10 +73,19 @@
   font-size: 14px; line-height: 1.6;
   color: var(--text-mid); margin-bottom: 6px;
 }
+/* 표는 자기 컨테이너 안에서만 가로 스크롤한다 — 이게 없으면 min-content 폭이
+   뷰포트를 넘는 순간 페이지 전체가 가로로 밀렸다 (2026-08-31 점검 M2).
+   table 자체는 table 로 남겨 행·열 관계를 보존한다(display:block 으로 해결하지 않는 이유). */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 16px;
+}
 .detail-wrap table {
   width: 100%; border-collapse: collapse;
   margin-bottom: 16px; font-size: 13px;
 }
+.table-scroll > table { margin-bottom: 0; }
 .detail-wrap th {
   background: var(--black); color: #fff;
   padding: 10px 12px; text-align: left;
@@ -137,10 +146,30 @@
   user-select: none;
 }
 </style>
+<script>
+/* 테마 부트스트랩 — 2026-08-31 점검 M3.
+   기사 4,804p 에 이게 없어서, OS 다크 사용자가 홈(다크)에서 기사를 열면
+   라이트로 번쩍였다. main.css 의 다크 규칙은 전부 [data-theme="dark"] 스코프이고
+   prefers-color-scheme 미디어쿼리는 CSS 에 없으므로, 속성을 여기서 달아줘야 한다.
+   <head> 안에서 동기 실행 — paint 전에 끝나야 깜빡임이 없다.
+   허브와 달리 기사엔 토글 버튼이 없다. 저장된 선택(kc_theme)과 OS 설정만 따른다. */
+(function () {
+  try {
+    var s = localStorage.getItem('kc_theme');
+    if (s === 'dark' || (!s && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  } catch (e) {}
+})();
+</script>
 </head>
 <body>
+<a class="skip-link" href="#kc-main">본문 바로가기</a>
 <header class="site-header">
-  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <!-- width/height = 고유 크기(400x149). CSS 가 height:36px 로 줄이지만 브라우저는
+       이 비율로 자리를 미리 잡아 레이아웃 이동(CLS)을 막는다. 헤더 로고는 첫 화면에
+       보이므로 lazy 가 아니라 eager. -->
+  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo" width="400" height="149" loading="eager" decoding="async"></a>
   <div class="lang-switch">
     <a href="../content/seoul-bingsu-2026.html" class="active">KR</a>
     <a href="../content/seoul-bingsu-2026.en.html">EN</a>
@@ -149,7 +178,7 @@
   </div>
 </header>
 
-<main class="detail-wrap">
+<main class="detail-wrap" id="kc-main" tabindex="-1">
   <nav class="breadcrumb" aria-label="breadcrumb"><a href="../index.html">전체 가이드</a> &rsaquo; <a href="../seasons.html">🍂 시즌</a> &rsaquo; 서울 빙수 완전정복 2026여름 deep dive</nav>
   <article>
   <h1>서울 빙수 완전정복 deep dive — 트렌드·노포·럭셔리 12선</h1>
@@ -161,7 +190,7 @@
 <p>외국인에게 빙수는 &quot;Patbingsu = 팥빙수&quot;로만 알려졌지만, 2026년 서울 빙수 신은 <strong>두바이 초콜릿 (Pistachio + Kataifi)·필리핀 우베·중국 양쯔깐루</strong> 같은 글로벌 디저트 트렌드를 빠르게 흡수하면서도, 동시에 <strong>쑥·팥·인절미</strong> 같은 전통 식재료를 재해석한 작품이 함께 폭발하고 있는 <strong>매우 흥미로운 시기</strong>.</p>
 <hr>
 <h2>★ 한눈에 12 빙수 명소</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>#</th>
 <th>카페</th>
 <th>4축</th>
@@ -239,7 +268,7 @@
 <td>숨은 명소 6</td>
 <td>신라·시그니엘·포시즌스·조선팰리스</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p><strong>+ 추가 프랜차이즈 5</strong>: Sulbing 설빙 (<a href="seongsu.html" class="xref">#1</a>)·Homing 호미빙 (대만식)·Okryumong·Mealtop·투썸플레이스 컵빙수</p>
 <hr>
 <h2>⚠ 외국인 자주 실수 5가지</h2>
@@ -354,7 +383,7 @@
 </ul>
 <hr>
 <h2>🏪 프랜차이즈 빙수 비교 Top 5</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>Brand</th>
 <th>시그니처</th>
 <th>가격대</th>
@@ -396,7 +425,7 @@
 <td>★★★★</td>
 <td>카페체인·진입 장벽 최저·컵빙수 ₩5K</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h3>🏆 외국인 첫 빙수 선택 가이드</h3>
 <ul>
 <li><strong>한국 빙수 표준</strong> → 🥇 <strong>설빙 인절미빙수</strong></li>
@@ -466,7 +495,7 @@
 <hr>
 <h2>📊 외국인 매니아 수치 매트릭스</h2>
 <p>외국인 한국 관광객 = <strong>연 1,750만 명 (2024)</strong>·MZ (20-39세) <strong>58%</strong>·평균 체류 <strong>6.4일</strong>·평균 지출 <strong>1,605 USD/인</strong>·재방문율 <strong>23%</strong> (한국관광공사 2024 통계).</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>항목</th>
 <th>수치</th>
 <th>출처</th>
@@ -506,7 +535,7 @@
 <td><strong>봄 (벚꽃·4월)·가을 (단풍·10-11월)</strong></td>
 <td>관광공사 시즌 분석</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <blockquote><p><strong>수치 해석</strong>: 영문 풀세트 65%·결제 80%·시즌 매트릭스 봄·가을 <a href="seongsu.html" class="xref">#1</a>·1339 응급 24h 영문 = 외국인 첫 진입 안전·매니아 매트릭스 fit.</p></blockquote>
 <h2>🏷 태그</h2>
 <p><code>#서울빙수완전정복2026여름deepdive</code> <code>#SeoulBingsuCrawl2026</code> <code>#오린지Ohlinzi양쯔깐루송파해븐빌딩5층</code> <code>#KORIYA코리야두바이초콜릿Pistachio Kataifi성수</code> <code>#MOVEMOVE무브모브우베필리핀보랏빛성수</code> <code>#Among애몽토마토거북이연남7K공항철도</code> <code>#문덕카페Moonduck파인애플파블로바을지로골뱅이골목</code> <code>#디어다온DearDaon쑥푸딩3중레이어연남8.9K</code> <code>#팥장군Patjanggun저당팥7K은평구산</code> <code>#동빙고Dongbinggo정통30년이촌</code> <code>#부빙Bubing말차부암동산자락캐치테이블</code> <code>#옥루몽Okryumong전통오름눈꽃이스트폴</code> <code>#밀탑Mealtop백화점40년현대신세계우유빙수단팥죽</code> <code>#호텔빙수신라130K시그니엘135K포시즌스149K조선팰리스롯데</code> <code>#프랜차이즈설빙SulbingHoming Okryumong Mealtop Twosome컵빙수</code> <code>#외국인5tips 2-3인분인절미팥1분사진현금카드호텔예약</code> <code>#Route A연남B성수C을지로D호텔</code> <code>#키친구</code></p>
@@ -533,34 +562,7 @@
     <div><a href="seoul-jazz-bars.html" style="color:var(--red);">서울 재즈 바 라운지 deep dive &rarr;</a></div>
   </nav>
 
-  <section id="kc-related" style="display:none;margin:2.2rem 0 0.5rem;">
-    <h2 style="font-size:1.1rem;margin-bottom:0.8rem;">관련 가이드</h2>
-    <div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"></div>
-  </section>
-  <script>
-  // related guides — 같은 카테고리 최신 6편 (contents.json fetch·언어 suffix 자동, 2026-07-04)
-  (function() {
-    var m = location.pathname.match(/\/content\/(.+?)(\.en|\.zh|\.ja)?\.html$/);
-    if (!m) return;
-    var slug = m[1], suf = m[2] || '';
-    fetch('../data/contents.json').then(function(r) { return r.json(); }).then(function(items) {
-      var me = null;
-      for (var i = 0; i < items.length; i++) { if (items[i].slug === slug) { me = items[i]; break; } }
-      if (!me) return;
-      var pool = items.filter(function(x) { return x.slug !== slug && x.category === me.category; });
-      pool.sort(function(a, b) { return (parseInt(b.id, 10) || 0) - (parseInt(a.id, 10) || 0); });
-      var picks = pool.slice(0, 6);
-      if (!picks.length) return;
-      document.getElementById('kc-related-grid').innerHTML = picks.map(function(x) {
-        var t = suf ? (x.title_en || x.title_kr) : (x.title_kr || x.title_en);
-        var ok = suf === '' || (suf === '.en' ? x.en_available : (suf === '.zh' ? x.cn_available : x.jp_available));
-        var href = x.slug + (ok ? suf : '') + '.html';
-        return '<a href="' + href + '" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">' + t + '</a>';
-      }).join('');
-      document.getElementById('kc-related').style.display = 'block';
-    }).catch(function() {});
-  })();
-  </script>
+  <section id="kc-related" style="margin:2.2rem 0 0.5rem;"><h2 style="font-size:1.1rem;margin-bottom:0.8rem;">관련 가이드</h2><div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"><a href="dongdaemun-market-eats.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">동대문 종합시장 상인 밥집 — 원단 골목의 40년 노포들</a><a href="busan-dessert-road.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">부산 디저트 로드 — 팥의 도시에서 젤라또까지</a><a href="busan-coffee-road.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">부산 커피 로드 — 월드 챔피언의 도시에서 커피 마시는 법</a><a href="busan-signature-food.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">부산에서만 먹는 세 가지 — 돼지국밥·밀면·회, 주문하는 법까지</a><a href="autumn-food-calendar.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">가을 제철 미식 캘린더 — 전어·대하·꽃게·송이·홍시, 9~11월에만 열리는 한국의 맛</a><a href="seoul-history-eras.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">서울 600년 시간여행 — 시대별로 걷는 역사 탐험 코스</a></div></section>
   <!-- kc-comments -->
   <section id="kc-comments" style="margin:2.5rem 0 0.5rem;">
     <h2>댓글</h2>

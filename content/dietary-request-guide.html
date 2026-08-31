@@ -30,7 +30,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/main.css">
 <style>
 .detail-wrap {
@@ -46,11 +46,11 @@
 .breadcrumb a { color: var(--red); font-weight: 600; }
 .detail-wrap h1 {
   font-size: 28px; font-weight: 800;
-  color: var(--black); margin-bottom: 8px;
+  color: var(--text); margin-bottom: 8px;
 }
 .detail-wrap h2 {
   font-size: 22px; font-weight: 700;
-  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  color: var(--text); margin-top: 32px; margin-bottom: 12px;
   padding-bottom: 6px;
   border-bottom: 2px solid var(--red);
 }
@@ -69,10 +69,19 @@
   font-size: 14px; line-height: 1.6;
   color: var(--text-mid); margin-bottom: 6px;
 }
+/* 표는 자기 컨테이너 안에서만 가로 스크롤한다 — 이게 없으면 min-content 폭이
+   뷰포트를 넘는 순간 페이지 전체가 가로로 밀렸다 (2026-08-31 점검 M2).
+   table 자체는 table 로 남겨 행·열 관계를 보존한다(display:block 으로 해결하지 않는 이유). */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 16px;
+}
 .detail-wrap table {
   width: 100%; border-collapse: collapse;
   margin-bottom: 16px; font-size: 13px;
 }
+.table-scroll > table { margin-bottom: 0; }
 .detail-wrap th {
   background: var(--black); color: #fff;
   padding: 10px 12px; text-align: left;
@@ -133,10 +142,30 @@
   user-select: none;
 }
 </style>
+<script>
+/* 테마 부트스트랩 — 2026-08-31 점검 M3.
+   기사 4,804p 에 이게 없어서, OS 다크 사용자가 홈(다크)에서 기사를 열면
+   라이트로 번쩍였다. main.css 의 다크 규칙은 전부 [data-theme="dark"] 스코프이고
+   prefers-color-scheme 미디어쿼리는 CSS 에 없으므로, 속성을 여기서 달아줘야 한다.
+   <head> 안에서 동기 실행 — paint 전에 끝나야 깜빡임이 없다.
+   허브와 달리 기사엔 토글 버튼이 없다. 저장된 선택(kc_theme)과 OS 설정만 따른다. */
+(function () {
+  try {
+    var s = localStorage.getItem('kc_theme');
+    if (s === 'dark' || (!s && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  } catch (e) {}
+})();
+</script>
 </head>
 <body>
+<a class="skip-link" href="#kc-main">본문 바로가기</a>
 <header class="site-header">
-  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <!-- width/height = 고유 크기(400x149). CSS 가 height:36px 로 줄이지만 브라우저는
+       이 비율로 자리를 미리 잡아 레이아웃 이동(CLS)을 막는다. 헤더 로고는 첫 화면에
+       보이므로 lazy 가 아니라 eager. -->
+  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo" width="400" height="149" loading="eager" decoding="async"></a>
   <div class="lang-switch">
     <a href="../content/dietary-request-guide.html" class="active">KR</a>
     <a href="../content/dietary-request-guide.en.html">EN</a>
@@ -145,7 +174,7 @@
   </div>
 </header>
 
-<main class="detail-wrap">
+<main class="detail-wrap" id="kc-main" tabindex="-1">
   <nav class="breadcrumb" aria-label="breadcrumb"><a href="../index.html">전체 가이드</a> &rsaquo; 덜 맵게·비건·할랄, 당황 제로 매뉴얼 — 보여주기 카드로 끝내는 식이 요청</nav>
   <article>
   <h1>한국 식이 요청·맵기 조절, 당황 제로 매뉴얼 — 보여주기 카드로 끝내기</h1>
@@ -165,7 +194,7 @@
 <hr>
 <h2>② 보여주기 카드 12문구 — 화면째 내밀면 끝</h2>
 <p>스크린샷을 찍어두거나 이 표를 캡처해 갤러리에 저장해 두자. 주문 전에 직원에게 화면째 보여주는 것이 가장 확실하다.</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>한국어</th>
 <th>읽기</th>
 <th>뜻</th>
@@ -230,12 +259,12 @@
 <td>jeotgari deureoganayo?</td>
 <td>Does it contain fermented seafood?</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <blockquote><p>팁: 12개를 다 외울 필요 없다. 본인 상황에 맞는 2~3개만 캡처해 사진첩 맨 앞에 고정해 두는 것으로 충분하다.</p></blockquote>
 <hr>
 <h2>③ 숨은 재료 함정표 — &quot;비건인데 김치&quot;의 정체</h2>
 <p>눈에 보이는 재료와 실제로 들어간 재료가 다른 경우가 한국 음식엔 특히 많다. 아래 4가지는 관광객이 가장 자주 걸리는 함정이다.</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>음식</th>
 <th>숨은 재료</th>
 <th>왜 함정인가</th>
@@ -260,7 +289,7 @@
 <td>액젓 또는 어묵(생선살)</td>
 <td>매운 양념 뒤에 숨어 맛으로는 구별이 안 됨</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <ul>
 <li>확인법: ②표의 <strong>&quot;젓갈이 들어가나요?&quot;</strong>를 김치·나물·국물 앞에서 그대로 쓰면 된다.</li>
 </ul>
@@ -269,7 +298,7 @@
 <p>1. <strong>네이버지도</strong>에서 카테고리 검색창에 &quot;비건&quot; 또는 &quot;할랄&quot;을 입력 — 한국 지도 앱 중 실사용 밀도가 가장 높고, 리뷰 사진으로 메뉴 확인까지 가능하다.</p>
 <p>2. <strong>전용 앱</strong>: 해피카우(HappyCow)류 비건 전용 앱은 서울 매장 데이터가 꾸준히 쌓이는 편 — 네이버지도와 교차 확인하면 정확도가 올라간다.</p>
 <p>3. <strong>밀집 지역</strong>으로 이동하면 검색 없이도 선택지가 늘어난다.</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>식단</th>
 <th>밀집 지역</th>
 </tr></thead><tbody>
@@ -281,7 +310,7 @@
 <td>할랄</td>
 <td>명동·이태원</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <ul>
 <li>이태원은 두 카테고리가 겹치는 유일한 지역 — 시간이 없으면 이태원부터 가는 게 효율적이다.</li>
 </ul>
@@ -342,34 +371,7 @@
     <div><a href="cash-zones-guide.html" style="color:var(--red);">한국에서 현금이 필요한 곳, 당황 제로 매뉴얼 — 하루 얼마 들고 다닐까 &rarr;</a></div>
   </nav>
 
-  <section id="kc-related" style="display:none;margin:2.2rem 0 0.5rem;">
-    <h2 style="font-size:1.1rem;margin-bottom:0.8rem;">관련 가이드</h2>
-    <div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"></div>
-  </section>
-  <script>
-  // related guides — 같은 카테고리 최신 6편 (contents.json fetch·언어 suffix 자동, 2026-07-04)
-  (function() {
-    var m = location.pathname.match(/\/content\/(.+?)(\.en|\.zh|\.ja)?\.html$/);
-    if (!m) return;
-    var slug = m[1], suf = m[2] || '';
-    fetch('../data/contents.json').then(function(r) { return r.json(); }).then(function(items) {
-      var me = null;
-      for (var i = 0; i < items.length; i++) { if (items[i].slug === slug) { me = items[i]; break; } }
-      if (!me) return;
-      var pool = items.filter(function(x) { return x.slug !== slug && x.category === me.category; });
-      pool.sort(function(a, b) { return (parseInt(b.id, 10) || 0) - (parseInt(a.id, 10) || 0); });
-      var picks = pool.slice(0, 6);
-      if (!picks.length) return;
-      document.getElementById('kc-related-grid').innerHTML = picks.map(function(x) {
-        var t = suf ? (x.title_en || x.title_kr) : (x.title_kr || x.title_en);
-        var ok = suf === '' || (suf === '.en' ? x.en_available : (suf === '.zh' ? x.cn_available : x.jp_available));
-        var href = x.slug + (ok ? suf : '') + '.html';
-        return '<a href="' + href + '" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">' + t + '</a>';
-      }).join('');
-      document.getElementById('kc-related').style.display = 'block';
-    }).catch(function() {});
-  })();
-  </script>
+  <section id="kc-related" style="margin:2.2rem 0 0.5rem;"><h2 style="font-size:1.1rem;margin-bottom:0.8rem;">관련 가이드</h2><div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"><a href="solo-female-safety-checklist.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">여성 혼자 한국 여행 — 겁주기 없는 안전 체크리스트</a><a href="china-payment-survival.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">중화권 여행자 한국 결제 생존 매뉴얼 — 알리페이는 되고, 위챗은 안 되고, 은련은 준비가 필요하다</a><a href="duty-free-pickup-guide.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">면세품은 공항에서 받는다, 당황 제로 매뉴얼 — 인도장 수령 절차</a><a href="korea-smoking-guide.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">한국에서 담배 피울 곳 찾기, 당황 제로 매뉴얼 — 벌금 안 내는 법</a><a href="busan-transit-guide.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">부산 대중교통 문법 — 두 개의 선만 읽으면 되는 도시</a><a href="seoul-cold-snap-survival.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">서울 한파 생존 가이드 — 영하 10도의 하루를 버티는 법</a></div></section>
   <!-- kc-comments -->
   <section id="kc-comments" style="margin:2.5rem 0 0.5rem;">
     <h2>댓글</h2>

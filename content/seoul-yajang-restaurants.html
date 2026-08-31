@@ -34,7 +34,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/main.css">
 <style>
 .detail-wrap {
@@ -50,11 +50,11 @@
 .breadcrumb a { color: var(--red); font-weight: 600; }
 .detail-wrap h1 {
   font-size: 28px; font-weight: 800;
-  color: var(--black); margin-bottom: 8px;
+  color: var(--text); margin-bottom: 8px;
 }
 .detail-wrap h2 {
   font-size: 22px; font-weight: 700;
-  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  color: var(--text); margin-top: 32px; margin-bottom: 12px;
   padding-bottom: 6px;
   border-bottom: 2px solid var(--red);
 }
@@ -73,10 +73,19 @@
   font-size: 14px; line-height: 1.6;
   color: var(--text-mid); margin-bottom: 6px;
 }
+/* 표는 자기 컨테이너 안에서만 가로 스크롤한다 — 이게 없으면 min-content 폭이
+   뷰포트를 넘는 순간 페이지 전체가 가로로 밀렸다 (2026-08-31 점검 M2).
+   table 자체는 table 로 남겨 행·열 관계를 보존한다(display:block 으로 해결하지 않는 이유). */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 16px;
+}
 .detail-wrap table {
   width: 100%; border-collapse: collapse;
   margin-bottom: 16px; font-size: 13px;
 }
+.table-scroll > table { margin-bottom: 0; }
 .detail-wrap th {
   background: var(--black); color: #fff;
   padding: 10px 12px; text-align: left;
@@ -137,11 +146,31 @@
   user-select: none;
 }
 </style>
+<script>
+/* 테마 부트스트랩 — 2026-08-31 점검 M3.
+   기사 4,804p 에 이게 없어서, OS 다크 사용자가 홈(다크)에서 기사를 열면
+   라이트로 번쩍였다. main.css 의 다크 규칙은 전부 [data-theme="dark"] 스코프이고
+   prefers-color-scheme 미디어쿼리는 CSS 에 없으므로, 속성을 여기서 달아줘야 한다.
+   <head> 안에서 동기 실행 — paint 전에 끝나야 깜빡임이 없다.
+   허브와 달리 기사엔 토글 버튼이 없다. 저장된 선택(kc_theme)과 OS 설정만 따른다. */
+(function () {
+  try {
+    var s = localStorage.getItem('kc_theme');
+    if (s === 'dark' || (!s && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  } catch (e) {}
+})();
+</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "TouristAttraction", "name": "서울 야장맛집", "url": "https://mgself414.github.io/keychingu-content-deploy/content/seoul-yajang-restaurants.html", "image": "https://mgself414.github.io/keychingu-content-deploy/og/seoul-yajang-restaurants.png", "address": {"@type": "PostalAddress", "addressLocality": "Seoul", "addressCountry": "KR"}, "touristType": "Foreigner-friendly tourism"}</script>
 </head>
 <body>
+<a class="skip-link" href="#kc-main">본문 바로가기</a>
 <header class="site-header">
-  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <!-- width/height = 고유 크기(400x149). CSS 가 height:36px 로 줄이지만 브라우저는
+       이 비율로 자리를 미리 잡아 레이아웃 이동(CLS)을 막는다. 헤더 로고는 첫 화면에
+       보이므로 lazy 가 아니라 eager. -->
+  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo" width="400" height="149" loading="eager" decoding="async"></a>
   <div class="lang-switch">
     <a href="../content/seoul-yajang-restaurants.html" class="active">KR</a>
     <a href="../content/seoul-yajang-restaurants.en.html">EN</a>
@@ -150,12 +179,12 @@
   </div>
 </header>
 
-<main class="detail-wrap">
+<main class="detail-wrap" id="kc-main" tabindex="-1">
   <nav class="breadcrumb" aria-label="breadcrumb"><a href="../index.html">전체 가이드</a> &rsaquo; <a href="../seasons.html">🍂 시즌</a> &rsaquo; 서울 야장맛집</nav>
   <article>
   <h1>서울 야장(野장) 맛집 가이드 — 하늘 아래 밤을 삼키는 법</h1>
 <h2>한눈에 보기</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>항목</th>
 <th>내용</th>
 </tr></thead><tbody>
@@ -187,7 +216,7 @@
 <td><strong>혼자 가도?</strong></td>
 <td>가능 — 만선호프·달맞이광장은 1인 야장 흔함</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>야장이 뭘까?</h2>
 <h3>&quot;야(野) + 장(場)&quot; — 야외 테이블이 곧 술집</h3>
@@ -198,7 +227,7 @@
 <li><strong>장</strong> = 자리·마당(場)</li>
 </ul>
 <p><strong>비슷해 보이지만 다른 것들:</strong></p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>구분</th>
 <th>포장마차</th>
 <th>루프탑 바</th>
@@ -234,7 +263,7 @@
 <td>⭐⭐</td>
 <td>⭐⭐⭐⭐⭐</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>왜 외국인 관광객에게 특별한가?</h2>
 <h3>1️⃣ 도로가 식당이 되는 &quot;서울 장면&quot;</h3>
@@ -247,7 +276,7 @@
 <hr>
 <h2>서울 야장 시즌과 시간대</h2>
 <h3>🌡️ 월별 추천도</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>시기</th>
 <th>추천도</th>
 <th>체감</th>
@@ -282,7 +311,7 @@
 <td>❌</td>
 <td>대부분 야장 접고 실내 영업. 일부만 난로로 운영</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h3>🕐 시간대별</h3>
 <p>```</p>
 <p>오후 5:30 ~ 7:00 — 자리 선점 골든 타임 (직장인 퇴근 시작 전)</p>
@@ -295,7 +324,7 @@
 <h2>서울 야장 맛집 TOP 7</h2>
 <blockquote><p>📍 2024~2025년 현지인 검증 기준. 영업시간·이전 여부는 방문 전 네이버 지도에서 최신 확인 권장.</p></blockquote>
 <h3>1️⃣ <strong>만선호프 노가리체인본점</strong> — 을지로 노가리 호프의 성지</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>항목</th>
 <th>내용</th>
 </tr></thead><tbody>
@@ -319,7 +348,7 @@
 <td><strong>지하철</strong></td>
 <td>2/3호선 을지로3가역 4번 출구 도보 2분</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p>1978년 개업 이래 을지로 골목 전체를 &quot;OB베어(옛 하이트진로 직영) 노가리 성지&quot;로 만든 원조 가게. 저녁이 되면 가게 앞 골목이 플라스틱 의자로 가득 찬다. <strong>노가리(마른 명태) + 생맥주 조합</strong>은 이 집이 정의한 서울식 조합이다.</p>
 <p><strong>주문 추천</strong>:</p>
 <ul>
@@ -330,7 +359,7 @@
 <p><strong>외국인 팁</strong>: 영어 메뉴판 없지만 사진 가리키면 됨. &quot;Fish + draft beer&quot;만 말해도 통함.</p>
 <hr>
 <h3>2️⃣ <strong>달맞이광장바베큐 본점</strong> — 을지로 야장 바비큐의 대명사</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>항목</th>
 <th>내용</th>
 </tr></thead><tbody>
@@ -354,7 +383,7 @@
 <td><strong>지점</strong></td>
 <td>본점(을지로3가) / 남영점(용산) / 성수점</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p>을지로 3가 야장 벨트 중앙에 위치. <strong>숯불 바비큐를 야외 테이블에서 직접 구워먹는</strong> 가게로 입구부터 연기와 불판 냄새가 골목을 덮는다. &quot;만선호프에서 시원한 맥주, 달맞이에서 고기&quot; 순서가 을지로 야장 2차 코스의 정석.</p>
 <p><strong>주문 추천</strong>:</p>
 <ul>
@@ -367,7 +396,7 @@
 <p>만선호프 본점 말고도 <strong>만선호프2, 만선호프9</strong> 등 분점이 골목 전체에 분포한다. 본점이 붐비면 골목을 한 블록만 더 걸어 들어가면 같은 계열의 야장 호프집이 줄줄이 나온다. <strong>&quot;서울에서 가장 야장 밀도가 높은 곳이 어디냐&quot;는 질문의 답은 여기 을지로 13길 + 충무로 9길이다.</strong></p>
 <hr>
 <h3>4️⃣ <strong>포석정(서초점)</strong> — 고속버스터미널 근처의 돼지고기구이</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>항목</th>
 <th>내용</th>
 </tr></thead><tbody>
@@ -383,12 +412,12 @@
 <td><strong>지하철</strong></td>
 <td>3/7/9호선 고속터미널역 도보 5분</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p>강북 야장이 을지로·종로 중심이라면 <strong>강남권 야장 대표주자는 포석정</strong>이다. 고속버스터미널 지하상가에서 나와 길을 건너면 바로 나오는 위치. 관광객이 고속버스를 타고 근교(전주·부산)로 이동하기 전이나 돌아온 직후 들르기 좋다.</p>
 <p><strong>특징</strong>: 넓은 홀과 인도로 확장된 야장 자리 모두 운영. 단체 관광객 수용 가능.</p>
 <hr>
 <h3>5️⃣ <strong>청진영양센타</strong> — 광화문 삼계탕의 원조</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>항목</th>
 <th>내용</th>
 </tr></thead><tbody>
@@ -404,7 +433,7 @@
 <td><strong>지하철</strong></td>
 <td>1호선 종각역 도보 3분 / 5호선 광화문역 도보 5분</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p>1960년대부터 광화문 직장인들의 보양식을 책임져온 노포. <strong>야장이라 부르기엔 다소 소박하지만, 여름밤 가게 앞 인도에 펴놓은 몇 개의 테이블에서 전기구이 통닭을 뜯는 풍경은 서울 야장의 원형 중 하나</strong>다. 관광객에게는 &quot;야장 + 전통 보양식&quot;을 한 번에 경험할 수 있는 귀중한 옵션.</p>
 <p><strong>주문 추천</strong>:</p>
 <ul>
@@ -413,7 +442,7 @@
 </ul>
 <hr>
 <h3>6️⃣ <strong>순라길 비비</strong> — 종묘 돌담길의 조용한 야장</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>항목</th>
 <th>내용</th>
 </tr></thead><tbody>
@@ -429,13 +458,13 @@
 <td><strong>지하철</strong></td>
 <td>1/3/5호선 종로3가역 도보 8분</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p>종묘 서쪽 돌담길(서순라길)을 따라 걷다 보면 나오는 <strong>조용하고 운치 있는 야장</strong>. 만선호프·달맞이광장이 &quot;시끌벅적 한국식 야장&quot;이라면 <strong>순라길 비비는 &quot;한국식 돌담 + 서양 와인바&quot; 퓨전 야장</strong>이다.</p>
 <p><strong>추천 대상</strong>: 을지로 야장이 너무 시끄럽게 느껴지는 관광객, 데이트·조용한 저녁을 원하는 커플, 유럽 여행객의 &quot;이런 야장도 있나?&quot; 발견 포인트.</p>
 <p><strong>주문 추천</strong>: 와인 하우스 + 파스타 or 스테이크 / 메뉴판은 한국어+영어 병기.</p>
 <hr>
 <h3>7️⃣ <strong>서울루덴스</strong> — 이태원 회나무로의 뉴트렌드 야장</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>항목</th>
 <th>내용</th>
 </tr></thead><tbody>
@@ -459,12 +488,12 @@
 <td><strong>지하철</strong></td>
 <td>6호선 이태원역 도보 10분 / 경리단길 방향</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p>이태원 경리단길 끝쪽 언덕에 위치한 <strong>카페 + 다이닝 + 야장 복합 공간</strong>. 전통 야장이 을지로의 DNA라면, 서울루덴스는 <strong>&quot;2020년대 후반 서울이 만든 새로운 야장 해석&quot;</strong>이다. 야외 테이블이지만 조명·식물·음악이 모두 큐레이션됐고, 외국인 거주자 비율이 높은 동네 특성상 영어 메뉴·영어 스태프가 자연스럽다.</p>
 <p><strong>추천 대상</strong>: 전통 노포보다 디자인된 공간을 선호하는 Z세대 관광객, &quot;인스타그램용 야장 사진&quot; 원하는 여행객.</p>
 <hr>
 <h3>🎁 보너스: <strong>선비옥</strong> — 종로 한정식 노포 야장</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>항목</th>
 <th>내용</th>
 </tr></thead><tbody>
@@ -480,7 +509,7 @@
 <td><strong>지하철</strong></td>
 <td>1/3/5호선 종로3가역 도보 3분</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p>종로 뒷골목의 오랜 한식 고기집. <strong>육류 요리가 메인이며, 가게 앞 좁은 인도에 펴놓은 야장 자리가 저녁마다 조용히 채워진다.</strong> 장소 이전 기록이 있으니 방문 전 네이버 지도 &quot;선비옥&quot;으로 최신 주소 확인 필요.</p>
 <hr>
 <h2>지역별 추천 야장 코스</h2>
@@ -654,34 +683,7 @@
     <div><a href="hongdae-restaurants-deep.html" style="color:var(--red);">홍대 맛집 완전 정복 &rarr;</a></div>
   </nav>
 
-  <section id="kc-related" style="display:none;margin:2.2rem 0 0.5rem;">
-    <h2 style="font-size:1.1rem;margin-bottom:0.8rem;">관련 가이드</h2>
-    <div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"></div>
-  </section>
-  <script>
-  // related guides — 같은 카테고리 최신 6편 (contents.json fetch·언어 suffix 자동, 2026-07-04)
-  (function() {
-    var m = location.pathname.match(/\/content\/(.+?)(\.en|\.zh|\.ja)?\.html$/);
-    if (!m) return;
-    var slug = m[1], suf = m[2] || '';
-    fetch('../data/contents.json').then(function(r) { return r.json(); }).then(function(items) {
-      var me = null;
-      for (var i = 0; i < items.length; i++) { if (items[i].slug === slug) { me = items[i]; break; } }
-      if (!me) return;
-      var pool = items.filter(function(x) { return x.slug !== slug && x.category === me.category; });
-      pool.sort(function(a, b) { return (parseInt(b.id, 10) || 0) - (parseInt(a.id, 10) || 0); });
-      var picks = pool.slice(0, 6);
-      if (!picks.length) return;
-      document.getElementById('kc-related-grid').innerHTML = picks.map(function(x) {
-        var t = suf ? (x.title_en || x.title_kr) : (x.title_kr || x.title_en);
-        var ok = suf === '' || (suf === '.en' ? x.en_available : (suf === '.zh' ? x.cn_available : x.jp_available));
-        var href = x.slug + (ok ? suf : '') + '.html';
-        return '<a href="' + href + '" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">' + t + '</a>';
-      }).join('');
-      document.getElementById('kc-related').style.display = 'block';
-    }).catch(function() {});
-  })();
-  </script>
+  <section id="kc-related" style="margin:2.2rem 0 0.5rem;"><h2 style="font-size:1.1rem;margin-bottom:0.8rem;">관련 가이드</h2><div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"><a href="busan-suyeong-dongnae.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">부산의 원점, 수영·동래 — 광안리 뒤편과 조선의 부산</a><a href="sindang-guide.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">신당동 — &quot;다음 성수&quot;로 불리기 시작한 동네, 시장·힙 바·떡볶이의 3층 구조</a><a href="seoul-overrated-underrated.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Overrated vs Underrated Seoul — 외국인 리뷰가 말하는 시간 배분 재조정 가이드</a><a href="myeongdong-euljiro-evening-walk.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">명동→을지로 이브닝 워킹 코스 — 2시간에 서울의 여섯 얼굴, 야장 맥주로 피니시</a><a href="cvs-drinks-map.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">한국 편의점 음료 완전 지도 — 바나나우유부터 숙취해소까지 9카테고리</a><a href="korea-snack-brands.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">한국 과자 브랜드 열전 — 농심·오리온·롯데·해태·크라운, 브랜드로 읽는 K-스낵</a></div></section>
   <!-- kc-comments -->
   <section id="kc-comments" style="margin:2.5rem 0 0.5rem;">
     <h2>댓글</h2>

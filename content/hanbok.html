@@ -34,7 +34,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/main.css">
 <style>
 .detail-wrap {
@@ -50,11 +50,11 @@
 .breadcrumb a { color: var(--red); font-weight: 600; }
 .detail-wrap h1 {
   font-size: 28px; font-weight: 800;
-  color: var(--black); margin-bottom: 8px;
+  color: var(--text); margin-bottom: 8px;
 }
 .detail-wrap h2 {
   font-size: 22px; font-weight: 700;
-  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  color: var(--text); margin-top: 32px; margin-bottom: 12px;
   padding-bottom: 6px;
   border-bottom: 2px solid var(--red);
 }
@@ -73,10 +73,19 @@
   font-size: 14px; line-height: 1.6;
   color: var(--text-mid); margin-bottom: 6px;
 }
+/* 표는 자기 컨테이너 안에서만 가로 스크롤한다 — 이게 없으면 min-content 폭이
+   뷰포트를 넘는 순간 페이지 전체가 가로로 밀렸다 (2026-08-31 점검 M2).
+   table 자체는 table 로 남겨 행·열 관계를 보존한다(display:block 으로 해결하지 않는 이유). */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 16px;
+}
 .detail-wrap table {
   width: 100%; border-collapse: collapse;
   margin-bottom: 16px; font-size: 13px;
 }
+.table-scroll > table { margin-bottom: 0; }
 .detail-wrap th {
   background: var(--black); color: #fff;
   padding: 10px 12px; text-align: left;
@@ -137,10 +146,30 @@
   user-select: none;
 }
 </style>
+<script>
+/* 테마 부트스트랩 — 2026-08-31 점검 M3.
+   기사 4,804p 에 이게 없어서, OS 다크 사용자가 홈(다크)에서 기사를 열면
+   라이트로 번쩍였다. main.css 의 다크 규칙은 전부 [data-theme="dark"] 스코프이고
+   prefers-color-scheme 미디어쿼리는 CSS 에 없으므로, 속성을 여기서 달아줘야 한다.
+   <head> 안에서 동기 실행 — paint 전에 끝나야 깜빡임이 없다.
+   허브와 달리 기사엔 토글 버튼이 없다. 저장된 선택(kc_theme)과 OS 설정만 따른다. */
+(function () {
+  try {
+    var s = localStorage.getItem('kc_theme');
+    if (s === 'dark' || (!s && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  } catch (e) {}
+})();
+</script>
 </head>
 <body>
+<a class="skip-link" href="#kc-main">본문 바로가기</a>
 <header class="site-header">
-  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <!-- width/height = 고유 크기(400x149). CSS 가 height:36px 로 줄이지만 브라우저는
+       이 비율로 자리를 미리 잡아 레이아웃 이동(CLS)을 막는다. 헤더 로고는 첫 화면에
+       보이므로 lazy 가 아니라 eager. -->
+  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo" width="400" height="149" loading="eager" decoding="async"></a>
   <div class="lang-switch">
     <a href="../content/hanbok.html" class="active">KR</a>
     <a href="../content/hanbok.en.html">EN</a>
@@ -149,14 +178,14 @@
   </div>
 </header>
 
-<main class="detail-wrap">
+<main class="detail-wrap" id="kc-main" tabindex="-1">
   <nav class="breadcrumb" aria-label="breadcrumb"><a href="../index.html">전체 가이드</a> &rsaquo; 한복 체험 모던 가이드</nav>
   <article>
   <h1>한복 체험 — 모던 관점으로 경복궁 무료입장까지</h1>
 <blockquote><p>한복을 입고 서울을 거니는 경험. 관광객용 뻔한 사진찍기를 벗어나 현지인처럼 즐기는 법</p></blockquote>
 <hr>
 <h2>한눈에 보기</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>항목</th>
 <th>정보</th>
 </tr></thead><tbody>
@@ -184,7 +213,7 @@
 <td><strong>비용</strong></td>
 <td>대여 5,000~30,000원 + 경복궁 입장료 (무료 조건 있음)</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>한복, 왜 입어야 할까?</h2>
 <p>한국 여행에서 한복은 <strong>기념사진 찍기 위한 소품이 아니라, 그 시대 한국인이 어떻게 입고 살았는지를 직접 체험하는 경험</strong>입니다. 하지만 관광지에서 빌리는 한복과 현지인이 입는 한복, 그리고 &quot;한복의 변화&quot;는 완전히 다릅니다.</p>
@@ -199,7 +228,7 @@
 <hr>
 <h2>한복 종류 비교: 뭘 입을 건데?</h2>
 <h3>1. 전통 한복 (경복궁 앞 관광객 정통)</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>특징</th>
 <th>설명</th>
 </tr></thead><tbody>
@@ -227,7 +256,7 @@
 <td><strong>현지인 평가</strong></td>
 <td>&quot;관광객 같은데...&quot;</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p><strong>어디서 빌 수 있을까?</strong></p>
 <ul>
 <li>경복궁역 1번 출구 주변 대여점들 (거리 많음)</li>
@@ -236,7 +265,7 @@
 </ul>
 <hr>
 <h3>2. 모던한복 (퓨전 한복) ⭐ 이것을 추천</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>특징</th>
 <th>설명</th>
 </tr></thead><tbody>
@@ -264,7 +293,7 @@
 <td><strong>현지인 평가</strong></td>
 <td>&quot;오, 저 한복은 이쁜데?&quot;</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p><strong>어디서 빌 수 있을까?</strong></p>
 <ul>
 <li><strong>홍대</strong> (중심): 홍대입구역 일대 감성 대여점들</li>
@@ -274,7 +303,7 @@
 </ul>
 <hr>
 <h3>3. 드레스 형태 고급 한복 (특별한 날)</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>특징</th>
 <th>설명</th>
 </tr></thead><tbody>
@@ -302,7 +331,7 @@
 <td><strong>현지인 평가</strong></td>
 <td>&quot;우아하다&quot;</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p><strong>어디서?</strong></p>
 <ul>
 <li>한남동, 강남 명품 한복 샵들</li>
@@ -312,7 +341,7 @@
 <h2>실제 체험 가이드: Step by Step</h2>
 <h3>Step 1: 어디서 대여할까?</h3>
 <p><strong>최고 추천: 북촌 한옥마을 한복카페형 대여점</strong></p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>샵 이름</th>
 <th>위치</th>
 <th>특징</th>
@@ -354,7 +383,7 @@
 <td>15,000~20,000원</td>
 <td>⭐⭐⭐⭐</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p><strong>선택 팁:</strong></p>
 <ul>
 <li><strong>퀄리티 중시</strong> → 북촌 한옥카페형 (대여 + 경험)</li>
@@ -405,7 +434,7 @@
 <h3>Step 4: 어디서 촬영할까?</h3>
 <h4>경복궁 무료 입장 꿀팁</h4>
 <p><strong>한복 입은 사람 = 경복궁 무료 입장!</strong></p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>조건</th>
 <th>세부사항</th>
 </tr></thead><tbody>
@@ -429,7 +458,7 @@
 <td><strong>유의사항</strong></td>
 <td>입장 후 퇴장할 때까지 한복 입고 있어야 함</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p><strong>경복궁 내 추천 촬영 스팟:</strong></p>
 <ul>
 <li>흥례문 (정문) — 정면 촬영</li>
@@ -447,7 +476,7 @@
 </ul>
 <hr>
 <h4>경복궁 외 촬영 명소</h4>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>장소</th>
 <th>특징</th>
 <th>가는 법</th>
@@ -482,7 +511,7 @@
 <td>현대적 배경과 전통한복의 대비</td>
 <td>지하철 5호선 여의도역</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h3>Step 5: 한복 입고 무엇을 할 것인가?</h3>
 <h4>A. 경복궁 + 북촌 반일 코스 (2.5시간)</h4>
@@ -538,7 +567,7 @@
 <li><strong>시간대</strong>: 오전(10~12시) 또는 오후(4~6시) 최고. 정오(12~2시) 햇빛은 가혹함</li>
 </ul>
 <h3>기상 조건</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>날씨</th>
 <th>가능한가</th>
 <th>팁</th>
@@ -563,11 +592,11 @@
 <td>⭐⭐⭐</td>
 <td>치마가 날릴 수 있음. 주의 필요</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>무료 입장 궁궐 완전정리</h2>
 <p><strong>한복 입으면 무료인 궁궐:</strong></p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>궁궐</th>
 <th>정상 가격</th>
 <th>한복시 가격</th>
@@ -609,7 +638,7 @@
 <td>1시간</td>
 <td>제사 지내는 왕실 사당. 숙연한 분위기</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p><strong>추천 조합:</strong></p>
 <ul>
 <li><strong>당일 여행</strong>: 경복궁 + 북촌 (가장 인기)</li>
@@ -619,7 +648,7 @@
 <hr>
 <h2>한복 vs 현지인의 차이</h2>
 <h3>한복을 입은 외국인 관광객 vs 한국인</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>요소</th>
 <th>관광객</th>
 <th>현지인</th>
@@ -654,7 +683,7 @@
 <td>&quot;여행 기념사진&quot; 느낌</td>
 <td>&quot;영상미&quot; 있는 라이프스타일 사진</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p><strong>현지인처럼 입으려면:</strong></p>
 <ul>
 <li>모던한복 선택</li>
@@ -665,7 +694,7 @@
 </ul>
 <hr>
 <h2>참고 링크</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>분야</th>
 <th>링크</th>
 <th>설명</th>
@@ -695,7 +724,7 @@
 <td>@keychingu.korea</td>
 <td>키친구 한복 콘텐츠</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <p><em>이 가이드는 2026년 4월 기준으로 작성되었습니다. 한복 대여점과 가격은 변할 수 있으므로, 방문 전 사전 전화나 SNS 확인을 권장합니다.</em></p>
 <h2>🌐 외부 SOURCES</h2>
@@ -722,34 +751,7 @@
     <div><a href="spa-massage.html" style="color:var(--red);">한국 스파 & 마사지 가이드 &rarr;</a></div>
   </nav>
 
-  <section id="kc-related" style="display:none;margin:2.2rem 0 0.5rem;">
-    <h2 style="font-size:1.1rem;margin-bottom:0.8rem;">관련 가이드</h2>
-    <div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"></div>
-  </section>
-  <script>
-  // related guides — 같은 카테고리 최신 6편 (contents.json fetch·언어 suffix 자동, 2026-07-04)
-  (function() {
-    var m = location.pathname.match(/\/content\/(.+?)(\.en|\.zh|\.ja)?\.html$/);
-    if (!m) return;
-    var slug = m[1], suf = m[2] || '';
-    fetch('../data/contents.json').then(function(r) { return r.json(); }).then(function(items) {
-      var me = null;
-      for (var i = 0; i < items.length; i++) { if (items[i].slug === slug) { me = items[i]; break; } }
-      if (!me) return;
-      var pool = items.filter(function(x) { return x.slug !== slug && x.category === me.category; });
-      pool.sort(function(a, b) { return (parseInt(b.id, 10) || 0) - (parseInt(a.id, 10) || 0); });
-      var picks = pool.slice(0, 6);
-      if (!picks.length) return;
-      document.getElementById('kc-related-grid').innerHTML = picks.map(function(x) {
-        var t = suf ? (x.title_en || x.title_kr) : (x.title_kr || x.title_en);
-        var ok = suf === '' || (suf === '.en' ? x.en_available : (suf === '.zh' ? x.cn_available : x.jp_available));
-        var href = x.slug + (ok ? suf : '') + '.html';
-        return '<a href="' + href + '" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">' + t + '</a>';
-      }).join('');
-      document.getElementById('kc-related').style.display = 'block';
-    }).catch(function() {});
-  })();
-  </script>
+  <section id="kc-related" style="margin:2.2rem 0 0.5rem;"><h2 style="font-size:1.1rem;margin-bottom:0.8rem;">관련 가이드</h2><div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"><a href="royal-palace-autumn-nights.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">궁궐의 가을밤 — 별빛야행·달빛기행·궁중문화축전, 예약 없이는 못 들어가는 프로그램 총정리</a><a href="seoul-fireworks-festival.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">서울세계불꽃축제 2026 — 9월 5일 여의도, 100만 인파 속에서 명당 잡는 법</a><a href="seoul-architecture-eras.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">서울 건축 시대 산책 — 전통·근대·현대 15선 + 건축 감상 렌즈</a><a href="korea-kpop-fansign-videocall.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">외국인 K-pop 팬사인회·영상통화 응모 가이드 — 음반 응모·영통</a><a href="korea-idol-birthday-cafe.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">외국인 아이돌 생일카페 가이드 — 생카·컵슬리브·서포트</a><a href="korea-kpop-music-show-taping.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">외국인 K-pop 음악방송 방청 가이드 — 인기가요·엠카·뮤뱅 사전녹화</a></div></section>
   <!-- kc-comments -->
   <section id="kc-comments" style="margin:2.5rem 0 0.5rem;">
     <h2>댓글</h2>

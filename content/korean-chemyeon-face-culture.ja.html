@@ -34,7 +34,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/main.css">
 <style>
 .detail-wrap {
@@ -50,11 +50,11 @@
 .breadcrumb a { color: var(--red); font-weight: 600; }
 .detail-wrap h1 {
   font-size: 28px; font-weight: 800;
-  color: var(--black); margin-bottom: 8px;
+  color: var(--text); margin-bottom: 8px;
 }
 .detail-wrap h2 {
   font-size: 22px; font-weight: 700;
-  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  color: var(--text); margin-top: 32px; margin-bottom: 12px;
   padding-bottom: 6px;
   border-bottom: 2px solid var(--red);
 }
@@ -73,10 +73,19 @@
   font-size: 14px; line-height: 1.6;
   color: var(--text-mid); margin-bottom: 6px;
 }
+/* 표는 자기 컨테이너 안에서만 가로 스크롤한다 — 이게 없으면 min-content 폭이
+   뷰포트를 넘는 순간 페이지 전체가 가로로 밀렸다 (2026-08-31 점검 M2).
+   table 자체는 table 로 남겨 행·열 관계를 보존한다(display:block 으로 해결하지 않는 이유). */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 16px;
+}
 .detail-wrap table {
   width: 100%; border-collapse: collapse;
   margin-bottom: 16px; font-size: 13px;
 }
+.table-scroll > table { margin-bottom: 0; }
 .detail-wrap th {
   background: var(--black); color: #fff;
   padding: 10px 12px; text-align: left;
@@ -137,10 +146,30 @@
   user-select: none;
 }
 </style>
+<script>
+/* 테마 부트스트랩 — 2026-08-31 점검 M3.
+   기사 4,804p 에 이게 없어서, OS 다크 사용자가 홈(다크)에서 기사를 열면
+   라이트로 번쩍였다. main.css 의 다크 규칙은 전부 [data-theme="dark"] 스코프이고
+   prefers-color-scheme 미디어쿼리는 CSS 에 없으므로, 속성을 여기서 달아줘야 한다.
+   <head> 안에서 동기 실행 — paint 전에 끝나야 깜빡임이 없다.
+   허브와 달리 기사엔 토글 버튼이 없다. 저장된 선택(kc_theme)과 OS 설정만 따른다. */
+(function () {
+  try {
+    var s = localStorage.getItem('kc_theme');
+    if (s === 'dark' || (!s && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  } catch (e) {}
+})();
+</script>
 </head>
 <body>
+<a class="skip-link" href="#kc-main">本文へスキップ</a>
 <header class="site-header">
-  <a href="../ja/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <!-- width/height = 고유 크기(400x149). CSS 가 height:36px 로 줄이지만 브라우저는
+       이 비율로 자리를 미리 잡아 레이아웃 이동(CLS)을 막는다. 헤더 로고는 첫 화면에
+       보이므로 lazy 가 아니라 eager. -->
+  <a href="../ja/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo" width="400" height="149" loading="eager" decoding="async"></a>
   <div class="lang-switch">
     <a href="../content/korean-chemyeon-face-culture.html">KR</a>
     <a href="../content/korean-chemyeon-face-culture.en.html">EN</a>
@@ -149,7 +178,7 @@
   </div>
 </header>
 
-<main class="detail-wrap">
+<main class="detail-wrap" id="kc-main" tabindex="-1">
   <nav class="breadcrumb" aria-label="breadcrumb"><a href="../ja/index.html">ガイド一覧</a> &rsaquo; 韓国の「体面」文化</nav>
   <article>
   <h1>韓国の「チェミョン (体面)」文化 — なぜ韓国人はこれほど他人の目を気にするのか</h1>
@@ -157,7 +186,7 @@
 <p>韓国ドラマを見ていると、よく出てくるセリフがあります。「私のチェミョン (体面) がどうなるの？」「人前でチェミョン (体面) を傷つけられたじゃないか」「それでもチェミョン (体面) があるだろう」。外国人はこれを通常「プライド (自尊心)」程度に訳しますが、韓国人が言う<strong>チェミョン (体面)</strong> は、単なる個人の自尊心ではありません。<strong>他者に見せる自分の威信・品位・評判</strong> — つまり「社会的顔 (social face)」を守ることです。高額な慶弔費、来客時の豪華な食卓、「みんながやっているから自分だけやらないわけにはいかない」という消費まで — 韓国社会の至るところでこのチェミョン (体面) が機能しています。しかし、外国人が最も混乱するのが、<strong>チェミョン (体面) と「ヌンチ (忖度) (<a href="korean-nunchi-culture.ja.html" class="xref">#1145</a>)」はどう違うのか</strong>という点です。一言で言えば、<strong>チェミョン (体面) は「自分」の威信を守ること (自分中心)</strong> であり、<strong>ヌンチ (忖度) は「状況や他人」の感情を読み取ること (他人中心)</strong> です。この記事では、チェミョン (体面) とは何か、なぜ韓国でこれほど重要なのか、そしてそれがどのように人を品位あるものにも、また縛り付けるものにもなるのかを、外国人の視点から解説します。韓国文化解説シリーズ<strong>第29弾</strong>。</p>
 <hr>
 <h2>★ 一目でわかる — 「チェミョン (体面)」の核心まとめ</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>項目</th>
 <th>内容</th>
 </tr></thead><tbody>
@@ -193,7 +222,7 @@
 <td><strong>東アジア共通</strong></td>
 <td>中国の<strong>ミェンズ (面子, mianzi)</strong> ・日本の<strong>メンツ (面子, mentsu)</strong> と似た「face」文化圏</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <blockquote><p><strong>核心</strong>: チェミョン (体面) は「見栄」とだけ見るべきではありません。責任感や礼儀として用いれば品位となり、度を超せば虚礼虚飾となります — この両面がこの記事の核心です (下記⑥)。そして、<strong>ヌンチ (忖度) との区別</strong>が外国人にとって最も重要です (下記③)。</p></blockquote>
 <hr>
 <h2>⚠️ 外国人がよく誤解する3つのこと</h2>
@@ -206,7 +235,7 @@
 <p>学術研究では、チェミョン (体面) を<strong>「内面の真髄が外に現れた社会的顔 (social face)」</strong>と見ています。つまり、チェミョン (体面) は単なる個人的感情ではなく、<strong>社会的な関係の中で形成・維持される評判</strong>なのです。そのため、チェミョン (体面) には一人の<strong>社会的地位だけでなく、威信・品位・名誉・評判</strong>が共に含まれると説明されます。</p>
 <p>核心は<strong>「見せる」顔</strong>であるという点です。一人でいる時ではなく、<strong>人前に立った時</strong>に機能します。だから韓国人は「人からどう思われるか」「チェミョン (体面) があるだろう」という言葉をよく使います — 自分の行動が他人の目にどう映るかを意識するのです。</p>
 <p><strong>代表的な表現で見るチェミョン (体面)</strong></p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>表現</th>
 <th>意味</th>
 </tr></thead><tbody>
@@ -226,7 +255,7 @@
 <td><strong>ナッ (顔) が立つ / ナッ (顔) が損なわれる</strong></td>
 <td>「ナッ (顔)」でも同じ意味合い — 面目が立つ、または潰れる</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>② 儒教 (ユギョ) からのルーツ — 「イェ (礼)」と序列の産物</h2>
 <p>チェミョン (体面) 文化は、しばしば<strong>儒教 (ユギョ)</strong> の影響で説明されます。儒教 (ユギョ) は本質的に<strong>「イェ (礼)」</strong>を定める学問であり、ここでイェ (礼) とは単なる儀礼ではなく、<strong>人と人、集団と集団の間の相互作用の形式を規定する社会規範</strong>です。</p>
@@ -239,7 +268,7 @@
 <hr>
 <h2>③ ★★ チェミョン (体面) vs ヌンチ (忖度) — 外国人が最も混乱する区別</h2>
 <p>この記事で最も重要なセクションです。外国人は<strong>チェミョン (体面)</strong> と<strong>ヌンチ (忖度) (<a href="korean-nunchi-culture.ja.html" class="xref">#1145</a>)</strong> をしばしば一括りにして考えがちです。どちらも儒教 (ユギョ) の「イェ (礼)」から来ており、どちらも「他人を意識する」という点で似ているように見えるからです。しかし、<strong>方向が正反対</strong>です。</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th></th>
 <th><strong>チェミョン (体面)</strong></th>
 <th><strong>ヌンチ (忖度)</strong></th>
@@ -274,7 +303,7 @@
 <td>来客時の豪華な食卓で<strong>チェミョン (体面) を保つ</strong></td>
 <td>上司がグラスを置く速度を<strong>ヌンチ (忖度) を利かせて</strong>読み取る</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p><strong>一つの場面で見る違い</strong></p>
 <p>フェシク (会食) の場を想像してみてください。</p>
 <ul>
@@ -295,7 +324,7 @@
 <hr>
 <h2>⑤ 東アジアの「face」比較 — ミェンズ (中)・メンツ (日)・チェミョン (韓)</h2>
 <p>チェミョン (体面) を韓国だけの変わった文化と見なすのは誤解です。<strong>「face (顔/威信)」を守る感覚</strong>は、儒教 (ユギョ) の影響圏である東アジアが共有しています。</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>国</th>
 <th>表現</th>
 <th>強調点 (一般的な説明)</th>
@@ -315,7 +344,7 @@
 <td><strong>メンツ (面子, mentsu)</strong></td>
 <td><strong>社会的役割・本分</strong>に合った振る舞いを強調する</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <ul>
 <li>3つの概念すべてが「face」を<strong>個人の自尊心を超えた社会的通貨 (social currency)</strong> と見なす点は同じです。あらゆる相互作用において、face は<strong>与え (give)・立て (save)・失う (lose)</strong> ものとして扱われます。</li>
 <li>違いもあります — 一般的に、中国のミェンズ (面子) は<strong>権力・影響力</strong>を、日本のメンツ (面子) は<strong>役割・本分</strong>をより強調すると説明されます。韓国のチェミョン (体面) はその間で<strong>威信・品位と羞恥心</strong>の側面が際立っているというのが一般的な整理です。</li>
@@ -391,34 +420,7 @@
     <div><a href="korean-idol-trainee-culture.ja.html" style="color:var(--red);">韓国のK-POPアイドル・練習生文化 &rarr;</a></div>
   </nav>
 
-  <section id="kc-related" style="display:none;margin:2.2rem 0 0.5rem;">
-    <h2 style="font-size:1.1rem;margin-bottom:0.8rem;">関連ガイド</h2>
-    <div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"></div>
-  </section>
-  <script>
-  // related guides — 같은 카테고리 최신 6편 (contents.json fetch·언어 suffix 자동, 2026-07-04)
-  (function() {
-    var m = location.pathname.match(/\/content\/(.+?)(\.en|\.zh|\.ja)?\.html$/);
-    if (!m) return;
-    var slug = m[1], suf = m[2] || '';
-    fetch('../data/contents.json').then(function(r) { return r.json(); }).then(function(items) {
-      var me = null;
-      for (var i = 0; i < items.length; i++) { if (items[i].slug === slug) { me = items[i]; break; } }
-      if (!me) return;
-      var pool = items.filter(function(x) { return x.slug !== slug && x.category === me.category; });
-      pool.sort(function(a, b) { return (parseInt(b.id, 10) || 0) - (parseInt(a.id, 10) || 0); });
-      var picks = pool.slice(0, 6);
-      if (!picks.length) return;
-      document.getElementById('kc-related-grid').innerHTML = picks.map(function(x) {
-        var t = suf ? (x.title_en || x.title_kr) : (x.title_kr || x.title_en);
-        var ok = suf === '' || (suf === '.en' ? x.en_available : (suf === '.zh' ? x.cn_available : x.jp_available));
-        var href = x.slug + (ok ? suf : '') + '.html';
-        return '<a href="' + href + '" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">' + t + '</a>';
-      }).join('');
-      document.getElementById('kc-related').style.display = 'block';
-    }).catch(function() {});
-  })();
-  </script>
+  <section id="kc-related" style="margin:2.2rem 0 0.5rem;"><h2 style="font-size:1.1rem;margin-bottom:0.8rem;">関連ガイド</h2><div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"><a href="royal-palace-autumn-nights.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Royal Palaces After Dark: Starlight Tours, Moonlight Walks and the Royal Culture Festival — the Reservation-Only Side of Autumn Seoul</a><a href="seoul-fireworks-festival.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Seoul International Fireworks Festival 2026: September 5 at Yeouido — How to Claim a Spot Among a Million People</a><a href="seoul-architecture-eras.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Seoul Architecture Time Walk — Traditional, Modern &amp; Contemporary: 15 Picks + An Architectural Appreciation Lens</a><a href="korea-kpop-fansign-videocall.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">K-pop Fansign·Video Call (Album Entry·Yeongtong)</a><a href="korea-idol-birthday-cafe.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Idol Birthday Cafe (Saengka·Cup Sleeve·Support)</a><a href="korea-kpop-music-show-taping.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">K-pop Music Show Taping (Inkigayo·M Countdown·Music Bank)</a></div></section>
   <!-- kc-comments -->
   <section id="kc-comments" style="margin:2.5rem 0 0.5rem;">
     <h2>コメント</h2>

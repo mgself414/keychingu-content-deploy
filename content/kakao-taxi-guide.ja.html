@@ -30,7 +30,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/main.css">
 <style>
 .detail-wrap {
@@ -46,11 +46,11 @@
 .breadcrumb a { color: var(--red); font-weight: 600; }
 .detail-wrap h1 {
   font-size: 28px; font-weight: 800;
-  color: var(--black); margin-bottom: 8px;
+  color: var(--text); margin-bottom: 8px;
 }
 .detail-wrap h2 {
   font-size: 22px; font-weight: 700;
-  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  color: var(--text); margin-top: 32px; margin-bottom: 12px;
   padding-bottom: 6px;
   border-bottom: 2px solid var(--red);
 }
@@ -69,10 +69,19 @@
   font-size: 14px; line-height: 1.6;
   color: var(--text-mid); margin-bottom: 6px;
 }
+/* 표는 자기 컨테이너 안에서만 가로 스크롤한다 — 이게 없으면 min-content 폭이
+   뷰포트를 넘는 순간 페이지 전체가 가로로 밀렸다 (2026-08-31 점검 M2).
+   table 자체는 table 로 남겨 행·열 관계를 보존한다(display:block 으로 해결하지 않는 이유). */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 16px;
+}
 .detail-wrap table {
   width: 100%; border-collapse: collapse;
   margin-bottom: 16px; font-size: 13px;
 }
+.table-scroll > table { margin-bottom: 0; }
 .detail-wrap th {
   background: var(--black); color: #fff;
   padding: 10px 12px; text-align: left;
@@ -133,10 +142,30 @@
   user-select: none;
 }
 </style>
+<script>
+/* 테마 부트스트랩 — 2026-08-31 점검 M3.
+   기사 4,804p 에 이게 없어서, OS 다크 사용자가 홈(다크)에서 기사를 열면
+   라이트로 번쩍였다. main.css 의 다크 규칙은 전부 [data-theme="dark"] 스코프이고
+   prefers-color-scheme 미디어쿼리는 CSS 에 없으므로, 속성을 여기서 달아줘야 한다.
+   <head> 안에서 동기 실행 — paint 전에 끝나야 깜빡임이 없다.
+   허브와 달리 기사엔 토글 버튼이 없다. 저장된 선택(kc_theme)과 OS 설정만 따른다. */
+(function () {
+  try {
+    var s = localStorage.getItem('kc_theme');
+    if (s === 'dark' || (!s && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  } catch (e) {}
+})();
+</script>
 </head>
 <body>
+<a class="skip-link" href="#kc-main">本文へスキップ</a>
 <header class="site-header">
-  <a href="../ja/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <!-- width/height = 고유 크기(400x149). CSS 가 height:36px 로 줄이지만 브라우저는
+       이 비율로 자리를 미리 잡아 레이아웃 이동(CLS)을 막는다. 헤더 로고는 첫 화면에
+       보이므로 lazy 가 아니라 eager. -->
+  <a href="../ja/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo" width="400" height="149" loading="eager" decoding="async"></a>
   <div class="lang-switch">
     <a href="../content/kakao-taxi-guide.html">KR</a>
     <a href="../content/kakao-taxi-guide.en.html">EN</a>
@@ -145,7 +174,7 @@
   </div>
 </header>
 
-<main class="detail-wrap">
+<main class="detail-wrap" id="kc-main" tabindex="-1">
   <nav class="breadcrumb" aria-label="breadcrumb"><a href="../ja/index.html">ガイド一覧</a> &rsaquo; カカオT タクシー実践ガイド — 会話なしで乗って降りる方法</nav>
   <article>
   <h1>カカオT タクシー実践ガイド — 会話なしで乗って降りる方法</h1>
@@ -164,7 +193,7 @@
 <p>韓国の大都市では、道端で手を挙げて空車のタクシーを拾う方式が急速に減り、配車アプリが標準になりました。カカオTは韓国人利用者数・車両プールが圧倒的に大きく、配車が最も速いです。問題は決済です — この仕組みは韓国の電話番号・韓国発行のカードを前提に設計されているため、外国人観光客は登録はできても<strong>カード登録で詰まるケースが多い</strong>のです。この回の核心は、その地点を正面突破することです。</p>
 <hr>
 <h2>② 準備 — 海外番号で登録する</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>ステップ</th>
 <th>画面</th>
 <th>やること</th>
@@ -200,7 +229,7 @@
 <td><strong>ほとんどの場合ここで詰まる</strong> → 次の③参照</td>
 <td>無理にカード追加を繰り返さず <code>[ 後で (나중에) ]</code> / <code>[ スキップ (건너뛰기) ]</code></td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>③ 本当の罠 — 「カード登録ができない」→ 運転手に直接決済</h2>
 <p>カカオTの基本決済方式は、アプリに登録したカードで降車時に<strong>自動請求</strong>される自動決済です。この自動決済を登録するには決済手段画面で<strong>もう一度本人認証(SMS)</strong>が要求されますが、この認証は韓国で開通された番号を前提に設計されています(2026年4月時点)。②で海外番号での登録に成功していても、ここでまた詰まるのが普通です — あなたのカードや操作ミスの問題ではありません。</p>
@@ -213,7 +242,7 @@
 </ul>
 <hr>
 <h2>④ 配車マスターフロー — 出発地ピンからマッチングまで</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>ステップ</th>
 <th>画面</th>
 <th>やること</th>
@@ -249,10 +278,10 @@
 <td>運転手の写真・車両番号・車種・到着予定時間を表示</td>
 <td>乗車前に<strong>車両ナンバープレートを画面と照合</strong> — 基本の安全ルール</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>⑤ K-RIDE vs Kakao T — どちらを入れるべきか</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>基準</th>
 <th>Kakao T</th>
 <th>K-RIDE</th>
@@ -282,7 +311,7 @@
 <td>③の回避設定を終えた人、速い配車を優先する人</td>
 <td>カード登録の問題自体を避けたい人、英語UIが楽な初めての訪問者</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>⑥ 降車決済 &amp; 車種 &amp; 深夜割増</h2>
 <p><strong>端末での海外カード</strong></p>
@@ -292,7 +321,7 @@
 <li>カードが弾かれたら: 別のカードで再試行 → それでもダメなら現金。</li>
 </ul>
 <p><strong>車種区分</strong></p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>車種</th>
 <th>特徴</th>
 </tr></thead><tbody>
@@ -312,7 +341,7 @@
 <td>ベンティ (벤티)</td>
 <td>大型ワゴン — キャリーケース・人数が多い時</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <blockquote><p>正確な料金倍率は時期・地域によって変わります。画面に表示される予想料金をそのまま信じるのが一番安全です。</p></blockquote>
 <p><strong>深夜割増</strong>: 深夜時間帯は自動的に割増料金が加算されます(正確な時刻・割増率は自治体・時期によって調整される場合あり)。アプリの予想料金画面にすでに反映されて表示されるため、自分で計算する必要はありません — 画面の数字がそのまま支払う金額です。</p>
 <hr>
@@ -325,7 +354,7 @@
 </ul>
 <hr>
 <h2>⑧ サバイバル単語15 — 画面にこの文字が見えたらこの意味</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>画面の韓国語</th>
 <th>読み方(ローマ字)</th>
 <th>意味</th>
@@ -405,7 +434,7 @@
 <td>byeoljeom</td>
 <td>Rating(評価)</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>⑨ パニックシナリオ2 — 実際に起きることと対処法</h2>
 <p>1. <strong>配車がずっとつかまらない</strong> — 車種を一般→ブルーに変更してみる、出発地ピンを大きな通り沿いに移動する、ピーク時間帯(通勤・深夜)なら数分待って再試行。それでもダメなら⑩プランBに切り替え。</p>
@@ -449,34 +478,7 @@
     <div><a href="waiting-app-guide.ja.html" style="color:var(--red);">韓国の人気店の順番待ち、電話なしで突破する方法 — タブレットからCatchTableまで &rarr;</a></div>
   </nav>
 
-  <section id="kc-related" style="display:none;margin:2.2rem 0 0.5rem;">
-    <h2 style="font-size:1.1rem;margin-bottom:0.8rem;">関連ガイド</h2>
-    <div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"></div>
-  </section>
-  <script>
-  // related guides — 같은 카테고리 최신 6편 (contents.json fetch·언어 suffix 자동, 2026-07-04)
-  (function() {
-    var m = location.pathname.match(/\/content\/(.+?)(\.en|\.zh|\.ja)?\.html$/);
-    if (!m) return;
-    var slug = m[1], suf = m[2] || '';
-    fetch('../data/contents.json').then(function(r) { return r.json(); }).then(function(items) {
-      var me = null;
-      for (var i = 0; i < items.length; i++) { if (items[i].slug === slug) { me = items[i]; break; } }
-      if (!me) return;
-      var pool = items.filter(function(x) { return x.slug !== slug && x.category === me.category; });
-      pool.sort(function(a, b) { return (parseInt(b.id, 10) || 0) - (parseInt(a.id, 10) || 0); });
-      var picks = pool.slice(0, 6);
-      if (!picks.length) return;
-      document.getElementById('kc-related-grid').innerHTML = picks.map(function(x) {
-        var t = suf ? (x.title_en || x.title_kr) : (x.title_kr || x.title_en);
-        var ok = suf === '' || (suf === '.en' ? x.en_available : (suf === '.zh' ? x.cn_available : x.jp_available));
-        var href = x.slug + (ok ? suf : '') + '.html';
-        return '<a href="' + href + '" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">' + t + '</a>';
-      }).join('');
-      document.getElementById('kc-related').style.display = 'block';
-    }).catch(function() {});
-  })();
-  </script>
+  <section id="kc-related" style="margin:2.2rem 0 0.5rem;"><h2 style="font-size:1.1rem;margin-bottom:0.8rem;">関連ガイド</h2><div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"><a href="solo-female-safety-checklist.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Solo Female Travel in Korea — A No-Fear Safety Checklist</a><a href="china-payment-survival.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Korea Payment Survival Manual for Chinese-Speaking Travelers — Alipay Works, WeChat Doesn&#x27;t, UnionPay Needs Prep First</a><a href="duty-free-pickup-guide.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">You Get Your Duty-Free Items at the Airport — The Zero-Panic Manual for the Pickup Counter</a><a href="korea-smoking-guide.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Finding a Place to Smoke in Korea, the Zero-Panic Manual — How Not to Get Fined</a><a href="busan-transit-guide.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Busan Transit Grammar — A City You Can Read with Just Two Lines</a><a href="seoul-cold-snap-survival.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Surviving a Seoul Cold Snap: How to Get Through a Day at Minus Ten</a></div></section>
   <!-- kc-comments -->
   <section id="kc-comments" style="margin:2.5rem 0 0.5rem;">
     <h2>コメント</h2>

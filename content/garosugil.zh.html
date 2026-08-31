@@ -34,7 +34,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/main.css">
 <style>
 .detail-wrap {
@@ -50,11 +50,11 @@
 .breadcrumb a { color: var(--red); font-weight: 600; }
 .detail-wrap h1 {
   font-size: 28px; font-weight: 800;
-  color: var(--black); margin-bottom: 8px;
+  color: var(--text); margin-bottom: 8px;
 }
 .detail-wrap h2 {
   font-size: 22px; font-weight: 700;
-  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  color: var(--text); margin-top: 32px; margin-bottom: 12px;
   padding-bottom: 6px;
   border-bottom: 2px solid var(--red);
 }
@@ -73,10 +73,19 @@
   font-size: 14px; line-height: 1.6;
   color: var(--text-mid); margin-bottom: 6px;
 }
+/* 표는 자기 컨테이너 안에서만 가로 스크롤한다 — 이게 없으면 min-content 폭이
+   뷰포트를 넘는 순간 페이지 전체가 가로로 밀렸다 (2026-08-31 점검 M2).
+   table 자체는 table 로 남겨 행·열 관계를 보존한다(display:block 으로 해결하지 않는 이유). */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 16px;
+}
 .detail-wrap table {
   width: 100%; border-collapse: collapse;
   margin-bottom: 16px; font-size: 13px;
 }
+.table-scroll > table { margin-bottom: 0; }
 .detail-wrap th {
   background: var(--black); color: #fff;
   padding: 10px 12px; text-align: left;
@@ -137,11 +146,31 @@
   user-select: none;
 }
 </style>
+<script>
+/* 테마 부트스트랩 — 2026-08-31 점검 M3.
+   기사 4,804p 에 이게 없어서, OS 다크 사용자가 홈(다크)에서 기사를 열면
+   라이트로 번쩍였다. main.css 의 다크 규칙은 전부 [data-theme="dark"] 스코프이고
+   prefers-color-scheme 미디어쿼리는 CSS 에 없으므로, 속성을 여기서 달아줘야 한다.
+   <head> 안에서 동기 실행 — paint 전에 끝나야 깜빡임이 없다.
+   허브와 달리 기사엔 토글 버튼이 없다. 저장된 선택(kc_theme)과 OS 설정만 따른다. */
+(function () {
+  try {
+    var s = localStorage.getItem('kc_theme');
+    if (s === 'dark' || (!s && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  } catch (e) {}
+})();
+</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "TouristAttraction", "name": "가로수길 신사 단독 deep dive", "url": "https://mgself414.github.io/keychingu-content-deploy/content/garosugil.html", "image": "https://mgself414.github.io/keychingu-content-deploy/og/garosugil.png", "address": {"@type": "PostalAddress", "addressLocality": "Seoul", "addressCountry": "KR"}, "touristType": "Foreigner-friendly tourism"}</script>
 </head>
 <body>
+<a class="skip-link" href="#kc-main">跳到正文</a>
 <header class="site-header">
-  <a href="../zh/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <!-- width/height = 고유 크기(400x149). CSS 가 height:36px 로 줄이지만 브라우저는
+       이 비율로 자리를 미리 잡아 레이아웃 이동(CLS)을 막는다. 헤더 로고는 첫 화면에
+       보이므로 lazy 가 아니라 eager. -->
+  <a href="../zh/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo" width="400" height="149" loading="eager" decoding="async"></a>
   <div class="lang-switch">
     <a href="../content/garosugil.html">KR</a>
     <a href="../content/garosugil.en.html">EN</a>
@@ -150,7 +179,7 @@
   </div>
 </header>
 
-<main class="detail-wrap">
+<main class="detail-wrap" id="kc-main" tabindex="-1">
   <nav class="breadcrumb" aria-label="breadcrumb"><a href="../zh/index.html">全部指南</a> &rsaquo; 林荫道新沙独家深度攻略</nav>
   <article>
   <h1>林荫道·新沙 (Garosu-gil·Sinsa) 深度探访 — MZ购物·Instagram打卡首选地</h1>
@@ -161,7 +190,7 @@
 <p>林荫道 (Garosu-gil)·新沙 (Sinsa) = <strong>韩国 (Korea) MZ世代 (MZ世代 / 指千禧一代和Z世代) 购物·Instagram (Instagram) 打卡首选地</strong> (<a href="gangnam-cafe.zh.html" class="xref">#142</a> 江南 (Gangnam) 分区). MZ世代 时尚·Instagram·外国爱好者首选地。</p>
 <hr>
 <h2>★ 12大亮点一览</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>#</th>
 <th>林荫道 (Garosu-gil)·新沙 (Sinsa) 景点</th>
 <th>4大主轴</th>
@@ -239,7 +268,7 @@
 <td>爱好者文化</td>
 <td>YouTube (YouTube) 打卡首选地</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>⚠ 外国人常犯的3个错误</h2>
 <p>1.  <strong>“林荫道 (Garosu-gil) = 江南 (Gangnam) = 相同”</strong>: 林荫道 (Garosu-gil)·新沙 (Sinsa) = <strong><a href="gangnam-cafe.zh.html" class="xref">#142</a> 江南 (Gangnam) 分区</strong> MZ世代 购物深度探访。</p>
@@ -267,7 +296,7 @@
 </ul>
 <hr>
 <h2>📅 季节矩阵 (外国爱好者)</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>季节</th>
 <th>标志性活动</th>
 <th>外国爱好者推荐指数</th>
@@ -292,7 +321,7 @@
 <td>新年·日出·滑雪·室内活动</td>
 <td>★★★★</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>👥 外国人5大客群矩阵</h2>
 <ul>
@@ -304,7 +333,7 @@
 </ul>
 <hr>
 <h2>⏱ 按时间段推荐行程</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>时间段</th>
 <th>推荐活动</th>
 </tr></thead><tbody>
@@ -324,7 +353,7 @@
 <td><strong>深夜 (21:00~24:00 / 9 PM - 12 AM)</strong></td>
 <td>夜景·咖啡馆·24小时活动·MZ世代 + Instagram (Instagram) <a href="seongsu.zh.html" class="xref">#1</a></td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>✈️ 外国爱好者矩阵</h2>
 <ul>
@@ -344,7 +373,7 @@
 <hr>
 <h2>📊 外国爱好者数据矩阵</h2>
 <p>外国赴韩游客 = <strong>年1,750万名 (2024年)</strong>·MZ世代 (20-39岁) <strong>58%</strong>·平均停留 <strong>6.4天</strong>·平均消费 <strong>1,605 美元/人</strong>·再访率 <strong>23%</strong> (韩国 (Korea) 旅游发展局2024年统计)。</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>项目</th>
 <th>数值</th>
 <th>来源</th>
@@ -384,7 +413,7 @@
 <td><strong>春 (樱花·4月)·秋 (枫叶·10-11月)</strong></td>
 <td>旅游公社季节分析</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <blockquote><p><strong>数据解读</strong>: 英文全套服务65%·支付80%·季节矩阵春·秋 <a href="seongsu.zh.html" class="xref">#1</a>·1339紧急服务24小时英文 = 外国人首次访韩安全·爱好者矩阵契合度高。</p></blockquote>
 <h2>🏷 标签</h2>
 <p><code>#林荫道新沙深度探访</code> <code>#GarosugilSinsa</code> <code>#韩国MZ购物首选地</code> <code>#林荫道K-BeautyK-Fashion</code> <code>#竖林道隐藏小巷</code> <code>#林荫道BlueBottleLBM</code> <code>#林荫道人生四格</code> <code>#KeyChinGu</code></p>
@@ -456,7 +485,7 @@
 <li>[ ] 选择适合季节的店铺 (樱花·夏季·枫叶·冬季)</li>
 </ul>
 <h2>7天+ 长期旅行系列安排</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>天数</th>
 <th>区域</th>
 <th>活动</th>
@@ -476,7 +505,7 @@
 <td>KTX (高速列车) 近郊</td>
 <td><a href="gangneung-ktx-2day.zh.html" class="xref">#1106</a>·1107·1108·1114·1115</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p>推荐美国 (USA)·欧洲 (Europe) 7天+ 客群在第4天或第7天进行。</p>
 <h2>额外交叉链接</h2>
 <ul>
@@ -513,34 +542,7 @@
     <div><a href="cheongdam.zh.html" style="color:var(--red);">清潭洞奢华独家深度攻略 &rarr;</a></div>
   </nav>
 
-  <section id="kc-related" style="display:none;margin:2.2rem 0 0.5rem;">
-    <h2 style="font-size:1.1rem;margin-bottom:0.8rem;">相关指南</h2>
-    <div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"></div>
-  </section>
-  <script>
-  // related guides — 같은 카테고리 최신 6편 (contents.json fetch·언어 suffix 자동, 2026-07-04)
-  (function() {
-    var m = location.pathname.match(/\/content\/(.+?)(\.en|\.zh|\.ja)?\.html$/);
-    if (!m) return;
-    var slug = m[1], suf = m[2] || '';
-    fetch('../data/contents.json').then(function(r) { return r.json(); }).then(function(items) {
-      var me = null;
-      for (var i = 0; i < items.length; i++) { if (items[i].slug === slug) { me = items[i]; break; } }
-      if (!me) return;
-      var pool = items.filter(function(x) { return x.slug !== slug && x.category === me.category; });
-      pool.sort(function(a, b) { return (parseInt(b.id, 10) || 0) - (parseInt(a.id, 10) || 0); });
-      var picks = pool.slice(0, 6);
-      if (!picks.length) return;
-      document.getElementById('kc-related-grid').innerHTML = picks.map(function(x) {
-        var t = suf ? (x.title_en || x.title_kr) : (x.title_kr || x.title_en);
-        var ok = suf === '' || (suf === '.en' ? x.en_available : (suf === '.zh' ? x.cn_available : x.jp_available));
-        var href = x.slug + (ok ? suf : '') + '.html';
-        return '<a href="' + href + '" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">' + t + '</a>';
-      }).join('');
-      document.getElementById('kc-related').style.display = 'block';
-    }).catch(function() {});
-  })();
-  </script>
+  <section id="kc-related" style="margin:2.2rem 0 0.5rem;"><h2 style="font-size:1.1rem;margin-bottom:0.8rem;">相关指南</h2><div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"><a href="busan-suyeong-dongnae.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Busan&#x27;s Point of Origin — Suyeong and Dongnae, Behind Gwangalli and Joseon-Era Busan</a><a href="sindang-guide.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Sindang-dong: The Neighborhood Being Called the Next Seongsu — Market, Hip Bars and Original Tteokbokki in Three Layers</a><a href="seoul-overrated-underrated.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Overrated vs Underrated Seoul: Reallocating Your Time by What Foreign Reviews Actually Say</a><a href="myeongdong-euljiro-evening-walk.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Myeongdong to Euljiro Evening Walk: Six Faces of Seoul in Two Hours, Ending with Yajang Beer</a><a href="cvs-drinks-map.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">The Complete Map of Korean Convenience Store Drinks: From Banana Milk to Hangover Cures</a><a href="korea-snack-brands.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Korean Snack Brands 101: Nongshim, Orion, Lotte, Haitai and Crown — Reading K-Snacks by Maker</a></div></section>
   <!-- kc-comments -->
   <section id="kc-comments" style="margin:2.5rem 0 0.5rem;">
     <h2>评论</h2>

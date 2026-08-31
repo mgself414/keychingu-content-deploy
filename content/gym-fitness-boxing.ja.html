@@ -34,7 +34,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/main.css">
 <style>
 .detail-wrap {
@@ -50,11 +50,11 @@
 .breadcrumb a { color: var(--red); font-weight: 600; }
 .detail-wrap h1 {
   font-size: 28px; font-weight: 800;
-  color: var(--black); margin-bottom: 8px;
+  color: var(--text); margin-bottom: 8px;
 }
 .detail-wrap h2 {
   font-size: 22px; font-weight: 700;
-  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  color: var(--text); margin-top: 32px; margin-bottom: 12px;
   padding-bottom: 6px;
   border-bottom: 2px solid var(--red);
 }
@@ -73,10 +73,19 @@
   font-size: 14px; line-height: 1.6;
   color: var(--text-mid); margin-bottom: 6px;
 }
+/* 표는 자기 컨테이너 안에서만 가로 스크롤한다 — 이게 없으면 min-content 폭이
+   뷰포트를 넘는 순간 페이지 전체가 가로로 밀렸다 (2026-08-31 점검 M2).
+   table 자체는 table 로 남겨 행·열 관계를 보존한다(display:block 으로 해결하지 않는 이유). */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 16px;
+}
 .detail-wrap table {
   width: 100%; border-collapse: collapse;
   margin-bottom: 16px; font-size: 13px;
 }
+.table-scroll > table { margin-bottom: 0; }
 .detail-wrap th {
   background: var(--black); color: #fff;
   padding: 10px 12px; text-align: left;
@@ -137,10 +146,30 @@
   user-select: none;
 }
 </style>
+<script>
+/* 테마 부트스트랩 — 2026-08-31 점검 M3.
+   기사 4,804p 에 이게 없어서, OS 다크 사용자가 홈(다크)에서 기사를 열면
+   라이트로 번쩍였다. main.css 의 다크 규칙은 전부 [data-theme="dark"] 스코프이고
+   prefers-color-scheme 미디어쿼리는 CSS 에 없으므로, 속성을 여기서 달아줘야 한다.
+   <head> 안에서 동기 실행 — paint 전에 끝나야 깜빡임이 없다.
+   허브와 달리 기사엔 토글 버튼이 없다. 저장된 선택(kc_theme)과 OS 설정만 따른다. */
+(function () {
+  try {
+    var s = localStorage.getItem('kc_theme');
+    if (s === 'dark' || (!s && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  } catch (e) {}
+})();
+</script>
 </head>
 <body>
+<a class="skip-link" href="#kc-main">本文へスキップ</a>
 <header class="site-header">
-  <a href="../ja/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <!-- width/height = 고유 크기(400x149). CSS 가 height:36px 로 줄이지만 브라우저는
+       이 비율로 자리를 미리 잡아 레이아웃 이동(CLS)을 막는다. 헤더 로고는 첫 화면에
+       보이므로 lazy 가 아니라 eager. -->
+  <a href="../ja/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo" width="400" height="149" loading="eager" decoding="async"></a>
   <div class="lang-switch">
     <a href="../content/gym-fitness-boxing.html">KR</a>
     <a href="../content/gym-fitness-boxing.en.html">EN</a>
@@ -149,7 +178,7 @@
   </div>
 </header>
 
-<main class="detail-wrap">
+<main class="detail-wrap" id="kc-main" tabindex="-1">
   <nav class="breadcrumb" aria-label="breadcrumb"><a href="../ja/index.html">ガイド一覧</a> &rsaquo; 外国人ジム・フィットネス・ボクシング深掘り</nav>
   <article>
   <h1>外国人ジム・フィットネス・ボクシング deep dive — 江南・弘大12選</h1>
@@ -160,7 +189,7 @@
 <p>外国人ウェルネスマニア1番地= <strong>ジム・フィットネス・ボクシング deep dive</strong>（<a href="yoga-pilates.ja.html" class="xref">#290</a>ヨガ・<a href="meditation-yoga.ja.html" class="xref">#448</a>瞑想・ヨガ・ピラティス後続）。ジム・ボクシング・クロスフィット・外国人英語OK+江南・弘大・梨泰院cluster+<a href="hotel-spa-wellness.ja.html" class="xref">#364</a>・<a href="jeonju-travel-map.ja.html" class="xref">#384</a>統合。</p>
 <hr>
 <h2>★一目で12選</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>#</th>
 <th>ジム・フィットネス4軸</th>
 </tr></thead><tbody>
@@ -230,7 +259,7 @@
 <td>マニア統合</td>
 <td>英語OK・KTO認証</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p><strong>+追加4</strong>：外国人ジム+<a href="jeonju-travel-map.ja.html" class="xref">#384</a>K-Beauty統合・外国人ジム+<a href="medical-tourism-deep.ja.html" class="xref">#401</a>医療観光（<a href="middle-east-tourist-essentials.ja.html" class="xref">#369</a>ラグジュアリー）・外国人ウェルネス5軸統合(<a href="temple-food.ja.html" class="xref">#357</a>・<a href="tea-ceremony.ja.html" class="xref">#359</a>・<a href="korean-medicine.ja.html" class="xref">#365</a>・<a href="meditation-yoga.ja.html" class="xref">#448</a>・#456)・外国人家族フィットネス (<a href="hongdae-cafe-phase2.ja.html" class="xref">#210</a>)</p>
 <hr>
 <h2>⚠外国人の頻繁な誤り5つ</h2>
@@ -376,7 +405,7 @@
 </ul>
 <hr>
 <h2>📅シーズンマトリックス（外国人愛好家）</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>シーズン</th>
 <th>シグネチャー活動</th>
 <th>外国人マニア時給度</th>
@@ -399,7 +428,7 @@
 <td><strong>冬（12-2月）</strong></td>
 <td>新年・日の出・スキー・屋内マトリックス★★★★</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>👥外国人5セグメントマトリックス</h2>
 <ul>
@@ -411,7 +440,7 @@
 </ul>
 <hr>
 <h2>⏱ 時間帯別動線おすすめ</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>タイムゾーン</th>
 <th>おすすめアクティビティ</th>
 </tr></thead><tbody>
@@ -429,7 +458,7 @@
 <td><strong>夜間（21:00～24:00）</strong></td>
 <td>夜景・カフェ・24hマトリックス・MZ+インスタ#1</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>✈️外国人マニアマトリックス</h2>
 <ul>
@@ -449,7 +478,7 @@
 <hr>
 <h2>📊外国人愛好家の数値マトリックス</h2>
 <p>外国人韓国観光客＝<strong>年1,750万人（2024）</strong>・MZ（20-39歳）<strong>58%</strong>・平均滞在<strong>6.4日</strong>・平均支出<strong>1,605 USD/人</strong>・再訪問率<strong>23%</strong>（韓国観光公社2024統計）。</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>アイテム</th>
 <th>数字ソース</th>
 </tr></thead><tbody>
@@ -487,7 +516,7 @@
 <td><strong>春（桜・4月）・秋（紅葉・10-11月）</strong></td>
 <td>観光公社シーズン分析</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <blockquote><p><strong>数値解析</strong>: 英文フルセット65%・決済80%・シーズンマトリックス春・秋</p></blockquote>
 <h2>🏷タグ</h2>
 <p><code>#외국인헬스장피트니스복싱deepdive</code> <code>#KoreaGymFitnessBoxing</code> <code>#메가짐한국1체인강남홍대</code> <code>#콘크리트바디챔프강남MZ</code> <code>#The Gym이태원거주</code> <code>#호텔피트니스시그니엘신라반얀트리</code> <code>#포시즌스콘래드피트니스</code> <code>#1일1주일PT패키지#384#448</code> <code>#태권도검도K-Sports정통</code> <code>#종합격투기MMA글로벌</code> <code>#크로스핏박스강남홍대글로벌</code> <code>#영어OK PT강남청담럭셔리</code> <code>#KlookKKdayKTO피트니스패키지</code> <code>#KBeauty의료관광wellness5축가족피트니스</code> <code>#키친구</code></p>
@@ -514,34 +543,7 @@
     <div><a href="fashion-streetwear.ja.html" style="color:var(--red);">外国人ファッション・ストリートウェア・MZ深掘り &rarr;</a></div>
   </nav>
 
-  <section id="kc-related" style="display:none;margin:2.2rem 0 0.5rem;">
-    <h2 style="font-size:1.1rem;margin-bottom:0.8rem;">関連ガイド</h2>
-    <div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"></div>
-  </section>
-  <script>
-  // related guides — 같은 카테고리 최신 6편 (contents.json fetch·언어 suffix 자동, 2026-07-04)
-  (function() {
-    var m = location.pathname.match(/\/content\/(.+?)(\.en|\.zh|\.ja)?\.html$/);
-    if (!m) return;
-    var slug = m[1], suf = m[2] || '';
-    fetch('../data/contents.json').then(function(r) { return r.json(); }).then(function(items) {
-      var me = null;
-      for (var i = 0; i < items.length; i++) { if (items[i].slug === slug) { me = items[i]; break; } }
-      if (!me) return;
-      var pool = items.filter(function(x) { return x.slug !== slug && x.category === me.category; });
-      pool.sort(function(a, b) { return (parseInt(b.id, 10) || 0) - (parseInt(a.id, 10) || 0); });
-      var picks = pool.slice(0, 6);
-      if (!picks.length) return;
-      document.getElementById('kc-related-grid').innerHTML = picks.map(function(x) {
-        var t = suf ? (x.title_en || x.title_kr) : (x.title_kr || x.title_en);
-        var ok = suf === '' || (suf === '.en' ? x.en_available : (suf === '.zh' ? x.cn_available : x.jp_available));
-        var href = x.slug + (ok ? suf : '') + '.html';
-        return '<a href="' + href + '" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">' + t + '</a>';
-      }).join('');
-      document.getElementById('kc-related').style.display = 'block';
-    }).catch(function() {});
-  })();
-  </script>
+  <section id="kc-related" style="margin:2.2rem 0 0.5rem;"><h2 style="font-size:1.1rem;margin-bottom:0.8rem;">関連ガイド</h2><div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"><a href="kbeauty-ingredient-rules.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Same Brand, Different Formula — Korea-Japan Cosmetic Regulation Grammar and How to Read Ingredient Labels</a><a href="korea-cooking-class-5.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Korea Cooking Class 5 Foreign Guide</a><a href="korea-ceramic-craft-class-5.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Korea Ceramic·Craft Class 5 Foreign Guide</a><a href="seoul-gyeongui-park-1day.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Seoul Gyeongui Forest Park 1-Day Course Foreign Guide</a><a href="korea-hanok-tea-experience-6.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Korea Hanok Experience·Tea Ceremony 6 Foreign Guide</a><a href="korea-daejeon-yuseong-hot-springs.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Daejeon Yuseong Hot Springs</a></div></section>
   <!-- kc-comments -->
   <section id="kc-comments" style="margin:2.5rem 0 0.5rem;">
     <h2>コメント</h2>

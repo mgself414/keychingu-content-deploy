@@ -34,7 +34,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/main.css">
 <style>
 .detail-wrap {
@@ -50,11 +50,11 @@
 .breadcrumb a { color: var(--red); font-weight: 600; }
 .detail-wrap h1 {
   font-size: 28px; font-weight: 800;
-  color: var(--black); margin-bottom: 8px;
+  color: var(--text); margin-bottom: 8px;
 }
 .detail-wrap h2 {
   font-size: 22px; font-weight: 700;
-  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  color: var(--text); margin-top: 32px; margin-bottom: 12px;
   padding-bottom: 6px;
   border-bottom: 2px solid var(--red);
 }
@@ -73,10 +73,19 @@
   font-size: 14px; line-height: 1.6;
   color: var(--text-mid); margin-bottom: 6px;
 }
+/* 표는 자기 컨테이너 안에서만 가로 스크롤한다 — 이게 없으면 min-content 폭이
+   뷰포트를 넘는 순간 페이지 전체가 가로로 밀렸다 (2026-08-31 점검 M2).
+   table 자체는 table 로 남겨 행·열 관계를 보존한다(display:block 으로 해결하지 않는 이유). */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 16px;
+}
 .detail-wrap table {
   width: 100%; border-collapse: collapse;
   margin-bottom: 16px; font-size: 13px;
 }
+.table-scroll > table { margin-bottom: 0; }
 .detail-wrap th {
   background: var(--black); color: #fff;
   padding: 10px 12px; text-align: left;
@@ -137,10 +146,30 @@
   user-select: none;
 }
 </style>
+<script>
+/* 테마 부트스트랩 — 2026-08-31 점검 M3.
+   기사 4,804p 에 이게 없어서, OS 다크 사용자가 홈(다크)에서 기사를 열면
+   라이트로 번쩍였다. main.css 의 다크 규칙은 전부 [data-theme="dark"] 스코프이고
+   prefers-color-scheme 미디어쿼리는 CSS 에 없으므로, 속성을 여기서 달아줘야 한다.
+   <head> 안에서 동기 실행 — paint 전에 끝나야 깜빡임이 없다.
+   허브와 달리 기사엔 토글 버튼이 없다. 저장된 선택(kc_theme)과 OS 설정만 따른다. */
+(function () {
+  try {
+    var s = localStorage.getItem('kc_theme');
+    if (s === 'dark' || (!s && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  } catch (e) {}
+})();
+</script>
 </head>
 <body>
+<a class="skip-link" href="#kc-main">跳到正文</a>
 <header class="site-header">
-  <a href="../zh/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <!-- width/height = 고유 크기(400x149). CSS 가 height:36px 로 줄이지만 브라우저는
+       이 비율로 자리를 미리 잡아 레이아웃 이동(CLS)을 막는다. 헤더 로고는 첫 화면에
+       보이므로 lazy 가 아니라 eager. -->
+  <a href="../zh/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo" width="400" height="149" loading="eager" decoding="async"></a>
   <div class="lang-switch">
     <a href="../content/essentials-top20.html">KR</a>
     <a href="../content/essentials-top20.en.html">EN</a>
@@ -149,7 +178,7 @@
   </div>
 </header>
 
-<main class="detail-wrap">
+<main class="detail-wrap" id="kc-main" tabindex="-1">
   <nav class="breadcrumb" aria-label="breadcrumb"><a href="../zh/index.html">全部指南</a> &rsaquo; 韩国必买TOP 20</nav>
   <article>
   <h1>48 · 韩国必买TOP 20 — 外国人在韩国才能买到、本国没有或更贵的好物</h1>
@@ -172,7 +201,7 @@
 </ul>
 <hr>
 <h2>1. TOP 20 一览 (摘要表)</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>排名</th>
 <th>类别</th>
 <th>代表产品</th>
@@ -340,14 +369,14 @@
 <td>△</td>
 <td>星巴克韩国 (Starbucks Korea / 스타벅스 코리아)</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p><strong>图例</strong>: 免税退税 ● = 单笔收据 ₩30,000 (~$22 / ~167 RMB / ~3,300 JPY) 以上可强力适用即时退税政策 / △ = 超市 (Mateu / 마트)·便利店 (Convenience Store / 편의점) 仅限部分免税柜台 / 所有外国短期停留者凭护照 + ₩30,000 (~$22 / ~167 RMB / ~3,300 JPY) 以上收据可即时退税 (2026-04 政策基准)。</p>
 <p><strong>类别分布</strong>: K-Beauty (K-Beauty / K-뷰티) 7 + K-Food (K-Food / K-푸드) 5 + 健康 2 + 时尚·杂货 2 + 动漫/周边 2 + 厨具 1 + 传统工艺 1 = <strong>20 个 + 额外 2 个 (第 2 部分末尾)</strong>。</p>
 <hr>
 <h2>2. 各类别详情 — 何处、为何、何价</h2>
 <h3>2-1. K-Beauty (K-Beauty / K-뷰티) (TOP 1~7) — 韩国发明的品类</h3>
 <p><strong>外国人购买理由</strong>: 比本国便宜 30%~50% + Reddit r/AsianBeauty·小红书 (Xiaohongshu)·TikTok #oliveyoung (149.8K 帖子) 验证 + 韩国发明剂型 (气垫·蜗牛黏蛋白·面膜) 已全球标准化。韩国旅游发展局 (KTO) 2024 年外国人购物类别第一 (32%，Korea Herald)。欧利芙洋 (Olive Young / 올리브영) 2024 年外国人销售额达 1 万亿韩元，同比增长 +53% (Herald Business)。</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>#</th>
 <th>产品</th>
 <th>与本国相比</th>
@@ -395,10 +424,10 @@
 <td>本国未销售 (仅限直邮)</td>
 <td>欧利芙洋 (Olive Young / 올리브영) 同时进入畅销榜<strong>第 1·9·15·16 位</strong> (2026-04-16) — 三重畅销品</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h3>2-2. K-Food (K-Food / K-푸드) (TOP 8~12) — 本国价格高或韩国限定口味</h3>
 <p><strong>外国人购买理由</strong>: 比本国价格节省 30%~60% + 限定口味本国未销售。仁川机场 (Incheon Gonghang / 인천공항) 免税店 (Myeonsejeom / 면세점) 2024 年包装食品销售额达 1,524 亿韩元 (7%，药业新闻)。</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>#</th>
 <th>产品</th>
 <th>与本国相比</th>
@@ -434,10 +463,10 @@
 <td>亚马逊 $50+ → <strong>节省 30%</strong>。柑橘 (Gamgyul / 감귤)·冬柏 (Dongbaek / 동백)·荞麦 (Memil / 메밀) 本国未销售</td>
 <td>OSULLOC (OSULLOC / 오설록) 茶馆 6 家 + 济州 (Jeju / 제주) 茶博物馆 + 免税 + 仁川机场 (Incheon Gonghang / 인천공항)。<strong>中国 (CN) ₩50K~120K 礼品套装</strong> 父母·客户首选</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h3>2-3. 健康·保健品 (TOP 13~14) — 中国 (CN) 主力</h3>
 <p><strong>外国人购买理由</strong>: 免税销售额中中国 (CN) 占比 35% (药业新闻 2024)，正官庄 (Cheong Kwan Jang / 정관장) 红参是韩国本土品牌单一销售额第三 (607 亿韩元)。小红书 (Xiaohongshu) “高丽人参”健康养生品类最受欢迎。</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>#</th>
 <th>产品</th>
 <th>与本国相比</th>
@@ -455,9 +484,9 @@
 <td>本国 $80+ → <strong>节省 45%</strong></td>
 <td>欧利芙洋 (Olive Young / 올리브영) 全球畅销榜第 8 位 (2026-04-16)。30% 折扣时 ₩42K。<strong>中国 (CN) 25~35 岁自我管理礼品</strong></td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h3>2-4. 时尚·杂货 + 厨具 + 动漫 + 收藏品 (TOP 15~18·20)</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>#</th>
 <th>产品</th>
 <th>价格</th>
@@ -493,9 +522,9 @@
 <td>₩34,000</td>
 <td>星巴克 (Starbucks / 스타벅스) 光化门 (Gwanghwamun / 광화문)·明洞 (Myeongdong / 明洞)·弘大 (Hongdae / 홍대)·圣水 (Seongsu / 성수) 季节限定。<strong>欧美 (EN) 收藏家转售价 ₩60K~100K</strong> (首尔天际线·韩文设计本国未销售)</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h3>2-5. 传统工艺 (TOP 19) — 欧美 (EN) 手工制作故事首选</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>#</th>
 <th>产品</th>
 <th>价格</th>
@@ -507,7 +536,7 @@
 <td>₩18,000~30,000</td>
 <td>螺钿镶嵌工艺 1,300 年传统，非物质文化遗产。Seoul My Soul Shop (Seoul My Soul Shop / 서울 마이 소울 샵) &gt; 仁寺洞 (Insadong / 인사동) 韩国工艺馆 (Hanguk Gongyegwan / 한국공예관) &gt; 回国后 Etsy $20~80。<strong>r/koreatravel “authentic experience”反复信号 — 欧美 (EN) 溢价合理化首选</strong></td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h3>额外 2 种 (P2 补充)</h3>
 <ul>
 <li><strong>B1. VT (VT / 브이티) 积雪草微针精华 (Reedle Shot / 리들샷) 100/300/700</strong> (₩3,000~9,000) — 大创 (Daiso / 다이소) 明洞 (Myeongdong / 명동) 12 层旗舰店独家限定 K-Beauty (K-Beauty / K-뷰티) 超低价。TikTok 病毒式传播。普通大创 (Daiso / 다이소) 不销售。</li>
@@ -515,7 +544,7 @@
 </ul>
 <hr>
 <h2>3. 哪里买最便宜 — 5 大渠道比较</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>渠道</th>
 <th>K-Beauty (K-Beauty / K-뷰티)</th>
 <th>K-Food (K-Food / K-푸드)</th>
@@ -563,7 +592,7 @@
 <td>-</td>
 <td>悦诗风吟 (Innisfree / 이니스프리)·谜尚 (Missha / 미샤)·兰芝 (Laneige / 라네ige) 独家系列。与欧利芙洋 (Olive Young / 올리브영) 相比价格相同或更贵。品牌店限定季节款可在此购买</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p><strong>结论摘要</strong>:</p>
 <ul>
 <li><strong>K-Beauty (K-Beauty / K-뷰티) 普通系列</strong>: 欧利芙洋 (Olive Young / 올리브영) + 免税即时退税 = 比免税店 (Myeonsejeom / 면세점) 价格<strong>更划算或相同</strong>。</li>
@@ -586,7 +615,7 @@
 <hr>
 <h2>5. 各国推荐优先顺序</h2>
 <h3>中国 (CN) — <strong>本指南的主力目标</strong></h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>优先顺序</th>
 <th>类别</th>
 <th>代表产品</th>
@@ -622,10 +651,10 @@
 <td>奶粉 (Bunyu / 분유)·婴幼儿营养品 (Yua Yeongyangje / 유아 영양제)·纸尿裤 (Gijeogwi / 기저귀) (大型超市 (Mateu / 마트))</td>
 <td>₩100,000~250,000</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p><strong>中国 (CN) 客单价平均</strong>: 免税店 (Myeonsejeom / 면세jeom) 人均约 ₩900,000~1,500,000 (根据 2024 年免税销售额占比 35% 估算)。<strong>小红书 (Xiaohongshu) 搜索“韩国必买伴手礼”→ 确定愿望清单 → 抵达韩国后提货</strong> 模式是标准。</p>
 <h3>日本 (JP)</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>优先顺序</th>
 <th>类别</th>
 <th>代表产品</th>
@@ -661,10 +690,10 @@
 <td>Tamburins (Tamburins / 탬버린즈) 护手霜 (Jennie (Jennie / 제니) 代言)</td>
 <td>₩30,000~80,000</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p><strong>日本 (JP) 决定标准</strong>: “配りやすい (易于分发)” + “可愛い (可爱)”同时满足是绝对条件。<strong>无法单独包装的商品将从候选名单中剔除</strong>。</p>
 <h3>欧美 (EN) (美国·欧洲·澳大利亚)</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>优先顺序</th>
 <th>类别</th>
 <th>代表产品</th>
@@ -700,7 +729,7 @@
 <td>真露 (Jinro Chamisul / 진로 참이슬) + 传统酒杯 4 件套</td>
 <td>₩25,000</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p><strong>欧美 (EN) 决定标准</strong>: “authentic (地道) + community-verified (社区验证)”。r/AsianBeauty / r/koreatravel / Reddit AMA 认证商品优先。<strong>无广告的独立·手工制作故事</strong> 是偏爱奢华品的本质。</p>
 <hr>
 <h2>6. 行李重量 / 液体 / 食品入境规定</h2>
@@ -746,34 +775,7 @@
     <div><a href="dongmyo.zh.html" style="color:var(--red);">东庙跳蚤市场+钟路三街夜市 &rarr;</a></div>
   </nav>
 
-  <section id="kc-related" style="display:none;margin:2.2rem 0 0.5rem;">
-    <h2 style="font-size:1.1rem;margin-bottom:0.8rem;">相关指南</h2>
-    <div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"></div>
-  </section>
-  <script>
-  // related guides — 같은 카테고리 최신 6편 (contents.json fetch·언어 suffix 자동, 2026-07-04)
-  (function() {
-    var m = location.pathname.match(/\/content\/(.+?)(\.en|\.zh|\.ja)?\.html$/);
-    if (!m) return;
-    var slug = m[1], suf = m[2] || '';
-    fetch('../data/contents.json').then(function(r) { return r.json(); }).then(function(items) {
-      var me = null;
-      for (var i = 0; i < items.length; i++) { if (items[i].slug === slug) { me = items[i]; break; } }
-      if (!me) return;
-      var pool = items.filter(function(x) { return x.slug !== slug && x.category === me.category; });
-      pool.sort(function(a, b) { return (parseInt(b.id, 10) || 0) - (parseInt(a.id, 10) || 0); });
-      var picks = pool.slice(0, 6);
-      if (!picks.length) return;
-      document.getElementById('kc-related-grid').innerHTML = picks.map(function(x) {
-        var t = suf ? (x.title_en || x.title_kr) : (x.title_kr || x.title_en);
-        var ok = suf === '' || (suf === '.en' ? x.en_available : (suf === '.zh' ? x.cn_available : x.jp_available));
-        var href = x.slug + (ok ? suf : '') + '.html';
-        return '<a href="' + href + '" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">' + t + '</a>';
-      }).join('');
-      document.getElementById('kc-related').style.display = 'block';
-    }).catch(function() {});
-  })();
-  </script>
+  <section id="kc-related" style="margin:2.2rem 0 0.5rem;"><h2 style="font-size:1.1rem;margin-bottom:0.8rem;">相关指南</h2><div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"><a href="korea-souvenir-data-guide.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Korean Souvenirs, Chosen by Data — A Matrix by Recipient and Budget</a><a href="busan-shopping-guide.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Busan Shopping Guide — Between the World&#x27;s Largest Department Store and a Wartime Alley Market</a><a href="korea-bubbletea-drink-chains.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Bubble Tea &amp; Drink Chains in Korea: What to Sip Besides Coffee</a><a href="korea-icecream-chains.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Korean Ice Cream Chains: Why Baskin Robbins Korea Is a Different World</a><a href="korea-burger-chains.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Korean Burger Chains: The Complete Guide to Mom&#x27;s Touch, Lotteria &amp; More</a><a href="korea-underground-mall.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Underground Mall Shopping (GOTO Mall·Bupyeong·Gangnam)</a></div></section>
   <!-- kc-comments -->
   <section id="kc-comments" style="margin:2.5rem 0 0.5rem;">
     <h2>评论</h2>

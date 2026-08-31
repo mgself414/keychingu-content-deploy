@@ -34,7 +34,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/main.css">
 <style>
 .detail-wrap {
@@ -50,11 +50,11 @@
 .breadcrumb a { color: var(--red); font-weight: 600; }
 .detail-wrap h1 {
   font-size: 28px; font-weight: 800;
-  color: var(--black); margin-bottom: 8px;
+  color: var(--text); margin-bottom: 8px;
 }
 .detail-wrap h2 {
   font-size: 22px; font-weight: 700;
-  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  color: var(--text); margin-top: 32px; margin-bottom: 12px;
   padding-bottom: 6px;
   border-bottom: 2px solid var(--red);
 }
@@ -73,10 +73,19 @@
   font-size: 14px; line-height: 1.6;
   color: var(--text-mid); margin-bottom: 6px;
 }
+/* 표는 자기 컨테이너 안에서만 가로 스크롤한다 — 이게 없으면 min-content 폭이
+   뷰포트를 넘는 순간 페이지 전체가 가로로 밀렸다 (2026-08-31 점검 M2).
+   table 자체는 table 로 남겨 행·열 관계를 보존한다(display:block 으로 해결하지 않는 이유). */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 16px;
+}
 .detail-wrap table {
   width: 100%; border-collapse: collapse;
   margin-bottom: 16px; font-size: 13px;
 }
+.table-scroll > table { margin-bottom: 0; }
 .detail-wrap th {
   background: var(--black); color: #fff;
   padding: 10px 12px; text-align: left;
@@ -137,10 +146,30 @@
   user-select: none;
 }
 </style>
+<script>
+/* 테마 부트스트랩 — 2026-08-31 점검 M3.
+   기사 4,804p 에 이게 없어서, OS 다크 사용자가 홈(다크)에서 기사를 열면
+   라이트로 번쩍였다. main.css 의 다크 규칙은 전부 [data-theme="dark"] 스코프이고
+   prefers-color-scheme 미디어쿼리는 CSS 에 없으므로, 속성을 여기서 달아줘야 한다.
+   <head> 안에서 동기 실행 — paint 전에 끝나야 깜빡임이 없다.
+   허브와 달리 기사엔 토글 버튼이 없다. 저장된 선택(kc_theme)과 OS 설정만 따른다. */
+(function () {
+  try {
+    var s = localStorage.getItem('kc_theme');
+    if (s === 'dark' || (!s && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  } catch (e) {}
+})();
+</script>
 </head>
 <body>
+<a class="skip-link" href="#kc-main">跳到正文</a>
 <header class="site-header">
-  <a href="../zh/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <!-- width/height = 고유 크기(400x149). CSS 가 height:36px 로 줄이지만 브라우저는
+       이 비율로 자리를 미리 잡아 레이아웃 이동(CLS)을 막는다. 헤더 로고는 첫 화면에
+       보이므로 lazy 가 아니라 eager. -->
+  <a href="../zh/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo" width="400" height="149" loading="eager" decoding="async"></a>
   <div class="lang-switch">
     <a href="../content/kpop-fan.html">KR</a>
     <a href="../content/kpop-fan.en.html">EN</a>
@@ -149,14 +178,14 @@
   </div>
 </header>
 
-<main class="detail-wrap">
+<main class="detail-wrap" id="kc-main" tabindex="-1">
   <nav class="breadcrumb" aria-label="breadcrumb"><a href="../zh/index.html">全部指南</a> &rsaquo; K-POP追星完全指南</nav>
   <article>
   <h1>K-POP 追星完全指南 — 公司大楼·周边商店·粉丝咖啡厅到音乐节目全攻略</h1>
 <blockquote><p>韩流粉丝不可错过的首尔 K-POP 圣地巡礼完美地图</p></blockquote>
 <hr>
 <h2>一览表</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>项目</th>
 <th>信息</th>
 </tr></thead><tbody>
@@ -184,11 +213,11 @@
 <td><strong>费用</strong></td>
 <td>周边商品 ₩10,000~₩100,000+ (~70~700 RMB)，粉丝签售会 免费~₩100,000</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>K-POP 追星的三大支柱</h2>
 <p>首尔的 K-POP 体验大致分为三类：</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>支柱</th>
 <th>内容</th>
 <th>推荐度</th>
@@ -212,7 +241,7 @@
 <td>⭐⭐⭐⭐⭐</td>
 <td>高 (必须提前报名)</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>Part 1：四大经纪公司大楼巡游</h2>
 <h3>1. HYBE (하이브 / Hybe) — BTS·ILLIT·LE SSERAFIM·NEWJEANS 等</h3>
@@ -363,7 +392,7 @@
 <li>新罗唱片附近小巷</li>
 </ul>
 <h4>粉丝店特点</h4>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>特点</th>
 <th>说明</th>
 </tr></thead><tbody>
@@ -387,7 +416,7 @@
 <td><strong>粉丝文化</strong></td>
 <td>粉丝之间交流信息的场所</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h4>弘大粉丝店巡游 (1小时)</h4>
 <p>```</p>
 <p>弘大入口站 (Hongdae-ipgu-yeok / 홍대입구역) 6号出口 → 进入小巷 → 漫步各粉丝店 →</p>
@@ -403,7 +432,7 @@
 <hr>
 <h3>官方周边线上购物</h3>
 <p><strong>各经纪公司/偶像官方商城：</strong></p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>团体</th>
 <th>官方周边购买渠道</th>
 </tr></thead><tbody>
@@ -427,7 +456,7 @@
 <td><strong>NewJeans</strong></td>
 <td>WEVERSE SHOP (HYBE 官方)</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>Part 3：粉丝活动 — 签售会·音乐节目·粉丝见面会</h2>
 <h3>1. 粉丝签售会 (Fan Sign / 팬사인회)</h3>
@@ -441,7 +470,7 @@
 <p>2. <strong>进入预约网站</strong>：在英特帕克 (Interpark / 인터파크) 或相关票务平台预约</p>
 <p>3. <strong>参与活动</strong>：在指定时间·地点到场取号 → 等待 → 与偶像会面</p>
 <h4>签售会礼仪</h4>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>规则</th>
 <th>说明</th>
 </tr></thead><tbody>
@@ -465,12 +494,12 @@
 <td><strong>等待时间</strong></td>
 <td>可能长达6~12小时 (热门团体可能更长)</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h3>2. 音乐节目 (Music Shows / 음악방송) 观看</h3>
 <p><strong>是什么？</strong> 首尔每周播出的 K-POP 音乐节目，可以作为现场观众亲身参与</p>
 <h4>主要音乐节目</h4>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>节目</th>
 <th>电视台</th>
 <th>播出时间</th>
@@ -505,7 +534,7 @@
 <td>~1,000人</td>
 <td>中等</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h4>申请观看音乐节目</h4>
 <p>1. <strong>提前申请</strong>：在电视台官方 SNS 上申请 (通常提前1周)</p>
 <p>2. <strong>先到先得</strong>：申请截止后公布中签者 (大部分名额极快抢完)</p>
@@ -523,7 +552,7 @@
 <h3>3. 粉丝见面会 (Fan Meeting / 팬미팅) 及特别活动</h3>
 <p><strong>是什么？</strong> 粉丝与偶像进行互动的特别活动 (桌游、Q&amp;A、游戏等)</p>
 <h4>粉丝见面会特点</h4>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>特点</th>
 <th>说明</th>
 </tr></thead><tbody>
@@ -547,13 +576,13 @@
 <td><strong>体验</strong></td>
 <td>比签售会更有意义 (可以交谈互动)</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>Part 4：K-POP 咖啡厅 &amp; 粉丝社区</h2>
 <h3>弘大 (Hongdae / 홍대) K-POP 咖啡厅街</h3>
 <p><strong>特点：</strong> 聚集 K-POP 粉丝的咖啡厅，也有各团专属主题咖啡厅。</p>
 <h4>推荐咖啡厅</h4>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>咖啡厅</th>
 <th>特点</th>
 <th>推荐度</th>
@@ -578,7 +607,7 @@
 <td>多团混合主题</td>
 <td>⭐⭐⭐⭐</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p><strong>在这里可以：</strong></p>
 <ul>
 <li>与粉丝交流信息</li>
@@ -588,7 +617,7 @@
 </ul>
 <hr>
 <h3>线上粉丝社区</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>社区</th>
 <th>说明</th>
 <th>语言</th>
@@ -613,7 +642,7 @@
 <td>官方粉丝应用程序 (HYBE)</td>
 <td>多语言</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>Part 5：实战完整指南 — 1日 K-POP 追星行程</h2>
 <h3>半天路线 (3小时)</h3>
@@ -643,7 +672,7 @@
 <p>```</p>
 <hr>
 <h2>K-POP 追星必备物品</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>物品</th>
 <th>原因</th>
 </tr></thead><tbody>
@@ -675,10 +704,10 @@
 <td><strong>记事本</strong></td>
 <td>与粉丝交换信息时使用</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>韩国粉丝 vs 外国粉丝的差异</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>要素</th>
 <th>韩国粉丝</th>
 <th>外国粉丝</th>
@@ -708,10 +737,10 @@
 <td>偏好国内粉丝店</td>
 <td>偏好线上购物</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>语言障碍的克服方法</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>场景</th>
 <th>解决方案</th>
 </tr></thead><tbody>
@@ -735,7 +764,7 @@
 <td><strong>与粉丝沟通</strong></td>
 <td>找到英语偶像粉丝账号并关注</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>最终贴士</h2>
 <p>1. <strong>首尔行程中预留2~3天，其中1天专门用于 K-POP 追星</strong></p>
@@ -745,7 +774,7 @@
 <p>5. <strong>弘大粉丝店街 (Hongdae / 홍대)</strong> = K-POP 追星最佳据点</p>
 <hr>
 <h2>参考链接</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>分类</th>
 <th>链接</th>
 <th>说明</th>
@@ -775,7 +804,7 @@
 <td>@keychingu.korea</td>
 <td>키친구 (Keychingu) K-POP 内容</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <p><em>本指南以2026年4月信息为基准。签售会·音乐节目的日程与场地经常变动，请务必在各经纪公司·电视台官方渠道确认最新信息。</em></p>
 <h2>🌐 外部资料</h2>
@@ -802,34 +831,7 @@
     <div><a href="vegan-halal.zh.html" style="color:var(--red);">韩国素食·清真·宗教饮食指南 &rarr;</a></div>
   </nav>
 
-  <section id="kc-related" style="display:none;margin:2.2rem 0 0.5rem;">
-    <h2 style="font-size:1.1rem;margin-bottom:0.8rem;">相关指南</h2>
-    <div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"></div>
-  </section>
-  <script>
-  // related guides — 같은 카테고리 최신 6편 (contents.json fetch·언어 suffix 자동, 2026-07-04)
-  (function() {
-    var m = location.pathname.match(/\/content\/(.+?)(\.en|\.zh|\.ja)?\.html$/);
-    if (!m) return;
-    var slug = m[1], suf = m[2] || '';
-    fetch('../data/contents.json').then(function(r) { return r.json(); }).then(function(items) {
-      var me = null;
-      for (var i = 0; i < items.length; i++) { if (items[i].slug === slug) { me = items[i]; break; } }
-      if (!me) return;
-      var pool = items.filter(function(x) { return x.slug !== slug && x.category === me.category; });
-      pool.sort(function(a, b) { return (parseInt(b.id, 10) || 0) - (parseInt(a.id, 10) || 0); });
-      var picks = pool.slice(0, 6);
-      if (!picks.length) return;
-      document.getElementById('kc-related-grid').innerHTML = picks.map(function(x) {
-        var t = suf ? (x.title_en || x.title_kr) : (x.title_kr || x.title_en);
-        var ok = suf === '' || (suf === '.en' ? x.en_available : (suf === '.zh' ? x.cn_available : x.jp_available));
-        var href = x.slug + (ok ? suf : '') + '.html';
-        return '<a href="' + href + '" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">' + t + '</a>';
-      }).join('');
-      document.getElementById('kc-related').style.display = 'block';
-    }).catch(function() {});
-  })();
-  </script>
+  <section id="kc-related" style="margin:2.2rem 0 0.5rem;"><h2 style="font-size:1.1rem;margin-bottom:0.8rem;">相关指南</h2><div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"><a href="busan-kpop-pilgrimage.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Busan K-pop Pilgrimage — Walking BTS&#x27;s Hometown as a Fan</a><a href="busan-fine-dining-pilgrimage.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Busan Fine Dining Pilgrimage — Michelin Stars, Chefs&#x27; Regular Spots, and the Post Office&#x27;s Picks</a><a href="culinary-class-wars-restaurants.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Eat What You Watched — A Culinary Class Wars Restaurant Pilgrimage in Seoul</a><a href="kcontent-full-set-7-index.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">K-Content Full Set 7 Guide Integrated Index for Foreigners</a><a href="kdrama-regional-locations-busan-jeonju-gangwon.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">K-Drama Regional Filming Locations Deep Dive — Busan·Jeonju·Gangwon</a><a href="seoul-kdrama-filming-locations-2026.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Seoul K-Drama Filming Locations 2026 Complete Guide</a></div></section>
   <!-- kc-comments -->
   <section id="kc-comments" style="margin:2.5rem 0 0.5rem;">
     <h2>评论</h2>

@@ -34,7 +34,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/main.css">
 <style>
 .detail-wrap {
@@ -50,11 +50,11 @@
 .breadcrumb a { color: var(--red); font-weight: 600; }
 .detail-wrap h1 {
   font-size: 28px; font-weight: 800;
-  color: var(--black); margin-bottom: 8px;
+  color: var(--text); margin-bottom: 8px;
 }
 .detail-wrap h2 {
   font-size: 22px; font-weight: 700;
-  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  color: var(--text); margin-top: 32px; margin-bottom: 12px;
   padding-bottom: 6px;
   border-bottom: 2px solid var(--red);
 }
@@ -73,10 +73,19 @@
   font-size: 14px; line-height: 1.6;
   color: var(--text-mid); margin-bottom: 6px;
 }
+/* 표는 자기 컨테이너 안에서만 가로 스크롤한다 — 이게 없으면 min-content 폭이
+   뷰포트를 넘는 순간 페이지 전체가 가로로 밀렸다 (2026-08-31 점검 M2).
+   table 자체는 table 로 남겨 행·열 관계를 보존한다(display:block 으로 해결하지 않는 이유). */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 16px;
+}
 .detail-wrap table {
   width: 100%; border-collapse: collapse;
   margin-bottom: 16px; font-size: 13px;
 }
+.table-scroll > table { margin-bottom: 0; }
 .detail-wrap th {
   background: var(--black); color: #fff;
   padding: 10px 12px; text-align: left;
@@ -137,10 +146,30 @@
   user-select: none;
 }
 </style>
+<script>
+/* 테마 부트스트랩 — 2026-08-31 점검 M3.
+   기사 4,804p 에 이게 없어서, OS 다크 사용자가 홈(다크)에서 기사를 열면
+   라이트로 번쩍였다. main.css 의 다크 규칙은 전부 [data-theme="dark"] 스코프이고
+   prefers-color-scheme 미디어쿼리는 CSS 에 없으므로, 속성을 여기서 달아줘야 한다.
+   <head> 안에서 동기 실행 — paint 전에 끝나야 깜빡임이 없다.
+   허브와 달리 기사엔 토글 버튼이 없다. 저장된 선택(kc_theme)과 OS 설정만 따른다. */
+(function () {
+  try {
+    var s = localStorage.getItem('kc_theme');
+    if (s === 'dark' || (!s && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  } catch (e) {}
+})();
+</script>
 </head>
 <body>
+<a class="skip-link" href="#kc-main">Skip to content</a>
 <header class="site-header">
-  <a href="../en/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <!-- width/height = 고유 크기(400x149). CSS 가 height:36px 로 줄이지만 브라우저는
+       이 비율로 자리를 미리 잡아 레이아웃 이동(CLS)을 막는다. 헤더 로고는 첫 화면에
+       보이므로 lazy 가 아니라 eager. -->
+  <a href="../en/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo" width="400" height="149" loading="eager" decoding="async"></a>
   <div class="lang-switch">
     <a href="../content/24h-shopping.html">KR</a>
     <a href="../content/24h-shopping.en.html" class="active">EN</a>
@@ -149,7 +178,7 @@
   </div>
 </header>
 
-<main class="detail-wrap">
+<main class="detail-wrap" id="kc-main" tabindex="-1">
   <nav class="breadcrumb" aria-label="breadcrumb"><a href="../en/index.html">All Guides</a> &rsaquo; 41 · Seoul's 24-Hour Shopping Map</nav>
   <article>
   <h1>41 · Seoul&#x27;s 24-Hour Shopping Map — Why the Lights Never Go Out</h1>
@@ -169,7 +198,7 @@
 </ul>
 <hr>
 <h2>1. The Three Pillars of 24-Hour Shopping in Seoul</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>Pillar</th>
 <th>Main Area</th>
 <th>Core Hours</th>
@@ -197,13 +226,13 @@
 <td>Duty-free K-Beauty, liquor, cigarettes</td>
 <td>§4</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p>Standard retail hours in Korea are <strong>10:00 to 22:00</strong>. Anything outside those three pillars closes at 22:00, no exceptions. So when someone says &quot;let&#x27;s go shopping after 10 PM&quot; in Seoul, it always means one of these three.</p>
 <hr>
 <h2>2. Dongdaemun (동대문) — Seoul&#x27;s Late-Night Fashion Heart</h2>
 <p><strong>For the deep dive</strong>: see the Dongdaemun late-night shopping guide (31_동대문_심야_쇼핑.md). This guide treats Dongdaemun as a connector inside the bigger 24-hour map.</p>
 <h3>2-1. Key Stores at a Glance</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>Store</th>
 <th>Address</th>
 <th>Hours</th>
@@ -239,7 +268,7 @@
 <td>Exterior open 24h</td>
 <td>Zaha Hadid-designed landmark, prime night photo spot</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h3>2-2. The Pre-Dawn Dongdaemun Route (23:00 → 04:00)</h3>
 <p>1. <strong>23:00</strong> — Dongdaemun History &amp; Culture Park Station (동대문역사문화공원역) on Line 2, Exit 14. Walk to Doota (3 min).</p>
 <p>2. <strong>23:30</strong> — Start at Doota&#x27;s 8F and work down (5F women&#x27;s, 4F men&#x27;s, 3F accessories).</p>
@@ -257,7 +286,7 @@
 <h2>3. Convenience Stores — Seoul&#x27;s Citywide 24-Hour Mini Mart</h2>
 <p>Seoul&#x27;s three big convenience-store chains — <strong>CU, GS25, and Emart24</strong> — run roughly 99% of their locations 24 hours a day. They are the most realistic late-night shopping channel for any visitor.</p>
 <h3>3-1. Top Souvenirs to Buy at a Convenience Store (Practical Gifts)</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>Item</th>
 <th>Price</th>
 <th>Why It Sells</th>
@@ -293,9 +322,9 @@
 <td>Popular among Japanese and Chinese MZ</td>
 <td>Myeongdong, Hongdae</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h3>3-2. Notable Late-Night Branches</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>Branch</th>
 <th>Address</th>
 <th>Notes</th>
@@ -320,7 +349,7 @@
 <td>Incheon Jung-gu Gonghang-ro 272 (인천광역시 중구 공항로 272)</td>
 <td>Last-minute snack run before departure</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h3>3-3. Convenience Store Tips</h3>
 <ul>
 <li><strong>7-Eleven only runs 24h at select branches</strong> — plan your route around CU and GS25 instead.</li>
@@ -332,7 +361,7 @@
 <h2>4. Incheon Airport — Korea&#x27;s Only Genuinely 24-Hour Duty-Free</h2>
 <h3>4-1. Departure vs. Arrival Hall: Two Separate Worlds</h3>
 <p>Korea&#x27;s airport duty-free is structurally split between departure and arrival halls.</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>Zone</th>
 <th>Location</th>
 <th>Hours</th>
@@ -356,9 +385,9 @@
 <td><strong>24 hours</strong></td>
 <td>Anytime</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h3>4-2. Stores Open 24 Hours</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>Store</th>
 <th>Terminal</th>
 <th>Notes</th>
@@ -378,7 +407,7 @@
 <td>T1</td>
 <td>Late-night low-cost gifts · limited operation 00:00–05:00</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <ul>
 <li><strong>Lotte, Shilla, and Shinsegae duty-free run 05:30 to 22:30.</strong> Late-night layover passengers only have arrival duty-free + convenience stores as options.</li>
 <li>Cigarettes and liquor at airport duty-free require <strong>passport scan at departure.</strong> Even at arrival duty-free, the bring-in cap is 1L liquor / 200 cigarettes.</li>
@@ -469,34 +498,7 @@
     <div><a href="tteok-guide.en.html" style="color:var(--red);">Seoul Tteok Shops (떡집) &rarr;</a></div>
   </nav>
 
-  <section id="kc-related" style="display:none;margin:2.2rem 0 0.5rem;">
-    <h2 style="font-size:1.1rem;margin-bottom:0.8rem;">Related Guides</h2>
-    <div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"></div>
-  </section>
-  <script>
-  // related guides — 같은 카테고리 최신 6편 (contents.json fetch·언어 suffix 자동, 2026-07-04)
-  (function() {
-    var m = location.pathname.match(/\/content\/(.+?)(\.en|\.zh|\.ja)?\.html$/);
-    if (!m) return;
-    var slug = m[1], suf = m[2] || '';
-    fetch('../data/contents.json').then(function(r) { return r.json(); }).then(function(items) {
-      var me = null;
-      for (var i = 0; i < items.length; i++) { if (items[i].slug === slug) { me = items[i]; break; } }
-      if (!me) return;
-      var pool = items.filter(function(x) { return x.slug !== slug && x.category === me.category; });
-      pool.sort(function(a, b) { return (parseInt(b.id, 10) || 0) - (parseInt(a.id, 10) || 0); });
-      var picks = pool.slice(0, 6);
-      if (!picks.length) return;
-      document.getElementById('kc-related-grid').innerHTML = picks.map(function(x) {
-        var t = suf ? (x.title_en || x.title_kr) : (x.title_kr || x.title_en);
-        var ok = suf === '' || (suf === '.en' ? x.en_available : (suf === '.zh' ? x.cn_available : x.jp_available));
-        var href = x.slug + (ok ? suf : '') + '.html';
-        return '<a href="' + href + '" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">' + t + '</a>';
-      }).join('');
-      document.getElementById('kc-related').style.display = 'block';
-    }).catch(function() {});
-  })();
-  </script>
+  <section id="kc-related" style="margin:2.2rem 0 0.5rem;"><h2 style="font-size:1.1rem;margin-bottom:0.8rem;">Related Guides</h2><div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"><a href="korea-souvenir-data-guide.en.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Korean Souvenirs, Chosen by Data — A Matrix by Recipient and Budget</a><a href="busan-shopping-guide.en.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Busan Shopping Guide — Between the World&#x27;s Largest Department Store and a Wartime Alley Market</a><a href="korea-bubbletea-drink-chains.en.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Bubble Tea &amp; Drink Chains in Korea: What to Sip Besides Coffee</a><a href="korea-icecream-chains.en.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Korean Ice Cream Chains: Why Baskin Robbins Korea Is a Different World</a><a href="korea-burger-chains.en.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Korean Burger Chains: The Complete Guide to Mom&#x27;s Touch, Lotteria &amp; More</a><a href="korea-underground-mall.en.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Underground Mall Shopping (GOTO Mall·Bupyeong·Gangnam)</a></div></section>
   <!-- kc-comments -->
   <section id="kc-comments" style="margin:2.5rem 0 0.5rem;">
     <h2>Comments</h2>

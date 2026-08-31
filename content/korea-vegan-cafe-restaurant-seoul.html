@@ -34,7 +34,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/main.css">
 <style>
 .detail-wrap {
@@ -50,11 +50,11 @@
 .breadcrumb a { color: var(--red); font-weight: 600; }
 .detail-wrap h1 {
   font-size: 28px; font-weight: 800;
-  color: var(--black); margin-bottom: 8px;
+  color: var(--text); margin-bottom: 8px;
 }
 .detail-wrap h2 {
   font-size: 22px; font-weight: 700;
-  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  color: var(--text); margin-top: 32px; margin-bottom: 12px;
   padding-bottom: 6px;
   border-bottom: 2px solid var(--red);
 }
@@ -73,10 +73,19 @@
   font-size: 14px; line-height: 1.6;
   color: var(--text-mid); margin-bottom: 6px;
 }
+/* 표는 자기 컨테이너 안에서만 가로 스크롤한다 — 이게 없으면 min-content 폭이
+   뷰포트를 넘는 순간 페이지 전체가 가로로 밀렸다 (2026-08-31 점검 M2).
+   table 자체는 table 로 남겨 행·열 관계를 보존한다(display:block 으로 해결하지 않는 이유). */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 16px;
+}
 .detail-wrap table {
   width: 100%; border-collapse: collapse;
   margin-bottom: 16px; font-size: 13px;
 }
+.table-scroll > table { margin-bottom: 0; }
 .detail-wrap th {
   background: var(--black); color: #fff;
   padding: 10px 12px; text-align: left;
@@ -137,11 +146,31 @@
   user-select: none;
 }
 </style>
+<script>
+/* 테마 부트스트랩 — 2026-08-31 점검 M3.
+   기사 4,804p 에 이게 없어서, OS 다크 사용자가 홈(다크)에서 기사를 열면
+   라이트로 번쩍였다. main.css 의 다크 규칙은 전부 [data-theme="dark"] 스코프이고
+   prefers-color-scheme 미디어쿼리는 CSS 에 없으므로, 속성을 여기서 달아줘야 한다.
+   <head> 안에서 동기 실행 — paint 전에 끝나야 깜빡임이 없다.
+   허브와 달리 기사엔 토글 버튼이 없다. 저장된 선택(kc_theme)과 OS 설정만 따른다. */
+(function () {
+  try {
+    var s = localStorage.getItem('kc_theme');
+    if (s === 'dark' || (!s && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  } catch (e) {}
+})();
+</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "CafeOrCoffeeShop", "name": "외국인 한국 비건 카페 식당 cluster 서울 12선 deep dive", "url": "https://mgself414.github.io/keychingu-content-deploy/content/korea-vegan-cafe-restaurant-seoul.html", "image": "https://mgself414.github.io/keychingu-content-deploy/og/korea-vegan-cafe-restaurant-seoul.png", "address": {"@type": "PostalAddress", "addressLocality": "Seoul", "addressCountry": "KR"}}</script>
 </head>
 <body>
+<a class="skip-link" href="#kc-main">본문 바로가기</a>
 <header class="site-header">
-  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <!-- width/height = 고유 크기(400x149). CSS 가 height:36px 로 줄이지만 브라우저는
+       이 비율로 자리를 미리 잡아 레이아웃 이동(CLS)을 막는다. 헤더 로고는 첫 화면에
+       보이므로 lazy 가 아니라 eager. -->
+  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo" width="400" height="149" loading="eager" decoding="async"></a>
   <div class="lang-switch">
     <a href="../content/korea-vegan-cafe-restaurant-seoul.html" class="active">KR</a>
     <a href="../content/korea-vegan-cafe-restaurant-seoul.en.html">EN</a>
@@ -150,7 +179,7 @@
   </div>
 </header>
 
-<main class="detail-wrap">
+<main class="detail-wrap" id="kc-main" tabindex="-1">
   <nav class="breadcrumb" aria-label="breadcrumb"><a href="../index.html">전체 가이드</a> &rsaquo; 외국인 한국 비건 카페 식당 cluster 서울 12선 deep dive</nav>
   <article>
   <h1>외국인 한국 비건 카페 식당 cluster 서울 12선 deep dive — 강남·홍대·이태원·외국인 vegan 매니아 1순위·HappyCow</h1>
@@ -162,7 +191,7 @@
 <p>서울은 HappyCow 글로벌 랭킹 기준 아시아 Top 5 비건 도시에 꾸준히 오른다. 외국인 vegan·vegetarian 관광객이 가장 자주 묻는 질문이 &quot;한국에서 비건 먹기 어렵지 않나요?&quot;인데, 이태원·홍대·강남 세 축을 알면 한 달 내내 식단에 지장이 없다. 이 가이드는 세 구역 + 앱 인프라를 중심으로, 현장에서 바로 쓸 수 있는 정보만 담았다.</p>
 <hr>
 <h2>한눈에 보기</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>#</th>
 <th>구역</th>
 <th>유형</th>
@@ -279,7 +308,7 @@
 <td>없음</td>
 <td>—</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>12선 4축 심화</h2>
 <h3>축 1: 강남 (3선)</h3>
@@ -402,7 +431,7 @@
 <h3>축 4: 외국인 인프라·시즌 (3선)</h3>
 <h4>10. 다국어 안내 인프라</h4>
 <p>서울 비건 여행자가 현장에서 가장 많이 쓰는 앱·서비스 목록.</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>도구</th>
 <th>설명</th>
 <th>언어</th>
@@ -432,7 +461,7 @@
 <td>한국어 모르는 외국인 실시간 식당 안내·예약 도움</td>
 <td>EN·JP·CN·무료</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p><strong>핵심 팁</strong>: HappyCow 앱에서 서울 지도 열고 &quot;vegan&quot; 필터 → 현 위치 기반 검색. 리뷰에 &quot;staff spoke English&quot;, &quot;had English menu&quot; 등 외국인 실제 경험 메모가 있어 신뢰도 높음.</p>
 <hr>
 <h4>11. 외국인 1day 패스 (Klook·KKday·vegan 패키지)</h4>
@@ -446,7 +475,7 @@
 </ul>
 <hr>
 <h4>12. 시즌 비건 이벤트</h4>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>시즌</th>
 <th>이벤트</th>
 <th>비건 관련 포인트</th>
@@ -476,7 +505,7 @@
 <td>실내 비건 카페 시즌</td>
 <td>따뜻한 오트라떼 + 비건 케이크. 강남·홍대 비건 카페 실내 집중</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>⚠️ 외국인 자주 하는 실수 3</h2>
 <p><strong>실수 1: &quot;채식&quot; = 완전 비건이라 가정</strong></p>
@@ -536,7 +565,7 @@
 <p>이동: 지하철 + 택시 일부. 총 비용: 브런치 ₩15,000~20,000 + 점심 ₩20,000~30,000 + 저녁 ₩40,000~100,000</p>
 <hr>
 <h2>시즌 매트릭스 (외국인 매니아)</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>시즌</th>
 <th>시그니처 활동</th>
 <th>외국인 매니아 시급도</th>
@@ -561,7 +590,7 @@
 <td>실내 비건 카페·오트라떼 시즌</td>
 <td>★★★★</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>외국인 5 Segment 매트릭스</h2>
 <ul>
@@ -573,7 +602,7 @@
 </ul>
 <hr>
 <h2>시간대별 동선 추천</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>시간대</th>
 <th>추천 활동</th>
 </tr></thead><tbody>
@@ -597,7 +626,7 @@
 <td><strong>야간 (21:00~)</strong></td>
 <td>홍대 24h 카페, 이태원 야경 + 비건 바</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>외국인 페인포인트 가이드</h2>
 <ul>
@@ -609,7 +638,7 @@
 <hr>
 <h2>외국인 매니아 수치 매트릭스</h2>
 <p>외국인 한국 관광객 = <strong>연 1,750만 명 (2024)</strong>·MZ (20-39세) <strong>58%</strong>·평균 체류 <strong>6.4일</strong>·평균 지출 <strong>1,605 USD/인</strong>·재방문율 <strong>23%</strong> (한국관광공사 2024).</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>항목</th>
 <th>수치</th>
 <th>출처</th>
@@ -649,7 +678,7 @@
 <td>대형 프랜차이즈 + 독립 카페 <strong>표준화</strong></td>
 <td>현장 조사</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>외국인 fit</h2>
 <p>★★★★★ EN·JP·CN MZ + foodie + vegan·1순위</p>
@@ -706,34 +735,7 @@
     <div><a href="korea-vegan-kfood-foreigner.html" style="color:var(--red);">외국인 한국 vegan K-food 12선 deep dive &rarr;</a></div>
   </nav>
 
-  <section id="kc-related" style="display:none;margin:2.2rem 0 0.5rem;">
-    <h2 style="font-size:1.1rem;margin-bottom:0.8rem;">관련 가이드</h2>
-    <div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"></div>
-  </section>
-  <script>
-  // related guides — 같은 카테고리 최신 6편 (contents.json fetch·언어 suffix 자동, 2026-07-04)
-  (function() {
-    var m = location.pathname.match(/\/content\/(.+?)(\.en|\.zh|\.ja)?\.html$/);
-    if (!m) return;
-    var slug = m[1], suf = m[2] || '';
-    fetch('../data/contents.json').then(function(r) { return r.json(); }).then(function(items) {
-      var me = null;
-      for (var i = 0; i < items.length; i++) { if (items[i].slug === slug) { me = items[i]; break; } }
-      if (!me) return;
-      var pool = items.filter(function(x) { return x.slug !== slug && x.category === me.category; });
-      pool.sort(function(a, b) { return (parseInt(b.id, 10) || 0) - (parseInt(a.id, 10) || 0); });
-      var picks = pool.slice(0, 6);
-      if (!picks.length) return;
-      document.getElementById('kc-related-grid').innerHTML = picks.map(function(x) {
-        var t = suf ? (x.title_en || x.title_kr) : (x.title_kr || x.title_en);
-        var ok = suf === '' || (suf === '.en' ? x.en_available : (suf === '.zh' ? x.cn_available : x.jp_available));
-        var href = x.slug + (ok ? suf : '') + '.html';
-        return '<a href="' + href + '" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">' + t + '</a>';
-      }).join('');
-      document.getElementById('kc-related').style.display = 'block';
-    }).catch(function() {});
-  })();
-  </script>
+  <section id="kc-related" style="margin:2.2rem 0 0.5rem;"><h2 style="font-size:1.1rem;margin-bottom:0.8rem;">관련 가이드</h2><div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"><a href="dongdaemun-market-eats.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">동대문 종합시장 상인 밥집 — 원단 골목의 40년 노포들</a><a href="busan-dessert-road.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">부산 디저트 로드 — 팥의 도시에서 젤라또까지</a><a href="busan-coffee-road.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">부산 커피 로드 — 월드 챔피언의 도시에서 커피 마시는 법</a><a href="busan-signature-food.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">부산에서만 먹는 세 가지 — 돼지국밥·밀면·회, 주문하는 법까지</a><a href="autumn-food-calendar.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">가을 제철 미식 캘린더 — 전어·대하·꽃게·송이·홍시, 9~11월에만 열리는 한국의 맛</a><a href="seoul-history-eras.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">서울 600년 시간여행 — 시대별로 걷는 역사 탐험 코스</a></div></section>
   <!-- kc-comments -->
   <section id="kc-comments" style="margin:2.5rem 0 0.5rem;">
     <h2>댓글</h2>

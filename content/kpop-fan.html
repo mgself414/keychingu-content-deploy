@@ -34,7 +34,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/main.css">
 <style>
 .detail-wrap {
@@ -50,11 +50,11 @@
 .breadcrumb a { color: var(--red); font-weight: 600; }
 .detail-wrap h1 {
   font-size: 28px; font-weight: 800;
-  color: var(--black); margin-bottom: 8px;
+  color: var(--text); margin-bottom: 8px;
 }
 .detail-wrap h2 {
   font-size: 22px; font-weight: 700;
-  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  color: var(--text); margin-top: 32px; margin-bottom: 12px;
   padding-bottom: 6px;
   border-bottom: 2px solid var(--red);
 }
@@ -73,10 +73,19 @@
   font-size: 14px; line-height: 1.6;
   color: var(--text-mid); margin-bottom: 6px;
 }
+/* 표는 자기 컨테이너 안에서만 가로 스크롤한다 — 이게 없으면 min-content 폭이
+   뷰포트를 넘는 순간 페이지 전체가 가로로 밀렸다 (2026-08-31 점검 M2).
+   table 자체는 table 로 남겨 행·열 관계를 보존한다(display:block 으로 해결하지 않는 이유). */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 16px;
+}
 .detail-wrap table {
   width: 100%; border-collapse: collapse;
   margin-bottom: 16px; font-size: 13px;
 }
+.table-scroll > table { margin-bottom: 0; }
 .detail-wrap th {
   background: var(--black); color: #fff;
   padding: 10px 12px; text-align: left;
@@ -137,10 +146,30 @@
   user-select: none;
 }
 </style>
+<script>
+/* 테마 부트스트랩 — 2026-08-31 점검 M3.
+   기사 4,804p 에 이게 없어서, OS 다크 사용자가 홈(다크)에서 기사를 열면
+   라이트로 번쩍였다. main.css 의 다크 규칙은 전부 [data-theme="dark"] 스코프이고
+   prefers-color-scheme 미디어쿼리는 CSS 에 없으므로, 속성을 여기서 달아줘야 한다.
+   <head> 안에서 동기 실행 — paint 전에 끝나야 깜빡임이 없다.
+   허브와 달리 기사엔 토글 버튼이 없다. 저장된 선택(kc_theme)과 OS 설정만 따른다. */
+(function () {
+  try {
+    var s = localStorage.getItem('kc_theme');
+    if (s === 'dark' || (!s && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  } catch (e) {}
+})();
+</script>
 </head>
 <body>
+<a class="skip-link" href="#kc-main">본문 바로가기</a>
 <header class="site-header">
-  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <!-- width/height = 고유 크기(400x149). CSS 가 height:36px 로 줄이지만 브라우저는
+       이 비율로 자리를 미리 잡아 레이아웃 이동(CLS)을 막는다. 헤더 로고는 첫 화면에
+       보이므로 lazy 가 아니라 eager. -->
+  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo" width="400" height="149" loading="eager" decoding="async"></a>
   <div class="lang-switch">
     <a href="../content/kpop-fan.html" class="active">KR</a>
     <a href="../content/kpop-fan.en.html">EN</a>
@@ -149,14 +178,14 @@
   </div>
 </header>
 
-<main class="detail-wrap">
+<main class="detail-wrap" id="kc-main" tabindex="-1">
   <nav class="breadcrumb" aria-label="breadcrumb"><a href="../index.html">전체 가이드</a> &rsaquo; K-POP 덕질 완전 가이드</nav>
   <article>
   <h1>K-POP 덕질 완전 가이드 — 사옥·굿즈샵·팬카페부터 음악방송까지</h1>
 <blockquote><p>한류 팬이라면 빼놓을 수 없는 서울 K-POP 성지 순례 완벽 맵</p></blockquote>
 <hr>
 <h2>한눈에 보기</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>항목</th>
 <th>정보</th>
 </tr></thead><tbody>
@@ -184,11 +213,11 @@
 <td><strong>비용</strong></td>
 <td>굿즈 10,000~100,000원+, 팬사인회 무료~100,000원</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>K-POP 덕질의 3가지 축</h2>
 <p>한국 K-POP 체험은 크게 3가지로 나뉩니다.</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>축</th>
 <th>내용</th>
 <th>추천도</th>
@@ -212,7 +241,7 @@
 <td>⭐⭐⭐⭐⭐</td>
 <td>높음 (사전 등록 필수)</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>Part 1: 4대 기획사 사옥 투어</h2>
 <h3>1. HYBE (하이브) — BTS·아일릿·르세라핌·NEWJEANS 등</h3>
@@ -363,7 +392,7 @@
 <li>신나라 근처 골목</li>
 </ul>
 <h4>팬샵 특징</h4>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>특징</th>
 <th>설명</th>
 </tr></thead><tbody>
@@ -387,7 +416,7 @@
 <td><strong>팬 문화</strong></td>
 <td>팬들끼리의 정보 교환 장소</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h4>홍대 팬샵 투어 (1시간)</h4>
 <p>```</p>
 <p>홍대입구역 6번 출구 → 골목 진입 → 팬샵들 산책 →</p>
@@ -403,7 +432,7 @@
 <hr>
 <h3>공식 머천다이즈 온라인 쇼핑</h3>
 <p><strong>각 기획사/아이돌 공식 쇼핑몰:</strong></p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>그룹</th>
 <th>공식 굿즈 구매처</th>
 </tr></thead><tbody>
@@ -427,7 +456,7 @@
 <td><strong>NewJeans</strong></td>
 <td>WEVERSE SHOP (HYBE 공식)</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>Part 3: 팬 이벤트 — 팬사인회·음악방송·팬미팅</h2>
 <h3>1. 팬사인회 (Fan Sign)</h3>
@@ -441,7 +470,7 @@
 <p>2. <strong>예매 사이트 접속</strong>: 인터파크 또는 예매 사이트에서 예매</p>
 <p>3. <strong>참여</strong>: 지정 일시·장소에 가서 번호 받기 → 대기 → 아이돌 만나기</p>
 <h4>팬사인회 에티켓</h4>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>규칙</th>
 <th>설명</th>
 </tr></thead><tbody>
@@ -465,12 +494,12 @@
 <td><strong>대기 시간</strong></td>
 <td>6~12시간 가능 (인기 그룹은 더 길 수 있음)</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h3>2. 음악방송 (Music Shows) 관람</h3>
 <p><strong>뭔가?</strong> 서울에서 매주 방영되는 K-POP 음악 방송을 관객으로 참여해서 볼 수 있음</p>
 <h4>주요 음악방송</h4>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>방송</th>
 <th>방송국</th>
 <th>방영일</th>
@@ -505,7 +534,7 @@
 <td>~1,000명</td>
 <td>중간</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h4>음악방송 관람 신청</h4>
 <p>1. <strong>사전 신청</strong>: 방송국 공식 SNS에서 신청 (보통 1주일 전)</p>
 <p>2. <strong>선착순</strong>: 신청 마감 후 당첨자 발표 (대부분 마감)</p>
@@ -523,7 +552,7 @@
 <h3>3. 팬미팅 (Fan Meeting) 및 특별 행사</h3>
 <p><strong>뭔가?</strong> 팬들이 아이돌과 인터랙션하는 특별 행사 (보드게임, Q&amp;A, 게임 등)</p>
 <h4>팬미팅 특징</h4>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>특징</th>
 <th>설명</th>
 </tr></thead><tbody>
@@ -547,13 +576,13 @@
 <td><strong>경험</strong></td>
 <td>팬사인회보다 훨씬 의미 있음 (이야기 나눌 수 있음)</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>Part 4: K-POP 카페 &amp; 커뮤니티</h2>
 <h3>홍대 K-POP 카페 거리</h3>
 <p><strong>특징:</strong> K-POP 팬들이 모이는 카페들. 각 그룹별 전용 카페도 있음.</p>
 <h4>추천 카페</h4>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>카페</th>
 <th>특징</th>
 <th>추천도</th>
@@ -578,7 +607,7 @@
 <td>다양한 그룹 혼합</td>
 <td>⭐⭐⭐⭐</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p><strong>이곳에서:</strong></p>
 <ul>
 <li>팬들과 정보 교환</li>
@@ -588,7 +617,7 @@
 </ul>
 <hr>
 <h3>온라인 팬 커뮤니티</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>커뮤니티</th>
 <th>설명</th>
 <th>언어</th>
@@ -613,7 +642,7 @@
 <td>공식 팬 앱 (HYBE)</td>
 <td>다국어</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>Part 5: 실전 완벽 가이드 — 1일 K-POP 덕질 일정</h2>
 <h3>반나절 코스 (3시간)</h3>
@@ -643,7 +672,7 @@
 <p>```</p>
 <hr>
 <h2>K-POP 덕질 필수 물품</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>물품</th>
 <th>이유</th>
 </tr></thead><tbody>
@@ -675,10 +704,10 @@
 <td><strong>메모장</strong></td>
 <td>팬들과 정보 교환</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>한국 팬 vs 외국인 팬의 차이</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>요소</th>
 <th>한국 팬</th>
 <th>외국인 팬</th>
@@ -708,10 +737,10 @@
 <td>국내 팬샵 선호</td>
 <td>온라인 쇼핑 선호</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>언어 장벽 극복법</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>상황</th>
 <th>해결책</th>
 </tr></thead><tbody>
@@ -735,7 +764,7 @@
 <td><strong>팬들과 소통</strong></td>
 <td>영어 아이돌 팬 계정 찾아 팔로우</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>최종 팁</h2>
 <p>1. <strong>서울 방문 일정에 2~3일</strong> 중 1일은 K-POP 덕질에 할애하기</p>
@@ -745,7 +774,7 @@
 <p>5. <strong>홍대 팬샵 거리</strong> = K-POP 덕질의 최고 거점</p>
 <hr>
 <h2>참고 링크</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>분야</th>
 <th>링크</th>
 <th>설명</th>
@@ -775,7 +804,7 @@
 <td>@keychingu.korea</td>
 <td>키친구 K-POP 콘텐츠</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <p><em>이 가이드는 2026년 4월 기준으로 작성되었습니다. 팬사인회·음악방송 일정과 장소는 자주 변하므로, 각 기획사·방송국 공식 채널에서 최신 정보를 확인하세요.</em></p>
 <h2>🌐 외부 SOURCES</h2>
@@ -802,34 +831,7 @@
     <div><a href="vegan-halal.html" style="color:var(--red);">한국 비건·할랄·종교 식이 가이드 &rarr;</a></div>
   </nav>
 
-  <section id="kc-related" style="display:none;margin:2.2rem 0 0.5rem;">
-    <h2 style="font-size:1.1rem;margin-bottom:0.8rem;">관련 가이드</h2>
-    <div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"></div>
-  </section>
-  <script>
-  // related guides — 같은 카테고리 최신 6편 (contents.json fetch·언어 suffix 자동, 2026-07-04)
-  (function() {
-    var m = location.pathname.match(/\/content\/(.+?)(\.en|\.zh|\.ja)?\.html$/);
-    if (!m) return;
-    var slug = m[1], suf = m[2] || '';
-    fetch('../data/contents.json').then(function(r) { return r.json(); }).then(function(items) {
-      var me = null;
-      for (var i = 0; i < items.length; i++) { if (items[i].slug === slug) { me = items[i]; break; } }
-      if (!me) return;
-      var pool = items.filter(function(x) { return x.slug !== slug && x.category === me.category; });
-      pool.sort(function(a, b) { return (parseInt(b.id, 10) || 0) - (parseInt(a.id, 10) || 0); });
-      var picks = pool.slice(0, 6);
-      if (!picks.length) return;
-      document.getElementById('kc-related-grid').innerHTML = picks.map(function(x) {
-        var t = suf ? (x.title_en || x.title_kr) : (x.title_kr || x.title_en);
-        var ok = suf === '' || (suf === '.en' ? x.en_available : (suf === '.zh' ? x.cn_available : x.jp_available));
-        var href = x.slug + (ok ? suf : '') + '.html';
-        return '<a href="' + href + '" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">' + t + '</a>';
-      }).join('');
-      document.getElementById('kc-related').style.display = 'block';
-    }).catch(function() {});
-  })();
-  </script>
+  <section id="kc-related" style="margin:2.2rem 0 0.5rem;"><h2 style="font-size:1.1rem;margin-bottom:0.8rem;">관련 가이드</h2><div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"><a href="busan-kpop-pilgrimage.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">부산 K-pop 성지순례 — BTS의 고향에서 팬으로 걷는 법</a><a href="busan-fine-dining-pilgrimage.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">부산 미식 순례 — 미쉐린 별, 셰프의 단골집, 그리고 우체국의 추천</a><a href="culinary-class-wars-restaurants.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">넷플릭스에서 본 그 셰프의 식당 — 흑백요리사 서울 순례 가이드</a><a href="kcontent-full-set-7-index.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">외국인 K-content 풀세트 7편 통합 인덱스</a><a href="kdrama-regional-locations-busan-jeonju-gangwon.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">외국인 K-드라마 촬영지 지방·외곽 deep dive — 부산·전주·강원</a><a href="seoul-kdrama-filming-locations-2026.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">외국인 서울 K-드라마 촬영지 2026 완전정복</a></div></section>
   <!-- kc-comments -->
   <section id="kc-comments" style="margin:2.5rem 0 0.5rem;">
     <h2>댓글</h2>

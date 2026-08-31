@@ -34,7 +34,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/main.css">
 <style>
 .detail-wrap {
@@ -50,11 +50,11 @@
 .breadcrumb a { color: var(--red); font-weight: 600; }
 .detail-wrap h1 {
   font-size: 28px; font-weight: 800;
-  color: var(--black); margin-bottom: 8px;
+  color: var(--text); margin-bottom: 8px;
 }
 .detail-wrap h2 {
   font-size: 22px; font-weight: 700;
-  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  color: var(--text); margin-top: 32px; margin-bottom: 12px;
   padding-bottom: 6px;
   border-bottom: 2px solid var(--red);
 }
@@ -73,10 +73,19 @@
   font-size: 14px; line-height: 1.6;
   color: var(--text-mid); margin-bottom: 6px;
 }
+/* 표는 자기 컨테이너 안에서만 가로 스크롤한다 — 이게 없으면 min-content 폭이
+   뷰포트를 넘는 순간 페이지 전체가 가로로 밀렸다 (2026-08-31 점검 M2).
+   table 자체는 table 로 남겨 행·열 관계를 보존한다(display:block 으로 해결하지 않는 이유). */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 16px;
+}
 .detail-wrap table {
   width: 100%; border-collapse: collapse;
   margin-bottom: 16px; font-size: 13px;
 }
+.table-scroll > table { margin-bottom: 0; }
 .detail-wrap th {
   background: var(--black); color: #fff;
   padding: 10px 12px; text-align: left;
@@ -137,10 +146,30 @@
   user-select: none;
 }
 </style>
+<script>
+/* 테마 부트스트랩 — 2026-08-31 점검 M3.
+   기사 4,804p 에 이게 없어서, OS 다크 사용자가 홈(다크)에서 기사를 열면
+   라이트로 번쩍였다. main.css 의 다크 규칙은 전부 [data-theme="dark"] 스코프이고
+   prefers-color-scheme 미디어쿼리는 CSS 에 없으므로, 속성을 여기서 달아줘야 한다.
+   <head> 안에서 동기 실행 — paint 전에 끝나야 깜빡임이 없다.
+   허브와 달리 기사엔 토글 버튼이 없다. 저장된 선택(kc_theme)과 OS 설정만 따른다. */
+(function () {
+  try {
+    var s = localStorage.getItem('kc_theme');
+    if (s === 'dark' || (!s && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  } catch (e) {}
+})();
+</script>
 </head>
 <body>
+<a class="skip-link" href="#kc-main">本文へスキップ</a>
 <header class="site-header">
-  <a href="../ja/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <!-- width/height = 고유 크기(400x149). CSS 가 height:36px 로 줄이지만 브라우저는
+       이 비율로 자리를 미리 잡아 레이아웃 이동(CLS)을 막는다. 헤더 로고는 첫 화면에
+       보이므로 lazy 가 아니라 eager. -->
+  <a href="../ja/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo" width="400" height="149" loading="eager" decoding="async"></a>
   <div class="lang-switch">
     <a href="../content/hanbok.html">KR</a>
     <a href="../content/hanbok.en.html">EN</a>
@@ -149,14 +178,14 @@
   </div>
 </header>
 
-<main class="detail-wrap">
+<main class="detail-wrap" id="kc-main" tabindex="-1">
   <nav class="breadcrumb" aria-label="breadcrumb"><a href="../ja/index.html">ガイド一覧</a> &rsaquo; 韓服体験モダンガイド</nav>
   <article>
   <h1>ハンボク体験 — モダンな視点で景福宮 (경복궁) 無料入場まで</h1>
 <blockquote><p>ハンボクを着てソウルを歩く体験。観光客向けのありきたりな写真撮影を超えて、地元の人のように楽しむ方法</p></blockquote>
 <hr>
 <h2>一目でわかる</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>項目</th>
 <th>情報</th>
 </tr></thead><tbody>
@@ -184,7 +213,7 @@
 <td><strong>費用</strong></td>
 <td>レンタル ₩5,000〜₩30,000 (~500〜2,800 JPY) + キョンボックン入場料 (無料条件あり)</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>ハンボク、なぜ着るべき？</h2>
 <p>韓国旅行においてハンボクは、<strong>記念写真のための小道具ではなく、その時代の韓国人がどのように着て暮らしていたかを直接体験する経験</strong>です。しかし、観光地で借りるハンボクと地元の人が着るハンボク、そして「ハンボクの変化」はまったく異なります。</p>
@@ -199,7 +228,7 @@
 <hr>
 <h2>ハンボクの種類比較: 何を着る？</h2>
 <h3>1. 伝統ハンボク (キョンボックン前の観光客スタンダード)</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>特徴</th>
 <th>説明</th>
 </tr></thead><tbody>
@@ -227,7 +256,7 @@
 <td><strong>地元民の評価</strong></td>
 <td>「観光客みたいだね…」</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p><strong>どこで借りられる？</strong></p>
 <ul>
 <li>キョンボックンヨク (경복궁역) 1番出口周辺のレンタルショップ (多数あり)</li>
@@ -236,7 +265,7 @@
 </ul>
 <hr>
 <h3>2. モダンハンボク (フュージョンハンボク) ⭐ こちらを推奨</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>特徴</th>
 <th>説明</th>
 </tr></thead><tbody>
@@ -264,7 +293,7 @@
 <td><strong>地元民の評価</strong></td>
 <td>「あのハンボク、素敵だね!」</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p><strong>どこで借りられる？</strong></p>
 <ul>
 <li><strong>ホンデ (홍대)</strong> (中心): ホンデイック (홍대입구역) 周辺のセンス系レンタルショップ</li>
@@ -274,7 +303,7 @@
 </ul>
 <hr>
 <h3>3. ドレス型高級ハンボク (特別な日に)</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>特徴</th>
 <th>説明</th>
 </tr></thead><tbody>
@@ -302,7 +331,7 @@
 <td><strong>地元民の評価</strong></td>
 <td>「優雅だね」</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p><strong>どこで？</strong></p>
 <ul>
 <li>ハンナムドン (한남동)、カンナム (강남) のラグジュアリーハンボクショップ</li>
@@ -312,7 +341,7 @@
 <h2>実際の体験ガイド: Step by Step</h2>
 <h3>Step 1: どこでレンタルする？</h3>
 <p><strong>最高のおすすめ: プクチョン ハノクマウルのハンボクカフェ型レンタルショップ</strong></p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>ショップ名</th>
 <th>場所</th>
 <th>特徴</th>
@@ -354,7 +383,7 @@
 <td>₩15,000〜₩20,000</td>
 <td>⭐⭐⭐⭐</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p><strong>選び方のヒント:</strong></p>
 <ul>
 <li><strong>クオリティ重視</strong> → プクチョンのハノクカフェ型 (レンタル + 体験込み)</li>
@@ -405,7 +434,7 @@
 <h3>Step 4: どこで撮影する？</h3>
 <h4>キョンボックン無料入場のお得な情報</h4>
 <p><strong>ハンボクを着ている人 = キョンボックン無料入場!</strong></p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>条件</th>
 <th>詳細</th>
 </tr></thead><tbody>
@@ -429,7 +458,7 @@
 <td><strong>注意事項</strong></td>
 <td>入場後、退場するまでハンボクを着用していること</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p><strong>キョンボックン内おすすめ撮影スポット:</strong></p>
 <ul>
 <li>フンニェムン (흥례문 / 正門) — 正面からの撮影</li>
@@ -447,7 +476,7 @@
 </ul>
 <hr>
 <h4>キョンボックン以外の撮影スポット</h4>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>場所</th>
 <th>特徴</th>
 <th>アクセス</th>
@@ -482,7 +511,7 @@
 <td>現代的な背景と伝統ハンボクのコントラスト</td>
 <td>地下鉄5号線 ヨイドヨク (여의도역)</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h3>Step 5: ハンボクを着て何をする？</h3>
 <h4>A. キョンボックン + プクチョン 半日コース (2.5時間)</h4>
@@ -538,7 +567,7 @@
 <li><strong>時間帯</strong>: 午前 (10:00〜12:00) または午後 (16:00〜18:00) が最高。正午 (12:00〜14:00) の日差しは強すぎる</li>
 </ul>
 <h3>天候条件</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>天気</th>
 <th>可能か</th>
 <th>ヒント</th>
@@ -563,11 +592,11 @@
 <td>⭐⭐⭐</td>
 <td>チマが舞い上がることがある。注意が必要</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>無料入場できる宮殿まとめ</h2>
 <p><strong>ハンボクを着ると無料になる宮殿:</strong></p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>宮殿</th>
 <th>通常価格</th>
 <th>ハンボク着用時</th>
@@ -609,7 +638,7 @@
 <td>1時間</td>
 <td>祭祀を行う王室の祠堂。厳かな雰囲気</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p><strong>おすすめの組み合わせ:</strong></p>
 <ul>
 <li><strong>日帰り旅行</strong>: キョンボックン + プクチョン (最も人気)</li>
@@ -619,7 +648,7 @@
 <hr>
 <h2>ハンボク — 観光客 vs 地元の人の違い</h2>
 <h3>ハンボクを着た外国人観光客 vs 韓国人</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>要素</th>
 <th>観光客</th>
 <th>地元の人</th>
@@ -654,7 +683,7 @@
 <td>「旅行記念写真」感</td>
 <td>「映像美」のあるライフスタイル写真</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p><strong>地元の人らしく着るには:</strong></p>
 <ul>
 <li>モダンハンボクを選ぶ</li>
@@ -665,7 +694,7 @@
 </ul>
 <hr>
 <h2>参考リンク</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>分野</th>
 <th>リンク</th>
 <th>説明</th>
@@ -695,7 +724,7 @@
 <td>@keychingu.korea</td>
 <td>キーチング (키친구) ハンボクコンテンツ</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <p><em>このガイドは2026年4月時点の情報をもとに作成されています。ハンボクレンタルショップと価格は変わる場合があるため、訪問前に事前の電話またはSNSでの確認をおすすめします。</em></p>
 <h2>🌐 外部ソース</h2>
@@ -722,34 +751,7 @@
     <div><a href="spa-massage.ja.html" style="color:var(--red);">韓国スパ＆マッサージガイド &rarr;</a></div>
   </nav>
 
-  <section id="kc-related" style="display:none;margin:2.2rem 0 0.5rem;">
-    <h2 style="font-size:1.1rem;margin-bottom:0.8rem;">関連ガイド</h2>
-    <div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"></div>
-  </section>
-  <script>
-  // related guides — 같은 카테고리 최신 6편 (contents.json fetch·언어 suffix 자동, 2026-07-04)
-  (function() {
-    var m = location.pathname.match(/\/content\/(.+?)(\.en|\.zh|\.ja)?\.html$/);
-    if (!m) return;
-    var slug = m[1], suf = m[2] || '';
-    fetch('../data/contents.json').then(function(r) { return r.json(); }).then(function(items) {
-      var me = null;
-      for (var i = 0; i < items.length; i++) { if (items[i].slug === slug) { me = items[i]; break; } }
-      if (!me) return;
-      var pool = items.filter(function(x) { return x.slug !== slug && x.category === me.category; });
-      pool.sort(function(a, b) { return (parseInt(b.id, 10) || 0) - (parseInt(a.id, 10) || 0); });
-      var picks = pool.slice(0, 6);
-      if (!picks.length) return;
-      document.getElementById('kc-related-grid').innerHTML = picks.map(function(x) {
-        var t = suf ? (x.title_en || x.title_kr) : (x.title_kr || x.title_en);
-        var ok = suf === '' || (suf === '.en' ? x.en_available : (suf === '.zh' ? x.cn_available : x.jp_available));
-        var href = x.slug + (ok ? suf : '') + '.html';
-        return '<a href="' + href + '" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">' + t + '</a>';
-      }).join('');
-      document.getElementById('kc-related').style.display = 'block';
-    }).catch(function() {});
-  })();
-  </script>
+  <section id="kc-related" style="margin:2.2rem 0 0.5rem;"><h2 style="font-size:1.1rem;margin-bottom:0.8rem;">関連ガイド</h2><div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"><a href="royal-palace-autumn-nights.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Royal Palaces After Dark: Starlight Tours, Moonlight Walks and the Royal Culture Festival — the Reservation-Only Side of Autumn Seoul</a><a href="seoul-fireworks-festival.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Seoul International Fireworks Festival 2026: September 5 at Yeouido — How to Claim a Spot Among a Million People</a><a href="seoul-architecture-eras.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Seoul Architecture Time Walk — Traditional, Modern &amp; Contemporary: 15 Picks + An Architectural Appreciation Lens</a><a href="korea-kpop-fansign-videocall.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">K-pop Fansign·Video Call (Album Entry·Yeongtong)</a><a href="korea-idol-birthday-cafe.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Idol Birthday Cafe (Saengka·Cup Sleeve·Support)</a><a href="korea-kpop-music-show-taping.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">K-pop Music Show Taping (Inkigayo·M Countdown·Music Bank)</a></div></section>
   <!-- kc-comments -->
   <section id="kc-comments" style="margin:2.5rem 0 0.5rem;">
     <h2>コメント</h2>

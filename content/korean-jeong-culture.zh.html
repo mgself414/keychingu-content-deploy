@@ -34,7 +34,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/main.css">
 <style>
 .detail-wrap {
@@ -50,11 +50,11 @@
 .breadcrumb a { color: var(--red); font-weight: 600; }
 .detail-wrap h1 {
   font-size: 28px; font-weight: 800;
-  color: var(--black); margin-bottom: 8px;
+  color: var(--text); margin-bottom: 8px;
 }
 .detail-wrap h2 {
   font-size: 22px; font-weight: 700;
-  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  color: var(--text); margin-top: 32px; margin-bottom: 12px;
   padding-bottom: 6px;
   border-bottom: 2px solid var(--red);
 }
@@ -73,10 +73,19 @@
   font-size: 14px; line-height: 1.6;
   color: var(--text-mid); margin-bottom: 6px;
 }
+/* 표는 자기 컨테이너 안에서만 가로 스크롤한다 — 이게 없으면 min-content 폭이
+   뷰포트를 넘는 순간 페이지 전체가 가로로 밀렸다 (2026-08-31 점검 M2).
+   table 자체는 table 로 남겨 행·열 관계를 보존한다(display:block 으로 해결하지 않는 이유). */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 16px;
+}
 .detail-wrap table {
   width: 100%; border-collapse: collapse;
   margin-bottom: 16px; font-size: 13px;
 }
+.table-scroll > table { margin-bottom: 0; }
 .detail-wrap th {
   background: var(--black); color: #fff;
   padding: 10px 12px; text-align: left;
@@ -137,10 +146,30 @@
   user-select: none;
 }
 </style>
+<script>
+/* 테마 부트스트랩 — 2026-08-31 점검 M3.
+   기사 4,804p 에 이게 없어서, OS 다크 사용자가 홈(다크)에서 기사를 열면
+   라이트로 번쩍였다. main.css 의 다크 규칙은 전부 [data-theme="dark"] 스코프이고
+   prefers-color-scheme 미디어쿼리는 CSS 에 없으므로, 속성을 여기서 달아줘야 한다.
+   <head> 안에서 동기 실행 — paint 전에 끝나야 깜빡임이 없다.
+   허브와 달리 기사엔 토글 버튼이 없다. 저장된 선택(kc_theme)과 OS 설정만 따른다. */
+(function () {
+  try {
+    var s = localStorage.getItem('kc_theme');
+    if (s === 'dark' || (!s && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  } catch (e) {}
+})();
+</script>
 </head>
 <body>
+<a class="skip-link" href="#kc-main">跳到正文</a>
 <header class="site-header">
-  <a href="../zh/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <!-- width/height = 고유 크기(400x149). CSS 가 height:36px 로 줄이지만 브라우저는
+       이 비율로 자리를 미리 잡아 레이아웃 이동(CLS)을 막는다. 헤더 로고는 첫 화면에
+       보이므로 lazy 가 아니라 eager. -->
+  <a href="../zh/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo" width="400" height="149" loading="eager" decoding="async"></a>
   <div class="lang-switch">
     <a href="../content/korean-jeong-culture.html">KR</a>
     <a href="../content/korean-jeong-culture.en.html">EN</a>
@@ -149,7 +178,7 @@
   </div>
 </header>
 
-<main class="detail-wrap">
+<main class="detail-wrap" id="kc-main" tabindex="-1">
   <nav class="breadcrumb" aria-label="breadcrumb"><a href="../zh/index.html">全部指南</a> &rsaquo; 韩国“情”文化</nav>
   <article>
   <h1>韩国“情 (Jeong)”文化 — 为什么第一次见面的人会请你吃饭？</h1>
@@ -157,7 +186,7 @@
 <p>首尔 (Seoul / 서울) 某条小巷 (golmok / 골목) 里的餐厅。一位外国人独自进去，只点了一份拌饭 (bibimbap / 비빔밥)，但店主阿姨 (ajumeoni / 아주머니) 却不问自加了一份煎蛋 (gyeranpeurai / 계란프라이)，并说着 <strong>“多吃点，多吃点”</strong> 又添了一份小菜 (banchan / 반찬)。坐上出租车 (taeksi / 택시)，司机大叔 (ajeossi / 아저씨) 在前往目的地的路上不停地问你从哪里来、吃饭了吗，下车时还说声 <em>&quot;韩国很棒吧？再来玩哦&quot;</em>。旁边桌的爷爷突然说 <strong>“我来付钱”</strong> 想要买单。许多外国人会将这一刻总结为“Korean people are SO nice”，但韩国人并不会用“亲切 (kindness)”这个词来形容。他们用的词是 <strong>情 (Jeong / 정)</strong>。任何试图将其翻译成英文的尝试都以失败告终 — 无论是affection、attachment、bond，都无法完全涵盖其含义。本文并非“如何在韩国获得友善对待”的指南，而是以外国游客的视角，解释 <strong>这些行为背后情感的运作原理</strong>。同时，我们也会坦诚地看待情 (Jeong) <strong>温暖的一面和令人感到负担的一面</strong>。这是韩国文化解读系列文章的<strong>第四篇</strong>。</p>
 <hr>
 <h2>★ 一目了然 — “情 (Jeong)”的6个核心概念</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>概念</th>
 <th>是什么</th>
 <th>一句话总结</th>
@@ -192,7 +221,7 @@
 <td>斩断情谊</td>
 <td>为了分手而故意切断情谊。这表明情 (Jeong) 是会“产生”的</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <blockquote><p><strong>核心</strong>: 情 (Jeong) 与其说是“情感 (emotion)”，不如说更接近于 <strong>“维系关系的方式 (OS)”</strong>。韩国人常说 <em>&quot;情 (Jeong) 产生了 / 情 (Jeong) 投入了&quot;</em> — 这意味着情 (Jeong) 并非一瞬间产生，而是 <strong>随着时间慢慢“产生”</strong> 的。</p></blockquote>
 <hr>
 <h2>⚠️ 外国人常有的3种误解</h2>
@@ -241,7 +270,7 @@
 <hr>
 <h2>⑤ 情 (Jeong) 的两面性 — 温暖与负担是硬币的两面</h2>
 <p>如果只把情 (Jeong) 描绘成 <em>&quot;无条件的好事&quot;</em>，那就只看到了一半。同样的情感也可能表现为 <strong>负担·干涉</strong>。了解这种平衡才能准确理解韩国。</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>温暖的一面 (款待·关照)</th>
 <th>令人感到负担的一面 (干涉·界限模糊)</th>
 </tr></thead><tbody>
@@ -261,7 +290,7 @@
 <td>情 (Jeong) 维系的紧密共同体</td>
 <td>个人必须适应集体的压力</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p>从学术角度看，“我们 (Woori / 우리)”情感也可能与 <strong>个人隐私·自主性发生冲突</strong>。由于“我们 (Woori / 우리) vs 陌生人 (nam / 남)”的界限很强，一旦进入“我们”就会像家人一样被关照 — 但这种界限本身也可能让外国人·外来者感到 <strong>隔阂</strong>。此外，个人适应集体的压力也与韩国特有的火病 (hwabyung / 화병) 等情绪压力讨论相关联。韩国人也了解这种两面性 — 常见的自嘲是 <em>&quot;因为情 (Jeong) 离不开情 (Jeong)，但又因为情 (Jeong) 而感到疲惫&quot;</em>。</p>
 <blockquote><p>外国人总结: 如果私人问题或过度关照让你感到不适，<strong>与其断定为无礼</strong>，不如将其视为情 (Jeong) 的表达方式，这样会让你心情更放松。同时，<strong>如果感到不适，笑着划清界限也无妨</strong> — 这并非失礼。</p></blockquote>
 <hr>
@@ -320,34 +349,7 @@
     <div><a href="korean-holiday-ancestral-culture.zh.html" style="color:var(--red);">韩国节日祭祀文化 &rarr;</a></div>
   </nav>
 
-  <section id="kc-related" style="display:none;margin:2.2rem 0 0.5rem;">
-    <h2 style="font-size:1.1rem;margin-bottom:0.8rem;">相关指南</h2>
-    <div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"></div>
-  </section>
-  <script>
-  // related guides — 같은 카테고리 최신 6편 (contents.json fetch·언어 suffix 자동, 2026-07-04)
-  (function() {
-    var m = location.pathname.match(/\/content\/(.+?)(\.en|\.zh|\.ja)?\.html$/);
-    if (!m) return;
-    var slug = m[1], suf = m[2] || '';
-    fetch('../data/contents.json').then(function(r) { return r.json(); }).then(function(items) {
-      var me = null;
-      for (var i = 0; i < items.length; i++) { if (items[i].slug === slug) { me = items[i]; break; } }
-      if (!me) return;
-      var pool = items.filter(function(x) { return x.slug !== slug && x.category === me.category; });
-      pool.sort(function(a, b) { return (parseInt(b.id, 10) || 0) - (parseInt(a.id, 10) || 0); });
-      var picks = pool.slice(0, 6);
-      if (!picks.length) return;
-      document.getElementById('kc-related-grid').innerHTML = picks.map(function(x) {
-        var t = suf ? (x.title_en || x.title_kr) : (x.title_kr || x.title_en);
-        var ok = suf === '' || (suf === '.en' ? x.en_available : (suf === '.zh' ? x.cn_available : x.jp_available));
-        var href = x.slug + (ok ? suf : '') + '.html';
-        return '<a href="' + href + '" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">' + t + '</a>';
-      }).join('');
-      document.getElementById('kc-related').style.display = 'block';
-    }).catch(function() {});
-  })();
-  </script>
+  <section id="kc-related" style="margin:2.2rem 0 0.5rem;"><h2 style="font-size:1.1rem;margin-bottom:0.8rem;">相关指南</h2><div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"><a href="royal-palace-autumn-nights.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Royal Palaces After Dark: Starlight Tours, Moonlight Walks and the Royal Culture Festival — the Reservation-Only Side of Autumn Seoul</a><a href="seoul-fireworks-festival.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Seoul International Fireworks Festival 2026: September 5 at Yeouido — How to Claim a Spot Among a Million People</a><a href="seoul-architecture-eras.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Seoul Architecture Time Walk — Traditional, Modern &amp; Contemporary: 15 Picks + An Architectural Appreciation Lens</a><a href="korea-kpop-fansign-videocall.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">K-pop Fansign·Video Call (Album Entry·Yeongtong)</a><a href="korea-idol-birthday-cafe.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Idol Birthday Cafe (Saengka·Cup Sleeve·Support)</a><a href="korea-kpop-music-show-taping.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">K-pop Music Show Taping (Inkigayo·M Countdown·Music Bank)</a></div></section>
   <!-- kc-comments -->
   <section id="kc-comments" style="margin:2.5rem 0 0.5rem;">
     <h2>评论</h2>

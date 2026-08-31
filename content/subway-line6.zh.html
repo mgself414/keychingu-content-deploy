@@ -34,7 +34,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/main.css">
 <style>
 .detail-wrap {
@@ -50,11 +50,11 @@
 .breadcrumb a { color: var(--red); font-weight: 600; }
 .detail-wrap h1 {
   font-size: 28px; font-weight: 800;
-  color: var(--black); margin-bottom: 8px;
+  color: var(--text); margin-bottom: 8px;
 }
 .detail-wrap h2 {
   font-size: 22px; font-weight: 700;
-  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  color: var(--text); margin-top: 32px; margin-bottom: 12px;
   padding-bottom: 6px;
   border-bottom: 2px solid var(--red);
 }
@@ -73,10 +73,19 @@
   font-size: 14px; line-height: 1.6;
   color: var(--text-mid); margin-bottom: 6px;
 }
+/* 표는 자기 컨테이너 안에서만 가로 스크롤한다 — 이게 없으면 min-content 폭이
+   뷰포트를 넘는 순간 페이지 전체가 가로로 밀렸다 (2026-08-31 점검 M2).
+   table 자체는 table 로 남겨 행·열 관계를 보존한다(display:block 으로 해결하지 않는 이유). */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 16px;
+}
 .detail-wrap table {
   width: 100%; border-collapse: collapse;
   margin-bottom: 16px; font-size: 13px;
 }
+.table-scroll > table { margin-bottom: 0; }
 .detail-wrap th {
   background: var(--black); color: #fff;
   padding: 10px 12px; text-align: left;
@@ -137,11 +146,31 @@
   user-select: none;
 }
 </style>
+<script>
+/* 테마 부트스트랩 — 2026-08-31 점검 M3.
+   기사 4,804p 에 이게 없어서, OS 다크 사용자가 홈(다크)에서 기사를 열면
+   라이트로 번쩍였다. main.css 의 다크 규칙은 전부 [data-theme="dark"] 스코프이고
+   prefers-color-scheme 미디어쿼리는 CSS 에 없으므로, 속성을 여기서 달아줘야 한다.
+   <head> 안에서 동기 실행 — paint 전에 끝나야 깜빡임이 없다.
+   허브와 달리 기사엔 토글 버튼이 없다. 저장된 선택(kc_theme)과 OS 설정만 따른다. */
+(function () {
+  try {
+    var s = localStorage.getItem('kc_theme');
+    if (s === 'dark' || (!s && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  } catch (e) {}
+})();
+</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "TouristAttraction", "name": "서울 지하철 6호선 완전정복 — 이태원·망원·해방촌, 글로벌과 힙스터의 라인", "url": "https://mgself414.github.io/keychingu-content-deploy/content/subway-line6.html", "image": "https://mgself414.github.io/keychingu-content-deploy/og/subway-line6.png", "address": {"@type": "PostalAddress", "addressLocality": "Seoul", "addressCountry": "KR"}, "touristType": "Foreigner-friendly tourism"}</script>
 </head>
 <body>
+<a class="skip-link" href="#kc-main">跳到正文</a>
 <header class="site-header">
-  <a href="../zh/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <!-- width/height = 고유 크기(400x149). CSS 가 height:36px 로 줄이지만 브라우저는
+       이 비율로 자리를 미리 잡아 레이아웃 이동(CLS)을 막는다. 헤더 로고는 첫 화면에
+       보이므로 lazy 가 아니라 eager. -->
+  <a href="../zh/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo" width="400" height="149" loading="eager" decoding="async"></a>
   <div class="lang-switch">
     <a href="../content/subway-line6.html">KR</a>
     <a href="../content/subway-line6.en.html">EN</a>
@@ -150,7 +179,7 @@
   </div>
 </header>
 
-<main class="detail-wrap">
+<main class="detail-wrap" id="kc-main" tabindex="-1">
   <nav class="breadcrumb" aria-label="breadcrumb"><a href="../zh/index.html">全部指南</a> &rsaquo; 首尔地铁6号线完全攻略 — 梨泰院·望远·解放村，全球与潮人的线路 deep dive</nav>
   <article>
   <h1>首尔地铁6号线完全攻略 — 梨泰院·望远·解放村，全球与潮人的线路 deep dive</h1>
@@ -176,7 +205,7 @@
 <li><strong>cross-ref</strong>: <a href="sea-tourist-halal-kdrama.zh.html" class="xref">#192</a> 穆斯林清真 · <a href="club-nightlife.zh.html" class="xref">#454</a> 夜店夜晚</li>
 </ul>
 <p><strong>📍 出站即达 — 步行动线</strong></p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>地点</th>
 <th>步行</th>
 <th>地图</th>
@@ -201,7 +230,7 @@
 <td>4分钟</td>
 <td><a href="https://www.google.com/maps?q=37.535056,126.992555" rel="noopener">Map</a></td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h3>🟫 <a href="night-views.zh.html" class="xref">#2</a>. 绿莎坪站 (Noksapyeong Station / 녹사평역) — 经理团路·解放村</h3>
 <ul>
 <li><strong>🚪 出口</strong>: 经理团路 (Gyeongnidan-gil / 경리단길) · 解放村 (Haebangchon / 해방촌) 方向</li>
@@ -211,7 +240,7 @@
 <li><strong>cross-ref</strong>: <a href="summer-terrace-bars.zh.html" class="xref">#1236</a> 夏季夜市(经理团·解放村 Bangbang·Southside Parlor)</li>
 </ul>
 <p><strong>📍 出站即达 — 步行动线</strong></p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>地点</th>
 <th>步行</th>
 <th>地图</th>
@@ -236,7 +265,7 @@
 <td>6分钟</td>
 <td><a href="https://www.google.com/maps?q=37.537435,126.987240" rel="noopener">Map</a></td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h3>🟫 <a href="market.zh.html" class="xref">#3</a>. 汉江镇站 (Hangangjin Station / 한강진역) — 利乌姆美术馆·美食</h3>
 <ul>
 <li><strong>🚪 出口</strong>: 利乌姆美术馆 (Leeum Museum / 리움미술관) · 蓝色广场 (Blue Square / 블루스퀘어) 方向</li>
@@ -246,7 +275,7 @@
 <li><strong>cross-ref</strong>: <a href="art-gallery-deep.zh.html" class="xref">#536</a> 艺术画廊 · <a href="summer-terrace-bars.zh.html" class="xref">#1236</a> 夏季夜市(汉南红酒吧)</li>
 </ul>
 <p><strong>📍 出站即达 — 步行动线</strong></p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>地点</th>
 <th>步行</th>
 <th>地图</th>
@@ -271,7 +300,7 @@
 <td>6分钟</td>
 <td><a href="https://www.google.com/maps?q=37.537274,126.999802" rel="noopener">Map</a></td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h3>🟫 <a href="gamaekjip.zh.html" class="xref">#4</a>. 望远站 (Mangwon Station / 망원역) — 望理团路·望远市场</h3>
 <ul>
 <li><strong>🚪 出口</strong>: 望理团路 (Mangnidan-gil / 망리단길) · 望远市场 (Mangwon Market / 망원시장) · 望远汉江 (Mangwon Hangang / 망원한강) 方向</li>
@@ -281,7 +310,7 @@
 <li><strong>cross-ref</strong>: <a href="hangang-night-deep.zh.html" class="xref">#586</a> 汉江(望远) · <a href="quiet-seoul.zh.html" class="xref">#1235</a> 安静的首尔(邻近延南)</li>
 </ul>
 <p><strong>📍 出站即达 — 步行动线</strong></p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>地点</th>
 <th>步行</th>
 <th>地图</th>
@@ -306,7 +335,7 @@
 <td>1分钟</td>
 <td><a href="https://www.google.com/maps?q=37.555687,126.910063" rel="noopener">Map</a></td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h3>🟫 <a href="24hr-food.zh.html" class="xref">#5</a>. 上水站 (Sangsu Station / 상수역) — 弘大旁的咖啡情调</h3>
 <ul>
 <li><strong>🚪 出口</strong>: 上水洞咖啡街 (Sangsu-dong Cafe Street / 상수동 카페거리) · 弘大 (Hongdae / 홍대) 方向</li>
@@ -316,7 +345,7 @@
 <li><strong>cross-ref</strong>: <a href="hongdae.zh.html" class="xref">#138</a> 弘大 · <a href="summer-terrace-bars.zh.html" class="xref">#1236</a> 夏季夜市</li>
 </ul>
 <p><strong>📍 出站即达 — 步行动线</strong></p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>地点</th>
 <th>步行</th>
 <th>地图</th>
@@ -341,7 +370,7 @@
 <td>6分钟</td>
 <td><a href="https://www.google.com/maps?q=37.547752,126.918514" rel="noopener">Map</a></td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h3>🟫 <a href="chimaek.zh.html" class="xref">#6</a>. 合井站 (Hapjeong Station / 합정역) — 西北购物·汉江</h3>
 <ul>
 <li><strong>🚪 出口</strong>: 美塞纳波利斯 (Mecenatpolis / 메세나폴리스) · 望远·上水方向</li>
@@ -351,7 +380,7 @@
 <li><strong>cross-ref</strong>: <a href="subway-line2.zh.html" class="xref">#1241</a> 2号线(合井)</li>
 </ul>
 <p><strong>📍 出站即达 — 步行动线</strong></p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>地点</th>
 <th>步行</th>
 <th>地图</th>
@@ -376,7 +405,7 @@
 <td>3分钟</td>
 <td><a href="https://www.google.com/maps?q=37.548311,126.914666" rel="noopener">Map</a></td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h3>🟫 <a href="jjimjilbang.zh.html" class="xref">#7</a>. 新堂站 (Sindang Station / 신당역) — 炒年糕城</h3>
 <ul>
 <li><strong>🚪 出口</strong>: 新堂洞炒年糕巷 (Sindang-dong Tteokbokki Alley / 신당동 떡볶이 골목) · 首尔中央市场 (Seoul Jungang Market / 서울중앙시장) 方向</li>
@@ -386,7 +415,7 @@
 <li><strong>cross-ref</strong>: <a href="summer-terrace-bars.zh.html" class="xref">#1236</a> 夏季夜市 · <a href="gwangjang-nopo-deep.zh.html" class="xref">#582</a> 广藏市场(市场 cross)</li>
 </ul>
 <p><strong>📍 出站即达 — 步行动线</strong></p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>地点</th>
 <th>步行</th>
 <th>地图</th>
@@ -411,7 +440,7 @@
 <td>2分钟</td>
 <td><a href="https://www.google.com/maps?q=37.565870,127.017258" rel="noopener">Map</a></td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h3>🟫 <a href="noraebang.zh.html" class="xref">#8</a>. 东庙前站 (Dongmyo Station / 동묘앞역) — 旧货市场</h3>
 <ul>
 <li><strong>🚪 出口</strong>: 东庙旧货市场 (Dongmyo Flea Market / 동묘 구제시장) · 跳蚤市场方向</li>
@@ -422,7 +451,7 @@
 </ul>
 <hr>
 <p><strong>📍 出站即达 — 步行动线</strong></p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>地点</th>
 <th>步行</th>
 <th>地图</th>
@@ -447,7 +476,7 @@
 <td>7分钟</td>
 <td><a href="https://www.google.com/maps?q=37.573048,127.011522" rel="noopener">Map</a></td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h2>6号线一日路线 3 — 乘黄土色线出发</h2>
 <h3>路线 1. 全球梨泰院(龙山)</h3>
 <ul>
@@ -538,7 +567,7 @@
 <hr>
 <h2>📊 外国人玩家数值矩阵</h2>
 <p>外国人韩国游客 = <strong>年1,750万人(2024)</strong> · MZ(20–39岁) <strong>58%</strong> · 平均停留 <strong>6.4天</strong>(韩国观光公社2024)。6号线是外国人·MZ 密集线路。</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>项目</th>
 <th>数值</th>
 <th>出处</th>
@@ -573,7 +602,7 @@
 <td><strong>24h 多语种</strong></td>
 <td>韩国观光公社</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <blockquote><p><strong>数值解读</strong>: 6号线串联梨泰院多国籍 + 经理团·解放村·望理团路潮人。外国人友好(英语·清真)与 MZ 潮流叠加的线路，傍晚·周末活用度高。</p></blockquote>
 <hr>
   </article>
@@ -591,34 +620,7 @@
     <div><a href="subway-line7.zh.html" style="color:var(--red);">首尔地铁7号线完全攻略 — 建大·清潭·江南，MZ与名品与自然之线 deep dive &rarr;</a></div>
   </nav>
 
-  <section id="kc-related" style="display:none;margin:2.2rem 0 0.5rem;">
-    <h2 style="font-size:1.1rem;margin-bottom:0.8rem;">相关指南</h2>
-    <div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"></div>
-  </section>
-  <script>
-  // related guides — 같은 카테고리 최신 6편 (contents.json fetch·언어 suffix 자동, 2026-07-04)
-  (function() {
-    var m = location.pathname.match(/\/content\/(.+?)(\.en|\.zh|\.ja)?\.html$/);
-    if (!m) return;
-    var slug = m[1], suf = m[2] || '';
-    fetch('../data/contents.json').then(function(r) { return r.json(); }).then(function(items) {
-      var me = null;
-      for (var i = 0; i < items.length; i++) { if (items[i].slug === slug) { me = items[i]; break; } }
-      if (!me) return;
-      var pool = items.filter(function(x) { return x.slug !== slug && x.category === me.category; });
-      pool.sort(function(a, b) { return (parseInt(b.id, 10) || 0) - (parseInt(a.id, 10) || 0); });
-      var picks = pool.slice(0, 6);
-      if (!picks.length) return;
-      document.getElementById('kc-related-grid').innerHTML = picks.map(function(x) {
-        var t = suf ? (x.title_en || x.title_kr) : (x.title_kr || x.title_en);
-        var ok = suf === '' || (suf === '.en' ? x.en_available : (suf === '.zh' ? x.cn_available : x.jp_available));
-        var href = x.slug + (ok ? suf : '') + '.html';
-        return '<a href="' + href + '" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">' + t + '</a>';
-      }).join('');
-      document.getElementById('kc-related').style.display = 'block';
-    }).catch(function() {});
-  })();
-  </script>
+  <section id="kc-related" style="margin:2.2rem 0 0.5rem;"><h2 style="font-size:1.1rem;margin-bottom:0.8rem;">相关指南</h2><div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"><a href="busan-suyeong-dongnae.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Busan&#x27;s Point of Origin — Suyeong and Dongnae, Behind Gwangalli and Joseon-Era Busan</a><a href="sindang-guide.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Sindang-dong: The Neighborhood Being Called the Next Seongsu — Market, Hip Bars and Original Tteokbokki in Three Layers</a><a href="seoul-overrated-underrated.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Overrated vs Underrated Seoul: Reallocating Your Time by What Foreign Reviews Actually Say</a><a href="myeongdong-euljiro-evening-walk.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Myeongdong to Euljiro Evening Walk: Six Faces of Seoul in Two Hours, Ending with Yajang Beer</a><a href="cvs-drinks-map.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">The Complete Map of Korean Convenience Store Drinks: From Banana Milk to Hangover Cures</a><a href="korea-snack-brands.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Korean Snack Brands 101: Nongshim, Orion, Lotte, Haitai and Crown — Reading K-Snacks by Maker</a></div></section>
   <!-- kc-comments -->
   <section id="kc-comments" style="margin:2.5rem 0 0.5rem;">
     <h2>评论</h2>

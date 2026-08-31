@@ -34,7 +34,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/main.css">
 <style>
 .detail-wrap {
@@ -50,11 +50,11 @@
 .breadcrumb a { color: var(--red); font-weight: 600; }
 .detail-wrap h1 {
   font-size: 28px; font-weight: 800;
-  color: var(--black); margin-bottom: 8px;
+  color: var(--text); margin-bottom: 8px;
 }
 .detail-wrap h2 {
   font-size: 22px; font-weight: 700;
-  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  color: var(--text); margin-top: 32px; margin-bottom: 12px;
   padding-bottom: 6px;
   border-bottom: 2px solid var(--red);
 }
@@ -73,10 +73,19 @@
   font-size: 14px; line-height: 1.6;
   color: var(--text-mid); margin-bottom: 6px;
 }
+/* 표는 자기 컨테이너 안에서만 가로 스크롤한다 — 이게 없으면 min-content 폭이
+   뷰포트를 넘는 순간 페이지 전체가 가로로 밀렸다 (2026-08-31 점검 M2).
+   table 자체는 table 로 남겨 행·열 관계를 보존한다(display:block 으로 해결하지 않는 이유). */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 16px;
+}
 .detail-wrap table {
   width: 100%; border-collapse: collapse;
   margin-bottom: 16px; font-size: 13px;
 }
+.table-scroll > table { margin-bottom: 0; }
 .detail-wrap th {
   background: var(--black); color: #fff;
   padding: 10px 12px; text-align: left;
@@ -137,10 +146,30 @@
   user-select: none;
 }
 </style>
+<script>
+/* 테마 부트스트랩 — 2026-08-31 점검 M3.
+   기사 4,804p 에 이게 없어서, OS 다크 사용자가 홈(다크)에서 기사를 열면
+   라이트로 번쩍였다. main.css 의 다크 규칙은 전부 [data-theme="dark"] 스코프이고
+   prefers-color-scheme 미디어쿼리는 CSS 에 없으므로, 속성을 여기서 달아줘야 한다.
+   <head> 안에서 동기 실행 — paint 전에 끝나야 깜빡임이 없다.
+   허브와 달리 기사엔 토글 버튼이 없다. 저장된 선택(kc_theme)과 OS 설정만 따른다. */
+(function () {
+  try {
+    var s = localStorage.getItem('kc_theme');
+    if (s === 'dark' || (!s && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  } catch (e) {}
+})();
+</script>
 </head>
 <body>
+<a class="skip-link" href="#kc-main">本文へスキップ</a>
 <header class="site-header">
-  <a href="../ja/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <!-- width/height = 고유 크기(400x149). CSS 가 height:36px 로 줄이지만 브라우저는
+       이 비율로 자리를 미리 잡아 레이아웃 이동(CLS)을 막는다. 헤더 로고는 첫 화면에
+       보이므로 lazy 가 아니라 eager. -->
+  <a href="../ja/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo" width="400" height="149" loading="eager" decoding="async"></a>
   <div class="lang-switch">
     <a href="../content/korean-jeong-culture.html">KR</a>
     <a href="../content/korean-jeong-culture.en.html">EN</a>
@@ -149,7 +178,7 @@
   </div>
 </header>
 
-<main class="detail-wrap">
+<main class="detail-wrap" id="kc-main" tabindex="-1">
   <nav class="breadcrumb" aria-label="breadcrumb"><a href="../ja/index.html">ガイド一覧</a> &rsaquo; 韓国「情」文化</nav>
   <article>
   <h1>韓国の「情 (チョン, jeong)」文化 — なぜ初めて会ったアジョッシが食事をおごろうとするのか</h1>
@@ -157,7 +186,7 @@
 <p>ソウルのとある路地裏の食堂。外国人が一人で入ってビビンバを一つ注文しただけなのに、店のおばさんが頼んでもいない目玉焼きを乗せてくれ、「たくさん食べて、たくさん」と言いながら<strong>パンチャン (반찬, おかず)</strong> をもう一度追加してくれます。タクシーに乗ると、運転手のアジョッシ (아저씨, おじさん) が目的地までずっと「どこから来たの？」「ご飯は食べた？」と尋ね、降りる時には「韓国は良いでしょう？また来てね」と言います。隣のテーブルのおじいさんが突然「私が払うよ」と言って会計をしようとします。多くの外国人はこの瞬間を「韓国人は本当に親切だ」とまとめますが、韓国人はこれを親切 (kindness) という言葉では呼びません。彼らが使う言葉は<strong>情 (チョン, jeong)</strong> です。英語に訳そうとする試みはいつも失敗します — affectionも、attachmentも、bondも、そのどれ一つとしてすべてを表現できないからです。この記事は「韓国で親切にされる方法」ではなく、<strong>その行動の裏にある情緒の仕組み</strong>を外国人の視点から解説します。そして、情の<strong>温かい面だけでなく、負担に感じる面</strong>まで正直に見ていきます。韓国文化解説シリーズ<strong>第4弾</strong>です。</p>
 <hr>
 <h2>★ 一目でわかる — 「情」の主要6概念</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>概念</th>
 <th>何か</th>
 <th>一言で</th>
@@ -192,7 +221,7 @@
 <td>情を断ち切る</td>
 <td>別れるためにわざと情を断つこと。それほど情は「湧く」もの</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <blockquote><p><strong>ポイント</strong>: 情は「感情 (emotion)」というよりも、<strong>関係を運営する方式 (OS)</strong> に近いものです。韓国人はよく「情が湧く (정이 든다 / 정이 간다)」と言いますが — 情は一瞬で生まれるものではなく、<strong>時間と共にゆっくりと「湧いてくる」</strong>という意味です。</p></blockquote>
 <hr>
 <h2>⚠️ 外国人がよく誤解する3つのこと</h2>
@@ -241,7 +270,7 @@
 <hr>
 <h2>⑤ 情の両面 — 温かさと負担は表裏一体</h2>
 <p>情を「無条件に良いもの」としてだけ捉えるのは、半分しか見ていないことになります。同じ情緒が<strong>負担・干渉</strong>としても現れます。このバランスを知ることで、韓国を正確に理解できます。</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>温かい面 (もてなし・気遣い)</th>
 <th>負担に感じる面 (おせっかい・境界線の曖昧さ)</th>
 </tr></thead><tbody>
@@ -261,7 +290,7 @@
 <td>情で結ばれた強い共同体</td>
 <td>集団に個人を合わせなければならないプレッシャー</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p>学術的にも「ウリ (우리, woori)」情緒は<strong>個人のプライバシー・自律性と衝突</strong>する可能性があると指摘されています。「ウリ (私たち) vs ナム (他人)」の境界が強いため、中に入れば家族のように気遣いますが — その境界自体が外国人・外部の人間にとっては<strong>壁</strong>と感じられることもあります。また、集団に自分を合わせるプレッシャーは、韓国特有の<strong>火病 (ファビョン, hwabyung, ストレスによる精神疾患)</strong> のような情緒的ストレスの議論とも関連して研究されています。韓国人もこの両面を知っています — 「情のせいで情なしでは生きられないが、情のせいで疲れる」といった自嘲がよく聞かれます。</p>
 <blockquote><p>外国人向けのまとめ: プライベートな質問や過度な気遣いが不快に感じても、<strong>失礼だと決めつけるよりも</strong>、情の表現方法であることを知っておけば心が楽になります。同時に、<strong>不快であれば笑顔で境界線を引いても大丈夫です</strong> — それは失礼ではありません。</p></blockquote>
 <hr>
@@ -320,34 +349,7 @@
     <div><a href="korean-holiday-ancestral-culture.ja.html" style="color:var(--red);">韓国祝日・茶礼・祭祀文化 &rarr;</a></div>
   </nav>
 
-  <section id="kc-related" style="display:none;margin:2.2rem 0 0.5rem;">
-    <h2 style="font-size:1.1rem;margin-bottom:0.8rem;">関連ガイド</h2>
-    <div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"></div>
-  </section>
-  <script>
-  // related guides — 같은 카테고리 최신 6편 (contents.json fetch·언어 suffix 자동, 2026-07-04)
-  (function() {
-    var m = location.pathname.match(/\/content\/(.+?)(\.en|\.zh|\.ja)?\.html$/);
-    if (!m) return;
-    var slug = m[1], suf = m[2] || '';
-    fetch('../data/contents.json').then(function(r) { return r.json(); }).then(function(items) {
-      var me = null;
-      for (var i = 0; i < items.length; i++) { if (items[i].slug === slug) { me = items[i]; break; } }
-      if (!me) return;
-      var pool = items.filter(function(x) { return x.slug !== slug && x.category === me.category; });
-      pool.sort(function(a, b) { return (parseInt(b.id, 10) || 0) - (parseInt(a.id, 10) || 0); });
-      var picks = pool.slice(0, 6);
-      if (!picks.length) return;
-      document.getElementById('kc-related-grid').innerHTML = picks.map(function(x) {
-        var t = suf ? (x.title_en || x.title_kr) : (x.title_kr || x.title_en);
-        var ok = suf === '' || (suf === '.en' ? x.en_available : (suf === '.zh' ? x.cn_available : x.jp_available));
-        var href = x.slug + (ok ? suf : '') + '.html';
-        return '<a href="' + href + '" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">' + t + '</a>';
-      }).join('');
-      document.getElementById('kc-related').style.display = 'block';
-    }).catch(function() {});
-  })();
-  </script>
+  <section id="kc-related" style="margin:2.2rem 0 0.5rem;"><h2 style="font-size:1.1rem;margin-bottom:0.8rem;">関連ガイド</h2><div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"><a href="royal-palace-autumn-nights.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Royal Palaces After Dark: Starlight Tours, Moonlight Walks and the Royal Culture Festival — the Reservation-Only Side of Autumn Seoul</a><a href="seoul-fireworks-festival.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Seoul International Fireworks Festival 2026: September 5 at Yeouido — How to Claim a Spot Among a Million People</a><a href="seoul-architecture-eras.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Seoul Architecture Time Walk — Traditional, Modern &amp; Contemporary: 15 Picks + An Architectural Appreciation Lens</a><a href="korea-kpop-fansign-videocall.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">K-pop Fansign·Video Call (Album Entry·Yeongtong)</a><a href="korea-idol-birthday-cafe.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Idol Birthday Cafe (Saengka·Cup Sleeve·Support)</a><a href="korea-kpop-music-show-taping.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">K-pop Music Show Taping (Inkigayo·M Countdown·Music Bank)</a></div></section>
   <!-- kc-comments -->
   <section id="kc-comments" style="margin:2.5rem 0 0.5rem;">
     <h2>コメント</h2>

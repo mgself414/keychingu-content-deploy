@@ -30,7 +30,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/main.css">
 <style>
 .detail-wrap {
@@ -46,11 +46,11 @@
 .breadcrumb a { color: var(--red); font-weight: 600; }
 .detail-wrap h1 {
   font-size: 28px; font-weight: 800;
-  color: var(--black); margin-bottom: 8px;
+  color: var(--text); margin-bottom: 8px;
 }
 .detail-wrap h2 {
   font-size: 22px; font-weight: 700;
-  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  color: var(--text); margin-top: 32px; margin-bottom: 12px;
   padding-bottom: 6px;
   border-bottom: 2px solid var(--red);
 }
@@ -69,10 +69,19 @@
   font-size: 14px; line-height: 1.6;
   color: var(--text-mid); margin-bottom: 6px;
 }
+/* 표는 자기 컨테이너 안에서만 가로 스크롤한다 — 이게 없으면 min-content 폭이
+   뷰포트를 넘는 순간 페이지 전체가 가로로 밀렸다 (2026-08-31 점검 M2).
+   table 자체는 table 로 남겨 행·열 관계를 보존한다(display:block 으로 해결하지 않는 이유). */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 16px;
+}
 .detail-wrap table {
   width: 100%; border-collapse: collapse;
   margin-bottom: 16px; font-size: 13px;
 }
+.table-scroll > table { margin-bottom: 0; }
 .detail-wrap th {
   background: var(--black); color: #fff;
   padding: 10px 12px; text-align: left;
@@ -133,10 +142,30 @@
   user-select: none;
 }
 </style>
+<script>
+/* 테마 부트스트랩 — 2026-08-31 점검 M3.
+   기사 4,804p 에 이게 없어서, OS 다크 사용자가 홈(다크)에서 기사를 열면
+   라이트로 번쩍였다. main.css 의 다크 규칙은 전부 [data-theme="dark"] 스코프이고
+   prefers-color-scheme 미디어쿼리는 CSS 에 없으므로, 속성을 여기서 달아줘야 한다.
+   <head> 안에서 동기 실행 — paint 전에 끝나야 깜빡임이 없다.
+   허브와 달리 기사엔 토글 버튼이 없다. 저장된 선택(kc_theme)과 OS 설정만 따른다. */
+(function () {
+  try {
+    var s = localStorage.getItem('kc_theme');
+    if (s === 'dark' || (!s && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  } catch (e) {}
+})();
+</script>
 </head>
 <body>
+<a class="skip-link" href="#kc-main">본문 바로가기</a>
 <header class="site-header">
-  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <!-- width/height = 고유 크기(400x149). CSS 가 height:36px 로 줄이지만 브라우저는
+       이 비율로 자리를 미리 잡아 레이아웃 이동(CLS)을 막는다. 헤더 로고는 첫 화면에
+       보이므로 lazy 가 아니라 eager. -->
+  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo" width="400" height="149" loading="eager" decoding="async"></a>
   <div class="lang-switch">
     <a href="../content/hanbok-rental-guide.html" class="active">KR</a>
     <a href="../content/hanbok-rental-guide.en.html">EN</a>
@@ -145,7 +174,7 @@
   </div>
 </header>
 
-<main class="detail-wrap">
+<main class="detail-wrap" id="kc-main" tabindex="-1">
   <nav class="breadcrumb" aria-label="breadcrumb"><a href="../index.html">전체 가이드</a> &rsaquo; 한복 대여, 당황 제로 매뉴얼 — 보증금과 무료입장의 모든 절차</nav>
   <article>
   <h1>한국 한복 대여, 보증금부터 반납까지 — 당황 제로 절차판</h1>
@@ -159,7 +188,7 @@
 <p>한복 대여의 가장 큰 이유는 사진이 아니라 <strong>입장료다</strong>. 한복을 입고 경복궁·창덕궁·덕수궁 등 4대 고궁에 가면 <strong>입장료가 면제</strong>된다 — 핵심은 몇천 원 절약이 아니라 표를 사려고 줄을 설 필요 자체가 없다는 동선 단축이다. 경복궁 정문(광화문) 주변에는 한복 대여점이 도보 <strong>1~5분 거리에 수십 개</strong> 몰려 있어, 숙소에서 오는 길에 자연스럽게 들를 수 있다.</p>
 <hr>
 <h2>② 가격 체계 — 3단으로 갈린다</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>등급</th>
 <th>가격대</th>
 <th>대여 시간</th>
@@ -183,14 +212,14 @@
 <td>하루 종일</td>
 <td>위와 동일 + 반납 시간 여유</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <ul>
 <li>대부분 매장이 <strong>가방·머리 장식(뒤꽂이·비녀)을 가격에 포함</strong>한다 — 별도 소품비를 요구하면 다른 매장과 비교해볼 것.</li>
 <li>커플·가족 세트 할인은 매장마다 달라 여기서는 다루지 않는다 — 가격은 확인된 범위만 기재.</li>
 </ul>
 <hr>
 <h2>③ 대여 마스터 플로우 — 매장 문 열고 나오기까지</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>순서</th>
 <th>하는 일</th>
 <th>메모</th>
@@ -225,12 +254,12 @@
 <td><strong>반납 시간 확인</strong></td>
 <td>직원이 알려주는 반납 마감 시각을 <strong>꼭 메모·사진</strong>으로 남기기</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p>이 6단계는 매장이 바뀌어도 거의 동일하다. 4번이 가장 헷갈리는 지점이다.</p>
 <hr>
 <h2>④ 보증금 분기 — 여권을 맡길 것인가, 현금을 낼 것인가</h2>
 <p>한국 한복 대여점의 보증금 방식은 둘 중 하나다.</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>방식</th>
 <th>조건</th>
 <th>반납 시</th>
@@ -245,7 +274,7 @@
 <td>여권을 맡기지 않는 대신 현금 50,000원</td>
 <td>정상 반납하면 <strong>전액 환급</strong></td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p>여권을 안 맡기고 싶으면 현금 5만 원을 더 준비하면 된다 — 협상이 아니라 매장이 이미 정해둔 정식 옵션이다.</p>
 <hr>
 <h2>⑤ &quot;여권을 맡겨도 되나&quot; — 불안하다면 현금이 정답</h2>
@@ -266,7 +295,7 @@
 <p><strong>지각했다면</strong>: 대부분 매장이 초과 시간에 비례한 <strong>추가 요금</strong>을 받는 방식으로 처리하며, 보증금을 아예 몰수하는 경우는 드물다. 그래도 늦을 것 같으면 반납 마감 전에 <strong>매장에 전화나 방문으로 미리 알리는 것</strong>이 가장 무난하다.</p>
 <hr>
 <h2>⑨ 생존 단어 10</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>화면·직원이 쓰는 한국어</th>
 <th>읽기</th>
 <th>뜻</th>
@@ -321,7 +350,7 @@
 <td>geompyogu</td>
 <td>Ticket gate (palace entrance)</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>⑩ 당황 시나리오 3</h2>
 <p>1. <strong>보증금 낼 현금이 없다</strong> — 카드 결제 가능 여부를 먼저 물어보되, 안 되면 근처 편의점 ATM(대부분 도보 5분 내)에서 인출한다. 경복궁 앞은 관광 상권이라 ATM이 흔하다.</p>
@@ -361,34 +390,7 @@
     <div><a href="intercity-bus-guide.html" style="color:var(--red);">고속·시외버스 터미널, 당황 제로 매뉴얼 — 앱부터 다르다는 걸 아는 것이 반이다 &rarr;</a></div>
   </nav>
 
-  <section id="kc-related" style="display:none;margin:2.2rem 0 0.5rem;">
-    <h2 style="font-size:1.1rem;margin-bottom:0.8rem;">관련 가이드</h2>
-    <div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"></div>
-  </section>
-  <script>
-  // related guides — 같은 카테고리 최신 6편 (contents.json fetch·언어 suffix 자동, 2026-07-04)
-  (function() {
-    var m = location.pathname.match(/\/content\/(.+?)(\.en|\.zh|\.ja)?\.html$/);
-    if (!m) return;
-    var slug = m[1], suf = m[2] || '';
-    fetch('../data/contents.json').then(function(r) { return r.json(); }).then(function(items) {
-      var me = null;
-      for (var i = 0; i < items.length; i++) { if (items[i].slug === slug) { me = items[i]; break; } }
-      if (!me) return;
-      var pool = items.filter(function(x) { return x.slug !== slug && x.category === me.category; });
-      pool.sort(function(a, b) { return (parseInt(b.id, 10) || 0) - (parseInt(a.id, 10) || 0); });
-      var picks = pool.slice(0, 6);
-      if (!picks.length) return;
-      document.getElementById('kc-related-grid').innerHTML = picks.map(function(x) {
-        var t = suf ? (x.title_en || x.title_kr) : (x.title_kr || x.title_en);
-        var ok = suf === '' || (suf === '.en' ? x.en_available : (suf === '.zh' ? x.cn_available : x.jp_available));
-        var href = x.slug + (ok ? suf : '') + '.html';
-        return '<a href="' + href + '" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">' + t + '</a>';
-      }).join('');
-      document.getElementById('kc-related').style.display = 'block';
-    }).catch(function() {});
-  })();
-  </script>
+  <section id="kc-related" style="margin:2.2rem 0 0.5rem;"><h2 style="font-size:1.1rem;margin-bottom:0.8rem;">관련 가이드</h2><div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"><a href="solo-female-safety-checklist.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">여성 혼자 한국 여행 — 겁주기 없는 안전 체크리스트</a><a href="china-payment-survival.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">중화권 여행자 한국 결제 생존 매뉴얼 — 알리페이는 되고, 위챗은 안 되고, 은련은 준비가 필요하다</a><a href="duty-free-pickup-guide.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">면세품은 공항에서 받는다, 당황 제로 매뉴얼 — 인도장 수령 절차</a><a href="korea-smoking-guide.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">한국에서 담배 피울 곳 찾기, 당황 제로 매뉴얼 — 벌금 안 내는 법</a><a href="busan-transit-guide.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">부산 대중교통 문법 — 두 개의 선만 읽으면 되는 도시</a><a href="seoul-cold-snap-survival.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">서울 한파 생존 가이드 — 영하 10도의 하루를 버티는 법</a></div></section>
   <!-- kc-comments -->
   <section id="kc-comments" style="margin:2.5rem 0 0.5rem;">
     <h2>댓글</h2>

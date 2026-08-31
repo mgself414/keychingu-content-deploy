@@ -23,7 +23,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="韩国年糕6种矩阵">
 <meta name="twitter:description" content="长条年糕、松饼、打糕、白雪糕、糯米团子、糯米炒年糕等6种年糕，适用于节日、周岁宴、宴会。">
-<meta name="twitter:image" content="https://mgself414.github.io/keychingu-content-deploy/assets/og/korea-ricecake-6types-matrix.jpg">
+<meta name="twitter:image" content="https://mgself414.github.io/keychingu-content-deploy/og/korea-ricecake-6types-matrix.png">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"韩国年糕6种矩阵","description":"长条年糕、松饼、打糕、白雪糕、糯米团子、糯米炒年糕等6种年糕，适用于节日、周岁宴、宴会。","datePublished":"2026-06-09","dateModified":"2026-06-14","inLanguage":"zh-CN","url":"https://mgself414.github.io/keychingu-content-deploy/content/korea-ricecake-6types-matrix.zh.html","image":"https://mgself414.github.io/keychingu-content-deploy/assets/og/korea-ricecake-6types-matrix.jpg","author":{"@type":"Organization","name":"KeyChinGu","url":"https://mgself414.github.io/keychingu-content-deploy/"},"publisher":{"@type":"Organization","name":"KeyChinGu","logo":{"@type":"ImageObject","url":"https://mgself414.github.io/keychingu-content-deploy/assets/logo/logo_2-4_color_small.png"}},"speakable":{"@type":"SpeakableSpecification","cssSelector":["h1","h2","p"]}}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"KeyChinGu","item":"https://mgself414.github.io/keychingu-content-deploy/"},{"@type":"ListItem","position":2,"name":"딥다이브","item":"https://mgself414.github.io/keychingu-content-deploy/deep-dives.html"},{"@type":"ListItem","position":3,"name":"韩国年糕6种矩阵","item":"https://mgself414.github.io/keychingu-content-deploy/content/korea-ricecake-6types-matrix.zh.html"}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"KeyChinGu","alternateName":["키친구","KeyChinGu Korea"],"url":"https://mgself414.github.io/keychingu-content-deploy/","logo":"https://mgself414.github.io/keychingu-content-deploy/assets/logo/logo_2-4_color_small.png","description":"외국인 관광객 대상 한국 큐레이션 가이드 — 939+ 토픽·60+ 도시·4언어 (KR·EN·CN·JP)·8축 콘텐츠 매트릭스·5 traveler segments","foundingDate":"2024","areaServed":{"@type":"Country","name":"South Korea"},"audience":{"@type":"Audience","audienceType":"Foreign tourists visiting Korea (foreign MZ travelers·solo·couple·family·budget)"},"sameAs":["https://www.instagram.com/keychingu.korea/","https://github.com/mgself414/keychingu-content-deploy","https://mgself414.github.io/keychingu-content-deploy/llms.txt","https://mgself414.github.io/keychingu-content-deploy/llms-full.txt"]}</script>
@@ -34,7 +34,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/main.css">
 <style>
 .detail-wrap {
@@ -50,11 +50,11 @@
 .breadcrumb a { color: var(--red); font-weight: 600; }
 .detail-wrap h1 {
   font-size: 28px; font-weight: 800;
-  color: var(--black); margin-bottom: 8px;
+  color: var(--text); margin-bottom: 8px;
 }
 .detail-wrap h2 {
   font-size: 22px; font-weight: 700;
-  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  color: var(--text); margin-top: 32px; margin-bottom: 12px;
   padding-bottom: 6px;
   border-bottom: 2px solid var(--red);
 }
@@ -73,10 +73,19 @@
   font-size: 14px; line-height: 1.6;
   color: var(--text-mid); margin-bottom: 6px;
 }
+/* 표는 자기 컨테이너 안에서만 가로 스크롤한다 — 이게 없으면 min-content 폭이
+   뷰포트를 넘는 순간 페이지 전체가 가로로 밀렸다 (2026-08-31 점검 M2).
+   table 자체는 table 로 남겨 행·열 관계를 보존한다(display:block 으로 해결하지 않는 이유). */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 16px;
+}
 .detail-wrap table {
   width: 100%; border-collapse: collapse;
   margin-bottom: 16px; font-size: 13px;
 }
+.table-scroll > table { margin-bottom: 0; }
 .detail-wrap th {
   background: var(--black); color: #fff;
   padding: 10px 12px; text-align: left;
@@ -137,11 +146,31 @@
   user-select: none;
 }
 </style>
+<script>
+/* 테마 부트스트랩 — 2026-08-31 점검 M3.
+   기사 4,804p 에 이게 없어서, OS 다크 사용자가 홈(다크)에서 기사를 열면
+   라이트로 번쩍였다. main.css 의 다크 규칙은 전부 [data-theme="dark"] 스코프이고
+   prefers-color-scheme 미디어쿼리는 CSS 에 없으므로, 속성을 여기서 달아줘야 한다.
+   <head> 안에서 동기 실행 — paint 전에 끝나야 깜빡임이 없다.
+   허브와 달리 기사엔 토글 버튼이 없다. 저장된 선택(kc_theme)과 OS 설정만 따른다. */
+(function () {
+  try {
+    var s = localStorage.getItem('kc_theme');
+    if (s === 'dark' || (!s && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  } catch (e) {}
+})();
+</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "TouristAttraction", "name": "한국 떡류 6종 매트릭스 — 가래떡부터 송편까지 명절·잔치 정통 풀세트", "url": "https://mgself414.github.io/keychingu-content-deploy/content/korea-ricecake-6types-matrix.html", "image": "https://mgself414.github.io/keychingu-content-deploy/og/korea-ricecake-6types-matrix.png", "address": {"@type": "PostalAddress", "addressLocality": "Seoul", "addressCountry": "KR"}, "touristType": "Foreigner-friendly tourism"}</script>
 </head>
 <body>
+<a class="skip-link" href="#kc-main">跳到正文</a>
 <header class="site-header">
-  <a href="../zh/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <!-- width/height = 고유 크기(400x149). CSS 가 height:36px 로 줄이지만 브라우저는
+       이 비율로 자리를 미리 잡아 레이아웃 이동(CLS)을 막는다. 헤더 로고는 첫 화면에
+       보이므로 lazy 가 아니라 eager. -->
+  <a href="../zh/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo" width="400" height="149" loading="eager" decoding="async"></a>
   <div class="lang-switch">
     <a href="../content/korea-ricecake-6types-matrix.html">KR</a>
     <a href="../content/korea-ricecake-6types-matrix.en.html">EN</a>
@@ -150,7 +179,7 @@
   </div>
 </header>
 
-<main class="detail-wrap">
+<main class="detail-wrap" id="kc-main" tabindex="-1">
   <nav class="breadcrumb" aria-label="breadcrumb"><a href="../zh/index.html">全部指南</a> &rsaquo; 韩国年糕6种矩阵</nav>
   <article>
   <h1>6种韩国年糕矩阵——全套传统节日用品，从garaetteok到songpyeon</h1>
@@ -161,7 +190,7 @@
 <p>老外的韩式年糕痛点=<strong>“我只知道炒年糕”</strong>。韩国年糕 = <strong>正宗韩国节日、石头、婚礼、装置#1</strong> + No.1韩国文化。即使是同一个“韩国年糕”，Garaetteok（农历新年年糕汤招牌）、Songpyeon（中秋招牌）、Injeolmi（传统宴会、大酱）、Baekseolgi（一周岁和周年纪念日的白年糕）、Gyeongdan（串烧型、小吃）和糯年糕（MZ潮流小吃）都有不同的假期、成分和口味。文化。外国人 (a) 只知道炒年糕，没有吃其他年糕的经验 (b) 松饼 = 不知道中秋招牌 (c) 年糕汤 = 不知道农历新年传统 (d) Injeolmi = 不知道大酱/宴席食品。本指南以6种矩阵+节日/盛宴传统+外国人优先介绍为基础。</p>
 <hr>
 <h2>6种年糕矩阵一目了然</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>类型</th>
 <th>韩文名/英文名</th>
 <th>主要成分</th>
@@ -210,13 +239,13 @@
 <td>MZ休闲食品</td>
 <td>★★★★★ (MZ vlog)</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <blockquote><p><strong>没有。 1份针对外国人的介绍 = Garaetteok（农历年糕汤）+ Songpyeon（中秋）</strong>（假日经典#1）</p></blockquote>
 <blockquote><p><strong>盛宴/婚礼 = Injeolmi + Baekseolgi</strong></p></blockquote>
 <blockquote><p><strong>MZ趋势=糯米糕+饺子</strong></p></blockquote>
 <hr>
 <h2>🗓 假期和盛宴时间</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>当</th>
 <th>招牌年糕</th>
 <th>意义</th>
@@ -251,7 +280,7 @@
 <td>饺子、糯米糕、蜜糖糕</td>
 <td>日常生活·MZ</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>🥢 6 种深度潜水</h2>
 <h3>🥢 Garaetteok (Garaetteok) — 农历新年#1</h3>
@@ -396,34 +425,7 @@
     <div><a href="korea-ricecake-workflow.zh.html" style="color:var(--red);">韩国年糕点餐·节日流程 &rarr;</a></div>
   </nav>
 
-  <section id="kc-related" style="display:none;margin:2.2rem 0 0.5rem;">
-    <h2 style="font-size:1.1rem;margin-bottom:0.8rem;">相关指南</h2>
-    <div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"></div>
-  </section>
-  <script>
-  // related guides — 같은 카테고리 최신 6편 (contents.json fetch·언어 suffix 자동, 2026-07-04)
-  (function() {
-    var m = location.pathname.match(/\/content\/(.+?)(\.en|\.zh|\.ja)?\.html$/);
-    if (!m) return;
-    var slug = m[1], suf = m[2] || '';
-    fetch('../data/contents.json').then(function(r) { return r.json(); }).then(function(items) {
-      var me = null;
-      for (var i = 0; i < items.length; i++) { if (items[i].slug === slug) { me = items[i]; break; } }
-      if (!me) return;
-      var pool = items.filter(function(x) { return x.slug !== slug && x.category === me.category; });
-      pool.sort(function(a, b) { return (parseInt(b.id, 10) || 0) - (parseInt(a.id, 10) || 0); });
-      var picks = pool.slice(0, 6);
-      if (!picks.length) return;
-      document.getElementById('kc-related-grid').innerHTML = picks.map(function(x) {
-        var t = suf ? (x.title_en || x.title_kr) : (x.title_kr || x.title_en);
-        var ok = suf === '' || (suf === '.en' ? x.en_available : (suf === '.zh' ? x.cn_available : x.jp_available));
-        var href = x.slug + (ok ? suf : '') + '.html';
-        return '<a href="' + href + '" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">' + t + '</a>';
-      }).join('');
-      document.getElementById('kc-related').style.display = 'block';
-    }).catch(function() {});
-  })();
-  </script>
+  <section id="kc-related" style="margin:2.2rem 0 0.5rem;"><h2 style="font-size:1.1rem;margin-bottom:0.8rem;">相关指南</h2><div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"><a href="busan-suyeong-dongnae.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Busan&#x27;s Point of Origin — Suyeong and Dongnae, Behind Gwangalli and Joseon-Era Busan</a><a href="sindang-guide.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Sindang-dong: The Neighborhood Being Called the Next Seongsu — Market, Hip Bars and Original Tteokbokki in Three Layers</a><a href="seoul-overrated-underrated.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Overrated vs Underrated Seoul: Reallocating Your Time by What Foreign Reviews Actually Say</a><a href="myeongdong-euljiro-evening-walk.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Myeongdong to Euljiro Evening Walk: Six Faces of Seoul in Two Hours, Ending with Yajang Beer</a><a href="cvs-drinks-map.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">The Complete Map of Korean Convenience Store Drinks: From Banana Milk to Hangover Cures</a><a href="korea-snack-brands.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Korean Snack Brands 101: Nongshim, Orion, Lotte, Haitai and Crown — Reading K-Snacks by Maker</a></div></section>
   <!-- kc-comments -->
   <section id="kc-comments" style="margin:2.5rem 0 0.5rem;">
     <h2>评论</h2>

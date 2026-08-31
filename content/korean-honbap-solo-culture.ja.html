@@ -34,7 +34,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/main.css">
 <style>
 .detail-wrap {
@@ -50,11 +50,11 @@
 .breadcrumb a { color: var(--red); font-weight: 600; }
 .detail-wrap h1 {
   font-size: 28px; font-weight: 800;
-  color: var(--black); margin-bottom: 8px;
+  color: var(--text); margin-bottom: 8px;
 }
 .detail-wrap h2 {
   font-size: 22px; font-weight: 700;
-  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  color: var(--text); margin-top: 32px; margin-bottom: 12px;
   padding-bottom: 6px;
   border-bottom: 2px solid var(--red);
 }
@@ -73,10 +73,19 @@
   font-size: 14px; line-height: 1.6;
   color: var(--text-mid); margin-bottom: 6px;
 }
+/* 표는 자기 컨테이너 안에서만 가로 스크롤한다 — 이게 없으면 min-content 폭이
+   뷰포트를 넘는 순간 페이지 전체가 가로로 밀렸다 (2026-08-31 점검 M2).
+   table 자체는 table 로 남겨 행·열 관계를 보존한다(display:block 으로 해결하지 않는 이유). */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 16px;
+}
 .detail-wrap table {
   width: 100%; border-collapse: collapse;
   margin-bottom: 16px; font-size: 13px;
 }
+.table-scroll > table { margin-bottom: 0; }
 .detail-wrap th {
   background: var(--black); color: #fff;
   padding: 10px 12px; text-align: left;
@@ -137,10 +146,30 @@
   user-select: none;
 }
 </style>
+<script>
+/* 테마 부트스트랩 — 2026-08-31 점검 M3.
+   기사 4,804p 에 이게 없어서, OS 다크 사용자가 홈(다크)에서 기사를 열면
+   라이트로 번쩍였다. main.css 의 다크 규칙은 전부 [data-theme="dark"] 스코프이고
+   prefers-color-scheme 미디어쿼리는 CSS 에 없으므로, 속성을 여기서 달아줘야 한다.
+   <head> 안에서 동기 실행 — paint 전에 끝나야 깜빡임이 없다.
+   허브와 달리 기사엔 토글 버튼이 없다. 저장된 선택(kc_theme)과 OS 설정만 따른다. */
+(function () {
+  try {
+    var s = localStorage.getItem('kc_theme');
+    if (s === 'dark' || (!s && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  } catch (e) {}
+})();
+</script>
 </head>
 <body>
+<a class="skip-link" href="#kc-main">本文へスキップ</a>
 <header class="site-header">
-  <a href="../ja/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <!-- width/height = 고유 크기(400x149). CSS 가 height:36px 로 줄이지만 브라우저는
+       이 비율로 자리를 미리 잡아 레이아웃 이동(CLS)을 막는다. 헤더 로고는 첫 화면에
+       보이므로 lazy 가 아니라 eager. -->
+  <a href="../ja/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo" width="400" height="149" loading="eager" decoding="async"></a>
   <div class="lang-switch">
     <a href="../content/korean-honbap-solo-culture.html">KR</a>
     <a href="../content/korean-honbap-solo-culture.en.html">EN</a>
@@ -149,7 +178,7 @@
   </div>
 </header>
 
-<main class="detail-wrap">
+<main class="detail-wrap" id="kc-main" tabindex="-1">
   <nav class="breadcrumb" aria-label="breadcrumb"><a href="../ja/index.html">ガイド一覧</a> &rsaquo; 韓国ソロ飯・ソロ酒文化</nav>
   <article>
   <h1>韓国のホンパプ・ホンスル文化 — みんなで食べるのが美徳だった国で、なぜ今、一人で食べるのか</h1>
@@ -157,7 +186,7 @@
 <p>韓国ドラマやバラエティ番組を見ると、2種類の食事シーンが交互に登場します。一つは、家族や同僚が丸い食卓を囲み、おかずを分け合い、「たくさん食べてね」と声をかけながらソジュ (소주/韓国焼酎) のグラスをぶつけ合う<strong>「みんなで食べる」</strong>シーンです。もう一つは、最近ぐっと増えました — 主人公が一人でコンビニ弁当を広げたり、1人焼肉店で黙々と肉を焼いたり、ベッドに座って缶ビールをプシュッと開け、「ホンスル (혼술/おひとり様飲み) が最高だよね」と言うシーンです。外国人の目には、これが単に「韓国人も一人で食べるんだな」程度に映るかもしれませんが、韓国人にとってこの変化は、はるかに大きな物語です。<strong>みんなで食べるのが情 (ジョン/韓国特有の感情、人とのつながりや温かい心) であり美徳</strong>であり、一人で食べる人には気の毒な目を向けていた国で、わずか10年余りの間に<strong>ホンパプ (혼밥/おひとり様ごはん)・ホンスル</strong>が堂々たるライフスタイルになったからです。この記事は、「一人で食事ができる店のおすすめ」（→グルメガイド）ではなく、<strong>この変化がなぜ起こったのか、伝統とどのように衝突しているのか、そしてその光と影</strong>を外国人の視点で解説します。韓国文化解説シリーズ<strong>第28弾</strong>です。</p>
 <hr>
 <h2>★ 一目でわかる — 「ホンOO」文化 6つのタイプ</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>ホンOO</th>
 <th>意味</th>
 <th>要約</th>
@@ -192,7 +221,7 @@
 <td>一人 + 族</td>
 <td>上記の活動を楽しむ人・文化の総称</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <blockquote><p><strong>ポイント</strong>: 韓国語は「ホンジャ (혼자/一人で)」の「ホン」を頭に付けて<strong>無限の組み合わせ</strong>を作ります。「ホンパプ (혼밥)」が道を切り開くと、ホンスル (혼술)・ホンヨン (혼영)・ホンヘン (혼행)・ホンゴン (혼공)・ホンショ (혼쇼/ショッピング) まで次々と生まれました。この造語自体が、「一人ですることをもはや隠さない」という社会変化の兆候です。</p></blockquote>
 <hr>
 <h2>⚠️ 外国人がよく誤解する3つのこと</h2>
@@ -231,7 +260,7 @@
 <p>ホンパプ (혼밥) 文化が広がるにつれて、韓国社会は急速に<strong>一人で食事がしやすいインフラ</strong>を整備しました。</p>
 <p><strong>ホンパプ (혼밥) レベル (ホンパプ難易度ジョーク)</strong></p>
 <p>韓国のインターネットには、「あなたのホンパプ (혼밥) レベルは？」という有名な<strong>9段階難易度表</strong>があります。一人で食べるのが最も簡単な場所から、最も難しい（＝勇気が必要な）場所の順です。</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>レベル</th>
 <th>場所</th>
 <th>体感難易度</th>
@@ -261,7 +290,7 @@
 <td><strong>ホンスル (ホンスル/酒場で一人で)</strong></td>
 <td>最上級者</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <blockquote><p>この表はジョークですが、「ホンパプ (혼밥) にも段階がある」という認識自体が1人文化の広がりを示しています。</p></blockquote>
 <p><strong>実際のインフラ</strong></p>
 <ul>
@@ -274,7 +303,7 @@
 <hr>
 <h2>⑤ ★ 両面 — 自由の光と孤立の影</h2>
 <p>ホンパプ (혼밥)・ホンスル (혼술) 文化は<strong>美化するものでも、悲観するものでもありません。</strong> 両面を合わせて見てこそ正確です。</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th></th>
 <th>☀️ 明るい面 (自由・セルフケア)</th>
 <th>🌑 暗い面 (孤立・孤独)</th>
@@ -299,7 +328,7 @@
 <td>個人尊重・多様性</td>
 <td><strong>社会的孤立・孤独死 (コドクサ/고독사)</strong> の懸念</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p><strong>明るい面</strong> — ホンパプ (혼밥) は<em>欠乏の印</em>から<strong>自由・セルフケアの象徴</strong>へと変わりました。他人の目を気にせず、自分が食べたいものを自分のペースで食べる楽しみ、人間関係の疲労から解放され、ひたすら自分のための時間を持つ回復。「私は一人で暮らす (나 혼자 산다)」「ホンスル男女 (혼술남녀)」のような番組がこの楽しみを正常で素敵なものとして描き出し、認識を変えました。</p>
 <p><strong>暗い面</strong> — 同時に、1人世帯 (イルリンカグ/1인 가구) の急増は<strong>社会的孤立</strong>という影を伴います。韓国では、<em>助けが必要でも頼る場所がない社会的孤立</em>の状態にある成人が約<strong>3人に1人</strong>という調査があり（福祉部、<em>確認推奨</em>）、<strong>孤独死 (コドクサ/고독사)</strong>（一人暮らしで誰にも看取られずに亡くなること）は2024年に約<strong>3,924人</strong>と緩やかですが増加傾向にあります（<em>確認推奨</em>）。ホンパプ (혼밥) の自由さと1人世帯の孤独は、<strong>同じコインの裏表</strong>です。</p>
 <blockquote><p><strong>バランス</strong>: ホンパプ (혼밥) がすぐに孤独を意味するわけではありません。多くのホンジョク (혼족) は、自発的かつ満足して一人を楽しんでいます。同時に、1人化がもたらす孤立のリスクも実在します。韓国社会は今、「自由を享受しつつ、つながりを失わない」という課題を共に解決しようとしています。</p></blockquote>
@@ -359,34 +388,7 @@
     <div><a href="korean-chemyeon-face-culture.ja.html" style="color:var(--red);">韓国の「体面」文化 &rarr;</a></div>
   </nav>
 
-  <section id="kc-related" style="display:none;margin:2.2rem 0 0.5rem;">
-    <h2 style="font-size:1.1rem;margin-bottom:0.8rem;">関連ガイド</h2>
-    <div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"></div>
-  </section>
-  <script>
-  // related guides — 같은 카테고리 최신 6편 (contents.json fetch·언어 suffix 자동, 2026-07-04)
-  (function() {
-    var m = location.pathname.match(/\/content\/(.+?)(\.en|\.zh|\.ja)?\.html$/);
-    if (!m) return;
-    var slug = m[1], suf = m[2] || '';
-    fetch('../data/contents.json').then(function(r) { return r.json(); }).then(function(items) {
-      var me = null;
-      for (var i = 0; i < items.length; i++) { if (items[i].slug === slug) { me = items[i]; break; } }
-      if (!me) return;
-      var pool = items.filter(function(x) { return x.slug !== slug && x.category === me.category; });
-      pool.sort(function(a, b) { return (parseInt(b.id, 10) || 0) - (parseInt(a.id, 10) || 0); });
-      var picks = pool.slice(0, 6);
-      if (!picks.length) return;
-      document.getElementById('kc-related-grid').innerHTML = picks.map(function(x) {
-        var t = suf ? (x.title_en || x.title_kr) : (x.title_kr || x.title_en);
-        var ok = suf === '' || (suf === '.en' ? x.en_available : (suf === '.zh' ? x.cn_available : x.jp_available));
-        var href = x.slug + (ok ? suf : '') + '.html';
-        return '<a href="' + href + '" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">' + t + '</a>';
-      }).join('');
-      document.getElementById('kc-related').style.display = 'block';
-    }).catch(function() {});
-  })();
-  </script>
+  <section id="kc-related" style="margin:2.2rem 0 0.5rem;"><h2 style="font-size:1.1rem;margin-bottom:0.8rem;">関連ガイド</h2><div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"><a href="royal-palace-autumn-nights.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Royal Palaces After Dark: Starlight Tours, Moonlight Walks and the Royal Culture Festival — the Reservation-Only Side of Autumn Seoul</a><a href="seoul-fireworks-festival.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Seoul International Fireworks Festival 2026: September 5 at Yeouido — How to Claim a Spot Among a Million People</a><a href="seoul-architecture-eras.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Seoul Architecture Time Walk — Traditional, Modern &amp; Contemporary: 15 Picks + An Architectural Appreciation Lens</a><a href="korea-kpop-fansign-videocall.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">K-pop Fansign·Video Call (Album Entry·Yeongtong)</a><a href="korea-idol-birthday-cafe.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Idol Birthday Cafe (Saengka·Cup Sleeve·Support)</a><a href="korea-kpop-music-show-taping.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">K-pop Music Show Taping (Inkigayo·M Countdown·Music Bank)</a></div></section>
   <!-- kc-comments -->
   <section id="kc-comments" style="margin:2.5rem 0 0.5rem;">
     <h2>コメント</h2>

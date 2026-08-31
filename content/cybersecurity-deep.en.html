@@ -34,7 +34,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/main.css">
 <style>
 .detail-wrap {
@@ -50,11 +50,11 @@
 .breadcrumb a { color: var(--red); font-weight: 600; }
 .detail-wrap h1 {
   font-size: 28px; font-weight: 800;
-  color: var(--black); margin-bottom: 8px;
+  color: var(--text); margin-bottom: 8px;
 }
 .detail-wrap h2 {
   font-size: 22px; font-weight: 700;
-  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  color: var(--text); margin-top: 32px; margin-bottom: 12px;
   padding-bottom: 6px;
   border-bottom: 2px solid var(--red);
 }
@@ -73,10 +73,19 @@
   font-size: 14px; line-height: 1.6;
   color: var(--text-mid); margin-bottom: 6px;
 }
+/* 표는 자기 컨테이너 안에서만 가로 스크롤한다 — 이게 없으면 min-content 폭이
+   뷰포트를 넘는 순간 페이지 전체가 가로로 밀렸다 (2026-08-31 점검 M2).
+   table 자체는 table 로 남겨 행·열 관계를 보존한다(display:block 으로 해결하지 않는 이유). */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 16px;
+}
 .detail-wrap table {
   width: 100%; border-collapse: collapse;
   margin-bottom: 16px; font-size: 13px;
 }
+.table-scroll > table { margin-bottom: 0; }
 .detail-wrap th {
   background: var(--black); color: #fff;
   padding: 10px 12px; text-align: left;
@@ -137,10 +146,30 @@
   user-select: none;
 }
 </style>
+<script>
+/* 테마 부트스트랩 — 2026-08-31 점검 M3.
+   기사 4,804p 에 이게 없어서, OS 다크 사용자가 홈(다크)에서 기사를 열면
+   라이트로 번쩍였다. main.css 의 다크 규칙은 전부 [data-theme="dark"] 스코프이고
+   prefers-color-scheme 미디어쿼리는 CSS 에 없으므로, 속성을 여기서 달아줘야 한다.
+   <head> 안에서 동기 실행 — paint 전에 끝나야 깜빡임이 없다.
+   허브와 달리 기사엔 토글 버튼이 없다. 저장된 선택(kc_theme)과 OS 설정만 따른다. */
+(function () {
+  try {
+    var s = localStorage.getItem('kc_theme');
+    if (s === 'dark' || (!s && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  } catch (e) {}
+})();
+</script>
 </head>
 <body>
+<a class="skip-link" href="#kc-main">Skip to content</a>
 <header class="site-header">
-  <a href="../en/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <!-- width/height = 고유 크기(400x149). CSS 가 height:36px 로 줄이지만 브라우저는
+       이 비율로 자리를 미리 잡아 레이아웃 이동(CLS)을 막는다. 헤더 로고는 첫 화면에
+       보이므로 lazy 가 아니라 eager. -->
+  <a href="../en/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo" width="400" height="149" loading="eager" decoding="async"></a>
   <div class="lang-switch">
     <a href="../content/cybersecurity-deep.html">KR</a>
     <a href="../content/cybersecurity-deep.en.html" class="active">EN</a>
@@ -149,7 +178,7 @@
   </div>
 </header>
 
-<main class="detail-wrap">
+<main class="detail-wrap" id="kc-main" tabindex="-1">
   <nav class="breadcrumb" aria-label="breadcrumb"><a href="../en/index.html">All Guides</a> &rsaquo; Foreigner Korea Cybersecurity Deep Dive</nav>
   <article>
   <h1>Foreigner Korea Cyber Security Deep Dive — KISA (한국인터넷진흥원) and Hacker Conferences Top 12</h1>
@@ -160,7 +189,7 @@
 <p>The number one spot for foreign residents and digital nomad enthusiasts = <strong>Cyber Security Deep Dive</strong> (follow-up to <a href="payment-system-deep.en.html" class="xref">#527</a> Payment, <a href="korean-sns.en.html" class="xref">#516</a> SNS, and <a href="it-startup-deep.en.html" class="xref">#535</a> IT). KISA (한국인터넷진흥원) + Foreigner English OK + Hacker Conferences + a complete safety package.</p>
 <hr>
 <h2>★ At a Glance: 12 Cyber Security Matrix</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>#</th>
 <th>Security/Service</th>
 <th>4 Axes</th>
@@ -238,7 +267,7 @@
 <td>Integrated Cluster</td>
 <td>English OK · KISA (한국인터넷진흥원) Certified · Foreigner&#x27;s Top Priority</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p><strong>+ Additional 4</strong>: Foreigner Cyber Security Education (<a href="korean-language-school.en.html" class="xref">#403</a>·<a href="korean-conversation.en.html" class="xref">#537</a>) · Foreigner Cyber Security Books (<a href="bookstore-indie-deep.en.html" class="xref">#541</a>) · Foreigner Cyber Security for Family (<a href="family-children-travel.en.html" class="xref">#533</a>) · Foreigner Cyber Security Emergency (<a href="emergency-hospital.en.html" class="xref">#405</a>)</p>
 <hr>
 <h2>⚠ 5 Common Foreigner Mistakes</h2>
@@ -385,7 +414,7 @@
 </ul>
 <hr>
 <h2>📅 Season Matrix (Foreigner Enthusiast)</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>Season</th>
 <th>Signature Activities</th>
 <th>Foreigner Enthusiast Urgency Level</th>
@@ -410,7 +439,7 @@
 <td>New Year (새해)·Sunrise (일출)·Skiing (스키)·Indoor Matrix</td>
 <td>★★★★</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>👥 Foreigner 5 Segment Matrix</h2>
 <ul>
@@ -422,7 +451,7 @@
 </ul>
 <hr>
 <h2>⏱ Time-Slot Recommended Itinerary</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>Time Slot</th>
 <th>Recommended Activities</th>
 </tr></thead><tbody>
@@ -442,7 +471,7 @@
 <td><strong>Night (21:00~24:00)</strong></td>
 <td>Night Views (야경)·Cafes·24h Matrix·MZ (Millennials and Gen Z) + Instagram <a href="seongsu.en.html" class="xref">#1</a></td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>✈️ Foreigner Enthusiast Matrix</h2>
 <ul>
@@ -462,7 +491,7 @@
 <hr>
 <h2>📊 Foreigner Enthusiast Statistics Matrix</h2>
 <p>Foreigner Korean Tourists (외국인 한국 관광객) = <strong>17.5 million people (명) annually (연) (2024)</strong> · MZ (Millennials and Gen Z) (20-39 years old) <strong>58%</strong> · Average Stay (평균 체류) <strong>6.4 days</strong> · Average Spending (평균 지출) <strong>1,605 USD/person</strong> · Revisit Rate (재방문율) <strong>23%</strong> (Korea Tourism Organization (한국관광공사) 2024 Statistics).</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>Item</th>
 <th>Figure</th>
 <th>Source</th>
@@ -502,7 +531,7 @@
 <td><strong>Spring (봄) (Cherry Blossoms (벚꽃)·April)·Autumn (가을) (Autumn Foliage (단풍)·October-November)</strong></td>
 <td>Korea Tourism Organization (관광공사) Season Analysis</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <blockquote><p><strong>Figure Interpretation (수치 해석)</strong>: Complete English Package 65%·Payment 80%·Season Matrix Spring (봄)·Autumn (가을) <a href="seongsu.en.html" class="xref">#1</a>·1339 Emergency 24h English = Safe for First-time Visitors (외국인 첫 진입 안전)·Enthusiast Matrix Fit.</p></blockquote>
 <h2>🏷 Tags</h2>
 <p><code>#ForeignerKoreaCyberSecurityDeepDive</code> <code>#KoreaForeignerCyberSecurity</code> <code>#KISA (KoreaInternetSecurityAgency) (한국인터넷진흥원) Korea1EnglishOK 4.8</code> <code>#PIPC (PersonalInformationProtectionCommission) (개인정보보호위원회) #252</code> <code>#DigitalNomadSecurity D-10 F-2 #535 #526</code> <code>#AhnLab (안랩) ESTsecurity (이스트시큐리티) World1Security #535</code> <code>#Password2FAAuthentication Naver Kakao #516 #527</code> <code>#VPNProxyAnonymity #516 PersonalUseLegal</code> <code>#PhishingScamPrevention #501 #527 #405 KISA (한국인터넷진흥원) EnglishOK</code> <code>#PaymentSecurity #527 WOWPASS #406</code> <code>#SNSSecurity KakaoTalk Naver #516 #520</code> <code>#CODEGATE SECUINSIDE HackerConferences #404 #554</code> <code>#KISA (한국인터넷진흥원) KTO (한국관광공사) EnglishGuideCertification</code> <code>#KlookKKdayKTO (한국관광공사) SecurityPackageEnglishOK</code> <code>#Education #403 #537 Books #541 Family #533 Emergency #405</code> <code>#KeyChinGu</code></p>
@@ -521,34 +550,7 @@
     <div><a href="korea-cyber-security.en.html" style="color:var(--red);">Korea Cyber Security &rarr;</a></div>
   </nav>
 
-  <section id="kc-related" style="display:none;margin:2.2rem 0 0.5rem;">
-    <h2 style="font-size:1.1rem;margin-bottom:0.8rem;">Related Guides</h2>
-    <div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"></div>
-  </section>
-  <script>
-  // related guides — 같은 카테고리 최신 6편 (contents.json fetch·언어 suffix 자동, 2026-07-04)
-  (function() {
-    var m = location.pathname.match(/\/content\/(.+?)(\.en|\.zh|\.ja)?\.html$/);
-    if (!m) return;
-    var slug = m[1], suf = m[2] || '';
-    fetch('../data/contents.json').then(function(r) { return r.json(); }).then(function(items) {
-      var me = null;
-      for (var i = 0; i < items.length; i++) { if (items[i].slug === slug) { me = items[i]; break; } }
-      if (!me) return;
-      var pool = items.filter(function(x) { return x.slug !== slug && x.category === me.category; });
-      pool.sort(function(a, b) { return (parseInt(b.id, 10) || 0) - (parseInt(a.id, 10) || 0); });
-      var picks = pool.slice(0, 6);
-      if (!picks.length) return;
-      document.getElementById('kc-related-grid').innerHTML = picks.map(function(x) {
-        var t = suf ? (x.title_en || x.title_kr) : (x.title_kr || x.title_en);
-        var ok = suf === '' || (suf === '.en' ? x.en_available : (suf === '.zh' ? x.cn_available : x.jp_available));
-        var href = x.slug + (ok ? suf : '') + '.html';
-        return '<a href="' + href + '" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">' + t + '</a>';
-      }).join('');
-      document.getElementById('kc-related').style.display = 'block';
-    }).catch(function() {});
-  })();
-  </script>
+  <section id="kc-related" style="margin:2.2rem 0 0.5rem;"><h2 style="font-size:1.1rem;margin-bottom:0.8rem;">Related Guides</h2><div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"><a href="solo-female-safety-checklist.en.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Solo Female Travel in Korea — A No-Fear Safety Checklist</a><a href="china-payment-survival.en.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Korea Payment Survival Manual for Chinese-Speaking Travelers — Alipay Works, WeChat Doesn&#x27;t, UnionPay Needs Prep First</a><a href="duty-free-pickup-guide.en.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">You Get Your Duty-Free Items at the Airport — The Zero-Panic Manual for the Pickup Counter</a><a href="korea-smoking-guide.en.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Finding a Place to Smoke in Korea, the Zero-Panic Manual — How Not to Get Fined</a><a href="busan-transit-guide.en.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Busan Transit Grammar — A City You Can Read with Just Two Lines</a><a href="seoul-cold-snap-survival.en.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Surviving a Seoul Cold Snap: How to Get Through a Day at Minus Ten</a></div></section>
   <!-- kc-comments -->
   <section id="kc-comments" style="margin:2.5rem 0 0.5rem;">
     <h2>Comments</h2>

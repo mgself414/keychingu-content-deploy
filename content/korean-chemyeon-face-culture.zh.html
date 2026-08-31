@@ -34,7 +34,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/main.css">
 <style>
 .detail-wrap {
@@ -50,11 +50,11 @@
 .breadcrumb a { color: var(--red); font-weight: 600; }
 .detail-wrap h1 {
   font-size: 28px; font-weight: 800;
-  color: var(--black); margin-bottom: 8px;
+  color: var(--text); margin-bottom: 8px;
 }
 .detail-wrap h2 {
   font-size: 22px; font-weight: 700;
-  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  color: var(--text); margin-top: 32px; margin-bottom: 12px;
   padding-bottom: 6px;
   border-bottom: 2px solid var(--red);
 }
@@ -73,10 +73,19 @@
   font-size: 14px; line-height: 1.6;
   color: var(--text-mid); margin-bottom: 6px;
 }
+/* 표는 자기 컨테이너 안에서만 가로 스크롤한다 — 이게 없으면 min-content 폭이
+   뷰포트를 넘는 순간 페이지 전체가 가로로 밀렸다 (2026-08-31 점검 M2).
+   table 자체는 table 로 남겨 행·열 관계를 보존한다(display:block 으로 해결하지 않는 이유). */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 16px;
+}
 .detail-wrap table {
   width: 100%; border-collapse: collapse;
   margin-bottom: 16px; font-size: 13px;
 }
+.table-scroll > table { margin-bottom: 0; }
 .detail-wrap th {
   background: var(--black); color: #fff;
   padding: 10px 12px; text-align: left;
@@ -137,10 +146,30 @@
   user-select: none;
 }
 </style>
+<script>
+/* 테마 부트스트랩 — 2026-08-31 점검 M3.
+   기사 4,804p 에 이게 없어서, OS 다크 사용자가 홈(다크)에서 기사를 열면
+   라이트로 번쩍였다. main.css 의 다크 규칙은 전부 [data-theme="dark"] 스코프이고
+   prefers-color-scheme 미디어쿼리는 CSS 에 없으므로, 속성을 여기서 달아줘야 한다.
+   <head> 안에서 동기 실행 — paint 전에 끝나야 깜빡임이 없다.
+   허브와 달리 기사엔 토글 버튼이 없다. 저장된 선택(kc_theme)과 OS 설정만 따른다. */
+(function () {
+  try {
+    var s = localStorage.getItem('kc_theme');
+    if (s === 'dark' || (!s && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  } catch (e) {}
+})();
+</script>
 </head>
 <body>
+<a class="skip-link" href="#kc-main">跳到正文</a>
 <header class="site-header">
-  <a href="../zh/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <!-- width/height = 고유 크기(400x149). CSS 가 height:36px 로 줄이지만 브라우저는
+       이 비율로 자리를 미리 잡아 레이아웃 이동(CLS)을 막는다. 헤더 로고는 첫 화면에
+       보이므로 lazy 가 아니라 eager. -->
+  <a href="../zh/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo" width="400" height="149" loading="eager" decoding="async"></a>
   <div class="lang-switch">
     <a href="../content/korean-chemyeon-face-culture.html">KR</a>
     <a href="../content/korean-chemyeon-face-culture.en.html">EN</a>
@@ -149,7 +178,7 @@
   </div>
 </header>
 
-<main class="detail-wrap">
+<main class="detail-wrap" id="kc-main" tabindex="-1">
   <nav class="breadcrumb" aria-label="breadcrumb"><a href="../zh/index.html">全部指南</a> &rsaquo; 韩国“面子”文化</nav>
   <article>
   <h1>韩国的“体面”文化 — 为什么韩国人如此在意他人的眼光</h1>
@@ -157,7 +186,7 @@
 <p>在看韩剧时，经常会出现这样的台词：“我还有什么体面？”“在大家面前丢尽了体面。”“好歹也要讲究体面。”外国人通常将其翻译为“pride (自尊心)”，但韩国人所说的<strong>体面 (Chemyeon / 체면)</strong> 并非简单的个人自尊心。它指的是<strong>在他人面前维护自己的声望、品格和评价</strong>——即“社会形象 (social face)”。从昂贵的红白喜事礼金 (Bujogeum / 부조금)，到招待客人时丰盛的餐桌，再到“别人都做，我不能不做”的消费行为——这种体面在韩国社会无处不在。然而，外国人最常感到困惑的是：<strong>体面 (Chemyeon / 체면) 和“眼力见儿 (Nunchi / 눈치)”有何不同？</strong> 简单来说，<strong>体面是以“我”为中心，维护“我”的声望</strong>；而<strong>眼力见儿是以“他人”为中心，察言观色，解读“情况”</strong>。本文将从外国人的视角，解释体面是什么，为何在韩国如此重要，以及它如何既能使人保持品格，又能束缚人心。这是韩国文化深度解读系列<strong>第29篇</strong>。</p>
 <hr>
 <h2>★ 一目了然 — “体面 (Chemyeon / 체면)”核心总结</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>项目</th>
 <th>内容</th>
 </tr></thead><tbody>
@@ -193,7 +222,7 @@
 <td><strong>东亚共通</strong></td>
 <td>与中国<strong>面子 (Mianzi / 面子)</strong> · 日本<strong>面子 (Mentsu / 面子)</strong> 相似的“面子”文化群</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <blockquote><p><strong>核心</strong>: 体面 (Chemyeon / 체면) 不应仅仅被视为“虚荣”。若用于责任感和礼仪，它便成为品格；若过度，则沦为形式主义 (Heoryeheosik / 허례허식)。这种两面性是本文的核心 (见下文⑥)。而<strong>与眼力见儿 (Nunchi / 눈치) 的区分</strong>对外国人来说至关重要 (见下文③)。</p></blockquote>
 <hr>
 <h2>⚠️ 外国人常有的3种误解</h2>
@@ -206,7 +235,7 @@
 <p>学术研究将体面视为<strong>“内在本质外显的社会形象 (social face)”</strong>。也就是说，体面并非简单的个人情感，而是在<strong>社会关系中形成和维持的评价</strong>。因此，体面不仅包含一个人的<strong>社会地位，还涵盖了声望、品格、荣誉和评价</strong>。</p>
 <p>核心在于它是<strong>“可见的”形象</strong>。它并非在独处时起作用，而是在<strong>面对他人时</strong>才发挥作用。因此，韩国人常说“别人会怎么说”、“好歹也要讲究体面”——他们会关注自己的行为在他人眼中会如何呈现。</p>
 <p><strong>通过代表性表达看体面 (Chemyeon / 체면)</strong></p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>表达</th>
 <th>含义</th>
 </tr></thead><tbody>
@@ -226,7 +255,7 @@
 <td><strong>有脸面 (Nachi seoda / 낯이 서다) / 丢脸 (Nachi kkakkida / 낯이 깎이다)</strong></td>
 <td>“脸面 (Nat / 낯)”也有相似的含义 — 有面子或丢面子</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>② 源于儒家 (Yugyo / 유교) — “礼 (Ye / 예)”与等级制度的产物</h2>
 <p>体面 (Chemyeon / 체面) 文化通常被解释为受<strong>儒家 (Yugyo / 유교)</strong> 思想的影响。儒家本质上是制定<strong>“礼 (Ye / 예)”</strong>的学问，这里的“礼 (Ye / 예)”并非简单的仪式，而是<strong>规范人与人、群体与群体之间互动形式的社会规范</strong>。</p>
@@ -239,7 +268,7 @@
 <hr>
 <h2>③ ★★ 体面 (Chemyeon / 체면) vs 眼力见儿 (Nunchi / 눈치) — 外国人最易混淆的区分</h2>
 <p>这是本文最重要的部分。外国人常常将<strong>体面 (Chemyeon / 체면)</strong> 和<strong>眼力见儿 (Nunchi / 눈치)</strong> 混为一谈。两者都源于儒家 (Yugyo / 유교) 的“礼 (Ye / 예)”，并且都涉及“在意他人眼光”，因此看起来相似。但它们的<strong>方向截然相反</strong>。</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th></th>
 <th><strong>体面 (Chemyeon / 체면)</strong></th>
 <th><strong>眼力见儿 (Nunchi / 눈치)</strong></th>
@@ -274,7 +303,7 @@
 <td>通过丰盛的餐桌来<strong>讲究体面 (Chemyeon charida / 체면 차리다)</strong></td>
 <td><strong>有眼力见儿地 (Nunchikkeot / 눈치껏)</strong> 察觉上司放下酒杯的速度</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p><strong>通过一个场景看差异</strong></p>
 <p>想象一下<strong>公司聚餐 (Hoesik / 회식)</strong> 场合。</p>
 <ul>
@@ -295,7 +324,7 @@
 <hr>
 <h2>⑤ 东亚“面子 (face)”比较 — 面子 (中)·面子 (日)·体面 (韩)</h2>
 <p>如果将体面 (Chemyeon / 체面) 视为韩国特有的奇怪文化，那是一种误解。<strong>维护“面子 (face / 脸面/声望)”的感觉</strong>是儒家 (Yugyo / 유교) 文化圈的东亚国家所共享的。</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>国家</th>
 <th>表达</th>
 <th>侧重点 (一般性解释)</th>
@@ -315,7 +344,7 @@
 <td><strong>面子 (Mentsu / 面子)</strong></td>
 <td>强调<strong>符合社会角色·本分</strong>的处事方式</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <ul>
 <li>这三个概念都将“面子 (face)”视为<strong>超越个人自尊心的社会货币 (social currency)</strong>，这一点是相同的。在每次互动中，面子都被视为可以<strong>给予 (give)·维护 (save)·失去 (lose)</strong> 的东西。</li>
 <li>也有差异——通常认为中国面子更强调<strong>权力·影响力</strong>，日本面子更强调<strong>角色·本分</strong>。而韩国的体面 (Chemyeon / 체面) 则在其中以<strong>声望·品格和羞耻感</strong>的特质更为突出，这是普遍的总结。</li>
@@ -391,34 +420,7 @@
     <div><a href="korean-idol-trainee-culture.zh.html" style="color:var(--red);">韩国偶像练习生文化 &rarr;</a></div>
   </nav>
 
-  <section id="kc-related" style="display:none;margin:2.2rem 0 0.5rem;">
-    <h2 style="font-size:1.1rem;margin-bottom:0.8rem;">相关指南</h2>
-    <div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"></div>
-  </section>
-  <script>
-  // related guides — 같은 카테고리 최신 6편 (contents.json fetch·언어 suffix 자동, 2026-07-04)
-  (function() {
-    var m = location.pathname.match(/\/content\/(.+?)(\.en|\.zh|\.ja)?\.html$/);
-    if (!m) return;
-    var slug = m[1], suf = m[2] || '';
-    fetch('../data/contents.json').then(function(r) { return r.json(); }).then(function(items) {
-      var me = null;
-      for (var i = 0; i < items.length; i++) { if (items[i].slug === slug) { me = items[i]; break; } }
-      if (!me) return;
-      var pool = items.filter(function(x) { return x.slug !== slug && x.category === me.category; });
-      pool.sort(function(a, b) { return (parseInt(b.id, 10) || 0) - (parseInt(a.id, 10) || 0); });
-      var picks = pool.slice(0, 6);
-      if (!picks.length) return;
-      document.getElementById('kc-related-grid').innerHTML = picks.map(function(x) {
-        var t = suf ? (x.title_en || x.title_kr) : (x.title_kr || x.title_en);
-        var ok = suf === '' || (suf === '.en' ? x.en_available : (suf === '.zh' ? x.cn_available : x.jp_available));
-        var href = x.slug + (ok ? suf : '') + '.html';
-        return '<a href="' + href + '" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">' + t + '</a>';
-      }).join('');
-      document.getElementById('kc-related').style.display = 'block';
-    }).catch(function() {});
-  })();
-  </script>
+  <section id="kc-related" style="margin:2.2rem 0 0.5rem;"><h2 style="font-size:1.1rem;margin-bottom:0.8rem;">相关指南</h2><div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"><a href="royal-palace-autumn-nights.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Royal Palaces After Dark: Starlight Tours, Moonlight Walks and the Royal Culture Festival — the Reservation-Only Side of Autumn Seoul</a><a href="seoul-fireworks-festival.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Seoul International Fireworks Festival 2026: September 5 at Yeouido — How to Claim a Spot Among a Million People</a><a href="seoul-architecture-eras.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Seoul Architecture Time Walk — Traditional, Modern &amp; Contemporary: 15 Picks + An Architectural Appreciation Lens</a><a href="korea-kpop-fansign-videocall.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">K-pop Fansign·Video Call (Album Entry·Yeongtong)</a><a href="korea-idol-birthday-cafe.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Idol Birthday Cafe (Saengka·Cup Sleeve·Support)</a><a href="korea-kpop-music-show-taping.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">K-pop Music Show Taping (Inkigayo·M Countdown·Music Bank)</a></div></section>
   <!-- kc-comments -->
   <section id="kc-comments" style="margin:2.5rem 0 0.5rem;">
     <h2>评论</h2>

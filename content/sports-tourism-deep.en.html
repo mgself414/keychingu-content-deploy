@@ -34,7 +34,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/main.css">
 <style>
 .detail-wrap {
@@ -50,11 +50,11 @@
 .breadcrumb a { color: var(--red); font-weight: 600; }
 .detail-wrap h1 {
   font-size: 28px; font-weight: 800;
-  color: var(--black); margin-bottom: 8px;
+  color: var(--text); margin-bottom: 8px;
 }
 .detail-wrap h2 {
   font-size: 22px; font-weight: 700;
-  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  color: var(--text); margin-top: 32px; margin-bottom: 12px;
   padding-bottom: 6px;
   border-bottom: 2px solid var(--red);
 }
@@ -73,10 +73,19 @@
   font-size: 14px; line-height: 1.6;
   color: var(--text-mid); margin-bottom: 6px;
 }
+/* 표는 자기 컨테이너 안에서만 가로 스크롤한다 — 이게 없으면 min-content 폭이
+   뷰포트를 넘는 순간 페이지 전체가 가로로 밀렸다 (2026-08-31 점검 M2).
+   table 자체는 table 로 남겨 행·열 관계를 보존한다(display:block 으로 해결하지 않는 이유). */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 16px;
+}
 .detail-wrap table {
   width: 100%; border-collapse: collapse;
   margin-bottom: 16px; font-size: 13px;
 }
+.table-scroll > table { margin-bottom: 0; }
 .detail-wrap th {
   background: var(--black); color: #fff;
   padding: 10px 12px; text-align: left;
@@ -137,10 +146,30 @@
   user-select: none;
 }
 </style>
+<script>
+/* 테마 부트스트랩 — 2026-08-31 점검 M3.
+   기사 4,804p 에 이게 없어서, OS 다크 사용자가 홈(다크)에서 기사를 열면
+   라이트로 번쩍였다. main.css 의 다크 규칙은 전부 [data-theme="dark"] 스코프이고
+   prefers-color-scheme 미디어쿼리는 CSS 에 없으므로, 속성을 여기서 달아줘야 한다.
+   <head> 안에서 동기 실행 — paint 전에 끝나야 깜빡임이 없다.
+   허브와 달리 기사엔 토글 버튼이 없다. 저장된 선택(kc_theme)과 OS 설정만 따른다. */
+(function () {
+  try {
+    var s = localStorage.getItem('kc_theme');
+    if (s === 'dark' || (!s && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  } catch (e) {}
+})();
+</script>
 </head>
 <body>
+<a class="skip-link" href="#kc-main">Skip to content</a>
 <header class="site-header">
-  <a href="../en/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <!-- width/height = 고유 크기(400x149). CSS 가 height:36px 로 줄이지만 브라우저는
+       이 비율로 자리를 미리 잡아 레이아웃 이동(CLS)을 막는다. 헤더 로고는 첫 화면에
+       보이므로 lazy 가 아니라 eager. -->
+  <a href="../en/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo" width="400" height="149" loading="eager" decoding="async"></a>
   <div class="lang-switch">
     <a href="../content/sports-tourism-deep.html">KR</a>
     <a href="../content/sports-tourism-deep.en.html" class="active">EN</a>
@@ -149,7 +178,7 @@
   </div>
 </header>
 
-<main class="detail-wrap">
+<main class="detail-wrap" id="kc-main" tabindex="-1">
   <nav class="breadcrumb" aria-label="breadcrumb"><a href="../en/index.html">All Guides</a> &rsaquo; Foreigner Korea Sports Tourism Deep Dive</nav>
   <article>
   <h1>Foreigner Korea Sports Tourism (스포츠 관광) Deep Dive — KBO·K League (K리그)·KBL (NBL) Top 12 Picks</h1>
@@ -160,7 +189,7 @@
 <p>The <a href="seongsu.en.html" class="xref">#1</a> destination for foreign sports enthusiasts (스포츠 매니아) = <strong>KBO·K League (K리그) Deep Dive</strong> (follow-up to <a href="sports-mania.en.html" class="xref">#446</a> Sports Enthusiast (스포츠 매니아)·<a href="luxury-golf-deep.en.html" class="xref">#542</a> Luxury Golf (명품 골프)·<a href="esports-lck-deep.en.html" class="xref">#562</a> eSports (e스포츠)). KBO Baseball (야구) + K League Soccer (축구) + KBL Basketball (농구) + a full package with English support for foreigners (외국인 영어 OK 풀세트).</p>
 <hr>
 <h2>★ 12 Sports Tourism (스포츠 관광) Matrix at a Glance</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>#</th>
 <th>Sport/Service (종목·서비스)</th>
 <th>4 Axes (4축)</th>
@@ -238,7 +267,7 @@
 <td>Integrated (통합) cluster</td>
 <td>English OK·KTO Certified (인증)·Foreigner&#x27;s Top Priority (1순위)</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p><strong>+ 4 More (추가 4)</strong>:</p>
 <ul>
 <li>Foreigner Sports Museum (박물관)·Foreigner Sports Family (가족) (<a href="family-children-travel.en.html" class="xref">#533</a>)·Foreigner Sports Photos (사진) (<a href="instagram-spots.en.html" class="xref">#417</a> Instagram (인스타))·Foreigner Sports Goods (굿즈)·<a href="duty-free.en.html" class="xref">#406</a></li>
@@ -388,7 +417,7 @@
 </ul>
 <hr>
 <h2>📅 Season Matrix (시즌 매트릭스) (Foreigner Enthusiast (외국인 매니아))</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>Season (시즌)</th>
 <th>Signature Activities (시그니처 활동)</th>
 <th>Foreigner Enthusiast (외국인 매니아) Urgency Level (시급도)</th>
@@ -413,7 +442,7 @@
 <td>New Year (새해)·Sunrise (일출)·Skiing (스키)·Indoor Matrix (실내 매트릭스)</td>
 <td>★★★★</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>👥 5 Foreigner Segment Matrix (외국인 5 Segment 매트릭스)</h2>
 <ul>
@@ -425,7 +454,7 @@
 </ul>
 <hr>
 <h2>⏱ Recommended Itinerary by Time Slot (시간대별 동선 추천)</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>Time Slot (시간대)</th>
 <th>Recommended Activities (추천 활동)</th>
 </tr></thead><tbody>
@@ -445,7 +474,7 @@
 <td><strong>Night (야간) (21:00-24:00 (9 PM - 12 AM))</strong></td>
 <td>Night Views (야경)·Cafe (카페)·24h Matrix (24h 매트릭스)·MZ + Instagram (인스타) <a href="seongsu.en.html" class="xref">#1</a></td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>✈️ Foreigner Enthusiast (외국인 매니아) Matrix</h2>
 <ul>
@@ -465,7 +494,7 @@
 <hr>
 <h2>📊 Foreigner Enthusiast (외국인 매니아) Metric Matrix</h2>
 <p>Foreign Tourists (외국인 한국 관광객) to Korea = <strong>17.5 million people (연 1,750만 명) (2024)</strong>·MZ (20-39 years old) <strong>58%</strong>·Average Stay (평균 체류) <strong>6.4 days</strong>·Average Spending (평균 지출) <strong>1,605 USD/person</strong>·Revisit Rate (재방문율) <strong>23%</strong> (Korea Tourism Organization (한국관광공사) 2024 Statistics (통계)).</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>Item (항목)</th>
 <th>Value (수치)</th>
 <th>Source (출처)</th>
@@ -505,7 +534,7 @@
 <td><strong>Spring (봄) (Cherry Blossoms (벚꽃)·April)·Autumn (가을) (Autumn Foliage (단풍)·October-November)</strong></td>
 <td>KTO (관광공사) Season Analysis (시즌 분석)</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <blockquote><p><strong>Data Interpretation (수치 해석)</strong>: Full English Set (영문 풀세트) 65%·Payment (결제) 80%·Season Matrix (시즌 매트릭스) Spring (봄)·Autumn (가을) <a href="seongsu.en.html" class="xref">#1</a>·1339 Emergency (응급) 24h English (영문) = First-time Foreigner Entry (외국인 첫 진입) Safety (안전)·Enthusiast Matrix (매니아 매트릭스) Fit.</p></blockquote>
 <h2>🏷 Tags</h2>
 <p><code>#외국인한국스포츠관광deepdive</code> <code>#KoreaForeignerSportsTourism</code> <code>#KBOYagu (야구) Korea&#x27;s #1 10 Teams (10개 구단) March-Oct 4.9</code> <code>#Doosan (두산) LG Jamsil (잠실) #142 #449</code> <code>#Samsung (삼성) SSG KIA NC Lotte (롯데) Kiwoom (키움) Hanwha (한화) KT #534 #143</code> <code>#KLeague (K리그) 1·2 Korea&#x27;s #1 Soccer (축구) 12 Teams (12개 구단) 4.7</code> <code>#FCSeoul (FC 서울) Ulsan HD (울산 HD) Jeonbuk Hyundai (전북 현대) #534 #178</code> <code>#KBLNonggu (농구) KBO Season (시즌) #449 #142</code> <code>#VLeague (V리그) Baegu (배구) KBV #534 #143</code> <code>#LCKWorlds eSports (e스포츠) #562 #387 World&#x27;s #1</code> <code>#KSF KTO English Guide (영어가이드) Certified (인증)</code> <code>#Sports Hotel (호텔) Package (패키지) #142 #534 #577 Luxury (럭셔리)</code> <code>#Chimac (치맥) #502 #400 July Festival (페스)</code> <code>#Klook KKday KTO Sports Package (패키지) English OK</code> <code>#Museum (박물관) Family (가족) #533 Photos (사진) #417 Goods (굿즈) #406</code> <code>#KeyChinGu (키친구)</code></p>
@@ -524,34 +553,7 @@
     <div><a href="korea-duty-free-map.en.html" style="color:var(--red);">Korea Duty Free Map &rarr;</a></div>
   </nav>
 
-  <section id="kc-related" style="display:none;margin:2.2rem 0 0.5rem;">
-    <h2 style="font-size:1.1rem;margin-bottom:0.8rem;">Related Guides</h2>
-    <div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"></div>
-  </section>
-  <script>
-  // related guides — 같은 카테고리 최신 6편 (contents.json fetch·언어 suffix 자동, 2026-07-04)
-  (function() {
-    var m = location.pathname.match(/\/content\/(.+?)(\.en|\.zh|\.ja)?\.html$/);
-    if (!m) return;
-    var slug = m[1], suf = m[2] || '';
-    fetch('../data/contents.json').then(function(r) { return r.json(); }).then(function(items) {
-      var me = null;
-      for (var i = 0; i < items.length; i++) { if (items[i].slug === slug) { me = items[i]; break; } }
-      if (!me) return;
-      var pool = items.filter(function(x) { return x.slug !== slug && x.category === me.category; });
-      pool.sort(function(a, b) { return (parseInt(b.id, 10) || 0) - (parseInt(a.id, 10) || 0); });
-      var picks = pool.slice(0, 6);
-      if (!picks.length) return;
-      document.getElementById('kc-related-grid').innerHTML = picks.map(function(x) {
-        var t = suf ? (x.title_en || x.title_kr) : (x.title_kr || x.title_en);
-        var ok = suf === '' || (suf === '.en' ? x.en_available : (suf === '.zh' ? x.cn_available : x.jp_available));
-        var href = x.slug + (ok ? suf : '') + '.html';
-        return '<a href="' + href + '" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">' + t + '</a>';
-      }).join('');
-      document.getElementById('kc-related').style.display = 'block';
-    }).catch(function() {});
-  })();
-  </script>
+  <section id="kc-related" style="margin:2.2rem 0 0.5rem;"><h2 style="font-size:1.1rem;margin-bottom:0.8rem;">Related Guides</h2><div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"><a href="busan-kpop-pilgrimage.en.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Busan K-pop Pilgrimage — Walking BTS&#x27;s Hometown as a Fan</a><a href="busan-fine-dining-pilgrimage.en.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Busan Fine Dining Pilgrimage — Michelin Stars, Chefs&#x27; Regular Spots, and the Post Office&#x27;s Picks</a><a href="culinary-class-wars-restaurants.en.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Eat What You Watched — A Culinary Class Wars Restaurant Pilgrimage in Seoul</a><a href="kcontent-full-set-7-index.en.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">K-Content Full Set 7 Guide Integrated Index for Foreigners</a><a href="kdrama-regional-locations-busan-jeonju-gangwon.en.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">K-Drama Regional Filming Locations Deep Dive — Busan·Jeonju·Gangwon</a><a href="seoul-kdrama-filming-locations-2026.en.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Seoul K-Drama Filming Locations 2026 Complete Guide</a></div></section>
   <!-- kc-comments -->
   <section id="kc-comments" style="margin:2.5rem 0 0.5rem;">
     <h2>Comments</h2>

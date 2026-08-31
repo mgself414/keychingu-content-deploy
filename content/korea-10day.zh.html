@@ -34,7 +34,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/main.css">
 <style>
 .detail-wrap {
@@ -50,11 +50,11 @@
 .breadcrumb a { color: var(--red); font-weight: 600; }
 .detail-wrap h1 {
   font-size: 28px; font-weight: 800;
-  color: var(--black); margin-bottom: 8px;
+  color: var(--text); margin-bottom: 8px;
 }
 .detail-wrap h2 {
   font-size: 22px; font-weight: 700;
-  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  color: var(--text); margin-top: 32px; margin-bottom: 12px;
   padding-bottom: 6px;
   border-bottom: 2px solid var(--red);
 }
@@ -73,10 +73,19 @@
   font-size: 14px; line-height: 1.6;
   color: var(--text-mid); margin-bottom: 6px;
 }
+/* 표는 자기 컨테이너 안에서만 가로 스크롤한다 — 이게 없으면 min-content 폭이
+   뷰포트를 넘는 순간 페이지 전체가 가로로 밀렸다 (2026-08-31 점검 M2).
+   table 자체는 table 로 남겨 행·열 관계를 보존한다(display:block 으로 해결하지 않는 이유). */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 16px;
+}
 .detail-wrap table {
   width: 100%; border-collapse: collapse;
   margin-bottom: 16px; font-size: 13px;
 }
+.table-scroll > table { margin-bottom: 0; }
 .detail-wrap th {
   background: var(--black); color: #fff;
   padding: 10px 12px; text-align: left;
@@ -137,10 +146,30 @@
   user-select: none;
 }
 </style>
+<script>
+/* 테마 부트스트랩 — 2026-08-31 점검 M3.
+   기사 4,804p 에 이게 없어서, OS 다크 사용자가 홈(다크)에서 기사를 열면
+   라이트로 번쩍였다. main.css 의 다크 규칙은 전부 [data-theme="dark"] 스코프이고
+   prefers-color-scheme 미디어쿼리는 CSS 에 없으므로, 속성을 여기서 달아줘야 한다.
+   <head> 안에서 동기 실행 — paint 전에 끝나야 깜빡임이 없다.
+   허브와 달리 기사엔 토글 버튼이 없다. 저장된 선택(kc_theme)과 OS 설정만 따른다. */
+(function () {
+  try {
+    var s = localStorage.getItem('kc_theme');
+    if (s === 'dark' || (!s && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  } catch (e) {}
+})();
+</script>
 </head>
 <body>
+<a class="skip-link" href="#kc-main">跳到正文</a>
 <header class="site-header">
-  <a href="../zh/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <!-- width/height = 고유 크기(400x149). CSS 가 height:36px 로 줄이지만 브라우저는
+       이 비율로 자리를 미리 잡아 레이아웃 이동(CLS)을 막는다. 헤더 로고는 첫 화면에
+       보이므로 lazy 가 아니라 eager. -->
+  <a href="../zh/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo" width="400" height="149" loading="eager" decoding="async"></a>
   <div class="lang-switch">
     <a href="../content/korea-10day.html">KR</a>
     <a href="../content/korea-10day.en.html">EN</a>
@@ -149,7 +178,7 @@
   </div>
 </header>
 
-<main class="detail-wrap">
+<main class="detail-wrap" id="kc-main" tabindex="-1">
   <nav class="breadcrumb" aria-label="breadcrumb"><a href="../zh/index.html">全部指南</a> &rsaquo; 外国人10日行程</nav>
   <article>
   <h1>外国游客首次访韩10日游 — 首尔 + 釜山 + 周边城市全套行程</h1>
@@ -197,7 +226,7 @@
 <hr>
 <h2>📅 10日游每日全套行程 (具体日程·预算·交通)</h2>
 <h3>Day 1 — 仁川机场 (Incheon Airport / 인천공항) 入境 → 明洞 (Myeong-dong / 명동)·N首尔塔 (N Seoul Tower / N서울타워)</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>时间</th>
 <th>路线</th>
 <th>费用</th>
@@ -237,7 +266,7 @@
 <td>明洞 (Myeong-dong / 명동) 晚餐·炸鸡啤酒 (Chimaek / 치맥) 爱好者</td>
 <td>25,000~40,000韩元</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p><strong>Day 1 合计</strong>: 200,000~350,000韩元/人</p>
 <h3>Day 2 — 五大宫殿 + 韩服 (Hanbok / 한복) 体验</h3>
 <ul>
@@ -317,7 +346,7 @@
 <p><strong>Day 10 合计</strong>: 100,000~200,000韩元/人</p>
 <hr>
 <h2>💰 10日游预算矩阵 (1人·3选项)</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>分类</th>
 <th>节约型 (Solo Budget)</th>
 <th>平均型 (Standard)</th>
@@ -383,7 +412,7 @@
 <td><strong>$3,500~$4,500</strong></td>
 <td><strong>$8,000~$15,000+</strong></td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <blockquote><p>平均外国游客10日游 = $3,500~$4,500 / 节约型 = $1,500~$2,500 / 奢华型 = $8,000+</p></blockquote>
 <hr>
 <h2>🛂 10日游签证·实用信息 (外国游客入境全套)</h2>
@@ -427,7 +456,7 @@
 </ul>
 <hr>
 <h2>📅 季节矩阵 (外国游客爱好者)</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>季节</th>
 <th>标志性活动</th>
 <th>外国游客爱好者推荐度</th>
@@ -452,7 +481,7 @@
 <td>新年·日出·滑雪·室内矩阵</td>
 <td>★★★★</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>👥 外国游客5大客群矩阵</h2>
 <ul>
@@ -464,7 +493,7 @@
 </ul>
 <hr>
 <h2>⏱ 按时间段推荐路线</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>时间段</th>
 <th>推荐活动</th>
 </tr></thead><tbody>
@@ -484,7 +513,7 @@
 <td><strong>夜间 (21:00~24:00)</strong></td>
 <td>夜景·咖啡馆·24小时矩阵·MZ世代 (MZ / MZ세대) + Instagram <a href="seongsu.zh.html" class="xref">#1</a></td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>✈️ 外国游客爱好者矩阵</h2>
 <ul>
@@ -503,7 +532,7 @@
 </ul>
 <hr>
 <h2>🎯 10日游核心矩阵</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>日期</th>
 <th>路线</th>
 <th>核心矩阵</th>
@@ -538,7 +567,7 @@
 <td>济州 (Jeju / 제주)→仁川 (Incheon / 인천) 中转·VAT 退税 (Tax Refund / VAT 환급)</td>
 <td>★★★★</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h2>📍 10日游外国游客痛点</h2>
 <ul>
 <li><strong>首尔 (Seoul / 서울) 3 + 庆尚 (Gyeongsang / 경상) 2 + 釜山 (Busan / 부산) 2 + 济州 (Jeju / 제주) 3 矩阵</strong>: 全套行程 <a href="seongsu.zh.html" class="xref">#1</a></li>
@@ -578,34 +607,7 @@
     <div><a href="korea-2week.zh.html" style="color:var(--red);">外国人2周行程 &rarr;</a></div>
   </nav>
 
-  <section id="kc-related" style="display:none;margin:2.2rem 0 0.5rem;">
-    <h2 style="font-size:1.1rem;margin-bottom:0.8rem;">相关指南</h2>
-    <div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"></div>
-  </section>
-  <script>
-  // related guides — 같은 카테고리 최신 6편 (contents.json fetch·언어 suffix 자동, 2026-07-04)
-  (function() {
-    var m = location.pathname.match(/\/content\/(.+?)(\.en|\.zh|\.ja)?\.html$/);
-    if (!m) return;
-    var slug = m[1], suf = m[2] || '';
-    fetch('../data/contents.json').then(function(r) { return r.json(); }).then(function(items) {
-      var me = null;
-      for (var i = 0; i < items.length; i++) { if (items[i].slug === slug) { me = items[i]; break; } }
-      if (!me) return;
-      var pool = items.filter(function(x) { return x.slug !== slug && x.category === me.category; });
-      pool.sort(function(a, b) { return (parseInt(b.id, 10) || 0) - (parseInt(a.id, 10) || 0); });
-      var picks = pool.slice(0, 6);
-      if (!picks.length) return;
-      document.getElementById('kc-related-grid').innerHTML = picks.map(function(x) {
-        var t = suf ? (x.title_en || x.title_kr) : (x.title_kr || x.title_en);
-        var ok = suf === '' || (suf === '.en' ? x.en_available : (suf === '.zh' ? x.cn_available : x.jp_available));
-        var href = x.slug + (ok ? suf : '') + '.html';
-        return '<a href="' + href + '" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">' + t + '</a>';
-      }).join('');
-      document.getElementById('kc-related').style.display = 'block';
-    }).catch(function() {});
-  })();
-  </script>
+  <section id="kc-related" style="margin:2.2rem 0 0.5rem;"><h2 style="font-size:1.1rem;margin-bottom:0.8rem;">相关指南</h2><div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"><a href="solo-female-safety-checklist.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Solo Female Travel in Korea — A No-Fear Safety Checklist</a><a href="china-payment-survival.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Korea Payment Survival Manual for Chinese-Speaking Travelers — Alipay Works, WeChat Doesn&#x27;t, UnionPay Needs Prep First</a><a href="duty-free-pickup-guide.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">You Get Your Duty-Free Items at the Airport — The Zero-Panic Manual for the Pickup Counter</a><a href="korea-smoking-guide.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Finding a Place to Smoke in Korea, the Zero-Panic Manual — How Not to Get Fined</a><a href="busan-transit-guide.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Busan Transit Grammar — A City You Can Read with Just Two Lines</a><a href="seoul-cold-snap-survival.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Surviving a Seoul Cold Snap: How to Get Through a Day at Minus Ten</a></div></section>
   <!-- kc-comments -->
   <section id="kc-comments" style="margin:2.5rem 0 0.5rem;">
     <h2>评论</h2>

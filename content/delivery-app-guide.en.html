@@ -30,7 +30,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/main.css">
 <style>
 .detail-wrap {
@@ -46,11 +46,11 @@
 .breadcrumb a { color: var(--red); font-weight: 600; }
 .detail-wrap h1 {
   font-size: 28px; font-weight: 800;
-  color: var(--black); margin-bottom: 8px;
+  color: var(--text); margin-bottom: 8px;
 }
 .detail-wrap h2 {
   font-size: 22px; font-weight: 700;
-  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  color: var(--text); margin-top: 32px; margin-bottom: 12px;
   padding-bottom: 6px;
   border-bottom: 2px solid var(--red);
 }
@@ -69,10 +69,19 @@
   font-size: 14px; line-height: 1.6;
   color: var(--text-mid); margin-bottom: 6px;
 }
+/* 표는 자기 컨테이너 안에서만 가로 스크롤한다 — 이게 없으면 min-content 폭이
+   뷰포트를 넘는 순간 페이지 전체가 가로로 밀렸다 (2026-08-31 점검 M2).
+   table 자체는 table 로 남겨 행·열 관계를 보존한다(display:block 으로 해결하지 않는 이유). */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 16px;
+}
 .detail-wrap table {
   width: 100%; border-collapse: collapse;
   margin-bottom: 16px; font-size: 13px;
 }
+.table-scroll > table { margin-bottom: 0; }
 .detail-wrap th {
   background: var(--black); color: #fff;
   padding: 10px 12px; text-align: left;
@@ -133,10 +142,30 @@
   user-select: none;
 }
 </style>
+<script>
+/* 테마 부트스트랩 — 2026-08-31 점검 M3.
+   기사 4,804p 에 이게 없어서, OS 다크 사용자가 홈(다크)에서 기사를 열면
+   라이트로 번쩍였다. main.css 의 다크 규칙은 전부 [data-theme="dark"] 스코프이고
+   prefers-color-scheme 미디어쿼리는 CSS 에 없으므로, 속성을 여기서 달아줘야 한다.
+   <head> 안에서 동기 실행 — paint 전에 끝나야 깜빡임이 없다.
+   허브와 달리 기사엔 토글 버튼이 없다. 저장된 선택(kc_theme)과 OS 설정만 따른다. */
+(function () {
+  try {
+    var s = localStorage.getItem('kc_theme');
+    if (s === 'dark' || (!s && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  } catch (e) {}
+})();
+</script>
 </head>
 <body>
+<a class="skip-link" href="#kc-main">Skip to content</a>
 <header class="site-header">
-  <a href="../en/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <!-- width/height = 고유 크기(400x149). CSS 가 height:36px 로 줄이지만 브라우저는
+       이 비율로 자리를 미리 잡아 레이아웃 이동(CLS)을 막는다. 헤더 로고는 첫 화면에
+       보이므로 lazy 가 아니라 eager. -->
+  <a href="../en/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo" width="400" height="149" loading="eager" decoding="async"></a>
   <div class="lang-switch">
     <a href="../content/delivery-app-guide.html">KR</a>
     <a href="../content/delivery-app-guide.en.html" class="active">EN</a>
@@ -145,7 +174,7 @@
   </div>
 </header>
 
-<main class="detail-wrap">
+<main class="detail-wrap" id="kc-main" tabindex="-1">
   <nav class="breadcrumb" aria-label="breadcrumb"><a href="../en/index.html">All Guides</a> &rsaquo; Food Delivery Apps in Korea: Baemin and Coupang Eats, From Address Input to Doorstep Pickup</nav>
   <article>
   <h1>Korea Delivery Apps, the Real-World Zero-Panic Manual — From Entering Your Address to Payment</h1>
@@ -164,7 +193,7 @@
 <p>Delivery is everyday infrastructure in Korea — a country where you can order in even for late-night snacks or after convenience stores close. But for foreign travelers, the real barrier isn&#x27;t the app&#x27;s screen language, it&#x27;s <strong>the address system</strong>. A Korean address is made up of a road-name address plus a detailed building/unit number, and apartments and officetels have automatically locked shared entrances — without that detail, the delivery rider can&#x27;t even get into the building. So this manual spends more than half its length not on comparing apps, but on <strong>&quot;how to register your accommodation address correctly, the first time.&quot;</strong></p>
 <hr>
 <h2>② Baemin vs. Coupang Eats — Which One Fits Your Trip</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>App</th>
 <th>Language support</th>
 <th>Payment</th>
@@ -188,14 +217,14 @@
 <td></td>
 <td></td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <ul>
 <li>If you&#x27;re only using it once, go with <strong>Baemin</strong> — the multilingual screens plus Apple Pay combination carries the lowest risk of card rejection.</li>
 <li>If you already have a Coupang account (e.g., Rocket Delivery), go with <strong>Coupang Eats</strong> — no need to register a new card, just log in and you&#x27;re done.</li>
 </ul>
 <hr>
 <h2>③ Signup Master Flow — Overseas Number + SMS Verification</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>Step</th>
 <th>What&#x27;s on screen</th>
 <th>What to do</th>
@@ -220,12 +249,12 @@
 <td>Terms of service agreement</td>
 <td>Check the box, then <code>[ Done (완료) ]</code></td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <blockquote><p>If your roaming or eSIM plan is data-only and can&#x27;t receive SMS, the verification text may never arrive. In that case, the fastest fix is to buy a Korean SIM right after landing (see <a href="korea-essential-apps.en.html" class="xref">#1230</a>, the essential-apps edition) and retry.</p></blockquote>
 <hr>
 <h2>④ Accommodation Address Master Flow — This Is the Real Obstacle</h2>
 <p>This step blocks more tourists than the app&#x27;s screen language ever does. The sequence below never varies.</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>Step</th>
 <th>Screen</th>
 <th>What to do</th>
@@ -261,11 +290,11 @@
 <td>Save a one-line note like &quot;in front of the 1st-floor lobby&quot; or &quot;door next to the elevator&quot;</td>
 <td>Once saved, it&#x27;s automatically reused on your next order</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <blockquote><p><strong>Tip</strong>: Ask for the shared-entrance passcode at check-in and save it in your phone&#x27;s notes app right away. For Airbnb, it&#x27;s often already written in the booking confirmation message.</p></blockquote>
 <hr>
 <h2>⑤ 12 Survival Words for the Order Screen — &quot;See This, It Means This&quot;</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>On-screen Korean</th>
 <th>Meaning = What to Do</th>
 </tr></thead><tbody>
@@ -317,7 +346,7 @@
 <td>chwiso (취소)</td>
 <td>Cancel</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p><strong>Minimum order amount and delivery fee — always check before you pay</strong></p>
 <ul>
 <li>Minimum order amount: a floor each restaurant sets on its own. If you&#x27;re under it, the pay button is grayed out and the shortfall is shown on screen — add more to your cart to unlock it.</li>
@@ -340,7 +369,7 @@
 </ul>
 <hr>
 <h2>⑦ The Payment Fork — When Your Overseas Card Gets Blocked, That&#x27;s the Real Story</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>Situation</th>
 <th>What to do</th>
 </tr></thead><tbody>
@@ -360,7 +389,7 @@
 <td>Using Coupang Eats</td>
 <td>Just use the payment method already registered on your Coupang account — if your card cleared verification when you signed up for Coupang, you don&#x27;t need to try again in the delivery app</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>⑧ 2 Panic Scenarios — What Actually Happens, and How to Cope</h2>
 <p>1. <strong>A call comes in from an unknown number</strong> — This is coming through the safe number (a virtual relay number), not the rider&#x27;s actual number. It&#x27;s fine if you can&#x27;t understand it. A short &quot;ne (네)&quot; — yes — is enough, or you can just not answer at all; most of the time it still gets left at the door. If you&#x27;d rather avoid the call entirely, just write &quot;please leave it at the door instead of calling&quot; in the special request field.</p>
@@ -405,34 +434,7 @@
     <div><a href="kakao-taxi-guide.en.html" style="color:var(--red);">Kakao T Taxi for Foreigners: When Card Registration Fails, Pay the Driver Directly &rarr;</a></div>
   </nav>
 
-  <section id="kc-related" style="display:none;margin:2.2rem 0 0.5rem;">
-    <h2 style="font-size:1.1rem;margin-bottom:0.8rem;">Related Guides</h2>
-    <div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"></div>
-  </section>
-  <script>
-  // related guides — 같은 카테고리 최신 6편 (contents.json fetch·언어 suffix 자동, 2026-07-04)
-  (function() {
-    var m = location.pathname.match(/\/content\/(.+?)(\.en|\.zh|\.ja)?\.html$/);
-    if (!m) return;
-    var slug = m[1], suf = m[2] || '';
-    fetch('../data/contents.json').then(function(r) { return r.json(); }).then(function(items) {
-      var me = null;
-      for (var i = 0; i < items.length; i++) { if (items[i].slug === slug) { me = items[i]; break; } }
-      if (!me) return;
-      var pool = items.filter(function(x) { return x.slug !== slug && x.category === me.category; });
-      pool.sort(function(a, b) { return (parseInt(b.id, 10) || 0) - (parseInt(a.id, 10) || 0); });
-      var picks = pool.slice(0, 6);
-      if (!picks.length) return;
-      document.getElementById('kc-related-grid').innerHTML = picks.map(function(x) {
-        var t = suf ? (x.title_en || x.title_kr) : (x.title_kr || x.title_en);
-        var ok = suf === '' || (suf === '.en' ? x.en_available : (suf === '.zh' ? x.cn_available : x.jp_available));
-        var href = x.slug + (ok ? suf : '') + '.html';
-        return '<a href="' + href + '" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">' + t + '</a>';
-      }).join('');
-      document.getElementById('kc-related').style.display = 'block';
-    }).catch(function() {});
-  })();
-  </script>
+  <section id="kc-related" style="margin:2.2rem 0 0.5rem;"><h2 style="font-size:1.1rem;margin-bottom:0.8rem;">Related Guides</h2><div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"><a href="solo-female-safety-checklist.en.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Solo Female Travel in Korea — A No-Fear Safety Checklist</a><a href="china-payment-survival.en.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Korea Payment Survival Manual for Chinese-Speaking Travelers — Alipay Works, WeChat Doesn&#x27;t, UnionPay Needs Prep First</a><a href="duty-free-pickup-guide.en.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">You Get Your Duty-Free Items at the Airport — The Zero-Panic Manual for the Pickup Counter</a><a href="korea-smoking-guide.en.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Finding a Place to Smoke in Korea, the Zero-Panic Manual — How Not to Get Fined</a><a href="busan-transit-guide.en.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Busan Transit Grammar — A City You Can Read with Just Two Lines</a><a href="seoul-cold-snap-survival.en.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Surviving a Seoul Cold Snap: How to Get Through a Day at Minus Ten</a></div></section>
   <!-- kc-comments -->
   <section id="kc-comments" style="margin:2.5rem 0 0.5rem;">
     <h2>Comments</h2>

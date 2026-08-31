@@ -34,7 +34,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/main.css">
 <style>
 .detail-wrap {
@@ -50,11 +50,11 @@
 .breadcrumb a { color: var(--red); font-weight: 600; }
 .detail-wrap h1 {
   font-size: 28px; font-weight: 800;
-  color: var(--black); margin-bottom: 8px;
+  color: var(--text); margin-bottom: 8px;
 }
 .detail-wrap h2 {
   font-size: 22px; font-weight: 700;
-  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  color: var(--text); margin-top: 32px; margin-bottom: 12px;
   padding-bottom: 6px;
   border-bottom: 2px solid var(--red);
 }
@@ -73,10 +73,19 @@
   font-size: 14px; line-height: 1.6;
   color: var(--text-mid); margin-bottom: 6px;
 }
+/* 표는 자기 컨테이너 안에서만 가로 스크롤한다 — 이게 없으면 min-content 폭이
+   뷰포트를 넘는 순간 페이지 전체가 가로로 밀렸다 (2026-08-31 점검 M2).
+   table 자체는 table 로 남겨 행·열 관계를 보존한다(display:block 으로 해결하지 않는 이유). */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 16px;
+}
 .detail-wrap table {
   width: 100%; border-collapse: collapse;
   margin-bottom: 16px; font-size: 13px;
 }
+.table-scroll > table { margin-bottom: 0; }
 .detail-wrap th {
   background: var(--black); color: #fff;
   padding: 10px 12px; text-align: left;
@@ -137,10 +146,30 @@
   user-select: none;
 }
 </style>
+<script>
+/* 테마 부트스트랩 — 2026-08-31 점검 M3.
+   기사 4,804p 에 이게 없어서, OS 다크 사용자가 홈(다크)에서 기사를 열면
+   라이트로 번쩍였다. main.css 의 다크 규칙은 전부 [data-theme="dark"] 스코프이고
+   prefers-color-scheme 미디어쿼리는 CSS 에 없으므로, 속성을 여기서 달아줘야 한다.
+   <head> 안에서 동기 실행 — paint 전에 끝나야 깜빡임이 없다.
+   허브와 달리 기사엔 토글 버튼이 없다. 저장된 선택(kc_theme)과 OS 설정만 따른다. */
+(function () {
+  try {
+    var s = localStorage.getItem('kc_theme');
+    if (s === 'dark' || (!s && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  } catch (e) {}
+})();
+</script>
 </head>
 <body>
+<a class="skip-link" href="#kc-main">본문 바로가기</a>
 <header class="site-header">
-  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <!-- width/height = 고유 크기(400x149). CSS 가 height:36px 로 줄이지만 브라우저는
+       이 비율로 자리를 미리 잡아 레이아웃 이동(CLS)을 막는다. 헤더 로고는 첫 화면에
+       보이므로 lazy 가 아니라 eager. -->
+  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo" width="400" height="149" loading="eager" decoding="async"></a>
   <div class="lang-switch">
     <a href="../content/korean-gugak-culture.html" class="active">KR</a>
     <a href="../content/korean-gugak-culture.en.html">EN</a>
@@ -149,7 +178,7 @@
   </div>
 </header>
 
-<main class="detail-wrap">
+<main class="detail-wrap" id="kc-main" tabindex="-1">
   <nav class="breadcrumb" aria-label="breadcrumb"><a href="../index.html">전체 가이드</a> &rsaquo; 한국 국악 문화 — 판소리·사물놀이·아리랑, 한국의 소리</nav>
   <article>
   <h1>국악 — 판소리·사물놀이·아리랑, 한국의 소리</h1>
@@ -158,7 +187,7 @@
 <p>이 글은 &quot;어느 공연장이 좋다&quot;(→ 장소 가이드)가 아니라 <strong>국악이 무엇이고, 어떤 갈래로 나뉘며, 한국인이 그 소리로 무엇을 표현하는지</strong>를 풀어준다. 같은 &#x27;전통음악&#x27;이라도 궁중의 장엄한 <strong>정악</strong>과 서민의 펄떡이는 <strong>민속악</strong>은 전혀 다른 음악이다. 한국 문화 explainer 시리즈 <strong>71편</strong>.</p>
 <hr>
 <h2>★ 한눈에 보기 — 국악 갈래 한 장 요약</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>갈래</th>
 <th>무엇인가</th>
 <th>분위기</th>
@@ -207,7 +236,7 @@
 <td>이날치 &#x27;범 내려온다&#x27;·악단광칠</td>
 <td>K-컬처로 역주행</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <blockquote><p>국악은 크게 <strong>정악(궁중·상류)</strong> 과 <strong>민속악(서민)</strong> 두 줄기로 나뉜다. 판소리·사물놀이·아리랑·산조는 모두 <strong>민속악</strong> 계열이다.</p></blockquote>
 <hr>
 <h2>⚠️ 외국인이 자주 오해하는 3가지</h2>
@@ -230,7 +259,7 @@
 <li><strong>고수(鼓手, 북 치는 사람)</strong>: 바닥에 앉아 <strong>북</strong> 하나로 장단을 잡고, 중간중간 <em>&quot;얼쑤!&quot;·&quot;좋다!&quot;</em> 하는 <strong>추임새</strong>로 흥을 돋운다. 청중도 함께 추임새를 넣는다 — 관객이 연주에 참여하는 음악이다.</li>
 </ul>
 <p><strong>판소리 다섯 마당</strong> (현재 전해지는 다섯 편):</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>마당</th>
 <th>이야기</th>
 </tr></thead><tbody>
@@ -254,14 +283,14 @@
 <td><strong>적벽가</strong></td>
 <td>『삼국지』 적벽대전을 노래로 옮긴 영웅 서사</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p>판소리의 정서를 한마디로 압축하면 <strong>한(恨)</strong> 이다. 억눌린 슬픔·그리움·응어리를 절절한 목소리로 토해내되, 그 안에 <strong>해학과 흥</strong>이 함께 섞여 있다. 소리꾼은 일부러 <strong>거칠고 쉰 목소리(수리성)</strong> 를 만들기 위해 수년간 폭포 앞에서 목을 단련한다 — 매끄러운 미성이 아니라, <strong>삶의 무게가 묻어나는 탁한 소리</strong>가 판소리의 미덕이다(→ 한의 정서는 <a href="korean-han-emotion-culture.html" class="xref">#1138</a> 참조).</p>
 <blockquote><p><strong>UNESCO</strong>: 판소리는 <strong>2003년</strong> 유네스코 인류구전 및 무형유산 걸작으로 선정됐다(이후 2008년 대표목록 편입).</p></blockquote>
 <hr>
 <h2>③ 사물놀이 · 풍물 — 네 악기가 만드는 신명</h2>
 <p>판소리가 &#x27;한&#x27;이라면, 사물놀이는 정반대의 <strong>신명(흥)</strong> 이다.</p>
 <p><strong>사물놀이(四物놀이)</strong> 는 글자 그대로 <em>&quot;네 가지(四物)로 노는(놀이)&quot;</em> 음악이다. 네 가지 타악기가 한데 어울려 폭발적인 리듬을 쌓는다.</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>악기</th>
 <th>무엇</th>
 <th>상징</th>
@@ -286,7 +315,7 @@
 <td>통나무 양면 북, 저음</td>
 <td>구름</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p>원래 이 악기들은 <strong>풍물(농악)</strong> 에서 왔다. 풍물은 농촌에서 <strong>풍년을 빌고 마을의 액을 쫓으며</strong> 모두가 어울려 치고 춤추던 <strong>공동체 음악</strong>이다. 들판에서 야외로 펼쳐지던 이 농악을, <strong>1978년</strong> 김덕수 등이 무대 위 4인 앉은 연주로 재구성한 것이 바로 <strong>사물놀이</strong>다. 즉, 사물놀이는 <em>전통(풍물)에서 태어난 현대적 무대 양식</em>이다.</p>
 <p>사물놀이의 매력은 <strong>점점 빨라지는 장단</strong>이다. 느리게 시작해 자진모리·휘모리로 가속하며 객석을 단숨에 흥분으로 몰아넣는다. 외국인도 가사를 몰라도 <strong>온몸으로 즐길 수 있는</strong> 가장 직관적인 국악이다.</p>
 <hr>
@@ -382,34 +411,7 @@
     <div><a href="korean-traditional-dance-culture.html" style="color:var(--red);">한국 전통 무용 문화 — 부채춤·승무·탈춤, 몸으로 그리는 한국의 선 &rarr;</a></div>
   </nav>
 
-  <section id="kc-related" style="display:none;margin:2.2rem 0 0.5rem;">
-    <h2 style="font-size:1.1rem;margin-bottom:0.8rem;">관련 가이드</h2>
-    <div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"></div>
-  </section>
-  <script>
-  // related guides — 같은 카테고리 최신 6편 (contents.json fetch·언어 suffix 자동, 2026-07-04)
-  (function() {
-    var m = location.pathname.match(/\/content\/(.+?)(\.en|\.zh|\.ja)?\.html$/);
-    if (!m) return;
-    var slug = m[1], suf = m[2] || '';
-    fetch('../data/contents.json').then(function(r) { return r.json(); }).then(function(items) {
-      var me = null;
-      for (var i = 0; i < items.length; i++) { if (items[i].slug === slug) { me = items[i]; break; } }
-      if (!me) return;
-      var pool = items.filter(function(x) { return x.slug !== slug && x.category === me.category; });
-      pool.sort(function(a, b) { return (parseInt(b.id, 10) || 0) - (parseInt(a.id, 10) || 0); });
-      var picks = pool.slice(0, 6);
-      if (!picks.length) return;
-      document.getElementById('kc-related-grid').innerHTML = picks.map(function(x) {
-        var t = suf ? (x.title_en || x.title_kr) : (x.title_kr || x.title_en);
-        var ok = suf === '' || (suf === '.en' ? x.en_available : (suf === '.zh' ? x.cn_available : x.jp_available));
-        var href = x.slug + (ok ? suf : '') + '.html';
-        return '<a href="' + href + '" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">' + t + '</a>';
-      }).join('');
-      document.getElementById('kc-related').style.display = 'block';
-    }).catch(function() {});
-  })();
-  </script>
+  <section id="kc-related" style="margin:2.2rem 0 0.5rem;"><h2 style="font-size:1.1rem;margin-bottom:0.8rem;">관련 가이드</h2><div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"><a href="royal-palace-autumn-nights.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">궁궐의 가을밤 — 별빛야행·달빛기행·궁중문화축전, 예약 없이는 못 들어가는 프로그램 총정리</a><a href="seoul-fireworks-festival.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">서울세계불꽃축제 2026 — 9월 5일 여의도, 100만 인파 속에서 명당 잡는 법</a><a href="seoul-architecture-eras.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">서울 건축 시대 산책 — 전통·근대·현대 15선 + 건축 감상 렌즈</a><a href="korea-kpop-fansign-videocall.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">외국인 K-pop 팬사인회·영상통화 응모 가이드 — 음반 응모·영통</a><a href="korea-idol-birthday-cafe.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">외국인 아이돌 생일카페 가이드 — 생카·컵슬리브·서포트</a><a href="korea-kpop-music-show-taping.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">외국인 K-pop 음악방송 방청 가이드 — 인기가요·엠카·뮤뱅 사전녹화</a></div></section>
   <!-- kc-comments -->
   <section id="kc-comments" style="margin:2.5rem 0 0.5rem;">
     <h2>댓글</h2>

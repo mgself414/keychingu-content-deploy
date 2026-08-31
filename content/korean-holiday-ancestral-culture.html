@@ -34,7 +34,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/main.css">
 <style>
 .detail-wrap {
@@ -50,11 +50,11 @@
 .breadcrumb a { color: var(--red); font-weight: 600; }
 .detail-wrap h1 {
   font-size: 28px; font-weight: 800;
-  color: var(--black); margin-bottom: 8px;
+  color: var(--text); margin-bottom: 8px;
 }
 .detail-wrap h2 {
   font-size: 22px; font-weight: 700;
-  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  color: var(--text); margin-top: 32px; margin-bottom: 12px;
   padding-bottom: 6px;
   border-bottom: 2px solid var(--red);
 }
@@ -73,10 +73,19 @@
   font-size: 14px; line-height: 1.6;
   color: var(--text-mid); margin-bottom: 6px;
 }
+/* 표는 자기 컨테이너 안에서만 가로 스크롤한다 — 이게 없으면 min-content 폭이
+   뷰포트를 넘는 순간 페이지 전체가 가로로 밀렸다 (2026-08-31 점검 M2).
+   table 자체는 table 로 남겨 행·열 관계를 보존한다(display:block 으로 해결하지 않는 이유). */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 16px;
+}
 .detail-wrap table {
   width: 100%; border-collapse: collapse;
   margin-bottom: 16px; font-size: 13px;
 }
+.table-scroll > table { margin-bottom: 0; }
 .detail-wrap th {
   background: var(--black); color: #fff;
   padding: 10px 12px; text-align: left;
@@ -137,10 +146,30 @@
   user-select: none;
 }
 </style>
+<script>
+/* 테마 부트스트랩 — 2026-08-31 점검 M3.
+   기사 4,804p 에 이게 없어서, OS 다크 사용자가 홈(다크)에서 기사를 열면
+   라이트로 번쩍였다. main.css 의 다크 규칙은 전부 [data-theme="dark"] 스코프이고
+   prefers-color-scheme 미디어쿼리는 CSS 에 없으므로, 속성을 여기서 달아줘야 한다.
+   <head> 안에서 동기 실행 — paint 전에 끝나야 깜빡임이 없다.
+   허브와 달리 기사엔 토글 버튼이 없다. 저장된 선택(kc_theme)과 OS 설정만 따른다. */
+(function () {
+  try {
+    var s = localStorage.getItem('kc_theme');
+    if (s === 'dark' || (!s && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  } catch (e) {}
+})();
+</script>
 </head>
 <body>
+<a class="skip-link" href="#kc-main">본문 바로가기</a>
 <header class="site-header">
-  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <!-- width/height = 고유 크기(400x149). CSS 가 height:36px 로 줄이지만 브라우저는
+       이 비율로 자리를 미리 잡아 레이아웃 이동(CLS)을 막는다. 헤더 로고는 첫 화면에
+       보이므로 lazy 가 아니라 eager. -->
+  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo" width="400" height="149" loading="eager" decoding="async"></a>
   <div class="lang-switch">
     <a href="../content/korean-holiday-ancestral-culture.html" class="active">KR</a>
     <a href="../content/korean-holiday-ancestral-culture.en.html">EN</a>
@@ -149,7 +178,7 @@
   </div>
 </header>
 
-<main class="detail-wrap">
+<main class="detail-wrap" id="kc-main" tabindex="-1">
   <nav class="breadcrumb" aria-label="breadcrumb"><a href="../index.html">전체 가이드</a> &rsaquo; 한국 명절·차례·제사 문화 — 왜 온 가족이 모여 음식을 차리고 절을 할까</nav>
   <article>
   <h1>한국 명절·차례·제사 문화 — 왜 온 가족이 모여 음식을 차리고 절을 할까</h1>
@@ -157,7 +186,7 @@
 <p>한국에 살거나 K-드라마를 보다 보면 한 해에 두 번, 도시가 통째로 비는 신기한 풍경을 만난다. 서울의 식당 절반이 문을 닫고, 고속도로는 10시간 넘게 막히고, 온 가족이 차에 올라 고향으로 향한다. 도착하면 부엌에서 하루 종일 전을 부치고 떡을 빚고, 아침에는 상을 가득 차려 조상에게 <strong>절(bow)</strong> 을 두 번 한다. 외국인은 이걸 보통 &quot;Korean Thanksgiving(한국 추수감사절)&quot; 정도로 번역하지만, 그건 절반만 맞는 말이다. 한국의 양대 명절 <strong>설날·추석</strong>은 단순한 휴일이 아니라, <strong>돌아가신 조상을 집으로 모셔와 함께 식사하고, 살아있는 가족이 한자리에 모이는 의례</strong>다. 이 글은 &quot;명절에 갈 곳&quot;(→ cross-link)이 아니라, <strong>왜 한국인이 매년 이 고된 의식을 반복하는지 — 그 뒤의 가족·조상·효(孝) 사고방식</strong>을 외국인 눈높이로 풀어준다. 한국 문화 explainer 시리즈 <strong>5편</strong>.</p>
 <hr>
 <h2>★ 한눈에 보기 — 한국 명절·조상 의례 4개념</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>개념</th>
 <th>무엇</th>
 <th>한 줄</th>
@@ -182,7 +211,7 @@
 <td><strong>기일</strong> 조상 의례</td>
 <td>고인이 돌아가신 날(忌日) 밤에 지내는 격식 있는 제례</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <blockquote><p><strong>핵심 구분</strong>: <strong>차례 = 명절(설·추석)에 지내는 의례</strong> / <strong>제사 = 고인의 기일(돌아가신 날)에 지내는 의례</strong>. 외국인이 가장 헷갈리는 지점이다(아래 ②). <strong>2026년: 설 2/17(화)·추석 9/25(금) 전후 — 정확한 연휴는 매년 음력 기준이라 변동, 방문 전 확인 권장.</strong></p></blockquote>
 <hr>
 <h2>⚠️ 외국인이 자주 오해하는 3가지</h2>
@@ -200,7 +229,7 @@
 <hr>
 <h2>② 차례 vs 제사 — 가장 중요한 구분</h2>
 <p>외국인은 물론 한국 젊은 세대도 헷갈리는 부분. 둘 다 조상에게 음식을 올리고 절을 하는 의례지만, <strong>언제·왜 지내는지가 다르다</strong>.</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th></th>
 <th><strong>차례 (茶禮)</strong></th>
 <th><strong>제사 (祭祀, 기제사)</strong></th>
@@ -230,7 +259,7 @@
 <td>보통 <strong>여러 대(代) 조상 함께</strong></td>
 <td>보통 그 <strong>한 분(기일의 주인공)</strong></td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <blockquote><p>이름의 유래: <strong>차례(茶禮)</strong> 의 &#x27;차(茶)&#x27;는 원래 <strong>차를 올리는 의례</strong>라는 뜻이다. 그만큼 제사보다 <strong>간소한</strong> 의례라는 게 전통적 의미다. 실제로 전통 차례는 술 한 잔·차 한 잔·과일 한 쟁반 정도로 간략하고, 축문(글을 읽는 절차)도 생략하는 경우가 많았다.</p></blockquote>
 <p>이 밖에 <strong>성묘(省墓)</strong> — 조상의 산소를 찾아 절하고 살피는 것, <strong>시제·묘제</strong> — 먼 조상이나 묘소에서 지내는 계절 의례도 있다. 외국인이 명절에 가장 자주 마주치는 건 <strong>차례(집)와 성묘(산소)</strong> 다.</p>
 <hr>
@@ -343,34 +372,7 @@
     <div><a href="korean-temple-food-culture.html" style="color:var(--red);">한국 사찰음식 문화 — 왜 한국 절밥은 고기도 마늘도 빼고 이렇게 정갈한가 &rarr;</a></div>
   </nav>
 
-  <section id="kc-related" style="display:none;margin:2.2rem 0 0.5rem;">
-    <h2 style="font-size:1.1rem;margin-bottom:0.8rem;">관련 가이드</h2>
-    <div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"></div>
-  </section>
-  <script>
-  // related guides — 같은 카테고리 최신 6편 (contents.json fetch·언어 suffix 자동, 2026-07-04)
-  (function() {
-    var m = location.pathname.match(/\/content\/(.+?)(\.en|\.zh|\.ja)?\.html$/);
-    if (!m) return;
-    var slug = m[1], suf = m[2] || '';
-    fetch('../data/contents.json').then(function(r) { return r.json(); }).then(function(items) {
-      var me = null;
-      for (var i = 0; i < items.length; i++) { if (items[i].slug === slug) { me = items[i]; break; } }
-      if (!me) return;
-      var pool = items.filter(function(x) { return x.slug !== slug && x.category === me.category; });
-      pool.sort(function(a, b) { return (parseInt(b.id, 10) || 0) - (parseInt(a.id, 10) || 0); });
-      var picks = pool.slice(0, 6);
-      if (!picks.length) return;
-      document.getElementById('kc-related-grid').innerHTML = picks.map(function(x) {
-        var t = suf ? (x.title_en || x.title_kr) : (x.title_kr || x.title_en);
-        var ok = suf === '' || (suf === '.en' ? x.en_available : (suf === '.zh' ? x.cn_available : x.jp_available));
-        var href = x.slug + (ok ? suf : '') + '.html';
-        return '<a href="' + href + '" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">' + t + '</a>';
-      }).join('');
-      document.getElementById('kc-related').style.display = 'block';
-    }).catch(function() {});
-  })();
-  </script>
+  <section id="kc-related" style="margin:2.2rem 0 0.5rem;"><h2 style="font-size:1.1rem;margin-bottom:0.8rem;">관련 가이드</h2><div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"><a href="royal-palace-autumn-nights.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">궁궐의 가을밤 — 별빛야행·달빛기행·궁중문화축전, 예약 없이는 못 들어가는 프로그램 총정리</a><a href="seoul-fireworks-festival.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">서울세계불꽃축제 2026 — 9월 5일 여의도, 100만 인파 속에서 명당 잡는 법</a><a href="seoul-architecture-eras.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">서울 건축 시대 산책 — 전통·근대·현대 15선 + 건축 감상 렌즈</a><a href="korea-kpop-fansign-videocall.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">외국인 K-pop 팬사인회·영상통화 응모 가이드 — 음반 응모·영통</a><a href="korea-idol-birthday-cafe.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">외국인 아이돌 생일카페 가이드 — 생카·컵슬리브·서포트</a><a href="korea-kpop-music-show-taping.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">외국인 K-pop 음악방송 방청 가이드 — 인기가요·엠카·뮤뱅 사전녹화</a></div></section>
   <!-- kc-comments -->
   <section id="kc-comments" style="margin:2.5rem 0 0.5rem;">
     <h2>댓글</h2>

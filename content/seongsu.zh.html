@@ -34,7 +34,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/main.css">
 <style>
 .detail-wrap {
@@ -50,11 +50,11 @@
 .breadcrumb a { color: var(--red); font-weight: 600; }
 .detail-wrap h1 {
   font-size: 28px; font-weight: 800;
-  color: var(--black); margin-bottom: 8px;
+  color: var(--text); margin-bottom: 8px;
 }
 .detail-wrap h2 {
   font-size: 22px; font-weight: 700;
-  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  color: var(--text); margin-top: 32px; margin-bottom: 12px;
   padding-bottom: 6px;
   border-bottom: 2px solid var(--red);
 }
@@ -73,10 +73,19 @@
   font-size: 14px; line-height: 1.6;
   color: var(--text-mid); margin-bottom: 6px;
 }
+/* 표는 자기 컨테이너 안에서만 가로 스크롤한다 — 이게 없으면 min-content 폭이
+   뷰포트를 넘는 순간 페이지 전체가 가로로 밀렸다 (2026-08-31 점검 M2).
+   table 자체는 table 로 남겨 행·열 관계를 보존한다(display:block 으로 해결하지 않는 이유). */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 16px;
+}
 .detail-wrap table {
   width: 100%; border-collapse: collapse;
   margin-bottom: 16px; font-size: 13px;
 }
+.table-scroll > table { margin-bottom: 0; }
 .detail-wrap th {
   background: var(--black); color: #fff;
   padding: 10px 12px; text-align: left;
@@ -137,11 +146,31 @@
   user-select: none;
 }
 </style>
+<script>
+/* 테마 부트스트랩 — 2026-08-31 점검 M3.
+   기사 4,804p 에 이게 없어서, OS 다크 사용자가 홈(다크)에서 기사를 열면
+   라이트로 번쩍였다. main.css 의 다크 규칙은 전부 [data-theme="dark"] 스코프이고
+   prefers-color-scheme 미디어쿼리는 CSS 에 없으므로, 속성을 여기서 달아줘야 한다.
+   <head> 안에서 동기 실행 — paint 전에 끝나야 깜빡임이 없다.
+   허브와 달리 기사엔 토글 버튼이 없다. 저장된 선택(kc_theme)과 OS 설정만 따른다. */
+(function () {
+  try {
+    var s = localStorage.getItem('kc_theme');
+    if (s === 'dark' || (!s && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  } catch (e) {}
+})();
+</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "CafeOrCoffeeShop", "name": "성수동 팝업의 성지 딥다이브", "url": "https://mgself414.github.io/keychingu-content-deploy/content/seongsu.html", "image": "https://mgself414.github.io/keychingu-content-deploy/og/seongsu.png", "address": {"@type": "PostalAddress", "addressLocality": "Seoul", "addressCountry": "KR"}}</script>
 </head>
 <body>
+<a class="skip-link" href="#kc-main">跳到正文</a>
 <header class="site-header">
-  <a href="../zh/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <!-- width/height = 고유 크기(400x149). CSS 가 height:36px 로 줄이지만 브라우저는
+       이 비율로 자리를 미리 잡아 레이아웃 이동(CLS)을 막는다. 헤더 로고는 첫 화면에
+       보이므로 lazy 가 아니라 eager. -->
+  <a href="../zh/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo" width="400" height="149" loading="eager" decoding="async"></a>
   <div class="lang-switch">
     <a href="../content/seongsu.html">KR</a>
     <a href="../content/seongsu.en.html">EN</a>
@@ -150,12 +179,12 @@
   </div>
 </header>
 
-<main class="detail-wrap">
+<main class="detail-wrap" id="kc-main" tabindex="-1">
   <nav class="breadcrumb" aria-label="breadcrumb"><a href="../zh/index.html">全部指南</a> &rsaquo; 圣水洞快闪店圣地深度探访</nav>
   <article>
   <h1>圣水洞 (Seongsu-dong / 성수동) — 快闪店圣地 &amp; 改造工厂 (1-2)</h1>
 <h2>一眼总览</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>项目</th>
 <th>内容</th>
 </tr></thead><tbody>
@@ -183,7 +212,7 @@
 <td><strong>费用</strong></td>
 <td>咖啡 ₩5,000~12,000 (~35~85 RMB) / 购物视商品而定</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>圣水洞 (Seongsu-dong / 성수동)，为什么值得一去？</h2>
 <h3>&quot;快闪店圣地&quot; — 韩国限定文化的中心</h3>
@@ -198,7 +227,7 @@
 <h2>如何找快闪店 — Instagram 就是最好的攻略</h2>
 <h3>第1步：保存 Instagram 账号</h3>
 <p>想找圣水洞 (Seongsu-dong / 성수동) 当下的热门地点，<strong>Instagram 是最好的向导</strong>：</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>账号</th>
 <th>粉丝数</th>
 <th>内容</th>
@@ -228,7 +257,7 @@
 <td>5,400</td>
 <td>圣水洞附近咖啡馆·酒吧</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p><strong>小贴士</strong>：关注以上账号后，用&quot;收藏 (Save)&quot;功能将感兴趣的快闪店帖子存档，方便现场随时查看。</p>
 <h3>第2步：Naver 搜索技巧</h3>
 <ul>
@@ -295,7 +324,7 @@
 </ul>
 <p><strong>小贴士</strong>：快闪店通常工作日开门、周末售罄。找到心仪的快闪店后，<strong>推荐工作日前往</strong>。</p>
 <h4><strong>地图上找不到的地方 (基于 Instagram)</strong></h4>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>名称</th>
 <th>类型</th>
 <th>Instagram 搜索词</th>
@@ -315,7 +344,7 @@
 <td>艺术家工作室</td>
 <td>knewnew.official</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h3>类别3：画廊 &amp; 艺术空间</h3>
 <h4><strong>艺术画廊 (期间展览)</strong></h4>
@@ -363,7 +392,7 @@
 <hr>
 <h2>实用小贴士 5条</h2>
 <h3>1. 最佳参观时间</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>时间段</th>
 <th>拥挤程度</th>
 <th>推荐度</th>
@@ -399,7 +428,7 @@
 <td>⭐⭐</td>
 <td>仅部分咖啡馆营业 / 氛围别有情调</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <blockquote><p><strong>퇴근길 (Toigeungil / 퇴근길)</strong>：指下班回家的路途，类似中文&quot;下班路上&quot;。工作日傍晚人流会明显增加。</p></blockquote>
 <p><strong>推荐</strong>：外国游客 → <strong>工作日 14:00~16:00</strong> 前往</p>
 <h3>2. 周末拥挤程度预测</h3>
@@ -423,7 +452,7 @@
 <li><strong>步行</strong>：至首尔林站 (Seoul Forest Station / 서울숲역) 约15分钟 (条件允许时推荐 — 最后的美好体验)</li>
 </ul>
 <h3>4. 行李建议</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>物品</th>
 <th>原因</th>
 </tr></thead><tbody>
@@ -451,9 +480,9 @@
 <td><strong>银行卡/现金</strong></td>
 <td>部分快闪店仅收现金；韩国간편결제 (Kanpyeon Gyelje / 간편결제，移动支付，如 KakaoPay·Samsung Pay，类似支付宝/微信支付) 也很普及，但外国卡不一定支持</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h3>5. 预算参考</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>项目</th>
 <th>费用</th>
 <th>备注</th>
@@ -478,7 +507,7 @@
 <td><strong>₩50,000~156,000 (~360~1,120 RMB)</strong></td>
 <td>合理旅行标准</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>季节性更新要点</h2>
 <h3>春季 (3~5月) — 新快闪店集中开业季</h3>
@@ -603,34 +632,7 @@
     <div><a href="night-views.zh.html" style="color:var(--red);">免费夜景景点TOP 10 &rarr;</a></div>
   </nav>
 
-  <section id="kc-related" style="display:none;margin:2.2rem 0 0.5rem;">
-    <h2 style="font-size:1.1rem;margin-bottom:0.8rem;">相关指南</h2>
-    <div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"></div>
-  </section>
-  <script>
-  // related guides — 같은 카테고리 최신 6편 (contents.json fetch·언어 suffix 자동, 2026-07-04)
-  (function() {
-    var m = location.pathname.match(/\/content\/(.+?)(\.en|\.zh|\.ja)?\.html$/);
-    if (!m) return;
-    var slug = m[1], suf = m[2] || '';
-    fetch('../data/contents.json').then(function(r) { return r.json(); }).then(function(items) {
-      var me = null;
-      for (var i = 0; i < items.length; i++) { if (items[i].slug === slug) { me = items[i]; break; } }
-      if (!me) return;
-      var pool = items.filter(function(x) { return x.slug !== slug && x.category === me.category; });
-      pool.sort(function(a, b) { return (parseInt(b.id, 10) || 0) - (parseInt(a.id, 10) || 0); });
-      var picks = pool.slice(0, 6);
-      if (!picks.length) return;
-      document.getElementById('kc-related-grid').innerHTML = picks.map(function(x) {
-        var t = suf ? (x.title_en || x.title_kr) : (x.title_kr || x.title_en);
-        var ok = suf === '' || (suf === '.en' ? x.en_available : (suf === '.zh' ? x.cn_available : x.jp_available));
-        var href = x.slug + (ok ? suf : '') + '.html';
-        return '<a href="' + href + '" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">' + t + '</a>';
-      }).join('');
-      document.getElementById('kc-related').style.display = 'block';
-    }).catch(function() {});
-  })();
-  </script>
+  <section id="kc-related" style="margin:2.2rem 0 0.5rem;"><h2 style="font-size:1.1rem;margin-bottom:0.8rem;">相关指南</h2><div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"><a href="busan-suyeong-dongnae.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Busan&#x27;s Point of Origin — Suyeong and Dongnae, Behind Gwangalli and Joseon-Era Busan</a><a href="sindang-guide.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Sindang-dong: The Neighborhood Being Called the Next Seongsu — Market, Hip Bars and Original Tteokbokki in Three Layers</a><a href="seoul-overrated-underrated.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Overrated vs Underrated Seoul: Reallocating Your Time by What Foreign Reviews Actually Say</a><a href="myeongdong-euljiro-evening-walk.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Myeongdong to Euljiro Evening Walk: Six Faces of Seoul in Two Hours, Ending with Yajang Beer</a><a href="cvs-drinks-map.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">The Complete Map of Korean Convenience Store Drinks: From Banana Milk to Hangover Cures</a><a href="korea-snack-brands.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Korean Snack Brands 101: Nongshim, Orion, Lotte, Haitai and Crown — Reading K-Snacks by Maker</a></div></section>
   <!-- kc-comments -->
   <section id="kc-comments" style="margin:2.5rem 0 0.5rem;">
     <h2>评论</h2>

@@ -34,7 +34,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/main.css">
 <style>
 .detail-wrap {
@@ -50,11 +50,11 @@
 .breadcrumb a { color: var(--red); font-weight: 600; }
 .detail-wrap h1 {
   font-size: 28px; font-weight: 800;
-  color: var(--black); margin-bottom: 8px;
+  color: var(--text); margin-bottom: 8px;
 }
 .detail-wrap h2 {
   font-size: 22px; font-weight: 700;
-  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  color: var(--text); margin-top: 32px; margin-bottom: 12px;
   padding-bottom: 6px;
   border-bottom: 2px solid var(--red);
 }
@@ -73,10 +73,19 @@
   font-size: 14px; line-height: 1.6;
   color: var(--text-mid); margin-bottom: 6px;
 }
+/* 표는 자기 컨테이너 안에서만 가로 스크롤한다 — 이게 없으면 min-content 폭이
+   뷰포트를 넘는 순간 페이지 전체가 가로로 밀렸다 (2026-08-31 점검 M2).
+   table 자체는 table 로 남겨 행·열 관계를 보존한다(display:block 으로 해결하지 않는 이유). */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 16px;
+}
 .detail-wrap table {
   width: 100%; border-collapse: collapse;
   margin-bottom: 16px; font-size: 13px;
 }
+.table-scroll > table { margin-bottom: 0; }
 .detail-wrap th {
   background: var(--black); color: #fff;
   padding: 10px 12px; text-align: left;
@@ -137,10 +146,30 @@
   user-select: none;
 }
 </style>
+<script>
+/* 테마 부트스트랩 — 2026-08-31 점검 M3.
+   기사 4,804p 에 이게 없어서, OS 다크 사용자가 홈(다크)에서 기사를 열면
+   라이트로 번쩍였다. main.css 의 다크 규칙은 전부 [data-theme="dark"] 스코프이고
+   prefers-color-scheme 미디어쿼리는 CSS 에 없으므로, 속성을 여기서 달아줘야 한다.
+   <head> 안에서 동기 실행 — paint 전에 끝나야 깜빡임이 없다.
+   허브와 달리 기사엔 토글 버튼이 없다. 저장된 선택(kc_theme)과 OS 설정만 따른다. */
+(function () {
+  try {
+    var s = localStorage.getItem('kc_theme');
+    if (s === 'dark' || (!s && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  } catch (e) {}
+})();
+</script>
 </head>
 <body>
+<a class="skip-link" href="#kc-main">본문 바로가기</a>
 <header class="site-header">
-  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <!-- width/height = 고유 크기(400x149). CSS 가 height:36px 로 줄이지만 브라우저는
+       이 비율로 자리를 미리 잡아 레이아웃 이동(CLS)을 막는다. 헤더 로고는 첫 화면에
+       보이므로 lazy 가 아니라 eager. -->
+  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo" width="400" height="149" loading="eager" decoding="async"></a>
   <div class="lang-switch">
     <a href="../content/korean-pojangmacha-culture.html" class="active">KR</a>
     <a href="../content/korean-pojangmacha-culture.en.html">EN</a>
@@ -149,7 +178,7 @@
   </div>
 </header>
 
-<main class="detail-wrap">
+<main class="detail-wrap" id="kc-main" tabindex="-1">
   <nav class="breadcrumb" aria-label="breadcrumb"><a href="../index.html">전체 가이드</a> &rsaquo; 한국 포장마차(포차) 문화 — 왜 빨간 천막에서 소주를 마실까</nav>
   <article>
   <h1>한국 포장마차 문화 — 왜 한국인은 길거리 빨간 천막에서 소주를 마실까</h1>
@@ -157,7 +186,7 @@
 <p>K-드라마를 보다 보면 늦은 밤마다 똑같은 장면이 나온다. 주황빛 전구가 켜진 <strong>빨간(주황) 천막</strong> 안, 김이 모락모락 나는 냄비 앞에서 주인공이 소주잔을 기울인다. 실연을 하면, 회사에서 깨지면, 친구에게 진심을 털어놓을 때 — 한국 사람들은 으레 이 천막으로 향한다. 외국인은 이걸 그냥 &quot;street food tent(길거리 음식 천막)&quot; 정도로 보지만, 한국인이 말하는 <strong>포장마차(包裝馬車)</strong> 는 단순한 노점이 아니다. 70년의 역사를 가진 <strong>서민의 사랑방</strong>이고, 소주 한 병에 하루의 피로를 푸는 <strong>정(情)의 공간</strong>이며, 드라마가 가장 사랑하는 고백 무대다. 그리고 지금 이 천막은 두 갈래로 갈라지고 있다 — 길거리에서는 단속에 밀려 사라지는 한편, MZ세대의 <strong>레트로 감성 실내 포차</strong>로는 새로 태어나는 중이다. 이 글은 &quot;어느 포차가 맛있나&quot;(→ 장소 가이드)가 아니라, <strong>그 천막 뒤에 담긴 정서·역사·변화</strong>를 외국인 눈높이로 풀어준다. 한국 문화 explainer 시리즈 <strong>41편</strong>.</p>
 <hr>
 <h2>★ 한눈에 보기 — 포장마차 5W</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>항목</th>
 <th>내용</th>
 </tr></thead><tbody>
@@ -185,7 +214,7 @@
 <td><strong>두 얼굴</strong></td>
 <td>① 길거리 노점 포차(전통) ② 실내 포차(레트로 컨셉 술집, MZ 재유행)</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <blockquote><p><strong>핵심 한 줄</strong>: 포장마차는 &#x27;값싼 길거리 술집&#x27;이자 &#x27;한국인이 진심을 꺼내놓는 정서적 공간&#x27;이다. 음식보다 <strong>분위기와 정</strong>을 먹으러 가는 곳.</p></blockquote>
 <hr>
 <h2>⚠️ 외국인이 자주 오해하는 3가지</h2>
@@ -204,7 +233,7 @@
 <hr>
 <h2>② 길거리 포차 vs 실내 포차 — 같은 이름, 두 공간</h2>
 <p>외국인이 &#x27;포차&#x27;라는 말을 들으면 헷갈리기 쉽다. 오늘날 한국의 포차는 크게 <strong>두 종류</strong>다.</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th></th>
 <th><strong>길거리 포차 (노점)</strong></th>
 <th><strong>실내 포차 (가게)</strong></th>
@@ -234,12 +263,12 @@
 <td>언어·메뉴 장벽 큼</td>
 <td>메뉴판·영어 대응 쉬움</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p>→ 드라마에 나오는 <strong>빨간 천막</strong>은 보통 길거리 포차(또는 그걸 본뜬 세트)다. 반면 요즘 외국인이 실제로 가게 되는 곳은 <strong>실내 포차</strong>(포차 컨셉 술집)인 경우가 많다. 둘은 정서의 뿌리는 같지만 경험은 다르다.</p>
 <hr>
 <h2>③ 메뉴 — 소주에 어울리는 모든 것</h2>
 <p>포장마차의 메뉴는 <strong>&#x27;술과 함께 먹는 음식&#x27;</strong>, 즉 <strong>안주(按酒)</strong> 중심이다. 대표 메뉴를 외국인 친화로 정리하면:</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>메뉴</th>
 <th>무엇</th>
 <th>한 줄</th>
@@ -279,7 +308,7 @@
 <td>분식 메뉴</td>
 <td>매콤달콤. 술 없이도 인기</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <blockquote><p><strong>외국인 팁</strong>: 처음이라면 <strong>어묵 국물 + 계란말이 + 떡볶이</strong>처럼 순한 조합부터. 매운맛에 강하면 <strong>닭발</strong>, 모험심이 있으면 <strong>곱창</strong>에 도전. 술은 <strong>소주</strong>(독함·작은 잔) 또는 <strong>맥주</strong>로 시작하고, 소주+맥주를 섞은 <strong>소맥</strong>도 흔하다.</p></blockquote>
 <hr>
 <h2>④ 왜 천막에서 마시나 — 서민·퇴근길·정(情)</h2>
@@ -384,34 +413,7 @@
     <div><a href="korean-theme-cafe-culture.html" style="color:var(--red);">한국 이색 테마카페 문화 — 방탈출부터 동물카페까지, 왜 별별 카페가 다 있을까 &rarr;</a></div>
   </nav>
 
-  <section id="kc-related" style="display:none;margin:2.2rem 0 0.5rem;">
-    <h2 style="font-size:1.1rem;margin-bottom:0.8rem;">관련 가이드</h2>
-    <div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"></div>
-  </section>
-  <script>
-  // related guides — 같은 카테고리 최신 6편 (contents.json fetch·언어 suffix 자동, 2026-07-04)
-  (function() {
-    var m = location.pathname.match(/\/content\/(.+?)(\.en|\.zh|\.ja)?\.html$/);
-    if (!m) return;
-    var slug = m[1], suf = m[2] || '';
-    fetch('../data/contents.json').then(function(r) { return r.json(); }).then(function(items) {
-      var me = null;
-      for (var i = 0; i < items.length; i++) { if (items[i].slug === slug) { me = items[i]; break; } }
-      if (!me) return;
-      var pool = items.filter(function(x) { return x.slug !== slug && x.category === me.category; });
-      pool.sort(function(a, b) { return (parseInt(b.id, 10) || 0) - (parseInt(a.id, 10) || 0); });
-      var picks = pool.slice(0, 6);
-      if (!picks.length) return;
-      document.getElementById('kc-related-grid').innerHTML = picks.map(function(x) {
-        var t = suf ? (x.title_en || x.title_kr) : (x.title_kr || x.title_en);
-        var ok = suf === '' || (suf === '.en' ? x.en_available : (suf === '.zh' ? x.cn_available : x.jp_available));
-        var href = x.slug + (ok ? suf : '') + '.html';
-        return '<a href="' + href + '" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">' + t + '</a>';
-      }).join('');
-      document.getElementById('kc-related').style.display = 'block';
-    }).catch(function() {});
-  })();
-  </script>
+  <section id="kc-related" style="margin:2.2rem 0 0.5rem;"><h2 style="font-size:1.1rem;margin-bottom:0.8rem;">관련 가이드</h2><div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"><a href="royal-palace-autumn-nights.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">궁궐의 가을밤 — 별빛야행·달빛기행·궁중문화축전, 예약 없이는 못 들어가는 프로그램 총정리</a><a href="seoul-fireworks-festival.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">서울세계불꽃축제 2026 — 9월 5일 여의도, 100만 인파 속에서 명당 잡는 법</a><a href="seoul-architecture-eras.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">서울 건축 시대 산책 — 전통·근대·현대 15선 + 건축 감상 렌즈</a><a href="korea-kpop-fansign-videocall.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">외국인 K-pop 팬사인회·영상통화 응모 가이드 — 음반 응모·영통</a><a href="korea-idol-birthday-cafe.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">외국인 아이돌 생일카페 가이드 — 생카·컵슬리브·서포트</a><a href="korea-kpop-music-show-taping.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">외국인 K-pop 음악방송 방청 가이드 — 인기가요·엠카·뮤뱅 사전녹화</a></div></section>
   <!-- kc-comments -->
   <section id="kc-comments" style="margin:2.5rem 0 0.5rem;">
     <h2>댓글</h2>

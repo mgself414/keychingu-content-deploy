@@ -34,7 +34,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/main.css">
 <style>
 .detail-wrap {
@@ -50,11 +50,11 @@
 .breadcrumb a { color: var(--red); font-weight: 600; }
 .detail-wrap h1 {
   font-size: 28px; font-weight: 800;
-  color: var(--black); margin-bottom: 8px;
+  color: var(--text); margin-bottom: 8px;
 }
 .detail-wrap h2 {
   font-size: 22px; font-weight: 700;
-  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  color: var(--text); margin-top: 32px; margin-bottom: 12px;
   padding-bottom: 6px;
   border-bottom: 2px solid var(--red);
 }
@@ -73,10 +73,19 @@
   font-size: 14px; line-height: 1.6;
   color: var(--text-mid); margin-bottom: 6px;
 }
+/* 표는 자기 컨테이너 안에서만 가로 스크롤한다 — 이게 없으면 min-content 폭이
+   뷰포트를 넘는 순간 페이지 전체가 가로로 밀렸다 (2026-08-31 점검 M2).
+   table 자체는 table 로 남겨 행·열 관계를 보존한다(display:block 으로 해결하지 않는 이유). */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 16px;
+}
 .detail-wrap table {
   width: 100%; border-collapse: collapse;
   margin-bottom: 16px; font-size: 13px;
 }
+.table-scroll > table { margin-bottom: 0; }
 .detail-wrap th {
   background: var(--black); color: #fff;
   padding: 10px 12px; text-align: left;
@@ -137,10 +146,30 @@
   user-select: none;
 }
 </style>
+<script>
+/* 테마 부트스트랩 — 2026-08-31 점검 M3.
+   기사 4,804p 에 이게 없어서, OS 다크 사용자가 홈(다크)에서 기사를 열면
+   라이트로 번쩍였다. main.css 의 다크 규칙은 전부 [data-theme="dark"] 스코프이고
+   prefers-color-scheme 미디어쿼리는 CSS 에 없으므로, 속성을 여기서 달아줘야 한다.
+   <head> 안에서 동기 실행 — paint 전에 끝나야 깜빡임이 없다.
+   허브와 달리 기사엔 토글 버튼이 없다. 저장된 선택(kc_theme)과 OS 설정만 따른다. */
+(function () {
+  try {
+    var s = localStorage.getItem('kc_theme');
+    if (s === 'dark' || (!s && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  } catch (e) {}
+})();
+</script>
 </head>
 <body>
+<a class="skip-link" href="#kc-main">本文へスキップ</a>
 <header class="site-header">
-  <a href="../ja/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <!-- width/height = 고유 크기(400x149). CSS 가 height:36px 로 줄이지만 브라우저는
+       이 비율로 자리를 미리 잡아 레이아웃 이동(CLS)을 막는다. 헤더 로고는 첫 화면에
+       보이므로 lazy 가 아니라 eager. -->
+  <a href="../ja/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo" width="400" height="149" loading="eager" decoding="async"></a>
   <div class="lang-switch">
     <a href="../content/gamaekjip.html">KR</a>
     <a href="../content/gamaekjip.en.html">EN</a>
@@ -149,12 +178,12 @@
   </div>
 </header>
 
-<main class="detail-wrap">
+<main class="detail-wrap" id="kc-main" tabindex="-1">
   <nav class="breadcrumb" aria-label="breadcrumb"><a href="../ja/index.html">ガイド一覧</a> &rsaquo; ガメクチプ完全ガイド</nav>
   <article>
   <h1>ガメクチプ — 本物の韓国の飲酒文化体験 (3-1)</h1>
 <h2>一目でわかる</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>項目</th>
 <th>内容</th>
 </tr></thead><tbody>
@@ -182,7 +211,7 @@
 <td><strong>一人でもOK？</strong></td>
 <td>可能 (現地の人だけが行く文化)</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>ガメクチプ (가맥집) って何？</h2>
 <h3>「店でビール (街ビール)」 — クラフトビールの真逆</h3>
@@ -193,7 +222,7 @@
 <li><strong>맥 (メク)</strong> = 맥주 (ビール)</li>
 </ul>
 <p><strong>しかし、それだけではありません。</strong> ガメクチプ (가맥집) 文化は：</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>区分</th>
 <th>クラフトビアバー</th>
 <th>一般的なホプチプ (호프집)</th>
@@ -235,7 +264,7 @@
 <td>「会社飲み会 (フェシク)」文化</td>
 <td><strong>「日常」文化体験</strong></td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>なぜ特別なのか？</h2>
 <h3>1️⃣ 韓国庶民文化の本当の姿</h3>
@@ -279,7 +308,7 @@
 <h4>🚫 ここはダメです (テーブルがない場所)</h4>
 <p>「ガメクチプ (가맥집)」を探しているのに<strong>コンビニに行ってはいけません。</strong> ビールだけ買って出ていく場所です。</p>
 <p><strong>店選びの基準:</strong></p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>条件</th>
 <th>チェック</th>
 </tr></thead><tbody>
@@ -303,7 +332,7 @@
 <td>観光ガイドに載っているか？</td>
 <td>❌ <strong>むしろ避ける</strong> (本物らしさが薄れる)</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h4>🎯 こういう場所を探しましょう</h4>
 <p>```</p>
 <p>特徴 1: ドアが開いていて静かな町のスーパー</p>
@@ -315,7 +344,7 @@
 <h3>Step 2️⃣: ビールを選ぶ (冷蔵庫文化)</h3>
 <p>ガメクチプ (가맥집) での最初の決断は<strong>冷蔵庫の前で下されます。</strong></p>
 <h4>ビールの選択肢 (価格帯別)</h4>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>価格</th>
 <th>ブランド</th>
 <th>特徴</th>
@@ -339,7 +368,7 @@
 <td>クラフトビール / 濃厚な味</td>
 <td>🌟 ビールを知っている人</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p><strong>初心者向けヒント:</strong></p>
 <ul>
 <li>最初の1杯: <strong>カス (Cass) またはハイト (Hite)</strong> (最も無難)</li>
@@ -351,7 +380,7 @@
 <h3>Step 3️⃣: つまみを選ぶ (ガメクチプ (가맥집) の魂)</h3>
 <p>つまみ選びが<strong>ガメクチプ (가맥집) 体験の80%</strong>を決定します。</p>
 <h4>ガメクチプ (가맥집) 4大つまみ</h4>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>つまみ</th>
 <th>価格</th>
 <th>どこから出てくるか？</th>
@@ -386,9 +415,9 @@
 <td>⭐⭐⭐</td>
 <td>多様 / 軽く食べるのに良い</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h4>補助的なつまみ</h4>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>つまみ</th>
 <th>価格</th>
 <th>特徴</th>
@@ -418,7 +447,7 @@
 <td>2,000～3,000ウォン</td>
 <td>軽く一つ欲しい時</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h3>Step 4️⃣: 注文する (とても簡単)</h3>
 <p><strong>思ったよりもずっと簡単です。</strong></p>
@@ -428,7 +457,7 @@
 <p>3. レジに行って会計する (金額提示 / 待つ)</p>
 <p>```</p>
 <h4>会計時の注意事項</h4>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>状況</th>
 <th>どうする？</th>
 </tr></thead><tbody>
@@ -448,7 +477,7 @@
 <td><strong>1本ずつ飲むのは？</strong></td>
 <td>問題なし (1本飲んだ後、次のボトルを取り出す)</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h3>Step 5️⃣: 席に座って飲む (エチケット)</h3>
 <h4>✅ ガメクチプ (가맥집) エチケット (こうしましょう)</h4>
@@ -579,7 +608,7 @@
 </ul>
 <hr>
 <h2>ガメクチプ (가맥집) vs クラフトビール vs ホプチプ (호프집) 比較表</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>項目</th>
 <th><strong>ガメクチプ (가맥집)</strong></th>
 <th><strong>クラフトビアバー</strong></th>
@@ -633,7 +662,7 @@
 <td>プレミアムを求める人</td>
 <td>現地の会社飲み会 (フェシク) を体験したい人</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>役立つヒント &amp; 実用ガイド</h2>
 <h3>💰 費用節約のヒント</h3>
@@ -651,7 +680,7 @@
 </ul>
 <p>```</p>
 <h3>🕐 時間帯別訪問のヒント</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>時間</th>
 <th>雰囲気</th>
 <th>おすすめ度</th>
@@ -681,7 +710,7 @@
 <td>閉店時間 / 避ける</td>
 <td>❌ (避けてください)</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p><strong>おすすめ:</strong> 20:00～22:30 訪問</p>
 <hr>
 <h3>👥 一人で行っても大丈夫？</h3>
@@ -853,34 +882,7 @@
     <div><a href="24hr-food.ja.html" style="color:var(--red);">24時間グルメガイド &rarr;</a></div>
   </nav>
 
-  <section id="kc-related" style="display:none;margin:2.2rem 0 0.5rem;">
-    <h2 style="font-size:1.1rem;margin-bottom:0.8rem;">関連ガイド</h2>
-    <div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"></div>
-  </section>
-  <script>
-  // related guides — 같은 카테고리 최신 6편 (contents.json fetch·언어 suffix 자동, 2026-07-04)
-  (function() {
-    var m = location.pathname.match(/\/content\/(.+?)(\.en|\.zh|\.ja)?\.html$/);
-    if (!m) return;
-    var slug = m[1], suf = m[2] || '';
-    fetch('../data/contents.json').then(function(r) { return r.json(); }).then(function(items) {
-      var me = null;
-      for (var i = 0; i < items.length; i++) { if (items[i].slug === slug) { me = items[i]; break; } }
-      if (!me) return;
-      var pool = items.filter(function(x) { return x.slug !== slug && x.category === me.category; });
-      pool.sort(function(a, b) { return (parseInt(b.id, 10) || 0) - (parseInt(a.id, 10) || 0); });
-      var picks = pool.slice(0, 6);
-      if (!picks.length) return;
-      document.getElementById('kc-related-grid').innerHTML = picks.map(function(x) {
-        var t = suf ? (x.title_en || x.title_kr) : (x.title_kr || x.title_en);
-        var ok = suf === '' || (suf === '.en' ? x.en_available : (suf === '.zh' ? x.cn_available : x.jp_available));
-        var href = x.slug + (ok ? suf : '') + '.html';
-        return '<a href="' + href + '" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">' + t + '</a>';
-      }).join('');
-      document.getElementById('kc-related').style.display = 'block';
-    }).catch(function() {});
-  })();
-  </script>
+  <section id="kc-related" style="margin:2.2rem 0 0.5rem;"><h2 style="font-size:1.1rem;margin-bottom:0.8rem;">関連ガイド</h2><div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"><a href="dongdaemun-market-eats.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">The Merchants&#x27; Diners of Dongdaemun Market — 40-Year-Old Eateries in the Fabric Alley</a><a href="busan-dessert-road.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Busan Dessert Road — From the City of Red Bean to Gelato</a><a href="busan-coffee-road.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Busan Coffee Road — How to Drink Coffee in the City of a World Champion</a><a href="busan-signature-food.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Three Things You Only Eat in Busan — Dwaeji-gukbap, Milmyeon, Hoe, and How to Order Them</a><a href="autumn-food-calendar.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Korea Autumn Food Calendar: Jeoneo, King Prawns, Crab, Pine Mushrooms and Persimmons — Open September to November Only</a><a href="seoul-history-eras.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">600 Years of Seoul: A Time-Travel Walking Course Through the Eras</a></div></section>
   <!-- kc-comments -->
   <section id="kc-comments" style="margin:2.5rem 0 0.5rem;">
     <h2>コメント</h2>

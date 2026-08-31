@@ -30,7 +30,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/main.css">
 <style>
 .detail-wrap {
@@ -46,11 +46,11 @@
 .breadcrumb a { color: var(--red); font-weight: 600; }
 .detail-wrap h1 {
   font-size: 28px; font-weight: 800;
-  color: var(--black); margin-bottom: 8px;
+  color: var(--text); margin-bottom: 8px;
 }
 .detail-wrap h2 {
   font-size: 22px; font-weight: 700;
-  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  color: var(--text); margin-top: 32px; margin-bottom: 12px;
   padding-bottom: 6px;
   border-bottom: 2px solid var(--red);
 }
@@ -69,10 +69,19 @@
   font-size: 14px; line-height: 1.6;
   color: var(--text-mid); margin-bottom: 6px;
 }
+/* 표는 자기 컨테이너 안에서만 가로 스크롤한다 — 이게 없으면 min-content 폭이
+   뷰포트를 넘는 순간 페이지 전체가 가로로 밀렸다 (2026-08-31 점검 M2).
+   table 자체는 table 로 남겨 행·열 관계를 보존한다(display:block 으로 해결하지 않는 이유). */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 16px;
+}
 .detail-wrap table {
   width: 100%; border-collapse: collapse;
   margin-bottom: 16px; font-size: 13px;
 }
+.table-scroll > table { margin-bottom: 0; }
 .detail-wrap th {
   background: var(--black); color: #fff;
   padding: 10px 12px; text-align: left;
@@ -133,10 +142,30 @@
   user-select: none;
 }
 </style>
+<script>
+/* 테마 부트스트랩 — 2026-08-31 점검 M3.
+   기사 4,804p 에 이게 없어서, OS 다크 사용자가 홈(다크)에서 기사를 열면
+   라이트로 번쩍였다. main.css 의 다크 규칙은 전부 [data-theme="dark"] 스코프이고
+   prefers-color-scheme 미디어쿼리는 CSS 에 없으므로, 속성을 여기서 달아줘야 한다.
+   <head> 안에서 동기 실행 — paint 전에 끝나야 깜빡임이 없다.
+   허브와 달리 기사엔 토글 버튼이 없다. 저장된 선택(kc_theme)과 OS 설정만 따른다. */
+(function () {
+  try {
+    var s = localStorage.getItem('kc_theme');
+    if (s === 'dark' || (!s && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  } catch (e) {}
+})();
+</script>
 </head>
 <body>
+<a class="skip-link" href="#kc-main">本文へスキップ</a>
 <header class="site-header">
-  <a href="../ja/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <!-- width/height = 고유 크기(400x149). CSS 가 height:36px 로 줄이지만 브라우저는
+       이 비율로 자리를 미리 잡아 레이아웃 이동(CLS)을 막는다. 헤더 로고는 첫 화면에
+       보이므로 lazy 가 아니라 eager. -->
+  <a href="../ja/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo" width="400" height="149" loading="eager" decoding="async"></a>
   <div class="lang-switch">
     <a href="../content/clinic-visit-guide.html">KR</a>
     <a href="../content/clinic-visit-guide.en.html">EN</a>
@@ -145,7 +174,7 @@
   </div>
 </header>
 
-<main class="detail-wrap">
+<main class="detail-wrap" id="kc-main" tabindex="-1">
   <nav class="breadcrumb" aria-label="breadcrumb"><a href="../ja/index.html">ガイド一覧</a> &rsaquo; 韓国で病院にかかる、パニックゼロ手順シート — パスポート一つで受付から薬局まで</nav>
   <article>
   <h1>韓国で病院にかかる、パニックゼロ手順シート — パスポート一つで受付から薬局まで</h1>
@@ -163,7 +192,7 @@
 <hr>
 <h2>① この記事は「救急でない診療手順」専用 — <a href="emergency-hospital.ja.html" class="xref">#405</a>・<a href="pharmacy-guide.ja.html" class="xref">#1278</a> とは角度が違う</h2>
 <p>3本が一本の線でつながっている。今の状況に合う記事へ進めばよい。</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>状況</th>
 <th>該当記事</th>
 </tr></thead><tbody>
@@ -179,12 +208,12 @@
 <td>薬だけ必要 — 薬を買う・処方を受ける</td>
 <td><strong><a href="pharmacy-guide.ja.html" class="xref">#1278</a></strong> 薬局マニュアル</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p><a href="pharmacy-guide.ja.html" class="xref">#1278</a> は⑤節で「処方薬は病院の 処方箋 (처방전) が先」と伝えて終わる。<strong>本記事はまさにその地点から始まる</strong> — その医院に入り、処方箋を手にして出てくるまで。</p>
 <hr>
 <h2>② どこへ行くか — 医院 (의원) か 病院 (병원) か、旅行者はほぼ前者</h2>
 <p>韓国の医療機関は規模で呼び名が違う。<strong>旅行中の風邪や腹痛なら、答えはほぼ常に 医院 (의원) だ。</strong></p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>区分</th>
 <th>看板の文字</th>
 <th>予約</th>
@@ -208,7 +237,7 @@
 <td><strong>紹介状がなければ事実上不可</strong></td>
 <td>✕ 直行しても無駄足</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <ul>
 <li>風邪・のどの痛み → 内科 (내과) または 耳鼻咽喉科 (이비인후과)</li>
 <li>腹痛 → 内科 (내과)</li>
@@ -219,7 +248,7 @@
 <blockquote><p><strong>大きな病院から行くと損をする。</strong> 大学病院は紹介状なしでは受付を断られるか、費用がはるかに高くなる。軽い症状なら近所の医院のほうが速くて安い。</p></blockquote>
 <hr>
 <h2>③ 受付から薬局までの6ステップ — これが全部</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>段階</th>
 <th>場所</th>
 <th>すること</th>
@@ -261,7 +290,7 @@
 <td>処方箋を<strong>提出</strong>して薬を受け取る</td>
 <td><strong>医院では薬を渡さない</strong></td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p><strong>6段階目が本記事で最も重要だ。</strong> 韓国は医薬分業で、医師が診察し薬剤師が調剤するため、<strong>薬を手にして医院を出ることはまずない。</strong> 受け取るのは処方箋という紙で、それを持って外の薬局へ行く。これを知らない旅行者は「薬をくれなかった」と誤解し、そのまま宿に戻ってしまう。</p>
 <p>薬局はたいてい<strong>同じ建物の1階か、道路の向かい</strong>にある。緑の十字か 薬 (약) の看板を探せばよい。薬局の中で起きることは <a href="pharmacy-guide.ja.html" class="xref">#1278</a> が専門に扱う。</p>
 <hr>
@@ -290,7 +319,7 @@
 <hr>
 <h2>⑥ 費用 — 韓国の健康保険がないといくらかかるか</h2>
 <p>韓国の住民は国民健康保険で一部だけを負担する。<strong>旅行者にはその適用がなく全額を支払う</strong> — 加入者の <strong>3〜5倍</strong>になる。</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>項目</th>
 <th>保険なし旅行者の目安</th>
 </tr></thead><tbody>
@@ -302,7 +331,7 @@
 <td>薬局での処方薬</td>
 <td><strong>₩5,000 〜 ₩15,000</strong></td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <ul>
 <li>医院・診療科・検査の有無で大きく変わる。<strong>上記は幅であって固定価格ではない。</strong></li>
 <li>レントゲンや血液検査が加わるとさらに上がる。診察前に「検査はいくらですか」と尋ねても失礼ではない。</li>
@@ -311,7 +340,7 @@
 </ul>
 <hr>
 <h2>⑦ 医院で出会うサバイバル単語</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>ローマ字 (韓国語)</th>
 <th>意味</th>
 </tr></thead><tbody>
@@ -367,7 +396,7 @@
 <td>yakguk (약국)</td>
 <td>薬局 — 処方箋を持って行く次の場所</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <blockquote><p>ヒント：13個すべてを覚える必要はない。4つ分かれば手順全体が見える — <strong>jeopsu (접수)</strong>（始まり）· <strong>cheobangjeon (처방전)</strong>（受け取って出るもの）· <strong>yakguk (약국)</strong>（次の目的地）· <strong>naegwa (내과)</strong>（風邪や腹痛ならこの科）。</p></blockquote>
 <hr>
 <h2>⑧ パニック場面3</h2>
@@ -410,34 +439,7 @@
     <div><a href="seoul-sunset-spots.ja.html" style="color:var(--red);">ソウル夕焼け名所12選 — 日没前45分、ゴールデンアワースポットガイド &rarr;</a></div>
   </nav>
 
-  <section id="kc-related" style="display:none;margin:2.2rem 0 0.5rem;">
-    <h2 style="font-size:1.1rem;margin-bottom:0.8rem;">関連ガイド</h2>
-    <div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"></div>
-  </section>
-  <script>
-  // related guides — 같은 카테고리 최신 6편 (contents.json fetch·언어 suffix 자동, 2026-07-04)
-  (function() {
-    var m = location.pathname.match(/\/content\/(.+?)(\.en|\.zh|\.ja)?\.html$/);
-    if (!m) return;
-    var slug = m[1], suf = m[2] || '';
-    fetch('../data/contents.json').then(function(r) { return r.json(); }).then(function(items) {
-      var me = null;
-      for (var i = 0; i < items.length; i++) { if (items[i].slug === slug) { me = items[i]; break; } }
-      if (!me) return;
-      var pool = items.filter(function(x) { return x.slug !== slug && x.category === me.category; });
-      pool.sort(function(a, b) { return (parseInt(b.id, 10) || 0) - (parseInt(a.id, 10) || 0); });
-      var picks = pool.slice(0, 6);
-      if (!picks.length) return;
-      document.getElementById('kc-related-grid').innerHTML = picks.map(function(x) {
-        var t = suf ? (x.title_en || x.title_kr) : (x.title_kr || x.title_en);
-        var ok = suf === '' || (suf === '.en' ? x.en_available : (suf === '.zh' ? x.cn_available : x.jp_available));
-        var href = x.slug + (ok ? suf : '') + '.html';
-        return '<a href="' + href + '" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">' + t + '</a>';
-      }).join('');
-      document.getElementById('kc-related').style.display = 'block';
-    }).catch(function() {});
-  })();
-  </script>
+  <section id="kc-related" style="margin:2.2rem 0 0.5rem;"><h2 style="font-size:1.1rem;margin-bottom:0.8rem;">関連ガイド</h2><div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"><a href="solo-female-safety-checklist.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Solo Female Travel in Korea — A No-Fear Safety Checklist</a><a href="china-payment-survival.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Korea Payment Survival Manual for Chinese-Speaking Travelers — Alipay Works, WeChat Doesn&#x27;t, UnionPay Needs Prep First</a><a href="duty-free-pickup-guide.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">You Get Your Duty-Free Items at the Airport — The Zero-Panic Manual for the Pickup Counter</a><a href="korea-smoking-guide.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Finding a Place to Smoke in Korea, the Zero-Panic Manual — How Not to Get Fined</a><a href="busan-transit-guide.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Busan Transit Grammar — A City You Can Read with Just Two Lines</a><a href="seoul-cold-snap-survival.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Surviving a Seoul Cold Snap: How to Get Through a Day at Minus Ten</a></div></section>
   <!-- kc-comments -->
   <section id="kc-comments" style="margin:2.5rem 0 0.5rem;">
     <h2>コメント</h2>

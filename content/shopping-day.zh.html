@@ -34,7 +34,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/main.css">
 <style>
 .detail-wrap {
@@ -50,11 +50,11 @@
 .breadcrumb a { color: var(--red); font-weight: 600; }
 .detail-wrap h1 {
   font-size: 28px; font-weight: 800;
-  color: var(--black); margin-bottom: 8px;
+  color: var(--text); margin-bottom: 8px;
 }
 .detail-wrap h2 {
   font-size: 22px; font-weight: 700;
-  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  color: var(--text); margin-top: 32px; margin-bottom: 12px;
   padding-bottom: 6px;
   border-bottom: 2px solid var(--red);
 }
@@ -73,10 +73,19 @@
   font-size: 14px; line-height: 1.6;
   color: var(--text-mid); margin-bottom: 6px;
 }
+/* 표는 자기 컨테이너 안에서만 가로 스크롤한다 — 이게 없으면 min-content 폭이
+   뷰포트를 넘는 순간 페이지 전체가 가로로 밀렸다 (2026-08-31 점검 M2).
+   table 자체는 table 로 남겨 행·열 관계를 보존한다(display:block 으로 해결하지 않는 이유). */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 16px;
+}
 .detail-wrap table {
   width: 100%; border-collapse: collapse;
   margin-bottom: 16px; font-size: 13px;
 }
+.table-scroll > table { margin-bottom: 0; }
 .detail-wrap th {
   background: var(--black); color: #fff;
   padding: 10px 12px; text-align: left;
@@ -137,10 +146,30 @@
   user-select: none;
 }
 </style>
+<script>
+/* 테마 부트스트랩 — 2026-08-31 점검 M3.
+   기사 4,804p 에 이게 없어서, OS 다크 사용자가 홈(다크)에서 기사를 열면
+   라이트로 번쩍였다. main.css 의 다크 규칙은 전부 [data-theme="dark"] 스코프이고
+   prefers-color-scheme 미디어쿼리는 CSS 에 없으므로, 속성을 여기서 달아줘야 한다.
+   <head> 안에서 동기 실행 — paint 전에 끝나야 깜빡임이 없다.
+   허브와 달리 기사엔 토글 버튼이 없다. 저장된 선택(kc_theme)과 OS 설정만 따른다. */
+(function () {
+  try {
+    var s = localStorage.getItem('kc_theme');
+    if (s === 'dark' || (!s && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  } catch (e) {}
+})();
+</script>
 </head>
 <body>
+<a class="skip-link" href="#kc-main">跳到正文</a>
 <header class="site-header">
-  <a href="../zh/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <!-- width/height = 고유 크기(400x149). CSS 가 height:36px 로 줄이지만 브라우저는
+       이 비율로 자리를 미리 잡아 레이아웃 이동(CLS)을 막는다. 헤더 로고는 첫 화면에
+       보이므로 lazy 가 아니라 eager. -->
+  <a href="../zh/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo" width="400" height="149" loading="eager" decoding="async"></a>
   <div class="lang-switch">
     <a href="../content/shopping-day.html">KR</a>
     <a href="../content/shopping-day.en.html">EN</a>
@@ -149,14 +178,14 @@
   </div>
 </header>
 
-<main class="detail-wrap">
+<main class="detail-wrap" id="kc-main" tabindex="-1">
   <nav class="breadcrumb" aria-label="breadcrumb"><a href="../zh/index.html">全部指南</a> &rsaquo; 首尔购物1日攻略</nav>
   <article>
   <h1>首尔购物区域一日完美攻略 — 明洞·弘大·江南·圣水路线</h1>
 <blockquote><p>就算时间有限，也能体验首尔所有购物区！一天制霸四大购物圣地</p></blockquote>
 <hr>
 <h2>一览</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>项目</th>
 <th>信息</th>
 </tr></thead><tbody>
@@ -184,11 +213,11 @@
 <td><strong>购物预算</strong></td>
 <td>₩100,000~₩500,000+ (~$72~$360 / ~580~2,900 RMB)个人差异较大</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>首尔四大购物区比较</h2>
 <p>首尔各购物区风格完全不同。</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>地区</th>
 <th>特色</th>
 <th>目标人群</th>
@@ -223,7 +252,7 @@
 <td>街头购物+文化体验</td>
 <td>10~30岁</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>最优路线分析：按什么顺序走？</h2>
 <h3>路线 A：明洞 (Myeongdong / 명동) → 江南 (Gangnam / 강남) → 圣水 (Seongsu / 성수) → 弘大 (Hongdae / 홍대) (推荐 ⭐⭐⭐⭐⭐)</h3>
@@ -273,7 +302,7 @@
 <h3>1. 明洞 (Myeongdong / 명동) (明洞站 (Myeongdong Station / 명동역) 1号线周边)</h3>
 <p><strong>特色：</strong> 首尔最顶级的观光购物区。奢侈品、免税店、韩国大众品牌一网打尽。</p>
 <h4>明洞 (Myeongdong / 명동) 购物地图</h4>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>街道</th>
 <th>特色</th>
 <th>主要门店</th>
@@ -298,7 +327,7 @@
 <td>平价+热闹</td>
 <td>服装、鞋履等</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h4>推荐购物顺序 (2小时)</h4>
 <p>```</p>
 <p>10:00-10:15 - 橄榄树明洞店 (Olive Young Myeongdong / 올리브영 명동점) (K-美妆购物，注意：此时段最拥挤)</p>
@@ -308,7 +337,7 @@
 <p>11:45-12:00 - 纪念品/配饰 (明洞新宿街 (Myeongdong Shinjuku Street / 명동 신주쿠 거리))</p>
 <p>```</p>
 <h4>明洞 (Myeongdong / 명동) 购物 TIP</h4>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>提示</th>
 <th>说明</th>
 </tr></thead><tbody>
@@ -332,9 +361,9 @@
 <td><strong>免费样品</strong></td>
 <td>橄榄树 (Olive Young / 올리브영)、悦诗风吟 (Innisfree / 이니스프리)、菲诗小铺 (The Face Shop / 더페이스샵) 均提供免费样品 (旅行者福利)</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h4>明洞 (Myeongdong / 명동) 推荐餐厅 (购物间隙)</h4>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>美食</th>
 <th>推荐店铺</th>
 <th>价格</th>
@@ -364,12 +393,12 @@
 <td>太极堂 (Taegeukdang / 태극당) (韩式传统餐厅)</td>
 <td>₩8,000~₩12,000</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h3>2. 江南 (Gangnam / 강남) (江南站 (Gangnam Station / 강남역) 2号线)</h3>
 <p><strong>特色：</strong> 高端低调的购物体验。韩国富裕阶层青睐的奢侈品购物区。</p>
 <h4>江南 (Gangnam / 강남) 购物地图</h4>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>街道</th>
 <th>特色</th>
 <th>主要门店</th>
@@ -399,7 +428,7 @@
 <td>中高端</td>
 <td>W Concept (더블유컨셉)、潮流精选店 (感性编辑店 / 감성 편집샵)</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h4>推荐购物顺序 (2.5小时)</h4>
 <p>```</p>
 <p>13:00-13:15 - 江南站地下商场 (Gangnam Station Underground Mall / 강남역 지하상가) 漫步 (市场调研+逛奢侈品)</p>
@@ -410,7 +439,7 @@
 <p>15:15-15:30 - 最后购物或整理行李</p>
 <p>```</p>
 <h4>江南 (Gangnam / 강남) 购物 TIP</h4>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>提示</th>
 <th>说明</th>
 </tr></thead><tbody>
@@ -434,9 +463,9 @@
 <td><strong>韩国本土奢侈品</strong></td>
 <td>也可购买韩国设计师品牌 (设计师协会相关品牌等)</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h4>江南 (Gangnam / 강남) 推荐餐厅</h4>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>美食</th>
 <th>推荐店铺</th>
 <th>价格</th>
@@ -461,12 +490,12 @@
 <td>面包店或甜品店</td>
 <td>₩5,000~₩10,000</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h3>3. 圣水 (Seongsu / 성수) (圣水站 (Seongsu Station / 성수역) 2号线)</h3>
 <p><strong>特色：</strong> 快闪店、潮流感、限定款一应俱全。MZ世代 (MZ / 韩国对20~30代年轻潮流一代的称呼) 的热门打卡地，Instagram爆款圣地。</p>
 <h4>圣水 (Seongsu / 성수) 购物地图</h4>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>区域</th>
 <th>特色</th>
 <th>亮点</th>
@@ -491,7 +520,7 @@
 <td>限定款+潮流</td>
 <td>每周快闪日历不同</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h4>推荐购物顺序 (2小时)</h4>
 <p>```</p>
 <p>16:00-16:15 - 收集圣水快闪信息 (Instagram 或现场确认&quot;目前有什么在营业&quot;)</p>
@@ -501,7 +530,7 @@
 <p>17:45-18:00 - 咖啡馆休息+整理行李</p>
 <p>```</p>
 <h4>圣水 (Seongsu / 성수) 购物 TIP</h4>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>提示</th>
 <th>说明</th>
 </tr></thead><tbody>
@@ -525,9 +554,9 @@
 <td><strong>潮流</strong></td>
 <td>每周快闪更新，值得多次造访</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h4>圣水 (Seongsu / 성수) 推荐餐厅</h4>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>美食</th>
 <th>推荐店铺</th>
 <th>价格</th>
@@ -552,12 +581,12 @@
 <td>圣水小吃 (夜间)</td>
 <td>₩5,000~₩10,000</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h3>4. 弘大 (Hongdae / 홍대) (弘大入口站 (Hongdae Entrance Station / 홍대입구역) 2号线)</h3>
 <p><strong>特色：</strong> 年轻、实惠、充满活力。文化与购物完美融合之地。</p>
 <h4>弘大 (Hongdae / 홍대) 购物地图</h4>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>地区</th>
 <th>特色</th>
 <th>主要门店</th>
@@ -587,7 +616,7 @@
 <td>年轻早午餐咖啡馆</td>
 <td>早午餐、潮流咖啡馆</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h4>推荐购物顺序 (2.5小时)</h4>
 <p>```</p>
 <p>18:30-18:45 - 弘大入口站地下商场 (Hongdae Entrance Station Underground Mall / 홍대입구역 지하상가) (SPA品牌，鞋履)</p>
@@ -598,7 +627,7 @@
 <p>20:45-21:00 - 整理行李+切换夜生活模式 (酒吧/Pub)</p>
 <p>```</p>
 <h4>弘大 (Hongdae / 홍대) 购物 TIP</h4>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>提示</th>
 <th>说明</th>
 </tr></thead><tbody>
@@ -622,9 +651,9 @@
 <td><strong>夜生活</strong></td>
 <td>购物结束后可自然衔接 Pub/酒吧/Live 咖啡馆</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h4>弘大 (Hongdae / 홍대) 推荐餐厅</h4>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>美食</th>
 <th>推荐店铺</th>
 <th>价格</th>
@@ -649,11 +678,11 @@
 <td>弘大 Pub/酒吧 (夜间)</td>
 <td>₩10,000~₩20,000 (饮品)</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>一日购物完美准备清单</h2>
 <h3>必备物品</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>项目</th>
 <th>理由</th>
 </tr></thead><tbody>
@@ -681,9 +710,9 @@
 <td><strong>手机充电宝</strong></td>
 <td>导航、拍照、扫码支付全靠手机。韩国便利店 (Pyeonuijeom / 편의점，类似中国的便利店但24小时居多且品类极丰富) 也有充电宝租借</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h3>推荐携带物品</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>项目</th>
 <th>提示</th>
 </tr></thead><tbody>
@@ -707,10 +736,10 @@
 <td><strong>太阳镜</strong></td>
 <td>白天阳光强烈</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>各地区所需时间 &amp; 费用汇总</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>地区</th>
 <th>移动时间</th>
 <th>推荐停留</th>
@@ -752,7 +781,7 @@
 <td>₩400,000~₩1,250,000</td>
 <td>₩75,000</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>退税 &amp; 免税完全指南</h2>
 <h3>退税 (Tax Refund)</h3>
@@ -763,11 +792,11 @@
 <p>3. <strong>保留收据</strong>：务必保存所有购物收据</p>
 <p>4. <strong>前往退税点</strong>：机场或明洞 (Myeongdong / 명동) 退税处办理</p>
 <h4>一日购物路线上的退税点</h4>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>位置</th>
 <th>营业时间</th>
 </tr></thead><tbody>
-</tbody></table>
+</tbody></table></div>
 <h2>🌐 外部资料</h2>
 <ul>
 <li><strong>VisitKorea 购物</strong>: https://chinese.visitkorea.or.kr/</li>
@@ -792,34 +821,7 @@
     <div><a href="gangnam-finedine.zh.html" style="color:var(--red);">22_江南高级餐厅5选 &rarr;</a></div>
   </nav>
 
-  <section id="kc-related" style="display:none;margin:2.2rem 0 0.5rem;">
-    <h2 style="font-size:1.1rem;margin-bottom:0.8rem;">相关指南</h2>
-    <div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"></div>
-  </section>
-  <script>
-  // related guides — 같은 카테고리 최신 6편 (contents.json fetch·언어 suffix 자동, 2026-07-04)
-  (function() {
-    var m = location.pathname.match(/\/content\/(.+?)(\.en|\.zh|\.ja)?\.html$/);
-    if (!m) return;
-    var slug = m[1], suf = m[2] || '';
-    fetch('../data/contents.json').then(function(r) { return r.json(); }).then(function(items) {
-      var me = null;
-      for (var i = 0; i < items.length; i++) { if (items[i].slug === slug) { me = items[i]; break; } }
-      if (!me) return;
-      var pool = items.filter(function(x) { return x.slug !== slug && x.category === me.category; });
-      pool.sort(function(a, b) { return (parseInt(b.id, 10) || 0) - (parseInt(a.id, 10) || 0); });
-      var picks = pool.slice(0, 6);
-      if (!picks.length) return;
-      document.getElementById('kc-related-grid').innerHTML = picks.map(function(x) {
-        var t = suf ? (x.title_en || x.title_kr) : (x.title_kr || x.title_en);
-        var ok = suf === '' || (suf === '.en' ? x.en_available : (suf === '.zh' ? x.cn_available : x.jp_available));
-        var href = x.slug + (ok ? suf : '') + '.html';
-        return '<a href="' + href + '" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">' + t + '</a>';
-      }).join('');
-      document.getElementById('kc-related').style.display = 'block';
-    }).catch(function() {});
-  })();
-  </script>
+  <section id="kc-related" style="margin:2.2rem 0 0.5rem;"><h2 style="font-size:1.1rem;margin-bottom:0.8rem;">相关指南</h2><div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"><a href="korea-souvenir-data-guide.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Korean Souvenirs, Chosen by Data — A Matrix by Recipient and Budget</a><a href="busan-shopping-guide.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Busan Shopping Guide — Between the World&#x27;s Largest Department Store and a Wartime Alley Market</a><a href="korea-bubbletea-drink-chains.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Bubble Tea &amp; Drink Chains in Korea: What to Sip Besides Coffee</a><a href="korea-icecream-chains.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Korean Ice Cream Chains: Why Baskin Robbins Korea Is a Different World</a><a href="korea-burger-chains.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Korean Burger Chains: The Complete Guide to Mom&#x27;s Touch, Lotteria &amp; More</a><a href="korea-underground-mall.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Underground Mall Shopping (GOTO Mall·Bupyeong·Gangnam)</a></div></section>
   <!-- kc-comments -->
   <section id="kc-comments" style="margin:2.5rem 0 0.5rem;">
     <h2>评论</h2>

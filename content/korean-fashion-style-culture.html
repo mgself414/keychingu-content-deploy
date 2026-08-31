@@ -34,7 +34,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/main.css">
 <style>
 .detail-wrap {
@@ -50,11 +50,11 @@
 .breadcrumb a { color: var(--red); font-weight: 600; }
 .detail-wrap h1 {
   font-size: 28px; font-weight: 800;
-  color: var(--black); margin-bottom: 8px;
+  color: var(--text); margin-bottom: 8px;
 }
 .detail-wrap h2 {
   font-size: 22px; font-weight: 700;
-  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  color: var(--text); margin-top: 32px; margin-bottom: 12px;
   padding-bottom: 6px;
   border-bottom: 2px solid var(--red);
 }
@@ -73,10 +73,19 @@
   font-size: 14px; line-height: 1.6;
   color: var(--text-mid); margin-bottom: 6px;
 }
+/* 표는 자기 컨테이너 안에서만 가로 스크롤한다 — 이게 없으면 min-content 폭이
+   뷰포트를 넘는 순간 페이지 전체가 가로로 밀렸다 (2026-08-31 점검 M2).
+   table 자체는 table 로 남겨 행·열 관계를 보존한다(display:block 으로 해결하지 않는 이유). */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 16px;
+}
 .detail-wrap table {
   width: 100%; border-collapse: collapse;
   margin-bottom: 16px; font-size: 13px;
 }
+.table-scroll > table { margin-bottom: 0; }
 .detail-wrap th {
   background: var(--black); color: #fff;
   padding: 10px 12px; text-align: left;
@@ -137,10 +146,30 @@
   user-select: none;
 }
 </style>
+<script>
+/* 테마 부트스트랩 — 2026-08-31 점검 M3.
+   기사 4,804p 에 이게 없어서, OS 다크 사용자가 홈(다크)에서 기사를 열면
+   라이트로 번쩍였다. main.css 의 다크 규칙은 전부 [data-theme="dark"] 스코프이고
+   prefers-color-scheme 미디어쿼리는 CSS 에 없으므로, 속성을 여기서 달아줘야 한다.
+   <head> 안에서 동기 실행 — paint 전에 끝나야 깜빡임이 없다.
+   허브와 달리 기사엔 토글 버튼이 없다. 저장된 선택(kc_theme)과 OS 설정만 따른다. */
+(function () {
+  try {
+    var s = localStorage.getItem('kc_theme');
+    if (s === 'dark' || (!s && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  } catch (e) {}
+})();
+</script>
 </head>
 <body>
+<a class="skip-link" href="#kc-main">본문 바로가기</a>
 <header class="site-header">
-  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <!-- width/height = 고유 크기(400x149). CSS 가 height:36px 로 줄이지만 브라우저는
+       이 비율로 자리를 미리 잡아 레이아웃 이동(CLS)을 막는다. 헤더 로고는 첫 화면에
+       보이므로 lazy 가 아니라 eager. -->
+  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo" width="400" height="149" loading="eager" decoding="async"></a>
   <div class="lang-switch">
     <a href="../content/korean-fashion-style-culture.html" class="active">KR</a>
     <a href="../content/korean-fashion-style-culture.en.html">EN</a>
@@ -149,7 +178,7 @@
   </div>
 </header>
 
-<main class="detail-wrap">
+<main class="detail-wrap" id="kc-main" tabindex="-1">
   <nav class="breadcrumb" aria-label="breadcrumb"><a href="../index.html">전체 가이드</a> &rsaquo; 한국 패션·스타일 문화 — 왜 한국은 꾸밈에 진심일까</nav>
   <article>
   <h1>왜 한국은 꾸밈에 진심일까 — 한국식 스타일의 결</h1>
@@ -157,7 +186,7 @@
 <p>서울 거리를 한 시간만 걸어보면 외국인 여행자들이 공통으로 느끼는 게 있다. <strong>&quot;다들 비슷하게, 그런데 꽤 잘 차려입었다.&quot;</strong> 추리닝에 슬리퍼 차림이 드물고, 동네 편의점을 가도 어딘가 &#x27;정돈된&#x27; 사람이 많다. 와이드 팬츠, 오버핏 셔츠, 깔끔한 무채색 — 유럽 거리에선 흔치 않은 실루엣이 한국에선 기본값처럼 보인다. 외국인은 보통 이걸 &quot;Koreans are so fashionable(한국인은 패셔너블하다)&quot;로 요약하지만, 그 뒤에는 단순한 &#x27;센스&#x27; 이상의 <strong>사고방식과 사회적 결</strong>이 있다. 깔끔함을 미덕으로 보는 감각, &#x27;꾸민 듯 안 꾸민 듯&#x27;이라는 독특한 미학, 빠르게 도는 트렌드, 그리고 ★남의 시선을 의식하는 문화까지. 이 글은 &quot;무신사 링크&quot;(→ cross-link)가 아니라, <strong>한국식 스타일의 결을 왜·어떻게·그리고 그 그늘까지</strong> 외국인 눈높이로 풀어준다. 한국 문화 explainer 시리즈 <strong>58편</strong>.</p>
 <hr>
 <h2>★ 한눈에 보기 — 한국 스타일 키워드 6</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>키워드</th>
 <th>무엇</th>
 <th>한 줄</th>
@@ -192,7 +221,7 @@
 <td>초단기 유행</td>
 <td>놈코어·Y2K 등 유행이 빠르게 돌고 바뀜</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <blockquote><p><strong>핵심 감각</strong>: 한국 스타일은 &quot;튀는 개성&quot;보다 <strong>&#x27;정돈된 가운데서의 디테일&#x27;</strong> 에 무게가 실린다. 깔끔함·비례·계절감이 기본 문법이고, 그 위에 유행 아이템이 빠르게 얹힌다.</p></blockquote>
 <hr>
 <h2>⚠️ 외국인이 자주 오해하는 3가지</h2>
@@ -220,7 +249,7 @@
 <hr>
 <h2>③ 빠른 트렌드 — 놈코어·Y2K, 그리고 초단기 유행</h2>
 <p>한국 패션의 또 다른 특징은 <strong>트렌드 회전 속도</strong>다. 유행 아이템이 빠르게 떠오르고 빠르게 진다.</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>트렌드</th>
 <th>결</th>
 <th>한 줄</th>
@@ -245,7 +274,7 @@
 <td>상반 결합</td>
 <td>2026년엔 캐주얼×포멀, 기능성×여성성 등 <em>다른 무드를 섞는</em> 스타일링이 부상</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <ul>
 <li><strong>계절마다 갈아입는 코드</strong>: 봄엔 베이지 트렌치코트, 가을엔 라이더 재킷 — 특정 시기·아이템이 유행하면 거리 패션이 한동안 비슷해진다. 외국인이 &quot;다들 비슷하다&quot;고 느끼는 풍경의 정체다.</li>
 <li><strong>점점 더 빨라지는 사이클</strong>: 업계에서도 트렌드 주기가 갈수록 짧아진다고 본다. SNS·온라인 쇼핑·K-콘텐츠가 유행을 즉각 확산시키기 때문이다.</li>
@@ -338,34 +367,7 @@
     <div><a href="locals-eat-jongno.html" style="color:var(--red);">현지인·공무원이 진짜 가는 종로·광화문 맛집 — 관광객은 모르는 데이터 검증 노포 &rarr;</a></div>
   </nav>
 
-  <section id="kc-related" style="display:none;margin:2.2rem 0 0.5rem;">
-    <h2 style="font-size:1.1rem;margin-bottom:0.8rem;">관련 가이드</h2>
-    <div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"></div>
-  </section>
-  <script>
-  // related guides — 같은 카테고리 최신 6편 (contents.json fetch·언어 suffix 자동, 2026-07-04)
-  (function() {
-    var m = location.pathname.match(/\/content\/(.+?)(\.en|\.zh|\.ja)?\.html$/);
-    if (!m) return;
-    var slug = m[1], suf = m[2] || '';
-    fetch('../data/contents.json').then(function(r) { return r.json(); }).then(function(items) {
-      var me = null;
-      for (var i = 0; i < items.length; i++) { if (items[i].slug === slug) { me = items[i]; break; } }
-      if (!me) return;
-      var pool = items.filter(function(x) { return x.slug !== slug && x.category === me.category; });
-      pool.sort(function(a, b) { return (parseInt(b.id, 10) || 0) - (parseInt(a.id, 10) || 0); });
-      var picks = pool.slice(0, 6);
-      if (!picks.length) return;
-      document.getElementById('kc-related-grid').innerHTML = picks.map(function(x) {
-        var t = suf ? (x.title_en || x.title_kr) : (x.title_kr || x.title_en);
-        var ok = suf === '' || (suf === '.en' ? x.en_available : (suf === '.zh' ? x.cn_available : x.jp_available));
-        var href = x.slug + (ok ? suf : '') + '.html';
-        return '<a href="' + href + '" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">' + t + '</a>';
-      }).join('');
-      document.getElementById('kc-related').style.display = 'block';
-    }).catch(function() {});
-  })();
-  </script>
+  <section id="kc-related" style="margin:2.2rem 0 0.5rem;"><h2 style="font-size:1.1rem;margin-bottom:0.8rem;">관련 가이드</h2><div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"><a href="royal-palace-autumn-nights.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">궁궐의 가을밤 — 별빛야행·달빛기행·궁중문화축전, 예약 없이는 못 들어가는 프로그램 총정리</a><a href="seoul-fireworks-festival.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">서울세계불꽃축제 2026 — 9월 5일 여의도, 100만 인파 속에서 명당 잡는 법</a><a href="seoul-architecture-eras.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">서울 건축 시대 산책 — 전통·근대·현대 15선 + 건축 감상 렌즈</a><a href="korea-kpop-fansign-videocall.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">외국인 K-pop 팬사인회·영상통화 응모 가이드 — 음반 응모·영통</a><a href="korea-idol-birthday-cafe.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">외국인 아이돌 생일카페 가이드 — 생카·컵슬리브·서포트</a><a href="korea-kpop-music-show-taping.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">외국인 K-pop 음악방송 방청 가이드 — 인기가요·엠카·뮤뱅 사전녹화</a></div></section>
   <!-- kc-comments -->
   <section id="kc-comments" style="margin:2.5rem 0 0.5rem;">
     <h2>댓글</h2>

@@ -30,7 +30,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/main.css">
 <style>
 .detail-wrap {
@@ -46,11 +46,11 @@
 .breadcrumb a { color: var(--red); font-weight: 600; }
 .detail-wrap h1 {
   font-size: 28px; font-weight: 800;
-  color: var(--black); margin-bottom: 8px;
+  color: var(--text); margin-bottom: 8px;
 }
 .detail-wrap h2 {
   font-size: 22px; font-weight: 700;
-  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  color: var(--text); margin-top: 32px; margin-bottom: 12px;
   padding-bottom: 6px;
   border-bottom: 2px solid var(--red);
 }
@@ -69,10 +69,19 @@
   font-size: 14px; line-height: 1.6;
   color: var(--text-mid); margin-bottom: 6px;
 }
+/* 표는 자기 컨테이너 안에서만 가로 스크롤한다 — 이게 없으면 min-content 폭이
+   뷰포트를 넘는 순간 페이지 전체가 가로로 밀렸다 (2026-08-31 점검 M2).
+   table 자체는 table 로 남겨 행·열 관계를 보존한다(display:block 으로 해결하지 않는 이유). */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 16px;
+}
 .detail-wrap table {
   width: 100%; border-collapse: collapse;
   margin-bottom: 16px; font-size: 13px;
 }
+.table-scroll > table { margin-bottom: 0; }
 .detail-wrap th {
   background: var(--black); color: #fff;
   padding: 10px 12px; text-align: left;
@@ -133,10 +142,30 @@
   user-select: none;
 }
 </style>
+<script>
+/* 테마 부트스트랩 — 2026-08-31 점검 M3.
+   기사 4,804p 에 이게 없어서, OS 다크 사용자가 홈(다크)에서 기사를 열면
+   라이트로 번쩍였다. main.css 의 다크 규칙은 전부 [data-theme="dark"] 스코프이고
+   prefers-color-scheme 미디어쿼리는 CSS 에 없으므로, 속성을 여기서 달아줘야 한다.
+   <head> 안에서 동기 실행 — paint 전에 끝나야 깜빡임이 없다.
+   허브와 달리 기사엔 토글 버튼이 없다. 저장된 선택(kc_theme)과 OS 설정만 따른다. */
+(function () {
+  try {
+    var s = localStorage.getItem('kc_theme');
+    if (s === 'dark' || (!s && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  } catch (e) {}
+})();
+</script>
 </head>
 <body>
+<a class="skip-link" href="#kc-main">Skip to content</a>
 <header class="site-header">
-  <a href="../en/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <!-- width/height = 고유 크기(400x149). CSS 가 height:36px 로 줄이지만 브라우저는
+       이 비율로 자리를 미리 잡아 레이아웃 이동(CLS)을 막는다. 헤더 로고는 첫 화면에
+       보이므로 lazy 가 아니라 eager. -->
+  <a href="../en/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo" width="400" height="149" loading="eager" decoding="async"></a>
   <div class="lang-switch">
     <a href="../content/restaurant-kiosk-guide.html">KR</a>
     <a href="../content/restaurant-kiosk-guide.en.html" class="active">EN</a>
@@ -145,7 +174,7 @@
   </div>
 </header>
 
-<main class="detail-wrap">
+<main class="detail-wrap" id="kc-main" tabindex="-1">
   <nav class="breadcrumb" aria-label="breadcrumb"><a href="../en/index.html">All Guides</a> &rsaquo; How to Use a Kiosk in Korea: The No-Panic Screen-by-Screen Manual</nav>
   <article>
   <h1>Korea Kiosk Ordering, the Zero-Panic Manual — Follow the Screen Exactly</h1>
@@ -165,7 +194,7 @@
 <p>In other words, &quot;there&#x27;s a machine&quot; doesn&#x27;t mean &quot;unfriendly service&quot; — <strong>the machine simply is the counter</strong>. Understand that structure going in, and you&#x27;re already halfway there. This manual is the other half.</p>
 <hr>
 <h2>② The 3 Kiosk Types — Which One Is In Front of You</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>Type</th>
 <th>Where you&#x27;ll find it</th>
 <th>Language</th>
@@ -195,7 +224,7 @@
 <td></td>
 <td></td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <ul>
 <li>Type A: Look first for the <strong>flag icon</strong> in a corner of the screen, or a <code>[ English ]</code> button. If it&#x27;s there, you don&#x27;t need half of this article.</li>
 <li>Type B: The main target of this manual. Break through with <strong>the 15 survival words in ④ below</strong>.</li>
@@ -204,7 +233,7 @@
 <hr>
 <h2>③ The Universal 6-Step Master Flow — Same Order, Every Machine</h2>
 <p>No matter the brand, Korean kiosks <strong>never stray from the 6 steps below</strong>.</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>Step</th>
 <th>What&#x27;s on screen</th>
 <th>Button to press</th>
@@ -246,12 +275,12 @@
 <td><code>[ Card Payment (카드 결제) ]</code> → insert the card <strong>chip-up, all the way in</strong></td>
 <td>Wait a few seconds without moving it. If you hear a beep telling you to remove it, pull it out</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p>When it&#x27;s done, <strong>a number prints on your receipt</strong>. When that number appears on the wall monitor, pick up your order at the counter. That&#x27;s the whole process.</p>
 <hr>
 <h2>④ 15 Survival Words for Korean-Only Screens — &quot;See This, It Means This&quot;</h2>
 <p>These are the exact words you&#x27;ll actually run into on Type B (Korean-only) machines. Screenshot them, or save this page.</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>On-screen Korean</th>
 <th>Meaning = what to do</th>
 </tr></thead><tbody>
@@ -315,12 +344,12 @@
 <td>hochul (호출)</td>
 <td>Call staff</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <blockquote><p>Tip: you don&#x27;t need to memorize all 15. The three core verbs are <strong>gyeoljehagi (결제하기)</strong> — go, <strong>geonneottwigi (건너뛰기)</strong> — escape, and <strong>cheoeumeuro (처음으로)</strong> — reset.</p></blockquote>
 <hr>
 <h2>⑤ The Payment Fork — When Your Overseas Card Gets Rejected, That&#x27;s the Real Story</h2>
 <p>Korea&#x27;s payment network (VAN) runs on its own proprietary standard, so <strong>only a minority of terminals support the international EMV standard</strong>. That&#x27;s why the same Visa or Mastercard can be <strong>rejected at the kiosk but approved at the counter</strong> — this happens all the time. It isn&#x27;t a problem with your card; it&#x27;s a quirk of Korea&#x27;s payment infrastructure.</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>Situation</th>
 <th>What to do</th>
 </tr></thead><tbody>
@@ -340,7 +369,7 @@
 <td>Cash only, but the machine is card-only</td>
 <td>Call staff (the <code>[ Call Staff (호출) ]</code> button, or the counter) — most will process the payment manually for you</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <ul>
 <li>Samsung Pay / Apple Pay: more stores accept Apple Pay these days, but it&#x27;s still hit-or-miss. <strong>Two physical cards</strong> (from different issuers) is the safest combination.</li>
 <li>Carry a backup of 30,000–50,000 won in cash at all times, and no rejection will rattle you.</li>
@@ -415,34 +444,7 @@
     <div><a href="city-bus-guide.en.html" style="color:var(--red);">How to Ride the City Bus in Seoul: Tap Twice, Exit by the Rear Door &rarr;</a></div>
   </nav>
 
-  <section id="kc-related" style="display:none;margin:2.2rem 0 0.5rem;">
-    <h2 style="font-size:1.1rem;margin-bottom:0.8rem;">Related Guides</h2>
-    <div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"></div>
-  </section>
-  <script>
-  // related guides — 같은 카테고리 최신 6편 (contents.json fetch·언어 suffix 자동, 2026-07-04)
-  (function() {
-    var m = location.pathname.match(/\/content\/(.+?)(\.en|\.zh|\.ja)?\.html$/);
-    if (!m) return;
-    var slug = m[1], suf = m[2] || '';
-    fetch('../data/contents.json').then(function(r) { return r.json(); }).then(function(items) {
-      var me = null;
-      for (var i = 0; i < items.length; i++) { if (items[i].slug === slug) { me = items[i]; break; } }
-      if (!me) return;
-      var pool = items.filter(function(x) { return x.slug !== slug && x.category === me.category; });
-      pool.sort(function(a, b) { return (parseInt(b.id, 10) || 0) - (parseInt(a.id, 10) || 0); });
-      var picks = pool.slice(0, 6);
-      if (!picks.length) return;
-      document.getElementById('kc-related-grid').innerHTML = picks.map(function(x) {
-        var t = suf ? (x.title_en || x.title_kr) : (x.title_kr || x.title_en);
-        var ok = suf === '' || (suf === '.en' ? x.en_available : (suf === '.zh' ? x.cn_available : x.jp_available));
-        var href = x.slug + (ok ? suf : '') + '.html';
-        return '<a href="' + href + '" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">' + t + '</a>';
-      }).join('');
-      document.getElementById('kc-related').style.display = 'block';
-    }).catch(function() {});
-  })();
-  </script>
+  <section id="kc-related" style="margin:2.2rem 0 0.5rem;"><h2 style="font-size:1.1rem;margin-bottom:0.8rem;">Related Guides</h2><div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"><a href="solo-female-safety-checklist.en.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Solo Female Travel in Korea — A No-Fear Safety Checklist</a><a href="china-payment-survival.en.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Korea Payment Survival Manual for Chinese-Speaking Travelers — Alipay Works, WeChat Doesn&#x27;t, UnionPay Needs Prep First</a><a href="duty-free-pickup-guide.en.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">You Get Your Duty-Free Items at the Airport — The Zero-Panic Manual for the Pickup Counter</a><a href="korea-smoking-guide.en.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Finding a Place to Smoke in Korea, the Zero-Panic Manual — How Not to Get Fined</a><a href="busan-transit-guide.en.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Busan Transit Grammar — A City You Can Read with Just Two Lines</a><a href="seoul-cold-snap-survival.en.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Surviving a Seoul Cold Snap: How to Get Through a Day at Minus Ten</a></div></section>
   <!-- kc-comments -->
   <section id="kc-comments" style="margin:2.5rem 0 0.5rem;">
     <h2>Comments</h2>

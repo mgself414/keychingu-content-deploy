@@ -34,7 +34,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/main.css">
 <style>
 .detail-wrap {
@@ -50,11 +50,11 @@
 .breadcrumb a { color: var(--red); font-weight: 600; }
 .detail-wrap h1 {
   font-size: 28px; font-weight: 800;
-  color: var(--black); margin-bottom: 8px;
+  color: var(--text); margin-bottom: 8px;
 }
 .detail-wrap h2 {
   font-size: 22px; font-weight: 700;
-  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  color: var(--text); margin-top: 32px; margin-bottom: 12px;
   padding-bottom: 6px;
   border-bottom: 2px solid var(--red);
 }
@@ -73,10 +73,19 @@
   font-size: 14px; line-height: 1.6;
   color: var(--text-mid); margin-bottom: 6px;
 }
+/* 표는 자기 컨테이너 안에서만 가로 스크롤한다 — 이게 없으면 min-content 폭이
+   뷰포트를 넘는 순간 페이지 전체가 가로로 밀렸다 (2026-08-31 점검 M2).
+   table 자체는 table 로 남겨 행·열 관계를 보존한다(display:block 으로 해결하지 않는 이유). */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 16px;
+}
 .detail-wrap table {
   width: 100%; border-collapse: collapse;
   margin-bottom: 16px; font-size: 13px;
 }
+.table-scroll > table { margin-bottom: 0; }
 .detail-wrap th {
   background: var(--black); color: #fff;
   padding: 10px 12px; text-align: left;
@@ -137,10 +146,30 @@
   user-select: none;
 }
 </style>
+<script>
+/* 테마 부트스트랩 — 2026-08-31 점검 M3.
+   기사 4,804p 에 이게 없어서, OS 다크 사용자가 홈(다크)에서 기사를 열면
+   라이트로 번쩍였다. main.css 의 다크 규칙은 전부 [data-theme="dark"] 스코프이고
+   prefers-color-scheme 미디어쿼리는 CSS 에 없으므로, 속성을 여기서 달아줘야 한다.
+   <head> 안에서 동기 실행 — paint 전에 끝나야 깜빡임이 없다.
+   허브와 달리 기사엔 토글 버튼이 없다. 저장된 선택(kc_theme)과 OS 설정만 따른다. */
+(function () {
+  try {
+    var s = localStorage.getItem('kc_theme');
+    if (s === 'dark' || (!s && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  } catch (e) {}
+})();
+</script>
 </head>
 <body>
+<a class="skip-link" href="#kc-main">본문 바로가기</a>
 <header class="site-header">
-  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <!-- width/height = 고유 크기(400x149). CSS 가 height:36px 로 줄이지만 브라우저는
+       이 비율로 자리를 미리 잡아 레이아웃 이동(CLS)을 막는다. 헤더 로고는 첫 화면에
+       보이므로 lazy 가 아니라 eager. -->
+  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo" width="400" height="149" loading="eager" decoding="async"></a>
   <div class="lang-switch">
     <a href="../content/daegu-seomun-sub-deep.html" class="active">KR</a>
     <a href="../content/daegu-seomun-sub-deep.en.html">EN</a>
@@ -149,7 +178,7 @@
   </div>
 </header>
 
-<main class="detail-wrap">
+<main class="detail-wrap" id="kc-main" tabindex="-1">
   <nav class="breadcrumb" aria-label="breadcrumb"><a href="../index.html">전체 가이드</a> &rsaquo; 외국인 한국 대구 서문시장·야시장 sub 12선 deep dive</nav>
   <article>
   <h1>외국인 한국 대구 서문시장·야시장 sub 12선 deep dive — 2016 야시장·금토일 19시·전국 <a href="seongsu.html" class="xref">#1</a></h1>
@@ -160,7 +189,7 @@
 <blockquote><p><strong>시리즈 cross-ref</strong>: <a href="traditional-market.html" class="xref">#380</a> 한국 전통시장 · <a href="daegu.html" class="xref">#317</a> 대구 약령시 350년 · <a href="regional-markets-sub-deep.html" class="xref">#618</a> 지방 전통시장 · <a href="namdaemun-nopo-deep.html" class="xref">#581</a>~<a href="k-documentary-sub-deep.html" class="xref">#640</a> 시장 시리즈</p></blockquote>
 <hr>
 <h2>한눈에 보기</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>항목</th>
 <th>내용</th>
 </tr></thead><tbody>
@@ -204,7 +233,7 @@
 <td><strong>주차</strong></td>
 <td>서문시장 공용주차장 (유료), 주말 야시장 시간대 혼잡 — 대중교통 권장</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>왜 지금 대구 서문시장 sub인가 — 전국 <a href="seongsu.html" class="xref">#1</a> 야시장·2016·금토일</h2>
 <p>대구 서문시장은 조선 시대 전국 3대 시장 중 하나였다. 평양 시장, 강경 시장과 함께 꼽혔던 규모가 지금도 이어진다. 섬유·포목이 주력 품목이었고, 지금도 서문시장 1~4지구에 섬유·의류 도매상 수백 개가 영업한다.</p>
@@ -231,7 +260,7 @@
 <h3>축 2: 서문 야시장 (3선)</h3>
 <p><strong>4. 서문시장 4지구 야시장 본구역 — 금토 19:00–23:30</strong></p>
 <p>야시장 본구역은 서문시장 4지구 주차장 부지다. 진입 후 양쪽 노점이 ㄷ자 형태로 배치된다. 노점 수 약 80여 개 (시즌별 증감). 품목: 길거리 음식(닭꼬치·문어구이·튀김·크레페·분식류), 소품·액세서리, 포토존.</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>항목</th>
 <th>내용</th>
 </tr></thead><tbody>
@@ -259,7 +288,7 @@
 <td><strong>영어 안내</strong></td>
 <td>일부 노점 영문 메뉴판 있음, 전반적으로 제한적</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p>외국인 fit: 음식 위주로 체험할 경우 언어 장벽 낮음. 메뉴 보고 손짓 주문 가능. QR 메뉴판 있는 노점은 번역 앱 활용 가능.</p>
 <p><strong>5. 서문시장 야시장 — 일요일 19:00–22:30</strong></p>
 <p>일요일은 금·토보다 30분 일찍 종료(22:30). 혼잡도는 금·토보다 다소 낮다. 주말 포함 대구 일정이면 금·토 방문이 더 유리. 일요일 단독 일정이면 22:00 전 도착 권장 (마감 직전 노점 정리 시작).</p>
@@ -278,7 +307,7 @@
 <h3>축 4: 외국인 매니아 (3선)</h3>
 <p><strong>10. KTX 동대구역 — 서울·부산 당일치기 연결</strong></p>
 <p>동대구역은 KTX 기준 서울(서울역) 약 1시간 40분, 부산(부산역) 약 35분. 대구 당일치기 여행의 주요 진입점이다. 동대구역 → 서문시장 이동: 1호선 동대구역 승차 → 반월당역 환승 → 3호선 서문시장역 하차. 총 소요 약 20분, ₩1,400–1,600 수준.</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>출발지</th>
 <th>KTX 소요 시간</th>
 <th>KTX 요금 (참고, 변동 있음)</th>
@@ -298,7 +327,7 @@
 <td>약 50분</td>
 <td>확인 권장</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p><strong>11. 외국인 첫 방문·언어 대응 전략</strong></p>
 <p>서문시장·야시장은 외국어 응대 환경이 서울 명동·홍대 대비 제한적이다. 실용 전략:</p>
 <ul>
@@ -324,7 +353,7 @@
 <hr>
 <h2>구역별 심화 — 운영·가격·외국인 fit</h2>
 <h3>서문시장 야시장 노점 품목 분류</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>품목 분류</th>
 <th>대표 메뉴 예시</th>
 <th>가격대 ₩ (2026)</th>
@@ -366,7 +395,7 @@
 <td>5,000–20,000</td>
 <td>★★★</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <blockquote><p>구체적 상호(개별 노점명)는 시즌별 교체 잦음 — 현장에서 직접 확인.</p></blockquote>
 <h3>서문시장 주간 구역 외국인 핵심 포인트</h3>
 <ul>
@@ -395,7 +424,7 @@
 <li>주말 야시장 방문 목적이면 금요일 오후·토요일 조/오후 KTX 성수기 — 2–3일 전 예약 권장</li>
 </ul>
 <h3>결제 환경</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>장소</th>
 <th>결제 방식</th>
 </tr></thead><tbody>
@@ -415,10 +444,10 @@
 <td>지하철</td>
 <td>교통카드(T-money·이동의즐거움) 또는 1회권</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p>외국인 여행자: Visa·Mastercard 글로벌 카드 ATM 출금 가능 (수수료 발생). 대구 지하철역·편의점 ATM 이용.</p>
 <h3>언어 대응</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>상황</th>
 <th>대응 방법</th>
 </tr></thead><tbody>
@@ -438,7 +467,7 @@
 <td>관광 정보</td>
 <td>1330 (한·영·일·중 24h)</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>FAQ</h2>
 <h3>Q1. 첫 대구 방문 — 서문시장 야시장 어떻게 가나?</h3>
@@ -461,7 +490,7 @@
 <p>오전 약령시 (<a href="daegu.html" class="xref">#317</a>) → 점심 서문시장 주변 → 오후 김광석 거리 + 동성로 → 야간 야시장 (요일 맞으면)</p>
 <hr>
 <h2>시즌 매트릭스 (외국인 매니아)</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>시즌</th>
 <th>서문시장·야시장 특이사항</th>
 <th>외국인 매니아 시급도</th>
@@ -486,10 +515,10 @@
 <td>야시장 추위 — 방한 필수. 붕어빵·호떡 등 겨울 간식 계절 특성</td>
 <td>★★★</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>외국인 5 Segment</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>유형</th>
 <th>추천 동선</th>
 <th>예상 지출</th>
@@ -519,10 +548,10 @@
 <td>야시장 먹거리 위주 (노점 단가 낮음)</td>
 <td>₩15,000–40,000/인</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>⏱ 시간대별 동선</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>시간대</th>
 <th>추천</th>
 </tr></thead><tbody>
@@ -542,7 +571,7 @@
 <td><strong>저녁 (19:00–23:30)</strong></td>
 <td>서문시장 야시장 (금·토·일만)</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>💡 외국인 페인포인트 가이드</h2>
 <ul>
@@ -576,7 +605,7 @@
 </ul>
 <hr>
 <h2>📅 시즌 매트릭스 상세</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>시즌</th>
 <th>시그니처 활동</th>
 <th>외국인 매니아 시급도</th>
@@ -601,11 +630,11 @@
 <td>새해·실내 시장·겨울 간식</td>
 <td>★★★</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>📊 외국인 매니아 수치 매트릭스</h2>
 <p>외국인 한국 관광객 = <strong>연 1,750만 명 (2024)</strong>·MZ (20–39세) <strong>58%</strong>·평균 체류 <strong>6.4일</strong>·평균 지출 <strong>1,605 USD/인</strong>·재방문율 <strong>23%</strong> (한국관광공사 2024 통계).</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>항목</th>
 <th>수치</th>
 <th>출처</th>
@@ -645,7 +674,7 @@
 <td><strong>봄 (벚꽃·4월)·가을 (단풍·10–11월)</strong></td>
 <td>관광공사 시즌 분석</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <blockquote><p><strong>수치 해석</strong>: 영문 풀세트 65%·결제 80%·시즌 매트릭스 봄·가을 <a href="seongsu.html" class="xref">#1</a>·1339 응급 24h 영문 = 외국인 첫 진입 안전·매니아 매트릭스 fit.</p></blockquote>
 <hr>
 <h2>🔗 관련 deep dives</h2>
@@ -680,34 +709,7 @@
     <div><a href="jeonju-nambu-sub-deep.html" style="color:var(--red);">외국인 한국 전주 남부시장·청년몰 sub 12선 deep dive &rarr;</a></div>
   </nav>
 
-  <section id="kc-related" style="display:none;margin:2.2rem 0 0.5rem;">
-    <h2 style="font-size:1.1rem;margin-bottom:0.8rem;">관련 가이드</h2>
-    <div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"></div>
-  </section>
-  <script>
-  // related guides — 같은 카테고리 최신 6편 (contents.json fetch·언어 suffix 자동, 2026-07-04)
-  (function() {
-    var m = location.pathname.match(/\/content\/(.+?)(\.en|\.zh|\.ja)?\.html$/);
-    if (!m) return;
-    var slug = m[1], suf = m[2] || '';
-    fetch('../data/contents.json').then(function(r) { return r.json(); }).then(function(items) {
-      var me = null;
-      for (var i = 0; i < items.length; i++) { if (items[i].slug === slug) { me = items[i]; break; } }
-      if (!me) return;
-      var pool = items.filter(function(x) { return x.slug !== slug && x.category === me.category; });
-      pool.sort(function(a, b) { return (parseInt(b.id, 10) || 0) - (parseInt(a.id, 10) || 0); });
-      var picks = pool.slice(0, 6);
-      if (!picks.length) return;
-      document.getElementById('kc-related-grid').innerHTML = picks.map(function(x) {
-        var t = suf ? (x.title_en || x.title_kr) : (x.title_kr || x.title_en);
-        var ok = suf === '' || (suf === '.en' ? x.en_available : (suf === '.zh' ? x.cn_available : x.jp_available));
-        var href = x.slug + (ok ? suf : '') + '.html';
-        return '<a href="' + href + '" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">' + t + '</a>';
-      }).join('');
-      document.getElementById('kc-related').style.display = 'block';
-    }).catch(function() {});
-  })();
-  </script>
+  <section id="kc-related" style="margin:2.2rem 0 0.5rem;"><h2 style="font-size:1.1rem;margin-bottom:0.8rem;">관련 가이드</h2><div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"><a href="dongdaemun-market-eats.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">동대문 종합시장 상인 밥집 — 원단 골목의 40년 노포들</a><a href="busan-dessert-road.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">부산 디저트 로드 — 팥의 도시에서 젤라또까지</a><a href="busan-coffee-road.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">부산 커피 로드 — 월드 챔피언의 도시에서 커피 마시는 법</a><a href="busan-signature-food.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">부산에서만 먹는 세 가지 — 돼지국밥·밀면·회, 주문하는 법까지</a><a href="autumn-food-calendar.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">가을 제철 미식 캘린더 — 전어·대하·꽃게·송이·홍시, 9~11월에만 열리는 한국의 맛</a><a href="seoul-history-eras.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">서울 600년 시간여행 — 시대별로 걷는 역사 탐험 코스</a></div></section>
   <!-- kc-comments -->
   <section id="kc-comments" style="margin:2.5rem 0 0.5rem;">
     <h2>댓글</h2>

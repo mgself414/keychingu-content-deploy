@@ -34,7 +34,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/main.css">
 <style>
 .detail-wrap {
@@ -50,11 +50,11 @@
 .breadcrumb a { color: var(--red); font-weight: 600; }
 .detail-wrap h1 {
   font-size: 28px; font-weight: 800;
-  color: var(--black); margin-bottom: 8px;
+  color: var(--text); margin-bottom: 8px;
 }
 .detail-wrap h2 {
   font-size: 22px; font-weight: 700;
-  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  color: var(--text); margin-top: 32px; margin-bottom: 12px;
   padding-bottom: 6px;
   border-bottom: 2px solid var(--red);
 }
@@ -73,10 +73,19 @@
   font-size: 14px; line-height: 1.6;
   color: var(--text-mid); margin-bottom: 6px;
 }
+/* 표는 자기 컨테이너 안에서만 가로 스크롤한다 — 이게 없으면 min-content 폭이
+   뷰포트를 넘는 순간 페이지 전체가 가로로 밀렸다 (2026-08-31 점검 M2).
+   table 자체는 table 로 남겨 행·열 관계를 보존한다(display:block 으로 해결하지 않는 이유). */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 16px;
+}
 .detail-wrap table {
   width: 100%; border-collapse: collapse;
   margin-bottom: 16px; font-size: 13px;
 }
+.table-scroll > table { margin-bottom: 0; }
 .detail-wrap th {
   background: var(--black); color: #fff;
   padding: 10px 12px; text-align: left;
@@ -137,10 +146,30 @@
   user-select: none;
 }
 </style>
+<script>
+/* 테마 부트스트랩 — 2026-08-31 점검 M3.
+   기사 4,804p 에 이게 없어서, OS 다크 사용자가 홈(다크)에서 기사를 열면
+   라이트로 번쩍였다. main.css 의 다크 규칙은 전부 [data-theme="dark"] 스코프이고
+   prefers-color-scheme 미디어쿼리는 CSS 에 없으므로, 속성을 여기서 달아줘야 한다.
+   <head> 안에서 동기 실행 — paint 전에 끝나야 깜빡임이 없다.
+   허브와 달리 기사엔 토글 버튼이 없다. 저장된 선택(kc_theme)과 OS 설정만 따른다. */
+(function () {
+  try {
+    var s = localStorage.getItem('kc_theme');
+    if (s === 'dark' || (!s && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  } catch (e) {}
+})();
+</script>
 </head>
 <body>
+<a class="skip-link" href="#kc-main">本文へスキップ</a>
 <header class="site-header">
-  <a href="../ja/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <!-- width/height = 고유 크기(400x149). CSS 가 height:36px 로 줄이지만 브라우저는
+       이 비율로 자리를 미리 잡아 레이아웃 이동(CLS)을 막는다. 헤더 로고는 첫 화면에
+       보이므로 lazy 가 아니라 eager. -->
+  <a href="../ja/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo" width="400" height="149" loading="eager" decoding="async"></a>
   <div class="lang-switch">
     <a href="../content/korean-food.html">KR</a>
     <a href="../content/korean-food.en.html">EN</a>
@@ -149,12 +178,12 @@
   </div>
 </header>
 
-<main class="detail-wrap">
+<main class="detail-wrap" id="kc-main" tabindex="-1">
   <nav class="breadcrumb" aria-label="breadcrumb"><a href="../ja/index.html">ガイド一覧</a> &rsaquo; 韓国料理必体験TOP10</nav>
   <article>
   <h1>韓国料理 必須体験 TOP 10 — はじめての韓国グルメ 10選</h1>
 <h2>一覧表</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>項目</th>
 <th>内容</th>
 </tr></thead><tbody>
@@ -182,7 +211,7 @@
 <td><strong>おひとり様OK</strong></td>
 <td>ほとんど可 (表内に明記)</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>韓国料理、なぜ食べるべきなのか?</h2>
 <h3>「口で体験する韓国文化」</h3>
@@ -212,7 +241,7 @@
 <p>3. スプーンですくって食べる (箸ではなくスプーンが基本)</p>
 <p><strong>ヒント</strong>: 最初から全体をしっかり混ぜると味が均一に。少しずつ混ぜながら食べると各具材の味を楽しめます。</p>
 <h3>おすすめ店</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>店名</th>
 <th>場所</th>
 <th>特徴</th>
@@ -236,7 +265,7 @@
 <td>リーズナブル、ローカルな味</td>
 <td>₩8,000〜10,000</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h3>英語での注文</h3>
 <p>&quot;I would like bibimbap, please&quot; または &quot;Bibimbap, one&quot;</p>
 <h3>おひとり様OK</h3>
@@ -255,7 +284,7 @@
 <p>4. ごはんも一緒に (肉+サム+ごはんで1セット)</p>
 <p><strong>ヒント</strong>: 焼きすぎると固くなります。2〜3分程度が最適。</p>
 <h3>おすすめ店</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>店名</th>
 <th>場所</th>
 <th>特徴</th>
@@ -279,7 +308,7 @@
 <td>リーズナブル、地元の味</td>
 <td>₩15,000〜20,000</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h3>英語での注文</h3>
 <p>&quot;I would like bulgogi for two people&quot; (2人前推奨、1人なら &quot;bulgogi for one&quot;)</p>
 <h3>おひとり様OK</h3>
@@ -298,7 +327,7 @@
 <p>4. 唐辛子やニンニクも一緒に焼いて食べる</p>
 <p><strong>ヒント</strong>: 脂身が焦げないよう注意。焦げると苦みが出ます。</p>
 <h3>おすすめ店</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>店名</th>
 <th>場所</th>
 <th>特徴</th>
@@ -322,7 +351,7 @@
 <td>老舗 (30年以上の伝統店)、リーズナブル</td>
 <td>₩12,000〜18,000</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h3>英語での注文</h3>
 <p>&quot;I would like samgyeopsal (pork belly)&quot; または &quot;Samgyeopsal for one/two&quot;</p>
 <h3>おひとり様OK</h3>
@@ -341,7 +370,7 @@
 <p>4. 卵が一緒に入っていることがある (鍋の中で火が通る)</p>
 <p><strong>ヒント</strong>: 辛いと感じる場合は事前に一言。&quot;Not too spicy, please&quot;</p>
 <h3>おすすめ店</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>店名</th>
 <th>場所</th>
 <th>特徴</th>
@@ -359,7 +388,7 @@
 <td>食べやすくアレンジ</td>
 <td>₩10,000〜13,000</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h3>英語での注文</h3>
 <p>&quot;Kimchi stew, one&quot; または &quot;Kimchi jjigae (stew)&quot;</p>
 <h3>おひとり様OK</h3>
@@ -377,7 +406,7 @@
 <p>3. オデン (魚のすり身の串) と一緒に食べると◎</p>
 <p><strong>ヒント</strong>: 屋台のトッポッキは衛生面が気になる場合はチェーン店や食堂のものがおすすめです。</p>
 <h3>おすすめスポット</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>名前</th>
 <th>場所</th>
 <th>特徴</th>
@@ -401,7 +430,7 @@
 <td>定食スタイル、セットメニュー</td>
 <td>₩12,000〜15,000</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h3>英語での注文</h3>
 <p>&quot;Tteokbokki (spicy rice cake)&quot; または &quot;Tteokbokki, please&quot;</p>
 <h3>おひとり様OK</h3>
@@ -421,7 +450,7 @@
 <p>4. スープも飲む (非常に栄養豊富)</p>
 <p><strong>ヒント</strong>: 熱いスープを飲む際は口と喉に注意。舌を火傷しないように。</p>
 <h3>おすすめ店</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>店名</th>
 <th>場所</th>
 <th>特徴</th>
@@ -439,7 +468,7 @@
 <td>小規模、正統派</td>
 <td>₩15,000〜18,000</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h3>英語での注文</h3>
 <p>&quot;Samgyetang (chicken soup with ginseng)&quot; または &quot;One samgyetang, please&quot;</p>
 <h3>おひとり様OK</h3>
@@ -458,7 +487,7 @@
 <p>3. 大きなスプーンでスープも一緒に</p>
 <p><strong>ヒント</strong>: 冷たいスープでお腹が冷えることも。一気に飲みすぎるとお腹が不快になることがあります。</p>
 <h3>おすすめ店</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>店名</th>
 <th>場所</th>
 <th>特徴</th>
@@ -476,7 +505,7 @@
 <td>プレミアムバージョン</td>
 <td>₩12,000〜15,000</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h3>英語での注文</h3>
 <p>&quot;Cold noodles, please&quot; または &quot;Naengmyeon (cold noodles)&quot;</p>
 <h3>おひとり様OK</h3>
@@ -494,7 +523,7 @@
 <p>3. ソジュと一緒に (定番: パジョン一口 + ソジュ一杯)</p>
 <p><strong>ヒント</strong>: 韓国では「パジョンとソジュ」がセット。雨の日に特によく食べられます。</p>
 <h3>おすすめ店</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>店名</th>
 <th>場所</th>
 <th>特徴</th>
@@ -512,7 +541,7 @@
 <td>清潔感のあるバージョン</td>
 <td>₩12,000〜18,000</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h3>英語での注文</h3>
 <p>&quot;Pajeon (seafood pancake)&quot; または &quot;Squid pancake, one&quot;</p>
 <h3>おひとり様OK</h3>
@@ -531,7 +560,7 @@
 <p>3. サムジャンを少しのせて食べる</p>
 <p><strong>ヒント</strong>: 手が油っぽくなるのでウェットティッシュ必携。手を洗いに行くのも普通のことです。</p>
 <h3>おすすめ店</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>店名</th>
 <th>場所</th>
 <th>特徴</th>
@@ -549,7 +578,7 @@
 <td>高級感あり、やや高め</td>
 <td>₩40,000〜50,000</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h3>英語での注文</h3>
 <p>&quot;Jokbal (braised pig&#x27;s feet)&quot; または &quot;Bossam (pork wrap)&quot; — ポッサムとチョッパルは同じ店で食べられます。</p>
 <h3>おひとり様OK</h3>
@@ -568,7 +597,7 @@
 <p>3. スープも一緒に飲む</p>
 <p><strong>ヒント</strong>: 最も韓国らしく、かつ最もハードルが低い一杯。「初めての一食」に最適。</p>
 <h3>おすすめ店</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>店名</th>
 <th>場所</th>
 <th>特徴</th>
@@ -586,7 +615,7 @@
 <td>老舗 (30年以上の伝統店)</td>
 <td>₩9,000〜12,000</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h3>英語での注文</h3>
 <p>&quot;Seolleongtang (beef broth with rice)&quot; または &quot;Seolleongtang, one&quot;</p>
 <h3>おひとり様OK</h3>
@@ -595,7 +624,7 @@
 <h2>補足情報: 韓国料理を食べる前に知っておくこと</h2>
 <h3>韓国料理の哲学: ごはんとおかず</h3>
 <p>韓国料理は<strong>「ごはん」を中心</strong>に構成されています。</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>構成</th>
 <th>説明</th>
 </tr></thead><tbody>
@@ -615,7 +644,7 @@
 <td><strong>おかず (반찬)</strong></td>
 <td>海苔・ナムル・卵など (無料の付け合わせ、複数品)</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p><strong>韓国人のように食べる方法</strong>:</p>
 <ul>
 <li>スプーン: ごはん、スープ、チゲ</li>
@@ -623,7 +652,7 @@
 <li>スプーン一杯のごはん + スープを一緒に口に入れる</li>
 </ul>
 <h3>英語メニューがない時</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>状況</th>
 <th>対処法</th>
 </tr></thead><tbody>
@@ -639,9 +668,9 @@
 <td><strong>値段だけ知りたい</strong></td>
 <td>&quot;얼마?&quot; (オルマ?) — 最もシンプルな韓国語</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h3>辛いと感じたら</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>症状</th>
 <th>対処法</th>
 </tr></thead><tbody>
@@ -657,10 +686,10 @@
 <td><strong>辛すぎる場合</strong></td>
 <td>キッチンに &quot;not spicy&quot; とリクエスト、または食事を中断して退店 (それでも大丈夫)</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <h3>二日酔い解消フード</h3>
 <p>韓国人がお酒の後に食べるもの:</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>料理</th>
 <th>理由</th>
 </tr></thead><tbody>
@@ -680,11 +709,11 @@
 <td><strong>ラーメン (라면)</strong></td>
 <td>手軽でお腹にたまる</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>韓国料理体験 おすすめ店 (ガイドベース)</h2>
 <h3>総合パック: 1軒で韓国料理をまとめて体験</h3>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>食堂</th>
 <th>場所</th>
 <th>おすすめ理由</th>
@@ -699,7 +728,7 @@
 <td>ミョンドン (명동)</td>
 <td>観光地基準で最高、英語メニューあり</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>よくある質問 (FAQ)</h2>
 <h3>Q1: 10品全部食べなければいけませんか?</h3>
@@ -728,34 +757,7 @@
     <div><a href="street-food.ja.html" style="color:var(--red);">屋台グルメ聖地ガイド &rarr;</a></div>
   </nav>
 
-  <section id="kc-related" style="display:none;margin:2.2rem 0 0.5rem;">
-    <h2 style="font-size:1.1rem;margin-bottom:0.8rem;">関連ガイド</h2>
-    <div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"></div>
-  </section>
-  <script>
-  // related guides — 같은 카테고리 최신 6편 (contents.json fetch·언어 suffix 자동, 2026-07-04)
-  (function() {
-    var m = location.pathname.match(/\/content\/(.+?)(\.en|\.zh|\.ja)?\.html$/);
-    if (!m) return;
-    var slug = m[1], suf = m[2] || '';
-    fetch('../data/contents.json').then(function(r) { return r.json(); }).then(function(items) {
-      var me = null;
-      for (var i = 0; i < items.length; i++) { if (items[i].slug === slug) { me = items[i]; break; } }
-      if (!me) return;
-      var pool = items.filter(function(x) { return x.slug !== slug && x.category === me.category; });
-      pool.sort(function(a, b) { return (parseInt(b.id, 10) || 0) - (parseInt(a.id, 10) || 0); });
-      var picks = pool.slice(0, 6);
-      if (!picks.length) return;
-      document.getElementById('kc-related-grid').innerHTML = picks.map(function(x) {
-        var t = suf ? (x.title_en || x.title_kr) : (x.title_kr || x.title_en);
-        var ok = suf === '' || (suf === '.en' ? x.en_available : (suf === '.zh' ? x.cn_available : x.jp_available));
-        var href = x.slug + (ok ? suf : '') + '.html';
-        return '<a href="' + href + '" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">' + t + '</a>';
-      }).join('');
-      document.getElementById('kc-related').style.display = 'block';
-    }).catch(function() {});
-  })();
-  </script>
+  <section id="kc-related" style="margin:2.2rem 0 0.5rem;"><h2 style="font-size:1.1rem;margin-bottom:0.8rem;">関連ガイド</h2><div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"><a href="dongdaemun-market-eats.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">The Merchants&#x27; Diners of Dongdaemun Market — 40-Year-Old Eateries in the Fabric Alley</a><a href="busan-dessert-road.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Busan Dessert Road — From the City of Red Bean to Gelato</a><a href="busan-coffee-road.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Busan Coffee Road — How to Drink Coffee in the City of a World Champion</a><a href="busan-signature-food.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Three Things You Only Eat in Busan — Dwaeji-gukbap, Milmyeon, Hoe, and How to Order Them</a><a href="autumn-food-calendar.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Korea Autumn Food Calendar: Jeoneo, King Prawns, Crab, Pine Mushrooms and Persimmons — Open September to November Only</a><a href="seoul-history-eras.ja.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">600 Years of Seoul: A Time-Travel Walking Course Through the Eras</a></div></section>
   <!-- kc-comments -->
   <section id="kc-comments" style="margin:2.5rem 0 0.5rem;">
     <h2>コメント</h2>

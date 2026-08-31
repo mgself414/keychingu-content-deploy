@@ -34,7 +34,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/main.css">
 <style>
 .detail-wrap {
@@ -50,11 +50,11 @@
 .breadcrumb a { color: var(--red); font-weight: 600; }
 .detail-wrap h1 {
   font-size: 28px; font-weight: 800;
-  color: var(--black); margin-bottom: 8px;
+  color: var(--text); margin-bottom: 8px;
 }
 .detail-wrap h2 {
   font-size: 22px; font-weight: 700;
-  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  color: var(--text); margin-top: 32px; margin-bottom: 12px;
   padding-bottom: 6px;
   border-bottom: 2px solid var(--red);
 }
@@ -73,10 +73,19 @@
   font-size: 14px; line-height: 1.6;
   color: var(--text-mid); margin-bottom: 6px;
 }
+/* 표는 자기 컨테이너 안에서만 가로 스크롤한다 — 이게 없으면 min-content 폭이
+   뷰포트를 넘는 순간 페이지 전체가 가로로 밀렸다 (2026-08-31 점검 M2).
+   table 자체는 table 로 남겨 행·열 관계를 보존한다(display:block 으로 해결하지 않는 이유). */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 16px;
+}
 .detail-wrap table {
   width: 100%; border-collapse: collapse;
   margin-bottom: 16px; font-size: 13px;
 }
+.table-scroll > table { margin-bottom: 0; }
 .detail-wrap th {
   background: var(--black); color: #fff;
   padding: 10px 12px; text-align: left;
@@ -137,10 +146,30 @@
   user-select: none;
 }
 </style>
+<script>
+/* 테마 부트스트랩 — 2026-08-31 점검 M3.
+   기사 4,804p 에 이게 없어서, OS 다크 사용자가 홈(다크)에서 기사를 열면
+   라이트로 번쩍였다. main.css 의 다크 규칙은 전부 [data-theme="dark"] 스코프이고
+   prefers-color-scheme 미디어쿼리는 CSS 에 없으므로, 속성을 여기서 달아줘야 한다.
+   <head> 안에서 동기 실행 — paint 전에 끝나야 깜빡임이 없다.
+   허브와 달리 기사엔 토글 버튼이 없다. 저장된 선택(kc_theme)과 OS 설정만 따른다. */
+(function () {
+  try {
+    var s = localStorage.getItem('kc_theme');
+    if (s === 'dark' || (!s && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  } catch (e) {}
+})();
+</script>
 </head>
 <body>
+<a class="skip-link" href="#kc-main">跳到正文</a>
 <header class="site-header">
-  <a href="../zh/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <!-- width/height = 고유 크기(400x149). CSS 가 height:36px 로 줄이지만 브라우저는
+       이 비율로 자리를 미리 잡아 레이아웃 이동(CLS)을 막는다. 헤더 로고는 첫 화면에
+       보이므로 lazy 가 아니라 eager. -->
+  <a href="../zh/index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo" width="400" height="149" loading="eager" decoding="async"></a>
   <div class="lang-switch">
     <a href="../content/korean-rites-of-passage-culture.html">KR</a>
     <a href="../content/korean-rites-of-passage-culture.en.html">EN</a>
@@ -149,7 +178,7 @@
   </div>
 </header>
 
-<main class="detail-wrap">
+<main class="detail-wrap" id="kc-main" tabindex="-1">
   <nav class="breadcrumb" aria-label="breadcrumb"><a href="../zh/index.html">全部指南</a> &rsaquo; 韩国人生礼仪文化</nav>
   <article>
   <h1>韩国的成人礼文化 — 为什么韩国人如此重视周岁和花甲之年</h1>
@@ -157,7 +186,7 @@
 <p>在韩国朋友的社交媒体上，经常会出现这样的场景：一个穿着<strong>韩服 (Hanbok / 한복)</strong> 的周岁宝宝面前摆放着线、钱和铅笔，全家人屏息以待，看宝宝会抓起什么。有时，朋友又会说“这个周末爷爷<strong>花甲 (Hwangap / 환갑)</strong>”，亲戚们都会聚在一起。在外国人看来，这可能只是“first birthday party”或“60th birthday party”，但韩国人对此的重视程度与西方的生日派对截然不同。在韩国，<strong>百日 (Baegil / 백일)</strong>、<strong>周岁 (Dol / 돌)</strong> 和<strong>花甲 (Hwangap / 환갑)</strong> 不仅仅是生日，更是<strong>人生“里程碑”式的通关仪式 (rite of passage)</strong>。为什么偏偏是第100天、第一年和60岁呢？这背后有<strong>婴儿死亡率高企时期的生存渴望</strong>、<strong>东方历法中六十年一轮回的周期</strong>以及<strong>以家庭为中心的社会观念</strong>等原因。本文将从外国人的视角，解读这些仪式<strong>为何成为重要的里程碑</strong>。这是韩国文化解读系列文章的<strong>第13篇</strong>。</p>
 <hr>
 <h2>★ 一目了然 — 人生的四大里程碑</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>仪式</th>
 <th>时间点</th>
 <th>内容</th>
@@ -187,7 +216,7 @@
 <td>取代花甲的盛大宴会</td>
 <td>随着平均寿命延长，重心转移到70岁和80岁</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <blockquote><p><strong>核心</strong>: 韩国的通关仪式是一条从<strong>出生 (百日 (Baegil / 백일)·周岁 (Dol / 돌)) → 成人 (冠礼 (Gwallye / 관례)·婚礼 (Honrye / 혼례)) → 衰老 (花甲 (Hwangap / 환갑)·七旬 (Chilsun / 칠순)) → 死亡·追悼 (丧礼 (Sangnye / 상례)·祭礼 (Jerye / 제례))</strong> 的连贯流程。其大框架就是下面第④点的<strong>冠婚丧祭 (Gwanhonsangje / 관혼상제)</strong>。</p></blockquote>
 <hr>
 <h2>⚠️ 外国人常有的3个误解</h2>
@@ -220,7 +249,7 @@
 <h2>③ 抓周 (Doljabi / 돌잡이) — 孩子抓取的物品预测未来</h2>
 <p>周岁宴 (Doljanchi / 돌잔치) 的高潮是<strong>抓周 (Doljabi / 돌잡이)</strong>。在周岁宴 (Dolsang / 돌상) 前摆放各种象征性物品，让孩子自由抓取，然后<strong>根据孩子最初抓取的物品来预测其未来的仪式</strong>。</p>
 <p><strong>传统上</strong>，每件物品都有其象征意义：</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>抓取的物品</th>
 <th>象征的未来 (传统解读)</th>
 </tr></thead><tbody>
@@ -248,7 +277,7 @@
 <td><strong>针·尺</strong></td>
 <td>手巧·持家能力</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p>现代社会职业多样化，还会增加<strong>听诊器 (医生)·麦克风 (艺人)·鼠标 (IT)·高尔夫球·法槌</strong>等物品。无论时代如何变迁，“孩子会成为什么样的人”这种家人共同想象的形式依然保留。</p>
 <blockquote><p><strong>避免误解</strong>: 抓周 (Doljabi / 돌잡이) 并非像八字 (Saju / 사주) 那样精确的预言体系，它更像是<strong>家人齐聚一堂，互道祝福的通关仪式游戏</strong>。很少有人会把结果当作严肃的命运来相信——但它与取名 (作名) 或八字 (Saju / 사ju) 等韩国特有的“预想孩子未来”的情感是共通的 (→ <a href="korean-saju-fortune-culture.zh.html" class="xref">#1133</a>_korean_saju_fortune_telling_culture 八字·运势)。</p></blockquote>
 <hr>
@@ -348,34 +377,7 @@
     <div><a href="korean-nunchi-culture.zh.html" style="color:var(--red);">韩国“眼色”文化 &rarr;</a></div>
   </nav>
 
-  <section id="kc-related" style="display:none;margin:2.2rem 0 0.5rem;">
-    <h2 style="font-size:1.1rem;margin-bottom:0.8rem;">相关指南</h2>
-    <div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"></div>
-  </section>
-  <script>
-  // related guides — 같은 카테고리 최신 6편 (contents.json fetch·언어 suffix 자동, 2026-07-04)
-  (function() {
-    var m = location.pathname.match(/\/content\/(.+?)(\.en|\.zh|\.ja)?\.html$/);
-    if (!m) return;
-    var slug = m[1], suf = m[2] || '';
-    fetch('../data/contents.json').then(function(r) { return r.json(); }).then(function(items) {
-      var me = null;
-      for (var i = 0; i < items.length; i++) { if (items[i].slug === slug) { me = items[i]; break; } }
-      if (!me) return;
-      var pool = items.filter(function(x) { return x.slug !== slug && x.category === me.category; });
-      pool.sort(function(a, b) { return (parseInt(b.id, 10) || 0) - (parseInt(a.id, 10) || 0); });
-      var picks = pool.slice(0, 6);
-      if (!picks.length) return;
-      document.getElementById('kc-related-grid').innerHTML = picks.map(function(x) {
-        var t = suf ? (x.title_en || x.title_kr) : (x.title_kr || x.title_en);
-        var ok = suf === '' || (suf === '.en' ? x.en_available : (suf === '.zh' ? x.cn_available : x.jp_available));
-        var href = x.slug + (ok ? suf : '') + '.html';
-        return '<a href="' + href + '" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">' + t + '</a>';
-      }).join('');
-      document.getElementById('kc-related').style.display = 'block';
-    }).catch(function() {});
-  })();
-  </script>
+  <section id="kc-related" style="margin:2.2rem 0 0.5rem;"><h2 style="font-size:1.1rem;margin-bottom:0.8rem;">相关指南</h2><div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"><a href="royal-palace-autumn-nights.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Royal Palaces After Dark: Starlight Tours, Moonlight Walks and the Royal Culture Festival — the Reservation-Only Side of Autumn Seoul</a><a href="seoul-fireworks-festival.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Seoul International Fireworks Festival 2026: September 5 at Yeouido — How to Claim a Spot Among a Million People</a><a href="seoul-architecture-eras.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Seoul Architecture Time Walk — Traditional, Modern &amp; Contemporary: 15 Picks + An Architectural Appreciation Lens</a><a href="korea-kpop-fansign-videocall.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">K-pop Fansign·Video Call (Album Entry·Yeongtong)</a><a href="korea-idol-birthday-cafe.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">Idol Birthday Cafe (Saengka·Cup Sleeve·Support)</a><a href="korea-kpop-music-show-taping.zh.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">K-pop Music Show Taping (Inkigayo·M Countdown·Music Bank)</a></div></section>
   <!-- kc-comments -->
   <section id="kc-comments" style="margin:2.5rem 0 0.5rem;">
     <h2>评论</h2>

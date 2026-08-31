@@ -34,7 +34,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/main.css">
 <style>
 .detail-wrap {
@@ -50,11 +50,11 @@
 .breadcrumb a { color: var(--red); font-weight: 600; }
 .detail-wrap h1 {
   font-size: 28px; font-weight: 800;
-  color: var(--black); margin-bottom: 8px;
+  color: var(--text); margin-bottom: 8px;
 }
 .detail-wrap h2 {
   font-size: 22px; font-weight: 700;
-  color: var(--black); margin-top: 32px; margin-bottom: 12px;
+  color: var(--text); margin-top: 32px; margin-bottom: 12px;
   padding-bottom: 6px;
   border-bottom: 2px solid var(--red);
 }
@@ -73,10 +73,19 @@
   font-size: 14px; line-height: 1.6;
   color: var(--text-mid); margin-bottom: 6px;
 }
+/* 표는 자기 컨테이너 안에서만 가로 스크롤한다 — 이게 없으면 min-content 폭이
+   뷰포트를 넘는 순간 페이지 전체가 가로로 밀렸다 (2026-08-31 점검 M2).
+   table 자체는 table 로 남겨 행·열 관계를 보존한다(display:block 으로 해결하지 않는 이유). */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 16px;
+}
 .detail-wrap table {
   width: 100%; border-collapse: collapse;
   margin-bottom: 16px; font-size: 13px;
 }
+.table-scroll > table { margin-bottom: 0; }
 .detail-wrap th {
   background: var(--black); color: #fff;
   padding: 10px 12px; text-align: left;
@@ -137,10 +146,30 @@
   user-select: none;
 }
 </style>
+<script>
+/* 테마 부트스트랩 — 2026-08-31 점검 M3.
+   기사 4,804p 에 이게 없어서, OS 다크 사용자가 홈(다크)에서 기사를 열면
+   라이트로 번쩍였다. main.css 의 다크 규칙은 전부 [data-theme="dark"] 스코프이고
+   prefers-color-scheme 미디어쿼리는 CSS 에 없으므로, 속성을 여기서 달아줘야 한다.
+   <head> 안에서 동기 실행 — paint 전에 끝나야 깜빡임이 없다.
+   허브와 달리 기사엔 토글 버튼이 없다. 저장된 선택(kc_theme)과 OS 설정만 따른다. */
+(function () {
+  try {
+    var s = localStorage.getItem('kc_theme');
+    if (s === 'dark' || (!s && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  } catch (e) {}
+})();
+</script>
 </head>
 <body>
+<a class="skip-link" href="#kc-main">본문 바로가기</a>
 <header class="site-header">
-  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo"></a>
+  <!-- width/height = 고유 크기(400x149). CSS 가 height:36px 로 줄이지만 브라우저는
+       이 비율로 자리를 미리 잡아 레이아웃 이동(CLS)을 막는다. 헤더 로고는 첫 화면에
+       보이므로 lazy 가 아니라 eager. -->
+  <a href="../index.html"><img src="../assets/logo/logo_2-4_color_small.png" alt="KeyChinGu" class="site-logo" width="400" height="149" loading="eager" decoding="async"></a>
   <div class="lang-switch">
     <a href="../content/korean-banchan-culture.html" class="active">KR</a>
     <a href="../content/korean-banchan-culture.en.html">EN</a>
@@ -149,7 +178,7 @@
   </div>
 </header>
 
-<main class="detail-wrap">
+<main class="detail-wrap" id="kc-main" tabindex="-1">
   <nav class="breadcrumb" aria-label="breadcrumb"><a href="../index.html">전체 가이드</a> &rsaquo; 한국 반찬 문화 — 왜 한 끼에 반찬이 이렇게 많을까</nav>
   <article>
   <h1>한국 반찬 문화 — 왜 한 끼에 반찬이 이렇게 많을까</h1>
@@ -157,7 +186,7 @@
 <p>한국 식당에서 처음 밥을 먹은 외국인이 가장 많이 던지는 질문은 하나다. <strong>&quot;시키지도 않았는데 왜 이 작은 접시들이 한가득 나오지? 이거… 공짜 맞아?&quot;</strong> 김치, 콩나물, 시금치무침, 계란말이, 감자조림, 멸치볶음… 메인 메뉴 하나를 시켰을 뿐인데 식탁이 작은 그릇으로 가득 찬다. 이게 바로 <strong>반찬(banchan)</strong> 문화다. 이 글은 &quot;어느 식당이 맛있나&quot;(→ 그건 아래 cross-link 가이드에)가 아니라, <strong>그 작은 접시들 뒤에 담긴 600년 이상의 역사·철학·정(情)</strong> 을 외국인 눈높이로 풀어준다. 한국 문화를 깊이 들여다보는 <strong>&#x27;한국 문화&#x27; 시리즈의 첫 편</strong>이다.</p>
 <hr>
 <h2>★ 한눈에 보기 — 핵심 개념 6가지</h2>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>개념</th>
 <th>한 줄 설명</th>
 </tr></thead><tbody>
@@ -185,7 +214,7 @@
 <td><strong>채식 친화</strong></td>
 <td>반찬의 상당수가 식물성 → 채식·할랄 여행자에게 의외로 유용</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>⚠️ 외국인이 자주 오해하는 3가지</h2>
 <p>1. <strong>&quot;반찬 = 애피타이저&quot;</strong> ❌ — 서양식 코스처럼 &quot;먼저 나오는 것&quot;이 아니다. 밥·국과 <strong>동시에</strong> 나와 식사가 끝날 때까지 함께한다. 정해진 먹는 순서도 없다.</p>
@@ -210,7 +239,7 @@
 <hr>
 <h2>③ 첩 반상 체계 — 반찬 수로 읽는 상의 격</h2>
 <p>조선시대에는 <strong>반찬 접시(쟁첩)의 수</strong> 로 상차림의 격을 나눴다. 여기서 <strong>&#x27;첩&#x27;</strong> 은 밥·국·김치·찌개(조치)·간장 같은 종지(장류)를 <strong>제외하고</strong>, 쟁첩에 담는 <strong>반찬의 수</strong>를 뜻한다.</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>첩 수</th>
 <th>격 / 신분</th>
 <th>비고</th>
@@ -240,7 +269,7 @@
 <td><strong>수라상 — 임금의 밥상</strong></td>
 <td>왕만 받을 수 있던 최고 격</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <ul>
 <li><strong>호칭도 신분 따라 달랐다</strong>: 아랫사람에게는 <strong>밥상</strong>, 어른에게는 <strong>진지상</strong>, 임금에게는 <strong>수라상</strong>.</li>
 <li><strong>기록으로 남아 있다</strong>: 1800년대 말 문헌 『시의전서(是議全書)』에 <strong>&#x27;반상식도&#x27;</strong> 라는 제목으로 9첩·7첩·5첩 반상의 음식 구성과 배치도가 그려져 있다.</li>
@@ -267,7 +296,7 @@
 <hr>
 <h2>⑥ 반찬의 종류 — 조리법으로 읽기</h2>
 <p>수십 종의 반찬은 <strong>조리법</strong>으로 묶으면 한눈에 들어온다.</p>
-<table><thead><tr>
+<div class="table-scroll"><table><thead><tr>
 <th>분류</th>
 <th>예시</th>
 <th>특징</th>
@@ -307,7 +336,7 @@
 <td>도라지무침·오이무침</td>
 <td>양념에 무친 즉석 반찬</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <blockquote><p>각 종류 심화는 → <strong>나물 시리즈(<a href="korea-namul-6types-matrix.html" class="xref">#876</a>~878)</strong>, <strong>장아찌 시리즈(<a href="korea-jangajji-6types-matrix.html" class="xref">#867</a>~869)</strong>, <strong>전 매트릭스</strong>, <strong>김치 cluster (<a href="korea-kimchi-cluster-index.html" class="xref">#836</a>)</strong></p></blockquote>
 <hr>
 <h2>⑦ 나눔과 리필 — 밥상 위의 정(情)</h2>
@@ -459,34 +488,7 @@
     <div><a href="korean-saju-fortune-culture.html" style="color:var(--red);">한국 사주·운세 문화 — 왜 한국인은 점이 아니라 사주를 볼까 &rarr;</a></div>
   </nav>
 
-  <section id="kc-related" style="display:none;margin:2.2rem 0 0.5rem;">
-    <h2 style="font-size:1.1rem;margin-bottom:0.8rem;">관련 가이드</h2>
-    <div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"></div>
-  </section>
-  <script>
-  // related guides — 같은 카테고리 최신 6편 (contents.json fetch·언어 suffix 자동, 2026-07-04)
-  (function() {
-    var m = location.pathname.match(/\/content\/(.+?)(\.en|\.zh|\.ja)?\.html$/);
-    if (!m) return;
-    var slug = m[1], suf = m[2] || '';
-    fetch('../data/contents.json').then(function(r) { return r.json(); }).then(function(items) {
-      var me = null;
-      for (var i = 0; i < items.length; i++) { if (items[i].slug === slug) { me = items[i]; break; } }
-      if (!me) return;
-      var pool = items.filter(function(x) { return x.slug !== slug && x.category === me.category; });
-      pool.sort(function(a, b) { return (parseInt(b.id, 10) || 0) - (parseInt(a.id, 10) || 0); });
-      var picks = pool.slice(0, 6);
-      if (!picks.length) return;
-      document.getElementById('kc-related-grid').innerHTML = picks.map(function(x) {
-        var t = suf ? (x.title_en || x.title_kr) : (x.title_kr || x.title_en);
-        var ok = suf === '' || (suf === '.en' ? x.en_available : (suf === '.zh' ? x.cn_available : x.jp_available));
-        var href = x.slug + (ok ? suf : '') + '.html';
-        return '<a href="' + href + '" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">' + t + '</a>';
-      }).join('');
-      document.getElementById('kc-related').style.display = 'block';
-    }).catch(function() {});
-  })();
-  </script>
+  <section id="kc-related" style="margin:2.2rem 0 0.5rem;"><h2 style="font-size:1.1rem;margin-bottom:0.8rem;">관련 가이드</h2><div id="kc-related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;"><a href="royal-palace-autumn-nights.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">궁궐의 가을밤 — 별빛야행·달빛기행·궁중문화축전, 예약 없이는 못 들어가는 프로그램 총정리</a><a href="seoul-fireworks-festival.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">서울세계불꽃축제 2026 — 9월 5일 여의도, 100만 인파 속에서 명당 잡는 법</a><a href="seoul-architecture-eras.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">서울 건축 시대 산책 — 전통·근대·현대 15선 + 건축 감상 렌즈</a><a href="korea-kpop-fansign-videocall.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">외국인 K-pop 팬사인회·영상통화 응모 가이드 — 음반 응모·영통</a><a href="korea-idol-birthday-cafe.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">외국인 아이돌 생일카페 가이드 — 생카·컵슬리브·서포트</a><a href="korea-kpop-music-show-taping.html" style="display:block;padding:12px 14px;border:1px solid rgba(128,128,128,.35);border-radius:10px;text-decoration:none;color:inherit;font-size:0.9rem;line-height:1.45;">외국인 K-pop 음악방송 방청 가이드 — 인기가요·엠카·뮤뱅 사전녹화</a></div></section>
   <!-- kc-comments -->
   <section id="kc-comments" style="margin:2.5rem 0 0.5rem;">
     <h2>댓글</h2>
