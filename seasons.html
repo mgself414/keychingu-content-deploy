@@ -32,6 +32,23 @@
     .pdf-list a { display: inline-block; margin: 4px 10px 4px 0; font-size: 13.5px; color: #218CCC; font-weight: 600; }
   </style>
   <link rel="icon" href="./favicon.ico" sizes="any">
+<!-- theme-boot -->
+<script>
+/* 테마 부트스트랩 — 2026-08-31 점검 M3(허브분).
+   main.css 의 다크 규칙은 전부 [data-theme="dark"] 스코프이고 CSS 에
+   prefers-color-scheme 미디어쿼리가 없어, 속성을 여기서 달아줘야 한다.
+   paint 전에 끝나야 깜빡임이 없으므로 head 안에서 동기 실행.
+   토글 버튼이 있는 허브 10p 는 자체 스크립트를 이미 갖고 있어 건드리지 않는다. */
+(function () {
+  try {
+    var s = localStorage.getItem('kc_theme');
+    if (s === 'dark' || (!s && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  } catch (e) {}
+})();
+</script>
+<!-- /theme-boot -->
 </head>
 <body style="--meta-accent:#FAAD19;--meta-accent-text:#986709">
 
