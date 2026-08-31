@@ -1,7 +1,0 @@
-{
-  "tool_name": "Bash",
-  "tool_input_preview": "{\"command\":\"cd \\\"c:/Users/USER/OneDrive/최근작업파일/daiso00/keychingu-content-deploy\\\" && gh run rerun 28649978704 --failed 2>&1 | head -3 && echo \\\"재실행 트리거됨, 대기...\\\" && sleep 8 && gh run list --limit 2 --...",
-  "error": "Exit code 1\n재실행 트리거됨, 대기...\nfailed to parse jq expression (line 1, column 51)\n    .[] | \"\\(.databaseId) \\(.status) \\(.conclusion // \\\"-\\\")\"\n                                                      ^  unexpected token \"\\\\\"",
-  "timestamp": "2026-07-03T09:00:08.467Z",
-  "retry_count": 1
-}
