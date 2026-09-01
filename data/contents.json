@@ -31179,5 +31179,26 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
+  },
+  {
+    "id": "1338",
+    "slug": "korea-restaurant-reviews",
+    "title_kr": "별점 없는 나라에서 맛집 찾기 — 한국 리뷰 읽는 법",
+    "title_en": "Finding Great Food in a Country Without Star Ratings — How to Read Korean Reviews",
+    "category": "B",
+    "tags": [
+      "foreign-tourist",
+      "restaurant",
+      "naver",
+      "reviews",
+      "apps"
+    ],
+    "summary_kr": "구글맵·미슐랭·별점 플레이북은 한국에서 통하지 않는다. 별점을 없앤 2021년 네이버 개편, 영수증 인증 방문자리뷰 vs 협찬 블로그리뷰 판별, 키워드 리뷰 해독과 5분 검증 체크리스트까지 — 한국 맛집 발견의 진짜 규칙.",
+    "summary_en": "Your Google Maps and star-rating playbook fails in Korea. The 2021 Naver reform that abolished stars, receipt-verified visitor reviews vs sponsored blog posts, keyword-review decoding, and a 5-minute vetting checklist — the real rules of finding food in Korea.",
+    "date_published": "2026-09-01",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]
