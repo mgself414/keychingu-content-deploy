@@ -31158,5 +31158,26 @@
     "title_zh": "首尔书空间指南 — 从13m书墙到旧书小巷，读不懂韩文也成立的理由",
     "summary_ja": "韓国語が読めなくても、ソウルの本空間は目的地になる。無料図書館・古本屋通り・街角ブックカフェ、本と出会う三つの道と、迷わないマナー文法。秋の屋内定番軸。",
     "summary_zh": "免费的13m通顶书墙图书馆、旧书店小巷、看风景的社区书店咖啡厅——首尔的书空间不必读懂韩文也成立。三种打开方式，外加书店咖啡厅基本礼仪，秋季室内行程首选。"
+  },
+  {
+    "id": "1337",
+    "slug": "korea-phone-reservation",
+    "title_kr": "한국 예약의 벽 넘기 — 전화로만 받는 가게, 한국 번호 없는 나",
+    "title_en": "Breaking Korea's Reservation Wall — Phone-Only Shops Without a Korean Number",
+    "category": "B",
+    "tags": [
+      "foreign-tourist",
+      "reservation",
+      "catchtable",
+      "naver",
+      "etiquette"
+    ],
+    "summary_kr": "전화로만 받는 노포·미용실, 한국 번호를 요구하는 앱 — 예약 삼중 장벽의 경로별 공략. 캐치테이블 글로벌 셋업, 네이버 계정 장벽 대응, 콘시어지 대리 전화 4단 공략과 노쇼 매너까지.",
+    "summary_en": "Phone-only shops, apps that demand a Korean number — a route-by-route playbook for Korea's triple reservation wall. CatchTable Global setup, the Naver account trap, the 4-step plan for phone-only places, and no-show manners.",
+    "date_published": "2026-09-01",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]
