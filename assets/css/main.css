@@ -1322,3 +1322,8 @@ article blockquote p { margin: 0; }
   border-bottom: 1px dotted var(--blue, #218CCC);
 }
 a.xref:hover { border-bottom-style: solid; }
+
+/* Seoul Alley Walks 코스 라인맵 (2026-09-03 시각 지도 게이트) — 언어중립 SVG, currentColor로 다크 호환 */
+.alley-map { margin: 1.2rem 0 1.6rem; padding: 12px 8px 4px; background: var(--bg-zone, #F4F2EF); border-radius: var(--radius, 14px); color: var(--text, #020304); }
+.alley-map svg { width: 100%; height: auto; display: block; }
+[data-theme="dark"] .alley-map { background: #1a1f26; }
