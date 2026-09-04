@@ -31462,5 +31462,26 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
+  },
+  {
+    "id": "1348",
+    "slug": "jeju-local-eats",
+    "title_kr": "제주는 도민을 따라가면 된다 — 도민 맛집과 오일시장",
+    "title_en": "On Jeju, Follow the Locals — Resident Eateries and the Five-Day Market",
+    "category": "B",
+    "tags": [
+      "foreign-tourist",
+      "jeju",
+      "food",
+      "market",
+      "local"
+    ],
+    "summary_kr": "SNS 핫플 리스트를 버리고 도민의 미식 생태계로 — 전국 최대 제주민속오일시장(2·7일장) 공략, 어느 동네서든 통하는 도민 맛집 판별 5신호, 재료 소진 마감·점심 중심의 로컬 상권 매너까지.",
+    "summary_en": "Ditch the SNS hotspot list and enter Jeju's resident food ecosystem — how to time Korea's largest five-day market (days ending in 2 and 7), five signals that spot a locals' eatery in any neighborhood, and the manners of a lunch-first, sold-out-means-closed local economy.",
+    "date_published": "2026-09-04",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]
