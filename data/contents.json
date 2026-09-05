@@ -31483,5 +31483,29 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
+  },
+  {
+    "id": "1349",
+    "slug": "couple-ring-workshop",
+    "title_kr": "서울 커플 반지 만들기 체험 — 사지 말고 만들어 가는 기념품",
+    "title_en": "Make Your Own Couple Rings in Seoul — The Souvenir You Craft, Not Buy",
+    "category": "B",
+    "tags": [
+      "foreign-tourist",
+      "experience",
+      "couple",
+      "souvenir",
+      "workshop",
+      "myeongdong",
+      "hongdae",
+      "seongsu"
+    ],
+    "summary_kr": "외국인 여행자를 위한 반지 공방 원데이 클래스 가이드 — 체험 흐름 6단계, 명동·홍대·성수 지역별 공방 유형, 언어·예약 실전 팁",
+    "summary_en": "A first-timer guide to Seoul ring-making workshops - the 6-step process, Myeongdong/Hongdae/Seongsu studio types, and language & booking tips",
+    "date_published": "2026-09-05",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]
