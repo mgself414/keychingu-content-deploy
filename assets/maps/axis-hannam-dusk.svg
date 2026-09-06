@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 200" role="img" aria-label="Hannam dusk walk route diagram: Hannam Bridge north end up Hannam-daero past Leeum to the Namsan 1st Tunnel approach, 6 stops" class="alley-map-svg" font-family="Poppins,'Noto Sans KR',sans-serif">
+<path d="M44,100 Q107,74 170,100" fill="none" stroke="#218CCC" stroke-width="4" stroke-linecap="round"/>
+<rect x="83" y="121" width="48" height="24" rx="12" fill="#FAAD19"/>
+<text x="107" y="138" text-anchor="middle" font-size="12" font-weight="700" fill="#020304">🚶10′</text>
+<line x1="170" y1="100" x2="297" y2="100" stroke="#218CCC" stroke-width="4" stroke-linecap="round"/>
+<rect x="210" y="121" width="48" height="24" rx="12" fill="#FAAD19"/>
+<text x="234" y="138" text-anchor="middle" font-size="12" font-weight="700" fill="#020304">🚶8′</text>
+<line x1="297" y1="100" x2="423" y2="100" stroke="#218CCC" stroke-width="4" stroke-linecap="round"/>
+<rect x="336" y="121" width="48" height="24" rx="12" fill="#FAAD19"/>
+<text x="360" y="138" text-anchor="middle" font-size="12" font-weight="700" fill="#020304">🚶10′</text>
+<path d="M423,100 Q486,74 550,100" fill="none" stroke="#218CCC" stroke-width="4" stroke-linecap="round"/>
+<rect x="462" y="121" width="48" height="24" rx="12" fill="#FAAD19"/>
+<text x="486" y="138" text-anchor="middle" font-size="12" font-weight="700" fill="#020304">🚶15′</text>
+<line x1="550" y1="100" x2="676" y2="100" stroke="#218CCC" stroke-width="4" stroke-linecap="round"/>
+<rect x="589" y="121" width="48" height="24" rx="12" fill="#FAAD19"/>
+<text x="613" y="138" text-anchor="middle" font-size="12" font-weight="700" fill="#020304">🚶10′</text>
+<circle cx="44" cy="100" r="17" fill="#D94C53" stroke="#D94C53" stroke-width="3"/>
+<text x="44" y="106" text-anchor="middle" font-size="16" font-weight="800" fill="#fff">🚇</text>
+<circle cx="170" cy="100" r="17" fill="#fff" stroke="#D94C53" stroke-width="3"/>
+<text x="170" y="106" text-anchor="middle" font-size="16" font-weight="800" fill="#D94C53">①</text>
+<circle cx="297" cy="100" r="17" fill="#fff" stroke="#D94C53" stroke-width="3"/>
+<text x="297" y="106" text-anchor="middle" font-size="16" font-weight="800" fill="#D94C53">②</text>
+<circle cx="423" cy="100" r="17" fill="#fff" stroke="#D94C53" stroke-width="3"/>
+<text x="423" y="106" text-anchor="middle" font-size="16" font-weight="800" fill="#D94C53">③</text>
+<circle cx="550" cy="100" r="17" fill="#fff" stroke="#D94C53" stroke-width="3"/>
+<text x="550" y="106" text-anchor="middle" font-size="16" font-weight="800" fill="#D94C53">④</text>
+<circle cx="676" cy="100" r="17" fill="#fff" stroke="#D94C53" stroke-width="3"/>
+<text x="676" y="106" text-anchor="middle" font-size="16" font-weight="800" fill="#D94C53">⑤</text>
+<text x="44" y="186" font-size="12" fill="currentColor" opacity="0.75">⏱ 2h · ⛰ ↗↗</text>
+<text x="676" y="186" text-anchor="end" font-size="11" fill="currentColor" opacity="0.55">Seoul N-S Axis · KeyChinGu</text>
+</svg>

@@ -138,7 +138,7 @@
     "gu": "서초구",
     "hero": "외국인 거주 1번지 + 서래마을(프랑스인)·MAILLET·반포 한강·잠수교·달빛무지개분수",
     "signature": ["서래마을 (프랑스 학교 LFS)", "MAILLET", "잠수교", "달빛무지개분수", "예술의전당"],
-    "content_tags": ["seocho", "seorae"],
+    "content_tags": ["seocho", "seorae", "yangjae"],
     "content_slugs": ["seocho-seorae"],
     "subway": "2·3호선 교대역 / 7호선 반포역·고속터미널·내방역"
   },
