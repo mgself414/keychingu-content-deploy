@@ -31530,5 +31530,48 @@
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false
+  },
+  {
+    "id": "1351",
+    "slug": "seoul-lp-bar-record-shop",
+    "title_kr": "서울 LP바·레코드샵 투어 — 신청곡 한 장으로 완성되는 밤",
+    "title_en": "Seoul LP Bars & Record Shops — Nights Built on a Song Request",
+    "category": "B",
+    "tags": [
+      "foreign-tourist",
+      "nightlife",
+      "music",
+      "euljiro",
+      "hongdae",
+      "shopping"
+    ],
+    "summary_kr": "을지로 LP바부터 홍대·연남 레코드샵까지 — 신청곡 문화·이용 매너·바이닐 구매 팁으로 정리한 서울 바이닐 신 입문",
+    "summary_en": "Euljiro listening bars to Hongdae record digging - song-request culture, etiquette, and vinyl souvenir tips for Seoul's vinyl scene",
+    "date_published": "2026-09-06",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
+  },
+  {
+    "id": "1352",
+    "slug": "korea-medication-customs",
+    "title_kr": "한국 입국 시 의약품 반입 가이드 — 내 약, 가져가도 되나요?",
+    "title_en": "Bringing Your Medication into Korea — The 3-Category Customs Guide",
+    "category": "H",
+    "tags": [
+      "foreign-tourist",
+      "practical",
+      "customs",
+      "health",
+      "arrival"
+    ],
+    "summary_kr": "일반 상비약·처방약·마약류(향정신성) 3분류 체크리스트 — 식약처 사전 승인 절차·영문 처방전·세관 신고 실전 (의료·법률 조언 아님)",
+    "summary_en": "OTC, prescription, and controlled-substance rules for entering Korea - MFDS pre-approval, documentation, and customs declaration (not medical advice)",
+    "date_published": "2026-09-06",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false
   }
 ]
