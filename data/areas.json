@@ -303,7 +303,7 @@
     "gu": "성동구",
     "hero": "한국 1번지 5중 환승·정육 시장 + 왕십리역·마장축산물시장·응봉산·옥수 한강",
     "signature": ["왕십리역 (5중 환승)", "마장축산물시장 (1961)", "응봉산 야경", "한양대학교"],
-    "content_tags": ["seongdong", "wangsimni", "majang"],
+    "content_tags": ["seongdong", "wangsimni", "majang", "oksu"],
     "content_slugs": ["seongdong-wangsimni"],
     "subway": "2·5호선 왕십리·KTX·경의중앙선·수인분당선 / 3호선 옥수·금호"
   }
