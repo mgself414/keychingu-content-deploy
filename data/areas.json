@@ -17,7 +17,7 @@
     "gu": "종로구",
     "hero": "한국 전통·궁궐·한옥 1번지 + 경복궁·창덕궁·북촌 한옥마을·익선동 한옥 카페·인사동",
     "signature": ["경복궁", "창덕궁", "북촌 한옥마을", "익선동 한옥 골목", "인사동", "광장시장"],
-    "content_tags": ["jongno", "bukchon", "ikseondong", "anguk", "seochon"],
+    "content_tags": ["jongno", "bukchon", "ikseondong", "anguk", "seochon", "gwanghwamun"],
     "content_slugs": ["jongno", "bukchon", "jongno-cafe", "jongno-bakery", "jongno-dessert", "jongno-bar", "jongno-brunch", "gwangjang-food", "gwangjang-vintage", "dongmyo"],
     "subway": "1·3·5호선 종로3가역 / 3호선 안국역 / 5호선 광화문역"
   },
@@ -116,7 +116,7 @@
     "gu": "서대문구",
     "hero": "한국 대학·청춘 1번지 + 이화여대·연세대·MZ 카페·설빙 본점",
     "signature": ["이화여대 캠퍼스", "연세대 신촌 캠퍼스", "이화 100주년기념박물관"],
-    "content_tags": ["sinchon", "ewha", "yonsei"],
+    "content_tags": ["sinchon", "ewha", "yonsei", "seodaemun", "dongnimmun"],
     "content_slugs": ["sinchon-ewha"],
     "subway": "2호선 신촌역·이대역·홍대입구역"
   },
@@ -127,7 +127,7 @@
     "gu": "동대문구",
     "hero": "한국 디자인·야간 쇼핑 1번지 + DDP·두산타워·평화시장·청계천",
     "signature": ["DDP (Zaha Hadid)", "두산타워", "평화시장", "청계천"],
-    "content_tags": ["ddp", "dongdaemun"],
+    "content_tags": ["ddp", "dongdaemun", "cheongnyangni", "jegidong"],
     "content_slugs": ["ddp-dongdaemun"],
     "subway": "2·4·5호선 동대문역사문화공원역 / 1·4호선 동대문역"
   },
