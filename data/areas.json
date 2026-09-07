@@ -29,7 +29,7 @@
     "hero": "한국 럭셔리·쇼핑 1번지 + 명품·면세·MZ 핫플·강남 술집·압구정 로데오",
     "signature": ["코엑스몰", "스타필드 코엑스", "도산공원", "압구정 로데오", "강남대로"],
     "content_tags": ["gangnam", "dosan", "apgujeong", "sinsa"],
-    "content_slugs": ["gangnam-cafe", "gangnam-korean", "gangnam-western", "gangnam-bar"],
+    "content_slugs": ["gangnam-cafe", "gangnam-korean", "gangnam-western", "gangnam-bar", "garosugil", "garosu-shopping"],
     "subway": "2호선 강남역·역삼·삼성 / 3호선 신사·압구정·도산공원 / 9호선 신논현·언주"
   },
   {
