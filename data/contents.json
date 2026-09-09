@@ -32112,5 +32112,57 @@
     "title_zh": "像本地人一样游顺天 — 逢2和7的五日集、汤饭胡同与芦苇的黄金时刻",
     "summary_ja": "庭園の入場券の先にある順天 — アレッチャン五日市(2・7の日)・ウッチャンクッパ横丁・順天湾の葦の夕暮れ・楽安邑城の居酒屋まで、ローカルのリズムで一日を設計",
     "summary_zh": "超越花园门票的顺天 — 下市集五日集(逢2·7)、上市集汤饭胡同、顺天湾芦苇日落与乐安邑城酒馆,按本地节奏安排一天"
+  },
+  {
+    "id": "1369",
+    "slug": "gyeongju-autumn-festival-week",
+    "title_kr": "경주 가을 축제 위크 — 9월 중순부터 3주, 밤 행사가 겹쳐서 온다",
+    "title_en": "Gyeongju's Autumn Festival Weeks — Three Weeks When the Nights Stack Up",
+    "category": "B",
+    "tags": [
+      "foreign-tourist",
+      "gyeongju",
+      "festival",
+      "night",
+      "seasonal",
+      "autumn"
+    ],
+    "summary_kr": "2026 한시 레이어 캘린더 — 대릉원 미디어아트(~9/27)·국가유산야행(9/18~20, 블랙이글스 에어쇼)·첨성대 핑크뮬리·신라문화제(10/9~11, 드론쇼는 금·토만), 상시 야경 동선(#1366) 위에 얹는 법",
+    "summary_en": "Gyeongju's limited-run autumn layer for 2026: Daereungwon media art (through Sep 27), Heritage Night Walk (Sep 18-20 with a Black Eagles airshow), pink muhly at Cheomseongdae, and the Silla Culture Festival (Oct 9-11 - drone show Fri-Sat only)",
+    "date_published": "2026-09-09",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false,
+    "title_ja": "慶州・秋の祭りウィーク — 9月中旬から3週間、夜のイベントが重なって来る",
+    "title_zh": "庆州秋季庆典周 — 从9月中旬起的三周,夜间活动接连不断",
+    "summary_ja": "2026年限定レイヤーのカレンダー — 大陵苑メディアアート(~9/27)・国家遺産夜行(9/18~20、ブラックイーグルス・エアショー)・瞻星台ピンクミューリー・新羅文化祭(10/9~11、ドローンショーは金・土のみ)を常設ナイトルート(#1366)に重ねる方法",
+    "summary_zh": "2026年限定的秋季日历 — 大陵苑媒体艺术(至9/27)、国家遗产夜行(9/18~20,黑鹰特技飞行表演)、瞻星台粉黛乱子草、新罗文化节(10/9~11,无人机秀仅周五周六),叠加在常设夜景路线(#1366)之上"
+  },
+  {
+    "id": "1370",
+    "slug": "gyeongju-silla-hanbok",
+    "title_kr": "경주 한복은 그 한복이 아니다 — 대릉원에서 입는 신라 한복",
+    "title_en": "Gyeongju's Hanbok Is a Different Hanbok — Wearing Silla Dress Among the Royal Tombs",
+    "category": "B",
+    "tags": [
+      "foreign-tourist",
+      "gyeongju",
+      "hanbok",
+      "silla",
+      "photo-spot",
+      "experience"
+    ],
+    "summary_kr": "서울·전주 한복은 조선 후기 양식 — 경주에서만 입는 신라 한복의 차이(실루엣·배경), 신라복 전문 렌탈샵 실명·가격표, 대릉원→첨성대→월정교 동선, 여름 비추 계절 팁",
+    "summary_en": "The hanbok you rented in Seoul is late-Joseon style - in Gyeongju you can wear Silla dynasty dress from a thousand years earlier. Specialist rental shops with prices, the tomb-to-bridge photo route, and why summer is a bad idea",
+    "date_published": "2026-09-09",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false,
+    "title_ja": "慶州の韓服は「あの韓服」ではない — 大陵苑で着る新羅韓服",
+    "title_zh": "庆州的韩服不是你穿过的那种 — 在大陵苑穿上新罗韩服",
+    "summary_ja": "ソウル・全州の韓服は朝鮮後期様式 — 慶州でだけ着られる新羅韓服の違い(シルエット・背景)、新羅服専門レンタル店の実名・料金表、大陵苑→瞻星台→月精橋の動線、夏は非推奨の季節ヒント",
+    "summary_zh": "首尔、全州的韩服是朝鲜后期样式 — 只有在庆州才能穿上一千年前的新罗韩服:轮廓与背景的差异、新罗服专门租赁店实名与价目表、大陵苑→瞻星台→月精桥动线,以及为什么夏天不建议"
   }
 ]
