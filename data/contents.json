@@ -32313,5 +32313,34 @@
     "summary_zh": "2026年9月1日，韩国两家高铁公司合二为一：SRT这个名字消失，水西出发的列车也成了KTX，应用只剩Korail Plus一个，票价平均下调10%。黄金路线需要三张票(首尔→庆州、庆州→釜山、釜山→首尔)：本篇给出所需时间、票价、市外大巴替代方案，算清KORAIL PASS划不划算，以及节假日买不到票时的处理顺序。以合并后第一个秋天为准。",
     "series": "korea-golden-route",
     "content_type": "route-course"
+  },
+  {
+    "id": "1375",
+    "slug": "seoul-october-festival-week",
+    "title_kr": "서울 10월 첫째 주 축제 위크 — 개천절 연휴 이틀, 강남 퍼레이드와 잠수교 미식로드가 붙어서 온다",
+    "title_en": "Seoul's First-Week-of-October Festival Weekend — Gangnam's Grand Parade and the Car-Free Jamsu Bridge Food Road, Back to Back",
+    "category": "B",
+    "tags": [
+      "foreign-tourist",
+      "seoul",
+      "festival",
+      "seasonal",
+      "autumn",
+      "hangang",
+      "gangnam",
+      "night",
+      "parade"
+    ],
+    "summary_kr": "2026 한시 캘린더 — 10/3(토·개천절) 강남페스티벌 그랜드 퍼레이드(도산대로 2km·피카츄 벌룬 피날레)·10/4(일) 차 없는 잠수교 '미식로드'(14~22시, 올해가 마지막 시즌)·10/1~11 고양 가을꽃축제·10/17~23 서울억새축제 프리뷰, 이틀 코스와 흔한 실수 3",
+    "summary_en": "Seoul's limited-run calendar for the first weekend of October 2026: the Gangnam Festival Grand Parade on Oct 3 (2 km of Dosan-daero, Pikachu balloon finale), the car-free Jamsu Bridge 'Food Road' on Oct 4 (2-10 PM, final season in this form), Goyang's autumn flower festival nearby, and a preview of the Seoul Silver Grass Festival (Oct 17-23), with a two-day route and three common mistakes",
+    "date_published": "2026-09-16",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "title_ja": "ソウル10月第1週の祭りウィーク — 開天節連休の2日間に江南パレードと潜水橋グルメロードが重なって来る",
+    "title_zh": "首尔10月第一周节庆周 — 开天节连休两天，江南游行与潜水桥美食路接踵而来",
+    "summary_ja": "2026年限定カレンダー — 10/3(土・開天節)江南フェスティバル グランドパレード(島山大路2km・ピカチュウバルーンのフィナーレ)・10/4(日)車のない潜水橋「グルメロード」(14〜22時、今の形では今年が最終シーズン)・10/1〜11高陽秋の花祭り・10/17〜23ソウルススキ祭りプレビュー、2日間コースとよくある失敗3つ",
+    "summary_zh": "2026年限定日历 — 10/3(周六·开天节)江南节大游行(岛山大路2km·皮卡丘气球压轴)、10/4(周日)无车潜水桥\"美食路\"(14~22点，现有形式今年为最后一季)、10/1~11高阳秋季花卉节、10/17~23首尔芒草节预告，两日路线与常见失误3则",
+    "instagram_posted": false
   }
 ]
