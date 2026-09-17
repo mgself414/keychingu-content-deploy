@@ -83,6 +83,12 @@
 </section>
 
 <section class="axis-section">
+  <h2>🍚 현지인 맛집 <span style="font-size:12px;opacity:.55" id="localpicks-count"></span></h2>
+  <p style="font-size:13px;opacity:.75;margin:-4px 0 12px">한국인 시청자가 댓글로 추천한 지방 밥집을 권역별로 — 존재·주소·업종만 네이버로 확인한 목록. 영업시간·가격은 당일 확인.</p>
+  <div class="meta-grid" id="localpicks-grid"></div>
+</section>
+
+<section class="axis-section">
   <h2>🌆 서울 전역 테마 가이드 <span style="font-size:12px;opacity:.55" id="seoulwide-count"></span></h2>
   <div class="meta-grid" id="seoulwide-grid"></div>
 </section>
@@ -119,6 +125,7 @@
       .catch(function() {});
   }
   render('regional-grid', 'regional-count', 'regional');
+  render('localpicks-grid', 'localpicks-count', 'local-picks');
   render('seoulwide-grid', 'seoulwide-count', 'seoul-wide');
 })();
 </script>
