@@ -78,7 +78,7 @@ a { color: inherit; text-decoration: none; }
   border-bottom: 1px solid var(--border);
   position: sticky; top: 0; z-index: 100;
 }
-.site-logo { height: 36px; }
+.site-logo { height: 36px; width: auto; } /* width:auto — 콘텐츠 페이지의 width=400 속성(CLS용)이 폭을 고정해 400×36으로 늘어나던 버그(2026-09-17) */
 .lang-switch {
   display: flex; gap: 4px;
 }
@@ -104,7 +104,7 @@ a { color: inherit; text-decoration: none; }
   padding: 64px 32px 48px;
   background: linear-gradient(180deg, var(--card-bg) 0%, var(--bg) 100%);
 }
-.hero-logo { height: 80px; margin-bottom: 20px; }
+.hero-logo { height: 80px; width: auto; margin-bottom: 20px; }
 .hero h1 {
   font-family: var(--serif);
   /* --text (테마 인지) — --black은 밝은 면 위 전용(cat-badge·new-badge). 2026-08-20 P4 */
