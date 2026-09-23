@@ -33139,5 +33139,63 @@
     "title_zh": "推婴儿车逛首尔 — 零慌张手册：地铁电梯100%·低地板公交·出租车安全座椅豁免·5个租借点·母婴室·婴儿车难走的街区",
     "summary_ja": "「ソウルはベビーカーがきつい?」への実戦回答 — 1駅1動線100%・ノンステップバス73%・タクシーはチャイルドシート取締り対象外・仁川空港無料レンタルなど交通4種の規定と落とし穴、レンタル5か所、授乳室検索ツール、ノーキッズゾーンの現実、抱っこ紐に切り替える街4つと楽な場所6つ、1日コース",
     "summary_zh": "“首尔推婴儿车吃力吗”的实战答案 — 一站一动线100%·低地板公交73%·出租车不查安全座椅·仁川机场免费租借等4种交通的规定与坑、5个租借点、母婴室查询工具、禁童区现实、该换背带的4个街区与好推的6个地方、一日路线"
+  },
+  {
+    "id": "1401",
+    "slug": "busan-japan-ferry-cruise",
+    "title_kr": "부산에서 배로 일본 가기, 크루즈로 부산 들어오기 — 당황 제로 매뉴얼: 2026 노선 4개 · 예매와 수속 마감 · 영도 크루즈터미널 연결",
+    "title_en": "Busan by Sea: Ferries to Japan and Cruise Arrivals — Zero-Panic Manual: the 4 Routes Still Running in 2026, Booking and Check-in Cutoffs, and the Two Cruise Terminals",
+    "category": "H",
+    "tags": [
+      "foreign-tourist",
+      "first-timer",
+      "howto",
+      "busan",
+      "ferry",
+      "japan",
+      "cruise"
+    ],
+    "summary_kr": "후쿠오카행 고속선(퀸비틀)은 2024년 12월 철수 — 2026년 9월 기준 실제 다니는 배만 정리: 뉴카멜리아 야간·주간편, 부관훼리, 팬스타 미라클, 대마도. 부산항 국제여객터미널 가는 법·성수기 예매·수속 마감 3시간·겨울 결항, 크루즈는 부산항대교 통과 여부로 북항/영도 터미널이 갈린다",
+    "summary_en": "The Fukuoka jetfoil is gone (December 2024) - here is what actually sails as of September 2026: New Camellia overnight and daytime, the Kampu Ferry to Shimonoseki, Panstar Miracle to Osaka, and Tsushima. How to reach Busan Port International Passenger Terminal, peak-season booking, the 3-hour check-in cutoff, winter cancellations, and why cruise ships dock at one of two terminals depending on whether they fit under Busan Harbor Bridge",
+    "date_published": "2026-09-23",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false,
+    "series": "korea-first-timer",
+    "content_type": "howto-manual",
+    "title_ja": "釜山から船で日本へ、クルーズで釜山へ — 慌てないマニュアル: 2026年に運航中の4航路・予約と手続き締切・影島クルーズターミナルへの行き方",
+    "title_zh": "从釜山坐船去日本、坐邮轮到釜山 — 零慌张手册：2026年仍在运营的4条航线·订票与手续截止·影岛邮轮码头衔接",
+    "summary_ja": "福岡行き高速船(クイーンビートル)は2024年12月に撤退 — 2026年9月時点で実際に運航している船だけを整理: ニューかめりあ夜行・昼行、関釜フェリー、パンスターミラクル、対馬。釜山港国際旅客ターミナルへの行き方・繁忙期予約・出港3時間前の手続き締切・冬の欠航、クルーズは釜山港大橋を通過できるかで北港/影島ターミナルが分かれる",
+    "summary_zh": "去福冈的高速船(皇后甲壳虫)已于2024年12月退出 — 只整理2026年9月仍在跑的船：新卡美利亚夜航·日航、釜关渡轮、泛星奇迹号、对马岛。釜山港国际客运码头怎么去·旺季订票·开船前3小时截止·冬季停航，邮轮则按能否通过釜山港大桥分靠北港或影岛码头"
+  },
+  {
+    "id": "1402",
+    "slug": "jeju-taxi-tour",
+    "title_kr": "제주 택시투어·전세택시 — 당황 제로 매뉴얼: 운전 안 해도 되는 제주, 공식 제도 2개 요금표 · 예약 창구 · 공항 픽업 · 하루 코스 · 렌터카 함정",
+    "title_en": "Jeju Without Driving: Taxi Tours and Private Car Charters — Zero-Panic Manual: Two Official Fare Tables, Where to Book, Airport Pickup, One-Day Routes, and the Rental-Car Traps",
+    "category": "H",
+    "tags": [
+      "foreign-tourist",
+      "first-timer",
+      "howto",
+      "jeju",
+      "taxi",
+      "senior",
+      "family"
+    ],
+    "summary_kr": "포럼의 개인 기사 번호 대신 도가 운영하는 공식 관광택시 2제도(외국어 전담 Jeju Global Taxi 8시간 요금표·관광행복택시 3/5/9시간 요금표)와 KKday·Klook·카카오T 벤티 채널, 일반 택시 미터 요금, 공항→서귀포, 동부·서부·남부 하루 코스, 우도는 택시 반입 불가, 렌터카 외국인 조건 3(제네바협약 국제면허·본인 신용카드·자차보험)",
+    "summary_en": "Skip the forum phone numbers - Jeju runs two official tourist-taxi schemes with published fare tables (Jeju Global Taxi with English, Chinese and Japanese drivers, and the cheaper Tourism Happy Taxi), plus KKday, Klook and Kakao T Venti. Regular meter fares, airport to Seogwipo, east, west and south one-day routes, why taxis cannot enter Udo, and the 3 rental-car conditions that trip up foreigners",
+    "date_published": "2026-09-23",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false,
+    "series": "korea-first-timer",
+    "content_type": "howto-manual",
+    "title_ja": "済州タクシーツアー・チャーター — 慌てないマニュアル: 運転しなくていい済州、公式2制度の料金表・予約窓口・空港ピックアップ・1日コース・レンタカーの落とし穴",
+    "title_zh": "济州包车·出租车一日游 — 零慌张手册：不开车也能玩济州，两套官方价目表·预订渠道·机场接机·一日路线·租车的坑",
+    "summary_ja": "掲示板の個人運転手の番号ではなく、道が運営する公式観光タクシー2制度(外国語専門Jeju Global Taxi 8時間料金表・観光幸福タクシー3/5/9時間料金表)とKKday・Klook・カカオTベンティ、一般タクシーのメーター料金、空港→西帰浦、東部・西部・南部の1日コース、牛島はタクシー乗り入れ不可、レンタカーで外国人が引っかかる条件3つ",
+    "summary_zh": "别再找论坛里的私人司机电话 — 济州道官方运营两套观光出租车制度(外语专属Jeju Global Taxi 8小时价目表·观光幸福出租车3/5/9小时价目表)，加上KKday·Klook·Kakao T Venti，普通出租车计价、机场→西归浦、东部·西部·南部一日路线、牛岛不允许出租车进入，以及外国人租车会卡住的3个条件"
   }
 ]
