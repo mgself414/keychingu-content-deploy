@@ -33081,5 +33081,63 @@
     "title_zh": "怕辣也能吃 — 不辣的韩餐地图：写给孩子·长辈·辣度新手的20道菜与点单用语",
     "summary_ja": "「韓国料理=全部辛い」という誤解を解く実践版 — スープ・ご飯・肉・おかず別に最初から辛くないメニュー20、色にだまされる落とし穴3(赤い=辛いとは限らず、白い=安全とも限らない)、通じる注文フレーズ5、子ども向けメニューが少ない韓国で子どもに食べさせるもの",
     "summary_zh": "打破“韩餐全是辣的”误解的实战版 — 按汤·饭·肉·小菜分类的20道本来就不辣的菜、3个被颜色骗到的坑(红的不一定辣，白的不一定不辣)、真正管用的5句点单用语，以及在几乎没有儿童菜单的韩国给孩子吃什么"
+  },
+  {
+    "id": "1399",
+    "slug": "korea-hotel-under-19",
+    "title_kr": "18·19살 여행자, 한국 호텔에 묵을 수 있나요? — 당황 제로 매뉴얼: 청소년보호법 기준 · 보호자 동의서 · 되는 숙소와 안 되는 숙소",
+    "title_en": "Can 18- and 19-Year-Olds Stay in Korean Hotels? Zero-Panic Manual — the Age-19 Rule, Parental Consent Forms, and Which Places Say Yes",
+    "category": "H",
+    "tags": [
+      "foreign-tourist",
+      "first-timer",
+      "howto",
+      "hotel",
+      "minors",
+      "kpop",
+      "japan"
+    ],
+    "summary_kr": "일본에선 18살이 성인이지만 한국 숙박은 만 19세 기준 — 태어난 해로 3초 판정하는 표, 이성 혼숙 금지 법 두 줄, 토요코인·위홈·Airbnb·야놀자·대형 체인별 실제 정책, 동의서 5항목, 예약 전 체크리스트. 규정 회피 요령 없음",
+    "summary_en": "Adult at 18 back home, still a minor at Korean hotels - Korea draws the line at 19 by birth year. A 3-second birth-year table, the two laws that matter, real policies at Toyoko Inn, Wehome, Airbnb, Yanolja and big chains, the 5 items every consent form needs, and a pre-booking checklist",
+    "date_published": "2026-09-23",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false,
+    "series": "korea-first-timer",
+    "content_type": "howto-manual",
+    "title_ja": "18歳・19歳の旅行者、韓国のホテルに泊まれる? — 慌てないマニュアル: 青少年保護法の基準・保護者同意書・泊まれる宿と泊まれない宿",
+    "title_zh": "18·19岁旅行者能住韩国酒店吗？— 零慌张手册：青少年保护法标准·监护人同意书·哪些住宿可以、哪些不行",
+    "summary_ja": "日本では18歳で成人でも、韓国の宿泊は満19歳が基準 — 生まれ年で3秒判定する表、異性混宿禁止の法律2行、東横イン・Wehome・Airbnb・ヤノルジャ・大型チェーン別の実際の方針、同意書の5項目、予約前チェックリスト。規定回避のコツは一切なし",
+    "summary_zh": "在日本18岁已成年，但韩国住宿以满19岁为界 — 按出生年份3秒判定表、异性混宿禁止的两条法律、东横INN·Wehome·Airbnb·Yanolja·大型连锁的真实政策、同意书必备5项、预订前清单。不含任何规避规定的技巧"
+  },
+  {
+    "id": "1400",
+    "slug": "seoul-stroller-guide",
+    "title_kr": "유모차로 서울 다니기 — 당황 제로 매뉴얼: 지하철 엘리베이터 100% · 저상버스 · 택시 카시트 예외 · 대여 5곳 · 수유실 · 유모차가 힘든 동네",
+    "title_en": "Seoul with a Stroller: Zero-Panic Manual — 100% Subway Elevators, Low-Floor Buses, the Taxi Car-Seat Exception, 5 Rental Spots, Nursing Rooms, and the Neighborhoods to Skip",
+    "category": "H",
+    "tags": [
+      "foreign-tourist",
+      "first-timer",
+      "howto",
+      "family",
+      "kids",
+      "stroller",
+      "subway"
+    ],
+    "summary_kr": "서울은 유모차가 힘드냐는 질문의 실전 답 — 1역 1동선 100%·저상버스 73%·택시 카시트 단속 제외·인천공항 무료 대여 등 교통 4종 규정과 함정, 대여 5곳, 수유실 검색 도구, 노키즈존 현실, 아기띠를 꺼내야 하는 동네 4곳과 편한 곳 6곳, 하루 코스",
+    "summary_en": "Is Seoul stroller-friendly? Yes, if you pick your neighborhoods - every Seoul Metro station now has a step-free elevator route, 73% of buses are low-floor, taxis are exempt from the car-seat rule, Incheon lends strollers for free. Plus 5 rental spots, how to find nursing rooms, the no-kids-zone reality, 4 neighborhoods for the carrier and 6 for the stroller, and a flat one-day route",
+    "date_published": "2026-09-23",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false,
+    "series": "korea-first-timer",
+    "content_type": "howto-manual",
+    "title_ja": "ベビーカーでソウルを回る — 慌てないマニュアル: 地下鉄エレベーター100%・ノンステップバス・タクシーのチャイルドシート例外・レンタル5か所・授乳室・ベビーカーがきつい街",
+    "title_zh": "推婴儿车逛首尔 — 零慌张手册：地铁电梯100%·低地板公交·出租车安全座椅豁免·5个租借点·母婴室·婴儿车难走的街区",
+    "summary_ja": "「ソウルはベビーカーがきつい?」への実戦回答 — 1駅1動線100%・ノンステップバス73%・タクシーはチャイルドシート取締り対象外・仁川空港無料レンタルなど交通4種の規定と落とし穴、レンタル5か所、授乳室検索ツール、ノーキッズゾーンの現実、抱っこ紐に切り替える街4つと楽な場所6つ、1日コース",
+    "summary_zh": "“首尔推婴儿车吃力吗”的实战答案 — 一站一动线100%·低地板公交73%·出租车不查安全座椅·仁川机场免费租借等4种交通的规定与坑、5个租借点、母婴室查询工具、禁童区现实、该换背带的4个街区与好推的6个地方、一日路线"
   }
 ]
