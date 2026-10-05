@@ -5054,8 +5054,8 @@
       "emergency",
       "pharmacy"
     ],
-    "summary_kr": "외국인 안전 1순위 응급의료·보험 12선 — 119(응급)·1339(의료 안내)·1345(외국인 종합) + 외국인 친화 ER(서울대·삼성·아산·세브란스) + 24h 약국 + 외국인 의료 보험 Travel Insurance + 의료 통역 (영·중·일·아랍·러시아)",
-    "summary_en": "Korea Foreigner Emergency 12-pick — 119 (emergency multilingual 24h) + 1339 (medical advice) + 1345 (foreigner help) + 112 (police) + Foreigner-friendly ERs (SNU/Samsung/Asan/Severance) + 24h pharmacies + Travel insurance + Medical interpretation in EN/CN/JP/Arabic/Russian",
+    "summary_kr": "외국인 안전 1순위 응급의료·보험 12선 — 119(응급)·1339(감염병 상담)·1345(외국인 종합) + 외국인 친화 ER(서울대·삼성·아산·세브란스) + 24h 약국 + 외국인 의료 보험 Travel Insurance + 의료 통역 (영·중·일·아랍·러시아)",
+    "summary_en": "Korea Foreigner Emergency 12-pick — 119 (emergency multilingual 24h) + 1339 (infectious disease hotline) + 1345 (foreigner help) + 112 (police) + Foreigner-friendly ERs (SNU/Samsung/Asan/Severance) + 24h pharmacies + Travel insurance + Medical interpretation in EN/CN/JP/Arabic/Russian",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
@@ -5063,8 +5063,8 @@
     "date_published": "2026-05-19",
     "title_ja": "外国人向け緊急医療保険完全ガイド",
     "title_zh": "外国人紧急医疗保险全攻略",
-    "summary_ja": "外国人の安全最優先、応急医療・保険 12選。119（緊急）、1339（医療案内）、1345（外国人総合）、外国人向けER（ソウル大・サムスン・アサン・セブランス）、24時間薬局、外国人医療保険、旅行保険、医療通訳（英・中・日・アラビア・ロシア）など。",
-    "summary_zh": "119急救·1339医疗咨询·1345外国人热线+外国人友好急诊(首尔大·三星·峨山·世福兰斯)+24小时药房与多语种医疗翻译12选。"
+    "summary_ja": "外国人の安全最優先、応急医療・保険 12選。119（緊急）、1339（感染症相談）、1345（外国人総合）、外国人向けER（ソウル大・サムスン・アサン・セブランス）、24時間薬局、外国人医療保険、旅行保険、医療通訳（英・中・日・アラビア・ロシア）など。",
+    "summary_zh": "119急救·1339传染病咨询·1345外国人热线+外国人友好急诊(首尔大·三星·峨山·世福兰斯)+24小时药房与多语种医疗翻译12选。"
   },
   {
     "id": "252",
@@ -12138,8 +12138,8 @@
       "gangnam",
       "itaewon"
     ],
-    "summary_kr": "외국인 약국·헬스케어 12 매트릭스 (#401·#405·#178 후속) — 24h 약국 cluster(강남 홍대 이태원 #142 #138 #144 영어 OK)·편의점 안전상비의약품 13종·영어 OK 약국(강남 이태원) + 외국인 보험(NHIS 의무 6개월 민간 여행자)·의료 통역 1339(영어 OK 24h) + 외국인 치과 cluster(강남 이태원 #142 #144 4.8)·임플란트 교정 미백(강남 럭셔리)·안과 라식 라섹(의료관광) + 정신건강 상담(영어 OK)·한의원 침 한방(#509 #357)·산부인과 소아과·KTO Klook 패키지·응급 1339 112 119·백신 예방접종·당뇨 고혈압 만성질환 거주(#252)",
-    "summary_en": "Foreigner Pharmacy·Healthcare Deep Dive 12 Matrix (extends #401·#405·#178) — 24h pharmacy cluster (Gangnam/Hongdae/Itaewon #142/#138/#144 English OK) + Convenience store safe medicines 13 types + English OK pharmacies (Gangnam/Itaewon) + Foreigner insurance (NHIS mandatory 6+ months/private/travel) + Medical translation 1339 (English OK 24h) + Foreigner dental cluster (Gangnam/Itaewon #142/#144 rating 4.8) + Implant/orthodontics/whitening (Gangnam luxury) + Ophthalmology/LASIK (medical tourism) + Mental health counseling (English OK) + Oriental medicine/acupuncture (#509/#357) + OB-GYN/pediatrics + KTO/Klook packages + Emergency 1339/112/119 + Vaccination + Chronic disease (diabetes/hypertension) for residents (#252)",
+    "summary_kr": "외국인 약국·헬스케어 12 매트릭스 (#401·#405·#178 후속) — 24h 약국 cluster(강남 홍대 이태원 #142 #138 #144 영어 OK)·편의점 안전상비의약품 13종·영어 OK 약국(강남 이태원) + 외국인 보험(NHIS 의무 6개월 민간 여행자)·통역 1330·1345 + 외국인 치과 cluster(강남 이태원 #142 #144 4.8)·임플란트 교정 미백(강남 럭셔리)·안과 라식 라섹(의료관광) + 정신건강 상담(영어 OK)·한의원 침 한방(#509 #357)·산부인과 소아과·KTO Klook 패키지·응급 119 112·백신 예방접종·당뇨 고혈압 만성질환 거주(#252)",
+    "summary_en": "Foreigner Pharmacy·Healthcare Deep Dive 12 Matrix (extends #401·#405·#178) — 24h pharmacy cluster (Gangnam/Hongdae/Itaewon #142/#138/#144 English OK) + Convenience store safe medicines 13 types + English OK pharmacies (Gangnam/Itaewon) + Foreigner insurance (NHIS mandatory 6+ months/private/travel) + Interpretation 1330·1345 + Foreigner dental cluster (Gangnam/Itaewon #142/#144 rating 4.8) + Implant/orthodontics/whitening (Gangnam luxury) + Ophthalmology/LASIK (medical tourism) + Mental health counseling (English OK) + Oriental medicine/acupuncture (#509/#357) + OB-GYN/pediatrics + KTO/Klook packages + Emergency 1339/112/119 + Vaccination + Chronic disease (diabetes/hypertension) for residents (#252)",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
@@ -12147,8 +12147,8 @@
     "date_published": "2026-05-28",
     "title_zh": "外国人药店医疗保健深度探索",
     "title_ja": "外国人 薬局・ヘルスケア ディープダイブ",
-    "summary_ja": "24時間薬局、コンビニで買える常備薬13種、英語対応の歯科・韓方医院まで。韓国の医療事情12項目。緊急時は1339へ。",
-    "summary_zh": "外国人药店·医疗12选——24小时药店、便利店常备药13种、1339医疗翻译热线(24小时英文)与保险牙科指南。"
+    "summary_ja": "24時間薬局、コンビニで買える常備薬13種、英語対応の歯科・韓方医院まで。韓国の医療事情12項目。緊急時は119へ。",
+    "summary_zh": "外国人药店·医疗12选——24小时药店、便利店常备药13种、1330·1345翻译热线与保险牙科指南。"
   },
   {
     "id": "529",
@@ -13183,8 +13183,8 @@
       "dental",
       "oriental-medicine"
     ],
-    "summary_kr": "외국인 한국 의료관광 풀세트 12 매트릭스 (#401·#508·#528·#546 후속) — 강남세브란스(한국 #1 외국인 #142 JCI 4.9)·삼성서울병원(강남 #142 JCI)·서울아산 서울대 고려대(빅5 JCI) + K-Beauty 시술(#508 #389 #142 럭셔리)·외국인 성형(강남 #142 압구정 #1)·외국인 치과(강남 이태원 #528 #142 #144 영어 OK) + 외국인 안과 라식(강남 #142 #508 #401)·외국인 한방 의료관광(#546 자생 동의보감 UNESCO 정통)·외국인 종합 검진(#528 #401 #252) + 의료 통역 1339(KTO KISA 영어 OK 24h)·호텔 패키지(#142 #533 #525 럭셔리)·KOIMA Klook KKday KTO 통합 영어 OK·M-1 비자 보험 박물관 가족",
-    "summary_en": "Foreigner Korea Medical Tourism Full Set Deep Dive 12 Matrix (extends #401·#508·#528·#546) — Gangnam Severance (Korea #1 foreigner #142 JCI 4.9) + Samsung Seoul Hospital (Gangnam #142 JCI) + Seoul Asan/Seoul National/Korea University (Big 5 JCI) + K-Beauty procedures (#508/#389/#142 luxury) + Plastic surgery (Gangnam #142/Apgujeong #1) + Dental (Gangnam/Itaewon #528/#142/#144 English OK) + Ophthalmology/LASIK (Gangnam #142/#508/#401) + Oriental medicine tourism (#546 Jaseng/Dongui Bogam UNESCO traditional) + Comprehensive checkups (#528/#401/#252) + Medical interpretation 1339 (KTO/KISA English OK 24h) + Hotel packages (#142/#533/#525 luxury) + KOIMA/Klook/KKday/KTO integrated English OK + M-1 visa/Insurance/Museum/Family",
+    "summary_kr": "외국인 한국 의료관광 풀세트 12 매트릭스 (#401·#508·#528·#546 후속) — 강남세브란스(한국 #1 외국인 #142 JCI 4.9)·삼성서울병원(강남 #142 JCI)·서울아산 서울대 고려대(빅5 JCI) + K-Beauty 시술(#508 #389 #142 럭셔리)·외국인 성형(강남 #142 압구정 #1)·외국인 치과(강남 이태원 #528 #142 #144 영어 OK) + 외국인 안과 라식(강남 #142 #508 #401)·외국인 한방 의료관광(#546 자생 동의보감 UNESCO 정통)·외국인 종합 검진(#528 #401 #252) + 통역 1330·1345(KTO KISA 영어 OK)·호텔 패키지(#142 #533 #525 럭셔리)·KOIMA Klook KKday KTO 통합 영어 OK·M-1 비자 보험 박물관 가족",
+    "summary_en": "Foreigner Korea Medical Tourism Full Set Deep Dive 12 Matrix (extends #401·#508·#528·#546) — Gangnam Severance (Korea #1 foreigner #142 JCI 4.9) + Samsung Seoul Hospital (Gangnam #142 JCI) + Seoul Asan/Seoul National/Korea University (Big 5 JCI) + K-Beauty procedures (#508/#389/#142 luxury) + Plastic surgery (Gangnam #142/Apgujeong #1) + Dental (Gangnam/Itaewon #528/#142/#144 English OK) + Ophthalmology/LASIK (Gangnam #142/#508/#401) + Oriental medicine tourism (#546 Jaseng/Dongui Bogam UNESCO traditional) + Comprehensive checkups (#528/#401/#252) + Interpretation 1330·1345 (KTO/KISA English OK) + Hotel packages (#142/#533/#525 luxury) + KOIMA/Klook/KKday/KTO integrated English OK + M-1 visa/Insurance/Museum/Family",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
@@ -13192,8 +13192,8 @@
     "date_published": "2026-05-30",
     "title_zh": "外国人韩国医疗旅游全套深度探索",
     "title_ja": "外国人向け韓国医療観光ディープダイブ",
-    "summary_ja": "JCI認証の大手5病院から美容施術、人間ドックまで。韓国医療観光の総合ガイド12項目。医療通訳は1339へ。",
-    "summary_zh": "韩国医疗观光全攻略12选——江南Severance等JCI认证五大医院、整形牙科眼科到1339医疗翻译与酒店套餐。"
+    "summary_ja": "JCI認証の大手5病院から美容施術、人間ドックまで。韓国医療観光の総合ガイド12項目。通訳は1330・1345へ。",
+    "summary_zh": "韩国医疗观光全攻略12选——江南Severance等JCI认证五大医院、整形牙科眼科到1330·1345翻译与酒店套餐。"
   },
   {
     "id": "564",

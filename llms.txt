@@ -1,6 +1,6 @@
 # KeyChinGu — Korea Travel Guides for Foreign Tourists
 
-> Comprehensive curated Korea travel guides for foreign MZ travelers, covering 250+ topics across 60+ cities (Seoul·Busan·Jeju·Gyeongju·Andong·Jeonju·etc), 4 languages (KR·EN·CN·JP), 8-axis content matrix (food·culture·K-content·shopping·seasonal·transport·sports·foreigner essentials), and 5 traveler segments (solo·couple·family·MZ·budget). Updated 2026-10-05.
+> Comprehensive curated Korea travel guides for foreign MZ travelers, covering 250+ topics across 60+ cities (Seoul·Busan·Jeju·Gyeongju·Andong·Jeonju·etc), 4 languages (KR·EN·CN·JP), 8-axis content matrix (food·culture·K-content·shopping·seasonal·transport·sports·foreigner essentials), and 5 traveler segments (solo·couple·family·MZ·budget). Updated 2026-10-06.
 
 > Total guides: **1276** | EN: 1276 | CN: 1276 | JP: 1276 | og:image: 250+ | sitemap URLs: 3396
 
@@ -124,7 +124,7 @@
 - [Korea Visa & K-ETA Full Guide](https://mgself414.github.io/keychingu-content-deploy/content/foreigner-visa.en.html): Korea Visa & K-ETA 12-pick — K-ETA (2021 mandatory pre-authorization for 112 visa-free countries, $10) + Visa-free 90 days + C-3-9 short-ter (Korean: https://mgself414.github.io/keychingu-content-deploy/content/foreigner-visa.html)
 - [Korea Driving & Car Rental Full Guide](https://mgself414.github.io/keychingu-content-deploy/content/foreigner-driving.en.html): Korea Driving 12-pick — IDP (1 year validity, carry with home license) + Korean license conversion + Lotte Rent-a-Car (Korea's #1 English-fr (Korean: https://mgself414.github.io/keychingu-content-deploy/content/foreigner-driving.html)
 - [Korea SIM eSIM WiFi Full Guide](https://mgself414.github.io/keychingu-content-deploy/content/foreigner-sim.en.html): Korea SIM/eSIM/WiFi 12-pick — KT + SKT + LG U+ + KT M Mobile (foreigner-friendly) + alleysim + Airalo eSIM ($4.5/1GB, $26/10GB) + Holafly eS (Korean: https://mgself414.github.io/keychingu-content-deploy/content/foreigner-sim.html)
-- [Korea Foreigner Emergency Medical Guide](https://mgself414.github.io/keychingu-content-deploy/content/foreigner-emergency.en.html): Korea Foreigner Emergency 12-pick — 119 (emergency multilingual 24h) + 1339 (medical advice) + 1345 (foreigner help) + 112 (police) + Foreig (Korean: https://mgself414.github.io/keychingu-content-deploy/content/foreigner-emergency.html)
+- [Korea Foreigner Emergency Medical Guide](https://mgself414.github.io/keychingu-content-deploy/content/foreigner-emergency.en.html): Korea Foreigner Emergency 12-pick — 119 (emergency multilingual 24h) + 1339 (infectious disease hotline) + 1345 (foreigner help) + 112 (poli (Korean: https://mgself414.github.io/keychingu-content-deploy/content/foreigner-emergency.html)
 - [Korea Foreigner Living Full Guide](https://mgself414.github.io/keychingu-content-deploy/content/foreigner-life.en.html): Korea Foreigner Living 12-pick — Itaewon/Hannam/Haebangchon (Korea's #1 foreigner area) + Seorae Maeul (Korea's #1 French community) + Yeonn (Korean: https://mgself414.github.io/keychingu-content-deploy/content/foreigner-life.html)
 - [Seoul Solo Travel Full Guide](https://mgself414.github.io/keychingu-content-deploy/content/solo-travel.en.html): Korea Solo Travel 12-pick (world's #1 solo-friendly city) — 1-person Korean food + 1-person BBQ (Gangnam/Jamsil/Hongdae) + Ichimen/Ichiran + (Korean: https://mgself414.github.io/keychingu-content-deploy/content/solo-travel.html)
 - [Seoul Monthly Guide](https://mgself414.github.io/keychingu-content-deploy/content/monthly-guide.en.html): Seoul Monthly Guide 12-month matrix — January Bosingak/Seollal + February Hanbok/temple + March spring/cherry early + April cherry blossom p (Korean: https://mgself414.github.io/keychingu-content-deploy/content/monthly-guide.html)
@@ -303,7 +303,7 @@
 
 ## Metadata
 
-- **Coverage**: 1276 curated guides as of 2026-10-05
+- **Coverage**: 1276 curated guides as of 2026-10-06
 - **Languages**: KR (full), EN (full), CN (full), JP (full)
 - **Update frequency**: Weekly
 - **Data sources**: Korea Tourism Organization (VisitKorea), Seoul Tourism Foundation (Visit Seoul), Cultural Heritage Administration, UNESCO World Heritage, Korea Open Government License (KOGL), Naver Maps, Reddit r/koreatravel + user curation
