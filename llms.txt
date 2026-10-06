@@ -1,6 +1,6 @@
 # KeyChinGu — Korea Travel Guides for Foreign Tourists
 
-> Comprehensive curated Korea travel guides for foreign MZ travelers, covering 250+ topics across 60+ cities (Seoul·Busan·Jeju·Gyeongju·Andong·Jeonju·etc), 4 languages (KR·EN·CN·JP), 8-axis content matrix (food·culture·K-content·shopping·seasonal·transport·sports·foreigner essentials), and 5 traveler segments (solo·couple·family·MZ·budget). Updated 2026-10-06.
+> Comprehensive curated Korea travel guides for foreign MZ travelers, covering 250+ topics across 60+ cities (Seoul·Busan·Jeju·Gyeongju·Andong·Jeonju·etc), 4 languages (KR·EN·CN·JP), 8-axis content matrix (food·culture·K-content·shopping·seasonal·transport·sports·foreigner essentials), and 5 traveler segments (solo·couple·family·MZ·budget). Updated 2026-10-07.
 
 > Total guides: **1276** | EN: 1276 | CN: 1276 | JP: 1276 | og:image: 250+ | sitemap URLs: 3396
 
@@ -62,7 +62,7 @@
 - [Seoul Art Map — Foreigner Museum·Gallery Full Meta Guide](https://mgself414.github.io/keychingu-content-deploy/content/seoul-art-map.en.html): Art 4-axis 12-signature — MMCA 4 branches + National Museum of Korea + Leeum (Hannam)·Hoam (Yongin)·Amorepacific private + Samcheong·Cheongd (Korean: https://mgself414.github.io/keychingu-content-deploy/content/seoul-art-map.html)
 - [Korea Traditional Tea & Ceremony Deep Dive](https://mgself414.github.io/keychingu-content-deploy/content/tea-ceremony.en.html): Korea Traditional Tea & Ceremony Deep Dive 12-pick (extends #357 temple food / #291 vegan / #332 temple-stay) — Osulloc Tea Museum Jeju (200 (Korean: https://mgself414.github.io/keychingu-content-deploy/content/tea-ceremony.html)
 - [Seoul Cultural Complex Spaces Full Guide](https://mgself414.github.io/keychingu-content-deploy/content/cultural-complex.en.html): Seoul Cultural Complex 12-pick — Seongsuyeonbang (Seongsu's #1 former-factory complex) + D Museum (Korea's #1 photography·design museum) + N (Korean: https://mgself414.github.io/keychingu-content-deploy/content/cultural-complex.html)
-- [Korea Museum & Art Gallery Full Guide](https://mgself414.github.io/keychingu-content-deploy/content/museum-art.en.html): Korea Museum & Art Gallery 12-pick (extends #285 galleries / #366 cultural complex) — National Museum of Korea (Yongsan, Korea's #1 with 15, (Korean: https://mgself414.github.io/keychingu-content-deploy/content/museum-art.html)
+- [Korea Museum & Art Gallery Full Guide](https://mgself414.github.io/keychingu-content-deploy/content/museum-art.en.html): Eleven Seoul museums plus Museum SAN in Wonju, checked against official websites (2026-10-06). The permanent galleries at the National Museu (Korean: https://mgself414.github.io/keychingu-content-deploy/content/museum-art.html)
 - [Korea K-Drama & Movie Filming Locations Full Guide](https://mgself414.github.io/keychingu-content-deploy/content/kdrama-filming.en.html): Korea K-Drama & Movie Filming Locations 12-pick (extends #10 K-drama / #207 K-pop) — Parasite (Jahamun stairs / Ahyeon supermarket / Jeongja (Korean: https://mgself414.github.io/keychingu-content-deploy/content/kdrama-filming.html)
 - [Korea Hanbok & Palace Experience Full Guide](https://mgself414.github.io/keychingu-content-deploy/content/hanbok-palace.en.html): Korea Hanbok & Palace Experience 12-pick (extends #16 hanbok / #12 Bukchon / #297 Insadong / #255 Jeonju) — Gyeongbokgung (Joseon main palac (Korean: https://mgself414.github.io/keychingu-content-deploy/content/hanbok-palace.html)
 - [K-pop 4 Agencies Deep Dive](https://mgself414.github.io/keychingu-content-deploy/content/kpop-agencies.en.html): K-pop 4 Agencies Deep Dive 12-pick (extends #19 / #207 / #378) — HYBE Yongsan (BTS·SEVENTEEN·LE SSERAFIM·NewJeans·ENHYPEN·TXT, market cap #1 (Korean: https://mgself414.github.io/keychingu-content-deploy/content/kpop-agencies.html)
@@ -303,7 +303,7 @@
 
 ## Metadata
 
-- **Coverage**: 1276 curated guides as of 2026-10-06
+- **Coverage**: 1276 curated guides as of 2026-10-07
 - **Languages**: KR (full), EN (full), CN (full), JP (full)
 - **Update frequency**: Weekly
 - **Data sources**: Korea Tourism Organization (VisitKorea), Seoul Tourism Foundation (Visit Seoul), Cultural Heritage Administration, UNESCO World Heritage, Korea Open Government License (KOGL), Naver Maps, Reddit r/koreatravel + user curation
