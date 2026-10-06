@@ -23211,8 +23211,8 @@
       "theme-park",
       "regional"
     ],
-    "summary_kr": "경기도 에버랜드 + 캐리비안베이 · 외국인 가이드 · 4축 12 시그니처",
-    "summary_en": "Gyeonggi Everland + Caribbean Bay · foreign tourist 4-axis 12-signature",
+    "summary_kr": "에버랜드 + 캐리비안베이 — T-Express·시즌 축제·동물원·1박, 그리고 서울에서 가는 법: 2026-08 신설 서울역·명동 직행버스 4105번(약 1시간)·강남 5002번·에버라인 + 무료 셔틀.",
+    "summary_en": "Everland + Caribbean Bay — T-Express, seasonal festivals, the zoo, an overnight option, and how to get there from Seoul: the new (Aug 2026) 4105 direct bus from Seoul Station and Myeongdong in about an hour, bus 5002 from Gangnam, or the Everline and free shuttle.",
     "en_available": true,
     "cn_available": true,
     "jp_available": true,
@@ -23222,8 +23222,8 @@
     "date_published": "2026-06-12",
     "title_ja": "京畿道 エバーランド・カリビアンベイ",
     "title_zh": "京畿道爱宝乐园+加勒比海湾",
-    "summary_ja": "京畿道エバーランド・カリビアンベイ、外国人向けガイド、4軸12シグネチャー",
-    "summary_zh": "京畿道爱宝乐园、加勒比海湾。外国游客导览，4轴12特色。"
+    "summary_ja": "エバーランド＋カリビアンベイ — T-Express・季節のフェスティバル・動物園・1泊プラン、そしてソウルからの行き方：2026年8月新設のソウル駅・明洞発 直行バス4105番（約1時間）、江南発5002番、エバーライン＋無料シャトル。",
+    "summary_zh": "爱宝乐园＋加勒比海湾 — T-Express、季节庆典、动物园、住一晚的方案，以及从首尔怎么去：2026年8月新开的首尔站·明洞直达巴士4105路（约1小时）、江南5002路、爱宝线＋免费接驳车。"
   },
   {
     "id": "1036",
@@ -25133,8 +25133,8 @@
       "foreigner-friendly",
       "seoul-wide"
     ],
-    "summary_kr": "미쉐린 서울 2026 - 외국인 fit 15곳 (3star~Bib Gourmand) + 예약·드레스 코드",
-    "summary_en": "Seoul Michelin Guide 2026 - 15 picks for foreign travelers",
+    "summary_kr": "미쉐린 서울 2026 - 외국인 fit 16곳 (3 star~Bib Gourmand + 셀렉티드 무구옥) + 예약·드레스 코드·대기 등록 팁",
+    "summary_en": "Seoul Michelin Guide 2026 - 16 picks for foreign travelers (3 stars to Bib Gourmand, plus the Michelin-selected Muguok) with reservation, dress-code and waitlist tips",
     "en_available": true,
     "cn_available": true,
     "jp_available": true,
@@ -25142,8 +25142,8 @@
     "date_published": "2026-06-19",
     "title_zh": "首尔米其林指南2026",
     "title_ja": "ソウル ミシュランガイド 2026",
-    "summary_ja": "ミシュランガイド ソウル 2026 — 外国人旅行者向け15選 (3つ星〜ビブグルマン) + 予約・ドレスコード。",
-    "summary_zh": "米其林首尔2026：15家适合外国人的精选餐厅（3星至必比登推介），附预约与着装要求。"
+    "summary_ja": "ミシュランガイド ソウル 2026 — 外国人旅行者向け16選 (3つ星〜ビブグルマン + ミシュランセレクテッドのムグオク) + 予約・ドレスコード・ウェイティング登録のコツ。",
+    "summary_zh": "米其林首尔2026：16家适合外国人的精选餐厅（3星至必比登推介，另加米其林入选的Muguok），附预约、着装与现场排队登记要点。"
   },
   {
     "id": "1110",
