@@ -3551,8 +3551,8 @@
       "foreigner",
       "followup"
     ],
-    "summary_kr": "#186 강북·수유 follow-up — gangbuk cluster 67건 풀 deep dive. 스시노칸도 수유(11822 rv 강북 #1)·옥류헌릴렉스(7813 rv)·신사랑매운갈비찜(7497 rv)·하이그라운드제빵소(7275 rv) 등 4축 12선(일식·면 / 한식·고기·국밥 / 베이커리·다국적 / 자연·역사·라이프). 북한산 둘레길 1구간 + 4·19묘지 + 북서울꿈의숲 + #177 노원·도봉 등산 연계.",
-    "summary_en": "#186 Gangbuk follow-up — 67 cluster deep dive. Sushi No Kando Suyu (11,822 rv #1) + Okryuheon Relax (7,813 rv) + Sinsa Spicy Galbijjim (7,497 rv) + Highground Bakery (7,275 rv) — 4-axis 12-pick. + Bukhansan Trail Section 1 + 4·19 Memorial + Buk Seoul Dream Forest + #177 hiking link.",
+    "summary_kr": "강북 수유·미아·우이 — 2026-10-07 공식값: 우이신설선 13역(북한산우이 첫차 05:30·막차 24:37) / 북한산 둘레길 1구간 3.1km 1.5h·2구간 2.3km(4·19묘지 경유)·우이령길 6.8km 예약제(외국인 전화) / 국립4·19민주묘지 정문 06~18(11~2월 ~17)·기념관 월 휴관·역에서 600m / 북서울꿈의숲 상시·솔밭공원·화계사 템플스테이·수유전통시장. 맛집 9곳은 키친구 장소 풀 리뷰 수 기준. '우이역'·'1구간 4시간' 오류 정정.",
+    "summary_en": "Gangbuk's Suyu, Mia and Ui — official values checked Oct 7, 2026: the Ui-Sinseol line's 13 stations (first train 05:30, last 00:37 from Bukhansan Ui), Bukhansan Dulle-gil section 1 (3.1 km, 1.5 h) and section 2 (2.3 km, passing the April 19th National Cemetery), Uiryeong-gil 6.8 km by reservation only (foreigners by phone), the cemetery gate 06:00–18:00 (17:00 Nov–Feb) with the memorial hall closed Mondays, Dream Forest open at all times, Solbat Park, Hwagyesa templestay and Suyu market. Nine local restaurants ranked by KeyChinGu's review counts. Fixes 'Ui Station' and the '4-hour section 1' errors.",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
@@ -3560,8 +3560,8 @@
     "date_published": "2026-05-20",
     "title_ja": "江北水踰・弥阿・牛耳 ライフスタイル深掘り",
     "title_zh": "江北水逾弥阿牛耳生活方式深度探索",
-    "summary_ja": "江北・水踰（#186）に続く深掘りとして、江北クラスター67件を詳細分析し、スシノカンド水踰、オクリュホンリラックスなど、和食・麺、韓国料理・肉・クッパ、ベーカリー・多国籍、自然・歴史・ライフの4軸12選を提案。北漢山トレイル1区間、4・19記念墓地、北ソウルの森に加え、#177蘆原・道峰の登山とも連携します。",
-    "summary_zh": "水逾·弥阿67家深度精选——江北第一寿司、辣炖排骨、人气面包房,外加北汉山环山步道与北首尔梦之森。"
+    "summary_ja": "江北 水踰・弥阿・牛耳 — 2026-10-07公式値：牛耳新設線13駅（北漢山牛耳 始発05:30・終電24:37）／北漢山トゥルレギル1区間3.1km 1.5h・2区間2.3km（4・19墓地経由）・牛耳嶺路6.8kmは予約制（外国人は電話）／国立4・19民主墓地 正門06〜18（11〜2月〜17）・記念館月曜休・駅から600m／北ソウル夢の森 常時・松林公園・華渓寺テンプルステイ・水踰伝統市場。グルメ9軒はキーチング場所プールのレビュー数基準。「牛耳駅」「1区間4時間」の誤りを訂正。",
+    "summary_zh": "江北 水逾·弥阿·牛耳 — 2026-10-07官方值：牛耳新设线13站（北汉山牛耳 首班05:30·末班24:37）／北汉山环山路1段3.1km 1.5h·2段2.3km（经4·19墓地）·牛耳岭路6.8km需预约（外国人电话）／国立4·19民主墓地 正门06~18（11~2月至17）·纪念馆周一闭馆·距站600m／北首尔梦之森 全天·松林公园·华溪寺寺院寄宿·水逾传统市场。9家餐厅按KeyChinGu地点库评论数排序。纠正“牛耳站”“1段4小时”错误。"
   },
   {
     "id": "197",
@@ -16665,8 +16665,8 @@
       "unesco",
       "sub-deep"
     ],
-    "summary_kr": "외국인 판소리 단독 sub 12 (#686·#532·#536 sub) — 판소리 UNESCO 2003 한국 #1·5 마당 (춘향가·심청가·흥보가·수궁가·적벽가)·국립국악원·한국의집 EN/JP·명창 인간문화재 5호 조상현 안숙선 이일주 김소희·이날치 범 내려온다 잠비나이 메탈+국악 fusion·체험 50K-100K·전북 정읍 고창 임실 발상지·동리 신재효",
-    "summary_en": "Foreigner Pansori Sub 12 (parent #686/#532/#536) — Pansori UNESCO 2003 #1 + 5 Madang (Chunhyang/Simcheong/Heungbo/Sugung/Jeokbyeok) + Gugakwon + Korea House EN/JP + Master Singers + Leenalchi Tiger Coming Jambinai Metal+Gugak + Class 50K-100K + Jeongeup Gochang Imsil Birthplace + Dongri Shin Jae-Hyo",
+    "summary_kr": "판소리 가이드 — 2026-10-07 공식 일정 기준으로 외국인이 가을·겨울에 실제 볼 수 있는 공연: 국립국악원 토요명품 매주 토 15:00(A 30,000/B 20,000, 국악 종합) · 국립극장 완창판소리 10/24 흥보가 170분·11/14 심청가 300분(20,000) · 창극 오이디푸스 11/26~12/5 · 돈화문국악당 10/25 춘향가. 동대입구역 6번 출구 셔틀. 영어 자막은 공식 미표기. 다섯 바탕 한 줄 요약. UNESCO 2003 선포·2008 등재. 옛 '매주 판소리·EN/JP 자막·가을 축제' 삭제.",
+    "summary_en": "Pansori guide — shows a foreign visitor can actually attend in autumn and winter 2026, from official listings checked Oct 7: National Gugak Center's Saturday Fine Gugak every Saturday 15:00 (A 30,000 / B 20,000 won, mixed program), National Theater full-length pansori Oct 24 (Heungboga, 170 min) and Nov 14 (Simcheongga, 300 min) at 20,000 won, changgeuk 'Oedipus' Nov 26–Dec 5, Donhwamun Theater Chunhyangga Oct 25. Shuttle from Dongguk Univ. Station Exit 6. English subtitles not stated officially. The five madang in one line each. UNESCO proclaimed 2003, inscribed 2008.",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
@@ -16674,8 +16674,8 @@
     "date_published": "2026-06-02",
     "title_ja": "パンソリ12選",
     "title_zh": "外国人韩国盘索里12大精选",
-    "summary_ja": "パンソリは2003年にユネスコ無形文化遺産に登録された韓国を代表する伝統芸能です。春香歌など5つの演目があり、国立国楽院や韓国の家で鑑賞できます。イナルチやジャンビナイのようなフュージョン国楽も人気で、体験クラスも開催されています。",
-    "summary_zh": "盘索里于2003年被联合国教科文组织列为人类非物质文化遗产，有《春香歌》等五大剧目。可在国立国乐院或韩国之家欣赏，或体验融合现代元素的表演。"
+    "summary_ja": "パンソリガイド — 2026-10-07の公式日程で外国人が秋・冬に実際に観られる公演：国立国楽院 土曜名品 毎週土15:00（A 30,000／B 20,000ウォン、国楽総合）・国立劇場 完唱パンソリ 10/24 興甫歌170分・11/14 沈清歌300分（20,000）・唱劇『オイディプス』11/26〜12/5・敦化門国楽堂 10/25 春香歌。東大入口駅6番出口からシャトル。英語字幕は公式未記載。五つのバタンを一行ずつ。UNESCO 2003年宣言・2008年登録。",
+    "summary_zh": "盘索里指南 — 按2026-10-07官方日程，外国游客秋冬可实际观看的演出：国立国乐院周六名品 每周六15:00（A 30,000／B 20,000韩元，国乐综合）・国立剧场完唱盘索里 10/24兴甫歌170分钟・11/14沈清歌300分钟（20,000）・唱剧《俄狄浦斯》11/26~12/5・敦化门国乐堂 10/25春香歌。东大入口站6号出口有班车。英文字幕官方未注明。五大唱段各一句概要。UNESCO 2003年宣布・2008年列入。"
   },
   {
     "id": "694",
