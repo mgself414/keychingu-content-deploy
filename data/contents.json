@@ -660,16 +660,16 @@
   {
     "id": "22",
     "slug": "gangnam-finedine",
-    "title_kr": "강남 파인다이닝 5선",
-    "title_en": "22 – Gangnam (강남) Fine Dining: Top 5 Picks",
+    "title_kr": "강남 파인다이닝 — 미쉐린 스타 8선 (2026)",
+    "title_en": "Gangnam Fine Dining: 8 Michelin-Starred Picks (2026)",
     "category": "F",
     "tags": [
       "foreigner",
       "seoul",
       "quick-guide"
     ],
-    "summary_kr": "도산·청담 일대 미슐랭 1~3스타 한식당 8곳을 오마카세·모던 한식 등 4가지 결로 비교하고 예약·드레스코드 팁을 담았다.",
-    "summary_en": "A guide to 8 Michelin-starred restaurants in Gangnam's Dosan and Cheongdam, from hanjeongsik omakase to modern Korean tasting menus, with reservation and dress-code tips.",
+    "summary_kr": "서울 2스타 10곳 중 7곳이 강남구에 있다. 3스타 밍글스, 2스타 정식당·권숙수·스와니예·에빗·레스토랑 알렌, 1스타 강민철·이타닉 가든 8곳의 등급·주소·휴무·예약 창구(캐치테이블·이메일·직접 예약)·영어 안내를 미쉐린 공식 페이지와 각 공식 사이트 기준(2026-10-07)으로 정리하고, 월요일 휴무·호텔 복장 규정·해외 예약 요령과 도산공원·청담·테헤란로 동선 3개를 담았다.",
+    "summary_en": "Seven of Seoul's ten Michelin 2-star restaurants are in Gangnam. Eight picks you can actually book: 3-star Mingles; 2-star Jungsik, Kwonsooksoo, Soigné, Evett and Restaurant Allen; 1-star Kang Minchul and Eatanic Garden — ratings, addresses, closing days, booking channels (CatchTable, email, direct) and English availability checked against official pages (Oct 7, 2026), plus Monday closures, hotel dress codes, booking-from-abroad tips and three walking routes (Dosan Park, Cheongdam, Teheran-ro).",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
@@ -677,8 +677,8 @@
     "date_published": "2026-05-14",
     "title_ja": "江南ファインダイニング5選",
     "title_zh": "江南高级餐厅5选",
-    "summary_ja": "22_江南ファインダイニング5選 — ISSUE 02クイックガイド（約2K文字）",
-    "summary_zh": "22_江南精品餐饮5选 — ISSUE 02 快速指南 (~2K字)"
+    "summary_ja": "ソウルのミシュラン二つ星10軒のうち7軒が江南区にある。実際に予約できる8軒 — 三つ星ミングルス、二つ星チョンシクタン・クォンスクス・スワニエ・エビット・レストラン アレン、一つ星カン・ミンチョル・イタニックガーデン — の評価・住所・定休日・予約窓口（キャッチテーブル・メール・直接予約）・英語対応を公式ページ基準（2026-10-07）で整理し、月曜休業・ホテルのドレスコード・海外からの予約のコツ、島山公園・清潭・テヘラン路の動線3つを収録。",
+    "summary_zh": "首尔10家米其林二星餐厅中有7家位于江南区。精选可实际预约的8家：三星Mingles，二星Jungsik·Kwonsooksoo·Soigné·Evett·Restaurant Allen，一星Kang Minchul·Eatanic Garden——等级、地址、休息日、预约渠道（CatchTable、邮件、直接预约）与英语服务均以官方页面为准（2026年10月7日），并附周一休息、酒店着装规定、海外预约要点和岛山公园·清潭·德黑兰路3条路线。"
   },
   {
     "id": "23",
@@ -25369,8 +25369,8 @@
       "dessert",
       "foreigner-friendly"
     ],
-    "summary_kr": "압구정·도산·청담 럭셔리 cafe + 디저트 15곳 + 시그니엘 lounge",
-    "summary_en": "Gangnam luxury cafe & dessert - 15 picks",
+    "summary_kr": "압구정·도산·청담 럭셔리 cafe + 디저트 15곳 + 시그니엘 lounge + 고속터미널 신세계 강남 스위트파크(폼폼푸린 카페·밴루엔·부창제과, 2026 보강)",
+    "summary_en": "Gangnam luxury cafe & dessert - 15 picks + Shinsegae Gangnam Sweet Park at Express Bus Terminal (Pompompurin cafe, Van Leeuwen, Buchang, 2026 update)",
     "en_available": true,
     "cn_available": true,
     "jp_available": true,
@@ -25378,8 +25378,8 @@
     "date_published": "2026-06-20",
     "title_zh": "江南咖啡馆·甜点深度探索",
     "title_ja": "江南 カフェ・デザート ディープダイブ",
-    "summary_ja": "狎鴎亭、島山、清潭のラグジュアリーカフェとデザート15選、シグニエルラウンジを特集。",
-    "summary_zh": "狎鸥亭·岛山·清潭奢华咖啡与甜点：精选15家店，并推荐SIGNIEL酒廊。"
+    "summary_ja": "狎鴎亭、島山、清潭のラグジュアリーカフェとデザート15選、シグニエルラウンジを特集＋高速ターミナル直結の新世界江南スイートパーク（ポムポムプリンカフェ・Van Leeuwen・富昌製菓、2026年補強）",
+    "summary_zh": "狎鸥亭·岛山·清潭奢华咖啡与甜点：精选15家店，并推荐SIGNIEL酒廊＋高速巴士客运站直达的新世界江南Sweet Park（布丁狗咖啡厅、Van Leeuwen、富昌制果，2026补充）"
   },
   {
     "id": "1119",
