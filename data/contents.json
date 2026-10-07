@@ -23373,8 +23373,8 @@
       "chungcheong",
       "regional"
     ],
-    "summary_kr": "외국인 충청도 1일 메타 · 외국인 가이드 · 시그니처 매트릭스",
-    "summary_en": "Chungcheong 1-Day Essential · foreign tourist signature matrix",
+    "summary_kr": "충청도 당일치기 — 공주(UNESCO 웅진)·부여(UNESCO 사비)·청주(청남대)·서산(해미읍성·간월암) 네 갈래 중 하루에 하나만. 2026-10-07 공식값: 공산성·왕릉원 3,000(통합 6,000), 정림사지 무료·부소산성 2,000·백제문화단지 6,000(월 휴관), 청남대 6,000·월 휴관·주차 무료, 해미읍성·간월암은 공식 미게시(물때표 확인). 'KTX 청주역'·'사비=공주' 오류 정정.",
+    "summary_en": "Chungcheong in a day — pick one of four: Gongju (UNESCO Ungjin Baekje), Buyeo (UNESCO Sabi Baekje), Cheongju (Cheongnamdae presidential villa) or Seosan (Haemi Fortress, Ganwolam sea temple). Official values checked Oct 7, 2026: Gongsanseong and royal tombs 3,000 won each (combo 6,000), Jeongnimsa free, Busosanseong 2,000, Baekje Cultural Land 6,000 (closed Mondays), Cheongnamdae 6,000 with free parking (closed Mondays); Haemi and Ganwolam have no posted hours or fees (check the tide table). Fixes the old 'KTX Cheongju Station' and 'Sabi = Gongju' errors.",
     "en_available": true,
     "cn_available": true,
     "jp_available": true,
@@ -23384,8 +23384,8 @@
     "date_published": "2026-06-12",
     "title_ja": "外国人 忠清道1日必須",
     "title_zh": "忠清道一日精华",
-    "summary_ja": "外国人向け忠清道1日メタ。外国人向けガイドによるシグネチャーマトリックス。",
-    "summary_zh": "外国游客忠清道一日游精华 · 外国游客导览 · 招牌矩阵"
+    "summary_ja": "忠清道日帰り — 公州（UNESCO熊津百済）・扶余（UNESCO泗沘百済）・清州（青南台）・瑞山（海美邑城・看月庵）の4ルートから1日1つだけ。2026-10-07公式値：公山城・王陵園 各3,000（共通券6,000）、定林寺址 無料・扶蘇山城 2,000・百済文化団地 6,000（月曜休）、青南台 6,000・月曜休・駐車無料、海美邑城・看月庵は公式未掲示（潮見表を確認）。「KTX清州駅」「泗沘＝公州」の誤りを訂正。",
+    "summary_zh": "忠清道一日游 — 公州（UNESCO熊津百济）、扶余（UNESCO泗沘百济）、清州（青南台）、瑞山（海美邑城·看月庵）四条线路，一天只选一条。2026-10-07官方值：公山城·王陵园各3,000（联票6,000），定林寺址免费、扶苏山城2,000、百济文化园区6,000（周一闭馆），青南台6,000·周一闭馆·免费停车，海美邑城·看月庵官方未公布（请查潮汐表）。纠正“KTX清州站”“泗沘=公州”错误。"
   },
   {
     "id": "1042",
@@ -24570,8 +24570,8 @@
       "cafe",
       "meta-guide"
     ],
-    "summary_kr": "북촌·연남·이태원·전주·부산 독립서점+카페 콤보 5선",
-    "summary_en": "Bukchon Yeonnam Itaewon Jeonju Busan indie bookstore+cafe combo 5",
+    "summary_kr": "독립서점 + 카페 가이드 — 2026-10-07 자체 사이트·VisitSeoul·VisitBusan에서 확인한 6곳만: 회현 더북소사이어티(이전, 수~일 13~19) · 연희 유어마인드(4월 재개장, 13~20) · 연남 유정(첫째 수 휴무) · 영등포 맨홀커피 서부책방(북카페, 월·화 휴무) · 부산 보수동 책방골목(첫째·셋째 화 휴무) · 스콜라 디 아테네(카페+서가, 화 휴무). 땡스북스·외국서적·스틸북스는 미확인, 전주는 제외.",
+    "summary_en": "Independent bookshops plus cafés — only the 6 confirmed on Oct 7, 2026 from the shops' own sites, VisitSeoul and VisitBusan: The Book Society in Hoehyeon (moved; Wed–Sun 13–19), Your Mind in Yeonhui (reopened April; 13–20), UHJJUHDAH in Yeonnam (closed first Wednesdays), Manhole Coffee Western Bookstore in Yeongdeungpo (book café, closed Mon–Tue), Busan's Bosu-dong Book Street (closed 1st and 3rd Tuesdays) and Scuola di Atene (café with bookshelves, closed Tuesdays). Thanks Books, the Itaewon Foreign Bookstore and Still Books are unconfirmed; Jeonju dropped.",
     "en_available": true,
     "cn_available": true,
     "jp_available": true,
@@ -24581,8 +24581,8 @@
     "date_published": "2026-06-14",
     "title_ja": "外国人向け 独立書店＋カフェコンボ5選",
     "title_zh": "外国游客独立书店·咖啡馆组合5选",
-    "summary_ja": "北村、延南洞、梨泰院、全州、釜山の独立書店＋カフェコンボ5選。",
-    "summary_zh": "北村、延南、梨泰院、全州、釜山独立书店+咖啡馆组合精选5处。"
+    "summary_ja": "独立系書店＋カフェ — 2026-10-07に各書店サイト・VisitSeoul・VisitBusanで確認できた6軒のみ：会賢のザ・ブックソサイエティ（移転、水〜日13〜19時）・延禧のユアマインド（4月再開、13〜20時）・延南のUHJJUHDAH（第1水曜休）・永登浦のマンホールコーヒー西部書房（ブックカフェ、月火休）・釜山の宝水洞本屋通り（第1・3火曜休）・スクオーラ・ディ・アテネ（カフェ＋書架、火休）。タンクスブックス・外国書籍・スティルブックスは未確認、全州は除外。",
+    "summary_zh": "独立书店+咖啡馆 — 仅收录2026-10-07在书店官网、VisitSeoul、VisitBusan上核实的6家：会贤The Book Society（已搬迁，周三至周日13~19）、延禧Your Mind（4月重开，13~20）、延南UHJJUHDAH（每月第一个周三休）、永登浦Manhole Coffee西部书房（书咖，周一二休）、釜山宝水洞书店街（第1、3个周二休）、Scuola di Atene（咖啡+书架，周二休）。Thanks Books、梨泰院外国书籍、Still Books未核实，全州未收录。"
   },
   {
     "id": "1088",
