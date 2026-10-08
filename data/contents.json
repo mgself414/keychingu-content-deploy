@@ -14168,8 +14168,8 @@
       "cn",
       "wellness"
     ],
-    "summary_kr": "외국인 골프 라운드 12 매트릭스 (#542·#577·#576·#190·#325·#594 후속) — 퍼블릭 9홀 3(코리아퍼블릭CC 용인·화성골프·9홀 60-80K) + 18홀 정규 3(18홀 120-170K·2인 3인 라운드·노캐디) + 명품 #542 cross 3(남부CC·해슬리·KGA·PXG) + 스크린·실내 3(스크린 10-20K/시·실내 연습장) + 캐디피 별도 25K + JP·중동·CN 1순위",
-    "summary_en": "Foreigner Korea Golf Round 12 Matrix (extends #542·#577·#576·#190·#325·#594) — Public 9-hole 3 (Korea Public CC Yongin + Hwaseong Golf + 9-hole 60-80K) + 18-hole 3 (120-170K + 2-3 person + no-caddie) + Luxury #542 3 (Nambu CC + Hasley + KGA + PXG) + Screen/Indoor 3 (Screen 10-20K/hr + Indoor practice) + Caddie 25K extra + JP/Middle East/CN #1",
+    "summary_kr": "한국 골프 라운드 — 2026-10-08 공식 요금표 4곳: 파인크리크(안성, 대중제) 10월 주중 180,000~215,000·주말 240,000~280,000 / 레이크사이드(용인) 동남코스 199,000·259,000 / 이스트밸리(광주 곤지암) 비회원 240,000·290,000 / 잭 니클라우스 GC(송도, 회원제) 비회원 380,000·480,000·외국어 캐디 220,000. 캐디 150,000~170,000·카트 100,000~120,000 팀당 별도(4인 주중 1인 약 280,000). 해슬리 요금 미게시·베어크리크 포천 11/16 휴장·코리아퍼블릭 2차. 옛 위치 오류 5건·'18홀 120~170K'·'캐디 1인 2만' 정정.",
+    "summary_en": "Golf rounds in Korea on official fee tables checked Oct 8, 2026, four courses: Pine Creek (Anseong, public) October weekday 180,000–215,000 and weekend 240,000–280,000 won, Lakeside (Yongin) East-South course 199,000 / 259,000, East Valley (Gwangju Gonjiam) non-member 240,000 / 290,000, Jack Nicklaus GC Korea (Songdo, members') non-member 380,000 / 480,000 with a foreign-language caddie at 220,000. Caddie 150,000–170,000 and cart 100,000–120,000 per team are extra (about 280,000 per person for four on a weekday). Haesley posts no fees, Bear Creek Pocheon closes from Nov 16, Korea Public CC is secondary-sourced. Fixes five location errors and the old '120–170K' and 'caddie 20,000 per person' claims.",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
@@ -14177,8 +14177,8 @@
     "date_published": "2026-06-01",
     "title_ja": "ゴルフラウンド12選",
     "title_zh": "韩国高尔夫球局12大深度探索",
-    "summary_ja": "韓国では、9ホールや18ホールのパブリックコースから高級ゴルフ場まで、多様なゴルフ体験が可能です。スクリーンゴルフや室内練習場も充実しており、キャディフィーは別途必要です。",
-    "summary_zh": "韩国高尔夫运动深受日本、中东和中国游客欢迎，提供9洞、18洞公共球场及豪华球场，也有室内模拟高尔夫。部分球场可选择无球童，球童费另计。"
+    "summary_ja": "韓国ゴルフラウンド — 2026-10-08公式料金表4コース：パインクリーク（安城・パブリック）10月平日180,000〜215,000・週末240,000〜280,000／レイクサイド（龍仁）東南コース199,000・259,000／イーストバレー（広州・昆池岩）ビジター240,000・290,000／ジャック・ニクラウスGC（松島・会員制）ビジター380,000・480,000・外国語キャディ220,000。キャディ150,000〜170,000・カート100,000〜120,000はチーム単位で別途（4人平日1人約280,000）。ヘスリーは料金未掲示・ベアクリーク抱川は11/16から休場・コリアパブリックは二次情報。旧版の所在地誤り5件・「18ホール120〜170K」「キャディ1人2万」を訂正。",
+    "summary_zh": "韩国高尔夫 — 2026-10-08官方价目表4家：Pine Creek（安城·公众制）10月平日180,000~215,000·周末240,000~280,000／Lakeside（龙仁）东南球场199,000·259,000／East Valley（广州昆池岩）非会员240,000·290,000／Jack Nicklaus GC（松岛·会员制）非会员380,000·480,000·外语球童220,000。球童150,000~170,000·球车100,000~120,000按组另计（4人平日人均约280,000）。Haesley未公布价格·Bear Creek抱川11/16起停业·Korea Public为二手来源。纠正旧版5处位置错误及“18洞120~170K”“球童每人2万”。"
   },
   {
     "id": "596",
@@ -20394,8 +20394,8 @@
       "restaurant",
       "meta-guide"
     ],
-    "summary_kr": "김치찌개·만두·족발·보쌈·말이국수·국밥·전·볶음밥·찜 12선",
-    "summary_en": "Kimchi-jjigae·mandu·jokbal·bossam·mari-guksu·gukbap·jeon·bokkeumbap·jjim Top 12",
+    "summary_kr": "김치 가이드 — 2026-10-08 공식값: 뮤지엄김치간 인사동 화~일 10~18·월 휴관(공식, 요금 미게시·김치의 날 무료 2024) · 대한민국 김장대축제 2025 11/22 aT센터(2026 미공고) · 광주김치축제 제33회(공식, 2026 10/23~25는 2차) · 광장시장 먹자골목 매일 09~23(VisitSeoul) · 김치 종류 5(배추김치는 액젓 양념, 양념 대부분 젓갈 — VisitKorea 채식 팁) · 김장 UNESCO 2013. 미쉐린 2026에 김치 시그니처 식당 없음 → 식당명·가격·'1,750만'·할랄 코셔 절 삭제.",
+    "summary_en": "Kimchi guide on official values checked Oct 8, 2026: Museum Kimchikan in Insadong Tue–Sun 10–18, closed Mondays (official; fee not posted, free on Kimchi Day 2024), Korea Kimjang Festival in Seoul held Nov 22, 2025 at aT Center (2026 not announced), Gwangju Kimchi Festival 33rd edition (official; Oct 23–25, 2026 only from secondary sources), Gwangjang Food Alley daily 09–23 (VisitSeoul), five kimchi types with baechu kimchi seasoned with fish sauce and most seasoning containing salted seafood (VisitKorea vegetarian tips), Kimjang UNESCO 2013. Michelin 2026 lists no kimchi-signature restaurant, so restaurant names, prices, '17.5 million' and the halal/kosher section are dropped.",
     "en_available": true,
     "cn_available": true,
     "jp_available": true,
@@ -20405,8 +20405,8 @@
     "date_published": "2026-06-08",
     "title_zh": "韩国泡菜12家名店：泡菜决定当日风味的老店",
     "title_ja": "韓国キムチ名店12選",
-    "summary_ja": "キムチチゲ・マンドゥ・チョッパル・ポッサム・マリグクス・クッパ・ジョン・ポックンパ・チムの12選。",
-    "summary_zh": "泡菜锅、饺子、猪蹄、白切肉、卷面、汤饭、煎饼、炒饭、炖菜等12种精选美食。"
+    "summary_ja": "キムチガイド — 2026-10-08公式値：ミュージアムキムチ間 仁寺洞 火〜日10〜18・月曜休（公式、料金未掲示・2024キムチの日は無料）・大韓民国キムジャン大祝祭 2025年11/22 aTセンター（2026未告知）・光州キムチ祭り第33回（公式、2026年10/23〜25は二次情報）・広蔵市場 食べ物横丁 毎日09〜23（VisitSeoul）・キムチ5種（白菜キムチは魚醤で味付け、薬味の多くに塩辛 — VisitKoreaベジタリアン案内）・キムジャン UNESCO 2013。ミシュラン2026にキムチが看板の店はなく、店名・価格・「1,750万」・ハラル/コーシャ節を削除。",
+    "summary_zh": "泡菜指南 — 2026-10-08官方值：泡菜间博物馆 仁寺洞 周二至周日10~18·周一休（官方，票价未公布·2024泡菜日免费）· 大韩民国腌泡菜大庆典 2025年11/22 aT中心（2026未公告）· 光州泡菜节第33届（官方，2026年10/23~25为二手来源）· 广藏市场小吃街每日09~23（VisitSeoul）· 泡菜5种（白菜泡菜用鱼露调味，多数调料含腌海鲜 — VisitKorea素食提示）· 腌泡菜文化 UNESCO 2013。米其林2026无泡菜招牌餐厅，删除餐厅名·价格·“1,750万”·清真/犹太洁食段落。"
   },
   {
     "id": "836",
