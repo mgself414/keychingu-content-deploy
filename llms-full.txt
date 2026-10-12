@@ -10602,9 +10602,9 @@ foreign-tourist, solo-female, safety, checklist, practical, night, segment, japa
 
 ---
 
-## [1333] Korea Payment Survival Manual for Chinese-Speaking Travelers — Alipay Works, WeChat Doesn't, UnionPay Needs Prep First
+## [1333] Korea Payment Survival Manual for Chinese-Speaking Travelers — Alipay Works, WeChat Only at Zero Pay Merchants, UnionPay Needs Prep First
 
-- KR: 중화권 여행자 한국 결제 생존 매뉴얼 — 알리페이는 되고, 위챗은 안 되고, 은련은 준비가 필요하다
+- KR: 중화권 여행자 한국 결제 생존 매뉴얼 — 알리페이는 되고, 위챗은 제로페이 가맹점만 되고, 은련은 준비가 필요하다
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/china-payment-survival.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/china-payment-survival.en.html
 - Slug: china-payment-survival
