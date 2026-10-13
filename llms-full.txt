@@ -1,6 +1,6 @@
-# KeyChinGu — Full Content Catalog (2026-10-13)
+# KeyChinGu — Full Content Catalog (2026-10-14)
 
-> Full content catalog of 939 Korea travel guides for foreign tourists. Curated by KeyChinGu (@keychingu.korea). Languages: KR (full) + EN/CN/JP (published). Coverage: 60+ cities, 8-axis content matrix, 5 traveler segments. Updated 2026-10-13.
+> Full content catalog of 939 Korea travel guides for foreign tourists. Curated by KeyChinGu (@keychingu.korea). Languages: KR (full) + EN/CN/JP (published). Coverage: 60+ cities, 8-axis content matrix, 5 traveler segments. Updated 2026-10-14.
 
 ---
 
@@ -1809,7 +1809,7 @@ Day 2 · 2호선 홍대 → 건대 → 성수: 오전 홍대 상상마당 아따
 ## ⚠ 흔한 실수 3
 
 1. 9월 게시물 믿고 찾아가기 — 잠실 레벨투 키덜트 팝업(~9/30)·홍대 이누야샤 팝업(~9/22)은 이미 끝났다. 팝업은 저장해 둔 게시물보다 종료일이 먼저다. 이 표도 종료일 순으로 봐야 한다.
-2. 네이버 예약을 당연히 되는 걸로 생각하기 — 우사하나·산리오 문방구는 네이버 사전예약 중심이라 한국 휴대폰이 없으면 막힐 수 있다. 예약 채널이 위버스(TWIMI)·KKday(짱구)인 곳, 자유 입장인 곳(치이카와샵·국제전자센터·하이커그라운드 5층 팝업)을 먼저 배치하면 리스크가 준다.
+2. 네이버 예약을 당연히 되는 걸로 생각하기 — 우사하나(~10/27)는 네이버 사전예약 중심이라 한국 휴대폰이 없으면 막힐 수 있다. 예약 채널이 KKday(짱구)인 곳, 자유 입장인 곳(치이카와샵·국제전자센터·하이커그라운드 5층 팝업)을 먼저 배치하면 리스크가 준다.
 3. 신분증 없이 가기 — AK플라자 홍대 팝업은 실물 신분증 확인이 공지돼 있다. 휴대폰 속 여권 사진이 아니라 실물 여권을 들고 갈 것.
 
 ---
@@ -11048,9 +11048,9 @@ ISSUE · #1333 · 2026-08-24
 
 ---
 
-## ④ 위챗페이 — 제로페이 가맹점에선 된다 (갱신) + 대안 사다리
+## ④ 위챗페이 — 제로페이 가맹점에선 된다 + 대안 사다리
 
-> ✅ 갱신: 위챗페이는 한국 정부 주도 제로페이(ZeroPay) QR 체계에 연동돼 있다(서울시 2020-11-28 개시, 2024년부터 관광공사 표준 QR로 확대 — 정부 공식). 제로페이 QR이 붙은 가맹점(소상공인 매장 다수)에서는 위챗 "스캔" 기능으로 실시간 환율 결제가 된다 — 별도 한국 앱 설치 불요. 배달앱 배민도 위챗페이를 지원하기 시작했다.
+> ✅ 위챗페이는 한국 정부 주도 제로페이(ZeroPay) QR 체계에 연동돼 있다(서울시 2020-11-28 개시, 2024년부터 관광공사 표준 QR로 확대 — 정부 공식). 제로페이 QR이 붙은 가맹점(소상공인 매장 다수)에서는 위챗 "스캔" 기능으로 실시간 환율 결제가 된다 — 별도 한국 앱 설치 불요. 배달앱 배민도 위챗페이를 지원하기 시작했다.
 
 다만 "위챗만 믿고 오면 안 된다"는 결론은 여전하다 — 제로페이 QR이 없는 카드 단말 전용 매장(체인·백화점 다수)에서는 위챗이 통하지 않고, 알리페이 대비 가맹 체감 폭은 아직 좁다. 실전 사다리는 이 순서다:
 

@@ -94,6 +94,17 @@ main.content-page:has(#tm){max-width:min(1500px,calc(100vw - 32px))}
 .tm-mt{grid-column:2/4;font-size:12px;color:var(--tm-muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .tm-sc{font-size:11px;color:var(--tm-muted);font-variant-numeric:tabular-nums}
 .tm-more{font-size:12px;color:var(--tm-muted);cursor:default!important;display:block!important}
+.tm-region{border:1px solid var(--tm-line);border-left:3px solid var(--tm-accent);border-radius:8px;padding:9px 11px;display:flex;flex-direction:column;gap:6px;font-size:12px}
+.tm-region[hidden]{display:none}
+.tm-region h2{margin:0;font-size:14px}
+.tm-region .rs{color:var(--tm-muted)}
+.tm-region .rs b{color:var(--tm-ink)}
+.tm-bar{display:flex;height:8px;border-radius:4px;overflow:hidden;background:var(--tm-chip)}
+.tm-bar i{display:block;height:100%}
+.tm-leg{display:flex;flex-wrap:wrap;gap:3px 10px;color:var(--tm-muted)}
+.tm-leg span{display:inline-flex;align-items:center;gap:4px}
+.tm-leg i{width:8px;height:8px;border-radius:50%;display:inline-block}
+.tm-region .rr{display:flex;flex-wrap:wrap;gap:4px}
 .tm-route-stops{margin:0;padding-left:22px;font-size:12px;line-height:1.6}
 .tm-route-stops li{cursor:pointer}
 .tm-map{min-width:0;min-height:0}
@@ -139,6 +150,7 @@ main.content-page:has(#tm){max-width:min(1500px,calc(100vw - 32px))}
       <p class="tm-sub" data-t="sub"></p>
       <input id="tm-q" type="search" autocomplete="off">
       <div class="tm-row"><select id="tm-sido"></select><select id="tm-sort"></select></div>
+      <section class="tm-region" id="tm-region" hidden aria-live="polite"></section>
       <div class="tm-presets" id="tm-presets"></div>
       <div class="tm-box"><div class="tm-boxhead"><span data-t="routesH"></span></div><select id="tm-route"></select><ol class="tm-route-stops" id="tm-stops" hidden></ol></div>
       <div class="tm-box"><div class="tm-boxhead"><span data-t="kinds"></span><span><button type="button" id="tm-all" data-t="all"></button> · <button type="button" id="tm-none" data-t="none"></button></span></div><div class="tm-cats" id="tm-chips"></div></div>
@@ -192,21 +204,24 @@ const I = {
     sort: { rv: 'Most reviewed', lk: 'Most liked on Instagram', rt: 'Highest rated', nm: 'Name (A–Z)' },
     shown: n => `Showing <b>${n}</b> places`, nocoord: n => `${n} list-only (no map location)`, noloc: 'no map location', more: n => `Showing the top 200 — narrow down with search or region (${n} in total).`,
     reviews: 'reviews', price: 'Avg. per person', gmap: 'Google Maps', nmap: 'Naver Map', nmapNote: 'Naver Map gives the most accurate directions in Korea.',
-    showKr: 'Show this Korean name to locals or a taxi driver', guides: n => `In ${n} KeyChinGu guide${n > 1 ? 's' : ''}`, expand: 'Show subcategories', min: m => `${m} min` },
+    showKr: 'Show this Korean name to locals or a taxi driver', guides: n => `In ${n} KeyChinGu guide${n > 1 ? 's' : ''}`, expand: 'Show subcategories', min: m => `${m} min`,
+    region: (n, g) => `<b>${n}</b> places · <b>${g}</b> KeyChinGu guides`, picks: n => `★ Recommended for visitors: <b>${n}</b>`, routesHere: 'KeyChinGu routes here', other: 'Other' },
   zh: { title: '韩国美食与景点地图', sub: n => `KeyChinGu 精选的韩国餐厅、咖啡馆与景点共 <b>${n}</b> 处。点击圆点查看详情、导航与 KeyChinGu 文章。`,
     q: '搜索店名或地区（例：刀削面、圣水、海云台）', all_kr: '韩国全境', kinds: '类别', all: '全选', none: '全部取消',
     fit: '推荐给游客', kc: 'KeyChinGu 文章介绍过', routesH: 'KeyChinGu 步行与交通路线', routeNone: '选择路线…', routeGuide: '阅读路线文章',
     sort: { rv: '评论最多', lk: 'Instagram 点赞最多', rt: '评分最高', nm: '按名称' },
     shown: n => `显示 <b>${n}</b> 处`, nocoord: n => `${n} 处仅列表（无地图位置）`, noloc: '无地图位置', more: n => `仅显示前 200 处，请用搜索或地区缩小范围（共 ${n} 处）。`,
     reviews: '条评论', price: '人均约', gmap: 'Google 地图', nmap: 'Naver 地图', nmapNote: '在韩国用 Naver 地图导航最准确。',
-    showKr: '可把这个韩文店名给当地人或出租车司机看', guides: n => `KeyChinGu 文章 ${n} 篇`, expand: '展开子类别', min: m => `${m} 分钟` },
+    showKr: '可把这个韩文店名给当地人或出租车司机看', guides: n => `KeyChinGu 文章 ${n} 篇`, expand: '展开子类别', min: m => `${m} 分钟`,
+    region: (n, g) => `共 <b>${n}</b> 处 · KeyChinGu 文章 <b>${g}</b> 篇`, picks: n => `★ 推荐给游客：<b>${n}</b> 处`, routesHere: '此地区的 KeyChinGu 路线', other: '其他' },
   ja: { title: '韓国グルメ＆スポットマップ', sub: n => `KeyChinGu が集めた韓国の飲食店・カフェ・観光スポット <b>${n}</b> 件。点をタップすると詳細・経路案内・KeyChinGu の記事が見られます。`,
     q: '店名・地域で検索（例：カルグクス、聖水、海雲台）', all_kr: '韓国全体', kinds: 'カテゴリー', all: 'すべて選択', none: 'すべて解除',
     fit: '旅行者におすすめ', kc: 'KeyChinGu の記事で紹介', routesH: 'KeyChinGu の散策・交通ルート', routeNone: 'ルートを表示…', routeGuide: 'ルート記事を読む',
     sort: { rv: 'レビューが多い順', lk: 'インスタのいいね順', rt: '評価が高い順', nm: '名前順' },
     shown: n => `<b>${n}</b> 件を表示`, nocoord: n => `地図に位置がない ${n} 件はリストのみ`, noloc: '地図の位置なし', more: n => `上位 200 件のみ表示。検索や地域で絞り込んでください（全 ${n} 件）。`,
     reviews: '件のレビュー', price: '一人あたり約', gmap: 'Google マップ', nmap: 'NAVER マップ', nmapNote: '韓国では NAVER マップの経路案内が最も正確です。',
-    showKr: 'この韓国語の店名を現地の人やタクシー運転手に見せられます', guides: n => `KeyChinGu の記事 ${n} 本`, expand: 'サブカテゴリーを開く', min: m => `${m} 分` },
+    showKr: 'この韓国語の店名を現地の人やタクシー運転手に見せられます', guides: n => `KeyChinGu の記事 ${n} 本`, expand: 'サブカテゴリーを開く', min: m => `${m} 分`,
+    region: (n, g) => `<b>${n}</b> 件 · KeyChinGu の記事 <b>${g}</b> 本`, picks: n => `★ 旅行者におすすめ：<b>${n}</b> 件`, routesHere: 'この地域の KeyChinGu ルート', other: 'その他' },
 };
 const CAT = {
   '한식': ['Korean', '韩餐', '韓国料理'], '일식': ['Japanese', '日料', '和食'], '중식': ['Chinese', '中餐', '中華料理'], '양식': ['Western', '西餐', '洋食'],
@@ -357,7 +372,26 @@ fetch('../data/tourist_map.json').then(r => r.json()).then(DATA => {
   $('tm-stops').addEventListener('click', e => { const li = e.target.closest('li[data-j]'); if (!li) return; const s = RT[+$('tm-route').value].stops[+li.dataset.j]; if (s.lat != null) map.setView([s.lat, s.lng], 17); });
 
   let tm; $('tm-q').addEventListener('input', e => { clearTimeout(tm); tm = setTimeout(() => { st.q = e.target.value; apply(!!st.q); }, 220); });
-  $('tm-sido').addEventListener('change', e => { st.sido = e.target.value; apply(true); if (!st.sido) map.setView([36.3, 127.8], 7); });
+  // 지역 요약 카드 — 필터와 무관하게 그 지역 전체 기준
+  function regionCard(k) {
+    const box = $('tm-region');
+    if (!k) { box.hidden = true; box.innerHTML = ''; return; }
+    const rs = D.filter(r => r[5] === k), pc = {};
+    rs.forEach(r => { const p = LV[r[4]].p; pc[p] = (pc[p] || 0) + 1; });
+    const g = new Set(); rs.forEach(r => r[14].forEach(id => { if (CM[id]) g.add(id); }));
+    const top = Object.entries(pc).sort((a, b) => b[1] - a[1]), main = top.slice(0, 4), rest = top.slice(4).reduce((a, x) => a + x[1], 0);
+    const pct = n => Math.round(n * 100 / rs.length);
+    const seg = main.map(([p, n]) => `<i style="width:${n * 100 / rs.length}%;background:${pcol(p)}"></i>`).join('') + (rest ? `<i style="width:${rest * 100 / rs.length}%;background:${tok('--p11')}"></i>` : '');
+    const leg = main.map(([p, n]) => `<span><i style="background:${pcol(p)}"></i>${esc(tc(PN[p]))} ${pct(n)}%</span>`).join('') + (rest ? `<span><i style="background:${tok('--p11')}"></i>${T('other')} ${pct(rest)}%</span>` : '');
+    const rts = RT.map((r, i) => [r, i]).filter(([r]) => r.sido === k);
+    box.innerHTML = `<h2>${esc(ts(k))}</h2><div class="rs">${T('region')(fmt(rs.length), fmt(g.size))}</div>
+      <div class="tm-bar" role="img" aria-label="${esc(main.map(([p, n]) => tc(PN[p]) + ' ' + pct(n) + '%').join(', '))}">${seg}</div><div class="tm-leg">${leg}</div>
+      <div class="rs">${T('picks')(fmt(rs.filter(r => r[13] === 2).length))}</div>
+      ${rts.length ? `<div class="rs">${T('routesHere')}</div><div class="rr">${rts.map(([r, i]) => `<button type="button" class="tm-btn" data-r="${i}">${esc((r.title[L_] || r.title.en).split(' — ')[0])}</button>`).join('')}</div>` : ''}`;
+    box.hidden = false;
+  }
+  $('tm-region').addEventListener('click', e => { const b = e.target.closest('button[data-r]'); if (!b) return; $('tm-route').value = b.dataset.r; showRoute(b.dataset.r); });
+  $('tm-sido').addEventListener('change', e => { st.sido = e.target.value; apply(true); regionCard(st.sido); if (!st.sido) map.setView([36.3, 127.8], 7); });
   $('tm-sort').addEventListener('change', e => { st.sort = e.target.value; renderList(); });
   $('tm-fit').addEventListener('change', e => { st.fit = e.target.checked; apply(); });
   $('tm-kc').addEventListener('change', e => { st.kc = e.target.checked; apply(); });
