@@ -33522,5 +33522,37 @@
     "title_ja": "韓国で家電・ガジェットを買って帰る — ギャラクシー・ダイソン・ノートPC、タックスリファンドの受け方と電圧・保証・通信の落とし穴5つ",
     "summary_zh": "即时退税(单笔15,000韩元至未满100万韩元)与机场退税(未拆封·托运前先过海关确认)的区别,220V电器在海外的使用,三星保修限于销售国·笔记本国际保修,韩版Galaxy的5G频段与eSIM,以及戴森体验店·乐天Hi-Mart·Techno Mart — 购买前检查清单。",
     "summary_ja": "即時還付(1回15,000ウォン以上100万ウォン未満)と事後還付(未開封・預け入れ前に税関確認)の違い、220V家電の海外使用、サムスンの販売国保証制限とノートPCの国際保証、韓国版ギャラクシーの5Gバンド・eSIM、ダイソンのデモストア・ロッテハイマート・テクノマートまで — 買う前のチェックリスト。"
+  },
+  {
+    "id": "1414",
+    "slug": "korea-short-stay-booking-traps",
+    "title_kr": "한국 단기숙소 예약, 당황 제로 매뉴얼 — 앱 밖 계좌이체는 거절, 영업신고 숙소 고르기, 요금이 다르면 증거 남기기",
+    "title_en": "Booking a Short-Term Stay in Korea, a Zero-Panic Manual — Refuse Off-App Bank Transfers, Pick a Registered Stay, and Keep Evidence When the Price Differs",
+    "category": "H",
+    "tags": [
+      "foreign-tourist",
+      "first-timer",
+      "howto",
+      "lodging",
+      "airbnb",
+      "scam",
+      "safety",
+      "procedure",
+      "survival",
+      "manual"
+    ],
+    "summary_kr": "에어비앤비는 2026-01-01부터 영업신고증 없는 한국 숙소 예약을 막고 오피스텔을 퇴출했다. 계좌이체·종이 청구서 결제 요청은 사기 신호(에어비앤비·Booking.com 공식), 2026-08-04부터 도시민박업·한옥체험업은 게시 요금 초과 청구 시 처분 — 피해 신고는 경찰청 ECRM(4개 언어)까지, 예약 전 체크리스트.",
+    "summary_en": "From 2026-01-01 Airbnb blocks bookings at Korean stays without a business registration certificate and has removed officetels. Requests to pay by bank transfer or paper invoice are scam signals (Airbnb and Booking.com official guidance); from 2026-08-04 urban homestays and hanok stays face penalties for charging above the posted rate. A pre-booking checklist, through reporting fraud to the National Police Agency's ECRM (4 languages).",
+    "date_published": "2026-10-13",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false,
+    "title_zh": "韩国短租住宿预订零慌乱手册——App外转账一律拒绝,选有营业申报的住宿,房费不一致要留证据",
+    "title_ja": "韓国の短期宿泊予約、慌てないためのマニュアル — アプリ外の口座振込は断る、営業申告済みの宿を選ぶ、料金が違ったら証拠を残す",
+    "summary_zh": "Airbnb自2026-01-01起不再接受未提交营业申报证的韩国房源预订,并下架办公型公寓。要求银行转账或纸质账单付款是诈骗信号(Airbnb·Booking.com官方),2026-08-04起城市民宿业·韩屋体验业超收公示房价将受处分——从预订前检查清单到向警察厅ECRM(4种语言)报案。",
+    "summary_ja": "Airbnbは2026-01-01から営業申告証のない韓国の宿の予約を受け付けず、オフィステルを撤去した。口座振込や紙の請求書での支払い要求は詐欺のサイン(Airbnb・Booking.com公式)、2026-08-04から都市民泊業・韓屋体験業は掲示料金を超える請求で処分対象 — 予約前チェックリストから警察庁ECRM(4言語)への通報まで。",
+    "series": "korea-first-timer",
+    "content_type": "howto-manual"
   }
 ]
