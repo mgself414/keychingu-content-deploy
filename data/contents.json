@@ -31189,8 +31189,8 @@
   {
     "id": "1338",
     "slug": "korea-restaurant-reviews",
-    "title_kr": "별점 없는 나라에서 맛집 찾기 — 한국 리뷰 읽는 법",
-    "title_en": "Finding Great Food in a Country Without Star Ratings — How to Read Korean Reviews",
+    "title_kr": "별점만 믿으면 안 되는 나라 — 한국 맛집 리뷰 읽는 법",
+    "title_en": "Finding Great Food in a Country Where Stars Aren't Enough — How to Read Korean Reviews",
     "category": "B",
     "tags": [
       "foreign-tourist",
@@ -31199,17 +31199,17 @@
       "reviews",
       "apps"
     ],
-    "summary_kr": "구글맵·미슐랭·별점 플레이북은 한국에서 통하지 않는다. 별점을 없앤 2021년 네이버 개편, 영수증 인증 방문자리뷰 vs 협찬 블로그리뷰 판별, 키워드 리뷰 해독과 5분 검증 체크리스트까지 — 한국 맛집 발견의 진짜 규칙.",
-    "summary_en": "Your Google Maps and star-rating playbook fails in Korea. The 2021 Naver reform that abolished stars, receipt-verified visitor reviews vs sponsored blog posts, keyword-review decoding, and a 5-minute vetting checklist — the real rules of finding food in Korea.",
+    "summary_kr": "구글맵·미슐랭·별점 플레이북은 한국에서 그대로 통하지 않는다. 2021년 폐지됐다가 2026년 돌아온 네이버 별점(가게가 숨길 수 있다), 영수증 인증 방문자리뷰 vs 협찬 블로그리뷰 판별, 키워드 리뷰 해독과 5분 검증 체크리스트까지 — 한국 맛집 발견의 진짜 규칙.",
+    "summary_en": "Your Google Maps and star-rating playbook doesn't carry over to Korea. Naver's stars were scrapped in 2021 and returned in 2026 (shops can hide them), plus receipt-verified visitor reviews vs sponsored blog posts, keyword-review decoding, and a 5-minute vetting checklist — the real rules of finding food in Korea.",
     "date_published": "2026-09-01",
     "en_available": true,
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false,
-    "title_ja": "星評価のない国でマッチプ 探し — 韓国レビューの読み方",
-    "title_zh": "在没有星级评分的国度寻找美食店 — 读懂韩国点评的方法",
-    "summary_ja": "外国人旅行者向け韓国マッチプ検証マニュアル — Googleマップ攻略法が通用しない理由 + 訪問者レビュー vs ブログレビュー の見分け方 + キーワードレビュー の読み解き方 + 5分検証チェックリスト",
-    "summary_zh": "外国游客专用韩国美食店验证手册 — Google Maps攻略为何在韩国失灵 + 访客点评 与博客点评 辨别法 + 关键词点评 解读 + 5分钟验证清单"
+    "title_ja": "星評価だけを信じてはいけない国 — 韓国レビューの読み方",
+    "title_zh": "只信星级行不通的国度 — 读懂韩国美食店点评的方法",
+    "summary_ja": "外国人旅行者向け韓国マッチプ検証マニュアル — Googleマップ攻略法が通用しない理由 + 2021年に廃止され2026年に復活したNaver星評価(お店側が非表示可) + 訪問者レビュー vs ブログレビュー の見分け方 + キーワードレビュー の読み解き方 + 5分検証チェックリスト",
+    "summary_zh": "外国游客专用韩国美食店验证手册 — Google Maps攻略为何在韩国失灵 + 2021年取消、2026年回归的Naver星级评分(店家可隐藏) + 访客点评 与博客点评 辨别法 + 关键词点评 解读 + 5分钟验证清单"
   },
   {
     "id": "1339",
