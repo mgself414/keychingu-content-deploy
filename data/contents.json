@@ -10829,8 +10829,8 @@
   {
     "id": "467",
     "slug": "malaysia-tourist-essentials",
-    "title_kr": "Malaysia Tourist Essentials — 외국인 관광객 말레이시아 할랄·K-pop·다종교 풀 메타 가이드 12 시그니처",
-    "title_en": "Malaysia Tourist Essentials",
+    "title_kr": "말레이시아 여행자 한국 가이드 — K-ETA 확인법·할랄 식당 4분류·기도실·직항",
+    "title_en": "Korea Guide for Malaysian Travelers — K-ETA, Halal Categories, Prayer Rooms, Flights",
     "category": "B",
     "tags": [
       "foreigner",
@@ -10838,17 +10838,17 @@
       "kpop",
       "meta-segment"
     ],
-    "summary_kr": "말레이 매트릭스 — 40만/년 + 한·말 직항 (KL·페낭·코타키나발루) + 무슬림 65%·중화계 25%·인도계 7% 다종교 한국 #1 fit (#192·#453·#367) + KMF 할랄 30+ + 영어 친화 (구 영국령) + BTS Malaysia ARMY 80만+. 신규 segment 4편.",
-    "summary_en": "Malaysia matrix — 400k/yr + Korea-Malaysia direct flights (KL·Penang·Kota Kinabalu) + Muslim 65%·Chinese 25%·Indian 7% multi-religion #1 (#192·#453·#367) + KMF halal 30+ + English-friendly (former British) + BTS Malaysia ARMY 800k+. New segment #4.",
+    "summary_kr": "2026-10-20 공식값: K-ETA 한시 면제 2026-12-31까지(대상국 명단 미게시 — 신청 화면 여권 스캔으로 확인) · 미발급이면 e-Arrival Card 제출 · 한국관광공사 할랄 식당 4분류(Halal Certified·Self-certified·Muslim Friendly·Pork free) · 서울중앙성원·인천공항 T1 기도실 2곳 24시간 · 말레이시아항공 쿠알라룸푸르–서울 직항",
+    "summary_en": "Official values checked Oct 20, 2026: K-ETA temporary exemption runs to Dec 31, 2026 (no country list in the notice — scan your passport on the application page to check) · without a K-ETA, file the e-Arrival Card · KTO halal restaurant categories (Halal Certified, Self-certified, Muslim Friendly, Pork free) · Seoul Central Mosque and two 24-hour prayer rooms at Incheon T1 · Malaysia Airlines nonstop Kuala Lumpur–Seoul.",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
     "jp_available": true,
     "date_published": "2026-05-27",
-    "title_ja": "マレーシア観光ガイド",
-    "title_zh": "马来西亚游客必备",
-    "summary_ja": "マレーシアマトリックス：年間40万人、韓・マレーシア直行便（クアラルンプール、ペナン、コタキナバル）。イスラム教徒65%、中華系25%、インド系7%の多宗教国家で韓国No.1フィット、KMFハラル認証30ヶ所以上。英語に親しみやすい（旧英国領）、BTSマレーシアARMY80万人以上。新規セグメント第4弾。",
-    "summary_zh": "马来西亚市场概览：每年40万游客，拥有韩马直航（吉隆坡、槟城、哥打京那巴鲁）。65%穆斯林、25%华裔、7%印度裔，多元宗教与韩国契合度第一，有30多家KMF清真认证餐厅，英语友好。BTS马来西亚ARMY超过80万。新细分市场系列4。"
+    "title_ja": "マレーシア旅行者のための韓国ガイド — K-ETA・ハラール4分類・礼拝室・直行便",
+    "title_zh": "马来西亚旅客韩国指南 — K-ETA·清真餐厅4分类·祈祷室·直航",
+    "summary_ja": "2026-10-20公式値：K-ETA臨時免除は2026-12-31まで（対象国リスト未掲示 — 申請画面でパスポートをスキャンして確認）・K-ETA未取得ならe-Arrival Card提出・韓国観光公社のハラール飲食店4分類（Halal Certified・Self-certified・Muslim Friendly・Pork free）・ソウル中央聖院と仁川空港T1の24時間礼拝室2か所・マレーシア航空クアラルンプール–ソウル直行便",
+    "summary_zh": "2026-10-20官方值：K-ETA临时豁免延至2026-12-31（公告未列国家名单——在申请页面扫描护照确认）·未办K-ETA需提交e-Arrival Card·韩国观光公社清真餐厅4分类（Halal Certified·Self-certified·Muslim Friendly·Pork free）·首尔中央清真寺与仁川机场T1两处24小时祈祷室·马来西亚航空吉隆坡–首尔直航"
   },
   {
     "id": "468",
@@ -11104,8 +11104,8 @@
   {
     "id": "478",
     "slug": "korea-hanjeongsik-map",
-    "title_kr": "Korea Hanjeongsik Map — 외국인 관광객 한정식 (전통 코스 요리) 풀 메타 가이드 12 시그니처",
-    "title_en": "Korea Hanjeongsik Map",
+    "title_kr": "한국 한정식 가이드 — 서울 미쉐린 한식 3곳·전주 한정식·안동 헛제삿밥·사찰음식",
+    "title_en": "Korea Hanjeongsik Guide — Seoul Michelin, Jeonju, Andong & Temple Food",
     "category": "C",
     "tags": [
       "foreigner",
@@ -11117,18 +11117,18 @@
       "temple-food",
       "meta-category"
     ],
-    "summary_kr": "한국 한정식 매트릭스 — 5축 (서울 미슐랭·모던 한식·노포 궁중·전주·안동·사찰음식) — 라연 (신라 미슐랭 2★)·밍글스 (강남 3★)·온지음·한달 + 전주 한정식 (#384 UNESCO 음식창의도시·풍년옥·다미)·안동 헛제삿밥 (#397·UNESCO 하회) + 진관사·선재 (Netflix Chef's Table·정관 스님) 사찰음식 + 가격대 라연 30~50만/안동 3~10만. 4 동선 + 5팁 + segment cross-link (#190·#193·#335·#344·#367·#369·#384·#397·#462·#463). 카테고리 메타 한식 deep dive 2편 (#337·#344·#384·#397 sub-deep).",
-    "summary_en": "Korea Hanjeongsik (traditional course meal) matrix — 5 axes (Seoul Michelin·modern Korean·noporo court cuisine·Jeonju·Andong·temple food) — Rayeon (Shilla 2★)·Mingles (Gangnam 3★)·Onjium·Onjium·Hadal + Jeonju Hanjeongsik (#384 UNESCO Gastronomy)·Andong heot-jesatbap (#397·UNESCO Hahoe) + Jinkwansa·Seonjae (Netflix Chef's Table) temple food + Rayeon 300~500K/Andong 30~100K. Category meta Korean food deep dive #2.",
+    "summary_kr": "2026-10-20 공식값: 미쉐린 서울 2026 밍글스 3스타·라연 2스타·온지음 1스타(주소·점심 시간) · 전주 한정식 반찬 30여 가지와 2012 유네스코 음식 창의도시 · 안동 헛제삿밥 2곳 11:00~20:00 · 사찰음식은 백양사 정관스님(Chef's Table 2017). 가격은 게시된 곳이 없다",
+    "summary_en": "Official values checked Oct 20, 2026: Michelin Seoul 2026 — Mingles 3 stars, La Yeon 2 stars, Onjium 1 star (address, lunch hours) · Jeonju hanjeongsik with about 30 side dishes, UNESCO City of Gastronomy since 2012 · two Andong heotjesabap restaurants, 11:00–20:00 · temple food and Ven. Jeong Kwan of Baekyangsa (Chef's Table 2017). No prices are posted.",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
     "jp_available": true,
     "image": "assets/og/korea-hanjeongsik-map.jpg",
     "date_published": "2026-05-29",
-    "title_ja": "韓国ハンジョンシクマップ",
-    "title_zh": "韩国韩定食地图",
-    "summary_ja": "韓国の韓定食は、ソウルミシュラン、モダン韓食、老舗宮中料理、全州、安東、寺院料理の5軸で楽しめます。ラヨンやミングルスのような高級店から、全州韓定食、安東のホッチェサッパプ、津寛寺・ソンジェの寺院料理まで幅広く、韓食ディープダイブの第2弾です。",
-    "summary_zh": "韩定食地图——二星罗宴·三星Mingles、宫廷料理老店、全州韩定食、安东祭祀饭到津宽寺寺院素食(Netflix主厨的餐桌)。"
+    "title_ja": "韓国韓定食ガイド — ソウルのミシュラン韓食・全州・安東・寺院料理",
+    "title_zh": "韩国韩定食指南 — 首尔米其林韩餐·全州·安东·寺院素食",
+    "summary_ja": "2026-10-20公式値：ミシュラン・ソウル2026のミングルス3つ星・羅宴2つ星・オンジウム1つ星（住所・ランチ時間）・おかず約30品の全州韓定食と2012年ユネスコ食文化創造都市・安東ホッチェサッパプ2店 11:00〜20:00・寺院料理は白羊寺の正寛僧侶（Chef's Table 2017）。価格の公式掲示はなし",
+    "summary_zh": "2026-10-20官方值：首尔米其林2026 Mingles三星·罗宴二星·Onjium一星（地址·午餐时间）·全州韩定食约30道小菜，2012年联合国教科文组织美食之都·安东假祭祀饭2家 11:00–20:00·寺院素食与白羊寺正宽法师（Chef's Table 2017）。均无公开价格"
   },
   {
     "id": "479",
@@ -24095,8 +24095,8 @@
   {
     "id": "1069",
     "slug": "korea-gangwon-icefish-winter",
-    "title_kr": "강원 빙어 송어 축제 겨울",
-    "title_en": "Gangwon Icefish Winter Festival",
+    "title_kr": "강원 얼음낚시 축제 — 화천 산천어·평창 송어",
+    "title_en": "Gangwon Ice Fishing Festivals — Hwacheon & Pyeongchang",
     "category": "D",
     "tags": [
       "foreign-tourist",
@@ -24104,18 +24104,18 @@
       "winter",
       "gangwon"
     ],
-    "summary_kr": "강원 빙어 송어 축제 겨울 · 외국인 가이드 · 시즌 축제 매트릭스",
-    "summary_en": "Gangwon Icefish Winter Festival · foreign tourist seasonal festival matrix",
+    "summary_kr": "지금 갈 수 있는 강원 얼음낚시 축제 두 곳 · 인제 빙어축제는 3년 연속 취소 · 날짜·요금은 매년 확인",
+    "summary_en": "Two Gangwon ice fishing festivals you can still visit · Inje Smelt Festival cancelled three years running · check dates and fees each year",
     "en_available": true,
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false,
     "image_credit": "Korea Tourism Organization (공공누리 1유형)",
     "date_published": "2026-06-13",
-    "title_ja": "江原ワカサギ・マス祭り 冬",
-    "title_zh": "江原冰鱼鳟鱼节",
-    "summary_ja": "江原道ワカサギ・マス祭り（冬）。外国人向けガイド、シーズン別フェスティバル一覧。",
-    "summary_zh": "江原道冰鱼鳟鱼节，冬季，外国人指南，季节性庆典一览。"
+    "title_ja": "江原の氷上釣り祭り — 華川ヤマメ・平昌マス",
+    "title_zh": "江原冰钓节 — 华川山鳟鱼·平昌鳟鱼",
+    "summary_ja": "今行ける江原の氷上釣り祭り2か所。麟蹄ワカサギ祭りは3年連続中止。日程・料金は毎年確認。",
+    "summary_zh": "目前可去的两个江原冰钓节，麟蹄胡瓜鱼节连续三年取消，日期和费用每年确认。"
   },
   {
     "id": "1070",
