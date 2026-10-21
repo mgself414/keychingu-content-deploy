@@ -3386,8 +3386,8 @@
   {
     "id": "190",
     "slug": "japan-tourist-essentials",
-    "title_kr": "일본 관광객 국룰 코스 — 도쿄 당일치기 12시간 풀가이드",
-    "title_en": "Japan Tourist Essentials — Tokyo Day-Trip Seoul Course",
+    "title_kr": "일본 여행자 한국 가이드 — 무비자 90일·K-ETA 확인법·입국 자동심사·PayPay·하네다–김포",
+    "title_en": "Japan to Korea Travel Guide: 90 Days Visa-Free, Checking K-ETA, Automated Immigration, PayPay, Haneda–Gimpo",
     "category": "A",
     "tags": [
       "foreigner",
@@ -3396,23 +3396,23 @@
       "myeongdong",
       "k-beauty"
     ],
-    "summary_kr": "韓国弾丸ツアー(한국 총알 12시간 당일치기) — 안국 카페(런던베이글·어니언) + 명동 아침·쇼핑(이삭토스트·전복죽·올리브영 95%·다이소 12층·약국 19개 +142%) + 광장시장·성수 식도락(진옥화 닭한마리·마약김밥·꽈배기·능동 미나리) + 롯데마트 서울역 캐리어 쇼핑 — 4축 12 시그니처. 일본 재방문율 44.8% + 평균 7회 매니아용 segment-specific 메타 가이드.",
-    "summary_en": "Japan Tourist Essentials — 'Korea Bullet Trip' 12-hour day-trip + 1N2D standard course. Anguk cafe tour (London Bagel·Cafe Onion) + Myeongdong morning·shopping (Isaac Toast·abalone porridge·Olive Young Town 95% foreign sales·Daiso 12F·pharmacy district +142%) + Gwangjang Market + Seongsu Neungdong (minari + yukhoe) + Lotte Mart Seoul Station carrier shopping — 4-axis 12 signature picks. Japan segment 44.8% revisit + 7 avg visits, segment-specific meta guide.",
+    "summary_kr": "2026-10-21 공식값: 일본 일반여권 무사증 90일 · K-ETA 한시 면제는 2026-12-31까지, 대상 여부는 신청 화면에서 여권 스캔으로 확인 · 2026-03-16부터 일본 여권도 입국 자동심사 · PayPay는 한국 Alipay+·ZeroPay 가맹점에서 · JAL 하네다–김포 운항",
+    "summary_en": "Official values checked Oct 21, 2026: Japanese ordinary passports enter visa-free for 90 days · the temporary K-ETA exemption runs through 2026-12-31; whether you qualify shows up when you scan your passport on the application screen · from 2026-03-16 Japanese passports can also use automated immigration clearance · PayPay works at Korean Alipay+ and ZeroPay merchants · JAL flies Haneda–Gimpo. As of 2026-10-21",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
     "jp_available": true,
     "date_published": "2026-05-19",
-    "title_ja": "日本人向け定番ソウル日帰り12時間ガイド",
-    "title_zh": "日本游客必选路线 东京一日游12小时全攻略",
-    "summary_ja": "韓国弾丸ツアー（12時間日帰り）：安国カフェ（ロンドンベーグル、オニオン）、明洞朝食・ショッピング（イサックトースト、アワビ粥、オリーブヤング95%、ダイソー12階、薬局19店+142%）、広蔵市場・聖水グルメ（チンオックァタッカンマリ、麻薬キンパ、クァベギ、ヌンドンセリ）、ロッテマートソウル駅でキャリーケースショッピングの4軸12シグネチャー。日本人再訪率44.8%・平均7回訪問のマニア向けセグメント特化型メタガイド。",
-    "summary_zh": "\"韩国子弹之旅\"12小时一日游——安国咖啡巡礼、明洞早餐与购物、广场市场·圣水美食、乐天玛特行李箱扫货,4大主题12个招牌打卡点。"
+    "title_ja": "日本からの旅行者向け韓国ガイド — ビザ免除90日・K-ETA確認方法・入国の自動化ゲート・PayPay・羽田〜金浦",
+    "title_zh": "日本游客韩国指南——免签90天、K-ETA确认方法、入境自动通关、PayPay、羽田–金浦航线",
+    "summary_ja": "2026-10-21公式値：日本の一般旅券はビザ免除で90日滞在 · K-ETAの時限免除は2026-12-31まで、対象かどうかは申請画面でパスポートをスキャンして確認 · 2026-03-16から日本のパスポートも入国の自動化ゲートを利用可能 · PayPayは韓国のAlipay+・ZeroPay加盟店で利用可 · JAL羽田〜金浦運航",
+    "summary_zh": "2026-10-21官方值：日本普通护照免签90天 · K-ETA临时豁免至2026-12-31,是否适用请在申请页面扫描护照确认 · 自2026-03-16起日本护照也可使用入境自动通关 · PayPay可在韩国的Alipay+、ZeroPay商户使用 · JAL执飞羽田–金浦航线"
   },
   {
     "id": "191",
     "slug": "china-tourist-essentials",
-    "title_kr": "중국 관광객 요유객(요우커) 코스 — 방한 1위 segment 풀패키지 가이드",
-    "title_en": "China Tourist Essentials — #1 Inbound Segment Full Package Guide",
+    "title_kr": "중국 대륙 여행자 한국 가이드 — 개별은 비자, 단체는 15일 무비자(2026-12-31까지)·제주 30일·결제",
+    "title_en": "Mainland China to Korea Travel Guide: Visa for Independent Travel, 15-Day Visa-Free for Groups (Through 2026-12-31), 30 Days on Jeju, Payments",
     "category": "A",
     "tags": [
       "foreigner",
@@ -3424,23 +3424,23 @@
       "lotte-world",
       "n-seoul-tower"
     ],
-    "summary_kr": "방한 1위 segment(2024 460만명) 풀패키지 — 명동·동대문 쇼핑(올리브영 95%+두타 새벽+롯데면세점 60%) + N서울타워·경복궁·롯데월드타워 555m 랜드마크 + 북촌 한복·광장시장·인사동 전통 + HYBE 사옥·롯데월드·여의도 한강 치맥 K-pop·테마파크 4축 12선. 1박2일 압축 / 3박4일 풀패키지 양면. 샤오홍슈·웨이보·도우인 시그니처.",
-    "summary_en": "Korea's #1 inbound segment full package — Myeongdong·Dongdaemun shopping (Olive Young 95% foreign sales + Doota night market + Lotte Duty Free 60% China share) + N Seoul Tower·Gyeongbokgung·Lotte World Tower 555m landmarks + Bukchon hanbok·Gwangjang Market·Insadong tradition + HYBE HQ·Lotte World·Yeouido Hangang chimaek 4-axis 12-pick. 1N2D compact + 3N4D full package. Xiaohongshu·Weibo·Douyin signature course.",
+    "summary_kr": "2026-10-21 공식값: 중국 대륙 일반여권은 무사증 국가 목록에 없어 개별 여행은 비자 · 전담여행사 모객 3인 이상 단체는 15일 무사증, 2026-07-01~12-31로 연장 · 제주는 개별·단체 30일 무사증 · 입국 자동심사 42개국 명단엔 없음",
+    "summary_en": "Official values checked Oct 21, 2026: Mainland Chinese ordinary passports are not on the visa-free country list, so independent travel requires a visa · groups of 3 or more recruited by designated travel agencies enter visa-free for 15 days, extended to 2026-07-01 through 12-31 · Jeju allows 30 days visa-free for both individual and group travelers · not on the 42-country automated immigration list. As of 2026-10-21",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
     "jp_available": true,
     "date_published": "2026-05-19",
-    "title_ja": "中国人向け訪韓No.1フルパッケージガイド",
-    "title_zh": "中国游客首选路线 访韩第一客群全攻略",
-    "summary_ja": "訪韓1位セグメント（2024年460万人）向けフルパッケージ：明洞・東大門ショッピング（オリーブヤング95%、DOOTA深夜営業、ロッテ免税店60%）、Nソウルタワー・景福宮・ロッテワールドタワー（555m）ランドマーク、北村韓服・広蔵市場・仁寺洞伝統、HYBE社屋・ロッテワールド・汝矣島漢江チメク（K-POP・テーマパーク）の4軸12選。1泊2日コンパクト／3泊4日フルパッケージの両面で、小紅書・微博・抖音シグネチャーコース。",
-    "summary_zh": "明洞·东大门购物+N首尔塔·景福宫·乐天世界塔地标+北村韩服·广场市场+HYBE与汉江炸鸡啤酒——4大主题12选,1晚2日或3晚4日全套行程。"
+    "title_ja": "中国大陸からの旅行者向け韓国ガイド — 個人はビザ、団体は15日ビザ免除(2026-12-31まで)・済州30日・決済",
+    "title_zh": "中国大陆游客韩国指南——自由行办签证,团体旅游免签15天(至2026-12-31)、济州岛免签30天、支付",
+    "summary_ja": "2026-10-21公式値：中国大陸の一般旅券はビザ免除国リストになく、個人旅行はビザが必要 · 専担旅行社が募集した3人以上の団体は15日ビザ免除、2026-07-01~12-31に延長 · 済州は個人・団体とも30日ビザ免除 · 入国の自動化ゲート42の国・地域の一覧には含まれない",
+    "summary_zh": "2026-10-21官方值：中国大陆普通护照不在韩国免签国家名单内,自由行需办签证 · 经专门旅行社组织的3人以上团体可免签15天,2026-07-01~12-31延长 · 济州岛自由行、团体均可免签30天 · 入境自动通关42国名单中没有中国大陆"
   },
   {
     "id": "192",
     "slug": "sea-tourist-halal-kdrama",
-    "title_kr": "동남아 관광객 K-drama·할랄 코스 — 무슬림·MZ 무비자 1주 풀가이드",
-    "title_en": "SEA Tourist K-drama & Halal Course — Muslim·MZ 1-Week Full Guide",
+    "title_kr": "동남아 무슬림 여행자 한국 가이드 — 국적별 무비자·비자 한눈에(브루나이·싱가포르·말레이시아·태국·인도네시아·필리핀), 할랄 4분류·기도실",
+    "title_en": "Southeast Asian Muslim Travelers' Korea Guide: Visa-Free and Visa Rules by Nationality at a Glance (Brunei, Singapore, Malaysia, Thailand, Indonesia, Philippines), 4 Halal Categories, Prayer Rooms",
     "category": "A",
     "tags": [
       "foreigner",
@@ -3452,17 +3452,17 @@
       "kpop",
       "namisum"
     ],
-    "summary_kr": "동남아 5국(베트남·태국·인도네시아·말레이시아·필리핀, 합산 2024 230만명) 평균 15박 장기 체류 segment — 이태원 이슬람 성원·KMF 인증 할랄 30+ + 북촌 한복·K-drama 외곽(남이섬·인천 도깨비·부암동) + 올리브영·약국·롯데마트 K-beauty·쇼핑 + HYBE·명동 K-pop·롯데월드·N서울타워 4축 12선. 1주 패키지 / 무슬림 친화 5박6일 / K-drama·K-pop 3일 / 가족 1박2일 4종. 키친구 첫 할랄·다종교 친화 콘텐츠.",
-    "summary_en": "SEA 5 countries (Vietnam·Thailand·Indonesia·Malaysia·Philippines, total 2.3M in 2024) avg 15-night long stay — Itaewon Islamic Mosque + 30+ KMF halal restaurants + Bukchon hanbok + K-drama spots (Namiseom·Incheon Goblin·Buam-dong) + Olive Young·pharmacy·Lotte Mart K-beauty·shopping + HYBE HQ·Myeongdong K-pop·Lotte World·N Seoul Tower 4-axis 12-pick. 1-week package + Muslim-friendly 5N6D + K-drama·K-pop 3D + family 1N2D 4 courses. KeyChinGu's first halal·multi-faith content.",
+    "summary_kr": "2026-10-21 공식값: K-ETA 공식 대상국 목록의 허용 체류 — 브루나이 30일·싱가포르 90일·말레이시아 3개월·태국 90일 · 인도네시아·필리핀 일반여권은 목록에 없어 비자(인도네시아 단체는 2026-12-31까지 15일 한시 무사증) · K-ETA 한시 면제 2026-12-31까지 · 한국관광공사 무슬림 식당 4분류 · 서울중앙성원·인천공항 기도실",
+    "summary_en": "Official values checked Oct 21, 2026: Permitted stays from the official K-ETA eligible-country list: Brunei 30 days, Singapore 90 days, Malaysia 3 months, Thailand 90 days · Indonesian and Philippine ordinary passports are not on the list, so a visa is needed (Indonesian groups get a temporary 15-day visa-free entry through 2026-12-31) · temporary K-ETA exemption through 2026-12-31 · Korea Tourism Organization's 4 categories of Muslim-friendly restaurants · Seoul Central Mosque and Incheon Airport prayer rooms. As of 2026-10-21",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
     "jp_available": true,
     "date_published": "2026-05-20",
-    "title_ja": "東南アジア向け Kドラマ・ハラール1週間ガイド",
-    "title_zh": "东南亚游客 韩剧清真路线 穆斯林MZ免签一周全攻略",
-    "summary_ja": "東南アジア5ヶ国からの平均15泊長期滞在者向けに、梨泰院モスクやKMF認証ハラルレストラン、Kドラマロケ地、Kビューティー・ショッピング、K-pop関連施設など4軸12選を提案。KeyChinGu初のハラル・多宗教フレンドリーコンテンツとして、1週間パッケージやムスリムフレンドリー5泊6日など4種のコースを用意しています。",
-    "summary_zh": "梨泰院清真寺与30余家清真认证餐厅+韩剧取景地+K-beauty购物+K-pop圣地——面向东南亚长住游客的4大主题12选,含穆斯林友好行程。"
+    "title_ja": "東南アジアのムスリム旅行者向け韓国ガイド — 国籍別ビザ免除・ビザ早見表(ブルネイ・シンガポール・マレーシア・タイ・インドネシア・フィリピン)、ハラール4分類・礼拝室",
+    "title_zh": "东南亚穆斯林游客韩国指南——各国国籍免签·签证一览(文莱、新加坡、马来西亚、泰国、印度尼西亚、菲律宾),清真餐厅4分类与祈祷室",
+    "summary_ja": "2026-10-21公式値：K-ETA公式対象国リストの許可滞在期間 — ブルネイ30日・シンガポール90日・マレーシア3か月・タイ90日 · インドネシア・フィリピンの一般旅券はリストになくビザが必要(インドネシアの団体は2026-12-31まで15日の時限ビザ免除) · K-ETA時限免除は2026-12-31まで · 韓国観光公社のムスリム対応レストラン4分類 · ソウル中央聖院・仁川空港の礼拝室",
+    "summary_zh": "2026-10-21官方值：K-ETA官方适用国家名单上的允许停留期——文莱30天、新加坡90天、马来西亚3个月、泰国90天 · 印度尼西亚、菲律宾普通护照不在名单内,需办签证(印度尼西亚团体至2026-12-31可临时免签15天) · K-ETA临时豁免至2026-12-31 · 韩国观光公社穆斯林餐厅4分类 · 首尔中央清真寺、仁川机场祈祷室"
   },
   {
     "id": "193",
@@ -7103,8 +7103,8 @@
   {
     "id": "335",
     "slug": "hongkong-tourist-essentials",
-    "title_kr": "홍콩 관광객 미식·럭셔리·자유여행 코스 — 객단가 #1 segment 풀가이드",
-    "title_en": "Hong Kong Tourist Michelin·Luxury Course — #1 ARPU Segment Full Guide",
+    "title_kr": "홍콩·마카오 여행자 한국 가이드 — 무비자 90일·K-ETA 확인법·입국 자동심사·직항",
+    "title_en": "Hong Kong and Macau to Korea Travel Guide: 90 Days Visa-Free, Checking K-ETA, Automated Immigration, Direct Flights",
     "category": "A",
     "tags": [
       "foreigner",
@@ -7116,17 +7116,17 @@
       "cheongdam",
       "2nd-tier-segment"
     ],
-    "summary_kr": "홍콩 40만/년 객단가 #1(1800 USD) segment — 미슐랭·럭셔리·자유여행 100%. 밍글스(3 stars)·온지음·라연(2 stars)·권숙수 + 포시즌스 광화문·롯데시그니엘 555m·신라호텔 + 올리브영·롯데면세점·현대백화점 + 광장 미슐랭·삼청 한옥 4축 12선. 평균 4박 + 광동어·영어 친화 #1. 2nd tier 2편.",
-    "summary_en": "Hong Kong 400k/year #1 ARPU segment ($1,800 USD) — Michelin·luxury·100% self-tour. Mingles (3 stars)·Onjium·La Yeon (2 stars)·Kwonsooksoo + Four Seasons Gwanghwamun·Lotte Signiel 555m·Shilla Hotel + Olive Young·Lotte Duty Free·Hyundai Apgujeong + Gwangjang Michelin·Samcheong hanok 4-axis 12-pick. 4-night avg + Cantonese·English #1 friendly. 2nd tier series #2.",
+    "summary_kr": "2026-10-21 공식값: 홍콩·마카오 일반여권 무사증 90일 · K-ETA 한시 면제는 2026-12-31까지, 대상 여부는 신청 화면에서 여권 스캔으로 확인 · 홍콩·마카오는 2025-11-03 입국 자동심사 첫 대상, 2026-03-16 42개국·지역으로 확대 · 캐세이퍼시픽 홍콩–인천, 마카오공항 시간표에 서울(인천)행",
+    "summary_en": "Official values checked Oct 21, 2026: Hong Kong and Macau ordinary passports enter visa-free for 90 days · the temporary K-ETA exemption runs through 2026-12-31; whether you qualify shows up when you scan your passport on the application screen · Hong Kong and Macau were the first targets of automated immigration clearance on 2025-11-03, expanded to 42 countries and regions on 2026-03-16 · Cathay Pacific Hong Kong–Incheon, and Macau Airport's timetable lists Seoul (Incheon) flights. As of 2026-10-21",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
     "jp_available": true,
     "date_published": "2026-05-21",
-    "title_ja": "香港観光客 美食・ラグジュアリーコース",
-    "title_zh": "香港游客美食奢华自由行路线",
-    "summary_ja": "香港年間40万人、客単価No.1（1800USD）セグメント — ミシュラン・ラグジュアリー・自由旅行100%。ミングルス（3つ星）・オンジウム・ラヨン（2つ星）・クォンスクス、フォーシーズンズ光化門・ロッテシグニエル555m・新羅ホテル、オリーブヤング・ロッテ免税店・現代百貨店、広蔵ミシュラン・三清韓屋の4軸12選。平均4泊、広東語・英語親和性No.1。セカンドティア第2弾。",
-    "summary_zh": "面向香港游客的高端路线——米其林三星Mingles·二星罗宴+四季·Signiel 555米·新罗酒店+免税店与百货购物,4大主题12选。"
+    "title_ja": "香港・マカオからの旅行者向け韓国ガイド — ビザ免除90日・K-ETA確認方法・入国の自動化ゲート・直行便",
+    "title_zh": "港澳游客韩国指南——免签90天、K-ETA确认方法、入境自动通关、直飞航班",
+    "summary_ja": "2026-10-21公式値：香港・マカオの一般旅券はビザ免除90日 · K-ETAの時限免除は2026-12-31まで、対象かどうかは申請画面でパスポートをスキャンして確認 · 香港・マカオは2025-11-03に入国の自動化ゲートの最初の対象となり、2026-03-16に42の国・地域へ拡大 · キャセイパシフィック香港〜仁川、マカオ空港の時刻表にソウル(仁川)行き",
+    "summary_zh": "2026-10-21官方值：香港、澳门普通护照免签90天 · K-ETA临时豁免至2026-12-31,是否适用请在申请页面扫描护照确认 · 香港、澳门是2025-11-03入境自动通关的首批对象,2026-03-16扩大到42个国家和地区 · 国泰航空香港–仁川,澳门机场时刻表中有飞首尔(仁川)的航班"
   },
   {
     "id": "336",
@@ -8227,8 +8227,8 @@
   {
     "id": "369",
     "slug": "middle-east-tourist-essentials",
-    "title_kr": "중동 관광객 무슬림·럭셔리·의료관광 코스 — UAE·사우디·이집트 15만 가이드",
-    "title_en": "Middle East Tourist Muslim·Luxury·Medi-tourism Course — UAE·Saudi·Egypt 150k Guide",
+    "title_kr": "중동 여행자 한국 가이드 — 국가별 무비자 일수(UAE·카타르·쿠웨이트 90일, 사우디·오만·바레인 30일), 할랄 4분류·기도실·직항",
+    "title_en": "Middle East Travelers' Korea Guide: Visa-Free Days by Country (UAE, Qatar, Kuwait 90 Days; Saudi Arabia, Oman, Bahrain 30 Days), 4 Halal Categories, Prayer Rooms, Direct Flights",
     "category": "A",
     "tags": [
       "foreigner",
@@ -8240,17 +8240,17 @@
       "medical-tourism",
       "3rd-tier-segment"
     ],
-    "summary_kr": "중동(UAE·사우디·이집트·카타르·바레인) 15만/년 + 객단가 $1700+ + 무슬림 친화 #1 — 이태원 KMF 할랄 30+ + 롯데시그니엘·포시즌스·신라 5성 + 밍글스·라연 미슐랭 + 압구정 의료관광 + 롯데면세점·현대백화점 럭셔리 + 롯데월드·N서울타워 가족. 7박 럭셔리/무슬림 5박/의료 3박. 3rd tier 3편.",
-    "summary_en": "Middle East (UAE·Saudi·Egypt·Qatar·Bahrain) 150k/year + ARPU $1,700+ + Muslim-friendly #1 — Itaewon KMF halal 30+ + Lotte Signiel·Four Seasons·Shilla 5-star + Mingles·La Yeon Michelin + Apgujeong medical tour + Lotte Duty Free·Hyundai luxury + Lotte World·N Seoul Tower family. 7N luxury + Muslim 5N + medical 3N. 3rd tier #3.",
+    "summary_kr": "2026-10-21 공식값: K-ETA 공식 대상국 목록의 허용 체류 — UAE·카타르·쿠웨이트·튀르키예 90일, 사우디아라비아·오만·바레인 30일 · 이집트·요르단 일반여권은 목록에 없음 · K-ETA 한시 면제 2026-12-31까지 · 서울중앙성원·인천공항 기도실 · 에미레이트·에티하드·카타르항공 인천 취항",
+    "summary_en": "Official values checked Oct 21, 2026: Permitted stays from the official K-ETA eligible-country list: UAE, Qatar, Kuwait and Türkiye 90 days; Saudi Arabia, Oman and Bahrain 30 days · Egypt and Jordan ordinary passports are not on the list · temporary K-ETA exemption through 2026-12-31 · Seoul Central Mosque and Incheon Airport prayer rooms · Emirates, Etihad and Qatar Airways serve Incheon. As of 2026-10-21",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
     "jp_available": true,
     "date_published": "2026-05-25",
-    "title_zh": "中东游客穆斯林奢华医疗旅游路线",
-    "title_ja": "中東観光客 ムスリム・ラグジュアリー・医療観光コース",
-    "summary_zh": "中东（阿联酋、沙特、埃及、卡塔尔、巴林）每年15万游客，客单价超1700美元，穆斯林友好度第一。提供梨泰院KMF清真餐厅、五星级酒店、米其林餐厅、医疗旅游、奢侈品购物、家庭景点等，并有7晚奢华、穆斯林5晚、医疗3晚等套餐。",
-    "summary_ja": "中東（UAE・サウジアラビア・エジプト・カタール・バーレーン）から年間15万人以上、客単価1,700ドル以上、ムスリムフレンドリー度No.1。梨泰院のKMFハラール認証店30軒以上、ロッテシグニエル・フォーシーズンズ・新羅ホテルなどの5つ星ホテル、ミシュラン星付きレストランのミングルス・ラヨン、狎鴎亭の医療観光、ロッテ免税店・現代百貨店でのラグジュアリーショッピング、ロッテワールド・Nソウルタワーでの家族向け体験など、7泊のラグジュアリー、5泊のムスリム向け、3泊の医療観光プランが人気です。"
+    "title_zh": "中东游客韩国指南——各国免签天数(阿联酋·卡塔尔·科威特90天,沙特·阿曼·巴林30天),清真餐厅4分类·祈祷室·直飞航班",
+    "title_ja": "中東からの旅行者向け韓国ガイド — 国別のビザ免除日数(UAE・カタール・クウェート90日、サウジ・オマーン・バーレーン30日)、ハラール4分類・礼拝室・直行便",
+    "summary_zh": "2026-10-21官方值：K-ETA官方适用国家名单上的允许停留期——阿联酋、卡塔尔、科威特、土耳其90天,沙特阿拉伯、阿曼、巴林30天 · 埃及、约旦普通护照不在名单内 · K-ETA临时豁免至2026-12-31 · 首尔中央清真寺、仁川机场祈祷室 · 阿联酋航空、阿提哈德航空、卡塔尔航空飞仁川",
+    "summary_ja": "2026-10-21公式値：K-ETA公式対象国リストの許可滞在期間 — UAE・カタール・クウェート・トルコ90日、サウジアラビア・オマーン・バーレーン30日 · エジプト・ヨルダンの一般旅券はリストにない · K-ETA時限免除は2026-12-31まで · ソウル中央聖院・仁川空港の礼拝室 · エミレーツ・エティハド・カタール航空が仁川に就航"
   },
   {
     "id": "370",
@@ -10680,8 +10680,8 @@
   {
     "id": "461",
     "slug": "korea-unesco-tour-map",
-    "title_kr": "Korea UNESCO Tour Map — 외국인 관광객 한국 UNESCO 14건 풀체험 풀 메타 가이드 12 시그니처",
-    "title_en": "Korea UNESCO Tour Map",
+    "title_kr": "한국 세계유산 17곳을 하루씩 묶는 법 — 서울·근교·경주·안동·백제·제주, 휴관일과 예약까지",
+    "title_en": "How to Bundle Korea's 17 World Heritage Sites One Day at a Time: Seoul, Around Seoul, Gyeongju, Andong, Baekje, Jeju, with Closing Days and Reservations",
     "category": "B",
     "tags": [
       "foreigner",
@@ -10689,18 +10689,18 @@
       "temple",
       "meta-lifestyle"
     ],
-    "summary_kr": "한국 UNESCO 매트릭스 — 세계문화 14 (석굴암·불국사·창덕궁·종묘·해인사·수원화성·경주·고인돌·조선왕릉·하회/양동·남한산성·백제·산사 7·서원 9) + 자연 2 + 인류무형 22 + 세계기록 18 = 56건 글로벌 TOP 20·면적 대비 밀도 #1. 라이프스타일 axis 3편.",
-    "summary_en": "Korea UNESCO matrix — 14 cultural (Seokguram·Bulguksa·Changdeok·Jongmyo·Haeinsa·Suwon Hwaseong·Gyeongju·Dolmen·Royal Tombs·Hahoe/Yangdong·Namhansanseong·Baekje·Sansa 7·Seowon 9) + 2 natural + 22 intangible + 18 documentary = 56 total, density #1 globally. Lifestyle axis #3.",
+    "summary_kr": "2026-10-21 공식값: 한국 세계유산 17건(문화 15·자연 2), 최신 등재는 2025년 반구천의 암각화·2026년 갯벌 확장 · 종묘 화요일·창덕궁 월요일 휴관 · 창덕궁 후원은 6일 전 10시부터 온라인 선착순 · 성산일출봉 매월 첫째 월요일 휴무",
+    "summary_en": "Official values checked Oct 21, 2026: Korea has 17 World Heritage properties (15 cultural, 2 natural), the latest inscriptions being the Petroglyphs along the Bangucheon Stream in 2025 and the expansion of the Getbol tidal flats in 2026 · Jongmyo closes on Tuesdays and Changdeokgung on Mondays · Changdeokgung's Rear Garden opens for online first-come booking from 10:00 six days before (palace admission fee page) · Seongsan Ilchulbong closes on the first Monday of each month. As of 2026-10-21",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
     "jp_available": true,
     "image": "assets/og/korea-unesco-tour-map.jpg",
     "date_published": "2026-05-26",
-    "title_ja": "韓国ユネスコツアーマップ",
-    "title_zh": "韩国UNESCO之旅地图",
-    "summary_ja": "韓国ユネスコマトリックス：世界文化遺産14件（石窟庵、仏国寺など）、自然遺産2件、人類無形文化遺産22件、世界記録遺産18件。合計56件でグローバルTOP20、面積比密度No.1。ライフスタイル軸第3弾。",
-    "summary_zh": "韩国联合国教科文组织遗产概览：拥有14项世界文化遗产、2项自然遗产、22项人类非物质文化遗产和18项世界记忆遗产，共计56项，全球排名前20，单位面积密度全球第一。生活方式轴系列3。"
+    "title_ja": "韓国の世界遺産17件を1日ずつまとめる方法 — ソウル・近郊・慶州・安東・百済・済州、休館日と予約まで",
+    "title_zh": "一天一处串联韩国17处世界遗产的方法——首尔·近郊·庆州·安东·百济·济州,闭馆日与预订",
+    "summary_ja": "2026-10-21公式値：韓国の世界遺産17件(文化15・自然2)、最新の登録は2025年の盤亀川の岩刻画・2026年の干潟の拡張 · 宗廟は火曜、昌徳宮は月曜休館 · 昌徳宮の後苑は6日前の10時からオンライン先着順 · 城山日出峰は毎月第1月曜休み",
+    "summary_zh": "2026-10-21官方值：韩国世界遗产17项(文化15·自然2),最新列入的是2025年的盘龟川岩刻画和2026年扩展的滩涂 · 宗庙周二、昌德宫周一闭馆 · 昌德宫后苑须在6天前10点起线上先到先得预订 · 城山日出峰每月第一个周一休息"
   },
   {
     "id": "462",
@@ -10761,8 +10761,8 @@
   {
     "id": "464",
     "slug": "canada-tourist-essentials",
-    "title_kr": "Canada Tourist Essentials — 외국인 관광객 캐나다 K-pop·워케이션·교환학생 풀 메타 가이드 12 시그니처",
-    "title_en": "Canada Tourist Essentials",
+    "title_kr": "캐나다 여행자 한국 가이드 — K-ETA 면제·무비자 180일·입국 자동심사·밴쿠버/토론토 항공편·대사관",
+    "title_en": "Canada to Korea Travel Guide: K-ETA Exemption, 180 Days Visa-Free, Automated Immigration, Vancouver/Toronto Flights, Embassy",
     "category": "B",
     "tags": [
       "foreigner",
@@ -10771,17 +10771,17 @@
       "workation",
       "meta-segment"
     ],
-    "summary_kr": "캐나다 매트릭스 — 40만/년 + K-pop fan 500만+ (인구 12%) + 한·캐 워홀 (35세·1년·연 4,000명) + Korean Canadian 25만+ + SKY KLI 교환학생 + 디지털 노마드 비자 2024 + 자유여행 90%. 신규 segment 1편 (4th tier 도달).",
-    "summary_en": "Canada matrix — 400k/yr + K-pop fan 5M+ (12% of population) + Korea-Canada working holiday (35yo·1yr·4,000/yr) + Korean Canadians 250k+ + SKY KLI exchange + Digital Nomad visa 2024 + self-tour 90%. New segment #1 (4th tier).",
+    "summary_kr": "2026-10-21 공식값: 캐나다 여권 K-ETA 한시 면제 2026-12-31까지 · 관광·출장 무비자 최대 180일 · 2026-03-16부터 입국 자동심사 대상국 · 대한항공 밴쿠버·토론토–인천 항공권 판매 중 · 주한 캐나다 대사관 +82 2 3783 6000",
+    "summary_en": "Official values checked Oct 21, 2026: Temporary K-ETA exemption for Canadian passports through 2026-12-31 · visa-free for tourism and business for up to 180 days · eligible for automated immigration clearance from 2026-03-16 · Korean Air sells Vancouver and Toronto–Incheon tickets · Embassy of Canada in Korea +82 2 3783 6000. As of 2026-10-21",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
     "jp_available": true,
     "date_published": "2026-05-27",
-    "title_ja": "カナダ観光ガイド",
-    "title_zh": "加拿大游客必备",
-    "summary_ja": "カナダマトリックス：年間40万人、K-popファン500万人以上（人口の12%）。韓・加ワーキングホリデー（35歳まで、1年間、年間4,000人）、韓国系カナダ人25万人以上、SKY KLI交換留学生、2024年デジタルノマドビザ、自由旅行90%。新規セグメント第1弾（4th tier到達）。",
-    "summary_zh": "加拿大市场概览：每年40万游客，K-pop粉丝超过500万（占人口12%）。拥有韩加打工度假（35岁、1年、每年4,000人）、25万以上韩裔加拿大人、SKY KLI交换学生、2024年数字游民签证，90%为自由行。新细分市场系列1。"
+    "title_ja": "カナダからの旅行者向け韓国ガイド — K-ETA免除・ビザ免除180日・入国の自動化ゲート・バンクーバー/トロントの航空便・大使館",
+    "title_zh": "加拿大游客韩国指南——K-ETA豁免·免签180天·入境自动通关·温哥华/多伦多航班·大使馆",
+    "summary_ja": "2026-10-21公式値：カナダ旅券のK-ETA時限免除は2026-12-31まで · 観光・出張はビザ免除で最大180日 · 2026-03-16から入国の自動化ゲートの対象国 · 大韓航空のバンクーバー・トロント〜仁川の航空券を販売中 · 在韓カナダ大使館 +82 2 3783 6000",
+    "summary_zh": "2026-10-21官方值：加拿大护照K-ETA临时豁免至2026-12-31 · 观光、出差免签最长180天 · 自2026-03-16起为入境自动通关适用国家 · 大韩航空正在销售温哥华、多伦多–仁川机票 · 加拿大驻韩大使馆 +82 2 3783 6000"
   },
   {
     "id": "465",
@@ -10810,8 +10810,8 @@
   {
     "id": "466",
     "slug": "philippines-tourist-essentials",
-    "title_kr": "Philippines Tourist Essentials — 외국인 관광객 필리핀 한류·OFW·다종교 풀 메타 가이드 12 시그니처",
-    "title_en": "Philippines Tourist Essentials",
+    "title_kr": "필리핀 여행자 한국 가이드 — 관광비자(C-3-9) 서류·수수료·처리 기간, e-Arrival, 직항 항공사",
+    "title_en": "Philippines to Korea Travel Guide: Tourist Visa (C-3-9) Documents, Fees, Processing Time, e-Arrival, Direct Airlines",
     "category": "B",
     "tags": [
       "foreigner",
@@ -10819,17 +10819,17 @@
       "english-friendly",
       "meta-segment"
     ],
-    "summary_kr": "필리핀 매트릭스 — 35만/년 + 한·필 직항 + 가톨릭 80% (혜화·명동 가톨릭 cluster·동남아 #1 가톨릭) + 영어 90% (#194 미국 영어 fit) + OFW 한국 거주 50만+ 가족 방문 (자동차·조선·삼성·LG) + BTS Philippines ARMY 50만+. 신규 segment 3편.",
-    "summary_en": "Philippines matrix — 350k/yr + Korea-Philippines direct flights + Catholic 80% (Hyehwa·Myeongdong Catholic cluster·SEA #1 Catholic) + English 90% + OFW Korea 500k+ family visits (auto·shipyard·Samsung·LG) + BTS Philippines ARMY 500k+. New segment #3.",
+    "summary_kr": "2026-10-21 공식값: 필리핀 일반여권은 무비자 대상이 아니라 관광비자(C-3-9)가 필요하다 · 59일 이하 체류 비자 수수료 면제 · 처리 기간 10월 1일부터 12근무일 · 비자로 들어오면 e-Arrival Card 제출 · 필리핀항공·세부퍼시픽항공·필리핀에어아시아 인천 취항",
+    "summary_en": "Official values checked Oct 21, 2026: Philippine ordinary passports are not visa-free; a tourist visa (C-3-9 short-term visa) is required · visa fee waived for stays of 59 days or less · processing time 12 working days from October 1 · if you enter with a visa, submit the e-Arrival Card · Philippine Airlines, Cebu Pacific and Philippines AirAsia serve Incheon. As of 2026-10-21",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
     "jp_available": true,
     "date_published": "2026-05-27",
-    "title_ja": "フィリピン観光ガイド",
-    "title_zh": "菲律宾游客必备",
-    "summary_ja": "フィリピンマトリックス：年間35万人、韓・フィリピン直行便。カトリック教徒80%（恵化・明洞カトリッククラスター、東南アジアNo.1カトリック）、英語話者90%（米国英語フィット）。韓国在住のOFW50万人以上による家族訪問（自動車、造船、サムスン、LG関連）、BTSフィリピンARMY50万人以上。新規セグメント第3弾。",
-    "summary_zh": "菲律宾市场概览：每年35万游客，拥有韩菲直航。80%天主教徒（惠化·明洞天主教集群，东南亚第一），90%英语使用者。50万以上在韩菲律宾海外劳工家庭探亲，BTS菲律宾ARMY超过50万。新细分市场系列3。"
+    "title_ja": "フィリピンからの旅行者向け韓国ガイド — 観光ビザ(C-3-9)の書類・手数料・処理期間、e-Arrival、直行便の航空会社",
+    "title_zh": "菲律宾游客韩国指南——旅游签证(C-3-9)文件·手续费·办理时间、e-Arrival、直飞航空公司",
+    "summary_ja": "2026-10-21公式値：フィリピンの一般旅券はビザ免除の対象ではなく、観光ビザ(C-3-9)が必要 · 59日以下の滞在はビザ手数料免除 · 処理期間は10月1日から12営業日 · ビザで入国するとe-Arrival Cardを提出 · フィリピン航空・セブパシフィック航空・フィリピン・エアアジアが仁川に就航",
+    "summary_zh": "2026-10-21官方值：菲律宾普通护照不属于免签对象,需要旅游签证(C-3-9) · 停留59天以下的签证手续费免收 · 办理时间自10月1日起为12个工作日 · 持签证入境需提交e-Arrival Card · 菲律宾航空、宿务太平洋航空、菲律宾亚洲航空均有飞仁川的航班"
   },
   {
     "id": "467",
@@ -10858,8 +10858,8 @@
   {
     "id": "468",
     "slug": "indonesia-tourist-essentials",
-    "title_kr": "Indonesia Tourist Essentials — 외국인 관광객 인도네시아 무슬림·K-pop·할랄 풀 메타 가이드 12 시그니처",
-    "title_en": "Indonesia Tourist Essentials",
+    "title_kr": "인도네시아 여행자 한국 가이드 — 비자 vs 단체 한시 무사증(15일), 할랄 식당 4분류·기도실·직항",
+    "title_en": "Indonesia to Korea Travel Guide: Visa vs. Temporary Group Visa-Free Entry (15 Days), 4 Halal Restaurant Categories, Prayer Rooms, Direct Flights",
     "category": "B",
     "tags": [
       "foreigner",
@@ -10867,17 +10867,17 @@
       "halal",
       "meta-segment"
     ],
-    "summary_kr": "인도네시아 매트릭스 — 45만/년 + 세계 #1 무슬림 인구 2.7억 (87%) + 한·인니 직항 (자카르타·발리·수라바야) + BTS Indonesia ARMY 200만+ (세계 #1 K-pop fan 인구) + KMF 할랄 30+ + 발리 힌두 1.7% 다종교 + 자유여행 60%. 신규 segment 5편 완결 (segment 13→18).",
-    "summary_en": "Indonesia matrix — 450k/yr + world's #1 Muslim population 270M (87%) + Korea-Indonesia direct flights (Jakarta·Bali·Surabaya) + BTS Indonesia ARMY 2M+ (world's #1 K-pop fan country) + KMF halal 30+ + Bali Hindu 1.7% + self-tour 60%. New segment #5 final (13→18 segments).",
+    "summary_kr": "2026-10-21 공식값: 인도네시아 일반여권은 K-ETA 대상국이 아니라 비자가 필요하다 · 예외 — 법무부 지정 전담여행사가 모은 3명 이상 단체는 2026-05-28~12-31 15일 무사증 · 한국관광공사 무슬림 식당 4분류 · 서울중앙성원·인천공항 기도실 · 가루다인도네시아 인천 취항",
+    "summary_en": "Official values checked Oct 21, 2026: Indonesian ordinary passports are not covered by K-ETA and need a visa · exception: groups of 3 or more gathered by a travel agency designated by the Ministry of Justice get 15 days visa-free from 2026-05-28 to 12-31 · Korea Tourism Organization's 4 categories of Muslim-friendly restaurants · Seoul Central Mosque and Incheon Airport prayer rooms · Garuda Indonesia serves Incheon. As of 2026-10-21",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
     "jp_available": true,
     "date_published": "2026-05-27",
-    "title_ja": "インドネシア観光ガイド",
-    "title_zh": "印度尼西亚游客必备",
-    "summary_zh": "印度尼西亚概览：每年45万游客，拥有全球第一的穆斯林人口2.7亿（占87%）。韩国与印尼之间有雅加达、巴厘岛、泗水直飞航班。BTS印尼ARMY超200万，是全球K-pop粉丝人口第一大国。KMF清真认证超30项，巴厘岛印度教徒占1.7%，多宗教并存，自由行占比60%。",
-    "summary_ja": "年間45万人が訪韓するインドネシア人旅行者向けの必携情報。直行便、KMFハラル認証30店以上、世界最大のBTSファン事情まで。"
+    "title_ja": "インドネシアからの旅行者向け韓国ガイド — ビザ vs 団体の時限ビザ免除(15日)、ハラールレストラン4分類・礼拝室・直行便",
+    "title_zh": "印度尼西亚游客韩国指南——签证 vs 团体临时免签(15天),清真餐厅4分类·祈祷室·直飞航班",
+    "summary_zh": "2026-10-21官方值：印度尼西亚普通护照不属于K-ETA适用国家,需要办签证 · 例外——由法务部指定专门旅行社组织的3人以上团体,2026-05-28~12-31可免签15天 · 韩国观光公社穆斯林餐厅4分类 · 首尔中央清真寺、仁川机场祈祷室 · 印尼鹰航飞仁川",
+    "summary_ja": "2026-10-21公式値：インドネシアの一般旅券はK-ETA対象国ではなくビザが必要 · 例外 — 法務部指定の専担旅行社が集めた3人以上の団体は2026-05-28~12-31に15日のビザ免除 · 韓国観光公社のムスリム対応レストラン4分類 · ソウル中央聖院・仁川空港の礼拝室 · ガルーダ・インドネシア航空が仁川に就航"
   },
   {
     "id": "469",
@@ -11276,25 +11276,25 @@
   {
     "id": "484",
     "slug": "jongmyo-jerye-map",
-    "title_kr": "Jongmyo Jerye Map — 외국인 관광객 종묘대제 (5월·UNESCO 인류무형문화유산) 풀 메타 가이드 12 시그니처",
-    "title_en": "Jongmyo Jerye Map",
+    "title_kr": "종묘대제 관람 가이드 — 5월 춘향·11월 추향 두 번, 2026 추향대제 11월 7일 무료 입장, 평소 종묘 영어 해설 시간까지",
+    "title_en": "Jongmyo Daeje Viewing Guide: Twice a Year, Chunhyang in May and Chuhyang in November, Free Entry to the 2026 Chuhyang Daeje on November 7, Plus Regular English Tour Times",
     "category": "G",
     "tags": [
       "foreigner",
       "unesco",
       "meta-seasonal-event"
     ],
-    "summary_kr": "종묘대제 매트릭스 — **UNESCO 인류무형문화유산 (2001 등재)** + **UNESCO 세계문화유산 종묘 (1995)** = 한국 #1 UNESCO 2건 동시 — 종묘 정전 (세계 #1 길이 101m·조선왕 19대 신주)·영녕전·향대청·재궁 cluster + 종묘대제 (매년 5월 첫째 일요일·조선 600년 의례 완전 재현·외국인 영문 가이드) + **종묘제례악 한국 #1 의례 음악 UNESCO 등재** (#351 Music sub·국립국악원) + #176 walkable·#461 UNESCO Tour·#462 Hanok cluster·#421 봄·#474 봄 디저트. 시즌 이벤트 deep dive 3편 완결 (5월 한정).",
-    "summary_en": "Jongmyo Jerye matrix — **UNESCO Intangible (2001)** + **UNESCO World Heritage Jongmyo (1995)** = Korea's #1 dual UNESCO — Jongmyo Jeongjeon (world #1 length 101m·19 Joseon kings' spirit tablets)·Yeongnyeongjeon·Hyangdaecheong·Jaegung cluster + Jongmyo Jerye (annually May 1st Sun·complete 600yr Joseon ritual·EN guides) + **Jongmyo Jeryeak Korea #1 ritual music UNESCO** (#351 sub·National Gugak Center) + #176·#461·#462·#421·#474 spring. Seasonal event deep dive #3 final (May only). Seasonal event 3-batch final.",
+    "summary_kr": "2026-10-21 공식값: 종묘제례는 매년 5월 첫째 일요일과 11월 첫째 토요일 · 2026 추향대제 11월 7일(토) 영녕전 10:00·정전 14:00, 사전예약 없이 무료 · 5월 대제는 티켓링크 사전예약 · 평소 종묘 화요일 휴관, 영어 해설 10:00·12:00·14:00·16:00",
+    "summary_en": "Official values checked Oct 21, 2026: The Jongmyo Jerye rites are held on the first Sunday of May and the first Saturday of November each year · the 2026 Chuhyang Daeje is Saturday, November 7: Yeongnyeongjeon 10:00 and Jeongjeon 14:00, free with no advance reservation · the May Daeje requires advance reservation on Ticketlink · on ordinary days Jongmyo closes on Tuesdays, with English tours at 10:00, 12:00, 14:00 and 16:00. As of 2026-10-21",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
     "jp_available": true,
     "date_published": "2026-05-29",
-    "title_ja": "宗廟大祭マップ",
-    "title_zh": "宗庙大祭地图",
-    "summary_ja": "宗廟大祭は、ユネスコ無形文化遺産（2001年）と世界文化遺産宗廟（1995年）の韓国初の二重登録です。宗廟正殿などの建築群と、毎年5月第1日曜日に600年の儀礼を再現する宗廟大祭、ユネスコ登録の儀礼音楽「宗廟祭礼楽」が特徴です。",
-    "summary_zh": "宗庙是韩国首个同时拥有联合国教科文组织世界文化遗产（宗庙）和人类非物质文化遗产（宗庙祭礼）的场所。每年五月第一个周日，宗庙祭礼会完整再现朝鲜600年礼仪，其祭礼乐也是韩国首个被联合国教科文组织列入名录的礼仪音乐。"
+    "title_ja": "宗廟大祭 観覧ガイド — 5月の春享・11月の秋享の年2回、2026年秋享大祭は11月7日に無料入場、普段の宗廟の英語ガイド時間まで",
+    "title_zh": "宗庙大祭观览指南——5月春享·11月秋享一年两次,2026秋享大祭11月7日免费入场,平时宗庙英语讲解时间一并整理",
+    "summary_ja": "2026-10-21公式値：宗廟祭礼は毎年5月の第1日曜と11月の第1土曜 · 2026年秋享大祭は11月7日(土)、永寧殿10:00・正殿14:00、事前予約なしで無料 · 5月の大祭はTicketlinkで事前予約 · 普段の宗廟は火曜休館、英語ガイドは10:00・12:00・14:00・16:00",
+    "summary_zh": "2026-10-21官方值：宗庙祭礼每年在5月第一个周日和11月第一个周六举行 · 2026秋享大祭11月7日(周六)永宁殿10:00、正殿14:00,无需提前预约,免费 · 5月大祭通过Ticketlink 提前预约 · 平时宗庙周二闭馆,英语讲解10:00、12:00、14:00、16:00"
   },
   {
     "id": "485",
