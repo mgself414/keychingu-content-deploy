@@ -3396,8 +3396,8 @@
       "myeongdong",
       "k-beauty"
     ],
-    "summary_kr": "2026-10-21 공식값: 일본 일반여권 무사증 90일 · K-ETA 한시 면제는 2026-12-31까지, 대상 여부는 신청 화면에서 여권 스캔으로 확인 · 2026-03-16부터 일본 여권도 입국 자동심사 · PayPay는 한국 Alipay+·ZeroPay 가맹점에서 · JAL 하네다–김포 운항",
-    "summary_en": "Official values checked Oct 21, 2026: Japanese ordinary passports enter visa-free for 90 days · the temporary K-ETA exemption runs through 2026-12-31; whether you qualify shows up when you scan your passport on the application screen · from 2026-03-16 Japanese passports can also use automated immigration clearance · PayPay works at Korean Alipay+ and ZeroPay merchants · JAL flies Haneda–Gimpo. As of 2026-10-21",
+    "summary_kr": "2026-10-21 공식값: 일본 일반여권 무사증 90일 · K-ETA 한시 면제는 2026-12-31까지, 대상 여부는 신청 화면에서 여권 스캔으로 확인 · 2025-12-01부터 일본 여권도 입국 자동심사 · PayPay는 한국 Alipay+·ZeroPay 가맹점에서 · JAL 하네다–김포 운항",
+    "summary_en": "Official values checked Oct 21, 2026: Japanese ordinary passports enter visa-free for 90 days · the temporary K-ETA exemption runs through 2026-12-31; whether you qualify shows up when you scan your passport on the application screen · from 2025-12-01 Japanese passports can also use automated immigration clearance · PayPay works at Korean Alipay+ and ZeroPay merchants · JAL flies Haneda–Gimpo. As of 2026-10-21",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
@@ -3405,8 +3405,8 @@
     "date_published": "2026-05-19",
     "title_ja": "日本からの旅行者向け韓国ガイド — ビザ免除90日・K-ETA確認方法・入国の自動化ゲート・PayPay・羽田〜金浦",
     "title_zh": "日本游客韩国指南——免签90天、K-ETA确认方法、入境自动通关、PayPay、羽田–金浦航线",
-    "summary_ja": "2026-10-21公式値：日本の一般旅券はビザ免除で90日滞在 · K-ETAの時限免除は2026-12-31まで、対象かどうかは申請画面でパスポートをスキャンして確認 · 2026-03-16から日本のパスポートも入国の自動化ゲートを利用可能 · PayPayは韓国のAlipay+・ZeroPay加盟店で利用可 · JAL羽田〜金浦運航",
-    "summary_zh": "2026-10-21官方值：日本普通护照免签90天 · K-ETA临时豁免至2026-12-31,是否适用请在申请页面扫描护照确认 · 自2026-03-16起日本护照也可使用入境自动通关 · PayPay可在韩国的Alipay+、ZeroPay商户使用 · JAL执飞羽田–金浦航线"
+    "summary_ja": "2026-10-21公式値：日本の一般旅券はビザ免除で90日滞在 · K-ETAの時限免除は2026-12-31まで、対象かどうかは申請画面でパスポートをスキャンして確認 · 2025-12-01から日本のパスポートも入国の自動化ゲートを利用可能 · PayPayは韓国のAlipay+・ZeroPay加盟店で利用可 · JAL羽田〜金浦運航",
+    "summary_zh": "2026-10-21官方值：日本普通护照免签90天 · K-ETA临时豁免至2026-12-31,是否适用请在申请页面扫描护照确认 · 自2025-12-01起日本护照也可使用入境自动通关 · PayPay可在韩国的Alipay+、ZeroPay商户使用 · JAL执飞羽田–金浦航线"
   },
   {
     "id": "191",
@@ -33362,8 +33362,8 @@
       "survival",
       "manual"
     ],
-    "summary_kr": "입국 자동심사는 42개국·지역 17세 이상 무사증 입국자(일본·대만·홍콩·마카오 포함, 미국·중국 대륙 제외), 출국 자동심사는 입국 때 지문·얼굴을 찍었다면 등록 없이. 스마트패스는 인천공항 출국 전용 얼굴인증 — 세 제도의 차이·등록 장소·함정 5가지.",
-    "summary_en": "Automated arrival clearance covers travelers 17+ from 42 countries and regions entering visa-free (Japan, Taiwan, Hong Kong and Macau included; the US and mainland China not); automated departure needs no registration if your fingerprints and face were taken on arrival; Smart Pass is Incheon's departure-only face check. How the three differ, where to register, and 5 traps.",
+    "summary_kr": "입국 자동심사는 42개국·지역 무사증 입국자(일본·대만·홍콩·마카오 포함, 미국·중국 대륙 제외), 출국 자동심사는 입국 때 지문·얼굴을 찍었다면 등록 없이. 스마트패스는 인천공항 출국 전용 얼굴인증 — 세 제도의 차이·등록 장소·함정 5가지.",
+    "summary_en": "Automated arrival clearance covers travelers from 42 countries and regions entering visa-free (Japan, Taiwan, Hong Kong and Macau included; the US and mainland China not); automated departure needs no registration if your fingerprints and face were taken on arrival; Smart Pass is Incheon's departure-only face check. How the three differ, where to register, and 5 traps.",
     "date_published": "2026-10-12",
     "en_available": true,
     "cn_available": true,
@@ -33371,8 +33371,8 @@
     "instagram_posted": false,
     "title_zh": "韩国机场自动通关(SES)·Smart Pass零慌乱手册——入境自动通关覆盖42个国家和地区,出境无需登记,还有刷脸登机的Smart Pass",
     "title_ja": "韓国空港の自動審査(SES)・スマートパス、慌てないためのマニュアル — 入国自動審査は42か国、出国は登録なしで、顔で搭乗できるスマートパスまで",
-    "summary_zh": "入境自动通关面向42个国家和地区17岁以上免签入境者(含日本·台湾·香港·澳门,不含美国·中国大陆);入境时已采集指纹和面部的话,出境自动通关无需登记;Smart Pass是仁川机场出境专用刷脸服务 — 三种制度的区别·登记地点·5个陷阱。",
-    "summary_ja": "入国自動審査は42か国・地域の17歳以上のビザなし入国者(日本・台湾・香港・マカオを含み、米国・中国大陸は対象外)、出国自動審査は入国時に指紋・顔を登録していれば事前登録不要。スマートパスは仁川空港の出国専用顔認証 — 3つの制度の違い・登録場所・落とし穴5つ。",
+    "summary_zh": "入境自动通关面向42个国家和地区免签入境者(含日本·台湾·香港·澳门,不含美国·中国大陆);入境时已采集指纹和面部的话,出境自动通关无需登记;Smart Pass是仁川机场出境专用刷脸服务 — 三种制度的区别·登记地点·5个陷阱。",
+    "summary_ja": "入国自動審査は42か国・地域のビザなし入国者(日本・台湾・香港・マカオを含み、米国・中国大陸は対象外)、出国自動審査は入国時に指紋・顔を登録していれば事前登録不要。スマートパスは仁川空港の出国専用顔認証 — 3つの制度の違い・登録場所・落とし穴5つ。",
     "series": "korea-first-timer",
     "content_type": "howto-manual"
   },
