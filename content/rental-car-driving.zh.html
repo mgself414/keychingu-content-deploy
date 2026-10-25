@@ -11,6 +11,8 @@
 </script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#FAFAF8">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0f1419">
 <title>外国人驾驶·租车·自由行深度探索 — KeyChinGu</title>
 <meta name="description" content="为外国游客提供韩国自驾游和租车指南，包括国际驾驶执照(IDP)信息、驾驶礼仪、乐天租车等主要租车公司，以及高速公路Hi-pass、英文导航（T-Map、Kakao Map、Naver Map）和电动汽车充电站。还推荐釜山周边1晚2日游、济州环岛1周游等路线，并提供Klook、KKday、KTO自由行套餐。">
 <link rel="icon" href="../favicon.ico" sizes="any">
@@ -59,12 +61,14 @@
 .detail-wrap h1 {
   font-size: 28px; font-weight: 800;
   color: var(--text); margin-bottom: 8px;
+  text-wrap: balance;
 }
 .detail-wrap h2 {
   font-size: 22px; font-weight: 700;
   color: var(--text); margin-top: 32px; margin-bottom: 12px;
   padding-bottom: 6px;
   border-bottom: 2px solid var(--red);
+  text-wrap: balance;
 }
 .detail-wrap h3 {
   font-size: 17px; font-weight: 600;
@@ -134,7 +138,7 @@
   width: 40px; height: 40px;
   border: none; border-radius: 50%;
   background: #fff; cursor: pointer;
-  font-size: 1.1rem; transition: all 0.2s;
+  font-size: 1.1rem; transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s, color 0.2s;
   box-shadow: 0 1px 3px rgba(0,0,0,0.08);
   display: inline-flex; align-items: center; justify-content: center;
 }
@@ -552,7 +556,7 @@
     <span class="share-label">分享</span>
     <button class="share-btn share-twitter" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent('外国人驾驶·租车·自由行深度探索') + '&url=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Twitter">𝕏</button>
     <button class="share-btn share-facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Facebook">f</button>
-    <button class="share-btn share-kakao" onclick="navigator.share ? navigator.share({title: '外国人驾驶·租车·自由行深度探索', url: window.location.href}) : navigator.clipboard.writeText(window.location.href).then(function() { alert('链接已复制!'); })" aria-label="Kakao/Share">📤</button>
+    <button class="share-btn share-kakao" onclick="navigator.share ? navigator.share({title: '外国人驾驶·租车·自由行深度探索', url: window.location.href}) : navigator.clipboard.writeText(window.location.href).then(function() { this.textContent = '✓'; setTimeout(function() { document.querySelector('.share-kakao').textContent = '📤'; }, 1500); }.bind(this))" aria-label="Kakao/Share">📤</button>
     <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href).then(function() { this.textContent = '✓'; setTimeout(function() { document.querySelector('.share-copy').textContent = '🔗'; }, 1500); }.bind(this))" aria-label="Copy link">🔗</button>
   </div>
 

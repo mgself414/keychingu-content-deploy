@@ -11,6 +11,8 @@
 </script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#FAFAF8">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0f1419">
 <title>유모차로 서울 다니기 — 당황 제로 매뉴얼: 지하철 엘리베이터 100% · 저상버스 · 택시 카시트 예외 · 대여 5곳 · 수유실 · 유모차가 힘든 동네 — KeyChinGu</title>
 <meta name="description" content="서울은 유모차가 힘드냐는 질문의 실전 답 — 1역 1동선 100%·저상버스 73%·택시 카시트 단속 제외·인천공항 무료 대여 등 교통 4종 규정과 함정, 대여 5곳, 수유실 검색 도구, 노키즈존 현실, 아기띠를 꺼내야 하는 동네 4곳과 편한 곳 6곳, 하루 코스">
 <link rel="icon" href="../favicon.ico" sizes="any">
@@ -55,12 +57,14 @@
 .detail-wrap h1 {
   font-size: 28px; font-weight: 800;
   color: var(--text); margin-bottom: 8px;
+  text-wrap: balance;
 }
 .detail-wrap h2 {
   font-size: 22px; font-weight: 700;
   color: var(--text); margin-top: 32px; margin-bottom: 12px;
   padding-bottom: 6px;
   border-bottom: 2px solid var(--red);
+  text-wrap: balance;
 }
 .detail-wrap h3 {
   font-size: 17px; font-weight: 600;
@@ -130,7 +134,7 @@
   width: 40px; height: 40px;
   border: none; border-radius: 50%;
   background: #fff; cursor: pointer;
-  font-size: 1.1rem; transition: all 0.2s;
+  font-size: 1.1rem; transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s, color 0.2s;
   box-shadow: 0 1px 3px rgba(0,0,0,0.08);
   display: inline-flex; align-items: center; justify-content: center;
 }
@@ -310,7 +314,7 @@
     <span class="share-label">공유</span>
     <button class="share-btn share-twitter" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent('유모차로 서울 다니기 — 당황 제로 매뉴얼: 지하철 엘리베이터 100% · 저상버스 · 택시 카시트 예외 · 대여 5곳 · 수유실 · 유모차가 힘든 동네') + '&url=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Twitter">𝕏</button>
     <button class="share-btn share-facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" aria-label="Facebook">f</button>
-    <button class="share-btn share-kakao" onclick="navigator.share ? navigator.share({title: '유모차로 서울 다니기 — 당황 제로 매뉴얼: 지하철 엘리베이터 100% · 저상버스 · 택시 카시트 예외 · 대여 5곳 · 수유실 · 유모차가 힘든 동네', url: window.location.href}) : navigator.clipboard.writeText(window.location.href).then(function() { alert('링크 복사됨!'); })" aria-label="Kakao/Share">📤</button>
+    <button class="share-btn share-kakao" onclick="navigator.share ? navigator.share({title: '유모차로 서울 다니기 — 당황 제로 매뉴얼: 지하철 엘리베이터 100% · 저상버스 · 택시 카시트 예외 · 대여 5곳 · 수유실 · 유모차가 힘든 동네', url: window.location.href}) : navigator.clipboard.writeText(window.location.href).then(function() { this.textContent = '✓'; setTimeout(function() { document.querySelector('.share-kakao').textContent = '📤'; }, 1500); }.bind(this))" aria-label="Kakao/Share">📤</button>
     <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href).then(function() { this.textContent = '✓'; setTimeout(function() { document.querySelector('.share-copy').textContent = '🔗'; }, 1500); }.bind(this))" aria-label="Copy link">🔗</button>
   </div>
 
