@@ -31,20 +31,20 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/main.css">
   <style>
-    .matrix-hero { background: linear-gradient(135deg, #1E88B0 0%, #FAAD19 100%); color: #fff; padding: 60px 24px; text-align: center; }
+    .matrix-hero { background: var(--bg, #FAF9F6); color: var(--text, #020304); padding: 56px 24px 40px; text-align: center; border-bottom: 1px solid var(--border, #e8e8e8); }
     .matrix-hero h1 { font-family: 'Noto Serif KR', serif; font-size: 40px; font-weight: 900; margin-bottom: 12px; }
-    .matrix-hero p { font-size: 16px; opacity: 0.95; max-width: 720px; margin: 0 auto 24px; }
+    .matrix-hero p { font-size: 16px; color: var(--text-mid, #555); max-width: 720px; margin: 0 auto 24px; }
     .matrix-stats { display: flex; justify-content: center; gap: 32px; flex-wrap: wrap; margin-top: 24px; }
-    .matrix-stats .stat { background: rgba(255,255,255,0.18); padding: 12px 20px; border-radius: 8px; backdrop-filter: blur(8px); }
-    .matrix-stats .stat b { font-family: 'Poppins', sans-serif; font-size: 24px; font-weight: 800; display: block; }
-    .matrix-stats .stat span { font-size: 12px; opacity: 0.85; }
+    .matrix-stats .stat { background: var(--card-bg, #fff); border: 1px solid var(--border, #e8e8e8); padding: 12px 20px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
+    .matrix-stats .stat b { font-family: 'Poppins', sans-serif; font-size: 24px; font-weight: 800; display: block; color: var(--red, #D94C53); }
+    .matrix-stats .stat span { font-size: 12px; color: var(--text-soft, #888); }
     .toc-bar { background: #f5f3ee; padding: 16px 24px; margin: 0 0 24px; position: sticky; top: 0; z-index: 10; border-bottom: 1px solid #e0d8c8; }
     .toc-bar-inner { max-width: 1280px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 8px; }
     .toc-bar a { font-size: 13px; padding: 6px 14px; background: #fff; border-radius: 20px; text-decoration: none; color: #555; border: 1px solid #ddd; transition: all 0.2s; }
-    .toc-bar a:hover { border-color: #1E88B0; color: #1E88B0; }
+    .toc-bar a:hover { border-color: #218CCC; color: #218CCC; }
     .search-bar { max-width: 720px; margin: 24px auto 0; padding: 0 24px; }
     .search-bar input { width: 100%; padding: 14px 18px; font-size: 15px; border: 2px solid #ddd; border-radius: 30px; outline: none; transition: border 0.2s; box-sizing: border-box; font-family: inherit; }
-    .search-bar input:focus { border-color: #1E88B0; }
+    .search-bar input:focus { border-color: #218CCC; }
     .search-stat { text-align: center; font-size: 13px; color: #888; margin-top: 8px; }
     .hide { display: none !important; }
     @media (max-width: 768px) {
@@ -123,10 +123,10 @@
   <p>外国人のライフサイクルを8つの軸（到着・グルメ・文化・Kコンテンツ・ウェルネス・ショッピング・ナイトライフ・郊外）× ディープダイブ286本で完全網羅。標準の「12選×4軸」パターン — FAQ6本 + 1日フルコース3本 + 季節軸5つ。外国人マニアのためのNo.1スポット。</p>
   <div class="search-bar">
     <input id="search" type="text" placeholder="🔍 検索 — タイトル・タグ・カテゴリー（例: キムチ、K-POP、ワーキングホリデー、IT、ギャラリー、F-2）" aria-label="ディープダイブを検索">
-    <div class="search-stat" id="search-stat">ディープダイブ286本 🎉 表示中</div>
+    <div class="search-stat" id="search-stat">ディープダイブ286本 表示中</div>
   </div>
   <div class="matrix-stats" style="margin-top: 32px;">
-    <div class="stat"><b>286</b><span>ディープダイブ 🎉</span></div>
+    <div class="stat"><b>286</b><span>ディープダイブ</span></div>
     <div class="stat"><b>8</b><span>ライフサイクル軸</span></div>
     <div class="stat"><b>12</b><span>選 × 4軸</span></div>
     <div class="stat"><b>3</b><span>1日フルコース</span></div>
@@ -137,15 +137,15 @@
 <!-- TOC NAV -->
 <div class="toc-bar">
   <div class="toc-bar-inner">
-    <a href="#arrival">🛬 到着・必須情報 (83)</a>
-    <a href="#food">🍽 グルメ・ドリンク (124)</a>
-    <a href="#culture">🎭 文化・伝統 (141 🎉)</a>
-    <a href="#kcontent">🎤 Kコンテンツ・MZ (8)</a>
-    <a href="#wellness">💆 ウェルネス・ビューティー (40)</a>
-    <a href="#shopping">🛍 ショッピング・ラグジュアリー (67)</a>
-    <a href="#nightlife">🌙 ナイトライフ・MZ (41)</a>
-    <a href="#outskirts">🚗 郊外・自然 (249 🎉)</a>
-    <a href="../content/deep-dive-index.ja.html" style="background:#1E88B0; color:#fff;">📊 メタインデックス</a>
+    <a href="#arrival">🛬 到着・必須情報 (144)</a>
+    <a href="#food">🍽 グルメ・ドリンク (169)</a>
+    <a href="#culture">🎭 文化・伝統 (259)</a>
+    <a href="#kcontent">🎤 Kコンテンツ・MZ (20)</a>
+    <a href="#wellness">💆 ウェルネス・ビューティー (45)</a>
+    <a href="#shopping">🛍 ショッピング・ラグジュアリー (76)</a>
+    <a href="#nightlife">🌙 ナイトライフ・MZ (48)</a>
+    <a href="#outskirts">🚗 郊外・自然 (517)</a>
+    <a href="../content/deep-dive-index.ja.html" style="background:#218CCC; color:#fff;">📊 メタインデックス</a>
   </div>
 </div>
 
@@ -154,20 +154,20 @@
   <h2 style="font-size: 20px;">📍 8軸ライフサイクル別カテゴリーページ</h2>
   <div class="section-meta">軸ごとの専用ランディング — フルコース + すべてのディープダイブ一覧</div>
   <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 12px;">
-    <a href="deep-dives-arrival.html" style="flex: 1 1 200px; padding: 10px 14px; background: linear-gradient(135deg, #4A90E2, #1E88B0); color: #fff; text-decoration: none; border-radius: 8px; font-size: 14px; font-weight: 600;">🛬 到着・必須情報 22 →</a>
-    <a href="deep-dives-food.html" style="flex: 1 1 200px; padding: 10px 14px; background: linear-gradient(135deg, #E94560, #FAAD19); color: #fff; text-decoration: none; border-radius: 8px; font-size: 14px; font-weight: 600;">🍽 グルメ・ドリンク 45 →</a>
-    <a href="deep-dives-culture.html" style="flex: 1 1 200px; padding: 10px 14px; background: linear-gradient(135deg, #6B4E2E, #C19A5A); color: #fff; text-decoration: none; border-radius: 8px; font-size: 14px; font-weight: 600;">🎭 文化・伝統 64 🎉 →</a>
-    <a href="deep-dives-kcontent.html" style="flex: 1 1 200px; padding: 10px 14px; background: linear-gradient(135deg, #E91E63, #9C27B0); color: #fff; text-decoration: none; border-radius: 8px; font-size: 14px; font-weight: 600;">🎤 Kコンテンツ・MZ 47 →</a>
-    <a href="deep-dives-wellness.html" style="flex: 1 1 200px; padding: 10px 14px; background: linear-gradient(135deg, #00BFA5, #4CAF50); color: #fff; text-decoration: none; border-radius: 8px; font-size: 14px; font-weight: 600;">💆 ウェルネス・ビューティー 16 →</a>
-    <a href="deep-dives-shopping.html" style="flex: 1 1 200px; padding: 10px 14px; background: linear-gradient(135deg, #C2185B, #FAAD19); color: #fff; text-decoration: none; border-radius: 8px; font-size: 14px; font-weight: 600;">🛍 ショッピング・ラグジュアリー 11 →</a>
-    <a href="deep-dives-nightlife.html" style="flex: 1 1 200px; padding: 10px 14px; background: linear-gradient(135deg, #1A237E, #7B1FA2); color: #fff; text-decoration: none; border-radius: 8px; font-size: 14px; font-weight: 600;">🌙 ナイトライフ・MZ 10 →</a>
-    <a href="deep-dives-outskirts.html" style="flex: 1 1 200px; padding: 10px 14px; background: linear-gradient(135deg, #2E7D32, #8BC34A); color: #fff; text-decoration: none; border-radius: 8px; font-size: 14px; font-weight: 600;">🚗 郊外・自然 63 🎉 →</a>
+    <a href="deep-dives-arrival.html" style="flex: 1 1 200px; padding: 10px 14px; background: linear-gradient(135deg, #4A90E2, #218CCC); color: #fff; text-decoration: none; border-radius: 8px; font-size: 14px; font-weight: 600;">🛬 到着・必須情報 20 →</a>
+    <a href="deep-dives-food.html" style="flex: 1 1 200px; padding: 10px 14px; background: linear-gradient(135deg, #E94560, #FAAD19); color: #fff; text-decoration: none; border-radius: 8px; font-size: 14px; font-weight: 600;">🍽 グルメ・ドリンク 43 →</a>
+    <a href="deep-dives-culture.html" style="flex: 1 1 200px; padding: 10px 14px; background: linear-gradient(135deg, #6B4E2E, #C19A5A); color: #fff; text-decoration: none; border-radius: 8px; font-size: 14px; font-weight: 600;">🎭 文化・伝統 64 →</a>
+    <a href="deep-dives-kcontent.html" style="flex: 1 1 200px; padding: 10px 14px; background: linear-gradient(135deg, #E91E63, #9C27B0); color: #fff; text-decoration: none; border-radius: 8px; font-size: 14px; font-weight: 600;">🎤 Kコンテンツ・MZ 15 →</a>
+    <a href="deep-dives-wellness.html" style="flex: 1 1 200px; padding: 10px 14px; background: linear-gradient(135deg, #00BFA5, #4CAF50); color: #fff; text-decoration: none; border-radius: 8px; font-size: 14px; font-weight: 600;">💆 ウェルネス・ビューティー 11 →</a>
+    <a href="deep-dives-shopping.html" style="flex: 1 1 200px; padding: 10px 14px; background: linear-gradient(135deg, #C2185B, #FAAD19); color: #fff; text-decoration: none; border-radius: 8px; font-size: 14px; font-weight: 600;">🛍 ショッピング・ラグジュアリー 7 →</a>
+    <a href="deep-dives-nightlife.html" style="flex: 1 1 200px; padding: 10px 14px; background: linear-gradient(135deg, #1A237E, #7B1FA2); color: #fff; text-decoration: none; border-radius: 8px; font-size: 14px; font-weight: 600;">🌙 ナイトライフ・MZ 11 →</a>
+    <a href="deep-dives-outskirts.html" style="flex: 1 1 200px; padding: 10px 14px; background: linear-gradient(135deg, #2E7D32, #8BC34A); color: #fff; text-decoration: none; border-radius: 8px; font-size: 14px; font-weight: 600;">🚗 郊外・自然 47 →</a>
   </div>
 </section>
 
 
 <section class="meta-section" id="arrival" data-cat="arrival">
-  <h2>🛬 到着・必須情報 (22)</h2>
+  <h2>🛬 到着・必須情報 (20)</h2>
   <div class="section-meta">外国人の初訪問・必須情報・安全 — ライフサイクルの最初の入口</div>
   <div class="meta-grid">
     <a href="../content/arrival-essentials.ja.html" class="meta-card" data-keywords="外国人向け到着・通信・決済・交通フルガイド foreigner arrival·comm·pay·transport full guide"><span class="num">#398</span><h3>外国人向け到着・通信・決済・交通フルガイド</h3></a>
@@ -248,7 +248,7 @@
 
 
 <section class="meta-section" id="culture" data-cat="culture">
-  <h2>🎭 文化・伝統 (50 🎉)</h2>
+  <h2>🎭 文化・伝統 (77)</h2>
   <div class="section-meta">伝統文化を愛する外国人のための完全網羅</div>
   <div class="meta-grid">
     <a href="../content/cultural-complex.ja.html" class="meta-card" data-keywords="ソウル 複合文化施設 完全ガイド seoul cultural complex spaces full guide"><span class="num">#366</span><h3>ソウル 複合文化施設 完全ガイド</h3></a>
@@ -449,7 +449,7 @@
 
 
 <section class="meta-section" id="outskirts" data-cat="outskirts">
-  <h2>🚗 郊外・自然 (58 🎉)</h2>
+  <h2>🚗 郊外・自然 (58)</h2>
   <div class="section-meta">家族・レジャーを楽しむ外国人のための完全網羅</div>
   <div class="meta-grid">
     <a href="../content/wedding-honeymoon.ja.html" class="meta-card" data-keywords="外国人向け韓国ウェディング・フォト・ハネムーンガイド foreigner wedding·wedding photo·honeymoon full guide"><span class="num">#416</span><h3>外国人向け韓国ウェディング・フォト・ハネムーンガイド</h3></a>
@@ -529,7 +529,7 @@
 <!-- FOOTER -->
 <footer class="site-footer">
   <p style="text-align: center; padding: 24px; color: #888; font-size: 13px;">
-    © 2026 KeyChinGu · <a href="about.html" style="color:#1E88B0;">About</a> · <a href="meta-guides.html" style="color:#1E88B0;">テーマ別ガイド</a> · <a href="faq.html" style="color:#1E88B0;">FAQ</a> · <a href="../en/links.html" style="color:#1E88B0;">リンク</a> · <a href="../deep-dives.html" style="color:#1E88B0;">한국어 / KR</a>
+    © 2026 KeyChinGu · <a href="about.html" style="color:#218CCC;">About</a> · <a href="meta-guides.html" style="color:#218CCC;">テーマ別ガイド</a> · <a href="faq.html" style="color:#218CCC;">FAQ</a> · <a href="../en/links.html" style="color:#218CCC;">リンク</a> · <a href="../deep-dives.html" style="color:#218CCC;">한국어 / KR</a>
   </p>
 </footer>
 
