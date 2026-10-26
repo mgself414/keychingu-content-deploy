@@ -206,8 +206,8 @@
   var grid = document.getElementById('auto-cat-grid');
   if (!grid) return;
   var seen = {};
-  Array.prototype.forEach.call(document.querySelectorAll('a[href^="content/"]'), function(a) {
-    var m = a.getAttribute('href').match(/^content\/([^.]+)\.html/);
+  Array.prototype.forEach.call(document.querySelectorAll('a[href^="../content/"]'), function(a) {
+    var m = a.getAttribute('href').match(/^\.\.\/content\/([^.\/]+)\./);
     if (m) seen[m[1]] = true;
   });
   fetch('../data/contents.json')
