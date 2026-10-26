@@ -190,9 +190,10 @@
       if (!picks.length) return;
       picks.sort(function(a, b) { return String(a.id).localeCompare(String(b.id)); });
       grid.innerHTML = picks.map(function(x) {
-        var title = x.title_kr || x.title_en || x.slug;
-        var desc = (x.summary_kr || x.summary_en || '');
-        return '<a href="../content/' + x.slug + '.html" class="meta-card">' +
+        var title = x.title_en || x.title_kr || x.slug;
+        var desc = (x.summary_en || x.summary_kr || '');
+        var ext = (x.en_available === true || x.en_available === 'True') ? '.en.html' : '.html';
+        return '<a href="../content/' + x.slug + ext + '" class="meta-card">' +
                '<span class="num">#' + (String(x.id).match(/^\d+/) || [''])[0] + '</span>' +
                '<h3>' + title + '</h3><p>' + desc + '</p></a>';
       }).join('');
