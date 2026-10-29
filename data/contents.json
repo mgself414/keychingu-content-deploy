@@ -10407,8 +10407,8 @@
   {
     "id": "450",
     "slug": "seoul-nightlife-map",
-    "title_kr": "Seoul Nightlife Map — 외국인 관광객 클럽·바·라운지·재즈 풀 메타 가이드 12 시그니처",
-    "title_en": "Seoul Nightlife Map",
+    "title_kr": "서울 밤 가이드 — 재즈·칵테일 바·라운지·포차 다섯 갈래, 시간·나이·귀가 요금 확인본",
+    "title_en": "Seoul Night Guide: Jazz, Cocktail Bars, Lounges, Pocha and Clubs in Five Lanes, With Hours, Age Rules and Taxi Fares Checked",
     "category": "B",
     "tags": [
       "foreigner",
@@ -10420,17 +10420,17 @@
       "latenight",
       "meta-category"
     ],
-    "summary_kr": "서울 나이트라이프 매트릭스 — 옥타곤 World #1·홍대·강남 클럽 + 찰스 H. World's 50 Best Bars·청담 비밀바 + 재즈 인 더 시티·올댓재즈 + 시그니엘 555m·한강 루프탑 + 종로3가·을지로 포차·24h. 카테고리 메타 추가 2편.",
-    "summary_en": "Seoul nightlife matrix — Octagon World #1·Hongdae·Gangnam clubs + Charles H. World's 50 Best Bars·Cheongdam secret bars + Jazz in the City·All That Jazz + Signiel 555m·Hangang rooftops + Jongno 3-ga·Euljiro pocha·24h. Category meta +2.",
+    "summary_kr": "서울의 밤을 재즈·칵테일 바·라운지·포차·클럽 다섯 갈래로 나눠 공식 페이지에서 확인된 시간과 조건만 적었다 — 올댓재즈 일~목 18:00~24:00·월~목 입장료 없이 음료 5,000원, 찰스 H. 17:00~01:30·Asia's 50 Best Bars 2022 7위, 글램 라운지 19:00~03:00·미성년자 불가, 시그니엘 더라운지 79층 11:00~22:00, 클럽은 19세부터 여권 확인, 택시 심야 할증 22~04시 20~40%·23~02시 기본 6,700원(2026-10-29 서울관광재단·롯데호텔·서울시·생활법령).",
+    "summary_en": "All That Jazz 18:00~24:00 with KRW 5,000 drinks and no cover Mon-Thu, Charles H. No. 7 in Asia's 50 Best Bars 2022, Glam Lounge until 03:00, drinking from the year you turn 19, taxi base fare KRW 6,700 from 23:00-02:00 (official sources).",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
     "jp_available": true,
     "date_published": "2026-05-26",
-    "title_ja": "ソウルナイトライフマップ",
-    "title_zh": "首尔夜生活地图",
-    "summary_ja": "ソウルナイトライフマトリックス。世界No.1のオクタゴン、弘大・江南のクラブ、World's 50 Best Barsに選ばれたチャールズH.、清潭の秘密バー、ジャズ・イン・ザ・シティ、オール・ザット・ジャズ、シグニエル、漢江ルーフトップ、鍾路3街・乙支路の屋台など、ソウルの夜を満喫できるスポットを紹介します。",
-    "summary_zh": "首尔夜生活指南：体验Octagon等弘大、江南热门俱乐部，Charles H.等清潭秘密酒吧，爵士乐现场，Signiel高空酒吧、汉江屋顶酒吧，以及钟路3街、乙支路的24小时路边摊。"
+    "title_ja": "ソウル夜ガイド — ジャズ・カクテルバー・ラウンジ・ポチャ・クラブの五つの道、営業時間・年齢・帰りのタクシー料金の確認版",
+    "title_zh": "首尔夜晚指南 — 爵士乐·鸡尾酒吧·酒廊·布帐马车五条路线，营业时间·年龄·回家车费核实版",
+    "summary_ja": "オールザットジャズ 日~木18:00~24:00・金土~01:00、月~木は入場料なしでドリンク5,000ウォン。チャールズH. 17:00~01:30、Asia's 50 Best Bars 2022で7位。グラムラウンジ 19:00~03:00・金土~05:00・未成年者不可。シグニエル ザ・ラウンジ 79階 11:00~22:00。酒とクラブは19歳になる年の1月1日から。タクシー深夜割増22~04時 20~40%、23~02時は基本料金6,700ウォン。",
+    "summary_zh": "全爵士俱乐部周日至周四18:00~24:00、周一至周四免入场费饮品5,000韩元，查尔斯H.17:00~01:30，格兰姆酒廊19:00~03:00，乐天世界塔79层11:00~22:00，须年满19岁，出租车深夜加价22~04点20~40%、23~02点起步价6,700韩元。"
   },
   {
     "id": "451",
