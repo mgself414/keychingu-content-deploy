@@ -1,6 +1,6 @@
-# KeyChinGu — Full Content Catalog (2026-10-29)
+# KeyChinGu — Full Content Catalog (2026-10-30)
 
-> Full content catalog of KeyChinGu Korea travel guides for foreign tourists. Curated by KeyChinGu (@keychingu.korea). Languages: KR (full) + EN/CN/JP (published). Coverage: 60+ cities across food, culture, K-content, shopping, seasons, transport, sports and practical essentials. Updated 2026-10-29.
+> Full content catalog of KeyChinGu Korea travel guides for foreign tourists. Curated by KeyChinGu (@keychingu.korea). Languages: KR (full) + EN/CN/JP (published). Coverage: 60+ cities across food, culture, K-content, shopping, seasons, transport, sports and practical essentials. Updated 2026-10-30.
 
 ---
 
@@ -21003,7 +21003,7 @@ ISSUE 03 · #1267 · 2026-07-23
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-bubbletea-drink-chains.en.html
 - Slug: korea-bubbletea-drink-chains
 
-# 한국 버블티·음료 체인 풀가이드 — 커피 말고 마실 것 deep dive
+# 한국 버블티·음료 체인 풀가이드 — 커피 말고 마실 것
 
 > 메타: 외국인 음식·프랜차이즈·체인 비교 축 · ISSUE 02 체인 시리즈(카페 #61·치킨 #65·떡볶이 #66·베이커리 #71·햄버거 #1264·아이스크림 #1265) 확장 — 논커피 음료 편 · 브랜드 프로필 5 × 당도·얼음 커스텀 주문법 + 상황별 선택 3 + FAQ 6 · 매니아 #1266
 >
@@ -21210,7 +21210,7 @@ ISSUE 03 · #1267 · 2026-07-23
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-icecream-chains.en.html
 - Slug: korea-icecream-chains
 
-# 한국 아이스크림 체인 풀가이드 — 배스킨라빈스가 다른 나라가 되는 곳 deep dive
+# 한국 아이스크림 체인 풀가이드 — 배스킨라빈스가 다른 나라가 되는 곳
 
 > 메타: 외국인 음식·프랜차이즈·체인 비교 축 · ISSUE 02 체인 시리즈(카페 #61·치킨 #65·떡볶이 #66·베이커리 #71·햄버거 #1264) 확장 — 아이스크림 편 · 브랜드 프로필 4 + 편의점 채널 × 사이즈·시즌 문화 + 상황별 선택 3 + FAQ 6 · 매니아 #1265
 >
@@ -21414,7 +21414,7 @@ ISSUE 03 · #1267 · 2026-07-23
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-burger-chains.en.html
 - Slug: korea-burger-chains
 
-# 한국 햄버거 체인 풀가이드 — 맘스터치·롯데리아·노브랜드버거, 어느 버거가 진짜 K-버거일까 deep dive
+# 한국 햄버거 체인 풀가이드 — 맘스터치·롯데리아·노브랜드버거, 어느 버거가 진짜 K-버거일까
 
 > 메타: 외국인 음식·프랜차이즈·체인 비교 축 · ISSUE 02 체인 시리즈(카페 #61·치킨 #65·떡볶이 #66·베이커리 #71) 확장 — 햄버거 편 · 3대장 심층 + 신흥·글로벌 한정 메뉴 × 키오스크 실전·세트 문화 + 상황별 선택 3 + FAQ 6 · 매니아 #1264
 >
@@ -21622,7 +21622,7 @@ ISSUE 03 · #1267 · 2026-07-23
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/theme-valleys.en.html
 - Slug: theme-valleys
 
-# 지하철로 가는 서울 도심 계곡 완전정복 — 한여름 오아시스 6곳을 뚜벅이로 deep dive
+# 지하철로 가는 서울 도심 계곡 완전정복 — 한여름 오아시스 6곳을 뚜벅이로
 
 > 메타: 외국인 교통·테마여정·여름 시즌 축 · 지하철 코스 시리즈(Phase 2·테마 여정) ⑦ · 도심 계곡·물가 6곳(수성동·백사실·우이동·도봉산·용마폭포·관악산) × 스팟별 지하철 접근 + 물놀이 규칙 + 반나절 코스 + FAQ 6 · 매니아 #1263
 >
@@ -21821,7 +21821,7 @@ ISSUE 03 · #1267 · 2026-07-23
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/convenience-food-master.en.html
 - Slug: convenience-food-master
 
-# 한국 편의점 음식 총정리 — 과자·음료·라면·디저트, 카테고리별 뭘 살까 deep dive
+# 한국 편의점 음식 총정리 — 과자·음료·라면·디저트, 카테고리별 뭘 살까 심층 가이드
 
 > 메타: 외국인 먹거리·편의점·카테고리 총정리 축 · 편의점 클러스터(#26 입문·#1261 4사 비교) 확장 · 9개 카테고리 × 대표 아이템·뜬 이유·고르는 법 + 2026 트렌드 + 실전 팁 + FAQ 6 · 매니아 #1262
 >
@@ -22005,7 +22005,7 @@ ISSUE 03 · #1267 · 2026-07-23
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/convenience-big4.en.html
 - Slug: convenience-big4
 
-# 한국 편의점 4사 완전 비교 — CU·GS25·세븐일레븐·이마트24, 어느 문으로 들어갈까 deep dive
+# 한국 편의점 4사 완전 비교 — CU·GS25·세븐일레븐·이마트24, 어느 문으로 들어갈까 심층 가이드
 
 > 메타: 외국인 쇼핑·편의점·채널 비교 축 · 편의점 클러스터(이용법 #289·문화 #1171·간식 입문 #26) 확장 · 4사 프로필 × 강점 카테고리·PB 라인·앱/행사·서비스 비교 + 상황별 선택 가이드 + FAQ 6 · 매니아 #1261
 >
@@ -22199,7 +22199,7 @@ ISSUE 03 · #1267 · 2026-07-23
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/theme-kpop.en.html
 - Slug: theme-kpop
 
-# 지하철로 잇는 서울 K-pop 성지 완전정복 — 팬 순례 6곳을 한 장의 T-money로 deep dive
+# 지하철로 잇는 서울 K-pop 성지 완전정복 — 팬 순례 6곳을 한 장의 T-money로
 
 > 메타: 외국인 교통·테마여정·코스 축 · 지하철 코스 시리즈(Phase 2·테마 여정) ⑥ · K-pop 성지 6곳(HYBE·서울숲 SM권·K-star Road·홍대·명동·고터 지하상가) × 성지별 지하철 접근 + 팬 순례 하루 동선 + 굿즈·포토카드 팁 + FAQ 6 · 매니아 #1260
 >
@@ -22391,7 +22391,7 @@ T-money 한 장으로 6개 성지 전 노선. 강북↔강남 이동은 30분+ �
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/theme-nightviews.en.html
 - Slug: theme-nightviews
 
-# 지하철로 잇는 서울 야경 스팟 완전정복 — 밤 뷰 6곳을 막차 전에 도는 deep dive
+# 지하철로 잇는 서울 야경 스팟 완전정복 — 밤 뷰 6곳을 막차 전에 도는
 
 > 메타: 외국인 교통·테마여정·코스 축 · 지하철 코스 시리즈(Phase 2·테마 여정) ⑤ · 야경 스팟 6곳(N서울타워·서울스카이·낙산·응봉산·여의도63·반포분수) × 스팟별 지하철 접근 + 밤 동선·막차 전략 + FAQ 6 · 매니아 #1259
 >
@@ -22584,7 +22584,7 @@ T-money 한 장으로 6개 성지 전 노선. 강북↔강남 이동은 30분+ �
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/theme-museums.en.html
 - Slug: theme-museums
 
-# 지하철로 잇는 서울 미술관·박물관 라인 완전정복 — 아트 스팟 6곳을 한 장의 T-money로 deep dive
+# 지하철로 잇는 서울 미술관·박물관 라인 완전정복 — 아트 스팟 6곳을 한 장의 T-money로
 
 > 메타: 외국인 교통·테마여정·코스 축 · 지하철 코스 시리즈(Phase 2·테마 여정) ④ · 미술관·박물관 6곳(리움·국립현대 서울관·국립중앙박물관·서울시립·아모레퍼시픽·DDP) × 관별 지하철 접근 + 넘나드는 하루 동선 + 무료관·휴관일 팁 + FAQ 6 · 매니아 #1258
 >
@@ -22776,7 +22776,7 @@ T-money 한 장으로 6개 관 전 노선. 권역 간 이동 15~25분.
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/theme-markets.en.html
 - Slug: theme-markets
 
-# 지하철로 잇는 서울 전통시장 완전정복 — 먹거리 시장 6곳을 한 장의 T-money로 deep dive
+# 지하철로 잇는 서울 전통시장 완전정복 — 먹거리 시장 6곳을 한 장의 T-money로
 
 > 메타: 외국인 교통·테마여정·코스 축 · 지하철 코스 시리즈(Phase 2·테마 여정) ③ · 전통시장 6곳(광장·남대문·통인·망원·신당 서울중앙·노량진수산) × 시장별 지하철 접근 + 넘나드는 하루 동선 + 시장 매너·현금 팁 + FAQ 6 · 매니아 #1257
 >
@@ -22967,7 +22967,7 @@ T-money 한 장으로 6개 시장 전 노선. 시장 간 이동 20분 내외.
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/theme-hangang.en.html
 - Slug: theme-hangang
 
-# 지하철로 잇는 서울 한강 라인 완전정복 — 5개 한강공원을 한 장의 T-money로 deep dive
+# 지하철로 잇는 서울 한강 라인 완전정복 — 5개 한강공원을 한 장의 T-money로
 
 > 메타: 외국인 교통·테마여정·코스 축 · 지하철 코스 시리즈(Phase 2·테마 여정) ② · 한강공원 5곳(여의도·반포·뚝섬·망원·잠실) × 공원별 지하철 접근 + 넘나드는 하루 동선 + 한강라면·피크닉·유람선 팁 + FAQ 6 · 매니아 #1256
 >
@@ -23153,7 +23153,7 @@ T-money 한 장으로 5개 공원 전 노선. 따릉이(자전거)도 앱 결제
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/theme-palaces.en.html
 - Slug: theme-palaces
 
-# 지하철로 잇는 서울 5대궁 완전정복 — 한 장의 T-money로 조선 왕조 하루 종주 deep dive
+# 지하철로 잇는 서울 5대궁 완전정복 — 한 장의 T-money로 조선 왕조 하루 종주 심층 가이드
 
 > 메타: 외국인 교통·테마여정·코스 축 · 지하철 코스 시리즈(Phase 2·테마 여정) ① · 5대궁(경복궁·창덕궁·창경궁·덕수궁·경희궁) × 궁별 지하철 접근 + 넘나드는 하루 동선 + 통합관람권·한복 무료입장 팁 + FAQ 6 · 매니아 #1255
 >
@@ -23332,7 +23332,7 @@ T-money 한 장으로 5개 공원 전 노선. 따릉이(자전거)도 앱 결제
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/hub-jongno3ga.en.html
 - Slug: hub-jongno3ga
 
-# 서울 종로3가 환승 허브 완전정복 — 익선동·한옥·전통시장의 3개 노선 교차점 deep dive
+# 서울 종로3가 환승 허브 완전정복 — 익선동·한옥·전통시장의 3개 노선 교차점
 
 > 메타: 외국인 교통·환승허브·코스 축 · 지하철 코스 시리즈(Phase 2·환승 허브) ⑤ · 종로3가 허브 3방면 × 방면별 큐레이션 + 방사형 하루 코스 + 환승 팁 + FAQ 6 · 매니아 #1254
 >
@@ -23507,7 +23507,7 @@ T-money 한 장으로 1·3·5호선 전부. 종로3가에서 도심 어디든.
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/hub-hongdae.en.html
 - Slug: hub-hongdae
 
-# 서울 홍대입구 환승 허브 완전정복 — 외국인 숙소 1번지, 3개 노선 나이트라이프 관문 deep dive
+# 서울 홍대입구 환승 허브 완전정복 — 외국인 숙소 1번지, 3개 노선 나이트라이프 관문
 
 > 메타: 외국인 교통·환승허브·코스 축 · 지하철 코스 시리즈(Phase 2·환승 허브) ④ · 홍대입구 허브 3방면 × 방면별 큐레이션 + 방사형 하루 코스 + 환승 팁 + FAQ 6 · 매니아 #1253
 >
@@ -23682,7 +23682,7 @@ T-money 한 장으로 2·경의중앙·공항철도 전부. 공항철도 일반�
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/hub-ddp.en.html
 - Slug: hub-ddp
 
-# 서울 동대문(DDP) 환승 허브 완전정복 — 쇼핑·심야의 3개 노선 교차점 deep dive
+# 서울 동대문(DDP) 환승 허브 완전정복 — 쇼핑·심야의 3개 노선 교차점
 
 > 메타: 외국인 교통·환승허브·코스 축 · 지하철 코스 시리즈(Phase 2·환승 허브) ③ · 동대문(DDP) 허브 3방면 × 방면별 큐레이션 + 방사형 하루 코스 + 환승 팁 + FAQ 6 · 매니아 #1252
 >
@@ -23857,7 +23857,7 @@ T-money 한 장으로 2·4·5호선 전부. 동대문에서 시내 어디든.
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/hub-gongdeok.en.html
 - Slug: hub-gongdeok
 
-# 서울 공덕 환승 허브 완전정복 — 4개 노선이 만나는 마포·입국 관문 deep dive
+# 서울 공덕 환승 허브 완전정복 — 4개 노선이 만나는 마포·입국 관문
 
 > 메타: 외국인 교통·환승허브·코스 축 · 지하철 코스 시리즈(Phase 2·환승 허브) ② · 공덕 허브 4방면 × 방면별 큐레이션 + 방사형 하루 코스 + 환승 팁 + FAQ 6 · 매니아 #1251
 >
@@ -24040,7 +24040,7 @@ T-money 한 장으로 4개 노선 전부. 공항철도 일반열차도 T-money.
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/hub-wangsimni.en.html
 - Slug: hub-wangsimni
 
-# 서울 왕십리 환승 허브 완전정복 — 4개 노선이 만나는 여행 거점 deep dive
+# 서울 왕십리 환승 허브 완전정복 — 4개 노선이 만나는 여행 거점
 
 > 메타: 외국인 교통·환승허브·코스 축 · 지하철 코스 시리즈(Phase 2) ① · 왕십리 허브 4방면 × 방면별 큐레이션 + 방사형 하루 코스 + 환승 팁 + FAQ 6 · 매니아 #1250
 >
@@ -24222,7 +24222,7 @@ T-money 한 장으로 4개 노선 전부 환승. 왕십리에서 시내 어디�
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/airport-railroad.en.html
 - Slug: airport-railroad
 
-# 서울 공항철도(AREX) 완전정복 — 인천공항에서 서울까지, 입국 첫날 동선 가이드 deep dive
+# 서울 공항철도(AREX) 완전정복 — 인천공항에서 서울까지, 입국 첫날 동선 가이드
 
 > 메타: 외국인 교통·입국동선·큐레이션 축 · 지하철 노선별 시리즈 ⑨(특화편) · 공항철도 7역 × "여기 내리면" + 직통/일반 비교 + 입국 실무 + FAQ 6 · 매니아 #1249
 >
@@ -24479,7 +24479,7 @@ T-money 한 장으로 4개 노선 전부 환승. 왕십리에서 시내 어디�
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/gyeongui-jungang.en.html
 - Slug: gyeongui-jungang
 
-# 서울 경의중앙선 완전정복 — 한강을 따라 달리는 강변 라인 deep dive
+# 서울 경의중앙선 완전정복 — 한강을 따라 달리는 강변 라인 심층 가이드
 
 > 메타: 외국인 교통·역세권·큐레이션 축 · 지하철 노선별 시리즈 ⑧ · 경의중앙선 8역 × 역별 맛집·갈곳 + 하루 코스 + 노선 팁 + FAQ 6 · 매니아 #1248
 >
@@ -24751,7 +24751,7 @@ T-money 한 장으로 경의중앙선·환승·버스까지. 수도권 전철 �
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/subway-line9.en.html
 - Slug: subway-line9
 
-# 서울 지하철 9호선 완전정복 — 김포공항에서 강남까지, 급행으로 잇는 골드 라인 deep dive
+# 서울 지하철 9호선 완전정복 — 김포공항에서 강남까지, 급행으로 잇는 골드 라인 심층 가이드
 
 > 메타: 외국인 교통·역세권·큐레이션 축 · 지하철 노선별 시리즈 ⑦ · 9호선 8역 × 역별 맛집·갈곳 + 하루 코스 + 노선 팁 + FAQ 6 · 매니아 #1247
 >
@@ -25033,7 +25033,7 @@ T-money 한 장으로 9호선 급행·환승·버스까지. 공항철도(김포�
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/subway-line7.en.html
 - Slug: subway-line7
 
-# 서울 지하철 7호선 완전정복 — 건대·청담·강남, MZ와 명품과 자연의 라인 deep dive
+# 서울 지하철 7호선 완전정복 — 건대·청담·강남, MZ와 명품과 자연의 라인 심층 가이드
 
 > 메타: 외국인 교통·역세권·큐레이션 축 · 지하철 노선별 시리즈 ⑥ · 7호선 8역 × 역별 맛집·갈곳 + 하루 코스 + 노선 팁 + FAQ 6 · 매니아 #1246
 >
@@ -25314,7 +25314,7 @@ T-money 한 장으로 7호선·환승(2·3·9·1호선)·버스까지. 동북~�
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/subway-line6.en.html
 - Slug: subway-line6
 
-# 서울 지하철 6호선 완전정복 — 이태원·망원·해방촌, 글로벌과 힙스터의 라인 deep dive
+# 서울 지하철 6호선 완전정복 — 이태원·망원·해방촌, 글로벌과 힙스터의 라인 심층 가이드
 
 > 메타: 외국인 교통·역세권·큐레이션 축 · 지하철 노선별 시리즈 ⑤ · 6호선 8역 × 역별 맛집·갈곳 + 하루 코스 + 노선 팁 + FAQ 6 · 매니아 #1245
 >
@@ -25596,7 +25596,7 @@ T-money 한 장으로 6호선·환승(2·1호선)·버스까지. 이태원~망�
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/subway-line5.en.html
 - Slug: subway-line5
 
-# 서울 지하철 5호선 완전정복 — 광화문·여의도·서울식물원, 광장과 한강의 라인 deep dive
+# 서울 지하철 5호선 완전정복 — 광화문·여의도·서울식물원, 광장과 한강의 라인 심층 가이드
 
 > 메타: 외국인 교통·역세권·큐레이션 축 · 지하철 노선별 시리즈 ④ · 5호선 8역 × 역별 맛집·갈곳 + 하루 코스 + 노선 팁 + FAQ 6 · 매니아 #1244
 >
@@ -25878,7 +25878,7 @@ T-money 한 장으로 5호선·환승·버스까지. 공항철도(공덕·김포
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/subway-line4.en.html
 - Slug: subway-line4
 
-# 서울 지하철 4호선 완전정복 — 명동·남대문·동대문 쇼핑과 입국 관문 deep dive
+# 서울 지하철 4호선 완전정복 — 명동·남대문·동대문 쇼핑과 입국 관문 심층 가이드
 
 > 메타: 외국인 교통·역세권·큐레이션 축 · 지하철 노선별 시리즈 ③ · 4호선 8역 × 역별 맛집·갈곳 + 하루 코스 + 노선 팁 + FAQ 6 · 매니아 #1243
 >
@@ -26162,7 +26162,7 @@ T-money 한 장으로 4호선·환승·버스까지. 서울역 편의점·공항
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/subway-line3.en.html
 - Slug: subway-line3
 
-# 서울 지하철 3호선 완전정복 — 궁·한옥·전통을 잇는 오렌지 라인 deep dive
+# 서울 지하철 3호선 완전정복 — 궁·한옥·전통을 잇는 오렌지 라인 심층 가이드
 
 > 메타: 외국인 교통·역세권·큐레이션 축 · 지하철 노선별 시리즈 ② · 3호선 8역 × 역별 맛집·갈곳 + 하루 코스 + 노선 팁 + FAQ 6 · 매니아 #1242
 >
@@ -26445,7 +26445,7 @@ T-money 한 장으로 3호선·환승·버스까지. 편의점 구매·충전.
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/subway-line2.en.html
 - Slug: subway-line2
 
-# 서울 지하철 2호선 완전정복 — 역마다 내려서 먹고 즐기는 곳 deep dive
+# 서울 지하철 2호선 완전정복 — 역마다 내려서 먹고 즐기는 곳 심층 가이드
 
 > 메타: 외국인 교통·역세권·큐레이션 축 · 지하철 노선별 시리즈 ① · 2호선 8역 × 역별 맛집·갈곳 + 하루 코스 + 노선 팁 + FAQ 6 · 매니아 #1241
 >
@@ -26729,7 +26729,7 @@ T-money 카드 한 장으로 2호선·환승·버스까지. 외국인은 편의�
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/seoul-indoor-family.en.html
 - Slug: seoul-indoor-family
 
-# 비 오는 날 서울 가족 나들이 — 아이와 가기 좋은 실내 명소 12선 deep dive
+# 비 오는 날 서울 가족 나들이 — 아이와 가기 좋은 실내 명소 12선
 
 > 메타: 외국인 가족·아동·실내 축 · 아쿠아리움·박물관·체험 카테고리 · 표준 12선 4축 매트릭스(아쿠아리움·실내 자연 / 어린이 박물관·과학관 / 실내 놀이·체험 / 조용한 실내·문화) + 연령대·입장료 표 + FAQ 6 + 가족 코스 3 + 팁 5 · 매니아 #1240
 >
@@ -27026,7 +27026,7 @@ T-money 카드 한 장으로 2호선·환승·버스까지. 외국인은 편의�
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/seoul-history-eras.en.html
 - Slug: seoul-history-eras
 
-# 서울 600년 시간여행 — 시대별로 걷는 역사 탐험 코스 deep dive
+# 서울 600년 시간여행 — 시대별로 걷는 역사 탐험 코스 심층 가이드
 
 > 메타: 외국인 역사·문화·워킹투어 축 · 시대별 타임라인·건축 카테고리 · 5시대 타임라인(조선 / 개화기·대한제국 / 근대 상업 / 산업·아날로그 / 글로벌 메트로폴리스) + 걸어서 600년 통합 코스 + 시대별 요약표 + FAQ 6 + 반나절~하루 코스 + 팁 5 · 매니아 #1239
 >
@@ -27282,7 +27282,7 @@ T-money 카드 한 장으로 2호선·환승·버스까지. 외국인은 편의�
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/seoul-romantic-views.en.html
 - Slug: seoul-romantic-views
 
-# 낭만적인 서울 야경 데이트 — 전망대·루프탑·한강 뷰 12선 deep dive
+# 낭만적인 서울 야경 데이트 — 전망대·루프탑·한강 뷰 12선
 
 > 메타: 외국인 데이트·야경·커플 축 · 전망대·루프탑·한강 카테고리 · 표준 12선 4축 매트릭스(시그니처 전망대·타워 / 한강·자연 낭만 뷰 / 루프탑·다이닝 뷰 / 이색 낭만 체험) + 입장료·시간 표 + FAQ 6 + 데이트 코스 3 + 계절 노트 4 + 외국인 팁 5 · 매니아 #1238
 >
@@ -27583,7 +27583,7 @@ T-money 카드 한 장으로 2호선·환승·버스까지. 외국인은 편의�
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/summer-water-festivals.en.html
 - Slug: summer-water-festivals
 
-# 여름 물 페스티벌 완전정복 — 워터밤·S2O·흠뻑쇼 외국인 가이드 deep dive
+# 여름 물 페스티벌 완전정복 — 워터밤·S2O·흠뻑쇼 외국인 가이드
 
 > 메타: 외국인 여름·페스티벌·K-pop 축 · 뮤직 페스티벌·이벤트 카테고리 · 3대 물 페스티벌 deep + 여름 뮤직 페스티벌 확장 + 외국인 참가 실무(티켓·여권·준비물) + 안전·타이밍 + FAQ 6 + 코스 + 팁 5 · 매니아 #1237
 >
@@ -27811,7 +27811,7 @@ K-pop 팬은 워터밤, 하드코어 EDM은 S2O, PSY·싱어롱은 흠뻑쇼. �
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/summer-terrace-bars.en.html
 - Slug: summer-terrace-bars
 
-# 여름밤 서울 야장 — 루프탑·테라스·내추럴 와인바 12선 deep dive
+# 여름밤 서울 야장 — 루프탑·테라스·내추럴 와인바 12선
 
 > 메타: 외국인 여름·야간·MZ 축 · 루프탑·와인바·야외 다이닝 카테고리 · 표준 12선 4축 매트릭스(루프탑 전망 바 / 내추럴 와인바 골목 / 야외 테라스 다이닝 / 특색 한 잔·동네 야장) + 여름밤 타이밍·예약 표 + FAQ 6 + 반나절 코스 3 + 계절 노트 4 + 외국인 팁 5 · 매니아 #1236
 >
@@ -28113,7 +28113,7 @@ Cucciolo·Bangbang 같은 인기 테라스는 여름 저녁 자리가 빨리 찬
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/quiet-seoul.en.html
 - Slug: quiet-seoul
 
-# 사람 없는 서울 — 붐빔을 피하는 한적한 명소 12선 deep dive
+# 사람 없는 서울 — 붐빔을 피하는 한적한 명소 12선
 
 > 메타: 외국인 anti-crowd(오버투어리즘 회피) 축 · 동네·공원·궁·예술골목 cross 카테고리 · 표준 12선 4축 매트릭스(조용한 언덕 동네 / 한적한 강·산 / 안 붐비는 궁·한옥 / 숨은 예술 골목) + 붐빔 회피 시간표 + FAQ 6 + 반나절 코스 3 + 계절 노트 4 + 외국인 팁 5 · 매니아 #1235
 >
@@ -28784,12 +28784,12 @@ ISSUE 04 · #1233 · 2026-07-07
 
 ## [1232] Korea Luggage Storage·Delivery (Coin Locker·Airport·Hotel-to-Hotel)
 
-- KR: 외국인 짐보관·짐배송 가이드 — 코인락커·공항 짐배송·호텔 간 배송
+- KR: 짐보관·짐배송 가이드 — 코인락커·공항 짐배송·호텔 간 배송
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/korea-luggage-storage.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-luggage-storage.en.html
 - Slug: korea-luggage-storage
 
-# 외국인 짐보관·짐배송 가이드 — 코인락커·공항 짐배송·호텔 간 배송 완전정복
+# 짐보관·짐배송 가이드 — 코인락커·공항 짐배송·호텔 간 배송 완전정복
 
 > 부제: 외국인 관광객용 한국 짐보관·짐배송 완전정복 — 체크아웃 후 짐 끌지 않는 "코인락커·짐배송·호텔 간 이동" 셋업 · 역·공항 락커·T-luggage·짐캐리 앱 + 크기·요금·예약 매트릭스
 
@@ -29021,12 +29021,12 @@ ISSUE 04 · #1232 · 2026-07-04
 
 ## [1231] Korea Tax Refund (Immediate·Airport·Kiosk VAT)
 
-- KR: 외국인 택스리펀 가이드 — 즉시환급·공항 환급·키오스크 부가세 환급
+- KR: 택스리펀 가이드 — 즉시환급·공항 환급·키오스크 부가세 환급
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/korea-tax-refund.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-tax-refund.en.html
 - Slug: korea-tax-refund
 
-# 외국인 택스리펀 가이드 — 즉시환급·공항 환급·키오스크 부가세 환급 완전정복
+# 택스리펀 가이드 — 즉시환급·공항 환급·키오스크 부가세 환급 완전정복
 
 > 부제: 외국인 관광객용 한국 택스리펀 완전정복 — 쇼핑 부가세 10% 돌려받는 "즉시환급 vs 사후환급" 전략 · 최소금액·여권·세관·키오스크·환급률 + 명동 시내환급·공항 카운터 매트릭스
 
@@ -29259,12 +29259,12 @@ ISSUE 04 · #1231 · 2026-07-04
 
 ## [1230] Korea Travel Essential Apps (Naver Map·Kakao T·Papago)
 
-- KR: 외국인 한국여행 필수 앱 가이드 — 네이버지도·카카오T·파파고 도착 전 설치
+- KR: 한국여행 필수 앱 가이드 — 네이버지도·카카오T·파파고 도착 전 설치
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/korea-essential-apps.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-essential-apps.en.html
 - Slug: korea-essential-apps
 
-# 외국인 한국여행 필수 앱 가이드 — 네이버지도·카카오T·파파고 도착 전 설치 완전정복
+# 한국여행 필수 앱 가이드 — 네이버지도·카카오T·파파고 도착 전 설치 완전정복
 
 > 부제: 외국인 관광객용 한국여행 필수 앱 완전정복 — 구글맵이 안 통하는 한국의 "네이버지도·카카오T·파파고" 셋업 · 길찾기·택시·번역·대중교통·예약 앱 + 설치·결제·한국번호 매트릭스
 
@@ -29498,12 +29498,12 @@ ISSUE 04 · #1230 · 2026-07-04
 
 ## [1229] Mungyeong Travel (Saejae·Rail Bike·Ceramics)
 
-- KR: 외국인 문경 여행 가이드 — 문경새재·레일바이크·도자기 경북 산악
+- KR: 문경 여행 가이드 — 문경새재·레일바이크·도자기 경북 산악
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/korea-mungyeong.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-mungyeong.en.html
 - Slug: korea-mungyeong
 
-# 외국인 문경 여행 가이드 — 문경새재·레일바이크·도자기 경북 산악 완전정복
+# 문경 여행 가이드 — 문경새재·레일바이크·도자기 경북 산악 완전정복
 
 > 부제: 외국인 관광객용 경북 문경 완전정복 — 안동·경주와 다른 "옛 고갯길 + 레일바이크 + 도자기" 산악 소도시 · 문경새재·철로 자전거·오미자·석탄박물관 + 사극 세트·약돌한우 매트릭스
 
@@ -29736,12 +29736,12 @@ ISSUE 04 · #1229 · 2026-07-03
 
 ## [1228] Danyang Travel (Dodamsambong·Gosu Cave·Paragliding)
 
-- KR: 외국인 단양 여행 가이드 — 도담삼봉·고수동굴·패러글라이딩 충북 내륙
+- KR: 단양 여행 가이드 — 도담삼봉·고수동굴·패러글라이딩 충북 내륙
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/korea-danyang.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-danyang.en.html
 - Slug: korea-danyang
 
-# 외국인 단양 여행 가이드 — 도담삼봉·고수동굴·패러글라이딩 충북 내륙 완전정복
+# 단양 여행 가이드 — 도담삼봉·고수동굴·패러글라이딩 충북 내륙 완전정복
 
 > 부제: 외국인 관광객용 충북 단양 완전정복 — 서울에서 가까운 "강·절벽·동굴·액티비티" 내륙 소도시 · 도담삼봉·만천하스카이워크·고수동굴·패러글라이딩 + 마늘·쏘가리 매트릭스
 
@@ -30115,12 +30115,12 @@ ISSUE 04 · #1227 · 2026-07-03
 
 ## [1226] Yangyang Travel (Surfing·Naksansa·Hajodae)
 
-- KR: 외국인 양양 여행 가이드 — 서핑 성지·낙산사·하조대 강원 동해안
+- KR: 양양 여행 가이드 — 서핑 성지·낙산사·하조대 강원 동해안
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/korea-yangyang.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-yangyang.en.html
 - Slug: korea-yangyang
 
-# 외국인 양양 여행 가이드 — 서핑 성지·낙산사·하조대 강원 동해안 완전정복
+# 양양 여행 가이드 — 서핑 성지·낙산사·하조대 강원 동해안 완전정복
 
 > 부제: 외국인 관광객용 강원 양양 완전정복 — 속초·강릉과 다른 "서핑 성지 + 해변 절 " 소도시 · 서피비치·죽도해변·낙산사·하조대 + 서핑 강습·동해 회 매트릭스
 
@@ -30353,12 +30353,12 @@ ISSUE 04 · #1226 · 2026-07-03
 
 ## [1225] Damyang Travel (Juknokwon·Metasequoia·Slow City)
 
-- KR: 외국인 담양 여행 가이드 — 죽녹원 대숲·메타세쿼이아길·슬로시티 전남
+- KR: 담양 여행 가이드 — 죽녹원 대숲·메타세쿼이아길·슬로시티 전남
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/korea-damyang.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-damyang.en.html
 - Slug: korea-damyang
 
-# 외국인 담양 여행 가이드 — 죽녹원 대숲·메타세쿼이아길·슬로시티 전남 완전정복
+# 담양 여행 가이드 — 죽녹원 대숲·메타세쿼이아길·슬로시티 전남 완전정복
 
 > 부제: 외국인 관광객용 전남 담양 완전정복 — 광주·전주와 다른 "대숲 힐링 슬로시티" 소도시 · 죽녹원·메타세쿼이아길·관방제림·소쇄원 + 떡갈비·대통밥 매트릭스
 
@@ -30591,12 +30591,12 @@ ISSUE 04 · #1225 · 2026-07-03
 
 ## [1224] Namhae Travel (German Village·Darangi·Boriam)
 
-- KR: 외국인 남해 여행 가이드 — 독일마을·다랭이논·보리암 경남 남해안
+- KR: 남해 여행 가이드 — 독일마을·다랭이논·보리암 경남 남해안
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/korea-namhae.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-namhae.en.html
 - Slug: korea-namhae
 
-# 외국인 남해 여행 가이드 — 독일마을·다랭이논·보리암 경남 남해안 완전정복
+# 남해 여행 가이드 — 독일마을·다랭이논·보리암 경남 남해안 완전정복
 
 > 부제: 외국인 관광객용 경남 남해 완전정복 — 서울·부산과 다른 "섬 전원 힐링" 소도시 · 독일마을·가천 다랭이마을·보리암·죽방렴 + 렌터카 동선·멸치·유자 매트릭스
 
@@ -30829,12 +30829,12 @@ ISSUE 04 · #1224 · 2026-07-03
 
 ## [1223] Fansign and Video Call Entry Guide for Foreigners — Counting Entries, KakaoTalk Calls and English-Name Rules from 5 Weverse Shop and Ktown4u Notices
 
-- KR: 외국인 K-pop 팬사인회·영상통화 응모 가이드 — 위버스샵·케이타운포유 공지 5건으로 본 응모 수 계산·카카오톡 통화·영문 이름 규칙
+- KR: K-pop 팬사인회·영상통화 응모 가이드 — 위버스샵·케이타운포유 공지 5건으로 본 응모 수 계산·카카오톡 통화·영문 이름 규칙
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/korea-kpop-fansign-videocall.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-kpop-fansign-videocall.en.html
 - Slug: korea-kpop-fansign-videocall
 
-# 외국인 K-pop 팬사인회·영상통화 응모 가이드 — 위버스샵·케이타운포유 공지 5건으로 본 응모 수 계산·카카오톡 통화·영문 이름 규칙 (2026년 10월 확인)
+# K-pop 팬사인회·영상통화 응모 가이드 — 위버스샵·케이타운포유 공지 5건으로 본 응모 수 계산·카카오톡 통화·영문 이름 규칙 (2026년 10월 확인)
 
 > 부제: 앨범은 주문 수가 아니라 장수만큼 응모된다(TXT 공식 공지) · 영상통화는 카카오톡으로 1분~1분 30초(TREASURE·YEONJUN 공식 공지) · 외국인은 신분증과 같은 영문 이름으로만 응모하고 실물 여권·외국인등록증으로 확인한다(TXT·TREASURE 공식 공지) · 당첨 발표 뒤에는 응모 상품 환불이 안 된다(각 공식 공지) — 2026-10-21 기준
 
@@ -30962,12 +30962,12 @@ ISSUE 04 · #1223 · 2026-07-03
 
 ## [1222] Idol Birthday Cafes for Foreign Fans: How to Find a Saengka, Etiquette, and How to Read Subway Birthday Ads
 
-- KR: 외국인 아이돌 생일카페 가이드 — 생카 찾는 법·참여 매너·지하철 생일광고 읽는 법
+- KR: 아이돌 생일카페 가이드 — 생카 찾는 법·참여 매너·지하철 생일광고 읽는 법
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/korea-idol-birthday-cafe.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-idol-birthday-cafe.en.html
 - Slug: korea-idol-birthday-cafe
 
-# 외국인 아이돌 생일카페 가이드 — 생카 찾는 법·참여 매너·지하철 생일광고 읽는 법 (2026년 10월 확인)
+# 아이돌 생일카페 가이드 — 생카 찾는 법·참여 매너·지하철 생일광고 읽는 법 (2026년 10월 확인)
 
 > 부제: 생일카페는 팬이 카페를 빌려 여는 비공식 행사 [2차 Korea Herald] · 한정 증정품은 선착순 [2차 Korea Herald] · 서울 지하철 1~8호선 광고는 광고대행사 신청 후 한국광고자율심의기구 심의(서울교통공사 공식) · 2025년 서울 지하철 아이돌 광고 12,433건 [2차 데일리안] — 2026-10-21 기준
 
@@ -31081,12 +31081,12 @@ ISSUE 04 · #1222 · 2026-07-03
 
 ## [1221] Foreign Fan's Guide to Attending K-pop Music Shows — How to Apply, Based on 5 Open Halls (Inkigayo, M Countdown, Music Bank, Show! Music Core, Show Champion) and 9 Agency Audience Notices
 
-- KR: 외국인 K-pop 음악방송 방청 가이드 — 인기가요·엠카·뮤뱅·음악중심·쇼챔피언 공개홀 5곳과 기획사 방청 공지 9건으로 본 신청법
+- KR: K-pop 음악방송 방청 가이드 — 인기가요·엠카·뮤뱅·음악중심·쇼챔피언 공개홀 5곳과 기획사 방청 공지 9건으로 본 신청법
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/korea-kpop-music-show-taping.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-kpop-music-show-taping.en.html
 - Slug: korea-kpop-music-show-taping
 
-# 외국인 K-pop 음악방송 방청 가이드 — 인기가요·엠카·뮤뱅·음악중심·쇼챔피언 공개홀 5곳과 기획사 방청 공지 9건으로 본 신청법 (2026년 10월 확인)
+# K-pop 음악방송 방청 가이드 — 인기가요·엠카·뮤뱅·음악중심·쇼챔피언 공개홀 5곳과 기획사 방청 공지 9건으로 본 신청법 (2026년 10월 확인)
 
 > 부제: 인기가요 매주 일요일 3시 20분(SBS 공식) · 쇼! 음악중심 토요일 오후 3시 20분(MBC 공식) · 방청 신청은 기획사 팬클럽 공지에서 10~30분만 열리는 선착순 창구(위버스 공지 9건) · 외국인 신분증은 여권·외국인등록증 실물(CORTIS·ILLIT 공지) · 인원 체크는 새벽 4시부터(ENHYPEN·NCT WISH 공지) — 2026-10-21 기준
 
@@ -31212,12 +31212,12 @@ ISSUE 04 · #1221 · 2026-07-03
 
 ## [1220] Underground Mall Shopping (GOTO Mall·Bupyeong·Gangnam)
 
-- KR: 외국인 지하상가 쇼핑 가이드 — 고투몰·부평·강남터미널 저가 패션
+- KR: 지하상가 쇼핑 가이드 — 고투몰·부평·강남터미널 저가 패션
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/korea-underground-mall.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-underground-mall.en.html
 - Slug: korea-underground-mall
 
-# 외국인 지하상가 쇼핑 가이드 — 고투몰·부평·강남터미널 저가 패션
+# 지하상가 쇼핑 가이드 — 고투몰·부평·강남터미널 저가 패션
 
 > 부제: 외국인 관광객용 한국 지하상가 완전정복 — 백화점·명동과 다른 초저가 미로형 쇼핑 · 강남 고투몰·부평 지하상가·명동 지하 + 흥정·현금 + 지하철 연결 매트릭스
 
@@ -31451,12 +31451,12 @@ ISSUE 04 · #1220 · 2026-07-03
 
 ## [1219] Korea Unmanned Store·Vending Guide
 
-- KR: 외국인 무인점포·자판기 문화 (무인카페·인생네컷)
+- KR: 무인점포·자판기 문화 (무인카페·인생네컷)
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/korea-unmanned-store.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-unmanned-store.en.html
 - Slug: korea-unmanned-store
 
-# 외국인 무인점포·자판기 문화 가이드 — 무인카페·무인아이스크림·이색 자판기
+# 무인점포·자판기 문화 가이드 — 무인카페·무인아이스크림·이색 자판기
 
 > 부제: 외국인 관광객용 한국 무인·자동화 리테일 완전정복 — 24h 무인카페·무인아이스크림 할인점·무인사진관·이색 자판기 + 키오스크 결제 + 신뢰기반 문화 매트릭스
 
@@ -31689,12 +31689,12 @@ ISSUE 04 · #1219 · 2026-07-03
 
 ## [1218] Korea Trendy K-Snacks Guide
 
-- KR: 외국인 트렌디 K-간식 (탕후루·달고나·회오리감자)
+- KR: 트렌디 K-간식 (탕후루·달고나·회오리감자)
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/korea-trendy-snacks.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-trendy-snacks.en.html
 - Slug: korea-trendy-snacks
 
-# 외국인 트렌디 K-간식 가이드 — 탕후루·달고나·회오리감자·바이럴 길거리 간식
+# 트렌디 K-간식 가이드 — 탕후루·달고나·회오리감자·바이럴 길거리 간식
 
 > 부제: 외국인 관광객용 신흥·바이럴 K-간식 완전정복 — 기존 분식과 다른 SNS 유행 간식 · 탕후루·달고나(오징어게임)·회오리감자·붕어빵·두바이초콜릿 + 시장·길거리 + SNS 매트릭스
 
@@ -31923,12 +31923,12 @@ ISSUE 04 · #1218 · 2026-07-03
 
 ## [1217] Korea Unique Cafes Guide
 
-- KR: 외국인 특이 카페 (테마·룸·만화·동물)
+- KR: 특이 카페 (테마·룸·만화·동물)
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/korea-unique-cafes.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-unique-cafes.en.html
 - Slug: korea-unique-cafes
 
-# 외국인 특이 카페 가이드 — 테마·룸·만화·동물카페
+# 특이 카페 가이드 — 테마·룸·만화·동물카페
 
 > 부제: 외국인 관광객용 한국 이색 카페 완전정복 — 일반 카페와 다른 체험형 카페 · 테마카페·룸카페·만화카페·동물카페·보드게임카페 + 예약·이용 규칙 + SNS 매트릭스
 
@@ -32161,12 +32161,12 @@ ISSUE 04 · #1217 · 2026-07-03
 
 ## [1216] Korea Hanbok Studio Photoshoot
 
-- KR: 외국인 한복 스튜디오 촬영 (스냅·궁 야외)
+- KR: 한복 스튜디오 촬영 (스냅·궁 야외)
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/korea-hanbok-studio.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-hanbok-studio.en.html
 - Slug: korea-hanbok-studio
 
-# 외국인 한복 스튜디오 촬영 가이드 — 스냅·헤어메이크업·궁 야외 촬영
+# 한복 스튜디오 촬영 가이드 — 스냅·헤어메이크업·궁 야외 촬영
 
 > 부제: 외국인 관광객용 한복 스냅 촬영 완전정복 — 길거리 한복 대여와 다른 전문 스튜디오 촬영 · 실내 스냅·궁 야외·헤어메이크업·보정 + 경복궁 무료입장 + 예약 매트릭스
 
@@ -32392,12 +32392,12 @@ ISSUE 04 · #1216 · 2026-07-03
 
 ## [1215] Korea Budget Stay Guide
 
-- KR: 외국인 저예산 숙소 (게하·호스텔·캡슐·찜질방)
+- KR: 저예산 숙소 (게하·호스텔·캡슐·찜질방)
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/korea-budget-stay.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-budget-stay.en.html
 - Slug: korea-budget-stay
 
-# 외국인 저예산 숙소 가이드 — 게스트하우스·호스텔·캡슐호텔·찜질방 숙박
+# 저예산 숙소 가이드 — 게스트하우스·호스텔·캡슐호텔·찜질방 숙박
 
 > 부제: 외국인 배낭·예산 여행자용 한국 저예산 숙소 완전정복 — 찜질방 숙박(최저가)·도미토리·캡슐호텔·게스트하우스·모텔 + 위치 전략 + 예약앱 + 24h 체크인
 
@@ -32646,12 +32646,12 @@ ISSUE 04 · #1215 · 2026-07-03
 
 ## [1214] Korean-Chinese Food Guide
 
-- KR: 외국인 한국식 중화요리 (짜장·짬뽕·탕수육)
+- KR: 한국식 중화요리 (짜장·짬뽕·탕수육)
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/korea-chinese-food.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-chinese-food.en.html
 - Slug: korea-chinese-food
 
-# 외국인 한국식 중화요리 가이드 — 짜장면·짬뽕·탕수육 (한국에서 진화한 중국집)
+# 한국식 중화요리 가이드 — 짜장면·짬뽕·탕수육 (한국에서 진화한 중국집)
 
 > 부제: 외국인 관광객용 한국식 중화요리 완전정복 — 중국 본토와 다른 한국 고유 진화 · 짜장면·짬뽕·탕수육 3대장 + 부먹vs찍먹 논쟁 + 인천 차이나타운 발상지 + 배달문화
 
@@ -32872,12 +32872,12 @@ ISSUE 04 · #1214 · 2026-07-03
 
 ## [1213] Bulgogi Guide (3 Regional Styles)
 
-- KR: 외국인 불고기 (서울·언양·광양 3대 스타일)
+- KR: 불고기 (서울·언양·광양 3대 스타일)
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/korea-bulgogi.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-bulgogi.en.html
 - Slug: korea-bulgogi
 
-# 외국인 불고기 가이드 — 서울·언양·광양 3대 스타일 + 노포 맛집 12선
+# 불고기 가이드 — 서울·언양·광양 3대 스타일 + 노포 맛집 12선
 
 > 부제: 외국인 관광객용 불고기 완전정복 — BBQ(구이)와 다른 양념 소고기 요리 · 서울 뚝배기·언양 석쇠·광양 숯불 3대 스타일 + 안 매운 입문 최적 + 노포 매트릭스
 
@@ -33097,12 +33097,12 @@ ISSUE 04 · #1213 · 2026-07-03
 
 ## [1212] Car-Free Jeju by Bus
 
-- KR: 외국인 제주 뚜벅이 (렌터카 없이 버스)
+- KR: 제주 뚜벅이 (렌터카 없이 버스)
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/korea-jeju-no-car.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-jeju-no-car.en.html
 - Slug: korea-jeju-no-car
 
-# 외국인 제주 뚜벅이 가이드 — 렌터카 없이 버스·택시로 4일 코스 12선
+# 제주 뚜벅이 가이드 — 렌터카 없이 버스·택시로 4일 코스 12선
 
 > 부제: 국제운전면허 없는 외국인용 제주 대중교통 완전정복 — 급행·간선·관광지순환버스 810/820 + 카카오T + 동·서 데이 코스 + 숙소 베이스 전략
 
@@ -48957,7 +48957,7 @@ A. 본 explainer 하단 cross-link + 외부 SOURCES 참조. 최신 trend는 Nave
 
 ## [1131] 망원동 Deep Guide for Foreign Travelers
 
-- KR: 외국인 망원동 deep dive
+- KR: 망원동 심층 가이드
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/mangwon-dong-deep.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/mangwon-dong-deep.en.html
 - Slug: mangwon-dong-deep
@@ -49279,7 +49279,7 @@ Here are some tailored tips for foreign visitors to Mangwon-dong, considering va
 
 ## [1130] 냉면 Index for Foreign Travelers
 
-- KR: 외국인 냉면 인덱스
+- KR: 냉면 인덱스
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/naengmyeon-index.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/naengmyeon-index.en.html
 - Slug: naengmyeon-index
@@ -49298,7 +49298,7 @@ targetpersonas: useutourist, foodie, hiddengemlover
 date: 2026-06-23
 ---
 
-# 외국인 냉면 인덱스
+# 냉면 인덱스
 
 > 키친구의 냉면 관련 publish 콘텐츠 통합 인덱스 — 자동 검색 + cross-link
 
@@ -49444,7 +49444,7 @@ date: 2026-06-23
 
 ## [1129] Mangwon-dong Index
 
-- KR: 외국인 망원동 인덱스
+- KR: 망원동 인덱스
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/mangwon-dong-index.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/mangwon-dong-index.en.html
 - Slug: mangwon-dong-index
@@ -49463,7 +49463,7 @@ targetpersonas: useutourist, mztraveler, foodie, hiddengemlover
 date: 2026-06-23
 ---
 
-# 외국인 망원동 인덱스
+# 망원동 인덱스
 
 > MZ·트렌디 hidden gem — 망원시장·망리단길·합정·연남 hop 매트릭스 + 기존 publish 통합
 
@@ -49626,7 +49626,7 @@ date: 2026-06-23
 
 ## [1128] Yeonhui-dong Hidden Gem
 
-- KR: 외국인 연희동 hidden gem
+- KR: 연희동 hidden gem
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/yeonhui-dong-hidden-gem.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/yeonhui-dong-hidden-gem.en.html
 - Slug: yeonhui-dong-hidden-gem
@@ -49645,7 +49645,7 @@ targetpersonas: useutourist, hiddengemlover, foodie, artlover
 date: 2026-06-21
 ---
 
-# 외국인 연희동 hidden gem
+# 연희동 hidden gem
 
 > 연남 인접 hidden gem·로컬 — 외국인 잘 안 가는 권역 deep dive 12곳
 
@@ -49853,9 +49853,9 @@ Phase 2 보강 v2: 추가 매트릭스·권역 매장·안전. 2026-06-23.
 
 ---
 
-## [1127] Seongsu Brunch Cluster
+## [1127] Seongsu Brunch
 
-- KR: 외국인 성수 브런치 cluster
+- KR: 성수 브런치
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/seongsu-brunch-cluster.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/seongsu-brunch-cluster.en.html
 - Slug: seongsu-brunch-cluster
@@ -49874,7 +49874,7 @@ targetpersonas: useutourist, brunchlover, mzdesigner, instagramlover
 date: 2026-06-21
 ---
 
-# 외국인 성수 브런치 cluster
+# 성수 브런치
 
 > warehouse·디자인·인스타 — 성수 브런치 12곳 매트릭스 + 주말 fit
 
@@ -50106,7 +50106,7 @@ Phase 2 보강 v2: 추가 매트릭스·권역 매장·안전. 2026-06-23.
 
 ## [1126] Seongsu Bar & Nightlife
 
-- KR: 외국인 성수 술집·nightlife
+- KR: 성수 술집·nightlife
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/seongsu-bar-nightlife.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/seongsu-bar-nightlife.en.html
 - Slug: seongsu-bar-nightlife
@@ -50125,7 +50125,7 @@ targetpersonas: useutourist, mzdesigner, instagramlover, moodseeker
 date: 2026-06-21
 ---
 
-# 외국인 성수 술집·nightlife
+# 성수 술집·nightlife
 
 > warehouse·디자인·인스타 — 성수 인디 nightlife 15곳 매트릭스
 
@@ -50365,7 +50365,7 @@ Phase 2 보강 v2: 추가 매트릭스·권역 매장·안전. 2026-06-23.
 
 ## [1125] Hongdae Bakery Deep Dive
 
-- KR: 외국인 홍대 베이커리 deep dive
+- KR: 홍대 베이커리 심층 가이드
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/hongdae-bakery-deep-dive.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/hongdae-bakery-deep-dive.en.html
 - Slug: hongdae-bakery-deep-dive
@@ -50384,7 +50384,7 @@ targetpersonas: useutourist, breadlover, sourdoughpilgrim, mzshopper
 date: 2026-06-21
 ---
 
-# 외국인 홍대 베이커리 deep dive
+# 홍대 베이커리 심층 가이드
 
 > 인디·specialty·디저트·MZ 4유형 — 홍대·상수·합정·연남 베이커리 13곳 매트릭스
 
@@ -50624,7 +50624,7 @@ date: 2026-06-21
 
 ## [1124] Hongdae Bar & Nightlife
 
-- KR: 외국인 홍대 술집·nightlife
+- KR: 홍대 술집·nightlife
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/hongdae-bar-nightlife.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/hongdae-bar-nightlife.en.html
 - Slug: hongdae-bar-nightlife
@@ -50643,7 +50643,7 @@ targetpersonas: useutourist, indiemusiclover, mzclubber, livemusicpilgrim
 date: 2026-06-21
 ---
 
-# 외국인 홍대 술집·nightlife
+# 홍대 술집·nightlife
 
 > 인디·라이브·클럽·로컬 4유형 20곳 — 상수·홍대·합정·연남 매트릭스
 
@@ -50857,7 +50857,7 @@ date: 2026-06-21
 
 ## [1123] Hongdae Shopping Full Guide
 
-- KR: 외국인 홍대 쇼핑 풀가이드
+- KR: 홍대 쇼핑 풀가이드
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/hongdae-shopping-full-guide.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/hongdae-shopping-full-guide.en.html
 - Slug: hongdae-shopping-full-guide
@@ -50876,7 +50876,7 @@ targetpersonas: useutourist, fashionlover, vintagehunter, mzshopper
 date: 2026-06-21
 ---
 
-# 외국인 홍대 쇼핑 풀가이드
+# 홍대 쇼핑 풀가이드
 
 > MZ·인디·트렌디·빈티지 4축 — 홍대·상수·합정·연남 쇼핑 cluster 19곳 매트릭스
 
@@ -51086,7 +51086,7 @@ date: 2026-06-21
 
 ## [1122] Korea Market Index
 
-- KR: 외국인 한국 시장 인덱스
+- KR: 한국 시장 인덱스
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/korea-market-index.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-market-index.en.html
 - Slug: korea-market-index
@@ -51105,7 +51105,7 @@ targetpersonas: useutourist, marketexplorer, foodie, vintagelover
 date: 2026-06-20
 ---
 
-# 외국인 한국 시장 인덱스
+# 한국 시장 인덱스
 
 > 서울 + 지방 도시 한국 시장 풀 매트릭스 — 키친구 기존 publish 콘텐츠 인덱스
 
@@ -51307,7 +51307,7 @@ date: 2026-06-20
 
 ## [1121] Itaewon Nightlife Full Guide
 
-- KR: 외국인 이태원 nightlife 풀가이드
+- KR: 이태원 nightlife 풀가이드
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/itaewon-nightlife-full-guide.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/itaewon-nightlife-full-guide.en.html
 - Slug: itaewon-nightlife-full-guide
@@ -51326,7 +51326,7 @@ targetpersonas: useutourist, nightlifeseeker, whiskylover, clubber
 date: 2026-06-20
 ---
 
-# 외국인 이태원 nightlife 풀가이드
+# 이태원 nightlife 풀가이드
 
 > 위스키·칵테일·클럽·라이브 — 외국 hub 5유형 25곳 + 시간대 hop 매트릭스
 
@@ -51608,7 +51608,7 @@ date: 2026-06-20
 
 ## [1120] Jongno Korean Food Deep Dive
 
-- KR: 외국인 종로 한식 deep dive
+- KR: 종로 한식 심층 가이드
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/jongno-korean-food-deep-dive.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/jongno-korean-food-deep-dive.en.html
 - Slug: jongno-korean-food-deep-dive
@@ -51627,7 +51627,7 @@ targetpersonas: useutourist, foodie, koreanfoodexplorer, historybuff
 date: 2026-06-20
 ---
 
-# 외국인 종로 한식 deep dive
+# 종로 한식 심층 가이드
 
 > 600년 조선 도성 — 인사동 한정식·광장시장 국밥·을지로 노포·궁중 한식 15곳 매트릭스
 
@@ -52230,7 +52230,7 @@ date: 2026-06-20
 
 ## [1118] Gangnam Cafe & Dessert Deep Dive
 
-- KR: 외국인 강남 카페·디저트 deep dive
+- KR: 강남 카페·디저트 심층 가이드
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/gangnam-cafe-dessert-deep.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/gangnam-cafe-dessert-deep.en.html
 - Slug: gangnam-cafe-dessert-deep
@@ -52249,7 +52249,7 @@ targetpersonas: useutourist, luxurydessert, designer, instagramlover
 date: 2026-06-20
 ---
 
-# 외국인 강남 카페·디저트 deep dive
+# 강남 카페·디저트 심층 가이드
 
 > 압구정·도산·청담·신사 럭셔리 cluster — 디자인 cafe·specialty·미쉐린 디저트 15곳
 
@@ -52581,7 +52581,7 @@ Q5. 겨울에 추천하는 옵션은?
 
 ## [1117] Jongno Bukchon Cafe Deep Dive
 
-- KR: 외국인 종로·북촌 카페 deep dive
+- KR: 종로·북촌 카페 심층 가이드
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/jongno-bukchon-cafe-deep-dive.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/jongno-bukchon-cafe-deep-dive.en.html
 - Slug: jongno-bukchon-cafe-deep-dive
@@ -52600,7 +52600,7 @@ targetpersonas: useutourist, hanoklover, artlover, coffeepilgrim
 date: 2026-06-20
 ---
 
-# 외국인 종로·북촌 카페 deep dive
+# 종로·북촌 카페 심층 가이드
 
 > 한옥 cafe·전통 차·궁궐 인접 cluster — 종로·북촌 핵심 카페 + 1일 동선 매트릭스
 
@@ -53138,7 +53138,7 @@ date: 2026-06-20
 
 ## [1115] Gyeongju KTX 2-Day Full Guide
 
-- KR: 외국인 경주 KTX 1박2일 풀가이드
+- KR: 경주 KTX 1박2일 풀가이드
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/gyeongju-ktx-2day.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/gyeongju-ktx-2day.en.html
 - Slug: gyeongju-ktx-2day
@@ -53157,7 +53157,7 @@ targetpersonas: longstaytraveler, useutourist, historybuff, hanokpilgrim
 date: 2026-06-20
 ---
 
-# 외국인 경주 KTX 1박2일 풀가이드
+# 경주 KTX 1박2일 풀가이드
 
 > 신라 천년 고도·UNESCO 세계유산 5건 — KTX 경주역 2시간 → 불국사·석굴암·왕릉·황리단길 1박2일
 
@@ -53332,7 +53332,7 @@ date: 2026-06-20
 
 ## [1114] Busan KTX 3-Day Full Guide
 
-- KR: 외국인 부산 KTX 2박3일 풀가이드
+- KR: 부산 KTX 2박3일 풀가이드
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/busan-ktx-3day.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/busan-ktx-3day.en.html
 - Slug: busan-ktx-3day
@@ -53351,7 +53351,7 @@ targetpersonas: longstaytraveler, useutourist, beachlover, foodie
 date: 2026-06-20
 ---
 
-# 외국인 부산 KTX 2박3일 풀가이드
+# 부산 KTX 2박3일 풀가이드
 
 > 한국 제2도시 + 해변 + 자갈치 어시장 — 서울 KTX 2.5시간 → 해운대·광안리·감천문화마을·태종대 2박3일
 
@@ -53539,7 +53539,7 @@ date: 2026-06-20
 
 ## [1113] Yongsan-gu Full Guide
 
-- KR: 외국인 용산구 통합 가이드
+- KR: 용산구 통합 가이드
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/yongsan-gu-full-guide.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/yongsan-gu-full-guide.en.html
 - Slug: yongsan-gu-full-guide
@@ -53558,7 +53558,7 @@ targetpersonas: useutourist, expat, foodie, artlover, nightlifeseeker
 date: 2026-06-20
 ---
 
-# 외국인 용산구 통합 가이드
+# 용산구 통합 가이드
 
 > 이태원·한남·해방촌·후암동·용산공원·동빙고 — 외국인 hub 6동 1일 cluster 매트릭스
 
@@ -54232,7 +54232,7 @@ date: 2026-10-08
 
 ## [1110] Seochon Deep Dive Guide
 
-- KR: 외국인 서촌 deep dive 가이드
+- KR: 서촌 심층 가이드
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/seochon-hanok-deep-dive.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/seochon-hanok-deep-dive.en.html
 - Slug: seochon-hanok-deep-dive
@@ -54251,7 +54251,7 @@ targetpersonas: useutourist, artlover, historybuff, hanokpilgrim
 date: 2026-06-19
 ---
 
-# 외국인 서촌 deep dive 가이드
+# 서촌 심층 가이드
 
 > 경복궁 서쪽 hidden gem — 통인시장·박노수미술관·필운동 한옥·체부동 다이닝 1일 매트릭스
 
@@ -54503,7 +54503,7 @@ date: 2026-06-19
 
 ## [1109] Seoul Michelin Guide 2026 for Foreign Travelers
 
-- KR: 외국인 서울 미쉐린 가이드 2026
+- KR: 서울 미쉐린 가이드 2026
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/seoul-michelin-guide-2026.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/seoul-michelin-guide-2026.en.html
 - Slug: seoul-michelin-guide-2026
@@ -54522,7 +54522,7 @@ targetpersonas: useutourist, foodie, finedininglover, specialoccasion
 date: 2026-06-19
 ---
 
-# 외국인 서울 미쉐린 가이드 2026
+# 서울 미쉐린 가이드 2026
 
 > 3스타 밍글스부터 1만 원대 빕 구르망까지 — 2026 가이드에서 고른 16곳. 등급·주소·휴무·예약 창구·가격대를 미쉐린 공식 페이지와 각 레스토랑 공식 사이트에서 확인했다 (2026-10-07). 2026-10-07 전면 개정.
 
@@ -54814,7 +54814,7 @@ date: 2026-06-19
 
 ## [1108] Gunsan KTX 2-Day Full Guide
 
-- KR: 외국인 군산 KTX 1박2일 풀가이드
+- KR: 군산 KTX 1박2일 풀가이드
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/gunsan-ktx-2day.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/gunsan-ktx-2day.en.html
 - Slug: gunsan-ktx-2day
@@ -54833,7 +54833,7 @@ targetpersonas: longstaytraveler, useutourist, historybuff, architecturelover
 date: 2026-06-19
 ---
 
-# 외국인 군산 KTX 1박2일 풀가이드
+# 군산 KTX 1박2일 풀가이드
 
 > 한국 근대 건축·일제강점기 유산의 메카 — KTX 익산 + 군산선 → 일본식 가옥·은행·해망동 시간여행
 
@@ -54991,7 +54991,7 @@ date: 2026-06-19
 
 ## [1107] Jeonju KTX 2-Day Full Guide
 
-- KR: 외국인 전주 KTX 1박2일 풀가이드
+- KR: 전주 KTX 1박2일 풀가이드
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/jeonju-ktx-2day.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/jeonju-ktx-2day.en.html
 - Slug: jeonju-ktx-2day
@@ -55010,7 +55010,7 @@ targetpersonas: longstaytraveler, useutourist, foodie, hanoklover
 date: 2026-06-19
 ---
 
-# 외국인 전주 KTX 1박2일 풀가이드
+# 전주 KTX 1박2일 풀가이드
 
 > 한국 미식·한옥의 메카 — 서울 KTX 1.8시간 → 한옥마을 + 비빔밥·콩나물국밥·막걸리 매트릭스
 
@@ -55154,7 +55154,7 @@ date: 2026-06-19
 
 ## [1106] Gangneung KTX 2-Day Full Guide
 
-- KR: 외국인 강릉 KTX 1박2일 풀가이드
+- KR: 강릉 KTX 1박2일 풀가이드
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/gangneung-ktx-2day.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/gangneung-ktx-2day.en.html
 - Slug: gangneung-ktx-2day
@@ -55173,7 +55173,7 @@ targetpersonas: longstaytraveler, useutourist, beachlover, coffeepilgrim
 date: 2026-06-19
 ---
 
-# 외국인 강릉 KTX 1박2일 풀가이드
+# 강릉 KTX 1박2일 풀가이드
 
 > 서울역 KTX 1.8시간 → 동해 + 커피 + K-drama 촬영지 — 외국인 fit 1박2일 동선
 
@@ -55314,7 +55314,7 @@ date: 2026-06-19
 
 ## [1105] Seoul Suburb Day Trip 7 Picks for Foreign Travelers
 
-- KR: 외국인 서울 근교 day trip 7선
+- KR: 서울 근교 day trip 7선
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/seoul-suburb-daytrip-7.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/seoul-suburb-daytrip-7.en.html
 - Slug: seoul-suburb-daytrip-7
@@ -55333,7 +55333,7 @@ targetpersonas: longstaytraveler, useutourist, daytripper
 date: 2026-06-19
 ---
 
-# 외국인 서울 근교 day trip 7선
+# 서울 근교 day trip 7선
 
 > 서울 base 7일+ 장기여행자를 위한 1일 동선 7곳 — KTX 안 타고 지하철·버스로 갈 수 있는 근교
 
@@ -55482,7 +55482,7 @@ date: 2026-06-19
 
 ## [1104] Korea 7+ Day Long Stay Master Plan for Foreign Travelers
 
-- KR: 외국인 장기여행자 7일+ 마스터 플랜
+- KR: 장기여행자 7일+ 마스터 플랜
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/long-stay-7day-master-plan.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/long-stay-7day-master-plan.en.html
 - Slug: long-stay-7day-master-plan
@@ -55501,7 +55501,7 @@ targetpersonas: longstaytraveler, useutourist, trainexplorer
 date: 2026-06-19
 ---
 
-# 외국인 장기여행자 7일+ 마스터 플랜
+# 장기여행자 7일+ 마스터 플랜
 
 > 미국·유럽 출신 7일+ 체류 페르소나용 — 서울 4일 + KTX 근교 3일 동선 매트릭스
 
@@ -55654,14 +55654,14 @@ date: 2026-06-19
 
 ---
 
-## [1103] K-Content Full Set 7 Guide Integrated Index for Foreigners
+## [1103] K-Content 7 Guide Integrated Index for Foreigners
 
-- KR: 외국인 K-content 풀세트 7편 통합 인덱스
+- KR: K-content 7편 통합 인덱스
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/kcontent-full-set-7-index.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/kcontent-full-set-7-index.en.html
 - Slug: kcontent-full-set-7-index
 
-# 외국인 K-content 풀세트 7편 통합 인덱스 — K-drama·K-pop·웹툰·K-방탈출·K-굿즈 풀가이드
+# K-content 7편 통합 인덱스 — K-drama·K-pop·웹툰·K-방탈출·K-굿즈 풀가이드
 
 > 부제: 외국인 관광객용 K-content 풀세트 인덱스 (K-drama 서울·외곽·전국·웹툰·K-pop MV·K-방탈출·K-굿즈) + 매트릭스·동선·매니아 풀세트
 
@@ -55760,12 +55760,12 @@ Phase 2 보강 v2: SOURCES 섹션 추가. 2026-06-23.*
 
 ## [1102] K-Drama Regional Filming Locations Deep Dive — Busan·Jeonju·Gangwon
 
-- KR: 외국인 K-드라마 촬영지 지방·외곽 deep dive — 부산·전주·강원
+- KR: K-드라마 촬영지 지방·외곽 심층 가이드 — 부산·전주·강원
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/kdrama-regional-locations-busan-jeonju-gangwon.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/kdrama-regional-locations-busan-jeonju-gangwon.en.html
 - Slug: kdrama-regional-locations-busan-jeonju-gangwon
 
-# 외국인 K-드라마 촬영지 지방·외곽 deep dive — 부산·전주·강원 매니아 매트릭스
+# K-드라마 촬영지 지방·외곽 심층 가이드 — 부산·전주·강원 팬 가이드
 
 > 부제: 외국인 관광객용 K-드라마 촬영지 지방·외곽 deep dive (부산·전주·강원 강릉·인천·경기·제주) + KTX·동선·매니아 매트릭스
 
@@ -55860,12 +55860,12 @@ Phase 2 보강 v2: SOURCES 섹션 추가. 2026-06-23.
 
 ## [1101] Seoul K-Drama Filming Locations 2026 Complete Guide
 
-- KR: 외국인 서울 K-드라마 촬영지 2026 완전정복
+- KR: 서울 K-드라마 촬영지 2026 완전정복
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/seoul-kdrama-filming-locations-2026.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/seoul-kdrama-filming-locations-2026.en.html
 - Slug: seoul-kdrama-filming-locations-2026
 
-# 외국인 서울 K-드라마 촬영지 2026 완전정복 — 12선 명소·동선·매니아 매트릭스
+# 서울 K-드라마 촬영지 2026 완전정복 — 12선 명소·동선·팬 가이드
 
 > 부제: 외국인 관광객용 서울 K-드라마 촬영지 12선 (경복궁·북촌·N서울타워·청계천·한강·익선·성수·이태원·DDP·시청·망원·삼청) + 2024-2026 신작·동선·시즌·한복 매트릭스
 
@@ -55966,7 +55966,7 @@ Phase 2 보강 v2: SOURCES 섹션 추가. 2026-06-23.*
 
 ## [1100] Hongdae Hidden Japanese 5 Picks
 
-- KR: 외국인 홍대 일식 hidden 5선
+- KR: 홍대 일식 hidden 5선
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/hongdae-japanese-hidden-5.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/hongdae-japanese-hidden-5.en.html
 - Slug: hongdae-japanese-hidden-5
@@ -55985,7 +55985,7 @@ targetpersonas: foreignerinkorea, japanesefoodlover, hongdaeexplorer
 date: 2026-06-16
 ---
 
-# 외국인 홍대 일식 hidden 5선
+# 홍대 일식 hidden 5선
 
 > 홍대·합정·망원 외국인 fit 일식 hidden 5곳
 
@@ -56156,7 +56156,7 @@ date: 2026-06-16
 
 ## [1099] Gangnam Hidden Chinese 6 Picks
 
-- KR: 외국인 강남 중식 hidden 6선
+- KR: 강남 중식 hidden 6선
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/gangnam-chinese-hidden-6.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/gangnam-chinese-hidden-6.en.html
 - Slug: gangnam-chinese-hidden-6
@@ -56175,7 +56175,7 @@ targetpersonas: foreignerinkorea, chinesefoodlover, spicyfan
 date: 2026-06-16
 ---
 
-# 외국인 강남 중식 hidden 6선
+# 강남 중식 hidden 6선
 
 > 강남·도곡·역삼 외국인 fit 중식 hidden 6곳 — 매운 fan 매트릭스
 
@@ -56350,7 +56350,7 @@ date: 2026-06-16
 
 ## [1098] Gangnam Hidden Restaurants 6 Picks
 
-- KR: 외국인 강남 hidden 레스토랑 6선
+- KR: 강남 hidden 레스토랑 6선
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/gangnam-hidden-restaurants-6.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/gangnam-hidden-restaurants-6.en.html
 - Slug: gangnam-hidden-restaurants-6
@@ -56369,7 +56369,7 @@ targetpersonas: foreignerbusiness, gangnamexplorer, finediner
 date: 2026-06-16
 ---
 
-# 외국인 강남 hidden 레스토랑 6선
+# 강남 hidden 레스토랑 6선
 
 > 강남·역삼·논현·도곡 외국인 fit hidden 6곳 — hidden 매장 deep dive
 
@@ -56546,7 +56546,7 @@ date: 2026-06-16
 
 ## [1097] Bukchon Hanok Dining 5 Picks
 
-- KR: 외국인 북촌 한옥 다이닝 5선
+- KR: 북촌 한옥 다이닝 5선
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/bukchon-hanok-dining-5.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/bukchon-hanok-dining-5.en.html
 - Slug: bukchon-hanok-dining-5
@@ -56565,7 +56565,7 @@ targetpersonas: foreignertourist, hanokculturelover, phototraveler
 date: 2026-06-16
 ---
 
-# 외국인 북촌 한옥 다이닝 5선
+# 북촌 한옥 다이닝 5선
 
 > 북촌·안국·삼청 외국인 fit 한옥 다이닝 5곳 — 한옥 분위기 deep dive
 
@@ -56718,7 +56718,7 @@ date: 2026-06-16
 
 ## [1096] Seongsu Hidden Italian & Western 6 Picks
 
-- KR: 외국인 성수 양식 hidden 6선
+- KR: 성수 양식 hidden 6선
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/seongsu-italian-hidden-6.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/seongsu-italian-hidden-6.en.html
 - Slug: seongsu-italian-hidden-6
@@ -56737,7 +56737,7 @@ targetpersonas: foreignerinkorea, seongsuexplorer, italianlover
 date: 2026-06-16
 ---
 
-# 외국인 성수 양식 hidden 6선
+# 성수 양식 hidden 6선
 
 > 성수 핫플레이스 외국인 fit 양식 6곳 — 미커버 hidden 매장 + 기존 #001 #145 보완
 
@@ -56911,7 +56911,7 @@ date: 2026-06-16
 
 ## [1095] Hongdae Traditional Food Dessert & Tteok 7 Picks
 
-- KR: 외국인 홍대 전통식품·디저트·떡 7곳
+- KR: 홍대 전통식품·디저트·떡 7곳
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/hongdae-traditional-food-7.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/hongdae-traditional-food-7.en.html
 - Slug: hongdae-traditional-food-7
@@ -56930,7 +56930,7 @@ targetpersonas: foreignerinkorea, kfoodexplorer, dessertlover
 date: 2026-06-16
 ---
 
-# 외국인 홍대 전통식품·디저트·떡 7곳
+# 홍대 전통식품·디저트·떡 7곳
 
 > 홍대·합정·망원 외국인 fit 한국 전통식품 7곳 — 떡·약과·강정·전통 디저트 매트릭스
 
@@ -57084,7 +57084,7 @@ date: 2026-06-16
 
 ## [1094] Itaewon Hannam Chinese Fine Dining Guide for Foreigners
 
-- KR: 외국인 이태원·한남 중식 fine dining 가이드
+- KR: 이태원·한남 중식 fine dining 가이드
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/itaewon-hannam-chinese-fine-dining.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/itaewon-hannam-chinese-fine-dining.en.html
 - Slug: itaewon-hannam-chinese-fine-dining
@@ -57103,7 +57103,7 @@ targetpersonas: foreignerinkorea, finedininglover, hoteltraveler
 date: 2026-06-16
 ---
 
-# 외국인 이태원·한남 중식 fine dining 가이드
+# 이태원·한남 중식 fine dining 가이드
 
 > 이태원·한남 외국인 fit 중식 7곳 — 호텔 fine dining부터 동네 캐주얼까지
 
@@ -57291,7 +57291,7 @@ date: 2026-06-16
 
 ## [1093] Hongdae Hapjeong Hidden Italian & Western 8 Picks
 
-- KR: 외국인 홍대·합정 양식 hidden 8선
+- KR: 홍대·합정 양식 hidden 8선
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/hongdae-hapjeong-italian-hidden-8.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/hongdae-hapjeong-italian-hidden-8.en.html
 - Slug: hongdae-hapjeong-italian-hidden-8
@@ -57310,7 +57310,7 @@ targetpersonas: foreignfoodlover, hongdaeexplorer, italiancuisinefan
 date: 2026-06-16
 ---
 
-# 외국인 홍대·합정 양식 hidden 8선
+# 홍대·합정 양식 hidden 8선
 
 > 홍대·합정·망원 외국인 fit 양식 8곳 — Reddit·인스타에서 추천받는 hidden 매장 + 기존 가이드 보완
 
@@ -57455,7 +57455,7 @@ date: 2026-06-16
 
 ## [1092] Gangnam Study Cafe & Coworking Guide for Foreigners
 
-- KR: 외국인 강남 스터디카페·코워킹 가이드
+- KR: 강남 스터디카페·코워킹 가이드
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/gangnam-study-coworking.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/gangnam-study-coworking.en.html
 - Slug: gangnam-study-coworking
@@ -57474,7 +57474,7 @@ targetpersonas: digitalnomad, exchangestudent, workationtraveler
 date: 2026-06-16
 ---
 
-# 외국인 강남 스터디카페·코워킹 가이드
+# 강남 스터디카페·코워킹 가이드
 
 > 강남·역삼·선릉 외국인 fit 7곳 — 24시간 운영·영어 friendly·디지털 노마드 매트릭스
 
@@ -57621,7 +57621,7 @@ date: 2026-06-16
 
 ## [1091] Itaewon Fried Chicken Guide for Foreigners
 
-- KR: 외국인 이태원 치킨 가이드
+- KR: 이태원 치킨 가이드
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/itaewon-fried-chicken.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/itaewon-fried-chicken.en.html
 - Slug: itaewon-fried-chicken
@@ -57640,7 +57640,7 @@ targetpersonas: foreignerinkorea, latenightfoodie, grouptraveler
 date: 2026-06-16
 ---
 
-# 외국인 이태원 치킨 가이드
+# 이태원 치킨 가이드
 
 > 한국 치킨 입문부터 심야 치맥까지 — 이태원·한남 권역 외국인 fit 7곳 매장 매트릭스
 
@@ -57784,12 +57784,12 @@ date: 2026-06-16
 
 ## [1090] Korea Bingsu Concept Hopping 7 Foreign Guide
 
-- KR: 외국인 컨셉 빙수 도장깨기 7곳
+- KR: 컨셉 빙수 도장깨기 7곳
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/korea-bingsu-concept-7.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-bingsu-concept-7.en.html
 - Slug: korea-bingsu-concept-7
 
-# 외국인 컨셉 빙수 도장깨기 7곳 가이드 — 여름 K-디저트 매니아 매트릭스
+# 컨셉 빙수 도장깨기 7곳 가이드 — 여름 K-디저트 팬 가이드
 
 > 부제: 외국인 관광객용 컨셉 빙수 도장깨기 7곳 (호텔·전통·과일·매니아) + 여름 K-디저트·외국인 매니아 매트릭스
 
@@ -57882,12 +57882,12 @@ ISSUE 04 · #1090 · 2026-06-14
 
 ## [1089] Korea K-Goods Shopping (BTS·NCT·K-content) Foreign Guide
 
-- KR: 외국인 한국 굿즈 쇼핑 (BTS·NCT·K-content)
+- KR: 한국 굿즈 쇼핑 (BTS·NCT·K-content)
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/korea-kpop-goods-shopping.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-kpop-goods-shopping.en.html
 - Slug: korea-kpop-goods-shopping
 
-# 외국인 한국 굿즈 쇼핑 가이드 — BTS·NCT·K-drama·K-content 팬 매니아 매트릭스
+# 한국 굿즈 쇼핑 가이드 — BTS·NCT·K-drama·K-content 팬 팬 가이드
 
 > 부제: 외국인 관광객용 한국 굿즈 쇼핑 가이드 (BTS·NCT·K-drama·K-beauty·K-stationery) + 명동·홍대·강남 매트릭스
 
@@ -57982,12 +57982,12 @@ ISSUE 04 · #1089 · 2026-06-14
 
 ## [1088] Seoul Golmok Select Shop 7 Foreign Guide
 
-- KR: 외국인 안국·익선·연남 골목 편집샵 7곳
+- KR: 안국·익선·연남 골목 편집샵 7곳
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/seoul-golmok-select-shop-7.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/seoul-golmok-select-shop-7.en.html
 - Slug: seoul-golmok-select-shop-7
 
-# 외국인 안국·익선·연남 골목 편집샵 7곳 가이드 — 디자이너 큐레이션 매니아 매트릭스
+# 안국·익선·연남 골목 편집샵 7곳 가이드 — 디자이너 큐레이션 팬 가이드
 
 > 부제: 외국인 관광객용 안국·익선·연남 골목 편집샵 7곳 + K-디자인·패션·라이프스타일·외국인 매니아 매트릭스
 
@@ -58081,12 +58081,12 @@ ISSUE 04 · #1088 · 2026-06-14
 
 ## [1087] Korea Indie Bookstore·Cafe Combo 5 Foreign Guide
 
-- KR: 외국인 독립서점 + 카페 콤보 5곳
+- KR: 독립서점 + 카페 콤보 5곳
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/korea-indie-bookstore-cafe-5.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-indie-bookstore-cafe-5.en.html
 - Slug: korea-indie-bookstore-cafe-5
 
-# 외국인 독립서점 + 카페 가이드 — 서울 4곳·부산 2곳, 자체 사이트·공식 관광 페이지로 확인한 곳만 (2026-10)
+# 독립서점 + 카페 가이드 — 서울 4곳·부산 2곳, 자체 사이트·공식 관광 페이지로 확인한 곳만 (2026-10)
 
 > 부제: 회현 더북소사이어티 · 연희 유어마인드 · 연남 유정 · 영등포 맨홀커피 서부책방 · 부산 보수동 책방골목 · 스콜라 디 아테네 — 주소·시간·휴무는 2026-10-07 각 서점 사이트와 VisitSeoul·VisitBusan에서 읽은 값. 확인 못 한 곳은 따로 표시
 
@@ -58216,12 +58216,12 @@ ISSUE 04 · #1087 · 2026-06-14
 
 ## [1086] Seoul Colin·B Foreign Curator Guide
 
-- KR: 외국인 서울 콜린비 핫플 큐레이터 가이드
+- KR: 서울 콜린비 핫플 큐레이터 가이드
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/seoul-colin-b-curator.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/seoul-colin-b-curator.en.html
 - Slug: seoul-colin-b-curator
 
-# 외국인 서울 콜린비 핫플 큐레이터 가이드 — 외국인 인플루언서 시각 매트릭스
+# 서울 콜린비 핫플 큐레이터 가이드 — 외국인 인플루언서 시각
 
 > 부제: 외국인 관광객용 서울 콜린비(Colin·B) 류 외국인 큐레이터 핫플 가이드 + 영어 인스타 큐레이터 매트릭스·동선
 
@@ -58315,12 +58315,12 @@ ISSUE 04 · #1086 · 2026-06-14
 
 ## [1085] Seoul K-Escape Room 7 English-Available Foreign Guide
 
-- KR: 외국인 K-방탈출 7곳 + 영어 가능
+- KR: K-방탈출 7곳 + 영어 가능
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/seoul-k-escape-room-7.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/seoul-k-escape-room-7.en.html
 - Slug: seoul-k-escape-room-7
 
-# 외국인 K-방탈출 7곳 + 영어 가능 가이드 — 외국인 매니아 K-드라마 fit 매트릭스
+# K-방탈출 7곳 + 영어 가능 가이드 — 외국인 팬 K-드라마 fit
 
 > 부제: 외국인 관광객용 K-방탈출 7곳 (홍대·강남·신촌·이태원·종로·건대·잠실) + 영어 가능·난이도·시그너 테마·예약 매트릭스
 
@@ -58418,12 +58418,12 @@ K-방탈출 = 외국인 매니아 매트릭스 #1 K-드라마 + 추리 + 1시간
 
 ## [1084] Korea Cooking Class 5 Foreign Guide
 
-- KR: 외국인 한국 요리 클래스 5곳
+- KR: 한국 요리 클래스 5곳
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/korea-cooking-class-5.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-cooking-class-5.en.html
 - Slug: korea-cooking-class-5
 
-# 외국인 한국 요리 클래스 5곳 가이드 — 김치·비빔밥·떡국·외국인 매니아 매트릭스
+# 한국 요리 클래스 5곳 가이드 — 김치·비빔밥·떡국·외국인 팬 가이드
 
 > 부제: 외국인 관광객용 한국 요리 클래스 5곳 (홍대·이태원·종로·전주·부산) + 김치·비빔밥·떡국·만두·외국인 매니아 매트릭스
 
@@ -58514,12 +58514,12 @@ ISSUE 04 · #1084 · 2026-06-14
 
 ## [1083] Korea Ceramic·Craft Class 5 Foreign Guide
 
-- KR: 외국인 한국 도자기·공예 클래스 5곳
+- KR: 한국 도자기·공예 클래스 5곳
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/korea-ceramic-craft-class-5.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-ceramic-craft-class-5.en.html
 - Slug: korea-ceramic-craft-class-5
 
-# 외국인 도자기·공예 클래스 5곳 가이드 — BTS 팬·K-content 매니아 매트릭스
+# 도자기·공예 클래스 5곳 가이드 — BTS 팬·K-content 팬 가이드
 
 > 부제: 외국인 관광객용 도자기·공예 클래스 5곳 (홍대·연남·이태원·경주·이천) + 도자기·천연 염색·은공예·매니아 매트릭스
 
@@ -58610,12 +58610,12 @@ ISSUE 04 · #1083 · 2026-06-14
 
 ## [1082] Seoul Gyeongui Forest Park 1-Day Course Foreign Guide
 
-- KR: 외국인 경의선 숲길 1일 체험 코스
+- KR: 경의선 숲길 1일 체험 코스
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/seoul-gyeongui-park-1day.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/seoul-gyeongui-park-1day.en.html
 - Slug: seoul-gyeongui-park-1day
 
-# 외국인 경의선 숲길 1일 체험 코스 가이드 — 카페·체험·산책 풀세트 매트릭스
+# 경의선 숲길 1일 체험 코스 가이드 — 카페·체험·산책
 
 > 부제: 외국인 관광객용 경의선 숲길 1일 체험 코스 (홍대~연남~대흥) + 카페·공방·산책·야경 매트릭스
 
@@ -58719,12 +58719,12 @@ ISSUE 04 · #1082 · 2026-06-14
 
 ## [1081] Korea Hanok Experience·Tea Ceremony 6 Foreign Guide
 
-- KR: 외국인 한옥 체험 + 다도 6곳
+- KR: 한옥 체험 + 다도 6곳
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/korea-hanok-tea-experience-6.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-hanok-tea-experience-6.en.html
 - Slug: korea-hanok-tea-experience-6
 
-# 외국인 한옥 체험 + 다도 6곳 가이드 — 외국인 wellness·photogenic 매니아 매트릭스
+# 한옥 체험 + 다도 6곳 가이드 — 외국인 wellness·photogenic 팬 가이드
 
 > 부제: 외국인 관광객용 한옥 체험·다도 6곳 (북촌·익선·인사·서촌·전주·경주) + 한복·다도·차 도구·etiquette 매트릭스
 
@@ -58816,12 +58816,12 @@ ISSUE 04 · #1081 · 2026-06-14
 
 ## [1080] Korea Capsule Hotel·Jjimjilbang Stay Foreign Guide
 
-- KR: 외국인 한국 캡슐 호텔·찜질방 숙박
+- KR: 한국 캡슐 호텔·찜질방 숙박
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/korea-capsule-jjimjilbang.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-capsule-jjimjilbang.en.html
 - Slug: korea-capsule-jjimjilbang
 
-# 외국인 한국 캡슐 호텔·찜질방 숙박 가이드 — 24시간·예산·체험 매트릭스
+# 한국 캡슐 호텔·찜질방 숙박 가이드 — 24시간·예산·체험
 
 > 부제: 외국인 관광객용 한국 캡슐 호텔·찜질방 숙박 (서울·부산) + 가격·시설·etiquette·체험 매트릭스
 
@@ -58914,12 +58914,12 @@ ISSUE 04 · #1080 · 2026-06-14
 
 ## [1079] Seoul Guesthouse 7 Foreign Guide
 
-- KR: 외국인 서울 게스트하우스 7곳
+- KR: 서울 게스트하우스 7곳
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/seoul-guesthouse-7.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/seoul-guesthouse-7.en.html
 - Slug: seoul-guesthouse-7
 
-# 외국인 서울 게스트하우스 7곳 가이드 — 백패커·예산·동네 매트릭스
+# 서울 게스트하우스 7곳 가이드 — 백패커·예산·동네
 
 > 부제: 외국인 관광객용 서울 게스트하우스 7곳 (홍대·이태원·명동·종로·강남·신촌·동대문) + 예산·시설·예약·etiquette 매트릭스
 
@@ -59012,12 +59012,12 @@ ISSUE 04 · #1079 · 2026-06-14
 
 ## [1078] Korea Regional Cuisine 2D1N — Jeonju·Busan·Gangneung
 
-- KR: 외국인 지방 미식 1박2일 — 전주·부산·강릉
+- KR: 지방 미식 1박2일 — 전주·부산·강릉
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/korea-regional-food-2d1n.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-regional-food-2d1n.en.html
 - Slug: korea-regional-food-2d1n
 
-# 외국인 지방 미식 1박2일 패키지 가이드 — 전주·부산·강릉 호텔+다이닝 매트릭스
+# 지방 미식 1박2일 패키지 가이드 — 전주·부산·강릉 호텔+다이닝
 
 > 부제: 외국인 관광객용 한국 지방 미식 1박2일 패키지 (전주·부산·강릉) + KTX·다이닝·숙박·동선 매트릭스
 
@@ -59106,12 +59106,12 @@ ISSUE 04 · #1078 · 2026-06-14
 
 ## [1077] Seoul Boutique Hotel 7 Foreign Guide
 
-- KR: 외국인 서울 부티크 호텔 7곳
+- KR: 서울 부티크 호텔 7곳
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/seoul-boutique-hotel-7.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/seoul-boutique-hotel-7.en.html
 - Slug: seoul-boutique-hotel-7
 
-# 외국인 서울 부티크 호텔 7곳 가이드 — 가격대·동네·외국인 매니아 매트릭스
+# 서울 부티크 호텔 7곳 가이드 — 가격대·동네·외국인 팬 가이드
 
 > 부제: 외국인 관광객용 서울 부티크 호텔 7곳 (강남·홍대·명동·이태원·종로·여의도·성수) + 가격대·시설·예약 매트릭스
 
@@ -59204,12 +59204,12 @@ ISSUE 04 · #1077 · 2026-06-14
 
 ## [1076] Korea Hanok Stay 7 Spots + Foreign Route Guide
 
-- KR: 외국인 한국 한옥스테이 7곳 + 동선
+- KR: 한국 한옥스테이 7곳 + 동선
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/korea-hanok-stay-7-route.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-hanok-stay-7-route.en.html
 - Slug: korea-hanok-stay-7-route
 
-# 외국인 한국 한옥스테이 7곳 + 동선 가이드 — 북촌·전주·경주·안동 매니아 매트릭스
+# 한국 한옥스테이 7곳 + 동선 가이드 — 북촌·전주·경주·안동 팬 가이드
 
 > 부제: 외국인 관광객용 한국 한옥스테이 7곳 (북촌·전주·경주·안동·하회마을·양동마을) + 예약·etiquette·동선 매트릭스
 
@@ -59302,12 +59302,12 @@ ISSUE 04 · #1076 · 2026-06-14
 
 ## [1075] Seoul Day-Drink Wine Bar 9 Foreign Guide
 
-- KR: 외국인 서울 낮술 와인바 9곳
+- KR: 서울 낮술 와인바 9곳
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/seoul-day-wine-bar-9.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/seoul-day-wine-bar-9.en.html
 - Slug: seoul-day-wine-bar-9
 
-# 외국인 서울 낮술 와인바 9곳 가이드 — 외국인 매니아 낮 와인 매트릭스
+# 서울 낮술 와인바 9곳 가이드 — 외국인 팬 낮 와인
 
 > 부제: 외국인 관광객용 서울 낮술 와인바 9곳 (한강뷰·바르셀로나 감성·내추럴 와인) + 낮술 etiquette·페어링·소믈리에 매트릭스
 
@@ -59404,12 +59404,12 @@ ISSUE 04 · #1075 · 2026-06-13
 
 ## [1074] Seoul Hanok Tea Night 6 Foreign Guide
 
-- KR: 외국인 서울 야간 한옥 카페·다도 6곳
+- KR: 서울 야간 한옥 카페·다도 6곳
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/seoul-hanok-tea-night-6.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/seoul-hanok-tea-night-6.en.html
 - Slug: seoul-hanok-tea-night-6
 
-# 외국인 서울 야간 한옥 카페·다도 6곳 가이드 — 외국인 매니아 야간 한옥 매트릭스
+# 서울 야간 한옥 카페·다도 6곳 가이드 — 외국인 팬 야간 한옥
 
 > 부제: 외국인 관광객용 서울 야간 한옥 카페·찻집·다도 6곳 (북촌·익선·인사·서촌) + 한옥 야간 등불·다도 etiquette 매트릭스
 
@@ -59504,12 +59504,12 @@ ISSUE 04 · #1074 · 2026-06-13
 
 ## [1073] Yongsan Hannam Foreign Night Bar 7 Spots
 
-- KR: 외국인 용산·한남 야간 바 7곳
+- KR: 용산·한남 야간 바 7곳
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/yongsan-hannam-night-bar-7.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/yongsan-hannam-night-bar-7.en.html
 - Slug: yongsan-hannam-night-bar-7
 
-# 외국인 용산·한남 야간 바 7곳 가이드 — 외국인 매니아 nightlife 매트릭스
+# 용산·한남 야간 바 7곳 가이드 — 외국인 팬 nightlife
 
 > 부제: 외국인 관광객용 용산·한남·이태원 야간 바 7곳 + 분위기·예약·외국인 etiquette 매트릭스
 
@@ -59605,12 +59605,12 @@ ISSUE 04 · #1073 · 2026-06-13
 
 ## [1072] Seoul Hangang Night View 12 Spots Foreign Guide
 
-- KR: 외국인 서울 한강 야경 spot 12선
+- KR: 서울 한강 야경 spot 12선
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/seoul-hangang-night-12-spots.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/seoul-hangang-night-12-spots.en.html
 - Slug: seoul-hangang-night-12-spots
 
-# 외국인 서울 한강 야경 spot 가이드 — 키친구 매니아 12선 매트릭스
+# 서울 한강 야경 spot 가이드 — 키친구 팬 12선
 
 > 부제: 외국인 관광객용 서울 한강·도심 야경 12선 (한강공원·전망대·산·다리·청계) + 시간대·교통·동선 매트릭스
 
@@ -59794,12 +59794,12 @@ ISSUE 04 · #1072 · 2026-06-13
 
 ## [1071] Seoul Yajang Foreign Guide — Korean Outdoor Bench Night Dining 8 Spots
 
-- KR: 외국인 서울 야장 가이드 — 한국 노포 평상 야간 8선
+- KR: 서울 야장 가이드 — 한국 노포 평상 야간 8선
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/seoul-yajang-foreign-guide.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/seoul-yajang-foreign-guide.en.html
 - Slug: seoul-yajang-foreign-guide
 
-# 외국인 서울 야장(野場) 가이드 — 한국 노포 야외 평상 야간 식문화 8선
+# 서울 야장(野場) 가이드 — 한국 노포 야외 평상 야간 식문화 8선
 
 > 부제: 외국인 관광객용 서울 야장 8선 (익선·광장·을지로·신촌·인사·홍대·종로·청계) + 야장 etiquette·시즌·동선 매트릭스
 
@@ -59898,14 +59898,14 @@ ISSUE 04 · #1071 · 2026-06-13
 
 ---
 
-## [1070] Korea UNESCO Full Package Index
+## [1070] Korea UNESCO Index
 
-- KR: 한국 UNESCO 풀세트 인덱스
+- KR: 한국 UNESCO 인덱스
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/korea-unesco-full-package-index.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-unesco-full-package-index.en.html
 - Slug: korea-unesco-full-package-index
 
-# 외국인 한국 UNESCO 풀세트 인덱스 — 16 시그너 매트릭스·매니아 풀세트
+# 한국 UNESCO 인덱스 — 16 시그너·팬 가이드
 
 > 부제: 외국인 관광객용 한국 UNESCO 풀세트 16 시그너 (세계유산 + 무형문화유산) 매트릭스 + 매니아 풀세트 인덱스
 
@@ -60368,7 +60368,7 @@ ISSUE 04 · #1068 · 2026-06-13
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-jinju-lantern-festival.en.html
 - Slug: korea-jinju-lantern-festival
 
-# 외국인 한국 진주 유등축제 — 한국 #1 등불 축제·10월·매니아 매트릭스 #1
+# 한국 진주 유등축제 — 한국 #1 등불 축제·10월·팬 #1
 
 > 부제: 외국인 관광객용 진주 유등축제 (10월 1-2주)·한국 #1 등불 축제·남강 + 촉석루 + 진주성 매트릭스
 
@@ -60579,7 +60579,7 @@ ISSUE 04 · #1067 · 2026-06-13
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-biff-busan-film-festival.en.html
 - Slug: korea-biff-busan-film-festival
 
-# 외국인 한국 BIFF 부산국제영화제 — 아시아 #1·1996년~ 30년+·매니아 매트릭스 #1
+# 한국 BIFF 부산국제영화제 — 아시아 #1·1996년~ 30년+·팬 #1
 
 > 부제: 외국인 관광객용 BIFF 부산국제영화제 (10월·1996년~)·아시아 #1 영화제·해운대·센텀시티 + 영화의전당 매트릭스
 
@@ -60799,7 +60799,7 @@ BIFF = 안전·외국인 친화 매트릭스. 야간 매트릭스 = 10월 시원
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-gangneung-danoje-unesco-2005.en.html
 - Slug: korea-gangneung-danoje-unesco-2005
 
-# 외국인 한국 강릉 단오제 — UNESCO 2005·음력 5/5·1000년+ 전통
+# 한국 강릉 단오제 — UNESCO 2005·음력 5/5·1000년+ 전통
 
 > 부제: 외국인 관광객용 강릉 단오제 UNESCO 무형문화유산 2005 + 음력 5/5 (양 6월 초·중순) + 1000년+ 전통 + 강원도
 
@@ -61010,7 +61010,7 @@ ISSUE 04 · #1065 · 2026-06-13
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-boryeong-mud-festival.en.html
 - Slug: korea-boryeong-mud-festival
 
-# 외국인 한국 보령 머드축제 — 한국 #1 여름 축제·1998년~ 외국인 매니아 매트릭스 #1
+# 한국 보령 머드축제 — 한국 #1 여름 축제·1998년~ 외국인 팬 #1
 
 > 부제: 외국인 관광객용 보령 머드축제 (7월·1998년~)·한국 #1 외국인 친화 여름 축제·대천해수욕장 매트릭스
 
@@ -61210,7 +61210,7 @@ ISSUE 04 · #1064 · 2026-06-13
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-hampyeong-butterfly.en.html
 - Slug: korea-hampyeong-butterfly
 
-# 외국인 한국 함평 나비축제 — 한국 #1 나비·곤충 축제·전라남도 매트릭스
+# 한국 함평 나비축제 — 한국 #1 나비·곤충 축제·전라남도
 
 > 부제: 외국인 관광객용 함평 나비축제 (4-5월·1999년~)·한국 #1 나비·곤충 축제·전라남도 매트릭스 + 가족 매니아
 
@@ -61411,7 +61411,7 @@ ISSUE 04 · #1063 · 2026-06-13
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-jinhae-gunhangje-cherry.en.html
 - Slug: korea-jinhae-gunhangje-cherry
 
-# 외국인 한국 진해 군항제 — 한국 #1 벚꽃 축제·창원·해군 매트릭스
+# 한국 진해 군항제 — 한국 #1 벚꽃 축제·창원·해군
 
 > 부제: 외국인 관광객용 진해 군항제 (3-4월·1963년~)·한국 #1 벚꽃 축제·창원·해군 + 여좌천 + 경화역 매트릭스
 
@@ -61626,7 +61626,7 @@ ISSUE 04 · #1062 · 2026-06-13
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-yeon-deung-hoe-unesco-2020.en.html
 - Slug: korea-yeon-deung-hoe-unesco-2020
 
-# 외국인 한국 연등회 — UNESCO 2020·사월초파일·서울 종로 매니아 매트릭스
+# 한국 연등회 — UNESCO 2020·사월초파일·서울 종로 팬 가이드
 
 > 부제: 외국인 관광객용 한국 연등회 UNESCO 무형문화유산 2020 + 사월초파일 (음 4/8) + 서울 종로 + 연등 행렬 + 봄 축제 시그너
 
@@ -61847,7 +61847,7 @@ ISSUE 04 · #1061 · 2026-06-13
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-jeju-blackpork-haenyeo-galchi.en.html
 - Slug: korea-jeju-blackpork-haenyeo-galchi
 
-# 외국인 제주도 시그너 음식 — 흑돼지·해녀·갈치회·전복·옥돔
+# 제주도 시그너 음식 — 흑돼지·해녀·갈치회·전복·옥돔
 
 > 부제: 외국인 관광객용 제주 흑돼지 한국 #1 + 해녀 UNESCO 2016 + 갈치회·전복·옥돔·말고기 시그너
 
@@ -62221,7 +62221,7 @@ ISSUE 04 · #1059 · 2026-06-08
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-jeju-seongsan-ilchulbong-unesco.en.html
 - Slug: korea-jeju-seongsan-ilchulbong-unesco
 
-# 외국인 제주도 성산일출봉 — UNESCO 2007·일출 매트릭스 #1·새해
+# 제주도 성산일출봉 — UNESCO 2007·일출 #1·새해
 
 > 부제: 외국인 관광객용 성산일출봉 UNESCO 자연유산 2007 + 일출 매트릭스 #1 + 새해 1/1 + 우도
 
@@ -62453,7 +62453,7 @@ ISSUE 04 · #1058 · 2026-06-08
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-jeju-hallasan-unesco.en.html
 - Slug: korea-jeju-hallasan-unesco
 
-# 외국인 제주도 한라산 — UNESCO 2007·1947m·한국 #1 산·백록담
+# 제주도 한라산 — UNESCO 2007·1947m·한국 #1 산·백록담
 
 > 부제: 외국인 관광객용 한라산 1947m UNESCO 자연유산 2007 + 백록담 + 윗세오름·영실·성판악·관음사 4 코스
 
@@ -62704,12 +62704,12 @@ ISSUE 04 · #1057 · 2026-06-08
 
 ## [1056] Jeju 1-Day Essential
 
-- KR: 외국인 제주도 1일 메타
+- KR: 제주도 1일 가이드
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/korea-jeju-1day-essential.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-jeju-1day-essential.en.html
 - Slug: korea-jeju-1day-essential
 
-# 외국인 제주도 1일 메타 가이드 — 한라산·성산일출봉·해변·흑돼지 4축
+# 제주도 1일 가이드 — 한라산·성산일출봉·해변·흑돼지 4축
 
 > 부제: 외국인 관광객용 제주도 4축 시그니처 12선 + 1박 풀데이 + UNESCO 자연유산 2007 + 외국인 영문
 
@@ -62976,7 +62976,7 @@ ISSUE 04 · #1056 · 2026-06-08
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-gyeongsang-jinju-chokseokru.en.html
 - Slug: korea-gyeongsang-jinju-chokseokru
 
-# 외국인 경상도 진주 — 촉석루 진주성 임진왜란 1592·진주냉면·유등축제
+# 경상도 진주 — 촉석루 진주성 임진왜란 1592·진주냉면·유등축제
 
 > 부제: 외국인 관광객용 진주 촉석루 + 진주성 + 임진왜란 1592 + 진주냉면 + 유등축제 10월 매니아
 
@@ -63209,7 +63209,7 @@ ISSUE 04 · #1055 · 2026-06-08
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-gyeongsang-tongyeong-hansando.en.html
 - Slug: korea-gyeongsang-tongyeong-hansando
 
-# 외국인 경상도 통영 — 한산도 이순신·해상국립공원·동피랑
+# 경상도 통영 — 한산도 이순신·해상국립공원·동피랑
 
 > 부제: 외국인 관광객용 통영 한국 #1 해상국립공원 + 한산도 이순신 1597 + 동피랑 + 통영 시그너 음식
 
@@ -63443,7 +63443,7 @@ ISSUE 04 · #1054 · 2026-06-08
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-gyeongsang-andong-unesco-hahoe.en.html
 - Slug: korea-gyeongsang-andong-unesco-hahoe
 
-# 외국인 경상도 안동 — UNESCO 2010 하회마을·도산서원·찜닭·간고등어
+# 경상도 안동 — UNESCO 2010 하회마을·도산서원·찜닭·간고등어
 
 > 부제: 외국인 관광객용 안동 UNESCO 2010 하회마을 + 도산서원 + 안동 찜닭·간고등어 + 한국 #1 양반 마을
 
@@ -63676,7 +63676,7 @@ ISSUE 04 · #1053 · 2026-06-08
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-gyeongsang-gyeongju-unesco.en.html
 - Slug: korea-gyeongsang-gyeongju-unesco
 
-# 외국인 경상도 경주 — UNESCO 1995·불국사·석굴암·신라 천년고도
+# 경상도 경주 — UNESCO 1995·불국사·석굴암·신라 천년고도
 
 > 부제: 외국인 관광객용 경주 UNESCO 1995 + 불국사 751년 + 석굴암 + 천마총 + 신라 천년고도 BC 57
 
@@ -63908,12 +63908,12 @@ ISSUE 04 · #1052 · 2026-06-08
 
 ## [1051] Gyeongsang 1-Day Essential
 
-- KR: 외국인 경상도 1일 메타
+- KR: 경상도 1일 가이드
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/korea-gyeongsang-1day-essential.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-gyeongsang-1day-essential.en.html
 - Slug: korea-gyeongsang-1day-essential
 
-# 외국인 경상도 1일 메타 가이드 — 경주·안동·통영·진주 4축
+# 경상도 1일 가이드 — 경주·안동·통영·진주 4축
 
 > 부제: 외국인 관광객용 경상도 4축 시그니처 12선 + 1일 풀데이 + UNESCO 경주·안동 + 외국인 영문
 
@@ -64180,7 +64180,7 @@ ISSUE 04 · #1051 · 2026-06-08
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-jeolla-mokpo-yudalsan-hongeo.en.html
 - Slug: korea-jeolla-mokpo-yudalsan-hongeo
 
-# 외국인 전라도 목포 — 유달산·근대문화거리·홍어 한국 #1 시그너
+# 전라도 목포 — 유달산·근대문화거리·홍어 한국 #1 시그너
 
 > 부제: 외국인 관광객용 목포 유달산 + 근대문화거리 일제·근대사 + 홍어 한국 #1 매니아 매트릭스
 
@@ -64409,7 +64409,7 @@ ISSUE 04 · #1050 · 2026-06-08
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-jeolla-suncheonman-garden.en.html
 - Slug: korea-jeolla-suncheonman-garden
 
-# 외국인 전라도 순천만 — 한국 #1 국가정원·습지·낙안읍성 조선
+# 전라도 순천만 — 한국 #1 국가정원·습지·낙안읍성 조선
 
 > 부제: 외국인 관광객용 순천만 국가정원 (2015 한국 #1·92만m²) + 습지 갈대밭 + 낙안읍성 조선
 
@@ -64637,7 +64637,7 @@ ISSUE 04 · #1049 · 2026-06-08
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-jeolla-yeosu-cable-car-night.en.html
 - Slug: korea-jeolla-yeosu-cable-car-night
 
-# 외국인 전라도 여수 — 한국 #1 해상케이블카·밤바다·향일암 일출
+# 전라도 여수 — 한국 #1 해상케이블카·밤바다·향일암 일출
 
 > 부제: 외국인 관광객용 여수 해상케이블카 1.5km + 밤바다 야경 매트릭스 #1 + 향일암 + 회·해산물
 
@@ -64863,7 +64863,7 @@ ISSUE 04 · #1048 · 2026-06-08
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-jeolla-jeonju-hanok-bibimbap.en.html
 - Slug: korea-jeolla-jeonju-hanok-bibimbap
 
-# 외국인 전라도 전주 — 한국 #1 한옥마을·비빔밥 본가·한식 매트릭스
+# 전라도 전주 — 한국 #1 한옥마을·비빔밥 본가·한식
 
 > 부제: 외국인 관광객용 전주 한국 #1 한옥마을 (800+ 한옥) + 비빔밥 본가 + 한정식 + 한복·MZ + 인스타
 
@@ -65109,12 +65109,12 @@ ISSUE 04 · #1047 · 2026-06-08
 
 ## [1046] Jeolla 1-Day Essential
 
-- KR: 외국인 전라도 1일 메타
+- KR: 전라도 1일 가이드
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/korea-jeolla-1day-essential.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-jeolla-1day-essential.en.html
 - Slug: korea-jeolla-1day-essential
 
-# 외국인 전라도 1일 메타 가이드 — 전주·여수·순천·목포 4축
+# 전라도 1일 가이드 — 전주·여수·순천·목포 4축
 
 > 부제: 외국인 관광객용 전라도 4축 시그니처 12선 + 1일 풀데이 + 한국 #1 한식 본가 + 외국인 영문
 
@@ -65392,7 +65392,7 @@ ISSUE 04 · #1046 · 2026-06-08
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-chungcheong-seosan-ganwolam.en.html
 - Slug: korea-chungcheong-seosan-ganwolam
 
-# 외국인 충청도 서산 — 간월암 한국 #2 해상 절·해미읍성 조선·게장
+# 충청도 서산 — 간월암 한국 #2 해상 절·해미읍성 조선·게장
 
 > 부제: 외국인 관광객용 서산 간월암 1300년+ + 해미읍성 조선 + 서산 게장·꽃게·해산물
 
@@ -65621,7 +65621,7 @@ ISSUE 04 · #1045 · 2026-06-08
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-chungcheong-buyeo-unesco-baekje.en.html
 - Slug: korea-chungcheong-buyeo-unesco-baekje
 
-# 외국인 충청도 부여 — UNESCO 백제 2015·정림사지·부소산성·낙화암
+# 충청도 부여 — UNESCO 백제 2015·정림사지·부소산성·낙화암
 
 > 부제: 외국인 관광객용 부여 UNESCO 백제역사유적지구 2015 + 정림사지 5층 석탑 + 부소산성 + 낙화암 + 백제문화단지
 
@@ -65990,7 +65990,7 @@ ISSUE 04 · #1043 · 2026-06-08
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-chungcheong-cheongju-suamgol.en.html
 - Slug: korea-chungcheong-cheongju-suamgol
 
-# 외국인 충청도 청주 — 수암골 벽화마을·청남대·MZ 인스타
+# 충청도 청주 — 수암골 벽화마을·청남대·MZ 인스타
 
 > 부제: 외국인 관광객용 청주 수암골 1950년~ + 청남대 1980 + MZ 카페 + 청주국제공항 cluster
 
@@ -66214,12 +66214,12 @@ ISSUE 04 · #1042 · 2026-06-08
 
 ## [1041] Chungcheong 1-Day Essential
 
-- KR: 외국인 충청도 1일 메타
+- KR: 충청도 1일 가이드
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/korea-chungcheong-1day-essential.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-chungcheong-1day-essential.en.html
 - Slug: korea-chungcheong-1day-essential
 
-# 외국인 충청도 당일치기 가이드 — 공주·부여·청주·서산 네 갈래, 하루에 하나만 (2026 공식값)
+# 충청도 당일치기 가이드 — 공주·부여·청주·서산 네 갈래, 하루에 하나만 (2026 공식값)
 
 > 부제: 서울에서 하루 — 공주 UNESCO 백제 · 부여 사비 백제 · 청주 청남대 · 서산 해미읍성과 간월암 중 한 축만 고른다. 시간·요금·휴관일은 2026-10-07 각 공식 사이트에서 읽은 값만 적었다
 
@@ -66377,7 +66377,7 @@ ISSUE 04 · #1041 · 2026-06-08
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-gangwon-donghae-samcheok-jukseoru.en.html
 - Slug: korea-gangwon-donghae-samcheok-jukseoru
 
-# 외국인 강원도 동해 + 삼척 — 죽서루 관동팔경 #1·해상금광·동굴
+# 강원도 동해 + 삼척 — 죽서루 관동팔경 #1·해상금광·동굴
 
 > 부제: 외국인 관광객용 동해 + 삼척 죽서루 1266년 관동팔경 #1 + 해상금광 + 동굴 + 묵호항
 
@@ -66610,7 +66610,7 @@ ISSUE 04 · #1040 · 2026-06-08
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-gangwon-pyeongchang-olympics.en.html
 - Slug: korea-gangwon-pyeongchang-olympics
 
-# 외국인 강원도 평창 — 2018 동계 올림픽·대관령·양떼목장·메밀
+# 강원도 평창 — 2018 동계 올림픽·대관령·양떼목장·메밀
 
 > 부제: 외국인 관광객용 평창 2018 동계 올림픽 + 대관령 + 양떼목장 + 메밀·막국수 + 스키 매니아
 
@@ -66845,7 +66845,7 @@ ISSUE 04 · #1039 · 2026-06-08
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-gangwon-sokcho-seoraksan.en.html
 - Slug: korea-gangwon-sokcho-seoraksan
 
-# 외국인 강원도 속초 + 설악산 — 1708m 국립공원·UNESCO 후보·외옹치
+# 강원도 속초 + 설악산 — 1708m 국립공원·UNESCO 후보·외옹치
 
 > 부제: 외국인 관광객용 속초 + 설악산 1708m 국립공원 + 케이블카 + 신흥사 + 외옹치 해변
 
@@ -67084,7 +67084,7 @@ ISSUE 04 · #1038 · 2026-06-08
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-gangwon-gangneung-anmok-coffee.en.html
 - Slug: korea-gangwon-gangneung-anmok-coffee
 
-# 외국인 강원도 강릉 — 안목해변 한국 #1 커피거리·경포대·정동진
+# 강원도 강릉 — 안목해변 한국 #1 커피거리·경포대·정동진
 
 > 부제: 외국인 관광객용 강릉 안목해변 40+ 카페 + 경포대 + 정동진 일출 + 초당두부 + 강릉 한정식
 
@@ -67325,12 +67325,12 @@ ISSUE 04 · #1037 · 2026-06-08
 
 ## [1036] Gangwon 1-Day Essential
 
-- KR: 외국인 강원도 1일 메타
+- KR: 강원도 1일 가이드
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/korea-gangwon-1day-essential.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-gangwon-1day-essential.en.html
 - Slug: korea-gangwon-1day-essential
 
-# 외국인 강원도 1일 메타 가이드 — 강릉·속초·평창·동해 4축
+# 강원도 1일 가이드 — 강릉·속초·평창·동해 4축
 
 > 부제: 외국인 관광객용 강원도 4축 시그니처 12선 + 1일 풀데이 + KTX 강릉 + 외국인 영문 발화
 
@@ -67599,7 +67599,7 @@ ISSUE 04 · #1036 · 2026-06-08
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-gyeonggi-everland-caribbean-bay.en.html
 - Slug: korea-gyeonggi-everland-caribbean-bay
 
-# 외국인 경기도 에버랜드 + 캐리비안베이 — 한국 #1 테마파크·T-Express·튤립 축제
+# 경기도 에버랜드 + 캐리비안베이 — 한국 #1 테마파크·T-Express·튤립 축제
 
 > 부제: 외국인 관광객용 에버랜드 1976년 한국 #1 테마파크 + T-Express + 캐리비안베이 + 시즌 매트릭스
 
@@ -67807,7 +67807,7 @@ ISSUE 04 · #1035 · 2026-06-08
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-gyeonggi-dmz-panmunjom.en.html
 - Slug: korea-gyeonggi-dmz-panmunjom
 
-# 외국인 경기도 DMZ — 판문점·임진각·외국인 매니아 매트릭스 #1
+# 경기도 DMZ — 판문점·임진각·외국인 팬 #1
 
 > 부제: 외국인 관광객용 DMZ 1일 투어 + 판문점 + 임진각 + 도라산 + 평화공원 + 사전 예약·여권 필수
 
@@ -68036,7 +68036,7 @@ DMZ = 안전·KTO 인증 투어·여권 필수. 매니아 = 사전 교육 + 의�
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-gyeonggi-gapyeong-yangpyeong-nami.en.html
 - Slug: korea-gyeonggi-gapyeong-yangpyeong-nami
 
-# 외국인 경기도 가평 + 양평 — 남이섬·아침고요·두물머리·자연 매니아
+# 경기도 가평 + 양평 — 남이섬·아침고요·두물머리·자연 팬 가이드
 
 > 부제: 외국인 관광객용 경기도 가평·양평 자연 매트릭스 + 남이섬 (겨울연가 2002) + 아침고요수목원 + 두물머리
 
@@ -68270,7 +68270,7 @@ ISSUE 04 · #1033 · 2026-06-08
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-gyeonggi-suwon-hwaseong-unesco.en.html
 - Slug: korea-gyeonggi-suwon-hwaseong-unesco
 
-# 외국인 경기도 수원 화성 — UNESCO 1997·정조 대왕 1796년
+# 경기도 수원 화성 — UNESCO 1997·정조 대왕 1796년
 
 > 부제: 외국인 관광객용 수원 화성 UNESCO 1997·5.7km 성벽·정조 행궁·수원 갈비
 
@@ -68492,12 +68492,12 @@ ISSUE 04 · #1032 · 2026-06-08
 
 ## [1031] Gyeonggi 1-Day Essential
 
-- KR: 외국인 경기도 1일 메타
+- KR: 경기도 1일 가이드
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/korea-gyeonggi-1day-essential.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-gyeonggi-1day-essential.en.html
 - Slug: korea-gyeonggi-1day-essential
 
-# 외국인 경기도 1일 메타 가이드 — 수원·가평·DMZ·에버랜드 4축
+# 경기도 1일 가이드 — 수원·가평·DMZ·에버랜드 4축
 
 > 부제: 외국인 관광객용 경기도 4축 시그니처 12선 + 수원 화성 UNESCO + DMZ + 에버랜드 + 가평 자연
 
@@ -68767,7 +68767,7 @@ ISSUE 04 · #1031 · 2026-06-08
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-gwangju-hanjeongsik-songjeong.en.html
 - Slug: korea-gwangju-hanjeongsik-songjeong
 
-# 외국인 광주 한정식 + 송정역시장 — 한국 #1 한식 본가·전라도 매트릭스
+# 광주 한정식 + 송정역시장 — 한국 #1 한식 본가·전라도
 
 > 부제: 외국인 관광객용 광주 한정식 + 송정역시장 + 충장로 + 양림동 + 한국 #1 한식 본가 매트릭스
 
@@ -69016,7 +69016,7 @@ ISSUE 04 · #1030 · 2026-06-08
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-gwangju-may18-democracy.en.html
 - Slug: korea-gwangju-may18-democracy
 
-# 외국인 광주 5·18 민주광장 + 민주화 매트릭스 — 1980 한국 민주주의
+# 광주 5·18 민주광장 + 민주화 — 1980 한국 민주주의
 
 > 부제: 외국인 관광객용 광주 5·18 민주광장 + 옛 도청 + 기념공원 + 박물관 + 한국 민주주의 매트릭스
 
@@ -69244,7 +69244,7 @@ ISSUE 04 · #1029 · 2026-06-08
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-gwangju-mudeungsan-np.en.html
 - Slug: korea-gwangju-mudeungsan-np
 
-# 외국인 광주 무등산 — 1187m 국립공원·서석대·입석대 주상절리
+# 광주 무등산 — 1187m 국립공원·서석대·입석대 주상절리
 
 > 부제: 외국인 관광객용 광주 무등산 1187m 국립공원 + 서석대·입석대 주상절리 + 증심사 + 차밭
 
@@ -69467,7 +69467,7 @@ ISSUE 04 · #1028 · 2026-06-08
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-gwangju-acc-asia-culture.en.html
 - Slug: korea-gwangju-acc-asia-culture
 
-# 외국인 광주 ACC (국립아시아문화전당) — 아시아 #1 문화복합 2014
+# 광주 ACC (국립아시아문화전당) — 아시아 #1 문화복합 2014
 
 > 부제: 외국인 관광객용 ACC 2014년~ 11.3만m² + 5·18 옛 도청 + 어린이문화원 + 영문 풀세트
 
@@ -69712,12 +69712,12 @@ ACC = 안전·평지·실내·외국인 친화 매트릭스. 응급 ☎ 119·133
 
 ## [1026] Gwangju 1-Day Essential
 
-- KR: 외국인 광주 1일 메타
+- KR: 광주 1일 가이드
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/korea-gwangju-1day-essential.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-gwangju-1day-essential.en.html
 - Slug: korea-gwangju-1day-essential
 
-# 외국인 광주 1일 메타 가이드 — ACC·무등산·5·18민주광장·송정역 4축
+# 광주 1일 가이드 — ACC·무등산·5·18민주광장·송정역 4축
 
 > 부제: 외국인 관광객용 광주 4축 시그니처 12선 + 1일 풀데이 + KTX 광주송정역 + 외국인 영문 발화
 
@@ -69978,7 +69978,7 @@ ACC + 5·18 = 안전·평지·외국인 친화. 무등산 = 등산 + 가파른 �
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-busan-haedong-yonggungsa-beomeosa.en.html
 - Slug: korea-busan-haedong-yonggungsa-beomeosa
 
-# 외국인 부산 해동용궁사 + 범어사 — 한국 #1 해상 절·1300년+ 매니아
+# 부산 해동용궁사 + 범어사 — 한국 #1 해상 절·1300년+ 팬 가이드
 
 > 부제: 외국인 관광객용 부산 해동용궁사 1376년 한국 #1 해상 절 + 범어사 1300년+ + 영적 매니아
 
@@ -70213,7 +70213,7 @@ ISSUE 04 · #1025 · 2026-06-08
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-busan-gamcheon-bosudong.en.html
 - Slug: korea-busan-gamcheon-bosudong
 
-# 외국인 부산 감천문화마을 + 보수동 책방골목 — 산토리니의 부산·인스타 1번지
+# 부산 감천문화마을 + 보수동 책방골목 — 산토리니의 부산·인스타 1번지
 
 > 부제: 외국인 관광객용 부산 감천문화마을 1950년 + 보수동 책방골목 + 파스텔 컬러 + MZ + 인스타 매트릭스
 
@@ -70442,7 +70442,7 @@ ISSUE 04 · #1024 · 2026-06-08
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-busan-haeundae-gwangalli.en.html
 - Slug: korea-busan-haeundae-gwangalli
 
-# 외국인 부산 해운대 + 광안리 — 한국 #1 해변·광안대교 야경
+# 부산 해운대 + 광안리 — 한국 #1 해변·광안대교 야경
 
 > 부제: 외국인 관광객용 부산 해운대 한국 #1 해변 1.5km + 광안리 + 광안대교 야경 + SUP·스카이캡슐
 
@@ -70671,7 +70671,7 @@ ISSUE 04 · #1023 · 2026-06-08
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-busan-jagalchi-gukje-biff.en.html
 - Slug: korea-busan-jagalchi-gukje-biff
 
-# 외국인 부산 자갈치 + 국제시장 + BIFF 광장 — 한국 #1 수산시장 80년
+# 부산 자갈치 + 국제시장 + BIFF 광장 — 한국 #1 수산시장 80년
 
 > 부제: 외국인 관광객용 부산 자갈치 80년 수산시장 + 국제시장 + BIFF 광장 + 신선한 회·해산물
 
@@ -70910,12 +70910,12 @@ ISSUE 04 · #1022 · 2026-06-08
 
 ## [1021] Busan 1-Day Essential
 
-- KR: 외국인 부산 1일 메타
+- KR: 부산 1일 가이드
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/korea-busan-1day-essential.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-busan-1day-essential.en.html
 - Slug: korea-busan-1day-essential
 
-# 외국인 부산 1일 메타 가이드 — 자갈치·해운대·감천·해동용궁사 4축
+# 부산 1일 가이드 — 자갈치·해운대·감천·해동용궁사 4축
 
 > 부제: 외국인 관광객용 부산 4축 시그니처 12선 + 1일 풀데이 코스 + KTX 부산역 + 외국인 영문 발화
 
@@ -71190,7 +71190,7 @@ ISSUE 04 · #1021 · 2026-06-08
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-ulsan-industrial-tourism.en.html
 - Slug: korea-ulsan-industrial-tourism
 
-# 외국인 울산 산업관광 — 현대중공업 + 현대자동차 + 울산벽화마을 + STEM 매니아
+# 울산 산업관광 — 현대중공업 + 현대자동차 + 울산벽화마을 + STEM 팬 가이드
 
 > 부제: 외국인 관광객용 울산 산업관광 5축 + 현대중공업 세계 #1 조선 + 현대자동차 세계 #5 + STEM·산업 매니아 + 사전 예약
 
@@ -71433,7 +71433,7 @@ ISSUE 04 · #1020 · 2026-06-08
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-ulsan-ganjeolgot-sunrise.en.html
 - Slug: korea-ulsan-ganjeolgot-sunrise
 
-# 외국인 울산 간절곶 일출 — 한국 #1 일출·1920년 등대·새해 1월 1일 매트릭스
+# 울산 간절곶 일출 — 한국 #1 일출·1920년 등대·새해 1월 1일
 
 > 부제: 외국인 관광객용 울산 간절곶 한국 #1 일출 + 1920년 등대 100년 + 새해 1월 1일 + 해안 + 카페 매니아
 
@@ -71721,7 +71721,7 @@ ISSUE 04 · #1019 · 2026-06-08
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-ulsan-jangsaengpo-bangudae.en.html
 - Slug: korea-ulsan-jangsaengpo-bangudae
 
-# 외국인 울산 장생포 고래 + 반구대 암각화 — 한국 #1 고래·UNESCO 후보 7000년 신석기
+# 울산 장생포 고래 + 반구대 암각화 — 한국 #1 고래·UNESCO 후보 7000년 신석기
 
 > 부제: 외국인 관광객용 울산 장생포 고래 박물관 (1986) + 반구대 암각화 (UNESCO 잠정 등록 2010) + 7000년 신석기 + 매니아 매트릭스
 
@@ -71954,7 +71954,7 @@ ISSUE 04 · #1018 · 2026-06-08
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-ulsan-taehwa-river-bamboo.en.html
 - Slug: korea-ulsan-taehwa-river-bamboo
 
-# 외국인 울산 태화강 + 십리대숲 + 국가정원 — 한국 #2 국가정원·#1 도심 대숲
+# 울산 태화강 + 십리대숲 + 국가정원 — 한국 #2 국가정원·#1 도심 대숲
 
 > 부제: 외국인 관광객용 울산 태화강 국가정원 (2019·83만m²·12 테마) + 십리대숲 4.3km + MZ 인스타 매트릭스
 
@@ -72181,12 +72181,12 @@ ISSUE 04 · #1017 · 2026-06-08
 
 ## [1016] Ulsan 1-Day Essential
 
-- KR: 외국인 울산 1일 메타
+- KR: 울산 1일 가이드
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/korea-ulsan-1day-essential.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-ulsan-1day-essential.en.html
 - Slug: korea-ulsan-1day-essential
 
-# 외국인 울산 1일 메타 가이드 — 태화강·고래·간절곶·산업관광 4축
+# 울산 1일 가이드 — 태화강·고래·간절곶·산업관광 4축
 
 > 부제: 외국인 관광객용 울산 4축 시그니처 12선 + 1일 풀데이 코스 + 외국인 영문 발화·교통·결제·언어
 
@@ -72653,7 +72653,7 @@ ISSUE 04 · #1015 · 2026-06-08
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-incheon-wolmido-soraepogu.en.html
 - Slug: korea-incheon-wolmido-soraepogu
 
-# 외국인 인천 월미도 + 소래포구 — 해안·모노레일·놀이공원·횟집 풀세트
+# 인천 월미도 + 소래포구 — 해안·모노레일·놀이공원·횟집
 
 > 부제: 외국인 관광객용 인천 월미도 (놀이공원 + 모노레일 + 해안) + 소래포구 (수산시장 + 횟집) 5축
 
@@ -72908,7 +72908,7 @@ ISSUE 04 · #1014 · 2026-06-08
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-incheon-songdo-ibd.en.html
 - Slug: korea-incheon-songdo-ibd
 
-# 외국인 인천 송도 IBD 미래도시 — 국제업무도시·인천대교·G타워·트라이볼
+# 인천 송도 IBD 미래도시 — 국제업무도시·인천대교·G타워·트라이볼
 
 > 부제: 외국인 관광객용 인천 송도 IBD 5축 + 인천대교 한국 #1 + G타워 33층 + 센트럴파크 + 트라이볼 인스타
 
@@ -73136,7 +73136,7 @@ ISSUE 04 · #1013 · 2026-06-08
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-incheon-chinatown-gonghwachun.en.html
 - Slug: korea-incheon-chinatown-gonghwachun
 
-# 외국인 인천 차이나타운 + 공화춘 자장면 — 1884년 한국 #1·140년 역사
+# 인천 차이나타운 + 공화춘 자장면 — 1884년 한국 #1·140년 역사
 
 > 부제: 외국인 관광객용 인천 차이나타운 1884년 + 공화춘 자장면 원조 1905년 + 삼국지 벽화 거리 + 자유공원 매트릭스
 
@@ -73364,12 +73364,12 @@ ISSUE 04 · #1012 · 2026-06-08
 
 ## [1011] Incheon 1-Day Essential
 
-- KR: 외국인 인천 1일 메타
+- KR: 인천 1일 가이드
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/korea-incheon-1day-essential.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-incheon-1day-essential.en.html
 - Slug: korea-incheon-1day-essential
 
-# 외국인 인천 1일 메타 가이드 — 차이나타운·송도·월미도·소래포구·공항 4축
+# 인천 1일 가이드 — 차이나타운·송도·월미도·소래포구·공항 4축
 
 > 부제: 외국인 관광객용 인천 4축 시그니처 12선 + 1일 풀데이 코스 + 공항 환승 + 영문 발화·교통·결제·언어
 
@@ -73572,7 +73572,7 @@ ISSUE 04 · #1011 · 2026-06-08
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-daejeon-kalguksu-dubudururchigi.en.html
 - Slug: korea-daejeon-kalguksu-dubudururchigi
 
-# 외국인 대전 칼국수·두부두루치기·갈비 — 노포 시그니처 12선
+# 대전 칼국수·두부두루치기·갈비 — 노포 시그니처 12선
 
 > 부제: 외국인 관광객용 대전 칼국수 (멸치 + 바지락) + 두부두루치기 + 갈비집 + 노포 매트릭스 + 영문 발화
 
@@ -73802,7 +73802,7 @@ ISSUE 04 · #1010 · 2026-06-08
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-daejeon-kaist-science-tech.en.html
 - Slug: korea-daejeon-kaist-science-tech
 
-# 외국인 대전 KAIST + 대덕연구단지 + 국립중앙과학관 — 과학기술 cluster
+# 대전 KAIST + 대덕연구단지 + 국립중앙과학관 — 과학기술
 
 > 부제: 외국인 관광객용 대전 과학기술 5축 + KAIST 캠퍼스 + 대덕연구단지 + 국립중앙과학관 + 엑스포 시민광장 1993
 
@@ -74040,7 +74040,7 @@ ISSUE 04 · #1009 · 2026-06-08
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-daejeon-yuseong-hot-springs.en.html
 - Slug: korea-daejeon-yuseong-hot-springs
 
-# 외국인 대전 유성 온천 — 1500년 약알칼리 라듐 한국 4대 온천
+# 대전 유성 온천 — 1500년 약알칼리 라듐 한국 4대 온천
 
 > 부제: 외국인 관광객용 대전 유성 온천 1500년 + 약알칼리 라듐 + 호텔 cluster + 갑천 산책 + 1박 매니아 코스
 
@@ -74297,7 +74297,7 @@ ISSUE 04 · #1008 · 2026-06-08
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-daejeon-sungsimdang-bakery.en.html
 - Slug: korea-daejeon-sungsimdang-bakery
 
-# 외국인 대전 성심당 — 1956년 한국 #1 베이커리 70년 시그니처
+# 대전 성심당 — 1956년 한국 #1 베이커리 70년 시그니처
 
 > 부제: 외국인 관광객용 대전 성심당 본점 70년 + 튀김소보로 1번지 + 부추빵 + 케이크 매트릭스 + 줄 노하우
 
@@ -74577,12 +74577,12 @@ ISSUE 04 · #1007 · 2026-06-08
 
 ## [1006] Daejeon 1-Day Essential
 
-- KR: 외국인 대전 1일 메타
+- KR: 대전 1일 가이드
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/korea-daejeon-1day-essential.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-daejeon-1day-essential.en.html
 - Slug: korea-daejeon-1day-essential
 
-# 외국인 대전 1일 메타 가이드 — 성심당·유성 온천·KAIST·칼국수 4축
+# 대전 1일 가이드 — 성심당·유성 온천·KAIST·칼국수 4축
 
 > 부제: 외국인 관광객용 대전 4축 시그니처 12선 + 1일 풀데이 코스 + 외국인 페인포인트·교통·결제·언어
 
@@ -74790,7 +74790,7 @@ ISSUE 04 · #1006 · 2026-06-08
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-daegu-palgongsan-gatbawi.en.html
 - Slug: korea-daegu-palgongsan-gatbawi
 
-# 외국인 대구 팔공산 갓바위 — 한국 #1 기도·1년 1소원 매트릭스
+# 대구 팔공산 갓바위 — 한국 #1 기도·1년 1소원
 
 > 부제: 외국인 관광객용 대구 팔공산 갓바위 + 동화사 + 1년 1소원 기도 매트릭스 + 외국인 영적 매니아 + 등산 가이드
 
@@ -75042,7 +75042,7 @@ ISSUE 04 · #1005 · 2026-06-08
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-daegu-seomun-night-market.en.html
 - Slug: korea-daegu-seomun-night-market
 
-# 외국인 대구 서문시장 야시장 — 한국 #3 야시장 + 칼국수·납작만두·갈비찜 시그니처
+# 대구 서문시장 야시장 — 한국 #3 야시장 + 칼국수·납작만두·갈비찜 시그니처
 
 > 부제: 외국인 관광객용 대구 서문시장 + 야시장 (매일 19:00-23:30) + 칼국수·납작만두·갈비찜 + 3-4시간 코스 + 영문 발화
 
@@ -75293,7 +75293,7 @@ ISSUE 04 · #1004 · 2026-06-08
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-daegu-modern-alley-kim-kwang-seok.en.html
 - Slug: korea-daegu-modern-alley-kim-kwang-seok
 
-# 외국인 대구 근대골목 + 김광석 거리 — 1900년대 역사·청라언덕·계산성당·방천시장 4 cluster
+# 대구 근대골목 + 김광석 거리 — 1900년대 역사·청라언덕·계산성당·방천시장 4
 
 > 부제: 외국인 관광객용 대구 근대골목 4 cluster + 김광석 거리 + 골목투어 + 1.5시간 코스 + 영문 시그너
 
@@ -75516,7 +75516,7 @@ ISSUE 04 · #1003 · 2026-06-08
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-daegu-yakryeong-medicine-market.en.html
 - Slug: korea-daegu-yakryeong-medicine-market
 
-# 외국인 대구 약령시 한약 거리 — 350년 한국 #1 한약 시그니처
+# 대구 약령시 한약 거리 — 350년 한국 #1 한약 시그니처
 
 > 부제: 외국인 관광객용 대구 약령시 350년 한약 거리 + 약전골목 + 박물관 + 한방차 카페 매트릭스 + 5월 축제 + UNESCO 후보
 
@@ -75717,12 +75717,12 @@ ISSUE 04 · #1002 · 2026-06-08
 
 ## [1001] Daegu 1-Day Essential
 
-- KR: 외국인 대구 1일 메타
+- KR: 대구 1일 가이드
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/korea-daegu-1day-essential.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-daegu-1day-essential.en.html
 - Slug: korea-daegu-1day-essential
 
-# 외국인 대구 1일 메타 가이드 — 약령시·근대골목·서문시장·앞산·팔공산 4축
+# 대구 1일 가이드 — 약령시·근대골목·서문시장·앞산·팔공산 4축
 
 > 부제: 외국인 관광객용 대구 4축 시그니처 12선 + 1일 풀데이 코스 + 외국인 페인포인트·교통·결제·언어
 
@@ -76123,9 +76123,9 @@ date: 2026-06-25
 
 ---
 
-## [919] Foreigner Korea Modern Architects Top 12
+## [919] Korea Modern Architects Top 12
 
-- KR: 외국인 한국 현대 건축가 12선 deep dive
+- KR: 한국 현대 건축가 12선
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/korea-modern-architects.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-modern-architects.en.html
 - Slug: korea-modern-architects
@@ -76313,9 +76313,9 @@ ISSUE 03 · #865 · 2026-06-09
 
 ---
 
-## [918] Foreigner Korea Zaha Hadid DDP Cluster Top 12
+## [918] Korea Zaha Hadid DDP Top 12
 
-- KR: 외국인 한국 자하 하디드 DDP 동대문 cluster 12선 deep dive
+- KR: 한국 자하 하디드 DDP 동대문 12선
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/zaha-hadid-ddp-cluster.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/zaha-hadid-ddp-cluster.en.html
 - Slug: zaha-hadid-ddp-cluster
@@ -76537,5 +76537,206 @@ ISSUE 03 · #864 · 2026-06-09
 
 ## 🏷 태그
 #한국회 #KoreanHoe #KoreanSashimi #활어Live#1쫄깃 #숙성Aged감칠맛 #광어Gwang-eo활어#1입문사계절1월정통 #방어Bang-eo겨울#112~2월자갈치노량진삼척구룡포 #참치뱃살Chamchi-Otoro지방#1toro강남압구정홍대80~200k #연어Yeon-eo글로벌무한리필홍대강남신촌25~50k #도미Do-mi한정식정통봄겨울50~120k #전어Jeon-eo가을#19~10월강화소래포구속담 #초장고추장식초쌈채소상추깻잎배추마늘된장 #매운탕매콤생선탕마지막코스 #노량진수산시장새벽도매 #자갈치시장부산정통 #일본sushi차이활어숙성초장간장 #한정식회코스 #일본인관광객 #중국인관광객 #키친구
+
+---
+
+## [917] Korean Architecture: Contemporary Korean Architecture — 12 Picks Including DDP and Zaha Hadid for Foreign Visitors
+
+- KR: 한국 현대건축 12곳 (Korean Architecture) — DDP·자하 하디드 등 외국인 건축 여행
+- URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/korea-architecture-matrix.html
+- URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-architecture-matrix.en.html
+- Slug: korea-architecture-matrix
+
+# 한국 면안주 장수동 vs 광장 vs 포장마차 vs 한정식 비교 — 어디서 술 한잔?
+
+> 부제: 한국 면안주 4채널 비교 매트릭스 + segment 5 1순위 + 시간·예산·동행 결정 가이드
+
+ISSUE 03 · #863 · 2026-06-09
+
+---
+
+## 🎯 왜 면안주 4채널 비교 가이드인가
+
+#861 면안주 6종 매트릭스 + #862 워크플로우 알아도 — 채널 선택이 다음 결정. 한국 면안주 채널 = (1) 장수동 족발 골목 (성북·전국 #1·17:00~03:00 야식)·(2) 광장시장 보쌈 골목 (vlog #1·낮·MZ 인스타)·(3) 종로 포장마차 (소주·골뱅이무침 매니아)·(4) 한정식 코스 (수육·홍어삼합 정통) 4가지. 가격 12,000원 → 150,000원, 분위기 야식 매니아 → vlog → 소주 → 정통 차이. 본 가이드는 4채널 직접 비교 + segment(혼자·커플·가족·MZ·예산형)별 1순위.
+
+---
+
+## ★ 4채널 비교 매트릭스 (한눈에)
+
+| 축 | 🦶 장수동 족발 | 🥬 광장 보쌈 | 🍶 포장마차 | 🍱 한정식 코스 |
+|---|---|---|---|---|
+| 메뉴 | 족발 (정통·매콤) | 보쌈 + 보쌈김치 | 골뱅이무침·계란말이 | 수육·홍어삼합 (코스) |
+| 가격 (2~3인) | 25,000~50,000원/1관 | 20,000~40,000원/1관 | 12,000~25,000원 | 한정식 코스 (40,000~150,000원) |
+| 분위기 | 야식·매니아·골목 | vlog·MZ·낮 | 정통·노포·소주 | 정통·격식 |
+| 운영 시간 | 17:00~03:00 (야식 #1) | 09:00~22:00 | 18:00~02:00 | 11:30~22:00 (점심·저녁) |
+| 외국인 친화도 | ★★★★★ (영문 메뉴) | ★★★★★ (vlog #1) | ★★★ (한국어 정통) | ★★★★ (영문 일부) |
+| 결제 | 카드 OK | 카드 OK / 일부 현금 | 현금·카드 혼용 | 카드 OK |
+| 인스타·사진 | ★★★★ (골목) | ★★★★★ (#1 vlog) | ★★★ | ★★★★ (한정식) |
+| 회식·접대 | ★★★ (캐주얼) | ★★★ | ★★ | ★★★★★ (1순위) |
+| 어린이 동반 | ★★ (야식) | ★★★★ (낮 가족) | ★ (술집) | ★★ (정적) |
+| 소주 페어 | ★★★★ (소주 매니아) | ★★★ (막걸리·소주) | ★★★★★ (#1 소주) | ★★★ (전통주) |
+| 외국인 입문 | ★★★★ | ★★★★★ (#1 입문) | ★★ (소주 매니아만) | ★★★★ |
+
+---
+
+## 🎯 segment별 1순위 추천
+
+### 👤 솔로 여행자 (Solo)
+
+- 1순위: 광장 보쌈 (낮·vlog·1인분 OK)
+- 2순위: 포장마차 (소주 매니아)
+- 3순위: 장수동 족발 (1인분 가능)
+- 회피: 한정식 (1인 가성비 ↓)
+
+### 💑 커플 (Couple)
+
+- 1순위: 장수동 족발 (야식 데이트)
+- 2순위: 광장 보쌈 (낮 데이트·vlog)
+- 3순위: 한정식 (정통 데이트)
+- 회피: 포장마차 (분위기 ↓·노포)
+
+### 👨‍👩‍👧 가족 (Family)
+
+- 1순위: 광장 보쌈 (낮·가족·vlog)
+- 2순위: 한정식 (정통 가족)
+- 3순위: 장수동 족발 (저녁 가족)
+- 회피: 포장마차 (술집·어린이 X)
+
+### 🎨 MZ 트렌드 (MZ)
+
+- 1순위: 광장 보쌈 (#1 vlog·인스타)
+- 2순위: 장수동 족발 (야식 vlog)
+- 3순위: MZ 족발 체인 (대박)
+- 회피: 한정식 (MZ ↓)
+
+### 🎒 백패커·예산형 (Budget)
+
+- 1순위: 포장마차 (12,000~25,000원 가성비)
+- 2순위: 광장 보쌈 (1관 2~3인 분담)
+- 3순위: 장수동 족발 (1관 분담)
+- 회피: 한정식 (예산 ↑)
+
+---
+
+## 🦶 4채널 deep dive
+
+### 🦶 장수동 족발 골목 (Jangsudong Jokbal Alley)
+
+핵심 가치: 전국 #1 + 야식 매니아 + 17:00~03:00.
+
+- 위치: 서울 성북구 장수동 일대
+- 시그니처: 정통 족발·미니족·반반 (매콤+간장)
+- 가격 anchor: 25,000~50,000원/1관 (2~3인)
+- 시간: 17:00~03:00 (야식 매니아 #1)
+- 외국인 친화도: ★★★★★ (영문 메뉴·체인)
+- 추천 매장: 장수동 본점·체인 족발집
+
+### 🥬 광장시장 보쌈 골목 (Gwangjang Bossam Alley)
+
+핵심 가치: vlog #1 + MZ 인스타 + 낮 가족.
+
+- 위치: 서울 종로구 광장시장
+- 시그니처: 보쌈·보쌈김치·쌈채소·MZ 인스타 #1
+- 가격 anchor: 20,000~40,000원/1관 (2~3인)
+- 시간: 09:00~22:00 (낮·저녁)
+- 외국인 친화도: ★★★★★ (vlog #1·영문 메뉴)
+- MZ vlog: 보쌈 골목 한 줄 + 빈대떡·마약김밥 cluster
+
+### 🍶 종로·강남 포장마차 (Pojangmacha)
+
+핵심 가치: 소주 매니아 #1 + 골뱅이무침 + 노포 정통.
+
+- 위치: 종로 포장마차 골목·강남 포장마차·동대문
+- 시그니처: 골뱅이무침·계란말이·우동·라면
+- 가격 anchor: 12,000~25,000원/안주
+- 시간: 18:00~02:00
+- 외국인 친화도: ★★★ (한국어 정통·번역 앱 필요)
+- 소주 매니아: 소주 + 골뱅이 = 한국 정통 #1
+
+### 🍱 한정식 코스 (Hanjeongsik Course)
+
+핵심 가치: 6단계 코스 + 수육·홍어삼합 정통 + 궁중.
+
+- 추천 매장:
+  - 신라호텔 라연 (미슐랭 2스타) — 수육 정통
+  - 삼청각 — 정통
+  - 인사동 한정식 — 가성비 정통
+  - 전라 한정식 — 홍어삼합 정통
+- 가격 anchor: 한정식 코스 40,000~150,000원
+- 시간: 11:30~22:00
+- 외국인 친화도: ★★★★
+
+---
+
+## ⚠ 외국인 자주 실수 5가지
+
+1. "4채널 = 비슷": 가격·분위기·시간 완전 다름. 야식 = 장수동 / vlog = 광장 / 소주 = 포장마차 / 정통 = 한정식.
+
+2. "장수동 = 낮": 장수동 = 17:00~03:00 야식 매니아·낮 X.
+
+3. "포장마차 = 영어 OK": 포장마차 = 한국어 정통·번역 앱 필요.
+
+4. "광장 보쌈 = 식사": 광장 = vlog·간식 + 식사 모두·1관 = 2~3인 공유.
+
+5. "한정식 = 항상 비싸다": 한정식 = 40,000~150,000원 (lunch 가성비 가능).
+
+---
+
+## ⚙ FAQ 8개
+
+1. 첫 면안주 = 어떤 채널: 광장 보쌈 (낮·#1 입문) → 장수동 족발 (야식).
+2. 인스타·vlog: 광장 보쌈 (#1)·장수동 족발·종로 포장마차.
+3. 소주 매니아: 포장마차 (#1 정통) + 장수동 족발.
+4. 데이트·기념일: 장수동 족발·한정식.
+5. 가족 동반: 광장 보쌈 + 한정식.
+6. 알레르기·임신: #861 disclaimer 참조.
+7. 결제·팁: 카드 OK / 시장·포장마차 = 현금 일부 / 팁 X.
+8. VAT 환급: 식음료 일반 환급 X.
+
+---
+
+## ⚠ 의료·안전·식이 disclaimer
+
+면안주 4채널 모두 일반 음식. 임신부·어린이 한정 OK (술·홍어 X). 알레르기 (돼지·해산물·고추) 사전 고지. 술 = 임신부·미성년자 X. 식중독 의심 시 ☎ 1339 (감염병 상담). 본 가이드는 일반 정보, 의료 자문이 아님.
+
+식이 제한 fallback:
+- 할랄·코셔: 4채널 모두 돼지·해산물 → 우회 = 비빔밥·잡채·사찰음식 (#854).
+- 채식·비건: 4채널 모두 비채식 → 채식 = 사찰음식·비빔밥.
+- 글루텐 free: 수육·보쌈·족발 = OK / 골뱅이무침 소면 X / 제육 양념 일부 X.
+
+---
+
+## 💰 Essential Tourist Tips
+
+- 4채널 평균 비용 (2026년 6월 기준):
+  - 포장마차 = 12,000~25,000원/안주
+  - 광장 보쌈 = 20,000~40,000원/1관 (2~3인)
+  - 장수동 족발 = 25,000~50,000원/1관 (2~3인)
+  - 한정식 코스 = 40,000~150,000원/인
+- 결제·팁: 카드 OK / 시장·포장마차 = 현금 일부 / 팁 X
+- 응급: ☎ 1339 (감염병 상담) / ☎ 1330 (관광 통역)·☎ 119 (구급·소방)
+
+---
+
+## 🔗 관련
+
+- #861 면안주 6종 매트릭스 (선행)
+- #862 면안주 워크플로우
+- #807 국밥 cluster (해장)
+- #825 보양식 cluster (장수동)
+- #837 한정식 cluster (수육·홍어삼합)
+- 음식 cluster 54편 (18 cluster)
+
+## 🌐 외부 SOURCES
+
+- 한국관광공사 (VisitKorea): https://english.visitkorea.or.kr/
+- 서울특별시 관광 (Seoul Tourism): https://english.visitseoul.net/
+- 문화재청 (Cultural Heritage Administration): https://english.cha.go.kr/
+- 국가지표체계 (KOSIS Statistics Korea): https://kosis.kr/eng/
+- 한국지방관광공사 (Regional Tourism KNTO): https://english.visitkorea.or.kr/
+- CNN Travel Korea: https://www.cnn.com/travel/asia
+
+## 🏷 태그
+#면안주4채널비교 #PubFoodVenueComparison #장수동족발골목성북17:00~03:00야식#125~50k관 #광장시장보쌈vlog#109:00~22:00MZ인스타20~40k관 #종로포장마차골뱅이무침소주매니아#118:00~02:0012~25k #한정식코스수육홍어삼합정통40~150k #솔로광장보쌈낮vlog1인분 #커플장수동족발야식데이트 #가족광장보쌈낮vlog안전 #MZ광장보쌈#1vlog인스타 #예산포장마차가성비 #회식한정식정통 #일본인관광객 #중국인관광객 #키친구
 
 ---
