@@ -28061,8 +28061,8 @@
   {
     "id": "1227",
     "slug": "korea-geoje",
-    "title_kr": "외국인 거제 여행 가이드 — 외도 보타니아·바람의언덕·매물도 경남 섬",
-    "title_en": "Geoje Travel (Oedo Botania·Windy Hill·Maemuldo)",
+    "title_kr": "거제 1박 2일 가이드 (Geoje) — 외도 유람선·바람의언덕·정글돔, 요금과 시간 확인본",
+    "title_en": "Geoje 2-Day Guide (Geoje): Oedo Cruise, Windy Hill and the Jungle Dome, With Fares and Hours Checked",
     "category": "A",
     "tags": [
       "foreign-tourist",
@@ -28070,17 +28070,17 @@
       "regional-city",
       "regional"
     ],
-    "summary_kr": "거제 — 2026-10-08 공식값: 외도 보타니아 입장 11,000·하절기 08~19·동절기 08:30~17 + 유람선 성인 16,000~22,000(장승포 20,000/22,000·해금강 16,000/17,000 등 승선장 6곳, 거제시 공식) · 포로수용소유적공원 7,000(시간 공식 미표기) · 관광모노레일 09~18·18,000(공원 포함) · 거제식물원 정글돔 09:30~18·수요일 휴관·5,000·현장 구매만 · 바람의언덕·학동·매미성 요금 미게시. 거가대교 승용차 10,000원(공식) · 시내버스 어른 1,700원(교통카드 1,650) · 섬꽃축제 2026 미확인.",
-    "summary_en": "Geoje on official values checked Oct 8, 2026: Oedo Botania admission 11,000 won, summer 08–19 and winter 08:30–17, plus cruise fares of 16,000–22,000 won by pier and weekday/weekend (Jangseungpo 20,000/22,000, Haegeumgang 16,000/17,000, six piers, Geoje city official); POW Camp Historic Park 7,000 won (hours not posted); tourist monorail 09–18 at 18,000 won including the park; Geoje Botanic Garden Jungle Dome 09:30–18, closed Wednesdays, 5,000 won, on-site tickets only; Windy Hill, Hakdong beach and Maemiseong with no posted fees. Geoga Bridge passenger car toll 10,000 won (official) · city bus adult 1,700 won (1,650 with a transit card) · 2026 flower festival remains unverified.",
+    "summary_kr": "외도 보타니아 입장 11,000원에 유람선 16,000~22,000원(승선장 6곳·평일/주말)을 더하고, 바람의언덕 풍차·학동 몽돌·매미성은 요금 없는 해안, 포로수용소유적공원 7,000원·09:00~18:00·화요일 휴관, 정글돔 5,000원·수요일 휴원, 부산서부→장승포 버스 10,600원, 섬 안 시내버스 1,650원 — 2026-10-29 거제시·외도 보타니아·거제식물원·거제 BIS 공식 페이지 기준.",
+    "summary_en": "Oedo Botania admission 11,000 won + cruise 16,000~22,000 won, POW Camp Historic Park 7,000 won (closed Tuesdays), Jungle Dome 5,000 won (closed Wednesdays), Busan Seobu→Jangseungpo bus 10,600 won, city bus 1,650 won — as of 2026-10-29.",
     "en_available": true,
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false,
     "date_published": "2026-07-04",
-    "title_ja": "巨済島旅行ガイド",
-    "title_zh": "巨济旅行",
-    "summary_ja": "巨済 — 2026-10-08公式値：外島ボタニア 入場11,000・夏季08〜19・冬季08:30〜17＋遊覧船 大人16,000〜22,000（長承浦20,000/22,000・海金剛16,000/17,000など乗船場6カ所、巨済市公式）・捕虜収容所遺跡公園7,000（時間は公式未掲示）・観光モノレール09〜18・18,000（公園込み）・巨済植物園ジャングルドーム09:30〜18・水曜休・5,000・当日現地購入のみ・風の丘・鶴洞・梅美城は料金未掲示。巨加大橋 乗用車10,000ウォン(公式)・市内バス大人1,700ウォン(交通カード1,650)・2026島花祭りは未確認。",
-    "summary_zh": "巨济 — 2026-10-08官方值：外岛Botania 门票11,000·夏季08~19·冬季08:30~17 + 游船成人16,000~22,000（长承浦20,000/22,000·海金刚16,000/17,000等6个码头，巨济市官方）· 战俘营遗址公园7,000（时间官方未标）· 观光单轨09~18·18,000（含公园）· 巨济植物园丛林穹顶09:30~18·周三休·5,000·仅现场购票 · 风之丘·鹤洞·梅美城未公布票价。巨加大桥小客车10,000韩元（官方）·市内巴士成人1,700韩元（交通卡1,650）·2026岛花节未确认。"
+    "title_ja": "巨済1泊2日ガイド (Geoje) — 外島クルーズ・風の丘・ジャングルドーム、料金と時間の確認版",
+    "title_zh": "巨济1晚2天指南 (Geoje)——外岛游船、风之丘与丛林穹顶，已核对票价与时间",
+    "summary_ja": "外島ボタニア入場11,000ウォン + 遊覧船16,000~22,000ウォン、捕虜収容所遺跡公園7,000ウォン・09:00~18:00・火曜休館、ジャングルドーム5,000ウォン・水曜休園、釜山西部→長承浦のバス10,600ウォン、島内の市内バス1,650ウォン(交通カード)。2026-10-29時点の巨済市などの公式ページに基づく。",
+    "summary_zh": "外岛植物园门票 11,000韩元 + 游船 16,000~22,000韩元，战俘收容所遗址公园 7,000韩元·周二闭馆，丛林穹顶 5,000韩元·周三休园，釜山西部→长承浦巴士 10,600韩元，岛内市内巴士 1,650韩元——以 2026-10-29 巨济市等官方页面为准。"
   },
   {
     "id": "1228",
