@@ -6898,16 +6898,16 @@ Day 2 · 남쪽 강변축: 오전 한남동 리움 구정아(예매 필수) → 
 
 ---
 
-## [1374] Korea Golden Route ③ Three Tickets — Seoul → Gyeongju → Busan → Seoul After the KTX–SRT Merger: Fares, Bus Alternatives, Whether the KORAIL PASS Pays Off, and Holiday Booking
+## [1374] Korea Golden Route: Golden Route ③, 3 Tables — Seoul → Gyeongju → Busan → Seoul, KTX and Bus Timetables, 3-Day KORAIL Pass Break-Even, Holiday Booking
 
-- KR: 한국 골든 루트 ③ 표 3장 — 서울→경주→부산→서울, 통합된 KTX·시외버스 매트릭스, 코레일패스 3일권 손익, 명절 예매
+- KR: 한국 골든 루트 ③ 표 3장 (Korea Golden Route) — 서울→경주→부산→서울, KTX·시외버스 시간표, 코레일패스 3일권 손익, 명절 예매
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/golden-route-three-tickets.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/golden-route-three-tickets.en.html
 - Slug: golden-route-three-tickets
 
 <!-- #1374 · B · golden-route-three-tickets -->
 
-# 한국 골든 루트 ③ 표 3장 — 서울→경주→부산→서울, 통합된 KTX·시외버스 매트릭스, 코레일패스 3일권 손익, 명절 예매
+# 한국 골든 루트 ③ 표 3장 (Korea Golden Route) — 서울→경주→부산→서울, KTX·시외버스 시간표, 코레일패스 3일권 손익, 명절 예매
 
 > 부제: 2026년 9월 1일, 한국의 고속철도 두 회사가 하나가 됐다. SRT라는 이름이 사라지고, 수서에서 떠나는 열차도 KTX가 됐고, 앱은 하나(코레일+)가 됐고, 요금은 평균 10% 내렸다. 골든 루트에 필요한 표는 세 장 — 서울→경주, 경주→부산, 부산→서울. 이 편은 그 세 장의 표와 시외버스 대안, 코레일패스가 남는지 계산, 그리고 명절에 표가 없을 때의 순서다. 통합 후 첫 가을 기준.
 
@@ -11820,16 +11820,16 @@ foreign-tourist, first-timer, howto, dutyfree, airport, pickup, procedure, shopp
 
 ---
 
-## [1331] Korean Souvenirs, Chosen by Data — A Matrix by Recipient and Budget
+## [1331] Korea Souvenirs: Korean Souvenirs Chosen by Data — By Recipient and Budget
 
-- KR: 데이터로 고른 한국 기념품 — 받는 사람별·예산별 매트릭스
+- KR: 데이터로 고른 한국 기념품 (Korea Souvenirs) — 받는 사람별·예산별
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/korea-souvenir-data-guide.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-souvenir-data-guide.en.html
 - Slug: korea-souvenir-data-guide
 
 <!-- #1331 · F · korea-souvenir-data-guide -->
 
-# 데이터로 고른 한국 기념품 — 받는 사람별·예산별 매트릭스
+# 데이터로 고른 한국 기념품 (Korea Souvenirs) — 받는 사람별·예산별
 
 > 부제: "한국에서 뭘 사가지?"를 감이 아니라 데이터로 정한다. 오프라인 매장 28곳·온라인 플랫폼 24곳·SNS 후기 26개 소스를 교차한 리서치에서 세 채널 모두에 등장한 품목만 추리고, 받는 사람·문화권·예산 세 축으로 재배열했다. 품목 나열이 아니라, 계산대 앞에서 바로 쓰는 의사결정 매트릭스.
 
@@ -41916,6 +41916,8 @@ targetpersonas: 칵테일 바 호핑 여행자
 date: 2026-10-08
 ---
 
+<!-- judge: targetpersonas=p1japansolof20s -->
+
 # 서울 크래프트 칵테일 바 가이드 — Asia's 50 Best Bars 2026에 오른 서울 8곳 (2026년 10월 공식 리스트 기준)
 
 > 부제: 제스트 2위(2025 2위) · 앨리스 13위 · 바 참 33위(2025 6위) · M+MS 바 42위 · 공간 74위 · 찰스 H 87위 · 르 챔버 88위(2025 50위) · 소코 89위 — the50.com 공식 리스트 2026-10-08 열람. 강남 4·종로 3·한남 1. 시간은 요일만 게시, 칵테일 평균가는 리스트의 USD 표기만
@@ -52002,9 +52004,9 @@ Q5. 종로에서 한 끼만 먹는다면 어디를 추천하나요?
 
 ---
 
-## [1119] Seoul Bakery Meta Guide
+## [1119] Seoul Bakery Guide: Seoul Bakery Guide — 5 Districts, 5 Types, Iconic Korean Breads, Old-School Top 10
 
-- KR: 외국인 서울 베이커리 메타 가이드
+- KR: 서울 베이커리 가이드 (Seoul Bakery Guide) — 5권역 5유형·한국 대표 빵·노포 Top 10
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/seoul-bakery-meta-guide.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/seoul-bakery-meta-guide.en.html
 - Slug: seoul-bakery-meta-guide
@@ -52023,7 +52025,7 @@ targetpersonas: useutourist, breadlover, foodie, sourdoughpilgrim
 date: 2026-06-20
 ---
 
-# 외국인 서울 베이커리 메타 가이드
+# 서울 베이커리 가이드 (Seoul Bakery Guide) — 5권역 5유형·한국 대표 빵·노포 Top 10
 
 > 5권역 × 5유형 — 프렌치·사워도우·한국 빵·디저트 메타 풀세트
 
@@ -52871,9 +52873,9 @@ Q5. 1일 예산은 어느 정도 잡아야 하나요?
 
 ---
 
-## [1116] Seoul Cafe Meta Guide
+## [1116] Seoul Cafe Guide: Seoul Cafe Guide — 7 Districts, 5 Types, Top 10, and 4 Cafe Tour Patterns
 
-- KR: 외국인 서울 카페 메타 가이드
+- KR: 서울 카페 가이드 (Seoul Cafe Guide) — 7권역 5유형·Top 10·카페 투어 4가지 패턴
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/seoul-cafe-meta-guide.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/seoul-cafe-meta-guide.en.html
 - Slug: seoul-cafe-meta-guide
@@ -52892,7 +52894,7 @@ targetpersonas: useutourist, coffeepilgrim, cafehopper, instagramlover
 date: 2026-06-20
 ---
 
-# 외국인 서울 카페 메타 가이드
+# 서울 카페 가이드 (Seoul Cafe Guide) — 7권역 5유형·Top 10·카페 투어 4가지 패턴
 
 > 7권역 × 5유형 × 시간대 — 외국인 fit 서울 카페 풀 매트릭스 + specialty coffee + 한옥 cafe + 인스타 fit
 
@@ -53817,9 +53819,9 @@ date: 2026-06-20
 
 ---
 
-## [1112] Seoul Summer Signature Full Guide
+## [1112] Seoul Summer Guide: Seoul Summer Guide — Bingsu, Pyongyang Naengmyeon, Hangang Picnic, Banpo Rainbow Fountain, Night Markets
 
-- KR: 외국인 서울 여름 시그니처 풀가이드
+- KR: 서울 여름 가이드 (Seoul Summer Guide) — 빙수·평양냉면·한강 피크닉·반포 무지개분수·야시장
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/seoul-summer-signature-full.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/seoul-summer-signature-full.en.html
 - Slug: seoul-summer-signature-full
@@ -53838,7 +53840,7 @@ targetpersonas: useutourist, summervisitor, family, koreanfoodexplorer
 date: 2026-06-19
 ---
 
-# 외국인 서울 여름 시그니처 풀가이드
+# 서울 여름 가이드 (Seoul Summer Guide) — 빙수·평양냉면·한강 피크닉·반포 무지개분수·야시장
 
 > 6-8월 방문 외국인용 — 빙수·한강·계곡·야시장·치맥·실내 cool 통합 매트릭스
 
@@ -54103,9 +54105,9 @@ date: 2026-06-19
 
 ---
 
-## [1111] Seoul Date Course Meta Guide
+## [1111] Seoul Date Course Guide — 7 Districts with Official Values as of October 2026: Free Museums, Galleries, Han River Night Views and Alley Walks
 
-- KR: 외국인 서울 데이트 코스 메타 가이드
+- KR: 서울 데이트 코스 가이드 — 7권역을 2026년 10월 공식값으로: 무료 미술관·갤러리·한강 야경·골목 산책
 - URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/seoul-date-course-meta.html
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/seoul-date-course-meta.en.html
 - Slug: seoul-date-course-meta
@@ -76318,7 +76320,7 @@ ISSUE 03 · #865 · 2026-06-09
 - URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/zaha-hadid-ddp-cluster.en.html
 - Slug: zaha-hadid-ddp-cluster
 
-# 한국 회 6종 매트릭스 — 활어 vs 숙성·광어·방어·참치·연어·도미·전어 풀세트
+# 한국 회 6가지 (Korean Sashimi) — 활어 vs 숙성, 광어·방어·참치·연어·도미·전어
 
 > 부제: 외국인 관광객용 한국 회 활어·숙성 차이 + 6종 매트릭스 + 일본 sushi와 차이
 
@@ -76535,206 +76537,5 @@ ISSUE 03 · #864 · 2026-06-09
 
 ## 🏷 태그
 #한국회 #KoreanHoe #KoreanSashimi #활어Live#1쫄깃 #숙성Aged감칠맛 #광어Gwang-eo활어#1입문사계절1월정통 #방어Bang-eo겨울#112~2월자갈치노량진삼척구룡포 #참치뱃살Chamchi-Otoro지방#1toro강남압구정홍대80~200k #연어Yeon-eo글로벌무한리필홍대강남신촌25~50k #도미Do-mi한정식정통봄겨울50~120k #전어Jeon-eo가을#19~10월강화소래포구속담 #초장고추장식초쌈채소상추깻잎배추마늘된장 #매운탕매콤생선탕마지막코스 #노량진수산시장새벽도매 #자갈치시장부산정통 #일본sushi차이활어숙성초장간장 #한정식회코스 #일본인관광객 #중국인관광객 #키친구
-
----
-
-## [917] Foreigner Korea Architecture Matrix Top 12
-
-- KR: 외국인 한국 건축 매트릭스 12선 deep dive
-- URL (KR): https://mgself414.github.io/keychingu-content-deploy/content/korea-architecture-matrix.html
-- URL (EN): https://mgself414.github.io/keychingu-content-deploy/content/korea-architecture-matrix.en.html
-- Slug: korea-architecture-matrix
-
-# 외국인용 한국 면안주 장수동 vs 광장 vs 포장마차 vs 한정식 비교 — 어디서 술 한잔?
-
-> 부제: 한국 면안주 4채널 비교 매트릭스 + segment 5 1순위 + 시간·예산·동행 결정 가이드
-
-ISSUE 03 · #863 · 2026-06-09
-
----
-
-## 🎯 왜 면안주 4채널 비교 가이드인가
-
-#861 면안주 6종 매트릭스 + #862 워크플로우 알아도 — 채널 선택이 다음 결정. 한국 면안주 채널 = (1) 장수동 족발 골목 (성북·전국 #1·17:00~03:00 야식)·(2) 광장시장 보쌈 골목 (vlog #1·낮·MZ 인스타)·(3) 종로 포장마차 (소주·골뱅이무침 매니아)·(4) 한정식 코스 (수육·홍어삼합 정통) 4가지. 가격 12,000원 → 150,000원, 분위기 야식 매니아 → vlog → 소주 → 정통 차이. 본 가이드는 4채널 직접 비교 + segment(혼자·커플·가족·MZ·예산형)별 1순위.
-
----
-
-## ★ 4채널 비교 매트릭스 (한눈에)
-
-| 축 | 🦶 장수동 족발 | 🥬 광장 보쌈 | 🍶 포장마차 | 🍱 한정식 코스 |
-|---|---|---|---|---|
-| 메뉴 | 족발 (정통·매콤) | 보쌈 + 보쌈김치 | 골뱅이무침·계란말이 | 수육·홍어삼합 (코스) |
-| 가격 (2~3인) | 25,000~50,000원/1관 | 20,000~40,000원/1관 | 12,000~25,000원 | 한정식 코스 (40,000~150,000원) |
-| 분위기 | 야식·매니아·골목 | vlog·MZ·낮 | 정통·노포·소주 | 정통·격식 |
-| 운영 시간 | 17:00~03:00 (야식 #1) | 09:00~22:00 | 18:00~02:00 | 11:30~22:00 (점심·저녁) |
-| 외국인 친화도 | ★★★★★ (영문 메뉴) | ★★★★★ (vlog #1) | ★★★ (한국어 정통) | ★★★★ (영문 일부) |
-| 결제 | 카드 OK | 카드 OK / 일부 현금 | 현금·카드 혼용 | 카드 OK |
-| 인스타·사진 | ★★★★ (골목) | ★★★★★ (#1 vlog) | ★★★ | ★★★★ (한정식) |
-| 회식·접대 | ★★★ (캐주얼) | ★★★ | ★★ | ★★★★★ (1순위) |
-| 어린이 동반 | ★★ (야식) | ★★★★ (낮 가족) | ★ (술집) | ★★ (정적) |
-| 소주 페어 | ★★★★ (소주 매니아) | ★★★ (막걸리·소주) | ★★★★★ (#1 소주) | ★★★ (전통주) |
-| 외국인 입문 | ★★★★ | ★★★★★ (#1 입문) | ★★ (소주 매니아만) | ★★★★ |
-
----
-
-## 🎯 segment별 1순위 추천
-
-### 👤 솔로 여행자 (Solo)
-
-- 1순위: 광장 보쌈 (낮·vlog·1인분 OK)
-- 2순위: 포장마차 (소주 매니아)
-- 3순위: 장수동 족발 (1인분 가능)
-- 회피: 한정식 (1인 가성비 ↓)
-
-### 💑 커플 (Couple)
-
-- 1순위: 장수동 족발 (야식 데이트)
-- 2순위: 광장 보쌈 (낮 데이트·vlog)
-- 3순위: 한정식 (정통 데이트)
-- 회피: 포장마차 (분위기 ↓·노포)
-
-### 👨‍👩‍👧 가족 (Family)
-
-- 1순위: 광장 보쌈 (낮·가족·vlog)
-- 2순위: 한정식 (정통 가족)
-- 3순위: 장수동 족발 (저녁 가족)
-- 회피: 포장마차 (술집·어린이 X)
-
-### 🎨 MZ 트렌드 (MZ)
-
-- 1순위: 광장 보쌈 (#1 vlog·인스타)
-- 2순위: 장수동 족발 (야식 vlog)
-- 3순위: MZ 족발 체인 (대박)
-- 회피: 한정식 (MZ ↓)
-
-### 🎒 백패커·예산형 (Budget)
-
-- 1순위: 포장마차 (12,000~25,000원 가성비)
-- 2순위: 광장 보쌈 (1관 2~3인 분담)
-- 3순위: 장수동 족발 (1관 분담)
-- 회피: 한정식 (예산 ↑)
-
----
-
-## 🦶 4채널 deep dive
-
-### 🦶 장수동 족발 골목 (Jangsudong Jokbal Alley)
-
-핵심 가치: 전국 #1 + 야식 매니아 + 17:00~03:00.
-
-- 위치: 서울 성북구 장수동 일대
-- 시그니처: 정통 족발·미니족·반반 (매콤+간장)
-- 가격 anchor: 25,000~50,000원/1관 (2~3인)
-- 시간: 17:00~03:00 (야식 매니아 #1)
-- 외국인 친화도: ★★★★★ (영문 메뉴·체인)
-- 추천 매장: 장수동 본점·체인 족발집
-
-### 🥬 광장시장 보쌈 골목 (Gwangjang Bossam Alley)
-
-핵심 가치: vlog #1 + MZ 인스타 + 낮 가족.
-
-- 위치: 서울 종로구 광장시장
-- 시그니처: 보쌈·보쌈김치·쌈채소·MZ 인스타 #1
-- 가격 anchor: 20,000~40,000원/1관 (2~3인)
-- 시간: 09:00~22:00 (낮·저녁)
-- 외국인 친화도: ★★★★★ (vlog #1·영문 메뉴)
-- MZ vlog: 보쌈 골목 한 줄 + 빈대떡·마약김밥 cluster
-
-### 🍶 종로·강남 포장마차 (Pojangmacha)
-
-핵심 가치: 소주 매니아 #1 + 골뱅이무침 + 노포 정통.
-
-- 위치: 종로 포장마차 골목·강남 포장마차·동대문
-- 시그니처: 골뱅이무침·계란말이·우동·라면
-- 가격 anchor: 12,000~25,000원/안주
-- 시간: 18:00~02:00
-- 외국인 친화도: ★★★ (한국어 정통·번역 앱 필요)
-- 소주 매니아: 소주 + 골뱅이 = 한국 정통 #1
-
-### 🍱 한정식 코스 (Hanjeongsik Course)
-
-핵심 가치: 6단계 코스 + 수육·홍어삼합 정통 + 궁중.
-
-- 추천 매장:
-  - 신라호텔 라연 (미슐랭 2스타) — 수육 정통
-  - 삼청각 — 정통
-  - 인사동 한정식 — 가성비 정통
-  - 전라 한정식 — 홍어삼합 정통
-- 가격 anchor: 한정식 코스 40,000~150,000원
-- 시간: 11:30~22:00
-- 외국인 친화도: ★★★★
-
----
-
-## ⚠ 외국인 자주 실수 5가지
-
-1. "4채널 = 비슷": 가격·분위기·시간 완전 다름. 야식 = 장수동 / vlog = 광장 / 소주 = 포장마차 / 정통 = 한정식.
-
-2. "장수동 = 낮": 장수동 = 17:00~03:00 야식 매니아·낮 X.
-
-3. "포장마차 = 영어 OK": 포장마차 = 한국어 정통·번역 앱 필요.
-
-4. "광장 보쌈 = 식사": 광장 = vlog·간식 + 식사 모두·1관 = 2~3인 공유.
-
-5. "한정식 = 항상 비싸다": 한정식 = 40,000~150,000원 (lunch 가성비 가능).
-
----
-
-## ⚙ FAQ 8개
-
-1. 첫 면안주 = 어떤 채널: 광장 보쌈 (낮·#1 입문) → 장수동 족발 (야식).
-2. 인스타·vlog: 광장 보쌈 (#1)·장수동 족발·종로 포장마차.
-3. 소주 매니아: 포장마차 (#1 정통) + 장수동 족발.
-4. 데이트·기념일: 장수동 족발·한정식.
-5. 가족 동반: 광장 보쌈 + 한정식.
-6. 알레르기·임신: #861 disclaimer 참조.
-7. 결제·팁: 카드 OK / 시장·포장마차 = 현금 일부 / 팁 X.
-8. VAT 환급: 식음료 일반 환급 X.
-
----
-
-## ⚠ 의료·안전·식이 disclaimer
-
-면안주 4채널 모두 일반 음식. 임신부·어린이 한정 OK (술·홍어 X). 알레르기 (돼지·해산물·고추) 사전 고지. 술 = 임신부·미성년자 X. 식중독 의심 시 ☎ 1339 (감염병 상담). 본 가이드는 일반 정보, 의료 자문이 아님.
-
-식이 제한 fallback:
-- 할랄·코셔: 4채널 모두 돼지·해산물 → 우회 = 비빔밥·잡채·사찰음식 (#854).
-- 채식·비건: 4채널 모두 비채식 → 채식 = 사찰음식·비빔밥.
-- 글루텐 free: 수육·보쌈·족발 = OK / 골뱅이무침 소면 X / 제육 양념 일부 X.
-
----
-
-## 💰 Essential Tourist Tips
-
-- 4채널 평균 비용 (2026년 6월 기준):
-  - 포장마차 = 12,000~25,000원/안주
-  - 광장 보쌈 = 20,000~40,000원/1관 (2~3인)
-  - 장수동 족발 = 25,000~50,000원/1관 (2~3인)
-  - 한정식 코스 = 40,000~150,000원/인
-- 결제·팁: 카드 OK / 시장·포장마차 = 현금 일부 / 팁 X
-- 응급: ☎ 1339 (감염병 상담) / ☎ 1330 (관광 통역)·☎ 119 (구급·소방)
-
----
-
-## 🔗 관련
-
-- #861 면안주 6종 매트릭스 (선행)
-- #862 면안주 워크플로우
-- #807 국밥 cluster (해장)
-- #825 보양식 cluster (장수동)
-- #837 한정식 cluster (수육·홍어삼합)
-- 음식 cluster 54편 (18 cluster)
-
-## 🌐 외부 SOURCES
-
-- 한국관광공사 (VisitKorea): https://english.visitkorea.or.kr/
-- 서울특별시 관광 (Seoul Tourism): https://english.visitseoul.net/
-- 문화재청 (Cultural Heritage Administration): https://english.cha.go.kr/
-- 국가지표체계 (KOSIS Statistics Korea): https://kosis.kr/eng/
-- 한국지방관광공사 (Regional Tourism KNTO): https://english.visitkorea.or.kr/
-- CNN Travel Korea: https://www.cnn.com/travel/asia
-
-## 🏷 태그
-#면안주4채널비교 #PubFoodVenueComparison #장수동족발골목성북17:00~03:00야식#125~50k관 #광장시장보쌈vlog#109:00~22:00MZ인스타20~40k관 #종로포장마차골뱅이무침소주매니아#118:00~02:0012~25k #한정식코스수육홍어삼합정통40~150k #솔로광장보쌈낮vlog1인분 #커플장수동족발야식데이트 #가족광장보쌈낮vlog안전 #MZ광장보쌈#1vlog인스타 #예산포장마차가성비 #회식한정식정통 #일본인관광객 #중국인관광객 #키친구
 
 ---
