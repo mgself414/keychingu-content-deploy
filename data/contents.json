@@ -10930,8 +10930,8 @@
   {
     "id": "471",
     "slug": "seoul-bunsik-map",
-    "title_kr": "Seoul Bunsik Map — 외국인 관광객 서울 분식 (떡볶이·김밥·만두·순대·튀김) 풀 메타 가이드 12 시그니처",
-    "title_en": "Seoul Bunsik Map",
+    "title_kr": "서울 분식 지도 — 시장·골목·체인에서 떡볶이·김밥·만두·순대·튀김을 먹는 곳 8곳, 시간과 가격 확인본",
+    "title_en": "Seoul Bunsik Map: 8 Places for Tteokbokki, Gimbap, Mandu, Sundae and Fried Snacks in Markets, Alleys and Chains, With Hours and Prices Checked",
     "category": "C",
     "tags": [
       "foreigner",
@@ -10943,17 +10943,17 @@
       "budget",
       "meta-category"
     ],
-    "summary_kr": "서울 분식 매트릭스 — 5축 (떡볶이·김밥·만두·순대·튀김) — 광장시장 진옥화 마약김밥 (미슐랭 빕구르망·한국 #1)·통인시장 5,000원 동전 도시락·망원시장 MZ 분식·떡볶이 체인 3대장 (신전·엽기·죠스 #66 연계)·명동 만두·종로3가 24h 순대국 (#338) + 4 동선 + 5팁 + segment cross-link. 카테고리 메타 가성비·일상식 1편 (#337·#343 sub-deep).",
-    "summary_en": "Seoul bunsik (Korean street food) matrix — 5 axes (tteokbokki·gimbap·mandu·sundae·twigim) — Gwangjang Jin Okhwa magic gimbap (Michelin Bib Gourmand·Korea #1)·Tongin Market 5,000 won coin lunch·Mangwon MZ bunsik·tteokbokki top-3 chains (Shinjeon·Yeopgi·Jaws #66 link)·Myeongdong mandu·Jongno 3-ga 24h sundae-guk (#338) + 4 routes + 5 tips. Category meta budget/daily-food #1 (#337·#343 sub-deep).",
+    "summary_kr": "서울에서 분식을 먹는 곳 8곳을 시장 3·골목 1·체인 4로 나눠 시간과 가격이 확인된 값만 적었다 — 광장시장 먹거리골목 09:00~23:00·모녀김밥 마약김밥 4,000원·떡볶이 3,000원, 통인시장 도시락카페 수~월 11:00~15:00·엽전 10개 5,000원, 망원시장 10:00~21:00, 신당동 마복림 2인 세트 17,000원·둘째·넷째 월요일 휴무, 신전·엽기·죠스·이삭은 공식 메뉴명과 가격 미게시(2026-10-29 한국관광공사·서울관광재단·다이닝코드).",
+    "summary_en": "Gwangjang Market food alley 09:00–23:00, mayak gimbap KRW 4,000 and tteokbokki KRW 3,000, Tongin Market lunchbox cafe 11:00–15:00 with 10 coins for KRW 5,000, Mangwon Market 10:00–21:00, Sindang-dong Mabokrim 2-person set KRW 17,000.",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
     "jp_available": true,
     "date_published": "2026-05-27",
-    "title_ja": "ソウルプンシクマップ",
-    "title_zh": "首尔小吃地图",
-    "summary_zh": "首尔小吃地图——广场市场麻药紫菜包饭(米其林必比登)、通仁市场5000韩元铜钱便当、辣炒年糕三大连锁、明洞饺子与24小时血肠汤。",
-    "summary_ja": "ミシュランビブグルマンの広蔵市場マヤッキンパ、通仁市場の5,000ウォン弁当、トッポッキ3大チェーンなど、ソウル粉食マトリックス。"
+    "title_ja": "ソウル粉食(プンシク)マップ — 市場・路地・チェーンでトッポッキ・キンパ・餃子・スンデ・揚げ物を食べられる8か所、営業時間と価格確認版",
+    "title_zh": "首尔分食地图 — 在市场·小巷·连锁店吃炒年糕·紫菜包饭·饺子·血肠·炸物的8个地方，营业时间与价格核对版",
+    "summary_zh": "广藏市场美食小巷 09:00~23:00 全年营业，麻药紫菜包饭 4,000韩元·炒年糕 3,000韩元；通仁市场便当咖啡厅 11:00~15:00，铜钱 10枚 5,000韩元；望远市场 10:00~21:00；新堂洞马福林2人套餐 17,000韩元，每月第二、第四个周一休息。",
+    "summary_ja": "広蔵市場 食べ物横丁は09:00~23:00、マヤクキンパ4,000ウォン・トッポッキ3,000ウォン。通仁市場 お弁当カフェは水~月11:00~15:00、エンジョン10枚5,000ウォン。望遠市場は10:00~21:00、新堂洞マボンニム2人セット17,000ウォン。"
   },
   {
     "id": "472",
@@ -11261,8 +11261,8 @@
       "daegu",
       "meta-seasonal-event"
     ],
-    "summary_kr": "2026-10-21 공식값: 2026 제14회 대구치맥페스티벌 7/1~7/5 두류공원 일원, 18:00부터 · 2027 일정 공지 전 · 2013년 첫 개최 · 평화시장 닭똥집골목 1972년 삼아통닭에서 시작 · 원주통닭 1978년 동성로 개업",
-    "summary_en": "Official values checked Oct 21, 2026: 2026 14th Daegu Chimaek Festival, 7/1–7/5 around Duryu Park, from 18:00 · 2027 schedule not yet announced · First held in 2013 · Pyeonghwa Market Chicken Gizzard Alley began in 1972 with Samah Tongdak · Wonju Tongdak opened in Dongseong-ro in 1978",
+    "summary_kr": "2026-10-21 공식값: 2026 제14회 대구치맥페스티벌 7/1~7/5 두류공원 일원, 18:00부터 · 2027 일정 공지 전 · 2013년 첫 개최 · 평화시장 닭똥집골목 1972년 삼아통닭에서 시작 · 원주통닭 1978년 동성로 개업 · 삼아·평화통닭 통닭 한 마리 18,000원·똥집 10,000~20,000원(다이닝코드)",
+    "summary_en": "Official values checked Oct 21, 2026: 2026 14th Daegu Chimaek Festival, 7/1–7/5 around Duryu Park, from 18:00 · 2027 schedule not yet announced · First held in 2013 · Pyeonghwa Market Chicken Gizzard Alley began in 1972 with Samah Tongdak · Wonju Tongdak opened in Dongseong-ro in 1978 · Samah and Pyeonghwa Tongdak: one whole chicken 18,000 won, gizzard dishes 10,000~20,000 won (Diningcode)",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
@@ -11270,8 +11270,8 @@
     "date_published": "2026-05-29",
     "title_ja": "大邱チメクガイド — 夏の大邱チメクフェスティバル(斗流公園)と通年営業のチキン店5店(平和市場砂肝横丁のサマ統鶏・東城路のウォンジュ統鶏)",
     "title_zh": "大邱炸鸡啤酒指南 — 夏季大邱炸鸡啤酒节(斗流公园)与全年营业的鸡店5家(平和市场鸡胗胡同的三亚统鸡·东城路元州统鸡)",
-    "summary_ja": "2026-10-21公式値：2026年第14回大邱チメクフェスティバル7/1~7/5 斗流公園一帯、18:00から · 2027年の日程は未発表 · 2013年に初開催 · 平和市場砂肝横丁は1972年のサマ統鶏が始まり · ウォンジュ統鶏は1978年に東城路で開業",
-    "summary_zh": "2026-10-21官方值：2026年第14届大邱炸鸡啤酒节7/1~7/5 斗流公园一带,18:00起 · 2027年日程尚未公布 · 2013年首次举办 · 平和市场鸡胗胡同始于1972年的三亚统鸡 · 元州统鸡1978年在东城路开业"
+    "summary_ja": "2026-10-21公式値：2026年第14回大邱チメクフェスティバル7/1~7/5 斗流公園一帯、18:00から · 2027年の日程は未発表 · 2013年に初開催 · 平和市場砂肝横丁は1972年のサマ統鶏が始まり · ウォンジュ統鶏は1978年に東城路で開業 · サマ・ピョンファ統鶏は統鶏一羽18,000ウォン・砂肝メニュー10,000~20,000ウォン(Diningcode)",
+    "summary_zh": "2026-10-21官方值：2026年第14届大邱炸鸡啤酒节7/1~7/5 斗流公园一带,18:00起 · 2027年日程尚未公布 · 2013年首次举办 · 平和市场鸡胗胡同始于1972年的三亚统鸡 · 元州统鸡1978年在东城路开业 · 三亚·平和统鸡统鸡一整只18,000韩元·鸡胗菜品10,000~20,000韩元(Diningcode)"
   },
   {
     "id": "484",
