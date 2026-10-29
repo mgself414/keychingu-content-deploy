@@ -9979,8 +9979,8 @@
   {
     "id": "434",
     "slug": "korea-practical-map",
-    "title_kr": "Korea Practical Map — 외국인 관광객 입국·세관·텍스프리·날씨 풀 메타 가이드 12 시그니처",
-    "title_en": "Korea Practical Map",
+    "title_kr": "한국 입국·세관·택스리펀 체크리스트 — 출발 전·도착·출국, 숫자로 끝내는 실전 준비",
+    "title_en": "Korea Entry, Customs & Tax Refund Checklist: Before Departure, On Arrival and Before Leaving, Settled by the Numbers",
     "category": "B",
     "tags": [
       "foreigner",
@@ -9988,18 +9988,18 @@
       "weather",
       "meta-practical"
     ],
-    "summary_kr": "방한 외국인 실용 매트릭스 — K-ETA (한시 면제 ~2026-12-31·그 외 사전 신청 10,000원) + 무비자·SES 자동입국 + 세관 (1인 미화 800달러·반입 금지·외화 1만$+) + Tax Free 환급 (30,000원+·인천공항) + 사계절 옷·미세먼지·KF94 + 한국 매너 (신발·연장자·8조). 실용 카테고리 메타 5편 완결.",
-    "summary_en": "Korea inbound practical matrix — K-ETA (temporary exemption through 2026-12-31; others 10,000KRW) + visa-free·SES auto-immigration + customs (USD 800/person·prohibited·10k$ FX) + Tax Free refund (30,000KRW+·Incheon) + 4-season clothing·fine dust·KF94 + Korean manners (shoes·elder·section 8). Practical category #5 final.",
+    "summary_kr": "출발 전·도착·출국 세 번에 확인할 숫자만 모은 입국 체크리스트 — K-ETA 한시 면제 2026-12-31까지·수수료 10,000원, e-Arrival 도착 3일 전부터 무료, 입국 자동심사 42개 국가·지역, 면세 미화 800달러·주류 2L·담배 200개비·향수 100ml, 육류·생과일 반입 금지(미신고 최고 1,000만원), 택스리펀 영수증당 15,000원 이상·즉시환급 1회 100만원 미만(2026-10-29 법무부·관세청·농식품부·법제처·한국관광공사 원문).",
+    "summary_en": "K-ETA exemption through 2026-12-31 (KRW 10,000), e-Arrival 3 days before arrival, 42 automated-clearance countries, USD 800 duty-free allowance, and tax refund from KRW 15,000 per receipt.",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
     "jp_available": true,
     "image": "assets/og/korea-practical-map.jpg",
     "date_published": "2026-05-26",
-    "title_ja": "韓国実用マップ",
-    "title_zh": "韩国实用信息地图",
-    "summary_ja": "訪韓外国人向け実用情報として、K-ETA（電子渡航認証、一時免除は2026-12-31まで・対象外は10,000ウォン）、ビザなし・SES自動入国、税関（1人米ドル800以下、持ち込み禁止品、外貨1万ドル以上）、タックスフリー還付（30,000ウォン以上、仁川空港）、四季の服装・PM2.5・KF94マスク、韓国のマナー（靴・年長者・8条）などがあります。実用カテゴリー5完結。",
-    "summary_zh": "访韩外国人实用信息：包括K-ETA（电子旅行许可，临时免除至2026-12-31，其他10,000韩元）、免签和SES自动入境。海关规定每人美元800以内免税额、禁止携带物品、外币1万美元以上需申报。购物可办理退税（30,000韩元以上，可在仁川机场办理）。请准备四季衣物，注意细颗粒物并佩戴KF94口罩，了解韩国礼仪（如入室脱鞋、尊重长者等）。"
+    "title_ja": "韓国入国・税関・タックスリファンド チェックリスト — 出発前・到着・出国、数字で完結する実践準備",
+    "title_zh": "韩国入境·海关·退税清单 — 出发前·抵达·离境，用数字搞定的实战准备",
+    "summary_ja": "K-ETA 時限免除は2026-12-31まで・10,000ウォン、e-Arrival は到着3日前から無料、自動審査42の国・地域、免税800ドル・酒類2L・400ドル・たばこ200本・香水100ml、タックスリファンドは15,000ウォン以上・即時還付100万ウォン未満・合計500万ウォン以下。",
+    "summary_zh": "K-ETA临时豁免至2026-12-31(10,000韩元)、入境自动通关42个国家·地区、免税800美元+酒类2L·400美元+香烟200支+香水100ml、未申报肉类水果最高1,000万韩元、退税每张收据15,000韩元以上。"
   },
   {
     "id": "435",
