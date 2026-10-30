@@ -1,8 +1,8 @@
 # KeyChinGu — Korea Travel Guides for Foreign Tourists
 
-> Comprehensive curated Korea travel guides for foreign MZ travelers, covering 1,200+ topics across 60+ cities (Seoul·Busan·Jeju·Gyeongju·Andong·Jeonju·etc), 4 languages (KR·EN·CN·JP), covering food, culture, K-content, shopping, seasons, transport, sports and practical essentials for solo, couple, family and budget travelers. Updated 2026-10-30.
+> Comprehensive curated Korea travel guides for foreign MZ travelers, covering 1,200+ topics across 60+ cities (Seoul·Busan·Jeju·Gyeongju·Andong·Jeonju·etc), 4 languages (KR·EN·CN·JP), covering food, culture, K-content, shopping, seasons, transport, sports and practical essentials for solo, couple, family and budget travelers. Updated 2026-10-31.
 
-> Total guides: **1278** | EN: 1278 | CN: 1278 | JP: 1278 | og:image: 250+ | sitemap URLs: 3396
+> Total guides: **1279** | EN: 1279 | CN: 1279 | JP: 1279 | og:image: 250+ | sitemap URLs: 3396
 
 
 ## A (407)
@@ -141,7 +141,7 @@
 - [Seoul Rainy Day Indoor Full Guide](https://mgself414.github.io/keychingu-content-deploy/content/rainy-day.en.html): Ten indoor places for a rainy day in Seoul (official info, Oct 2026) — three free museums (National Museum of Korea open to 21:00 Wed/Sat, M (Korean: https://mgself414.github.io/keychingu-content-deploy/content/rainy-day.html)
   - ... and 114 more
 
-## B (110)
+## B (111)
 
 - [Free Night View Spots TOP 10](https://mgself414.github.io/keychingu-content-deploy/content/night-views.en.html): Ten free night-view spots in Seoul, including Eungbongsan, with how to get there and photo tips, plus seasonal picks, night-hiking safety ad (Korean: https://mgself414.github.io/keychingu-content-deploy/content/night-views.html)
 - [Namsan Trail & Night View](https://mgself414.github.io/keychingu-content-deploy/content/namsan.en.html): Namsan Trail walking + N Seoul Tower night view — foreigner 1st-priority night course with Myeongdong/Itaewon access (Korean: https://mgself414.github.io/keychingu-content-deploy/content/namsan.html)
@@ -173,7 +173,7 @@
 - [Jindo Travel Map: Jindo Travel Guide for Foreign Visitors — 11 Picks](https://mgself414.github.io/keychingu-content-deploy/content/jindo-travel-map.en.html): Eleven Jindo picks: the parting Mystery Sea Road, the Jindo dog theme park, Jindo Arirang, Unlim Sanbang and the Myeongnyang Battle site, wi (Korean: https://mgself414.github.io/keychingu-content-deploy/content/jindo-travel-map.html)
 - [Goseong Travel Map: Gangwon Goseong Travel Guide for Foreign Visitors — 12 Picks](https://mgself414.github.io/keychingu-content-deploy/content/goseong-travel-map.en.html): Twelve Gangwon Goseong picks: the Unification Observatory view of North Korea, the DMZ Museum, Hwajinpo villas and beach and Cheonggan Pavil (Korean: https://mgself414.github.io/keychingu-content-deploy/content/goseong-travel-map.html)
 - [Korea Transport Map: Korea Transport Guide for Foreign Visitors — 12 Essentials](https://mgself414.github.io/keychingu-content-deploy/content/korea-transport-map.en.html): Twelve transport essentials: Climate Card passes, T-money, metro, KTX, Incheon and Gimpo airports, Ttareungi bikes, Kakao T and Uber, with t (Korean: https://mgself414.github.io/keychingu-content-deploy/content/korea-transport-map.html)
-  - ... and 80 more
+  - ... and 81 more
 
 ## F (76)
 
@@ -303,7 +303,7 @@
 
 ## Metadata
 
-- **Coverage**: 1278 curated guides as of 2026-10-30
+- **Coverage**: 1279 curated guides as of 2026-10-31
 - **Languages**: KR (full), EN (full), CN (full), JP (full)
 - **Update frequency**: Weekly
 - **Data sources**: Korea Tourism Organization (VisitKorea), Seoul Tourism Foundation (Visit Seoul), Cultural Heritage Administration, UNESCO World Heritage, Korea Open Government License (KOGL), Naver Maps, Reddit r/koreatravel + user curation
