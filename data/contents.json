@@ -9955,26 +9955,26 @@
   {
     "id": "433",
     "slug": "korea-emergency-map",
-    "title_kr": "한국 응급·안전 가이드 (Korea Emergency Map) — 외국인 관광객 응급·안전·병원 12항목",
-    "title_en": "Korea Emergency Map: Korea Emergency and Safety Guide for Foreign Visitors — 12 Essentials",
+    "title_kr": "한국 응급·안전 가이드 — 급할 때 어디로: 112·119·1330, 응급실·약국 찾기, 분실물, 재난 문자",
+    "title_en": "Korea Emergency and Safety Guide: Where to Turn in a Hurry — 112, 119 and 1330, Finding ER and Pharmacies, Lost Items, Disaster Alerts",
     "category": "B",
     "tags": [
       "foreigner",
       "emergency",
       "meta-practical"
     ],
-    "summary_kr": "112·119·1330 연락처, 외국인 환자센터가 있는 병원, 24시간 약국·편의점, 여행자 보험, 분실·도난 대처까지 외국인 여행자의 응급·안전 12가지를 정리하고 출발 전 준비 목록을 담았다.",
-    "summary_en": "Twelve emergency and safety essentials: 112, 119 and 1330 numbers, hospitals with international patient centers, 24-hour pharmacies, travel insurance and lost-item help, plus a pre-trip checklist.",
+    "summary_kr": "급할 때 누를 번호와 갈 곳을 다섯 갈래로 정리했다 — 경찰 112, 불·구급 119(1339는 감염병 상담), 관광 통역 1330(전화 8개·채팅 4개 언어), E-Gen 응급실 찾기와 밤 12시까지 여는 달빛어린이병원, 휴일 약국 검색, 지하철·공항 유실물센터, 외국어 재난 문자 앱.",
+    "summary_en": "Who to call and where to go in an emergency, in five parts: police 112, fire and ambulance 119 (1339 is for infectious diseases), the 1330 tourist interpretation line (8 languages by phone, 4 by chat), finding ERs on E-Gen and children's clinics open until midnight, holiday pharmacies, subway and airport lost-and-found, and the foreign-language disaster alert app.",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
     "jp_available": true,
     "image": "assets/og/korea-emergency-map.jpg",
     "date_published": "2026-05-26",
-    "title_ja": "韓国緊急・安全ガイド (Korea Emergency Map) — 外国人観光客向け緊急・安全・病院 12項目",
-    "title_zh": "韩国急救·安全指南 (Korea Emergency Map) — 外国游客急救·安全·医院 12项",
-    "summary_ja": "112・119・1330の連絡先、外国人患者センターのある病院、24時間営業の薬局・コンビニ、旅行保険、紛失・盗難対応など緊急・安全の12項目を整理。出発前のチェックリストも掲載。",
-    "summary_zh": "整理12项急救与安全要点：112、119、1330电话，设有外国患者中心的医院，24小时药店与便利店，旅行保险及遗失被盗处理，并附出发前准备清单。"
+    "title_ja": "韓国の緊急・安全ガイド — 急いでいるときはどこへ:112・119・1330、救急外来と薬局の探し方、遺失物、災害メッセージ",
+    "title_zh": "韩国急救·安全指南 — 遇到急事打哪里：112·119·1330，找急诊室·药店，失物招领，灾难短信",
+    "summary_ja": "いざという時にかける番号と行き先を5つに整理 — 警察112、火事・救急119(1339は感染症相談)、観光通訳1330(電話8言語・チャット4言語)、E-Genでの救急室探しと夜12時まで開く月明かり子ども病院、休日の薬局検索、地下鉄・空港の遺失物センター、外国語の災害メッセージアプリ。",
+    "summary_zh": "紧急时该拨哪个号码、去哪里，分五类整理：报警112、火警和急救119(1339是传染病咨询)、观光翻译热线1330(电话8种、聊天4种语言)、E-Gen急诊室查询与营业到午夜的月光儿童医院、节假日药店查询、地铁和机场失物招领处，以及外语灾难短信应用。"
   },
   {
     "id": "434",
@@ -32243,8 +32243,8 @@
       "rainy-day",
       "calendar"
     ],
-    "summary_kr": "2026 한시 캘린더 — 9월 하순~11월 서울에서 실제 열리는 전시 10개를 종료일 순으로: 카우스 한국 미술관 첫 개인전(~12/27)·테이트모던 순회 서도호(~2027/2/9, 수·토 21시)·가우디 서거 100주기전(~10/31)·마틴 파 회고전(~10/18, 무료)·리움 구정아·APMA 조나스 우드·SeMA 린 허쉬만 리슨 등. 요금·야간 개장·예매 채널 표, 이틀 동선, 흔한 실수 3",
-    "summary_en": "Seoul's limited-run calendar of 10 exhibitions actually open from late September to November 2026, ordered by closing date: KAWS's first Korean museum solo (through 12/27), Do Ho Suh's Tate Modern-toured show (through 2027/2/9, open to 9 PM Wed/Sat), the Gaudí centenary exhibition (through 10/31), the free Martin Parr retrospective (through 10/18), plus Koo Jeong A at Leeum, Jonas Wood at APMA and Lynn Hershman Leeson at SeMA — with fees, late openings, booking channels, a two-day route and three common mistakes",
+    "summary_kr": "2026 한시 캘린더 — 9월 하순~11월 서울에서 실제 열리는 전시 10개를 종료일 순으로: 카우스 한국 미술관 첫 개인전(~12/27)·테이트모던 순회 서도호(~2027/2/9, 수·토 21시)·가우디 서거 100주기전(10/31 종료)·마틴 파 회고전(10/18 종료, 무료)·리움 구정아·APMA 조나스 우드·SeMA 린 허쉬만 리슨 등. 요금·야간 개장·예매 채널 표, 이틀 동선, 흔한 실수 3",
+    "summary_en": "Seoul's limited-run calendar of 10 exhibitions actually open from late September to November 2026, ordered by closing date: KAWS's first Korean museum solo (through 12/27), Do Ho Suh's Tate Modern-toured show (through 2027/2/9, open to 9 PM Wed/Sat), the Gaudí centenary exhibition (ended 10/31), the free Martin Parr retrospective (ended 10/18), plus Koo Jeong A at Leeum, Jonas Wood at APMA and Lynn Hershman Leeson at SeMA — with fees, late openings, booking channels, a two-day route and three common mistakes",
     "date_published": "2026-09-17",
     "en_available": true,
     "cn_available": true,
@@ -32252,8 +32252,8 @@
     "instagram_posted": false,
     "title_zh": "首尔秋季展览日历2026——KAWS·徐道获·高迪·马丁·帕尔，从10月到初冬钉死日期的10选",
     "title_ja": "ソウル秋の展覧会カレンダー2026 — カウス・ソ・ドホ・ガウディ・マーティン・パー、10月から初冬まで日付が刻まれた10選",
-    "summary_zh": "2026年限时日历——9月下旬至11月首尔实际正在展出的10个展览，按结束日期排序：韩国美术馆首次KAWS个展(~12/27)、泰特现代巡展徐道获(~2027/2/9，周三·周六开放至21点)、高迪逝世100周年展(~10/31)、马丁·帕尔回顾展(~10/18，免费)、Leeum具贞娥、APMA乔纳斯·伍德、SeMA林恩·赫什曼·利森等。附票价·夜间开放·预约渠道表、两日路线与常见错误3条",
-    "summary_ja": "2026年限定カレンダー — 9月下旬〜11月にソウルで実際に開催中の展覧会10件を終了日順に：韓国の美術館初のカウス個展(〜12/27)、テート・モダン巡回のソ・ドホ展(〜2027/2/9、水・土は21時まで)、ガウディ没後100年展(〜10/31)、マーティン・パー回顧展(〜10/18、無料)、Leeumのク・ジョンア、APMAのジョナス・ウッド、SeMAのリン・ハーシュマン・リーソンなど。料金・夜間開館・予約チャネル表、2日コース、よくある失敗3つ"
+    "summary_zh": "2026年限时日历——9月下旬至11月首尔实际正在展出的10个展览，按结束日期排序：韩国美术馆首次KAWS个展(~12/27)、泰特现代巡展徐道获(~2027/2/9，周三·周六开放至21点)、高迪逝世100周年展(10/31已结束)、马丁·帕尔回顾展(10/18已结束，免费)、Leeum具贞娥、APMA乔纳斯·伍德、SeMA林恩·赫什曼·利森等。附票价·夜间开放·预约渠道表、两日路线与常见错误3条",
+    "summary_ja": "2026年限定カレンダー — 9月下旬〜11月にソウルで実際に開催中の展覧会10件を終了日順に：韓国の美術館初のカウス個展(〜12/27)、テート・モダン巡回のソ・ドホ展(〜2027/2/9、水・土は21時まで)、ガウディ没後100年展(10/31終了)、マーティン・パー回顧展(10/18終了、無料)、Leeumのク・ジョンア、APMAのジョナス・ウッド、SeMAのリン・ハーシュマン・リーソンなど。料金・夜間開館・予約チャネル表、2日コース、よくある失敗3つ"
   },
   {
     "id": "1377",
