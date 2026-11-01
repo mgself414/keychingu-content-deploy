@@ -10462,8 +10462,8 @@
   {
     "id": "452",
     "slug": "korea-kdrama-spots-map",
-    "title_kr": "한국 촬영지 가이드 (Korea K-drama Spots Map) — 외국인 관광객 드라마·영화 촬영지 12곳",
-    "title_en": "Korea K-drama Spots Map: Korea Filming Locations Guide for Foreign Visitors — 12 Picks",
+    "title_kr": "한국 드라마·영화 촬영지 가이드 — 기생충·이태원 클라쓰·오징어 게임·도깨비·겨울연가, 주소 확인된 곳만",
+    "title_en": "Korean Drama and Film Location Guide: Parasite, Itaewon Class, Squid Game, Goblin and Winter Sonata, Only Places With Confirmed Addresses",
     "category": "B",
     "tags": [
       "foreigner",
@@ -10473,18 +10473,18 @@
       "squid-game",
       "meta-category"
     ],
-    "summary_kr": "〈도깨비〉·〈이태원 클라쓰〉·〈오징어 게임〉 등 드라마와 영화 촬영지 12곳을 정리하고, 강릉·인천 같은 지방 촬영지와 시간대별 동선을 안내한다.",
-    "summary_en": "Twelve filming locations from Korean dramas and films, such as Goblin, Itaewon Class and Squid Game, including spots beyond Seoul like Gangneung and Incheon, with routes organized by time of day.",
+    "summary_kr": "기생충 계단과 피자집, 이태원 클라쓰 단밤 거리, 오징어 게임 쌍문동 시장, 도깨비 주문진 방파제, 겨울연가 남이섬까지 — 한국관광공사가 주소와 장면을 확인한 촬영지를 서울 도심·근교·강원 바다 세 갈래로 묶고, 남이섬 입장료 19,000원과 배 시간, 촬영지 매너를 담았다.",
+    "summary_en": "Parasite's stairs and pizza shop, Itaewon Class's DanBam street, Squid Game's Ssangmun-dong market, Goblin's Jumunjin breakwater and Winter Sonata's Nami Island, grouped into three routes with addresses checked by VisitKorea, plus Nami Island's KRW 19,000 entry, ferry hours and etiquette.",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
     "jp_available": true,
     "image": "assets/og/korea-kdrama-spots-map.jpg",
     "date_published": "2026-05-26",
-    "title_ja": "韓国ロケ地ガイド (Korea K-drama Spots Map) — 外国人観光客向けドラマ・映画ロケ地 12か所",
-    "title_zh": "韩国取景地指南 (Korea K-drama Spots Map) — 外国游客电视剧·电影取景地 12处",
-    "summary_zh": "整理《鬼怪》《梨泰院Class》《鱿鱼游戏》等剧集和电影的12处取景地，含江陵、仁川等首尔以外地点，并按时段安排路线。",
-    "summary_ja": "『トッケビ』『梨泰院クラス』『イカゲーム』などドラマ・映画のロケ地12か所を紹介。江陵や仁川など地方のスポットと、時間帯別のルートも案内します。"
+    "title_ja": "韓国ドラマ・映画ロケ地ガイド — パラサイト・梨泰院クラス・イカゲーム・トッケビ・冬のソナタ、住所が確認できた場所だけ",
+    "title_zh": "韩国电视剧·电影取景地指南 — 寄生虫·梨泰院Class·鱿鱼游戏·孤单又灿烂的神：鬼怪·冬季恋歌，只收录地址已核实的地方",
+    "summary_zh": "从《寄生虫》的阶梯和披萨店、《梨泰院Class》的DanBam街、《鱿鱼游戏》双门洞市场，到《鬼怪》注文津防波堤和《冬季恋歌》南怡岛，按首尔市区·近郊·江原海边三条路线整理韩国观光公社确认地址的取景地，附南怡岛门票19,000韩元、船班时间与拍摄礼仪。",
+    "summary_ja": "『パラサイト』の階段とピザ店、『梨泰院クラス』のタンバム通り、『イカゲーム』の双門洞の市場、『トッケビ』の注文津防波堤、『冬のソナタ』の南怡島まで、韓国観光公社が住所を確認したロケ地をソウル都心・近郊・江原の海の3ルートに。南怡島入場料19,000ウォンと船の時間、撮影マナーも。"
   },
   {
     "id": "453",
