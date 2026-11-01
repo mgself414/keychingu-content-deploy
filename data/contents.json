@@ -9901,8 +9901,8 @@
   {
     "id": "431",
     "slug": "korea-payment-sim-map",
-    "title_kr": "한국 결제·SIM 가이드 (Korea Payment·SIM Map) — 외국인 관광객 결제·SIM·WiFi 12항목",
-    "title_en": "Korea Payment·SIM Map: Korea Payment and SIM Guide for Foreign Visitors — 12 Essentials",
+    "title_kr": "한국 결제·통신 가이드 — 입국 첫날 순서대로: eSIM·교통카드·카드 결제·환전·택스리펀",
+    "title_en": "Korea Payment and Connectivity Guide: Your First Day in Order, eSIM, Transit Card, Card Payments, Currency Exchange and Tax Refund",
     "category": "B",
     "tags": [
       "foreigner",
@@ -9914,17 +9914,17 @@
       "exchange",
       "meta-practical"
     ],
-    "summary_kr": "카드와 Apple Pay·Samsung Pay, 위챗·알리페이·LINE Pay, SIM·eSIM, Seoul WiFi, 환전까지 방한 외국인의 결제·통신 12가지를 정리하고 현금만 필요하다는 오해 등 흔한 실수 3가지를 바로잡는다.",
-    "summary_en": "Twelve payment and connectivity essentials: cards, Apple Pay, WeChat Pay, Alipay, LINE Pay, SIM and eSIM, Seoul WiFi and currency exchange, with three common mistakes such as assuming cash only.",
+    "summary_kr": "인천공항에 내려 시내에 닿기까지 eSIM·교통카드·카드 결제·환전·택스리펀을 순서대로 정리했다. KT eSIM은 설치하는 순간부터 기간이 흐르니 도착 후 설치하고, 기후동행카드는 공항에서 서울 가는 길엔 못 쓰며, 택스리펀은 영수증 한 건 15,000원부터다.",
+    "summary_en": "From landing at Incheon to reaching the city: eSIM, transit card, card payments, currency exchange and tax refunds in order. KT eSIM time starts when you install it, the Climate Card can't take you from the airport into Seoul, and tax refunds start at KRW 15,000 per receipt.",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
     "jp_available": true,
     "date_published": "2026-05-26",
-    "title_ja": "韓国決済・SIMガイド (Korea Payment·SIM Map) — 外国人観光客向け決済・SIM・WiFi 12項目",
-    "title_zh": "韩国支付·SIM指南 (Korea Payment·SIM Map) — 外国游客支付·SIM·WiFi 12项",
-    "summary_ja": "カード、Apple PayとSamsung Pay、WeChat Pay、Alipay、LINE Pay、SIM・eSIM、Seoul WiFi、両替など決済・通信の12項目を整理。現金のみで足りるという誤解などよくある失敗3つも解説。",
-    "summary_zh": "整理12项支付与通信要点：银行卡、Apple Pay与Samsung Pay、微信、支付宝和LINE Pay、SIM与eSIM、Seoul WiFi及换汇，并纠正只需现金等3个常见误区。"
+    "title_ja": "韓国の決済・通信ガイド — 入国初日を順番どおりに:eSIM・交通カード・カード決済・両替・タックスリファンド",
+    "title_zh": "韩国支付·通信指南 — 入境第一天按顺序来：eSIM·交通卡·刷卡支付·换汇·退税",
+    "summary_ja": "仁川空港に着いてから市内に入るまでの、eSIM・交通カード・カード決済・両替・タックスリファンドを順番に整理。KTのeSIMはインストールした瞬間から期間が進むので到着後に入れる、気候同行カードは空港からソウルへの移動には使えない、タックスリファンドは1枚15,000ウォンから。",
+    "summary_zh": "从仁川机场落地到进入市区，按顺序整理eSIM、交通卡、刷卡支付、换钱与退税。KT eSIM从安装那一刻开始计时，所以落地后再装；气候同行卡不能用于从机场进首尔；退税单张收据15,000韩元起。"
   },
   {
     "id": "432",
