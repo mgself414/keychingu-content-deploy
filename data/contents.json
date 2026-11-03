@@ -5046,25 +5046,25 @@
   {
     "id": "251",
     "slug": "foreigner-emergency",
-    "title_kr": "응급의료 보험 풀가이드",
-    "title_en": "Korea Emergency Medical Guide",
+    "title_kr": "한국 병원비·여행자 보험 청구 가이드 — 진단서는 진료 때 요청, 영수증은 수납 때: 서류 5종·발급 수수료 상한·직접청구",
+    "title_en": "Korean Hospital Bills & Travel Insurance Claim Guide — Ask for the Certificate at the Visit, the Receipts at Payment: 5 Documents, Fee Caps, Direct Billing",
     "category": "H",
     "tags": [
       "foreigner",
       "emergency",
       "pharmacy"
     ],
-    "summary_kr": "외국인 안전 1순위 응급의료·보험 12선 — 119(응급)·1339(감염병 상담)·1345(외국인 종합) + 외국인 친화 ER(서울대·삼성·아산·세브란스) + 24h 약국 + 외국인 의료 보험 Travel Insurance + 의료 통역 (영·중·일·아랍·러시아)",
-    "summary_en": "Korea Foreigner Emergency 12-pick — 119 (emergency multilingual 24h) + 1339 (infectious disease hotline) + 1345 (foreigner help) + 112 (police) + Foreigner-friendly ERs (SNU/Samsung/Asan/Severance) + 24h pharmacies + Travel insurance + Medical interpretation in EN/CN/JP/Arabic/Russian",
+    "summary_kr": "건강보험이 없는 여행자가 한국 병원에서 진료비를 낸 뒤 귀국해 여행자 보험을 청구할 때 필요한 서류 5종과 받는 시점 — 진단서는 진료 때 의사에게, 영수증·세부내역서는 수납 때, 발급 수수료 상한(진단서 20,000원), 서울아산·세브란스 직접청구, 1345·1339는 응급 번호가 아니라는 점까지.",
+    "summary_en": "The five documents a traveler without Korean health insurance needs from a hospital to claim on travel insurance back home, and when to ask for them: the medical certificate from the doctor during the visit, receipts and the itemized receipt at payment, official fee caps (₩20,000 for a medical certificate), direct billing at Asan and Severance, and why 1345 and 1339 are not emergency numbers.",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
     "jp_available": true,
     "date_published": "2026-05-19",
-    "title_ja": "緊急医療保険完全ガイド",
-    "title_zh": "紧急医疗保险全攻略",
-    "summary_ja": "外国人の安全最優先、応急医療・保険 12選。119（緊急）、1339（感染症相談）、1345（外国人総合）、外国人向けER（ソウル大・サムスン・アサン・セブランス）、24時間薬局、外国人医療保険、旅行保険、医療通訳（英・中・日・アラビア・ロシア）など。",
-    "summary_zh": "119急救·1339传染病咨询·1345外国人热线+外国人友好急诊(首尔大·三星·峨山·世福兰斯)+24小时药房与多语种医疗翻译12选。"
+    "title_ja": "韓国の病院代・旅行保険の請求ガイド — 診断書は診察のときに依頼、領収書は会計のときに：書類5種・発行手数料の上限・直接請求",
+    "title_zh": "韩国医疗费与旅行保险理赔指南——诊断书在就诊时申请，收据在缴费时拿：5种文件·开具手续费上限·直接理赔",
+    "summary_ja": "韓国の健康保険がない旅行者が病院で支払った後、帰国して旅行保険を請求するのに必要な書類5種と受け取るタイミング — 診断書は診察のときに医師へ、領収書と明細書は会計のときに、発行手数料の上限(診断書20,000ウォン)、ソウル峨山病院・セブランス病院の直接請求、1345・1339は救急番号ではないこと。",
+    "summary_zh": "没有韩国健康保险的旅行者在韩国医院付费后、回国申请旅行保险所需的5种文件及索取时机——诊断书在就诊时向医生要，收据和明细单在缴费时拿，开具手续费上限(诊断书20,000韩元)，首尔峨山医院和Severance医院的直接理赔，以及1345和1339并非急救电话。"
   },
   {
     "id": "252",
