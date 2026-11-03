@@ -9234,8 +9234,8 @@
   {
     "id": "405",
     "slug": "emergency-hospital",
-    "title_kr": "응급 병원 안전 풀가이드",
-    "title_en": "Emergency·Hospital·Safety Full Guide",
+    "title_kr": "서울 외국인 진료 병원 가이드 — 국제진료센터는 낮 시간, 밤·주말은 응급실: 8곳 연락처·언어·시간",
+    "title_en": "Seoul Hospitals for Foreign Patients — International Healthcare Centers Are Daytime Only, Nights and Weekends Mean the ER: Contacts, Languages and Hours for 8 Hospitals",
     "category": "H",
     "tags": [
       "foreigner",
@@ -9244,17 +9244,17 @@
       "samsung",
       "insurance"
     ],
-    "summary_kr": "강남세브란스·삼성서울·신촌세브란스·아산병원 응급실, 영어 약국, 119·112·1330 비상 연락처, 여행자 보험까지 외국인을 위한 응급·병원·안전 정보와 위기 대응 코스를 담았다.",
-    "summary_en": "Emergency and safety guide for foreign visitors: English-friendly ERs at Gangnam Severance, Samsung, Sinchon Severance and Asan, pharmacies, 119, 112 and 1330 lines, insurance and crisis routes.",
+    "summary_kr": "서울에서 외국어로 진료받을 수 있는 병원 8곳을 지역별로 정리했다 — 서울대·세브란스·서울아산 등 국제진료센터 연락처와 통역 언어, 낮 시간만 여는 센터 운영시간, 밤·주말에 갈 24시간 응급실, 위급하면 119가 먼저인 상황별 순서.",
+    "summary_en": "Eight Seoul hospitals where foreigners can get care, by area: international clinic contacts and interpretation languages at Seoul National University, Severance, Asan and others, clinic hours that are daytime only, 24-hour ERs for nights and weekends, and a step-by-step guide that puts 119 first in an emergency.",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
     "jp_available": true,
     "date_published": "2026-05-26",
-    "title_ja": "緊急・病院・安全フルガイド",
-    "title_zh": "急救·医院·安全指南",
-    "summary_ja": "外国人向けの緊急・病院・安全ガイド。江南セブランス、サムスン、新村セブランス、峨山病院の救急、薬局、119・112・1330の連絡先、旅行保険、緊急時の対応コースを掲載します。",
-    "summary_zh": "面向外国游客的急救、医院与安全信息：江南世富兰斯、三星、新村世富兰斯、峨山医院急诊室，药店，119、112、1330热线、旅行保险及危机应对路线。"
+    "title_ja": "ソウルの外国人対応病院ガイド — 国際診療センターは昼間、夜・週末は救急外来: 8か所の連絡先・言語・時間",
+    "title_zh": "首尔外国人就诊医院指南 — 国际诊疗中心只在白天，夜间·周末去急诊室：8家医院的联系方式·语言·时间",
+    "summary_ja": "ソウルで外国語で診療を受けられる病院8か所を地域別に整理 — ソウル大学病院・セブランス・ソウル峨山病院などの国際診療センターの連絡先と通訳言語、昼間だけのセンター時間、夜間・週末に行く24時間救急外来、緊急時はまず119の状況別の手順。",
+    "summary_zh": "按地区整理首尔8家可用外语就诊的医院——首尔大学医院、Severance、首尔峨山医院等国际诊疗中心的联系方式与翻译语言，只在白天开放的中心时间，夜间和周末可去的24小时急诊室，以及紧急时先拨119的分情况步骤。"
   },
   {
     "id": "406",
