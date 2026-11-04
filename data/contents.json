@@ -12123,8 +12123,8 @@
   {
     "id": "528",
     "slug": "pharmacy-healthcare",
-    "title_kr": "약국·헬스케어 심층 가이드",
-    "title_en": "Pharmacy·Healthcare Deep Dive",
+    "title_kr": "한국 여행 건강 문제 가이드 — 응급이 아닐 때 어디로: 처방약이 떨어졌다·이가 아프다·렌즈가 없다·사후피임약·마음이 힘들다, 창구별 번호와 세부 편 링크",
+    "title_en": "Korea Travel Health Guide — Where to Go When It's Not an Emergency: Out of Prescription Meds, Toothache, Lost Contacts, Morning-After Pill, Struggling Mentally — Numbers by Counter and Links to Detailed Guides",
     "category": "E",
     "tags": [
       "foreigner",
@@ -12135,17 +12135,17 @@
       "gangnam",
       "itaewon"
     ],
-    "summary_kr": "24시간 약국, 보험과 통역, 치과·안과, 정신건강과 한방 진료까지 외국인이 한국에서 의료 서비스를 이용하는 방법을 12항목으로 정리했다.",
-    "summary_en": "A 12-item guide to using healthcare in Korea as a foreigner, covering 24-hour pharmacies, insurance and interpreters, dental and eye care, mental health and Korean medicine.",
+    "summary_kr": "응급이 아닌 건강 문제별 창구 허브 — 처방약이 떨어지면 의원에서 다시 처방(성분명은 식약처 의약품안전나라 검색), 밤·휴일 치과·약국은 응급의료포털 E-Gen, 안경·콘택트렌즈는 안경원에서만(온라인 판매 금지), 긴급피임약은 전문의약품이라 처방 필요, 마음이 힘들면 109·1577-0199(24시간)·한국어가 안 되면 1330 통역, 감염병 의심은 1339(24시간·외국어는 1330·1345 3자 통화), 수돗물·미세먼지·식품 알레르기 표시까지 — 약 사기·병원 절차·응급·보험은 전용 편 링크.",
+    "summary_en": "A hub of counters for non-emergency health problems: if your prescription runs out, get a new one at a clinic (search the active ingredient on the Ministry of Food and Drug Safety's Drug Safety Nara); for dentists and pharmacies open at night and on holidays, use the emergency medical portal E-Gen; glasses and contact lenses are sold only at optical shops (online sales are banned); the morning-after pill is prescription-only, so you need a prescription; if you are struggling mentally, call 109 or 1577-0199 (24 hours), and if you don't speak Korean, use 1330 interpretation; for suspected infectious disease, call 1339 (24 hours; foreign languages by three-way call with 1330 or 1345); plus tap water, fine dust, and food allergen labels — links to dedicated guides for buying medicine, hospital procedures, emergencies, and insurance.",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
     "jp_available": true,
     "date_published": "2026-05-28",
-    "title_zh": "药店医疗保健深度探索",
-    "title_ja": "薬局・ヘルスケア 深掘りガイド",
-    "summary_ja": "24時間営業の薬局、保険と通訳、歯科・眼科、メンタルヘルスや韓方診療まで、外国人が韓国で医療を利用する方法を12項目で整理しました。",
-    "summary_zh": "用12项内容介绍外国人在韩国就医的方法，涵盖24小时药店、保险与翻译、牙科和眼科、心理健康与韩医。"
+    "title_zh": "韩国旅行健康问题指南 — 非紧急时该去哪里：处方药吃完了·牙痛·没有隐形眼镜·紧急避孕药·心里难受，各窗口电话与详细篇链接",
+    "title_ja": "韓国旅行の健康トラブルガイド — 緊急ではないときの行き先：処方薬が切れた・歯が痛い・コンタクトがない・アフターピル・心がつらい、窓口別の番号と詳細記事リンク",
+    "summary_ja": "緊急ではない健康トラブル別の窓口ハブ — 処方薬が切れたら医院で再処方（成分名は食品医薬品安全処 (식약처) の医薬品安全ナラで検索）、夜・休日の歯科・薬局は応急医療ポータル E-Gen、眼鏡・コンタクトレンズは眼鏡店でのみ（オンライン販売は禁止）、緊急避妊薬は専門医薬品なので処方が必要、心がつらいときは109・1577-0199（24時間）・韓国語が通じなければ1330で通訳、感染症が疑われるときは1339（24時間・外国語は1330・1345との3者通話）、さらに水道水・微小粉塵・食品アレルギー表示まで — 薬の買い方・病院の手順・救急・保険は専用記事へのリンク付き。",
+    "summary_zh": "非紧急健康问题的窗口汇总 — 处方药吃完了到诊所重新开处方（成分名可在食品医药品安全处 (식약처) 药品安全国检索），夜间·节假日的牙科和药店用应急医疗门户 E-Gen，眼镜·隐形眼镜只能在眼镜店购买（禁止网上销售），紧急避孕药属于专业药品需要处方，心里难受可拨 109·1577-0199（24小时），不会说韩语请拨 1330 口译，怀疑传染病请拨 1339（24小时，外语在 1330·1345 三方通话），还包括自来水·雾霾·食物过敏标示 — 买药·医院流程·急救·保险请见专门篇链接。"
   },
   {
     "id": "529",
