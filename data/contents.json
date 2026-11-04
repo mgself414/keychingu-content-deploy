@@ -9874,8 +9874,8 @@
   {
     "id": "430",
     "slug": "korea-transport-map",
-    "title_kr": "한국 교통 가이드 (Korea Transport Map) — 외국인 관광객 교통 12항목",
-    "title_en": "Korea Transport Map: Korea Transport Guide for Foreign Visitors — 12 Essentials",
+    "title_kr": "한국 교통 가이드 — 상황별로 고르는 카드·수단·앱: 기후동행 단기권(1일 5,000원~7일 20,000원)·T-money·코레일패스·공항철도·올빼미버스, 세부는 편별 링크",
+    "title_en": "Korea Transport Guide — Pick the Card, Mode and App for Your Situation: Climate Card Short-Term Pass (₩5,000 for 1 Day to ₩20,000 for 7 Days) · T-money · KORAIL PASS Plus · AREX Airport Express · Owl Bus, With Details in Linked Guides",
     "category": "B",
     "tags": [
       "foreigner",
@@ -9885,18 +9885,18 @@
       "climate-card",
       "meta-practical"
     ],
-    "summary_kr": "Climate Card 단기권과 T-money, 지하철, KTX, 인천공항·김포공항, 따릉이·카카오T·우버까지 외국인 여행자의 교통 12가지를 정리하고 Climate Card 사용 범위 등 흔한 실수 3가지를 짚는다.",
-    "summary_en": "Twelve transport essentials: Climate Card passes, T-money, metro, KTX, Incheon and Gimpo airports, Ttareungi bikes, Kakao T and Uber, with three common mistakes such as the card's coverage.",
+    "summary_kr": "한국 교통을 상황별로 고르는 허브 — 서울 지하철·버스 무제한은 기후동행 외국인 단기권(1일 5,000~7일 20,000원, 해외카드 결제·2026-10 범위), 전국·택시는 T-money 트래블카드 4,000원, 환전 겸용 WOWPASS, KTX 전국은 코레일패스 플러스(2일 131,000원~), K-Pass·기후동행패스는 단기 방문자가 쓰기 어려운 이유, 공항철도 직통 43~51분, 올빼미버스·택시 할증·따릉이까지 — 타는 절차는 수단별 편으로 연결.",
+    "summary_en": "A hub for choosing how to get around Korea by situation: the Climate Card short-term pass for unlimited Seoul subway and bus (₩5,000 for 1 day to ₩20,000 for 7, foreign cards accepted, coverage as of Oct 2026), the ₩4,000 T-money travel card for nationwide transit and taxis, WOWPASS for exchange plus payment, KORAIL PASS Plus for KTX travel (from ₩131,000 for 2 days), why K-Pass and the Climate Pass are hard for short-stay visitors to use, the 43–51 minute airport express, Owl buses, taxi surcharges and Seoul Bike — with links to the step-by-step guides for each mode.",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
     "jp_available": true,
     "image": "assets/og/korea-transport-map.jpg",
     "date_published": "2026-05-26",
-    "title_ja": "韓国交通ガイド (Korea Transport Map) — 外国人観光客向け交通 12項目",
-    "title_zh": "韩国交通指南 (Korea Transport Map) — 外国游客交通 12项",
-    "summary_ja": "Climate Cardの短期券、T-money、地下鉄、KTX、仁川・金浦空港、自転車シェア、カカオT、ウーバーなど交通12項目を整理。Climate Cardの利用範囲などよくある失敗3つも解説します。",
-    "summary_zh": "整理12项交通要点：Climate Card短期票、T-money、地铁、KTX、仁川与金浦机场、首尔公共自行车、Kakao T和Uber，并说明Climate Card适用范围等3个常见误区。"
+    "title_ja": "韓国の交通ガイド — 状況別に選ぶカード・手段・アプリ: 気候同行短期券(1日5,000ウォン〜7日20,000ウォン)・T-money・KORAIL PASS Plus・空港鉄道・フクロウバス、詳細は各編のリンクへ",
+    "title_zh": "韩国交通指南——按情况选卡·选交通方式·选App：气候同行短期券(1日5,000韩元~7日20,000韩元)·T-money·KORAIL PASS·机场铁路·猫头鹰巴士，细节见各专题链接",
+    "summary_ja": "状況別に韓国の交通カード・手段・アプリを選ぶハブ。ソウルの地下鉄・バス乗り放題は気候同行短期券(1日5,000〜7日20,000ウォン、海外カード決済可、2026-10の適用範囲)、全国・タクシーはT-moneyトラベルカード4,000ウォン、両替兼用はWOWPASS、KTXで全国を回るならKORAIL PASS Plus(2日131,000ウォン〜)。K-Pass・気候同行パスが短期滞在者に使いにくい理由、空港鉄道直通43〜51分、フクロウバス・タクシー割増・タルンイまで。乗り方の手順は各編へ。",
+    "summary_zh": "按情况挑选韩国交通卡·方式·App的枢纽指南：首尔地铁·公交不限次用气候同行短期券(1日5,000~7日20,000韩元，可用海外卡，2026-10起适用范围)，全国·出租车用T-money旅行卡4,000韩元，兼顾换汇的WOWPASS，KTX全国游用KORAIL PASS Plus(2日131,000韩元起)，K-Pass与气候同行通票为何不适合短期访客，机场铁路直达43~51分，猫头鹰巴士·出租车加价·首尔公共自行车——乘坐步骤见各专题文章。"
   },
   {
     "id": "431",
