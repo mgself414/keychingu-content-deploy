@@ -10004,8 +10004,8 @@
   {
     "id": "435",
     "slug": "exchange-card-atm",
-    "title_kr": "환전 신용카드 ATM 결제 심층 가이드",
-    "title_en": "Exchange·Credit Card·ATM·Payment Deep Dive",
+    "title_kr": "한국 환전 가이드 — 원화로 바꾸는 네 곳과 규칙: 공항 환전소(보통 06:00~22:00)·공항 은행·시내 은행(평일 09:00~16:00)·등록 환전영업자, 입국 때 미화 1만 달러 초과는 세관 신고, 떠날 때 남은 원화 되바꾸기",
+    "title_en": "Korea Currency Exchange Guide — Four Places to Get Won, and the Rules: Airport Exchange Counters (Usually 06:00~22:00), Airport Bank Branches, City Banks (Weekdays 09:00~16:00), Registered Exchange Dealers; Declare Cash Over USD 10,000 at Customs on Arrival; Changing Leftover Won Back When You Leave",
     "category": "H",
     "tags": [
       "foreigner",
@@ -10016,17 +10016,17 @@
       "first-visit",
       "payment"
     ],
-    "summary_kr": "명동 환전소와 은행, 인천공항 환전, 해외 카드, 카카오페이·네이버페이, 24시간 ATM, Wise·Revolut 트래블 카드까지 외국인 환전·결제 12가지를 정리하고 시내와 공항 환율 차이 등 흔한 실수를 짚는다.",
-    "summary_en": "Twelve exchange and payment essentials: Myeongdong exchange shops, banks, airport exchange, foreign cards, KakaoPay, Naver Pay, 24-hour ATMs and Wise or Revolut cards, with city-versus-airport rates.",
+    "summary_kr": "외화를 원화로 바꾸는 네 곳과 규칙 — 공항 환전소(보통 06:00~22:00·일부 24시간), 공항 은행 지점(평일 09:00~16:00·주말 휴무), 시내 은행, 등록 환전영업자(돈 바꾸기와 여행자수표 매입만, 여권번호를 장부에 기록). 입국 때 외화·원화·수표 합계 미화 1만 달러 초과는 세관 신고(입국장을 나가면 신고필증 발급 불가, 3만 달러 초과 미신고는 형사처벌), 환율 고시 읽는 법, 떠날 때 남은 원화 되바꾸기(외화를 원화로 바꾼 적이 없으면 미화 1만 달러 이내, 있으면 외국환매입증명서 범위 안).",
+    "summary_en": "The four places to turn foreign cash into Korean won and the rules that come with them — airport exchange counters (usually 06:00~22:00, some 24 hours), airport bank branches (weekdays 09:00~16:00, closed weekends), city banks, and registered money changers (currency exchange and traveler's check purchase only, passport number recorded). Declare cash, won and checks over USD 10,000 in total to customs on arrival (no certificate once you leave the arrival hall; undeclared amounts over USD 30,000 are a criminal offense), how to read posted exchange rates, and changing leftover won back when you leave (up to USD 10,000 if you have not changed foreign currency into won, otherwise within the amount on your Certificate of Foreign Exchange Purchase).",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
     "jp_available": true,
     "date_published": "2026-05-26",
-    "title_ja": "両替・クレカ・ATM・決済徹底解説",
-    "title_zh": "换钱·信用卡·ATM·支付深度探索",
-    "summary_ja": "明洞の両替所と銀行、空港両替、海外カード、カカオペイ・ネイバーペイ、24時間ATM、Wise・Revolutのトラベルカードなど両替・決済の12項目を整理。市内と空港のレート差などの失敗も解説。",
-    "summary_zh": "整理12项换汇与支付要点：明洞换汇所与银行、机场换汇、外国信用卡、KakaoPay与Naver Pay、24小时ATM和Wise、Revolut旅行卡，并说明市区与机场汇率差异等误区。"
+    "title_ja": "韓国両替ガイド — ウォンに替える四つの場所とルール：空港の両替所(通常06:00〜22:00)・空港の銀行・市内の銀行(平日09:00〜16:00)・登録両替業者、入国時に1万ドル超は税関に申告、出国時は余ったウォンを再両替する",
+    "title_zh": "韩国换汇指南——换成韩元的四个地方和规则：机场换汇处（通常06:00~22:00）·机场银行·市区银行（工作日09:00~16:00）·注册换汇业者，入境时超过1万美元要向海关申报，离境时把剩下的韩元换回外币",
+    "summary_ja": "外貨をウォンに替える4つの場所とルール——空港の両替所(通常06:00~22:00・一部24時間)、空港の銀行支店(平日09:00~16:00・週末休み)、市内の銀行、登録両替業者(両替と旅行小切手の買取のみ、パスポート番号を台帳に記録)。入国時に外貨・ウォン・小切手の合計が1万ドルを超えると税関に申告(入国ロビーを出ると申告証は発行不可、3万ドル超の未申告は刑事罰)、為替レート表示の読み方、出国時に残ったウォンを戻す方法(外貨をウォンに替えたことがなければ1万ドル以内、あれば外国為替買入証明書の範囲内)。",
+    "summary_zh": "把外币换成韩元的四个地方和规则——机场换汇柜台(一般06:00~22:00·部分24小时)、机场银行网点(工作日09:00~16:00·周末休息)、市区银行、登记换汇业者(只做货币兑换和购入旅行支票，护照号码记入台账)。入境时外币·韩元·支票合计超过1万美元须向海关申报(离开入境大厅后无法补发申报证明，超过3万美元未申报属刑事处罚)，怎么看挂牌汇率，离开时把剩余韩元换回(未曾把外币换成韩元则1万美元以内，换过则在外汇购买证明金额范围内)。"
   },
   {
     "id": "436",
