@@ -4717,8 +4717,8 @@
   {
     "id": "238",
     "slug": "tmoney-payment",
-    "title_kr": "한국 T-money 결제 환승 풀가이드",
-    "title_en": "Korea T-money & Payment Full Guide",
+    "title_kr": "한국 T-money 가이드 — 카드 한 장의 처음부터 끝까지: 사는 곳과 값(트래블카드 4,000원), 충전(현금, 1회 1,000~90,000원·잔액 최대 50만원), 태그 규칙(하차 태그·환승 30분·4회), 쓰는 곳, 환불(수수료 500원·편의점 한도), 분실",
+    "title_en": "Korea T-money Guide — One Card, Start to Finish: Where to Buy and What It Costs (Travel Card 4,000 won), Top-Up (Cash, 1,000~90,000 won per Top-Up, Max Balance 500,000 won), Tap Rules (Tap Off, 30-Minute Transfer, 4 Transfers), Where to Use It, Refunds (500 won Fee, Convenience Store Limits), Lost Cards",
     "category": "H",
     "tags": [
       "foreigner",
@@ -4727,17 +4727,17 @@
       "tax-refund",
       "exchange"
     ],
-    "summary_kr": "T-money와 캐시비 교통카드, 외국인 전용 카드, 모바일 결제, 택시, 환전과 면세 환급까지 한국의 결제·교통 수단 12가지를 정리하고 환전소별 환율 차이도 짚는다.",
-    "summary_en": "Twelve ways to pay and get around Korea: T-money and Cashbee cards, cards for foreigners, mobile pay, taxis, currency exchange and tax refunds, including where exchange rates differ.",
+    "summary_kr": "T-money 카드 한 장의 처음부터 끝까지 — 사기(트래블카드 4,000원·WOWPASS 결합형 6,000원, 카드값 불환불), 충전(현금, 1회 1,000~90,000원·잔액 최대 50만원, 카드 충전은 우리은행 발급 카드만), 태그 규칙(승·하차 모두 태그, 환승 30분·밤 60분·최대 4회, 하차 미태그 시 기본요금 추가), 쓰는 곳(전국 지하철·버스·고속버스·택시·편의점·카페, 시외버스 불가), 잔액 확인, 환불(수수료 500원, 편의점 한도 GS25 2만원 미만·세븐일레븐 2만원 이하·CU·이마트24 3만원 이하, 5만원 넘으면 티머니 타운), 분실(사전 등록 없으면 잔액 반환 없음)·고객센터 1644-0088 — 카드 고르기·발권기·버스 타기는 전용 편 링크.",
+    "summary_en": "One T-money card from start to finish — buying (Travel Card 4,000 won, WOWPASS combo card 6,000 won, card price not refunded), topping up (cash, 1,000~90,000 won per top-up, max balance 500,000 won, card top-ups only with Woori Bank-issued cards), tap rules (tap on boarding and exiting, transfer 30 minutes, 60 at night, up to 4 times, skipping the exit tap adds a base fare), where to use it (nationwide subways, buses, express buses, taxis, convenience stores, cafes; intercity buses not accepted), checking your balance, refunds (500 won fee, convenience store limits: GS25 under 20,000 won, 7-Eleven 20,000 won or less, CU and Emart24 30,000 won or less, above 50,000 won go to Tmoney Town), and lost cards (no balance returned without pre-registration) plus the customer center 1644-0088 — choosing a card, ticket machines, and riding the bus are in dedicated issue links.",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
     "jp_available": true,
     "date_published": "2026-05-19",
-    "title_ja": "韓国T-money決済・乗り換え完全ガイド",
-    "title_zh": "韩国T-money支付换乘完全指南",
-    "summary_ja": "T-moneyやキャッシュビーなどの交通カード、外国人向けカード、モバイル決済、タクシー、両替、免税の払い戻しまで、韓国の支払い・交通手段12種と両替所ごとのレート差を紹介します。",
-    "summary_zh": "整理韩国12种支付与交通方式：T-money和Cashbee交通卡、外国人专用卡、移动支付、出租车、兑换外币与退税，并比较各处汇率差异。"
+    "title_ja": "韓国T-moneyガイド — カード一枚の最初から最後まで：買う場所と値段(トラベルカード4,000ウォン)、チャージ(現金、1回1,000〜90,000ウォン・残高上限50万ウォン)、タッチのルール(下車タッチ・乗り換え30分・4回)、使える場所、払い戻し(手数料500ウォン・コンビニの上限)、紛失",
+    "title_zh": "韩国T-money指南——一张卡从头到尾：在哪买、多少钱（旅行卡4,000韩元）、充值（现金，每次1,000~90,000韩元，余额最高500,000韩元）、刷卡规则（下车也要刷、换乘30分钟、4次）、使用范围、退款（手续费500韩元、便利店限额）、挂失",
+    "summary_ja": "T-moneyカード一枚の最初から最後まで — 買う(トラベルカード4,000ウォン・WOWPASS一体型6,000ウォン、カード代は返金なし)、チャージ(現金、1回1,000〜90,000ウォン・残高最大50万ウォン、カードでのチャージはウリ銀行発行のカードのみ)、タッチのルール(乗車・下車ともにタッチ、乗り換え30分・夜60分・最大4回、下車タッチを忘れると基本運賃が加算)、使える場所(全国の地下鉄・バス・高速バス・タクシー・コンビニ・カフェ、市外バスは不可)、残高確認、払い戻し(手数料500ウォン、コンビニの上限はGS25が2万ウォン未満・セブンイレブンが2万ウォン以下・CUとEmart24が3万ウォン以下、5万ウォンを超えるとTmoney Town)、紛失(事前登録がなければ残高は返らない)・カスタマーセンター1644-0088 — カードの選び方・券売機・バスの乗り方は専用号のリンクへ。",
+    "summary_zh": "一张T-money卡从头到尾——购买（旅行卡4,000韩元·WOWPASS结合型6,000韩元，卡片费用不退）、充值（现金，每次1,000~90,000韩元·余额最高50万韩元，银行卡充值仅限友利银行发行的卡）、刷卡规则（上车、下车都要刷，换乘30分钟·夜间60分钟·最多4次，漏刷下车会多收基本票价）、使用范围（全国地铁·公交·高速巴士·出租车·便利店·咖啡店，市外巴士不可用）、余额查询、退款（手续费500韩元，便利店限额GS25未满2万韩元·7-Eleven 2万韩元以下·CU和Emart24 3万韩元以下，超过5万韩元去Tmoney Town）、挂失（未事先登记则不返还余额）·客服中心1644-0088——选卡、售票机、乘公交请看专门篇目的链接。"
   },
   {
     "id": "239",
