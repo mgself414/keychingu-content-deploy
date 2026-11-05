@@ -1,6 +1,6 @@
-# KeyChinGu — Full Content Catalog (2026-11-04)
+# KeyChinGu — Full Content Catalog (2026-11-05)
 
-> Full content catalog of KeyChinGu Korea travel guides for foreign tourists. Curated by KeyChinGu (@keychingu.korea). Languages: KR (full) + EN/CN/JP (published). Coverage: 60+ cities across food, culture, K-content, shopping, seasons, transport, sports and practical essentials. Updated 2026-11-04.
+> Full content catalog of KeyChinGu Korea travel guides for foreign tourists. Curated by KeyChinGu (@keychingu.korea). Languages: KR (full) + EN/CN/JP (published). Coverage: 60+ cities across food, culture, K-content, shopping, seasons, transport, sports and practical essentials. Updated 2026-11-05.
 
 ---
 
@@ -19281,7 +19281,7 @@ ISSUE 04 · #1278 · 2026-08-15 · korea-first-timer 시리즈 ⑨
 |---|---|---|
 | 약국 (「약」 간판·초록 십자가) | 전 종류 일반의약품 + 약사 상담 | 증상이 있어서 뭘 사야 할지 모를 때 — 정답은 항상 여기 |
 | 올리브영 등 드럭스토어 | 저위험 일부 상비약(파스·소독약·마스크·비타민 등, 의약품 코너 제한적) | 약국 문 닫았고 가벼운 소모품만 필요할 때 |
-| 편의점 (CU·GS25·세븐일레븐) | 안전상비의약품 약 11종만 — 타이레놀(해열진통) · 판콜/판피린(감기) · 베아제(소화제) · 제산제 · 파스 등 | 심야·새벽·경증일 때 |
+| 편의점 (CU·GS25·세븐일레븐) | 식약처 목록의 안전상비의약품 13품목만 — 타이레놀(해열진통) · 판콜/판피린(감기) · 베아제·훼스탈(소화제) · 파스 | 심야·새벽·경증일 때 |
 
 - 약국이 항상 최우선이다. 올리브영·편의점은 약국이 닫혔을 때의 임시 대안으로 이해하면 된다.
 - 처방전이 필요한 전문의약품(항생제 등)은 세 곳 어디서도 못 산다 → ⑤ 참고.
