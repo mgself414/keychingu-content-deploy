@@ -20459,7 +20459,7 @@ ISSUE 04 · #1271 · 2026-08-15 · korea-first-timer 시리즈 ②
 
 한국 버스 요금은 탑승 거리 기준이다. 승차 때 한 번, 하차 때 한 번 태그해야 시스템이 "몇 정류장을 탔는지"를 계산해서 정확한 요금과 환승 할인을 적용한다.
 
-- 환승 할인 조건: 하차 태그 후 30분 이내에 다른 버스·지하철에 재승차하면 무료 또는 할인 환승 (최대 4회까지 연속 환승 가능).
+- 환승 할인 조건: 하차 태그 후 30분 이내에 다른 버스·지하철에 재승차하면 무료 또는 할인 환승 (최대 4회까지 연속 환승 가능). 밤 21:00~07:00 사이에 다음 차를 타면 60분까지 인정된다(서울시).
 - 하차 태그를 안 하면: 이번 탑승 요금이 최대 거리 기준으로 정산되고, 다음 승차 때는 환승 할인 없이 기본요금이 새로 통째로 부과된다. 즉 "깜빡 잊고 안 찍었다"가 실제로 지갑에서 돈이 더 나가는 구조다.
 - 그래서 이 편의 결론은 하나다 — 탈 때도, 내릴 때도 반드시 "삑" 소리를 확인한다.
 
@@ -20537,8 +20537,9 @@ ISSUE 04 · #1271 · 2026-08-15 · korea-first-timer 시리즈 ②
 ## 🌐 EXTERNAL SOURCES
 
 - Seoul TOPIS (서울 교통정보시스템): https://topis.seoul.go.kr/
+- 서울시 환승 할인 규칙 (30분·야간 60분·4회·하차 태그): https://news.seoul.go.kr/traffic/transferdiscount
 - VisitKorea: https://english.visitkorea.or.kr/
-- Seoul Metropolitan Government (English): https://english.seoul.go.kr/
+- Seoul Metropolitan Government (English)**: https://english.seoul.go.kr/
 
 ---
 
