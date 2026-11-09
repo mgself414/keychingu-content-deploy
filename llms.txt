@@ -1,6 +1,6 @@
 # KeyChinGu — Korea Travel Guides for Foreign Tourists
 
-> Comprehensive curated Korea travel guides for foreign MZ travelers, covering 1,200+ topics across 60+ cities (Seoul·Busan·Jeju·Gyeongju·Andong·Jeonju·etc), 4 languages (KR·EN·CN·JP), covering food, culture, K-content, shopping, seasons, transport, sports and practical essentials for solo, couple, family and budget travelers. Updated 2026-11-07.
+> Comprehensive curated Korea travel guides for foreign MZ travelers, covering 1,200+ topics across 60+ cities (Seoul·Busan·Jeju·Gyeongju·Andong·Jeonju·etc), 4 languages (KR·EN·CN·JP), covering food, culture, K-content, shopping, seasons, transport, sports and practical essentials for solo, couple, family and budget travelers. Updated 2026-11-09.
 
 > Total guides: **1280** | EN: 1280 | CN: 1280 | JP: 1280 | og:image: 250+ | sitemap URLs: 3396
 
@@ -231,7 +231,7 @@
 - [Seoul Cinema Map: Seoul Film and Drama Guide for Foreign Visitors — 12 Picks](https://mgself414.github.io/keychingu-content-deploy/content/seoul-cinema-map.en.html): Twelve Seoul stops for Korean film and drama fans: K-drama filming locations, cinemas, the film archive and film museum, and the film festiv (Korean: https://mgself414.github.io/keychingu-content-deploy/content/seoul-cinema-map.html)
 - [Seoul Jazz Bar Guide — 6 Bars in Itaewon, Hongdae, Seongbuk and Gwangjin (All That Jazz, Evans, Jazz Story)](https://mgself414.github.io/keychingu-content-deploy/content/seoul-jazz-bars-map.en.html): Official values checked Oct 21, 2026: All That Jazz is open year-round, no cover Mon–Thu, drinks only · Evans cover ₩15,000 · Jazz Story mus (Korean: https://mgself414.github.io/keychingu-content-deploy/content/seoul-jazz-bars-map.html)
 - [Busan International Film Festival (BIFF) Visitor Guide — Centered on Busan Cinema Center in Haeundae's Centum City, Booking a ₩10,000 Regular Screening, and the 2026 31st Edition Results (Autumn Season)](https://mgself414.github.io/keychingu-content-deploy/content/biff-map.en.html): A guide to the Busan International Film Festival centered on Busan Cinema Center in Haeundae's Centum City: booking a 10,000 won screening,  (Korean: https://mgself414.github.io/keychingu-content-deploy/content/biff-map.html)
-- [Jongmyo Daeje Viewing Guide: Twice a Year, Chunhyang in May and Chuhyang in November, Free Entry to the 2026 Chuhyang Daeje on November 7, Plus Regular English Tour Times](https://mgself414.github.io/keychingu-content-deploy/content/jongmyo-jerye-map.en.html): Official values checked Oct 21, 2026: The Jongmyo Jerye rites are held on the first Sunday of May and the first Saturday of November each ye (Korean: https://mgself414.github.io/keychingu-content-deploy/content/jongmyo-jerye-map.html)
+- [Jongmyo Daeje Viewing Guide: Twice a Year, Chunhyang in May and Chuhyang in November, Next Up Is the May 2027 Chunhyang (By Custom May 2), Plus Regular English Tour Times](https://mgself414.github.io/keychingu-content-deploy/content/jongmyo-jerye-map.en.html): Official values checked Oct 21, 2026: The Jongmyo Jerye rites are held on the first Sunday of May and the first Saturday of November each ye (Korean: https://mgself414.github.io/keychingu-content-deploy/content/jongmyo-jerye-map.html)
 - [Korean Cinema Fans Deep Dive](https://mgself414.github.io/keychingu-content-deploy/content/korean-cinema-deep.en.html): A 12-item guide to enjoying Korean cinema, covering theater chains like CGV and Megabox, premium screens, independent cinemas and film festi (Korean: https://mgself414.github.io/keychingu-content-deploy/content/korean-cinema-deep.html)
 - [Korea Music Fans Deep Dive](https://mgself414.github.io/keychingu-content-deploy/content/music-mania-deep.en.html): A 12-item guide to enjoying Korean music, covering indie music and jazz clubs, trot and gugak, and K-pop, plus music museums and record shop (Korean: https://mgself414.github.io/keychingu-content-deploy/content/music-mania-deep.html)
 - [Korea Film Festival·VR Experience Deep Dive](https://mgself414.github.io/keychingu-content-deploy/content/film-festival-vr.en.html): Twelve film and VR experiences in Korea: festivals such as BIFF, JIFF and BiFan, VR and AR attractions, and hands-on learning venues, arrang (Korean: https://mgself414.github.io/keychingu-content-deploy/content/film-festival-vr.html)
@@ -303,7 +303,7 @@
 
 ## Metadata
 
-- **Coverage**: 1280 curated guides as of 2026-11-07
+- **Coverage**: 1280 curated guides as of 2026-11-09
 - **Languages**: KR (full), EN (full), CN (full), JP (full)
 - **Update frequency**: Weekly
 - **Data sources**: Korea Tourism Organization (VisitKorea), Seoul Tourism Foundation (Visit Seoul), Cultural Heritage Administration, UNESCO World Heritage, Korea Open Government License (KOGL), Naver Maps, Reddit r/koreatravel + user curation
