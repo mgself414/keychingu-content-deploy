@@ -17910,8 +17910,8 @@
       "gangnam",
       "sub-deep"
     ],
-    "summary_kr": "서울 일루미네이션 12선·여의도 빛초롱·강남 가로수·롯데월드·신세계·11/15~2/15 절정",
-    "summary_en": "Seoul Winter Illumination Top 12·Yeouido Lantern·Gangnam·Lotte World·Shinsegae·Peak Nov 15-Feb 15",
+    "summary_kr": "서울 일루미네이션 12선·청계천 빛초롱·강남 가로수·롯데월드·신세계·11/15~2/15 절정",
+    "summary_en": "Seoul Winter Illumination Top 12·Cheonggyecheon Lantern Festival·Gangnam·Lotte World·Shinsegae·Peak 11/15~2/15",
     "en_available": true,
     "cn_available": true,
     "jp_available": true,
@@ -17919,8 +17919,8 @@
     "date_published": "2026-06-05",
     "title_ja": "ソウル 冬のイルミネーション12選",
     "title_zh": "首尔冬季灯光秀12精选",
-    "summary_ja": "ソウルイルミネーション ベスト12・汝矣島ランタン・江南街路樹・ロッテワールド・新世界・11/15～2/15がピーク",
-    "summary_zh": "首尔冬季灯光秀12大精选：汝矣岛灯笼、江南林荫道、乐天世界、新世界。11月15日至2月15日为高峰期。"
+    "summary_ja": "ソウルイルミネーション ベスト12・清渓川ランタン・江南街路樹・ロッテワールド・新世界・11/15～2/15がピーク",
+    "summary_zh": "首尔冬季灯光秀12大精选：清溪川灯笼节、江南林荫道、乐天世界、新世界。11/15~2/15为高峰期。"
   },
   {
     "id": "746",
@@ -22248,28 +22248,28 @@
   {
     "id": "1004",
     "slug": "korea-daegu-seomun-night-market",
-    "title_kr": "대구 서문시장 야시장",
-    "title_en": "Daegu Seomun Night Market",
+    "title_kr": "대구 먹거리 골목 가이드 — 동인동 찜갈비 골목, 안지랑 곱창골목, 평화시장 닭똥집 골목, 따로국밥, 납작만두, 서문시장 야시장",
+    "title_en": "Daegu Food Alley Guide: Jjimgalbi, Gopchang, Dakttongjip, Ttaro Gukbap, Napjak Mandu",
     "category": "C",
     "tags": [
       "foreign-tourist",
       "city",
       "daegu",
-      "night-market",
-      "food"
+      "food",
+      "night-market"
     ],
-    "summary_kr": "대구 서문시장 야시장 안내. 금·토 19:00~23:30·일 19:00~22:30에 열리며(월~목 휴무) 칼국수·납작만두·갈비찜 같은 서문시장 대표 먹거리와 영문 메뉴·카드 결제 사정을 알려 준다.",
-    "summary_en": "Daegu's Seomun Market night market, open Fri-Sat 19:00-23:30 and Sun 19:00-22:30 (closed Mon-Thu): signature kalguksu, flat dumplings (napjak mandu) and braised short ribs, plus English menus and card payment.",
+    "summary_kr": "동인동 찜갈비 골목, 안지랑 곱창골목, 평화시장 닭똥집 골목과 국일따로국밥·미성당납작만두의 운영 정보를 한국관광공사 관광정보(TourAPI) 기준으로, 메뉴 가격은 다이닝코드(2차) 기준으로 정리했다.",
+    "summary_en": "Daegu's jjimgalbi, gopchang and dakttongjip alleys plus Gukil Ttaro Gukbap and Miseongdang Napjak Mandu, with Seomun Market night market days, from Korea Tourism Organization data (TourAPI) and Diningcode prices (secondary source).",
     "en_available": true,
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false,
     "image_credit": "Korea Tourism Organization (공공누리 1유형)",
     "date_published": "2026-06-12",
-    "title_zh": "大邱西门市场夜市",
-    "title_ja": "大邱 西門市場 夜市",
-    "summary_ja": "大邱・西門市場の夜市ガイド。金・土19:00〜23:30、日19:00〜22:30営業(月〜木休み)で、カルグクス、平たい餃子(ナプチャクマンドゥ)、カルビチムなどの名物と、英語メニュー・カード決済の状況を紹介します。",
-    "summary_zh": "大邱西门市场夜市指南，周五、周六19:00-23:30、周日19:00-22:30营业(周一至周四休息)，介绍刀削面、扁饺子、炖排骨等招牌小吃，以及英文菜单和刷卡情况。"
+    "title_zh": "大邱美食街指南：Dongin-dong辣炖牛排骨街、Anjirang内脏烤肉街、Pyeonghwa市场鸡胗街、汤饭分开上、扁饺子、西门市场夜市",
+    "title_ja": "大邱グルメ通りガイド — チムカルビ通り・ホルモン通り・砂肝通り・タロクッパ・ナプチャクマンドゥ・西門市場の夜市",
+    "summary_ja": "大邱のトンイン洞チムカルビ通り、アンジラン・ホルモン通り、ピョンファ市場の砂肝通り、クギルタロクッパ、ミソンダンナプチャクマンドゥ、西門市場の夜市の営業時間と休みを、韓国観光公社の観光情報(TourAPI)でまとめたガイドです。",
+    "summary_zh": "介绍大邱辣炖牛排骨、内脏烤肉、鸡胗三条美食街和汤饭分开上、扁饺子两家老店，营业信息照录韩国观光公社旅游信息（TourAPI），价格来自Diningcode（二手来源）。"
   },
   {
     "id": "1005",
