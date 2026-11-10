@@ -86,6 +86,10 @@ a { color: inherit; text-decoration: none; }
 .table-scroll > table { max-width: none; }
 /* 긴 URL·코드 문자열이 줄바꿈되지 않아 SOURCES 절이 모바일 뷰포트를 655px까지 밀던 문제(2026-09-17 스모크 R2). */
 .detail-wrap a, .detail-wrap code, .detail-wrap li { overflow-wrap: anywhere; }
+/* 코드 펜스(의사화면·ASCII 동선도) — 2026-11-10 L3 수리 B: md_to_html 이 ``` 를 <pre class="code-block"> 로 렌더 */
+.code-block { background: var(--bg-zone); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 12px 14px; margin: 12px 0; overflow-x: auto; font-size: .9em; line-height: 1.5; white-space: pre; }
+.code-block code { background: none; padding: 0; }
+[data-theme="dark"] .code-block { background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.14); }
 .lang-switch {
   display: flex; gap: 4px;
 }

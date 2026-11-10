@@ -194,7 +194,7 @@
 <p>ISSUE 04 · #1286 · 2026-08-16 · korea-first-timerシリーズ⑰</p>
 <hr>
 <h2>🎯 このマニュアルの読み方 — 表記のルール</h2>
-<p>画面表記のルール(角括弧ボタン・かぎ括弧画面・太字動作)は#1270キオスク編がSoTだ。この記事もそのまま従う。</p>
+<p>画面表記のルール(角括弧ボタン・かぎ括弧画面・太字動作)は#1270キオスク編が基準編だ。この記事もそのまま従う。</p>
 <ul>
 <li>画面内のボタンは角括弧で表記: <code>[ KRW ]</code></li>
 <li>画面タイトル・案内文はかぎ括弧で表記: 「Select Amount」</li>
@@ -288,12 +288,11 @@
 <hr>
 <h2>④ DCC最大の罠 — 「自国通貨で支払いますか?」画面、必ずKRW</h2>
 <p>6のステップ直後、または金額確認画面でこのようなポップアップが出る機械が多い。これがこのマニュアルで最も重要な画面だ。</p>
-<p>```</p>
-<p>「Currency Selection」</p>
-<p>Charge in:</p>
-<p>[ USD   $50.00  ]   ← 絶対に押さない</p>
-<p>[ KRW   ₩68,000 ]   ← 必ずこちらを押す</p>
-<p>```</p>
+<pre class="code-block"><code>「Currency Selection」
+Charge in:
+
+[ USD   $50.00  ]   ← 絶対に押さない
+[ KRW   ₩68,000 ]   ← 必ずこちらを押す</code></pre>
 <ul>
 <li>このポップアップは<strong>DCC(Dynamic Currency Conversion・現地通貨任意換算)</strong>という仕組みだ。USD・EURなど自国通貨で請求されるよう、ATM運営会社が<strong>独自に定めたレート</strong>を適用する。</li>
 <li>自国通貨(USDなど)を選ぶと、カード会社が後で適用する正規レートより不利な<strong>隠れた為替マージン</strong>がその場で上乗せされる。画面上は「親切に」自国通貨で見せてくれているように見えるが、実際にはより高く引き出される罠だ。</li>
@@ -379,9 +378,11 @@
 <blockquote><p>ヒント: 10個全部覚える必要はない。<strong><code>Confirm</code>(進む)・<code>Cancel</code>(抜ける)・<code>Take Card</code>(カード回収)</strong>の3つだけ押さえれば実践で迷わない。</p></blockquote>
 <hr>
 <h2>⑦ パニックシナリオ3</h2>
-<p>1. <strong>カードが拒否された</strong> — ロゴステッカーがある機械だったのに拒否された場合、カードの問題ではなく、その機械・銀行網との相性の問題である可能性が高い。<strong>別の銀行のATM</strong>(できれば別ブランド)へ移動して再試行する。</p>
-<p>2. <strong>カードが機械に飲み込まれた</strong> — その場で無理に引き抜こうとしない。銀行ATMならブースに貼られた<strong>銀行の営業時間内カスタマーセンター番号</strong>に電話して回収手続きを確認する。コンビニATMなら画面のカスタマーセンター案内(たいていATM運営会社のコールセンター)に従う。</p>
-<p>3. <strong>限度額超過で引き出せない</strong> — 1回の引き出し限度額(機械自体)、またはカード会社が設定した海外引き出し限度額、どちらかに引っかかっている。金額を下げて再試行するか、1日おいて別の機械で改めて試す。</p>
+<ol>
+<li><strong>カードが拒否された</strong> — ロゴステッカーがある機械だったのに拒否された場合、カードの問題ではなく、その機械・銀行網との相性の問題である可能性が高い。<strong>別の銀行のATM</strong>(できれば別ブランド)へ移動して再試行する。</li>
+<li><strong>カードが機械に飲み込まれた</strong> — その場で無理に引き抜こうとしない。銀行ATMならブースに貼られた<strong>銀行の営業時間内カスタマーセンター番号</strong>に電話して回収手続きを確認する。コンビニATMなら画面のカスタマーセンター案内(たいていATM運営会社のコールセンター)に従う。</li>
+<li><strong>限度額超過で引き出せない</strong> — 1回の引き出し限度額(機械自体)、またはカード会社が設定した海外引き出し限度額、どちらかに引っかかっている。金額を下げて再試行するか、1日おいて別の機械で改めて試す。</li>
+</ol>
 <hr>
 <h2>⑧ プランB — ATMがどうしてもダメなら</h2>
 <ul>
@@ -394,7 +395,7 @@
 <li><strong>両替</strong>: <a href="exchange-card-atm.ja.html" class="xref">#435</a> 韓国の両替ガイド — 空港・銀行・両替所、余ったウォンの再両替</li>
 <li><strong>決済ディープダイブ</strong>: <a href="payment-system-deep.ja.html" class="xref">#527</a> 韓国の決済システムdeep dive — カードが拒否されるVAN/EMVの仕組み</li>
 <li><strong>同シリーズ</strong>: <a href="tipping-paying-guide.ja.html" class="xref">#1275</a> 韓国のチップ・会計マナーガイド — ATMで引き出した現金を使う次のステップ</li>
-<li><strong>korea-first-timerシリーズ</strong>: <a href="restaurant-kiosk-guide.ja.html" class="xref">#1270</a> キオスク注文ガイド(表記ルールのSoT)</li>
+<li><strong>korea-first-timerシリーズ</strong>: <a href="restaurant-kiosk-guide.ja.html" class="xref">#1270</a> キオスク注文ガイド(表記ルールの基準編)</li>
 </ul>
 <h2>🏷 Tags</h2>
 <p><code>#韓国ATM</code> <code>#KoreaATM</code> <code>#海外カード引き出し</code> <code>#GlobalATM</code> <code>#DCC罠</code> <code>#為替マージン</code> <code>#韓国旅行初心者</code> <code>#KoreaFirstTimer</code> <code>#パニックゼロ</code> <code>#NoPanicKorea</code> <code>#KeyChingu</code></p>

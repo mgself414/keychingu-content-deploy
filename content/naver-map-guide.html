@@ -202,13 +202,15 @@
 </ul>
 <hr>
 <h2>② 왜 구글맵이 아니라 네이버인가</h2>
-<p>한국은 안보 규제로 정밀 지도 데이터의 해외 반출이 막혀 있어, 구글맵은 자동차 길찾기 일부만 되고 <strong>대중교통·도보 길찾기는 사실상 지원하지 않는다</strong>. 반면 네이버지도(카카오맵도 동급)는 지하철·버스 실시간 데이터와 도보 지름길까지 갖춘 국내 SoT다. 디지털 인프라 전반의 구조는 <a href="transport.html" class="xref">#080</a> 도착 필수편 참고 — 결론만 챙기면 된다: <strong>한국에서 길찾기는 네이버.</strong></p>
+<p>한국은 안보 규제로 정밀 지도 데이터의 해외 반출이 막혀 있어, 구글맵은 자동차 길찾기 일부만 되고 <strong>대중교통·도보 길찾기는 사실상 지원하지 않는다</strong>. 반면 네이버지도(카카오맵도 동급)는 지하철·버스 실시간 데이터와 도보 지름길까지 갖춘 국내 기준 서비스다. 디지털 인프라 전반의 구조는 <a href="transport.html" class="xref">#080</a> 도착 필수편 참고 — 결론만 챙기면 된다: <strong>한국에서 길찾기는 네이버.</strong></p>
 <hr>
 <h2>③ 언어를 영어로 바꾸기 — 3단계</h2>
 <p>앱을 처음 열면 전부 한글이다. 가장 먼저 할 일:</p>
-<p>1. 좌측 상단 또는 하단 <code>[ ☰ 메뉴 ]</code> <strong>탭</strong></p>
-<p>2. <code>[ 설정 (Settings) ]</code> <strong>탭</strong></p>
-<p>3. <code>[ 언어 (Language) ]</code> → <code>[ English ]</code> 선택</p>
+<ol>
+<li>좌측 상단 또는 하단 <code>[ ☰ 메뉴 ]</code> <strong>탭</strong></li>
+<li><code>[ 설정 (Settings) ]</code> <strong>탭</strong></li>
+<li><code>[ 언어 (Language) ]</code> → <code>[ English ]</code> 선택</li>
+</ol>
 <p>재시작 없이 화면 전체가 즉시 영어로 바뀐다. 이후 이 글의 모든 화면은 영어 기준으로 설명한다.</p>
 <hr>
 <h2>④ 검색 절차 — 한글 상호를 못 칠 때</h2>
@@ -219,21 +221,21 @@
 </ul>
 <hr>
 <h2>⑤ 길찾기 마스터 플로우 — 4단계</h2>
-<p>1. 목적지 상세 화면에서 파란 <code>[ Directions ]</code> 버튼 <strong>탭</strong></p>
-<p>2. 상단 탭에 이동수단 4종이 나란히: <code>🚗 Car</code> <code>🚇 Public Transit</code> <code>🚶 Walk</code> <code>🚴 Bike</code> — <strong>탭</strong>으로 전환</p>
-<p>3. 선택한 모드의 경로 후보가 리스트로 뜬다(소요시간 순 정렬)</p>
-<p>4. 원하는 경로 <strong>탭</strong> → 턴바이턴 상세 화면 진입</p>
+<ol>
+<li>목적지 상세 화면에서 파란 <code>[ Directions ]</code> 버튼 <strong>탭</strong></li>
+<li>상단 탭에 이동수단 4종이 나란히: <code>🚗 Car</code> <code>🚇 Public Transit</code> <code>🚶 Walk</code> <code>🚴 Bike</code> — <strong>탭</strong>으로 전환</li>
+<li>선택한 모드의 경로 후보가 리스트로 뜬다(소요시간 순 정렬)</li>
+<li>원하는 경로 <strong>탭</strong> → 턴바이턴 상세 화면 진입</li>
+</ol>
 <hr>
 <h2>⑥ 결과 화면 읽는 법 — 출구 번호가 핵심 정보</h2>
 <p>지도 앱을 처음 쓰는 사람이 가장 헷갈리는 지점이 여기다. 화면 구성을 그대로 옮기면:</p>
-<p>```</p>
-<p>🚇 34min · 2 transfers · ₩1,500</p>
-<p>① 강남역 [ 3번 출구 ] 방향 도보 3분</p>
-<p>↓ 신분당선 승차 · 다음 열차 4분 후 · 4 stops</p>
-<p>② 신논현역 하차 → [ 2번 출구 ]</p>
-<p>↓ 도보 5분</p>
-<p>🏁 도착</p>
-<p>```</p>
+<pre class="code-block"><code>🚇 34min · 2 transfers · ₩1,500
+① 강남역 [ 3번 출구 ] 방향 도보 3분
+   ↓ 신분당선 승차 · 다음 열차 4분 후 · 4 stops
+② 신논현역 하차 → [ 2번 출구 ]
+   ↓ 도보 5분
+🏁 도착</code></pre>
 <ul>
 <li><strong>대중교통 = 지하철+버스 통합</strong>: 하나의 경로 안에 지하철과 버스가 섞여 나온다. 갈아탈 때마다 화면이 알려준다.</li>
 <li><strong>출구 번호</strong>: 역 이름을 못 읽어도 상관없다. <code>[ 3번 출구 ]</code>처럼 숫자만 보고 그 번호를 찾으면 끝 — 이게 이 앱에서 가장 중요한 정보다.</li>
@@ -309,9 +311,11 @@
 </tbody></table></div>
 <hr>
 <h2>⑨ 당황 시나리오 3</h2>
-<p>1. <strong>구글맵과 결과가 다르다</strong> — 정상이다. 위 ②처럼 한국 대중교통·도보 데이터는 구글맵에 없다. 네이버지도 결과를 믿어라.</p>
-<p>2. <strong>검색 결과가 0건</strong> — 로마자 표기 차이 때문일 확률이 높다(&quot;Gwanghwamun&quot;과 &quot;Kwanghwamun&quot; 같은 표기 편차). 철자를 줄여 입력하거나 ④의 카테고리 검색으로 우회하자.</p>
-<p>3. <strong>GPS가 튄다</strong> — 고층 빌딩 밀집 지역이나 지하에서 위치가 순간 이동하듯 튀는 건 흔한 일이다. 몇 걸음 걷고 화면을 다시 확인하면 잡힌다.</p>
+<ol>
+<li><strong>구글맵과 결과가 다르다</strong> — 정상이다. 위 ②처럼 한국 대중교통·도보 데이터는 구글맵에 없다. 네이버지도 결과를 믿어라.</li>
+<li><strong>검색 결과가 0건</strong> — 로마자 표기 차이 때문일 확률이 높다(&quot;Gwanghwamun&quot;과 &quot;Kwanghwamun&quot; 같은 표기 편차). 철자를 줄여 입력하거나 ④의 카테고리 검색으로 우회하자.</li>
+<li><strong>GPS가 튄다</strong> — 고층 빌딩 밀집 지역이나 지하에서 위치가 순간 이동하듯 튀는 건 흔한 일이다. 몇 걸음 걷고 화면을 다시 확인하면 잡힌다.</li>
+</ol>
 <hr>
 <h2>⑩ 플랜B — 네이버지도가 막히면</h2>
 <ul>

@@ -194,7 +194,7 @@
 <p>ISSUE 04 · #1286 · 2026-08-16 · korea-first-timer series ⑰</p>
 <hr>
 <h2>🎯 How to Read This Manual — Screen Notation Rules</h2>
-<p>The screen notation rules (bracketed buttons, corner-bracket screens, bold actions) are SoT&#x27;d by <a href="restaurant-kiosk-guide.en.html" class="xref">#1270</a>, the kiosk-ordering piece. This piece follows them as-is.</p>
+<p>The screen notation rules (bracketed buttons, corner-bracket screens, bold actions) are defined by <a href="restaurant-kiosk-guide.en.html" class="xref">#1270</a>, the kiosk-ordering piece. This piece follows them as-is.</p>
 <ul>
 <li>Buttons on a screen appear in brackets: <code>[ KRW ]</code></li>
 <li>Screen titles and prompts appear in corner brackets: 「Select Amount」</li>
@@ -288,12 +288,11 @@
 <hr>
 <h2>④ The DCC Trap — the &quot;Charge in Your Home Currency?&quot; Screen, Always Pick KRW</h2>
 <p>Right after step 6, or on the amount-confirmation screen, many machines show a popup like this. This is the single most important screen in this manual.</p>
-<p>```</p>
-<p>「Currency Selection」</p>
-<p>Charge in:</p>
-<p>[ USD   $50.00  ]   ← never press this</p>
-<p>[ KRW   ₩68,000 ]   ← always press this</p>
-<p>```</p>
+<pre class="code-block"><code>「Currency Selection」
+Charge in:
+
+[ USD   $50.00  ]   ← never press this
+[ KRW   ₩68,000 ]   ← always press this</code></pre>
 <ul>
 <li>This popup is <strong>DCC (Dynamic Currency Conversion)</strong> — converting to your home currency at a rate the ATM operator sets on its own. It&#x27;s designed so the charge shows up in USD, EUR, or whatever your home currency is.</li>
 <li>If you pick your home currency (USD, etc.), a <strong>hidden exchange-rate markup</strong> gets tacked on right there, worse than the standard rate your card issuer would apply afterward. The screen &quot;helpfully&quot; shows the amount in your own currency, but it&#x27;s actually a trap that ends up costing more.</li>
@@ -368,9 +367,11 @@
 <blockquote><p>Tip: you don&#x27;t need to memorize all 10. Just three get you through in practice: <strong>hwagin/Confirm</strong> (proceed) · <strong>chwiso/Cancel</strong> (escape) · <strong>kadeu batgi/Take Card</strong> (retrieve your card).</p></blockquote>
 <hr>
 <h2>⑦ 3 Panic Scenarios</h2>
-<p>1. <strong>Your card got rejected</strong> — if it happened on a machine that did have the logo stickers, the problem is more likely a mismatch between that specific machine&#x27;s bank network than your card itself. Move to a different bank&#x27;s ATM (ideally a different brand) and try again.</p>
-<p>2. <strong>The machine swallowed your card</strong> — don&#x27;t try to force it out on the spot. At a bank ATM, call the customer service number posted on the booth during the bank&#x27;s business hours to check the retrieval process. At a convenience-store ATM, follow the customer service info on screen (usually the ATM operator&#x27;s call center).</p>
-<p>3. <strong>It won&#x27;t dispense due to a limit</strong> — you&#x27;ve hit either the machine&#x27;s own per-withdrawal limit or your card issuer&#x27;s overseas withdrawal limit. Either lower the amount and try again, or wait a day and try a different machine.</p>
+<ol>
+<li><strong>Your card got rejected</strong> — if it happened on a machine that did have the logo stickers, the problem is more likely a mismatch between that specific machine&#x27;s bank network than your card itself. Move to a different bank&#x27;s ATM (ideally a different brand) and try again.</li>
+<li><strong>The machine swallowed your card</strong> — don&#x27;t try to force it out on the spot. At a bank ATM, call the customer service number posted on the booth during the bank&#x27;s business hours to check the retrieval process. At a convenience-store ATM, follow the customer service info on screen (usually the ATM operator&#x27;s call center).</li>
+<li><strong>It won&#x27;t dispense due to a limit</strong> — you&#x27;ve hit either the machine&#x27;s own per-withdrawal limit or your card issuer&#x27;s overseas withdrawal limit. Either lower the amount and try again, or wait a day and try a different machine.</li>
+</ol>
 <hr>
 <h2>⑧ Plan B — If ATMs Just Won&#x27;t Work</h2>
 <ul>
@@ -383,7 +384,7 @@
 <li><strong>Currency exchange</strong>: <a href="exchange-card-atm.en.html" class="xref">#435</a> Korea Currency Exchange Guide — airports, banks, exchange counters, and changing leftover won back</li>
 <li><strong>Payments deep dive</strong>: <a href="payment-system-deep.en.html" class="xref">#527</a> Korea Payment Systems Deep Dive — the VAN/EMV structure behind card rejections</li>
 <li><strong>Same series</strong>: <a href="tipping-paying-guide.en.html" class="xref">#1275</a> Korea Tipping &amp; Bill-Splitting Manners Guide — the next step, spending the cash you just withdrew</li>
-<li><strong>korea-first-timer series</strong>: <a href="restaurant-kiosk-guide.en.html" class="xref">#1270</a> Kiosk Ordering Guide (screen-notation SoT)</li>
+<li><strong>korea-first-timer series</strong>: <a href="restaurant-kiosk-guide.en.html" class="xref">#1270</a> Kiosk Ordering Guide (screen-notation reference guide)</li>
 </ul>
 <h2>🏷 Tags</h2>
 <p><code>#KoreaATM</code> <code>#ForeignCardWithdrawal</code> <code>#GlobalATM</code> <code>#DCCTrap</code> <code>#ExchangeRateMarkup</code> <code>#KoreaTravelBeginner</code> <code>#KoreaFirstTimer</code> <code>#NoPanicKorea</code> <code>#KeyChinGu</code></p>

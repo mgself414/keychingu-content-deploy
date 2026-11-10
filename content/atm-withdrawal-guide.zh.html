@@ -194,7 +194,7 @@
 <p>ISSUE 04 · #1286 · 2026-08-16 · korea-first-timer系列⑰</p>
 <hr>
 <h2>🎯 本手册阅读方法 — 画面标记规则</h2>
-<p>画面标记规则(方括号按钮·「」画面·加粗动作)以#1270自助点餐机篇为SoT(唯一权威来源)。本文同样沿用。</p>
+<p>画面标记规则(方括号按钮·「」画面·加粗动作)以#1270自助点餐机篇为基准篇(唯一权威来源)。本文同样沿用。</p>
 <ul>
 <li>画面上的按钮用方括号标注：<code>[ KRW ]</code></li>
 <li>画面标题·提示文字用「」标注：「Select Amount」</li>
@@ -288,12 +288,11 @@
 <hr>
 <h2>④ DCC最大陷阱 — &quot;要用本国货币结算吗？&quot;画面，一律选KRW</h2>
 <p>很多机器会在第6步之后或金额确认画面弹出这样的窗口。这是本手册里最重要的一屏。</p>
-<p>```</p>
-<p>「Currency Selection」</p>
-<p>Charge in:</p>
-<p>[ USD   $50.00  ]   ← 绝对不要按</p>
-<p>[ KRW   ₩68,000 ]   ← 一定要按这个</p>
-<p>```</p>
+<pre class="code-block"><code>「Currency Selection」
+Charge in:
+
+[ USD   $50.00  ]   ← 绝对不要按
+[ KRW   ₩68,000 ]   ← 一定要按这个</code></pre>
 <ul>
 <li>这个弹窗是<strong>DCC(Dynamic Currency Conversion，动态货币转换)</strong>机制。为了按USD·EUR等本国货币计费，ATM运营方会套用<strong>自己单方面定的汇率</strong>。</li>
 <li>选本国货币(USD等)，就会当场被加上比发卡银行之后套用的正常汇率更不利的<strong>隐藏汇率差价</strong>。画面看起来&quot;贴心地&quot;显示成本国货币，实际上是让你多花钱的陷阱。</li>
@@ -368,9 +367,11 @@
 <blockquote><p>小贴士：10个不用全背下来。只要记住<strong><code>Confirm</code>(确认，继续)·<code>Cancel</code>(取消，脱身)·<code>Take Card</code>(取卡，取回卡片)</strong>这3个，实战中就不会手忙脚乱。</p></blockquote>
 <hr>
 <h2>⑦ 慌张场景3种</h2>
-<p>1. <strong>银行卡被拒</strong> — 明明是贴着标志贴纸的机器却被拒绝，大概率不是卡的问题，而是那台机器·银行网络兼容性问题。换一台<strong>别家银行的ATM</strong>(最好换不同品牌)再试一次。</p>
-<p>2. <strong>卡被机器吞了</strong> — 不要当场硬拽。如果是银行ATM，打机房上贴的<strong>银行营业时间内客服电话</strong>确认取回流程。便利店ATM则按画面上的客服提示(通常是ATM运营方的客服中心)操作。</p>
-<p>3. <strong>超限额取不出来</strong> — 要么撞上机器本身的单次取现限额，要么撞上发卡银行设的海外取现限额，二选一。可以降低金额重试，或者隔一天换台机器再试。</p>
+<ol>
+<li><strong>银行卡被拒</strong> — 明明是贴着标志贴纸的机器却被拒绝，大概率不是卡的问题，而是那台机器·银行网络兼容性问题。换一台<strong>别家银行的ATM</strong>(最好换不同品牌)再试一次。</li>
+<li><strong>卡被机器吞了</strong> — 不要当场硬拽。如果是银行ATM，打机房上贴的<strong>银行营业时间内客服电话</strong>确认取回流程。便利店ATM则按画面上的客服提示(通常是ATM运营方的客服中心)操作。</li>
+<li><strong>超限额取不出来</strong> — 要么撞上机器本身的单次取现限额，要么撞上发卡银行设的海外取现限额，二选一。可以降低金额重试，或者隔一天换台机器再试。</li>
+</ol>
 <hr>
 <h2>⑧ 备用方案 — ATM实在不行的话</h2>
 <ul>
@@ -383,7 +384,7 @@
 <li><strong>换汇</strong>：<a href="exchange-card-atm.zh.html" class="xref">#435</a>韩国换汇指南 — 机场·银行·换汇所，剩余韩元换回外币</li>
 <li><strong>支付深度篇</strong>：<a href="payment-system-deep.zh.html" class="xref">#527</a>韩国支付系统deep dive — 银行卡被拒背后的VAN/EMV结构</li>
 <li><strong>同系列</strong>：<a href="tipping-paying-guide.zh.html" class="xref">#1275</a>韩国小费·结账礼仪攻略 — 从ATM取出现金之后的下一步</li>
-<li><strong>korea-first-timer系列</strong>：<a href="restaurant-kiosk-guide.zh.html" class="xref">#1270</a>自助点餐机点餐攻略(画面标记规则SoT)</li>
+<li><strong>korea-first-timer系列</strong>：<a href="restaurant-kiosk-guide.zh.html" class="xref">#1270</a>自助点餐机点餐攻略(画面标记规则的基准篇)</li>
 </ul>
 <h2>🏷 标签</h2>
 <p><code>#韩国ATM</code> <code>#KoreaATM</code> <code>#海外卡取现</code> <code>#GlobalATM</code> <code>#DCC陷阱</code> <code>#汇率差价</code> <code>#韩国旅行新手</code> <code>#KoreaFirstTimer</code> <code>#零慌张</code> <code>#NoPanicKorea</code> <code>#KeyChinGu</code></p>

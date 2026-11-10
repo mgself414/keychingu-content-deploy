@@ -194,7 +194,7 @@
 <p>ISSUE 04 · #1284 · 2026-08-16 · korea-first-timer 시리즈 ⑮</p>
 <hr>
 <h2>🎯 이 매뉴얼을 읽는 법 — 화면 표기 규약</h2>
-<p>화면 표기 규약(대괄호 버튼·낫표 화면·굵게 동작)은 <a href="restaurant-kiosk-guide.html" class="xref">#1270</a> 키오스크 편이 SoT다. 이 글도 그대로 따른다.</p>
+<p>화면 표기 규약(대괄호 버튼·낫표 화면·굵게 동작)은 <a href="restaurant-kiosk-guide.html" class="xref">#1270</a> 키오스크 편이 기준 편이다. 이 글도 그대로 따른다.</p>
 <ul>
 <li>화면 속 버튼은 대괄호로: <code>[ 결제하기 ]</code></li>
 <li>화면 제목·안내 문구는 낫표로: 「정산 내역」</li>
@@ -264,13 +264,11 @@
 </tr>
 </tbody></table></div>
 <p>의사화면(태그형 리더기 기준):</p>
-<p>```</p>
-<p>「손목밴드 태그」</p>
-<p>─────────────</p>
-<p>번호 확인 중...</p>
-<p>No. 0247 인식됨</p>
-<p>₩3,000 적립 완료</p>
-<p>```</p>
+<pre class="code-block"><code>「손목밴드 태그」
+─────────────
+번호 확인 중...
+No. 0247 인식됨
+₩3,000 적립 완료</code></pre>
 <ul>
 <li>지갑도 카드도 꺼낼 필요가 없다 — 이게 이 시스템의 핵심이다.</li>
 <li>태그가 안 찍히면 직원이 번호를 손으로 입력해준다. 당황하지 말고 팔찌를 보여주기만 하면 된다.</li>
@@ -304,15 +302,14 @@
 </tr>
 </tbody></table></div>
 <p>무인 정산기 의사화면:</p>
-<p>```</p>
-<p>「정산 내역」</p>
-<p>입장료          ₩12,000</p>
-<p>매점 - 식혜      ₩3,000</p>
-<p>매점 - 계란      ₩2,000</p>
-<p>──────────────────</p>
-<p>합계            ₩17,000</p>
-<p>[ 카드 결제 ]   [ 현금 결제 ]</p>
-<p>```</p>
+<pre class="code-block"><code>「정산 내역」
+입장료          ₩12,000
+매점 - 식혜      ₩3,000
+매점 - 계란      ₩2,000
+──────────────────
+합계            ₩17,000
+
+[ 카드 결제 ]   [ 현금 결제 ]</code></pre>
 <ul>
 <li>정산기가 없는 지점은 전부 프런트 직원이 팔찌를 보고 구두로 금액을 불러준다.</li>
 <li><strong>입장할 때 낸 돈은 이미 냈으니</strong>, 정산 화면에는 &quot;안에서 추가로 쓴 것&quot;만 더해져 나온다는 것만 기억하면 금액이 갑자기 커 보이지 않는다.</li>
@@ -431,9 +428,11 @@
 <blockquote><p>팁: 12개 다 외울 필요 없다. <strong><code>정산</code>(퇴장 계산) · <code>매점</code>(소비 장소) · <code>찜질복</code>(공용 복장)</strong> 세 개만 알아도 실전에서 헤매지 않는다.</p></blockquote>
 <hr>
 <h2>⑦ 당황 시나리오 3</h2>
-<p>1. <strong>팔찌를 잃어버렸다</strong> — 당황하지 말고 프런트로 바로 가서 신고한다. 대부분 지점이 분실 시 배상 규정(정액 변상 또는 재발급료)을 두고 있으니, 직원이 안내하는 대로 처리하면 된다.</p>
-<p>2. <strong>옷장이 안 열린다</strong> — 십중팔구 팔찌 태그 방향 문제다. 리더기 위치를 다시 확인하고 <strong>팔찌 면을 뒤집어서</strong> 다시 대본다. 그래도 안 되면 근처 직원 호출.</p>
-<p>3. <strong>정산 금액이 기억보다 크다</strong> — 당황하지 말고 「내역 확인」을 요청한다. 항목별로 찍혀 나오니 무엇을 언제 태그했는지 그 자리에서 확인 가능하다.</p>
+<ol>
+<li><strong>팔찌를 잃어버렸다</strong> — 당황하지 말고 프런트로 바로 가서 신고한다. 대부분 지점이 분실 시 배상 규정(정액 변상 또는 재발급료)을 두고 있으니, 직원이 안내하는 대로 처리하면 된다.</li>
+<li><strong>옷장이 안 열린다</strong> — 십중팔구 팔찌 태그 방향 문제다. 리더기 위치를 다시 확인하고 <strong>팔찌 면을 뒤집어서</strong> 다시 대본다. 그래도 안 되면 근처 직원 호출.</li>
+<li><strong>정산 금액이 기억보다 크다</strong> — 당황하지 말고 「내역 확인」을 요청한다. 항목별로 찍혀 나오니 무엇을 언제 태그했는지 그 자리에서 확인 가능하다.</li>
+</ol>
 <hr>
 <h2>⑧ 플랜B — 말이 안 통할 때</h2>
 <p>정산 화면 앞에서 막히면 <strong>&quot;정산해 주세요 (jeongsanhae juseyo)&quot;</strong> 한 마디와 함께 팔찌를 내밀면 된다. 대부분 직원이 알아서 화면을 보여주고 결제를 진행해준다.</p>
@@ -443,7 +442,7 @@
 <li><strong>같은 공간 이용법</strong>: <a href="jjimjilbang.html" class="xref">#007</a> 찜질방 이용 가이드 — 구역 구성·전체 순서</li>
 <li><strong>탈의실·목욕탕 매너</strong>: <a href="jjimjilbang-etiquette.html" class="xref">#34</a> 찜질방 에티켓 — 이 편에서 다루지 않은 나체 목욕 구역 규칙은 여기서</li>
 <li><strong>같은 시리즈</strong>: <a href="tipping-paying-guide.html" class="xref">#1275</a> 한국 계산 매너 가이드 — 찜질방 밖 일반 결제 문화</li>
-<li><strong>korea-first-timer 시리즈</strong>: <a href="restaurant-kiosk-guide.html" class="xref">#1270</a> 키오스크 주문 가이드 (화면 표기 규약 SoT)</li>
+<li><strong>korea-first-timer 시리즈</strong>: <a href="restaurant-kiosk-guide.html" class="xref">#1270</a> 키오스크 주문 가이드 (화면 표기 규약의 기준 편)</li>
 </ul>
 <h2>🏷 Tags</h2>
 <p><code>#찜질방팔찌</code> <code>#JjimjilbangWristband</code> <code>#한국찜질방</code> <code>#KoreaSpa</code> <code>#찜질방결제</code> <code>#한국여행초보</code> <code>#KoreaFirstTimer</code> <code>#당황제로</code> <code>#NoPanicKorea</code> <code>#키친구</code></p>

@@ -194,7 +194,7 @@
 <p>ISSUE 04 · #1286 · 2026-08-16 · korea-first-timer 시리즈 ⑰</p>
 <hr>
 <h2>🎯 이 매뉴얼을 읽는 법 — 화면 표기 규약</h2>
-<p>화면 표기 규약(대괄호 버튼·낫표 화면·굵게 동작)은 <a href="restaurant-kiosk-guide.html" class="xref">#1270</a> 키오스크 편이 SoT다. 이 글도 그대로 따른다.</p>
+<p>화면 표기 규약(대괄호 버튼·낫표 화면·굵게 동작)은 <a href="restaurant-kiosk-guide.html" class="xref">#1270</a> 키오스크 편이 기준 편이다. 이 글도 그대로 따른다.</p>
 <ul>
 <li>화면 속 버튼은 대괄호로: <code>[ KRW ]</code></li>
 <li>화면 제목·안내 문구는 낫표로: 「Select Amount」</li>
@@ -288,12 +288,11 @@
 <hr>
 <h2>④ DCC 최대 함정 — &quot;자국통화로 낼까요?&quot; 화면, 무조건 KRW</h2>
 <p>6단계 직후 또는 금액 확인 화면에서 이런 팝업이 뜨는 기계가 많다. 이게 이 매뉴얼에서 가장 중요한 화면이다.</p>
-<p>```</p>
-<p>「Currency Selection」</p>
-<p>Charge in:</p>
-<p>[ USD   $50.00  ]   ← 절대 누르지 않는다</p>
-<p>[ KRW   ₩68,000 ]   ← 반드시 이걸 누른다</p>
-<p>```</p>
+<pre class="code-block"><code>「Currency Selection」
+Charge in:
+
+[ USD   $50.00  ]   ← 절대 누르지 않는다
+[ KRW   ₩68,000 ]   ← 반드시 이걸 누른다</code></pre>
 <ul>
 <li>이 팝업은 <strong>DCC(Dynamic Currency Conversion·현지 통화 임의 환산)</strong> 라는 장치다. USD·EUR 등 자국 통화로 청구되도록 ATM 운영사가 <strong>자체적으로 정한 환율</strong>을 적용한다.</li>
 <li>자국 통화(USD 등)를 선택하면 카드사가 나중에 적용하는 정상 환율보다 불리한 <strong>숨은 환율 마진</strong>이 그 자리에서 얹힌다. 화면엔 &quot;친절하게&quot; 내 나라 통화로 보여주는 것처럼 보이지만 실제로는 더 비싸게 뽑히는 함정이다.</li>
@@ -379,9 +378,11 @@
 <blockquote><p>팁: 10개 다 외울 필요 없다. <strong><code>Confirm</code>(진행) · <code>Cancel</code>(탈출) · <code>Take Card</code>(카드 회수)</strong> 세 개만 챙기면 실전에서 헤매지 않는다.</p></blockquote>
 <hr>
 <h2>⑦ 당황 시나리오 3</h2>
-<p>1. <strong>카드가 거절됐다</strong> — 로고 스티커가 있는 기계였는데도 거절되면 카드 문제가 아니라 그 기계·은행망 궁합 문제일 확률이 높다. <strong>다른 은행 ATM</strong>(가급적 다른 브랜드)으로 옮겨 재시도한다.</p>
-<p>2. <strong>카드가 기계에 먹혔다</strong> — 그 자리에서 억지로 빼려 하지 않는다. 은행 ATM이라면 부스에 붙은 <strong>은행 영업시간 내 고객센터 번호</strong>로 전화해 회수 절차를 확인한다. 편의점 ATM이면 화면의 고객센터 안내(대개 ATM 운영사 콜센터)를 따른다.</p>
-<p>3. <strong>한도 초과로 안 뽑힌다</strong> — 1회 인출 한도(기계 자체) 또는 카드사가 설정한 해외 인출 한도, 둘 중 하나에 걸린 것이다. 금액을 낮춰 재시도하거나, 하루 시간을 두고 다른 기계에서 다시 시도한다.</p>
+<ol>
+<li><strong>카드가 거절됐다</strong> — 로고 스티커가 있는 기계였는데도 거절되면 카드 문제가 아니라 그 기계·은행망 궁합 문제일 확률이 높다. <strong>다른 은행 ATM</strong>(가급적 다른 브랜드)으로 옮겨 재시도한다.</li>
+<li><strong>카드가 기계에 먹혔다</strong> — 그 자리에서 억지로 빼려 하지 않는다. 은행 ATM이라면 부스에 붙은 <strong>은행 영업시간 내 고객센터 번호</strong>로 전화해 회수 절차를 확인한다. 편의점 ATM이면 화면의 고객센터 안내(대개 ATM 운영사 콜센터)를 따른다.</li>
+<li><strong>한도 초과로 안 뽑힌다</strong> — 1회 인출 한도(기계 자체) 또는 카드사가 설정한 해외 인출 한도, 둘 중 하나에 걸린 것이다. 금액을 낮춰 재시도하거나, 하루 시간을 두고 다른 기계에서 다시 시도한다.</li>
+</ol>
 <hr>
 <h2>⑧ 플랜B — ATM이 정 안 되면</h2>
 <ul>
@@ -394,7 +395,7 @@
 <li><strong>환전</strong>: <a href="exchange-card-atm.html" class="xref">#435</a> 한국 환전 가이드 — 공항·은행·환전소, 남은 원화 되바꾸기</li>
 <li><strong>결제 심층</strong>: <a href="payment-system-deep.html" class="xref">#527</a> 한국 결제 시스템 deep dive — 카드가 거절되는 VAN/EMV 구조</li>
 <li><strong>같은 시리즈</strong>: <a href="tipping-paying-guide.html" class="xref">#1275</a> 한국 팁·계산 매너 가이드 — ATM에서 뽑은 현금을 쓰는 다음 단계</li>
-<li><strong>korea-first-timer 시리즈</strong>: <a href="restaurant-kiosk-guide.html" class="xref">#1270</a> 키오스크 주문 가이드 (화면 표기 규약 SoT)</li>
+<li><strong>korea-first-timer 시리즈</strong>: <a href="restaurant-kiosk-guide.html" class="xref">#1270</a> 키오스크 주문 가이드 (화면 표기 규약의 기준 편)</li>
 </ul>
 <h2>🏷 Tags</h2>
 <p><code>#한국ATM</code> <code>#KoreaATM</code> <code>#해외카드출금</code> <code>#GlobalATM</code> <code>#DCC함정</code> <code>#환율마진</code> <code>#한국여행초보</code> <code>#KoreaFirstTimer</code> <code>#당황제로</code> <code>#NoPanicKorea</code> <code>#키친구</code></p>
