@@ -2,10 +2,10 @@
 
 > Comprehensive curated Korea travel guides for foreign MZ travelers, covering 1,200+ topics across 60+ cities (Seoul·Busan·Jeju·Gyeongju·Andong·Jeonju·etc), 4 languages (KR·EN·CN·JP), covering food, culture, K-content, shopping, seasons, transport, sports and practical essentials for solo, couple, family and budget travelers. Updated 2026-11-10.
 
-> Total guides: **1280** | EN: 1280 | CN: 1280 | JP: 1280 | og:image: 1,281 | sitemap URLs: 5,010
+> Total guides: **1255** | EN: 1255 | CN: 1255 | JP: 1255 | og:image: 1,281 | sitemap URLs: 4,910
 
 
-## A (408)
+## A (407)
 
 - [Gangnam Cafe Phase 2 Guide](https://mgself414.github.io/keychingu-content-deploy/content/gangnam-cafe-phase2.en.html): Gangnam Phase 2 cafes — specialty coffee, desserts & atmosphere. (Korean: https://mgself414.github.io/keychingu-content-deploy/content/gangnam-cafe-phase2.html)
 - [Seongsu Pop-Up Deep Dive](https://mgself414.github.io/keychingu-content-deploy/content/seongsu.en.html): How to find pop-ups in Seongsu, a district of converted factories, using Instagram, with five-plus-one must-visit spots, a three-hour route, (Korean: https://mgself414.github.io/keychingu-content-deploy/content/seongsu.html)
@@ -37,9 +37,9 @@
 - [Seocho Seorae Maeul Guide](https://mgself414.github.io/keychingu-content-deploy/content/seocho-seorae.en.html): Twelve Seocho places around Seorae Village, home to Korea's largest French community: expat spots, Korean food, bakeries and cafes, and the  (Korean: https://mgself414.github.io/keychingu-content-deploy/content/seocho-seorae.html)
 - [SNU Sharosu-gil Guide](https://mgself414.github.io/keychingu-content-deploy/content/snu-sharosu.en.html): Seoul National University and the 1.5 km Sharosu-gil toward Nakseongdae in 12 picks: Korean BBQ, cafes, pubs and campus sites, plus Gwanaksa (Korean: https://mgself414.github.io/keychingu-content-deploy/content/snu-sharosu.html)
 - [Magok Gimpo Airport Guide](https://mgself414.github.io/keychingu-content-deploy/content/magok-gimpo.en.html): Twelve stops from Gimpo Airport transit and duty-free to Seoul Botanic Park, LG Arts Center and Magok's cafes and restaurants. (Korean: https://mgself414.github.io/keychingu-content-deploy/content/magok-gimpo.html)
-  - ... and 378 more
+  - ... and 377 more
 
-## D (259)
+## D (237)
 
 - [Korea 7-Day Complete Guide for Foreigners](https://mgself414.github.io/keychingu-content-deploy/content/seoul-7day-guide.en.html): Optimal 7-day Korea itinerary for first-time foreign visitors. (Korean: https://mgself414.github.io/keychingu-content-deploy/content/seoul-7day-guide.html)
 - [K-pop Fan 1-Day Complete Itinerary Guide](https://mgself414.github.io/keychingu-content-deploy/content/kpop-fan-day-tour.en.html): Perfect 1-day K-pop fan itinerary — label districts, shrines & merch shops. (Korean: https://mgself414.github.io/keychingu-content-deploy/content/kpop-fan-day-tour.html)
@@ -71,7 +71,7 @@
 - [Korea Festivals Full Guide](https://mgself414.github.io/keychingu-content-deploy/content/korea-festivals.en.html): Korea's major festivals by type: KCON and MAMA, the Busan film festival, Seoul fireworks and Jinhae cherry blossoms, plus timing for Andong  (Korean: https://mgself414.github.io/keychingu-content-deploy/content/korea-festivals.html)
 - [Casino Full Guide](https://mgself414.github.io/keychingu-content-deploy/content/casino.en.html): Foreigner-only casinos such as Walker Hill, Paradise City and Inspire: Koreans cannot enter, a passport is required, plus currency exchange, (Korean: https://mgself414.github.io/keychingu-content-deploy/content/casino.html)
 - [Korea Instagram Spots: Instagram Photo Spots for Foreign Visitors — 12 Picks Including DDP and Starfield Library](https://mgself414.github.io/keychingu-content-deploy/content/instagram-spots.en.html): Twelve Instagram photo spots in four groups, city architecture, night views, nature viewpoints and trendy alleys, including DDP, Starfield L (Korean: https://mgself414.github.io/keychingu-content-deploy/content/instagram-spots.html)
-  - ... and 229 more
+  - ... and 207 more
 
 ## C (169)
 
@@ -107,7 +107,7 @@
 - [Seoul Hongdae Brunch Guide](https://mgself414.github.io/keychingu-content-deploy/content/hongdae-brunch.en.html): Twelve brunch spots in Hongdae, Yeonnam, Hapjeong and Mangwon: Yeonnam, modern Hapjeong cafes, pancakes and bagels, Mangwon neighborhood pla (Korean: https://mgself414.github.io/keychingu-content-deploy/content/hongdae-brunch.html)
   - ... and 139 more
 
-## H (144)
+## H (142)
 
 - [Transport & Navigation Guide](https://mgself414.github.io/keychingu-content-deploy/content/transport.en.html): How to get around Korea: T-money vs Climate Card, metro and bus rides, taxis, navigation apps such as Naver Map and KakaoMap, Ttareungi bike (Korean: https://mgself414.github.io/keychingu-content-deploy/content/transport.html)
 - [Seoul Running Course Guide](https://mgself414.github.io/keychingu-content-deploy/content/running-course.en.html): Eight Seoul running routes along the Han River, through downtown and palaces, in parks and nature, and on distinctive trails, plus summer he (Korean: https://mgself414.github.io/keychingu-content-deploy/content/running-course.html)
@@ -139,7 +139,7 @@
 - [Seoul Digital Nomad Full Guide](https://mgself414.github.io/keychingu-content-deploy/content/digital-nomad.en.html): Seoul Digital Nomad 12-pick — WeWork (Gangnam/City Hall/Samseong-dong) + Fastfive (Korea's #1) + Sparkplus + 24h cafes (Starbucks The series (Korean: https://mgself414.github.io/keychingu-content-deploy/content/digital-nomad.html)
 - [Korean Holidays Full Guide](https://mgself414.github.io/keychingu-content-deploy/content/korean-holidays.en.html): Korean Holidays 12-pick — Seollal Lunar New Year (tteokguk + sebae + hanbok + minsok-nori) + Chuseok harvest festival (songpyeon + charye +  (Korean: https://mgself414.github.io/keychingu-content-deploy/content/korean-holidays.html)
 - [Seoul Rainy Day Indoor Full Guide](https://mgself414.github.io/keychingu-content-deploy/content/rainy-day.en.html): Ten indoor places for a rainy day in Seoul (official info, Oct 2026) — three free museums (National Museum of Korea open to 21:00 Wed/Sat, M (Korean: https://mgself414.github.io/keychingu-content-deploy/content/rainy-day.html)
-  - ... and 114 more
+  - ... and 112 more
 
 ## B (111)
 
@@ -303,7 +303,7 @@
 
 ## Metadata
 
-- **Coverage**: 1280 curated guides as of 2026-11-10
+- **Coverage**: 1255 curated guides as of 2026-11-10
 - **Languages**: KR (full), EN (full), CN (full), JP (full)
 - **Update frequency**: Weekly
 - **Data sources**: Korea Tourism Organization (VisitKorea), Seoul Tourism Foundation (Visit Seoul), Cultural Heritage Administration, UNESCO World Heritage, Korea Open Government License (KOGL), Naver Maps, Reddit r/koreatravel + user curation

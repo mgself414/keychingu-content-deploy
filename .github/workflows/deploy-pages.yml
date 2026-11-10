@@ -36,3 +36,6 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          timeout: 1800000   # 30분 — 대량 변경 커밋에서 10분 기본값이 finished_file_sync 중 만료(2026-11-10 L3)
+          error_count: 10
