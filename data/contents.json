@@ -3,16 +3,18 @@
     "id": "202_select",
     "slug": "hongdae-select-shops",
     "title_kr": "홍대 편집샵 가이드",
-    "title_en": "Hongdae Select Shops Guide",
+    "title_en": "Seoul Hongdae Select Shop Guide",
     "category": "C",
     "tags": [
+      "foreigner",
       "hongdae",
+      "shopping",
       "select-shop",
-      "fashion",
-      "shopping"
+      "mz",
+      "yeonnam"
     ],
-    "summary_kr": "홍대·상수 편집샵 20+ — 패션·뷰티·소품 큐레이션.",
-    "summary_en": "20+ select shops in Hongdae & Sangsu — fashion, beauty & goods.",
+    "summary_kr": "라이프스타일 브랜드 매장, 빈티지·구제 골목, 올리브영 메가스토어, K-pop 콜라보 한정 매장, 디자인숍까지 홍대·서교·연남 편집샵 8곳. 빈티지 매장이 오후부터 연다는 점도 짚었다.",
+    "summary_en": "Eight select shops in Hongdae, Seogyo and Yeonnam: lifestyle brands, vintage lanes, an Olive Young megastore, a K-pop collaboration store and design shops, with afternoon opening hours.",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
@@ -96,17 +98,16 @@
     "id": "206_cj",
     "slug": "gangnam-chinese-japanese",
     "title_kr": "강남 중식·일식 가이드",
-    "title_en": "Gangnam Chinese & Japanese Restaurant Guide",
+    "title_en": "Gangnam Chinese & Japanese Restaurants Guide",
     "category": "C",
     "tags": [
       "gangnam",
       "chinese",
       "japanese",
-      "fine-dining",
-      "restaurant"
+      "restaurants"
     ],
-    "summary_kr": "강남 고급 중식·일식 레스토랑 30선 — 가격대별·분위기별 완전 분류.",
-    "summary_en": "30 top Chinese & Japanese restaurants in Gangnam — tiered by price & vibe.",
+    "summary_kr": "압구정·청담·코엑스 등 강남의 중식·일식 8곳을 모던 중식, 숨은 중식, 오마카세, 캐주얼 일식·해산물로 나눠 비교하고, 예약과 복장 요령을 짚는다.",
+    "summary_en": "Eight Chinese and Japanese restaurants in Gangnam, Apgujeong, Cheongdam and COEX, grouped as modern Chinese, hidden Chinese, omakase and casual seafood, with reservation and dress notes.",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
@@ -3731,32 +3732,6 @@
     "summary_zh": "以梨泰院、弘大、延禧洞等外国人聚居区为主，整理12家素食、清真和无麸质餐厅，另介绍寺院料理等韩国素食与健康餐。"
   },
   {
-    "id": "211",
-    "slug": "hongdae-select",
-    "title_kr": "홍대 편집샵 가이드",
-    "title_en": "Seoul Hongdae Select Shop Guide",
-    "category": "F",
-    "tags": [
-      "foreigner",
-      "hongdae",
-      "shopping",
-      "select-shop",
-      "mz",
-      "yeonnam"
-    ],
-    "summary_kr": "라이프스타일 브랜드 매장, 빈티지·구제 골목, 올리브영 메가스토어, K-pop 콜라보 한정 매장, 디자인숍까지 홍대·서교·연남 편집샵 8곳. 빈티지 매장이 오후부터 연다는 점도 짚었다.",
-    "summary_en": "Eight select shops in Hongdae, Seogyo and Yeonnam: lifestyle brands, vintage lanes, an Olive Young megastore, a K-pop collaboration store and design shops, with afternoon opening hours.",
-    "en_available": true,
-    "instagram_posted": false,
-    "cn_available": true,
-    "jp_available": true,
-    "date_published": "2026-05-21",
-    "title_ja": "弘大セレクトショップガイド",
-    "title_zh": "弘大买手店攻略",
-    "summary_ja": "弘大・西橋・延南のセレクトショップ8軒。ライフスタイルブランド、ヴィンテージ・古着の路地、オリーブヤングの大型店、K-POPコラボ限定店、デザインショップを紹介し、ヴィンテージ店は午後からの営業という点にも触れます。",
-    "summary_zh": "弘大、西桥、延南8家买手店：生活方式品牌店、古着巷弄、Olive Young大型店、K-pop联名限定店和设计店，并提示古着店下午才开门。"
-  },
-  {
     "id": "203",
     "slug": "korean-liquor",
     "title_kr": "한국 술 심층 가이드",
@@ -3837,30 +3812,6 @@
     "title_zh": "首尔公园全攻略",
     "summary_ja": "漢江公園、ソウルの森やオリンピック公園などの都市公園、南山・北漢山・冠岳山、駱山公園などの都心の庭園まで、ソウルの公園12カ所をタイプ別に紹介します。",
     "summary_zh": "按类型整理首尔12处公园：汉江公园、首尔林和奥林匹克公园等城市公园、南山、北汉山、冠岳山，以及骆山公园等都市花园。"
-  },
-  {
-    "id": "206",
-    "slug": "gangnam-chinese-japanese-v2",
-    "title_kr": "강남 중식·일식 가이드",
-    "title_en": "Gangnam Chinese & Japanese Restaurants Guide",
-    "category": "A",
-    "tags": [
-      "gangnam",
-      "chinese",
-      "japanese",
-      "restaurants"
-    ],
-    "summary_kr": "압구정·청담·코엑스 등 강남의 중식·일식 8곳을 모던 중식, 숨은 중식, 오마카세, 캐주얼 일식·해산물로 나눠 비교하고, 예약과 복장 요령을 짚는다.",
-    "summary_en": "Eight Chinese and Japanese restaurants in Gangnam, Apgujeong, Cheongdam and COEX, grouped as modern Chinese, hidden Chinese, omakase and casual seafood, with reservation and dress notes.",
-    "en_available": true,
-    "cn_available": true,
-    "jp_available": true,
-    "instagram_posted": false,
-    "date_published": "2026-06-16",
-    "title_ja": "江南中華・和食ガイド",
-    "title_zh": "江南中日美食攻略",
-    "summary_ja": "江南・狎鴎亭・清潭・COEX周辺の中華・和食8軒を、モダン中華、穴場の中華、おまかせ、カジュアル和食・海鮮の4分類で比較し、予約や服装の注意点も紹介します。",
-    "summary_zh": "江南、狎鸥亭、清潭、COEX一带的8家中餐与日料，分为现代中餐、隐藏小店、无菜单料理和休闲海鲜四类，并说明预约与着装要求。"
   },
   {
     "id": "207",
@@ -3950,32 +3901,6 @@
     "title_zh": "夏季汉江达人攻略",
     "summary_ja": "5月から9月限定！漢江の11公園で楽しむピクニック、チメク、サイクリング、キャンプ、水上スポーツなど、夏の漢江を遊び尽くすガイド。",
     "summary_zh": "5-9月限定，汉江11个公园的野餐、炸鸡啤酒、自行车、露营、水上运动季节攻略。"
-  },
-  {
-    "id": "217",
-    "slug": "foreign-summer-han-river",
-    "title_kr": "여름 한강 마스터 가이드",
-    "title_en": "Foreign Summer Han River Master Guide",
-    "category": "A",
-    "tags": [
-      "han-river",
-      "summer",
-      "foreigner",
-      "picnic",
-      "nightlife",
-      "seoul-wide"
-    ],
-    "summary_kr": "외국인 여름 한강 풀가이드 — 공원·치맥·피크닉·동선.",
-    "summary_en": "Foreign Summer Han River Master Guide — curated picks.",
-    "en_available": true,
-    "cn_available": true,
-    "jp_available": true,
-    "instagram_posted": false,
-    "date_published": "2026-06-16",
-    "title_ja": "夏の漢江マスターガイド",
-    "title_zh": "夏季汉江达人攻略",
-    "summary_ja": "外国人向け夏の漢江フルガイド。公園でのチメクやピクニック、おすすめの動線まで、夏の漢江を満喫するための情報を網羅。",
-    "summary_zh": "外国人夏季汉江完整指南，包含公园、炸鸡啤酒、野餐及推荐游览路线。"
   },
   {
     "id": "212",
@@ -7701,30 +7626,6 @@
     "summary_zh": "首尔12家五星级酒店泳池精选，包括悦榕庄（南山韩国第一无边泳池）、西格尼尔（乐天85层）、新罗（户外泳池）、四季、康莱德（汉江景观）、君悦、JW万豪东大门（DDP景观）、蒙德里安梨泰院、麻浦纳鲁酒店、诺富特东大门、L7弘大和洲际酒店江南。"
   },
   {
-    "id": "492",
-    "slug": "seoul-hotel-pool",
-    "title_kr": "서울 호텔 수영장 풀가이드",
-    "title_en": "Seoul Hotel Pool Guide",
-    "category": "C",
-    "tags": [
-      "seoul",
-      "hotel",
-      "luxury",
-      "summer"
-    ],
-    "summary_kr": "서울 호텔 수영장 풀가이드 — 시그니엘·콘래드·롯데 등 럭셔리 라인.",
-    "summary_en": "Seoul Hotel Pool Guide — curated picks.",
-    "en_available": true,
-    "cn_available": true,
-    "jp_available": true,
-    "instagram_posted": false,
-    "date_published": "2026-06-16",
-    "title_ja": "ソウルホテルプールガイド",
-    "title_zh": "首尔酒店泳池完整指南",
-    "summary_ja": "ソウルのホテルプール完全ガイド。シグニエル、コンラッド、ロッテなど、ラグジュアリーホテルを中心に厳選されたプールを紹介します。",
-    "summary_zh": "首尔酒店泳池完整指南，涵盖西格尼尔、康莱德、乐天等奢华酒店系列。"
-  },
-  {
     "id": "357",
     "slug": "temple-food",
     "title_kr": "서울 사찰음식 전문점 풀가이드",
@@ -7749,31 +7650,6 @@
     "title_zh": "首尔寺院美食专门店完整指南",
     "summary_ja": "ニンニクやネギ類を使わない精進料理の専門店を紹介。一般的なヴィーガンとの違い、発優供養・山村・マジ・阿僧祇などの店、予約が必要な店がわかります。",
     "summary_zh": "介绍不使用大蒜、葱、韭菜等五辛的首尔寺院美食专门店，说明与一般纯素的区别，并列出钵盂供养、山村、Maji、阿僧祇等餐厅及需预约的店家。"
-  },
-  {
-    "id": "493",
-    "slug": "seoul-temple-food",
-    "title_kr": "서울 사찰음식 전문점 풀가이드",
-    "title_en": "Seoul Buddhist Temple Cuisine Guide",
-    "category": "A",
-    "tags": [
-      "seoul",
-      "temple-food",
-      "vegan",
-      "traditional",
-      "seoul-wide"
-    ],
-    "summary_kr": "서울 사찰음식 전문점 — 정관 스님·인사동·강남 라인.",
-    "summary_en": "Seoul Buddhist Temple Cuisine Guide — curated picks.",
-    "en_available": true,
-    "cn_available": true,
-    "jp_available": true,
-    "instagram_posted": false,
-    "date_published": "2026-06-16",
-    "title_ja": "ソウル精進料理店ガイド",
-    "title_zh": "首尔寺院美食专门店完整指南",
-    "summary_ja": "ソウルの精進料理専門店ガイド。チョングァン僧侶ゆかりの店や、仁寺洞、江南エリアの厳選された名店を紹介します。",
-    "summary_zh": "首尔寺庙饮食专门店指南，涵盖净宽师太、仁寺洞、江南等地的精选。"
   },
   {
     "id": "358",
@@ -7804,30 +7680,6 @@
     "title_zh": "首尔酒店早餐酒廊完整指南",
     "summary_ja": "シグニエル、新羅、バンヤンツリー、フォーシーズンズなどソウルのホテルの朝食ビュッフェ、韓菓と伝統茶のアフタヌーンティー、エグゼクティブラウンジを比較。宿泊客以外が使える店と予約のコツも紹介します。",
     "summary_zh": "比较乐天世界塔、新罗、悦榕庄、四季等首尔酒店的早餐自助、搭配韩果与传统茶的下午茶和行政酒廊，并说明非住客可用的地方与预约方法。"
-  },
-  {
-    "id": "494",
-    "slug": "seoul-hotel-breakfast",
-    "title_kr": "서울 호텔 조식 라운지 풀가이드",
-    "title_en": "Seoul Hotel Breakfast Lounge Guide",
-    "category": "C",
-    "tags": [
-      "seoul",
-      "hotel",
-      "breakfast",
-      "luxury"
-    ],
-    "summary_kr": "서울 호텔 조식·라운지 풀가이드 — 럭셔리 호텔 morning fit.",
-    "summary_en": "Seoul Hotel Breakfast Lounge Guide — curated picks.",
-    "en_available": true,
-    "cn_available": true,
-    "jp_available": true,
-    "instagram_posted": false,
-    "date_published": "2026-06-16",
-    "title_ja": "ソウルホテル朝食ラウンジガイド",
-    "title_zh": "首尔酒店早餐酒廊完整指南",
-    "summary_ja": "ソウルのホテル朝食・ラウンジ完全ガイド。ラグジュアリーホテルで優雅な朝食やラウンジ体験を楽しみたい方におすすめです。",
-    "summary_zh": "首尔酒店早餐与酒廊完整指南，奢华酒店的早晨体验。"
   },
   {
     "id": "359",
@@ -7909,31 +7761,6 @@
     "summary_ja": "ビチェナ、ラヨンなどのホテル韓食ダイニングと、シグニエルBAR 81、コンラッド37などの夜景バーを紹介。お得なランチコース、宿泊客以外の利用可否、予約のコツもまとめました。"
   },
   {
-    "id": "496",
-    "slug": "seoul-hotel-dining-bar",
-    "title_kr": "서울 호텔 다이닝·바 풀가이드",
-    "title_en": "Seoul Hotel Dining & Bar Guide",
-    "category": "C",
-    "tags": [
-      "seoul",
-      "hotel",
-      "dining",
-      "bar",
-      "luxury"
-    ],
-    "summary_kr": "서울 호텔 다이닝·바 풀가이드 — 시그니엘·콘래드·반얀트리 fine dining.",
-    "summary_en": "Seoul Hotel Dining & Bar Guide — curated picks.",
-    "en_available": true,
-    "cn_available": true,
-    "jp_available": true,
-    "instagram_posted": false,
-    "date_published": "2026-06-16",
-    "title_ja": "ソウル ホテル ダイニング＆バー 完全ガイド",
-    "title_zh": "首尔酒店餐饮酒吧完整指南",
-    "summary_zh": "首尔酒店餐饮与酒吧完整指南，涵盖Signiel、康莱德、悦榕庄等酒店的精致餐饮。",
-    "summary_ja": "シグニエル、コンラッド、バンヤンツリーなどのファインダイニングを含む、ソウルのホテルダイニング・バー完全ガイド。"
-  },
-  {
     "id": "361",
     "slug": "bakery-dessert",
     "title_kr": "한국 베이커리 디저트 풀가이드",
@@ -7960,31 +7787,6 @@
     "title_zh": "韩国烘焙甜点完整指南",
     "summary_zh": "收录韩国烘焙与甜点：从西来村MAILLET、拿破仑、太极堂、圣心堂、李盛堂等数十年老店，到传统韩果、刨冰和甜甜圈，并指出各店必点的招牌。",
     "summary_ja": "ソレ村のMAILLET、ナポレオン製菓店、太極堂、聖心堂、李盛堂など老舗ベーカリーから、韓菓、かき氷、ドーナツまで韓国スイーツを集めました。各店の定番メニューの選び方も紹介します。"
-  },
-  {
-    "id": "497",
-    "slug": "korea-bakery-dessert-full",
-    "title_kr": "한국 베이커리·디저트 풀가이드",
-    "title_en": "Korea Bakery & Dessert Full Guide",
-    "category": "A",
-    "tags": [
-      "korea",
-      "bakery",
-      "dessert",
-      "patisserie",
-      "regional"
-    ],
-    "summary_kr": "한국 베이커리·디저트 풀가이드 — 노포·MZ·트렌디 라인.",
-    "summary_en": "Korea Bakery & Dessert Full Guide — curated picks.",
-    "en_available": true,
-    "cn_available": true,
-    "jp_available": true,
-    "instagram_posted": false,
-    "date_published": "2026-06-16",
-    "title_ja": "韓国 ベーカリー＆デザート 完全ガイド",
-    "title_zh": "韩国烘焙甜点完整指南",
-    "summary_zh": "韩国烘焙与甜点完整指南，涵盖老字号、MZ世代热门及潮流新品。",
-    "summary_ja": "韓国ベーカリー・デザート完全ガイド — 老舗・MZ世代・トレンドライン。"
   },
   {
     "id": "362",
@@ -8014,31 +7816,6 @@
     "summary_ja": "チャミスルなど希釈式焼酎と、安東焼酎・梨薑酒・文配酒などの蒸留式伝統酒の違いから説明。マッコリ、清酒、薬酒、果実酒が味わえる場所も紹介します。"
   },
   {
-    "id": "498",
-    "slug": "korea-traditional-sool",
-    "title_kr": "한국 정통주 소주·막걸리 풀가이드",
-    "title_en": "Korea Traditional Sool Guide",
-    "category": "A",
-    "tags": [
-      "korea",
-      "soju",
-      "makgeolli",
-      "traditional",
-      "regional"
-    ],
-    "summary_kr": "한국 정통주 — 소주·막걸리·약주·증류주 전문점 풀가이드.",
-    "summary_en": "Korea Traditional Sool Guide — curated picks.",
-    "en_available": true,
-    "cn_available": true,
-    "jp_available": true,
-    "instagram_posted": false,
-    "date_published": "2026-06-16",
-    "title_ja": "韓国 伝統酒・焼酎・マッコリ 完全ガイド",
-    "title_zh": "韩国传统酒烧酒马格利完整指南",
-    "summary_zh": "韩国传统酒完整指南，涵盖烧酒、米酒、药酒及蒸馏酒等各类酒品专卖店。",
-    "summary_ja": "韓国伝統酒 — 焼酎・マッコリ・薬酒・蒸留酒専門店完全ガイド。"
-  },
-  {
     "id": "363",
     "slug": "cycling-dulegil",
     "title_kr": "한국 자전거 길 둘레길 풀가이드",
@@ -8063,30 +7840,6 @@
     "title_zh": "韩国自行车道环山路完整指南",
     "summary_zh": "汇集韩国的骑行道与环山步道：汉江自行车道、156公里首尔环山路、含洛东江、锦江、荣山江的四大江1853公里线路、济州环岛，并介绍外国人使用共享单车的方法。",
     "summary_ja": "漢江の自転車道、ソウルドゥルレギル156km、洛東江・錦江・栄山江などの四大河1,853km、済州一周まで、韓国のサイクリングコースと散策路を集めました。外国人もできる公共自転車の使い方も案内します。"
-  },
-  {
-    "id": "499",
-    "slug": "korea-bike-trail",
-    "title_kr": "한국 자전거 길·둘레길 풀가이드",
-    "title_en": "Korea Bicycle Trail Guide",
-    "category": "A",
-    "tags": [
-      "korea",
-      "outdoor",
-      "cycling",
-      "regional"
-    ],
-    "summary_kr": "한강 자전거길·서울둘레길부터 4대강 1853km·제주 환상길까지 한국 자전거·둘레길 12선을 난이도와 특징별로 정리한 가이드.",
-    "summary_en": "Korea Bicycle Trail Guide — curated picks.",
-    "en_available": true,
-    "cn_available": true,
-    "jp_available": true,
-    "instagram_posted": false,
-    "date_published": "2026-06-16",
-    "title_zh": "韩国骑行步道指南",
-    "title_ja": "韓国 サイクリング＆ドゥルレギル 完全ガイド",
-    "summary_zh": "韩国自行车道·徒步路线完整指南——四大江、济州、东海。",
-    "summary_ja": "韓国自転車道・トレッキングコース完全ガイド — 4大河川・済州・東海。"
   },
   {
     "id": "364",
