@@ -14082,24 +14082,29 @@
   {
     "id": "606",
     "slug": "musical-ai-subtitle-deep",
-    "title_kr": "한국 뮤지컬·대학로 AI 자막 12선",
-    "title_en": "Korea Musicals Daehakro AI Subtitle Top 12",
+    "title_kr": "한국 뮤지컬 공연장 가이드 — 대학로(대학로예술극장·대학로자유극장·대학로티오엠), 블루스퀘어·샤롯데씨어터·세종문화회관·충무아트센터·예술의전당, 대구국제뮤지컬페스티벌",
+    "title_en": "Korea Musical Theater Guide: Daehangno (Daehangno Arts Theater, Daehangno Free Theater, Daehangno TOM), Blue Square, Charlotte Theater, Sejong Center, Chungmu Arts Center, Seoul Arts Center, and the Daegu International Musical Festival",
     "category": "G",
     "tags": [
       "foreigner",
+      "musical",
+      "theater",
+      "daehangno",
+      "seoul",
+      "daegu",
       "sub-deep"
     ],
-    "summary_kr": "대학로 소극장과 대형 뮤지컬 극장, 안경형 기기로 실시간 다국어 자막을 보는 AI 자막 공연까지 뮤지컬 12곳을 정리하고 예매·교통·언어 정보를 담았다.",
-    "summary_en": "Twelve musical venues in Seoul, from Daehakro small theaters to large halls and shows offering real-time multilingual subtitles on smart glasses, with booking, transport and language info.",
+    "summary_kr": "대학로(대학로예술극장·대학로자유극장·대학로티오엠)와 블루스퀘어·샤롯데씨어터·세종문화회관·충무아트센터·예술의전당의 좌석·쉬는 날·주차 요금, 2026년 대구국제뮤지컬페스티벌을 한국관광공사 관광정보(TourAPI) 기준으로 정리한 뮤지컬 공연장 가이드다.",
+    "summary_en": "Seat counts, closed days and parking fees of 3 Daehangno theaters and 5 large Seoul venues, plus the 2026 Daegu International Musical Festival, from Korea Tourism Organization data (TourAPI).",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
     "jp_available": true,
     "date_published": "2026-06-01",
-    "title_ja": "ミュージカル・大学路 AI字幕12選",
-    "title_zh": "韩国音乐剧·大学路AI字幕12大深度探索",
-    "summary_zh": "首尔音乐剧12处精选，涵盖大学路小剧场、大型剧院，以及用眼镜式设备实时显示多语字幕的AI字幕演出，附订票、交通与语言信息。",
-    "summary_ja": "大学路の小劇場、大型ミュージカル劇場、メガネ型端末で多言語字幕をリアルタイム表示するAI字幕公演まで、ミュージカル12選。予約・交通・言語情報も掲載。"
+    "title_ja": "韓国ミュージカル劇場ガイド — 大学路(大学路芸術劇場・大学路自由劇場・大学路TOM)、ブルースクエア・シャルロッテシアター・世宗文化会館・忠武アートセンター・芸術の殿堂、大邱国際ミュージカルフェスティバル",
+    "title_zh": "韩国音乐剧剧场指南：大学路（大学路艺术剧场·大学路自由剧场·大学路TOM剧场）、蓝色广场、夏洛特剧场、世宗文化会馆、忠武艺术中心、艺术殿堂，以及大邱国际音乐剧节",
+    "summary_zh": "汇总大学路3座剧场、首尔5座大型剧场和第20届大邱国际音乐剧节（已结束）的座位数、休息日、停车费等剧场登记信息，运营信息照录韩国观光公社旅游信息（TourAPI）。",
+    "summary_ja": "韓国でミュージカルを観られる大学路の劇場3か所、ソウルの大型公演会場5か所、ミュージカル祭り1件の座席数・休み・駐車料金を、韓国観光公社の観光情報(TourAPI)でまとめたガイドです。"
   },
   {
     "id": "607",
