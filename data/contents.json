@@ -14191,28 +14191,30 @@
   {
     "id": "610",
     "slug": "busan-cluster-sub-deep",
-    "title_kr": "한국 부산 국제·BIFF·용두산 12선",
-    "title_en": "Korea Busan Gukje BIFF Yongdusan Top 12",
+    "title_kr": "부산 원도심 가이드 — 국제시장·먹자골목·부평깡통시장·보수동책방골목, BIFF 광장·광복로, 용두산공원·부산타워·40계단, 영도대교",
+    "title_en": "Busan Old Downtown Guide: Gukje Market, Mukja Alley, Bupyeong Kkangtong Market, Bosu-dong Book Street, BIFF Square, Gwangbok-ro, Yongdusan Park, Busan Tower, 40 Steps, Yeongdodaegyo Bridge",
     "category": "A",
     "tags": [
       "foreigner",
       "busan",
+      "nampo",
       "gukje-market",
       "biff",
-      "sub-deep",
-      "yeongdo"
+      "yongdusan",
+      "market",
+      "sub-deep"
     ],
-    "summary_kr": "부산 국제시장, BIFF 광장, 용두산공원·부산타워와 인근 연계 코스 12곳을 소개하고 교통·KTX·언어 정보와 외국인이 자주 하는 실수 3가지를 정리했다.",
-    "summary_en": "Twelve Busan stops around Gukje Market, BIFF Square, Yongdusan Park and Busan Tower, with transport, KTX and language info and three mistakes visitors often make.",
+    "summary_kr": "부산 중구 원도심의 국제시장·먹자골목·부평깡통시장·보수동책방골목, BIFF 광장·광복로패션거리, 용두산공원·부산타워·40계단과 영도대교의 여는 시간·쉬는 날·주차를 한국관광공사 관광정보(TourAPI) 기준으로 정리한 부산 원도심 가이드다.",
+    "summary_en": "Opening hours, closed days and parking for 10 places in Busan's old downtown, from Gukje Market to Yeongdodaegyo Bridge, from Korea Tourism Organization data (TourAPI).",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
     "jp_available": true,
     "date_published": "2026-06-01",
-    "title_ja": "釜山 国際・BIFF・龍頭山12選",
-    "title_zh": "韩国釜山国际市场·BIFF广场·龙头山12大深度游",
-    "summary_ja": "釜山の国際市場、BIFF広場、龍頭山公園・釜山タワーと周辺エリア12選。交通・KTX・言語の情報と、外国人がよくする失敗3つも整理。",
-    "summary_zh": "釜山国际市场、BIFF广场、龙头山公园与釜山塔及周边延伸路线共12处，附交通、KTX与语言信息，以及外国游客常犯的3个失误。"
+    "title_ja": "釜山 旧市街ガイド — 国際市場・モクチャコルモク・富平カントン市場・宝水洞本屋通り、BIFF広場・光復路、竜頭山公園・釜山タワー・40階段、影島大橋",
+    "title_zh": "釜山老城区指南：国际市场·美食街·富平罐头市场·宝水洞书店胡同，BIFF广场·光复路，龙头山公园·釜山塔·40台阶，影岛大桥",
+    "summary_ja": "釜山 中区の旧市街にある国際市場・モクチャコルモク・富平カントン市場・宝水洞本屋通り・BIFF広場・光復路ファッション通り・竜頭山公園・釜山タワー・40階段と影島大橋の営業時間・休み・駐車情報を、韓国観光公社の観光情報(TourAPI)でまとめたガイドです。",
+    "summary_zh": "汇总釜山中区老城区市场·胡同4处、电影·时装街2处、公园·展望台·台阶3处和影岛大桥的营业时间、休息日、停车等登记信息，运营信息照录韩国观光公社旅游信息（TourAPI）。"
   },
   {
     "id": "611",
