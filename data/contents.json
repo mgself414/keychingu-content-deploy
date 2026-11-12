@@ -14138,28 +14138,30 @@
   {
     "id": "608",
     "slug": "euljiro-newtro-sub-deep",
-    "title_kr": "한국 을지로 노포·뉴트로 12선",
-    "title_en": "Korea Euljiro Heritage Newtro Top 12",
+    "title_kr": "서울 을지로 노포·뉴트로 가이드 — 우래옥·산수갑산·을지다방·커피한약방, 노가리골목·인쇄골목·세운상가·방산시장·철제가구거리·중부시장",
+    "title_en": "Seoul Euljiro Old Restaurants and Newtro Guide: Wooraeok, Sansugapsan, Eulji Dabang, Coffee Hanyakbang, Nogari Alley, Printing Alley, Sewoon Sangga, Bangsan Market, Metal Furniture Street, Jungbu Market",
     "category": "C",
     "tags": [
       "foreigner",
       "euljiro",
-      "heritage",
-      "jung-gu",
-      "sub-deep",
-      "mz"
+      "nopo",
+      "newtro",
+      "cafe",
+      "market",
+      "seoul",
+      "sub-deep"
     ],
-    "summary_kr": "을지로의 냉면 노포, 인쇄·공구·조명 골목, 뉴트로 바와 카페, 인근 연계 코스 12곳을 소개하고 교통·결제·언어와 자주 하는 실수를 정리했다.",
-    "summary_en": "Twelve Euljiro stops: old naengmyeon shops, printing, tool and lighting alleys, retro-style bars and cafes, and nearby add-ons, with transport, payment, language tips and common mistakes.",
+    "summary_kr": "을지로의 노포 식당·다방 4곳(우래옥·산수갑산·을지다방·커피한약방)과 노가리골목·인쇄골목·세운상가·방산시장·철제가구거리·중부시장의 여는 시간·쉬는 날·주차를 한국관광공사 관광정보(TourAPI) 기준으로 정리한 을지로 가이드다.",
+    "summary_en": "Opening hours, closed days and parking for 4 restaurants, tearooms and cafes and 6 alleys and markets around Euljiro, from Korea Tourism Organization data (TourAPI).",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
     "jp_available": true,
     "date_published": "2026-06-01",
-    "title_ja": "乙支路 老舗・ニュートロ12選",
-    "title_zh": "韩国乙支路老店·新复古12大深度游",
-    "summary_ja": "乙支路の冷麺老舗、印刷・工具・照明の路地、ニュートロなバーやカフェ、周辺エリアまで12選。交通・支払い・言語のヒントとよくある失敗も整理。",
-    "summary_zh": "乙支路12处精选：冷面老店、印刷五金灯具街巷、复古风酒吧与咖啡馆以及周边延伸路线，附交通、支付、语言提示与常见失误。"
+    "title_ja": "ソウル乙支路 老舗・ニュートロガイド — ウレオク・サンスカプサン・乙支茶房・コーヒー韓薬房、ノガリ横丁・印刷通り・世運商街・芳山総合市場・鉄製家具通り・中部市場",
+    "title_zh": "首尔乙支路老店·复古（Newtro）指南：又来屋·Sansugapsan·乙支茶房·咖啡韩药房，小明太鱼干胡同·印刷街·世运商街·芳山综合市场·铁制家具街·中部市场",
+    "summary_ja": "ソウル乙支路の食堂・喫茶店・カフェ4か所と、ノガリ横丁・印刷通り・世運商街・芳山総合市場・鉄製家具通り・中部市場の営業時間・休み・駐車情報を、韓国観光公社の観光情報(TourAPI)でまとめたガイドです。",
+    "summary_zh": "汇总乙支路一带餐厅·茶房·咖啡馆4家和胡同·商街6处的营业时间、休息日、停车等登记信息，运营信息照录韩国观光公社旅游信息（TourAPI）。"
   },
   {
     "id": "609",
