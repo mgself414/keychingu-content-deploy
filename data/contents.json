@@ -14223,32 +14223,27 @@
   {
     "id": "602",
     "slug": "seoye-sub-deep",
-    "title_kr": "한국 서예 단독 12선",
-    "title_en": "Korea Calligraphy Top 12 Deep Dive",
+    "title_kr": "한국 서예 여행 가이드 — 서울서예박물관, 과천 추사박물관, 예산 추사고택·추사기념관·한국서예비림박물관, 제주추사관, 전주 강암서예관, 인제 여초서예관, 천안 취묵헌서예관, 춘천 붓이야기박물관",
+    "title_en": "Korean Calligraphy Travel Guide: Seoul Calligraphy Museum, Gwacheon Chusa Museum, Yesan Chusa Old House, Chusa Memorial Hall and Korean Calligraphy Birim Museum, Jeju Chusagwan, Jeonju Gangam Seoyegwan, Inje Yeocho Seoyegwan, Cheonan Chwimukheon Seoyegwan, Chuncheon Butiyagi Museum",
     "category": "D",
     "tags": [
       "foreigner",
       "calligraphy",
-      "insadong",
-      "hangul",
-      "hanja",
-      "kpop",
-      "mz",
-      "workshop",
-      "sub-deep",
-      "heritage"
+      "chusa",
+      "museum",
+      "sub-deep"
     ],
-    "summary_kr": "인사동 서예 도구 매장, 박물관 교육, 실용 문화 체험, 젊은 층 취향 서예까지 서예 12곳을 4갈래로 정리하고 체험비·소요 시간·예약 정보를 담았다.",
-    "summary_en": "Twelve calligraphy stops, from Insadong supply shops to museum classes, practical cultural experiences and youth-oriented styles, with costs, time needed and booking info.",
+    "summary_kr": "서울서예박물관, 과천 추사박물관, 예산 추사고택·추사기념관·한국서예비림박물관, 제주추사관, 전주 강암서예관, 인제 여초서예관, 천안 취묵헌서예관, 춘천 붓이야기박물관의 여는 시간·휴관일·입장료를 한국관광공사 관광정보(TourAPI) 기준으로 정리했다.",
+    "summary_en": "Ten calligraphy halls, museums and old houses, including the Chusa Kim Jeong-hui sites in Gwacheon, Yesan and Jeju, with hours, closed days and admission from Korea Tourism Organization data (TourAPI).",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
     "jp_available": true,
     "date_published": "2026-06-01",
-    "title_ja": "書道12選",
-    "title_zh": "韩国书法12大深度探索",
-    "summary_zh": "书法12处精选，涵盖仁寺洞书法用品店、博物馆教育、实用文化体验与年轻人喜爱的书法，附体验费用、所需时间与预约信息。",
-    "summary_ja": "仁寺洞の書道用品店、博物館の教室、実用的な文化体験、若者向けの書道まで、書道12選。体験費、所要時間、予約情報も掲載。"
+    "title_ja": "韓国書道旅行ガイド — ソウル書芸博物館、果川秋史博物館、礼山の秋史故宅・秋史記念館・韓国書芸碑林博物館、済州秋史館、全州カンアム書芸館、麟蹄ヨチョ書芸館、天安チュイムクホン書芸館、春川筆の物語博物館",
+    "title_zh": "韩国书法之旅指南：首尔书艺博物馆、果川秋史博物馆、礼山秋史故居·秋史纪念馆·韩国书艺碑林博物馆、济州秋史馆、全州Gangam书艺馆、麟蹄Yeocho书艺馆、天安Chwimukheon书艺馆、春川笔的故事博物馆",
+    "summary_zh": "介绍首尔、果川、礼山、济州、全州、麟蹄、天安、春川的10处书艺馆·博物馆·故居，涵盖秋史 金正喜相关场所和毛笔制作体验，运营信息照录韩国观光公社旅游信息（TourAPI）。",
+    "summary_ja": "ソウル書芸博物館・秋史博物館・秋史故宅・秋史記念館・韓国書芸碑林博物館・済州秋史館・カンアム書芸館・ヨチョ書芸館・チュイムクホン書芸館・筆の物語博物館の開く時間・休み・入場料を、韓国観光公社の観光情報(TourAPI)でまとめたガイドです。"
   },
   {
     "id": "603",
