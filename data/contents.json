@@ -14275,28 +14275,26 @@
   {
     "id": "604",
     "slug": "market-beginner-deep",
-    "title_kr": "한국 전통시장 입문 가이드 12선",
-    "title_en": "Korea Traditional Markets Beginner Guide Top 12",
+    "title_kr": "서울 전통시장 입문 가이드 — 광장시장·남대문시장·통인시장·망원시장·노량진수산물도매시장·경동시장·중부시장, 여는 시간과 쉬는 날",
+    "title_en": "Seoul Traditional Market Beginner's Guide: Gwangjang Market, Namdaemun Market, Tongin Market, Mangwon Market, Noryangjin Fisheries Wholesale Market, Gyeongdong Market, Jungbu Market, Opening Hours and Closed Days",
     "category": "C",
     "tags": [
       "foreigner",
-      "markets",
-      "culture",
-      "payment",
-      "language",
+      "market",
+      "seoul",
       "sub-deep"
     ],
-    "summary_kr": "처음 전통시장에 가는 여행자를 위해 공유 좌석 문화, 결제·언어, 요일·시간대, 시즌과 체험을 12가지로 정리하고 서울 주요 시장 비교를 담았다.",
-    "summary_en": "A first-timer guide to Korean traditional markets in 12 points: shared seating, payment and language, best days and hours, and seasons and experiences, plus a Seoul market comparison.",
+    "summary_kr": "광장시장·남대문시장·통인시장·망원시장·노량진수산물도매시장·경동시장·중부시장의 여는 시간·쉬는 날·파는 물건을 한국관광공사 관광정보(TourAPI) 기준으로 정리한 서울 전통시장 입문 가이드다.",
+    "summary_en": "Opening hours, closed days and main goods of 7 Seoul traditional markets in one table, from Korea Tourism Organization data (TourAPI).",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
     "jp_available": true,
     "date_published": "2026-06-01",
-    "title_ja": "伝統市場入門ガイド12選",
-    "title_zh": "韩国传统市场入门指南12大深度探索",
-    "summary_zh": "为首次逛韩国传统市场的游客整理12个要点：共用座位文化、支付与语言、星期与时段、季节与体验，并附首尔主要市场对比。",
-    "summary_ja": "初めて伝統市場に行く旅行者向けに、相席の文化、支払い・言語、曜日・時間帯、季節と体験を12項目で整理。ソウルの主要市場の比較も掲載。"
+    "title_ja": "ソウル伝統市場入門ガイド — 広蔵市場、南大門市場、通仁市場、望遠市場、鷺梁津水産物卸売市場、京東市場、中部市場の開く時間と休み",
+    "title_zh": "首尔传统市场入门指南：广藏市场、南大门市场、通仁市场、望远市场、鹭梁津水产品批发市场、京东市场、中部市场的营业时间与休息日",
+    "summary_zh": "把首尔7处传统市场的营业时间、休息日和主要商品汇总成一张表，包含鹭梁津销售全年无休、拍卖周日休息，以及京东市场隔周周日休息等提示，运营信息照录韩国观光公社旅游信息（TourAPI）。",
+    "summary_ja": "広蔵市場・南大門市場・通仁市場・望遠市場・鷺梁津水産物卸売市場・京東市場・中部市場の開く時間・休み・売っているものを、韓国観光公社の観光情報(TourAPI)でまとめたガイドです。"
   },
   {
     "id": "605",
