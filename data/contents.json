@@ -16679,27 +16679,28 @@
   {
     "id": "723",
     "slug": "jeonju-hanji-village-sub-deep",
-    "title_kr": "한국 전주 한지마을·전주 한옥마을 단독 12선",
-    "title_en": "Korea Jeonju Hanji Village Hanok Village Standalone Top 12",
+    "title_kr": "전주 한옥마을 문화·역사 시설 가이드 — 부채문화관·완판본문화관·전통술박물관·공예품전시관·한옥마을역사관·목판서화체험관·전주향교",
+    "title_en": "Jeonju Hanok Village Culture and History Facilities Guide: Fan Culture Center, Wanpanbon Culture Center, Traditional Liquor Museum, Crafts Exhibition Hall, Hanok Village History Museum, Woodblock Experience Center, Jeonju Hyanggyo",
     "category": "D",
     "tags": [
       "foreigner",
       "jeonju",
       "hanok-village",
-      "bibimbap",
+      "museum",
+      "crafts",
       "sub-deep"
     ],
-    "summary_kr": "전주 한지마을의 공방과 한지 만들기 체험, 700여 채 한옥이 모인 전주 한옥마을, 한지박물관까지 12선으로 정리했다.",
-    "summary_en": "Twelve picks in Jeonju Hanji Village and Hanok Village: papermaking workshops, a hanji museum, and over 700 hanok, all within one trip.",
+    "summary_kr": "전주 한옥마을과 그 주변의 부채문화관·완판본문화관·전통술박물관·공예품전시관·한옥마을역사관·목판서화체험관·전주향교 여는 시간·휴관일·입장료와 체험을 한국관광공사 관광정보(TourAPI) 기준으로 정리했다.",
+    "summary_en": "Seven culture and history facilities plus the ended Nosang Noriya parade in and around Jeonju Hanok Village, with hours, closed days, admission and experience fees from Korea Tourism Organization data (TourAPI).",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
     "jp_available": true,
     "date_published": "2026-06-04",
-    "title_ja": "全州韓紙村＆韓屋村12選",
-    "title_zh": "韩国全州韩纸村、韩屋村专题12大深度游",
-    "summary_ja": "全州韓紙村と韓屋村の12選。韓紙工房での体験、韓紙博物館、700軒以上の韓屋を紹介します。",
-    "summary_zh": "全州韩纸村与韩屋村12选：韩纸工坊与体验、韩纸博物馆，以及700多座韩屋，可在一次行程中游览。"
+    "title_ja": "全州韓屋村 文化・歴史施設ガイド — 扇子文化館・完板本文化館・伝統酒博物館・工芸品展示館・韓屋村歴史館・木版書画体験館・全州郷校",
+    "title_zh": "全州韩屋村文化·历史设施指南：扇子文化馆、完板本文化馆、传统酒博物馆、工艺品展览馆、韩屋村历史馆、木版书画体验馆、全州乡校",
+    "summary_ja": "全州扇子文化館・完板本文化館・全州伝統酒博物館・全州工芸品展示館・全州韓屋村歴史館・全州木版書画体験館・全州郷校と、伝統演戯パレード(2026年、終了)の開く時間・休み・入場料を、韓国観光公社の観光情報(TourAPI)でまとめたガイドです。",
+    "summary_zh": "介绍全州韩屋村及周边的7处文化·历史设施和1项街头演出（已结束），涵盖扇子、出版、酒、工艺与历史，运营信息照录韩国观光公社旅游信息（TourAPI）。"
   },
   {
     "id": "724",
