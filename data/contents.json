@@ -15185,26 +15185,29 @@
   {
     "id": "668",
     "slug": "k-art-sub-deep",
-    "title_kr": "한국 K-아트·Frieze·리움·MMCA 12선",
-    "title_en": "Korea K-Art Frieze Leeum MMCA Top 12",
+    "title_kr": "한국 현대미술 가이드 — 국립현대미술관 4관(서울·과천·덕수궁·청주)·리움미술관·서울시립미술관·백남준아트센터·부산현대미술관·광주비엔날레",
+    "title_en": "Korean Contemporary Art Guide: 4 National Museum of Modern and Contemporary Art (MMCA) Branches (Seoul, Gwacheon, Deoksugung, Cheongju), Leeum Museum of Art, Seoul Museum of Art (SeMA), Nam June Paik Art Center, Museum of Contemporary Art Busan, Gwangju Biennale",
     "category": "D",
     "tags": [
       "foreigner",
-      "leeum",
+      "art",
+      "museum",
       "mmca",
+      "leeum",
+      "biennale",
       "sub-deep"
     ],
-    "summary_kr": "Frieze Seoul과 KIAF 아트페어, MMCA 4개 관과 한남동 리움미술관, 이불·김환기 등 한국 작가까지 한국 현대미술을 12가지로 정리했다. 위치와 관람 포인트도 안내한다.",
-    "summary_en": "Twelve entries on Korean contemporary art: the Frieze Seoul and KIAF fairs, MMCA's four venues, Leeum Museum in Hannam-dong, and artists Lee Bul and Kim Whanki, with viewing tips.",
+    "summary_kr": "국립현대미술관 4관(서울·과천·덕수궁·청주), 리움미술관·서울시립미술관·백남준아트센터·부산현대미술관, 제16회 광주비엔날레의 여는 시간·쉬는 날·요금을 한국관광공사 관광정보(TourAPI) 기준으로 정리한 현대미술 가이드다.",
+    "summary_en": "Opening hours, closed days and fees for the 4 MMCA branches, Leeum, SeMA, Nam June Paik Art Center, Museum of Contemporary Art Busan and the 16th Gwangju Biennale, from Korea Tourism Organization data (TourAPI).",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
     "jp_available": true,
     "date_published": "2026-06-02",
-    "title_ja": "韓国K-アート・フリーズ・リウム・MMCA 深掘り12選",
-    "title_zh": "韩国K艺术·弗里兹·豪林·MMCA 12大深度探索",
-    "summary_ja": "韓国現代アートを12項目で紹介。フリーズ・ソウルとKIAFのアートフェア、国立現代美術館MMCAの4館、漢南洞のリウム美術館、イ・ブルやキム・ファンギなどの作家を、場所と見どころとともに案内します。",
-    "summary_zh": "12项韩国当代艺术看点：Frieze Seoul与KIAF艺术博览会、MMCA四个馆、汉南洞的Leeum美术馆，以及李昢、金焕基等艺术家，并附位置与参观要点。"
+    "title_ja": "韓国 現代美術ガイド — 国立現代美術館 4館(ソウル・果川・徳寿宮・清州)・リウム美術館・ソウル市立美術館・白南準アートセンター・釜山現代美術館・光州ビエンナーレ",
+    "title_zh": "韩国现代艺术指南 — 国立现代美术馆4馆(首尔·果川·德寿宫·清州)·三星美术馆Leeum·首尔市立美术馆·白南准艺术中心·釜山现代美术馆·光州双年展",
+    "summary_ja": "国立現代美術館 4館・リウム美術館・ソウル市立美術館 西小門本館・白南準アートセンター・釜山現代美術館・第16回光州ビエンナーレの開く時間・休み・料金を、韓国観光公社の観光情報(TourAPI)でまとめたガイドです。",
+    "summary_zh": "汇总国立现代美术馆4馆、首尔·京畿·釜山的美术馆4处和2026年光州双年展的开放时间、休息日、费用等登记信息，运营信息照录韩国观光公社旅游信息 TourAPI。"
   },
   {
     "id": "671",
