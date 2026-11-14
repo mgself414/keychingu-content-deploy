@@ -15157,28 +15157,30 @@
   {
     "id": "667",
     "slug": "k-architecture-sub-deep",
-    "title_kr": "한국 K-건축·DDP·한옥·UNESCO 12선",
-    "title_en": "Korea K-Architecture DDP Hanok UNESCO Top 12",
+    "title_kr": "한국 건축 가이드 — DDP·본태박물관(현대 건축), 북촌·은평 한옥마을, 종묘·창덕궁과 후원·하회마을·양동마을(유네스코 세계유산)",
+    "title_en": "Korea Architecture Guide: Dongdaemun Design Plaza (DDP) and Bonte Museum (Modern Architecture), Bukchon and Eunpyeong Hanok Villages, Jongmyo Shrine, Changdeokgung Palace and Huwon, Hahoe Village and Yangdong Village (UNESCO World Heritage)",
     "category": "D",
     "tags": [
       "foreigner",
+      "architecture",
       "ddp",
       "hanok",
       "unesco",
       "zaha-hadid",
+      "seoul",
       "sub-deep"
     ],
-    "summary_kr": "자하 하디드가 설계한 DDP부터 북촌·서촌·은평 한옥마을, 유네스코 세계유산까지 한국 건축 12선을 정리하고, 한옥의 기와·마루·온돌·한지창 특징을 설명한다.",
-    "summary_en": "Twelve Korean architecture picks, from Zaha Hadid's DDP to hanok villages in Bukchon, Seochon and Eunpyeong and UNESCO sites, with notes on roof tiles, ondol heating and paper windows.",
+    "summary_kr": "DDP·본태박물관 같은 현대 건축, 북촌·은평 한옥마을, 종묘·창덕궁과 후원·안동 하회마을·경주 양동마을 유네스코 세계유산의 여는 시간·쉬는 날·요금·관람 규칙을 한국관광공사 관광정보(TourAPI) 기준으로 정리한 건축 가이드다.",
+    "summary_en": "Opening hours, closed days and visiting rules for 2 modern architecture sites, 2 hanok villages and 4 UNESCO World Heritage sites in Korea, from Korea Tourism Organization data (TourAPI).",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
     "jp_available": true,
     "date_published": "2026-06-02",
-    "title_ja": "韓国K-建築・DDP・韓屋・UNESCO 深掘り12選",
-    "title_zh": "韩国K建筑·DDP·韩屋·UNESCO 12大深度探索",
-    "summary_ja": "ザハ・ハディド設計のDDPから、北村・西村・恩平の韓屋村、ユネスコ世界遺産まで、韓国建築12選。韓屋の瓦屋根、板の間、オンドル、韓紙の窓の特徴も解説します。",
-    "summary_zh": "介绍12处韩国建筑：扎哈·哈迪德设计的DDP、北村、西村、恩平韩屋村和世界遗产，并说明韩屋的瓦顶、木地板、地暖与韩纸窗。"
+    "title_ja": "韓国 建築ガイド — 東大門デザインプラザ(DDP)・本態博物館(現代建築)、北村・恩平韓屋村、宗廟・昌徳宮と後苑・安東河回村・慶州良洞村(ユネスコ世界遺産)",
+    "title_zh": "韩国建筑指南 — 东大门设计广场(DDP)·本态博物馆(现代建筑)，北村·恩平韩屋村，宗庙·昌德宫和后苑·安东河回村·庆州良洞村(联合国教科文组织世界遗产)",
+    "summary_ja": "東大門デザインプラザ(DDP)・本態博物館・北村韓屋村・恩平韓屋村・宗廟・昌徳宮と後苑・安東河回村・慶州良洞村の開く時間・休み・料金を、韓国観光公社の観光情報(TourAPI)でまとめたガイドです。",
+    "summary_zh": "汇总现代建筑2处、韩屋村2处、联合国教科文组织世界遗产4处的开放时间、休息日、费用、停车等登记信息，运营信息照录韩国观光公社旅游信息 TourAPI。"
   },
   {
     "id": "668",
