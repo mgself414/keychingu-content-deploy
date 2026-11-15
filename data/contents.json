@@ -15733,24 +15733,29 @@
   {
     "id": "695",
     "slug": "gugakwon-sub-deep",
-    "title_kr": "한국 국립국악원 단독 12선",
-    "title_en": "Korea Gugakwon National Gugak Center Standalone Top 12",
+    "title_kr": "한국 국립국악원 가이드 — 서울 서초 국립국악원·국립국악원 예악당·국립국악박물관, 종묘대제(서울 종묘)",
+    "title_en": "Korea National Gugak Center Guide: National Gugak Center, Yeakdang Hall and National Gugak Museum in Seocho (Seoul), Jongmyo Daeje (Royal Ancestral Rite) at Jongmyo Shrine (Seoul)",
     "category": "D",
     "tags": [
       "foreigner",
+      "gugak",
+      "traditional-music",
+      "national-gugak-center",
+      "museum",
+      "jongmyo",
       "sub-deep"
     ],
-    "summary_kr": "1951년 개관한 국립국악원의 서울 본원(서초구, 우면산 자락)과 민속·남도·부산 분원, 매주 열리는 공연을 중심으로 12곳을 소개한다.",
-    "summary_en": "Twelve picks on the National Gugak Center, open since 1951: the Seoul main campus at the foot of Umyeonsan in Seocho, its Folk, Namdo and Busan branches, and weekly performances.",
+    "summary_kr": "서울 서초동 국립국악원·국립국악원 예악당·국립국악박물관과 종로 종묘대제의 여는 시간·쉬는 날·요금·프로그램을 한국관광공사 관광정보(TourAPI) 기준으로 정리한 국립국악원 가이드다.",
+    "summary_en": "Opening hours, closed days, fees and the 2026 schedule for the National Gugak Center, Yeakdang Hall, the National Gugak Museum and Jongmyo Daeje in Seoul, from Korea Tourism Organization data (TourAPI).",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
     "jp_available": true,
     "date_published": "2026-06-02",
-    "title_ja": "国立国楽院12選",
-    "title_zh": "韩国国立国乐院12大精选",
-    "summary_ja": "1951年開院の国立国楽院について12か所を紹介。瑞草区・牛眠山のふもとにあるソウル本院、民俗・南道・釜山の分院、毎週の公演を取り上げます。",
-    "summary_zh": "介绍12处国立国乐院看点:1951年开院,首尔本院位于瑞草区牛眠山脚下,另有民俗、南道和釜山分院,每周都有演出。"
+    "title_ja": "韓国 国立国楽院ガイド — ソウル瑞草の国立国楽院・国立国楽院 礼楽堂・国立国楽博物館、宗廟大祭(ソウル 宗廟)",
+    "title_zh": "韩国国立国乐院指南 — 首尔瑞草国立国乐院·国立国乐院礼乐堂·国立国乐博物馆，宗庙大祭(首尔宗庙)",
+    "summary_ja": "ソウル瑞草の国立国楽院・礼楽堂・国立国楽博物館と宗廟大祭の開く時間・休み・料金を、韓国観光公社の観光情報(TourAPI)でまとめたガイドです。",
+    "summary_zh": "汇总首尔瑞草洞国立国乐院、礼乐堂、国立国乐博物馆和宗庙大祭的开放时间、休息日、费用等登记信息，运营信息照录韩国观光公社旅游信息 TourAPI。"
   },
   {
     "id": "696",
