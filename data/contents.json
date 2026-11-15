@@ -17384,26 +17384,30 @@
   {
     "id": "756",
     "slug": "korea-strawberry-spring",
-    "title_kr": "한국 딸기 봄 12선",
-    "title_en": "Korea Strawberry Spring Top 12",
+    "title_kr": "한국 딸기 체험 가이드 — 논산 딸기향농촌테마공원·도정딸기마을·논산딸기축제, 남양주·용인 딸기 체험농장, 김해가야딸기테마파크",
+    "title_en": "Korea Strawberry Picking Guide: Nonsan Strawberry Scent Rural Theme Park, Dojeong Strawberry Village, Nonsan Strawberry Festival, Strawberry Farms in Namyangju and Yongin, Gimhae Gaya Strawberry Theme Park",
     "category": "C",
     "tags": [
-      "foreign",
-      "tourist",
-      "spring"
+      "foreigner",
+      "strawberry",
+      "farm-experience",
+      "nonsan",
+      "winter",
+      "spring",
+      "sub-deep"
     ],
-    "summary_kr": "논산·담양의 딸기 농장 체험부터 딸기 카페, 호텔 딸기 뷔페, 딸기 디저트까지 봄 딸기 12선. 2~4월 절정 시기와 체험·메뉴 가격대를 담았다.",
-    "summary_en": "Twelve spring strawberry picks, from picking farms in Nonsan and Damyang to strawberry cafes, hotel buffets and desserts, with the February to April peak and price ranges.",
+    "summary_kr": "논산 딸기향농촌테마공원·도정딸기마을·논산딸기축제, 남양주·용인 딸기 체험농장, 김해가야딸기테마파크의 여는 시간·쉬는 날·체험 기간을 한국관광공사 관광정보(TourAPI) 기준으로 정리한 딸기 체험 가이드다.",
+    "summary_en": "Where to pick strawberries in Korea: Nonsan's theme park, strawberry village and festival, three experience farms in Namyangju and Yongin in Gyeonggi, and Gimhae Gaya Strawberry Theme Park, with hours, closed days and experience periods registered in Korea Tourism Organization data.",
     "en_available": true,
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false,
     "image": "assets/og/korea-strawberry-spring.jpg",
     "date_published": "2026-06-06",
-    "title_ja": "春のいちご12選",
-    "title_zh": "韩国春季草莓12选",
-    "summary_ja": "春のいちご12選。論山・潭陽のいちご狩り農園から、いちごカフェ、ホテルのいちごビュッフェ、スイーツまで。2〜4月の見頃と価格帯も紹介します。",
-    "summary_zh": "春季草莓12选，从论山、潭阳的采摘农场到草莓咖啡馆、酒店草莓自助餐与甜点，附2至4月最佳时期和价格区间。"
+    "title_ja": "韓国いちご狩りガイド — 論山 タルギヒャン農村テーマ公園・道正いちご村・論山いちご祭り、南楊州・龍仁のいちご体験農場、金海 ガヤいちごテーマパーク",
+    "title_zh": "韩国草莓采摘指南 — 论山草莓香农村主题公园·道正草莓村·论山草莓节，南杨州·龙仁草莓体验农场，金海Gaya草莓主题公园",
+    "summary_ja": "論山のテーマパーク・いちご村・祭り、京畿の南楊州・龍仁の体験農場、金海 ガヤいちごテーマパークの開く時間・休み・体験期間を、韓国観光公社の観光情報(TourAPI)でまとめたガイドです。",
+    "summary_zh": "汇集韩国可以采摘草莓的地方: 论山的主题公园·草莓村·庆典、京畿南杨州和龙仁三家体验农场、金海Gaya草莓主题公园。已对照韩国观光公社旅游信息，整理开放时间、休息日与体验时期。"
   },
   {
     "id": "757",
