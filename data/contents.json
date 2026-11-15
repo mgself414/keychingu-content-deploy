@@ -17311,26 +17311,30 @@
   {
     "id": "753",
     "slug": "seoul-cherry-blossom",
-    "title_kr": "한국 서울 벚꽃 봄 12선",
-    "title_en": "Korea Seoul Cherry Blossom Top 12",
+    "title_kr": "서울 벚꽃 가이드 — 여의도 봄꽃축제, 석촌호수 호수벚꽃축제, 양재천 벚꽃 등 축제, 장안벚꽃길 트로트축제X봄꽃축제, 안양천제방벚꽃길",
+    "title_en": "Seoul Cherry Blossom Guide: Yeouido Spring Flower Festival, Seokchon Lake Cherry Blossom Festival, Yangjaecheon Cherry Blossom Lantern Festival, Jangan Cherry Blossom Road Trot Festival X Spring Flower Festival, Anyangcheon Embankment Cherry Blossom Road",
     "category": "A",
     "tags": [
-      "foreign",
-      "tourist",
+      "foreigner",
+      "seoul",
+      "cherry-blossom",
       "spring",
-      "seoul-wide"
+      "festival",
+      "yeouido",
+      "seokchon-lake",
+      "sub-deep"
     ],
-    "summary_kr": "서울 벚꽃 12선·여의도·석촌호수·남산·경복궁·진해·3/25~4/10 절정",
-    "summary_en": "Seoul Cherry Blossom Top 12",
+    "summary_kr": "여의도 봄꽃축제, 석촌호수 호수벚꽃축제, 양재천 벚꽃 등 축제, 장안벚꽃길 트로트축제X봄꽃축제의 2026년 일정·시간·요금과 상시 개방하는 안양천제방벚꽃길을 한국관광공사 관광정보(TourAPI) 기준으로 정리한 서울 벚꽃 가이드다.",
+    "summary_en": "Where to see cherry blossoms in Seoul: the 2026 Yeouido, Songpa-gu Lake and Yangjaecheon festivals and the Dongdaemun Trot Festival X Spring Flower Festival, all ended with 2027 dates not yet registered, plus the always-open Anyangcheon embankment road, per Korea Tourism Organization data.",
     "en_available": true,
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false,
     "date_published": "2026-06-06",
-    "title_ja": "ソウル 桜スポット12選",
-    "title_zh": "韩国首尔樱花12选",
-    "summary_ja": "ソウルの桜12選。汝矣島、石村湖、南山、景福宮、鎮海などで、3月25日～4月10日が見頃のピークです。",
-    "summary_zh": "探索首尔12个最佳赏樱地，包括汝矣岛、石村湖、南山、景福宫和镇海，花期高峰在3月25日至4月10日。"
+    "title_ja": "ソウル桜ガイド — 汝矣島春の花祭り、石村湖湖桜祭り、良才川桜灯祭り、ジャンアン桜並木トロット祭りX春の花祭り、安養川堤防桜並木",
+    "title_zh": "首尔樱花指南 — 汝矣岛春花节，石村湖湖水樱花节，良才川樱花灯节，Jangan樱花路Trot庆典X春花节，安养川堤坝樱花路",
+    "summary_ja": "ソウルで桜を見られる場所をまとめたガイドです。2026年の汝矣島・松坡区湖・良才川・ジャンアンの祭りはすべて終了し2027年の日程は登録前で、常時開放の安養川堤防桜並木も韓国観光公社の観光情報で確認しました。",
+    "summary_zh": "汇集首尔赏樱花的地方: 2026年汝矣岛、松坡区湖水、良才川、Jangan的樱花节庆均已结束，2027年日程尚未登记，另有常年开放的安养川堤坝樱花路。已对照韩国观光公社旅游信息整理。"
   },
   {
     "id": "754",
