@@ -15511,27 +15511,29 @@
   {
     "id": "686",
     "slug": "traditional-music-sub-deep",
-    "title_kr": "한국 전통음악·국악·판소리·사물놀이 12선",
-    "title_en": "Korea Traditional Music Gugak Pansori Samul Top 12",
+    "title_kr": "한국 국악 공연장 가이드 — 서울남산국악당·서울돈화문국악당·국악공연 진연(서울), 국립남도국악원(진도)·국립민속국악원(남원)·국립부산국악원, 국악의 성지(남원)·난계국악박물관(영동)",
+    "title_en": "Korea Gugak Venue Guide: Seoul Namsan Gugakdang, Seoul Donhwamun Gugakdang, Gugak Performance Jinyeon (Seoul); National Gugak Center Namdo (Jindo), National Gugak Center Namwon, National Gugak Center Busan; Gugak Sanctuary (Namwon), Nangye Gugak Museum (Yeongdong)",
     "category": "D",
     "tags": [
       "foreigner",
       "gugak",
+      "traditional-music",
       "pansori",
-      "unesco",
+      "performance",
+      "museum",
       "sub-deep"
     ],
-    "summary_kr": "2003년 유네스코에 오른 판소리, 네 악기로 연주하는 사물놀이, 2014년 등재된 농악, 1951년 문을 연 국립국악원 등 한국 전통음악 12가지를 소개한다.",
-    "summary_en": "Twelve parts of Korean traditional music: pansori (UNESCO-listed in 2003), samulnori played on four instruments, nongak (listed in 2014) and the National Gugak Center, open since 1951.",
+    "summary_kr": "서울남산국악당·서울돈화문국악당·국악공연 진연, 국립남도국악원·국립민속국악원·국립부산국악원, 국악의 성지·난계국악박물관의 여는 시간·쉬는 날·공연 시간·요금을 한국관광공사 관광정보(TourAPI) 기준으로 정리한 국악 공연장 가이드다.",
+    "summary_en": "Opening hours, closed days, performance times and fees for gugak venues, national gugak centers and gugak museums in Seoul, Jindo, Namwon, Busan and Yeongdong, from Korea Tourism Organization data (TourAPI).",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
     "jp_available": true,
     "date_published": "2026-06-02",
-    "title_ja": "伝統音楽・国楽・パンソリ・サムルノリ12選",
-    "title_zh": "韩国传统音乐·国乐·盘索里·四物农乐 12大深度探索",
-    "summary_zh": "介绍12项韩国传统音乐:2003年入选联合国教科文组织名录的盘索里、四种乐器合奏的四物农乐、2014年入选的农乐,以及1951年成立的国立国乐院。",
-    "summary_ja": "2003年にユネスコ登録されたパンソリ、4つの楽器で奏でるサムルノリ、2014年登録の農楽、1951年開院の国立国楽院など、韓国伝統音楽12種を紹介します。"
+    "title_ja": "韓国 国楽公演場ガイド — ソウルナムサン国楽堂・ソウルドンファムン国楽堂・国楽公演 ジニョン(ソウル)、国立ナムド国楽院(珍島)・国立民俗国楽院(南原)・国立釜山国楽院、国楽の聖地(南原)・ナンゲ国楽博物館(永同)",
+    "title_zh": "韩国国乐演出场馆指南 — 首尔南山国乐堂·首尔敦化门国乐堂·国乐公演 Jinyeon(首尔)，国立南道国乐院(珍岛)·国立民俗国乐院(南原)·国立釜山国乐院，国乐圣地(南原)·Nangye 国乐博物馆(永同)",
+    "summary_zh": "汇总首尔、珍岛、南原、釜山、永同的国乐演出场馆、国立国乐院和国乐博物馆的开放时间、休息日、费用等登记信息，运营信息照录韩国观光公社旅游信息 TourAPI。",
+    "summary_ja": "ソウル・珍島・南原・釜山・永同の国楽公演場、国立国楽院、国楽博物館の開く時間・休み・料金を、韓国観光公社の観光情報(TourAPI)でまとめたガイドです。"
   },
   {
     "id": "687",
