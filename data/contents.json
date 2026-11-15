@@ -15931,26 +15931,29 @@
   {
     "id": "702",
     "slug": "banpo-rainbow-fountain-sub-deep",
-    "title_kr": "한국 반포대교 달빛무지개분수·세계 #1·기네스 12선",
-    "title_en": "Korea Banpo Bridge Moonlight Rainbow Fountain World #1 Guinness Top 12",
+    "title_kr": "반포대교 달빛무지개분수 가이드 — 분수 가동 시간, 반포한강공원 달빛광장·서래섬, 세빛섬·튜브스터, 잠수교 뚜벅뚜벅축제·서래섬 피크닉 콘서트",
+    "title_en": "Banpo Bridge Moonlight Rainbow Fountain Guide: Fountain Operating Times, Banpo Hangang Park Moonlight Plaza and Seorae Island, Sebitseom and Tubester, Jamsugyo Walking Festival and Seorae Island Picnic Concert",
     "category": "A",
     "tags": [
       "foreigner",
+      "seoul",
       "banpo",
+      "fountain",
+      "hangang",
       "seorae",
       "sub-deep"
     ],
-    "summary_kr": "길이 1,140m로 기네스에 오른 반포대교 달빛무지개분수의 2026년 운영 기간(3월 16일~10월 31일)과 회차별 시간, 고속터미널역 8-1번 출구 가는 길 등 12곳을 소개한다.",
-    "summary_en": "Twelve picks around the 1,140 m Banpo Bridge Moonlight Rainbow Fountain, a Guinness record holder: 2026 season (Mar 16-Oct 31), show times and how to get there.",
+    "summary_kr": "반포대교 달빛무지개분수의 가동 시간·쉬는 기간(11월~3월 14일), 반포한강공원 달빛광장·서래섬, 세빛섬·튜브스터, 2026년 잠수교 뚜벅뚜벅축제·서래섬 피크닉 콘서트를 한국관광공사 관광정보(TourAPI) 기준으로 정리한 가이드다.",
+    "summary_en": "Operating times and closed days for the Banpo Bridge Moonlight Rainbow Fountain (not operating November to March 14) and nearby Banpo Hangang Park sites, Sebitseom and Tubester, plus two 2026 autumn festivals that have ended, as registered in Korea Tourism Organization data.",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
     "jp_available": true,
     "date_published": "2026-06-02",
-    "title_zh": "韩国盘浦大桥月光彩虹喷泉吉尼斯世界第一12大精选",
-    "title_ja": "盤浦大橋 月光レインボー噴水12選",
-    "summary_ja": "全長1,140mでギネスに載る盤浦大橋の月光レインボー噴水を中心に、2026年の運営期間(3月16日〜10月31日)、回ごとの時間、高速ターミナル駅8-1番出口からの行き方など12か所を紹介します。",
-    "summary_zh": "围绕以1140米长载入吉尼斯纪录的盘浦大桥月光彩虹喷泉,介绍2026年开放时间(3月16日至10月31日)、各场次时间以及从高速巴士客运站8-1号出口前往的方法等12处看点。"
+    "title_zh": "盘浦大桥月光彩虹喷泉指南 — 喷泉运行时间，盘浦汉江公园月光广场·Seorae岛，Sebit岛·Tubester，潜水桥Ttubeokttubeok庆典·Seorae岛野餐音乐会",
+    "title_ja": "盤浦大橋 月光レインボー噴水ガイド — 噴水の稼働時間、盤浦漢江公園 月光広場・ソレソム、セビッソム・チューブスター、潜水橋トゥボクトゥボク祭り・ソレソム ピクニックコンサート",
+    "summary_ja": "盤浦大橋の月光レインボー噴水、月光広場、ソレソム、セビッソム、2026年秋の祭り二つの運営情報を、韓国観光公社の観光情報(TourAPI)でまとめたガイドです。噴水は11月~3月14日は稼働しません。",
+    "summary_zh": "汇集盘浦大桥月光彩虹喷泉及周边盘浦汉江公园值得一去的地方: 喷泉运行时间(3月15日~10月)、月光广场·Seorae岛、Sebit岛·Tubester、2026年秋季两场庆典(已结束)。已对照韩国观光公社旅游信息，整理开放时间、休息日与费用。"
   },
   {
     "id": "703",
