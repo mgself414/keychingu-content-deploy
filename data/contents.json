@@ -16432,25 +16432,29 @@
   {
     "id": "721",
     "slug": "traditional-dance-sub-deep",
-    "title_kr": "한국 전통무용 단독·승무·살풀이·강강술래·검무 12선",
-    "title_en": "Korea Traditional Dance Standalone Sungmu Salpuri Ganggangsullae Geomu Top 12",
+    "title_kr": "전통무용·탈춤 가이드 — 서울 국립정동극장, 안동 하회 탈놀이전수관·안동국제탈춤페스티벌, 양주별산대놀이전수교육관, 인천 은율탈춤전수관, 해남 강강술래 전수관",
+    "title_en": "Traditional Dance and Mask Dance Guide: National Jeongdong Theater in Seoul, Hahoe Mask Dance Training Center and Andong International Mask Dance Festival in Andong, Yangju Byeolsandae Nori Training and Education Center, Eunyul Talchum Training Center in Incheon, Ganggangsullae Training Center in Haenam",
     "category": "D",
     "tags": [
       "foreigner",
-      "unesco",
+      "traditional-dance",
+      "talchum",
+      "mask-dance",
+      "ganggangsullae",
+      "performance",
       "sub-deep"
     ],
-    "summary_kr": "승무·살풀이·강강술래·검무 등 한국 전통무용 12선. 궁중·민속·종교 무용의 흐름과 UNESCO 강강술래, 국가무형문화재 지정 배경, 공연·체험을 다룬다.",
-    "summary_en": "Twelve Korean traditional dances including sungmu, salpuri, ganggangsullae and geomu, covering court, folk and ritual traditions and the UNESCO-listed ganggangsullae, with performances and classes.",
+    "summary_kr": "국립정동극장, 하회 탈놀이전수관·안동국제탈춤페스티벌, 양주별산대놀이전수교육관, 은율탈춤전수관, 해남 강강술래 전수관의 공연 시간·쉬는 날·요금·체험을 한국관광공사 관광정보(TourAPI) 기준으로 정리한 전통무용·탈춤 가이드다.",
+    "summary_en": "A guide to places in Seoul, Andong, Yangju, Incheon and Haenam where you can watch and learn traditional performances, mask dance and ganggangsullae, with hours and fees registered in Korea Tourism Organization tourism data.",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
     "jp_available": true,
     "date_published": "2026-06-04",
-    "title_ja": "韓国伝統舞踊体験12選",
-    "title_zh": "韩国传统舞蹈专题：僧舞、驱邪舞、羌羌水越来、剑舞12大深度游",
-    "summary_ja": "僧舞・サルプリ・カンガンスルレ・剣舞など、韓国伝統舞踊を12選で紹介。宮中・民俗・宗教の舞踊とUNESCO登録のカンガンスルレ、公演・体験を取り上げます。",
-    "summary_zh": "12种韩国传统舞蹈，包括僧舞、驱邪舞、羌羌水越来与剑舞，介绍宫廷、民俗与宗教舞蹈、入选UNESCO的羌羌水越来，以及观演与体验。"
+    "title_ja": "韓国 伝統舞踊・仮面劇ガイド — ソウル 国立貞洞劇場、安東 河回 タルノリ伝授館・安東国際仮面舞フェスティバル、楊州別山台ノリ伝授教育館、仁川 殷栗タルチュム伝授館、海南 カンガンスルレ伝授館",
+    "title_zh": "传统舞蹈·假面舞指南 — 首尔国立贞洞剧场，安东河回假面戏传授馆·安东国际假面舞节，杨州别山台游戏传授教育馆，仁川殷栗假面舞传授馆，海南强羌水越来传授馆",
+    "summary_ja": "国立貞洞劇場、河回・楊州・殷栗のタルチュム伝授館、安東国際仮面舞フェスティバル、海南 カンガンスルレ伝授館の運営情報を、韓国観光公社の観光情報(TourAPI)で確認してまとめました。",
+    "summary_zh": "国立贞洞剧场、河回假面戏传授馆、安东国际假面舞节、杨州别山台游戏传授教育馆、殷栗假面舞传授馆和海南强羌水越来传授馆，汇集可观看和体验韩国传统舞蹈与假面舞的地方，运营信息已对照韩国观光公社旅游信息。"
   },
   {
     "id": "722",
