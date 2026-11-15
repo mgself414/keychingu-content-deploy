@@ -15897,26 +15897,30 @@
   {
     "id": "701",
     "slug": "seoul-forest-seongsu-sub-deep",
-    "title_kr": "한국 서울숲·성수 12선",
-    "title_en": "Korea Seoul Forest Seongsu Top 12",
+    "title_kr": "서울숲·성수 가이드 — 서울숲·서울숲 곤충식물원, 성수동 수제화거리·언더스탠드에비뉴·뚝섬미술관, 서울생각마루(뚝섬 자벌레)",
+    "title_en": "Seoul Forest and Seongsu Guide: Seoul Forest and Seoul Forest Insect Botanical Garden, Seongsu-dong Handmade Shoe Street, Understand Avenue and Ttukseom Art Museum, Seoul Saenggak Maru (Ttukseom Jabeolle)",
     "category": "A",
     "tags": [
       "foreigner",
       "seoul-forest",
       "seongsu",
+      "ttukseom",
+      "park",
+      "museum",
+      "seoul",
       "sub-deep"
     ],
-    "summary_kr": "2005년 문을 연 115ha 규모의 서울숲과 무료로 볼 수 있는 사슴 약 50마리, 성수동 카페·팝업, 도보 5분 거리의 뚝섬 한강공원까지 12곳을 소개한다.",
-    "summary_en": "Twelve picks around Seoul Forest, a 115-hectare park opened in 2005 with about 50 free-to-see deer, plus Seongsu's cafes and pop-ups and Ttukseom Han River Park, five minutes away on foot.",
+    "summary_kr": "서울숲·서울숲 곤충식물원, 성수동 수제화거리·언더스탠드에비뉴·뚝섬미술관, 뚝섬한강공원 서울생각마루의 여는 시간·쉬는 날·요금을 한국관광공사 관광정보(TourAPI) 기준으로 정리한 서울숲·성수 가이드다.",
+    "summary_en": "Opening hours, closed days, fees and parking for six places in and around Seoul Forest, Seongsu-dong and Ttukseom Hangang Park, from Korea Tourism Organization data (TourAPI).",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
     "jp_available": true,
     "date_published": "2026-06-02",
-    "title_zh": "韩国首尔林圣水街区12大精选",
-    "title_ja": "ソウルの森・聖水12選",
-    "summary_ja": "2005年開園、115ヘクタールのソウルの森と、無料で見られる約50頭の鹿、聖水のカフェやポップアップ、徒歩5分の纛島漢江公園まで12か所を紹介します。",
-    "summary_zh": "围绕2005年开放、占地115公顷的首尔林,介绍12处地点:约50只可免费观赏的鹿、圣水洞的咖啡馆与快闪店,以及步行5分钟可达的纛岛汉江公园。"
+    "title_zh": "首尔林·圣水指南 — 首尔林·首尔林昆虫植物园，圣水洞手工皮鞋街·Understand Avenue·纛岛美术馆，Seoul Saenggak Maru·纛岛尺蠖馆",
+    "title_ja": "ソウルの森・聖水ガイド — ソウルの森・ソウルの森 昆虫植物園、聖水洞 手作り靴通り・アンダースタンドアベニュー・トゥクソム美術館、ソウルセンガクマル(トゥクソム チャボルレ)",
+    "summary_ja": "城東区のソウルの森・昆虫植物園、聖水洞の手作り靴通り・アンダースタンドアベニュー・トゥクソム美術館、広津区のソウルセンガクマルの開く時間・休み・料金を、韓国観光公社の観光情報(TourAPI)でまとめたガイドです。",
+    "summary_zh": "汇总首尔林、圣水洞、纛岛汉江公园6处可顺路前往的地方的开放时间、休息日、费用等登记信息，运营信息照录韩国观光公社旅游信息(TourAPI)。"
   },
   {
     "id": "702",
