@@ -16058,8 +16058,8 @@
   {
     "id": "707",
     "slug": "jamsil-cluster-sub-deep",
-    "title_kr": "한국 잠실 롯데월드·555m·올림픽공원 12선",
-    "title_en": "Korea Jamsil Lotte World 555m Olympic Park Top 12",
+    "title_kr": "잠실 가이드 — 롯데월드 어드벤처·롯데월드타워 서울스카이·롯데월드 아쿠아리움, 석촌호수·송리단길, 올림픽공원·소마미술관·한성백제박물관",
+    "title_en": "Jamsil Guide: Lotte World Adventure, Lotte World Tower Seoul Sky, Lotte World Aquarium; Seokchon Lake, Songridan-gil; Olympic Park, SOMA Museum of Art, Seoul Baekje Museum",
     "category": "A",
     "tags": [
       "foreigner",
@@ -16067,19 +16067,21 @@
       "lotte-world",
       "olympic-park",
       "seokchon-lake",
+      "museum",
+      "seoul",
       "sub-deep"
     ],
-    "summary_kr": "2016년 개관한 123층 555m 롯데월드타워와 117~123층 서울 스카이 전망대, 롯데월드, 올림픽공원, 잠실 한강공원까지 잠실 12곳을 소개한다.",
-    "summary_en": "Twelve Jamsil picks: the 123-floor, 555 m Lotte World Tower (opened 2016) and its Seoul Sky observatory on floors 117-123, plus Lotte World, Olympic Park and Jamsil Han River Park.",
+    "summary_kr": "롯데월드 어드벤처·서울스카이·롯데월드 아쿠아리움, 석촌호수·송리단길, 올림픽공원·소마미술관·한성백제박물관의 여는 시간·쉬는 날·요금을 한국관광공사 관광정보(TourAPI) 기준으로 정리한 잠실 가이드다.",
+    "summary_en": "Opening hours, closed days and fees for eight places in and around Jamsil, Songpa-gu, including Lotte World, Seokchon Lake, Olympic Park and Seoul Baekje Museum, from Korea Tourism Organization data (TourAPI).",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
     "jp_available": true,
     "date_published": "2026-06-02",
-    "title_zh": "韩国蚕室：乐天世界、555米、奥林匹克公园12大深度游",
-    "title_ja": "蚕室：ロッテワールドなど12選",
-    "summary_zh": "介绍蚕室12处看点:2016年开业、123层555米的乐天世界塔及其117至123层的首尔天空观景台,以及乐天世界、奥林匹克公园和蚕室汉江公园。",
-    "summary_ja": "2016年開業の123階・高さ555mのロッテワールドタワーと117〜123階のソウルスカイ展望台、ロッテワールド、オリンピック公園、蚕室漢江公園など蚕室の12か所を紹介します。"
+    "title_zh": "蚕室指南 — 乐天世界探险乐园·乐天世界塔首尔天空·乐天世界水族馆，石村湖·松理团路，奥林匹克公园·SOMA美术馆·汉城百济博物馆",
+    "title_ja": "蚕室ガイド — ロッテワールド・アドベンチャー・ロッテワールドタワー ソウルスカイ・ロッテワールド・アクアリウム、石村湖・ソンリダンギル、オリンピック公園・SOMA美術館・漢城百済博物館",
+    "summary_zh": "收录首尔松坡区蚕室及其周边8处地点: 乐天世界探险乐园、首尔天空、乐天世界水族馆、石村湖、松理团路、奥林匹克公园、SOMA美术馆、汉城百济博物馆，按韩国观光公社旅游信息登记的开放时间、休息日和费用整理。",
+    "summary_ja": "ロッテワールド・アドベンチャー(年中無休)、ソウルスカイ(118階、日~木 10:30~22:00)、ロッテワールド・アクアリウム(大人 35,000ウォン)、石村湖(常時開放)、ソンリダンギル、オリンピック公園(05:00~22:00)、SOMA美術館(大人 5,000ウォン)、漢城百済博物館(入場無料)の開く時間・休み・料金を、韓国観光公社の観光情報(TourAPI)で確認してまとめました。"
   },
   {
     "id": "708",
