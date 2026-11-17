@@ -2,10 +2,10 @@
 
 > Comprehensive curated Korea travel guides for foreign MZ travelers, covering 1,200+ topics across 60+ cities (Seoul·Busan·Jeju·Gyeongju·Andong·Jeonju·etc), 4 languages (KR·EN·CN·JP), covering food, culture, K-content, shopping, seasons, transport, sports and practical essentials for solo, couple, family and budget travelers. Updated 2026-11-18.
 
-> Total guides: **1237** | EN: 1237 | CN: 1237 | JP: 1237 | og:image: 1,263 | sitemap URLs: 4,838
+> Total guides: **1232** | EN: 1232 | CN: 1232 | JP: 1232 | og:image: 1,258 | sitemap URLs: 4,818
 
 
-## A (402)
+## A (401)
 
 - [Gangnam Cafe Phase 2 Guide](https://mgself414.github.io/keychingu-content-deploy/content/gangnam-cafe-phase2.en.html): Gangnam Phase 2 cafes — specialty coffee, desserts & atmosphere. (Korean: https://mgself414.github.io/keychingu-content-deploy/content/gangnam-cafe-phase2.html)
 - [Seongsu Pop-Up Deep Dive](https://mgself414.github.io/keychingu-content-deploy/content/seongsu.en.html): How to find pop-ups in Seongsu, a district of converted factories, using Instagram, with five-plus-one must-visit spots, a three-hour route, (Korean: https://mgself414.github.io/keychingu-content-deploy/content/seongsu.html)
@@ -37,9 +37,9 @@
 - [Seocho Seorae Maeul Guide](https://mgself414.github.io/keychingu-content-deploy/content/seocho-seorae.en.html): Twelve Seocho places around Seorae Village, home to Korea's largest French community: expat spots, Korean food, bakeries and cafes, and the  (Korean: https://mgself414.github.io/keychingu-content-deploy/content/seocho-seorae.html)
 - [SNU Sharosu-gil Guide](https://mgself414.github.io/keychingu-content-deploy/content/snu-sharosu.en.html): Seoul National University and the 1.5 km Sharosu-gil toward Nakseongdae in 12 picks: Korean BBQ, cafes, pubs and campus sites, plus Gwanaksa (Korean: https://mgself414.github.io/keychingu-content-deploy/content/snu-sharosu.html)
 - [Magok Gimpo Airport Guide](https://mgself414.github.io/keychingu-content-deploy/content/magok-gimpo.en.html): Twelve stops from Gimpo Airport transit and duty-free to Seoul Botanic Park, LG Arts Center and Magok's cafes and restaurants. (Korean: https://mgself414.github.io/keychingu-content-deploy/content/magok-gimpo.html)
-  - ... and 372 more
+  - ... and 371 more
 
-## D (231)
+## D (230)
 
 - [Korea 7-Day Complete Guide for Foreigners](https://mgself414.github.io/keychingu-content-deploy/content/seoul-7day-guide.en.html): Optimal 7-day Korea itinerary for first-time foreign visitors. (Korean: https://mgself414.github.io/keychingu-content-deploy/content/seoul-7day-guide.html)
 - [K-pop Fan 1-Day Complete Itinerary Guide](https://mgself414.github.io/keychingu-content-deploy/content/kpop-fan-day-tour.en.html): Perfect 1-day K-pop fan itinerary — label districts, shrines & merch shops. (Korean: https://mgself414.github.io/keychingu-content-deploy/content/kpop-fan-day-tour.html)
@@ -71,9 +71,9 @@
 - [Korea Festivals Full Guide](https://mgself414.github.io/keychingu-content-deploy/content/korea-festivals.en.html): Korea's major festivals by type: KCON and MAMA, the Busan film festival, Seoul fireworks and Jinhae cherry blossoms, plus timing for Andong  (Korean: https://mgself414.github.io/keychingu-content-deploy/content/korea-festivals.html)
 - [Casino Full Guide](https://mgself414.github.io/keychingu-content-deploy/content/casino.en.html): Foreigner-only casinos such as Walker Hill, Paradise City and Inspire: Koreans cannot enter, a passport is required, plus currency exchange, (Korean: https://mgself414.github.io/keychingu-content-deploy/content/casino.html)
 - [Korea Instagram Spots: Instagram Photo Spots for Foreign Visitors — 12 Picks Including DDP and Starfield Library](https://mgself414.github.io/keychingu-content-deploy/content/instagram-spots.en.html): Twelve Instagram photo spots in four groups, city architecture, night views, nature viewpoints and trendy alleys, including DDP, Starfield L (Korean: https://mgself414.github.io/keychingu-content-deploy/content/instagram-spots.html)
-  - ... and 201 more
+  - ... and 200 more
 
-## C (161)
+## C (160)
 
 - [Seoul Hongdae Select Shop Guide](https://mgself414.github.io/keychingu-content-deploy/content/hongdae-select-shops.en.html): Eight select shops in Hongdae, Seogyo and Yeonnam: lifestyle brands, vintage lanes, an Olive Young megastore, a K-pop collaboration store an (Korean: https://mgself414.github.io/keychingu-content-deploy/content/hongdae-select-shops.html)
 - [Korean Desserts: Korean Dessert Guide — Bingsu, Tteok, Cakes, Macarons, Traditional Sweets](https://mgself414.github.io/keychingu-content-deploy/content/korea-dessert-meta.en.html): All Korean dessert categories — bingsu, tteok, cakes & traditional sweets. (Korean: https://mgself414.github.io/keychingu-content-deploy/content/korea-dessert-meta.html)
@@ -105,7 +105,7 @@
 - [Gangnam Bar Guide](https://mgself414.github.io/keychingu-content-deploy/content/gangnam-bar.en.html): Gangnam bars on official values checked Oct 8, 2026: the old eight venues had no own pages (one may not exist) and are dropped; four picks i (Korean: https://mgself414.github.io/keychingu-content-deploy/content/gangnam-bar.html)
 - [Seoul Jongno Brunch Guide](https://mgself414.github.io/keychingu-content-deploy/content/jongno-brunch.en.html): Eight Jongno brunch places grouped as hanok brunch, modern brunch, bagel and American-style, and photo spots, with weekend wait times, cash  (Korean: https://mgself414.github.io/keychingu-content-deploy/content/jongno-brunch.html)
 - [Seoul Hongdae Brunch Guide](https://mgself414.github.io/keychingu-content-deploy/content/hongdae-brunch.en.html): Twelve brunch spots in Hongdae, Yeonnam, Hapjeong and Mangwon: Yeonnam, modern Hapjeong cafes, pancakes and bagels, Mangwon neighborhood pla (Korean: https://mgself414.github.io/keychingu-content-deploy/content/hongdae-brunch.html)
-  - ... and 131 more
+  - ... and 130 more
 
 ## H (142)
 
@@ -243,7 +243,7 @@
 - [K-pop Music Video Locations Deep Dive](https://mgself414.github.io/keychingu-content-deploy/content/kpop-mv-locations.en.html): Twelve K-pop music video locations sorted by artist: BTS, BLACKPINK, NewJeans, aespa and newer groups, plus agency headquarters areas and in (Korean: https://mgself414.github.io/keychingu-content-deploy/content/kpop-mv-locations.html)
   - ... and 17 more
 
-## E (45)
+## E (44)
 
 - [Personal Color & Beauty Consulting](https://mgself414.github.io/keychingu-content-deploy/content/personal-color.en.html): Why personal color analysis is so popular in Korea, where to get one in Seoul, how to book, what the session involves, and how to use your r (Korean: https://mgself414.github.io/keychingu-content-deploy/content/personal-color.html)
 - [Korea K-beauty Spa Full Guide](https://mgself414.github.io/keychingu-content-deploy/content/kbeauty-spa-full.en.html): Ten Korean beauty stops: Myeongdong cosmetics, Olive Young, Amorepacific HQ and flagships, duty-free, jjimjilbang spas, massage and personal (Korean: https://mgself414.github.io/keychingu-content-deploy/content/kbeauty-spa-full.html)
@@ -271,16 +271,15 @@
 - [Korea Medical Tourism Deep Dive](https://mgself414.github.io/keychingu-content-deploy/content/medical-tourism-full.en.html): How foreign patients get treated in Korea, in twelve parts: large hospitals, beauty, plastic surgery, dental and eye care, traditional medic (Korean: https://mgself414.github.io/keychingu-content-deploy/content/medical-tourism-full.html)
 - [Korea Perfume Deep Dive](https://mgself414.github.io/keychingu-content-deploy/content/perfume-deep.en.html): Twelve ways to choose perfume in Korea: homegrown brands, luxury and premium labels, duty-free shops, drugstores, boutiques and fragrance-ma (Korean: https://mgself414.github.io/keychingu-content-deploy/content/perfume-deep.html)
 - [Korea Hanbang Korean Medicine Top 12 Deep Dive](https://mgself414.github.io/keychingu-content-deploy/content/hanbang-clinic-deep.en.html): Twelve places for Korean medicine, from herbal medicine markets and Gangnam clinics to hospitals and visitor experiences, with common mistak (Korean: https://mgself414.github.io/keychingu-content-deploy/content/hanbang-clinic-deep.html)
-- [Korea Hiking Trekking Top 12 Deep Dive](https://mgself414.github.io/keychingu-content-deploy/content/hiking-trekking-deep.en.html): Twelve Seoul mountain hikes, including Bukhansan, Inwangsan and Gwanaksan, compared by difficulty, time and access, with gear rental at hiki (Korean: https://mgself414.github.io/keychingu-content-deploy/content/hiking-trekking-deep.html)
 - [Golf in Korea — 4 Capital-Region Courses Foreigners Can Play as Non-Members: Official Green Fees, Caddie and Cart (October 2026)](https://mgself414.github.io/keychingu-content-deploy/content/golf-round-deep.en.html): Golf rounds in Korea on official fee tables checked Oct 8, 2026, four courses: Pine Creek (Anseong, public) October weekday 180,000–215,000  (Korean: https://mgself414.github.io/keychingu-content-deploy/content/golf-round-deep.html)
 - [Korea Winter Jjimjilbang Hot Spring Top 9](https://mgself414.github.io/keychingu-content-deploy/content/jjimjilbang-winter.en.html): Winter jjimjilbang and hot springs rewritten on official values (Oct 12, 2026) — Riverside Spa Land (Seoul, 24h), Supsok Hanbang Land (08–21 (Korean: https://mgself414.github.io/keychingu-content-deploy/content/jjimjilbang-winter.html)
 - [Korea K-Medical Tourism Top 12](https://mgself414.github.io/keychingu-content-deploy/content/k-medical-overview.en.html): K-Medical Tourism Top 12 (Korean: https://mgself414.github.io/keychingu-content-deploy/content/k-medical-overview.html)
-  - ... and 15 more
+- [Korea Plastic Surgery K-Beauty Top 12](https://mgself414.github.io/keychingu-content-deploy/content/k-medical-plastic-surgery.en.html): Twelve picks on plastic surgery and K-beauty medical tourism centered on Gangnam: costs for eye, nose and jaw procedures, recovery hotels, t (Korean: https://mgself414.github.io/keychingu-content-deploy/content/k-medical-plastic-surgery.html)
+  - ... and 14 more
 
-## I (20)
+## I (19)
 
 - [Jongno 3-ga Pocha and Open-Air Dining Guide — How to Walk the Time Out 2026 'Coolest Neighbourhood in the World' No. 1: Pocha Street, Ikseon-dong, Songhae-gil, Jongmyo](https://mgself414.github.io/keychingu-content-deploy/content/jongno3ga-pocha-deep.en.html): Jongno 3-ga pocha night street on official values checked Oct 8, 2026: Time Out's coolest neighbourhood in the world for 2026 (article of Se (Korean: https://mgself414.github.io/keychingu-content-deploy/content/jongno3ga-pocha-deep.html)
-- [Korea 24h Han River Night Top 12 Deep Dive](https://mgself414.github.io/keychingu-content-deploy/content/hangang-night-deep.en.html): Twelve free, round-the-clock Han River night spots in Seoul, grouped into riverside parks, landmarks, activities and nearby add-ons. (Korean: https://mgself414.github.io/keychingu-content-deploy/content/hangang-night-deep.html)
 - [Seoul Dawn Wholesale Market Guide: Noryangjin Fisheries Wholesale Market Auction and Noryangjin Cup-bap Street, Gangseo Agricultural Wholesale Market and Suhyup Gangseo Fish Market](https://mgself414.github.io/keychingu-content-deploy/content/dawn-market-deep.en.html): A Seoul dawn wholesale market guide that lists the dawn auction and sales hours of Noryangjin Fisheries Wholesale Market, Noryangjin Cup-bap (Korean: https://mgself414.github.io/keychingu-content-deploy/content/dawn-market-deep.html)
 - [Korea 2026 2027 New K-Drama Top 12](https://mgself414.github.io/keychingu-content-deploy/content/korea-kdrama-2026-2027.en.html): Twelve new 2026-2027 K-dramas and related K-pop picks for fans of BTS, NewJeans and BLACKPINK, with where to watch on Netflix, Disney+ and A (Korean: https://mgself414.github.io/keychingu-content-deploy/content/korea-kdrama-2026-2027.html)
 - [Korea K-Drama Fans 1day Package Top 12](https://mgself414.github.io/keychingu-content-deploy/content/korea-kdrama-mania-1day-package.en.html): A one-night K-drama route linking Parasite, Itaewon Class and Goblin sites in Seoul and Jeongdongjin, with common mistakes such as combining (Korean: https://mgself414.github.io/keychingu-content-deploy/content/korea-kdrama-mania-1day-package.html)
@@ -303,7 +302,7 @@
 
 ## Metadata
 
-- **Coverage**: 1237 curated guides as of 2026-11-18
+- **Coverage**: 1232 curated guides as of 2026-11-18
 - **Languages**: KR (full), EN (full), CN (full), JP (full)
 - **Update frequency**: Weekly
 - **Data sources**: Korea Tourism Organization (VisitKorea), Seoul Tourism Foundation (Visit Seoul), Cultural Heritage Administration, UNESCO World Heritage, Korea Open Government License (KOGL), Naver Maps, Reddit r/koreatravel + user curation

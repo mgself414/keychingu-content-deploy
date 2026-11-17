@@ -13532,36 +13532,6 @@
     "summary_ja": "鍾路3街ポチャ・夜の通り — 2026-10-08公式値：Time Out 2026 世界で最もクールな街 1位（2026-09-17記事、2021年は3位）・ポジャンマチャ通りは6番出口、時間・価格は店ごと（VisitKorea、メニューは鶏足・テナガダコ・キムチチヂミ）・益善洞 4番出口123m・無料・世運商街 09〜19・日曜祝日休・宗廟 火曜休・1,000ウォン・平日は時間制ガイド入場（英語10〜16）・3日前予約・8番出口220m・広蔵市場 食べ物横丁09〜23。旧「ソウルNo.1ポチャ拠点」「18〜02時」「現金のみ」「価格」「1,750万」統計を削除、宗廟の出口を訂正。"
   },
   {
-    "id": "586",
-    "slug": "hangang-night-deep",
-    "title_kr": "한국 24h 한강 야간 12선",
-    "title_en": "Korea 24h Han River Night Top 12 Deep Dive",
-    "category": "I",
-    "tags": [
-      "foreigner",
-      "han-river",
-      "night",
-      "banpo",
-      "yeouido",
-      "ttukseom",
-      "chimaek",
-      "ttareungi",
-      "mz",
-      "free"
-    ],
-    "summary_kr": "24시간 무료로 즐기는 서울 한강 야간 명소 12곳을 한강공원, 랜드마크, 활동·체험, 인근 연계 코스로 나눠 소개한다.",
-    "summary_en": "Twelve free, round-the-clock Han River night spots in Seoul, grouped into riverside parks, landmarks, activities and nearby add-ons.",
-    "en_available": true,
-    "instagram_posted": false,
-    "cn_available": true,
-    "jp_available": true,
-    "date_published": "2026-06-01",
-    "title_ja": "漢江24時間ナイト12選",
-    "title_zh": "韩国24小时汉江夜间12大精选深度探索",
-    "summary_zh": "首尔汉江夜间12处全天免费去处，分为汉江公园、地标、活动体验与周边延伸四类。",
-    "summary_ja": "24時間無料で楽しめるソウルの漢江ナイトスポット12選。漢江公園、名所、アクティビティ、周辺エリアに分けて紹介。"
-  },
-  {
     "id": "587",
     "slug": "dawn-market-deep",
     "title_kr": "서울 새벽 도매시장 가이드 — 노량진수산물도매시장 경매·노량진컵밥거리, 강서농산물도매시장·수협 강서수산시장",
@@ -13701,34 +13671,6 @@
     "title_zh": "韩国韩方·韩医院12大深度探索",
     "summary_ja": "薬令市、江南の韓方医院、総合韓方病院、外国人向け体験まで、韓方・韓医院12選。よくある失敗と、交通・予約・言語・保険の情報も掲載。",
     "summary_zh": "韩国韩方与韩医院12处精选，涵盖药令市、江南韩医院、综合韩方医院与外国游客体验，并附常见失误及交通、预约、语言、保险信息。"
-  },
-  {
-    "id": "594",
-    "slug": "hiking-trekking-deep",
-    "title_kr": "한국 등산·트레킹 12선",
-    "title_en": "Korea Hiking Trekking Top 12 Deep Dive",
-    "category": "E",
-    "tags": [
-      "foreigner",
-      "hiking",
-      "trekking",
-      "bukhansan",
-      "inwangsan",
-      "gwanaksan",
-      "wellness",
-      "outdoor"
-    ],
-    "summary_kr": "북한산, 인왕산, 관악산 등 서울의 산 12곳을 난이도·소요시간·접근 방법으로 비교하고 서울 등산관광센터의 장비 대여와 안전 요령을 담았다.",
-    "summary_en": "Twelve Seoul mountain hikes, including Bukhansan, Inwangsan and Gwanaksan, compared by difficulty, time and access, with gear rental at hiking centers and safety advice.",
-    "en_available": true,
-    "instagram_posted": false,
-    "cn_available": true,
-    "jp_available": true,
-    "date_published": "2026-06-01",
-    "title_ja": "登山・トレッキング12選",
-    "title_zh": "韩国登山·徒步12大深度探索",
-    "summary_ja": "北漢山、仁王山、冠岳山など、ソウルの山12選。難易度・所要時間・アクセスで比較し、登山観光センターの装備レンタルと安全面のコツも紹介。",
-    "summary_zh": "首尔12座山的徒步精选，包括北汉山、仁王山、冠岳山，按难度、耗时与交通比较，附登山观光中心装备租借与安全要点。"
   },
   {
     "id": "595",
@@ -13888,33 +13830,6 @@
     "title_zh": "韩国书法之旅指南：首尔书艺博物馆、果川秋史博物馆、礼山秋史故居·秋史纪念馆·韩国书艺碑林博物馆、济州秋史馆、全州Gangam书艺馆、麟蹄Yeocho书艺馆、天安Chwimukheon书艺馆、春川笔的故事博物馆",
     "summary_zh": "介绍首尔、果川、礼山、济州、全州、麟蹄、天安、春川的10处书艺馆·博物馆·故居，涵盖秋史 金正喜相关场所和毛笔制作体验，运营信息照录韩国观光公社旅游信息（TourAPI）。",
     "summary_ja": "ソウル書芸博物館・秋史博物館・秋史故宅・秋史記念館・韓国書芸碑林博物館・済州秋史館・カンアム書芸館・ヨチョ書芸館・チュイムクホン書芸館・筆の物語博物館の開く時間・休み・入場料を、韓国観光公社の観光情報(TourAPI)でまとめたガイドです。"
-  },
-  {
-    "id": "603",
-    "slug": "namdaemun-galchi-sub-deep",
-    "title_kr": "한국 남대문 갈치골목 12선",
-    "title_en": "Namdaemun Galchi Alley Top 12",
-    "category": "C",
-    "tags": [
-      "foreigner",
-      "namdaemun",
-      "sub-deep",
-      "jp",
-      "en",
-      "jongno",
-      "heritage"
-    ],
-    "summary_kr": "남대문 갈치골목의 갈치조림·갈치구이 가게와 인근 식당 12곳을 소개하고 휴무일, 대기 시간, 주문 때 헷갈리는 점 등 외국인이 자주 하는 실수를 정리했다.",
-    "summary_en": "Twelve braised and grilled cutlassfish spots in Namdaemun's Galchi Alley and nearby, with common visitor mistakes such as closed days, lunchtime queues and mixing up the two dishes.",
-    "en_available": true,
-    "instagram_posted": false,
-    "cn_available": true,
-    "jp_available": true,
-    "date_published": "2026-06-01",
-    "title_ja": "南大門太刀魚横丁12選",
-    "title_zh": "韩国南大门带鱼胡同12大深度探索",
-    "summary_zh": "南大门带鱼胡同的炖带鱼与烤带鱼店及周边餐厅共12处，整理外国游客常见失误，如休息日、午餐排队，以及点餐时分不清两种做法。",
-    "summary_ja": "南大門の太刀魚横丁と周辺で味わう、太刀魚の煮付け・焼き12選。定休日、昼の行列、注文時の取り違えなど、外国人がよくする失敗も整理。"
   },
   {
     "id": "604",
@@ -18084,30 +17999,6 @@
     "title_zh": "首尔朝鲜王陵·南汉山城指南 — 宣陵与靖陵，泰陵与康陵，献陵与仁陵，南汉山城守御将台·登山步道(联合国教科文组织世界遗产)",
     "summary_ja": "ユネスコ世界遺産であるソウルの朝鮮王陵3か所(宣陵と靖陵、泰陵と康陵、献陵と仁陵)と、南漢山城 守禦将台・探訪路5コースの開く時間・休みの日・入場料を、韓国観光公社の観光情報(TourAPI)でまとめたガイドです。",
     "summary_zh": "这是一份指南，依据韩国观光公社旅游信息(TourAPI)，整理了作为联合国教科文组织世界遗产的首尔朝鲜王陵三处(宣陵与靖陵、泰陵与康陵、献陵与仁陵)以及南汉山城守御将台·登山步道5条路线的开放时间、休息日和门票。"
-  },
-  {
-    "id": "793",
-    "slug": "korea-architecture-museum-festival",
-    "title_kr": "한국 건축 박물관 디자인 페스티벌 12선",
-    "title_en": "Korea Architecture Museum Design Festival Top 12",
-    "category": "D",
-    "tags": [
-      "foreign-tourist",
-      "deep-dive",
-      "sub-deep"
-    ],
-    "summary_kr": "국립현대미술관 서울관·덕수궁관, 리움미술관, DDP와 9월 Frieze Seoul, Seoul Design Festival까지 건축·박물관·디자인 페스티벌 12선의 동선과 티켓 구매 요령을 안내한다.",
-    "summary_en": "Twelve architecture, museum and design festival picks, including MMCA Seoul and Deoksugung, Leeum, DDP, Frieze Seoul and Seoul Design Festival, with routes and ticket tips.",
-    "en_available": true,
-    "cn_available": true,
-    "jp_available": true,
-    "instagram_posted": false,
-    "image": "assets/og/korea-architecture-museum-festival.jpg",
-    "date_published": "2026-06-07",
-    "title_ja": "韓国建築博物館・デザインフェスティバル厳選12選",
-    "title_zh": "韩国建筑博物馆设计节12大精选",
-    "summary_ja": "国立現代美術館ソウル館・徳寿宮館、リウム美術館、DDP、9月のFrieze Seoul、ソウルデザインフェスティバルなど、建築・美術館・デザインフェス12選。館どうしの移動とチケットの買い方も紹介します。",
-    "summary_zh": "介绍建筑、博物馆与设计节12选,含国立现代美术馆首尔馆与德寿宫馆、Leeum美术馆、DDP,以及9月的Frieze Seoul和首尔设计节,附场馆间交通与购票建议。"
   },
   {
     "id": "794",
@@ -27159,33 +27050,6 @@
     "title_zh": "夏季水上音乐节全攻略 — 水弹音乐节·S2O·湿身秀外国人指南深度攻略",
     "summary_ja": "ウォーターボム・S2O・スックドショーなど韓国夏の三大ウォーターフェスの違いを解説し、外国人向けチケット購入やパスポート携帯、持ち物まで案内。",
     "summary_zh": "解析WATERBOMB、S2O、湿透秀等三大夏日水战音乐节的风格差异，并说明外国游客购票、护照携带及装备准备等实用信息。"
-  },
-  {
-    "id": "1238",
-    "slug": "seoul-romantic-views",
-    "title_kr": "낭만적인 서울 야경 데이트 — 전망대·루프탑·한강 뷰 12선",
-    "title_en": "Romantic Seoul Views: 12 Night-View Date Spots",
-    "category": "A",
-    "tags": [
-      "foreign-tourist",
-      "night-view",
-      "observatory",
-      "namsan",
-      "han-river",
-      "rooftop",
-      "seoul-wide"
-    ],
-    "summary_kr": "서울 야경 데이트 큐레이션 — N서울타워·서울스카이·63 스카이피크닉 전망대, 노들섬·낙산성곽·한강공원 무료 야경, Oriole·Griffin 루프탑, 남산 케이블카·한강 크루즈. 유료 전망대 입장료·무료 대안(6곳)·일몰 타이밍을 정직하게 안내.",
-    "summary_en": "A Seoul night-view date curation — observatories (N Seoul Tower, Seoul Sky, 63 SkyPicnic), free views (Nodeul Island, Naksan city wall, Han River parks), rooftops (Oriole, Griffin) and experiences (Namsan cable car, Han River cruise). Ticket prices, six free alternatives and sunset timing.",
-    "en_available": true,
-    "cn_available": true,
-    "jp_available": true,
-    "instagram_posted": false,
-    "date_published": "2026-07-14",
-    "title_ja": "ロマンチックなソウルの夜景デート — 展望台・ルーフトップ・漢江ビュー12選",
-    "title_zh": "浪漫首尔夜景约会 — 观景台·屋顶·汉江景致12选",
-    "summary_ja": "展望タワーや屋上、漢江沿いなどロマンチックな夜景スポット12か所を紹介。入場料と営業時間に加え、無料で楽しめる代替スポットも併記する。",
-    "summary_zh": "精选展望塔、屋顶酒吧、汉江沿岸等12处浪漫夜景约会地点，标注门票与营业时间，并附赠免费也能欣赏夜景的替代去处。"
   },
   {
     "id": "1239",
