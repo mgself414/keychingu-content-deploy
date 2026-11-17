@@ -13672,58 +13672,6 @@
     "summary_ja": "釜山チャガルチ市場、釜山チャガルチ ヤンコプチャン通り、チャガルチクルーズ、南浦洞乾物卸売市場、南浦洞地下道商店街、富平チョッパル通りの開く時間・休み・料金を、韓国観光公社の観光情報(TourAPI)でまとめたガイドです。"
   },
   {
-    "id": "591",
-    "slug": "dongmyo-market-deep",
-    "title_kr": "한국 동묘 벼룩시장·빈티지 12선",
-    "title_en": "Dongmyo Flea Market Vintage Top 12 Deep Dive",
-    "category": "F",
-    "tags": [
-      "foreigner",
-      "vintage",
-      "jongno",
-      "mz"
-    ],
-    "summary_kr": "동묘 벼룩시장 12곳을 빈티지 의류·신발, 잡화·전자제품, 동묘 명소, 인근 연계 코스로 나누고 주말 차 없는 거리 시간대와 방문 팁을 담았다.",
-    "summary_en": "Twelve Dongmyo flea market stops covering vintage clothing and shoes, odds and ends and electronics, local landmarks and nearby areas, with weekend car-free street hours and tips.",
-    "en_available": true,
-    "instagram_posted": false,
-    "cn_available": true,
-    "jp_available": true,
-    "date_published": "2026-06-01",
-    "title_ja": "東廟 蚤の市・ヴィンテージ12選",
-    "title_zh": "韩国东庙跳蚤市场·复古12大深度探索",
-    "summary_ja": "東廟蚤の市の12選。古着・靴、雑貨・電化製品、東廟の名所、周辺エリアに分けて紹介し、週末の歩行者天国の時間帯や訪問のコツも掲載。",
-    "summary_zh": "东庙跳蚤市场12处精选，涵盖复古服饰与鞋履、杂货与电子产品、东庙景点和周边延伸，并介绍周末步行街时段与逛街提示。"
-  },
-  {
-    "id": "592",
-    "slug": "majang-market-deep",
-    "title_kr": "한국 마장 축산물 시장 12선",
-    "title_en": "Majang Livestock Market Top 12 Deep Dive",
-    "category": "C",
-    "tags": [
-      "foreigner",
-      "majang",
-      "wangsimni",
-      "meat",
-      "hanwoo",
-      "kbbq",
-      "wholesale",
-      "kfood"
-    ],
-    "summary_kr": "마장동 축산물 시장 12곳을 한우 도매·소매, 축산 매장, 인근 식당, 왕십리 연계 코스로 나누고 시장에서 고기를 사 식당에서 먹는 방법과 방문 팁을 담았다.",
-    "summary_en": "Twelve stops in Seoul's Majang meat market, from Korean beef wholesale and retail to butchers, nearby restaurants and Wangsimni, including how to buy meat and have it cooked at a restaurant.",
-    "en_available": true,
-    "instagram_posted": false,
-    "cn_available": true,
-    "jp_available": true,
-    "date_published": "2026-06-01",
-    "title_ja": "馬場畜産物市場12選",
-    "title_zh": "韩国马场畜产品市场12大深度探索",
-    "summary_ja": "馬場洞の畜産物市場12選。韓牛の卸・小売、精肉店、周辺の食堂、往十里エリアに分けて紹介し、市場で肉を買って食堂で調理してもらう方法も解説。",
-    "summary_zh": "首尔马场畜产品市场12处精选，涵盖韩牛批发零售、肉铺、周边餐厅与往十里延伸路线，并介绍在市场买肉、到餐厅代烹的方法。"
-  },
-  {
     "id": "593",
     "slug": "hanbang-clinic-deep",
     "title_kr": "한국 한방·한의원 12선",
@@ -13808,60 +13756,6 @@
     "title_zh": "韩国高尔夫球场指南——外国人可以非会员身份打球的首都圈4家球场的官方果岭费·球童·球车（2026年10月）",
     "summary_ja": "韓国ゴルフラウンド — 2026-10-08公式料金表4コース：パインクリーク（安城・パブリック）10月平日180,000〜215,000・週末240,000〜280,000／レイクサイド（龍仁）東南コース199,000・259,000／イーストバレー（広州・昆池岩）ビジター240,000・290,000／ジャック・ニクラウスGC（松島・会員制）ビジター380,000・480,000・外国語キャディ220,000。キャディ150,000〜170,000・カート100,000〜120,000はチーム単位で別途（4人平日1人約280,000）。ヘスリーは料金未掲示・ベアクリーク抱川は11/16から休場・コリアパブリックは二次情報。",
     "summary_zh": "韩国高尔夫 — 2026-10-08官方价目表4家：Pine Creek（安城·公众制）10月平日180,000~215,000·周末240,000~280,000／Lakeside（龙仁）东南球场199,000·259,000／East Valley（广州昆池岩）非会员240,000·290,000／Jack Nicklaus GC（松岛·会员制）非会员380,000·480,000·外语球童220,000。球童150,000~170,000·球车100,000~120,000按组另计（4人平日人均约280,000）。Haesley未公布价格·Bear Creek抱川11/16起停业·Korea Public为二手来源。"
-  },
-  {
-    "id": "596",
-    "slug": "mangwon-market-deep",
-    "title_kr": "한국 망원시장 12선",
-    "title_en": "Mangwon Market Top 12 Deep Dive",
-    "category": "C",
-    "tags": [
-      "foreigner",
-      "mangwon",
-      "mapo",
-      "market",
-      "mz",
-      "hidden-gem",
-      "han-river",
-      "yeonnam",
-      "local"
-    ],
-    "summary_kr": "망원시장 12곳을 분식·노포, 카페·디저트·사진 명소, 한강·연남동 등 인근 연계, 시장 안 가게로 나눠 소개한다.",
-    "summary_en": "Twelve Mangwon Market stops covering snack stalls and old eateries, cafes, desserts and photo spots, nearby Han River and Yeonnam-dong, and market shops.",
-    "en_available": true,
-    "instagram_posted": false,
-    "cn_available": true,
-    "jp_available": true,
-    "date_published": "2026-06-01",
-    "title_ja": "望遠市場12選",
-    "title_zh": "韩国望远市场12大深度探索",
-    "summary_ja": "望遠市場の12選。軽食・老舗、カフェ・デザート・撮影スポット、漢江や延南洞など周辺、市場内の店に分けて紹介。",
-    "summary_zh": "望远市场12处精选，涵盖小吃与老店、咖啡馆甜点与拍照点、汉江与延南洞周边，以及市场内店铺。"
-  },
-  {
-    "id": "597",
-    "slug": "jungbu-market-deep",
-    "title_kr": "한국 중부시장 건어물 12선",
-    "title_en": "Jungbu Market Dried Seafood Top 12 Deep Dive",
-    "category": "C",
-    "tags": [
-      "foreigner",
-      "euljiro",
-      "market",
-      "wholesale",
-      "heritage"
-    ],
-    "summary_kr": "을지로4가 중부시장의 건어물 가게 12곳을 건어물 매장, 정통 노포, 을지로 연계, 외국인 방문 팁으로 나누고 교통·결제·언어와 자주 하는 실수를 정리했다.",
-    "summary_en": "Twelve stops around Jungbu Market in Euljiro 4-ga, from dried seafood shops to old eateries and nearby Euljiro, with tips on transport, payment, language and common mistakes.",
-    "en_available": true,
-    "instagram_posted": false,
-    "cn_available": true,
-    "jp_available": true,
-    "date_published": "2026-06-01",
-    "title_ja": "中部市場 乾物12選",
-    "title_zh": "韩国中部市场干海产12大深度探索",
-    "summary_ja": "乙支路4街の中部市場で巡る乾物12選。乾物店、老舗食堂、乙支路周辺、外国人向けのコツに分け、交通・支払い・言語とよくある失敗も整理。",
-    "summary_zh": "乙支路4街中部市场干海产12处精选，涵盖干货店、老字号餐馆、乙支路周边与游客提示，并整理交通、支付、语言及常见失误。"
   },
   {
     "id": "598",
@@ -15458,31 +15352,6 @@
     "summary_ja": "ソウル韓方振興センターとキョンドン市場、大邱薬令市の韓医薬博物館・韓方医療体験タウンの開く時間と休みを、韓国観光公社の情報でまとめたガイドです。"
   },
   {
-    "id": "684",
-    "slug": "traditional-liquor-sub-deep",
-    "title_kr": "한국 전통주·막걸리·소주·전통주 12선",
-    "title_en": "Korea Traditional Liquor Makgeolli Soju Top 12",
-    "category": "D",
-    "tags": [
-      "foreigner",
-      "traditional-liquor",
-      "makgeolli",
-      "soju",
-      "sub-deep"
-    ],
-    "summary_kr": "2021년 국가무형유산이 된 막걸리부터 경주 교동법주, 도수 45%의 안동소주, 한산 소곡주까지 한국 전통주 12가지를 소개한다.",
-    "summary_en": "Twelve Korean traditional liquors, from makgeolli, listed as national intangible heritage in 2021, to Gyeongju Gyodong Beopju, 45% Andong Soju and Hansan Sogokju.",
-    "en_available": true,
-    "instagram_posted": false,
-    "cn_available": true,
-    "jp_available": true,
-    "date_published": "2026-06-02",
-    "title_ja": "伝統酒・マッコリ・焼酎12選",
-    "title_zh": "韩国传统酒·马格利酒·烧酒·传统酒 12大深度探索",
-    "summary_zh": "介绍12种韩国传统酒,从2021年列入国家非物质遗产的马格利酒,到庆州校洞法酒、度数45%的安东烧酒和韩山素曲酒。",
-    "summary_ja": "2021年に国家無形遺産となったマッコリから、慶州の校洞法酒、度数45%の安東焼酎、韓山小麹酒まで、韓国の伝統酒12種を紹介します。"
-  },
-  {
     "id": "685",
     "slug": "royal-cuisine-sub-deep",
     "title_kr": "한국 궁중요리·수라상·신선로 12선",
@@ -15531,79 +15400,6 @@
     "title_zh": "韩国国乐演出场馆指南 — 首尔南山国乐堂·首尔敦化门国乐堂·国乐公演 Jinyeon(首尔)，国立南道国乐院(珍岛)·国立民俗国乐院(南原)·国立釜山国乐院，国乐圣地(南原)·Nangye 国乐博物馆(永同)",
     "summary_zh": "汇总首尔、珍岛、南原、釜山、永同的国乐演出场馆、国立国乐院和国乐博物馆的开放时间、休息日、费用等登记信息，运营信息照录韩国观光公社旅游信息 TourAPI。",
     "summary_ja": "ソウル・珍島・南原・釜山・永同の国楽公演場、国立国楽院、国楽博物館の開く時間・休み・料金を、韓国観光公社の観光情報(TourAPI)でまとめたガイドです。"
-  },
-  {
-    "id": "687",
-    "slug": "makgeolli-sub-deep",
-    "title_kr": "한국 막걸리 단독 12선",
-    "title_en": "Korea Makgeolli Standalone Top 12",
-    "category": "D",
-    "tags": [
-      "foreigner",
-      "makgeolli",
-      "sub-deep"
-    ],
-    "summary_kr": "서울 장수(1962년 설립), 국순당, 양평 지평(1925년), 부산 금정산성 막걸리 등 대표 막걸리 브랜드와 양조장을 12곳으로 소개한다.",
-    "summary_en": "A makgeolli-only guide to 12 picks, from Seoul Jangsu (founded 1962) and Kooksoondang to Yangpyeong's Jipyeong (1925) and Busan's Geumjeong Sanseong.",
-    "en_available": true,
-    "instagram_posted": false,
-    "cn_available": true,
-    "jp_available": true,
-    "date_published": "2026-06-02",
-    "title_ja": "マッコリ12選",
-    "title_zh": "韩国米酒12大精选",
-    "summary_ja": "マッコリだけの12選。ソウル長寿(1962年創業)や麹醇堂から、楊平の地平(1925年)、釜山の金井山城まで、代表的な銘柄と醸造所を紹介します。",
-    "summary_zh": "专门介绍米酒的12大精选,从首尔长寿(1962年创立)、国纯堂,到杨平的地平(1925年)和釜山金井山城米酒。"
-  },
-  {
-    "id": "688",
-    "slug": "liquor-pairing-sub-deep",
-    "title_kr": "한국 전통주 페어링 단독 12선",
-    "title_en": "Korea Traditional Liquor Pairing Standalone Top 12",
-    "category": "D",
-    "tags": [
-      "foreigner",
-      "makgeolli",
-      "soju",
-      "michelin",
-      "samgyeopsal",
-      "sub-deep"
-    ],
-    "summary_kr": "광장시장 빈대떡과 막걸리, 소주와 삼겹살, 청주와 회처럼 전통주에 어울리는 안주 조합 12가지를 소개한다.",
-    "summary_en": "Twelve pairings of Korean liquor and food, such as makgeolli with Gwangjang Market bindaetteok, soju with pork belly and cheongju with raw fish.",
-    "en_available": true,
-    "instagram_posted": false,
-    "cn_available": true,
-    "jp_available": true,
-    "date_published": "2026-06-02",
-    "title_ja": "伝統酒ペアリング12選",
-    "title_zh": "韩国传统酒搭配12大精选",
-    "summary_ja": "広蔵市場のビンデトックとマッコリ、焼酎とサムギョプサル、清酒と刺身など、韓国の伝統酒に合う料理の組み合わせ12選。",
-    "summary_zh": "介绍12种韩国传统酒与下酒菜的搭配,如马格利酒配广藏市场绿豆煎饼、烧酒配五花肉、清酒配生鱼片。"
-  },
-  {
-    "id": "689",
-    "slug": "brewery-tour-sub-deep",
-    "title_kr": "한국 양조장 투어 단독 12선",
-    "title_en": "Korea Brewery Tour Standalone Top 12",
-    "category": "D",
-    "tags": [
-      "foreigner",
-      "mapo",
-      "andong-soju",
-      "sub-deep"
-    ],
-    "summary_kr": "서울 마포구 양조장 거리, 양평 지평의 투어와 시음, 부산 금정산성 마을 등 직접 맛보고 살 수 있는 양조장 12곳을 소개한다.",
-    "summary_en": "Twelve breweries where you can taste and buy, from the brewery streets of Seoul's Mapo District to the Jipyeong tour in Yangpyeong and Busan's Geumjeong Sanseong village.",
-    "en_available": true,
-    "instagram_posted": false,
-    "cn_available": true,
-    "jp_available": true,
-    "date_published": "2026-06-02",
-    "title_ja": "醸造所ツアー12選",
-    "title_zh": "韩国酿酒厂之旅12大精选",
-    "summary_ja": "ソウル麻浦区の醸造所エリア、楊平・地平のツアーと試飲、釜山の金井山城村など、味わって買える醸造所12か所を紹介します。",
-    "summary_zh": "介绍12家可品尝和购买的酒厂,包括首尔麻浦区的酒厂集中区、杨平地平酒厂的参观品酒,以及釜山金井山城村。"
   },
   {
     "id": "690",
@@ -17484,30 +17280,6 @@
     "summary_zh": "汇集济州西归浦可以看到油菜花的地方: 城山日出峰周边的油菜花田、Gasi里的Noksan路油菜花道和2026年花节、山房山油菜花田、Eongdeongmul溪谷。已对照韩国观光公社旅游信息，整理开放时间与休息日。"
   },
   {
-    "id": "760",
-    "slug": "korea-spring-buddha-birthday",
-    "title_kr": "한국 부처님오신날 봄 연등 12선",
-    "title_en": "Korea Spring Buddha Birthday Lantern Top 12",
-    "category": "D",
-    "tags": [
-      "foreign",
-      "tourist",
-      "spring"
-    ],
-    "summary_kr": "연등회와 부처님오신날 봄 연등 12선. UNESCO 인류무형문화유산 연등회, 조계사·봉은사, 종로 연등 행렬, 통도사·송광사·대흥사·범어사, 연등 만들기 체험을 담았다.",
-    "summary_en": "Twelve picks for the Buddha's Birthday lantern season: the UNESCO-listed Lotus Lantern Festival, Jogyesa, Bongeunsa, Jongno parade, Tongdosa, Songgwangsa, Daeheungsa, Beomeosa and lantern making.",
-    "en_available": true,
-    "cn_available": true,
-    "jp_available": true,
-    "instagram_posted": false,
-    "image_credit": "Korea Tourism Organization (공공누리 1유형)",
-    "date_published": "2026-06-06",
-    "title_ja": "仏誕祭 春の提灯12選",
-    "title_zh": "韩国佛诞节灯会12选",
-    "summary_ja": "仏誕祭の提灯12選。UNESCO登録の燃灯会、曹渓寺、奉恩寺、鍾路の提灯行列、通度寺・松広寺・大興寺・梵魚寺、提灯づくり体験を紹介します。",
-    "summary_zh": "佛诞节灯会12选：入选UNESCO的燃灯会、曹溪寺、奉恩寺、钟路灯笼游行、通度寺、松广寺、大兴寺、梵鱼寺，以及制作灯笼体验。"
-  },
-  {
     "id": "761",
     "slug": "k-medical-overview",
     "title_kr": "한국 K-medical 의료관광 풀가이드 12선",
@@ -17861,30 +17633,6 @@
     "title_zh": "韩国免税购物12精选",
     "summary_ja": "韓国の免税ショッピング12選。ロッテ免税店明洞本店、新羅免税店・奨忠、新世界免税店、仁川空港をはじめ、ラグジュアリー、Kビューティー、K-POPグッズ、10%のVAT還付、多言語対応を紹介。",
     "summary_zh": "韩国免税购物12选：乐天明洞本店、新罗奖忠、新世界免税店与仁川机场，涵盖奢侈品、K-beauty和K-pop周边，以及10%增值税退税与多语言服务。"
-  },
-  {
-    "id": "776",
-    "slug": "k-night-market-cluster",
-    "title_kr": "한국 야시장 12선",
-    "title_en": "Korea Night Market Top 12",
-    "category": "G",
-    "tags": [
-      "foreign",
-      "tourist",
-      "nightlife",
-      "market"
-    ],
-    "summary_kr": "동대문, 광장시장, 홍대 등 한국 야시장 12선. 24시간 운영하는 동대문 시장과 광장시장의 빈대떡·마약김밥, K-드라마 촬영지, 5,000원~30,000원대 야식을 담았다.",
-    "summary_en": "Twelve night market picks including Dongdaemun, Gwangjang Market and Hongdae: 24-hour Dongdaemun, bindaetteok and mayak gimbap at Gwangjang, K-drama sites, and snacks from 5,000 to 30,000 won.",
-    "en_available": true,
-    "cn_available": true,
-    "jp_available": true,
-    "instagram_posted": false,
-    "date_published": "2026-06-06",
-    "title_ja": "ナイトマーケット12選",
-    "title_zh": "韩国夜市12精选",
-    "summary_ja": "韓国のナイトマーケット12選。東大門、広蔵市場、弘大など。24時間営業の東大門市場、広蔵市場のピンデトクとマヤクキンパ、K-ドラマの舞台、約5,000〜30,000ウォンの夜食を紹介。",
-    "summary_zh": "韩国夜市12选：东大门、广藏市场、弘大等，介绍24小时营业的东大门市场、广藏市场的绿豆煎饼和迷你紫菜饭卷、韩剧取景地，以及约5000至30000韩元的夜宵。"
   },
   {
     "id": "777",
@@ -18259,29 +18007,6 @@
     "title_zh": "生鱼片市场到餐桌流程",
     "summary_ja": "4ステップのワークフロー、市場5箇所の店舗・価格・外国人向け情報、刺身初心者ガイド。",
     "summary_zh": "四步工作流程，5个市场商店价格及外国人友好度，生鱼片入门指南。"
-  },
-  {
-    "id": "918",
-    "slug": "zaha-hadid-ddp-cluster",
-    "title_kr": "한국 자하 하디드 DDP 동대문 12선",
-    "title_en": "Korea Zaha Hadid DDP Top 12",
-    "category": "D",
-    "tags": [
-      "foreign-tourist",
-      "deep-dive",
-      "sub-deep"
-    ],
-    "summary_kr": "자하 하디드가 설계해 2014년 문을 연 동대문 DDP의 볼거리 12가지. 흐르듯 이어지는 비정형 건축과 사진 찍기 좋은 지점을 중심으로 안내한다.",
-    "summary_en": "Twelve highlights of Dongdaemun Design Plaza, the free-form building by Zaha Hadid that opened in 2014, focusing on its flowing architecture and the best spots for photos.",
-    "en_available": true,
-    "cn_available": true,
-    "jp_available": true,
-    "instagram_posted": false,
-    "date_published": "2026-06-07",
-    "title_ja": "韓国ザハ・ハディッドDDP東大門厳選12選",
-    "title_zh": "韩国扎哈·哈迪德DDP东大门建筑群12大精选",
-    "summary_ja": "ザハ・ハディド設計で2014年に開館した東大門DDPの見どころ12選。曲線的な非定形建築と、写真映えするスポットを中心に案内します。",
-    "summary_zh": "扎哈·哈迪德设计、2014年开馆的东大门DDP，12个看点围绕流线型非规则建筑与适合拍照的位置展开。"
   },
   {
     "id": "791",
@@ -21292,36 +21017,6 @@
     "summary_zh": "乘KTX去江原与全罗赏枫12处：雪岳山、东海、正东津、太白，以及内藏山、高敞禅云寺。江原10月中下旬、内藏山11月上中旬最盛，并比较KTX、接驳车与住一晚的方式。"
   },
   {
-    "id": "908",
-    "slug": "bukchon-gallery-hanok-dining",
-    "title_kr": "북촌·삼청·안국 갤러리·한옥 다이닝 12선",
-    "title_en": "Bukchon·Samcheong·Anguk Gallery & Hanok Dining 12 Best",
-    "category": "C",
-    "tags": [
-      "foreign-tourist",
-      "food",
-      "bukchon",
-      "samcheong",
-      "anguk",
-      "gallery",
-      "hanok",
-      "fine-dining",
-      "cafe",
-      "art"
-    ],
-    "summary_kr": "북촌·삼청·안국에서 국립현대미술관, 갤러리현대, 국제갤러리, PKM 같은 갤러리를 본 뒤 이어 가기 좋은 카페·레스토랑·한옥 한정식 12곳을 한 동선으로 묶었다.",
-    "summary_en": "Twelve cafes, restaurants and hanok dining rooms in Bukchon, Samcheong and Anguk, set as one route to follow galleries such as MMCA Seoul, Kukje Gallery and PKM.",
-    "en_available": true,
-    "cn_available": true,
-    "jp_available": true,
-    "instagram_posted": false,
-    "date_published": "2026-06-10",
-    "title_zh": "北村·三清·安国画廊与韩屋餐厅12精选",
-    "title_ja": "北村・三清・安国 ギャラリー・韓屋ダイニング12選",
-    "summary_ja": "北村・三清・安国で、国立現代美術館、ギャラリー現代、国際ギャラリー、PKMの鑑賞後に立ち寄れるカフェ・レストラン・韓屋の韓定食12軒を一つの動線にまとめました。",
-    "summary_zh": "北村、三清、安国一带12处咖啡馆、餐厅和韩屋餐饮，按看完国立现代美术馆、现代画廊、国际画廊、PKM后顺路用餐的动线串联。"
-  },
-  {
     "id": "909",
     "slug": "mangwon-hongdae-japanese-dining",
     "title_kr": "망원·연남·홍대 일식 12선",
@@ -21348,35 +21043,6 @@
     "title_ja": "望遠・延南・弘大 和食12選",
     "summary_ja": "望遠・延南・弘大の日本料理12軒。居酒屋・ラーメン・寿司の本場風と、ロゼラーメン・キムチカツ・韓牛おまかせなど韓国流アレンジの両方を紹介します。",
     "summary_zh": "望远、延南、弘大的12家日料店，既有居酒屋、拉面、寿司等正宗做法，也有玫瑰拉面、泡菜炸猪排、韩牛无菜单料理等韩式改良。"
-  },
-  {
-    "id": "910",
-    "slug": "ikseondong-insadong-hanok-dessert",
-    "title_kr": "익선동·인사동 한옥 카페 & 전통 디저트 12선",
-    "title_en": "Ikseondong·Insadong Hanok Cafes & Traditional Desserts 12 Best",
-    "category": "C",
-    "tags": [
-      "foreign-tourist",
-      "food",
-      "dessert",
-      "hanok",
-      "cafe",
-      "ikseondong",
-      "insadong",
-      "yakgwa",
-      "traditional"
-    ],
-    "summary_kr": "익선동 한옥을 고친 카페와 인사동의 전통 한과·약과 가게를 묶은 12곳. 서울커피 익선본점, 플리퍼스, 동백양과점, 한과미의식 등을 한옥 카페에서 한과 선물까지 이어지는 도보 동선으로 소개한다.",
-    "summary_en": "Twelve cafes and sweet shops in Ikseondong and Insadong, from hanok cafes like Seoul Coffee Ikseon to traditional hangwa and yakgwa makers, linked in one walking route.",
-    "en_available": true,
-    "cn_available": true,
-    "jp_available": true,
-    "instagram_posted": false,
-    "date_published": "2026-06-11",
-    "title_zh": "益善洞·仁寺洞韩屋咖啡与传统甜点12精选",
-    "title_ja": "益善洞・仁寺洞 韓屋カフェ＆伝統デザート12選",
-    "summary_ja": "益善洞と仁寺洞の韓屋カフェ・伝統デザート12選。Seoul Coffee益善本店やFlippers、Dongbaek Yanggwajeomから、伝統菓子の韓菓・薬菓の店まで、歩いて回れる順路でつなぎます。",
-    "summary_zh": "益善洞与仁寺洞的韩屋咖啡馆和传统甜点店12处，从Seoul Coffee益善本店、Flippers到Dongbaek Yanggwajeom及传统韩果、药果铺，串成一条步行路线。"
   },
   {
     "id": "1001",
@@ -23247,32 +22913,6 @@
     "title_zh": "首尔夜间大排档 8选",
     "summary_ja": "ヤジャンは屋台ではなく、老舗食堂の屋外座敷席のこと。益善、広蔵、乙支路、新村、仁寺、弘大、鍾路、清渓の8エリアから選んで紹介します。",
     "summary_zh": "解释“夜场”并非路边摊，而是正规餐厅的户外平床座位，精选益善、广藏、乙支路、新村、仁寺、弘大、钟路、清溪8个区域的店家。"
-  },
-  {
-    "id": "1072",
-    "slug": "seoul-hangang-night-12-spots",
-    "title_kr": "서울 한강 야경 spot 12선",
-    "title_en": "Seoul Hangang Night View 12 Spots Foreign Guide",
-    "category": "B",
-    "tags": [
-      "foreign-tourist",
-      "night-view",
-      "han-river",
-      "meta-guide"
-    ],
-    "summary_kr": "한강·도심·산·다리 네 갈래로 나눈 서울 야경 명소 12곳을 해질녘·일몰 후·심야 시간대와 계절, 지하철·따릉이·한강 페리·버스 이동법과 함께 정리했다.",
-    "summary_en": "Twelve Seoul night-view spots across the river, downtown, hills and bridges, with timing from dusk to late night, seasons, and access by subway, rental bike, Hangang ferry or bus.",
-    "en_available": true,
-    "cn_available": true,
-    "jp_available": true,
-    "instagram_posted": false,
-    "image": "",
-    "image_credit": "",
-    "date_published": "2026-06-13",
-    "title_ja": "ソウル漢江夜景スポット12選",
-    "title_zh": "首尔汉江夜景 12处",
-    "summary_ja": "漢江・都心・山・橋の4つの切り口でソウルの夜景スポット12選を整理。夕暮れから深夜までの時間帯と季節、地下鉄・自転車・漢江フェリー・バスでの行き方を紹介します。",
-    "summary_zh": "按汉江、市中心、山、桥四类整理首尔夜景12处，说明黄昏到深夜的时段与季节，以及乘地铁、公共自行车、汉江游船和公交的前往方式。"
   },
   {
     "id": "1073",

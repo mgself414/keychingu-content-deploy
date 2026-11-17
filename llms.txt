@@ -1,8 +1,8 @@
 # KeyChinGu — Korea Travel Guides for Foreign Tourists
 
-> Comprehensive curated Korea travel guides for foreign MZ travelers, covering 1,200+ topics across 60+ cities (Seoul·Busan·Jeju·Gyeongju·Andong·Jeonju·etc), 4 languages (KR·EN·CN·JP), covering food, culture, K-content, shopping, seasons, transport, sports and practical essentials for solo, couple, family and budget travelers. Updated 2026-11-17.
+> Comprehensive curated Korea travel guides for foreign MZ travelers, covering 1,200+ topics across 60+ cities (Seoul·Busan·Jeju·Gyeongju·Andong·Jeonju·etc), 4 languages (KR·EN·CN·JP), covering food, culture, K-content, shopping, seasons, transport, sports and practical essentials for solo, couple, family and budget travelers. Updated 2026-11-18.
 
-> Total guides: **1250** | EN: 1250 | CN: 1250 | JP: 1250 | og:image: 1,276 | sitemap URLs: 4,890
+> Total guides: **1236** | EN: 1236 | CN: 1236 | JP: 1236 | og:image: 1,262 | sitemap URLs: 4,834
 
 
 ## A (402)
@@ -39,7 +39,7 @@
 - [Magok Gimpo Airport Guide](https://mgself414.github.io/keychingu-content-deploy/content/magok-gimpo.en.html): Twelve stops from Gimpo Airport transit and duty-free to Seoul Botanic Park, LG Arts Center and Magok's cafes and restaurants. (Korean: https://mgself414.github.io/keychingu-content-deploy/content/magok-gimpo.html)
   - ... and 372 more
 
-## D (237)
+## D (231)
 
 - [Korea 7-Day Complete Guide for Foreigners](https://mgself414.github.io/keychingu-content-deploy/content/seoul-7day-guide.en.html): Optimal 7-day Korea itinerary for first-time foreign visitors. (Korean: https://mgself414.github.io/keychingu-content-deploy/content/seoul-7day-guide.html)
 - [K-pop Fan 1-Day Complete Itinerary Guide](https://mgself414.github.io/keychingu-content-deploy/content/kpop-fan-day-tour.en.html): Perfect 1-day K-pop fan itinerary — label districts, shrines & merch shops. (Korean: https://mgself414.github.io/keychingu-content-deploy/content/kpop-fan-day-tour.html)
@@ -71,9 +71,9 @@
 - [Korea Festivals Full Guide](https://mgself414.github.io/keychingu-content-deploy/content/korea-festivals.en.html): Korea's major festivals by type: KCON and MAMA, the Busan film festival, Seoul fireworks and Jinhae cherry blossoms, plus timing for Andong  (Korean: https://mgself414.github.io/keychingu-content-deploy/content/korea-festivals.html)
 - [Casino Full Guide](https://mgself414.github.io/keychingu-content-deploy/content/casino.en.html): Foreigner-only casinos such as Walker Hill, Paradise City and Inspire: Koreans cannot enter, a passport is required, plus currency exchange, (Korean: https://mgself414.github.io/keychingu-content-deploy/content/casino.html)
 - [Korea Instagram Spots: Instagram Photo Spots for Foreign Visitors — 12 Picks Including DDP and Starfield Library](https://mgself414.github.io/keychingu-content-deploy/content/instagram-spots.en.html): Twelve Instagram photo spots in four groups, city architecture, night views, nature viewpoints and trendy alleys, including DDP, Starfield L (Korean: https://mgself414.github.io/keychingu-content-deploy/content/instagram-spots.html)
-  - ... and 207 more
+  - ... and 201 more
 
-## C (166)
+## C (161)
 
 - [Seoul Hongdae Select Shop Guide](https://mgself414.github.io/keychingu-content-deploy/content/hongdae-select-shops.en.html): Eight select shops in Hongdae, Seogyo and Yeonnam: lifestyle brands, vintage lanes, an Olive Young megastore, a K-pop collaboration store an (Korean: https://mgself414.github.io/keychingu-content-deploy/content/hongdae-select-shops.html)
 - [Korean Desserts: Korean Dessert Guide — Bingsu, Tteok, Cakes, Macarons, Traditional Sweets](https://mgself414.github.io/keychingu-content-deploy/content/korea-dessert-meta.en.html): All Korean dessert categories — bingsu, tteok, cakes & traditional sweets. (Korean: https://mgself414.github.io/keychingu-content-deploy/content/korea-dessert-meta.html)
@@ -105,7 +105,7 @@
 - [Gangnam Bar Guide](https://mgself414.github.io/keychingu-content-deploy/content/gangnam-bar.en.html): Gangnam bars on official values checked Oct 8, 2026: the old eight venues had no own pages (one may not exist) and are dropped; four picks i (Korean: https://mgself414.github.io/keychingu-content-deploy/content/gangnam-bar.html)
 - [Seoul Jongno Brunch Guide](https://mgself414.github.io/keychingu-content-deploy/content/jongno-brunch.en.html): Eight Jongno brunch places grouped as hanok brunch, modern brunch, bagel and American-style, and photo spots, with weekend wait times, cash  (Korean: https://mgself414.github.io/keychingu-content-deploy/content/jongno-brunch.html)
 - [Seoul Hongdae Brunch Guide](https://mgself414.github.io/keychingu-content-deploy/content/hongdae-brunch.en.html): Twelve brunch spots in Hongdae, Yeonnam, Hapjeong and Mangwon: Yeonnam, modern Hapjeong cafes, pancakes and bagels, Mangwon neighborhood pla (Korean: https://mgself414.github.io/keychingu-content-deploy/content/hongdae-brunch.html)
-  - ... and 136 more
+  - ... and 131 more
 
 ## H (142)
 
@@ -141,7 +141,7 @@
 - [Seoul Rainy Day Indoor Full Guide](https://mgself414.github.io/keychingu-content-deploy/content/rainy-day.en.html): Ten indoor places for a rainy day in Seoul (official info, Oct 2026) — three free museums (National Museum of Korea open to 21:00 Wed/Sat, M (Korean: https://mgself414.github.io/keychingu-content-deploy/content/rainy-day.html)
   - ... and 112 more
 
-## B (115)
+## B (114)
 
 - [Free Night View Spots TOP 10](https://mgself414.github.io/keychingu-content-deploy/content/night-views.en.html): Ten free night-view spots in Seoul, including Eungbongsan, with how to get there and photo tips, plus seasonal picks, night-hiking safety ad (Korean: https://mgself414.github.io/keychingu-content-deploy/content/night-views.html)
 - [Namsan Trail & Night View](https://mgself414.github.io/keychingu-content-deploy/content/namsan.en.html): Namsan Trail walking + N Seoul Tower night view — foreigner 1st-priority night course with Myeongdong/Itaewon access (Korean: https://mgself414.github.io/keychingu-content-deploy/content/namsan.html)
@@ -173,9 +173,9 @@
 - [Jindo Travel Map: Jindo Travel Guide for Foreign Visitors — 11 Picks](https://mgself414.github.io/keychingu-content-deploy/content/jindo-travel-map.en.html): Eleven Jindo picks: the parting Mystery Sea Road, the Jindo dog theme park, Jindo Arirang, Unlim Sanbang and the Myeongnyang Battle site, wi (Korean: https://mgself414.github.io/keychingu-content-deploy/content/jindo-travel-map.html)
 - [Goseong Travel Map: Gangwon Goseong Travel Guide for Foreign Visitors — 12 Picks](https://mgself414.github.io/keychingu-content-deploy/content/goseong-travel-map.en.html): Twelve Gangwon Goseong picks: the Unification Observatory view of North Korea, the DMZ Museum, Hwajinpo villas and beach and Cheonggan Pavil (Korean: https://mgself414.github.io/keychingu-content-deploy/content/goseong-travel-map.html)
 - [Korea Transport Guide — Pick the Card, Mode and App for Your Situation: Climate Card Short-Term Pass (₩5,000 for 1 Day to ₩20,000 for 7 Days) · T-money · KORAIL PASS Plus · AREX Airport Express · Owl Bus, With Details in Linked Guides](https://mgself414.github.io/keychingu-content-deploy/content/korea-transport-map.en.html): A hub for choosing how to get around Korea by situation: the Climate Card short-term pass for unlimited Seoul subway and bus (₩5,000 for 1 d (Korean: https://mgself414.github.io/keychingu-content-deploy/content/korea-transport-map.html)
-  - ... and 85 more
+  - ... and 84 more
 
-## F (75)
+## F (74)
 
 - [Seoul Shopping Day Itinerary](https://mgself414.github.io/keychingu-content-deploy/content/shopping-day.en.html): Seoul shopping 1-day itinerary — Myeongdong, Gangnam, Hongdae, Dongdaemun 4-area route + duty-free & tax refund guide (Korean: https://mgself414.github.io/keychingu-content-deploy/content/shopping-day.html)
 - [Gangnam Fine Dining: 8 Michelin-Starred Picks (2026)](https://mgself414.github.io/keychingu-content-deploy/content/gangnam-finedine.en.html): Seven of Seoul's ten Michelin 2-star restaurants are in Gangnam. Eight picks you can actually book: 3-star Mingles; 2-star Jungsik, Kwonsook (Korean: https://mgself414.github.io/keychingu-content-deploy/content/gangnam-finedine.html)
@@ -207,9 +207,9 @@
 - [48 · Korea Essential Buys TOP 20](https://mgself414.github.io/keychingu-content-deploy/content/essentials-top20.en.html): The top 20 things worth buying in Korea because they are cheaper or unavailable at home, by category, with channel price comparisons, VAT re (Korean: https://mgself414.github.io/keychingu-content-deploy/content/essentials-top20.html)
 - [Where to Buy Korean Souvenirs](https://mgself414.github.io/keychingu-content-deploy/content/souvenir-destinations.en.html): Eight souvenir spots compared, from Olive Young and Daiso to Insadong, Namdaemun, duty-free and The Hyundai Seoul, with picks by category. (Korean: https://mgself414.github.io/keychingu-content-deploy/content/souvenir-destinations.html)
 - [Seoul Stationery Destinations](https://mgself414.github.io/keychingu-content-deploy/content/stationery-destinations.en.html): Eight Seoul stationery destinations for diaries and pens, from Kyobo, Youngpoong and 10x10 to Morris, Homi Hwabang and MUJI, compared, with  (Korean: https://mgself414.github.io/keychingu-content-deploy/content/stationery-destinations.html)
-  - ... and 45 more
+  - ... and 44 more
 
-## G (48)
+## G (47)
 
 - [K-Drama Filming Spots Tour](https://mgself414.github.io/keychingu-content-deploy/content/kdrama.en.html): Filming locations by drama, with addresses, directions and photo tips for recreating scenes, plus visiting etiquette and where to buy drama  (Korean: https://mgself414.github.io/keychingu-content-deploy/content/kdrama.html)
 - [K-POP Fan Ultimate Guide](https://mgself414.github.io/keychingu-content-deploy/content/kpop-fan.en.html): A K-POP fan guide: the big four agency buildings including HYBE, official and fan shop merchandise, fan signings and music shows, K-POP cafe (Korean: https://mgself414.github.io/keychingu-content-deploy/content/kpop-fan.html)
@@ -241,7 +241,7 @@
 - [Korea EDM Festival Guide — EDC Korea, S2O Korea, and Waterbomb Happening Now, Plus the Recent Track Record of Ultra Korea and World DJ Festival (Summer and Autumn Seasons)](https://mgself414.github.io/keychingu-content-deploy/content/korea-edm-festivals.en.html): Official values checked Oct 21, 2026: EDC Korea 2026 was held October 3–4 at Inspire Resort in Incheon · S2O Korea 2026 was July 11–12 at Se (Korean: https://mgself414.github.io/keychingu-content-deploy/content/korea-edm-festivals.html)
 - [Korea Game·Esports·LCK Deep Dive](https://mgself414.github.io/keychingu-content-deploy/content/esports-lck-deep.en.html): Korea's gaming and esports scene in twelve parts: LCK venues and teams, game expos, PC cafes and VR, game companies and streaming, hotels an (Korean: https://mgself414.github.io/keychingu-content-deploy/content/esports-lck-deep.html)
 - [K-pop Music Video Locations Deep Dive](https://mgself414.github.io/keychingu-content-deploy/content/kpop-mv-locations.en.html): Twelve K-pop music video locations sorted by artist: BTS, BLACKPINK, NewJeans, aespa and newer groups, plus agency headquarters areas and in (Korean: https://mgself414.github.io/keychingu-content-deploy/content/kpop-mv-locations.html)
-  - ... and 18 more
+  - ... and 17 more
 
 ## E (45)
 
@@ -303,7 +303,7 @@
 
 ## Metadata
 
-- **Coverage**: 1250 curated guides as of 2026-11-17
+- **Coverage**: 1236 curated guides as of 2026-11-18
 - **Languages**: KR (full), EN (full), CN (full), JP (full)
 - **Update frequency**: Weekly
 - **Data sources**: Korea Tourism Organization (VisitKorea), Seoul Tourism Foundation (Visit Seoul), Cultural Heritage Administration, UNESCO World Heritage, Korea Open Government License (KOGL), Naver Maps, Reddit r/koreatravel + user curation
