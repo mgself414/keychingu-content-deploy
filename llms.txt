@@ -2,10 +2,10 @@
 
 > Comprehensive curated Korea travel guides for foreign MZ travelers, covering 1,200+ topics across 60+ cities (Seoul·Busan·Jeju·Gyeongju·Andong·Jeonju·etc), 4 languages (KR·EN·CN·JP), covering food, culture, K-content, shopping, seasons, transport, sports and practical essentials for solo, couple, family and budget travelers. Updated 2026-11-18.
 
-> Total guides: **1226** | EN: 1226 | CN: 1226 | JP: 1226 | og:image: 1,252 | sitemap URLs: 4,794
+> Total guides: **1227** | EN: 1227 | CN: 1227 | JP: 1227 | og:image: 1,253 | sitemap URLs: 4,798
 
 
-## A (401)
+## A (402)
 
 - [Gangnam Cafe Phase 2 Guide](https://mgself414.github.io/keychingu-content-deploy/content/gangnam-cafe-phase2.en.html): Gangnam Phase 2 cafes — specialty coffee, desserts & atmosphere. (Korean: https://mgself414.github.io/keychingu-content-deploy/content/gangnam-cafe-phase2.html)
 - [Seongsu Pop-Up Deep Dive](https://mgself414.github.io/keychingu-content-deploy/content/seongsu.en.html): How to find pop-ups in Seongsu, a district of converted factories, using Instagram, with five-plus-one must-visit spots, a three-hour route, (Korean: https://mgself414.github.io/keychingu-content-deploy/content/seongsu.html)
@@ -37,7 +37,7 @@
 - [Seocho Seorae Maeul Guide](https://mgself414.github.io/keychingu-content-deploy/content/seocho-seorae.en.html): Twelve Seocho places around Seorae Village, home to Korea's largest French community: expat spots, Korean food, bakeries and cafes, and the  (Korean: https://mgself414.github.io/keychingu-content-deploy/content/seocho-seorae.html)
 - [SNU Sharosu-gil Guide](https://mgself414.github.io/keychingu-content-deploy/content/snu-sharosu.en.html): Seoul National University and the 1.5 km Sharosu-gil toward Nakseongdae in 12 picks: Korean BBQ, cafes, pubs and campus sites, plus Gwanaksa (Korean: https://mgself414.github.io/keychingu-content-deploy/content/snu-sharosu.html)
 - [Magok Gimpo Airport Guide](https://mgself414.github.io/keychingu-content-deploy/content/magok-gimpo.en.html): Twelve stops from Gimpo Airport transit and duty-free to Seoul Botanic Park, LG Arts Center and Magok's cafes and restaurants. (Korean: https://mgself414.github.io/keychingu-content-deploy/content/magok-gimpo.html)
-  - ... and 371 more
+  - ... and 372 more
 
 ## D (226)
 
@@ -302,7 +302,7 @@
 
 ## Metadata
 
-- **Coverage**: 1226 curated guides as of 2026-11-18
+- **Coverage**: 1227 curated guides as of 2026-11-18
 - **Languages**: KR (full), EN (full), CN (full), JP (full)
 - **Update frequency**: Weekly
 - **Data sources**: Korea Tourism Organization (VisitKorea), Seoul Tourism Foundation (Visit Seoul), Cultural Heritage Administration, UNESCO World Heritage, Korea Open Government License (KOGL), Naver Maps, Reddit r/koreatravel + user curation
