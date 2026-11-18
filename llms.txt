@@ -2,7 +2,7 @@
 
 > Comprehensive curated Korea travel guides for foreign MZ travelers, covering 1,200+ topics across 60+ cities (Seoul·Busan·Jeju·Gyeongju·Andong·Jeonju·etc), 4 languages (KR·EN·CN·JP), covering food, culture, K-content, shopping, seasons, transport, sports and practical essentials for solo, couple, family and budget travelers. Updated 2026-11-18.
 
-> Total guides: **1231** | EN: 1231 | CN: 1231 | JP: 1231 | og:image: 1,257 | sitemap URLs: 4,814
+> Total guides: **1226** | EN: 1226 | CN: 1226 | JP: 1226 | og:image: 1,252 | sitemap URLs: 4,794
 
 
 ## A (401)
@@ -39,7 +39,7 @@
 - [Magok Gimpo Airport Guide](https://mgself414.github.io/keychingu-content-deploy/content/magok-gimpo.en.html): Twelve stops from Gimpo Airport transit and duty-free to Seoul Botanic Park, LG Arts Center and Magok's cafes and restaurants. (Korean: https://mgself414.github.io/keychingu-content-deploy/content/magok-gimpo.html)
   - ... and 371 more
 
-## D (228)
+## D (226)
 
 - [Korea 7-Day Complete Guide for Foreigners](https://mgself414.github.io/keychingu-content-deploy/content/seoul-7day-guide.en.html): Optimal 7-day Korea itinerary for first-time foreign visitors. (Korean: https://mgself414.github.io/keychingu-content-deploy/content/seoul-7day-guide.html)
 - [K-pop Fan 1-Day Complete Itinerary Guide](https://mgself414.github.io/keychingu-content-deploy/content/kpop-fan-day-tour.en.html): Perfect 1-day K-pop fan itinerary — label districts, shrines & merch shops. (Korean: https://mgself414.github.io/keychingu-content-deploy/content/kpop-fan-day-tour.html)
@@ -71,7 +71,7 @@
 - [Korea Festivals Full Guide](https://mgself414.github.io/keychingu-content-deploy/content/korea-festivals.en.html): Korea's major festivals by type: KCON and MAMA, the Busan film festival, Seoul fireworks and Jinhae cherry blossoms, plus timing for Andong  (Korean: https://mgself414.github.io/keychingu-content-deploy/content/korea-festivals.html)
 - [Casino Full Guide](https://mgself414.github.io/keychingu-content-deploy/content/casino.en.html): Foreigner-only casinos such as Walker Hill, Paradise City and Inspire: Koreans cannot enter, a passport is required, plus currency exchange, (Korean: https://mgself414.github.io/keychingu-content-deploy/content/casino.html)
 - [Korea Instagram Spots: Instagram Photo Spots for Foreign Visitors — 12 Picks Including DDP and Starfield Library](https://mgself414.github.io/keychingu-content-deploy/content/instagram-spots.en.html): Twelve Instagram photo spots in four groups, city architecture, night views, nature viewpoints and trendy alleys, including DDP, Starfield L (Korean: https://mgself414.github.io/keychingu-content-deploy/content/instagram-spots.html)
-  - ... and 198 more
+  - ... and 196 more
 
 ## C (160)
 
@@ -141,7 +141,7 @@
 - [Seoul Rainy Day Indoor Full Guide](https://mgself414.github.io/keychingu-content-deploy/content/rainy-day.en.html): Ten indoor places for a rainy day in Seoul (official info, Oct 2026) — three free museums (National Museum of Korea open to 21:00 Wed/Sat, M (Korean: https://mgself414.github.io/keychingu-content-deploy/content/rainy-day.html)
   - ... and 112 more
 
-## B (116)
+## B (113)
 
 - [Free Night View Spots TOP 10](https://mgself414.github.io/keychingu-content-deploy/content/night-views.en.html): Ten free night-view spots in Seoul, including Eungbongsan, with how to get there and photo tips, plus seasonal picks, night-hiking safety ad (Korean: https://mgself414.github.io/keychingu-content-deploy/content/night-views.html)
 - [Namsan Trail & Night View](https://mgself414.github.io/keychingu-content-deploy/content/namsan.en.html): Namsan Trail walking + N Seoul Tower night view — foreigner 1st-priority night course with Myeongdong/Itaewon access (Korean: https://mgself414.github.io/keychingu-content-deploy/content/namsan.html)
@@ -155,9 +155,6 @@
 - [Seoul Rooftop Bars Full Guide](https://mgself414.github.io/keychingu-content-deploy/content/rooftop-bars.en.html): Seoul Rooftop Bars 12-pick — The Griffin Bar (Hannam, foreigner #1) + L7 Hotel Hannam + Ichawon Workshop + Banyan Tree Moon Bar (Namsan luxu (Korean: https://mgself414.github.io/keychingu-content-deploy/content/rooftop-bars.html)
 - [Korea Autumn Foliage: Weekly Autumn Foliage Guide — Top Spots from October Week 1 to November Week 4](https://mgself414.github.io/keychingu-content-deploy/content/autumn-foliage-matrix.en.html): Where to see autumn foliage in Korea, week by week from early October to late November — Gangwon mountains first, then Bukhansan, then Seoul (Korean: https://mgself414.github.io/keychingu-content-deploy/content/autumn-foliage-matrix.html)
 - [Korea Spring Cherry Blossom Weekly Chart](https://mgself414.github.io/keychingu-content-deploy/content/cherry-blossom-chart.en.html): Week-by-week cherry blossom chart: Yunjung-ro starts early April, Seoul peaks in week two, Jinhae and Gyeongju in week three, plus night vie (Korean: https://mgself414.github.io/keychingu-content-deploy/content/cherry-blossom-chart.html)
-- [Han River West Parks Guide](https://mgself414.github.io/keychingu-content-deploy/content/han-river-west.en.html): Four western Han River parks, Gangseo, Nanji, Mangwon and Yanghwa, in 12 picks: Haneul Park, camping and barbecue at Nanji, cycling at Mangw (Korean: https://mgself414.github.io/keychingu-content-deploy/content/han-river-west.html)
-- [Han River Central Parks Guide](https://mgself414.github.io/keychingu-content-deploy/content/han-river-central.en.html): Twelve Han River parks around Yeouido and Ichon: Yunjungno cherry blossoms at their peak in the second week of April, The Hyundai Seoul and  (Korean: https://mgself414.github.io/keychingu-content-deploy/content/han-river-central.html)
-- [Han River Core Parks Guide](https://mgself414.github.io/keychingu-content-deploy/content/han-river-core.en.html): A guide to twelve Han River parks at Banpo, Jamwon and Ttukseom, sorted by activity: the Banpo Moonlight Rainbow Fountain at night, chicken  (Korean: https://mgself414.github.io/keychingu-content-deploy/content/han-river-core.html)
 - [Seoul 4 Seasons Map: Seoul Four-Season Guide for Foreign Visitors — 16 Picks](https://mgself414.github.io/keychingu-content-deploy/content/seoul-4-seasons.en.html): Sixteen Korea stops, four for each season: spring blossoms and hanbok, summer on the Han River and at the beach, autumn foliage, and winter  (Korean: https://mgself414.github.io/keychingu-content-deploy/content/seoul-4-seasons.html)
 - [Seoul Sports Map: Seoul Sports Guide for Foreign Visitors — 12 Picks](https://mgself414.github.io/keychingu-content-deploy/content/seoul-sports-map.en.html): Twelve sports stops in Seoul: Jamsil and World Cup stadiums, Bukhansan and Inwangsan hikes, Han River cycling and Kukkiwon taekwondo, with a (Korean: https://mgself414.github.io/keychingu-content-deploy/content/seoul-sports-map.html)
 - [Korea Cycling & Dulegil Trails Full Guide](https://mgself414.github.io/keychingu-content-deploy/content/cycling-dulegil.en.html): Korea's cycling and walking trails: the Han River path, the 156 km Seoul Dulegil, 1,853 km of four-river routes, Jeju, and how foreigners ca (Korean: https://mgself414.github.io/keychingu-content-deploy/content/cycling-dulegil.html)
@@ -173,7 +170,10 @@
 - [Goseong Travel Map: Gangwon Goseong Travel Guide for Foreign Visitors — 12 Picks](https://mgself414.github.io/keychingu-content-deploy/content/goseong-travel-map.en.html): Twelve Gangwon Goseong picks: the Unification Observatory view of North Korea, the DMZ Museum, Hwajinpo villas and beach and Cheonggan Pavil (Korean: https://mgself414.github.io/keychingu-content-deploy/content/goseong-travel-map.html)
 - [Korea Transport Guide — Pick the Card, Mode and App for Your Situation: Climate Card Short-Term Pass (₩5,000 for 1 Day to ₩20,000 for 7 Days) · T-money · KORAIL PASS Plus · AREX Airport Express · Owl Bus, With Details in Linked Guides](https://mgself414.github.io/keychingu-content-deploy/content/korea-transport-map.en.html): A hub for choosing how to get around Korea by situation: the Climate Card short-term pass for unlimited Seoul subway and bus (₩5,000 for 1 d (Korean: https://mgself414.github.io/keychingu-content-deploy/content/korea-transport-map.html)
 - [Korea Payment and Connectivity Guide: Your First Day in Order, eSIM, Transit Card, Card Payments, Currency Exchange and Tax Refund](https://mgself414.github.io/keychingu-content-deploy/content/korea-payment-sim-map.en.html): From landing at Incheon to reaching the city: eSIM, transit card, card payments, currency exchange and tax refunds in order. KT eSIM time st (Korean: https://mgself414.github.io/keychingu-content-deploy/content/korea-payment-sim-map.html)
-  - ... and 86 more
+- [Korea Language Map: Korean Language Guide for Foreign Visitors — 12 Essentials](https://mgself414.github.io/keychingu-content-deploy/content/korea-language-map.en.html): Twelve Korean-language essentials: learning the 24 Hangul letters in a day, 50 survival phrases, translation apps like Papago, TOPIK and Kin (Korean: https://mgself414.github.io/keychingu-content-deploy/content/korea-language-map.html)
+- [Korea Emergency and Safety Guide: Where to Turn in a Hurry — 112, 119 and 1330, Finding ER and Pharmacies, Lost Items, Disaster Alerts](https://mgself414.github.io/keychingu-content-deploy/content/korea-emergency-map.en.html): Who to call and where to go in an emergency, in five parts: police 112, fire and ambulance 119 (1339 is for infectious diseases), the 1330 t (Korean: https://mgself414.github.io/keychingu-content-deploy/content/korea-emergency-map.html)
+- [Korea Entry, Customs & Tax Refund Checklist: Before Departure, On Arrival and Before Leaving, Settled by the Numbers](https://mgself414.github.io/keychingu-content-deploy/content/korea-practical-map.en.html): K-ETA exemption through 2026-12-31 (KRW 10,000), e-Arrival 3 days before arrival, 42 automated-clearance countries, USD 800 duty-free allowa (Korean: https://mgself414.github.io/keychingu-content-deploy/content/korea-practical-map.html)
+  - ... and 83 more
 
 ## F (74)
 
@@ -302,7 +302,7 @@
 
 ## Metadata
 
-- **Coverage**: 1231 curated guides as of 2026-11-18
+- **Coverage**: 1226 curated guides as of 2026-11-18
 - **Languages**: KR (full), EN (full), CN (full), JP (full)
 - **Update frequency**: Weekly
 - **Data sources**: Korea Tourism Organization (VisitKorea), Seoul Tourism Foundation (Visit Seoul), Cultural Heritage Administration, UNESCO World Heritage, Korea Open Government License (KOGL), Naver Maps, Reddit r/koreatravel + user curation
