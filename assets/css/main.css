@@ -593,6 +593,7 @@ img {
   gap: 4px;
   margin-left: 20px;
   flex: 1;
+  flex-wrap: wrap; /* long menus (JA) drop whole items to a 2nd row instead of breaking words */
 }
 .site-nav a {
   padding: 6px 14px;
@@ -601,6 +602,7 @@ img {
   border-radius: 6px;
   color: var(--text-soft);
   transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+  white-space: nowrap;
 }
 .site-nav a:hover {
   background: rgba(33,140,204,0.08);
@@ -622,6 +624,7 @@ img {
     margin-left: 0;
     justify-content: flex-start;
     flex: none;
+    flex-wrap: nowrap;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
