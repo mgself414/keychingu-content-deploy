@@ -15395,34 +15395,6 @@
     "summary_zh": "汇集沿中浪川和安养川可以去的地方: 中浪玫瑰公园、安养川堤坝樱花路·四季主题园·家庭花园·戏水场、首尔环城步道13·14路线。已对照韩国观光公社旅游信息，整理开放时间与休息日。"
   },
   {
-    "id": "700",
-    "slug": "hangang-standalone-sub-deep",
-    "title_kr": "한강 공원 12곳 (Hangang Parks) — 한강 단독 코스와 11개 한강공원",
-    "title_en": "Hangang Parks: Han River Parks — A Standalone Han River Route and 11 Hangang Parks, 12 Picks",
-    "category": "A",
-    "tags": [
-      "foreigner",
-      "han-river",
-      "yeouido",
-      "banpo",
-      "ddukseom",
-      "jamsil",
-      "cycling",
-      "sub-deep"
-    ],
-    "summary_kr": "서울을 41.5km 가로지르는 한강과 광나루·잠실·뚝섬·잠원·반포·이촌·여의도·양화·망원·강서·난지 11개 공원을 단독 코스로 엮은 12곳을 소개한다.",
-    "summary_en": "Twelve picks along the 41.5 km of the Han River that cross Seoul, linking the 11 parks from Gwangnaru, Jamsil and Ttukseom to Yeouido, Mangwon and Nanji in one route.",
-    "en_available": true,
-    "instagram_posted": false,
-    "cn_available": true,
-    "jp_available": true,
-    "date_published": "2026-06-02",
-    "title_zh": "汉江公园 (Hangang Parks) 12处 — 汉江单独路线与11个汉江公园",
-    "title_ja": "漢江公園 (Hangang Parks) 12か所 — 漢江単独コースと11の漢江公園",
-    "summary_ja": "ソウルを41.5km貫く漢江沿いに、広津・蚕室・纛島から汝矣島・望遠・蘭芝まで11の公園をつないだコース12か所を紹介します。",
-    "summary_zh": "介绍贯穿首尔41.5公里的汉江沿线12处地点,把广津、蚕室、纛岛到汝矣岛、望远、兰芝等11个公园串成一条路线。"
-  },
-  {
     "id": "701",
     "slug": "seoul-forest-seongsu-sub-deep",
     "title_kr": "서울숲·성수 가이드 — 서울숲·서울숲 곤충식물원, 성수동 수제화거리·언더스탠드에비뉴·뚝섬미술관, 서울생각마루(뚝섬 자벌레)",
@@ -15476,33 +15448,6 @@
     "title_ja": "盤浦大橋 月光レインボー噴水ガイド — 噴水の稼働時間、盤浦漢江公園 月光広場・ソレソム、セビッソム・チューブスター、潜水橋トゥボクトゥボク祭り・ソレソム ピクニックコンサート",
     "summary_ja": "盤浦大橋の月光レインボー噴水、月光広場、ソレソム、セビッソム、2026年秋の祭り二つの運営情報を、韓国観光公社の観光情報(TourAPI)でまとめたガイドです。噴水は11月~3月14日は稼働しません。",
     "summary_zh": "汇集盘浦大桥月光彩虹喷泉及周边盘浦汉江公园值得一去的地方: 喷泉运行时间(3月15日~10月)、月光广场·Seorae岛、Sebit岛·Tubester、2026年秋季两场庆典(已结束)。已对照韩国观光公社旅游信息，整理开放时间、休息日与费用。"
-  },
-  {
-    "id": "703",
-    "slug": "hangang-night-sub-deep",
-    "title_kr": "한강 야경 12곳 (Hangang Night Views) — 11개 다리 LED 야경 명소",
-    "title_en": "Hangang Night Views: Han River Night Views — 12 Picks Including 11 LED-Lit Bridges",
-    "category": "A",
-    "tags": [
-      "foreigner",
-      "han-river",
-      "night",
-      "banpo",
-      "yeouido",
-      "jamsil",
-      "sub-deep"
-    ],
-    "summary_kr": "한강 11개 다리의 LED 야경과 반포대교 무지개분수(19:30·20:00·20:30·21:00 회차)를 포함해 한강 야경 명소 12곳을 소개한다.",
-    "summary_en": "Twelve Han River night-view spots, including the LED lighting of 11 bridges and the Banpo Bridge rainbow fountain, which runs at 19:30, 20:00, 20:30 and 21:00.",
-    "en_available": true,
-    "instagram_posted": false,
-    "cn_available": true,
-    "jp_available": true,
-    "date_published": "2026-06-02",
-    "title_zh": "汉江夜景 (Hangang Night Views) 12处 — 11座大桥LED夜景名所",
-    "title_ja": "漢江の夜景 (Hangang Night Views) 12か所 — 11の橋のLEDライトアップ",
-    "summary_zh": "介绍12处汉江夜景名所,包括11座大桥的LED灯光,以及盘浦大桥彩虹喷泉(19:30、20:00、20:30、21:00场次)。",
-    "summary_ja": "漢江11の橋のLEDライトアップや、盤浦大橋のレインボー噴水(19:30・20:00・20:30・21:00の回)を含む、夜景スポット12か所を紹介します。"
   },
   {
     "id": "704",
@@ -32426,5 +32371,33 @@
     "title_zh": "首尔出发滑雪一日游指南 — Gonjiam度假村 (곤지암리조트)，Vivaldi Park滑雪场 (비발디파크)，Elysian Gangchon度假村 (엘리시안 강촌)，Jisan度假村 (지산리조트)，Oak Valley度假村 (오크밸리)，2026-27雪季票价公布情况和交通方式",
     "summary_ja": "ソウルから日帰りで行けるスキー場5か所(コンジアム・オークバレー・ビバルディパーク・エリシアン江村・芝山)の2026-27リフト料金の発表状況と行き方。シーズン表記付きの公式料金はコンジアムとオークバレーの2か所で、ビバルディパークは外国人専用のソウル発シャトルを2026-12-05~2027-03-01に運行する。2026-11-20の公式ページ基準、オープン日は未発表。",
     "summary_zh": "从首尔当天往返的5座滑雪场(昆池岩·Oak Valley·Vivaldi Park·Elysian江村·芝山)的2026-27缆车票价公告现状与交通方式。标注雪季的官方票价只有昆池岩和Oak Valley两处，Vivaldi Park在2026-12-05~2027-03-01运行外国人专用首尔班车。以2026-11-20官方页面为准，开业日期尚未公布。"
+  },
+  {
+    "id": "1433",
+    "slug": "seoul-dulle-gil-21-courses",
+    "title_kr": "서울둘레길 21코스 가이드 — 수락산·아차산·대모산·관악산·안양천·북한산을 잇는 156.5km, 코스별 구간·거리·걷는 시간",
+    "title_en": "Seoul Dulle-gil (서울둘레길) 21 Courses Guide: 156.5 km Linking Suraksan, Achasan, Daemosan, Gwanaksan, Anyangcheon and Bukhansan, with Section, Distance and Walking Time for Each Course",
+    "category": "B",
+    "tags": [
+      "foreign-tourist",
+      "seoul",
+      "hiking",
+      "trekking",
+      "dulle-gil",
+      "walking",
+      "bukhansan",
+      "free"
+    ],
+    "summary_kr": "서울둘레길 21개 코스(총연장 156.5km)의 구간·거리·걷는 시간·가까운 지하철역을 한 표로 정리했다. 코스별 4.6km~10.7km, 약 2시간 5분~4시간 50분이고 21개 코스 모두 상시 개방·연중무휴로 등록돼 있다. 13·14코스 안양천 구간은 저녁에도 이용할 수 있다. 한국관광공사 관광정보(TourAPI) 기준.",
+    "summary_en": "All 21 courses of the Seoul Dulle-gil (156.5 km in total) in one table: section, distance, walking time and nearby subway stations. Courses run 4.6 km to 10.7 km and about 2 hours 5 minutes to 4 hours 50 minutes; all are registered as open at all times, year-round. Courses 13 and 14 along Anyangcheon can be used in the evening. Based on Korea Tourism Organization data (TourAPI).",
+    "date_published": "2026-11-20",
+    "en_available": true,
+    "cn_available": true,
+    "jp_available": true,
+    "instagram_posted": false,
+    "title_ja": "ソウルトゥルレギル (Seoul Dulle-gil / 서울둘레길) 21コースガイド — スラクサン (Suraksan / 수락산)・アチャサン (Achasan / 아차산)・テモサン (Daemosan / 대모산)・冠岳山 (Gwanaksan / 관악산)・アニャンチョン (Anyangcheon / 안양천)・北漢山 (Bukhansan / 북한산)をつなぐ156.5km、コース別の区間・距離・歩く時間",
+    "title_zh": "首尔环城步道 (서울둘레길) 21个路线指南 — 连接Suraksan山 (수락산)·Achasan山 (아차산)·Daemosan山 (대모산)·冠岳山 (관악산)·安养川 (안양천)·北汉山 (북한산)的156.5km，各路线的路段·距离·步行时间",
+    "summary_ja": "ソウルトゥルレギル全21コース(総延長156.5km)の区間・距離・歩く時間・最寄りの地下鉄駅を1つの表にまとめた。コースごとに4.6km~10.7km、約2時間5分~4時間50分で、21コースすべて常時開放・年中無休で登録されている。13・14コースのアニャンチョン区間は夕方以降も利用できる。韓国観光公社の観光情報(TourAPI)基準。",
+    "summary_zh": "把首尔环城步道全部21个路线(总长156.5km)的路段·距离·步行时间·附近地铁站整理成一张表。各路线4.6km~10.7km，约2小时5分钟~4小时50分钟，21个路线均登记为全天开放·全年无休。第13·14路线安养川路段傍晚也可使用。依据韩国观光公社旅游信息(TourAPI)。"
   }
 ]
