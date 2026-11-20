@@ -2,7 +2,7 @@
 
 > Comprehensive curated Korea travel guides for foreign MZ travelers, covering 1,200+ topics across 60+ cities (Seoul·Busan·Jeju·Gyeongju·Andong·Jeonju·etc), 4 languages (KR·EN·CN·JP), covering food, culture, K-content, shopping, seasons, transport, sports and practical essentials for solo, couple, family and budget travelers. Updated 2026-11-21.
 
-> Total guides: **1228** | EN: 1228 | CN: 1228 | JP: 1228 | og:image: 1,254 | sitemap URLs: 4,802
+> Total guides: **1229** | EN: 1229 | CN: 1229 | JP: 1229 | og:image: 1,255 | sitemap URLs: 4,806
 
 
 ## A (400)
@@ -243,7 +243,7 @@
 - [K-pop Music Video Locations Deep Dive](https://mgself414.github.io/keychingu-content-deploy/content/kpop-mv-locations.en.html): Twelve K-pop music video locations sorted by artist: BTS, BLACKPINK, NewJeans, aespa and newer groups, plus agency headquarters areas and in (Korean: https://mgself414.github.io/keychingu-content-deploy/content/kpop-mv-locations.html)
   - ... and 17 more
 
-## E (44)
+## E (45)
 
 - [Personal Color & Beauty Consulting](https://mgself414.github.io/keychingu-content-deploy/content/personal-color.en.html): Why personal color analysis is so popular in Korea, where to get one in Seoul, how to book, what the session involves, and how to use your r (Korean: https://mgself414.github.io/keychingu-content-deploy/content/personal-color.html)
 - [Korea K-beauty Spa Full Guide](https://mgself414.github.io/keychingu-content-deploy/content/kbeauty-spa-full.en.html): Ten Korean beauty stops: Myeongdong cosmetics, Olive Young, Amorepacific HQ and flagships, duty-free, jjimjilbang spas, massage and personal (Korean: https://mgself414.github.io/keychingu-content-deploy/content/kbeauty-spa-full.html)
@@ -275,7 +275,7 @@
 - [Korea Winter Jjimjilbang Hot Spring Top 9](https://mgself414.github.io/keychingu-content-deploy/content/jjimjilbang-winter.en.html): Winter jjimjilbang and hot springs rewritten on official values (Oct 12, 2026) — Riverside Spa Land (Seoul, 24h), Supsok Hanbang Land (08–21 (Korean: https://mgself414.github.io/keychingu-content-deploy/content/jjimjilbang-winter.html)
 - [Korea K-Medical Tourism Top 12](https://mgself414.github.io/keychingu-content-deploy/content/k-medical-overview.en.html): K-Medical Tourism Top 12 (Korean: https://mgself414.github.io/keychingu-content-deploy/content/k-medical-overview.html)
 - [Korea Plastic Surgery K-Beauty Top 12](https://mgself414.github.io/keychingu-content-deploy/content/k-medical-plastic-surgery.en.html): Twelve picks on plastic surgery and K-beauty medical tourism centered on Gangnam: costs for eye, nose and jaw procedures, recovery hotels, t (Korean: https://mgself414.github.io/keychingu-content-deploy/content/k-medical-plastic-surgery.html)
-  - ... and 14 more
+  - ... and 15 more
 
 ## I (19)
 
@@ -302,7 +302,7 @@
 
 ## Metadata
 
-- **Coverage**: 1228 curated guides as of 2026-11-21
+- **Coverage**: 1229 curated guides as of 2026-11-21
 - **Languages**: KR (full), EN (full), CN (full), JP (full)
 - **Update frequency**: Weekly
 - **Data sources**: Korea Tourism Organization (VisitKorea), Seoul Tourism Foundation (Visit Seoul), Cultural Heritage Administration, UNESCO World Heritage, Korea Open Government License (KOGL), Naver Maps, Reddit r/koreatravel + user curation
