@@ -1,6 +1,6 @@
-# KeyChinGu — Full Content Catalog (2026-11-20)
+# KeyChinGu — Full Content Catalog (2026-11-21)
 
-> Full content catalog of KeyChinGu Korea travel guides for foreign tourists. Curated by KeyChinGu (@keychingu.korea). Languages: KR (full) + EN/CN/JP (published). Coverage: 60+ cities across food, culture, K-content, shopping, seasons, transport, sports and practical essentials. Updated 2026-11-20.
+> Full content catalog of KeyChinGu Korea travel guides for foreign tourists. Curated by KeyChinGu (@keychingu.korea). Languages: KR (full) + EN/CN/JP (published). Coverage: 60+ cities across food, culture, K-content, shopping, seasons, transport, sports and practical essentials. Updated 2026-11-21.
 
 ---
 
@@ -59579,15 +59579,15 @@ date: 2026-06-16
 
 # 강남 스터디카페·코워킹 가이드
 
-> 강남·역삼·선릉 외국인 fit 7곳 — 24시간 운영·영어 friendly·디지털 노마드 매트릭스
+> 강남·역삼·선릉 외국인 fit 7곳 — 24시간 무인 스터디카페 포함(곳별 확인)·영어 friendly·디지털 노마드 매트릭스
 
-강남은 외국인 디지털 노마드·교환학생·워케이션 여행자의 hub. 영어 응대·24시간 운영·고속 WiFi·예약 시스템까지 — 외국인이 한국에서 일하거나 공부하기 가장 좋은 권역.
+강남은 외국인 디지털 노마드·교환학생·워케이션 여행자의 hub. 영어 응대·일부 24시간 운영·고속 WiFi·예약 시스템까지 — 외국인이 한국에서 일하거나 공부하기 가장 좋은 권역.
 
 ---
 
 ## 1. 대표 매장 — 에스랩 스터디카페 & 스터디룸 강남4호점
 
-- 주소: 서울 강남구 (강남역·역삼역 인접)
+- 주소: 서울 서초구 서초대로78길 48 (강남역 5번 출구 인근)
 - 시그니처: 24시간 무인 스터디카페 + 스터디룸 (1인·그룹)
 - 외국인 fit ★★★: 영문 키오스크·QR 결제·언어 친화
 - 추천: 24h·시간제·월정액 모두 가능. 외국인 첫 시도 안전
