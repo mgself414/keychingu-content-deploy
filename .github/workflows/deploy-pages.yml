@@ -2,6 +2,8 @@ name: Deploy static content to Pages
 
 # 정적 사이트(.nojekyll) — legacy Jekyll 빌드가 사이트 과대로 타임아웃/실패(2026-07-01~)하여
 # Actions 기반 업로드-배포로 전환. 빌드 처리 없이 파일 그대로 업로드하므로 legacy 타임아웃 없음.
+# 2026-11-22: 업로드 직후 같은 job에서 배포하면 "No artifacts named github-pages"(artifact 조회 지연)로
+# 실패하는 일이 하루 3회 → 업로드/배포 job 분리 + 배포 실패 시 60초 뒤 같은 job에서 1회 재시도.
 
 on:
   push:
@@ -19,10 +21,7 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  upload:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -33,9 +32,28 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: '.'
+
+  deploy:
+    needs: upload
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url || steps.deployment_retry.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
       - name: Deploy to GitHub Pages
         id: deployment
+        continue-on-error: true
         uses: actions/deploy-pages@v4
         with:
-          timeout: 1800000   # 30분 — 대량 변경 커밋에서 10분 기본값이 finished_file_sync 중 만료(2026-11-10 L3)
+          timeout: 600000   # 액션 상한 10분(더 크게 주면 경고 후 600000으로 고정)
+          error_count: 10
+      - name: Wait before retry
+        if: steps.deployment.outcome == 'failure'
+        run: sleep 60
+      - name: Deploy to GitHub Pages (retry)
+        id: deployment_retry
+        if: steps.deployment.outcome == 'failure'
+        uses: actions/deploy-pages@v4
+        with:
+          timeout: 600000
           error_count: 10
