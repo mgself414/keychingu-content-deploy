@@ -2,7 +2,7 @@
 
 > Comprehensive curated Korea travel guides for foreign MZ travelers, covering 1,200+ topics across 60+ cities (Seoul·Busan·Jeju·Gyeongju·Andong·Jeonju·etc), 4 languages (KR·EN·CN·JP), covering food, culture, K-content, shopping, seasons, transport, sports and practical essentials for solo, couple, family and budget travelers. Updated 2026-11-24.
 
-> Total guides: **1238** | EN: 1238 | CN: 1238 | JP: 1238 | og:image: 1,264 | sitemap URLs: 4,842
+> Total guides: **1239** | EN: 1239 | CN: 1239 | JP: 1239 | og:image: 1,265 | sitemap URLs: 4,846
 
 
 ## A (400)
@@ -175,7 +175,7 @@
 - [Korea Entry, Customs & Tax Refund Checklist: Before Departure, On Arrival and Before Leaving, Settled by the Numbers](https://mgself414.github.io/keychingu-content-deploy/content/korea-practical-map.en.html): K-ETA exemption through 2026-12-31 (KRW 10,000), e-Arrival 3 days before arrival, 42 automated-clearance countries, USD 800 duty-free allowa (Korean: https://mgself414.github.io/keychingu-content-deploy/content/korea-practical-map.html)
   - ... and 87 more
 
-## F (74)
+## F (75)
 
 - [Seoul Shopping Day Itinerary](https://mgself414.github.io/keychingu-content-deploy/content/shopping-day.en.html): Seoul shopping 1-day itinerary — Myeongdong, Gangnam, Hongdae, Dongdaemun 4-area route + duty-free & tax refund guide (Korean: https://mgself414.github.io/keychingu-content-deploy/content/shopping-day.html)
 - [Gangnam Fine Dining: 8 Michelin-Starred Picks (2026)](https://mgself414.github.io/keychingu-content-deploy/content/gangnam-finedine.en.html): Seven of Seoul's ten Michelin 2-star restaurants are in Gangnam. Eight picks you can actually book: 3-star Mingles; 2-star Jungsik, Kwonsook (Korean: https://mgself414.github.io/keychingu-content-deploy/content/gangnam-finedine.html)
@@ -207,7 +207,7 @@
 - [48 · Korea Essential Buys TOP 20](https://mgself414.github.io/keychingu-content-deploy/content/essentials-top20.en.html): The top 20 things worth buying in Korea because they are cheaper or unavailable at home, by category, with channel price comparisons, VAT re (Korean: https://mgself414.github.io/keychingu-content-deploy/content/essentials-top20.html)
 - [Where to Buy Korean Souvenirs](https://mgself414.github.io/keychingu-content-deploy/content/souvenir-destinations.en.html): Eight souvenir spots compared, from Olive Young and Daiso to Insadong, Namdaemun, duty-free and The Hyundai Seoul, with picks by category. (Korean: https://mgself414.github.io/keychingu-content-deploy/content/souvenir-destinations.html)
 - [Seoul Stationery Destinations](https://mgself414.github.io/keychingu-content-deploy/content/stationery-destinations.en.html): Eight Seoul stationery destinations for diaries and pens, from Kyobo, Youngpoong and 10x10 to Morris, Homi Hwabang and MUJI, compared, with  (Korean: https://mgself414.github.io/keychingu-content-deploy/content/stationery-destinations.html)
-  - ... and 44 more
+  - ... and 45 more
 
 ## G (47)
 
@@ -302,7 +302,7 @@
 
 ## Metadata
 
-- **Coverage**: 1238 curated guides as of 2026-11-24
+- **Coverage**: 1239 curated guides as of 2026-11-24
 - **Languages**: KR (full), EN (full), CN (full), JP (full)
 - **Update frequency**: Weekly
 - **Data sources**: Korea Tourism Organization (VisitKorea), Seoul Tourism Foundation (Visit Seoul), Cultural Heritage Administration, UNESCO World Heritage, Korea Open Government License (KOGL), Naver Maps, Reddit r/koreatravel + user curation
