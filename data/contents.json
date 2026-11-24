@@ -4820,8 +4820,8 @@
   {
     "id": "244",
     "slug": "busan-jagalchi",
-    "title_kr": "부산 자갈치 국제시장 가이드",
-    "title_en": "Busan Jagalchi & Gukje Market Guide",
+    "title_kr": "부산 자갈치·국제시장·영도·송도 11곳 — 시장 시간, 케이블카 요금, 가는 법",
+    "title_en": "Busan Jagalchi·Gukje Market·Yeongdo·Songdo — 11 Spots: Market Hours, Cable Car Fares and How to Get There",
     "category": "A",
     "tags": [
       "foreigner",
@@ -4830,43 +4830,49 @@
       "gukje-market",
       "yeongdo",
       "songdo",
-      "busan-series"
+      "busan-series",
+      "market",
+      "cable-car"
     ],
-    "summary_kr": "부산 시리즈 ② 시장·정통 12선 — 자갈치시장(한국 1번지 수산·새벽 경매 05~07시)·국제시장(1948 영화 무대)·BIFF 거리(남포동)·남포동·광복로·용두산공원+부산타워(120m 360°)·영도 흰여울 문화마을·태종대(절벽·달뜨는 자리)·송도 케이블카·부평 깡통야시장·자갈치 정통 회·밀면·돼지국밥",
-    "summary_en": "Busan Series ② Jagalchi & Gukje Market 12-pick — Jagalchi Market (Korea's #1 seafood market, dawn auction 5-7am) + Gukje Market (1948, 'Ode to My Father' movie set) + BIFF Street (Nampo-dong) + Nampo-dong + Gwangbok-ro shopping + Yongdusan Park + Busan Tower (120m 360° view) + Yeongdo Huinnyeoul Culture Village (Busan instagram #1) + Taejongdae (cliff + moonrise) + Songdo cable car + Bupyeong Kkangtong Night Market + Jagalchi sashimi + milmyeon (Busan's 1st-gen wheat noodle) + Nampo-dong dwaeji-gukbap",
+    "summary_kr": "부산 원도심 6곳·영도 2곳·송도 3곳을 시간과 가는 법 중심으로 묶었다. 자갈치시장 05:00~22:00(첫째·셋째·다섯째 화요일 휴무), 국제시장 09:00~20:00(일요일 휴무), 부평깡통야시장 매일 19:30~24:00, 용두산공원·부산타워, 흰여울문화마을, 태종대 다누비열차(월요일 휴무), 송도해상케이블카 09:00~21:00·에어크루즈 왕복 19,000원(2026-11-30~12-01 점검 휴무)을 2026-11-24 기준 값으로 적었다. 사고·응급은 119, 범죄 신고는 112.",
+    "summary_en": "Eleven spots in Busan's old downtown (6), Yeongdo (2) and Songdo (3), organized around hours and how to get there. It covers Jagalchi Market (05:00-22:00, closed on the 1st, 3rd and 5th Tuesdays), Gukje Market (09:00-20:00, closed Sundays), Bupyeong Kkangtong Night Market (daily 19:30-24:00), Yongdusan Park and Busan Tower, Huinnyeoul Culture Village, the Taejongdae Danubi Train (closed Mondays) and the Songdo Marine Cable Car (09:00-21:00, Air Cruise round trip 19,000 won, closed for inspection 2026-11-30 to 12-01), all as of 2026-11-24. Call 119 for accidents and emergencies and 112 to report a crime.",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
     "jp_available": true,
     "date_published": "2026-05-19",
-    "title_ja": "釜山チャガルチ・国際市場ガイド",
-    "title_zh": "釜山札嘎其国际市场指南",
-    "summary_ja": "釜山シリーズ②市場・伝統12選：チャガルチ市場（韓国一の水産市場・早朝競り05～07時）、国際市場（1948年映画の舞台）、BIFF通り（南浦洞）、南浦洞、光復路、龍頭山公園+釜山タワー（120m 360°）、影島ヒンヨウル文化村、太宗台（絶壁・月が昇る場所）、松島ケーブルカー、富平カントン夜市、チャガルチの伝統刺身・ミルミョン・テジクッパ。",
-    "summary_zh": "釜山系列② 市场·传统12项，包括札嘎其市场（韩国海鲜首选、凌晨拍卖05~07点）、国际市场（1948年电影舞台）、BIFF广场（南浦洞）、南浦洞、光复路、龙头山公园、釜山塔（120米360°景观）、影岛白浅滩文化村、太宗台（悬崖、月升之地）、松岛缆车、富平罐头夜市，以及札嘎其传统生鱼片、麦面、猪肉汤饭。"
+    "title_ja": "釜山 チャガルチ・国際市場・影島・松島11か所 — 市場の時間、ケーブルカーの料金、行き方",
+    "title_zh": "釜山札嘎其·国际市场·影岛·松岛11处 — 市场时间、缆车票价、交通方式",
+    "summary_ja": "釜山の旧市街6か所・影島2か所・松島3か所を、時間と行き方を中心にまとめました。チャガルチ市場05:00〜22:00(第1・第3・第5火曜休み)、国際市場09:00〜20:00(日曜休み)、富平カントン夜市 毎日19:30〜24:00、龍頭山公園・釜山タワー、ヒンヨウル文化村、太宗台のダヌビ列車(月曜休み)、松島海上ケーブルカー09:00〜21:00・エアクルーズ往復19,000ウォン(2026-11-30〜12-01は点検休業)を、2026-11-24時点の値で記しています。事故・救急は119、犯罪の通報は112。",
+    "summary_zh": "把釜山老城区6处·影岛2处·松岛3处，以开放时间和交通方式为中心整理。写明札嘎其市场05:00~22:00（每月第1·第3·第5个周二休息）、国际市场09:00~20:00（周日休息）、富平罐头夜市每天19:30~24:00、龙头山公园·釜山塔、白险滩文化村、太宗台Danubi观光列车（周一休息）、松岛海上缆车09:00~21:00·Air Cruise往返19,000韩元（2026-11-30~12-01检修停运），均为2026-11-24的数值。事故·急救拨打119，报案拨打112。"
   },
   {
     "id": "245",
     "slug": "busan-gamcheon",
-    "title_kr": "부산 감천문화마을 산복도로 가이드",
-    "title_en": "Busan Gamcheon Culture Village Guide",
+    "title_kr": "부산 감천문화마을·산복도로 10곳 — 방문 시간 규칙, 168계단 엘리베이터, 박물관과 유엔기념공원",
+    "title_en": "Busan Gamcheon Culture Village·Sanbok-doro — 10 Spots: Visiting-Hour Rules, the 168 Stairs Elevator, the Museum and the UN Cemetery",
     "category": "A",
     "tags": [
       "foreigner",
       "busan",
+      "gamcheon",
+      "choryang",
       "chinatown",
-      "busan-series"
+      "busan-series",
+      "museum",
+      "un-memorial-cemetery"
     ],
-    "summary_kr": "부산 시리즈 ③ 인스타 마을 12선 — 감천문화마을('부산 마추픽추' 외국인 vlog #1 컬러 계단식)·산복도로 이바구길(6km)·168 계단+무료 모노레일·아미동 비석마을·초량 이바구길·부산역+초량 차이나타운(1884 한국 1번지)·광복동·부산 박물관·유엔기념공원(UN 한국전쟁 묘지)·부산 시민공원",
-    "summary_en": "Busan Series ③ Gamcheon Culture Village 12-pick — Gamcheon Culture Village ('Busan's Machu Picchu', foreign vlog #1, colorful stepped hillside village) + Sanbokdoro Ibagu-gil (6km road) + 168 Stairs + free monorail + Ami-dong Tombstone Village (Japanese colonial relics) + Choryang Ibagu-gil + Busan Station + Choryang Chinatown (Korea's #1 since 1884) + Gwangbok-dong + Busan Museum + UN Memorial Cemetery (Korean War UN soldiers, especially loved by Canadian/Australian/NZ visitors) + Busan Citizens Park",
+    "summary_kr": "감천 2곳·초량 5곳·대연과 부전 3곳을 묶었다. 감천문화마을 특별관리지역(2026-08-01 지정 고시, 안내문의 시행일 2027-01-01, 주거밀집지역 방문 09:00~18:00, 감내2로 관광 차량 통행 제한과 그 계도기간·과태료 일정, 10인 이상 단체 지도 구입, 대형버스 예약제)을 공식 안내문 기준으로 적었다. 초량 이바구길과 168계단 경사형 엘리베이터, 이바구공작소·유치환의 우체통(월요일 휴관), 부산박물관(월요일 휴관·무료), 유엔기념공원 개방 시간과 방문 예절, 부산시민공원(05:00~24:00)도 담았다. 사고·응급은 119, 범죄 신고는 112.",
+    "summary_en": "Ten spots across Gamcheon (2), Choryang (5) and Daeyeon and Bujeon (3). It sets out the Gamcheon Culture Village Special Management Area from the village's official notice: designated 2026-08-01, effective date 2027-01-01, visiting hours of 09:00-18:00 for the densely residential area, the tourist-vehicle restriction on Gamnae 2-ro with its guidance period and fine schedule, the map purchase rule for groups of 10 or more, and reservations for large buses. It also covers Choryang Ibagu-gil and the 168 Stairs inclined elevator, Ibagu Gongjakso and Yu Chi-hwan's Mailbox (closed Mondays), Busan Museum (closed Mondays, free), opening hours and visiting etiquette at the UN Memorial Cemetery in Korea, and Busan Citizens Park (05:00-24:00). Call 119 for accidents and emergencies and 112 to report a crime.",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
     "jp_available": true,
     "date_published": "2026-05-19",
-    "title_ja": "釜山甘川文化村・山腹道路ガイド",
-    "title_zh": "釜山甘川文化村山腹道路指南",
-    "summary_ja": "釜山シリーズ③インスタ映えする村12選：甘川文化村（「釜山のマチュピチュ」外国人vlog #1カラフルな階段式）、山腹道路イバグギル（6km）、168階段+無料モノレール、峨嵋洞碑石村、草梁イバグギル、釜山駅+草梁チャイナタウン（1884年韓国一番地）、光復洞、釜山博物館、国連記念公園（国連韓国戦争墓地）、釜山市民公園。",
-    "summary_zh": "釜山系列③ 网红村落12项，包括甘川文化村（釜山马丘比丘、外国人Vlog首选彩色阶梯式村落）、山腹道路故事路（6公里）、168阶梯、免费单轨列车、峨嵋洞碑石村、草梁故事路、釜山站、草梁中华街（1884年韩国首选）、光复洞、釜山博物馆、联合国纪念公园和釜山市民公园。"
+    "title_ja": "釜山 甘川文化村・山腹道路10か所 — 訪問時間のルール、168階段のエレベーター、博物館と国連記念公園",
+    "title_zh": "釜山甘川文化村·山腹道路10处 — 参观时间规定、168阶梯电梯、博物馆和联合国纪念公园",
+    "summary_ja": "甘川2か所・草梁5か所・大淵と釜田3か所をまとめました。甘川文化村の特別管理地域(2026-08-01指定告示、案内文の施行日2027-01-01、住居密集地域の訪問09:00〜18:00、カムネ2路の観光車両通行制限とその指導期間・過料の日程、10人以上の団体の地図購入、大型バス予約制)を公式案内文に基づいて記しています。草梁イバグキルと168階段の傾斜型エレベーター、イバグ工作所・柳致環の郵便ポスト(月曜休館)、釜山博物館(月曜休館・無料)、国連記念公園の開放時間と参拝マナー、釜山市民公園(05:00〜24:00)も載せています。事故・救急は119、犯罪の通報は112。",
+    "summary_zh": "整理了甘川2处·草梁5处·大渊和釜田3处。依据官方公告写明甘川文化村特别管理地区（2026-08-01指定公告、公告中的施行日2027-01-01、居住密集区参观时间09:00~18:00、甘内2路观光车辆通行限制及其指导期·罚款日程、10人以上团体须购买地图、大型巴士预约制）。还包括草梁故事路和168阶梯倾斜式电梯、故事工作所·柳致环的邮筒（周一闭馆）、釜山博物馆（周一闭馆·免费）、联合国纪念公园开放时间和参观礼仪、釜山市民公园（05:00~24:00）。事故·急救拨打119，报案拨打112。"
   },
   {
     "id": "246",
