@@ -1,8 +1,8 @@
 # KeyChinGu — Korea Travel Guides for Foreign Tourists
 
-> Comprehensive curated Korea travel guides for foreign MZ travelers, covering 1,200+ topics across 60+ cities (Seoul·Busan·Jeju·Gyeongju·Andong·Jeonju·etc), 4 languages (KR·EN·CN·JP), covering food, culture, K-content, shopping, seasons, transport, sports and practical essentials for solo, couple, family and budget travelers. Updated 2026-11-23.
+> Comprehensive curated Korea travel guides for foreign MZ travelers, covering 1,200+ topics across 60+ cities (Seoul·Busan·Jeju·Gyeongju·Andong·Jeonju·etc), 4 languages (KR·EN·CN·JP), covering food, culture, K-content, shopping, seasons, transport, sports and practical essentials for solo, couple, family and budget travelers. Updated 2026-11-24.
 
-> Total guides: **1237** | EN: 1237 | CN: 1237 | JP: 1237 | og:image: 1,263 | sitemap URLs: 4,838
+> Total guides: **1238** | EN: 1238 | CN: 1238 | JP: 1238 | og:image: 1,264 | sitemap URLs: 4,842
 
 
 ## A (400)
@@ -73,7 +73,7 @@
 - [Korea Instagram Spots: Instagram Photo Spots for Foreign Visitors — 12 Picks Including DDP and Starfield Library](https://mgself414.github.io/keychingu-content-deploy/content/instagram-spots.en.html): Twelve Instagram photo spots in four groups, city architecture, night views, nature viewpoints and trendy alleys, including DDP, Starfield L (Korean: https://mgself414.github.io/keychingu-content-deploy/content/instagram-spots.html)
   - ... and 196 more
 
-## C (166)
+## C (167)
 
 - [Seoul Hongdae Select Shop Guide](https://mgself414.github.io/keychingu-content-deploy/content/hongdae-select-shops.en.html): Eight select shops in Hongdae, Seogyo and Yeonnam: lifestyle brands, vintage lanes, an Olive Young megastore, a K-pop collaboration store an (Korean: https://mgself414.github.io/keychingu-content-deploy/content/hongdae-select-shops.html)
 - [Korean Desserts: Korean Dessert Guide — Bingsu, Tteok, Cakes, Macarons, Traditional Sweets](https://mgself414.github.io/keychingu-content-deploy/content/korea-dessert-meta.en.html): All Korean dessert categories — bingsu, tteok, cakes & traditional sweets. (Korean: https://mgself414.github.io/keychingu-content-deploy/content/korea-dessert-meta.html)
@@ -105,7 +105,7 @@
 - [Gangnam Bar Guide](https://mgself414.github.io/keychingu-content-deploy/content/gangnam-bar.en.html): Gangnam bars on official values checked Oct 8, 2026: the old eight venues had no own pages (one may not exist) and are dropped; four picks i (Korean: https://mgself414.github.io/keychingu-content-deploy/content/gangnam-bar.html)
 - [Seoul Jongno Brunch Guide](https://mgself414.github.io/keychingu-content-deploy/content/jongno-brunch.en.html): Eight Jongno brunch places grouped as hanok brunch, modern brunch, bagel and American-style, and photo spots, with weekend wait times, cash  (Korean: https://mgself414.github.io/keychingu-content-deploy/content/jongno-brunch.html)
 - [Seoul Hongdae Brunch Guide](https://mgself414.github.io/keychingu-content-deploy/content/hongdae-brunch.en.html): Twelve brunch spots in Hongdae, Yeonnam, Hapjeong and Mangwon: Yeonnam, modern Hapjeong cafes, pancakes and bagels, Mangwon neighborhood pla (Korean: https://mgself414.github.io/keychingu-content-deploy/content/hongdae-brunch.html)
-  - ... and 136 more
+  - ... and 137 more
 
 ## H (143)
 
@@ -302,7 +302,7 @@
 
 ## Metadata
 
-- **Coverage**: 1237 curated guides as of 2026-11-23
+- **Coverage**: 1238 curated guides as of 2026-11-24
 - **Languages**: KR (full), EN (full), CN (full), JP (full)
 - **Update frequency**: Weekly
 - **Data sources**: Korea Tourism Organization (VisitKorea), Seoul Tourism Foundation (Visit Seoul), Cultural Heritage Administration, UNESCO World Heritage, Korea Open Government License (KOGL), Naver Maps, Reddit r/koreatravel + user curation
