@@ -4792,26 +4792,30 @@
   {
     "id": "243",
     "slug": "busan-haeundae",
-    "title_kr": "부산 해운대 광안리 가이드",
-    "title_en": "Busan Haeundae & Gwangalli Guide",
+    "title_kr": "부산 해운대·광안리 12곳 — 해변·해변열차·전망대·드론쇼, 시간과 요금",
+    "title_en": "Busan Haeundae·Gwangalli — 12 Spots: Beaches, Beach Train, Observatories and Drone Show, with Hours and Fares",
     "category": "A",
     "tags": [
       "foreigner",
       "busan",
       "haeundae",
-      "busan-series"
+      "gwangalli",
+      "busan-series",
+      "beach",
+      "observatory",
+      "coastal-walk"
     ],
-    "summary_kr": "부산 시리즈 ① 해변 도시 1번지 12선 — 해운대 해수욕장(연 1000만+)·광안리(7.4km 광안대교 야경 1번지)·동백섬+The Bay 101·달맞이길·마린시티(80층+ 마천루)·SEA LIFE 아쿠아리움·X the SKY(411m·100층 LCT)·이기대·동백공원 APEC·해운대 회·횟집",
-    "summary_en": "Busan Series ① Haeundae & Gwangalli 12-pick — Haeundae Beach (Korea's #1 beach, 1.5km, 10M+ annual visitors) + Gwangalli Beach + Gwangan Bridge (7.4km night view #1) + Dongbaek Island + The Bay 101 + Dalmaji-gil + Marine City (Korea's #1 skyscraper district, 80+ floors) + Busan SEA LIFE Aquarium + X the SKY LCT (411m, Korea's 2nd tallest after Lotte Tower) + Igidae natural park + Dongbaek APEC Nurimaru + Haeundae sashimi market",
+    "summary_kr": "해운대 6곳·동백섬 3곳·광안리 3곳을 해변열차·스카이캡슐·전망대·드론쇼 중심으로 묶었다. 해운대블루라인파크 동절기 운행 시간과 요금, 부산엑스더스카이(10~21시·대인 29,000원), SEA LIFE 부산아쿠아리움 시간, 누리마루 APEC하우스, 광안리 M 드론라이트쇼 동절기 토요일 19시·21시, 이기대 해안산책로 4.7km, 공항 리무진 해운대 노선(성인 9,500원·공항발 막차 시각)을 2026-11-24 기준 값으로 적었다. 사고·응급은 119, 범죄 신고는 112.",
+    "summary_en": "Twelve spots in Busan's Haeundae, Dongbaekseom and Gwangalli areas: 6 in Haeundae, 3 around Dongbaekseom Island and 3 in Gwangalli, built around the Beach Train, Sky Capsule, observatory and drone show. It gives Haeundae Blueline Park's winter timetable and fares, BUSAN X the SKY (10:00-21:00, adults 29,000 won), SEA LIFE Busan Aquarium hours, Nurimaru APEC House, the Gwangalli M Drone Light Show on winter Saturdays at 19:00 and 21:00, the 4.7 km Igidae Coastal Walk, and the airport limousine to Haeundae (adults 9,500 won, last departures from the airport), all as of 2026-11-24. Call 119 for accidents and emergencies and 112 to report a crime.",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
     "jp_available": true,
     "date_published": "2026-05-19",
-    "title_ja": "釜山海雲台・広安里ガイド",
-    "title_zh": "釜山海云台广安里指南",
-    "summary_ja": "釜山シリーズ①ビーチ都市一番地12選：海雲台海水浴場（年間1000万人以上）、広安里（7.4km広安大橋夜景一番地）、冬柏島+The Bay 101、タルマジギル、マリンシティ（80階以上の摩天楼）、SEA LIFEアクアリウム、X the SKY（411m・100階LCT）、イギデ、冬柏公園APEC、海雲台の刺身・刺身店。",
-    "summary_zh": "釜山系列① 海滨城市首选12项，包括海云台海水浴场（年游客超千万）、广安里（7.4公里广安大桥夜景首选）、冬柏岛、The Bay 101、迎月路、Marine City、SEA LIFE水族馆、X the SKY（411米·100层LCT）、二妓台、冬柏公园APEC世峰楼，以及海云台生鱼片。"
+    "title_ja": "釜山 海雲台・広安里12か所 — ビーチ・海辺列車・展望台・ドローンショー、時間と料金",
+    "title_zh": "釜山海云台·广安里12处 — 海滩·海岸列车·展望台·无人机秀，时间和票价",
+    "summary_ja": "海雲台6か所・冬柏島3か所・広安里3か所を、海辺列車・スカイカプセル・展望台・ドローンショーを中心にまとめました。海雲台ブルーラインパークの冬季運行時間と料金、釜山エックス・ザ・スカイ(10〜21時・大人29,000ウォン)、SEA LIFE釜山アクアリウムの時間、ヌリマルAPECハウス、広安里Mドローンライトショー冬季土曜19時・21時、二妓台海岸散策路4.7km、空港リムジン海雲台路線(大人9,500ウォン・空港発の最終時刻)を2026-11-24時点の値で記しています。事故・救急は119、犯罪の通報は112。",
+    "summary_zh": "把海云台6处·冬柏岛3处·广安里3处，以海岸列车·天空胶囊列车·展望台·无人机秀为中心整理。写明海云台蓝线公园冬季运行时间和票价、釜山X the SKY（10~21点·成人29,000韩元）、SEA LIFE釜山水族馆开放时间、世峰楼APEC会议厅、广安里M无人机灯光秀冬季周六19点·21点、二妓台海岸散步路4.7km、机场大巴海云台线（成人9,500韩元·机场出发末班时间），均为2026-11-24的数值。事故·急救拨打119，报案拨打112。"
   },
   {
     "id": "244",
@@ -10292,8 +10296,8 @@
   {
     "id": "459",
     "slug": "korea-workation-map",
-    "title_kr": "한국 워케이션 가이드 — 디지털노마드(F-1-D) 비자 요건과 워케이션 공간 4곳(부산 영도·부산 송도·순천 정원워케이션·고성 바다공룡)",
-    "title_en": "Korea Workation Guide — Digital Nomad (F-1-D) Visa Requirements and 4 Workation Spaces (Busan Yeongdo, Busan Songdo, Suncheon Garden Workation, Goseong Badagongnyong)",
+    "title_kr": "한국 워케이션 가이드 — 디지털노마드(F-1-D) 비자 요건과 워케이션 공간 9곳(부산 3곳·순천·고성·부안·여수·제주 세화·울산)",
+    "title_en": "Korea Workation Guide — Digital Nomad (F-1-D) Visa Requirements and 9 Workation Spaces (3 in Busan, Suncheon, Goseong, Buan, Yeosu, Jeju Sehwa, Ulsan)",
     "category": "B",
     "tags": [
       "foreigner",
@@ -10301,19 +10305,23 @@
       "digital-nomad",
       "coworking",
       "long-stay",
-      "meta-lifestyle"
+      "meta-lifestyle",
+      "busan",
+      "jeju",
+      "ulsan",
+      "yeosu"
     ],
-    "summary_kr": "2026-10-21 공식값: 디지털노마드(워케이션) 비자 2026-06-30 정식 운영·최장 3년 · 소득 요건은 2025년 1인당 GNI 기준 5,241만~1억 483만 원, 나이·체류 지역별 차등 · 취업·영리활동 제한 · 부산형 워케이션 공식 사이트 busaness.com · 순천만국가정원 안 숙소형 워케이션",
-    "summary_en": "Official values checked Oct 21, 2026: Digital Nomad (Workation) visa in full operation from 2026-06-30, up to 3 years · Income requirement based on 2025 GNI per capita: ₩52,410,000 to ₩104,830,000, tiered by age and region of stay · Employment and for-profit activity in Korea restricted · Busan workation official site busaness.com · Lodging-type workation inside Suncheon Bay National Garden",
+    "summary_kr": "2026년 11월 기준: 디지털노마드(워케이션) 비자 2026-06-30 정식 운영·최장 3년 · 소득 요건은 2025년 1인당 GNI 기준 5,241만~1억 483만 원, 나이·체류 지역별 차등 · 취업·영리활동 제한 · 워케이션 공간 9곳 — 부산 3곳(부산워케이션거점센터 평일 08:30~20:30, 영도 위성센터, 휴앤워크 서구), 순천 정원워케이션(순천시 예약 페이지), 고성 바다공룡, 국민투표에 오른 부안 변산비치선셋·여수 블루워케이션센터(09~18시)·제주 세화 질그랭이·울산 온앤오프(평일 09~18시·무료·사전 예약).",
+    "summary_en": "As of November 2026: the Digital Nomad (Workation) visa in full operation from 2026-06-30, up to 3 years · income requirement based on 2025 GNI per capita, ₩52,410,000 to ₩104,830,000 depending on age and region of stay · employment and for-profit activity restricted · 9 workation spaces: 3 in Busan (Busan Workation Hub Center, weekdays 08:30-20:30; Yeongdo Global Satellite Center; Hue&Work Seo-gu), Suncheon Garden Workation (booking via the Suncheon City page), Goseong Badagongnyong, and four that appeared in the public vote: Byeonsan Beach Sunset in Buan, the Blue Workation Yeosu Center (09:00-18:00), Sehwa Jilgeuraengi in Jeju and Ulsan On&Off (weekdays 09:00-18:00, free, advance booking).",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
     "jp_available": true,
     "date_published": "2026-05-26",
-    "title_ja": "韓国ワーケーションガイド — デジタルノマド(F-1-D)ビザの要件とワーケーション空間4か所(釜山・影島、釜山・松島、順天ガーデンワーケーション、固城バダゴンニョン)",
-    "title_zh": "韩国远程度假办公指南 — 数字游民(F-1-D)签证条件与4处远程度假办公空间(釜山影岛·釜山松岛·顺天庭院远程办公·固城海洋恐龙)",
-    "summary_zh": "2026-10-21官方值：数字游民(远程度假办公)签证2026-06-30起正式运营·最长3年 · 收入要求以2025年人均国民总收入(GNI)为基准,为5,241万~1亿483万韩元,按年龄和居留地区分档 · 限制在韩就业和营利活动 · 釜山型远程度假办公官方网站busaness.com · 顺天湾国家庭院内的住宿型远程度假办公",
-    "summary_ja": "2026-10-21公式値：デジタルノマド(ワーケーション)ビザ2026-06-30に正式運用開始・最長3年 · 所得要件は2025年の1人当たりGNI基準で5,241万~1億483万ウォン、年齢・滞在地域別に差がある · 就業・営利活動は制限 · 釜山型ワーケーション公式サイト busaness.com · 順天湾国家庭園内の宿泊型ワーケーション"
+    "title_ja": "韓国ワーケーションガイド — デジタルノマド(F-1-D)ビザの要件とワーケーション空間9か所(釜山3か所・順天・固城・扶安・麗水・済州細花・蔚山)",
+    "title_zh": "韩国远程度假办公指南 — 数字游民(F-1-D)签证条件与9处远程度假办公空间(釜山3处·顺天·固城·扶安·丽水·济州细花·蔚山)",
+    "summary_zh": "以2026年11月为准：数字游民(远程度假办公)签证2026-06-30起正式运营·最长3年 · 收入要求以2025年人均国民总收入(GNI)为基准,为5,241万~1亿483万韩元,按年龄和居留地区分档 · 限制在韩就业和营利活动 · 9处远程度假办公空间——釜山3处(釜山Workation据点中心平日08:30~20:30、影岛卫星中心、Hue&Work西区)、顺天庭园Workation(顺天市预约页面)、固城海洋恐龙,以及国民投票上榜的扶安边山海滩日落、丽水蓝色Workation中心(09~18点)、济州细花Jilgeuraengi、蔚山On&Off(平日09~18点·免费·需提前预约)。",
+    "summary_ja": "2026年11月時点：デジタルノマド(ワーケーション)ビザ2026-06-30に正式運用開始・最長3年 · 所得要件は2025年の1人当たりGNI基準で5,241万~1億483万ウォン、年齢・滞在地域別に差がある · 就業・営利活動は制限 · ワーケーション空間9か所——釜山3か所(釜山ワーケーション拠点センター平日08:30~20:30、影島サテライトセンター、ヒュー&ワーク西区)、順天庭園ワーケーション(順天市の予約ページ)、固城バダゴンニョン、国民投票に挙がった扶安の辺山ビーチサンセット・麗水ブルーワーケーションセンター(09~18時)・済州細花チルグレンイ・蔚山オンアンドオフ(平日09~18時・無料・事前予約)。"
   },
   {
     "id": "460",
