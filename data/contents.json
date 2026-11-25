@@ -16187,8 +16187,8 @@
   {
     "id": "737",
     "slug": "namsan-fall-foliage",
-    "title_kr": "서울 남산 가이드 — 남산공원·남산서울타워·팔각정, 남산둘레길·남산국치길, 남산 야외식물원, 남산골한옥마을, 남산봉수의식",
-    "title_en": "Namsan Seoul Guide: Namsan Park, N Seoul Tower, Palgakjeong Pavilion, Namsan Dullegil, Namsan Gukchigil, Namsan Outdoor Botanical Garden, Namsangol Hanok Village, Namsan Bongsu Ceremony",
+    "title_kr": "서울 남산 가이드 — 남산공원·남산서울타워·팔각정, 남산둘레길·남산국치길, 남산 한국숲정원, 남산골한옥마을, 남산봉수의식",
+    "title_en": "Namsan Seoul Guide: Namsan Park, N Seoul Tower, Palgakjeong Pavilion, Namsan Dullegil, Namsan Gukchigil, Namsan Korean Forest Garden, Namsangol Hanok Village, Namsan Bongsu Ceremony",
     "category": "A",
     "tags": [
       "foreigner",
@@ -16199,8 +16199,8 @@
       "walking",
       "sub-deep"
     ],
-    "summary_kr": "남산공원·남산서울타워·팔각정, 남산둘레길·남산국치길, 남산 야외식물원, 남산골한옥마을, 남산봉수의식의 여는 시간·쉬는 날·길 길이를 한국관광공사 관광정보(TourAPI) 기준으로 정리한 서울 남산 가이드다.",
-    "summary_en": "Places to visit on Namsan in the middle of Seoul: Namsan Park, N Seoul Tower and Palgakjeong Pavilion, Namsan Dullegil and Namsan Gukchigil trails, the outdoor botanical garden, Namsangol Hanok Village and the Namsan Bongsu Ceremony, with hours and closed days registered in Korea Tourism Organization data.",
+    "summary_kr": "남산공원·남산서울타워·팔각정, 남산둘레길·남산국치길, 남산 한국숲정원, 남산골한옥마을, 남산봉수의식의 여는 시간·쉬는 날·길 길이를 한국관광공사 관광정보(TourAPI) 기준으로 정리한 서울 남산 가이드다.",
+    "summary_en": "Places to visit on Namsan in the middle of Seoul: Namsan Park, N Seoul Tower and Palgakjeong Pavilion, Namsan Dullegil and Namsan Gukchigil trails, the Korean Forest Garden, Namsangol Hanok Village and the Namsan Bongsu Ceremony, with hours and closed days registered in Korea Tourism Organization data.",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
@@ -16208,10 +16208,10 @@
     "image": "assets/og/namsan-fall-foliage.jpg",
     "image_credit": "Korea Tourism Organization (공공누리 1유형)",
     "date_published": "2026-06-04",
-    "title_ja": "ソウル南山ガイド — 南山公園・南山ソウルタワー・八角亭、南山ドゥルレギル・南山国恥の道、南山野外植物園、南山谷韓屋村、南山烽燧儀式",
-    "title_zh": "首尔南山指南 — 南山公园·南山首尔塔·八角亭，南山环城步道·南山国耻路，南山野外植物园，南山谷韩屋村，南山烽燧仪式",
-    "summary_ja": "南山公園、南山ソウルタワー・八角亭、南山ドゥルレギル・南山国恥の道、野外植物園、南山谷韓屋村、南山烽燧儀式の開く時間と休みを、韓国観光公社の観光情報(TourAPI)でまとめたガイドです。",
-    "summary_zh": "汇集首尔中心南山可以去的地方: 南山公园、南山首尔塔·八角亭、南山环城步道·南山国耻路、野外植物园、南山谷韩屋村、南山烽燧仪式。已对照韩国观光公社旅游信息，整理开放时间与休息日。"
+    "title_ja": "ソウル南山ガイド — 南山公園・南山ソウルタワー・八角亭、南山ドゥルレギル・南山国恥の道、南山韓国森の庭園、南山谷韓屋村、南山烽燧儀式",
+    "title_zh": "首尔南山指南 — 南山公园·南山首尔塔·八角亭，南山环城步道·南山国耻路，南山韩国林庭园，南山谷韩屋村，南山烽燧仪式",
+    "summary_ja": "南山公園、南山ソウルタワー・八角亭、南山ドゥルレギル・南山国恥の道、韓国森の庭園、南山谷韓屋村、南山烽燧儀式の開く時間と休みを、韓国観光公社の観光情報(TourAPI)でまとめたガイドです。",
+    "summary_zh": "汇集首尔中心南山可以去的地方: 南山公园、南山首尔塔·八角亭、南山环城步道·南山国耻路、韩国林庭园、南山谷韩屋村、南山烽燧仪式。已对照韩国观光公社旅游信息，整理开放时间与休息日。"
   },
   {
     "id": "738",
