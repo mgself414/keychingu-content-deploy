@@ -9774,32 +9774,6 @@
     "summary_zh": "首尔通宵营业的12处去处：24小时韩餐、深夜餐厅、24小时咖啡馆与投币练歌房、汉江炸鸡啤酒，并提醒深夜常见的误区。"
   },
   {
-    "id": "438",
-    "slug": "korean-cinema",
-    "title_kr": "한국 영화 풀가이드",
-    "title_en": "Korean Cinema Full Guide",
-    "category": "D",
-    "tags": [
-      "foreigner",
-      "parasite",
-      "bong-joon-ho",
-      "cgv",
-      "biff",
-      "film"
-    ],
-    "summary_kr": "기생충의 봉준호, 올드보이·헤어질 결심의 박찬욱, 명량·범죄도시 같은 1000만 영화까지 한국 영화 12선과 CGV·롯데시네마·메가박스의 영어 자막 관람, 예술영화관·영화제를 담았다.",
-    "summary_en": "Twelve Korean films, from Bong Joon-ho's Parasite to Park Chan-wook's Oldboy and ten-million hits, with English-subtitled screenings at CGV, Lotte Cinema and Megabox, plus art-house cinemas.",
-    "en_available": true,
-    "instagram_posted": false,
-    "cn_available": true,
-    "jp_available": true,
-    "date_published": "2026-05-26",
-    "title_ja": "韓国映画ガイド",
-    "title_zh": "韩国电影完整指南",
-    "summary_ja": "ポン・ジュノの『パラサイト』、パク・チャヌクの『オールド・ボーイ』『別れる決心』、観客1000万人超のヒット作まで韓国映画12選。CGV・ロッテシネマ・メガボックスの英語字幕上映や、ミニシアター、映画祭も紹介します。",
-    "summary_zh": "精选12部韩国电影：奉俊昊的《寄生虫》、朴赞郁的《老男孩》《分手的决心》及千万观影人次的热门片，并介绍CGV、乐天影院、Megabox的英文字幕观影、艺术影院和电影节。"
-  },
-  {
     "id": "439",
     "slug": "rental-car-driving",
     "title_kr": "운전 렌터카 자유여행 심층 가이드",
@@ -11837,8 +11811,8 @@
   {
     "id": "530",
     "slug": "korean-cinema-deep",
-    "title_kr": "한국 영화 팬 심층 가이드",
-    "title_en": "Korean Cinema Fans Deep Dive",
+    "title_kr": "서울·부산에서 한국 영화 보는 곳 7곳 — 영어 자막 상영, 시네마테크, 영화 박물관",
+    "title_en": "7 Places to Watch Korean Films in Seoul and Busan — English-Subtitle Screenings, Cinematheques, Film Museums",
     "category": "G",
     "tags": [
       "foreigner",
@@ -11850,17 +11824,17 @@
       "disney-plus",
       "film-festival"
     ],
-    "summary_kr": "CGV·메가박스 같은 영화관과 프리미엄 상영관, 독립영화관과 영화제, OTT까지 한국 영화를 즐기는 방법을 12항목으로 정리하고 자막 정보를 담았다.",
-    "summary_en": "A 12-item guide to enjoying Korean cinema, covering theater chains like CGV and Megabox, premium screens, independent cinemas and film festivals, and streaming, with subtitle information.",
+    "summary_kr": "영어 자막 회차에 'E'를 붙이는 무료 시네마테크KOFA, 같은 건물의 무료 한국영화박물관, '*Eng Subtitle' 회차가 있는 에무시네마, 인디스페이스, 서울영화센터, 부산 영화의전당과 부산영화체험박물관. 곳마다 가는 길, 영어 자막 확인법, 요금, 쉬는 날.",
+    "summary_en": "Free Cinematheque KOFA, which tags English-subtitle screenings with an 'E', the free Korean Film Museum in the same building, Emu Cinema with '*Eng Subtitle' screenings, Indiespace, Seoul Film Center, and Busan Cinema Center and the Busan Museum of Movies. For each place: directions, how to check English subtitles, fees, and closing days.",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
     "jp_available": true,
     "date_published": "2026-05-28",
-    "title_zh": "韩国电影爱好者深度探索",
-    "title_ja": "韓国映画ファン 深掘りガイド",
-    "summary_ja": "CGV・メガボックスなどの映画館、プレミアム上映館、独立系映画館と映画祭、動画配信まで、韓国映画の楽しみ方を12項目で整理。字幕の情報も載せています。",
-    "summary_zh": "用12项内容介绍欣赏韩国电影的方式，涵盖CGV、Megabox等影院、高端影厅、独立影院与电影节以及流媒体，并介绍字幕情况。"
+    "title_zh": "在首尔·釜山看韩国电影的7个地方 — 英文字幕放映、电影资料馆、电影博物馆",
+    "title_ja": "ソウル・釜山で韓国映画を観る7か所 — 英語字幕の上映、シネマテーク、映画博物館",
+    "summary_ja": "英語字幕の回に「E」を付ける無料のシネマテークKOFA、同じ建物にある無料の韓国映画博物館、「*Eng Subtitle」の回があるemu Cinema、インディスペース、ソウル映画センター、釜山の映画の殿堂と釜山映画体験博物館。場所ごとに、行き方、英語字幕の確認のしかた、料金、休みの日。",
+    "summary_zh": "在英文字幕场次标注“E”的免费Cinematheque KOFA、同一栋楼里免费的韩国电影博物馆、有“*Eng Subtitle”场次的emu Cinema、Indiespace、首尔电影中心，以及釜山电影殿堂和釜山电影体验博物馆。每个地方都写了怎么去、怎么确认英文字幕、费用和休息日。"
   },
   {
     "id": "531",
@@ -12008,8 +11982,8 @@
   {
     "id": "537",
     "slug": "korean-conversation",
-    "title_kr": "한국어 회화 실전 심층 가이드",
-    "title_en": "Korean Conversation Practical Deep Dive",
+    "title_kr": "여행 한국어 상황별 표현집 — 공항·지하철·택시·식당부터 약국·응급까지, 그 자리에서 바로 말하는 짧은 문장",
+    "title_en": "Situational Korean Phrasebook for Travel — Short Sentences to Say on the Spot, from Airport, Subway, Taxi and Restaurant to Pharmacy and Emergency",
     "category": "H",
     "tags": [
       "foreigner",
@@ -12018,17 +11992,17 @@
       "ttmik",
       "topik"
     ],
-    "summary_kr": "정부 KIIP 과정과 한국어 학원, 온라인 강의·교재, 언어 교환 앱까지 실제로 한국어 말하기를 늘릴 수 있는 방법 12가지를 비교해 소개한다.",
-    "summary_en": "Twelve ways to build real Korean speaking skills, compared side by side: the government KIIP program, language schools, online lessons and textbooks, and exchange apps.",
+    "summary_kr": "공항, 지하철·버스, 택시, 식당, 카페, 편의점, 쇼핑, 계산, 길 묻기, 숙소, 약국, 응급까지 12가지 여행 상황에서 바로 쓰는 짧은 한국어 문장을 한글·로마자 소리·영어 뜻으로 정리했다. 상대가 되물을 법한 대답과 112·119·1330 번호도 함께 실었다.",
+    "summary_en": "Short Korean sentences for 12 travel situations — airport, subway and bus, taxi, restaurant, cafe, convenience store, shopping, paying, asking directions, accommodation, pharmacy and emergency — in Hangul, romanized sound and English meaning. It also includes likely replies from the other person and the numbers 112, 119 and 1330.",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
     "jp_available": true,
     "date_published": "2026-05-28",
-    "title_zh": "韩语会话实战深度探索",
-    "title_ja": "韓国語会話実践 深掘りガイド",
-    "summary_ja": "政府のKIIP課程、韓国語学院、オンライン講座・教材、言語交換アプリなど、韓国語の会話力を伸ばす方法12件を比べて紹介します。",
-    "summary_zh": "对比介绍12种提高韩语口语的方法：政府KIIP课程、语言学院、线上课程与教材，以及语言交换应用。"
+    "title_zh": "旅行韩语场景表达集 — 从机场、地铁、出租车、餐厅到药店、急救，当场就能开口说的短句",
+    "title_ja": "旅行韓国語 場面別フレーズ集 — 空港・地下鉄・タクシー・食堂から薬局・緊急まで、その場でそのまま言える短い文",
+    "summary_ja": "空港、地下鉄・バス、タクシー、食堂、カフェ、コンビニ、買い物、会計、道を尋ねる、宿泊、薬局、緊急まで、12の旅行場面ですぐ使える短い韓国語の文を、ハングル・ローマ字の音・英語の意味でまとめました。相手が聞き返しそうな答えと112・119・1330の番号も載せています。",
+    "summary_zh": "针对机场、地铁·公交、出租车、餐厅、咖啡店、便利店、购物、结账、问路、住宿、药店、急救这12种旅行场景，把能直接使用的韩语短句用韩文、罗马字读音和英文意思整理出来。也收录了对方可能的回答，以及112、119、1330号码。"
   },
   {
     "id": "538",
@@ -12057,30 +12031,32 @@
   {
     "id": "539",
     "slug": "nature-national-park",
-    "title_kr": "한국 자연·국립공원 심층 가이드",
-    "title_en": "Korea Nature·National Park Deep Dive",
+    "title_kr": "한국 국립공원 6곳 — 처음 가는 코스의 거리와 시간, 겨울 입산 마감, 예약이 필요한 곳",
+    "title_en": "6 Korean National Parks — Distances and Times for a First Course, Winter Entry Cutoffs, and Where You Need a Reservation",
     "category": "B",
     "tags": [
       "foreigner",
       "nature",
+      "national-park",
+      "hiking",
       "bukhansan",
       "seoraksan",
       "hallasan",
-      "unesco",
-      "hiking",
-      "camping"
+      "jirisan",
+      "gyeongju",
+      "taean"
     ],
-    "summary_kr": "UNESCO 자연유산과 서울 근교 산, 제주 올레길 같은 트레일, 해양·산악·DMZ 국립공원, 등산 장비와 캠핑까지 한국 자연을 즐기는 방법을 정리했다.",
-    "summary_en": "Korea's outdoors in one guide: UNESCO natural heritage and mountains near Seoul, trails like Jeju's Olle, marine and mountain national parks, the DMZ, gear and camping.",
+    "summary_kr": "북한산·설악산·한라산·지리산 노고단·경주·태안해안 6곳의 처음 가는 코스 거리와 시간, 겨울 입산 마감 시각, 예약이 필요한 구간, 가는 법, 금지 행위와 과태료를 국립공원공단·제주특별자치도 등 공식 안내(2026-11-25 열람) 기준으로 정리했다.",
+    "summary_en": "First-visit courses with distance and time, winter entry cut-off times, which sections need a reservation, how to get there, and fines for banned acts at 6 parks: Bukhansan, Seoraksan, Hallasan, Jirisan Nogodan, Gyeongju and Taeanhaean, based on official Korea National Park Service and Jeju Province guidance read on 2026-11-25.",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
     "jp_available": true,
     "date_published": "2026-05-28",
-    "title_zh": "韩国自然·国家公园深度探索",
-    "title_ja": "韓国自然・国立公園 深掘りガイド",
-    "summary_ja": "UNESCO自然遺産とソウル近郊の山、済州オルレなどのトレイル、海洋・山岳・DMZの国立公園、登山装備やキャンプまで、韓国の自然の楽しみ方を整理します。",
-    "summary_zh": "整理韩国亲近自然的方式：联合国教科文组织自然遗产与首尔近郊山岳、济州偶来小路等步道、海洋与山岳国家公园、DMZ，以及装备和露营。"
+    "title_zh": "韩国国立公园6处 — 第一次走的路线的距离和时间、冬季入山截止时间、需要预约的地方",
+    "title_ja": "韓国の国立公園6か所 — 初めて行くコースの距離と時間、冬の入山締め切り、予約が必要な所",
+    "summary_ja": "北漢山・雪岳山・漢拏山・智異山 老姑壇・慶州・泰安海岸の6か所について、初めて行くコースの距離と時間、冬の入山締め切り時刻、予約が必要な区間、行き方、禁止行為と過料を、国立公園公団・済州特別自治道などの公式案内(2026-11-25閲覧)でまとめました。",
+    "summary_zh": "整理北汉山、雪岳山、汉拿山、智异山老姑坛、庆州、泰安海岸6处的初次路线距离和时间、冬季入山截止时刻、需要预约的区间、交通方式、禁止行为和罚款，依据国立公园公团、济州特别自治道等官方指南(2026-11-25查阅)。"
   },
   {
     "id": "540",
