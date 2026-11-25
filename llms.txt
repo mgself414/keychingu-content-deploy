@@ -2,7 +2,7 @@
 
 > Comprehensive curated Korea travel guides for foreign MZ travelers, covering 1,200+ topics across 60+ cities (Seoul·Busan·Jeju·Gyeongju·Andong·Jeonju·etc), 4 languages (KR·EN·CN·JP), covering food, culture, K-content, shopping, seasons, transport, sports and practical essentials for solo, couple, family and budget travelers. Updated 2026-11-25.
 
-> Total guides: **1230** | EN: 1230 | CN: 1230 | JP: 1230 | og:image: 1,256 | sitemap URLs: 4,810
+> Total guides: **1228** | EN: 1228 | CN: 1228 | JP: 1228 | og:image: 1,254 | sitemap URLs: 4,802
 
 
 ## A (400)
@@ -39,7 +39,7 @@
 - [Magok Gimpo Airport Guide](https://mgself414.github.io/keychingu-content-deploy/content/magok-gimpo.en.html): Twelve stops from Gimpo Airport transit and duty-free to Seoul Botanic Park, LG Arts Center and Magok's cafes and restaurants. (Korean: https://mgself414.github.io/keychingu-content-deploy/content/magok-gimpo.html)
   - ... and 370 more
 
-## D (217)
+## D (216)
 
 - [Korea 7-Day Complete Guide for Foreigners](https://mgself414.github.io/keychingu-content-deploy/content/seoul-7day-guide.en.html): Optimal 7-day Korea itinerary for first-time foreign visitors. (Korean: https://mgself414.github.io/keychingu-content-deploy/content/seoul-7day-guide.html)
 - [K-pop Fan 1-Day Complete Itinerary Guide](https://mgself414.github.io/keychingu-content-deploy/content/kpop-fan-day-tour.en.html): Perfect 1-day K-pop fan itinerary — label districts, shrines & merch shops. (Korean: https://mgself414.github.io/keychingu-content-deploy/content/kpop-fan-day-tour.html)
@@ -71,7 +71,7 @@
 - [Korea Festivals Full Guide](https://mgself414.github.io/keychingu-content-deploy/content/korea-festivals.en.html): Korea's major festivals by type: KCON and MAMA, the Busan film festival, Seoul fireworks and Jinhae cherry blossoms, plus timing for Andong  (Korean: https://mgself414.github.io/keychingu-content-deploy/content/korea-festivals.html)
 - [Casino Full Guide](https://mgself414.github.io/keychingu-content-deploy/content/casino.en.html): Foreigner-only casinos such as Walker Hill, Paradise City and Inspire: Koreans cannot enter, a passport is required, plus currency exchange, (Korean: https://mgself414.github.io/keychingu-content-deploy/content/casino.html)
 - [Korea Instagram Spots: Instagram Photo Spots for Foreign Visitors — 12 Picks Including DDP and Starfield Library](https://mgself414.github.io/keychingu-content-deploy/content/instagram-spots.en.html): Twelve Instagram photo spots in four groups, city architecture, night views, nature viewpoints and trendy alleys, including DDP, Starfield L (Korean: https://mgself414.github.io/keychingu-content-deploy/content/instagram-spots.html)
-  - ... and 187 more
+  - ... and 186 more
 
 ## C (168)
 
@@ -209,7 +209,7 @@
 - [Seoul Stationery Destinations](https://mgself414.github.io/keychingu-content-deploy/content/stationery-destinations.en.html): Eight Seoul stationery destinations for diaries and pens, from Kyobo, Youngpoong and 10x10 to Morris, Homi Hwabang and MUJI, compared, with  (Korean: https://mgself414.github.io/keychingu-content-deploy/content/stationery-destinations.html)
   - ... and 45 more
 
-## G (47)
+## G (46)
 
 - [K-Drama Filming Spots Tour](https://mgself414.github.io/keychingu-content-deploy/content/kdrama.en.html): Filming locations by drama, with addresses, directions and photo tips for recreating scenes, plus visiting etiquette and where to buy drama  (Korean: https://mgself414.github.io/keychingu-content-deploy/content/kdrama.html)
 - [K-POP Fan Ultimate Guide](https://mgself414.github.io/keychingu-content-deploy/content/kpop-fan.en.html): A K-POP fan guide: the big four agency buildings including HYBE, official and fan shop merchandise, fan signings and music shows, K-POP cafe (Korean: https://mgself414.github.io/keychingu-content-deploy/content/kpop-fan.html)
@@ -234,14 +234,14 @@
 - [Jongmyo Daeje Viewing Guide: Twice a Year, Chunhyang in May and Chuhyang in November, Next Up Is the May 2027 Chunhyang (By Custom May 2), Plus Regular English Tour Times](https://mgself414.github.io/keychingu-content-deploy/content/jongmyo-jerye-map.en.html): Official values checked Oct 21, 2026: The Jongmyo Jerye rites are held on the first Sunday of May and the first Saturday of November each ye (Korean: https://mgself414.github.io/keychingu-content-deploy/content/jongmyo-jerye-map.html)
 - [Korean Cinema Fans Deep Dive](https://mgself414.github.io/keychingu-content-deploy/content/korean-cinema-deep.en.html): A 12-item guide to enjoying Korean cinema, covering theater chains like CGV and Megabox, premium screens, independent cinemas and film festi (Korean: https://mgself414.github.io/keychingu-content-deploy/content/korean-cinema-deep.html)
 - [Korea Music Fans Deep Dive](https://mgself414.github.io/keychingu-content-deploy/content/music-mania-deep.en.html): A 12-item guide to enjoying Korean music, covering indie music and jazz clubs, trot and gugak, and K-pop, plus music museums and record shop (Korean: https://mgself414.github.io/keychingu-content-deploy/content/music-mania-deep.html)
-- [Korea Film Festival·VR Experience Deep Dive](https://mgself414.github.io/keychingu-content-deploy/content/film-festival-vr.en.html): Twelve film and VR experiences in Korea: festivals such as BIFF, JIFF and BiFan, VR and AR attractions, and hands-on learning venues, arrang (Korean: https://mgself414.github.io/keychingu-content-deploy/content/film-festival-vr.html)
 - [K-pop Dance Academy Deep Dive](https://mgself414.github.io/keychingu-content-deploy/content/kpop-dance-academy.en.html): Twelve places to learn K-pop dance in Korea: famous studios like 1Million and JustJerk, agency classes, academies, camps and short intensive (Korean: https://mgself414.github.io/keychingu-content-deploy/content/kpop-dance-academy.html)
 - [How Korean Brand Collabs Come Together — Convenience Store × Idols and Music, Beauty × K-pop and Characters: 4 Types, Plus Past Cases from Official Press Releases](https://mgself414.github.io/keychingu-content-deploy/content/brand-collab-deep.en.html): How Korean brand collabs are built: convenience store × idols, convenience store × music, beauty × K-pop, characters × beauty and snacks, wi (Korean: https://mgself414.github.io/keychingu-content-deploy/content/brand-collab-deep.html)
 - [How to Find Korean Collab Products — Permanent Stores (KWANGYA@SEOUL, K-Pop Square Hongdae, Ktown4u COEX, Olive Young Myeongdong) and How to Read Pop-Ups and Official Channels](https://mgself414.github.io/keychingu-content-deploy/content/korea-collab-cluster.en.html): Official values checked Oct 21, 2026: KWANGYA@SEOUL daily 10:30–20:00, free admission (VisitSeoul) · K-Pop Square Hongdae daily 11:00–22:00  (Korean: https://mgself414.github.io/keychingu-content-deploy/content/korea-collab-cluster.html)
 - [Korea EDM Festival Guide — EDC Korea, S2O Korea, and Waterbomb Happening Now, Plus the Recent Track Record of Ultra Korea and World DJ Festival (Summer and Autumn Seasons)](https://mgself414.github.io/keychingu-content-deploy/content/korea-edm-festivals.en.html): Official values checked Oct 21, 2026: EDC Korea 2026 was held October 3–4 at Inspire Resort in Incheon · S2O Korea 2026 was July 11–12 at Se (Korean: https://mgself414.github.io/keychingu-content-deploy/content/korea-edm-festivals.html)
 - [Korea Game·Esports·LCK Deep Dive](https://mgself414.github.io/keychingu-content-deploy/content/esports-lck-deep.en.html): Korea's gaming and esports scene in twelve parts: LCK venues and teams, game expos, PC cafes and VR, game companies and streaming, hotels an (Korean: https://mgself414.github.io/keychingu-content-deploy/content/esports-lck-deep.html)
 - [7 K-pop Music Video Filming Locations — MV Scenes Confirmed by the Press, and How to Get There Now](https://mgself414.github.io/keychingu-content-deploy/content/kpop-mv-locations.en.html): Ilyeong Station in Yangju for BTS "Spring Day", Jecheon Airfield for "Young Forever", Cheongju's Munhwa Jejochang for "Not Today", Saemangeu (Korean: https://mgself414.github.io/keychingu-content-deploy/content/kpop-mv-locations.html)
-  - ... and 17 more
+- [Korea K-content OTT Deep Dive](https://mgself414.github.io/keychingu-content-deploy/content/kcontent-ott-deep.en.html): Twelve ways to watch Korean content: global services like Netflix, homegrown platforms such as TVING and Wavve, YouTube, caption settings, d (Korean: https://mgself414.github.io/keychingu-content-deploy/content/kcontent-ott-deep.html)
+  - ... and 16 more
 
 ## E (45)
 
@@ -301,7 +301,7 @@
 
 ## Metadata
 
-- **Coverage**: 1230 curated guides as of 2026-11-25
+- **Coverage**: 1228 curated guides as of 2026-11-25
 - **Languages**: KR (full), EN (full), CN (full), JP (full)
 - **Update frequency**: Weekly
 - **Data sources**: Korea Tourism Organization (VisitKorea), Seoul Tourism Foundation (Visit Seoul), Cultural Heritage Administration, UNESCO World Heritage, Korea Open Government License (KOGL), Naver Maps, Reddit r/koreatravel + user curation
