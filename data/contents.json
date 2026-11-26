@@ -21352,29 +21352,30 @@
   {
     "id": "1038",
     "slug": "korea-gangwon-sokcho-seoraksan",
-    "title_kr": "강원도 속초 + 설악산",
-    "title_en": "Gangwon Sokcho + Seoraksan",
+    "title_kr": "속초·설악산 소공원 — 서울에서 버스, 소공원에서 고르는 길 3개와 권금성 케이블카, 속초 시내 5곳",
+    "title_en": "Sokcho + Seoraksan Sogongwon — Bus from Seoul, 3 Paths to Choose from Sogongwon, the Gwongeumseong Cable Car, and 5 Places in Sokcho City",
     "category": "B",
     "tags": [
-      "foreign-tourist",
-      "city",
+      "foreigner",
       "gangwon",
       "sokcho",
       "seoraksan",
-      "nature"
+      "national-park",
+      "hiking",
+      "cable-car"
     ],
-    "summary_kr": "높이 1708m의 설악산 국립공원, 케이블카와 권금성, 652년 창건된 신흥사의 통일대불, 속초 외옹치 해변과 회·해산물을 하루 코스로 묶었다.",
-    "summary_en": "Seoraksan National Park (1,708 m), the cable car to Gwongeumseong, Sinheungsa temple founded in 652 with its Unification Buddha, and Sokcho's Oeongchi beach and seafood in one day.",
+    "summary_kr": "서울에서 고속버스로 속초에 가서 시내버스 7·7-1번으로 설악산 소공원까지 가는 법, 소공원에서 고르는 길 3개(비선대·울산바위·토왕성폭포전망대)의 거리와 시간, 권금성 케이블카 요금과 당일 현장 구매, 속초 시내에서 볼 곳 5곳을 국립공원공단·설악케이블카·속초시 공식 안내와 카카오맵 등록값(2026-11-25) 기준으로 정리했다.",
+    "summary_en": "How to reach Sokcho by express bus from Seoul and Seoraksan Sogongwon by city bus 7 or 7-1, the distance and time of 3 paths from Sogongwon (Biseondae, Ulsanbawi Rock, Towangseong Falls Observatory), Gwongeumseong Cable Car fares and same-day on-site tickets, and 5 places in Sokcho City, based on official Korea National Park Service, cable car and Sokcho City guidance and Kakao Map registered values (2026-11-25).",
     "en_available": true,
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false,
     "image_credit": "Korea Tourism Organization (공공누리 1유형)",
     "date_published": "2026-06-12",
-    "title_ja": "江原道 束草・雪嶽山",
-    "title_zh": "江原道束草+雪岳山",
-    "summary_ja": "標高1708mの雪嶽山国立公園、ケーブルカーと権金城、652年創建の新興寺と統一大仏、束草の外甕致ビーチと海鮮を1日コースにまとめました。",
-    "summary_zh": "雪岳山国家公园（海拔1708米）、缆车与权金城、652年创建的新兴寺及统一大佛，以及束草外瓮致海滩和海鲜，编成一日路线。"
+    "title_ja": "束草・雪岳山 小公園 — ソウルからバス、小公園から選ぶ道3つと権金城ケーブルカー、束草市内5か所",
+    "title_zh": "束草·雪岳山小公园 — 从首尔乘巴士，在小公园选的3条路和权金城缆车，束草市区5处",
+    "summary_ja": "ソウルから高速バスで束草へ行き、市内バス7番・7-1番で雪岳山の小公園まで行く方法、小公園から選ぶ道3つ(飛仙台・蔚山岩・土旺城瀑布展望台)の距離と時間、権金城ケーブルカーの料金と当日現場購入、束草市内で見る5か所を、国立公園公団・雪岳ケーブルカー・束草市の公式案内とカカオマップ登録値(2026-11-25)でまとめました。",
+    "summary_zh": "整理从首尔乘高速巴士去束草、再乘7路或7-1路市内公交车到雪岳山小公园的方法，小公园出发的3条路(飞仙台、蔚山岩、土旺城瀑布观景台)的距离和时间，权金城缆车票价和当天现场购票，以及束草市区5处，依据国立公园公团、雪岳缆车、束草市的官方指南和Kakao Map登记值(2026-11-25)。"
   },
   {
     "id": "1039",
@@ -21719,18 +21720,20 @@
   {
     "id": "1052",
     "slug": "korea-gyeongsang-gyeongju-unesco",
-    "title_kr": "경주 UNESCO 불국사",
-    "title_en": "Gyeongju UNESCO Bulguksa",
+    "title_kr": "경주 불국사·석굴암 — 입장 마감 시각, 두 곳 사이 12번 버스와 2.8km 산길, 시내에서 가는 10·11번 버스",
+    "title_en": "Gyeongju Bulguksa and Seokguram — Last Admission Times, Bus 12 and the 2.8 km Mountain Path Between the Two, and Buses 10 and 11 from Downtown",
     "category": "D",
     "tags": [
-      "foreign-tourist",
-      "province",
-      "gyeongsang",
+      "foreigner",
       "gyeongju",
-      "unesco"
+      "bulguksa",
+      "seokguram",
+      "unesco",
+      "temple",
+      "gyeongsang"
     ],
-    "summary_kr": "신라 천년 고도 경주에서 1995년 세계유산에 오른 불국사와 석굴암, 천마총, 안압지, 첨성대, 국립경주박물관을 하루에 돌아보는 코스.",
-    "summary_en": "A one-day Gyeongju route through the Silla capital: UNESCO-listed Bulguksa and Seokguram (1995), Cheonmachong tomb, Anapji, Cheomseongdae and the National Museum.",
+    "summary_kr": "경주 불국사와 석굴암의 입장 마감 시각(11~1월 17:00), 무료 관람과 주차료, 터미널에서 가는 시내버스 10·11번, 두 곳 사이 12번 버스와 2.8km 탐방로, 겨울의 토함산 정상 구간 통제를 불국사·석굴암·경주시·국립공원공단 공식 안내(2026-11-25 열람) 기준으로 정리했다.",
+    "summary_en": "Last admission times at Bulguksa and Seokguram (17:00 in November–January), free admission and parking fees, city buses 10 and 11 from the terminal, bus 12 and the 2.8 km trail between the two, and the winter closure of the Tohamsan summit section, based on official temple, Gyeongju City and Korea National Park Service guidance read on 2026-11-25.",
     "en_available": true,
     "cn_available": true,
     "jp_available": true,
@@ -21738,10 +21741,10 @@
     "image": "assets/og/korea-gyeongsang-gyeongju-unesco.jpg",
     "image_credit": "Korea Tourism Organization (공공누리 1유형)",
     "date_published": "2026-06-12",
-    "title_ja": "慶州 UNESCO 仏国寺",
-    "title_zh": "庆州UNESCO佛国寺",
-    "summary_ja": "新羅千年の古都・慶州で、1995年に世界遺産となった仏国寺と石窟庵、天馬塚、雁鴨池、瞻星台、国立慶州博物館を1日で巡るコースです。",
-    "summary_zh": "走进新罗千年古都庆州：1995年列入世界遗产的佛国寺和石窟庵，以及天马冢、雁鸭池、瞻星台和国立庆州博物馆，一日路线。"
+    "title_ja": "慶州 仏国寺・石窟庵 — 入場締め切りの時刻、2か所のあいだの12番バスと2.8kmの山道、市内から行く10番・11番バス",
+    "title_zh": "庆州佛国寺·石窟庵 — 入场截止时间，两处之间的12路公交车和2.8km山路，从市内去的10路、11路公交车",
+    "summary_ja": "慶州の仏国寺と石窟庵について、入場締め切りの時刻(11~1月は17:00)、無料の観覧と駐車料金、ターミナルから行く市内バス10番・11番、2か所のあいだの12番バスと2.8kmの探訪路、冬の吐含山頂上区間の統制を、仏国寺・石窟庵・慶州市・国立公園公団の公式案内(2026-11-25閲覧)でまとめました。",
+    "summary_zh": "整理庆州佛国寺和石窟庵的入场截止时间(11~1月17:00)、免费参观和停车费、从客运站出发的10路·11路市内公交车、两处之间的12路公交车和2.8km探访路，以及冬季吐含山山顶区间的管制，依据佛国寺、石窟庵、庆州市和国立公园公团的官方指南(2026-11-25查阅)。"
   },
   {
     "id": "1053",
@@ -21852,28 +21855,30 @@
   {
     "id": "1057",
     "slug": "korea-jeju-hallasan-unesco",
-    "title_kr": "제주 한라산 UNESCO",
-    "title_en": "Jeju Hallasan UNESCO 2007",
+    "title_kr": "한라산 탐방로 7개 — 코스별 거리와 시간, 계절별 입산 마감, 정상 예약, 가는 버스",
+    "title_en": "7 Hallasan Trails — Distance and Time by Course, Seasonal Entry Cutoffs, Summit Reservation, and the Bus There",
     "category": "B",
     "tags": [
-      "foreign-tourist",
-      "province",
+      "foreigner",
       "jeju",
       "hallasan",
-      "unesco"
+      "national-park",
+      "hiking",
+      "unesco",
+      "reservation"
     ],
-    "summary_kr": "해발 1947m 한라산의 백록담 정상 분화구 호수와 윗세오름·영실·성판악·관음사 네 등산 코스, 정상 사전 예약, 계절별 산행 포인트를 담았다.",
-    "summary_en": "Hallasan (1,947 m, UNESCO 2007) with its Baengnokdam crater lake, the four hiking trails Witseoreum, Yeongsil, Seongpanak and Gwaneumsa, and the summit reservation rules.",
+    "summary_kr": "한라산 탐방로 7개(성판악·관음사·어리목·영실·돈내코·어승생악·석굴암)의 거리와 시간, 동절기·하절기 입산 마감과 하산 시각, 정상 구간 예약(입산 시간대 05:00~08:00·08:01~11:30), 코스별 버스와 주차를 제주특별자치도 한라산 탐방 예약 누리집과 한라산국립공원 누리집 공식 안내(2026-11-25 열람) 기준으로 정리했다.",
+    "summary_en": "Distance and time for 7 Hallasan trails (Seongpanak, Gwaneumsa, Eorimok, Yeongsil, Donnaeko, Eoseungsaengak, Seokguram), winter and summer entry cutoffs and descent times, summit reservation with entry time slots (05:00~08:00, 08:01~11:30), and buses and parking by course, based on the official Hallasan trail reservation website and Hallasan National Park website read on 2026-11-25.",
     "en_available": true,
     "cn_available": true,
     "jp_available": true,
     "instagram_posted": false,
     "image_credit": "Korea Tourism Organization (공공누리 1유형)",
     "date_published": "2026-06-12",
-    "title_ja": "済州 漢拏山 UNESCO",
-    "title_zh": "济州汉拿山 UNESCO",
-    "summary_ja": "標高1947m、2007年に世界自然遺産となった漢拏山。白鹿潭の火口湖、ウィッセオルム・霊室・城板岳・観音寺の4登山コースと山頂予約のルールを解説します。",
-    "summary_zh": "海拔1947米、2007年列入世界遗产的汉拿山：白鹿潭火山口湖，威势岳、灵室、城板岳、观音寺四条登山路线，以及登顶预约规定。"
+    "title_ja": "漢拏山の探訪路7か所 — コースごとの距離と時間、季節別の入山締め切り、頂上の予約、行きのバス",
+    "title_zh": "汉拿山探访路7条 — 各路线的距离和时间、各季节入山截止、登顶预约、乘公交车去的方法",
+    "summary_ja": "漢拏山の探訪路7か所(城板岳・観音寺・オリモク・霊室・トンネコ・御乗生岳・石窟庵)の距離と時間、冬季・夏季の入山締め切りと下山時刻、頂上区間の予約(入山の時間帯05:00~08:00・08:01~11:30)、コースごとのバスと駐車を、済州特別自治道の漢拏山探訪予約サイトと漢拏山国立公園サイトの公式案内(2026-11-25閲覧)でまとめました。",
+    "summary_zh": "整理汉拿山7条探访路(城板岳、观音寺、御里牧、灵室、顿乃克、御乘生岳、石窟庵)的距离和时间、冬季和夏季的入山截止与下山时刻、登顶区间预约(入山时段05:00~08:00、08:01~11:30)、各路线的公交车和停车，依据济州特别自治道汉拿山探访预约官网和汉拿山国立公园官网的官方指南(2026-11-25查阅)。"
   },
   {
     "id": "1058",
