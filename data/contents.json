@@ -8251,8 +8251,8 @@
   {
     "id": "381",
     "slug": "cafe-district",
-    "title_kr": "한국 카페 거리 12곳 (Korea Cafe Districts) — 성수·도산·익선·연남·강남",
-    "title_en": "Korea Cafe Districts: Cafe Streets in Korea — 12 Districts: Seongsu, Dosan, Ikseon, Yeonnam, Gangnam",
+    "title_kr": "서울 카페 거리 걷기 7곳 — 성수·연남·익선동·안국·망원·한남·문래, 역 출구부터 동네 카페 17곳까지",
+    "title_en": "7 Seoul Café Streets to Walk — Seongsu, Yeonnam, Ikseon-dong, Anguk, Mangwon, Hannam, Mullae: From the Station Exit to 17 Neighborhood Cafés",
     "category": "C",
     "tags": [
       "foreigner",
@@ -8270,17 +8270,17 @@
       "hanok-cafe",
       "instagram"
     ],
-    "summary_kr": "성수·도산·익선·연남·강남 등 한국 카페 거리 12곳을 성수·도산, 한옥 카페, 홍대·연남, 강남·외곽으로 나눠 소개하고 자주 하는 실수, FAQ, 하루 코스 3개를 담았다.",
-    "summary_en": "Twelve Korean cafe districts grouped into Seongsu and Dosan, hanok cafes, Hongdae and Yeonnam, and Gangnam and beyond, with common mistakes, FAQs and three full-day routes.",
+    "summary_kr": "성수, 연남, 익선동, 안국·삼청, 망원, 한남, 문래 일곱 동네를 걷는 안내. 동네마다 내리는 역과 출구, 걷는 범위, 붐비는 때를 적고 VisitSeoul·VisitKorea 등재나 Korea JoongAng Daily 기사에 나온 카페 17곳을 붙였다. 어니언·동백양과점·블루보틀 삼청·앤트러사이트·패션5·러스트베이커리 등 카페마다 카카오맵에 등록된 주소·영업시간·쉬는 날·가격과 비건 우유 안내.",
+    "summary_en": "A walking guide to seven neighborhoods: Seongsu, Yeonnam, Ikseon-dong, Anguk·Samcheong, Mangwon, Hannam, and Mullae. For each: the station and exit, the walking range, and the busy times, plus 17 cafés listed on VisitSeoul or VisitKorea or named in Korea JoongAng Daily articles. For every café, the address, hours, closing days, and prices registered on Kakao Map, and vegan-milk notes, covering Onion, Dongbaek Yanggwajeom, Blue Bottle Samcheong, Anthracite, Passion 5, Rust Bakery, and more.",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
     "jp_available": true,
     "date_published": "2026-05-25",
-    "title_ja": "韓国カフェ通りガイド (Korea Cafe Districts) — 聖水・島山・益善・延南・江南など12か所",
-    "title_zh": "韩国咖啡街指南 (Korea Cafe Districts) — 圣水·岛山·益善·延南·江南12处",
-    "summary_ja": "聖水・島山・益善・延南・江南など韓国のカフェ通り12か所を、聖水・島山、韓屋カフェ、弘大・延南、江南と郊外に分けて紹介。よくある失敗、FAQ、1日コース3つも掲載。",
-    "summary_zh": "整理圣水、岛山、益善、延南、江南等韩国12处咖啡街，分为圣水岛山、韩屋咖啡馆、弘大延南、江南及周边，附常见误区、FAQ与3条全日路线。"
+    "title_ja": "ソウルのカフェ通りを歩く7か所 — ソンス・ヨンナム・イクソンドン・アングク・マンウォン・ハンナム・ムンネ、駅の出口から街のカフェ17軒まで",
+    "title_zh": "首尔咖啡馆街步行7处 — 圣水·延南·益善洞·安国·望远·汉南·文来，从地铁出口到17家街区咖啡馆",
+    "summary_ja": "ソンス、ヨンナム、イクソンドン、アングク・サムチョン、マンウォン、ハンナム、ムンネの7つの街を歩く案内。街ごとに降りる駅と出口、歩く範囲、混む時間を書き、VisitSeoul・VisitKoreaの掲載やKorea JoongAng Dailyの記事に出たカフェ17軒を付けました。Onion・Dongbaek Yanggwajeom・Blue Bottle Samcheong・Anthracite・Passion 5・Rust Bakeryなど、カフェごとにカカオマップに登録された住所・営業時間・休みの日・料金とビーガンミルクの案内。",
+    "summary_zh": "步行圣水、延南、益善洞、安国·三清、望远、汉南、文来七个街区的指南。每个街区都写了下车的站和出口、步行范围、人多的时段，并配上VisitSeoul·VisitKorea收录或出现在Korea JoongAng Daily报道里的17家咖啡馆。每家咖啡馆都有Kakao地图登记的地址·营业时间·休息日·价格和纯素牛奶提示，包括Onion·Dongbaek Yanggwajeom·Blue Bottle Samcheong·Anthracite·Passion 5·Rust Bakery等。"
   },
   {
     "id": "382",
@@ -11736,8 +11736,8 @@
   {
     "id": "527",
     "slug": "payment-system-deep",
-    "title_kr": "한국 결제 시스템 심층 가이드",
-    "title_en": "Korea Payment System Deep Dive",
+    "title_kr": "한국에서 돈 내는 법 — 해외 카드·ATM·환전·선불 교통카드·간편결제·택스리펀, 상황별로 고르기",
+    "title_en": "How to Pay in Korea — Foreign Cards, ATMs, Currency Exchange, Prepaid Transit Cards, Mobile Payments, Tax Refunds, Chosen by Situation",
     "category": "H",
     "tags": [
       "foreigner",
@@ -11747,17 +11747,17 @@
       "credit-card",
       "klook"
     ],
-    "summary_kr": "신용카드와 카카오페이·네이버페이 등 간편결제, QR·송금, 현금 사용까지 한국 결제 방법을 12항목으로 정리했다.",
-    "summary_en": "A 12-item guide to paying in Korea, covering credit cards, mobile payments such as KakaoPay and Naver Pay, QR codes and money transfers, and cash.",
+    "summary_kr": "단기 여행자가 한국에서 계산할 때 무엇을 꺼낼지 상황별로 정리했다. Visa·Mastercard·Amex가 통하는 범위와 안 되는 곳, 해외 카드를 받는 ATM 고르기와 두 겹 수수료, 공항·은행 환전 시간, T-money 트래블카드·WOWPASS·NAMANE·CHECK iN SEOUL, 알리페이플러스·위챗페이·카카오페이·네이버페이, 현금 없는 버스, 매장 즉시환급(1회 15,000원 이상 100만 원 미만·합계 500만 원 이하).",
+    "summary_en": "What a short-stay traveler should take out in each situation when paying in Korea. How far Visa, Mastercard, and Amex work and where they do not, picking ATMs that accept foreign cards and the two layers of fees, airport and bank exchange hours, T-money Travel Card, WOWPASS, NAMANE, CHECK iN SEOUL, Alipay+, WeChat Pay, KakaoPay, Naver Pay, cashless buses, and instant refund at the store (15,000 won or more and under 1 million won (100만 원) per purchase, 5 million won (500만 원) or less in total).",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
     "jp_available": true,
     "date_published": "2026-05-28",
-    "title_zh": "韩国支付系统深度探索",
-    "title_ja": "韓国決済システム 深掘りガイド",
-    "summary_ja": "クレジットカード、カカオペイ・ネイバーペイなどのモバイル決済、QR・送金、現金の使い方まで、韓国の支払い方法を12項目で整理しました。",
-    "summary_zh": "用12项内容介绍韩国的支付方式，涵盖信用卡、KakaoPay和Naver Pay等移动支付、二维码与转账以及现金使用。"
+    "title_zh": "在韩国怎么付钱 — 外国信用卡·ATM·换钱·预付交通卡·移动支付·退税，按情况来选",
+    "title_ja": "韓国での支払い方 — 海外カード・ATM・両替・プリペイド交通カード・スマホ決済・免税還付を、場面ごとに選ぶ",
+    "summary_ja": "短期の旅行者が韓国で会計するとき、何を出すかを場面ごとに整理しました。Visa・Mastercard・Amexが使える範囲と使えない場所、海外カードを受け付けるATMの選び方と二重の手数料、空港・銀行の両替時間、T-moneyトラベルカード・WOWPASS・NAMANE・CHECK iN SEOUL、Alipay+・WeChat Pay・カカオペイ・ネイバーペイ、現金なしバス、店頭の即時還付(1回15,000ウォン以上100万ウォン (100만 원) 未満、合計500万ウォン (500만 원) 以下)。",
+    "summary_zh": "按情况整理了短期游客在韩国结账时该拿出什么。Visa·Mastercard·Amex能用的范围和用不了的地方，挑选接受外国信用卡的ATM和两层手续费，机场·银行换钱时间，T-money旅行卡·WOWPASS·NAMANE·CHECK iN SEOUL，Alipay+·微信支付·KakaoPay·Naver Pay，无现金公交，门店即时退税(每次15,000韩元以上、不满100万韩元 (100만 원)，合计500万韩元 (500만 원) 以下)。"
   },
   {
     "id": "528",
@@ -12163,8 +12163,8 @@
   {
     "id": "544",
     "slug": "night-market-deep",
-    "title_kr": "한국 야시장 심층 가이드",
-    "title_en": "Korea Night Market Deep Dive",
+    "title_kr": "이번 겨울 여는 한국 야시장 — 부산 부평깡통·제주 동문·전주 남부시장, 12월 광화문 마켓, 지금 쉬는 곳까지",
+    "title_en": "Korean Night Markets Open This Winter — Busan Bupyeong Kkangtong, Jeju Dongmun, Jeonju Nambu Market, the December Gwanghwamun Market, and the Ones That Are Resting Now",
     "category": "C",
     "tags": [
       "foreigner",
@@ -12180,17 +12180,17 @@
       "klook",
       "24h"
     ],
-    "summary_kr": "광장시장·동대문, 인사동·남대문, 명동 포장마차, 이태원, 부산 깡통시장까지 한국 야시장 12곳과 현금·카드 결제, 비건·할랄 식당 찾는 법을 알려 준다.",
-    "summary_en": "Twelve Korean night markets, from Gwangjang and Dongdaemun to Insadong, Namdaemun, Myeongdong stalls, Itaewon and Busan, plus how to pay and where to find vegan or halal food.",
+    "summary_kr": "매일 여는 부산 부평깡통야시장과 제주 동문야시장, 금·토요일의 전주 남부시장 한옥마을야시장, 대구시 계획상 12월까지 여는 대구 서문야시장, 12월 11일에 여는 서울 광화문 마켓. 곳마다 요일·시간, 겨울 휴장, 가는 길, 식이 정보. 결제·가격은 안내가 있는 곳만 적고 없는 곳은 '없음'으로 밝혔다. 겨울 운영 미확인 4곳과 지금 쉬는 곳은 따로 모았다.",
+    "summary_en": "Busan Bupyeong Kkangtong Night Market and Jeju Dongmun Night Market, which open every day, Jeonju Nambu Market Hanok Village Night Market on Fridays and Saturdays, Daegu Seomun Night Market, which the Daegu city plan says runs through December, and Seoul's Gwanghwamun Market, which opens on December 11. Opening days and hours, winter closures, directions, and dietary information. Payment methods and prices are listed only where an announcement exists, and where there is none we say so plainly. The 4 places where winter operation is unconfirmed and the places that are resting now are grouped separately.",
     "en_available": true,
     "instagram_posted": false,
     "cn_available": true,
     "jp_available": true,
     "date_published": "2026-05-28",
-    "title_zh": "韩国夜市深度探索",
-    "title_ja": "韓国夜市 深掘りガイド",
-    "summary_ja": "広蔵市場・東大門、仁寺洞・南大門、明洞の屋台、梨泰院、釜山まで韓国の夜市12か所と、支払い方法、ヴィーガン・ハラール対応の探し方を紹介します。",
-    "summary_zh": "介绍12处韩国夜市：广藏市场、东大门、仁寺洞、南大门、明洞小吃摊、梨泰院和釜山，并说明支付方式及如何找素食、清真餐厅。"
+    "title_zh": "这个冬天开放的韩国夜市 — 釜山富平罐头夜市·济州东门夜市·全州南部市场夜市，12月的光化门市集，以及现在休息的地方",
+    "title_ja": "この冬に開く韓国の夜市 — 釜山プピョンカントン・済州トンムン・全州南部市場、12月の光化門マーケット、今は休みの夜市まで",
+    "summary_ja": "毎日開く釜山のプピョンカントン夜市と済州のトンムン夜市、金・土曜に開く全州の南部市場韓屋村夜市、大邱市の計画で12月まで開く大邱のソムン夜市、12月11日に開くソウルの光化門マーケット。開く曜日・時間、冬の休み、行き方、食事の情報。支払い方法と価格は案内がある場所だけ書き、ない場所は「なし」と明記しました。冬の営業が未確認の4か所と、今は休みの場所は別にまとめました。",
+    "summary_zh": "每天营业的釜山富平罐头夜市和济州东门夜市，周五·周六营业的全州南部市场韩屋村夜市，按大邱市计划营业到12月的大邱西门夜市，以及12月11日开放的首尔光化门市集。营业日·时间、冬季休市、怎么去和饮食信息。支付方式和价格只写有公告的地方，没有公告的地方明确写“没有”。冬季营业未确认的4处和现在休息的地方另外列出。"
   },
   {
     "id": "545",
